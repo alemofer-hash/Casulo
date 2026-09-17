@@ -1,0 +1,46 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "casulo-stage0-bootstrap-tools",
+  "documentNamespace": "https://casulo.local/spdx/stage0-bootstrap/2026-09-17T23-56-37Z",
+  "creationInfo": {
+    "created": "2026-09-17T23:56:37Z",
+    "creators": [
+      "Tool: Codex"
+    ]
+  },
+  "packages": [
+    {
+      "name": "GitHub CLI",
+      "SPDXID": "SPDXRef-Package-GitHubCLI",
+      "versionInfo": "2.101.0",
+      "supplier": "Organization: GitHub, Inc.",
+      "downloadLocation": "https://github.com/cli/cli/releases/download/v2.101.0/gh_2.101.0_windows_amd64.zip",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bc6c814367b193cd8e713611d61e36013c0ef843b8f516458fe3eda039192794"
+        }
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) 2019 GitHub Inc.",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:github/cli/cli@v2.101.0"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-GitHubCLI"
+    }
+  ]
+}

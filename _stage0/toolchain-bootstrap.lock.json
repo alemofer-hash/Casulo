@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-17T23:56:37Z",
+  "host": {
+    "os": "Windows NT 10.0.26200.0",
+    "architecture": "AMD64"
+  },
+  "tools": {
+    "github_cli": {
+      "name": "GitHub CLI",
+      "command": "gh",
+      "version": "2.101.0",
+      "source": "official GitHub release via WinGet package GitHub.cli",
+      "source_url": "https://github.com/cli/cli/releases/tag/v2.101.0",
+      "installer_url": "https://github.com/cli/cli/releases/download/v2.101.0/gh_2.101.0_windows_amd64.zip",
+      "installer_sha256": "bc6c814367b193cd8e713611d61e36013c0ef843b8f516458fe3eda039192794",
+      "executable_sha256": "df05089117a23889b3f6ea08d7644849afe7b6025647a09f33b45c71f1418f75",
+      "publisher": "GitHub, Inc.",
+      "authenticode_status": "Valid",
+      "license": "MIT",
+      "scope": "user",
+      "install_command": "winget install --id GitHub.cli --exact --source winget --scope user --silent --disable-interactivity --accept-package-agreements --accept-source-agreements",
+      "rollback_command": "winget uninstall --id GitHub.cli --exact --scope user"
+    }
+  },
+  "notes": "GitHub CLI was bootstrapped solely to create and verify the private Stage Zero remote. No token or credential is stored in this lock."
+}
