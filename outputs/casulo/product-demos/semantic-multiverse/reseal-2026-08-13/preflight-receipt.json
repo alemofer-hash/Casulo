@@ -1,0 +1,60 @@
+{
+  "all_received_hashes_match": true,
+  "branch": "product/semantic-multiverse",
+  "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "created_utc": "2026-08-13T03:14:23.320338+00:00",
+  "destructive_git_commands_used": false,
+  "divergences": [],
+  "downloads_or_installs": 0,
+  "free_bytes": 89350643712,
+  "git_status_line_count": 184,
+  "git_status_sha256": "8f8b3cc016a271d6d8d6428ba9db51c6e7634db6be33db382a0d07a42426fd48",
+  "hashes": {
+    "checkpoint_manifest": {
+      "actual_sha256": "e595c97b86721c3b58b0d2e4ea62771b1cb63c6587ccc9794ef0e33f2b7446fa",
+      "bytes": 32756,
+      "expected_sha256": "e595c97b86721c3b58b0d2e4ea62771b1cb63c6587ccc9794ef0e33f2b7446fa",
+      "matches": true,
+      "mtime_utc": "2026-08-13T02:25:50.145230+00:00",
+      "path": "product-demos/semantic-multiverse/inspection-failure-3-einstein-rerun/MANIFEST.json"
+    },
+    "einstein_evidence": {
+      "actual_sha256": "003f5644e8f12a57478f795b799405fede46b23c6b18c4ca6e99000a60d678d5",
+      "bytes": 31015,
+      "expected_sha256": "003f5644e8f12a57478f795b799405fede46b23c6b18c4ca6e99000a60d678d5",
+      "matches": true,
+      "mtime_utc": "2026-08-13T02:17:55.797013+00:00",
+      "path": "product-demos/semantic-multiverse/inspection-failure-3-einstein-rerun/einstein-solver-evidence.json"
+    },
+    "einstein_package": {
+      "actual_sha256": "554da5a1341f84077c0434f79b9dacd00ba6d5dd96869a91deb92b93002c7860",
+      "bytes": 14499,
+      "expected_sha256": "554da5a1341f84077c0434f79b9dacd00ba6d5dd96869a91deb92b93002c7860",
+      "matches": true,
+      "mtime_utc": "2026-08-13T02:17:55.629278+00:00",
+      "path": "product-demos/semantic-multiverse/inspection-failure-3-einstein-rerun/casulo-owner-einstein-local-solver.casulo.zip"
+    },
+    "preserved_archive": {
+      "actual_sha256": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1",
+      "bytes": 13374,
+      "expected_sha256": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1",
+      "matches": true,
+      "mtime_utc": "2026-08-13T01:45:50.482512+00:00",
+      "path": "product-demos/semantic-multiverse/inspection-failure-3-einstein-preserved/owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7.casulo.zip"
+    }
+  },
+  "historical_evidence_preservation": true,
+  "preserved_archive_read_only_observation": {
+    "mutation_authorized": false,
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\owner-data\\semantic-creation-1\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+    "sha256": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1"
+  },
+  "schema": "casulo.semantic-reseal-preflight/1.0",
+  "worktree_substantially_modified": true,
+  "worktrees": [
+    "worktree C:/Users/guimo/Documents/Codex/2026-07-28/ex/outputs/casulo",
+    "HEAD df12e916c90d9bd2b966326275dc191573f38abd",
+    "branch refs/heads/product/semantic-multiverse",
+    ""
+  ]
+}

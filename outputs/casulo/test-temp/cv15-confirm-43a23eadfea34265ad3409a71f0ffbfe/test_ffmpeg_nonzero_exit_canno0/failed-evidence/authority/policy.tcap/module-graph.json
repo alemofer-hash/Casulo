@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "compression.casv"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "compression.casv"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

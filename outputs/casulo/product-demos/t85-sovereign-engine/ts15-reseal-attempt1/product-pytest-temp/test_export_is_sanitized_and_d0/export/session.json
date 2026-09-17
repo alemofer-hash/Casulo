@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-08-15T03:45:20.927406+00:00",
+  "raw_audio_persisted": false,
+  "schema": "casulo.owner-inspection-session/1.0",
+  "session_id": "inspection:export",
+  "technical_mode": true,
+  "technical_mode_human_event_id": "human:technical:on"
+}

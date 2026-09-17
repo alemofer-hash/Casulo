@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "function": "coordinate",
+    "module": "owner.guide.turn_coordinator"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "d88c8e186a052215bd948d1f2369cb9811a7d12f583d94c1dba0060aa2226e51"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "3244a319fb9a8635718384858e231b6cc93ba8ecab6aba666b8e034d1063dfbe"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "2985ccc4863682c2c87ad0910521704b34a525b06ac768c6cba97ac666fd261d"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "10ea1f03ed92bcadaf1de6be8c72343ba88005d58007e1e197831c8c58b929c2"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "e875d42b491be821afcd4a64272d887aa14e019b4180d1f7446004c04cbae6ca"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "539e31ebf1b5339ea59c8f71ef07348522445cb7d8557228fb57b05445b32b22"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "bc2716f76b9628e24e7bd190ae1dc95e94cf38c22fc4b0bac3df0749bc63b410"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "5e9604b201b5561dcc42a2bac5b45f32f980b2bcdf9b44339e0d83d0cec072a9"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "8536774d4224660a83c45726293f2eb23384bbe64c01a1deb321b4c212e506dd"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "5d22e9fb8a4060db3d4439dd7098a4a27ba5720a6ec78ff8279de077300fa7f9"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "f39cfba3f0e090ec0d4a11bfe32160ee70bb48a5bdce9e2ed64ed39bac3093e8"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.guide.turn_coordinator.t",
+      "module": "owner.guide.turn_coordinator",
+      "sha256": "6e68cf67a4940693a684513d156c143390a88b11db902ae1495a626f4428cce8"
+    }
+  ],
+  "tcap_hash": "b0557906f9c406fd5b94453d0cbebf77c480b57e33dc0d9cd99c9a07be146599"
+}

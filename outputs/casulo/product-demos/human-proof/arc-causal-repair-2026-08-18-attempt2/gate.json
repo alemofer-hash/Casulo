@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "all_external_t_executions_passed": true,
+    "confirmed_requirements_bound": true,
+    "diagnostic_has_requirement": true,
+    "minimal_rebuild_exact": true,
+    "neural_owner_proof_claimed": false,
+    "receipt_sealed": true,
+    "scientific_benchmark_started": false,
+    "tcap_hashes_are_real_and_distinct": true,
+    "unaffected_artifacts_reused": true
+  },
+  "classification": "DETERMINISTIC_CONTRACT_SMOKE_NOT_OWNER_NEURAL_PROOF",
+  "created_at": "2026-08-18T23:53:05.418401+00:00",
+  "schema": "casulo.arc6-contract-smoke/1.0",
+  "status": "PASS"
+}

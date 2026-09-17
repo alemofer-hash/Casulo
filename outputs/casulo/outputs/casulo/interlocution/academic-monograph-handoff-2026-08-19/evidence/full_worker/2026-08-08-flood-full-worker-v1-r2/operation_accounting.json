@@ -1,0 +1,9 @@
+{
+  "conservative_operator_events_per_record": 315,
+  "conservative_operator_events_per_training": 129088800,
+  "epochs": 400,
+  "observed_tcap_thread_cycles_per_training": 68040954.6,
+  "parameter_updates": 32400,
+  "records_per_epoch": 1024,
+  "schema": "casulo-full-worker-operation-accounting/1.0"
+}

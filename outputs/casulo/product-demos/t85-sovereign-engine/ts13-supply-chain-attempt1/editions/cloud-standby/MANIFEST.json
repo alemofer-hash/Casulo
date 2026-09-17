@@ -1,0 +1,25 @@
+{
+  "engine_boundary": "server-private-release-locked",
+  "package": "casulo-cloud-standby",
+  "production_eligible": false,
+  "profile": "cloud-standby",
+  "public_audit": null,
+  "redistributable": false,
+  "release_state": "RELEASE_LOCKED",
+  "sbom": {
+    "file": "SBOM.spdx.json",
+    "sha256": "5fdef3060d8a575da157c418e52d0b2a88dfeb21ada252803c588edf19e8ee8d"
+  },
+  "schema": "casulo-product-edition-release/1.0",
+  "signing": {
+    "algorithm": "ssh-ed25519",
+    "development_key": true,
+    "identity": "casulo-cloud-standby-dev",
+    "namespace": "casulo-release",
+    "public_key_fingerprint": "SHA256:2FYYbkKHpnZlE0VCUCFP0vEEtOxS1DVZQxwy+gqXiLs"
+  },
+  "wheel": {
+    "file": "casulo_cloud_standby-0.1.0a1-py3-none-any.whl",
+    "sha256": "49483e5ac9442f3fa4b2a2d65fd3257b1f22db743a971691649b7a2ff7d0b4fb"
+  }
+}

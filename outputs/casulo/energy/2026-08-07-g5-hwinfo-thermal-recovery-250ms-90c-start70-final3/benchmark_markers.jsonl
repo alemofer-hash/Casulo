@@ -1,0 +1,6 @@
+{"byte_offset":33524371,"event":"campaign_formal_start","local":"2026-08-07T18:48:59.598502-03:00","monotonic_ns":6844851546800,"pid":27256,"utc":"2026-08-07T21:48:59.598502+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T18:48:59.746702-03:00","monotonic_ns":6844983764500,"pid":27256,"utc":"2026-08-07T21:48:59.746702+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T18:49:06.380327-03:00","monotonic_ns":6852379597500,"new_samples":29,"pid":27256,"utc":"2026-08-07T21:49:06.380327+00:00"}
+{"event":"idle_start","local":"2026-08-07T18:49:59.300508-03:00","monotonic_ns":6904537608300,"pid":13272,"seconds":60.0,"utc":"2026-08-07T21:49:59.300508+00:00"}
+{"event":"thermal_abort","local":"2026-08-07T18:50:33.577000-03:00","monotonic_ns":6939300638900,"pid":13272,"stage":"idle","temperature_c":67.0,"throttling":true,"utc":"2026-08-07T21:50:33.577000+00:00"}
+{"event":"protocol_superseded","local":"2026-08-07T18:51:54.268219-03:00","monotonic_ns":7019505323400,"pid":23880,"reason":"A transient throttle inside idle is now preserved as a rejected idle attempt followed by a clean retry; no candidate workload ran.","utc":"2026-08-07T21:51:54.268219+00:00"}

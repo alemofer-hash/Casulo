@@ -1,0 +1,11 @@
+{
+  "canary_0_27ms_excluded": true,
+  "current_eager_slope_ms": 323.8158404798983,
+  "current_tcap_slope_ms": 33.591154803458274,
+  "historical_eager_median_ms": 337.0635,
+  "historical_report_sha256": "2633b6596f0ef4855e730b3596515f88233886cd16421cd41a19338268175d27",
+  "historical_tcap_c99_median_ms": 35.3111,
+  "same_dataset_generator_hash": true,
+  "schema": "casulo-full-worker-historical-comparison/1.0",
+  "status": "PASS_SAME_FULL_WORK_DIMENSIONS"
+}

@@ -1,0 +1,18 @@
+{
+  "byte_offset": 116,
+  "captured_at_utc": "2026-08-08T14:24:31.709306+00:00",
+  "captured_before_workload": true,
+  "last_timestamp_utc": "2026-08-07T15:00:04+00:00",
+  "note": "bounded shared-read snapshot captured before workload in this campaign",
+  "sha256_snapshot": "01d46cc24cfa8cdb047639738f897327a475a1f2fc77edc1a62ed02c8d57e534",
+  "source_csv": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\reproduce-tmp\\full-worker-final\\pytest\\test_h0_uses_actual_bounded_sn0\\2026-08-02-old-session\\live.csv",
+  "source_history": {
+    "first_sample_date_utc": "2026-08-07",
+    "folder_date": "2026-08-02",
+    "header_count": 1,
+    "inference_basis": "folder date precedes first surviving sample",
+    "logger_restarted_or_overwrote_older_named_file": true,
+    "prior_historical_content_present": false,
+    "session_count": 1
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "A_T": 1.0,
+  "A_T_denominator": 9,
+  "A_T_numerator": 9,
+  "authority_sha256": "a1038474188389d60e68870a2bf416ed486ffd8a64847029e8fa38f53318708e",
+  "foreign_decision_authority": false,
+  "foreign_primitives": [
+    "AOT x86-64 Flood kernel",
+    "Rust wrapper",
+    "NumPy holdout primitives",
+    "PyTorch Eager oracles",
+    "OS allocator and clocks"
+  ],
+  "schema": "casulo.interlocution-authority-after/1.0",
+  "status": "PASS",
+  "surfaces": [
+    {
+      "authority": "T_AUTHORITY",
+      "causal_mutation_pass": true,
+      "consumed_before_relevant_work": true,
+      "general_pipeline": true,
+      "publisher_consumes_t_judge": true,
+      "receipt": true,
+      "surface": "dataset_identity_integrity",
+      "t_source": true
+    },
+    {
+      "authority": "T_AUTHORITY",
+      "causal_mutation_pass": true,
+      "consumed_before_relevant_work": true,
+      "general_pipeline": true,
+      "publisher_consumes_t_judge": true,
+      "receipt": true,
+      "surface": "initialization_bundle",
+      "t_source": true
+    },
+    {
+      "authority": "T_AUTHORITY",
+      "causal_mutation_pass": true,
+      "consumed_before_relevant_work": true,
+      "general_pipeline": true,
+      "publisher_consumes_t_judge": true,
+      "receipt": true,
+      "surface": "numerical_precision",
+      "t_source": true
+    },
+    {
+      "authority": "T_AUTHORITY",
+      "causal_mutation_pass": true,
+      "consumed_before_relevant_work": true,
+      "general_pipeline": true,
+      "publisher_consumes_t_judge": true,
+      "receipt": true,
+      "surface": "loss_function",
+      "t_source": true
+    },
+    {
+      "authority": "T_AUTHORITY",
+      "causal_mutation_pass": true,
+      "consumed_before_relevant_work": true,
+      "general_pipeline": true,
+      "publisher_consumes_t_judge": true,
+      "receipt": true,
+      "surface": "update_rule",
+      "t_source": true
+    },
+    {
+      "authority": "T_AUTHORITY",
+      "causal_mutation_pass": true,
+      "consumed_before_relevant_work": true,
+      "general_pipeline": true,
+      "publisher_consumes_t_judge": true,
+      "receipt": true,
+      "surface": "optimizer_state",
+      "t_source": true
+    },
+    {
+      "authority": "T_AUTHORITY",
+      "causal_mutation_pass": true,
+      "consumed_before_relevant_work": true,
+      "general_pipeline": true,
+      "publisher_consumes_t_judge": true,
+      "receipt": true,
+      "surface": "working_set",
+      "t_source": true
+    },
+    {
+      "authority": "T_AUTHORITY",
+      "causal_mutation_pass": true,
+      "consumed_before_relevant_work": true,
+      "general_pipeline": true,
+      "publisher_consumes_t_judge": true,
+      "receipt": true,
+      "surface": "stopping",
+      "t_source": true
+    },
+    {
+      "authority": "T_AUTHORITY",
+      "causal_mutation_pass": true,
+      "consumed_before_relevant_work": true,
+      "general_pipeline": true,
+      "publisher_consumes_t_judge": true,
+      "receipt": true,
+      "surface": "equivalence_acceptance",
+      "t_source": true
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:64264125d54163c5afd3c774b30f5ee4a226286a3c92d3bb48c00faca404ae58",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "contradicao produtiva",
+          "observed": "Cartografo de Duvidas - Entry: Research Holdout",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "56b6b1256b12b49309eb562e66097b859820366f5e6de93f00976ccc16ca2ac2",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "entry_unit"
+        }
+      ],
+      "finished_ns": 31430257191100,
+      "project_id": "t-project:c928fcb8c4a9ac9a14057b8b",
+      "started_ns": 31429647401900,
+      "tcap_sha256": "856eb9d1ad2b476a766218c84910bd781cf956d4507d044e8032e4ce75aae567",
+      "tests": [
+        {
+          "expected_contains": "Cartografo de Duvidas - Creation: open-ended-holdout",
+          "name": "TestCreationSpec",
+          "observed": "Cartografo de Duvidas - Creation: open-ended-holdout",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e5858fa629eee0e4f4d76c77fbb42106948e1712bf650eb0ea6ea1a89a0e0a5f",
+          "unit_id": "creation_unit",
+          "wall_ns": 120757400
+        },
+        {
+          "expected_contains": "Cartografo de Duvidas - Trace: Research Conversation",
+          "name": "TestTraceValue",
+          "observed": "Cartografo de Duvidas - Trace: Research Conversation",
+          "operation": "Log",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "9f87bb88e0d6b4b92bec1f873bf77465a789264e61469493f01c3d502c9e7d10",
+          "unit_id": "trace_unit",
+          "wall_ns": 95551400
+        },
+        {
+          "expected_contains": "Cartografo de Duvidas - Effects: Memory Read",
+          "name": "TestEffectManifest",
+          "observed": "Cartografo de Duvidas - Effects: Memory Read",
+          "operation": "Apply",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "0f6e09853dd383c1385fc00718f9d5c070fab738e6d10643d95dc651e57bbf0e",
+          "unit_id": "effect_unit",
+          "wall_ns": 85929000
+        },
+        {
+          "expected_contains": "Cartografo de Duvidas - Entry: Research Holdout",
+          "name": "TestEntryPoint",
+          "observed": "Cartografo de Duvidas - Entry: Research Holdout",
+          "operation": "Start",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "085f4f340ae5453ae2f2b20afa556fdc15c898be9c0bcd2e3a64a1b098176cbe",
+          "unit_id": "entry_unit",
+          "wall_ns": 89412500
+        },
+        {
+          "expected_contains": "contradicao produtiva",
+          "name": "human-holdout-acceptance",
+          "observed": "Cartografo de Duvidas - Entry: Research Holdout",
+          "operation": "Start",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "46d95f32b9029bf201d6ac48d01313460aec4d823faf61c2df54d06cc3bdd2c5",
+          "unit_id": "entry_unit",
+          "wall_ns": 58468400
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:02a1f23caa831e5a1c25b8c000daa2e8c0990a5217f2442c441d8c2e383afd9f",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "Cartografo de Duvidas - Entry: Research Holdout",
+          "observed": "contradicao produtiva",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "c994782389b749a3534d48d9d2846330666f16dccf1460e11a072c3475a98652",
+          "test_name": "TestEntryPoint",
+          "unit_id": "entry_unit"
+        }
+      ],
+      "finished_ns": 31455075856000,
+      "project_id": "t-project:a39447cc53c1cf67f9453756",
+      "started_ns": 31454467534100,
+      "tcap_sha256": "b9cc4a1f27b081d480d0b262329372b410702ef14be98f9b877b5a73e98cf664",
+      "tests": [
+        {
+          "expected_contains": "Cartografo de Duvidas - Creation: open-ended-holdout",
+          "name": "TestCreationSpec",
+          "observed": "Cartografo de Duvidas - Creation: open-ended-holdout",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e21952a7695daf332e715c02bab71902a5066eb1f2e6bd082222569d5a4924ef",
+          "unit_id": "creation_unit",
+          "wall_ns": 134863800
+        },
+        {
+          "expected_contains": "Cartografo de Duvidas - Trace: Research Conversation",
+          "name": "TestTraceValue",
+          "observed": "Cartografo de Duvidas - Trace: Research Conversation",
+          "operation": "Log",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "48940dce75069f39eb63111fa4da954e71bee814e454327f595645a8f5daafa4",
+          "unit_id": "trace_unit",
+          "wall_ns": 108907600
+        },
+        {
+          "expected_contains": "Cartografo de Duvidas - Effects: Memory Read",
+          "name": "TestEffectManifest",
+          "observed": "Cartografo de Duvidas - Effects: Memory Read",
+          "operation": "Apply",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "154b912b2e22cfa99192bcbd42b73a1afc74c029b1818d14609ae7fd8c170304",
+          "unit_id": "effect_unit",
+          "wall_ns": 103235400
+        },
+        {
+          "expected_contains": "Cartografo de Duvidas - Entry: Research Holdout",
+          "name": "TestEntryPoint",
+          "observed": "contradicao produtiva",
+          "operation": "Start",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "5d15756fc0ff9a649fab2d2109a30901678973d86ece8612912701643103b4d5",
+          "unit_id": "entry_unit",
+          "wall_ns": 95349700
+        },
+        {
+          "expected_contains": "contradicao produtiva",
+          "name": "human-holdout-acceptance",
+          "observed": "contradicao produtiva",
+          "operation": "Start",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "706ac6ba7d10be34337cd9ecca889fb29406e76849b98790ebb744f651af1d40",
+          "unit_id": "entry_unit",
+          "wall_ns": 62410600
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:64264125d54163c5afd3c774b30f5ee4a226286a3c92d3bb48c00faca404ae58",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "contradicao produtiva",
+          "observed": "Cartografo de Duvidas - Entry: Research Holdout",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "56b6b1256b12b49309eb562e66097b859820366f5e6de93f00976ccc16ca2ac2",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "entry_unit"
+        }
+      ],
+      "finished_ns": 31478001096800,
+      "project_id": "t-project:75111da729e5a8ddd1675ba2",
+      "started_ns": 31477388481100,
+      "tcap_sha256": "856eb9d1ad2b476a766218c84910bd781cf956d4507d044e8032e4ce75aae567",
+      "tests": [
+        {
+          "expected_contains": "Cartografo de Duvidas - Creation: open-ended-holdout",
+          "name": "TestCreationSpec",
+          "observed": "Cartografo de Duvidas - Creation: open-ended-holdout",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "26becd23209c0d18d59866e7e9f9c77f27a7d84565f49ff9792956997f70e952",
+          "unit_id": "creation_unit",
+          "wall_ns": 145378200
+        },
+        {
+          "expected_contains": "Cartografo de Duvidas - Trace: Research Conversation",
+          "name": "TestTraceValue",
+          "observed": "Cartografo de Duvidas - Trace: Research Conversation",
+          "operation": "Log",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "325ba865b529006ae046889deff31b9882ec7ea848947cd9d63bd279e175937d",
+          "unit_id": "trace_unit",
+          "wall_ns": 102803200
+        },
+        {
+          "expected_contains": "Cartografo de Duvidas - Effects: Memory Read",
+          "name": "TestEffectManifest",
+          "observed": "Cartografo de Duvidas - Effects: Memory Read",
+          "operation": "Apply",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "449472aa35380039fa3cc5b5c9433ab6f0a02ea466d72f260871132686a14bed",
+          "unit_id": "effect_unit",
+          "wall_ns": 96764300
+        },
+        {
+          "expected_contains": "Cartografo de Duvidas - Entry: Research Holdout",
+          "name": "TestEntryPoint",
+          "observed": "Cartografo de Duvidas - Entry: Research Holdout",
+          "operation": "Start",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "74f8f6815f45117569c1fc5f4b78537addf90de504914aed436f02eec2366eaa",
+          "unit_id": "entry_unit",
+          "wall_ns": 99118400
+        },
+        {
+          "expected_contains": "contradicao produtiva",
+          "name": "human-holdout-acceptance",
+          "observed": "Cartografo de Duvidas - Entry: Research Holdout",
+          "operation": "Start",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "3f8bbea4ab76bb664028a06379911b8cd90a56377099886be9c9d19f0209ffb8",
+          "unit_id": "entry_unit",
+          "wall_ns": 58573600
+        }
+      ]
+    }
+  ],
+  "budget": 2,
+  "project_id": "t-project:75111da729e5a8ddd1675ba2",
+  "receipt_sha256": "ca833828184fc0f9072157a038ac147382fc63f0de87e7f6f7742bad41bea5ff",
+  "repair_count": 2,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "REPAIR_BUDGET_EXHAUSTED",
+  "tcap_sha256": "856eb9d1ad2b476a766218c84910bd781cf956d4507d044e8032e4ce75aae567"
+}

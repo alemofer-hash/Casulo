@@ -1,0 +1,37 @@
+{
+  "K_Eager": null,
+  "K_TCAP": null,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20260808,
+  "campaign_id": "2026-08-08-g5-full-worker-energy-definitive-04",
+  "configuration_sha256": "b93b3df7144b5bb545c6908be7d6180d4070ba8f2b302cf3cdd79086cbd32389",
+  "initial_idle_ceiling_c": 60.0,
+  "matched_start_tolerance_c": 1.0,
+  "not_frozen_reason": "idle thermal stability gate failed before probes and K calibration",
+  "pair_count": 21,
+  "polling": {
+    "gaps_over_5x_median": [
+      2.649
+    ],
+    "intervals": 50086,
+    "maximum_seconds": 2.649,
+    "median_seconds": 0.251,
+    "minimum_seconds": 0.101,
+    "p95_seconds": 0.267
+  },
+  "schedule_seed": 20260808,
+  "schema": "casulo-definitive-energy-frozen-configuration/1.0",
+  "sensor": {
+    "index": 164,
+    "kind": "package_power",
+    "literal_name": "Potência total da CPU [W]",
+    "normalized_name": "potencia total da cpu w",
+    "provenance": "hwinfo_reported_cpu_package",
+    "session_id": 0,
+    "si_scale": 1.0,
+    "unit": "w"
+  },
+  "source_scope": "HWiNFO-reported CPU package energy on bare-metal Windows",
+  "stability_seconds": 30.0,
+  "thermal_hard_ceiling_c": 90.0
+}

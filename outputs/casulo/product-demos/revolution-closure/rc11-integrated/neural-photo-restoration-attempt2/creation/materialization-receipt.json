@@ -1,0 +1,23 @@
+{
+  "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\creation\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+  "archive_sha256": "ecfd10cda55c037c82352aa994bf41fe2b2170c8ea18ecc04c6ad3474bdae14d",
+  "directory": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\creation\\materialized\\creation-38da5088c5e61759-v7",
+  "files": {
+    "MANIFEST.json": "ac9b66f17c769490a0ff6b5f3011243de022e2979f3861c7cbdd35224e541c01",
+    "SBOM.spdx.json": "b2d15ea368815836ffc2c6fe0b41e5132d810307e962b0269856b44a173cae97",
+    "SHA256SUMS": "8eee4847014e7a51562f85485e24e2627f5eb452e50ca69d6de9daddf544bed7",
+    "agent-artifact-manifest.json": "7bbb61af184a9e33bdbab6eba135ebfaa0f88f3e8344748a58ada7e10d1e4376",
+    "agent-descriptor.json": "689985383709a57caf7bc7e7454458b66fe640b1ae4cf4dcdc8e9790f3a5d77e",
+    "agent-project.json": "41d80aaf549e7a110a119006bb1dd88fcaf0d8c18a9321cea38d924139a8f40d",
+    "agent.py": "13f3e074808d01d89fecdca0f21d4c386a0185396ece02336c821c3ee884a088",
+    "agent.tcap": "abc0de0bdf5b58ab11240c2d83540d08e793ab673812c0aea7e44e471c10e975",
+    "api.py": "795e55cfffab9ac52b2b53832b6c2e80f57ec31b5e3a5e5b3b4f7140d3cf9aa7",
+    "creation.json": "20699f4d81ca708d7ffb3656d0e02710ea4b92194a209f337e0fa97752bb1b55",
+    "forge-receipt.json": "328e47518772712b67d9fa79a48f84935bfeffdd02073df5ba4f4fe58a157854",
+    "index.html": "eea3e4ca424599e043c6f27ecfc968c22ba347468750f8638970d46163f6614a",
+    "simulation-receipt.json": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+  },
+  "manifest_sha256": "ac9b66f17c769490a0ff6b5f3011243de022e2979f3861c7cbdd35224e541c01",
+  "package_id": "creation-38da5088c5e61759-v7",
+  "schema": "casulo.materialization-receipt/1.0"
+}

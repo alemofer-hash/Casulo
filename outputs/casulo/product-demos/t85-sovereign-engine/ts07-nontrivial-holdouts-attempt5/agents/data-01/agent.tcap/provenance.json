@@ -1,0 +1,21 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/owner.agent.data_validator_01.csv.t",
+      "module": "owner.agent.data_validator_01.csv",
+      "sha256": "b68a796ddce8f69e394f94ba6b269e6c112d33dd79fc9a528ec029adf9114175"
+    },
+    {
+      "file": "sources/owner.agent.data_validator_01.schema.t",
+      "module": "owner.agent.data_validator_01.schema",
+      "sha256": "afcb0e4241e67e6853bafcc287532087232fe229d50dd2a594ca36381c17b0ed"
+    },
+    {
+      "file": "sources/owner.agent.data_validator_01.diag.t",
+      "module": "owner.agent.data_validator_01.diag",
+      "sha256": "e3ba92f94f5209bddbbe67b5f306d6e22f438854793dc5dc58e0cbf5154ac342"
+    }
+  ]
+}

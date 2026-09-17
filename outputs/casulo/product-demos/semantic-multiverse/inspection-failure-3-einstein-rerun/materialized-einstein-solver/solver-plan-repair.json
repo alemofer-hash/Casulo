@@ -1,0 +1,161 @@
+{
+  "attempts": 4,
+  "history": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "code": "SCI_REQUIRED_INPUTS_MISSING",
+          "missing": [
+            "boundary_conditions",
+            "constants",
+            "coordinates",
+            "energy_momentum_tensor",
+            "initial_conditions",
+            "metric",
+            "tolerances"
+          ]
+        },
+        {
+          "code": "SCI_REQUIRED_GEOMETRY_OUTPUTS_MISSING",
+          "missing": [
+            "connection",
+            "einstein_tensor",
+            "field_equation_residual",
+            "ricci_scalar",
+            "ricci_tensor"
+          ]
+        },
+        {
+          "code": "SCI_SCOPE_MUST_BE_LOCAL_4D"
+        }
+      ],
+      "raw_sha256": "c9a1ca02743799611102bc1ee5b1147cddb883f95375b4012eace6c0d08695a5",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "fc6117e8fba12a0aff6c276c2d17b43bea9eb1efaedeb47f847e7adbe11b24fe",
+        "ended_monotonic_ns": 12426157586400,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "einstein-plan-0",
+        "output_sha256": "c9a1ca02743799611102bc1ee5b1147cddb883f95375b4012eace6c0d08695a5",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12319659605500,
+        "stream_events": 618
+      }
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [
+        {
+          "code": "SCI_GLOBAL_CLAIM_NOT_REFUSED"
+        }
+      ],
+      "raw_sha256": "272b171be66d94da836ab37a3d4ecefd34fad6bc2b22584dbc3abb3141b33ee9",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "727d28643644e6a497970b6b7623c7f85159005edf465000d8d2ce43cab17125",
+        "ended_monotonic_ns": 12464198455000,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "einstein-plan-1",
+        "output_sha256": "272b171be66d94da836ab37a3d4ecefd34fad6bc2b22584dbc3abb3141b33ee9",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12426158253700,
+        "stream_events": 195
+      }
+    },
+    {
+      "attempt": 2,
+      "diagnostics": [
+        {
+          "code": "SCI_REQUIRED_INPUTS_MISSING",
+          "missing": [
+            "boundary_conditions",
+            "constants",
+            "coordinates",
+            "energy_momentum_tensor",
+            "initial_conditions",
+            "metric",
+            "tolerances"
+          ]
+        },
+        {
+          "code": "SCI_REQUIRED_GEOMETRY_OUTPUTS_MISSING",
+          "missing": [
+            "connection",
+            "einstein_tensor",
+            "field_equation_residual",
+            "ricci_scalar",
+            "ricci_tensor"
+          ]
+        },
+        {
+          "code": "SCI_SCOPE_MUST_BE_LOCAL_4D"
+        }
+      ],
+      "raw_sha256": "45f806b267eb17e55e4d55363c2eae87ca71666969bf1ebb45831649deeaec9f",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "ab91f6b55ad7dbe79dcbdd654549b1227ddd4571a8e0b1ff087da98aaecc5b89",
+        "ended_monotonic_ns": 12510833189100,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "einstein-plan-2",
+        "output_sha256": "45f806b267eb17e55e4d55363c2eae87ca71666969bf1ebb45831649deeaec9f",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12464198921800,
+        "stream_events": 324
+      }
+    },
+    {
+      "attempt": 3,
+      "diagnostics": [],
+      "raw_sha256": "80b88d8dce48e12876a14f53f3e94475e261ee007d19276d3a9b46667b21ebac",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "727d28643644e6a497970b6b7623c7f85159005edf465000d8d2ce43cab17125",
+        "ended_monotonic_ns": 12538912403600,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "einstein-plan-3",
+        "output_sha256": "80b88d8dce48e12876a14f53f3e94475e261ee007d19276d3a9b46667b21ebac",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12510833648300,
+        "stream_events": 206
+      }
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "727d28643644e6a497970b6b7623c7f85159005edf465000d8d2ce43cab17125",
+    "ended_monotonic_ns": 12538912403600,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "einstein-plan-3",
+    "output_sha256": "80b88d8dce48e12876a14f53f3e94475e261ee007d19276d3a9b46667b21ebac",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 12510833648300,
+    "stream_events": 206
+  }
+}

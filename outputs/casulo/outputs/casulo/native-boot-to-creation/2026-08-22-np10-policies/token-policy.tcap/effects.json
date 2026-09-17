@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "owner.native.creation_token_policy": {
+      "decide": []
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "calibration_windows": 3,
+  "campaign_id": "2026-08-07-g5-hwinfo-thermal-recovery-250ms-90c-start70-final",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "equivalence_gates": 1,
+  "reason": "TCAP one-training runtime extrapolation produced a 12-second qualification; dedicated TCAP runtime probe added before K freeze.",
+  "schema": "casulo-hwinfo-thermal-recovery-analysis/1.0",
+  "scientific_judgment": "NO_ENERGY_RESULT",
+  "terminal_state": "SUPERSEDED_BEFORE_DEFINITIVE_CAMPAIGN",
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "valid_pairs": 0
+}

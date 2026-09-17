@@ -1,0 +1,364 @@
+{
+  "schema": "casulo-native-creation-host-oracle/1.0",
+  "state": "PASS",
+  "scope": "bounded first-party Qwen3-4B greedy decoder host oracle; not performance or energy evidence",
+  "started_utc": "2026-08-22T20:13:21Z",
+  "finished_utc": "2026-08-22T20:19:10Z",
+  "runner_elapsed_seconds": 348.23363249999966,
+  "command": [
+    "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\os\\target\\release\\examples\\creation_host.exe",
+    "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf"
+  ],
+  "return_code": 0,
+  "model": {
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+    "bytes": 2497280256,
+    "sha256_before": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "sha256_after": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "frozen_external_oracle": {
+    "runtime": "local llama.cpp bootstrap only",
+    "sampling": "greedy",
+    "expected_output_ids": [
+      45,
+      11408,
+      28,
+      8373,
+      5404,
+      285,
+      67737,
+      436,
+      26,
+      62721,
+      5049,
+      46,
+      28,
+      8373,
+      5404,
+      285,
+      67737,
+      436,
+      26,
+      1825,
+      49,
+      32293,
+      28,
+      32615,
+      16,
+      11,
+      32615,
+      17,
+      26,
+      7778,
+      51171,
+      28,
+      32361,
+      13
+    ]
+  },
+  "parsed": {
+    "prompt_tokens": 50,
+    "output_tokens": 34,
+    "output_ids": [
+      45,
+      11408,
+      28,
+      8373,
+      5404,
+      285,
+      67737,
+      436,
+      26,
+      62721,
+      5049,
+      46,
+      28,
+      8373,
+      5404,
+      285,
+      67737,
+      436,
+      26,
+      1825,
+      49,
+      32293,
+      28,
+      32615,
+      16,
+      11,
+      32615,
+      17,
+      26,
+      7778,
+      51171,
+      28,
+      32361,
+      13
+    ],
+    "llama_cpp_greedy_match_reported": true,
+    "elapsed_ms": 345163.685,
+    "tokens": [
+      {
+        "index": 0,
+        "id": 45,
+        "text_hex": "4e",
+        "hidden_sha256": "3b850f076b60dd7674a6a2cb39f6e66afd51ddea786d7d64428ad23ca4ede2e6",
+        "elapsed_ms": 4411.678
+      },
+      {
+        "index": 1,
+        "id": 11408,
+        "text_hex": "4f4d45",
+        "hidden_sha256": "64cbe13a27f4217428794498c19063edaea38f13b2df447e18317b4151def296",
+        "elapsed_ms": 4477.544
+      },
+      {
+        "index": 2,
+        "id": 28,
+        "text_hex": "3d",
+        "hidden_sha256": "663892c7be6bbab558359221ee969468e0b72ef3d3b3f7c7aa15389336fc0617",
+        "elapsed_ms": 4432.355
+      },
+      {
+        "index": 3,
+        "id": 8373,
+        "text_hex": "536f6d65",
+        "hidden_sha256": "89f5ce7ec3f4a27e99dfa4095074ac8d0d88f8d5645891b16b0a69c91d87d3a9",
+        "elapsed_ms": 4411.216
+      },
+      {
+        "index": 4,
+        "id": 5404,
+        "text_hex": "446f",
+        "hidden_sha256": "8928b0a29a0985443425fa278ac04c1ced122e004f5ab9cf3be87b2a77027d8e",
+        "elapsed_ms": 4399.566
+      },
+      {
+        "index": 5,
+        "id": 285,
+        "text_hex": "6973",
+        "hidden_sha256": "25d7ab49f4cee2f461848fabacc11842f792504aafc58e2692f9f5d779e22c0e",
+        "elapsed_ms": 4401.766
+      },
+      {
+        "index": 6,
+        "id": 67737,
+        "text_hex": "4e756d6572",
+        "hidden_sha256": "ad77dbf11c5f132ab359963a80e15eab8fb701ec9b5acdc79ab2d3cf2d42f6eb",
+        "elapsed_ms": 4365.577
+      },
+      {
+        "index": 7,
+        "id": 436,
+        "text_hex": "6f73",
+        "hidden_sha256": "d2b528a9936cc83fbe50228fefacfff1cf3b537a1e5b190eedff442be304bd7d",
+        "elapsed_ms": 4438.816
+      },
+      {
+        "index": 8,
+        "id": 26,
+        "text_hex": "3b",
+        "hidden_sha256": "dec74917f6f3b6da16333a5dbd3b9af74ec55e9381177a3890f58b9b68405846",
+        "elapsed_ms": 4436.144
+      },
+      {
+        "index": 9,
+        "id": 62721,
+        "text_hex": "46554e",
+        "hidden_sha256": "cdbcdd63c82dc75cff1d72072cb82ac802b39091bc149a0055ab5f80de7788c8",
+        "elapsed_ms": 4587.288
+      },
+      {
+        "index": 10,
+        "id": 5049,
+        "text_hex": "4341",
+        "hidden_sha256": "6038415b4b843c36b9c0ad3c6f1c0a8013cae5b18492df3808f271264b9245ee",
+        "elapsed_ms": 4531.445
+      },
+      {
+        "index": 11,
+        "id": 46,
+        "text_hex": "4f",
+        "hidden_sha256": "9ff8b78e0f53c20fc8ca92943aa90f9b88c273f6117f6da9193c0de15b51a2a6",
+        "elapsed_ms": 4549.827
+      },
+      {
+        "index": 12,
+        "id": 28,
+        "text_hex": "3d",
+        "hidden_sha256": "171d5fec8aba341816829e378759c6b8fae6859f0822ae477f6a0f382825ed18",
+        "elapsed_ms": 4536.369
+      },
+      {
+        "index": 13,
+        "id": 8373,
+        "text_hex": "536f6d65",
+        "hidden_sha256": "bd733a83d8bfb192339394f4104a90944b0bd922b1ddfb0264f707780459aacb",
+        "elapsed_ms": 4420.04
+      },
+      {
+        "index": 14,
+        "id": 5404,
+        "text_hex": "446f",
+        "hidden_sha256": "49d9391db556e77ea40e0f2c8f423c8e8263c70b7b2758b5f046871543d90df6",
+        "elapsed_ms": 4478.517
+      },
+      {
+        "index": 15,
+        "id": 285,
+        "text_hex": "6973",
+        "hidden_sha256": "5e91f965e5feb22589efa7bbc7edfd6e9df86a7f39c58ca5d05ce5e5fd090541",
+        "elapsed_ms": 4444.199
+      },
+      {
+        "index": 16,
+        "id": 67737,
+        "text_hex": "4e756d6572",
+        "hidden_sha256": "d0976715158c632fc0465129cdec47dda224e9e3938676106473978260f617d2",
+        "elapsed_ms": 4495.776
+      },
+      {
+        "index": 17,
+        "id": 436,
+        "text_hex": "6f73",
+        "hidden_sha256": "06ad44e791a2ded1eac84eb6ca321feeaca03e55cb83bb9dfab3886c655e8c6c",
+        "elapsed_ms": 4502.719
+      },
+      {
+        "index": 18,
+        "id": 26,
+        "text_hex": "3b",
+        "hidden_sha256": "f1d5dcddffd3f5ed342c5f416c612bb8ec668c0836030e5614a18ca35082d23a",
+        "elapsed_ms": 4401.419
+      },
+      {
+        "index": 19,
+        "id": 1825,
+        "text_hex": "454e54",
+        "hidden_sha256": "6c6f693b28c4d4e9f62c06e0d113aee47e814104a639662cab83cac3dd2f0f4a",
+        "elapsed_ms": 4420.97
+      },
+      {
+        "index": 20,
+        "id": 49,
+        "text_hex": "52",
+        "hidden_sha256": "a0ca8a7e403518a1d702a32b2646ca57424dffbc37bf47e43ceefff59a49c683",
+        "elapsed_ms": 4388.066
+      },
+      {
+        "index": 21,
+        "id": 32293,
+        "text_hex": "414441",
+        "hidden_sha256": "509179ceb3f0b4c5eb47ee7513b3fe573dd094477319905c64b373b89ca07edd",
+        "elapsed_ms": 4407.658
+      },
+      {
+        "index": 22,
+        "id": 28,
+        "text_hex": "3d",
+        "hidden_sha256": "2cf4d4dc0bae85741ec42af12b1ba89f03a26e608b70d047d7f44e53754e3b5d",
+        "elapsed_ms": 4501.18
+      },
+      {
+        "index": 23,
+        "id": 32615,
+        "text_hex": "6e756d65726f",
+        "hidden_sha256": "7b6d497a32d1717d3c8cd9a5117596f80da0c2359b17e5ffb33f2e9569c66042",
+        "elapsed_ms": 4428.7
+      },
+      {
+        "index": 24,
+        "id": 16,
+        "text_hex": "31",
+        "hidden_sha256": "61588252c43c35674ddeb7d88fd1ccf2f60cf3e1e53872e42dae70476eacc027",
+        "elapsed_ms": 4447.822
+      },
+      {
+        "index": 25,
+        "id": 11,
+        "text_hex": "2c",
+        "hidden_sha256": "8243ef0400668813e34c37137fcb1e305cee59ddc86f167eb89b0b717d2af23f",
+        "elapsed_ms": 4436.304
+      },
+      {
+        "index": 26,
+        "id": 32615,
+        "text_hex": "6e756d65726f",
+        "hidden_sha256": "d014b9ebb67549c841327a89b14f1f2d02a4185081c8c3c54b6dd9f38d6013bf",
+        "elapsed_ms": 4419.105
+      },
+      {
+        "index": 27,
+        "id": 17,
+        "text_hex": "32",
+        "hidden_sha256": "d3a0182252ab6c8f0e66ba21a6b4c671861063a93cb38c4a275ef16f600ea60d",
+        "elapsed_ms": 4518.474
+      },
+      {
+        "index": 28,
+        "id": 26,
+        "text_hex": "3b",
+        "hidden_sha256": "1249c39f27582ade1b65b4533b2f234604674573231dca1a3fd9340a0075c7ab",
+        "elapsed_ms": 4396.785
+      },
+      {
+        "index": 29,
+        "id": 7778,
+        "text_hex": "5341",
+        "hidden_sha256": "d8000608ed655464a28be79f1b00af00ad576c26fa60fd76bca5b5fe998e9a90",
+        "elapsed_ms": 4495.969
+      },
+      {
+        "index": 30,
+        "id": 51171,
+        "text_hex": "494441",
+        "hidden_sha256": "a9892c1c067976d6d5a25838fc56c22047810abb5fbef0aba339b11ad80d9193",
+        "elapsed_ms": 4526.926
+      },
+      {
+        "index": 31,
+        "id": 28,
+        "text_hex": "3d",
+        "hidden_sha256": "67fa0adb6835796e62e6874ef08b0b0e623efae90b9f468d7d5c8976ecebbe35",
+        "elapsed_ms": 4452.731
+      },
+      {
+        "index": 32,
+        "id": 32361,
+        "text_hex": "726573756c7461646f",
+        "hidden_sha256": "ae6a215291b052fb171d6a4e7bab68730d69b51662d769cc84bce30f0db331cf",
+        "elapsed_ms": 4485.938
+      },
+      {
+        "index": 33,
+        "id": 13,
+        "text_hex": "2e",
+        "hidden_sha256": "1c7acbd315e8327b1298c64f20ca77c45bdb23feae815205f2a36939a5cad62e",
+        "elapsed_ms": 5104.783
+      }
+    ]
+  },
+  "checks": {
+    "process_exit_zero": true,
+    "model_hash_before_exact": true,
+    "model_hash_after_unchanged": true,
+    "prompt_token_count_exact": true,
+    "output_token_count_exact": true,
+    "output_ids_match_frozen_llama_cpp_oracle": true,
+    "decoder_reported_match": true,
+    "per_token_evidence_complete": true
+  },
+  "constraints": {
+    "network_used": false,
+    "external_api_used": false,
+    "physical_device_written": false,
+    "performance_claim_authorized": false,
+    "energy_claim_authorized": false
+  },
+  "interrupted_predecessor": {
+    "preserved_as_history": true,
+    "observed_prefill_positions_before_user_interruption": 20,
+    "scientific_result": "PARTIAL_NOT_JUDGED"
+  },
+  "log": "creation-host-oracle.log"
+}

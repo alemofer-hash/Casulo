@@ -1,0 +1,46 @@
+{
+  "schema_version": 5,
+  "generated_utc": "2026-09-17T23:01:25.7884162Z",
+  "root": "C:\\Users\\guimo\\Downloads\\ex",
+  "git_index_modified": false,
+  "current_files_excluding_all_git_metadata": 188935,
+  "proposed_files": 31543,
+  "proposed_bytes": 924921445,
+  "ignored_files": 157392,
+  "ignored_bytes": 18634386044,
+  "proposed_files_over_100mb": 0,
+  "proposed_large_files": [],
+  "proposed_by_top_directory": [
+    {
+      "Name": "outputs",
+      "Files": 31285,
+      "Bytes": 750841898
+    },
+    {
+      "Name": "_stage0",
+      "Files": 26,
+      "Bytes": 149803423
+    },
+    {
+      "Name": "work",
+      "Files": 197,
+      "Bytes": 24207266
+    },
+    {
+      "Name": "_planning",
+      "Files": 33,
+      "Bytes": 67736
+    },
+    {
+      "Name": ".gitignore",
+      "Files": 1,
+      "Bytes": 1122
+    },
+    {
+      "Name": "2026-07-28",
+      "Files": 1,
+      "Bytes": 0
+    }
+  ],
+  "caveat": "Standard git add -A will not preserve files inside outputs/casulo because it is an embedded repository. This is a review manifest only."
+}

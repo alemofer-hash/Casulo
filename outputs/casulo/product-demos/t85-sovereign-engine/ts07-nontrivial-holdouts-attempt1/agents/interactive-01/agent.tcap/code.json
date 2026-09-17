@@ -1,0 +1,893 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.interactive_talk_01.memory"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "is_project_isolated"
+                ],
+                "root": "input"
+              },
+              "error": "interactive_talk_01_memory_01",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "TRUE"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "verify_is_project_isolated",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PolicyInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "is_barge_in_allowed"
+                ],
+                "root": "input"
+              },
+              "error": "interactive_talk_01_interrupt_01",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "FALSE"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "verify_is_barge_in_allowed",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PolicyInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "is_export_editable"
+                ],
+                "root": "input"
+              },
+              "error": "interactive_talk_01_export_01",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "TRUE"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "verify_is_export_editable",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PolicyInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "confirmed"
+                ],
+                "root": "input"
+              },
+              "else": [
+                {
+                  "op": "return_error",
+                  "value": {
+                    "op": "const",
+                    "value": "human_confirmation_required"
+                  }
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "CONFIRMED"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "branch",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PolicyInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "confirmed"
+                ],
+                "root": "input"
+              },
+              "error": "human_confirmation_required",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "project_match"
+                ],
+                "root": "input"
+              },
+              "error": "project_scope_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "is_project_isolated"
+                ],
+                "root": "input"
+              },
+              "error": "interactive_talk_01_memory_01",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "is_barge_in_allowed"
+                ],
+                "root": "input"
+              },
+              "error": "interactive_talk_01_interrupt_01",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "is_export_editable"
+                ],
+                "root": "input"
+              },
+              "error": "interactive_talk_01_export_01",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "left": {
+                      "name": "status",
+                      "op": "name"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "PASS"
+                    }
+                  },
+                  "error": "evidence_not_pass",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "evidence_statuses"
+                ],
+                "root": "input"
+              },
+              "limit": 32,
+              "name": "status",
+              "op": "for"
+            },
+            {
+              "name": "accepted",
+              "op": "set_state",
+              "value": {
+                "args": [
+                  {
+                    "op": "path",
+                    "path": [
+                      "accepted"
+                    ],
+                    "root": "state"
+                  },
+                  {
+                    "op": "const",
+                    "value": 1
+                  }
+                ],
+                "name": "add",
+                "op": "call"
+              }
+            },
+            {
+              "limit": 32,
+              "name": "audit",
+              "op": "spawn_job",
+              "payload": {
+                "op": "path",
+                "path": [
+                  "evidence_statuses"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "name": "audit",
+              "op": "join_job"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "READY"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PolicyInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.agent.interactive_talk_01.memory"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "READY"
+                }
+              },
+              "error": "policy_not_ready",
+              "op": "require"
+            },
+            {
+              "limit": 32,
+              "name": "prepare",
+              "op": "spawn_job",
+              "payload": {
+                "op": "path",
+                "path": [
+                  "evidence_statuses"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "name": "prepare",
+              "op": "join_job"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "PLANNED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "plan",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "WorkflowInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "evidence_statuses"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "ne",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "evidence_missing",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "left": {
+                      "name": "status",
+                      "op": "name"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "PASS"
+                    }
+                  },
+                  "error": "evidence_not_pass",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "evidence_statuses"
+                ],
+                "root": "input"
+              },
+              "limit": 32,
+              "name": "status",
+              "op": "for"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "EVIDENCE_OK"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "check",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "WorkflowInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PLANNED"
+                }
+              },
+              "error": "plan_missing",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "evidence_result"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "EVIDENCE_OK"
+                }
+              },
+              "error": "evidence_check_missing",
+              "op": "require"
+            },
+            {
+              "name": "transitions",
+              "op": "set_state",
+              "value": {
+                "args": [
+                  {
+                    "op": "path",
+                    "path": [
+                      "transitions"
+                    ],
+                    "root": "state"
+                  },
+                  {
+                    "op": "const",
+                    "value": 1
+                  }
+                ],
+                "name": "add",
+                "op": "call"
+              }
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "WORKFLOW_READY"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "combine",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "WorkflowInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.agent.interactive_talk_01.interrupt"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "WORKFLOW_READY"
+                }
+              },
+              "error": "workflow_not_ready",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "simulated"
+                ],
+                "root": "input"
+              },
+              "error": "simulation_failed",
+              "op": "require"
+            },
+            {
+              "effect": "simulation",
+              "op": "request_effect"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "SIMULATED"
+              }
+            }
+          ],
+          "effects": [
+            "simulation"
+          ],
+          "name": "simulate",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PublishInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "SIMULATED"
+                }
+              },
+              "error": "simulation_receipt_missing",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "approved"
+                ],
+                "root": "input"
+              },
+              "error": "human_approval_required",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "COMMITTED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "commit",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PublishInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "COMMITTED"
+                }
+              },
+              "error": "commit_receipt_missing",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "AUDITED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "inspect",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PublishInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.agent.interactive_talk_01.export"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

@@ -1,0 +1,17 @@
+{
+  "base_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+  "files": 74,
+  "manifest_sha256": "b6bfaa8166b0b2174392be64c1936a266e8a8cd119c9c7a8ab5e38017c2c4196",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "output": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\human-proof",
+  "public_boundary_audit": {
+    "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release-vbscript-reseal\\staging\\OWNER_VM\\editions\\public\\casulo_public-0.1.0a1-py3-none-any.whl",
+    "content_tree_sha256": "0d42d0b3a164bb2f1370ca49f9b3222fb09641a58b1374cd27342b9fd35756e1",
+    "files_scanned": 8,
+    "forbidden_findings": [],
+    "private_components_absent": true,
+    "schema": "casulo-public-audit/1.0"
+  },
+  "schema": "casulo.human-proof-build/1.0",
+  "signature_verified": true
+}

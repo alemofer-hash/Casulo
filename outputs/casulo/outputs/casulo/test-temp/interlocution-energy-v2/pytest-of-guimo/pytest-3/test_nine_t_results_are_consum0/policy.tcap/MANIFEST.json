@@ -1,0 +1,113 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "research.interlocution.dataset"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "b9ed9307de243a8df9c9a570eaf20e7f5949dbca80d40ed79a3e309fec6362fe"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "7d87a4542f799f14df522a0312239d76223c35fbdab16a0c43d341089e50d338"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "370f9d6acd7a580f94d13be430827bd80ff8ab90a4dbbb20d26ba07b9819ab8f"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "4f670b8e151b063f08f683c3cddba777b058692747e41abd56bc25232ca86c22"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "a5b164482105e6ab8f320709d292d5d1a93b8158ce5cbf1138c7e11d57366c42"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "ca2d7a8f3e36cb2e2aa02d128e308123e5ddd0d0cb568ea5c23afa598ddab51b"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "a56b69fc036a8cb419e30e5a3bdc0a62dd607aad1b44fa52339019ab10fc98ef"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "875c74967239ac437acdc9e1dedb4b635349cadbfbabb6d8a5d73a60045c8261"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "6061dc3b255a102b5e0f626bf2af52a483777a929471a2ea50cadf7afed60d99"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "ba37bd3937da78d611d8fe1272c6b9eacd42ce2792f227c6557d7c0d37ddcb70"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "e4d4e7d2c0eec188c47c63d55bb1c65d7b94d0c14ad49ec132ee4250e8c51cd0"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "428569a56698009fcc6bfa490e4eebd8038b7c8537abc387b0caf0f1b3c26ae1"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/research.interlocution.dataset.t",
+      "module": "research.interlocution.dataset",
+      "sha256": "0d414003710187b4f932a12429e20717f0f298a5e4593080dab2e68d79972dcb"
+    },
+    {
+      "file": "sources/research.interlocution.initialization.t",
+      "module": "research.interlocution.initialization",
+      "sha256": "50bc7d03c3e9f4ccd134c3d318ff858584df03859673be76d0a41020a37b726c"
+    },
+    {
+      "file": "sources/research.interlocution.precision.t",
+      "module": "research.interlocution.precision",
+      "sha256": "99ad73da5fed5c7199046a6ce3a8fb22cba0e911a8f8c13825f8d6a32cd6dc4d"
+    },
+    {
+      "file": "sources/research.interlocution.loss.t",
+      "module": "research.interlocution.loss",
+      "sha256": "a61c43c44a13acc151dc830b931f53fe937f497fb26a90e81996e9ece0910020"
+    },
+    {
+      "file": "sources/research.interlocution.update.t",
+      "module": "research.interlocution.update",
+      "sha256": "b60f392d3a1478b5dbe01b78664e2b6f9617b81abe8523d1adabfd366ef29d06"
+    },
+    {
+      "file": "sources/research.interlocution.optimizer_state.t",
+      "module": "research.interlocution.optimizer_state",
+      "sha256": "c3c94de23652aa950fb270a8f7c30ba8c55258386ae9153690f267524fb58787"
+    },
+    {
+      "file": "sources/research.interlocution.working_set.t",
+      "module": "research.interlocution.working_set",
+      "sha256": "3d29818a570b04686e67486fb07af61934ebbb7e99ec6b1fa74939dcbc54fb43"
+    },
+    {
+      "file": "sources/research.interlocution.stopping.t",
+      "module": "research.interlocution.stopping",
+      "sha256": "dafb1a7e95bc7916e41315fdeca91316281b7eed7f0921157cf444f03b6f2af9"
+    },
+    {
+      "file": "sources/research.interlocution.judgment.t",
+      "module": "research.interlocution.judgment",
+      "sha256": "5906e6dbfa36863d99379549d269208c0dcf5d00ac9d0a0062c97fe042e00dba"
+    }
+  ],
+  "tcap_hash": "1706d9fdd017149fbfdfc4769bb32999e1ddca7337e8e64a0ce329ce983339aa"
+}

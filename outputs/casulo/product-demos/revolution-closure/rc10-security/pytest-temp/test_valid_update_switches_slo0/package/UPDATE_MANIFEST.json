@@ -1,0 +1,1 @@
+{"schema": "casulo.offline-update/1.0", "version": "1.0.0", "channel": "owner-offline-development", "from_versions": ["0.0.0"], "payload_sha256": "dda18a0e21ae47c53b4309434cbc02ae8bf764fa83a6defbb719431242722aa7", "rollback_floor": "0.0.0", "signature_class": "DEVELOPMENT_SIGNATURE_NOT_COMMERCIAL_RELEASE"}

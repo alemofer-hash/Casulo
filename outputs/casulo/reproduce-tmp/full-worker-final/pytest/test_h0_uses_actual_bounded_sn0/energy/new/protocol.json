@@ -1,0 +1,41 @@
+{
+  "affinity": [
+    4
+  ],
+  "baseline": "pytorch-eager-fullstep/1",
+  "bootstrap": {
+    "resamples": 20000,
+    "seed": 20260807
+  },
+  "campaign_id": "new",
+  "candidate": "t-general-ir-tcap/0.1",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "claim_scope": "HWiNFO-reported CPU package energy on bare-metal Windows",
+  "created_at_utc": "2026-08-08T14:24:31.709438+00:00",
+  "epochs": 400,
+  "idle_load_response_preregistered": {
+    "load_median_watts_must_exceed": "idle_median + max(2 W, 25% of idle_median)",
+    "registered_before_calibration_observation": true
+  },
+  "maximum_continuous_seconds": 20.0,
+  "minimum_hwinfo_samples_per_sample": 60,
+  "minimum_measured_seconds_per_sample": 200.0,
+  "outlier_policy": "no post-observation outlier removal",
+  "pairs": 21,
+  "precision": "float64",
+  "schedule": "deterministic alternating AB/BA frozen before results",
+  "schema": "casulo-hwinfo-energy-campaign/1.0",
+  "segment_target_seconds": 5.0,
+  "thermal_policy": {
+    "hard_stop_c": 85.0,
+    "maximum_median_temperature_asymmetry_c": 3.0,
+    "persistent_throttling_allowed": false,
+    "resume_below_c": 55.0,
+    "soft_stop_c": 80.0,
+    "warning_c": 75.0
+  },
+  "threads": 1,
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "warmups_per_implementation": 3,
+  "workload": "flood-surrogate-canary-400"
+}

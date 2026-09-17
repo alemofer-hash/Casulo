@@ -1,0 +1,24 @@
+{
+  "absent_samples": 119,
+  "continuous": false,
+  "device": "SanDisk Cruzer Blade",
+  "finished": "2026-08-22T21:43:05.0877371-03:00",
+  "new_io_events": [
+    {
+      "event_id": 51,
+      "provider": "disk",
+      "timestamp": "2026-08-22T21:40:54.8056427-03:00"
+    }
+  ],
+  "physical_device_written": false,
+  "pnp_after_window": {
+    "present": false,
+    "problem": 45
+  },
+  "present_samples": 1,
+  "samples": 120,
+  "schema": "casulo-usb-stability/1.0",
+  "started": "2026-08-22T21:40:17.5463707-03:00",
+  "state": "BLOCKED_PHYSICAL_MEDIA_UNSTABLE"
+}
+

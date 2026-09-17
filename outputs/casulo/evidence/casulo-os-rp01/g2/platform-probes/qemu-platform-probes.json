@@ -1,0 +1,44 @@
+{
+  "schema": "casulo-qemu-platform-probes/0.1",
+  "all_pass": true,
+  "panic": {
+    "image_sha256": "b163db5f8c3fe6f278a25d1e62a254824720acfed60b569862d5a335151fdeb6",
+    "boot": {
+      "returncode": 35,
+      "timed_out": false,
+      "marker": false,
+      "framebuffer_painted": false,
+      "serial": "\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01HBdsDxe: loading Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nBdsDxe: starting Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nINFO : Framebuffer info: FrameBufferInfo { byte_len: 4096000, width: 1280, height: 800, pixel_format: Bgr, bytes_per_pixel: 4, stride: 1280 }\nINFO : UEFI bootloader started\nINFO : Using framebuffer at 0x80000000\nINFO : Reading configuration from disk was successful\nINFO : Trying to load ramdisk via Disk\nINFO : Loaded ramdisk\nTRACE: exiting boot services\nTRACE: switching to new level 4 table\nINFO : New page table at: PhysFrame[4KiB](0x101000)\nINFO : Elf file loaded at Pointer {\n    addr: 0x000000000e147000,\n    metadata: 691096,\n}\nINFO : virtual_address_offset: 0x10000000000\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 0, physical_addr: 0, file_size: cf84, mem_size: cf84, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: cf90, virtual_addr: df90, physical_addr: df90, file_size: 4a496, mem_size: 4a496, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 57428, virtual_addr: 59428, physical_addr: 59428, file_size: 40b8, mem_size: 4bd8, align: 1000 })\nINFO : Mapping bss section\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 5b4e0, virtual_addr: 5e4e0, physical_addr: 5e4e0, file_size: 20, mem_size: 13250, align: 1000 })\nINFO : Mapping bss section\nINFO : Entry point at: 0x10000037440\nINFO : Creating GDT at PhysAddr(0x144000)\nINFO : Map framebuffer\nINFO : Map physical memory\nINFO : Allocate bootinfo\nINFO : Create Memory Map\nINFO : Create bootinfo\nINFO : Jumping to kernel entry point at VirtAddr(0x10000037440)\nPANIC_PROBE=TRIGGERED\nCASULO_PANIC_DUMP\nPANIC_SCHEMA=casulo-panic-dump/0.1\nPANIC_KIND=intentional-probe\nPANIC_INFO=panicked at kernel\\src\\main.rs:84:13:\nintentional deterministic panic probe\nPANIC_ACTION=isa-debug-exit-failure\n",
+      "pass": false
+    },
+    "validation": {
+      "expected_debug_exit_failure": true,
+      "missing_markers": [],
+      "forbidden_markers": [],
+      "pass": true
+    }
+  },
+  "reboot": {
+    "image_sha256": "9704adb266013f6bdeb925ad5ccabcdc1267dfccce203fae4c76bdab59208a02",
+    "boot": {
+      "returncode": 0,
+      "timed_out": false,
+      "marker": false,
+      "framebuffer_painted": false,
+      "serial": "\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01HBdsDxe: loading Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nBdsDxe: starting Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nINFO : Framebuffer info: FrameBufferInfo { byte_len: 4096000, width: 1280, height: 800, pixel_format: Bgr, bytes_per_pixel: 4, stride: 1280 }\nINFO : UEFI bootloader started\nINFO : Using framebuffer at 0x80000000\nINFO : Reading configuration from disk was successful\nINFO : Trying to load ramdisk via Disk\nINFO : Loaded ramdisk\nTRACE: exiting boot services\nTRACE: switching to new level 4 table\nINFO : New page table at: PhysFrame[4KiB](0x101000)\nINFO : Elf file loaded at Pointer {\n    addr: 0x000000000e147000,\n    metadata: 691360,\n}\nINFO : virtual_address_offset: 0x10000000000\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 0, physical_addr: 0, file_size: cfc4, mem_size: cfc4, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: cfd0, virtual_addr: dfd0, physical_addr: dfd0, file_size: 4a496, mem_size: 4a496, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 57468, virtual_addr: 59468, physical_addr: 59468, file_size: 40c8, mem_size: 4b98, align: 1000 })\nINFO : Mapping bss section\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 5b530, virtual_addr: 5e530, physical_addr: 5e530, file_size: 20, mem_size: 13250, align: 1000 })\nINFO : Mapping bss section\nINFO : Entry point at: 0x10000037480\nINFO : Creating GDT at PhysAddr(0x144000)\nINFO : Map framebuffer\nINFO : Map physical memory\nINFO : Allocate bootinfo\nINFO : Create Memory Map\nINFO : Create bootinfo\nINFO : Jumping to kernel entry point at VirtAddr(0x10000037480)\nREBOOT_PROBE=REQUESTED\n",
+      "pass": false
+    },
+    "validation": {
+      "request_marker": true,
+      "request_returned_unexpectedly": false,
+      "qemu_no_reboot_exit": true,
+      "timed_out": false,
+      "pass": true
+    }
+  },
+  "normal_release_image_modified": false,
+  "host_block_devices_attached": false,
+  "image_attached_read_only": true,
+  "network_attached": false,
+  "qemu_acceleration": "tcg"
+}

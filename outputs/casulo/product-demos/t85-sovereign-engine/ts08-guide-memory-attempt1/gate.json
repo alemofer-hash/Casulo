@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "ambiguity_explicit_per_project": true,
+    "compaction_non_destructive": true,
+    "conflict_explicit_before_human_resolution": true,
+    "crash_reboot_recovery": true,
+    "delete_requires_consent": true,
+    "dpapi_encrypted_at_rest": true,
+    "five_hundred_turns": true,
+    "hard_constraints_preserved_100_percent": true,
+    "journal_chain": true,
+    "project_bleed_zero": true,
+    "single_writer": true,
+    "t_receipts_complete": true,
+    "three_projects": true,
+    "trainable_default_false": true
+  },
+  "gate": "TS8_GUIDE_LIVING_MEMORY_PASS"
+}

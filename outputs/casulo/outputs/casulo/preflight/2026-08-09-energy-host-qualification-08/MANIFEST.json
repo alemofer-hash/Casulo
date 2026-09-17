@@ -1,0 +1,62 @@
+{
+  "files": [
+    {
+      "bytes": 1750,
+      "path": "ac_battery.json",
+      "sha256": "20cb2fc0d6faacd691b06724b9912c52c4a367cd003de6ca0c4b59ddb5ee48df"
+    },
+    {
+      "bytes": 10473,
+      "path": "active_csv.json",
+      "sha256": "df90f2fbaf7e057a7db897cb28d1c320440095cb8d00d3cbc2953d9491d26f49"
+    },
+    {
+      "bytes": 0,
+      "path": "idle_20min.csv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2445,
+      "path": "idle_analysis.json",
+      "sha256": "5e9412816292f89d9cac436c048f71429f3a72d453285c55f443921971c329a1"
+    },
+    {
+      "bytes": 878,
+      "path": "observer_budget.json",
+      "sha256": "b1471f307e0f1c74186906fe609cd9aaff5aab029ee526087d91842aa19f836e"
+    },
+    {
+      "bytes": 206,
+      "path": "orphan_process_actions.json",
+      "sha256": "9f8cf80110c82d0e8036b76045856bab3d1898f0f04fbb8431dd431d02f08ee5"
+    },
+    {
+      "bytes": 480,
+      "path": "polling_validation.json",
+      "sha256": "223136d9076536aac8698756836dc0385f73ae89ba79cd1e60a77cdc0b60d32a"
+    },
+    {
+      "bytes": 5549,
+      "path": "power_profile.json",
+      "sha256": "a928f1780df659fc5304d6ee711485f6d0d272a398df4f21962088f24fd423ec"
+    },
+    {
+      "bytes": 9138,
+      "path": "process_inventory_before.json",
+      "sha256": "7e35a43b5159865d9687b927dba46071fc1c0ad3b483d81386494ebcac936f29"
+    },
+    {
+      "bytes": 651,
+      "path": "qualification_report.md",
+      "sha256": "83a101ffbec8da7a331f60ac08e415886501ec755f6618abb9dcd3959a5b82fe"
+    },
+    {
+      "bytes": 92,
+      "path": "throttle_events.json",
+      "sha256": "9b023e655950f8c1899d5dce55fc6b62c8d0c7a9ce2cfb0ea790a2c9be66330c"
+    }
+  ],
+  "qualification_id": "2026-08-09-energy-host-qualification-08",
+  "schema": "casulo-energy-host-qualification-manifest/1.0",
+  "terminal_state": "BLOCKED_BACKGROUND_ACTIVITY"
+}

@@ -1,0 +1,8 @@
+{
+  "K": 93,
+  "implementation": "pytorch-eager-fullstep/1",
+  "reason": "RuntimeError:physical_guard:recovery_abort_thermal_or_observer_guard",
+  "schema": "casulo-hwinfo-recovery-rejection/1.0",
+  "stage": "pair-02-pytorch-eager-fullstep/1",
+  "timestamp_utc": "2026-08-07T22:44:02.007750+00:00"
+}

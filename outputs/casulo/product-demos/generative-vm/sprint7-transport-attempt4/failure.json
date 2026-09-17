@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 4,
+  "failure": "MUTABLE_INACTIVITY_DEADLINE_REGRESSION",
+  "action": "Owned QEMU and probe processes terminated; changed to immutable bounded deadline",
+  "preserved": true,
+  "neural_evidence": false
+}

@@ -1,0 +1,28 @@
+crisalida-ir/1.0
+language T/1.1
+capability manifest
+module casulo.product.memory
+
+record MemoryQuery {
+  text: Text
+}
+
+record RecallReply {
+  outcome: Result[Text,RecallError]
+}
+
+enum RecallError { NotFound, Ambiguous }
+
+condense Recall(MemoryQuery) -> Text {
+  cfg entry=block/root.0 exit=exit
+  block block/root.0 instructions=root.0 successors=block/root.0.then.0,block/root.0.else.0
+  block block/root.0.else.0 instructions=root.0.else.0 successors=exit
+  block block/root.0.then.0 instructions=root.0.then.0 successors=exit
+  block exit instructions=- successors=-
+  if text == "" : Bool {
+    emit "missing" : Text
+  }
+  else {
+    emit text : Text
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "artifacts": {
+    "bundle_manifest": {
+      "path": "release/CASULO_UEFI_COEXISTENCE_BUNDLE_2026-08-22/BUNDLE_MANIFEST.json",
+      "sha256": "e184ae82e0619c32adc3af5017410f9891c4076e9e71f3e5772591806044ba63"
+    },
+    "coexistence_report": {
+      "path": "outputs/casulo/native-multiboot/2026-08-22-coexistence-validation-attempt-4/report.json",
+      "sha256": "8f9e3ae2554b73d265fb8d5fa91c0979845b66862168857fe3b4fa23449439f6"
+    },
+    "model": {
+      "bytes": 2497280256,
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+    },
+    "np11_image": {
+      "bytes": 2524932608,
+      "path": "release/casulo-native-neural-port-np11.img",
+      "sha256": "1efca6e5caccc68a65c51309abc9f6bef63b401a48a1a30fc569974c778c94a9"
+    },
+    "qemu_evidence": {
+      "path": "outputs/casulo/native-multiboot/2026-08-22-np11-ramdisk-qemu-attempt-2.json",
+      "sha256": "29e8a7753d8dc7f5363e1308b3427efddc7cc5e8d5509c6287368f5df7e10a6c"
+    },
+    "system_pack": {
+      "bytes": 2497390010,
+      "path": "release/casulo-native-physical-creation-system-pack-v1.cspk",
+      "sha256": "d233d0c5c23d0cf6e0a638fa8ce756eee076fd717d8dbd16f7293f278bbb1b61"
+    }
+  },
+  "code_hashes": {
+    "tools/build_casulo_uefi_image.py": "095f7b8bfdb1cb3dc12ff9b5168e233a91e7205f99d58590a88971b60a1d6c81",
+    "tools/casulo_multiboot.py": "30cecc4796edce0339cc1ea426a9398fad3d2f71f3623f6b53ecd753b008aca1",
+    "tools/extract_casulo_uefi_bundle.py": "854ce9e65ee90b0ea343299e4d16527bc683022f368cc8ed8a99e6dcec592e96",
+    "tools/validate_casulo_multiboot.py": "02eb508869dfc3ddb71dc84d35c11202f1e0b99717c63c81338be3f81e709a06"
+  },
+  "documentation_hashes": {
+    "docs/product/NATIVE_MULTIBOOT_ARCHITECTURE.md": "6bff0ce1471c404497e4b3da5aeab3d5a95c11dad9a0b424f8d21bbc31bb0684",
+    "release/INSTALL_CASULO_MULTIBOOT.md": "4ea3fb50c9bcd5f44bae532fba7ded647b75f0afbb7484306657c58e47f9a5de"
+  },
+  "physical_device_written": false,
+  "schema": "casulo-native-multiboot-seal/1.0",
+  "state": "NATIVE_UEFI_MULTIBOOT_COEXISTENCE_VALIDATED_PHYSICAL_INSTALL_PENDING",
+  "test_hashes": {
+    "tests/product/test_native_multiboot.py": "8acab52bdab619db5e213c056ce73c4c549473272f9218b873136ddde277aca1"
+  }
+}

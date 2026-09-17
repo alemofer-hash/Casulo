@@ -1,0 +1,1 @@
+{"schema": "casulo.creation/1.0", "creation_id": "creation:invalid-identity", "version": 1, "state": "CONFIRMATION", "content": {"identity": "invalid"}, "capabilities": [], "rejected_delta_ids": []}

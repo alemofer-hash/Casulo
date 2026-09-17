@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.t85-regression-summary/1.0",
+  "command": "pytest -q tests/product/test_t85_integrated_rehearsal.py tests/product/test_t85_agent_synthesis.py tests/product/test_t85_continuity.py tests/product/test_t85_presence.py tests/product/test_t85_physical_multiverse.py tests/product/test_t85_sovereign_materialization.py",
+  "passed": 32,
+  "failed": 0,
+  "skipped": 0,
+  "duration_seconds": 17.79
+}

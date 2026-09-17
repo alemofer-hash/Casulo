@@ -1,0 +1,31 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.critical.intent"
+  },
+  "modules": [
+    {
+      "imports": [
+        "owner.critical.intent"
+      ],
+      "name": "owner.critical.capabilities"
+    },
+    {
+      "imports": [
+        "owner.critical.capabilities"
+      ],
+      "name": "owner.critical.fulfillment"
+    },
+    {
+      "imports": [],
+      "name": "owner.critical.intent"
+    },
+    {
+      "imports": [
+        "owner.critical.fulfillment"
+      ],
+      "name": "owner.critical.publish"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

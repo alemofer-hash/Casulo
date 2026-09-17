@@ -1,0 +1,9 @@
+{
+  "acceptance_sha256": "1034615662fb646dc258686afdcd16a8df7a3417a0b1fa495389a7a6e5fb7db0",
+  "holdout_id": "holdout-logistic-bce-subset-v1",
+  "judge_receipt_hash": "56c7dfa85e3c83e95a0d865afce920cca81ea1ceec372ddac3efec32a18beb5a",
+  "maximum_abs_difference": 1.1102230246251565e-16,
+  "publisher_consumed_t_result": true,
+  "schema": "casulo.interlocution-holdout-acceptance/1.0",
+  "status": "ACCEPTED_BY_T_JUDGE"
+}

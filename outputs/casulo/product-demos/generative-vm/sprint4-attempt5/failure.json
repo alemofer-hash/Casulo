@@ -1,0 +1,14 @@
+{
+  "schema": "casulo-generative-t-synthesis-failure/1.0",
+  "attempt": 5,
+  "gate": "GENERATIVE_T_SYNTHESIS_FAIL",
+  "stage": "t-source-lines-contract",
+  "error": "source_lines do not form the authorized T/1.1 subset",
+  "root_cause": "The array bounded line size and count but did not type each syntactic position",
+  "contract_change": "source_lines now has exactly eleven position-typed items",
+  "partial_result_reused": false,
+  "external_ai_api_used": false,
+  "fake_engine_used": false,
+  "scientific_benchmark": false,
+  "preserved": true
+}

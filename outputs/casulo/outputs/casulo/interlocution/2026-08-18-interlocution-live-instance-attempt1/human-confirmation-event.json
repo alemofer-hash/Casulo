@@ -1,0 +1,16 @@
+{
+  "binding_requirements": [
+    "nine critical decisions causally governed by T",
+    "full 1024-record FloodSurrogate",
+    "no eight-record canary",
+    "no forced positive result",
+    "independent verification and two frozen holdouts"
+  ],
+  "event_sha256": "4e1f625d946f1a999bad3c1f15e233d97f1c9ff793d71e3129a023205929c7f5",
+  "goal_title": "PROVA VIVA DO TEOREMA DA INTERLOCUCAO",
+  "kind": "EXPLICIT_USER_GOAL_SUBMISSION",
+  "owner": "Guilherme Moura Fernandes",
+  "received_at_session_date": "2026-08-18",
+  "schema": "casulo.interlocution-human-confirmation/1.0",
+  "utterance": "Bora"
+}

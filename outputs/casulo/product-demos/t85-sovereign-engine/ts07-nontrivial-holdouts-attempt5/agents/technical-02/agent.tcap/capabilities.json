@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.mass_balance_calculator_v2.mass_checker": [],
+    "owner.agent.mass_balance_calculator_v2.output_validator": [
+      "simulation"
+    ],
+    "owner.agent.mass_balance_calculator_v2.unit_parser": []
+  }
+}

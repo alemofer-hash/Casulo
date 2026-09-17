@@ -1,0 +1,25 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{booktabs,hyperref,geometry}
+\geometry{margin=2.5cm}
+\title{El lenguaje T como optimización de la gestión del uso de la CPU durante el entrenamiento de redes neuronales artificiales}
+\author{Guilherme Moura Fernandes\\\textit{Afiliación: [completar] -- Correo: [completar] -- ORCID: [si corresponde]}}
+\date{Borrador científico privado -- no enviado}
+\begin{document}\maketitle
+\begin{abstract}
+Presentamos la arquitectura auditable de Casulo/Lenguaje T y evaluamos, sin generalización universal, un ejecutor C especializado para una red neuronal superficial en CPU. La evidencia histórica congelada preservó parámetros, predicciones y pérdida respecto de PyTorch. En 21 pares históricos, la aceleración mediana fue 8,958 veces frente a PyTorch Eager (IC bootstrap pareado del 95\%: 8,075--9,872). El comparador Inductor disponible compiló solo la pasada hacia adelante y es secundario. No se midió energía eléctrica. El resultado apoya una hipótesis de reducción de overhead en un dominio restringido, no una superioridad general del lenguaje.
+\end{abstract}
+\section{Introducción} Motivación, problema, contribuciones verificables y preguntas.
+\section{Trabajo relacionado} Compiladores tensoriales, especialización, fusión, benchmarking y energía.
+\section{Arquitectura} Frontend general, IR, grafo, artefacto por contenido, backend CPU y ruta especializada separada.
+\section{Metodología} Equivalencia primero, diseño pareado, calentamiento, sesiones, comparadores y pacto térmico.
+\section{Resultados históricos} Medianas, intervalos, muestras crudas y equivalencia.
+\section{Análisis causal y ablaciones} Especialización, Python, autograd, asignación, paralelismo y compilador.
+\section{Amenazas a la validez} Un host, sesiones históricas, modelo sintético pequeño, float64, Inductor incompleto y sin julios.
+\section{Conclusión} Resultado prometedor y específico; faltan múltiples hosts e integración del frontend.
+\section*{Disponibilidad} Paquete privado verificable por hashes; publicación solo por decisión explícita del autor.
+\bibliographystyle{plain}\bibliography{../references}
+\end{document}
+

@@ -1,0 +1,9 @@
+{
+  "schema": "casulo-native-image/0.1",
+  "image": "release/casulo-native-x86_64.img",
+  "bytes": 2162688,
+  "sha256": "ec4141c497d99e6ef70b93fd3048053b5a4c1a4911dd86f7b2450bb0fdf51e2d",
+  "bootloader": "rust-osdev-bootloader/0.11.15",
+  "target": "x86_64-unknown-none",
+  "physical_device_written": false
+}

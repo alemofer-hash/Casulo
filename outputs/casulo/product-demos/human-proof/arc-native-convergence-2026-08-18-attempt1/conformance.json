@@ -1,0 +1,9 @@
+{
+  "contract_sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9",
+  "event_kinds_match": true,
+  "hosted_only_adapters_declared": true,
+  "priorities_match": true,
+  "rust_hash_match": true,
+  "schema": "casulo.arc10-conformance/1.0",
+  "wire_schema_match": true
+}

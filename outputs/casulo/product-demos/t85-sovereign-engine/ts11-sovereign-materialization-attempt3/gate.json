@@ -1,0 +1,2 @@
+{"checks":{"clean_environment":true,"clean_t_execution":true,"development_signature_only":true,"five_targets":true,"loopback_target":true,"no_emit_literal":true,"nontrivial_three_module_agent":true,"round_trip_critical_one":true,"runtime_receipt_real":true,"sealed_ts7_source":true,"t_publish_lifecycle":true,"t_runtime_packaged":true,"zero_secret_or_real_effect":true},"gate":"TS11_SOVEREIGN_MATERIALIZATION_PASS"}
+

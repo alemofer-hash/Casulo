@@ -1,0 +1,16 @@
+{
+  "bootloader": "rust-osdev-bootloader/0.11.15",
+  "bytes": 3211264,
+  "claim": "virtual-media validation only; no physical device written",
+  "historical_image_overwritten": false,
+  "host_bridge": false,
+  "image": "release/casulo-native-first-conversation-nf7.img",
+  "network": false,
+  "physical_device_written": false,
+  "scene_contract_sha256": "804ceb12b510f250cfd41a6e49185fe8db73f13c09a7f3288703368889435a8d",
+  "schema": "casulo-native-first-conversation-image/0.1",
+  "sha256": "dc6bd6ef3153d9a8ec832913918648b6c1443826537b341a35dd53f7c176d060",
+  "stage": "NF7_QEMU_VIRTUAL_MEDIA",
+  "target": "x86_64-unknown-none",
+  "ux_contract_sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9"
+}

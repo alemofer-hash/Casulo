@@ -1,0 +1,49 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "created": "2026-08-22T00:00:00Z",
+    "creators": [
+      "Organization: Teloscorp",
+      "Tool: seal_native_creation_proof.py"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://teloscorp.invalid/casulo/native/25193857a96d6c14328d92fb128d6e666a31478dee05cc8cca6a35252932a534",
+  "name": "Casulo-Native-Boot-to-Creation-Proof",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Casulo",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "name": "Casulo kernel, Native model runtime and T policies"
+    },
+    {
+      "SPDXID": "SPDXRef-Qwen3",
+      "comment": "required from owner cache by SHA-256 7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5; not redistributed",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "name": "Qwen3-4B-Q4_K_M",
+      "versionInfo": "bc640142c66e1fdd12af0bd68f40445458f3869b"
+    },
+    {
+      "SPDXID": "SPDXRef-QEMU",
+      "comment": "host-only, not redistributed",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-2.0-only",
+      "name": "QEMU",
+      "versionInfo": "11.0.50"
+    },
+    {
+      "SPDXID": "SPDXRef-Bootloader",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT OR Apache-2.0",
+      "name": "rust-osdev bootloader",
+      "versionInfo": "0.11.15"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.dataset_identity_integrity.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.dataset_identity_integrity",
+      "sha256": "d679838120b3f376bf69014f4cb053e83b41ca3c273242a3377683e9aceea316"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.initialization_bundle.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.initialization_bundle",
+      "sha256": "baba7f4683f11b3450f3fc2e119e253c62c8503c226abdcd259bb13fbb9577a5"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.numerical_precision.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.numerical_precision",
+      "sha256": "eaee964ff87158be0a405687cf5e4c9de31421ca69fe9767cd73083fcb613aa9"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.loss_function.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.loss_function",
+      "sha256": "bc9d05bcf3614c71a7950b70847f4bedc194bd23c1ba2b55988a212608032fa8"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.update_rule.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.update_rule",
+      "sha256": "c429990dd6fd0a71d608ad0bcea94c470ecc76d0874994e979fcb379fc40d174"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.optimizer_state.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.optimizer_state",
+      "sha256": "22ced08232326257afc5ff7bfdde198bd58745a056dad7107e7ae328971fc827"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.working_set.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.working_set",
+      "sha256": "99b9e89e19578e29c090cc6e3c58017b6aa71f5a9973ca8ceba31068659aeb5b"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.stopping.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.stopping",
+      "sha256": "38f59a4fef3844a883c4592b25a0e89d1e7a681a1ee4fbaaee78a85fd037833e"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.equivalence_acceptance.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.equivalence_acceptance",
+      "sha256": "0c4271b28457fc0e49bb0441b2571d332ecd7d78df47d469afa9766b5826d792"
+    }
+  ]
+}

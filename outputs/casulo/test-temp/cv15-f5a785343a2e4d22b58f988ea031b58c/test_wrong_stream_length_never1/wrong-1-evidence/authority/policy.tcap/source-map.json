@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "file": "sources/compression.casv.t",
+      "module": "compression.casv",
+      "sha256": "69f36035a710f9546c85d567de86cd4285c4c30543727654f98f2754dad5335f"
+    }
+  ]
+}

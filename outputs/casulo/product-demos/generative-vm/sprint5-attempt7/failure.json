@@ -1,0 +1,6 @@
+{
+  "error_type": "AttributeError",
+  "message": "'StochasticTrace' object has no attribute 'output_digest'",
+  "preserved": true,
+  "schema": "casulo.generative-probe-failure/1.0"
+}

@@ -1,0 +1,112 @@
+{
+  "base_sha256": "81a22a34dc2bf76d05ae524bb41924a7bc2362c285c9ca8e47a6842f6bfcc754",
+  "checks": {
+    "base_read_only": true,
+    "crash_recovery": true,
+    "doctor_read_only": true,
+    "doctor_ready": true,
+    "external_media_used": false,
+    "first_boot": false,
+    "network_denied": true,
+    "no_physical_devices": true,
+    "overlay_qcow2": true,
+    "qemu_and_ovmf_pinned": true,
+    "qmp_local": true,
+    "scientific_benchmark": false,
+    "second_boot": false,
+    "snapshot_restore": true
+  },
+  "cloud": "RELEASE_LOCKED",
+  "crash_recovery": {
+    "base_unchanged": true,
+    "overlay_check_output": "No errors were found on the image.\nImage end offset: 393216\n",
+    "overlay_check_returncode": 0,
+    "process_terminated": true
+  },
+  "created": {
+    "base_image": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint6-attempt1\\images\\casulo-native-base.img",
+    "base_read_only": true,
+    "base_sha256": "81a22a34dc2bf76d05ae524bb41924a7bc2362c285c9ca8e47a6842f6bfcc754",
+    "cloud": "RELEASE_LOCKED",
+    "external_media": "NOT_IN_USE",
+    "machine": "q35",
+    "network": "denied",
+    "overlay": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint6-attempt1\\state\\owner-overlay.qcow2",
+    "overlay_format": "qcow2",
+    "overlay_quota_gib": 12,
+    "ovmf_vars": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint6-attempt1\\state\\OVMF_VARS.fd",
+    "physical_devices": false,
+    "qmp": "local-named-pipe-only",
+    "schema": "casulo.vm-profile/1.0"
+  },
+  "doctor": {
+    "accelerators": [
+      "whpx",
+      "tcg"
+    ],
+    "base_image": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint6-attempt1\\images\\casulo-native-base.img",
+    "base_image_sha256": "81a22a34dc2bf76d05ae524bb41924a7bc2362c285c9ca8e47a6842f6bfcc754",
+    "base_os_read_only": true,
+    "clipboard": false,
+    "cloud": "RELEASE_LOCKED",
+    "external_media": "NOT_IN_USE",
+    "free_bytes": 89174560768,
+    "host_block_devices": false,
+    "minimum_reserve_bytes": 21474836480,
+    "network": "denied",
+    "overlay_exists": false,
+    "ovmf_code": "C:\\Program Files\\qemu\\share\\edk2-x86_64-code.fd",
+    "ovmf_code_sha256": "33090cc07675baa5190d9f1e84bf5176b33bcbfa9bacac522961150cdb6dbb2a",
+    "qemu": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+    "qemu_img_version": "qemu-img version 11.0.50 (v11.0.0-12631-g54e84cdc7a)",
+    "qemu_sha256": "b396eb9b669f6282ec60f0d46e6addca8c669992e67a34365be44cd3cb97c9a7",
+    "qemu_version": "QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a)",
+    "read_only": true,
+    "ready": true,
+    "reserve_pass": true,
+    "schema": "casulo.vm-doctor/1.0",
+    "selected_acceleration": "whpx",
+    "shared_folder": false,
+    "state_root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint6-attempt1\\state"
+  },
+  "first_boot": {
+    "acceleration": "tcg",
+    "base_sha256_after": "81a22a34dc2bf76d05ae524bb41924a7bc2362c285c9ca8e47a6842f6bfcc754",
+    "base_sha256_before": "81a22a34dc2bf76d05ae524bb41924a7bc2362c285c9ca8e47a6842f6bfcc754",
+    "base_unchanged": true,
+    "fallback_from": "whpx",
+    "host_block_devices": false,
+    "network": "denied",
+    "passed": false,
+    "returncode": -1,
+    "serial": "",
+    "serial_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": true
+  },
+  "gate": "CASULO_VM_LIFECYCLE_FAIL",
+  "overlay_allocated_bytes": 328192,
+  "restored": {
+    "base_sha256": "81a22a34dc2bf76d05ae524bb41924a7bc2362c285c9ca8e47a6842f6bfcc754",
+    "restored": "clean-generative-owner"
+  },
+  "schema": "casulo.vm-lifecycle-evidence/1.0",
+  "second_boot": {
+    "acceleration": "tcg",
+    "base_sha256_after": "81a22a34dc2bf76d05ae524bb41924a7bc2362c285c9ca8e47a6842f6bfcc754",
+    "base_sha256_before": "81a22a34dc2bf76d05ae524bb41924a7bc2362c285c9ca8e47a6842f6bfcc754",
+    "base_unchanged": true,
+    "fallback_from": "whpx",
+    "host_block_devices": false,
+    "network": "denied",
+    "passed": false,
+    "returncode": -1,
+    "serial": "",
+    "serial_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": true
+  },
+  "snapshot": {
+    "overlay_sha256": "43b7e7b44d515b99f4005a43f314974a9fb8da8830946a2fdceeb4d7e69fc883",
+    "snapshot": "clean-generative-owner"
+  },
+  "usb": "PROHIBITED"
+}

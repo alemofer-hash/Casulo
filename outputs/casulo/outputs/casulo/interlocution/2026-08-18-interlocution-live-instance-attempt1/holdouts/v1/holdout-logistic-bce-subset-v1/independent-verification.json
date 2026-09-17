@@ -1,0 +1,11 @@
+{
+  "analysis_json_trusted": false,
+  "authority_surfaces": 9,
+  "holdout_id": "holdout-logistic-bce-subset-v1",
+  "maximum_abs_difference": 1.1102230246251565e-16,
+  "schema": "casulo.interlocution-independent-holdout-verification/1.0",
+  "status": "PASS",
+  "trainer_imported": false,
+  "verification_sha256": "126561443c5567ae7958eb979fc0af049138773dacc021332274623359fb784d",
+  "work_units": 2
+}

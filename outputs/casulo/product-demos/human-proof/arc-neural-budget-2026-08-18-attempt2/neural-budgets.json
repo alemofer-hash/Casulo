@@ -1,0 +1,83 @@
+{
+  "budgets": [
+    {
+      "budget_id": "arc7-dialogue-v1",
+      "max_context_chars": 5632,
+      "max_conversation_messages": 8,
+      "max_generated_tokens": 768,
+      "max_memory_items": 12,
+      "max_prompt_utf8_bytes": 5632,
+      "operation": "DIALOGUE",
+      "prompt_token_safety_margin": 256,
+      "runtime_context_tokens": 8192,
+      "sampling_family": "dialogue",
+      "structured_output": false
+    },
+    {
+      "budget_id": "arc7-intent-reconstruction-v1",
+      "max_context_chars": 6400,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 768,
+      "max_memory_items": 0,
+      "max_prompt_utf8_bytes": 6400,
+      "operation": "INTENT_RECONSTRUCTION",
+      "prompt_token_safety_margin": 256,
+      "runtime_context_tokens": 8192,
+      "sampling_family": "planning",
+      "structured_output": true
+    },
+    {
+      "budget_id": "arc7-intent-refinement-v1",
+      "max_context_chars": 6144,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 768,
+      "max_memory_items": 0,
+      "max_prompt_utf8_bytes": 6144,
+      "operation": "INTENT_REFINEMENT",
+      "prompt_token_safety_margin": 256,
+      "runtime_context_tokens": 8192,
+      "sampling_family": "planning",
+      "structured_output": true
+    },
+    {
+      "budget_id": "arc7-semantic-routing-v1",
+      "max_context_chars": 7424,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 384,
+      "max_memory_items": 0,
+      "max_prompt_utf8_bytes": 7424,
+      "operation": "SEMANTIC_ROUTING",
+      "prompt_token_safety_margin": 256,
+      "runtime_context_tokens": 8192,
+      "sampling_family": "planning",
+      "structured_output": true
+    },
+    {
+      "budget_id": "arc7-t-synthesis-v1",
+      "max_context_chars": 6400,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 1536,
+      "max_memory_items": 0,
+      "max_prompt_utf8_bytes": 6400,
+      "operation": "T_SYNTHESIS",
+      "prompt_token_safety_margin": 256,
+      "runtime_context_tokens": 8192,
+      "sampling_family": "code",
+      "structured_output": true
+    },
+    {
+      "budget_id": "arc7-t-repair-v1",
+      "max_context_chars": 7424,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 384,
+      "max_memory_items": 0,
+      "max_prompt_utf8_bytes": 7424,
+      "operation": "T_REPAIR",
+      "prompt_token_safety_margin": 256,
+      "runtime_context_tokens": 8192,
+      "sampling_family": "code",
+      "structured_output": true
+    }
+  ],
+  "schema": "casulo.neural-budgets/1.0"
+}

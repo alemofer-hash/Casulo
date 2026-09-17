@@ -1,0 +1,13 @@
+{
+  "status": "REJECTED_BEFORE_CONTROL_B",
+  "reason": "MATCHED_START_TIMEOUT",
+  "reference_temperature_c": 52.0,
+  "allowed_range_c": [51.0, 53.0],
+  "timeout_seconds": 1200.0,
+  "last_temperature_c": 58.0,
+  "last_throttling": false,
+  "last_hwinfo_timestamp_utc": "2026-08-08T15:50:48.334000+00:00",
+  "watchdog_reader": "append-only-incremental-v1",
+  "workload_started": false,
+  "control_b_started": false
+}

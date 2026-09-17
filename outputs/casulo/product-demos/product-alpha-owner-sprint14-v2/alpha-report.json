@@ -1,0 +1,106 @@
+{
+  "cloud_used": false,
+  "creation_id": "creation:daily-guide",
+  "creation_version": 16,
+  "edition": "casulo-owner",
+  "engine_boundary": "owner-direct-first-party",
+  "external_api_identity_matches": true,
+  "failed_simulation_status": "CORRECTION_REQUIRED",
+  "first_guide_turn": {
+    "act": "LISTENING",
+    "background_jobs_active": 0,
+    "certainty": "proposed",
+    "interruptible": true,
+    "mode": "EXPANSION",
+    "schema": "casulo.guide-turn/1.0",
+    "source_event_ids": [
+      "voice:first-contact"
+    ],
+    "text": "Entendi o começo. Qual finalidade essa criação precisa cumprir primeiro?",
+    "turn_id": "guide:1"
+  },
+  "forge_identity_hash_preserved": true,
+  "forge_rebuilt_after_correction": [
+    "behavior",
+    "interface"
+  ],
+  "import_identity_matches": true,
+  "imported_reedit_version": 17,
+  "local_embedding_dimensions": 64,
+  "local_model_registry": {
+    "models": [
+      {
+        "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\models\\first-party\\casulo-exact-embedding-v1.json",
+        "engine_role": "casulo-first-party-embedding",
+        "kind": "deterministic-hashed-token-vector",
+        "license": "LicenseRef-Teloscorp-Proprietary",
+        "model_id": "casulo-exact-embedding-v1",
+        "network_required": false,
+        "owner": "Guilherme Moura Fernandes",
+        "redistributable": false,
+        "sha256": "0876987a6ef2ab29f4a93d0b3947b4b08fd3931466c086a90be1978435d36961"
+      },
+      {
+        "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\models\\first-party\\casulo-guide-policy-v1.json",
+        "engine_role": "casulo-first-party-guide",
+        "kind": "deterministic-first-party-cognitive-policy",
+        "license": "LicenseRef-Teloscorp-Proprietary",
+        "model_id": "casulo-guide-policy-v1",
+        "network_required": false,
+        "owner": "Guilherme Moura Fernandes",
+        "redistributable": false,
+        "sha256": "a5854e8102fd0138499e429053f9ad78b183a256515207d0620a5664da3b07c1"
+      }
+    ],
+    "network_required": false,
+    "ready": {
+      "embeddings": true,
+      "guide": true
+    },
+    "schema": "casulo-local-intelligence/1.0",
+    "third_party_ai_api_required": false,
+    "training_with_user_content": false
+  },
+  "local_model_turn": {
+    "act": "LISTENING",
+    "context_ids": [],
+    "model_id": "casulo-guide-policy-v1",
+    "model_sha256": "a5854e8102fd0138499e429053f9ad78b183a256515207d0620a5664da3b07c1",
+    "network_used": false,
+    "schema": "casulo-local-guide-response/1.0",
+    "text": "Entendi o comeco. Qual finalidade essa criacao precisa cumprir primeiro?",
+    "third_party_ai_api_used": false
+  },
+  "materialized_archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\product-alpha-owner-sprint14-v2\\materialized\\creation-a37a83d0d39a2f71-v16.casulo.zip",
+  "materialized_archive_sha256": "579eb1d724111255673d6881eecda1635b7392045848a784148750a34fea7f07",
+  "memory_encryption": "WINDOWS_DPAPI",
+  "owner_events": [
+    "STARTED",
+    "MILESTONE",
+    "COMPLETED",
+    "STARTED",
+    "MILESTONE",
+    "COMPLETED"
+  ],
+  "permissions_preserved_during_correction": true,
+  "physical_voice_evidence_reused_not_replayed": true,
+  "real_effects_executed": false,
+  "recall_status": "FOUND",
+  "rendered_states": [
+    "SILENCE",
+    "FIRST_INTENT",
+    "LISTENING",
+    "FIRST_FORM",
+    "CLARIFICATION",
+    "CONFIRMATION",
+    "PERSONALITY",
+    "SIMULATION",
+    "INTERRUPTION",
+    "CORRECTION",
+    "AGREEMENT",
+    "MATERIALIZATION"
+  ],
+  "schema": "casulo-product-alpha-demo/1.0",
+  "successful_simulation_status": "PASS",
+  "third_party_ai_api_used": false
+}

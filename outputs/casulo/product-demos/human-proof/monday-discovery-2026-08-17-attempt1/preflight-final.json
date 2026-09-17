@@ -1,0 +1,37 @@
+{
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network": "OFF",
+    "physical_voice_opened": false,
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb_block_devices": "PROHIBITED"
+  },
+  "doctor": {
+    "checks_passed": 12,
+    "checks_total": 12,
+    "report_sha256": "58350b38494c5d9b665ce2ad5a178a3cb80208dad141ad4173ff41816c966343"
+  },
+  "first_m1_test_attempt": {
+    "errors": 4,
+    "passed": 1,
+    "reason": "TMP directory was resolved before creation; tests using tmp_path did not execute",
+    "report_sha256": "7aefbe100ed917c9420777bf16b87555eee052e29aa935896c734abfc82b10f8",
+    "status": "PRESERVED_INFRASTRUCTURE_SETUP_FAILURE"
+  },
+  "m1_regression": {
+    "failed": 0,
+    "passed": 6,
+    "report_sha256": "46ea31ce14fc17c83258a05abe8b95bfd3e3939d8718239d710a432248d33c1c"
+  },
+  "schema": "casulo.monday-discovery-preflight-final/1.0",
+  "selected_regression": {
+    "failed": 0,
+    "passed": 46,
+    "report_sha256": "9c6f4dbc6a674bb663578eb25dfe1190ae6d84631c321023d5d30e08c053d7ae",
+    "skip_reason": "physical Windows symlink test unavailable due WinError 1314; not counted",
+    "skipped": 1
+  },
+  "state": "READY_FOR_GUILHERME_MONDAY_DISCOVERY_SESSION",
+  "timestamp_local": "2026-08-17T19:53:58.1890044-03:00"
+}

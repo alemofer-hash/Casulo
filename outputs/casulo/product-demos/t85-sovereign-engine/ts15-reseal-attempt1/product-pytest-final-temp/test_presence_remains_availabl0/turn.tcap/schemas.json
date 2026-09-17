@@ -1,0 +1,82 @@
+{
+  "modules": {
+    "owner.guide.turn_coordinator": {
+      "enums": [
+        {
+          "cases": [
+            "BARGE_IN",
+            "COMMIT_FINAL",
+            "LISTEN",
+            "SHOW_PROGRESS",
+            "IGNORE"
+          ],
+          "name": "TurnDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "event_kind",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "speech_detected",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "transcript_final",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "transcript_nonempty",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "tts_active",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "job_event_authenticated",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "TurnInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{"byte_offset":22684951,"event":"campaign_formal_start","local":"2026-08-07T18:21:42.049545-03:00","monotonic_ns":5207298941200,"pid":20176,"utc":"2026-08-07T21:21:42.049545+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T18:21:42.133565-03:00","monotonic_ns":5207370619900,"pid":20176,"utc":"2026-08-07T21:21:42.133565+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T18:21:48.018052-03:00","monotonic_ns":5213962909600,"new_samples":24,"pid":20176,"utc":"2026-08-07T21:21:48.018052+00:00"}
+{"event":"protocol_superseded","local":"2026-08-07T18:24:41.668436-03:00","monotonic_ns":5386905527500,"pid":8696,"reason":"The user replaced the 60 C start threshold with a 70 C campaign-local threshold before any workload.","utc":"2026-08-07T21:24:41.668436+00:00"}

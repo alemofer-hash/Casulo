@@ -1,0 +1,202 @@
+{
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "classification": {
+    "INCONCLUSIVE": "baseline ou evidência obrigatória ausente",
+    "INVALID": "integridade, desenho ou equivalência violados",
+    "NEGATIVE": "qualidade válida e ao menos um IC95% superior abaixo de 1",
+    "NULL": "qualidade válida, nenhum baseline refuta, mas ao menos um intervalo cruza 1",
+    "POSITIVE": "qualidade válida e IC95% inferior acima de 1 em todos os baselines obrigatórios"
+  },
+  "covenant": {
+    "invariants": [
+      {
+        "id": "HYPOTHESIS_BEFORE_MEASUREMENT",
+        "rule": "hipótese, métricas, baselines e gates são selados antes da medição"
+      },
+      {
+        "id": "QUALITY_BEFORE_SPEED",
+        "rule": "nenhum ganho é válido sem equivalência e qualidade"
+      },
+      {
+        "id": "ALL_REGISTERED_BASELINES_REPORTED",
+        "rule": "baseline obrigatório ausente torna o veredito inconclusivo"
+      },
+      {
+        "id": "RAW_SAMPLES_PRESERVED",
+        "rule": "amostras brutas e ordem pareada são parte da evidência"
+      },
+      {
+        "id": "UNCERTAINTY_REQUIRED",
+        "rule": "mediana sem intervalo de incerteza não libera alegação"
+      },
+      {
+        "id": "NEGATIVE_AND_NULL_PRESERVED",
+        "rule": "resultados negativos, nulos e falhas permanecem publicados"
+      },
+      {
+        "id": "UNMEASURED_IS_NULL",
+        "rule": "grandeza não medida é null e jamais é estimada como observação"
+      },
+      {
+        "id": "NO_CHERRY_PICKING",
+        "rule": "todas as execuções pré-registradas entram no veredito"
+      },
+      {
+        "id": "SCOPE_BOUND_CLAIMS",
+        "rule": "toda alegação nomeia carga, baseline, máquina e horizonte medidos"
+      },
+      {
+        "id": "CORRECTION_CREATES_NEW_VERSION",
+        "rule": "correção lógica gera novo protocolo e não sobrescreve evidência"
+      },
+      {
+        "id": "INDEPENDENT_RECOMPUTATION",
+        "rule": "o juiz recalcula métricas a partir das amostras brutas"
+      },
+      {
+        "id": "JUDGE_CANNOT_OPTIMIZE",
+        "rule": "o juiz classifica evidência e não altera código, dados ou parâmetros"
+      }
+    ],
+    "protocol": "casulo-scientific-covenant/1.0"
+  },
+  "design": {
+    "arena_budget_bytes": 67108864,
+    "bootstrap_resamples": 2000,
+    "candidate_backend": "c99-openmp-tensor/0.1",
+    "graph": {
+      "autograd_graph_sha256": "868aee7b82295e6f3d4345049998eb4f56694c109b8f1b7c52202fb57dada7ab",
+      "path_hint": "mlp-mse-scientific.tensor.json",
+      "sha256": "454373109fcc101051588e23e421d46a4d356f50ceceae9eb807cc7ebcae5646"
+    },
+    "implementation": {
+      "binding": "sha256-source-files",
+      "files": {
+        "autograd.py": "e7b6a3a13e7e473773bf4dae0373e90e7f41ac5b66472be49d187ef2e64c06b2",
+        "parity.py": "eab0ede77232d4dce184b7f3aae8bfaae13b7291da0e3fe63f14e09d305f290f",
+        "tensor.py": "cfb8b71b14e613336c4e2f27c4655a5d7974152a00427bacc96249b8028db0a9",
+        "tensor_cpu.py": "143349aa7c457407847e4cdb3a8db361e9bd6d3dfbd6966684bb4368ad31fe37",
+        "tensor_lab.py": "82c5248ad54623d5e0707bebfe102432895789234f6a2aba44a75a91466ecc35"
+      }
+    },
+    "inner_iterations": 10,
+    "input_generator": {
+      "algorithm": "numpy-pcg64-normal",
+      "protocol": "casulo-tensor-lab-input/0.1",
+      "seed": 20260730,
+      "weight_scale": 0.1
+    },
+    "inputs": [
+      {
+        "device": "cpu",
+        "dtype": "float32",
+        "name": "x",
+        "shape": [
+          256,
+          64
+        ]
+      },
+      {
+        "device": "cpu",
+        "dtype": "float32",
+        "name": "weight1",
+        "shape": [
+          64,
+          128
+        ]
+      },
+      {
+        "device": "cpu",
+        "dtype": "float32",
+        "name": "weight2",
+        "shape": [
+          128,
+          32
+        ]
+      },
+      {
+        "device": "cpu",
+        "dtype": "float32",
+        "name": "target",
+        "shape": [
+          256,
+          32
+        ]
+      }
+    ],
+    "loss": "loss",
+    "measurement_boundary": "prepared forward plus backward; compilation, preparation, validation and report generation excluded",
+    "memory_probe": "separate-phase-process-rss-sampling-not-in-timing-samples",
+    "order_policy": "balanced-six-permutation-cycle",
+    "pairing": "same-input-same-process-same-sample-index",
+    "required_baselines": [
+      "pytorch-eager-autograd-cpu",
+      "pytorch-inductor-autograd-cpu"
+    ],
+    "samples": 21,
+    "seed": 20260730,
+    "torch_threads": 4,
+    "warmups": 3,
+    "workers": 4,
+    "wrt": [
+      "weight1",
+      "weight2"
+    ]
+  },
+  "energy_policy": {
+    "required_for_primary_verdict": false,
+    "software_estimates_forbidden": true,
+    "unmeasured_value": null
+  },
+  "experiment_id": "sha256:2ab07fb6f50212c5715328c421f033c6039267191dbe639b8903b3c356f69622",
+  "hypothesis": {
+    "candidate": "c99-openmp-tensor/0.1",
+    "commercial_threshold": 6.0,
+    "direction": "greater_than",
+    "must_pass_every_required_baseline": true,
+    "primary_metric": "paired_steady_state_wall_speedup_median",
+    "quality_precedes_speed": true,
+    "superiority_threshold": 1.0
+  },
+  "observed_results_at_registration": false,
+  "prior_exploratory_observations": {
+    "disclosure": "Ensaio de engenharia excluído: mlp-mse-medium.tensor.json, shape 64x16-32-8, 1 worker, 7 amostras, 2 iterações internas; o desenho oficial 256x64-128-32 com 4 workers não foi executado antes deste selo.",
+    "present": true,
+    "same_registered_design_observed": false
+  },
+  "protocol": "casulo-tensor-lab-preregistration/0.1",
+  "quality_gates": {
+    "finite_samples": true,
+    "inductor_vs_numpy_loss_and_gradients": "PASS",
+    "native_vs_numpy": "PASS",
+    "numpy_vs_pytorch_eager": "PASS",
+    "same_dtype": true,
+    "same_graph": true,
+    "same_inputs": true,
+    "same_workers_or_threads": true
+  },
+  "result_policy": {
+    "correction": "new-version-new-preregistration-new-result",
+    "failed_runs_are_evidence": true,
+    "overwrite": false,
+    "selection": "all-preregistered-samples"
+  },
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "2ab07fb6f50212c5715328c421f033c6039267191dbe639b8903b3c356f69622"
+  },
+  "sealed_at_utc": "2026-07-30T18:36:40.363092+00:00",
+  "secondary_metrics": [
+    "paired_cpu_speedup_median",
+    "compilation_wall_ns",
+    "preparation_wall_ns",
+    "observed_process_rss_peak_bytes",
+    "break_even_invocations"
+  ],
+  "timestamp_limitation": "integridade é sustentada por SHA-256 e ordem pelo histórico Git; não existe carimbo externo confiável nesta versão",
+  "trusted_external_timestamp": false
+}

@@ -1,0 +1,85 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "t.core.result"
+  },
+  "modules": [
+    {
+      "imports": [
+        "t.casulo.requirements"
+      ],
+      "name": "t.casulo.capabilities"
+    },
+    {
+      "imports": [
+        "t.casulo.materialization"
+      ],
+      "name": "t.casulo.dialogue"
+    },
+    {
+      "imports": [
+        "t.core.canonical"
+      ],
+      "name": "t.casulo.intent"
+    },
+    {
+      "imports": [
+        "t.casulo.memory_policy"
+      ],
+      "name": "t.casulo.jobs"
+    },
+    {
+      "imports": [
+        "t.casulo.simulation"
+      ],
+      "name": "t.casulo.materialization"
+    },
+    {
+      "imports": [
+        "t.casulo.capabilities"
+      ],
+      "name": "t.casulo.memory_policy"
+    },
+    {
+      "imports": [
+        "t.casulo.dialogue"
+      ],
+      "name": "t.casulo.receipts"
+    },
+    {
+      "imports": [
+        "t.casulo.intent"
+      ],
+      "name": "t.casulo.requirements"
+    },
+    {
+      "imports": [
+        "t.casulo.universes"
+      ],
+      "name": "t.casulo.simulation"
+    },
+    {
+      "imports": [
+        "t.casulo.jobs"
+      ],
+      "name": "t.casulo.universes"
+    },
+    {
+      "imports": [
+        "t.core.collections"
+      ],
+      "name": "t.core.canonical"
+    },
+    {
+      "imports": [
+        "t.core.result"
+      ],
+      "name": "t.core.collections"
+    },
+    {
+      "imports": [],
+      "name": "t.core.result"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

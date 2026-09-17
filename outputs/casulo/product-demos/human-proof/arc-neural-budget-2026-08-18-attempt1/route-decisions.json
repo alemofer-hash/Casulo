@@ -1,0 +1,181 @@
+{
+  "decisions": [
+    {
+      "budget": {
+        "budget_id": "arc7-dialogue-v1",
+        "max_context_chars": 16384,
+        "max_conversation_messages": 8,
+        "max_generated_tokens": 768,
+        "max_memory_items": 12,
+        "operation": "DIALOGUE",
+        "sampling_family": "dialogue",
+        "structured_output": false
+      },
+      "decision_sha256": "910fba8372023a4af3d84db5b998bed5cad6069ff3428adc264813d8227c32c2",
+      "gates": {
+        "diagnostic_present": false,
+        "hard_requirements_present": false,
+        "human_confirmed": false,
+        "material_gap_open": false
+      },
+      "operation": "DIALOGUE",
+      "reason": "presença e conversa sem produção",
+      "schema": "casulo.neural-route-decision/1.0",
+      "source_event_ids": [
+        "smoke:dialogue"
+      ]
+    },
+    {
+      "budget": {
+        "budget_id": "arc7-intent-reconstruction-v1",
+        "max_context_chars": 20000,
+        "max_conversation_messages": 0,
+        "max_generated_tokens": 768,
+        "max_memory_items": 0,
+        "operation": "INTENT_RECONSTRUCTION",
+        "sampling_family": "planning",
+        "structured_output": true
+      },
+      "decision_sha256": "78929d53fc7abdd0b104cf989d56c0d179e3a4e0b97bbd2826852c561a5c3cc4",
+      "gates": {
+        "diagnostic_present": false,
+        "hard_requirements_present": false,
+        "human_confirmed": false,
+        "material_gap_open": false
+      },
+      "operation": "INTENT_RECONSTRUCTION",
+      "reason": "formar hipótese antes de produzir",
+      "schema": "casulo.neural-route-decision/1.0",
+      "source_event_ids": [
+        "smoke:intent_reconstruction"
+      ]
+    },
+    {
+      "budget": {
+        "budget_id": "arc7-intent-refinement-v1",
+        "max_context_chars": 24000,
+        "max_conversation_messages": 0,
+        "max_generated_tokens": 768,
+        "max_memory_items": 0,
+        "operation": "INTENT_REFINEMENT",
+        "sampling_family": "planning",
+        "structured_output": true
+      },
+      "decision_sha256": "512059c14829300aa3153903cafbd0cabd6d1d5fd21cb0b3f7ef732f7d0d60fa",
+      "gates": {
+        "diagnostic_present": false,
+        "hard_requirements_present": false,
+        "human_confirmed": false,
+        "material_gap_open": true
+      },
+      "operation": "INTENT_REFINEMENT",
+      "reason": "resolver uma lacuna material já observada",
+      "schema": "casulo.neural-route-decision/1.0",
+      "source_event_ids": [
+        "smoke:intent_refinement"
+      ]
+    },
+    {
+      "budget": {
+        "budget_id": "arc7-semantic-routing-v1",
+        "max_context_chars": 8192,
+        "max_conversation_messages": 0,
+        "max_generated_tokens": 384,
+        "max_memory_items": 0,
+        "operation": "SEMANTIC_ROUTING",
+        "sampling_family": "planning",
+        "structured_output": true
+      },
+      "decision_sha256": "1cc08467fc01ea87279634ea1fb3d63a4ef10920d7e3ff377df8c68d1d04833c",
+      "gates": {
+        "diagnostic_present": false,
+        "hard_requirements_present": false,
+        "human_confirmed": false,
+        "material_gap_open": false
+      },
+      "operation": "SEMANTIC_ROUTING",
+      "reason": "propor universos sem conceder autoridade",
+      "schema": "casulo.neural-route-decision/1.0",
+      "source_event_ids": [
+        "smoke:semantic_routing"
+      ]
+    },
+    {
+      "budget": {
+        "budget_id": "arc7-t-synthesis-v1",
+        "max_context_chars": 32768,
+        "max_conversation_messages": 0,
+        "max_generated_tokens": 1536,
+        "max_memory_items": 0,
+        "operation": "T_SYNTHESIS",
+        "sampling_family": "code",
+        "structured_output": true
+      },
+      "decision_sha256": "926c413dfcf602adef2fa6699abc1c6574a7dcbf8ec5914696c36c8a63bd352b",
+      "gates": {
+        "diagnostic_present": false,
+        "hard_requirements_present": true,
+        "human_confirmed": true,
+        "material_gap_open": false
+      },
+      "operation": "T_SYNTHESIS",
+      "reason": "produzir T somente após confirmação e requisitos HARD",
+      "schema": "casulo.neural-route-decision/1.0",
+      "source_event_ids": [
+        "smoke:t_synthesis"
+      ]
+    },
+    {
+      "budget": {
+        "budget_id": "arc7-t-repair-v1",
+        "max_context_chars": 16384,
+        "max_conversation_messages": 0,
+        "max_generated_tokens": 384,
+        "max_memory_items": 0,
+        "operation": "T_REPAIR",
+        "sampling_family": "code",
+        "structured_output": true
+      },
+      "decision_sha256": "45befc86dfd0e74e8e1a81af00dd96a99b7107c658cfd87ee4805159381839a0",
+      "gates": {
+        "diagnostic_present": true,
+        "hard_requirements_present": false,
+        "human_confirmed": true,
+        "material_gap_open": false
+      },
+      "operation": "T_REPAIR",
+      "reason": "corrigir unidade T a partir de diagnóstico real",
+      "schema": "casulo.neural-route-decision/1.0",
+      "source_event_ids": [
+        "smoke:t_repair"
+      ]
+    }
+  ],
+  "policies": {
+    "DIALOGUE": {
+      "max_generated_tokens": 768,
+      "policy_id": "casulo-arc7-dialogue-v1"
+    },
+    "INTENT_RECONSTRUCTION": {
+      "max_generated_tokens": 768,
+      "policy_id": "casulo-arc7-intent-reconstruction-v1"
+    },
+    "INTENT_REFINEMENT": {
+      "max_generated_tokens": 768,
+      "policy_id": "casulo-arc7-intent-refinement-v1"
+    },
+    "SEMANTIC_ROUTING": {
+      "max_generated_tokens": 384,
+      "policy_id": "casulo-arc7-semantic-routing-v1"
+    },
+    "T_REPAIR": {
+      "max_generated_tokens": 384,
+      "policy_id": "casulo-arc7-t-repair-v1"
+    },
+    "T_SYNTHESIS": {
+      "max_generated_tokens": 1536,
+      "policy_id": "casulo-arc7-t-synthesis-v1"
+    }
+  },
+  "schema": "casulo.neural-route-smoke/1.0"
+}

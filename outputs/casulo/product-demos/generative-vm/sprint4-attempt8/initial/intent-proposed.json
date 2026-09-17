@@ -1,0 +1,161 @@
+{
+  "affected_paths": [
+    [
+      "identity",
+      "name"
+    ],
+    [
+      "purpose",
+      "description"
+    ],
+    [
+      "behavior",
+      "function"
+    ],
+    [
+      "behavior",
+      "restriction"
+    ],
+    [
+      "interface",
+      "input"
+    ],
+    [
+      "interface",
+      "output"
+    ],
+    [
+      "data",
+      "source"
+    ],
+    [
+      "data",
+      "processing"
+    ],
+    [
+      "constraints",
+      "validation"
+    ]
+  ],
+  "base_version": 0,
+  "confidence": 0.95,
+  "confirmation_state": "PROPOSED",
+  "creation_id": "creation:farol-decisoes",
+  "delta_id": "intent:gen:16c984c0bbba96becb7378c5",
+  "operations": [
+    {
+      "action": "set",
+      "path": [
+        "identity",
+        "name"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Farol de Decisões"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "purpose",
+        "description"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Processar notas de reunião para separar decisões confirmadas de hipóteses e identificar contradições entre conversas consecutivas"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "function"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Analisar notas de reunião, classificar decisões confirmadas vs hipóteses, rastrear contradições em conversas consecutivas"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "restriction"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Não enviar ou alterar documentos sem confirmação externa"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "input"
+      ],
+      "value": {
+        "items": [
+          {
+            "description": "Notas de reunião em formato texto",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "output"
+      ],
+      "value": {
+        "items": [
+          {
+            "description": "Decisões confirmadas, hipóteses e contradições identificadas",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "data",
+        "source"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Notas de reunião"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "data",
+        "processing"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Análise semântica e rastreio de contradições entre conversas consecutivas"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "constraints",
+        "validation"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Validação externa necessária para qualquer alteração ou envio de documentos"
+      }
+    }
+  ],
+  "rationale": "A proposta visa a definição de um agente local com funções específicas de processamento de informações, com restrições claras sobre a manipulação de documentos e a necessidade de validação externa.",
+  "schema": "casulo.intent-delta/1.0",
+  "source_event_ids": [
+    "voice:g4:idea"
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "cases_manifest": {
+    "path_hint": "cases.json",
+    "protocol": "casulo-tensor-suite-cases/0.1",
+    "sha256": "daeb7690b24171387cac9245432f52fec853c72eb6b868a92836690789db3e3b"
+  },
+  "design": {
+    "cache_policy": "isolated-native-and-inductor-cache-per-run",
+    "cases": [
+      {
+        "autograd_graph_sha256": "b70e121e5d65c9cb4530f153400b95bdbff11dade61159e1d33553bc55067db0",
+        "child_experiment_id": "sha256:d75084e0a4ab450b9ee2ff42bea53263725afd21cf199ab3dbd7df7e5d087697",
+        "child_preregistration": "cases/tall-batch.json",
+        "child_preregistration_sha256": "36ad51ea985b77009459c4f73d6234be80dfd4b08496fd1f98b0524eba5e1d54",
+        "graph_path_hint": "heldout-tall.tensor.json",
+        "graph_sha256": "3dd087546a54de73b700fa8f7889019523475bb9694e0ecd313a3d61872a213e",
+        "loss": "loss",
+        "name": "tall-batch",
+        "wrt": [
+          "weight1",
+          "weight2"
+        ]
+      },
+      {
+        "autograd_graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+        "child_experiment_id": "sha256:2950fe56aabd9deb392b58fc726420b0868045d90c09b8500e3a19bf2a33daae",
+        "child_preregistration": "cases/wide-input.json",
+        "child_preregistration_sha256": "9e3dfb9da48de9954f201fc979cdd7c3c038f9a5edbe356d2a687682a5315ba8",
+        "graph_path_hint": "heldout-wide.tensor.json",
+        "graph_sha256": "669e16cbc2f811f7f939cf7dcb8acde118eefea20875099dcf99c9878f7d76f5",
+        "loss": "loss",
+        "name": "wide-input",
+        "wrt": [
+          "weight1",
+          "weight2"
+        ]
+      },
+      {
+        "autograd_graph_sha256": "ea8c38591eaf6694ac0168c290972bc56b1f7c37c331c8b27aee128d093db6f6",
+        "child_experiment_id": "sha256:cd1bc5a0783ed6d4c8cf48d934675036d510efecdac8781d7f087101726e0266",
+        "child_preregistration": "cases/deep-bottleneck.json",
+        "child_preregistration_sha256": "0344920d4cd2d96bf28ac0531e88023cfe51767bc5a789b7b6d8e7acaea4ac7e",
+        "graph_path_hint": "heldout-deep.tensor.json",
+        "graph_sha256": "bd8d3e4d212b537b9a89c97ac7510421a2e13165c37ee336995981b4478bfa6b",
+        "loss": "loss",
+        "name": "deep-bottleneck",
+        "wrt": [
+          "weight1",
+          "weight2",
+          "weight3"
+        ]
+      }
+    ],
+    "failure_policy": "failed-and-missing-runs-remain-evidence",
+    "gemm_workers": 1,
+    "implementation": {
+      "autograd.py": "459d84fd6e40895f873bc6555333d121c3331f2410f0f4b8e6fb72f7a5bb5db9",
+      "linear_algebra.py": "6195cb25f5472067c647933edff8d9c7dfd781d4e07245a60c3cd74bec1e7c6b",
+      "tensor_cpu.py": "0cae5c69e94e126992d85ed4438af89620671382989f81a01bf3472833721f5c",
+      "tensor_lab.py": "f2ea6baa13cffb6307f49a7e82307e0c61fc0721876590da699667eec33c1dd0",
+      "tensor_suite.py": "ff6a39e0acb3436a8419dab3748b652eacc296e487f45fdd943d374ce57a133e"
+    },
+    "inner_iterations": 25,
+    "process_policy": "fresh-python-process-per-case-restart",
+    "provider": {
+      "abi": "casulo-gemm-provider/0.1",
+      "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+      "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+      "external": true,
+      "float32_symbol": "scipy_cblas_sgemm64_",
+      "float64_symbol": "scipy_cblas_dgemm64_",
+      "implementation": "external-cblas-ilp64-runtime-function-pointer",
+      "provider_id": "numpy-scipy-openblas-ilp64",
+      "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+      "version": "0.3.30"
+    },
+    "required_baselines": [
+      "pytorch-eager-autograd-cpu",
+      "pytorch-inductor-autograd-cpu"
+    ],
+    "restarts": 3,
+    "samples_per_restart": 9,
+    "schedule": [
+      {
+        "case": "tall-batch",
+        "ordinal": 0,
+        "restart": 0
+      },
+      {
+        "case": "wide-input",
+        "ordinal": 1,
+        "restart": 0
+      },
+      {
+        "case": "deep-bottleneck",
+        "ordinal": 2,
+        "restart": 0
+      },
+      {
+        "case": "wide-input",
+        "ordinal": 3,
+        "restart": 1
+      },
+      {
+        "case": "deep-bottleneck",
+        "ordinal": 4,
+        "restart": 1
+      },
+      {
+        "case": "tall-batch",
+        "ordinal": 5,
+        "restart": 1
+      },
+      {
+        "case": "deep-bottleneck",
+        "ordinal": 6,
+        "restart": 2
+      },
+      {
+        "case": "tall-batch",
+        "ordinal": 7,
+        "restart": 2
+      },
+      {
+        "case": "wide-input",
+        "ordinal": 8,
+        "restart": 2
+      }
+    ],
+    "seed": 20260730,
+    "warmups": 2,
+    "workers": 4
+  },
+  "experiment_id": "sha256:64671fa86fe55dd912e196dc3541b5f366cf6956e1f34bce0243c9e6d7b17825",
+  "hypothesis": {
+    "aggregation": "every-case-every-restart-must-pass-every-baseline",
+    "case_or_restart_selection_forbidden": true,
+    "claim_eligible": true,
+    "commercial_threshold": 6.0,
+    "phase": "MULTI_CASE_CONFIRMATORY",
+    "prior_exploratory_disclosure": "MLPs de duas camadas e a configuração OpenBLAS workers=4/gemm=1 foram observados nos Sprints 019-021; os três shapes atuais e o grafo de três camadas não foram cronometrados antes deste selo.",
+    "superiority_threshold": 1.0
+  },
+  "observed_suite_results_at_registration": false,
+  "protocol": "casulo-tensor-suite-preregistration/0.1",
+  "result_policy": {
+    "all_scheduled_runs_required": true,
+    "energy_unmeasured_is_null": true,
+    "overwrite": false,
+    "positive_requires_unanimity": true
+  },
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "64671fa86fe55dd912e196dc3541b5f366cf6956e1f34bce0243c9e6d7b17825"
+  },
+  "sealed_at_utc": "2026-07-30T20:00:42.873290+00:00",
+  "trusted_external_timestamp": false
+}

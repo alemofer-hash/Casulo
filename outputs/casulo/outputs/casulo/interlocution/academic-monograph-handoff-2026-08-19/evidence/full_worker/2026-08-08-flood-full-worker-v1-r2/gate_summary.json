@@ -1,0 +1,19 @@
+{
+  "energy_campaign_authorized": true,
+  "gates": {
+    "CANARY_SEPARATION": "PASS",
+    "DATASET_1024": "PASS",
+    "GENERAL_PIPELINE": "PASS",
+    "HISTORICAL_SANITY": "PASS",
+    "INTERNAL_RECEIPTS": "PASS",
+    "K_LINEARITY": "PASS",
+    "NO_RESULT_CACHE": "PASS",
+    "RUNTIME_COUNTERS": "PASS",
+    "TCAP_EAGER_EQUIVALENCE": "PASS",
+    "THREE_CLOCK_SYNC": "PASS",
+    "UNIQUE_CASES": "PASS",
+    "WORK_UNIT_CONTRACT": "PASS"
+  },
+  "schema": "casulo-full-worker-gates/1.0",
+  "status": "PASS"
+}

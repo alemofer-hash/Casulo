@@ -1,0 +1,133 @@
+{
+  "accepted": true,
+  "attempts": [
+    {
+      "attempt": 0,
+      "candidate": {
+        "claims": [
+          "The system will maintain a separate memory context for each work unit, ensuring isolation between different conversational threads.",
+          "The system will allow for barge-in behavior, where new interactions can be initiated without waiting for the previous one to complete.",
+          "Exports from the system will be fully editable, allowing for modification of both content and structure post-export.",
+          "No false progress will be reported; all progress indicators will reflect actual job completion events."
+        ],
+        "creative": {
+          "barge_in": true,
+          "export": "editable",
+          "interaction": [
+            "memory-separate-per-work",
+            "interruptible",
+            "exportable"
+          ],
+          "progress_source": "job-events-only",
+          "project_isolation": true
+        }
+      },
+      "fulfillment": {
+        "accepted": true,
+        "candidate_sha256": "2ff77018b14940a02534257188f554421b97db3ac118e5f1725015e8bdaf0bd2",
+        "coverage": 1.0,
+        "diagnostics": [],
+        "evidence": [
+          {
+            "artifact_sha256": "2ff77018b14940a02534257188f554421b97db3ac118e5f1725015e8bdaf0bd2",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "2ff77018b14940a02534257188f554421b97db3ac118e5f1725015e8bdaf0bd2"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+            "receipt_id": "evidence:2ff77018b14940a0:isolation",
+            "requirement_id": "interactive-creative-tool:isolation",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:isolation"
+          },
+          {
+            "artifact_sha256": "2ff77018b14940a02534257188f554421b97db3ac118e5f1725015e8bdaf0bd2",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "2ff77018b14940a02534257188f554421b97db3ac118e5f1725015e8bdaf0bd2"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+            "receipt_id": "evidence:2ff77018b14940a0:barge",
+            "requirement_id": "interactive-creative-tool:barge",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:barge"
+          },
+          {
+            "artifact_sha256": "2ff77018b14940a02534257188f554421b97db3ac118e5f1725015e8bdaf0bd2",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "2ff77018b14940a02534257188f554421b97db3ac118e5f1725015e8bdaf0bd2"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+            "receipt_id": "evidence:2ff77018b14940a0:export",
+            "requirement_id": "interactive-creative-tool:export",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:export"
+          },
+          {
+            "artifact_sha256": "2ff77018b14940a02534257188f554421b97db3ac118e5f1725015e8bdaf0bd2",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "2ff77018b14940a02534257188f554421b97db3ac118e5f1725015e8bdaf0bd2"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+            "receipt_id": "evidence:2ff77018b14940a0:progress",
+            "requirement_id": "interactive-creative-tool:progress",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:progress"
+          }
+        ],
+        "hard_failures": [],
+        "pack_id": "interactive-creative-tool",
+        "schema": "casulo.fulfillment-result/1.0",
+        "spec_gap": 0.0,
+        "unknown": [],
+        "unsupported_claims": [],
+        "verdicts": {
+          "interactive-creative-tool:barge": "PASS",
+          "interactive-creative-tool:export": "PASS",
+          "interactive-creative-tool:isolation": "PASS",
+          "interactive-creative-tool:progress": "PASS"
+        }
+      },
+      "raw_sha256": "a348226b29ecce34e7fad21dceffc64e46e9cc1af12b5c6c6d1c531d9a98abe7",
+      "structured": true,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "aa12a570b116c3dcb67891f3ad516007681b546a1d568625de7ad241eb6ada2e",
+        "ended_monotonic_ns": 13255312996000,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-creative-dialogue:attempt:0",
+        "output_sha256": "a348226b29ecce34e7fad21dceffc64e46e9cc1af12b5c6c6d1c531d9a98abe7",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 13226799841600,
+        "stream_events": 173
+      }
+    }
+  ],
+  "domain": "interactive-creative-tool",
+  "family_id": "holdout-creative-dialogue",
+  "pack_id": "interactive-creative-tool",
+  "request_sha256": "8d00e76a41dfd5bf76847c6f58b5ab331a26d38d9f828270f89ff3a843e1813c"
+}

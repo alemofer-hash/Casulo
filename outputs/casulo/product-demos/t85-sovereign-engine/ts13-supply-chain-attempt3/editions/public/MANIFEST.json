@@ -1,0 +1,32 @@
+{
+  "engine_boundary": "cloud-client-only-no-owner-fallback",
+  "package": "casulo-public",
+  "production_eligible": false,
+  "profile": "public",
+  "public_audit": {
+    "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts13-supply-chain-attempt3\\editions\\public\\casulo_public-0.1.0a1-py3-none-any.whl",
+    "content_tree_sha256": "0d42d0b3a164bb2f1370ca49f9b3222fb09641a58b1374cd27342b9fd35756e1",
+    "files_scanned": 8,
+    "forbidden_findings": [],
+    "private_components_absent": true,
+    "schema": "casulo-public-audit/1.0"
+  },
+  "redistributable": true,
+  "release_state": "PRODUCT_ALPHA_LOCAL",
+  "sbom": {
+    "file": "SBOM.spdx.json",
+    "sha256": "056c5d7595dc8e1ab7180040e7d923da89752a4d9de9c000036dd03a9f7f0db9"
+  },
+  "schema": "casulo-product-edition-release/1.0",
+  "signing": {
+    "algorithm": "ssh-ed25519",
+    "development_key": true,
+    "identity": "casulo-public-dev",
+    "namespace": "casulo-release",
+    "public_key_fingerprint": "SHA256:LLS0cu7UCgbJYNYdHAe5O+LgApYXXRBP/6e07oJ2Ggg"
+  },
+  "wheel": {
+    "file": "casulo_public-0.1.0a1-py3-none-any.whl",
+    "sha256": "793f7a42e9bec5bba0bd3a772b9f44c21d49ef478f2a8871aa846b6cf3817b11"
+  }
+}

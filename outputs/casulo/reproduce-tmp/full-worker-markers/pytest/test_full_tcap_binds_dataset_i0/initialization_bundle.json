@@ -1,0 +1,26 @@
+{
+  "all_nonces_unique": true,
+  "all_parameter_hashes_unique": true,
+  "bytes": 1412,
+  "case_count": 2,
+  "cases": [
+    {
+      "case_id": "case-0001",
+      "index": 0,
+      "initial_parameters_sha256": "2e257ef5da0f2b29af03c7d099b7a9c69cb38e372820db37f87a4ef05f03885e",
+      "nonce": "4e5cd0d3e8dd82d3b33ef32764f146af5ceafddf5a9111fe98a5d09651ccc61f",
+      "seed": 260730
+    },
+    {
+      "case_id": "case-0002",
+      "index": 1,
+      "initial_parameters_sha256": "68f4c2261d206c873f135baa84872898eb00e3f8c1679ad10e6038c47d7f281d",
+      "nonce": "51c284e083a3a7000901528b7254d0b9a60db993d6b6401a0381003504179307",
+      "seed": 365459
+    }
+  ],
+  "parameter_count": 81,
+  "precision": "float64-little-endian",
+  "schema": "casulo-flood-initialization-bundle/1.0",
+  "sha256": "efdd3d20789b9126cf782464eb493be9f1a63c9b02b2230555b87ab35524cdfd"
+}

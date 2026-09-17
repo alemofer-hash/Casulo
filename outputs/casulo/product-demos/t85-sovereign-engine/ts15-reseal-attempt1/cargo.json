@@ -1,0 +1,6 @@
+﻿{
+    "schema":  "casulo.cargo-check/1.0",
+    "command":  "cargo +nightly-2026-02-01 -Z bindeps check --manifest-path os/Cargo.toml --locked",
+    "exit_code":  0,
+    "timestamp":  "2026-08-15T03:47:00.2485711+00:00"
+}

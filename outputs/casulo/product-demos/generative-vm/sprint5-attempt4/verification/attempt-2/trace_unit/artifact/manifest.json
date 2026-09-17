@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:46da9f88b6591b0940b462ac5bab7e774e7280d3864eeff6b7b9e2d6c36cde35",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "3194adeab197cab3e8e15fe4b7fc95055d50d7fae262160858352f27094ade95"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "08e67c979047018b672acb9c93e086c7b53aeb8eace1663815cbe04e4246acdb",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "003c2ba4b08e825e07dafb9371d77e5d8224ffefebe037b07c514f4e712a7ac5",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "trace",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "19f5bc6b6ca9822865fa11823846506373c1e2f630b1471f2fa5291b04ab0678"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "TraceValue",
+        "judgements": [],
+        "name": "Log",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "66ee52cfc5b9bc85c65a2ba047f2c5897a79e8d564d8cecc05b84e563f016dfa"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "TraceValue",
+      "kind": "condense",
+      "name": "Log",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "d615dbd2225ee3bacf0c06efe57afb82783575a9928de1c0efcc82c91bc6449d"
+  }
+}

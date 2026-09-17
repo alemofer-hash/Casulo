@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.critical.capabilities.t",
+      "module": "owner.critical.capabilities",
+      "sha256": "cf56f4552d9865cceeae149a048901e1ff98571c0ab07bb112cacf9486f3c72e"
+    },
+    {
+      "file": "sources/owner.critical.fulfillment.t",
+      "module": "owner.critical.fulfillment",
+      "sha256": "1f8e91cbbffd74c21e94f065e489ef83c38c3bf609c28c2962d8cd0ff9e3741c"
+    },
+    {
+      "file": "sources/owner.critical.intent.t",
+      "module": "owner.critical.intent",
+      "sha256": "e9172aa1292d041b4f57794767aa89b50b348bea5599d07ee7d6da59a740a98d"
+    },
+    {
+      "file": "sources/owner.critical.publish.t",
+      "module": "owner.critical.publish",
+      "sha256": "c6fa0d20d895c977ce9469ff9d4d440c0df2eccc2e5bec91b3a03fca363e42d7"
+    }
+  ]
+}

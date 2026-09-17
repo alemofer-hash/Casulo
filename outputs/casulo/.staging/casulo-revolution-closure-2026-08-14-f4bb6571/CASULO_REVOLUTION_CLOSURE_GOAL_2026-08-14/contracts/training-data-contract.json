@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Casulo Training Record Envelope",
+  "type": "object",
+  "required": [
+    "record_id",
+    "record_family",
+    "scenario_family_id",
+    "owner_scope",
+    "payload",
+    "provenance",
+    "consent",
+    "license",
+    "content_sha256"
+  ],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "record_family": {
+      "enum": ["GUIDE_SFT", "GUIDE_PREFERENCE", "T_TRAJECTORY", "ROUTER", "SECURITY", "MEMORY_USE"]
+    },
+    "scenario_family_id": {"type": "string", "minLength": 1},
+    "project_id_hash": {"type": ["string", "null"]},
+    "owner_scope": {"enum": ["CORE", "OWNER", "PUBLIC"]},
+    "payload": {"type": "object"},
+    "provenance": {"type": "object"},
+    "consent": {
+      "type": "object",
+      "required": ["required", "present"],
+      "properties": {
+        "required": {"type": "boolean"},
+        "present": {"type": "boolean"},
+        "receipt_id": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "license": {"type": "string", "minLength": 1},
+    "contains_secrets": {"const": false},
+    "contains_raw_audio": {"const": false},
+    "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "split": {"enum": ["TRAIN", "VALID", "TEST", "HOLDOUT", "UNASSIGNED"]}
+  },
+  "additionalProperties": false
+}
+

@@ -1,0 +1,1 @@
+{"agent_id":"owner.agent.data_validator_01","emit_literal":false,"entry_function":"decide","entry_module":"owner.agent.data_validator_01.csv_parser","function_count":11,"module_count":3,"runtime":"t-runtime.exe","schema":"casulo.sovereign-t-agent/2.0","tcap_hash":"dc967bb05a11aac33bfbc2b0c15162cfe8e4579f7ead47640e62cb6b98e9f578","tcap_root":"tcap"}

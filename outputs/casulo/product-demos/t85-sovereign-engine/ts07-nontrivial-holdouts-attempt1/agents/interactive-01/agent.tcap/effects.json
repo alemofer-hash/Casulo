@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "owner.agent.interactive_talk_01.export": {
+      "commit": [],
+      "inspect": [],
+      "simulate": [
+        "simulation"
+      ]
+    },
+    "owner.agent.interactive_talk_01.interrupt": {
+      "check": [],
+      "combine": [],
+      "plan": []
+    },
+    "owner.agent.interactive_talk_01.memory": {
+      "branch": [],
+      "decide": [],
+      "verify_is_barge_in_allowed": [],
+      "verify_is_export_editable": [],
+      "verify_is_project_isolated": []
+    }
+  }
+}

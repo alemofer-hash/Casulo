@@ -1,0 +1,1151 @@
+{
+  "backends": {
+    "casulo-linear-algebra-c99-openmp/0.3": {
+      "arena_required_bytes": 532608,
+      "compilation": {
+        "cache_hit": false,
+        "codegen_wall_ns": 2212400,
+        "compiler_subprocess_wall_ns": 2899398200,
+        "compiler_total_wall_ns": 3052864400,
+        "plan_wall_ns": 2109000
+      },
+      "compiler": {
+        "backend": "casulo-linear-algebra-c99-openmp/0.3",
+        "binary_sha256": "b7e988a70f7187b137f903fb18fb486fa566a4bc4d3db6926d4d2ab2788af453",
+        "cache_hit": false,
+        "command": [
+          "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+          "-std=c99",
+          "-O3",
+          "-march=native",
+          "-fno-fast-math",
+          "-ffp-contract=fast",
+          "-fopenmp",
+          "-shared",
+          "-Wl,--no-insert-timestamp,--image-base,0x180000000",
+          "-s",
+          "-fopt-info-vec-optimized=C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-suite-sprint022\\runs\\006-deep-bottleneck-r2\\native-cache\\tensor-cpu\\030c57499f53f12dcf82b064\\vectorization.txt",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-suite-sprint022\\runs\\006-deep-bottleneck-r2\\native-cache\\tensor-cpu\\030c57499f53f12dcf82b064\\casulo_tensor_cpu.c",
+          "-o",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-suite-sprint022\\runs\\006-deep-bottleneck-r2\\native-cache\\tensor-cpu\\030c57499f53f12dcf82b064\\casulo_tensor_cpu.dll",
+          "-lm"
+        ],
+        "compilation_wall_ns": 2899398200,
+        "compiler": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+        "compiler_version": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+        "library": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-suite-sprint022\\runs\\006-deep-bottleneck-r2\\native-cache\\tensor-cpu\\030c57499f53f12dcf82b064\\casulo_tensor_cpu.dll",
+        "protocol": "casulo-tensor-cpu-build/0.3",
+        "source_sha256": "fd14455c5b6842b58e1d11965f1eb9f5c0cbf8004e09b645d97448ef4e98710d",
+        "vectorization_report": []
+      },
+      "gemm_provider": {
+        "abi": "casulo-gemm-provider/0.1",
+        "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+        "external": true,
+        "float32_symbol": "scipy_cblas_sgemm64_",
+        "float64_symbol": "scipy_cblas_dgemm64_",
+        "implementation": "external-cblas-ilp64-runtime-function-pointer",
+        "provider_id": "numpy-scipy-openblas-ilp64",
+        "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+        "version": "0.3.30"
+      },
+      "gemm_workers": 1,
+      "preparation_wall_ns": 117017500,
+      "status": "AVAILABLE",
+      "version": "casulo-linear-algebra-c99-openmp/0.3",
+      "workers": 4
+    },
+    "pytorch-eager-autograd-cpu": {
+      "compilation": null,
+      "preparation_wall_ns": 3382052800,
+      "status": "AVAILABLE",
+      "threads": 4,
+      "version": "2.12.1+cpu"
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "compilation": {
+        "backend": "inductor",
+        "fullgraph": true,
+        "toolchain": {
+          "compiler": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+          "encoding_policy": {
+            "compiler_language": "en-US",
+            "subprocess": "utf-8"
+          },
+          "error": null,
+          "source": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat",
+          "status": "READY"
+        },
+        "wall_ns": 8743687500
+      },
+      "error": null,
+      "preparation_wall_ns": 1245367300,
+      "status": "AVAILABLE",
+      "threads": 4,
+      "version": "2.12.1+cpu"
+    }
+  },
+  "claim": null,
+  "comparisons": {
+    "pytorch-eager-autograd-cpu": {
+      "baseline": "pytorch-eager-autograd-cpu",
+      "baseline_compilation_wall_ns": 0,
+      "baseline_wall_ns_per_invocation_median": 2710848.0,
+      "break_even_invocations": 2553,
+      "candidate_compilation_wall_ns": 3052864400,
+      "candidate_wall_ns_per_invocation_median": 1514664.0,
+      "cpu_speedup_median": 3.0,
+      "cpu_speedup_status": "MEASURED",
+      "paired_samples": 9,
+      "wall_speedup_ci95": {
+        "lower": 1.5593196776415712,
+        "method": "paired-bootstrap-median",
+        "resamples": 2000,
+        "upper": 2.545009226246325
+      },
+      "wall_speedup_median": 1.9605074846246084
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "baseline": "pytorch-inductor-autograd-cpu",
+      "baseline_compilation_wall_ns": 8743687500,
+      "baseline_wall_ns_per_invocation_median": 1446168.0,
+      "break_even_invocations": null,
+      "candidate_compilation_wall_ns": 3052864400,
+      "candidate_wall_ns_per_invocation_median": 1514664.0,
+      "cpu_speedup_median": 1.5,
+      "cpu_speedup_status": "MEASURED",
+      "paired_samples": 9,
+      "wall_speedup_ci95": {
+        "lower": 0.8143088866898585,
+        "method": "paired-bootstrap-median",
+        "resamples": 2000,
+        "upper": 2.2077664665040344
+      },
+      "wall_speedup_median": 0.8953026217061519
+    }
+  },
+  "created_at_utc": "2026-07-30T20:06:20.721439+00:00",
+  "energy": {
+    "joules": null,
+    "measured": false,
+    "method": null,
+    "reason": "nenhum contador elétrico cumulativo foi integrado"
+  },
+  "environment": {
+    "compiler": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+    "logical_cpu_count": 12,
+    "machine": "AMD64",
+    "numpy": "2.3.5",
+    "physical_cpu_count": 10,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "process_priority": "32",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2",
+    "pytorch": "2.12.1+cpu",
+    "total_memory_bytes": 16890978304
+  },
+  "input": {
+    "generator": {
+      "algorithm": "numpy-pcg64-normal",
+      "protocol": "casulo-tensor-lab-input/0.1",
+      "seed": 2093475147,
+      "weight_scale": 0.1
+    },
+    "protocol": "casulo-tensor-lab-input/0.1",
+    "sha256": "2a1731764f87d096e2201c1403a2cb87c77ad11fc86221048a2bda0b72c2af0e",
+    "values": [
+      {
+        "dtype": "float32",
+        "name": "x",
+        "nbytes": 46080,
+        "shape": [
+          160,
+          72
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "weight1",
+        "nbytes": 41472,
+        "shape": [
+          72,
+          144
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "weight2",
+        "nbytes": 27648,
+        "shape": [
+          144,
+          48
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "weight3",
+        "nbytes": 3072,
+        "shape": [
+          48,
+          16
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "target",
+        "nbytes": 10240,
+        "shape": [
+          160,
+          16
+        ]
+      }
+    ]
+  },
+  "memory": {
+    "casulo-linear-algebra-c99-openmp/0.3": {
+      "limitations": "RSS é do processo inteiro, a sondagem é sequencial e pode perder picos menores que o intervalo de amostragem",
+      "method": "process-rss-polling-separate-from-timing",
+      "rss_after_bytes": 350887936,
+      "rss_before_bytes": 350887936,
+      "rss_peak_delta_bytes": 20480,
+      "rss_peak_observed_bytes": 350908416,
+      "sampling_interval_seconds": 0.001,
+      "status": "OBSERVED"
+    },
+    "pytorch-eager-autograd-cpu": {
+      "limitations": "RSS é do processo inteiro, a sondagem é sequencial e pode perder picos menores que o intervalo de amostragem",
+      "method": "process-rss-polling-separate-from-timing",
+      "rss_after_bytes": 350941184,
+      "rss_before_bytes": 350887936,
+      "rss_peak_delta_bytes": 69632,
+      "rss_peak_observed_bytes": 350957568,
+      "sampling_interval_seconds": 0.001,
+      "status": "OBSERVED"
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "limitations": "RSS é do processo inteiro, a sondagem é sequencial e pode perder picos menores que o intervalo de amostragem",
+      "method": "process-rss-polling-separate-from-timing",
+      "rss_after_bytes": 350945280,
+      "rss_before_bytes": 350941184,
+      "rss_peak_delta_bytes": 28672,
+      "rss_peak_observed_bytes": 350969856,
+      "sampling_interval_seconds": 0.001,
+      "status": "OBSERVED"
+    }
+  },
+  "protocol": "casulo-tensor-lab-report/0.2",
+  "quality": {
+    "details": {
+      "inductor_vs_numpy": {
+        "checks": [
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "loss",
+            "max_absolute_error": 1.1920928955078125e-07,
+            "max_relative_error": 1.0685379473086842e-07,
+            "name": "loss",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              1
+            ],
+            "shape_ok": true
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "gradient",
+            "max_absolute_error": 2.7939677238464355e-09,
+            "max_relative_error": 0.0008495762571534549,
+            "name": "weight1",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              72,
+              144
+            ],
+            "shape_ok": true
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "gradient",
+            "max_absolute_error": 4.6566128730773926e-09,
+            "max_relative_error": 0.00017566770867609958,
+            "name": "weight2",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              144,
+              48
+            ],
+            "shape_ok": true
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "gradient",
+            "max_absolute_error": 1.4901161193847656e-08,
+            "max_relative_error": 0.00012541510318809948,
+            "name": "weight3",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              48,
+              16
+            ],
+            "shape_ok": true
+          }
+        ],
+        "passed": true,
+        "reason": null,
+        "status": "PASS"
+      },
+      "native_vs_numpy": {
+        "checks": [
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 1.1920928955078125e-06,
+            "max_relative_error": 0.0005676260223155796,
+            "name": "hidden1",
+            "numpy_sha256": "00068b7f97876332263cccb9270ff25554a436e491e8585abf772b8c9de3ed8b",
+            "passed": true,
+            "pytorch_sha256": "45fd7cebbe5202bb415c3129f8a3bc5179860c09383aaead1a6ea10593700c23",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              144
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 9.5367431640625e-07,
+            "max_relative_error": 0.00027004185697264557,
+            "name": "active1",
+            "numpy_sha256": "49cfeb092d723c38b2a99c605cf1c8797a8b892d61f0be515c5298a2d15c757f",
+            "passed": true,
+            "pytorch_sha256": "5abac557a9aa9bbea55a0155440450ab7ffbc6edb14aedbf9c3edf4a871d5a17",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              144
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 8.344650268554688e-07,
+            "max_relative_error": 0.0005328886076959509,
+            "name": "hidden2",
+            "numpy_sha256": "827614f64be5a76f47109b8aea3a0cc675c4213572f1c18a69770eb5a50fd7fb",
+            "passed": true,
+            "pytorch_sha256": "68bd53cf42a87db4f699d081c96b7aec205b836b91f3d4a674a0b23529f237ee",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              48
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 8.344650268554688e-07,
+            "max_relative_error": 0.0002187494294113351,
+            "name": "active2",
+            "numpy_sha256": "9d827a94d3707ee0ada802217cf760100ed414f02522036ec4689739579158c8",
+            "passed": true,
+            "pytorch_sha256": "4aad93d72494bd609f061aacac9a415633f6762e058322e6430d6c40998e0be5",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              48
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 2.980232238769531e-07,
+            "max_relative_error": 0.0001646451896163767,
+            "name": "prediction",
+            "numpy_sha256": "912b88d0297e15a2b6adb8e969ba50cbb19f8763942d429d29f3e0e9993e8aac",
+            "passed": true,
+            "pytorch_sha256": "3b3a30686a56670b3d723287a0fd33b5418ef4879b48a738049c66240e2458bb",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              16
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 3.5762786865234375e-07,
+            "max_relative_error": 6.295048944005539e-05,
+            "name": "residual",
+            "numpy_sha256": "08706f0d6561464af34872486e0095b2dc2ba3d0335410de8a9b426d737bc241",
+            "passed": true,
+            "pytorch_sha256": "79c892795741651d26900c381755b281be5d58cf14685057a4c8ff1044331f3f",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              16
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 1.9073486328125e-06,
+            "max_relative_error": 0.00012585739159192734,
+            "name": "squared",
+            "numpy_sha256": "be84f2f62d34204862776aeb4811ea429ac0d6ac6f8a51d6a8779e2fc072c416",
+            "passed": true,
+            "pytorch_sha256": "a232c03544b5d62e702afb89f6fb263d4b5ffd86fc121f3b7ea1634bde65d544",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              16
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "loss",
+            "max_absolute_error": 0.0,
+            "max_relative_error": 0.0,
+            "name": "loss",
+            "numpy_sha256": "05599076e7dfdd0434c0f30e2d82eb309af78e0a6edf4305f8f52d260e073dca",
+            "passed": true,
+            "pytorch_sha256": "05599076e7dfdd0434c0f30e2d82eb309af78e0a6edf4305f8f52d260e073dca",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              1
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 2.561137080192566e-09,
+            "max_relative_error": 0.0011675075839868588,
+            "name": "weight1",
+            "numpy_sha256": "79002bae30101436cb642ef1594f104455c1f0b5ae9a9147db107a704cb1785c",
+            "passed": true,
+            "pytorch_sha256": "ea7c268bed2d333c08ee802d47601f426403627a328bb614370fab4eebd21247",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              72,
+              144
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 5.587935447692871e-09,
+            "max_relative_error": 0.0005437822605198502,
+            "name": "weight2",
+            "numpy_sha256": "a2af8d2aba695ec54767b9b7c7d834d6a3cce7e95264d97312a388fbb635e23f",
+            "passed": true,
+            "pytorch_sha256": "7b311d286a88611fe65087c932a1c4957d1e06647e4492261263df70660ed0f0",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              144,
+              48
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 1.1175870895385742e-08,
+            "max_relative_error": 0.00017932332262494282,
+            "name": "weight3",
+            "numpy_sha256": "5405c63cc04d8c2fb3c4427eef876d9de97b25a07660b27fb92edd11a9abe6a4",
+            "passed": true,
+            "pytorch_sha256": "715feaabfbe4ebfdcec89ac2dcd8996e876097443c03353aacec6ec3525b12ab",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              48,
+              16
+            ]
+          }
+        ],
+        "device": "cpu",
+        "energy_joules": null,
+        "graph_sha256": "ea8c38591eaf6694ac0168c290972bc56b1f7c37c331c8b27aee128d093db6f6",
+        "input_sha256": "2a1731764f87d096e2201c1403a2cb87c77ad11fc86221048a2bda0b72c2af0e",
+        "numpy_version": "2.3.5",
+        "passed": true,
+        "protocol": "casulo-pytorch-parity/0.1",
+        "pytorch_version": "casulo-linear-algebra-c99-openmp/0.3+b7e988a70f7187b1",
+        "reason": null,
+        "status": "PASS",
+        "timing": null,
+        "tolerances": [
+          {
+            "absolute": 1e-05,
+            "dtype": "float32",
+            "relative": 0.0001
+          },
+          {
+            "absolute": 1e-10,
+            "dtype": "float64",
+            "relative": 1e-09
+          }
+        ]
+      },
+      "numpy_vs_pytorch_eager": {
+        "checks": [
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 1.0728836059570312e-06,
+            "max_relative_error": 0.00027004185697264557,
+            "name": "hidden1",
+            "numpy_sha256": "45fd7cebbe5202bb415c3129f8a3bc5179860c09383aaead1a6ea10593700c23",
+            "passed": true,
+            "pytorch_sha256": "4d34f054098cf4ee4e9e4d55fba66f36f05fe930eda807b1a26b9b7bd0f8eebc",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              144
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 1.0728836059570312e-06,
+            "max_relative_error": 0.00027004185697264557,
+            "name": "active1",
+            "numpy_sha256": "5abac557a9aa9bbea55a0155440450ab7ffbc6edb14aedbf9c3edf4a871d5a17",
+            "passed": true,
+            "pytorch_sha256": "1f02b7554dc501790af3649040af5e5fbd9ffa4cce18acda419dfb8e69a209f5",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              144
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 8.344650268554688e-07,
+            "max_relative_error": 0.00018876958451391436,
+            "name": "hidden2",
+            "numpy_sha256": "68bd53cf42a87db4f699d081c96b7aec205b836b91f3d4a674a0b23529f237ee",
+            "passed": true,
+            "pytorch_sha256": "254e3d67dd34a35730b3a139edbdfff3458434795c73fe3b422356256e2ec95b",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              48
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 8.344650268554688e-07,
+            "max_relative_error": 0.0001692901564504364,
+            "name": "active2",
+            "numpy_sha256": "4aad93d72494bd609f061aacac9a415633f6762e058322e6430d6c40998e0be5",
+            "passed": true,
+            "pytorch_sha256": "5ca49e72780d0e3e556c9e819933dbe36aa02fc252dcf8be12784cfd0a0e94e4",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              48
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 2.384185791015625e-07,
+            "max_relative_error": 0.0002269734449326011,
+            "name": "prediction",
+            "numpy_sha256": "3b3a30686a56670b3d723287a0fd33b5418ef4879b48a738049c66240e2458bb",
+            "passed": true,
+            "pytorch_sha256": "0583d0ee679f81f85d85fc0e90ed8d3f109bc288440c30099a126f978b22536d",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              16
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 2.384185791015625e-07,
+            "max_relative_error": 2.350369595618911e-05,
+            "name": "residual",
+            "numpy_sha256": "79c892795741651d26900c381755b281be5d58cf14685057a4c8ff1044331f3f",
+            "passed": true,
+            "pytorch_sha256": "82123e8de8891b04f9a844871112667c79d82d6bec51100f86f1a29a27038097",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              16
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 1.430511474609375e-06,
+            "max_relative_error": 4.702230709964713e-05,
+            "name": "squared",
+            "numpy_sha256": "a232c03544b5d62e702afb89f6fb263d4b5ffd86fc121f3b7ea1634bde65d544",
+            "passed": true,
+            "pytorch_sha256": "90ed4c4c3404d6e99811504457e332bdb723a8f0afb49d2c9dff592e3ba6fd5c",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              160,
+              16
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "loss",
+            "max_absolute_error": 1.1920928955078125e-07,
+            "max_relative_error": 1.0685378331313619e-07,
+            "name": "loss",
+            "numpy_sha256": "05599076e7dfdd0434c0f30e2d82eb309af78e0a6edf4305f8f52d260e073dca",
+            "passed": true,
+            "pytorch_sha256": "110f5c6ad6b34cdf7b263c78a6235f619606b09e46081884bb19f3bbdbe5f653",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              1
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 2.3283064365386963e-09,
+            "max_relative_error": 0.0013775513323081741,
+            "name": "weight1",
+            "numpy_sha256": "ea7c268bed2d333c08ee802d47601f426403627a328bb614370fab4eebd21247",
+            "passed": true,
+            "pytorch_sha256": "c4833a1e5d435000db92deec152d2656d76372e6b642ebb71f7a5a156bd2a656",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              72,
+              144
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 3.725290298461914e-09,
+            "max_relative_error": 0.0005437822605198502,
+            "name": "weight2",
+            "numpy_sha256": "7b311d286a88611fe65087c932a1c4957d1e06647e4492261263df70660ed0f0",
+            "passed": true,
+            "pytorch_sha256": "6a1002706b778322ef1e21a33ec8b434b94be3992698bd64bfbb83f544838800",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              144,
+              48
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 1.1175870895385742e-08,
+            "max_relative_error": 0.00016473637426678202,
+            "name": "weight3",
+            "numpy_sha256": "715feaabfbe4ebfdcec89ac2dcd8996e876097443c03353aacec6ec3525b12ab",
+            "passed": true,
+            "pytorch_sha256": "dc418602ef2185ab6d8517bca9d5a75afaa803027b9cfc9427c0a2a55281f126",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              48,
+              16
+            ]
+          }
+        ],
+        "device": "cpu",
+        "energy_joules": null,
+        "graph_sha256": "ea8c38591eaf6694ac0168c290972bc56b1f7c37c331c8b27aee128d093db6f6",
+        "input_sha256": "2a1731764f87d096e2201c1403a2cb87c77ad11fc86221048a2bda0b72c2af0e",
+        "numpy_version": "2.3.5",
+        "passed": true,
+        "protocol": "casulo-pytorch-parity/0.1",
+        "pytorch_version": "2.12.1+cpu",
+        "reason": null,
+        "status": "PASS",
+        "timing": null,
+        "tolerances": [
+          {
+            "absolute": 1e-05,
+            "dtype": "float32",
+            "relative": 0.0001
+          },
+          {
+            "absolute": 1e-10,
+            "dtype": "float64",
+            "relative": 1e-09
+          }
+        ]
+      }
+    },
+    "finite_samples": true,
+    "inductor_vs_numpy_loss_and_gradients": "PASS",
+    "native_vs_numpy": "PASS",
+    "numpy_vs_pytorch_eager": "PASS",
+    "same_dtype": true,
+    "same_graph": true,
+    "same_inputs": true,
+    "same_workers_or_threads": true
+  },
+  "samples": [
+    {
+      "index": 0,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 31250000,
+          "cpu_ns_per_invocation": 1250000.0,
+          "inner_iterations": 25,
+          "wall_ns": 29221200,
+          "wall_ns_per_invocation": 1168848.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 93750000,
+          "cpu_ns_per_invocation": 3750000.0,
+          "inner_iterations": 25,
+          "wall_ns": 62367500,
+          "wall_ns_per_invocation": 2494700.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 78125000,
+          "cpu_ns_per_invocation": 3125000.0,
+          "inner_iterations": 25,
+          "wall_ns": 32488700,
+          "wall_ns_per_invocation": 1299548.0
+        }
+      },
+      "order": [
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 1,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 48194800,
+          "wall_ns_per_invocation": 1927792.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 140625000,
+          "cpu_ns_per_invocation": 5625000.0,
+          "inner_iterations": 25,
+          "wall_ns": 75151100,
+          "wall_ns_per_invocation": 3006044.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 41222400,
+          "wall_ns_per_invocation": 1648896.0
+        }
+      },
+      "order": [
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 2,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 36194200,
+          "wall_ns_per_invocation": 1447768.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 296875000,
+          "cpu_ns_per_invocation": 11875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 70959000,
+          "wall_ns_per_invocation": 2838360.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 78125000,
+          "cpu_ns_per_invocation": 3125000.0,
+          "inner_iterations": 25,
+          "wall_ns": 82234400,
+          "wall_ns_per_invocation": 3289376.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 3,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 31250000,
+          "cpu_ns_per_invocation": 1250000.0,
+          "inner_iterations": 25,
+          "wall_ns": 33831700,
+          "wall_ns_per_invocation": 1353268.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 156250000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 25,
+          "wall_ns": 53391900,
+          "wall_ns_per_invocation": 2135676.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 32250600,
+          "wall_ns_per_invocation": 1290024.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu",
+        "casulo-linear-algebra-c99-openmp/0.3"
+      ]
+    },
+    {
+      "index": 4,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 31250000,
+          "cpu_ns_per_invocation": 1250000.0,
+          "inner_iterations": 25,
+          "wall_ns": 40382100,
+          "wall_ns_per_invocation": 1615284.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 93750000,
+          "cpu_ns_per_invocation": 3750000.0,
+          "inner_iterations": 25,
+          "wall_ns": 135422100,
+          "wall_ns_per_invocation": 5416884.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 36154200,
+          "wall_ns_per_invocation": 1446168.0
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 5,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 72294800,
+          "wall_ns_per_invocation": 2891792.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 93750000,
+          "cpu_ns_per_invocation": 3750000.0,
+          "inner_iterations": 25,
+          "wall_ns": 67771200,
+          "wall_ns_per_invocation": 2710848.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 44810300,
+          "wall_ns_per_invocation": 1792412.0
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu",
+        "casulo-linear-algebra-c99-openmp/0.3"
+      ]
+    },
+    {
+      "index": 6,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 15625000,
+          "cpu_ns_per_invocation": 625000.0,
+          "inner_iterations": 25,
+          "wall_ns": 25579200,
+          "wall_ns_per_invocation": 1023168.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 125000000,
+          "cpu_ns_per_invocation": 5000000.0,
+          "inner_iterations": 25,
+          "wall_ns": 65099300,
+          "wall_ns_per_invocation": 2603972.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 31250000,
+          "cpu_ns_per_invocation": 1250000.0,
+          "inner_iterations": 25,
+          "wall_ns": 56472900,
+          "wall_ns_per_invocation": 2258916.0
+        }
+      },
+      "order": [
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 7,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 37866600,
+          "wall_ns_per_invocation": 1514664.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 84150200,
+          "wall_ns_per_invocation": 3366008.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 32983100,
+          "wall_ns_per_invocation": 1319324.0
+        }
+      },
+      "order": [
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 8,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 1875000.0,
+          "inner_iterations": 25,
+          "wall_ns": 39209200,
+          "wall_ns_per_invocation": 1568368.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 156250000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 25,
+          "wall_ns": 66889700,
+          "wall_ns_per_invocation": 2675588.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 78125000,
+          "cpu_ns_per_invocation": 3125000.0,
+          "inner_iterations": 25,
+          "wall_ns": 31928400,
+          "wall_ns_per_invocation": 1277136.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    }
+  ],
+  "scientific": {
+    "bound_design": {
+      "arena_budget_bytes": 67108864,
+      "bootstrap_resamples": 2000,
+      "candidate_backend": "casulo-linear-algebra-c99-openmp/0.3",
+      "gemm_provider": {
+        "abi": "casulo-gemm-provider/0.1",
+        "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+        "external": true,
+        "float32_symbol": "scipy_cblas_sgemm64_",
+        "float64_symbol": "scipy_cblas_dgemm64_",
+        "implementation": "external-cblas-ilp64-runtime-function-pointer",
+        "provider_id": "numpy-scipy-openblas-ilp64",
+        "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+        "version": "0.3.30"
+      },
+      "gemm_workers": 1,
+      "graph": {
+        "autograd_graph_sha256": "ea8c38591eaf6694ac0168c290972bc56b1f7c37c331c8b27aee128d093db6f6",
+        "path_hint": "heldout-deep.tensor.json",
+        "sha256": "bd8d3e4d212b537b9a89c97ac7510421a2e13165c37ee336995981b4478bfa6b"
+      },
+      "implementation": {
+        "binding": "sha256-source-files",
+        "files": {
+          "autograd.py": "459d84fd6e40895f873bc6555333d121c3331f2410f0f4b8e6fb72f7a5bb5db9",
+          "linear_algebra.py": "6195cb25f5472067c647933edff8d9c7dfd781d4e07245a60c3cd74bec1e7c6b",
+          "parity.py": "eab0ede77232d4dce184b7f3aae8bfaae13b7291da0e3fe63f14e09d305f290f",
+          "tensor.py": "cfb8b71b14e613336c4e2f27c4655a5d7974152a00427bacc96249b8028db0a9",
+          "tensor_cpu.py": "0cae5c69e94e126992d85ed4438af89620671382989f81a01bf3472833721f5c",
+          "tensor_lab.py": "f2ea6baa13cffb6307f49a7e82307e0c61fc0721876590da699667eec33c1dd0"
+        }
+      },
+      "inner_iterations": 25,
+      "input_generator": {
+        "algorithm": "numpy-pcg64-normal",
+        "protocol": "casulo-tensor-lab-input/0.1",
+        "seed": 2093475147,
+        "weight_scale": 0.1
+      },
+      "inputs": [
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "x",
+          "shape": [
+            160,
+            72
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "weight1",
+          "shape": [
+            72,
+            144
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "weight2",
+          "shape": [
+            144,
+            48
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "weight3",
+          "shape": [
+            48,
+            16
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "target",
+          "shape": [
+            160,
+            16
+          ]
+        }
+      ],
+      "loss": "loss",
+      "measurement_boundary": "prepared forward plus backward; compilation, preparation, validation and report generation excluded",
+      "memory_probe": "separate-phase-process-rss-sampling-not-in-timing-samples",
+      "order_policy": "balanced-six-permutation-cycle",
+      "pairing": "same-input-same-process-same-sample-index",
+      "required_baselines": [
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ],
+      "samples": 9,
+      "seed": 2093475147,
+      "torch_threads": 4,
+      "warmups": 2,
+      "workers": 4,
+      "wrt": [
+        "weight1",
+        "weight2",
+        "weight3"
+      ]
+    },
+    "claims_allowed": false,
+    "covenant": "casulo-scientific-covenant/1.0",
+    "experiment_id": "sha256:cd1bc5a0783ed6d4c8cf48d934675036d510efecdac8781d7f087101726e0266",
+    "preregistration_file_sha256": "0344920d4cd2d96bf28ac0531e88023cfe51767bc5a789b7b6d8e7acaea4ac7e",
+    "status": "PREREGISTERED_AWAITING_INDEPENDENT_JUDGEMENT"
+  },
+  "thermal": {
+    "cpu_frequency_mhz": 1300.0,
+    "reason": "sensor de temperatura não exposto ao processo",
+    "temperature_celsius": null,
+    "temperature_source": null
+  }
+}

@@ -1,0 +1,11 @@
+7896c91bb9f5729f1db5025eb79054bec859bc00abe1d2bcfc50cd3a20705092  benchmarks/results/2026-07-30-scientific-covenant-compile/artifact/casulo_training.c
+7b672ee8eb8b3b8454f17793f26579668a03725c8790b9978bf7d8d02f7930a6  benchmarks/results/2026-07-30-scientific-covenant-compile/artifact/manifest.json
+b24746c7b622c7760a685d8fdb8a79d8c2fd8ace966e63e1ffc75c31d12c4948  benchmarks/results/2026-07-30-scientific-covenant-compile/artifact/source.t
+078aff9b203599b1ef08d3a037fbfee5a07df84291fa2203d96d8e8b6dc76c94  benchmarks/results/2026-07-30-scientific-covenant-compile/dataset.json
+fa2324d0c900e4d852b5ac6188d7f20030ec03af8dec2ddb492830522163dee3  benchmarks/results/2026-07-30-scientific-covenant-compile/SUMMARY.md
+a75e02e507248aadaae1fbf9a6f65656ba67fd30921528e5cc360e0a820a9b62  benchmarks/results/2026-07-30-scientific-covenant-compile/training-report.html
+384e56a2d34457f01f905d7d284945d665785300a06315892f598d389035acf8  benchmarks/results/2026-07-30-scientific-covenant-compile/training-report.json
+8288438a2a7413ead48e199a5cd4494379f0b8a52aa1a28afdc2caf474000a83  evidence/2026-07-30-pytorch-compile/capability-probe.json
+1d6bc26b4611d6f52535f42814e5645b1dab6d9dbb05fc47dd8b44f78d6c7cb5  evidence/2026-07-30-pytorch-compile/preregistration.json
+8adf89e36a1d97ce542e8c6aafadb316165e46a4397243514b54a6f110269d94  evidence/2026-07-30-pytorch-compile/README.md
+d4fadabc9bf4c431e526635b3af4bab1ca715c66efed46f0ba3346b94817b800  evidence/2026-07-30-pytorch-compile/verdict.json

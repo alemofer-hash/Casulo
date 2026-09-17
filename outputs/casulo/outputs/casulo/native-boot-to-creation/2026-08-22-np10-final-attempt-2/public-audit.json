@@ -1,0 +1,8 @@
+{
+  "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\editions\\casulo-public",
+  "content_tree_sha256": "a637fedd674f054b31a54d59d14fe103f110e4b9e0c339aeb475998d3f91db2b",
+  "files_scanned": 14,
+  "forbidden_findings": [],
+  "private_components_absent": true,
+  "schema": "casulo-public-audit/1.0"
+}

@@ -1,0 +1,217 @@
+{
+  "authority": {
+    "c_critical": 1.0,
+    "critical_degrees": {
+      "capabilities_effects": 1.0,
+      "hard_requirement_fulfillment": 1.0,
+      "material_intent": 1.0,
+      "publish_commit": 1.0
+    },
+    "s_authority": 0.8615384615384616,
+    "s_execution": 0.8615384615384616
+  },
+  "checks": {
+    "appliance_external": true,
+    "bootstrap_hash": true,
+    "cargo_native": true,
+    "cloud_locked": true,
+    "compileall": true,
+    "compiler_system_regression": true,
+    "critical_authority": true,
+    "critical_semantic_loss_zero": true,
+    "development_signature_only": true,
+    "edition_signatures": true,
+    "false_hard_completion_zero": true,
+    "hard_boundaries": true,
+    "human_proof_pending": true,
+    "launchers_and_feedback": true,
+    "old_release_preserved": true,
+    "physical_sparse_ratio": true,
+    "product_regression": true,
+    "project_bleed_zero": true,
+    "public_private_zero": true,
+    "rc0_rc13_regression": true,
+    "release_checkout_independent": true,
+    "release_manifest": true,
+    "release_signature": true,
+    "reserve_25_gib": true,
+    "s_authority": true,
+    "s_execution": true,
+    "security_zero_p0_p1": true,
+    "skips_not_counted": true,
+    "t_runtime_cargo": true,
+    "three_boots_snapshot_restore_crash": true,
+    "three_nontrivial_holdouts": true,
+    "ts0_ts14_evidence": true,
+    "ts14_integrated": true,
+    "xray_present": true
+  },
+  "free_bytes": 82777595904,
+  "gate": "TS15_RESEAL_HANDOFF_PASS",
+  "human_proof": "PENDING_GUILHERME",
+  "limitations": [
+    "physical symlink test skipped for host privilege and not counted",
+    "physical voice, chemistry, utility and design remain Guilherme-only",
+    "host Python/QEMU/third-party primitives remain declared",
+    "development signature is not a commercial release"
+  ],
+  "model": {
+    "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "embedded": false,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "open_p0": 0,
+  "open_p1": 0,
+  "regression": {
+    "compiler_system": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 1,
+      "tests": 74
+    },
+    "product": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 1,
+      "tests": 449
+    },
+    "rc": {
+      "rc00-baseline-attempt2": "RC0_BASELINE_FROZEN",
+      "rc01-contracts": "RC1_CONTRACTS_TRUTH_AND_TRUST_PASS",
+      "rc02-guide": "RC2_GUIDE_COLLEAGUE_LOOP_PASS",
+      "rc03-fulfillment": "RC3_SEMANTIC_FULFILLMENT_PASS",
+      "rc04-t-sovereignty": "RC4_T_SOVEREIGN_CREATION_PASS",
+      "rc05-training": "RC5_CASULO_FIRST_PARTY_LEARNED_LAYER_PASS",
+      "rc06-semantic-multiverse": "RC6_SEMANTIC_MULTIVERSE_PRODUCT_VALIDATION_PASS",
+      "rc07-vm": "RC7_OWNER_VM_ONE_CLICK_PASS",
+      "rc08-voice": "RC8_VOICE_PRIMARY_IMPLEMENTATION_PASS",
+      "rc09-materialization-attempt3": "RC9_EXTERNAL_MATERIALIZATION_MATRIX_PASS",
+      "rc10-security": "RC10_SECURITY_TRUST_PASS",
+      "rc11-integrated": "RC11_INTEGRATED_HUMAN_PROOF_REHEARSAL_PASS",
+      "rc12-release": "RC12_HUMAN_PROOF_CANDIDATE_SEALED",
+      "rc13-handoff-vbscript-reseal": "RC13_HANDOFF_COMPLETE_VBSCRIPT_RESEAL"
+    },
+    "ts": {
+      "ts00-baseline-freeze-attempt1": {
+        "expected_previous_gate_sha256": "2d2de97b0d0d574a18d99274b9080d212dd159930dc552d821eba98332273c79",
+        "gate": "TS0_BASELINE_FROZEN",
+        "gate_sha256": "e188ed7c2b076da62ec148fc356149ad7fa886613477c1a377b7bfc510fafa7d",
+        "kind": "legacy_hash_chained_gate",
+        "previous_gate_sha256": "2d2de97b0d0d574a18d99274b9080d212dd159930dc552d821eba98332273c79",
+        "valid": true
+      },
+      "ts01-honest-baseline-attempt1": {
+        "expected_previous_gate_sha256": "e188ed7c2b076da62ec148fc356149ad7fa886613477c1a377b7bfc510fafa7d",
+        "gate": "TS1_HONEST_SOVEREIGNTY_BASELINE_PASS",
+        "gate_sha256": "4d39582ae60a28ed99b03708f96e9eeb120868ea80943e38fdfe7102512269c6",
+        "kind": "legacy_hash_chained_gate",
+        "previous_gate_sha256": "e188ed7c2b076da62ec148fc356149ad7fa886613477c1a377b7bfc510fafa7d",
+        "valid": true
+      },
+      "ts02-v2-semantics-attempt1": {
+        "expected_previous_gate_sha256": "4d39582ae60a28ed99b03708f96e9eeb120868ea80943e38fdfe7102512269c6",
+        "gate": "TS2_T_V2_SEMANTICS_PASS",
+        "gate_sha256": "ce4c909205d20a3a92374afca335be52d9b1e8938b8819efe36dafe8769ad3c5",
+        "kind": "legacy_hash_chained_gate",
+        "previous_gate_sha256": "4d39582ae60a28ed99b03708f96e9eeb120868ea80943e38fdfe7102512269c6",
+        "valid": true
+      },
+      "ts03-tcap-v2-attempt5": {
+        "expected_previous_gate_sha256": "ce4c909205d20a3a92374afca335be52d9b1e8938b8819efe36dafe8769ad3c5",
+        "gate": "TS3_TCAP_V2_CONFORMANCE_PASS",
+        "gate_sha256": "e01dc26e45bfb32e36af1b96cb5570d60387eb43b34fa21d377bd7bc324df454",
+        "kind": "legacy_hash_chained_gate",
+        "previous_gate_sha256": "ce4c909205d20a3a92374afca335be52d9b1e8938b8819efe36dafe8769ad3c5",
+        "valid": true
+      },
+      "ts04-stdlib-vertical-attempt1": {
+        "expected_previous_gate_sha256": "e01dc26e45bfb32e36af1b96cb5570d60387eb43b34fa21d377bd7bc324df454",
+        "gate": "TS4_T_STDLIB_VERTICAL_PASS",
+        "gate_sha256": "02300995d4172b054bd42bbd9b76d02352a9a64548a6caf4d1d3abee3c806af6",
+        "kind": "legacy_hash_chained_gate",
+        "previous_gate_sha256": "e01dc26e45bfb32e36af1b96cb5570d60387eb43b34fa21d377bd7bc324df454",
+        "valid": true
+      },
+      "ts05-critical-authority-attempt1": {
+        "files": 87,
+        "gate": "TS5_CRITICAL_AUTHORITY_PASS",
+        "manifest_sha256": "0c1f61be3513e5a7970ec2bfd8d5bc67f887e40c64569d2afda12911e6a19768",
+        "mismatches": [],
+        "valid": true
+      },
+      "ts06-requirement-graph-attempt1": {
+        "files": 105,
+        "gate": "TS6_T_REQUIREMENT_GRAPH_PASS",
+        "manifest_sha256": "fb460970791d6f1dbfa0a3e9f52c224c0b8c49b4da96607dc7310c4a1fd287fb",
+        "mismatches": [],
+        "valid": true
+      },
+      "ts07-nontrivial-holdouts-attempt7": {
+        "files": 163,
+        "gate": "TS7_T_NONTRIVIAL_HOLDOUTS_PASS",
+        "manifest_sha256": "3f346d0bcdc5d46099a25d4973cc6c92853f3420ca2a2a63041207cbdc6c7415",
+        "mismatches": [],
+        "valid": true
+      },
+      "ts08-guide-memory-attempt1": {
+        "files": 1540,
+        "gate": "TS8_GUIDE_LIVING_MEMORY_PASS",
+        "manifest_sha256": "70eb6ac250d0568040e3c1178139bcb544c9a08141f294d7ad5c18af77b90baa",
+        "mismatches": [],
+        "valid": true
+      },
+      "ts09-presence-voice-attempt1": {
+        "files": 788,
+        "gate": "TS9_PRESENCE_VOICE_SYNTHETIC_PASS",
+        "manifest_sha256": "52ec4ab3771656747c3ce4a63120a8a6e799fd131514e6df7c72cfed53d1bb2d",
+        "mismatches": [],
+        "valid": true
+      },
+      "ts10-physical-multiverse-attempt5": {
+        "files": 219,
+        "gate": "TS10_PHYSICAL_SEMANTIC_MULTIVERSE_PASS",
+        "manifest_sha256": "65dc705a9e6bce06d51ccf0e868ae2953af48272293ed6886638c5968dcb906f",
+        "mismatches": [],
+        "valid": true
+      },
+      "ts11-sovereign-materialization-attempt3": {
+        "files": 119,
+        "gate": "TS11_SOVEREIGN_MATERIALIZATION_PASS",
+        "manifest_sha256": "e1e0cb5c6bc1e076185ceb0552ab82d2d2433a464f12c0ae584c74fae7b9cc77",
+        "mismatches": [],
+        "valid": true
+      },
+      "ts12-appliance-attempt5": {
+        "files": 3,
+        "gate": "TS12_APPLIANCE_PASS",
+        "manifest_sha256": "34c8721e9cd297b5b4d7b5148c9e74c1b3fb9c055bc1672add7643323528d077",
+        "mismatches": [],
+        "valid": true
+      },
+      "ts13-supply-chain-attempt3": {
+        "files": 1336,
+        "gate": "TS13_SUPPLY_CHAIN_PASS",
+        "manifest_sha256": "c988d49d0f9a7f6697708ec13928b73317dff3594d18a168e830536c32207905",
+        "mismatches": [],
+        "valid": true
+      },
+      "ts14-integrated-rehearsal-attempt3": {
+        "files": 333,
+        "gate": "TS14_INTEGRATED_REHEARSAL_PASS",
+        "manifest_sha256": "a3fb7af7ca0d796185e2236488867ac3a951052fc83170f40591fde1384222e1",
+        "mismatches": [],
+        "valid": true
+      }
+    }
+  },
+  "release": {
+    "bytes": 6310236,
+    "files": 212,
+    "manifest_sha256": "87c046056ee16dbc2f02350f50bde62f9bb617ebfe002eb993536a794393f8ee",
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\t85-human-proof",
+    "sha256sums_sha256": "1f897e9a9cd1e9e8bebb3d9e3ac05852e95d3655c7cfcc62cd6d2d3f12d723de",
+    "signature": "DEVELOPMENT_NOT_COMMERCIAL"
+  },
+  "schema": "casulo.t85-final-handoff/1.0",
+  "state": "READY_FOR_GUILHERME_CASULO_T85_VM_HUMAN_PROOF"
+}

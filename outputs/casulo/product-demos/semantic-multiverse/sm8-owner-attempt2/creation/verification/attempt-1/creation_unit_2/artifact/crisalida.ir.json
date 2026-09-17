@@ -1,0 +1,71 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "enums": [],
+  "fields": [
+    {
+      "name": "SimulatedVibrationData",
+      "traces": [
+        {
+          "name": "value",
+          "type_name": "Text"
+        }
+      ]
+    }
+  ],
+  "language": "T/1.1",
+  "module": "data",
+  "operations": [
+    {
+      "cfg": {
+        "blocks": [
+          {
+            "id": "block/root.0",
+            "instruction_paths": [
+              "root.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "exit",
+            "instruction_paths": [],
+            "successors": []
+          }
+        ],
+        "entry": "block/root.0",
+        "exit": "exit"
+      },
+      "contract": {
+        "effect_contract": {
+          "declared": [
+            "manifest"
+          ],
+          "schema": "casulo-t-effects/1.0"
+        }
+      },
+      "input_type": "SimulatedVibrationData",
+      "instructions": [
+        {
+          "arguments": [
+            "\"Generating simulated vibration patterns for centrifugal pump analysis\""
+          ],
+          "else_body": [],
+          "op": "emit",
+          "result": null,
+          "then_body": [],
+          "type_name": "Text"
+        }
+      ],
+      "kind": "condense",
+      "name": "Generate",
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "records": [],
+  "uses": [],
+  "version": "crisalida-ir/1.0"
+}

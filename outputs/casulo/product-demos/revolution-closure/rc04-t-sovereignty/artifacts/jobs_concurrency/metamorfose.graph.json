@@ -1,0 +1,286 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "casulo.revolution.jobs",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "block/root.0.then.0",
+            "block/root.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0",
+          [
+            "block/root.0.then.0.then.0",
+            "block/root.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0",
+          [
+            "block/root.0.then.0.else.0.then.0",
+            "block/root.0.then.0.else.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0.then.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "receipt_present",
+          "source": "PublishJob/input/receipt_present",
+          "target": "PublishJob/instruction/root.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishJob/instruction/root.0/if",
+          "target": "PublishJob/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "cancelled",
+          "source": "PublishJob/input/cancelled",
+          "target": "PublishJob/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishJob/instruction/root.0.then.0/if",
+          "target": "PublishJob/instruction/root.0.then.0.then.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishJob/instruction/root.0.then.0/if",
+          "target": "PublishJob/instruction/root.0.then.0.else.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "generation_matches",
+          "source": "PublishJob/input/generation_matches",
+          "target": "PublishJob/instruction/root.0.then.0.else.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishJob/instruction/root.0.then.0.else.0/if",
+          "target": "PublishJob/instruction/root.0.then.0.else.0.then.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishJob/instruction/root.0.then.0.else.0/if",
+          "target": "PublishJob/instruction/root.0.then.0.else.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishJob/instruction/root.0/if",
+          "target": "PublishJob/instruction/root.0.else.0/emit"
+        }
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 7,
+      "input_type": "JobDecision",
+      "name": "PublishJob",
+      "nodes": [
+        {
+          "defines": [
+            "receipt_present"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "PublishJob/input/receipt_present",
+          "kind": "input",
+          "label": "receipt_present",
+          "operation": "PublishJob",
+          "path": "input.receipt_present",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "cancelled"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "PublishJob/input/cancelled",
+          "kind": "input",
+          "label": "cancelled",
+          "operation": "PublishJob",
+          "path": "input.cancelled",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "generation_matches"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "PublishJob/input/generation_matches",
+          "kind": "input",
+          "label": "generation_matches",
+          "operation": "PublishJob",
+          "path": "input.generation_matches",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "PublishJob/instruction/root.0/if",
+          "kind": "if",
+          "label": "receipt_present",
+          "operation": "PublishJob",
+          "path": "root.0",
+          "pure": true,
+          "uses": [
+            "receipt_present"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "PublishJob/instruction/root.0.then.0/if",
+          "kind": "if",
+          "label": "cancelled",
+          "operation": "PublishJob",
+          "path": "root.0.then.0",
+          "pure": true,
+          "uses": [
+            "cancelled"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "PublishJob/instruction/root.0.then.0.then.0/emit",
+          "kind": "emit",
+          "label": "\"DROP_STALE\"",
+          "operation": "PublishJob",
+          "path": "root.0.then.0.then.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "PublishJob/instruction/root.0.then.0.else.0/if",
+          "kind": "if",
+          "label": "generation_matches",
+          "operation": "PublishJob",
+          "path": "root.0.then.0.else.0",
+          "pure": true,
+          "uses": [
+            "generation_matches"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "PublishJob/instruction/root.0.then.0.else.0.then.0/emit",
+          "kind": "emit",
+          "label": "\"PUBLISH\"",
+          "operation": "PublishJob",
+          "path": "root.0.then.0.else.0.then.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "PublishJob/instruction/root.0.then.0.else.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DROP_STALE\"",
+          "operation": "PublishJob",
+          "path": "root.0.then.0.else.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "PublishJob/instruction/root.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"WAIT\"",
+          "operation": "PublishJob",
+          "path": "root.0.else.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [
+    {
+      "kind": "record",
+      "members": [
+        [
+          "receipt_present",
+          "Bool"
+        ],
+        [
+          "cancelled",
+          "Bool"
+        ],
+        [
+          "generation_matches",
+          "Bool"
+        ]
+      ],
+      "name": "JobDecision"
+    }
+  ],
+  "version": "metamorfose-graph/1.0"
+}

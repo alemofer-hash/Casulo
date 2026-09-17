@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc12-release",
+  "gate_sha256": "c93e4109415c3282d81f24940b6f8283f1c0d5cecc9be1f7864cbd918c0f5d77",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC12_HUMAN_PROOF_CANDIDATE_SEALED",
+  "timestamp": "2026-08-14T21:51:34.485922+00:00"
+}

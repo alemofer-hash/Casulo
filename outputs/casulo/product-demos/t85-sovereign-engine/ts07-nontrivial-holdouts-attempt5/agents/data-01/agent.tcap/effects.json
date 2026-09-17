@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "owner.agent.data_validator_01.csv": {
+      "branch": [],
+      "decide": [],
+      "verify_apply_versioned_schema": [],
+      "verify_preserve_original_bytes": [],
+      "verify_provide_diagnostic_per_rejection": []
+    },
+    "owner.agent.data_validator_01.diag": {
+      "commit": [],
+      "inspect": [],
+      "simulate": [
+        "simulation"
+      ]
+    },
+    "owner.agent.data_validator_01.schema": {
+      "check": [],
+      "combine": [],
+      "plan": []
+    }
+  }
+}

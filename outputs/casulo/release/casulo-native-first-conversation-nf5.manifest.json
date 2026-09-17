@@ -1,0 +1,16 @@
+{
+  "bootloader": "rust-osdev-bootloader/0.11.15",
+  "bytes": 3211264,
+  "claim": "content-addressed system pack booted; guide T source present but not executed; no native neural inference",
+  "historical_image_overwritten": false,
+  "host_bridge": false,
+  "image": "release/casulo-native-first-conversation-nf5.img",
+  "network": false,
+  "physical_device_written": false,
+  "scene_contract_sha256": "804ceb12b510f250cfd41a6e49185fe8db73f13c09a7f3288703368889435a8d",
+  "schema": "casulo-native-first-conversation-image/0.1",
+  "sha256": "7d84b46dbafcba9a86bd8eb7aeb842ea3fce6f6afd0c427c873d09bc94d30b26",
+  "stage": "NF5_T_SYSTEM_PACK",
+  "target": "x86_64-unknown-none",
+  "ux_contract_sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9"
+}

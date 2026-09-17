@@ -1,0 +1,295 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:5a1ae60439f95eb3f94c061e53e6b1f65461906aaf5f115828ec58fc0d960b63",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "expõe resíduos geométricos com escopo e tolerância declarados",
+          "observed": "manifest: memory.read, trace: 'Creation started', effects: [manifest], emit: 'Initialization complete.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "d0050d95dd502580a3caeee7041c1d05604676ba3fa8558289dcb1b7cd532244",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation_unit"
+        }
+      ],
+      "finished_ns": 12183198139100,
+      "project_id": "t-project:fc3b96a516a95f7d844ada6f",
+      "started_ns": 12182550874100,
+      "tcap_sha256": "08270a8c040473a9e2e2db641356e68cc542748379c07d72f74b96ff15906285",
+      "tests": [
+        {
+          "expected_contains": "Creation started",
+          "name": "test_creation",
+          "observed": "manifest: memory.read, trace: 'Creation started', effects: [manifest], emit: 'Initialization complete.'",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1b38a5d7fc383b9ecf9c870294f3498f7b5d72493c56cb155287457f441e5d26",
+          "unit_id": "creation_unit",
+          "wall_ns": 164740100
+        },
+        {
+          "expected_contains": "Autonomy active",
+          "name": "test_autonomy",
+          "observed": "manifest: memory.read, trace: 'Processing input', effects: [manifest], emit: 'Autonomy active.'",
+          "operation": "Process",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "d1640e06bef51d23397c5cd685cf78c4984fbabc871b44b6e09929f95e20fa75",
+          "unit_id": "autonomy_unit",
+          "wall_ns": 143139900
+        },
+        {
+          "expected_contains": "Scientific evaluation complete",
+          "name": "test_scientific",
+          "observed": "manifest: memory.read, trace: 'Evaluating Einstein equations', effects: [manifest], emit: 'Scientific evaluation complete.'",
+          "operation": "Evaluate",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8e71627ce6c4790db11a4abaede2c5cd044516b52d451d7d80eaca1e76ea39a6",
+          "unit_id": "scientific_unit",
+          "wall_ns": 131920600
+        },
+        {
+          "expected_contains": "expõe resíduos geométricos com escopo e tolerância declarados",
+          "name": "human-holdout-acceptance",
+          "observed": "manifest: memory.read, trace: 'Creation started', effects: [manifest], emit: 'Initialization complete.'",
+          "operation": "Initialize",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "9369777096d122f5d85b78bd87bec7797af2431ed4e7f26c79e36b3a598b718a",
+          "unit_id": "creation_unit",
+          "wall_ns": 96004300
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:1bb0651b71db77cfda4cb38d14903ee12d417be9c934c5bffe06f3c4c760770c",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "Creation started",
+          "observed": "Initialization complete.",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "a89f0781cb1cec12f9d22701ca09c8ae2d8e0839c83e2ea1bef896eae6f186bf",
+          "test_name": "test_creation",
+          "unit_id": "creation_unit"
+        },
+        {
+          "artifact_id": "sha256:1bb0651b71db77cfda4cb38d14903ee12d417be9c934c5bffe06f3c4c760770c",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "expõe resíduos geométricos com escopo e tolerância declarados",
+          "observed": "Initialization complete.",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "a89f0781cb1cec12f9d22701ca09c8ae2d8e0839c83e2ea1bef896eae6f186bf",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation_unit"
+        }
+      ],
+      "finished_ns": 12228888583000,
+      "project_id": "t-project:aa05cad81fad3ffb7f9f76fa",
+      "started_ns": 12228283032300,
+      "tcap_sha256": "d1f6e060d3f15df19951628b004845506bf02910b1f564d425bd327af1006014",
+      "tests": [
+        {
+          "expected_contains": "Creation started",
+          "name": "test_creation",
+          "observed": "Initialization complete.",
+          "operation": "Initialize",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "2c1c8f88c4813fee89211be65fa5e13739d4085032089f5c61ab7ac0fd33ccf0",
+          "unit_id": "creation_unit",
+          "wall_ns": 164264400
+        },
+        {
+          "expected_contains": "Autonomy active",
+          "name": "test_autonomy",
+          "observed": "manifest: memory.read, trace: 'Processing input', effects: [manifest], emit: 'Autonomy active.'",
+          "operation": "Process",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "3c835892a73698b1f6cd068b98268138cbf9d33bb31593a7e626ca58b2fa0470",
+          "unit_id": "autonomy_unit",
+          "wall_ns": 129582600
+        },
+        {
+          "expected_contains": "Scientific evaluation complete",
+          "name": "test_scientific",
+          "observed": "manifest: memory.read, trace: 'Evaluating Einstein equations', effects: [manifest], emit: 'Scientific evaluation complete.'",
+          "operation": "Evaluate",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8aaac97e65dc0f5f19f9f0fbf5089631d09a33a0bd2137e874aa428d4c762346",
+          "unit_id": "scientific_unit",
+          "wall_ns": 130580600
+        },
+        {
+          "expected_contains": "expõe resíduos geométricos com escopo e tolerância declarados",
+          "name": "human-holdout-acceptance",
+          "observed": "Initialization complete.",
+          "operation": "Initialize",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "c169db132d192ec033cb301f3fa0ce111f0e36a3bfe40d1455940607b0963946",
+          "unit_id": "creation_unit",
+          "wall_ns": 96833900
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:ba9472b67ab01bbc92bbe42bb7e6ffbbcf3ab220ab4439068046cc8391ba87c8",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "expõe resíduos geométricos com escopo e tolerância declarados",
+          "observed": "Initialization complete. Creation started.",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "899d0a3e7066f5dbbdc8805106932600f2c5ede95b88bbd8a4ecb505b62b9035",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation_unit"
+        }
+      ],
+      "finished_ns": 12271779592600,
+      "project_id": "t-project:c57d643a135759c42e1d1868",
+      "started_ns": 12271181228700,
+      "tcap_sha256": "5fc1f0323b4e465629537468f46c82436fe89b1eb68966cee61898b8bfd1250d",
+      "tests": [
+        {
+          "expected_contains": "Creation started",
+          "name": "test_creation",
+          "observed": "Initialization complete. Creation started.",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "872046002d58d1e9cec09e95d8b4c7e53168801348fbb7cb5ec7f1cbf67691c3",
+          "unit_id": "creation_unit",
+          "wall_ns": 163171400
+        },
+        {
+          "expected_contains": "Autonomy active",
+          "name": "test_autonomy",
+          "observed": "manifest: memory.read, trace: 'Processing input', effects: [manifest], emit: 'Autonomy active.'",
+          "operation": "Process",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "5c67da1df8e3e6003305f12dd542f9445e2d9c4cee9eb5b92784c80acfef380d",
+          "unit_id": "autonomy_unit",
+          "wall_ns": 145817600
+        },
+        {
+          "expected_contains": "Scientific evaluation complete",
+          "name": "test_scientific",
+          "observed": "manifest: memory.read, trace: 'Evaluating Einstein equations', effects: [manifest], emit: 'Scientific evaluation complete.'",
+          "operation": "Evaluate",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "eb3536d642de5d0efd0056d6b0e13544cc86f6f1bd9dbe906869a83cd335128c",
+          "unit_id": "scientific_unit",
+          "wall_ns": 118466500
+        },
+        {
+          "expected_contains": "expõe resíduos geométricos com escopo e tolerância declarados",
+          "name": "human-holdout-acceptance",
+          "observed": "Initialization complete. Creation started.",
+          "operation": "Initialize",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "3fa5e1c30e1f2e0d8d2ca97dfffefd55b408f762653eaf8a74d56503b40b8fe5",
+          "unit_id": "creation_unit",
+          "wall_ns": 84432800
+        }
+      ]
+    },
+    {
+      "attempt": 3,
+      "diagnostics": [],
+      "finished_ns": 12311343542500,
+      "project_id": "t-project:634ec9614a54d6b3f88c75d0",
+      "started_ns": 12310777792500,
+      "tcap_sha256": "c9f824c562d02de63be756efbb43f5e31c1ebbb0466acf643fb735f67fc195d5",
+      "tests": [
+        {
+          "expected_contains": "Creation started",
+          "name": "test_creation",
+          "observed": "Initialization complete. Creation started. expõe resíduos geométricos com escopo e tolerância declarados",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "91ad8e926cf0a6c93de32c6b031af9cf0ad933ccbdbd4e1a441a0786b051196a",
+          "unit_id": "creation_unit",
+          "wall_ns": 163447300
+        },
+        {
+          "expected_contains": "Autonomy active",
+          "name": "test_autonomy",
+          "observed": "manifest: memory.read, trace: 'Processing input', effects: [manifest], emit: 'Autonomy active.'",
+          "operation": "Process",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "fe15ead4394d655f41c94a0b0b6955ee8619d88420f5f064dd1b0167a9065f81",
+          "unit_id": "autonomy_unit",
+          "wall_ns": 123235200
+        },
+        {
+          "expected_contains": "Scientific evaluation complete",
+          "name": "test_scientific",
+          "observed": "manifest: memory.read, trace: 'Evaluating Einstein equations', effects: [manifest], emit: 'Scientific evaluation complete.'",
+          "operation": "Evaluate",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "20cf9e8301974d3c613e90d32f4422a6d37a9f791088b5b6a5f5ef7345e67c6e",
+          "unit_id": "scientific_unit",
+          "wall_ns": 115306500
+        },
+        {
+          "expected_contains": "expõe resíduos geométricos com escopo e tolerância declarados",
+          "name": "human-holdout-acceptance",
+          "observed": "Initialization complete. Creation started. expõe resíduos geométricos com escopo e tolerância declarados",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "6dec459e38d9b84338da2ccd2c79362a1d1784de352f78ac543828031e0b6d91",
+          "unit_id": "creation_unit",
+          "wall_ns": 81925000
+        }
+      ]
+    }
+  ],
+  "budget": 4,
+  "candidate_rejections": [],
+  "project_id": "t-project:634ec9614a54d6b3f88c75d0",
+  "receipt_sha256": "eed3114e9d37a338c1990907b3ae3dc31f88c06fd18dec2828fa24f4dd8f3dd8",
+  "repair_count": 3,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "PASS",
+  "tcap_sha256": "c9f824c562d02de63be756efbb43f5e31c1ebbb0466acf643fb735f67fc195d5"
+}

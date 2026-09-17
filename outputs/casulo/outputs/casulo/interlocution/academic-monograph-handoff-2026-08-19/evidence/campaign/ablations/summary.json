@@ -1,0 +1,22 @@
+{
+  "D_over_A_end_to_end_wall_ratio": 0.1695562192953054,
+  "ablations_sha256": "46da917f17a92f9d8d870c83925bb37b4c8ddcaf7bc35978560a70592ba388ca",
+  "arms": {
+    "A": "baseline transparent without T",
+    "B": "post-hoc T ignored",
+    "C": "T architect without final T judgment",
+    "D": "T architect, auditor and consumed judge"
+  },
+  "energy": "NOT_MEASURED",
+  "no_claim_that_D_must_win_every_baseline": true,
+  "results": {
+    "all_hot": "NOT_APPLICABLE_TO_SINGLE_PRIMITIVE_FLOOD_WORKLOAD",
+    "causal_rejection": "WRONG_DATASET_REJECTED_BEFORE_WORK_IN_TI6",
+    "no_evidence_gate": "EXECUTION_POSSIBLE_BUT_T_PUBLICATION_AUTHORITY_ABSENT",
+    "no_interlocution": "FAIL_CLOSED_BEFORE_WORK_BY_CONTRACT_TEST",
+    "posthoc_t_audit": "B_RESULT_IGNORED_AND_COUNTS_AS_ZERO_AUTHORITY",
+    "selected_working_set": "T_SELECTED_ALL_1024_RECORDS_REQUIRED_BY_CONFIRMED_R",
+    "t_architecture_without_judge": "C_EXECUTES_BUT_FINAL_ACCEPTANCE_IS_FOREIGN"
+  },
+  "schema": "casulo.interlocution-ablation-summary/1.0"
+}

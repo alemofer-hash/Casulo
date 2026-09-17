@@ -1,0 +1,22 @@
+{
+  "K_completed": 1,
+  "K_dispatched": 1,
+  "K_frozen": 1,
+  "K_requested": 1,
+  "K_started": 1,
+  "child_monotonic_ns": 41990800,
+  "end_unix_ns": 1787189110772100700,
+  "epochs_completed": 400,
+  "implementation": "E_STATIC_POLICY_SAME_NATIVE_KERNEL",
+  "optimizer_steps": 400,
+  "parent_monotonic_ns": 58382200,
+  "qpc_frequency": 10000000,
+  "qpc_ticks": 420007,
+  "receipt_chain_hash": "2943deb69fbd6372b823f97bf0e064469d25d2ef0e1f999f1d60d391c4eef384",
+  "receipt_count": 1,
+  "receipt_provenance": "SUPERVISOR_DERIVED_FROM_COMPLETED_RESULT_NOT_KERNEL_INTERNAL",
+  "records_visited": 409600,
+  "result_sha256": "14f2d851788def069ace01540c5b7be024d94a1db42c019d1827e3738d86c758",
+  "start_unix_ns": 1787189110713714200,
+  "thread_cycles": 98276507
+}

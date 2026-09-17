@@ -1,0 +1,8 @@
+{
+  "properties": [
+    "nine_surfaces",
+    "fail_closed",
+    "human_confirmation_required_for_publish",
+    "mutations_must_change_tcap_or_decision"
+  ]
+}

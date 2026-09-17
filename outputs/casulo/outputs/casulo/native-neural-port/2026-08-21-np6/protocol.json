@@ -1,0 +1,38 @@
+{
+  "schema": "casulo-native-qwen-block0-protocol/0.1",
+  "campaign_id": "2026-08-21-np6",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "model_bytes": 2497280256,
+  "token_ids_host_oracle": [49242, 8763],
+  "token_ids_native_gate": [49242],
+  "native_context": 1,
+  "host_contexts": [1, 2],
+  "native_stages": 19,
+  "host_stages": 38,
+  "tolerances": {
+    "sum_square_sum_absolute": 0.001,
+    "sum_square_sum_relative": 0.0005,
+    "minimum_maximum_absolute": 0.0001,
+    "minimum_maximum_relative": 0.0005,
+    "counts_exact": true,
+    "scalar_rust_output_hash_exact": true
+  },
+  "native_expected_work": {
+    "matvec_calls": 7,
+    "quantized_blocks": 394240,
+    "weight_bytes_read": 63866880,
+    "multiply_accumulates": 100925440,
+    "attention_scores": 32,
+    "arena_bytes": 259328
+  },
+  "accelerator": "whpx",
+  "repeat": 3,
+  "guest_network": false,
+  "physical_devices": false,
+  "performance_measured": false,
+  "energy_measured": false,
+  "later_blocks": false,
+  "logits": false,
+  "sampling": false,
+  "output_token": false
+}

@@ -1,0 +1,32 @@
+{
+  "modules": {
+    "research.interlocution.dataset": {
+      "decide": []
+    },
+    "research.interlocution.initialization": {
+      "decide": []
+    },
+    "research.interlocution.judgment": {
+      "judge": [],
+      "policy": []
+    },
+    "research.interlocution.loss": {
+      "decide": []
+    },
+    "research.interlocution.optimizer_state": {
+      "decide": []
+    },
+    "research.interlocution.precision": {
+      "decide": []
+    },
+    "research.interlocution.stopping": {
+      "decide": []
+    },
+    "research.interlocution.update": {
+      "decide": []
+    },
+    "research.interlocution.working_set": {
+      "decide": []
+    }
+  }
+}

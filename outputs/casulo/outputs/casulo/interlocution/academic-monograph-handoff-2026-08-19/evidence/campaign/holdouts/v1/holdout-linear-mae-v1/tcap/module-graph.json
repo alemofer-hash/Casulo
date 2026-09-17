@@ -1,0 +1,45 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "research.interlocution.holdout.holdout_linear_mae_v1.dataset_identity_integrity"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "research.interlocution.holdout.holdout_linear_mae_v1.dataset_identity_integrity"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.holdout.holdout_linear_mae_v1.initialization_bundle"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.holdout.holdout_linear_mae_v1.numerical_precision"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.holdout.holdout_linear_mae_v1.loss_function"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.holdout.holdout_linear_mae_v1.update_rule"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.holdout.holdout_linear_mae_v1.optimizer_state"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.holdout.holdout_linear_mae_v1.working_set"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.holdout.holdout_linear_mae_v1.stopping"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.holdout.holdout_linear_mae_v1.equivalence_acceptance"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

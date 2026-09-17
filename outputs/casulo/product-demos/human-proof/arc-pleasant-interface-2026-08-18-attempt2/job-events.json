@@ -1,0 +1,26 @@
+{
+  "events": [
+    {
+      "evidence_sha256": "74cbb7305955dd409a1cb75eb60d46a1e4637a4c7b0ed687ab80233347b11dc8",
+      "job_id": "arc9-contract",
+      "sequence": 1,
+      "status": "STARTED",
+      "summary": "Criação aceita; preparando o primeiro artefato verificável."
+    },
+    {
+      "evidence_sha256": "8b391d886eef9370c4f70e009b06dcbf1ec075dbdb853eda80207a6087787ad6",
+      "job_id": "arc9-contract",
+      "sequence": 2,
+      "status": "MILESTONE",
+      "summary": "Artifact de contrato persistido."
+    },
+    {
+      "evidence_sha256": "8b391d886eef9370c4f70e009b06dcbf1ec075dbdb853eda80207a6087787ad6",
+      "job_id": "arc9-contract",
+      "sequence": 3,
+      "status": "COMPLETED",
+      "summary": "Job de contrato concluído."
+    }
+  ],
+  "schema": "casulo.arc9-job-events/1.0"
+}

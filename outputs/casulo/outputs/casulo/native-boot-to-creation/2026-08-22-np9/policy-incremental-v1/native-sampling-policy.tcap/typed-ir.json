@@ -1,0 +1,436 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "decoder_gate"
+                ],
+                "root": "input"
+              },
+              "error": "decoder_gate_failed",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "blocks_completed"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 36
+                }
+              },
+              "error": "decoder_incomplete",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "candidate_unpublished"
+                ],
+                "root": "input"
+              },
+              "error": "late_publication_detected",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "policy_id"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "greedy-incremental-v1"
+                }
+              },
+              "error": "sampling_policy_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "token_index"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "else": [
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "token_index"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": 1
+                    }
+                  },
+                  "else": [
+                    {
+                      "op": "return_error",
+                      "value": {
+                        "op": "const",
+                        "value": "token_index_unsupported"
+                      }
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "condition": {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "input_token_id"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "eq",
+                        "right": {
+                          "op": "const",
+                          "value": 6237
+                        }
+                      },
+                      "error": "second_input_token_mismatch",
+                      "op": "require"
+                    },
+                    {
+                      "condition": {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "logits_sha256"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "eq",
+                        "right": {
+                          "op": "const",
+                          "value": "7d3054290d6283b90cc2e002f062a71aae0ae9dad0cfd3e1987e98c1457ee7f1"
+                        }
+                      },
+                      "error": "second_logits_identity_mismatch",
+                      "op": "require"
+                    },
+                    {
+                      "condition": {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "greedy_candidate_id"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "eq",
+                        "right": {
+                          "op": "const",
+                          "value": 374
+                        }
+                      },
+                      "error": "second_candidate_mismatch",
+                      "op": "require"
+                    },
+                    {
+                      "condition": {
+                        "left": {
+                          "args": [
+                            {
+                              "op": "path",
+                              "path": [
+                                "previous_receipt_hash"
+                              ],
+                              "root": "input"
+                            }
+                          ],
+                          "name": "len",
+                          "op": "call"
+                        },
+                        "op": "eq",
+                        "right": {
+                          "op": "const",
+                          "value": 64
+                        }
+                      },
+                      "error": "second_receipt_predecessor_invalid",
+                      "op": "require"
+                    },
+                    {
+                      "condition": {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "previous_receipt_hash"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "ne",
+                        "right": {
+                          "op": "const",
+                          "value": "0000000000000000000000000000000000000000000000000000000000000000"
+                        }
+                      },
+                      "error": "second_receipt_predecessor_missing",
+                      "op": "require"
+                    },
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "PUBLISH_TOKEN"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "input_token_id"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": 49242
+                    }
+                  },
+                  "error": "first_input_token_mismatch",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "logits_sha256"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "4760c2d93598f80a1b3b44cdbcb20fe4785af71127c6fe544c2996c07035a509"
+                    }
+                  },
+                  "error": "first_logits_identity_mismatch",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "greedy_candidate_id"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": 6237
+                    }
+                  },
+                  "error": "first_candidate_mismatch",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "previous_receipt_hash"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+                    }
+                  },
+                  "error": "first_receipt_predecessor_mismatch",
+                  "op": "require"
+                },
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "PUBLISH_TOKEN"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "NativeSamplingInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "owner.native.sampling_policy",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "decoder_gate",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "token_index",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "input_token_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "logits_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "blocks_completed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "greedy_candidate_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "candidate_unpublished",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "policy_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "previous_receipt_hash",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "NativeSamplingInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

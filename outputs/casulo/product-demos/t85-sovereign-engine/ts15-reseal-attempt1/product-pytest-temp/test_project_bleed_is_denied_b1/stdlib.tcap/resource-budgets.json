@@ -1,0 +1,56 @@
+{
+  "modules": {
+    "t.casulo.capabilities": {
+      "deadline_ms": 1000,
+      "steps": 1024
+    },
+    "t.casulo.dialogue": {
+      "deadline_ms": 1000,
+      "steps": 256
+    },
+    "t.casulo.intent": {
+      "deadline_ms": 1000,
+      "steps": 256
+    },
+    "t.casulo.jobs": {
+      "deadline_ms": 1000,
+      "steps": 1024
+    },
+    "t.casulo.materialization": {
+      "deadline_ms": 1000,
+      "steps": 256
+    },
+    "t.casulo.memory_policy": {
+      "deadline_ms": 1000,
+      "steps": 256
+    },
+    "t.casulo.receipts": {
+      "deadline_ms": 1000,
+      "steps": 256
+    },
+    "t.casulo.requirements": {
+      "deadline_ms": 1000,
+      "steps": 1024
+    },
+    "t.casulo.simulation": {
+      "deadline_ms": 1000,
+      "steps": 256
+    },
+    "t.casulo.universes": {
+      "deadline_ms": 1000,
+      "steps": 256
+    },
+    "t.core.canonical": {
+      "deadline_ms": 1000,
+      "steps": 256
+    },
+    "t.core.collections": {
+      "deadline_ms": 1000,
+      "steps": 1024
+    },
+    "t.core.result": {
+      "deadline_ms": 1000,
+      "steps": 256
+    }
+  }
+}

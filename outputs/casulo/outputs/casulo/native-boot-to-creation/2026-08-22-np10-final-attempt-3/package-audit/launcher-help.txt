@@ -1,0 +1,17 @@
+usage: launch_native_creation_visible.py [-h] [--image IMAGE] [--model MODEL]
+                                         [--qemu QEMU] [--ovmf-code OVMF_CODE]
+                                         [--ovmf-vars OVMF_VARS]
+                                         [--accelerator {whpx,tcg}]
+                                         [--timeout TIMEOUT]
+
+Open the sealed Casulo Native boot-to-creation proof
+
+options:
+  -h, --help            show this help message and exit
+  --image IMAGE
+  --model MODEL
+  --qemu QEMU
+  --ovmf-code OVMF_CODE
+  --ovmf-vars OVMF_VARS
+  --accelerator {whpx,tcg}
+  --timeout TIMEOUT

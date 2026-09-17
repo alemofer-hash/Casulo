@@ -1,0 +1,3 @@
+baseline,n,candidate_median_ms,baseline_median_ms,paired_speedup_median,ci95_low,ci95_high,equivalence,energy_measured
+PyTorch eager CPU,21,35.3111,337.0635,8.957846116377004,8.075179274795767,9.872415698954605,True,False
+PyTorch compile Inductor CPU,21,35.7186,489.6093,14.255580402716161,12.496743035085805,15.383164873824505,True,False

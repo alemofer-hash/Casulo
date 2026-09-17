@@ -1,0 +1,19 @@
+[package]
+name = "casulo-kernel"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+bootloader_api = "=0.11.15"
+x86_64 = { version = "=0.15.2", features = ["abi_x86_interrupt"] }
+sha2 = { version = "=0.10.9", default-features = false, features = ["force-soft"] }
+serde_json = { version = "=1.0.145", default-features = false, features = ["alloc"] }
+casulo-presentation-core = { path = "../presentation-core" }
+casulo-native-model = { path = "../native-model" }
+
+[[bin]]
+name = "casulo-kernel"
+path = "src/main.rs"
+test = false
+bench = false

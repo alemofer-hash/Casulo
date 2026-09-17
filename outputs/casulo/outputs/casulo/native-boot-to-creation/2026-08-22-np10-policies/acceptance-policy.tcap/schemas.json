@@ -1,0 +1,143 @@
+{
+  "modules": {
+    "owner.native.creation_acceptance": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "model_output_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "creation_name",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "function_name",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "input_contract",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "output_contract",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "generated_t_source_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "compiled_t_source_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "artifact_tcap_hash",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "simulation_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "simulation_left",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "simulation_right",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "simulation_result",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "expected_result",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "effects_requested",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "materialization_hash",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "NativeCreationAcceptanceInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.agent.interactive_talk_01.memory.t",
+      "module": "owner.agent.interactive_talk_01.memory",
+      "sha256": "8273f3f79dd9a12cae1d8cc43da1ccaa2881f6af86a8c92ad5c43ae5a49d1194"
+    },
+    {
+      "file": "sources/owner.agent.interactive_talk_01.interrupt.t",
+      "module": "owner.agent.interactive_talk_01.interrupt",
+      "sha256": "6d09b20a9b80a218d6bb1dc772f25060db0425503aa2340d437f830abd3619e1"
+    },
+    {
+      "file": "sources/owner.agent.interactive_talk_01.export.t",
+      "module": "owner.agent.interactive_talk_01.export",
+      "sha256": "a40485b7d38712f7cb1e670e33a8108d2d6de491a45870d4729efcfcab9c939e"
+    }
+  ]
+}

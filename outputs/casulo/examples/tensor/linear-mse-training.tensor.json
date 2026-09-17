@@ -1,0 +1,68 @@
+{
+  "format": "casulo-tensor-ir/0.1",
+  "inputs": {
+    "x": {
+      "dtype": "float64",
+      "shape": [
+        2,
+        2
+      ],
+      "device": "cpu",
+      "ownership": "borrowed"
+    },
+    "weight": {
+      "dtype": "float64",
+      "shape": [
+        2,
+        1
+      ],
+      "device": "cpu",
+      "ownership": "borrowed"
+    },
+    "target": {
+      "dtype": "float64",
+      "shape": [
+        2,
+        1
+      ],
+      "device": "cpu",
+      "ownership": "borrowed"
+    }
+  },
+  "calls": [
+    {
+      "result": "prediction",
+      "operator": "matmul",
+      "inputs": [
+        "x",
+        "weight"
+      ]
+    },
+    {
+      "result": "residual",
+      "operator": "sub",
+      "inputs": [
+        "prediction",
+        "target"
+      ]
+    },
+    {
+      "result": "squared",
+      "operator": "mul",
+      "inputs": [
+        "residual",
+        "residual"
+      ]
+    },
+    {
+      "result": "loss",
+      "operator": "mean",
+      "inputs": [
+        "squared"
+      ]
+    }
+  ],
+  "outputs": [
+    "loss"
+  ]
+}

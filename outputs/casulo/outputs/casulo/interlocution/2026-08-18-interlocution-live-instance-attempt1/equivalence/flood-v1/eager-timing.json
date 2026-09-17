@@ -1,0 +1,13 @@
+{
+  "K": 3,
+  "end_unix_ns": 1787108333754836800,
+  "implementation": "pytorch-eager-fullstep/2.0",
+  "qpc_frequency": 10000000,
+  "qpc_ticks": 39917412,
+  "result_file": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\interlocution\\2026-08-18-interlocution-live-instance-attempt1\\equivalence\\flood-v1\\eager-result.bin",
+  "result_sha256": "187e6a82098fc01d79addb81fa1b0fcd621353feb884e194588a0dd6d87f9c68",
+  "start": 0,
+  "start_unix_ns": 1787108329762946300,
+  "thread_cycles": 7296979563,
+  "worker_monotonic_ns": 3991436500
+}

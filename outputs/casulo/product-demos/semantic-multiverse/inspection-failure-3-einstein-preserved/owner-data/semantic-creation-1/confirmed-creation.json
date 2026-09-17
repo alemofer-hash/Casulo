@@ -1,0 +1,48 @@
+{
+  "capabilities": [
+    "memory.read"
+  ],
+  "content": {
+    "behavior": {
+      "autonomy": {
+        "level": 3,
+        "type": "autonomy"
+      }
+    },
+    "constraints": {
+      "precision": {
+        "level": 2,
+        "type": "precision"
+      }
+    },
+    "data": {
+      "requirements": {
+        "description": "Dados de entrada relacionados às condições do sistema em análise",
+        "type": "requirements"
+      }
+    },
+    "identity": {
+      "purpose": {
+        "description": "Resolução de equações de campo de Einstein com base nas condições definidas pelo usuário",
+        "type": "purpose"
+      }
+    },
+    "interface": {
+      "input": {
+        "description": "Definição das condições do sistema em análise pelo usuário",
+        "type": "input"
+      }
+    },
+    "output": {
+      "format": {
+        "description": "Saída com a solução das equações de campo de Einstein baseada nas condições fornecidas",
+        "type": "format"
+      }
+    }
+  },
+  "creation_id": "creation:open-ended-holdout",
+  "rejected_delta_ids": [],
+  "schema": "casulo.creation/1.0",
+  "state": "CONFIRMATION",
+  "version": 5
+}

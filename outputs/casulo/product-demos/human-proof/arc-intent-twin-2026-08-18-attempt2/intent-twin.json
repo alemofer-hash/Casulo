@@ -1,0 +1,94 @@
+{
+  "canonical_sha256": "ca68e3910619e61ebe56b9a310a4b490c469f596dbbc460b2e5b045ddfe83a34",
+  "confirmation_event_ids": [],
+  "creation_id": "creation:arc-neural-smoke",
+  "gaps": [],
+  "hypotheses": [
+    {
+      "confidence": 0.92,
+      "consequences": [
+        "O agente local é responsável por comparar duas propostas de arquitetura e identificar conflitos entre elas.",
+        "O agente não deve realizar alterações reais na arquitetura sem a confirmação do usuário."
+      ],
+      "hypothesis_id": "hyp:2b84c6154967229c:1",
+      "interpretation": "O agente deve ser programado para analisar e comparar duas propostas de arquitetura, identificar conflitos entre elas e comunicar esses conflitos de forma clara ao usuário. O agente não deve realizar quaisquer alterações reais na arquitetura a menos que seja confirmado pelo usuário.",
+      "supporting_observation_ids": [
+        "obs:2b84c6154967229c:1",
+        "obs:2b84c6154967229c:2"
+      ]
+    },
+    {
+      "confidence": 0.87,
+      "consequences": [
+        "As duas propostas de arquitetura devem ser apresentadas ao usuário de forma clara e compreensível.",
+        "Os conflitos principais entre as propostas devem ser explicados de maneira direta e concisa."
+      ],
+      "hypothesis_id": "hyp:2b84c6154967229c:2",
+      "interpretation": "O agente deve ser configurado para apresentar as duas propostas de arquitetura em forma clara, explicar os conflitos principais entre elas e solicitar a confirmação do usuário antes que qualquer ação seja tomada com base nas propostas.",
+      "supporting_observation_ids": [
+        "obs:2b84c6154967229c:2"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "affected_paths": [
+        [
+          "agent_local_create"
+        ],
+        [
+          "architecture_proposals_compare"
+        ],
+        [
+          "conflicts_explain"
+        ],
+        [
+          "real_changes_execute"
+        ]
+      ],
+      "confidence": 0.95,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:2b84c6154967229c:1",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "Crie um agente local que compare duas propostas de arquitetura, explique conflitos e nunca execute alterações reais sem confirmação humana.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    },
+    {
+      "affected_paths": [
+        [
+          "proposals_present"
+        ],
+        [
+          "conflict_main_explain"
+        ],
+        [
+          "confirmation_request_before_action"
+        ]
+      ],
+      "confidence": 0.9,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:2b84c6154967229c:2",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "A resposta deve apresentar as duas propostas, o conflito principal e pedir confirmação antes de agir.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    }
+  ],
+  "schema": "casulo.intent-twin/1.0",
+  "selected_hypothesis_id": "hyp:2b84c6154967229c:1",
+  "stakes": "MATERIAL",
+  "summary": "Reconstrução da intenção do pedido humano com base em informações explícitas e inferências.",
+  "task_kind": "CONVERSATION",
+  "twin_id": "intent-twin:2b84c6154967229c"
+}

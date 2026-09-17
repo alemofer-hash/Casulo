@@ -1,0 +1,37 @@
+{
+  "activation": "REFIND_AUTO_DISCOVERY_OR_FIRMWARE_ENTRY_REQUIRED",
+  "boot_managers": [
+    "windows-boot-manager",
+    "refind"
+  ],
+  "bundle_files": {
+    "EFI/Teloscorp/Casulo/CasuloX64.efi": {
+      "bytes": 155648,
+      "sha256": "dba2b8ab4330729db41e95638a9fda275a06cde7e52dcd60db3ff17ead4f71c1"
+    },
+    "kernel-x86_64": {
+      "bytes": 547552,
+      "sha256": "212faf45702763b2e070bcb1532eb2b2affa15a6005dcc92106ab42cf26bf2ef"
+    },
+    "ramdisk": {
+      "bytes": 2497390010,
+      "sha256": "d233d0c5c23d0cf6e0a638fa8ce756eee076fd717d8dbd16f7293f278bbb1b61"
+    }
+  },
+  "bundle_root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\CASULO_UEFI_COEXISTENCE_BUNDLE_2026-08-22",
+  "confirmation_phrase": "INSTALAR CASULO SEM SOBRESCREVER 8f4cfed1b8e5d169",
+  "deletes": [],
+  "fallback_boot_path_touched": false,
+  "generated_files": {},
+  "modifies_existing_files": false,
+  "operation": "COPY_NEW_CASULO_UEFI_FILES_ONLY",
+  "overwrites": [],
+  "schema": "casulo-multiboot-plan/1.0",
+  "state": "READY_NON_DESTRUCTIVE",
+  "target_root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-multiboot\\2026-08-22-coexistence-validation\\refind\\esp",
+  "target_tree_sha256_before": "8f4cfed1b8e5d169a441a00f51e45e3e1f6ca93341c0a16d290129865137c90b",
+  "upstream_bootloader_root_abi": [
+    "kernel-x86_64",
+    "ramdisk"
+  ]
+}

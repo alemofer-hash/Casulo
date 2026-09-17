@@ -1,0 +1,18 @@
+{
+  "schema": "casulo-definitive-idle-control-protocol/1.1",
+  "campaign_id": "2026-08-08-g5-full-worker-energy-definitive-04",
+  "created_before_control_a": true,
+  "duration_seconds_per_control": 300.0,
+  "initial_idle_ceiling_c": 60.0,
+  "dynamic_stability_band_tolerance_c": 1.0,
+  "matched_start_tolerance_c": 1.0,
+  "matched_start_stability_seconds": 30.0,
+  "observer_cpu_percent_of_one_core_max": 2.0,
+  "observer_power_delta_w_max": 1.0,
+  "observer_temperature_median_delta_c_max": 2.0,
+  "observer_temperature_max_delta_c_max": 3.0,
+  "p95_interval_seconds_max": 0.300,
+  "throttle_events_allowed": 0,
+  "watcher": "append-only-incremental-v1",
+  "workload_allowed_during_controls": false
+}

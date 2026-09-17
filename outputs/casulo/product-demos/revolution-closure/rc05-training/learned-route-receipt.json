@@ -1,0 +1,14 @@
+{
+  "adapter_id": "casulo-semantic-router-nb-char4-v1",
+  "allowed_universes": [
+    "diagnostico",
+    "engenharia",
+    "intencao"
+  ],
+  "capability_grants": [],
+  "chosen_universe": "diagnostico",
+  "confidence": 0.9999999999600917,
+  "fallback_without_adapter": "diagnostico",
+  "query_sha256": "ee7750373de220f3999fbc134511f28306dd31c1ebdeea79926a427898a5802c",
+  "schema": "casulo.learned-route-receipt/1.0"
+}

@@ -1,0 +1,1090 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "t.core.result"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "VERIFIED"
+                }
+              },
+              "error": "requirements_chain_broken",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "args": [
+                      {
+                        "op": "path",
+                        "path": [
+                          "granted"
+                        ],
+                        "root": "input"
+                      },
+                      {
+                        "name": "capability",
+                        "op": "name"
+                      }
+                    ],
+                    "name": "contains",
+                    "op": "call"
+                  },
+                  "error": "capability_not_granted",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "requested"
+                ],
+                "root": "input"
+              },
+              "limit": 16,
+              "name": "capability",
+              "op": "for"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "AUTHORIZED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "CapabilityInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.capabilities"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PUBLISHED"
+                }
+              },
+              "error": "materialization_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "progress_event_real"
+                ],
+                "root": "input"
+              },
+              "error": "invented_progress_denied",
+              "op": "require"
+            },
+            {
+              "op": "emit_event",
+              "value": {
+                "op": "const",
+                "value": "materialization_complete"
+              }
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "ANNOUNCE"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "DialogueInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.dialogue"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "CANONICAL"
+                }
+              },
+              "error": "canonical_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "confirmed"
+                ],
+                "root": "input"
+              },
+              "error": "human_confirmation_required",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "material"
+                ],
+                "root": "input"
+              },
+              "error": "non_material_turn",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "MATERIAL"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "IntentInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.intent"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "MEMORY_SELECTED"
+                }
+              },
+              "error": "memory_chain_broken",
+              "op": "require"
+            },
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "name": "dispatched",
+              "op": "set_state",
+              "value": {
+                "args": [
+                  {
+                    "op": "path",
+                    "path": [
+                      "dispatched"
+                    ],
+                    "root": "state"
+                  },
+                  {
+                    "op": "const",
+                    "value": 1
+                  }
+                ],
+                "name": "add",
+                "op": "call"
+              }
+            },
+            {
+              "limit": 8,
+              "name": "work",
+              "op": "spawn_job",
+              "payload": {
+                "op": "path",
+                "path": [
+                  "payload"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "name": "work",
+              "op": "join_job"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "JOBS_READY"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "JobInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.jobs"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "SIMULATED"
+                }
+              },
+              "error": "simulation_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "approved"
+                ],
+                "root": "input"
+              },
+              "error": "publish_approval_required",
+              "op": "require"
+            },
+            {
+              "effect": "manifest",
+              "op": "request_effect"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "PUBLISHED"
+              }
+            }
+          ],
+          "effects": [
+            "manifest"
+          ],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "MaterializationInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.materialization"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "AUTHORIZED"
+                }
+              },
+              "error": "capability_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "project_id"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "expected_project_id"
+                  ],
+                  "root": "input"
+                }
+              },
+              "error": "project_bleed_denied",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "consent"
+                ],
+                "root": "input"
+              },
+              "error": "memory_consent_required",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "MEMORY_SELECTED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "MemoryInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.memory_policy"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "ANNOUNCE"
+                }
+              },
+              "error": "dialogue_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "chain_valid"
+                ],
+                "root": "input"
+              },
+              "error": "receipt_chain_invalid",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "SEALED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "ReceiptInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.receipts"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "MATERIAL"
+                }
+              },
+              "error": "intent_chain_broken",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "left": {
+                      "name": "status",
+                      "op": "name"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "PASS"
+                    }
+                  },
+                  "error": "hard_requirement_not_pass",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "hard_statuses"
+                ],
+                "root": "input"
+              },
+              "limit": 64,
+              "name": "status",
+              "op": "for"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "VERIFIED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "RequirementsInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.requirements"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "ROUTED"
+                }
+              },
+              "error": "universe_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "sandboxed"
+                ],
+                "root": "input"
+              },
+              "error": "real_effect_denied_in_simulation",
+              "op": "require"
+            },
+            {
+              "effect": "simulation",
+              "op": "request_effect"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "SIMULATED"
+              }
+            }
+          ],
+          "effects": [
+            "simulation"
+          ],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "SimulationInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.simulation"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "JOBS_READY"
+                }
+              },
+              "error": "jobs_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "hot_count"
+                  ],
+                  "root": "input"
+                },
+                "op": "le",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "max_hot"
+                  ],
+                  "root": "input"
+                }
+              },
+              "error": "hot_working_set_exceeded",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "route_allowed"
+                ],
+                "root": "input"
+              },
+              "error": "semantic_route_denied",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "ROUTED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "UniverseInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.casulo.universes"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "ALL_PASS"
+                }
+              },
+              "error": "collection_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "schema_supported"
+                ],
+                "root": "input"
+              },
+              "error": "schema_not_supported",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "CANONICAL"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "CanonicalInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.core.canonical"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "result_chain_broken",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "left": {
+                      "name": "status",
+                      "op": "name"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "PASS"
+                    }
+                  },
+                  "error": "collection_contains_non_pass",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "statuses"
+                ],
+                "root": "input"
+              },
+              "limit": 64,
+              "name": "status",
+              "op": "for"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "ALL_PASS"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "CollectionInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.core.collections"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "result_not_pass",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "PASS"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "ResultInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "t.core.result"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

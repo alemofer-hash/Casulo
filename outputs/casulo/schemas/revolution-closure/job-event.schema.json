@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casulo://schemas/job-event/1.0",
+  "title": "Casulo Job Event 1.0",
+  "type": "object",
+  "required": ["schema", "event_id", "job_id", "sequence", "status", "summary", "evidence_sha256", "occurred_at"],
+  "properties": {
+    "schema": {"const": "casulo.job-event/1.0"},
+    "event_id": {"type": "string", "minLength": 1},
+    "job_id": {"type": "string", "minLength": 1},
+    "sequence": {"type": "integer", "minimum": 1},
+    "status": {"enum": ["STARTED", "MILESTONE", "COMPLETED", "FAILED", "CANCELLED"]},
+    "summary": {"type": "string", "minLength": 1},
+    "evidence_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "occurred_at": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

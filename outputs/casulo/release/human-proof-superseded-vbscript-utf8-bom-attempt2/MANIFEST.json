@@ -1,0 +1,292 @@
+{
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network_default": "OFF",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb_block_devices": "PROHIBITED"
+  },
+  "created": "2026-08-14T21:48:50.930009+00:00",
+  "files": [
+    {
+      "bytes": 146,
+      "path": "ALLOWED_SIGNERS",
+      "sha256": "6cf2f2b7f47df4ee24583c4ab75a5a75e25fbd7c6ecd1d32a19cbee64f0da190"
+    },
+    {
+      "bytes": 997,
+      "path": "CLAIMS.md",
+      "sha256": "fdd44367f03f9290c8862519ebde8eaa3f79f4565497c0c50043637039b9d741"
+    },
+    {
+      "bytes": 798,
+      "path": "COLLECT_FEEDBACK.vbs",
+      "sha256": "5ca80f04fbe9bc133b3d03ca11a30748a9aca3a5da58d7d7391927e63babd2c6"
+    },
+    {
+      "bytes": 338,
+      "path": "DEVELOPMENT_SIGNATURE.json",
+      "sha256": "7330f776523610dd4ee3bf9db890ecf528ccc074d8b9c43ae8bd288e2cf2ec87"
+    },
+    {
+      "bytes": 702,
+      "path": "HUMAN_PROOF_CARD.md",
+      "sha256": "587412f5d5d412c0af942c83f15fffaf5dd75b9ef06171642a1a05b5d6ee7fbf"
+    },
+    {
+      "bytes": 1034,
+      "path": "HUMAN_PROOF_RUNBOOK.md",
+      "sha256": "02f11de7229083e489317668e0069c85fc2ed930a48d144696c29fa822d81916"
+    },
+    {
+      "bytes": 956,
+      "path": "KNOWN_LIMITATIONS.md",
+      "sha256": "cee26533c9564d300dbd1a446b00698b7b2b833bb837ded6e754a8f2b98efe14"
+    },
+    {
+      "bytes": 2162688,
+      "path": "OWNER_VM/casulo-native-generative-interactive.img",
+      "sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b"
+    },
+    {
+      "bytes": 50423,
+      "path": "OWNER_VM/casulo-owner-generative-semantic-multiverse.zip",
+      "sha256": "547cc4047b5d7523dae28960dbaa67971bdf952ece4a9e7b2a9f14a9104f6a9a"
+    },
+    {
+      "bytes": 3844,
+      "path": "OWNER_VM/EDITION_BUILD.json",
+      "sha256": "fb8b9d3b78299c1a092e960afdb0bbf4e5c09342c693aa6e0e0c7ff7997a4b2c"
+    },
+    {
+      "bytes": 151,
+      "path": "OWNER_VM/editions/cloud-standby/ALLOWED_SIGNERS",
+      "sha256": "530df38166884053feec4f4e97d9233b0b50f6f252d16436504d8e532dde203d"
+    },
+    {
+      "bytes": 14917,
+      "path": "OWNER_VM/editions/cloud-standby/casulo_cloud_standby-0.1.0a1-py3-none-any.whl",
+      "sha256": "776cb790e0dfae321e73a5245fa6222abed37b2abcd4964092203b2f03a8bb6b"
+    },
+    {
+      "bytes": 1152,
+      "path": "OWNER_VM/editions/cloud-standby/SBOM.spdx.json",
+      "sha256": "95b6f885c728d4fb130391f5654f8dbb043d46ff087e1c3db58e7f6a68883ec1"
+    },
+    {
+      "bytes": 130,
+      "path": "OWNER_VM/editions/cloud-standby/SIGNATURE_VERIFICATION.txt",
+      "sha256": "cb3da4b853bfbad3dac13c9e302a04ce0fcad3eb64c6652db5b0c8c80d30f75c"
+    },
+    {
+      "bytes": 126,
+      "path": "OWNER_VM/editions/cloud-standby/SIGNING_KEY.pub",
+      "sha256": "28685c6fe1858f076166ca145a3910dd17c2d49325561cf6173c20c3ea8649ba"
+    },
+    {
+      "bytes": 135,
+      "path": "OWNER_VM/editions/owner/ALLOWED_SIGNERS",
+      "sha256": "93cab38ac3e4bca91a20cc57ac556c14b520a5c4bab537e223e2b8614b4e7f50"
+    },
+    {
+      "bytes": 69561,
+      "path": "OWNER_VM/editions/owner/casulo_owner-0.1.0a1-py3-none-any.whl",
+      "sha256": "a4b4a8bf5bf2c8eba83c857bc92fa6335c435051821c24421fa5fcf8ff1e90e4"
+    },
+    {
+      "bytes": 1120,
+      "path": "OWNER_VM/editions/owner/SBOM.spdx.json",
+      "sha256": "6721de8ba0999d411cea587d2278517519e913a60cd953f743e0f5ab4381b704"
+    },
+    {
+      "bytes": 122,
+      "path": "OWNER_VM/editions/owner/SIGNATURE_VERIFICATION.txt",
+      "sha256": "b6501863ce7a70356bbe04e2c0459b2647968143834c94b7eae2dcad6fd72472"
+    },
+    {
+      "bytes": 118,
+      "path": "OWNER_VM/editions/owner/SIGNING_KEY.pub",
+      "sha256": "7400dc9a49c80a8e98f1e1acbb91edd5c597e3c89c3b53eb36d9df0ca1edc016"
+    },
+    {
+      "bytes": 137,
+      "path": "OWNER_VM/editions/public/ALLOWED_SIGNERS",
+      "sha256": "5c216d6473d4765876ba46cce49005f42eb2f280bd84525f10c5c924f9a6e62b"
+    },
+    {
+      "bytes": 3972,
+      "path": "OWNER_VM/editions/public/casulo_public-0.1.0a1-py3-none-any.whl",
+      "sha256": "5061c5691102da444a52ca173a130d3c1a032937921911b2f2cceaa9e1da26f4"
+    },
+    {
+      "bytes": 462,
+      "path": "OWNER_VM/editions/public/PUBLIC_AUDIT.json",
+      "sha256": "440e4e6d382f4459865b25c22769934e9481fc783bfe0fee00f190e7e4773030"
+    },
+    {
+      "bytes": 1095,
+      "path": "OWNER_VM/editions/public/SBOM.spdx.json",
+      "sha256": "68574b36fd83db5380007bfae0893e6695d639baecb4d578480e78d6d29f2e96"
+    },
+    {
+      "bytes": 123,
+      "path": "OWNER_VM/editions/public/SIGNATURE_VERIFICATION.txt",
+      "sha256": "2778c9995375d8b044948cbe1f1a70a7170625796f499265e9c0b9bf5aca681d"
+    },
+    {
+      "bytes": 119,
+      "path": "OWNER_VM/editions/public/SIGNING_KEY.pub",
+      "sha256": "bf10b92d8090157f9f033af603ba2530e832da78df21a3a31f440897d0de9d61"
+    },
+    {
+      "bytes": 502,
+      "path": "OWNER_VM/MODEL_REFERENCE.json",
+      "sha256": "87cd4eeb36546fd64e6babf0e46b11464842b77adff1b6b9267f1d4b5983bdf9"
+    },
+    {
+      "bytes": 1215,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/__init__.py",
+      "sha256": "c733117c2a433142de3537e77b6b2859fa0cbf66f58f080fb6828271f3c7dfb2"
+    },
+    {
+      "bytes": 2180,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/assets/generative-candidate.json",
+      "sha256": "42b2c54788298c10c781695d48f9f7867f5cb25e6407f90dcf0ff45466c70562"
+    },
+    {
+      "bytes": 6887,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/dialogue_core.py",
+      "sha256": "c37d9d2782df24881f3259f36441f46bdd558a59440d400c8f97bc84ebb91fab"
+    },
+    {
+      "bytes": 14228,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/einstein_solver_kernel.py",
+      "sha256": "609939f06313978c1b7768c84644d64918af2380b717faf2c047736e0fa9516d"
+    },
+    {
+      "bytes": 18124,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/generative_agent_probe.py",
+      "sha256": "872a3cd6a26b3031634d39b2fbccef3a035cb2bb792df779a487e47c630fcada"
+    },
+    {
+      "bytes": 11750,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/generative_engine.py",
+      "sha256": "ad0de66fe57b77bc6250ec5d460bbb75f3fd1c70ed4ef7050cc09fb7f8c3d48a"
+    },
+    {
+      "bytes": 32633,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/generative_forge.py",
+      "sha256": "21d25f76e882db891a057d6d9e1dcb86fddd7e1314b3bf1929888b02f4ecf11d"
+    },
+    {
+      "bytes": 19725,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/generative_model.py",
+      "sha256": "5a9c6cb26374a4cea4fa8c14b217f72ed6b2197473633e527d903782c7cc3fd7"
+    },
+    {
+      "bytes": 8284,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/inspection.py",
+      "sha256": "3bf669fa9feed943c2df1c7440132557e43a4ba8c3d69b787f811db5fc6678f5"
+    },
+    {
+      "bytes": 17399,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/local_model_runtime.py",
+      "sha256": "08883bc84b4381e549f53df6ed774bc431dd227cbe666827f3f94a80f457b060"
+    },
+    {
+      "bytes": 5442,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/scientific_solver.py",
+      "sha256": "801177d7a9439398ddc96bd97d4550d50e497a2cd1d2f2e4926fd5daf109527f"
+    },
+    {
+      "bytes": 15509,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/semantic_multiverse.py",
+      "sha256": "5589cd6841e67b94805b08a2a2c21382392a929cfe54d0001f33b0e3b7b60d81"
+    },
+    {
+      "bytes": 12937,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/casulo_owner/verifier_repair.py",
+      "sha256": "bfc4ac03a9af7e5543a99a61856c1005db3f7e525a0353e73aad0c27bebeeaa3"
+    },
+    {
+      "bytes": 3070,
+      "path": "OWNER_VM/owner-artifact-extracted-audit/OWNER_ARTIFACT.json",
+      "sha256": "f76b6d51327ab9aa1674bf02c6c7f826d3c535565696777d07917dfe37f26a71"
+    },
+    {
+      "bytes": 1270,
+      "path": "OWNER_VM/OWNER_ARTIFACT_BUILD.json",
+      "sha256": "ec57dc3db190fdfc42704309f683585e80c100c95ef071fa44686c12a104cb83"
+    },
+    {
+      "bytes": 3212,
+      "path": "OWNER_VM/OWNER_ARTIFACT_EXTRACTED_AUDIT.json",
+      "sha256": "86f5b592e0ddc8a4c5553130c8d2847383387189acec179f262b337ca598007d"
+    },
+    {
+      "bytes": 454,
+      "path": "OWNER_VM/PUBLIC_BOUNDARY_AUDIT.json",
+      "sha256": "5c0bcad806c4253ea67909d3eefcbc274d8fb3227cb0acd6d07842356a5c8544"
+    },
+    {
+      "bytes": 7727,
+      "path": "OWNER_VM/tools/human_proof_control.pyw",
+      "sha256": "646163d2393c8bfc33fd900cee984098bfd9efad72e62161742c7117dffc3a41"
+    },
+    {
+      "bytes": 8857,
+      "path": "OWNER_VM/tools/human_proof_window.pyw",
+      "sha256": "b7e8f1cd68bdabf4d62983a15520a52e513a41302df278c6bd926e331156d21a"
+    },
+    {
+      "bytes": 481,
+      "path": "OWNER_VM/VM_PROFILE.json",
+      "sha256": "832f7cb8a656697e9e06d8794fdc98df21ce4db485f74da85308b0aee39af8d6"
+    },
+    {
+      "bytes": 797,
+      "path": "RESTORE_CLEAN_STATE.vbs",
+      "sha256": "499422e135acde880115d098c920de606f77e30c5924c89645c5d6530f806179"
+    },
+    {
+      "bytes": 659,
+      "path": "ROLLBACK.md",
+      "sha256": "405d454fa9e9036bc9f6d0529ff973a5a41410f998bed8c7538c373c2f37b6c5"
+    },
+    {
+      "bytes": 1226,
+      "path": "SBOM.spdx.json",
+      "sha256": "9ab09149b60e9482cd30a934c735e72639424e3247ce31064cad1f620db1e811"
+    },
+    {
+      "bytes": 118,
+      "path": "SIGNING_KEY.pub",
+      "sha256": "7400dc9a49c80a8e98f1e1acbb91edd5c597e3c89c3b53eb36d9df0ca1edc016"
+    },
+    {
+      "bytes": 789,
+      "path": "START_CASULO_OWNER.vbs",
+      "sha256": "1d9b9880346b341c14bec682d390471a09d473bc8b0a7442b34981154a7bef0d"
+    },
+    {
+      "bytes": 796,
+      "path": "VERIFY_RELEASE.vbs",
+      "sha256": "441f3d0498b8a2d056b9ecdcb80d3a22499ac963bafc833f62ecaa8c2287976a"
+    }
+  ],
+  "human_proof": "PENDING_GUILHERME",
+  "model": {
+    "cache_private": true,
+    "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_embedded": false,
+    "model_license": "Apache-2.0",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "runtime_archive_sha256": "a9d95d26cf00664f2902f73cb0fd9b167a3a1f252294bb2f8b236305f57d6363",
+    "runtime_executable_sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e",
+    "runtime_license": "MIT",
+    "schema": "casulo.human-proof-model-reference/1.0"
+  },
+  "schema": "casulo.human-proof-release/1.0",
+  "signature": "DEVELOPMENT_NOT_COMMERCIAL",
+  "state": "RC12_CANDIDATE_PENDING_GATE"
+}

@@ -1,0 +1,31 @@
+{
+  "affected_paths": [
+    [
+      "behavior",
+      "approval"
+    ]
+  ],
+  "diagnostic_code": "TTEST_EXPECTED_TEXT_MISSING",
+  "diagnostic_sha256": "aec79f72dfd098551a4625022da4480a9ea7f7be86139fb4f241c7a1ddc7acaa",
+  "plan_sha256": "8bdb3b005a2cde6a3f1c4753ecdd2a57daf4e72d28a768dd3bd2bfe5c67723c5",
+  "rebuild_unit_ids": [
+    "review",
+    "output"
+  ],
+  "requirement_ids": [
+    "req:twin:arc6-smoke:obs:approval"
+  ],
+  "reuse_unit_ids": [
+    "decision",
+    "identity"
+  ],
+  "schema": "casulo.causal-repair-plan/1.0",
+  "seed_unit_ids": [
+    "review"
+  ],
+  "source_event_ids": [
+    "verifier:diagnostic:0:approval"
+  ],
+  "target_unit_id": "review",
+  "test_name": "approval"
+}

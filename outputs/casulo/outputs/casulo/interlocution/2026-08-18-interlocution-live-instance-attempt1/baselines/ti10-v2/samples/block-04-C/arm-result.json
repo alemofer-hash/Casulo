@@ -1,0 +1,52 @@
+{
+  "arm": "C",
+  "count": 2,
+  "energy": {
+    "package_joules": null,
+    "reason": "NO_ENERGY_INSTRUMENT_USED_IN_TI9_TI10",
+    "total_system_joules": null
+  },
+  "inner_total_ns": 510308300,
+  "phases_ns": {
+    "publication_ns": 2988300,
+    "t_architecture_ns": 346795700,
+    "training_and_receipting_ns": 160509900
+  },
+  "publication": {
+    "accepted": true,
+    "arm": "C",
+    "publication_authority": "T_ARCHITECTURE_FOREIGN_ACCEPTANCE",
+    "result_sha256": "c6dca2aafc872960f2e56622533842bd1fc2d284acf05e043a17b0cf794d7243",
+    "t_judge_required": false
+  },
+  "result_file": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\interlocution\\2026-08-18-interlocution-live-instance-attempt1\\baselines\\ti10-v2\\samples\\block-04-C\\worker\\worker-result.bin",
+  "result_sha256": "c6dca2aafc872960f2e56622533842bd1fc2d284acf05e043a17b0cf794d7243",
+  "schema": "casulo.interlocution-arm-result/1.0",
+  "start": 0,
+  "summary_sha256": "9fd30c62004ada38adff34fbd64f5f1a8695598d51f83053a4e3e84ef206c01d",
+  "work_summary": {
+    "K_completed": 2,
+    "K_requested": 2,
+    "K_started": 2,
+    "authority_chain_tip": "21842288a5385b90ec4276812d3bfe9029bee29a5e120371dcbd67d11d0e4c16",
+    "child_timing": {
+      "count": 2,
+      "parent_monotonic_ns": 90193200,
+      "qpc_frequency": 10000000,
+      "qpc_ticks": 650157,
+      "start": 0,
+      "thread_cycles": 155974540,
+      "worker_monotonic_ns": 65006700
+    },
+    "epochs_completed": 800,
+    "optimizer_steps": 800,
+    "parameter_writes": 64800,
+    "receipt_file_sha256": "82a94421211819791dff27e983dd1470d89f03d0999952024973418f8aa63111",
+    "records_visited": 819200,
+    "result_file_sha256": "c6dca2aafc872960f2e56622533842bd1fc2d284acf05e043a17b0cf794d7243",
+    "schema": "casulo.interlocution-worker-summary/1.0",
+    "status": "WORK_COMPLETED_RECEIPTED",
+    "summary_sha256": "023594d0f0f26f50664fcfd2920ae83c435188f3fea1a60d52040504dd16a2c2",
+    "work_chain_tip": "94d9867c346c4b36d50dcd0a8f9cafad89ae7db46b5d4b8d5632e34c22e7dfb5"
+  }
+}

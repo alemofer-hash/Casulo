@@ -1,0 +1,132 @@
+{
+  "accepted": true,
+  "attempts": [
+    {
+      "attempt": 0,
+      "candidate": {
+        "claims": [
+          "the_conversation_studio_is_a_single_process_with_separate_memory_per_work",
+          "the_conversation_studio_allows_for_interruptible_interactions",
+          "the_conversation_studio_provides_editable_export_of_conversations",
+          "the_conversation_studio_does_not_report_false_progress"
+        ],
+        "creative": {
+          "barge_in": true,
+          "export": "editable",
+          "interaction": [
+            "memory-per-work",
+            "interruptible"
+          ],
+          "progress_source": "job-events-only",
+          "project_isolation": true
+        }
+      },
+      "fulfillment": {
+        "accepted": true,
+        "candidate_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+        "coverage": 1.0,
+        "diagnostics": [],
+        "evidence": [
+          {
+            "artifact_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+            "receipt_id": "evidence:961c2414cbd69f61:isolation",
+            "requirement_id": "interactive-creative-tool:isolation",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:isolation"
+          },
+          {
+            "artifact_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+            "receipt_id": "evidence:961c2414cbd69f61:barge",
+            "requirement_id": "interactive-creative-tool:barge",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:barge"
+          },
+          {
+            "artifact_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+            "receipt_id": "evidence:961c2414cbd69f61:export",
+            "requirement_id": "interactive-creative-tool:export",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:export"
+          },
+          {
+            "artifact_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+            "receipt_id": "evidence:961c2414cbd69f61:progress",
+            "requirement_id": "interactive-creative-tool:progress",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:progress"
+          }
+        ],
+        "hard_failures": [],
+        "pack_id": "interactive-creative-tool",
+        "schema": "casulo.fulfillment-result/1.0",
+        "spec_gap": 0.0,
+        "unknown": [],
+        "unsupported_claims": [],
+        "verdicts": {
+          "interactive-creative-tool:barge": "PASS",
+          "interactive-creative-tool:export": "PASS",
+          "interactive-creative-tool:isolation": "PASS",
+          "interactive-creative-tool:progress": "PASS"
+        }
+      },
+      "raw_sha256": "6edeeb075f547f57ba4d8916da6992152769ad54cf7811e61c4f7ead785a2010",
+      "structured": true,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "aa12a570b116c3dcb67891f3ad516007681b546a1d568625de7ad241eb6ada2e",
+        "ended_monotonic_ns": 11650509453900,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-creative-dialogue:attempt:0",
+        "output_sha256": "6edeeb075f547f57ba4d8916da6992152769ad54cf7811e61c4f7ead785a2010",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 11626298225000,
+        "stream_events": 144
+      }
+    }
+  ],
+  "domain": "interactive-creative-tool",
+  "family_id": "holdout-creative-dialogue",
+  "pack_id": "interactive-creative-tool",
+  "request_sha256": "8d00e76a41dfd5bf76847c6f58b5ab331a26d38d9f828270f89ff3a843e1813c"
+}

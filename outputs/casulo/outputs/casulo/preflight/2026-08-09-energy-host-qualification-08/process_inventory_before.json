@@ -1,0 +1,210 @@
+{
+  "captured_at_utc": "2026-08-10T02:25:05.547225+00:00",
+  "logical_cpu_count": 12,
+  "relevant_processes": [
+    {
+      "command_line": [
+        "C:\\Program Files\\HWiNFO64\\HWiNFO64.EXE"
+      ],
+      "cpu_percent_all_logical": 43.7,
+      "executable": "C:\\Program Files\\HWiNFO64\\HWiNFO64.EXE",
+      "name": "HWiNFO64.EXE",
+      "pid": 19392,
+      "working_set_bytes": 229310464
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+        "--type=gpu-process",
+        "--no-pre-read-main-dll",
+        "--start-stack-profiler",
+        "--gpu-preferences=WAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA=",
+        "--metrics-shmem-handle=2080,i,16047637596103945495,15351072815480991736,262144",
+        "--field-trial-handle=2204,i,16597868244730067476,4737994428763303276,262144",
+        "--enable-features=OwlHistory,OwlPrinting,ReportStuckThrottle",
+        "--disable-features=DropInputEventsWhilePaintHolding,OwlExtensions,OwlOpenAIGoLinks",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=2208,i,14612507735871012861,17702304560984047005,4",
+        "--trace-process-track-uuid=3190708988185955192",
+        "--mojo-platform-channel-handle=2148",
+        "/prefetch:2"
+      ],
+      "cpu_percent_all_logical": 18.4,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 20528,
+      "working_set_bytes": 192929792
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+        "--type=renderer",
+        "--standard-schemes=app,codex-sandbox",
+        "--service-worker-schemes=codex-sandbox",
+        "--secure-schemes=app,codex-sandbox,sentry-ipc",
+        "--bypasscsp-schemes=sentry-ipc",
+        "--fetch-schemes=app,codex-sandbox,sentry-ipc",
+        "--cors-schemes=codex-sandbox,sentry-ipc",
+        "--streaming-schemes=app,codex-sandbox",
+        "--no-pre-read-main-dll",
+        "--disable-blink-features=ReplacedNormalFlowStackingInlinePaint",
+        "--video-capture-use-gpu-memory-buffer",
+        "--lang=pt-BR",
+        "--device-scale-factor=1",
+        "--num-raster-threads=4",
+        "--enable-main-frame-before-activation",
+        "--renderer-client-id=5",
+        "--time-ticks-at-unix-epoch=-1786320094758038",
+        "--launch-time-ticks=291681945",
+        "--metrics-shmem-handle=4784,i,7949669952329989028,1792098857555706633,2097152",
+        "--field-trial-handle=2204,i,16597868244730067476,4737994428763303276,262144",
+        "--enable-features=OwlHistory,OwlPrinting,ReportStuckThrottle",
+        "--disable-features=DropInputEventsWhilePaintHolding,OwlExtensions,OwlOpenAIGoLinks",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=2208,i,14612507735871012861,17702304560984047005,4",
+        "--trace-process-track-uuid=3190708990997080739",
+        "--mojo-platform-channel-handle=4796",
+        "/prefetch:1"
+      ],
+      "cpu_percent_all_logical": 15.9,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 2872,
+      "working_set_bytes": 533762048
+    },
+    {
+      "command_line": [],
+      "cpu_percent_all_logical": 6.4,
+      "executable": "",
+      "name": "System",
+      "pid": 4,
+      "working_set_bytes": 708608
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+      ],
+      "cpu_percent_all_logical": 1.3,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 5052,
+      "working_set_bytes": 266858496
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\resources\\codex.exe",
+        "-c",
+        "features.code_mode_host=true",
+        "app-server",
+        "--analytics-default-enabled"
+      ],
+      "cpu_percent_all_logical": 1.3,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\resources\\codex.exe",
+      "name": "codex.exe",
+      "pid": 5732,
+      "working_set_bytes": 160378880
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\Adobe\\Adobe Creative Cloud\\ACC\\Creative Cloud UI Helper.exe",
+        "--type=gpu-process",
+        "--no-sandbox",
+        "--locales-dir-path=C:\\Program Files\\Common Files\\Adobe\\Adobe Desktop Common\\CEF\\locales",
+        "--log-severity=warning",
+        "--user-agent=Mozilla/5.0 (Windows NT 10.0.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.190 Safari/537.36 CreativeCloud/6.8.1.856",
+        "--lang=pt_BR",
+        "--user-data-dir=C:\\Users\\guimo\\AppData\\Local\\CEF\\User Data",
+        "--gpu-preferences=WAAAAAAAAADgABAMAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA==",
+        "--log-file=C:\\Users\\guimo\\AppData\\Local\\Temp\\CreativeCloud\\ACC\\CEF.log",
+        "--mojo-platform-channel-handle=2204",
+        "--field-trial-handle=2208,i,14270199060730973388,18361499442566476907,262144",
+        "--disable-features=BackForwardCache,CalculateNativeWinOcclusion,DocumentPictureInPictureAPI",
+        "/prefetch:2"
+      ],
+      "cpu_percent_all_logical": 1.3,
+      "executable": "C:\\Program Files\\Adobe\\Adobe Creative Cloud\\ACC\\Creative Cloud UI Helper.exe",
+      "name": "Creative Cloud UI Helper.exe",
+      "pid": 23496,
+      "working_set_bytes": 58728448
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.295.453.0_x64__zpdnekdrzrea0\\SpotifyLauncher.exe",
+        "/InvokerPRAID:",
+        "Spotify",
+        "--session-connected-task"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.295.453.0_x64__zpdnekdrzrea0\\SpotifyLauncher.exe",
+      "name": "SpotifyLauncher.exe",
+      "pid": 16492,
+      "working_set_bytes": 31801344
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\Cairo Shell\\CairoDesktop.exe"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files\\Cairo Shell\\CairoDesktop.exe",
+      "name": "CairoDesktop.exe",
+      "pid": 16584,
+      "working_set_bytes": 169283584
+    },
+    {
+      "command_line": [
+        "C:\\ProgramData\\Lenovo\\Udc\\Hosts\\x64\\MessagingPlugin.exe",
+        "C:\\ProgramData\\Lenovo\\Udc\\Broker\\SharedUser\\2D9B299D-6E51-4DD5-A58B-3F455EBDB060",
+        "5476",
+        "MessagingPlugin"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\ProgramData\\Lenovo\\Udc\\Hosts\\x64\\MessagingPlugin.exe",
+      "name": "MessagingPlugin.exe",
+      "pid": 17012,
+      "working_set_bytes": 42360832
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+        "--type=utility",
+        "--utility-sub-type=network.mojom.NetworkService",
+        "--lang=pt-BR",
+        "--service-sandbox-type=none",
+        "--standard-schemes=app,codex-sandbox",
+        "--service-worker-schemes=codex-sandbox",
+        "--secure-schemes=app,codex-sandbox,sentry-ipc",
+        "--bypasscsp-schemes=sentry-ipc",
+        "--fetch-schemes=app,codex-sandbox,sentry-ipc",
+        "--cors-schemes=codex-sandbox,sentry-ipc",
+        "--streaming-schemes=app,codex-sandbox",
+        "--no-pre-read-main-dll",
+        "--start-stack-profiler",
+        "--metrics-shmem-handle=2380,i,920971295243140127,8114435181015250936,524288",
+        "--field-trial-handle=2204,i,16597868244730067476,4737994428763303276,262144",
+        "--enable-features=OwlHistory,OwlPrinting,ReportStuckThrottle",
+        "--disable-features=DropInputEventsWhilePaintHolding,OwlExtensions,OwlOpenAIGoLinks",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=2208,i,14612507735871012861,17702304560984047005,4",
+        "--trace-process-track-uuid=3190708989122997041",
+        "--mojo-platform-channel-handle=2424",
+        "/prefetch:11"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 21412,
+      "working_set_bytes": 42725376
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\Rainmeter\\Rainmeter.exe"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files\\Rainmeter\\Rainmeter.exe",
+      "name": "Rainmeter.exe",
+      "pid": 27620,
+      "working_set_bytes": 58241024
+    }
+  ],
+  "sample_seconds": 2.0
+}

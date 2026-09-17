@@ -1,0 +1,20 @@
+{
+  "accelerator_profile": [
+    "whpx",
+    "tcg"
+  ],
+  "base": "casulo-native-generative-interactive.img",
+  "base_read_only": true,
+  "base_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+  "clean_snapshot": "t85-human-proof-clean",
+  "firmware": "OVMF",
+  "guest_network_default": "OFF",
+  "machine": "q35",
+  "overlay": "sparse-qcow2-runtime-created",
+  "overlay_quota_bytes": 12884901888,
+  "qpu": "UNAVAILABLE_DENY",
+  "schema": "casulo.t85-vm-profile/1.0",
+  "shared_folders": false,
+  "state_root": "%LOCALAPPDATA%/Casulo/t85-human-proof/owner-vm",
+  "usb_block_devices": "PROHIBITED"
+}

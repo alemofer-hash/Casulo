@@ -1,0 +1,721 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "tile_index"
+                  ],
+                  "root": "input"
+                },
+                "op": "ge",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "invalid_tile_index",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "frame_index"
+                  ],
+                  "root": "input"
+                },
+                "op": "ge",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "invalid_frame_index",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "plane_index"
+                  ],
+                  "root": "input"
+                },
+                "op": "ge",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "invalid_plane_index",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "exact_candidate_reconstruction"
+                ],
+                "root": "input"
+              },
+              "error": "tile_roundtrip_failed",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "no_foreign_bitstream"
+                ],
+                "root": "input"
+              },
+              "error": "foreign_video_bitstream_forbidden",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "dc_xor_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "invalid_dc_cost",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "paeth_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "invalid_paeth_cost",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "direct_zlib_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "invalid_zlib_cost",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "raw_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "empty_canonical_tile",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "and",
+                "values": [
+                  {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "dc_xor_bytes"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "le",
+                    "right": {
+                      "op": "path",
+                      "path": [
+                        "paeth_bytes"
+                      ],
+                      "root": "input"
+                    }
+                  },
+                  {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "dc_xor_bytes"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "le",
+                    "right": {
+                      "op": "path",
+                      "path": [
+                        "direct_zlib_bytes"
+                      ],
+                      "root": "input"
+                    }
+                  },
+                  {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "dc_xor_bytes"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "le",
+                    "right": {
+                      "op": "path",
+                      "path": [
+                        "raw_bytes"
+                      ],
+                      "root": "input"
+                    }
+                  }
+                ]
+              },
+              "else": [
+                {
+                  "condition": {
+                    "op": "and",
+                    "values": [
+                      {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "paeth_bytes"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "le",
+                        "right": {
+                          "op": "path",
+                          "path": [
+                            "direct_zlib_bytes"
+                          ],
+                          "root": "input"
+                        }
+                      },
+                      {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "paeth_bytes"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "le",
+                        "right": {
+                          "op": "path",
+                          "path": [
+                            "raw_bytes"
+                          ],
+                          "root": "input"
+                        }
+                      }
+                    ]
+                  },
+                  "else": [
+                    {
+                      "condition": {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "direct_zlib_bytes"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "le",
+                        "right": {
+                          "op": "path",
+                          "path": [
+                            "raw_bytes"
+                          ],
+                          "root": "input"
+                        }
+                      },
+                      "else": [
+                        {
+                          "op": "return_ok",
+                          "value": {
+                            "op": "const",
+                            "value": "CANONICAL_RAW"
+                          }
+                        }
+                      ],
+                      "op": "if",
+                      "then": [
+                        {
+                          "op": "return_ok",
+                          "value": {
+                            "op": "const",
+                            "value": "CANONICAL_ZLIB"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "PAETH_ZLIB"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "DC_XOR_ZLIB"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "TileCandidateEvidence"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "exact_reconstruction"
+                ],
+                "root": "input"
+              },
+              "error": "independent_reconstruction_failed",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "no_foreign_bitstream"
+                ],
+                "root": "input"
+              },
+              "error": "foreign_video_bitstream_forbidden",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "source_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "empty_canonical_media",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "archive_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "empty_archive",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "reference_zlib_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "empty_reference",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "partition_exact"
+                ],
+                "root": "input"
+              },
+              "error": "tile_partition_failed",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "archive_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "lt",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "reference_zlib_bytes"
+                  ],
+                  "root": "input"
+                }
+              },
+              "else": [
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "archive_bytes"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "lt",
+                    "right": {
+                      "op": "path",
+                      "path": [
+                        "source_bytes"
+                      ],
+                      "root": "input"
+                    }
+                  },
+                  "else": [
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "REJECT"
+                      }
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "ACCEPT_RAW_ONLY"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "ACCEPT_BEATS_REFERENCE"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "judge",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "ArchiveEvidence"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "compression.casv_compact",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "tile_index",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "frame_index",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "plane_index",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "canonical_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "exact_candidate_reconstruction",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "no_foreign_bitstream",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "dc_xor_bytes",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "paeth_bytes",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "direct_zlib_bytes",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "raw_bytes",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "TileCandidateEvidence"
+        },
+        {
+          "members": [
+            {
+              "name": "exact_reconstruction",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "no_foreign_bitstream",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "source_bytes",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "archive_bytes",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "reference_zlib_bytes",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "partition_exact",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "ArchiveEvidence"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

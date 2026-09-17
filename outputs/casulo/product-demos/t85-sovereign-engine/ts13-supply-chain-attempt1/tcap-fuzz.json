@@ -1,0 +1,455 @@
+{
+  "all_rejected": true,
+  "cases": [
+    {
+      "case": 0,
+      "error_type": "TcapV2Error",
+      "mutated": "code.json",
+      "offset": 949,
+      "rejected": true
+    },
+    {
+      "case": 1,
+      "error_type": "TcapV2Error",
+      "mutated": "tests.json",
+      "offset": 183,
+      "rejected": true
+    },
+    {
+      "case": 2,
+      "error_type": "TcapV2Error",
+      "mutated": "resource-budgets.json",
+      "offset": 282,
+      "rejected": true
+    },
+    {
+      "case": 3,
+      "error_type": "TcapV2Error",
+      "mutated": "readonly-data.json",
+      "offset": 292,
+      "rejected": true
+    },
+    {
+      "case": 4,
+      "error_type": "TcapV2Error",
+      "mutated": "code.json",
+      "offset": 15904,
+      "rejected": true
+    },
+    {
+      "case": 5,
+      "error_type": "TcapV2Error",
+      "mutated": "signature-class.json",
+      "offset": 40,
+      "rejected": true
+    },
+    {
+      "case": 6,
+      "error_type": "TcapV2Error",
+      "mutated": "header.json",
+      "offset": 70,
+      "rejected": true
+    },
+    {
+      "case": 7,
+      "error_type": "TcapV2Error",
+      "mutated": "signature-class.json",
+      "offset": 2,
+      "rejected": true
+    },
+    {
+      "case": 8,
+      "error_type": "TcapV2Error",
+      "mutated": "source-map.json",
+      "offset": 680,
+      "rejected": true
+    },
+    {
+      "case": 9,
+      "error_type": "TcapV2Error",
+      "mutated": "resource-budgets.json",
+      "offset": 40,
+      "rejected": true
+    },
+    {
+      "case": 10,
+      "error_type": "TcapV2Error",
+      "mutated": "typed-ir.json",
+      "offset": 13598,
+      "rejected": true
+    },
+    {
+      "case": 11,
+      "error_type": "TcapV2Error",
+      "mutated": "capabilities.json",
+      "offset": 39,
+      "rejected": true
+    },
+    {
+      "case": 12,
+      "error_type": "TcapV2Error",
+      "mutated": "resource-budgets.json",
+      "offset": 273,
+      "rejected": true
+    },
+    {
+      "case": 13,
+      "error_type": "TcapV2Error",
+      "mutated": "code.json",
+      "offset": 13266,
+      "rejected": true
+    },
+    {
+      "case": 14,
+      "error_type": "TcapV2Error",
+      "mutated": "tests.json",
+      "offset": 201,
+      "rejected": true
+    },
+    {
+      "case": 15,
+      "error_type": "TcapV2Error",
+      "mutated": "signature-class.json",
+      "offset": 8,
+      "rejected": true
+    },
+    {
+      "case": 16,
+      "error_type": "TcapV2Error",
+      "mutated": "provenance.json",
+      "offset": 26,
+      "rejected": true
+    },
+    {
+      "case": 17,
+      "error_type": "TcapV2Error",
+      "mutated": "capabilities.json",
+      "offset": 86,
+      "rejected": true
+    },
+    {
+      "case": 18,
+      "error_type": "TcapV2Error",
+      "mutated": "tests.json",
+      "offset": 137,
+      "rejected": true
+    },
+    {
+      "case": 19,
+      "error_type": "TcapV2Error",
+      "mutated": "resource-budgets.json",
+      "offset": 144,
+      "rejected": true
+    },
+    {
+      "case": 20,
+      "error_type": "TcapV2Error",
+      "mutated": "header.json",
+      "offset": 78,
+      "rejected": true
+    },
+    {
+      "case": 21,
+      "error_type": "TcapV2Error",
+      "mutated": "schemas.json",
+      "offset": 116,
+      "rejected": true
+    },
+    {
+      "case": 22,
+      "error_type": "TcapV2Error",
+      "mutated": "foreign-boundaries.json",
+      "offset": 82,
+      "rejected": true
+    },
+    {
+      "case": 23,
+      "error_type": "TcapV2Error",
+      "mutated": "capabilities.json",
+      "offset": 97,
+      "rejected": true
+    },
+    {
+      "case": 24,
+      "error_type": "TcapV2Error",
+      "mutated": "readonly-data.json",
+      "offset": 314,
+      "rejected": true
+    },
+    {
+      "case": 25,
+      "error_type": "TcapV2Error",
+      "mutated": "source-map.json",
+      "offset": 488,
+      "rejected": true
+    },
+    {
+      "case": 26,
+      "error_type": "TcapV2Error",
+      "mutated": "signature-class.json",
+      "offset": 1,
+      "rejected": true
+    },
+    {
+      "case": 27,
+      "error_type": "TcapV2Error",
+      "mutated": "schemas.json",
+      "offset": 3687,
+      "rejected": true
+    },
+    {
+      "case": 28,
+      "error_type": "TcapV2Error",
+      "mutated": "tests.json",
+      "offset": 179,
+      "rejected": true
+    },
+    {
+      "case": 29,
+      "error_type": "TcapV2Error",
+      "mutated": "resource-budgets.json",
+      "offset": 300,
+      "rejected": true
+    },
+    {
+      "case": 30,
+      "error_type": "TcapV2Error",
+      "mutated": "typed-ir.json",
+      "offset": 14457,
+      "rejected": true
+    },
+    {
+      "case": 31,
+      "error_type": "TcapV2Error",
+      "mutated": "source-map.json",
+      "offset": 679,
+      "rejected": true
+    },
+    {
+      "case": 32,
+      "error_type": "TcapV2Error",
+      "mutated": "capabilities.json",
+      "offset": 23,
+      "rejected": true
+    },
+    {
+      "case": 33,
+      "error_type": "TcapV2Error",
+      "mutated": "readonly-data.json",
+      "offset": 388,
+      "rejected": true
+    },
+    {
+      "case": 34,
+      "error_type": "TcapV2Error",
+      "mutated": "schemas.json",
+      "offset": 3477,
+      "rejected": true
+    },
+    {
+      "case": 35,
+      "error_type": "TcapV2Error",
+      "mutated": "typed-ir.json",
+      "offset": 24879,
+      "rejected": true
+    },
+    {
+      "case": 36,
+      "error_type": "TcapV2Error",
+      "mutated": "foreign-boundaries.json",
+      "offset": 25,
+      "rejected": true
+    },
+    {
+      "case": 37,
+      "error_type": "TcapV2Error",
+      "mutated": "foreign-boundaries.json",
+      "offset": 123,
+      "rejected": true
+    },
+    {
+      "case": 38,
+      "error_type": "TcapV2Error",
+      "mutated": "capabilities.json",
+      "offset": 109,
+      "rejected": true
+    },
+    {
+      "case": 39,
+      "error_type": "TcapV2Error",
+      "mutated": "tests.json",
+      "offset": 111,
+      "rejected": true
+    },
+    {
+      "case": 40,
+      "error_type": "TcapV2Error",
+      "mutated": "schemas.json",
+      "offset": 3861,
+      "rejected": true
+    },
+    {
+      "case": 41,
+      "error_type": "TcapV2Error",
+      "mutated": "tests.json",
+      "offset": 81,
+      "rejected": true
+    },
+    {
+      "case": 42,
+      "error_type": "TcapV2Error",
+      "mutated": "resource-budgets.json",
+      "offset": 110,
+      "rejected": true
+    },
+    {
+      "case": 43,
+      "error_type": "TcapV2Error",
+      "mutated": "provenance.json",
+      "offset": 9,
+      "rejected": true
+    },
+    {
+      "case": 44,
+      "error_type": "TcapV2Error",
+      "mutated": "module-graph.json",
+      "offset": 340,
+      "rejected": true
+    },
+    {
+      "case": 45,
+      "error_type": "TcapV2Error",
+      "mutated": "code.json",
+      "offset": 4658,
+      "rejected": true
+    },
+    {
+      "case": 46,
+      "error_type": "TcapV2Error",
+      "mutated": "capabilities.json",
+      "offset": 94,
+      "rejected": true
+    },
+    {
+      "case": 47,
+      "error_type": "TcapV2Error",
+      "mutated": "schemas.json",
+      "offset": 285,
+      "rejected": true
+    },
+    {
+      "case": 48,
+      "error_type": "TcapV2Error",
+      "mutated": "signature-class.json",
+      "offset": 35,
+      "rejected": true
+    },
+    {
+      "case": 49,
+      "error_type": "TcapV2Error",
+      "mutated": "schemas.json",
+      "offset": 3271,
+      "rejected": true
+    },
+    {
+      "case": 50,
+      "error_type": "TcapV2Error",
+      "mutated": "tests.json",
+      "offset": 7,
+      "rejected": true
+    },
+    {
+      "case": 51,
+      "error_type": "TcapV2Error",
+      "mutated": "resource-budgets.json",
+      "offset": 192,
+      "rejected": true
+    },
+    {
+      "case": 52,
+      "error_type": "TcapV2Error",
+      "mutated": "capabilities.json",
+      "offset": 112,
+      "rejected": true
+    },
+    {
+      "case": 53,
+      "error_type": "TcapV2Error",
+      "mutated": "readonly-data.json",
+      "offset": 150,
+      "rejected": true
+    },
+    {
+      "case": 54,
+      "error_type": "TcapV2Error",
+      "mutated": "readonly-data.json",
+      "offset": 453,
+      "rejected": true
+    },
+    {
+      "case": 55,
+      "error_type": "TcapV2Error",
+      "mutated": "tests.json",
+      "offset": 59,
+      "rejected": true
+    },
+    {
+      "case": 56,
+      "error_type": "TcapV2Error",
+      "mutated": "provenance.json",
+      "offset": 128,
+      "rejected": true
+    },
+    {
+      "case": 57,
+      "error_type": "TcapV2Error",
+      "mutated": "resource-budgets.json",
+      "offset": 218,
+      "rejected": true
+    },
+    {
+      "case": 58,
+      "error_type": "TcapV2Error",
+      "mutated": "header.json",
+      "offset": 24,
+      "rejected": true
+    },
+    {
+      "case": 59,
+      "error_type": "TcapV2Error",
+      "mutated": "header.json",
+      "offset": 98,
+      "rejected": true
+    },
+    {
+      "case": 60,
+      "error_type": "TcapV2Error",
+      "mutated": "signature-class.json",
+      "offset": 24,
+      "rejected": true
+    },
+    {
+      "case": 61,
+      "error_type": "TcapV2Error",
+      "mutated": "capabilities.json",
+      "offset": 134,
+      "rejected": true
+    },
+    {
+      "case": 62,
+      "error_type": "TcapV2Error",
+      "mutated": "signature-class.json",
+      "offset": 41,
+      "rejected": true
+    },
+    {
+      "case": 63,
+      "error_type": "TcapV2Error",
+      "mutated": "header.json",
+      "offset": 77,
+      "rejected": true
+    }
+  ],
+  "schema": "casulo.t85-tcap-fuzz/1.0",
+  "seed": 20260815
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "stage": "LOCAL_MODEL_RUNTIME_PREFLIGHT",
+  "error": "candidate_manifest_sha256_mismatch",
+  "workload_started": false,
+  "inference_started": false,
+  "root_cause": "O manifesto do candidato foi alterado depois da adoção e deixou de corresponder ao receipt transacional.",
+  "correction": "Restaurar o manifesto imutável; autorização permanece exclusivamente em ADOPTION.json.",
+  "preserved": true
+}

@@ -1,0 +1,202 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "enums": [],
+  "fields": [],
+  "language": "T/1.1",
+  "module": "casulo.revolution.jobs",
+  "operations": [
+    {
+      "cfg": {
+        "blocks": [
+          {
+            "id": "block/root.0",
+            "instruction_paths": [
+              "root.0"
+            ],
+            "successors": [
+              "block/root.0.then.0",
+              "block/root.0.else.0"
+            ]
+          },
+          {
+            "id": "block/root.0.else.0",
+            "instruction_paths": [
+              "root.0.else.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0",
+            "instruction_paths": [
+              "root.0.then.0"
+            ],
+            "successors": [
+              "block/root.0.then.0.then.0",
+              "block/root.0.then.0.else.0"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0.else.0",
+            "instruction_paths": [
+              "root.0.then.0.else.0"
+            ],
+            "successors": [
+              "block/root.0.then.0.else.0.then.0",
+              "block/root.0.then.0.else.0.else.0"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0.else.0.else.0",
+            "instruction_paths": [
+              "root.0.then.0.else.0.else.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0.else.0.then.0",
+            "instruction_paths": [
+              "root.0.then.0.else.0.then.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0.then.0",
+            "instruction_paths": [
+              "root.0.then.0.then.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "exit",
+            "instruction_paths": [],
+            "successors": []
+          }
+        ],
+        "entry": "block/root.0",
+        "exit": "exit"
+      },
+      "contract": {
+        "effect_contract": {
+          "declared": [
+            "manifest"
+          ],
+          "schema": "casulo-t-effects/1.0"
+        }
+      },
+      "input_type": "JobDecision",
+      "instructions": [
+        {
+          "arguments": [
+            "receipt_present"
+          ],
+          "else_body": [
+            {
+              "arguments": [
+                "\"WAIT\""
+              ],
+              "else_body": [],
+              "op": "emit",
+              "result": null,
+              "then_body": [],
+              "type_name": "Text"
+            }
+          ],
+          "op": "if",
+          "result": null,
+          "then_body": [
+            {
+              "arguments": [
+                "cancelled"
+              ],
+              "else_body": [
+                {
+                  "arguments": [
+                    "generation_matches"
+                  ],
+                  "else_body": [
+                    {
+                      "arguments": [
+                        "\"DROP_STALE\""
+                      ],
+                      "else_body": [],
+                      "op": "emit",
+                      "result": null,
+                      "then_body": [],
+                      "type_name": "Text"
+                    }
+                  ],
+                  "op": "if",
+                  "result": null,
+                  "then_body": [
+                    {
+                      "arguments": [
+                        "\"PUBLISH\""
+                      ],
+                      "else_body": [],
+                      "op": "emit",
+                      "result": null,
+                      "then_body": [],
+                      "type_name": "Text"
+                    }
+                  ],
+                  "type_name": "Bool"
+                }
+              ],
+              "op": "if",
+              "result": null,
+              "then_body": [
+                {
+                  "arguments": [
+                    "\"DROP_STALE\""
+                  ],
+                  "else_body": [],
+                  "op": "emit",
+                  "result": null,
+                  "then_body": [],
+                  "type_name": "Text"
+                }
+              ],
+              "type_name": "Bool"
+            }
+          ],
+          "type_name": "Bool"
+        }
+      ],
+      "kind": "condense",
+      "name": "PublishJob",
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "records": [
+    {
+      "name": "JobDecision",
+      "traces": [
+        {
+          "name": "receipt_present",
+          "type_name": "Bool"
+        },
+        {
+          "name": "cancelled",
+          "type_name": "Bool"
+        },
+        {
+          "name": "generation_matches",
+          "type_name": "Bool"
+        }
+      ]
+    }
+  ],
+  "uses": [],
+  "version": "crisalida-ir/1.0"
+}

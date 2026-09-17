@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.csv_guardian.delivery": [
+      "simulation"
+    ],
+    "owner.agent.csv_guardian.pipeline": [],
+    "owner.agent.csv_guardian.policy": []
+  }
+}

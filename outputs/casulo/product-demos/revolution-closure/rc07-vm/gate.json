@@ -1,0 +1,90 @@
+{
+  "authorized_claims": [
+    "the owner VM has a no-console one-click GUI entry, immutable base, sparse overlay and recoverable snapshots"
+  ],
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "commands": [
+    [
+      "C:\\Python313\\python.exe",
+      "tools/vm_appliance_probe.py",
+      "--repo",
+      ".",
+      "--output",
+      "product-demos\\revolution-closure\\rc07-vm\\appliance-probe"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\tools\\casulo_owner_appliance.pyw",
+      "--repo",
+      ".",
+      "--doctor-json"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc07-vm\\pytest-temp",
+      "tests/product/test_host_accelerator.py",
+      "tests/product/test_vm_controller.py",
+      "tests/product/test_semantic_multiverse_launcher.py",
+      "tests/product/test_semantic_multiverse_doctor.py"
+    ]
+  ],
+  "forbidden_claims": [
+    "final visual approved",
+    "native audio drivers complete",
+    "commercial release"
+  ],
+  "gate_id": "RC7_OWNER_VM_ONE_CLICK_PASS",
+  "input_hashes": {
+    "base_image": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+    "previous_gate": "6bfdb57f8b1e89439942a38b1ac2d5fde18493895f529bd1b974657de2d0dd31"
+  },
+  "machine_profile_sha256": "7ca1b196f47eb6e20769ae165c1b1a322d9f9abdd2ebc3dc4a7201acff8dd718",
+  "model_adapter_hashes": {},
+  "open_findings": [
+    {
+      "severity": "P2",
+      "summary": "window design remains provisional and requires Guilherme review"
+    }
+  ],
+  "output_hashes": {
+    "product-demos/revolution-closure/rc07-vm/appliance-probe/state/OVMF_VARS.fd": "17b6b151a04c804d4d3f4adc834a6ac30b24ac5be26d025cf64574727927147a",
+    "product-demos/revolution-closure/rc07-vm/appliance-probe/state/bridge-live.serial.bin": "8aceef33f3ec7274f318d4877df13768b0fe2870dd19d2c23006a8d495737afa",
+    "product-demos/revolution-closure/rc07-vm/appliance-probe/state/owner-overlay.qcow2": "6260f758ab9850f5da17beeaccc2431ccadf3862b0de9dfd71ef902266d3b26d",
+    "product-demos/revolution-closure/rc07-vm/appliance-probe/state/vm-manifest.json": "01bea99b646130353d8d1a25a9c43b0c59c9c488114d7a719d11e4088454b6d4",
+    "product-demos/revolution-closure/rc07-vm/appliance-probe/vm-appliance-probe.json": "74c99a73d14fe2a485e0312049d782a104fc308f3ea1bb488e1b87634d4243ca",
+    "product-demos/revolution-closure/rc07-vm/gui-doctor.txt": "a88833a76a9a5a66bdd4f16d6528158b6af50cb19ace4f023a2bfe4b10a0c2fd",
+    "product-demos/revolution-closure/rc07-vm/tests.txt": "37d126dd554dfcb4bc9372b6f78f5b07f04d97f66305982aa631a594aecb17bd",
+    "release/START_CASULO_OWNER.vbs": "d09236365e8b8969e6cead2ad5a9304aee931adcb54f2def01923fb477e5d6ba",
+    "tools/casulo_owner_appliance.pyw": "7c3fe24455f52253c6f2380a6bb47a64ad00671e5591342d797e47c537485b9c"
+  },
+  "previous_gate_hash": "6bfdb57f8b1e89439942a38b1ac2d5fde18493895f529bd1b974657de2d0dd31",
+  "sampling_policy": "NOT_EXECUTED_RC7",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "status": "PASS",
+  "test_summary": {
+    "checks": {
+      "base_immutable": true,
+      "gui_doctor": true,
+      "missing_snapshot_recoverable": true,
+      "network_and_devices_denied": true,
+      "no_shell_true": true,
+      "one_click_no_console": true,
+      "regression": true,
+      "restore_and_crash_recovery": true,
+      "three_real_cycles": true
+    },
+    "pytest": ".....s.........                                                          [100%]\n14 passed, 1 skipped in 3.79s"
+  },
+  "timestamp": "2026-08-14T21:06:59.652559+00:00",
+  "tool_versions": {
+    "python": "3.13.2",
+    "qemu": "QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a)"
+  },
+  "worktree_manifest_sha256": "066698f9b6ac67be76aed86bc83c412c4fcd5377e6a2e699a3a106000a4314e9"
+}

@@ -1,0 +1,47 @@
+{
+  "host_cpu_percent_median": 20.8,
+  "host_cpu_percent_samples": [
+    26.6,
+    20.8,
+    24.5,
+    22.7,
+    23.7,
+    19.8,
+    18.8,
+    16.7,
+    19.7,
+    19.9,
+    18.5,
+    17.6,
+    18.3,
+    18.3,
+    22.8,
+    22.6,
+    26.3,
+    26.0,
+    23.4
+  ],
+  "hwinfo_cpu_seconds_delta": 1.703125,
+  "hwinfo_process_after": [
+    {
+      "name": "HWiNFO64.EXE",
+      "pid": 24580,
+      "system_cpu_seconds": 468.046875,
+      "user_cpu_seconds": 348.15625
+    }
+  ],
+  "hwinfo_process_before": [
+    {
+      "name": "HWiNFO64.EXE",
+      "pid": 24580,
+      "system_cpu_seconds": 467.046875,
+      "user_cpu_seconds": 347.453125
+    }
+  ],
+  "limitation": "active observer overhead probes require polling gate PASS",
+  "schema": "casulo-hwinfo-observer-overhead/1.0",
+  "selective_subtraction_allowed": false,
+  "status": "PREFLIGHT_PASSIVE_COMPLETE",
+  "window_seconds": 5.677691,
+  "workload_probe_executed": false
+}

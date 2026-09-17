@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.agent.t_interactive_01.memory.t",
+      "module": "owner.agent.t_interactive_01.memory",
+      "sha256": "3cf0106475c188cab04bf28d6416d4847d2966841386acf88b6fa6d876e95da8"
+    },
+    {
+      "file": "sources/owner.agent.t_interactive_01.interrupt.t",
+      "module": "owner.agent.t_interactive_01.interrupt",
+      "sha256": "a7ebabc57f107890e8efbd932437d65702bc23d2c6418d0492c10ca6f24989ae"
+    },
+    {
+      "file": "sources/owner.agent.t_interactive_01.export.t",
+      "module": "owner.agent.t_interactive_01.export",
+      "sha256": "a707c9855b3525a1cb73f5feacee6f93900981e3b363b24e5cf6389d64140271"
+    }
+  ]
+}

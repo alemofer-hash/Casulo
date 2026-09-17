@@ -1,0 +1,43 @@
+{
+  "expected_evidence_tokens": [
+    "1e74f723786adcc7492ebcc38804b469ca455b3a34e6c2e6ad333d8271e77820",
+    "37a88ce5ebf595bf8a3c73d34573e34b63a94d2655b39999e6f9e7650adf4635",
+    "8786b1d2406ec429530ad9f78f86e55b4e3cda37bd673dd81c291c23dfca350c"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "personal-01:state-persistence",
+      "scope": "personal-01",
+      "source_event_ids": [
+        "sealed:personal-01"
+      ],
+      "verifier_ids": [
+        "domain:state-persistence"
+      ]
+    },
+    {
+      "requirement_id": "personal-01:human-delete-confirmation",
+      "scope": "personal-01",
+      "source_event_ids": [
+        "sealed:personal-01"
+      ],
+      "verifier_ids": [
+        "domain:human-delete-confirmation"
+      ]
+    },
+    {
+      "requirement_id": "personal-01:reboot-recall",
+      "scope": "personal-01",
+      "source_event_ids": [
+        "sealed:personal-01"
+      ],
+      "verifier_ids": [
+        "domain:reboot-recall"
+      ]
+    }
+  ],
+  "project_id": "personal-01",
+  "schema": "casulo.evidence-plan/1.0"
+}

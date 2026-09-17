@@ -1,0 +1,18 @@
+{
+  "schema":"casulo.t85.gate/1.0",
+  "sprint":"TS1",
+  "gate":"TS1_HONEST_SOVEREIGNTY_BASELINE_PASS",
+  "status":"PASS",
+  "previous_gate_sha256":"e188ed7c2b076da62ec148fc356149ad7fa886613477c1a377b7bfc510fafa7d",
+  "scores":{"s_authority":0.0,"s_execution":0.0,"c_critical":0.0,"p_authority":1.0},
+  "tests":{"passed":6,"failed":0,"xml_sha256":"1d4b721f0af73ea685f60a0b1aae683378b78ecd3608ec9cdb6eacfebae754b2"},
+  "artifacts":[
+    {"path":"src/casulo/t/authority.py","sha256":"f546a27b3421d20a8fcfc7a67f646c6079ccad8879c5efd74517e5babfcec2ab"},
+    {"path":"tools/t85_sovereignty_audit.py","sha256":"31e6c0338546a0287024923f484923888d023c93b654b27b40b324d64bfe30f7"},
+    {"path":"tests/product/test_t85_authority.py","sha256":"4303a16b670f5f6695f082efa79e2c2eb881230f1c2c9280ba0b3f420e12abe5"},
+    {"path":"product-demos/t85-sovereign-engine/ts01-honest-baseline-attempt1/authority-baseline.json","sha256":"7d01e7e3d85967c5f4b6f81139f2378fea0154bf78036ca36850c02051b60857"},
+    {"path":"docs/product/TS_SOVEREIGNTY_AUDIT.md","sha256":"7b152c6e8118182aa827ce147b21f134ccea6c09f2bf9c5c9fc3176161523616"}
+  ],
+  "anti_gaming":{"decorative_t":0,"ignored_result":0,"emit_literal":0,"single_ret":0,"posthoc_receipt":0},
+  "next":"TS2 T v2 semantics"
+}

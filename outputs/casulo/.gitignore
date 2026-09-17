@@ -1,0 +1,32 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.tmp-tests/
+.tmp/
+.tmp-livelab*/
+.tmp-product*/
+.coverage
+.casulo/
+.casulo-native/
+build/
+dist/
+.venv/
+work/
+os/target/
+release/*.zip
+release/*.zip.sha256
+
+# Telemetria HWiNFO é um fluxo mutável; as sessões imutáveis preservam as
+# observações usadas pelo juiz. O arquivo bruto permanece local.
+benchmarks/results/**/hwinfo-live*.CSV
+
+# Diagnóstico inicial legado com sidecar divergente, preservado localmente e
+# explicitamente excluído da cadeia de evidência aceita.
+benchmarks/results/2026-07-31-thermal-covenant/doctor-canonical-v0.json
+benchmarks/results/2026-07-31-thermal-covenant/doctor-canonical-v0.json.sha256
+
+# Cópia intermediária válida, mas retida por um handle do filesystem antes de
+# entrar no Git. A cópia final selada é a autoridade da ablação.
+benchmarks/results/2026-07-31-sprint025-ablation/preregistration-v2.json
+benchmarks/results/2026-07-31-sprint025-ablation/preregistration-v2.json.sha256

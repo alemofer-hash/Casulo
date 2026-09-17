@@ -1,0 +1,69 @@
+{
+  "schema": "casulo.semantic-multiverse-machine-inventory/1.0",
+  "captured_utc": "2026-08-13T00:25:04.0980689Z",
+  "branch": "product/semantic-multiverse",
+  "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "host": {
+    "os": "Microsoft Windows 11 Home Single Language",
+    "version": "10.0.26200",
+    "architecture": "64 bits",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-1235U",
+    "physical_cores": 10,
+    "logical_processors": 12,
+    "memory_gib": 15.73,
+    "disk_total_gib": 474.72,
+    "disk_free_gib": 81.93
+  },
+  "toolchains": {
+    "python": {"version": "3.13.2", "path": "C:/Python313/python.exe"},
+    "pytest": {"version": "9.1.1"},
+    "git": {"version": "2.54.0.windows.1"},
+    "rustc": {"version": "1.93.0"},
+    "cargo": {"version": "1.93.0"},
+    "rust_native_pin": {"version": "nightly-2026-02-01-x86_64-pc-windows-msvc"},
+    "node": {"version": "22.14.0"},
+    "cmake": {"version": "4.3.2"},
+    "ninja": {"version": "1.13.2"},
+    "clang": {"version": "22.1.8", "path": "C:/Program Files/LLVM/bin/clang.exe"},
+    "lld": {"version": "22.1.8", "path": "C:/Program Files/LLVM/bin/lld.exe"},
+    "mingw_gpp": {"version": "16.1.0"},
+    "qemu": {"version": "11.0.50", "path": "C:/Program Files/qemu/qemu-system-x86_64.exe"},
+    "qemu_img": {"version": "11.0.50", "path": "C:/Program Files/qemu/qemu-img.exe"},
+    "ovmf": {"present": true, "path": "C:/Program Files/qemu/share/edk2-x86_64-code.fd"},
+    "dotnet": {"version": "10.0.203"}
+  },
+  "model": {
+    "id": "qwen3-4b-q4km-llamacpp-b10362",
+    "bytes": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "license": "Apache-2.0",
+    "status": "ADOPTED_VERIFIED_LOCAL"
+  },
+  "model_runtime": {
+    "name": "llama.cpp b10362",
+    "executable_bytes": 9216,
+    "executable_sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e",
+    "license": "MIT",
+    "status": "READY"
+  },
+  "locks": [
+    {"path": "pyproject.toml", "sha256": "e967bf3f1fa7208461dbd37c06da21ff8e97cb2e77586e580fa0d6cb6ab9974b", "kind": "ranges"},
+    {"path": "os/Cargo.toml", "sha256": "6c83d76fc92d44b2424a549494175703ee87c3c95103da84896ee7d5b4f66694", "kind": "native-manifest"},
+    {"path": "os/Cargo.lock", "sha256": "0aaf3aee08ea6acbb1a17a9a6b1596caf744de5c36d940bcdb2974eecd2ee204", "kind": "native-lock"},
+    {"path": "release/requirements-rp01.lock", "sha256": "bf90f648dad13bd700e039d698e4b4f360cdb7a066c6fb0340f95044aa31ee03", "kind": "legacy-research-only"}
+  ],
+  "python_environments": {
+    "repository_venvs_detected": 11,
+    "policy": "reuse current product environment; do not normalize or delete historical smoke environments"
+  },
+  "quantum_rd": {
+    "vscode_qsharp_extension": "quantum.qsharp-lang-vscode@1.31.0",
+    "qsharp_cli_present": false,
+    "azure_workspace_configured": false,
+    "qpu_configured": false,
+    "classification": "OPTIONAL_R_AND_D_ONLY_NOT_BLOCKING"
+  },
+  "external_ann_or_solver_required": false,
+  "new_model_required": false,
+  "downloads_required_for_initial_slice": false
+}

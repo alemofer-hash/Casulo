@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:45aadc3ead828ffbab0733c39d8a5163320cc043a6d2488f8a6054aceb208646",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "94990677f5b726a316287319b12503d9c2758d37a3a0a19ced51703f203e27f4"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "14745dc506e77086d18190717825b4ee96a908b3794f222964a436f7c08c98be",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "f374940dd3b8161b5fad6638a11040a7e181d148e16214a400e48d31b87a3717",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "trace",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "0610e6fef86a08852864ffbad77dc1046e3a678fecfd12c43195dacfe144c1e5"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "B14C",
+        "judgements": [],
+        "name": "B14C_trace",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "d0fac6ffbf19fb3e18d2b49ef88e0516e9021a804ec5a7d596db1cf6d7ff0c24"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "B14C",
+      "kind": "condense",
+      "name": "B14C_trace",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "d2cc4ba96156b13c8e97ceb457e21700e687821df2714d5859bac7e10e1da03e"
+  }
+}

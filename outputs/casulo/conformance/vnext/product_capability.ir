@@ -1,0 +1,15 @@
+crisalida-ir/1.0
+language T/1.1
+capability manifest
+module casulo.product.presence
+
+field PresenceEvent {
+  message: Text
+}
+
+condense Present(PresenceEvent) -> Text {
+  cfg entry=block/root.0 exit=exit
+  block block/root.0 instructions=root.0 successors=exit
+  block exit instructions=- successors=-
+  emit message : Text
+}

@@ -1,0 +1,12 @@
+{
+  "protocol": "casulo-thermal-covenant/0.1",
+  "kind": "MANUAL_PHYSICAL_ATTESTATION",
+  "session_id": "thermal-validation-03-two-core",
+  "session_sha256": "baf94d550f99911b4b330fe5182a3ed4b4366101814903b9fbcd2a971904ce60",
+  "attested_at_utc": "2026-07-31T18:23:30.191852+00:00",
+  "no_odor": true,
+  "no_smoke": true,
+  "no_abnormal_noise": true,
+  "accepted": true,
+  "claim": null
+}

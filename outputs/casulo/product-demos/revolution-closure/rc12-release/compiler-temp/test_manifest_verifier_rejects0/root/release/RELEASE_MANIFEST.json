@@ -1,0 +1,1 @@
+{"schema": "casulo-so-release-manifest/0.2", "physical_device_written": false, "publication_performed": false, "package_tree_sha256": "07c5ce263a00d63d128cdf9959aa98623a516898f51ff5e3bcd291e19dbf93ec", "artifacts": [{"path": "../artifact.bin", "bytes": 7, "sha256": "239f59ed55e737c77147cf55ad0c1b030b6d7ee748a7426952f9b852d5a935e5"}]}

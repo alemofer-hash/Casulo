@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "cancel_mid_wake_rollback": true,
+    "cloud_locked": true,
+    "corruption_quarantined": true,
+    "gc_dry_run": true,
+    "guide_continuity": true,
+    "non_accumulation_20_sessions": true,
+    "prompt_injection_denied": true,
+    "reboot_cold_and_resumed": true,
+    "sufficient_state": true,
+    "thrashing_progress": true,
+    "usb_prohibited": true,
+    "working_set_strict": true
+  },
+  "gate": "SM7_ADAPTIVE_RUNTIME_PASS",
+  "limitations": [
+    "synthetic infrastructure probe; neural proof is separate SM8 evidence",
+    "not a superiority or energy benchmark"
+  ],
+  "metrics": {
+    "blobs": 7,
+    "deltas": 20,
+    "gc_candidates": 0,
+    "installed": 6,
+    "peak_hot_count": 2,
+    "pressure_steps": 18,
+    "sessions": 20
+  },
+  "schema": "casulo.semantic-multiverse-acceptance/1.0"
+}

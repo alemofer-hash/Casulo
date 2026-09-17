@@ -1,0 +1,23 @@
+{
+  "blocked_interval": {
+    "end_utc": "2026-08-08T16:28:17.953843+00:00",
+    "start_utc": "2026-08-08T16:08:12+00:00"
+  },
+  "campaign_id": "2026-08-08-g5-full-worker-energy-definitive-04",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "schema": "casulo-definitive-energy-protocol/1.0",
+  "sensor": {
+    "index": 164,
+    "kind": "package_power",
+    "literal_name": "Potência total da CPU [W]",
+    "normalized_name": "potencia total da cpu w",
+    "provenance": "hwinfo_reported_cpu_package",
+    "session_id": 0,
+    "si_scale": 1.0,
+    "unit": "w"
+  },
+  "source_csv": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+  "terminal_state": "BLOCKED_PHYSICAL_COOLING_REQUIRED",
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "workload_started": false
+}

@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "decision_authority": false,
+      "invocation_authority": "T",
+      "kind": "foreign_primitive",
+      "name": "logistic_binary_numpy_primitive"
+    }
+  ]
+}

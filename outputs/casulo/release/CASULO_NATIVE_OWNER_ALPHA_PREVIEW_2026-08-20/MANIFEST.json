@@ -1,0 +1,45 @@
+{
+  "cloud": "RELEASE_LOCKED",
+  "files": [
+    {
+      "bytes": 544,
+      "path": "README_FIRST.md",
+      "sha256": "f30c1ecd7088c4dc1d4aa21bedc0aaf0a0f35e8cdb953fb64d4fb49d9ac6a309"
+    },
+    {
+      "bytes": 1697,
+      "path": "SBOM.spdx.json",
+      "sha256": "a1efd290472a1cdbd12b3fc2ea6838a72e966981983d24208b75ab0ee434e201"
+    },
+    {
+      "bytes": 3211264,
+      "path": "casulo-native-owner-alpha-preview.img",
+      "sha256": "dc6bd6ef3153d9a8ec832913918648b6c1443826537b341a35dd53f7c176d060"
+    }
+  ],
+  "first_model_derived_token": false,
+  "guest_network_default": "OFF",
+  "image": {
+    "bytes": 3211264,
+    "file": "casulo-native-owner-alpha-preview.img",
+    "sha256": "dc6bd6ef3153d9a8ec832913918648b6c1443826537b341a35dd53f7c176d060"
+  },
+  "model_embedded": false,
+  "native_neural_inference": "BLOCKED_NATIVE_QWEN_RUNTIME_PORT",
+  "owner": "Guilherme Moura Fernandes",
+  "physical_device_written": false,
+  "schema": "casulo-native-owner-alpha-preview/0.1",
+  "signature": "DEVELOPMENT_NOT_COMMERCIAL",
+  "state": "FLASHABLE_PREVIEW_NOT_CONVERSATIONAL",
+  "system_pack": {
+    "embedded": true,
+    "sha256": "9af383a88b06d4365cbf526e55243cad4ff0b8e1ba173e3869d28a35ee9c344a"
+  },
+  "usb_write_authorized": false,
+  "virtual_usb_gate": {
+    "boots": 3,
+    "passed": true,
+    "path": "outputs/casulo/native-first-conversation/2026-08-20-nf7/virtual-usb-3boots.json",
+    "sha256": "2a5b91e3829132b6ec3598c0a039318df1a6cf82466f83dff4d94612f5c737f6"
+  }
+}

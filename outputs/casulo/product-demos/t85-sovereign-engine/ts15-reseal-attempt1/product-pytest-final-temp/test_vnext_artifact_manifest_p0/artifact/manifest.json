@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:0dcedeb2e318d19a2f2d754ad9ae0a133a00b2e675895c7d4df65e7795c05b1c",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "62e1bb305cdab7bdf5b3bb10a9a959fbe0a8eaf895b74f9d776e5cac1ba4f48c"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "c7c32032dc7b33bd1f2787637f8e9c52222d400caa88f7ec63745b6e9795b760",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "cff1d8549d4108ab670f46d79de6dafe9638e1785b387754dd97dbe3dfbccc35",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "casulo.product.presence",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "5fe218be66ee0fcef1d66f43c3d3db15f26d68f526895040d8cc7621b73afa58"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "message"
+        ],
+        "input_type": "PresenceEvent",
+        "judgements": [],
+        "name": "Present",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "14803255f1d0f006781968c825f83e993a9eed1d7ad5d472998f92709235e445"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "PresenceEvent",
+      "kind": "condense",
+      "name": "Present",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "b04348380ea3be337367abfefd8ffc6cbb5ed2ffc84e280510e2aae77eb21cc9"
+  }
+}

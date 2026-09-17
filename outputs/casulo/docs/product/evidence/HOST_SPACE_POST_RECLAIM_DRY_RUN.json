@@ -1,0 +1,78 @@
+{
+    "schema":  "casulo-host-space-report/1.0",
+    "created_at":  "2026-08-11T21:26:20.5398514Z",
+    "mode":  "dry-run",
+    "protected_roots":  [
+                            "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo",
+                            "C:\\Users\\guimo\\Downloads\\Jaderson"
+                        ],
+    "include_download_projects":  false,
+    "free_bytes_before":  23973908480,
+    "free_bytes_after":  23973449728,
+    "reclaimed_bytes_observed":  -458752,
+    "actions":  [
+                    {
+                        "path":  "C:\\Users\\guimo\\AppData\\Local\\pip\\Cache",
+                        "kind":  "regenerable_cache",
+                        "contents_only":  true,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  113119,
+                        "action":  "dry_run",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\AppData\\Local\\npm-cache",
+                        "kind":  "regenerable_cache",
+                        "contents_only":  true,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "dry_run",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\.cache",
+                        "kind":  "regenerable_cache",
+                        "contents_only":  true,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "dry_run",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\AppData\\Local\\Temp",
+                        "kind":  "user_temp",
+                        "contents_only":  true,
+                        "minimum_age_hours":  24,
+                        "bytes_before":  1462068072,
+                        "action":  "dry_run",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\Downloads\\archlinux-2026.07.01-x86_64.iso",
+                        "kind":  "redundant_or_regenerable_file",
+                        "contents_only":  false,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "not_present",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\Downloads\\CASULO_PRODUCT_EXECUTION_PACKAGE_2026-08-11 (1).zip",
+                        "kind":  "redundant_or_regenerable_file",
+                        "contents_only":  false,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "not_present",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\Downloads\\CASULO_PRODUCT_EXECUTION_PACKAGE_2026-08-11 (2).zip",
+                        "kind":  "redundant_or_regenerable_file",
+                        "contents_only":  false,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "not_present",
+                        "error":  null
+                    }
+                ]
+}

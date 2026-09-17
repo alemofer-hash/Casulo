@@ -1,0 +1,83 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.t_mass_balance.units"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "0d800819b1d527b2a3f0345139f9fade87e0f717bd8ac397bc016d16eb5a9829"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "93ea34ee8a768a373bc264fb3074e922ad5e57926e312bc4e5aaa465bb3754a9"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "35fb7a67a03eb670629149df239d538b7f91ac075a0ea37e56b6b98b580c625d"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "20b2d1fcd181a5db72da3ea0bd5711edd2196a8e66a79795a3701aeefc1574e5"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "bf8697496cde5ec483c041a175bd8c24463fe782f696bf0d9a08ca38e5eba969"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "44a71e0bcdb8e29ccdb32749f5b4fa36e2e17a667b888275ab6cade00ba87e86"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "aad6bb167de90c6e0f7def69d4b5465578702f7e39883491a843865954767226"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "942e00ccb995396c323d79237263f119894c743e1f894304d97e46fd96dc55de"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "ee59f6a96eb7a8b880a36f686e1ea2fc653b631e9e7309311162e52c6dc28829"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "e0b35256aa18cecf1f2b52b7cde37e52570bf46e885cfbda28e7974947a57b16"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "0c5713f4a29904310467b5670390506cdb442fdcd9e1df558dfc0c21e1d14c2d"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "46ec33dd30532b5d9a1b6f4e976bed5257b2bf5de21aa19d23ded999e44c34cd"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.agent.t_mass_balance.units.t",
+      "module": "owner.agent.t_mass_balance.units",
+      "sha256": "1e1c7af925e2dcf17db44994fcc3569b53ec5c32590ceb6f75c15a2e1cb51acb"
+    },
+    {
+      "file": "sources/owner.agent.t_mass_balance.mass.t",
+      "module": "owner.agent.t_mass_balance.mass",
+      "sha256": "50d8e8a1e938e4e760a91b2369616523b82de16652afd56845e04a317936b400"
+    },
+    {
+      "file": "sources/owner.agent.t_mass_balance.output.t",
+      "module": "owner.agent.t_mass_balance.output",
+      "sha256": "4e7773035c151b70eec08b37db2842b14d247ef9a93b3fca626df630c0177977"
+    }
+  ],
+  "tcap_hash": "40de5811277da134fde84d095d118f4d1d06ffb474c46cfbe3cf3f79b6e67b58"
+}

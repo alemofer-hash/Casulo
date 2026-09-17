@@ -1,0 +1,56 @@
+\chapter{Formulação do Princípio}
+\label{chap:formulacao}
+
+Seja $R$ o contrato semântico confirmado, $P$ o processo de referência e
+$T_R(P)$ o processo governado por uma política \LangT. A equivalência
+operacional é relativa aos observáveis de $R$:
+
+\begin{equation}
+  T_R(P) \equiv_R P
+  \quad\Longleftrightarrow\quad
+  \forall r \in R_{\mathrm{HARD}},\;
+  V_r\!\left(T_R(P)\right)=V_r(P)=\mathrm{PASS}.
+  \label{eq:equivalencia}
+\end{equation}
+
+Essa expressão não implica identidade de bits ou de estado intermediário. A
+compressão em uma dimensão $k$ existe somente se a contabilidade congelada
+mostrar economia líquida:
+
+\begin{equation}
+  C_k\!\left(T_R(P)\right)
+  = C_k(P)-C_k(E_{\mathrm{redundante}})+C_k(T),
+  \qquad C_k(E_{\mathrm{redundante}})>C_k(T).
+  \label{eq:compressao}
+\end{equation}
+
+\section{Cadeia de autoridade}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  node distance=7mm and 5mm,
+  box/.style={draw=CasuloNavy,rounded corners,fill=CasuloMist,
+              align=center,minimum height=9mm,text width=23mm,font=\small\sffamily},
+  arrow/.style={-{Stealth[length=2mm]},thick,color=CasuloTeal}
+]
+\node[box] (intent) {Intenção};
+\node[box,right=of intent] (contract) {Contrato $R$};
+\node[box,right=of contract] (t) {Política \LangT};
+\node[box,right=of t] (tcap) {IR / \TCAP};
+\node[box,below=of tcap] (primitive) {Primitive};
+\node[box,left=of primitive] (receipt) {Receipts};
+\node[box,left=of receipt] (judge) {Juiz \LangT};
+\node[box,left=of judge] (publish) {Publicação};
+\draw[arrow] (intent)--(contract);
+\draw[arrow] (contract)--(t);
+\draw[arrow] (t)--(tcap);
+\draw[arrow] (tcap)--(primitive);
+\draw[arrow] (primitive)--(receipt);
+\draw[arrow] (receipt)--(judge);
+\draw[arrow] (judge)--(publish);
+\end{tikzpicture}
+\caption{Cadeia conceitual de autoridade. O manuscrito final deve ligar cada
+nó a símbolos e artefatos reais.}
+\label{fig:cadeia}
+\end{figure}

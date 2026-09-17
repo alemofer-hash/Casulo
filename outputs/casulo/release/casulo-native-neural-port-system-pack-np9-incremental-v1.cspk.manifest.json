@@ -1,0 +1,66 @@
+{
+  "bytes": 54876,
+  "entries": [
+    {
+      "bytes": 12872,
+      "kind": 1,
+      "name": "BOOTSTRAP_TCAP",
+      "offset": 336,
+      "sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa",
+      "source": "release/FloodSurrogate.tcap",
+      "source_sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa"
+    },
+    {
+      "bytes": 1016,
+      "kind": 2,
+      "name": "UX_CONTRACT",
+      "offset": 13208,
+      "sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9",
+      "source": "schemas/product/hosted-native-ux-contract-v1.json",
+      "source_sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9"
+    },
+    {
+      "bytes": 434,
+      "kind": 3,
+      "name": "GUIDE_T_SOURCE",
+      "offset": 14224,
+      "sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565",
+      "source": "examples/t/revolution/agent_logic.t",
+      "source_sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565"
+    },
+    {
+      "bytes": 2112,
+      "kind": 4,
+      "name": "MODEL_GGUF_PROBE",
+      "offset": 14658,
+      "sha256": "47b0f62fa715d0de910a7aef18005eaa27ef23b65326aa243253af85faedf495",
+      "source": "release/casulo-native-qwen3-weight-formats-probe-v2.gguf",
+      "source_sha256": "47b0f62fa715d0de910a7aef18005eaa27ef23b65326aa243253af85faedf495"
+    },
+    {
+      "bytes": 38106,
+      "kind": 5,
+      "name": "NATIVE_SAMPLING_POLICY",
+      "offset": 16770,
+      "sha256": "cb9ba2d5ba0d74c912f9fe705e507fab3195d41359832b7179e5a8029bf045e6",
+      "source": "outputs/casulo/native-boot-to-creation/2026-08-22-np9/policy-incremental-v1/native-sampling-policy.bundle.json",
+      "source_sha256": "cb9ba2d5ba0d74c912f9fe705e507fab3195d41359832b7179e5a8029bf045e6"
+    }
+  ],
+  "file": "release/casulo-native-neural-port-system-pack-np9-incremental-v1.cspk",
+  "model_embedded": false,
+  "network": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-system-pack/1.0",
+  "sha256": "97a7aa924b77543f5ada15c6ed13d418eda0a45b77766c1cfa583c8618bdff5a",
+  "t_sampling_policy": {
+    "bundle_sha256": "cb9ba2d5ba0d74c912f9fe705e507fab3195d41359832b7179e5a8029bf045e6",
+    "decision_authority": true,
+    "policy_id": "greedy-incremental-v1",
+    "receipt_chained": true,
+    "runtime_payload": true,
+    "source": "private/casulo-owner/t-v2/native-sampling-policy.t",
+    "source_sha256": "1828ac60c660e3ec2c47fa038ac4548345bfcfd82ce34494b92594ab4089c648",
+    "tcap_hash": "1391b5bb7762d32234f27f65a3dd2404895083f7e3c0a9588648a41e1088d5ed"
+  }
+}

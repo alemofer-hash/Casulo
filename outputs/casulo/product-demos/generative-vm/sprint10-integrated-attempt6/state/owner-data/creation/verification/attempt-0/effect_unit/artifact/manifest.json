@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:abb8d4b391e5eb09896d1333fa75f824e9197de20d47b7b63cc0ff1c108ef0f3",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "e6eb677bd9922fb64e26a7615d755ee2cf8f7844c23f3f39f43c098ebe2d29a0"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "5b013f2f03633f7f54f9723ff8536eef47b1a38304dd564335d4f02f6983fa30",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "29864c29212f6a62b857092f60d1142cc56ecbb1440096b40bbed815f278e178",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "effects",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "6fe89d942ef9e3289d8eadfa2c7e44cbf06dbc627519ece73adee997bddbe1fc"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "EffectManifest",
+        "judgements": [],
+        "name": "Apply",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "3574593d21d1287fd29a5a093b2a746a7ee2e7d226a0218e6f1d8019fdb9de9b"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "EffectManifest",
+      "kind": "condense",
+      "name": "Apply",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "18dc6f3ec7fbca6b8de887512ecd7084071278e82f7d31984b171e8656f8b5ad"
+  }
+}

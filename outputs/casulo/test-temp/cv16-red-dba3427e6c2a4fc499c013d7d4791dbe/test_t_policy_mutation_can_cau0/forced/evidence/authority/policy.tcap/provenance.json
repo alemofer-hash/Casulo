@@ -1,0 +1,11 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/compression.casv_compact.t",
+      "module": "compression.casv_compact",
+      "sha256": "664190c6674b800620a4591da20fdb206a9ac7fe78c0868f4b630ce0485bec27"
+    }
+  ]
+}

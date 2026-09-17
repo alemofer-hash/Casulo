@@ -1,0 +1,16 @@
+{
+  "definitive_pairs": 0,
+  "frozen_k": null,
+  "polling_median_seconds": 0.253,
+  "polling_mode_ms": 250,
+  "probe_sequence_seconds": [
+    10.0,
+    20.0
+  ],
+  "probes": [],
+  "schema": "casulo-hwinfo-thermal-calibration/1.0",
+  "status": "SUPERSEDED_BEFORE_WORKLOAD",
+  "superseded_reason": "The user replaced the 60 C start threshold with a 70 C campaign-local threshold before any workload.",
+  "target_window_seconds": 20.0,
+  "workload_executions": 0
+}

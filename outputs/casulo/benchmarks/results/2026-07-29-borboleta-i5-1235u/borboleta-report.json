@@ -1,0 +1,168 @@
+{
+  "artifact_id": "sha256:861b89d7ac890c08b6edf94e6baedfc6843f08466004fb64e9ffb2787fbd214d",
+  "caveats": [
+    "dataset sintético mede o runtime, não a acurácia hidrológica",
+    "o ganho depende da taxa de repetição declarada no manifesto",
+    "resultados de um único computador não generalizam sem replicação",
+    "turbo, temperatura e processos concorrentes afetam tempo e energia",
+    "energia elétrica indisponível nesta execução"
+  ],
+  "comparison": {
+    "cpu_work_ratio": 0.5555555555555556,
+    "electrical_energy_ratio": null,
+    "scope": "referência escalar sem cache versus lote Casulo com cache frio por chamada e deduplicação intralote",
+    "semantic_projection_excludes": [
+      "cache"
+    ],
+    "semantically_equivalent": true,
+    "verdict": "regression",
+    "wall_speedup_ci95_bootstrap": [
+      0.5233439237554235,
+      0.6333580471349444
+    ],
+    "wall_speedup_interpretation": "valores acima de 1 indicam que a estratégia Casulo é mais rápida",
+    "wall_speedup_median": 0.6005695184368387
+  },
+  "config": {
+    "bootstrap_resamples": 2000,
+    "duplicate_rate": 0.35,
+    "iterations": 5,
+    "records": 2000,
+    "samples": 9,
+    "seed": 24052024,
+    "warmups": 2
+  },
+  "dataset": {
+    "duplicate_rate": 0.35,
+    "name": "hydrological-water-balance-synthetic",
+    "protocol": "casulo-dataset/hydrological-synthetic/0.1",
+    "records": 2000,
+    "seed": 24052024,
+    "sha256": "1e03856e6be825621fe938f9587b2d2a75e1221fd9ab26906275399f0a098ed3"
+  },
+  "energy": {
+    "electrical_energy_measured": false,
+    "method": "unavailable",
+    "quality": "not_measured",
+    "unit": null,
+    "warning": "nenhum contador elétrico cumulativo foi encontrado; tempo de CPU permanece apenas como proxy de trabalho, nunca como joules"
+  },
+  "environment": {
+    "cpu_logical": 12,
+    "cpu_physical": 10,
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "memory_total_bytes": 16890978304,
+    "os": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2"
+  },
+  "equivalence_sha256": "07e24ccd057bb03a6dc1fd736bb468af66ef045dde14820b3280dba35ba26de4",
+  "generated_at_utc": "2026-07-29T23:29:17Z",
+  "operation": "WaterBalance",
+  "optimized": {
+    "cpu_ns_samples": [
+      359375000,
+      343750000,
+      359375000,
+      359375000,
+      546875000,
+      515625000,
+      593750000,
+      453125000,
+      421875000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 421875000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 42852352,
+    "median_wall_ns": 460557100,
+    "name": "casulo_metamorfose_fused_batch",
+    "rss_observed_bytes_samples": [
+      42811392,
+      42811392,
+      42848256,
+      42848256,
+      42852352,
+      42852352,
+      42901504,
+      42901504,
+      42901504
+    ],
+    "throughput_records_per_second": 21712.834304367472,
+    "wall_ns_samples": [
+      358099500,
+      366634200,
+      358558300,
+      386150800,
+      548721700,
+      543300200,
+      618955500,
+      484462000,
+      460557100
+    ]
+  },
+  "protocol": "casulo-borboleta/0.1",
+  "scalar": {
+    "cpu_ns_samples": [
+      203125000,
+      234375000,
+      234375000,
+      234375000,
+      312500000,
+      312500000,
+      328125000,
+      265625000,
+      218750000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 234375000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 42848256,
+    "median_wall_ns": 246830600,
+    "name": "python_scalar_reference",
+    "rss_observed_bytes_samples": [
+      42229760,
+      42844160,
+      42844160,
+      42848256,
+      42848256,
+      42876928,
+      42876928,
+      42901504,
+      42901504
+    ],
+    "throughput_records_per_second": 40513.61541073108,
+    "wall_ns_samples": [
+      226805200,
+      221792000,
+      246830600,
+      231910400,
+      344433800,
+      313907600,
+      323926600,
+      258993600,
+      222840000
+    ]
+  }
+}

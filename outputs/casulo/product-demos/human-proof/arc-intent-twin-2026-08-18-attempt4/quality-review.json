@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.arc-intent-twin-quality-review/1.0",
+  "technical_contract_gate": "PASS",
+  "semantic_quality_gate": "FAIL_CHOICES_NOT_MUTUALLY_EXCLUSIVE",
+  "detail": "compare_proposals e present_proposals ainda podem coexistir; rótulos diferentes não provam alternativas materiais.",
+  "intent_twin_sha256": "da9849aac43201efaa1aaa8e5807f61f4ca86e6f619fc55b0ccef2c2fe23c34a",
+  "preserved": true,
+  "superseded_by_validation": "arc-intent-twin-2026-08-18-attempt5"
+}

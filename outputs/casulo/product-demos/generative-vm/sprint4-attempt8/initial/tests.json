@@ -1,0 +1,22 @@
+[
+  {
+    "expected_contains": "decisoes_confirmadas: [\"Decisão confirmada em reunião A\"]",
+    "input": "notas_reunião: [\"Decisão confirmada em reunião A\", \"Hipótese em reunião B\"]",
+    "name": "Teste_Criação_Farol_de_Decisões"
+  },
+  {
+    "expected_contains": "validacao_externa: true",
+    "input": "alteracoes: [\"Alteração proposta em documento X\"]",
+    "name": "Teste_Validação_Externa"
+  },
+  {
+    "expected_contains": "contradições: [\"Contradição entre decisão A e B\"]",
+    "input": "conversas_consecutivas: [\"Decisão A em conversa 1\", \"Decisão B em conversa 2\"]",
+    "name": "Teste_Rastreio_Contradições"
+  },
+  {
+    "expected_contains": "nome: \"Farol de Decisões\"",
+    "input": "identidade: {\"nome\": \"Farol de Decisões\"}",
+    "name": "Teste_Identidade_Farol"
+  }
+]

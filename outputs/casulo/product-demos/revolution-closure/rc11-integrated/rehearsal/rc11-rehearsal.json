@@ -1,0 +1,224 @@
+{
+  "checks": {
+    "base_hash_preserved": true,
+    "catalog_rehydrated": true,
+    "cloud_usb_science_boundaries": true,
+    "compile_but_not_fulfill_detected": true,
+    "diagnostic_repair": true,
+    "event_chain_and_rehydrate": true,
+    "external_clean_execution": true,
+    "hard_contradiction_blocked": true,
+    "hot_empty_after_reboot": true,
+    "human_resolution_preserved": true,
+    "interrupt_changes_requirement": true,
+    "local_edit_present": true,
+    "overlay_quota": true,
+    "presence_during_job": true,
+    "real_neural_owner_creation": true,
+    "roundtrip_constraints": true,
+    "roundtrip_v2": true,
+    "simulation_no_real_effects": true,
+    "three_projects_isolated": true
+  },
+  "continuity_state_sha256": "2237d7c1de0ec44cbe8b40191f843c1358583e42eea1d62ed842373dc92d694d",
+  "design": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "event_count": 15,
+  "external_execution": {
+    "returncode": 0,
+    "stdout_sha256": "c2ebb23828a0d06be9180235c3a711bcf76fa3770d0ad53f74135e5fa379d73a"
+  },
+  "human_chemistry": "PENDING_GUILHERME",
+  "human_voice": "PENDING_GUILHERME",
+  "neural_evidence": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\sm8-owner-vertical-slice.json",
+    "route": [
+      "intencao",
+      "sinais",
+      "diagnostico"
+    ],
+    "sha256": "a2df9fe114820f7c15d7c9e44b1104defd6696b680f96b3c24782deec00aa71e"
+  },
+  "projects": {
+    "citations": [
+      "Decisão confirmada do projeto citations: Toda citação precisa de origem verificável e nenhuma fonte inventada."
+    ],
+    "flood": [
+      "Decisão confirmada do projeto flood: Trabalhar somente com telemetria validada e datum explícito."
+    ],
+    "photo": [
+      "Decisão confirmada do projeto photo: Nunca sobrescrever o scan original; toda operação precisa ser reversível."
+    ]
+  },
+  "repair": {
+    "attempts": [
+      {
+        "attempt": 0,
+        "diagnostics": [
+          {
+            "artifact_id": "sha256:5057c6761cf8db7474378f8af4af397e57cb55cdf61d5b405e8486e6ed5b6e7e",
+            "code": "TTEST_EXPECTED_TEXT_MISSING",
+            "expected_contains": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real",
+            "observed": "creation:open-ended-holdout",
+            "process_returncode": 0,
+            "process_stderr": "",
+            "schema": "casulo.generative-diagnostic/1.0",
+            "source_sha256": "3c112fd3b1bf698fbd61a11ec36ac5df539858fe10e099cf2bded562a91f80c7",
+            "test_name": "human-holdout-acceptance",
+            "unit_id": "creation_unit"
+          }
+        ],
+        "finished_ns": 15889961407100,
+        "project_id": "t-project:1742a428ede83931180c6d4a",
+        "started_ns": 15889196362500,
+        "tcap_sha256": "95306aa059c1ef0274fde8b49bfddeeb1df9a26dc1eca096faada6ae2d7d1d63",
+        "tests": [
+          {
+            "expected_contains": "creation:open-ended-holdout",
+            "name": "creation_unit_test",
+            "observed": "creation:open-ended-holdout",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "cd68934b815879552f1118398d1621c8da83fa1fa2d5268e9a7fb72a47f275c0",
+            "unit_id": "creation_unit",
+            "wall_ns": 170699100
+          },
+          {
+            "expected_contains": "reversibility:validation",
+            "name": "reversibility_unit_test",
+            "observed": "reversibility:validation",
+            "operation": "Validate",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "57617e25d96741ed386314396511faaacdd73cda8d909ccbe7d2aba640d95e52",
+            "unit_id": "reversibility_unit",
+            "wall_ns": 129433600
+          },
+          {
+            "expected_contains": "preservation:log",
+            "name": "preservation_unit_test",
+            "observed": "preservation:log",
+            "operation": "Record",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "1ffa14c90f4ca16312e526962bb3b91b1bc4b3563bcb25f054ebd9dbbd6b66c5",
+            "unit_id": "preservation_unit",
+            "wall_ns": 124018900
+          },
+          {
+            "expected_contains": "trace:log",
+            "name": "trace_unit_test",
+            "observed": "trace:log",
+            "operation": "Log",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "49e5c99bf28b061bcdfcc162a64fe0f23965b21aaa0c865270074b7bbcf1b03a",
+            "unit_id": "trace_unit",
+            "wall_ns": 118047100
+          },
+          {
+            "expected_contains": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real",
+            "name": "human-holdout-acceptance",
+            "observed": "creation:open-ended-holdout",
+            "operation": "Initialize",
+            "passed": false,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "c492e45871b56e94372c2ced9224c77d995f97dc246762f73ac8d8529a8d8b62",
+            "unit_id": "creation_unit",
+            "wall_ns": 90527200
+          }
+        ]
+      },
+      {
+        "attempt": 1,
+        "diagnostics": [],
+        "finished_ns": 15938314024500,
+        "project_id": "t-project:1e28e6f0bb003038ac0d086f",
+        "started_ns": 15937541817700,
+        "tcap_sha256": "abc0de0bdf5b58ab11240c2d83540d08e793ab673812c0aea7e44e471c10e975",
+        "tests": [
+          {
+            "expected_contains": "creation:open-ended-holdout",
+            "name": "creation_unit_test",
+            "observed": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real; creation:open-ended-holdout",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "2b27b3b1fc6495992014a4b849ab2aacccb2c8a4045fc99d660b481e7183a716",
+            "unit_id": "creation_unit",
+            "wall_ns": 173812700
+          },
+          {
+            "expected_contains": "reversibility:validation",
+            "name": "reversibility_unit_test",
+            "observed": "reversibility:validation",
+            "operation": "Validate",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "8d5714902e1d81ca5cb00cc533c2ab07deacfd38f2128168dff3327d63c9c851",
+            "unit_id": "reversibility_unit",
+            "wall_ns": 135843800
+          },
+          {
+            "expected_contains": "preservation:log",
+            "name": "preservation_unit_test",
+            "observed": "preservation:log",
+            "operation": "Record",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "a16d5dd5d059bb06ebf02cd93c7b6b36bdd17c759ec17b06af7b76610dabb210",
+            "unit_id": "preservation_unit",
+            "wall_ns": 145053500
+          },
+          {
+            "expected_contains": "trace:log",
+            "name": "trace_unit_test",
+            "observed": "trace:log",
+            "operation": "Log",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "101caee986ba5c388f7f76b655f375c6020bce2779808c1358a5344b757c7872",
+            "unit_id": "trace_unit",
+            "wall_ns": 131322600
+          },
+          {
+            "expected_contains": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real",
+            "name": "human-holdout-acceptance",
+            "observed": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real; creation:open-ended-holdout",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "04b94366969661d01cd5f0cced44e0bcf3938361490bb44d5c4bd9bda673b862",
+            "unit_id": "creation_unit",
+            "wall_ns": 84547100
+          }
+        ]
+      }
+    ],
+    "budget": 4,
+    "candidate_rejections": [],
+    "project_id": "t-project:1e28e6f0bb003038ac0d086f",
+    "receipt_sha256": "4b045df4dd67c9c7849e34fc1f42d7cbb82eeb40c8ca6261c930a91a9ed1ccfd",
+    "repair_count": 1,
+    "schema": "casulo.verifier-repair-receipt/1.0",
+    "status": "PASS",
+    "tcap_sha256": "abc0de0bdf5b58ab11240c2d83540d08e793ab673812c0aea7e44e471c10e975"
+  },
+  "roundtrip": {
+    "v7_archive_sha256": "ecfd10cda55c037c82352aa994bf41fe2b2170c8ea18ecc04c6ad3474bdae14d",
+    "v8_archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\rehearsal\\roundtrip-v2\\creation-38da5088c5e61759-v8.casulo.zip",
+    "v8_archive_sha256": "d9f0938340c9edef52aedbc4df9cef2223289ab9520fc757d0b80cd9e08f8e42"
+  },
+  "schema": "casulo.rc11-rehearsal/1.0",
+  "state": "PASS"
+}

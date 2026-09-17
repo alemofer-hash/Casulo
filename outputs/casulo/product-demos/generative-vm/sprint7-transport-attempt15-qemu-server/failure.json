@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 15,
+  "failure": "LIVE_HOST_TO_UART_REMAINS_UNRELIABLE_AFTER_READY",
+  "action": "Introduced explicit request boot plus preloaded reboot handoff; live token bridge remains a limitation",
+  "preserved": true,
+  "neural_evidence": false
+}

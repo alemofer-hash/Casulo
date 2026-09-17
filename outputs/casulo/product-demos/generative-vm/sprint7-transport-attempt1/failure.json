@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 1,
+  "failure": "SERIAL_STDIO_INPUT_DID_NOT_COMPLETE_GUEST_HANDSHAKE",
+  "action": "Owned QEMU and probe processes stopped after WHPX timeout and TCG retry began",
+  "preserved": true,
+  "scientific_evidence": false,
+  "neural_evidence": false
+}

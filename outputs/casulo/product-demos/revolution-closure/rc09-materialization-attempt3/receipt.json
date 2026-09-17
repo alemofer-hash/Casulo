@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc09-materialization-attempt3",
+  "gate_sha256": "bb2237f5505ef4c099c1a4fad38bf9fe971b6c6c4f542eef3b281ed6ab6724a7",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC9_EXTERNAL_MATERIALIZATION_MATRIX_PASS",
+  "timestamp": "2026-08-14T21:19:54.076152+00:00"
+}

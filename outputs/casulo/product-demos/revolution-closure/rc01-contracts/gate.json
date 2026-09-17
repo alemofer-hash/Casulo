@@ -1,0 +1,65 @@
+{
+  "authorized_claims": [
+    "contracts, thresholds, holdout families and trust boundaries are frozen"
+  ],
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "commands": [
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc01-contracts\\pytest-temp",
+      "tests/product/test_revolution_contracts.py",
+      "tests/product/test_capability_broker.py",
+      "tests/product/test_engine_boundary.py"
+    ]
+  ],
+  "forbidden_claims": [
+    "human chemistry approved",
+    "voice approved",
+    "scientific superiority",
+    "commercial release"
+  ],
+  "gate_id": "RC1_CONTRACTS_TRUTH_AND_TRUST_PASS",
+  "input_hashes": {
+    "holdout_suite": "e2d37c25cb5a3b0ad21313de71526014b7473a2bd6a5188d2b165e53e4c4c620",
+    "previous_gate": "6e3a741006fe6fd1586d3376661d95d9b4f4722321b6d05353b18b4c8f79bb0d"
+  },
+  "machine_profile_sha256": "7ca1b196f47eb6e20769ae165c1b1a322d9f9abdd2ebc3dc4a7201acff8dd718",
+  "model_adapter_hashes": {},
+  "open_findings": [
+    {
+      "severity": "P2",
+      "summary": "T implementation degree audit remains scheduled for RC4"
+    },
+    {
+      "severity": "P2",
+      "summary": "physical voice and human chemistry remain pending"
+    }
+  ],
+  "output_hashes": {
+    "product-demos/revolution-closure/rc01-contracts/constitution.json": "07b18f3b07e6158aedec0ead238b3cd83748d8ded09fe33bdd72008dcb5fb599",
+    "product-demos/revolution-closure/rc01-contracts/contract-documents.json": "bfafa6d60defeba2cabd0fbf387e803662d570c623a5bfc0df0a2958e1465d0a",
+    "product-demos/revolution-closure/rc01-contracts/holdout-family-seal.json": "11c9529ae78ca4692ba7496b3e68f2b8540e291a453d971b21ba3a4eb429645d",
+    "product-demos/revolution-closure/rc01-contracts/schema-inventory.json": "0ab7f48a09df3f63bc0c8613090ad8252c8dd87991dded64495d137a6dab3b01",
+    "product-demos/revolution-closure/rc01-contracts/tests.txt": "ef068527969c3c2381d5e8899023987983fd6222cf5bb70441c586bc051f5fc7"
+  },
+  "previous_gate_hash": "6e3a741006fe6fd1586d3376661d95d9b4f4722321b6d05353b18b4c8f79bb0d",
+  "sampling_policy": "NOT_EXECUTED_RC1",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "status": "PASS",
+  "test_summary": {
+    "exit_code": 0,
+    "output_sha256": "ef068527969c3c2381d5e8899023987983fd6222cf5bb70441c586bc051f5fc7",
+    "summary": ".................................                                        [100%]\n33 passed in 0.84s"
+  },
+  "timestamp": "2026-08-14T19:51:39.122569+00:00",
+  "tool_versions": {
+    "python": "3.13.2"
+  },
+  "worktree_manifest_sha256": "066698f9b6ac67be76aed86bc83c412c4fcd5377e6a2e699a3a106000a4314e9"
+}

@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "test.exhaust": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Input"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

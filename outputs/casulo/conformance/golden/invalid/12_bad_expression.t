@@ -1,0 +1,2 @@
+condense Broken
+  emit value +

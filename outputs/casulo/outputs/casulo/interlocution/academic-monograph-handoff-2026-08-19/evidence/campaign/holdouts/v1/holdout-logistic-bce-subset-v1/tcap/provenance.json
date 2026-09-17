@@ -1,0 +1,51 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.dataset_identity_integrity.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.dataset_identity_integrity",
+      "sha256": "98d079862624461ab8bb151b21535eb66414916606ea2bde8e3413b17a3db4aa"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.initialization_bundle.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.initialization_bundle",
+      "sha256": "b8f8c6c54bfba2914e6f542aad9698c8ed450738d6e25941dd27d9ebcc5da454"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.numerical_precision.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.numerical_precision",
+      "sha256": "4f1404bea110a5b0203ff83e92519a1af5c36653c6ee79c91c78c51e4effd5c1"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.loss_function.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.loss_function",
+      "sha256": "ca1dccd2310faeaf15da9b02e22227245c738159a1f7ebc001b4c75d6b1b1474"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.update_rule.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.update_rule",
+      "sha256": "c7782819443d6b85fa16b771b75638d9cdb2f3227db5a0446e21de71e05cd4c7"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.optimizer_state.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.optimizer_state",
+      "sha256": "77ca1f06bc6b4bf3e0b64a818e0941b3ff810fce51df43cc920cc5e68236d806"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.working_set.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.working_set",
+      "sha256": "e987872f1ffb8d4583b8e4622f50a012d3417ba16c74f7c6bf5fc54cad877d28"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.stopping.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.stopping",
+      "sha256": "035c636e5c9ac143c39b0e5c456c5fedabffd6e1c57debfe66386c7c885d4ae0"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.equivalence_acceptance.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.equivalence_acceptance",
+      "sha256": "72ea84bd08f4e3b8a7f94c5e793184bf72b189225a725c7ddedf1f08c4be5dab"
+    }
+  ]
+}

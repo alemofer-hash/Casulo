@@ -1,0 +1,13 @@
+{
+  "base": "casulo-native-generative-interactive.img",
+  "base_read_only": true,
+  "base_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+  "clean_snapshot": "human-proof-clean",
+  "network": "denied",
+  "overlay": "sparse-qcow2-runtime-created",
+  "qpu": "UNAVAILABLE_DENY",
+  "schema": "casulo.human-proof-vm-profile/1.0",
+  "shared_folders": false,
+  "state_root": "%LOCALAPPDATA%/Casulo/human-proof/owner-vm",
+  "usb_block_devices": "PROHIBITED"
+}

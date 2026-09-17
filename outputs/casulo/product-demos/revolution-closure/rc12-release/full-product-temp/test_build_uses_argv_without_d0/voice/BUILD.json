@@ -1,0 +1,30 @@
+{
+  "bridge_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\full-product-temp\\test_build_uses_argv_without_d0\\voice\\bin\\casulo_whisper_bridge.dll",
+  "bridge_sha256": "a51b0157edccec21ee384f09625c09c5a0691db81de72c515ebb77945e273a5a",
+  "build_argv": [
+    "cmake",
+    "--build",
+    "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\full-product-temp\\test_build_uses_argv_without_d0\\voice\\build\\306c88f4d1286aec1bf96e544632897886af5501",
+    "--config",
+    "Release",
+    "--target",
+    "casulo_whisper_bridge"
+  ],
+  "configure_argv": [
+    "cmake",
+    "-S",
+    "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\native\\voice",
+    "-B",
+    "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\full-product-temp\\test_build_uses_argv_without_d0\\voice\\build\\306c88f4d1286aec1bf96e544632897886af5501",
+    "-G",
+    "Ninja",
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DWHISPER_CPP_DIR=C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\full-product-temp\\test_build_uses_argv_without_d0\\voice\\sources\\whisper\\source",
+    "-DCASULO_VOICE_OUTPUT_DIR=C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\full-product-temp\\test_build_uses_argv_without_d0\\voice\\bin"
+  ],
+  "created_at": "2026-08-14T21:45:52.218714Z",
+  "download_performed": false,
+  "engine_commit": "306c88f4d1286aec1bf96e544632897886af5501",
+  "model_sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb",
+  "schema": "casulo-voice-build/1.0"
+}

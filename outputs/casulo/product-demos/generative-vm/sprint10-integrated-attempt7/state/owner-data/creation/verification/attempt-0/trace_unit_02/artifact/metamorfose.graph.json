@@ -1,0 +1,67 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "trace",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 1,
+      "input_type": "B14C",
+      "name": "B14C_trace",
+      "nodes": [
+        {
+          "defines": [
+            "value"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "B14C_trace/input/value",
+          "kind": "input",
+          "label": "value",
+          "operation": "B14C_trace",
+          "path": "input.value",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "B14C_trace/instruction/root.0/emit",
+          "kind": "emit",
+          "label": "\"B14C: trace value: 'Creation of B14C'\"",
+          "operation": "B14C_trace",
+          "path": "root.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [],
+  "version": "metamorfose-graph/1.0"
+}

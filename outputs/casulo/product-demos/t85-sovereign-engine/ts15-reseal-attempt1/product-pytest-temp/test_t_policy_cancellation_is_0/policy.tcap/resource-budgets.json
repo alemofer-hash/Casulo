@@ -1,0 +1,8 @@
+{
+  "modules": {
+    "owner.guide.context_policy": {
+      "deadline_ms": 3000,
+      "steps": 2048
+    }
+  }
+}

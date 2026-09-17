@@ -1,0 +1,992 @@
+{
+  "claims": {
+    "global_einstein_solver": false,
+    "local_residual_evaluator": true
+  },
+  "diagnostic_repair": {
+    "attempts": 4,
+    "history": [
+      {
+        "attempt": 0,
+        "diagnostics": [
+          {
+            "code": "SCI_REQUIRED_INPUTS_MISSING",
+            "missing": [
+              "boundary_conditions",
+              "constants",
+              "coordinates",
+              "energy_momentum_tensor",
+              "initial_conditions",
+              "metric",
+              "tolerances"
+            ]
+          },
+          {
+            "code": "SCI_REQUIRED_GEOMETRY_OUTPUTS_MISSING",
+            "missing": [
+              "connection",
+              "einstein_tensor",
+              "field_equation_residual",
+              "ricci_scalar",
+              "ricci_tensor"
+            ]
+          },
+          {
+            "code": "SCI_SCOPE_MUST_BE_LOCAL_4D"
+          }
+        ],
+        "raw_sha256": "c9a1ca02743799611102bc1ee5b1147cddb883f95375b4012eace6c0d08695a5",
+        "trace": {
+          "commercial_ai_api_used": false,
+          "context_digest": "fc6117e8fba12a0aff6c276c2d17b43bea9eb1efaedeb47f847e7adbe11b24fe",
+          "ended_monotonic_ns": 12426157586400,
+          "external_network_used": false,
+          "finish_reason": "stop",
+          "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+          "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+          "operation_id": "einstein-plan-0",
+          "output_sha256": "c9a1ca02743799611102bc1ee5b1147cddb883f95375b4012eace6c0d08695a5",
+          "sampling_policy_id": "casulo-sampling-planning-v1",
+          "schema": "casulo-stochastic-trace/1.0",
+          "seed_if_available": null,
+          "started_monotonic_ns": 12319659605500,
+          "stream_events": 618
+        }
+      },
+      {
+        "attempt": 1,
+        "diagnostics": [
+          {
+            "code": "SCI_GLOBAL_CLAIM_NOT_REFUSED"
+          }
+        ],
+        "raw_sha256": "272b171be66d94da836ab37a3d4ecefd34fad6bc2b22584dbc3abb3141b33ee9",
+        "trace": {
+          "commercial_ai_api_used": false,
+          "context_digest": "727d28643644e6a497970b6b7623c7f85159005edf465000d8d2ce43cab17125",
+          "ended_monotonic_ns": 12464198455000,
+          "external_network_used": false,
+          "finish_reason": "stop",
+          "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+          "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+          "operation_id": "einstein-plan-1",
+          "output_sha256": "272b171be66d94da836ab37a3d4ecefd34fad6bc2b22584dbc3abb3141b33ee9",
+          "sampling_policy_id": "casulo-sampling-planning-v1",
+          "schema": "casulo-stochastic-trace/1.0",
+          "seed_if_available": null,
+          "started_monotonic_ns": 12426158253700,
+          "stream_events": 195
+        }
+      },
+      {
+        "attempt": 2,
+        "diagnostics": [
+          {
+            "code": "SCI_REQUIRED_INPUTS_MISSING",
+            "missing": [
+              "boundary_conditions",
+              "constants",
+              "coordinates",
+              "energy_momentum_tensor",
+              "initial_conditions",
+              "metric",
+              "tolerances"
+            ]
+          },
+          {
+            "code": "SCI_REQUIRED_GEOMETRY_OUTPUTS_MISSING",
+            "missing": [
+              "connection",
+              "einstein_tensor",
+              "field_equation_residual",
+              "ricci_scalar",
+              "ricci_tensor"
+            ]
+          },
+          {
+            "code": "SCI_SCOPE_MUST_BE_LOCAL_4D"
+          }
+        ],
+        "raw_sha256": "45f806b267eb17e55e4d55363c2eae87ca71666969bf1ebb45831649deeaec9f",
+        "trace": {
+          "commercial_ai_api_used": false,
+          "context_digest": "ab91f6b55ad7dbe79dcbdd654549b1227ddd4571a8e0b1ff087da98aaecc5b89",
+          "ended_monotonic_ns": 12510833189100,
+          "external_network_used": false,
+          "finish_reason": "stop",
+          "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+          "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+          "operation_id": "einstein-plan-2",
+          "output_sha256": "45f806b267eb17e55e4d55363c2eae87ca71666969bf1ebb45831649deeaec9f",
+          "sampling_policy_id": "casulo-sampling-planning-v1",
+          "schema": "casulo-stochastic-trace/1.0",
+          "seed_if_available": null,
+          "started_monotonic_ns": 12464198921800,
+          "stream_events": 324
+        }
+      },
+      {
+        "attempt": 3,
+        "diagnostics": [],
+        "raw_sha256": "80b88d8dce48e12876a14f53f3e94475e261ee007d19276d3a9b46667b21ebac",
+        "trace": {
+          "commercial_ai_api_used": false,
+          "context_digest": "727d28643644e6a497970b6b7623c7f85159005edf465000d8d2ce43cab17125",
+          "ended_monotonic_ns": 12538912403600,
+          "external_network_used": false,
+          "finish_reason": "stop",
+          "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+          "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+          "operation_id": "einstein-plan-3",
+          "output_sha256": "80b88d8dce48e12876a14f53f3e94475e261ee007d19276d3a9b46667b21ebac",
+          "sampling_policy_id": "casulo-sampling-planning-v1",
+          "schema": "casulo-stochastic-trace/1.0",
+          "seed_if_available": null,
+          "started_monotonic_ns": 12510833648300,
+          "stream_events": 206
+        }
+      }
+    ]
+  },
+  "external_execution": {
+    "equivalent": true,
+    "returncode": 0
+  },
+  "idea": "Construa um avaliador científico local das equações de campo gravitacional de Einstein em que a pessoa forneça geometria, matéria e condições do problema",
+  "materialization": {
+    "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-rerun\\casulo-owner-einstein-local-solver.casulo.zip",
+    "archive_sha256": "554da5a1341f84077c0434f79b9dacd00ba6d5dd96869a91deb92b93002c7860",
+    "directory": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-rerun\\materialized-einstein-solver"
+  },
+  "neural_plan": {
+    "inputs": [
+      "boundary_conditions",
+      "constants",
+      "coordinates",
+      "energy_momentum_tensor",
+      "initial_conditions",
+      "metric",
+      "tolerances"
+    ],
+    "name": "EinsteinFieldEquationsValidator",
+    "numerical_method": "central_finite_differences_4d",
+    "outputs": [
+      "connection",
+      "einstein_tensor",
+      "field_equation_residual",
+      "ricci_scalar",
+      "ricci_tensor"
+    ],
+    "purpose": "Validate a local 4D Lorentzian metric against Einstein's field equations using finite difference methods.",
+    "refusals": [
+      "Cannot perform global initial value problem or boundary value problem integration.",
+      "Cannot validate non-Lorentzian metrics.",
+      "Cannot validate metrics not defined in a local 4D spacetime."
+    ],
+    "supported_scope": "local_4d_lorentzian_metric_validation"
+  },
+  "neural_plan_trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "727d28643644e6a497970b6b7623c7f85159005edf465000d8d2ce43cab17125",
+    "ended_monotonic_ns": 12538912403600,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "einstein-plan-3",
+    "output_sha256": "80b88d8dce48e12876a14f53f3e94475e261ee007d19276d3a9b46667b21ebac",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 12510833648300,
+    "stream_events": 206
+  },
+  "reboot": {
+    "catalog_sha256": "0a9b172255f51332b763aa006ddd059547007aa7e7e6b4ad498f3c893d60bcfd",
+    "false_hot_persistence": false,
+    "hot_after_reboot": [],
+    "restored_session_hashes": [
+      "016e563bda85efdfa3c8d6563e0696faf9db2a27484f523b87620691bc21829b"
+    ],
+    "sessions": 1
+  },
+  "schema": "casulo.einstein-solver-probe/1.0",
+  "semantic": {
+    "cloud": "RELEASE_LOCKED",
+    "confirmation_source": "AUTOMATED_ACCEPTANCE_SCENARIO",
+    "confirmed_delta_hash": "8849518004803244267687f7f6e4884757b0722aaf9b1d209a4a0d26036e1be7",
+    "final_state": {
+      "constraints": [
+        "sem API externa",
+        "somente resíduo local 4D",
+        "efeitos reais negados"
+      ],
+      "intent": "Construa um avaliador científico local das equações de campo gravitacional de Einstein em que a pessoa forneça geometria, matéria e condições do problema",
+      "provenance": [
+        "einstein-semantic-route",
+        "31aa7544ebf6435940cd78288026583d8b7c9895e55b9e208c54a46eebbaca9d",
+        "d8cfb37c2f9868f91af190908237ade993f0179684ba40410bd6024320e6c012",
+        "6bd10dbc524268342cfadf3390bec3e1851474a8286b43b758bd074d972d2e0f",
+        "ca8f56f94af747b9a18289b31a74d02161918ffa96aeeb0fa3451036d608b87f",
+        "7eb5e4e65c334332ddd3dbe9097e0136204c6088139c74bff6d061ba4b4e5eda",
+        "8962f5fcb48b43f1d05366c04c07518984638e36d07ca7b7a68ff77648df623c"
+      ],
+      "uncertainty": "explicit",
+      "units": "SI"
+    },
+    "hot_at_completion": [
+      "materializacao"
+    ],
+    "idea_sha256": "06eae4be5cdc1f9dd7513b014cccd7fbf951b23302f2c266f84fd47701b15471",
+    "lifecycle_receipts": [
+      {
+        "after": "WARMING",
+        "before": "FROZEN",
+        "committed": false,
+        "event_id": "lifecycle:1",
+        "memory_bytes": 0,
+        "monotonic_ns": 12568470960700,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "WARM",
+        "before": "WARMING",
+        "committed": true,
+        "event_id": "lifecycle:2",
+        "memory_bytes": 0,
+        "monotonic_ns": 12568470977700,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "ACTIVATING",
+        "before": "WARM",
+        "committed": false,
+        "event_id": "lifecycle:3",
+        "memory_bytes": 0,
+        "monotonic_ns": 12568470992300,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "HOT",
+        "before": "ACTIVATING",
+        "committed": true,
+        "event_id": "lifecycle:4",
+        "memory_bytes": 12582912,
+        "monotonic_ns": 12568470999200,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "WARMING",
+        "before": "FROZEN",
+        "committed": false,
+        "event_id": "lifecycle:5",
+        "memory_bytes": 12582912,
+        "monotonic_ns": 12568471067200,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      },
+      {
+        "after": "WARM",
+        "before": "WARMING",
+        "committed": true,
+        "event_id": "lifecycle:6",
+        "memory_bytes": 12582912,
+        "monotonic_ns": 12568471073500,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      },
+      {
+        "after": "ACTIVATING",
+        "before": "WARM",
+        "committed": false,
+        "event_id": "lifecycle:7",
+        "memory_bytes": 12582912,
+        "monotonic_ns": 12568471083700,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      },
+      {
+        "after": "HOT",
+        "before": "ACTIVATING",
+        "committed": true,
+        "event_id": "lifecycle:8",
+        "memory_bytes": 26214400,
+        "monotonic_ns": 12568471089700,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      },
+      {
+        "after": "WARMING",
+        "before": "FROZEN",
+        "committed": false,
+        "event_id": "lifecycle:9",
+        "memory_bytes": 26214400,
+        "monotonic_ns": 12568471239000,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "engenharia"
+      },
+      {
+        "after": "WARM",
+        "before": "WARMING",
+        "committed": true,
+        "event_id": "lifecycle:10",
+        "memory_bytes": 26214400,
+        "monotonic_ns": 12568471245700,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "engenharia"
+      },
+      {
+        "after": "ACTIVATING",
+        "before": "WARM",
+        "committed": false,
+        "event_id": "lifecycle:11",
+        "memory_bytes": 26214400,
+        "monotonic_ns": 12568471255200,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "engenharia"
+      },
+      {
+        "after": "HOT",
+        "before": "ACTIVATING",
+        "committed": true,
+        "event_id": "lifecycle:12",
+        "memory_bytes": 40894464,
+        "monotonic_ns": 12568471262000,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "engenharia"
+      },
+      {
+        "after": "WARMING",
+        "before": "FROZEN",
+        "committed": false,
+        "event_id": "lifecycle:13",
+        "memory_bytes": 40894464,
+        "monotonic_ns": 12568471524300,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "WARM",
+        "before": "WARMING",
+        "committed": true,
+        "event_id": "lifecycle:14",
+        "memory_bytes": 40894464,
+        "monotonic_ns": 12568471530600,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "ACTIVATING",
+        "before": "WARM",
+        "committed": false,
+        "event_id": "lifecycle:17",
+        "memory_bytes": 28311552,
+        "monotonic_ns": 12568471580300,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "HOT",
+        "before": "ACTIVATING",
+        "committed": true,
+        "event_id": "lifecycle:18",
+        "memory_bytes": 44040192,
+        "monotonic_ns": 12568471585900,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "WARMING",
+        "before": "FROZEN",
+        "committed": false,
+        "event_id": "lifecycle:19",
+        "memory_bytes": 44040192,
+        "monotonic_ns": 12568471689000,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "interface"
+      },
+      {
+        "after": "WARM",
+        "before": "WARMING",
+        "committed": true,
+        "event_id": "lifecycle:20",
+        "memory_bytes": 44040192,
+        "monotonic_ns": 12568471694300,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "interface"
+      },
+      {
+        "after": "ACTIVATING",
+        "before": "WARM",
+        "committed": false,
+        "event_id": "lifecycle:23",
+        "memory_bytes": 30408704,
+        "monotonic_ns": 12568471723000,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "interface"
+      },
+      {
+        "after": "HOT",
+        "before": "ACTIVATING",
+        "committed": true,
+        "event_id": "lifecycle:24",
+        "memory_bytes": 47185920,
+        "monotonic_ns": 12568471728400,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "interface"
+      },
+      {
+        "after": "WARMING",
+        "before": "FROZEN",
+        "committed": false,
+        "event_id": "lifecycle:25",
+        "memory_bytes": 47185920,
+        "monotonic_ns": 12568471819400,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "materializacao"
+      },
+      {
+        "after": "WARM",
+        "before": "WARMING",
+        "committed": true,
+        "event_id": "lifecycle:26",
+        "memory_bytes": 47185920,
+        "monotonic_ns": 12568471825100,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "materializacao"
+      },
+      {
+        "after": "ACTIVATING",
+        "before": "WARM",
+        "committed": false,
+        "event_id": "lifecycle:29",
+        "memory_bytes": 32505856,
+        "monotonic_ns": 12568471849700,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "materializacao"
+      },
+      {
+        "after": "HOT",
+        "before": "ACTIVATING",
+        "committed": true,
+        "event_id": "lifecycle:30",
+        "memory_bytes": 50331648,
+        "monotonic_ns": 12568471854500,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "materializacao"
+      },
+      {
+        "after": "QUIESCING",
+        "before": "HOT",
+        "committed": false,
+        "event_id": "lifecycle:31",
+        "memory_bytes": 34603008,
+        "monotonic_ns": 12568472067600,
+        "reason": "pressure",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "FROZEN",
+        "before": "QUIESCING",
+        "committed": true,
+        "event_id": "lifecycle:32",
+        "memory_bytes": 34603008,
+        "monotonic_ns": 12568472079300,
+        "reason": "pressure",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "QUIESCING",
+        "before": "HOT",
+        "committed": false,
+        "event_id": "lifecycle:33",
+        "memory_bytes": 17825792,
+        "monotonic_ns": 12568472090600,
+        "reason": "pressure",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "interface"
+      },
+      {
+        "after": "FROZEN",
+        "before": "QUIESCING",
+        "committed": true,
+        "event_id": "lifecycle:34",
+        "memory_bytes": 17825792,
+        "monotonic_ns": 12568472096400,
+        "reason": "pressure",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "interface"
+      }
+    ],
+    "network": "DENIED",
+    "operation_id": "einstein-semantic-route",
+    "proposal": {
+      "rationale": "A construção de um avaliador científico local das equações de campo gravitacional de Einstein requer uma integração entre intencao (definição do propósito do sistema), sinais (entrada de dados como geometria, matéria e condições iniciais), engenharia (desenvolvimento do algoritmo ou modelo computacional), diagnostico (validação e análise dos resultados), interface (interação com o usuário para fornecer os parâmetros necessários) e materializacao (implementação física ou computacional do sistema)",
+      "raw_sha256": "31aa7544ebf6435940cd78288026583d8b7c9895e55b9e208c54a46eebbaca9d",
+      "route": [
+        "intencao",
+        "sinais",
+        "engenharia",
+        "diagnostico",
+        "interface",
+        "materializacao"
+      ],
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "17514455bc2c1ffecab7d5982331682ddd098bb929d0d4e69b43580266d17289",
+        "ended_monotonic_ns": 12567817246200,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "einstein-semantic-route",
+        "output_sha256": "31aa7544ebf6435940cd78288026583d8b7c9895e55b9e208c54a46eebbaca9d",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12538912916900,
+        "stream_events": 161
+      }
+    },
+    "qpu": "UNAVAILABLE_DENY",
+    "schema": "casulo.owner-semantic-multiverse-session/1.0",
+    "semantic_ir_sha256": "362906d626c8a5818496480e5001629eb4c15a88726fdfa3bba06c624622ca2a",
+    "semantic_tcap_deduplicated": false,
+    "semantic_tcap_sha256": "5e577a6a31ca4ea12dca9b9f3bae914806eba4a9a42388c8b1bdc8fdef1ac137",
+    "strict_hot_subset": true,
+    "transition_receipts": [
+      {
+        "bytes_read": 950,
+        "bytes_transferred": 405,
+        "capabilities_used": [
+          "model.infer"
+        ],
+        "committed": true,
+        "contract_version": "1.0",
+        "destination": "sinais",
+        "fallback_used": false,
+        "input_hash": "07aa2166c61736b8e68b21c08ef2215d166068ab7b751093a8ef10eeaebd2aab",
+        "latency_ns": 44400,
+        "omitted_fields": [
+          "route_rationale"
+        ],
+        "output_hash": "d8cfb37c2f9868f91af190908237ade993f0179684ba40410bd6024320e6c012",
+        "preserved_invariants": [
+          "intent",
+          "constraints",
+          "units",
+          "uncertainty",
+          "provenance"
+        ],
+        "provenance_root": "891b2384f0aa0faa7ad9e66be0634759a985a6a4572582d8512e1b501e288b00",
+        "schema": "casulo.semantic-transition-receipt/1.0",
+        "source": "intencao",
+        "transition_id": "intencao-sinais-v1",
+        "uncertainty": 0.1
+      },
+      {
+        "bytes_read": 472,
+        "bytes_transferred": 472,
+        "capabilities_used": [
+          "model.infer"
+        ],
+        "committed": true,
+        "contract_version": "1.0",
+        "destination": "engenharia",
+        "fallback_used": false,
+        "input_hash": "6bd10dbc524268342cfadf3390bec3e1851474a8286b43b758bd074d972d2e0f",
+        "latency_ns": 70500,
+        "omitted_fields": [],
+        "output_hash": "6bd10dbc524268342cfadf3390bec3e1851474a8286b43b758bd074d972d2e0f",
+        "preserved_invariants": [
+          "intent",
+          "constraints",
+          "units",
+          "uncertainty",
+          "provenance"
+        ],
+        "provenance_root": "25478a1c18af9ad1313bfadfc3ed524c9aec4d4426bb706e01e93b77bd61450e",
+        "schema": "casulo.semantic-transition-receipt/1.0",
+        "source": "sinais",
+        "transition_id": "sinais-engenharia-v1",
+        "uncertainty": 0.1
+      },
+      {
+        "bytes_read": 539,
+        "bytes_transferred": 539,
+        "capabilities_used": [
+          "model.infer"
+        ],
+        "committed": true,
+        "contract_version": "1.0",
+        "destination": "diagnostico",
+        "fallback_used": false,
+        "input_hash": "ca8f56f94af747b9a18289b31a74d02161918ffa96aeeb0fa3451036d608b87f",
+        "latency_ns": 27200,
+        "omitted_fields": [],
+        "output_hash": "ca8f56f94af747b9a18289b31a74d02161918ffa96aeeb0fa3451036d608b87f",
+        "preserved_invariants": [
+          "intent",
+          "constraints",
+          "units",
+          "uncertainty",
+          "provenance"
+        ],
+        "provenance_root": "153f59467171a05ece2a5b07955228dd796a3e10acf6f5a0f0293003f71c800a",
+        "schema": "casulo.semantic-transition-receipt/1.0",
+        "source": "engenharia",
+        "transition_id": "engenharia-diagnostico-v1",
+        "uncertainty": 0.1
+      },
+      {
+        "bytes_read": 606,
+        "bytes_transferred": 606,
+        "capabilities_used": [
+          "model.infer"
+        ],
+        "committed": true,
+        "contract_version": "1.0",
+        "destination": "interface",
+        "fallback_used": false,
+        "input_hash": "7eb5e4e65c334332ddd3dbe9097e0136204c6088139c74bff6d061ba4b4e5eda",
+        "latency_ns": 25300,
+        "omitted_fields": [],
+        "output_hash": "7eb5e4e65c334332ddd3dbe9097e0136204c6088139c74bff6d061ba4b4e5eda",
+        "preserved_invariants": [
+          "intent",
+          "constraints",
+          "units",
+          "uncertainty",
+          "provenance"
+        ],
+        "provenance_root": "b24300143015509f23b561f57dd393a956af2e97a4295d20d5b24e018e99cb1d",
+        "schema": "casulo.semantic-transition-receipt/1.0",
+        "source": "diagnostico",
+        "transition_id": "diagnostico-interface-v1",
+        "uncertainty": 0.1
+      },
+      {
+        "bytes_read": 673,
+        "bytes_transferred": 673,
+        "capabilities_used": [
+          "model.infer"
+        ],
+        "committed": true,
+        "contract_version": "1.0",
+        "destination": "materializacao",
+        "fallback_used": false,
+        "input_hash": "8962f5fcb48b43f1d05366c04c07518984638e36d07ca7b7a68ff77648df623c",
+        "latency_ns": 27500,
+        "omitted_fields": [],
+        "output_hash": "8962f5fcb48b43f1d05366c04c07518984638e36d07ca7b7a68ff77648df623c",
+        "preserved_invariants": [
+          "intent",
+          "constraints",
+          "units",
+          "uncertainty",
+          "provenance"
+        ],
+        "provenance_root": "0234bcb43f2729b2ad9e9555f1b10b4ce0feb84e6192af48c2325bfdaf3fb7b2",
+        "schema": "casulo.semantic-transition-receipt/1.0",
+        "source": "interface",
+        "transition_id": "interface-materializacao-v1",
+        "uncertainty": 0.1
+      }
+    ],
+    "universes_installed": 6,
+    "universes_visited": [
+      "intencao",
+      "sinais",
+      "engenharia",
+      "diagnostico",
+      "interface",
+      "materializacao"
+    ],
+    "usb": "PROHIBITED"
+  },
+  "simulation": {
+    "boundary_conditions_declared": {
+      "type": "asymptotically_flat"
+    },
+    "connection": [
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    ],
+    "coordinate_point": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "coordinates": [
+      "t",
+      "x",
+      "y",
+      "z"
+    ],
+    "einstein_tensor": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "field_equation_residual": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "initial_conditions_declared": {
+      "hypersurface": "t=0",
+      "metric": "Minkowski"
+    },
+    "limitations": [
+      "finite-difference derivatives; result depends on derivative_step",
+      "does not integrate the global nonlinear Einstein initial-boundary-value problem",
+      "does not prove physical validity, stability, convergence or uniqueness",
+      "refuses non-4D, non-symmetric, singular or unsafe metric expressions"
+    ],
+    "max_abs_residual": 0.0,
+    "real_effects_executed": false,
+    "residual_tolerance": 1e-09,
+    "ricci_scalar": 0.0,
+    "ricci_tensor": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "schema": "casulo.einstein-local-residual/1.0",
+    "scope": "local 4D residual evaluation for a user-declared differentiable metric",
+    "status": "PASS"
+  },
+  "state": "PASS_REAL_LOCAL_EINSTEIN_RESIDUAL_SOLVER",
+  "t": {
+    "forge": {
+      "affected_paths": [],
+      "artifacts": [
+        {
+          "artifact_sha256": "a78a2023161117af028f1c90e2764fd310bd5a510f29d59ab688db05c476de38",
+          "dependency_artifact_sha256": {},
+          "graph_sha256": "4cd0d7009e1863262f3d768fd79d5d916007a8de31ec504333814260a9c394ed",
+          "ir_sha256": "5da6796af45fd59993e8fd1750fe387e1235824e2912b5bc8a4bc1c46f19415d",
+          "source_sha256": "e6c726e817db5a761a1d6934c17a2491cb92a3300b1d90f626a241d4387e08ff",
+          "unit_id": "einstein-local-residual"
+        }
+      ],
+      "build_id": "forge:1",
+      "rebuilt_units": [
+        "einstein-local-residual"
+      ],
+      "reused_units": [],
+      "schema": "casulo.t-forge-receipt/1.0"
+    },
+    "source_sha256": "e6c726e817db5a761a1d6934c17a2491cb92a3300b1d90f626a241d4387e08ff",
+    "tcap_sha256": "fadf8a19c7d0923fb8c35b57994695a0982ebebf1bd528efb50ec0ea5545475d"
+  },
+  "visualization": {
+    "creation": {
+      "agent_name": "creation:open-ended-holdout",
+      "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+      "identity_source": "creation_id",
+      "index": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-rerun\\creation-visual\\index.html",
+      "pages": 12,
+      "projection_diagnostics": [
+        "identity_name_missing"
+      ]
+    },
+    "semantic": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-rerun\\semantic-visual\\index.html"
+  }
+}

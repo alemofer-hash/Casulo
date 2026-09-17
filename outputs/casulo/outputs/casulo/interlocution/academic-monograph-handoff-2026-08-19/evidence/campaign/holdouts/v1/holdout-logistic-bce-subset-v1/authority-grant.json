@@ -1,0 +1,38 @@
+{
+  "config_from_t": {
+    "absolute_tolerance": "1e-09",
+    "bundle_sha256": "954defff423abf4c720fce5766e26593ce3066c56f3114f5b24cf0c4e1094321",
+    "dataset_sha256": "97675c3cdfe2be515108ef304f7043aaeca7e5897f6672365ec807b0a00912d6",
+    "dtype": "float64",
+    "epochs": "250",
+    "initialization_state_policy": "reset_each_case",
+    "input_features": "4",
+    "learning_rate": "0.08",
+    "loss": "bce_logits",
+    "optimizer": "sgd",
+    "optimizer_state_policy": "reset_each_case",
+    "records": "384",
+    "require_exact_counters": "true",
+    "require_no_nan_inf": "true",
+    "stopping_policy": "fixed_epochs",
+    "working_set_count": "256",
+    "working_set_policy": "selected_range",
+    "working_set_start": "0"
+  },
+  "foreign_affirmative_fallback": false,
+  "grant_sha256": "e8270b5e9c882580e855445ad1cdb4b31b79d202c05f3632da9bdd5ed4891f36",
+  "holdout_id": "holdout-logistic-bce-subset-v1",
+  "receipt_chain": [
+    "ba5856538e1fb5e9923ddf51e88df1a316f350d378c55996faec73944f02b238",
+    "8ec5e71eb4a15f15bd3356072faec0d357da9f73629879cb321dafb4b03d14f0",
+    "477358916ea41ac3100ecd81b1a45bfff35895d58b199dd776b01476c477cfac",
+    "17280c8f2cccad26cbc97b71cd8557cb9c9888e12fac9b01f824bb9b32a28373",
+    "526ca03107ec18b49d923ec9ed4d87b1c0b03438200fc32c873ba8e5ea67ae63",
+    "f8f0439248c13abe08bba28b3554fc680e87e22d00cca786b7ce54c5d59fca17",
+    "9df34db4c60cd8670ce39b5c1865a8a06d2585c908666462574b3f6fe040cdc7",
+    "a89983a127ee65ee08990567f4fd5b7155e31ec836a1de9c3b05b4a6d77bd27e",
+    "0a067d173abf3b3234c273f876e2cd5e1bc0f6d60adb251de2990964efea8ebc"
+  ],
+  "schema": "casulo.interlocution-holdout-grant/1.0",
+  "tcap_hash": "bc70cd341fa579f137fae0b5ef8a247c7a9c46a7c5ab509fd47e546885a216f4"
+}

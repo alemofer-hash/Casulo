@@ -1,0 +1,142 @@
+{
+  "cancelled_run": {
+    "operation_id": "g1:cancel",
+    "stream_fragments": 1,
+    "terminal": "CANCELLED",
+    "text": "U",
+    "trace": null
+  },
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "checks": {
+    "cancellation_terminal": true,
+    "debug_fixed_seed_reproduced": true,
+    "external_ai_api_used": false,
+    "fake_engine_used": false,
+    "neural_runtime_adopted": true,
+    "normal_runs_completed": true,
+    "normal_variance_observed": true,
+    "scientific_benchmark": false,
+    "stochastic_trace_valid": true,
+    "streaming_multiple_fragments": true
+  },
+  "debug_runs": [
+    {
+      "operation_id": "g1:debug:1",
+      "stream_fragments": 156,
+      "terminal": "COMPLETED",
+      "text": "Uma possível ferramenta local é a \"Casa das Sementes\", um espaço físico e digital onde os usuários podem compartilhar memórias de decisões importantes, como escolhas profissionais ou pessoais, em um ambiente acolhedor. O cultivo de plantas simbólicas é integrado ao processo, com cada semente representando uma decisão que foi plantada no passado. Ao longo do tempo, as plantas crescem e são revisadas por amigos, permitindo uma reflexão crítica sobre o impacto das decisões tomadas.  \n\nA ferramenta combina elementos naturais e tecnológicos para criar um ciclo de aprendizado contínuo. As sementes são registradas em",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "7b5bd540e8c4bafa7ee8db150c814d479939f94143dca8b9ae9c5ac849165dca",
+        "ended_monotonic_ns": 26373139671300,
+        "external_network_used": false,
+        "finish_reason": "length",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "g1:debug:1",
+        "output_sha256": "c8fb93a5b4c5e52e92917f349c6c78e0cc5ef112170fb8b48e19b2cf695038c8",
+        "sampling_policy_id": "casulo-sampling-dialogue-debug-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": 424242,
+        "started_monotonic_ns": 26356468454100,
+        "stream_events": 156
+      }
+    },
+    {
+      "operation_id": "g1:debug:2",
+      "stream_fragments": 156,
+      "terminal": "COMPLETED",
+      "text": "Uma possível ferramenta local é a \"Casa das Sementes\", um espaço físico e digital onde os usuários podem compartilhar memórias de decisões importantes, como escolhas profissionais ou pessoais, em um ambiente acolhedor. O cultivo de plantas simbólicas é integrado ao processo, com cada semente representando uma decisão que foi plantada no passado. Ao longo do tempo, as plantas crescem e são revisadas por amigos, permitindo uma reflexão crítica sobre o impacto das decisões tomadas.  \n\nA ferramenta combina elementos naturais e tecnológicos para criar um ciclo de aprendizado contínuo. As sementes são registradas em",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "7b5bd540e8c4bafa7ee8db150c814d479939f94143dca8b9ae9c5ac849165dca",
+        "ended_monotonic_ns": 26391812499900,
+        "external_network_used": false,
+        "finish_reason": "length",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "g1:debug:2",
+        "output_sha256": "c8fb93a5b4c5e52e92917f349c6c78e0cc5ef112170fb8b48e19b2cf695038c8",
+        "sampling_policy_id": "casulo-sampling-dialogue-debug-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": 424242,
+        "started_monotonic_ns": 26373139986400,
+        "stream_events": 156
+      }
+    }
+  ],
+  "debug_sampling_policy_id": "casulo-sampling-dialogue-debug-v1",
+  "gate": "LOCAL_STOCHASTIC_INFERENCE_PASS",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "normal_runs": [
+    {
+      "operation_id": "g1:normal:1",
+      "stream_fragments": 156,
+      "terminal": "COMPLETED",
+      "text": "Uma ferramenta local para unir memórias de decisões, cultivo de plantas e revisão crítica entre amigos poderia ser um aplicativo baseado em mensagens em tempo real, onde cada participante envia suas escolhas e reflexões sobre o cultivo em questão. O sistema automatiza a coleta dessas informações e as organiza em uma interface visual que mostra os dados de todos os usuários, permitindo comparações e discussões. A revisão crítica é feita de forma anônima ou sem anonimato, dependendo da preferência do grupo, e cada decisao é associada a um registro histórico para futuras referências.\n\nEssa ferramenta também integra elementos naturais, como o uso",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "7b5bd540e8c4bafa7ee8db150c814d479939f94143dca8b9ae9c5ac849165dca",
+        "ended_monotonic_ns": 26323120069800,
+        "external_network_used": false,
+        "finish_reason": "length",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "g1:normal:1",
+        "output_sha256": "c5a22d7a5e36c04c8ec4f1a8c18c2500243357fdf823e14c306723c86bed2c72",
+        "sampling_policy_id": "casulo-sampling-dialogue-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 26301643382500,
+        "stream_events": 156
+      }
+    },
+    {
+      "operation_id": "g1:normal:2",
+      "stream_fragments": 156,
+      "terminal": "COMPLETED",
+      "text": "Uma possível ferramenta local inédita poderia ser um \"Cultivo de Memórias\", um espaço físico e virtual onde os usuários podem registrar decisões importantes, associando-as a plantas ou elementos simbólicos que representem o crescimento e a resiliência. Cada decisão é \"semeada\" em uma planta digital ou real, e ao longo do tempo, essa planta evolui de acordo com as ações tomadas. A revisão crítica entre amigos ocorre durante a \"colheita\", quando cada um analisa o estado da planta e reflete sobre os desafios enfrentados.  \n\nA ferramenta poderia ser usada em grupos de amigos que buscam melhorar sua comunicação",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "7b5bd540e8c4bafa7ee8db150c814d479939f94143dca8b9ae9c5ac849165dca",
+        "ended_monotonic_ns": 26340257131400,
+        "external_network_used": false,
+        "finish_reason": "length",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "g1:normal:2",
+        "output_sha256": "7186d006c13cd397970b353218d17410f971e7aafa3f67df864acdef16f0c7fe",
+        "sampling_policy_id": "casulo-sampling-dialogue-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 26323120382800,
+        "stream_events": 156
+      }
+    },
+    {
+      "operation_id": "g1:normal:3",
+      "stream_fragments": 156,
+      "terminal": "COMPLETED",
+      "text": "Uma ferramenta local chamada \"Cultura de Memória\" permite que usuários registrem decisões tomadas durante o cultivo de plantas, associando cada ação a um registro visual e textual. Esses registros são armazenados em uma base de dados local, facilitando a revisão crítica entre amigos que compartilham o mesmo espaço de cultivo. A ferramenta não apenas documenta os passos seguidos, mas também permite anotações pessoais e feedbacks colaborativos, promovendo um diálogo mais eficaz sobre as práticas agrícolas.\n\nA interface é minimalista, com opções para拍照 (fotografar) plantas em diferentes fases de crescimento e registrar condições ambient",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "7b5bd540e8c4bafa7ee8db150c814d479939f94143dca8b9ae9c5ac849165dca",
+        "ended_monotonic_ns": 26356468130400,
+        "external_network_used": false,
+        "finish_reason": "length",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "g1:normal:3",
+        "output_sha256": "f8b4acb29b561528ceb3c9738442a83675da9a32e5e56fd2c62469879b0fa7ab",
+        "sampling_policy_id": "casulo-sampling-dialogue-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 26340257433900,
+        "stream_events": 156
+      }
+    }
+  ],
+  "normal_sampling_policy_id": "casulo-sampling-dialogue-v1",
+  "runtime_archive_sha256": "a9d95d26cf00664f2902f73cb0fd9b167a3a1f252294bb2f8b236305f57d6363",
+  "schema": "casulo-local-stochastic-inference-evidence/1.0"
+}

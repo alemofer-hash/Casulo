@@ -1,0 +1,29 @@
+{
+    "schema":  "casulo-native-usb-candidate-preflight/0.1",
+    "state":  "NO_ELIGIBLE_USB_PRESENT",
+    "disks":  [
+                  {
+                      "number":  0,
+                      "friendly_name":  "SKHynix_HFS512GEJ4X112N",
+                      "bus_type":  "NVMe",
+                      "size_bytes":  512110190592,
+                      "partition_style":  "GPT",
+                      "operational_status":  [
+                                                 "Online"
+                                             ],
+                      "is_boot":  true,
+                      "is_system":  true,
+                      "read_only":  false,
+                      "local_fingerprint_sha256":  "aa9151b150a50b978d6464e0dad7235ceb30f4abe11e794d0e640d917a6b1e93",
+                      "eligible_candidate":  false
+                  }
+              ],
+    "eligible_candidates":  [
+
+                            ],
+    "selected_candidate":  null,
+    "image_written":  false,
+    "physical_device_written":  false,
+    "destructive_confirmation_received":  false,
+    "next_gate":  "separate explicit destructive authorization after native neural conversation exists"
+}

@@ -1,0 +1,207 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:5057c6761cf8db7474378f8af4af397e57cb55cdf61d5b405e8486e6ed5b6e7e",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "{'capabilities': ['memory.read'], 'content': {'behavior': {'autonomy': {'type': 'boolean', 'value': true}}, 'data': {'storage': {'type': 'boolean', 'value': true}}, 'identity': {'name': {'type': 'string', 'value': 'F58G'}}, 'interface': {'input': [{'type': 'string', 'value': 'registros técnicos incompatíveis'}, {'type': 'string', 'value': 'alternativas recusadas'}], 'output': [{'type': 'string', 'value': 'sínteses organizadas'}, {'type': 'string', 'value': 'evidência de origin'}]}}}",
+          "observed": "creation:open-ended-holdout",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "3c112fd3b1bf698fbd61a11ec36ac5df539858fe10e099cf2bded562a91f80c7",
+          "test_name": "TestCreationSpec",
+          "unit_id": "creation_unit"
+        },
+        {
+          "artifact_id": "sha256:d25cda3414ff423996c569bd9e14a11a048542c9e7160dff059a9982615ee067",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "{'identity': {'name': {'type': 'string', 'value': 'F58G'}}}",
+          "observed": "F58G",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "a4f5c18edfedafab6b645495bfcc0ab9ac3ebeb290a6763817b691a78a3902be",
+          "test_name": "TestIdentityAssignment",
+          "unit_id": "identity_unit"
+        },
+        {
+          "artifact_id": "sha256:90b60e1dbd990ade7d85fbf713ab482fd2e51a731d5a736dee341bf95185e9dd",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "{'data': {'storage': {'type': 'boolean', 'value': true}}}",
+          "observed": "true",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "39e819d441fccaa14fcd2f7ad8112865efc797aac057148983d1f5305e0034c7",
+          "test_name": "TestDataStorage",
+          "unit_id": "data_unit"
+        },
+        {
+          "artifact_id": "sha256:1e83878fb1cc8f7a6739a7dc8f78084a79ad3b6d5c66989ab045c16974e85df6",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "{'interface': {'input': [{'type': 'string', 'value': 'registros técnicos incompatíveis'}, {'type': 'string', 'value': 'alternativas recusadas'}]}}",
+          "observed": "registros técnicos incompatíveis, alternativas recusadas",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "038efc4c95b8d85f4fb6e6a493de3c25ccd9542a576bdbffe66a6c61ae2dc05d",
+          "test_name": "TestInterfaceRegistration",
+          "unit_id": "interface_unit"
+        },
+        {
+          "artifact_id": "sha256:5057c6761cf8db7474378f8af4af397e57cb55cdf61d5b405e8486e6ed5b6e7e",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "trilho F58G reversível",
+          "observed": "creation:open-ended-holdout",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "3c112fd3b1bf698fbd61a11ec36ac5df539858fe10e099cf2bded562a91f80c7",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation_unit"
+        }
+      ],
+      "finished_ns": 2233101247000,
+      "project_id": "t-project:c5a9501225062c11de4d7315",
+      "started_ns": 2232249885700,
+      "tcap_sha256": "a4403c184a7c5312f270d7a1471ae11d8d26a0bb08965eea92e4462b258e9cac",
+      "tests": [
+        {
+          "expected_contains": "{'capabilities': ['memory.read'], 'content': {'behavior': {'autonomy': {'type': 'boolean', 'value': true}}, 'data': {'storage': {'type': 'boolean', 'value': true}}, 'identity': {'name': {'type': 'string', 'value': 'F58G'}}, 'interface': {'input': [{'type': 'string', 'value': 'registros técnicos incompatíveis'}, {'type': 'string', 'value': 'alternativas recusadas'}], 'output': [{'type': 'string', 'value': 'sínteses organizadas'}, {'type': 'string', 'value': 'evidência de origin'}]}}}",
+          "name": "TestCreationSpec",
+          "observed": "creation:open-ended-holdout",
+          "operation": "Initialize",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "88b4bbcc72a96c1e45f26da8debc06a8baabe25c80c1cb633a37117daebe1af5",
+          "unit_id": "creation_unit",
+          "wall_ns": 183390400
+        },
+        {
+          "expected_contains": "{'identity': {'name': {'type': 'string', 'value': 'F58G'}}}",
+          "name": "TestIdentityAssignment",
+          "observed": "F58G",
+          "operation": "Assign",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "a7252e8501c39d599e735cd71f146f041280f622bb5e54d952356406b636113e",
+          "unit_id": "identity_unit",
+          "wall_ns": 144126000
+        },
+        {
+          "expected_contains": "{'data': {'storage': {'type': 'boolean', 'value': true}}}",
+          "name": "TestDataStorage",
+          "observed": "true",
+          "operation": "Enable",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "2b840348daecb43b0ce8e4422f8fa848a61126de0b2312f3e79c90b2be7541c3",
+          "unit_id": "data_unit",
+          "wall_ns": 139807000
+        },
+        {
+          "expected_contains": "{'interface': {'input': [{'type': 'string', 'value': 'registros técnicos incompatíveis'}, {'type': 'string', 'value': 'alternativas recusadas'}]}}",
+          "name": "TestInterfaceRegistration",
+          "observed": "registros técnicos incompatíveis, alternativas recusadas",
+          "operation": "Register",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "01bda4fce595723f2e99d34d729d00e479a72bba032a72811d030a5398c07a36",
+          "unit_id": "interface_unit",
+          "wall_ns": 128181000
+        },
+        {
+          "expected_contains": "trilho F58G reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "creation:open-ended-holdout",
+          "operation": "Initialize",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "be61ac393f255d8fc4d1b0645c0c071cac29b5f8ec70f4eeca09e49961cc30aa",
+          "unit_id": "creation_unit",
+          "wall_ns": 95929200
+        }
+      ]
+    }
+  ],
+  "budget": 4,
+  "candidate_rejections": [
+    {
+      "operation_id": "trevise:verifier:diagnostic:0:TestCreationSpec:candidate-0",
+      "raw_sha256": "3511c7adc880f2d859f1d5d000f1e55c040009faf348eedaf5335bbbeff56041",
+      "reason": "revisão_sem_mudança",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "7974353cac76fd66d9733a9eeeffe187267a783e987fcc759e6cd78649059175",
+        "ended_monotonic_ns": 2293173260000,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "trevise:verifier:diagnostic:0:TestCreationSpec:candidate-0",
+        "output_sha256": "3511c7adc880f2d859f1d5d000f1e55c040009faf348eedaf5335bbbeff56041",
+        "sampling_policy_id": "casulo-sampling-code-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 2233101443600,
+        "stream_events": 27
+      }
+    },
+    {
+      "operation_id": "trevise:verifier:diagnostic:0:TestCreationSpec:candidate-1",
+      "raw_sha256": "d3d686d0e443af7b85b7706aefad89a459fa89cbe3ceab875c2b2f5b82b5dea0",
+      "reason": "revisão_sem_mudança",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "7974353cac76fd66d9733a9eeeffe187267a783e987fcc759e6cd78649059175",
+        "ended_monotonic_ns": 2299305609900,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "trevise:verifier:diagnostic:0:TestCreationSpec:candidate-1",
+        "output_sha256": "d3d686d0e443af7b85b7706aefad89a459fa89cbe3ceab875c2b2f5b82b5dea0",
+        "sampling_policy_id": "casulo-sampling-code-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 2293173751100,
+        "stream_events": 30
+      }
+    },
+    {
+      "operation_id": "trevise:verifier:diagnostic:0:TestCreationSpec:candidate-2",
+      "raw_sha256": "3511c7adc880f2d859f1d5d000f1e55c040009faf348eedaf5335bbbeff56041",
+      "reason": "revisão_sem_mudança",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "7974353cac76fd66d9733a9eeeffe187267a783e987fcc759e6cd78649059175",
+        "ended_monotonic_ns": 2305560727900,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "trevise:verifier:diagnostic:0:TestCreationSpec:candidate-2",
+        "output_sha256": "3511c7adc880f2d859f1d5d000f1e55c040009faf348eedaf5335bbbeff56041",
+        "sampling_policy_id": "casulo-sampling-code-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 2299306189700,
+        "stream_events": 27
+      }
+    }
+  ],
+  "project_id": "t-project:c5a9501225062c11de4d7315",
+  "receipt_sha256": "489c45297602b666d2eb63d4f021ec28b2617f0ec66ea0fcc9e400f241d0b89a",
+  "repair_count": 0,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "REPAIR_CANDIDATE_BUDGET_EXHAUSTED",
+  "tcap_sha256": "a4403c184a7c5312f270d7a1471ae11d8d26a0bb08965eea92e4462b258e9cac"
+}

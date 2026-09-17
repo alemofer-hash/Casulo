@@ -1,0 +1,8 @@
+{
+  "properties": [
+    "barge_in_priority",
+    "final_only_commit",
+    "progress_requires_authenticated_event",
+    "cancel_fail_closed"
+  ]
+}

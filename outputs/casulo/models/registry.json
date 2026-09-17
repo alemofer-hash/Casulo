@@ -1,0 +1,26 @@
+{
+  "schema": "casulo-model-registry/1.0",
+  "models": [
+    {
+      "model_id": "casulo-guide-policy-v1",
+      "artifact": "first-party/casulo-guide-policy-v1.json",
+      "sha256": "a5854e8102fd0138499e429053f9ad78b183a256515207d0620a5664da3b07c1",
+      "license": "LicenseRef-Teloscorp-Proprietary",
+      "owner": "Guilherme Moura Fernandes",
+      "redistributable": false,
+      "engine_role": "casulo-first-party-guide"
+    },
+    {
+      "model_id": "casulo-exact-embedding-v1",
+      "artifact": "first-party/casulo-exact-embedding-v1.json",
+      "sha256": "0876987a6ef2ab29f4a93d0b3947b4b08fd3931466c086a90be1978435d36961",
+      "license": "LicenseRef-Teloscorp-Proprietary",
+      "owner": "Guilherme Moura Fernandes",
+      "redistributable": false,
+      "engine_role": "casulo-first-party-embedding"
+    }
+  ],
+  "third_party_ai_api_required": false,
+  "network_required_after_install": false,
+  "training_with_user_content": false
+}

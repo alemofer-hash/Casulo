@@ -1,0 +1,52 @@
+{
+  "schema": "casulo-native-neural-port-checkpoint/0.1",
+  "state": "NATIVE_WEIGHT_FORMATS_VALIDATED_FIRST_TOKEN_PENDING",
+  "claim": "authentic F32/Q4_K/Q6_K samples from the adopted model were consumed by corrected Native primitives; no full inference or token",
+  "authoritative_image": {
+    "path": "release/casulo-native-neural-port-np3-attempt-2.img",
+    "bytes": 3211264,
+    "sha256": "1793586e703116916f5f5ca3a2c00e3564b30aa6bfc69f3a46e37cd6ab5d3112"
+  },
+  "source_model": {
+    "storage": "owner-private cache; not copied into this checkpoint",
+    "bytes": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "files": [
+    {
+      "path": "release/casulo-native-neural-port-np3-attempt-2.manifest.json",
+      "sha256": "7fc4680838ade270dae3ee6d090246b0f475b6b60b4035334f3e0b191662b9e8"
+    },
+    {
+      "path": "release/casulo-native-qwen3-weight-formats-probe-v2.gguf",
+      "sha256": "47b0f62fa715d0de910a7aef18005eaa27ef23b65326aa243253af85faedf495"
+    },
+    {
+      "path": "release/casulo-native-qwen3-weight-formats-probe-v2.gguf.manifest.json",
+      "sha256": "a54dea2c1c652f7b98f497d427094c41d857f0193249dd2bf98b7bccb22d6246"
+    },
+    {
+      "path": "release/casulo-native-neural-port-system-pack-v3.cspk",
+      "sha256": "c209aae87feb8549ddadca6ff6b454060fcb99783d1a07ee5849402baaf0ee4d"
+    },
+    {
+      "path": "outputs/casulo/native-neural-port/2026-08-20-np3/qemu-current-source-3boots.json",
+      "sha256": "bd8737a6c952b59149da11f5161995ce8c05deb0d3fffa99682aef8e8d48a38e"
+    },
+    {
+      "path": "outputs/casulo/native-neural-port/2026-08-20-np3/model-inventory-current-source.json",
+      "sha256": "90c6b2e99f3b2129076051e3eeffdb3d40e31da96c3aaa4c660255cf7a82bfb3"
+    }
+  ],
+  "boundaries": {
+    "full_model_mapped": false,
+    "first_model_derived_token": false,
+    "guest_network": false,
+    "physical_device_written": false,
+    "scientific_benchmark_started": false
+  },
+  "superseded_numeric_evidence": [
+    "NP1 Q4_K arithmetic",
+    "NP2 Q4_K arithmetic"
+  ]
+}

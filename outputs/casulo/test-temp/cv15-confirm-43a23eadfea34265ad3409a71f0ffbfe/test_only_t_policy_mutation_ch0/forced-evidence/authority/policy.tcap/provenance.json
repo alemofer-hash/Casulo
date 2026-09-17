@@ -1,0 +1,11 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/compression.casv_tile.t",
+      "module": "compression.casv_tile",
+      "sha256": "f7cb33bd7f2f9718043c07eb8ebabe17e2ac53348307e8071f7a8d14c87be3fe"
+    }
+  ]
+}

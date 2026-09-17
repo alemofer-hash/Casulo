@@ -1,0 +1,20 @@
+[
+  {
+    "base_flow": 5,
+    "evapotranspiration": 10,
+    "precipitation": 100,
+    "surface_flow": 20
+  },
+  {
+    "base_flow": 5,
+    "evapotranspiration": 10,
+    "precipitation": 100,
+    "surface_flow": 20
+  },
+  {
+    "base_flow": 8,
+    "evapotranspiration": 12,
+    "precipitation": 130,
+    "surface_flow": 25
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "causal_reconciliation": "record ratio 128x explains nearly all of the approximately 131x route gap",
+  "current": {
+    "eager_median_ms": 189.81842477876106,
+    "records": 8,
+    "route": "raw TCAP bounded correctness canary",
+    "tcap_median_ms": 0.2702173126426733
+  },
+  "direct_comparison_withdrawn": true,
+  "historical": {
+    "eager_median_ms": 337.0635,
+    "paired_speedup": 8.957846116377004,
+    "records": 1024,
+    "report_sha256": "2633b6596f0ef4855e730b3596515f88233886cd16421cd41a19338268175d27",
+    "route": "T/C99 OpenMP fused full training",
+    "tcap_c99_median_ms": 35.3111
+  },
+  "historical_to_canary_tcap_time_ratio": 130.6766752087949,
+  "record_ratio": 128.0,
+  "schema": "casulo-forensic-historical-comparison/1.0",
+  "status": "NOT_THE_SAME_WORKLOAD"
+}

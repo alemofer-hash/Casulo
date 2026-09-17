@@ -1,0 +1,103 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:25a37cb4438272dfcb2841fea682b26f6cb9512ad50f5ba9104367bd5233e03c",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "e75ab2a60c4b9c80ed08c5910ebf83188582d1b1d2cbf14f958a02d2b99006ca"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "1940b11555f14ed943969288016c43ee0ace42a299304c162573aefdf6e067b0",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "ebd036a3c1b2f037f347f5e6a4894df0226c1e26e4d4f09d7e78ba07e397ac96",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "casulo.revolution.memory",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "00a93a4465f906ef85d0b91770e739a87f43144883b59b8292d0d71299ce0c80"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "schema_valid",
+          "provenance_present",
+          "project_scope_matches"
+        ],
+        "input_type": "MemoryDecision",
+        "judgements": [],
+        "name": "AcceptMemory",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "81f72772b8ee4e4eac38aa384a9e564664c4436bb343cccf84f1fa187635a6c6"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "MemoryDecision",
+      "kind": "condense",
+      "name": "AcceptMemory",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 7,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "7b8a6fd97bee199fb3b84eac847fe839fe5b487afb68d7c6f83555ae4fdb7584"
+  }
+}

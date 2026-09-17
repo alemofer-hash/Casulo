@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:989901c76ae7276d8ad31fafda4023c75f4597ed7558cbf02bc26b750886d596",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "5e9d6bfd603ee427d51eb5f277817d01045674dee8f12894ef9100b1b9b2ddad"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "ca6ab972279de58f7af240859d844832bc3cb481fccbc92ca405a4bb5518d582",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "e6548374eec14ee50e22519de8bd9516861343d6a12b50bd8215e893ee114860",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "verification",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "e55a41a4cbde0bd7ab2d588e6fb2601835aec8753946d47b6d109dee9fdcf252"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "VerificacaoPequena",
+        "judgements": [],
+        "name": "ExecuteSmallVerification",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "6e5858f5e9a8400f097d0edb613364d03cb44d6e35eb60c1d17458c21fa7be4d"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "VerificacaoPequena",
+      "kind": "condense",
+      "name": "ExecuteSmallVerification",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "9b909749c24d3c8a50619b17a22b5e6109c586292c6244530bc59e3255260df2"
+  }
+}

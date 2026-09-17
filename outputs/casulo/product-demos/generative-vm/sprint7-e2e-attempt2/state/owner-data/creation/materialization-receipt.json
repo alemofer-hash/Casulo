@@ -1,0 +1,22 @@
+{
+  "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint7-e2e-attempt2\\state\\owner-data\\creation\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+  "archive_sha256": "9a0b5c6d75213ec8239211ffdacd284e71df2b60e5a87bcdbaedd835dab778c0",
+  "directory": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint7-e2e-attempt2\\state\\owner-data\\creation\\materialized\\creation-38da5088c5e61759-v7",
+  "files": {
+    "MANIFEST.json": "a3523d337ac7342cb3c32159ee2d1136b60137d0a0ef849bca49b8838f5dcddf",
+    "SBOM.spdx.json": "c072ed4b583d88a083f1275f40a777103dbc18658abdff8f8a30182ce37a2990",
+    "SHA256SUMS": "97ef2051198e25e34394909017a38ef6a94bc27f583ecb90ee23d328d249c085",
+    "agent-artifact-manifest.json": "607e2f479815df89e617d51cd890c32c88472ca0ad9ea686994b0c5b336de667",
+    "agent-descriptor.json": "93f5dc27d860241a03a5a3bdf2ae4e551bdc48a659e2b73ff046667cf733e4f6",
+    "agent-project.json": "d6f3ead881eade1ee3d085a1ba78d74e1410da2ebdbf1a0df2e5d3488327bfae",
+    "agent.py": "83252edc6946519de14181474a6f825958b80a5a0523dab4714f0bc09265a5b3",
+    "agent.tcap": "ab89039c43c37a315a3646b0fe3ef17e28feb3d18ad8591a43310287ea18a05e",
+    "api.py": "d8f9e63dbd17d510252ca9f895e756260ba9c1dba086d0069b5fa3d1d0efb7fe",
+    "creation.json": "6901ea1b6a415d3d67f5972b20c9894c13a3732411f0c5bed491cf6f75eb2ead",
+    "forge-receipt.json": "ec4344cc9b8f37eb2436d70b7e7a8b5d2c4a477245d3f88e19e01272aeecc934",
+    "simulation-receipt.json": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+  },
+  "manifest_sha256": "a3523d337ac7342cb3c32159ee2d1136b60137d0a0ef849bca49b8838f5dcddf",
+  "package_id": "creation-38da5088c5e61759-v7",
+  "schema": "casulo.materialization-receipt/1.0"
+}

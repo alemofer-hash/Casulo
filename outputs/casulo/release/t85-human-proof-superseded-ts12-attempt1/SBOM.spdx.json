@@ -1,0 +1,63 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "annotations": [
+    {
+      "annotationDate": "2026-08-15T03:10:51.564415+00:00",
+      "annotationType": "OTHER",
+      "annotator": "Organization: Teloscorp",
+      "comment": "Weights and private signing keys are not embedded. This is a development candidate."
+    }
+  ],
+  "creationInfo": {
+    "created": "2026-08-15T03:10:51.564374+00:00",
+    "creators": [
+      "Organization: Teloscorp"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://teloscorp.invalid/spdx/casulo-owner-t85/2026-08-15",
+  "name": "casulo-owner-t85-human-proof",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-CasuloT85",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "LicenseRef-Teloscorp-Proprietary",
+      "name": "Casulo owner T85 private application"
+    },
+    {
+      "SPDXID": "SPDXRef-TRuntime",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "LicenseRef-Teloscorp-Proprietary",
+      "name": "Casulo T runtime"
+    },
+    {
+      "SPDXID": "SPDXRef-Qwen",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "name": "Qwen3-4B Q4_K_M bootstrap reference"
+    },
+    {
+      "SPDXID": "SPDXRef-LlamaCpp",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "name": "llama.cpp b10362 runtime reference"
+    },
+    {
+      "SPDXID": "SPDXRef-Python",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "PSF-2.0",
+      "name": "Python runtime host dependency"
+    },
+    {
+      "SPDXID": "SPDXRef-QEMU",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-2.0-only",
+      "name": "QEMU host dependency"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

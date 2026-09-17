@@ -1,0 +1,83 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.t_interactive_01.memory"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "b2b6feb39efda31a6045cb2f551011f6de973bdd8f63486ffda582051f397226"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "7f73948a93b88c0f1eb4512d66ddd6185aede8499b8af0d6e0b7d79cdf0777cc"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "35fb7a67a03eb670629149df239d538b7f91ac075a0ea37e56b6b98b580c625d"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "b71e795452e91c1c4a6e54eae073304c0ab5690a687506817f7e06daad4ca298"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "bb75d8cbca4474df5a601de2c083674331be09721fd966432070609224a17655"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "cfe23ab9b6ba70619622f238ebccb0b4d47abaf73758cfd85222e7e3aa349799"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "b5cb557b4c2dce63dc9a7065da1f63a5d21ee8ea08da0d3b1e358d376f3aa095"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "21111699d882a31e3926ab743b926d8e1d942b383ed7673ad6ab0497e6241c68"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "2e976272894f9741e0982c2aa4aadc49637d1980b37799ab826ebc56226fa2e6"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "7e495688020075d064675140d867feee9d26a5e32a3f3396a4ea354592e8f97b"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "b0eb0133016091a7953571c86a88a3211e0fc1f18726da5e6aada9ae2bd25a63"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "ab6bcd222075eb0643e245c5e961c75f644eb4e734dd09ca3b624a29aeecd811"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.agent.t_interactive_01.memory.t",
+      "module": "owner.agent.t_interactive_01.memory",
+      "sha256": "0bd62bf8e4af3e9adafecb8f475ce872afb8e3d181bd0a6ac2478f6eb9bc387b"
+    },
+    {
+      "file": "sources/owner.agent.t_interactive_01.interruption.t",
+      "module": "owner.agent.t_interactive_01.interruption",
+      "sha256": "88a52fdf39ebce5f262dde20701bf60ea3891506dfc475a48169aef870c8a3b3"
+    },
+    {
+      "file": "sources/owner.agent.t_interactive_01.export.t",
+      "module": "owner.agent.t_interactive_01.export",
+      "sha256": "63f683a2e0c661f660a6910f681fb34ee196ff6bcf8fb39adbc8927134dc0449"
+    }
+  ],
+  "tcap_hash": "716eef2f1395cb2e90625dd1fcdc135e98d13edf88c3580402a794a7d338e94b"
+}

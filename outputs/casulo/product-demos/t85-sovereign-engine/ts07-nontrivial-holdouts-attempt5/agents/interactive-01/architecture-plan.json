@@ -1,0 +1,50 @@
+{
+  "agent_id": "t_interactive_01",
+  "case_id": "interactive-01",
+  "constraints": [
+    {
+      "error_code": "t_interactive_01_memory_conflict",
+      "field_name": "is_project_isolated",
+      "requirement_id": "project-isolation",
+      "success_value": "BYTES_PRESERVED"
+    },
+    {
+      "error_code": "t_interactive_01_interrupt_conflict",
+      "field_name": "is_barge_in_allowed",
+      "requirement_id": "barge-in",
+      "success_value": "INTERRUPTION_HANDLED"
+    },
+    {
+      "error_code": "t_interactive_01_export_conflict",
+      "field_name": "is_editable_export_enabled",
+      "requirement_id": "editable-export",
+      "success_value": "EXPORT_EDITABLE"
+    }
+  ],
+  "module_suffixes": [
+    "memory",
+    "interrupt",
+    "export"
+  ],
+  "raw_sha256": "3b3413ca890ae13b1effa43c9df4a18a0c205ab79199199f9f8a49bdfaadd3f0",
+  "rejected_candidates": [],
+  "request": "Estúdio conversacional de personagens com memória separada por obra, interrupção e exportação editável.",
+  "schema": "casulo.t85-agent-plan/1.0",
+  "stochastic_trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "1cb1cc51413715867b295aade341cbe09060daeb001359179ed2b3adf394fe0e",
+    "ended_monotonic_ns": 31322866034300,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "t85:interactive-01:architecture:0",
+    "output_sha256": "3b3413ca890ae13b1effa43c9df4a18a0c205ab79199199f9f8a49bdfaadd3f0",
+    "sampling_policy_id": "casulo-t85-architecture-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 31284352746200,
+    "stream_events": 244
+  },
+  "summary": "Arquitetura para agente de estúdio conversacional com memória separada por obra, interrupção e exportação editável."
+}

@@ -1,0 +1,103 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:57cbb94b287ae34488defbb0d25797bc8d9f49b70e550a13d445cd3da8304cf5",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "a3d4b4f24aa3a0a72b9edc64840e93fbb86bd9415667724df35a7b98990fe07a"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "c5a7422d11e573a6347cde9ae28dcfc8f49bb34b36a972f4486567e08616f0a0",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "d1265fcfcbec622175cd1b753185d3ca9d555cb022a1fd81732ccef714151ca6",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "casulo.revolution.agent",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "e8fb22244592e04b16fdffc9fdd74db199a0ec322bc3cb83007557f82a2926fe"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "intent_confirmed",
+          "constraints_satisfied",
+          "cancelled"
+        ],
+        "input_type": "AgentDecision",
+        "judgements": [],
+        "name": "AdvanceAgent",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "e4ebceba6c5228e051f4769106ace2a387e9d2ebdc8e9a1533cb3e6ee9ebbe31"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "AgentDecision",
+      "kind": "condense",
+      "name": "AdvanceAgent",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 7,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565"
+  }
+}

@@ -1,0 +1,700 @@
+{
+  "protocol": "casulo-window-sample/0.1",
+  "created_at_utc": "2026-07-31T18:32:36.655700+00:00",
+  "preregistration_sha256": "5d0f1e894b143668ab5fe5f456dbe7d0078f15135db268f9ffdf1c358dd7655d",
+  "window_ms": 250.0,
+  "calibration": {
+    "protocol": "casulo-measurement-stability/0.1",
+    "algorithm": "per-backend-doubling-then-shared-maximum",
+    "uses_speedup_or_winner_selection": false,
+    "minimum_iterations": 1,
+    "maximum_iterations": 1000000,
+    "target_wall_ms": 250.0,
+    "target_wall_ns": 250000000,
+    "required_iterations_by_backend": {
+      "casulo-candidate-only": 512
+    },
+    "target_reached_during_search": {
+      "casulo-candidate-only": true
+    },
+    "search_trace": {
+      "casulo-candidate-only": [
+        {
+          "iterations": 1,
+          "wall_ns": 1327600,
+          "cpu_ns": 0
+        },
+        {
+          "iterations": 2,
+          "wall_ns": 1602300,
+          "cpu_ns": 15625000
+        },
+        {
+          "iterations": 4,
+          "wall_ns": 2696400,
+          "cpu_ns": 15625000
+        },
+        {
+          "iterations": 8,
+          "wall_ns": 5302100,
+          "cpu_ns": 15625000
+        },
+        {
+          "iterations": 16,
+          "wall_ns": 11179600,
+          "cpu_ns": 0
+        },
+        {
+          "iterations": 32,
+          "wall_ns": 18717900,
+          "cpu_ns": 15625000
+        },
+        {
+          "iterations": 64,
+          "wall_ns": 42488500,
+          "cpu_ns": 15625000
+        },
+        {
+          "iterations": 128,
+          "wall_ns": 72015800,
+          "cpu_ns": 46875000
+        },
+        {
+          "iterations": 256,
+          "wall_ns": 165815800,
+          "cpu_ns": 93750000
+        },
+        {
+          "iterations": 512,
+          "wall_ns": 341982400,
+          "cpu_ns": 250000000
+        }
+      ]
+    },
+    "selected_shared_iterations": 512,
+    "verification": {
+      "casulo-candidate-only": {
+        "iterations": 512,
+        "wall_ns": 397180000,
+        "cpu_ns": 265625000,
+        "target_reached": true
+      }
+    },
+    "all_backends_reached_target": true
+  },
+  "selected_inner_iterations": 512,
+  "quality": {
+    "candidate_vs_numpy": {
+      "protocol": "casulo-pytorch-parity/0.1",
+      "status": "PASS",
+      "passed": true,
+      "reason": null,
+      "graph_sha256": "6c008efcd99beffb9e20299719a3f6f8c77b6252b03f2968b86cd3a47cf75992",
+      "input_sha256": "0d7e73aae62dc7a577488fa475d5663ec6201b43f450ef695742bedee90610db",
+      "numpy_version": "2.3.5",
+      "pytorch_version": "casulo-linear-algebra-c99-openmp/0.4+a1ffa81d16bde041",
+      "device": "cpu",
+      "checks": [
+        {
+          "kind": "intermediate",
+          "name": "hidden",
+          "dtype": "float32",
+          "shape": [
+            64,
+            32
+          ],
+          "absolute_tolerance": 1e-05,
+          "relative_tolerance": 0.0001,
+          "max_absolute_error": 2.384185791015625e-07,
+          "max_relative_error": 1.476135480138138e-05,
+          "numpy_sha256": "7aa96eb2a8771c9e2a4a640256c2cb588df17211a79e336220198e2e1d5b4d8b",
+          "pytorch_sha256": "fc3ddcdceccb642d972b6fe21bf78c5238b4d0548ab9392d0eeffbb7f4bcb4d0",
+          "passed": true,
+          "reason": null
+        },
+        {
+          "kind": "intermediate",
+          "name": "active",
+          "dtype": "float32",
+          "shape": [
+            64,
+            32
+          ],
+          "absolute_tolerance": 1e-05,
+          "relative_tolerance": 0.0001,
+          "max_absolute_error": 1.7881393432617188e-07,
+          "max_relative_error": 1.476135480138138e-05,
+          "numpy_sha256": "f0c1306bf80cf29c91151965cbca31815b00c219d32785ac17b5bace3dc8e924",
+          "pytorch_sha256": "8857fca01957fcf31d7df6a8db67fdc85989b6d358d2adc10474a820d6b1f5cc",
+          "passed": true,
+          "reason": null
+        },
+        {
+          "kind": "intermediate",
+          "name": "prediction",
+          "dtype": "float32",
+          "shape": [
+            64,
+            8
+          ],
+          "absolute_tolerance": 1e-05,
+          "relative_tolerance": 0.0001,
+          "max_absolute_error": 5.960464477539063e-08,
+          "max_relative_error": 3.2437917583796043e-06,
+          "numpy_sha256": "f241ec4907a6474f02c0edb9cfbbc909d580058e4b707863341c61cdfe59c516",
+          "pytorch_sha256": "ebe2cc4fcfd1b6be02b24636ace1143520af3bde9128fbdd1db656709e979f71",
+          "passed": true,
+          "reason": null
+        },
+        {
+          "kind": "intermediate",
+          "name": "residual",
+          "dtype": "float32",
+          "shape": [
+            64,
+            8
+          ],
+          "absolute_tolerance": 1e-05,
+          "relative_tolerance": 0.0001,
+          "max_absolute_error": 2.384185791015625e-07,
+          "max_relative_error": 1.7727196178016505e-06,
+          "numpy_sha256": "4cb8860fab464841a85db923f0ef198e3bc4fca07b5f07db73fbb95a08c66a2b",
+          "pytorch_sha256": "786527bb60d6e560c5d001c91fd725406bde1f01490b9a8b93a1c0424b97f3a2",
+          "passed": true,
+          "reason": null
+        },
+        {
+          "kind": "intermediate",
+          "name": "squared",
+          "dtype": "float32",
+          "shape": [
+            64,
+            8
+          ],
+          "absolute_tolerance": 1e-05,
+          "relative_tolerance": 0.0001,
+          "max_absolute_error": 1.430511474609375e-06,
+          "max_relative_error": 3.501135912654485e-06,
+          "numpy_sha256": "634be76f2be09f41e989d20fb960f2d444cbfbab5277087846b253cecd1e4dea",
+          "pytorch_sha256": "3535effadc189e091aa31db0edd37ccff14367cb96a4008ee2b6fa066ee8be73",
+          "passed": true,
+          "reason": null
+        },
+        {
+          "kind": "loss",
+          "name": "loss",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "absolute_tolerance": 1e-05,
+          "relative_tolerance": 0.0001,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "numpy_sha256": "93e658b386b78d95f849fd44d7123aa16c0dd9a8802712770d042da5265805cb",
+          "pytorch_sha256": "93e658b386b78d95f849fd44d7123aa16c0dd9a8802712770d042da5265805cb",
+          "passed": true,
+          "reason": null
+        },
+        {
+          "kind": "gradient",
+          "name": "weight1",
+          "dtype": "float32",
+          "shape": [
+            16,
+            32
+          ],
+          "absolute_tolerance": 1e-05,
+          "relative_tolerance": 0.0001,
+          "max_absolute_error": 3.725290298461914e-09,
+          "max_relative_error": 3.8240147520645134e-05,
+          "numpy_sha256": "4b3a54000210e672148d962d590196c0fc5dbd2590323bcebcd62badcf01ec8d",
+          "pytorch_sha256": "577337ab92e35635e43679a398142786e0de6089f7910bf62bf0a342dca7dc04",
+          "passed": true,
+          "reason": null
+        },
+        {
+          "kind": "gradient",
+          "name": "weight2",
+          "dtype": "float32",
+          "shape": [
+            32,
+            8
+          ],
+          "absolute_tolerance": 1e-05,
+          "relative_tolerance": 0.0001,
+          "max_absolute_error": 3.026798367500305e-09,
+          "max_relative_error": 4.8313795079428696e-05,
+          "numpy_sha256": "a70a01a300dbb35293c3f008e8b56bd943d5920b30226daca96aa78cdf506d75",
+          "pytorch_sha256": "5cd1518df15b1962cdf47b4e41733b169cfeb1805759bb68b1e99d498d88f250",
+          "passed": true,
+          "reason": null
+        }
+      ],
+      "tolerances": [
+        {
+          "dtype": "float32",
+          "absolute": 1e-05,
+          "relative": 0.0001
+        },
+        {
+          "dtype": "float64",
+          "absolute": 1e-10,
+          "relative": 1e-09
+        }
+      ],
+      "timing": null,
+      "energy_joules": null
+    },
+    "finite_samples": true
+  },
+  "samples": [
+    {
+      "index": 0,
+      "wall_ns": 359502000,
+      "cpu_ns": 328125000,
+      "inner_iterations": 512,
+      "wall_ns_per_invocation": 702152.34375,
+      "cpu_ns_per_invocation": 640869.140625,
+      "telemetry_before": {
+        "observed_at_utc": "2026-07-31T18:32:33.378477+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 0.0,
+        "available_memory_bytes": 4609982464
+      },
+      "telemetry_after": {
+        "observed_at_utc": "2026-07-31T18:32:33.797303+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 49.7,
+        "available_memory_bytes": 4661080064
+      }
+    },
+    {
+      "index": 1,
+      "wall_ns": 349896000,
+      "cpu_ns": 296875000,
+      "inner_iterations": 512,
+      "wall_ns_per_invocation": 683390.625,
+      "cpu_ns_per_invocation": 579833.984375,
+      "telemetry_before": {
+        "observed_at_utc": "2026-07-31T18:32:33.898503+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 46.8,
+        "available_memory_bytes": 4662452224
+      },
+      "telemetry_after": {
+        "observed_at_utc": "2026-07-31T18:32:34.268814+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 42.1,
+        "available_memory_bytes": 4640530432
+      }
+    },
+    {
+      "index": 2,
+      "wall_ns": 324236300,
+      "cpu_ns": 281250000,
+      "inner_iterations": 512,
+      "wall_ns_per_invocation": 633274.0234375,
+      "cpu_ns_per_invocation": 549316.40625,
+      "telemetry_before": {
+        "observed_at_utc": "2026-07-31T18:32:34.370113+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 32.9,
+        "available_memory_bytes": 4638482432
+      },
+      "telemetry_after": {
+        "observed_at_utc": "2026-07-31T18:32:34.715060+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 39.8,
+        "available_memory_bytes": 4624650240
+      }
+    },
+    {
+      "index": 3,
+      "wall_ns": 394006200,
+      "cpu_ns": 312500000,
+      "inner_iterations": 512,
+      "wall_ns_per_invocation": 769543.359375,
+      "cpu_ns_per_invocation": 610351.5625,
+      "telemetry_before": {
+        "observed_at_utc": "2026-07-31T18:32:34.816233+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 30.9,
+        "available_memory_bytes": 4621889536
+      },
+      "telemetry_after": {
+        "observed_at_utc": "2026-07-31T18:32:35.227913+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 47.2,
+        "available_memory_bytes": 4656762880
+      }
+    },
+    {
+      "index": 4,
+      "wall_ns": 342734400,
+      "cpu_ns": 296875000,
+      "inner_iterations": 512,
+      "wall_ns_per_invocation": 669403.125,
+      "cpu_ns_per_invocation": 579833.984375,
+      "telemetry_before": {
+        "observed_at_utc": "2026-07-31T18:32:35.329370+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 58.1,
+        "available_memory_bytes": 4655276032
+      },
+      "telemetry_after": {
+        "observed_at_utc": "2026-07-31T18:32:35.692892+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 54.6,
+        "available_memory_bytes": 4644454400
+      }
+    },
+    {
+      "index": 5,
+      "wall_ns": 345406400,
+      "cpu_ns": 281250000,
+      "inner_iterations": 512,
+      "wall_ns_per_invocation": 674621.875,
+      "cpu_ns_per_invocation": 549316.40625,
+      "telemetry_before": {
+        "observed_at_utc": "2026-07-31T18:32:35.794235+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 44.3,
+        "available_memory_bytes": 4642508800
+      },
+      "telemetry_after": {
+        "observed_at_utc": "2026-07-31T18:32:36.158331+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 46.0,
+        "available_memory_bytes": 4640563200
+      }
+    },
+    {
+      "index": 6,
+      "wall_ns": 374677000,
+      "cpu_ns": 250000000,
+      "inner_iterations": 512,
+      "wall_ns_per_invocation": 731791.015625,
+      "cpu_ns_per_invocation": 488281.25,
+      "telemetry_before": {
+        "observed_at_utc": "2026-07-31T18:32:36.259947+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 42.0,
+        "available_memory_bytes": 4648427520
+      },
+      "telemetry_after": {
+        "observed_at_utc": "2026-07-31T18:32:36.654264+00:00",
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "temperature_celsius": null,
+        "temperature_source": null,
+        "battery_percent": 58.0,
+        "power_plugged": false,
+        "system_load_percent": 44.6,
+        "available_memory_bytes": 4635234304
+      }
+    }
+  ],
+  "statistics": {
+    "sample_count": 7,
+    "median_wall_ns_per_invocation": 683390.625,
+    "coefficient_of_variation": 0.0642956430598831,
+    "limit": 0.15,
+    "stable": true
+  },
+  "scientific_scope": {
+    "claim_eligible": false,
+    "speedup_computed": false,
+    "baseline_loaded": false
+  },
+  "claim": null
+}

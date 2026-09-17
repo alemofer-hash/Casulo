@@ -1,0 +1,37 @@
+{
+  "schema": "casulo.holdout-suite/1.0",
+  "sealed_for": "revolution-closure",
+  "available_to_generation_context": false,
+  "families": [
+    {
+      "family_id": "holdout-scientific-tensor",
+      "domain": "scientific-computing",
+      "request": "Criar um avaliador local parametrizável de curvatura para uma métrica 4D, com hipóteses, resíduos e recusas científicas explícitas.",
+      "hard_invariants": ["declared-inputs", "domain-equations", "residual", "unsupported-global-claim-denied"]
+    },
+    {
+      "family_id": "holdout-public-workflow",
+      "domain": "administrative-workflow",
+      "request": "Criar um agente local que confira um processo administrativo por checklist versionado sem decidir em nome do servidor público.",
+      "hard_invariants": ["human-decision-retained", "provenance", "no-network-by-default", "audit-log"]
+    },
+    {
+      "family_id": "holdout-transit-stream",
+      "domain": "stream-processing",
+      "request": "Criar uma ferramenta que receba eventos de trânsito, detecte anomalias e preserve todos os dados originais junto da transformação explicada.",
+      "hard_invariants": ["original-preserved", "bounded-memory", "event-time", "explainable-transform"]
+    },
+    {
+      "family_id": "holdout-creative-dialogue",
+      "domain": "interactive-creative-tool",
+      "request": "Criar um estúdio conversacional local de personagens com memória separada por obra, interrupção e exportação editável.",
+      "hard_invariants": ["project-isolation", "barge-in", "editable-export", "no-false-progress"]
+    },
+    {
+      "family_id": "holdout-secure-service",
+      "domain": "local-software-service",
+      "request": "Criar um serviço loopback e aplicativo empacotado que recebem dados tabulares, validam schema e permitem round-trip sem o repositório.",
+      "hard_invariants": ["loopback-only", "schema-validation", "standalone-run", "round-trip-fidelity"]
+    }
+  ]
+}

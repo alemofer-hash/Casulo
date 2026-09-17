@@ -1,0 +1,301 @@
+{
+  "cloud": "RELEASE_LOCKED",
+  "confirmation_source": "HUMAN_EXPLICIT",
+  "confirmed_delta_hash": "aa4342193f59eea81fcc869d8c22ba21f8e80b9f555f4e2bdf2f620d3627db20",
+  "final_state": {
+    "constraints": [
+      "sem API externa",
+      "capabilities deny-by-default",
+      "somente efeitos simulados antes do acordo"
+    ],
+    "intent": "algoritmo para solucionar equações de campo de einstein, com o usuário definindo as condições do sistema em análise",
+    "provenance": [
+      "semantic-route-1-0",
+      "3349c528f04c68a0fe3275dc2bae400e067723baaaedd598429a358d70a7c8c5",
+      "f151238efde7331b421f12f7b1d517797acddaea988d0428ca7354208a4a8389",
+      "cd7ba0fcbdd0142503aa7985bdae1b9024e89e2aba6ffb04ecc15d39a68b91e3"
+    ],
+    "uncertainty": "explicit",
+    "units": "SI"
+  },
+  "hot_at_completion": [
+    "engenharia"
+  ],
+  "idea_sha256": "0eaf9dec3b18b5163e6fac6caad5cbd628ffeee2731a472ce0906115e0188665",
+  "lifecycle_receipts": [
+    {
+      "after": "WARMING",
+      "before": "FROZEN",
+      "committed": false,
+      "event_id": "lifecycle:1",
+      "memory_bytes": 0,
+      "monotonic_ns": 10643874930500,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "intencao"
+    },
+    {
+      "after": "WARM",
+      "before": "WARMING",
+      "committed": true,
+      "event_id": "lifecycle:2",
+      "memory_bytes": 0,
+      "monotonic_ns": 10643874954000,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "intencao"
+    },
+    {
+      "after": "ACTIVATING",
+      "before": "WARM",
+      "committed": false,
+      "event_id": "lifecycle:3",
+      "memory_bytes": 0,
+      "monotonic_ns": 10643875010400,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "intencao"
+    },
+    {
+      "after": "HOT",
+      "before": "ACTIVATING",
+      "committed": true,
+      "event_id": "lifecycle:4",
+      "memory_bytes": 12582912,
+      "monotonic_ns": 10643875022000,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "intencao"
+    },
+    {
+      "after": "WARMING",
+      "before": "FROZEN",
+      "committed": false,
+      "event_id": "lifecycle:5",
+      "memory_bytes": 12582912,
+      "monotonic_ns": 10643875117200,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "sinais"
+    },
+    {
+      "after": "WARM",
+      "before": "WARMING",
+      "committed": true,
+      "event_id": "lifecycle:6",
+      "memory_bytes": 12582912,
+      "monotonic_ns": 10643875127200,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "sinais"
+    },
+    {
+      "after": "ACTIVATING",
+      "before": "WARM",
+      "committed": false,
+      "event_id": "lifecycle:7",
+      "memory_bytes": 12582912,
+      "monotonic_ns": 10643875142300,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "sinais"
+    },
+    {
+      "after": "HOT",
+      "before": "ACTIVATING",
+      "committed": true,
+      "event_id": "lifecycle:8",
+      "memory_bytes": 26214400,
+      "monotonic_ns": 10643875150900,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "sinais"
+    },
+    {
+      "after": "WARMING",
+      "before": "FROZEN",
+      "committed": false,
+      "event_id": "lifecycle:9",
+      "memory_bytes": 26214400,
+      "monotonic_ns": 10643875450700,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "engenharia"
+    },
+    {
+      "after": "WARM",
+      "before": "WARMING",
+      "committed": true,
+      "event_id": "lifecycle:10",
+      "memory_bytes": 26214400,
+      "monotonic_ns": 10643875460800,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "engenharia"
+    },
+    {
+      "after": "ACTIVATING",
+      "before": "WARM",
+      "committed": false,
+      "event_id": "lifecycle:11",
+      "memory_bytes": 26214400,
+      "monotonic_ns": 10643875474200,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "engenharia"
+    },
+    {
+      "after": "HOT",
+      "before": "ACTIVATING",
+      "committed": true,
+      "event_id": "lifecycle:12",
+      "memory_bytes": 40894464,
+      "monotonic_ns": 10643875483400,
+      "reason": "generative-route",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "engenharia"
+    },
+    {
+      "after": "QUIESCING",
+      "before": "HOT",
+      "committed": false,
+      "event_id": "lifecycle:13",
+      "memory_bytes": 28311552,
+      "monotonic_ns": 10643875667500,
+      "reason": "pressure",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "intencao"
+    },
+    {
+      "after": "FROZEN",
+      "before": "QUIESCING",
+      "committed": true,
+      "event_id": "lifecycle:14",
+      "memory_bytes": 28311552,
+      "monotonic_ns": 10643875677400,
+      "reason": "pressure",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "intencao"
+    },
+    {
+      "after": "QUIESCING",
+      "before": "HOT",
+      "committed": false,
+      "event_id": "lifecycle:15",
+      "memory_bytes": 14680064,
+      "monotonic_ns": 10643875690000,
+      "reason": "pressure",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "sinais"
+    },
+    {
+      "after": "FROZEN",
+      "before": "QUIESCING",
+      "committed": true,
+      "event_id": "lifecycle:16",
+      "memory_bytes": 14680064,
+      "monotonic_ns": 10643875698400,
+      "reason": "pressure",
+      "schema": "casulo.universe-lifecycle-receipt/1.0",
+      "universe_id": "sinais"
+    }
+  ],
+  "network": "DENIED",
+  "operation_id": "semantic-route-1-0",
+  "proposal": {
+    "rationale": "A ideia de um algoritmo para solucionar equações de campo de Einstein com o usuário definindo as condições do sistema em análise requer interação com o universo 'intencao' para entender a intenção do usuário, 'sinais' para capturar as entradas e parâmetros relevantes, e 'engenharia' para desenvolver e implementar o algoritmo de forma eficiente e precisa.",
+    "raw_sha256": "3349c528f04c68a0fe3275dc2bae400e067723baaaedd598429a358d70a7c8c5",
+    "route": [
+      "intencao",
+      "sinais",
+      "engenharia"
+    ],
+    "trace": {
+      "commercial_ai_api_used": false,
+      "context_digest": "2b08f4c222a53efdd176080a392213acfa6cd9b6325243e727b091b0617a812a",
+      "ended_monotonic_ns": 10150401681500,
+      "external_network_used": false,
+      "finish_reason": "stop",
+      "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+      "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "operation_id": "semantic-route-1-0",
+      "output_sha256": "3349c528f04c68a0fe3275dc2bae400e067723baaaedd598429a358d70a7c8c5",
+      "sampling_policy_id": "casulo-sampling-planning-v1",
+      "schema": "casulo-stochastic-trace/1.0",
+      "seed_if_available": null,
+      "started_monotonic_ns": 10134192927700,
+      "stream_events": 125
+    }
+  },
+  "qpu": "UNAVAILABLE_DENY",
+  "schema": "casulo.owner-semantic-multiverse-session/1.0",
+  "semantic_ir_sha256": "d714def2bd8a61779525a94816b2dcba8712fd353148c3e9a2c97540ea064221",
+  "semantic_tcap_deduplicated": false,
+  "semantic_tcap_sha256": "5d2a26e3a90ba5772037f08aa8674202c9a1459f4ebdade918d11b522aa95a49",
+  "strict_hot_subset": true,
+  "transition_receipts": [
+    {
+      "bytes_read": 773,
+      "bytes_transferred": 384,
+      "capabilities_used": [
+        "model.infer"
+      ],
+      "committed": true,
+      "contract_version": "1.0",
+      "destination": "sinais",
+      "fallback_used": false,
+      "input_hash": "308f0a064fcbbcaf7699a09836ca3f9d4478b8031a0ba36ac1b1b51dde1fd489",
+      "latency_ns": 83200,
+      "omitted_fields": [
+        "route_rationale"
+      ],
+      "output_hash": "f151238efde7331b421f12f7b1d517797acddaea988d0428ca7354208a4a8389",
+      "preserved_invariants": [
+        "intent",
+        "constraints",
+        "units",
+        "uncertainty",
+        "provenance"
+      ],
+      "provenance_root": "1c6b87cc5815d283b3dc1bbfa4628f0cd0fb16b77c5555b32981961322ffef96",
+      "schema": "casulo.semantic-transition-receipt/1.0",
+      "source": "intencao",
+      "transition_id": "intencao-sinais-v1",
+      "uncertainty": 0.1
+    },
+    {
+      "bytes_read": 451,
+      "bytes_transferred": 451,
+      "capabilities_used": [
+        "model.infer"
+      ],
+      "committed": true,
+      "contract_version": "1.0",
+      "destination": "engenharia",
+      "fallback_used": false,
+      "input_hash": "cd7ba0fcbdd0142503aa7985bdae1b9024e89e2aba6ffb04ecc15d39a68b91e3",
+      "latency_ns": 50200,
+      "omitted_fields": [],
+      "output_hash": "cd7ba0fcbdd0142503aa7985bdae1b9024e89e2aba6ffb04ecc15d39a68b91e3",
+      "preserved_invariants": [
+        "intent",
+        "constraints",
+        "units",
+        "uncertainty",
+        "provenance"
+      ],
+      "provenance_root": "6f55b5713c9c75283ea9e945b737849b1b32af148c4cb5bc7b040a3c0a25ccb4",
+      "schema": "casulo.semantic-transition-receipt/1.0",
+      "source": "sinais",
+      "transition_id": "sinais-engenharia-v1",
+      "uncertainty": 0.1
+    }
+  ],
+  "universes_installed": 6,
+  "universes_visited": [
+    "intencao",
+    "sinais",
+    "engenharia"
+  ],
+  "usb": "PROHIBITED"
+}

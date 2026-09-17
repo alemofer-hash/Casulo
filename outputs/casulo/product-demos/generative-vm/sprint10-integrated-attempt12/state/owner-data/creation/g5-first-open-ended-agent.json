@@ -1,0 +1,234 @@
+{
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "checks": {
+    "all_final_tests_executed_and_passed": true,
+    "bounded_neural_repair_passed": true,
+    "external_ai_api_used": false,
+    "external_process_passed": true,
+    "fake_engine_used": false,
+    "holdout_absent_before_run": true,
+    "initial_candidate_imperfect": true,
+    "model_created_no_grant": true,
+    "neural_plan_generated": true,
+    "neural_t_generated": true,
+    "real_compiled_process_test_failed_first": true,
+    "real_effect_executed": false,
+    "round_trip_executable_preserved": true,
+    "round_trip_identity_preserved": true,
+    "round_trip_version_preserved": true,
+    "scientific_benchmark": false,
+    "simulation_passed": true,
+    "simulation_real_effects_absent": true
+  },
+  "cloud_state": "RELEASE_LOCKED",
+  "external_execution": {
+    "result": "init:G61H:memory.read:creation:open-ended-holdout,trilho G61H reversível",
+    "returncode": 0
+  },
+  "gate": "FIRST_OPEN_ENDED_AGENT_CREATED",
+  "holdout_expectation": "trilho G61H reversível",
+  "idea": "Crie o agente inédito G61H, que converte relatórios técnicos divergentes em decisões reversíveis, mantém alternativas recusadas consultáveis e vincula cada síntese à evidência original.",
+  "imported": {
+    "agent_artifact_id": "sha256:8d9aa6396b41c0f03e4296ecbe80c223c38ea0b34e8bc1abb9de9608b9b5dc45",
+    "agent_operation": "G61H_init",
+    "creation_id": "creation:open-ended-holdout",
+    "creation_version": 7
+  },
+  "materialization": {
+    "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\state\\owner-data\\creation\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+    "archive_sha256": "d10a786fe189d0b16663e3819e61d5f2d687ad1ef126bd849f3962f656225c26",
+    "directory": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\state\\owner-data\\creation\\materialized\\creation-38da5088c5e61759-v7",
+    "files": {
+      "MANIFEST.json": "f9ce308cf7662f21dbff98aee58c430d663648b59b7cba98ba127cf8f2bd2889",
+      "SBOM.spdx.json": "7c67cf24b43ee24a52b1665145004056295f2a40262d785e7be9e5aafc9ca3ad",
+      "SHA256SUMS": "7a06c904720244acc925963808ff9e756cb6fc1189647ebe502a5c3449a19508",
+      "agent-artifact-manifest.json": "291cc5ab672e8f780c2b3b1fa8d787ad9b907d01a21d61fdab48563256e6e91d",
+      "agent-descriptor.json": "41ee39f75878527ddaa4607b6da42a601fd6a62b736baa3fc4d3e156105a5db5",
+      "agent-project.json": "09fdc54c834177729f6412156f5fa7e86258919c7c404bd15a00c1fcf38a58c3",
+      "agent.py": "af074fa55cea513f46a9f2e01152393856b028ee4bf52f48cf5398a7350001f3",
+      "agent.tcap": "22dc7a545186698018a5b740ae046c63b2a0828ea3d5a537b2ab5da902276083",
+      "api.py": "d8f9e63dbd17d510252ca9f895e756260ba9c1dba086d0069b5fa3d1d0efb7fe",
+      "creation.json": "2a164947db9b96b702c14cb10221204a03654e6ae786e01597662ccb8f694f3b",
+      "forge-receipt.json": "8c8a812eeee31a6f0a51691ff782b37a8d88e049acf54ff217f853e4bc6928f9",
+      "simulation-receipt.json": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+    },
+    "manifest_sha256": "f9ce308cf7662f21dbff98aee58c430d663648b59b7cba98ba127cf8f2bd2889",
+    "package_id": "creation-38da5088c5e61759-v7",
+    "schema": "casulo.materialization-receipt/1.0"
+  },
+  "project_id": "t-project:8c72d602c5435ae0592ddcd3",
+  "public_state": "FROZEN",
+  "repair": {
+    "attempts": [
+      {
+        "attempt": 0,
+        "diagnostics": [
+          {
+            "artifact_id": "sha256:1234e5fa23491ca8fe937d0895473d8710862bd2170585dbae407cd19c24c09e",
+            "code": "TTEST_EXPECTED_TEXT_MISSING",
+            "expected_contains": "trilho G61H reversível",
+            "observed": "init:G61H:memory.read:creation:open-ended-holdout",
+            "process_returncode": 0,
+            "process_stderr": "",
+            "schema": "casulo.generative-diagnostic/1.0",
+            "source_sha256": "a69764eefcfa680ce873acbaf6d86a4003854f892760ed0313e0dfcbd0b39a68",
+            "test_name": "human-holdout-acceptance",
+            "unit_id": "creation_init"
+          }
+        ],
+        "finished_ns": 2924387006900,
+        "project_id": "t-project:14df823daf568df8b3debed5",
+        "started_ns": 2923589307400,
+        "tcap_sha256": "6b26e277346a31af40aeafb4c62e4520d03853d34d5689a1175410e1fb19096e",
+        "tests": [
+          {
+            "expected_contains": "init:G61H:memory.read",
+            "name": "creation_init_test",
+            "observed": "init:G61H:memory.read:creation:open-ended-holdout",
+            "operation": "G61H_init",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "5c6da5d3c1ea4d29dd09212fdaddd88292d63d730acadc161081f4a95a1c31cb",
+            "unit_id": "creation_init",
+            "wall_ns": 260126200
+          },
+          {
+            "expected_contains": "reject:G61H:memory.read",
+            "name": "data_rejection_test",
+            "observed": "reject:G61H:memory.read:creation:open-ended-holdout",
+            "operation": "G61H_reject",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "3a4052a8bfb762368946c143bdb8af1ba7124dde80728eca84888c6d930f1b7c",
+            "unit_id": "data_rejection",
+            "wall_ns": 166387100
+          },
+          {
+            "expected_contains": "link:G61H:memory.read",
+            "name": "interface_link_test",
+            "observed": "link:G61H:memory.read:creation:open-ended-holdout",
+            "operation": "G61H_link",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "ff7547c1f1e97c8878f40943d62414b97b67053c55401fbb7c0de93ffe311f52",
+            "unit_id": "interface_link",
+            "wall_ns": 130426300
+          },
+          {
+            "expected_contains": "trilho G61H reversível",
+            "name": "human-holdout-acceptance",
+            "observed": "init:G61H:memory.read:creation:open-ended-holdout",
+            "operation": "G61H_init",
+            "passed": false,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "12297b738c5d96bdaf4787439c4b5d9954e2a7e4b8e406ab00f74d444446d9a6",
+            "unit_id": "creation_init",
+            "wall_ns": 80164900
+          }
+        ]
+      },
+      {
+        "attempt": 1,
+        "diagnostics": [],
+        "finished_ns": 2969086276700,
+        "project_id": "t-project:8c72d602c5435ae0592ddcd3",
+        "started_ns": 2968265906600,
+        "tcap_sha256": "22dc7a545186698018a5b740ae046c63b2a0828ea3d5a537b2ab5da902276083",
+        "tests": [
+          {
+            "expected_contains": "init:G61H:memory.read",
+            "name": "creation_init_test",
+            "observed": "init:G61H:memory.read:creation:open-ended-holdout,trilho G61H reversível",
+            "operation": "G61H_init",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "af32ffbb20231498af7242710350f4207d0f8cc30d8da476161fdb6634cccf87",
+            "unit_id": "creation_init",
+            "wall_ns": 191471800
+          },
+          {
+            "expected_contains": "reject:G61H:memory.read",
+            "name": "data_rejection_test",
+            "observed": "reject:G61H:memory.read:creation:open-ended-holdout",
+            "operation": "G61H_reject",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "56f0fef229f2a78da29e7ba4737bfb442e4ee5f059d3c6bd317b2dc2647ad62c",
+            "unit_id": "data_rejection",
+            "wall_ns": 160979500
+          },
+          {
+            "expected_contains": "link:G61H:memory.read",
+            "name": "interface_link_test",
+            "observed": "link:G61H:memory.read:creation:open-ended-holdout",
+            "operation": "G61H_link",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "249c6786dd172d731918b9dc6543be1839b3dcf67a04fdd2e0b869c5f2b4d8de",
+            "unit_id": "interface_link",
+            "wall_ns": 191851900
+          },
+          {
+            "expected_contains": "trilho G61H reversível",
+            "name": "human-holdout-acceptance",
+            "observed": "init:G61H:memory.read:creation:open-ended-holdout,trilho G61H reversível",
+            "operation": "G61H_init",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "fa2bd487c6982bc25e38b9e2426837ed81e140402963c4c3742b029eecf7a902",
+            "unit_id": "creation_init",
+            "wall_ns": 173497400
+          }
+        ]
+      }
+    ],
+    "budget": 4,
+    "candidate_rejections": [],
+    "project_id": "t-project:8c72d602c5435ae0592ddcd3",
+    "receipt_sha256": "0239f92a1746fc11c4c79831dadf2390fed958e49521eb392058df5aeb5c70a4",
+    "repair_count": 1,
+    "schema": "casulo.verifier-repair-receipt/1.0",
+    "status": "PASS",
+    "tcap_sha256": "22dc7a545186698018a5b740ae046c63b2a0828ea3d5a537b2ab5da902276083"
+  },
+  "schema": "casulo-first-open-ended-agent-evidence/1.0",
+  "simulation": {
+    "correction_paths": [],
+    "creation_id": "creation:open-ended-holdout",
+    "events": [
+      {
+        "event_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+        "event_id": "simulation:g5:open-ended-agent:1",
+        "previous_hash": null,
+        "response": {
+          "error": null,
+          "ok": true,
+          "value": {
+            "records": 3,
+            "virtual": true
+          }
+        },
+        "sequence": 1,
+        "source_event_ids": [
+          "human:g5:simulate"
+        ],
+        "status": "SIMULATED",
+        "step_id": "read-research-memory-virtually"
+      }
+    ],
+    "head_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+    "real_effects_executed": false,
+    "schema": "casulo.simulation-receipt/1.0",
+    "simulation_id": "simulation:g5:open-ended-agent",
+    "status": "PASS"
+  },
+  "usb_state": "PROHIBITED"
+}

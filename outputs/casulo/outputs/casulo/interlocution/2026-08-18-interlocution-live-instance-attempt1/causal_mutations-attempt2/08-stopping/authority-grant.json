@@ -1,0 +1,51 @@
+{
+  "campaign_id": "causal-mutation",
+  "config_from_t": {
+    "absolute_tolerance": "1e-09",
+    "bundle_sha256": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+    "dataset_sha256": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+    "dtype": "float64",
+    "epochs": "399",
+    "initialization_state_policy": "reset_each_case",
+    "input_features": "8",
+    "learning_rate": "0.018",
+    "loss": "mse",
+    "optimizer": "sgd",
+    "optimizer_state_policy": "reset_each_case",
+    "records": "1024",
+    "require_exact_counters": "true",
+    "require_no_nan_inf": "true",
+    "stopping_policy": "fixed_epochs",
+    "working_set_count": "1024",
+    "working_set_policy": "all_records",
+    "working_set_start": "0"
+  },
+  "foreign_affirmative_fallback": false,
+  "generated_at_utc": "FROZEN_CAUSAL_MUTATION",
+  "grant_sha256": "33d33b9428f6d674c799b344f329cb1c159bb4a6571150e1cd6d9ab960ea2adc",
+  "plan_sha256": "18bfc5d0d80fe52c347744ba7ca330653e7ba064ecba2f406efe63f05e8ded4e",
+  "receipt_chain": [
+    "58abb8adfafe968346e6e88c7a31ecc6ead1279c922605d6e976c3e6a8ba4018",
+    "9ec1faf19794055091ace6e81a3cf7b860449496bf63306d546cd38d6ae1cb09",
+    "3fb89fdc9f950bd3f20cf1b3e1c7b46923eb242dfd022144a9edd2c912a04995",
+    "60c6001c9b32906d115448b76be818cd232dddb44445740d8a241a08fac527bf",
+    "9ce134974bbc15e9e9196bced3155585012bafcb16f375053f3ffa632fb2b67c",
+    "933d0c30badd90c7dbf82e530adab8108c661fdf8fb6583bc88ffc3eed242091",
+    "ee35200faf362d509d7836bb10aa1fcda3b8cd602711993358567932a38d12c1",
+    "a755d2a920ee9783217f1d7cd447661be2d1dc65de342f9a67a2d68102b28bac",
+    "418e3e21021c7db02879b3c57f85014b6bf74aef092be86a78fc6b5140eb7164"
+  ],
+  "schema": "casulo.interlocution-authority-grant/1.0",
+  "surfaces": [
+    "dataset_identity_integrity",
+    "initialization_bundle",
+    "numerical_precision",
+    "loss_function",
+    "update_rule",
+    "optimizer_state",
+    "working_set",
+    "stopping",
+    "equivalence_acceptance"
+  ],
+  "tcap_hash": "f57b957f96ce13e0b9894a8f7ca62128b88ea8b7bb8c6f0cb7a62db26a98f6aa"
+}

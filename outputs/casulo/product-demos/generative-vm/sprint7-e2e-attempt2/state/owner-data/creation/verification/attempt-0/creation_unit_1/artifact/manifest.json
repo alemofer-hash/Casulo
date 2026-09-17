@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:f30581a9f4b725f2a7aca32a2b55996ae99c585cf423b3d7b1fd910833d94927",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "0809615eb2529495206ce86e54442b2f9efb235f7cf0a6bb1e30c6f8f32cb39e"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "89f73b8fb5b041e4b258e94497b1be8a058acdfa78b3e966c76c8d43f884466c",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "eaeb90785c0e6008c62bb7465687d06b54ec177187a7e029fe68c755b60763b6",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "creation",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "ab524fe7b79f4bbb55ba00b031273fe2e707d7f23484ed150f19043c623285ac"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "Buzina",
+        "judgements": [],
+        "name": "InitializeReversibility",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "04b5d724b19e996dcc6f85cacd098cef8756c7e085baa34a009da3fd8845f67b"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "Buzina",
+      "kind": "condense",
+      "name": "InitializeReversibility",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "b5c5077d76888e328508018335611738d8a7637743068aae82f368a421610c34"
+  }
+}

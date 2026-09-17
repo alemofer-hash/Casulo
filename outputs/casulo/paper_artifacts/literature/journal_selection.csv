@@ -1,0 +1,7 @@
+journal,fit,blocking_issue,access_or_submission_note,decision
+Journal of Systems and Software,"Alta: sistemas de software e avaliação empírica permitem artigo completo","Exige ampliar evidência e discussão de engenharia","Aceita LaTeX; verificar guia vigente na submissão",SELECTED
+Software: Practice and Experience,"Alta: técnicas práticas de programação e implementação","Contribuição precisa superar estudo estreito","Submissão em formato livre conforme página vigente",SECOND_CHOICE
+SoftwareX,"Média: software de pesquisa executável","Software deve estar público e artigo é curto","Open access com APC; confirmar valor vigente",NOT_SELECTED
+Sustainable Computing: Informatics and Systems,"Média-alta se houver energia real","Joules não medidos no pacote atual","Foco em energia e sustentabilidade",DEFER_UNTIL_ENERGY
+Journal of Open Source Software,"Baixa para o artigo de desempenho","Requer software aberto maduro; paper não deve centrar novo resultado científico","Boa opção futura para release de software",NOT_SELECTED
+

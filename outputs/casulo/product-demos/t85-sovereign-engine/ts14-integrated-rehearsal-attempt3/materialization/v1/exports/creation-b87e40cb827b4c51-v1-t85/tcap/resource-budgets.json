@@ -1,0 +1,16 @@
+{
+  "modules": {
+    "owner.agent.ts14_mycelium_reconciler.growth": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    },
+    "owner.agent.ts14_mycelium_reconciler.protocol": {
+      "deadline_ms": 3000,
+      "steps": 2048
+    },
+    "owner.agent.ts14_mycelium_reconciler.unit": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    }
+  }
+}

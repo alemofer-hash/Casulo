@@ -1,0 +1,2175 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "annotations": [
+    {
+      "annotationDate": "2026-08-15T03:44:16.624811+00:00",
+      "annotationType": "OTHER",
+      "annotator": "Organization: Teloscorp",
+      "comment": "Weights and private signing keys are not embedded. This is a development candidate."
+    }
+  ],
+  "creationInfo": {
+    "created": "2026-08-15T03:44:16.624577+00:00",
+    "creators": [
+      "Organization: Teloscorp"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://teloscorp.invalid/spdx/casulo-owner-t85/2026-08-15",
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-0001",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "611a26ab384a607b29ad0c9526de62cfe70249b7badf9b1b5f5fcecd3661639b"
+        }
+      ],
+      "fileName": "ALLOWED_SIGNERS"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0002",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dcba279346bd18df97e96a2125c8f0792e9032bed3d9a1cd09921c05e9825881"
+        }
+      ],
+      "fileName": "COLLECT_T85_FEEDBACK.vbs"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0003",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c8b32d5ef491f6f513e470fd04489dfedb674f008a8ab73cbcbc8b08dc321681"
+        }
+      ],
+      "fileName": "DEVELOPMENT_SIGNATURE.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0004",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "882b2211a30aef54dd2e36d5ae460d184f68584d44100cfb74d9ad51403f072f"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/__init__.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0005",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dc10ce46ece13db5551e608d66ee5c5db611305d1c8946895b97e23d7aabd283"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/adapter.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0006",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dc0d199d60ea236e774a426738340c9f8819bf933fc03ae8d1b9ae66629b3f59"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/alpha_demo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0007",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c37d9d2782df24881f3259f36441f46bdd558a59440d400c8f97bc84ebb91fab"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/dialogue_core.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0008",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "609939f06313978c1b7768c84644d64918af2380b717faf2c047736e0fa9516d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/einstein_solver_kernel.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0009",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "872a3cd6a26b3031634d39b2fbccef3a035cb2bb792df779a487e47c630fcada"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_agent_probe.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0010",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fa77cec03c7126c107ab191aa4ca15ae4ee6a7bae8edfab689969eabd6ee3c34"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_cli.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0011",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b33198616224fb0abf9d2a41696058dacd152d4e18c3f0a6d11b7f049561a380"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_dialogue_probe.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0012",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ad0de66fe57b77bc6250ec5d460bbb75f3fd1c70ed4ef7050cc09fb7f8c3d48a"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_engine.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0013",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "21d25f76e882db891a057d6d9e1dcb86fddd7e1314b3bf1929888b02f4ecf11d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_forge.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0014",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ed91b23bb9cc0216d3a54eb0b495bfc2e510dabd2d5f3ef64dfdc3538dd5f62d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_forge_probe.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0015",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5a9c6cb26374a4cea4fa8c14b217f72ed6b2197473633e527d903782c7cc3fd7"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_model.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0016",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c32f5a1daf297e0cfc7db198b8e2a6f649ce0219d8437fa58752d03974e37925"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_probe.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0017",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3bf669fa9feed943c2df1c7440132557e43a4ba8c3d69b787f811db5fc6678f5"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/inspection.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0018",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "08883bc84b4381e549f53df6ed774bc431dd227cbe666827f3f94a80f457b060"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/local_model_runtime.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0019",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1e1480b88285f78f8068da7229e53f5d437effd1ade62492de6530a735b916bc"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/motor.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0020",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d532fbae83e7bdce40ff11d5d6dc14a440e8eb9353f4584223b1eca86f487ed6"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/science_bros_probe.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0021",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "801177d7a9439398ddc96bd97d4550d50e497a2cd1d2f2e4926fd5daf109527f"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/scientific_solver.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0022",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "697fbecdc3a9bf5337ef0a153398ea9151a5196f6ac5c6aaeea6071a3a4cc87e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/semantic_multiverse.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0023",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7b1d2b30ad120f4ccf4e096703985a1c79a3a6731724d44db4ac47d4fea5bbc5"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_agent_synthesis.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0024",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "93511997de6d7af507fe5c3b7f5904c74e908f364766ba7a718c67ef0ab22bd0"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_authority.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0025",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0ef2e4f482f9ef586b2bfc0cb7e11ce31a2f84d6b049deb8b28bd2ec3b57847a"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_continuity.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0026",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f68085e9f3b312935ab8397589ddd9f3a4b5a8bac2e91641f4b8224ee2a7a3a0"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_materialization.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0027",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b167fd1a0d1645a6c1850de684aba64cf1bbf5a4f7255162d4bf2ced8d5fc920"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_physical_multiverse.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0028",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "325cb4f3c0c30c4648bd5c4680455e0c3e0bd7019c381150381486bb93a47bef"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_presence.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0029",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2dcb608598fa7f237a4b97dad5735b3b235ccde4760bd04f7ba37507db669638"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_requirements.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0030",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bfc4ac03a9af7e5543a99a61856c1005db3f7e525a0353e73aad0c27bebeeaa3"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/verifier_repair.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0031",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cf56f4552d9865cceeae149a048901e1ff98571c0ab07bb112cacf9486f3c72e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/t-v2/critical-capabilities.t"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0032",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/t-v2/critical-fulfillment.t"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0033",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "41e1cf81f635e3387275ed9ed0996f3141144119c6d0d327009a93088a6395bc"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/t-v2/critical-intent.t"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0034",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c6fa0d20d895c977ce9469ff9d4d440c0df2eccc2e5bec91b3a03fca363e42d7"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/t-v2/critical-publish.t"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0035",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c26919a1d95d972bdc2da7e27a5876b07aaa268b27de7761f78deea74c01106e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/t-v2/guide-context-policy.t"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0036",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1de18db5b885ea8ff4b5aadbdbe91b8ec8cd5f1d197ad407c472142b6e582528"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/t-v2/materialization-lifecycle.t"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0037",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6e68cf67a4940693a684513d156c143390a88b11db902ae1495a626f4428cce8"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/t-v2/turn-coordinator.t"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0038",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b3f8242262906af9875f2213febe822c31f8694b83c9c261063b1d40e94a1faf"
+        }
+      ],
+      "fileName": "OWNER_VM/app/private/casulo-owner/t-v2/universe-lifecycle-policy.t"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0039",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "42b2c54788298c10c781695d48f9f7867f5cb25e6407f90dcf0ff45466c70562"
+        }
+      ],
+      "fileName": "OWNER_VM/app/registry/qwen3-4b-q4km-llamacpp-b10362.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0040",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "42b2c54788298c10c781695d48f9f7867f5cb25e6407f90dcf0ff45466c70562"
+        }
+      ],
+      "fileName": "OWNER_VM/app/release/generative-candidates/qwen3-4b-q4km-llamacpp-b10362.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0041",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "02f602b602178614d051ed4465cf0af12d1adb1927c37bdd74aae9a6a38ea0df"
+        }
+      ],
+      "fileName": "OWNER_VM/app/release/voice-candidates/casulo-formant-ptbr-v1.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0042",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "da501dffee39dff0b58fe3e6e9378cf272fbc54a1e9fb3304f02f192adfe2b12"
+        }
+      ],
+      "fileName": "OWNER_VM/app/release/voice-candidates/microsoft-maria-direct-system.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0043",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5920e79feb41195d80960c4a13e2ad3b527ac4afbd76d41f662fa379f8870a82"
+        }
+      ],
+      "fileName": "OWNER_VM/app/release/voice-candidates/microsoft-maria-system.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0044",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "61708278942756ce8f01c46303f0f256e975b6a3dfa13f217007130b9cda7fe8"
+        }
+      ],
+      "fileName": "OWNER_VM/app/release/voice-candidates/tts-sherpa-edresson-license-review.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0045",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c0da501f4a42227a1665ca1316c0ffa0764597a90c61371329a9b2ef8ac97db8"
+        }
+      ],
+      "fileName": "OWNER_VM/app/release/voice-candidates/whisper-cpp-base-q5_1-v1.9.2.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0046",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "22b51cad30a44a4ed43fc461b1d20179f619dc1dc5d76a4a9f101d4f4c998ab9"
+        }
+      ],
+      "fileName": "OWNER_VM/app/release/voice-candidates/whisper-cpp-v1.9.2.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0047",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0a638fe03b95c9c0cd87afb8ec76e6eb43ef7db052ce65abf5ab933750c812b1"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/__init__.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0048",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/__main__.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0049",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "71fe2348a43ea2272c191e9326597d7835638e660a39724206b4775292bc55e1"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/casulo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0050",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "adc3978b3a51f2b656af670463a829eb75af72e614c3caa78bfaf7c3c4e7bca3"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/cli.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0051",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9e86b68c215ed90779e694abb4353c403f9ed70f984bf4e82dcb3301e50a944c"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/emissao.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0052",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c94d89dabe87ceb8dbb010d09bdc5149b86f07ba46ae1743ef14074b31e845ca"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/evolucao.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0053",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8cb3ca3e5df5fbe875a7646b386cd51cdb891478733bdc2e07da5a7ea9384b80"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/__init__.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0054",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "95a48b4dbde95fbcce46b518bc1e1b90ba809a65323485d481098a0405bec9d6"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/ablations.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0055",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7197b6551b0a2dbe84dc13c7d5fd6f290e0ee9fd11a697985a4b420dfc92a32c"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/baselines.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0056",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9f05d7c3a660ad9718a372b3f3c993a69056848931987f57d44a721ca9e7028e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/campaign.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0057",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8c8bf7f7f3c2f70c8fed5e8d6f860f4fc455f76848988e26030e810e0abbc55a"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/capabilities.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0058",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "92919230af54895648d724a758d6937056d79e21c834a24be9bd8d95d39b5f85"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/child_runner.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0059",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3c6b66c6140f77c26b7ab578db2c9f523d63ee9d9e2b2006a14fc288fd48608"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/controls.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0060",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ad4646af01aaeb9c3c80f81a812d5185cc0f162dfe6880b90476cb339d6dfc8c"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0061",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "69d59e06b34b3cb91d10a507eef710aae3df7d198cd27c0ed47c9957f7d954f7"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_cli.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0062",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2c3641cc0ed71b00cc92eac7ccd56e8723023922598482ca048c1051af9e687e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_unit.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0063",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1e2e88dd500535a728170a6f5eae2790b4309534c72529d66cb5939b3528f4e1"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/__init__.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0064",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b9389bed4e608d7ddbf4fce6750427823db58e81cf98a341c7fe0adbed6eaef4"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/analysis.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0065",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c78a9344404be4066b5d6ea28cef83b66ba2ae736b452e5b2a369c9b5631f0db"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/artifacts.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0066",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "148f6e42ceb835685a3015d3056435a04a9acf55f1a1507a6c288041c5fb2570"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/battery_guard.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0067",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "df794a5f73f080d6b38e482604bf13c63c77bacb121157bb3716d9d11b6c955b"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/capabilities.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0068",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0e695d53e74720bf6a97c9986609f193f566f6fd5fbc8176c6917a81c2187d58"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/full_workers.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0069",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "05a84a0c2d77cbd7a07d173bf143e4451fdd0ef914ea496ecec94d31fb37b371"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/hwinfo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0070",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d92788f4e0faf441bead97ae55880620b78d0ba8efea9adc20e1cb3a0bfd6421"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/hwinfo_campaign.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0071",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5d67f85090a47e46b7dcf513c5f6cb7284c8fa01fea6b65cb190f79f6a414688"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/hwinfo_recovery.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0072",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8c277755fbd8b0afbdcc357faf06ede4071e6ef8777cceed5218c95525f65ca0"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/hwinfo_workers.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0073",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7601140cef148f48bf1424cf4142ac56a9c2b0d27924f463394f50e84a3a9d05"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/paired_runner.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0074",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ada186a42551503c6919e33045ed7e0ac371bf7b990da1b4b40b009c50b69ac7"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/protocol.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0075",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b7a2aedbc650dc5ac3018a5ef83359840c458ac4621f01e675b00df9ed49518a"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/rapl.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0076",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3da1c3eb3c031ee1edb6ac00a53481914fe8d3372cb56bf4cc993d1e03348dd8"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/schemas.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0077",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "59468f6e08ad083fef87895e36b0494ebfa8e1705d7390bb6b552e427c038881"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/thermal_guard.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0078",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c7ed047c7ed44b8302e244cd6d57c8bfdbaf263f0a534977f808857a4613ed29"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/energy_v1/wall_meter.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0079",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9ef7afbf028f1d367a478a5a082ee273fb3710ab1e4982181ba6bf1f3caab5cf"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/executor.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0080",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "931fff570eb66b0a5144bb318aa966b70c5d15e03bea42bdea077cf1baeac44b"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/isolation.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0081",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ed162cc8b8fa2257a07120441e91b459c1549bee299e796e35f73799c329bc24"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/preflight.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0082",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c5ac9b7e2e14b0b744048653fc43675d0da18eb928eebd8f29c5262a6f76b5fd"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/reporting.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0083",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7ce94e32a01d1bd91643cb8685090eec315e24e5e97756d44d633d8243dbd5e8"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/scheduler.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0084",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ae54837a6119a2f1b3ecab4c97914861ca5e3ec491189017d74e00aeb7e0a5fe"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/scheduler_evidence.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0085",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ba75df2adc107d1dc72fca6a795186929d5f6f87a4bbf73f31db3faa2ef26b32"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/workload_adapters.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0086",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "56d8900e8e488d9d7eaedc10e1dcd100ebf0011ff4f401787a4ef724a73ebfb7"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/livelab/workloads.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0087",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b14d57d587ff7aa14617bfdf966788ee78cd9c222ef8d0bb73e89defc0501df4"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/marca.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0088",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "75cbe68a59f120c6103b80bfa040417df2c8a8f7d42cc9aac298f82a10c97461"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/modelos.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0089",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6292fafb90d599eb2c033abfd2f22f2c853a91b1aa38fb06ba9c8ce8f29b92f8"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/__init__.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0090",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15afc983c6c38af090ae3e671805f84aa9cefc3984dafe2810aff01e4dc90e90"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/assets/stark-jobs-v1.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0091",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2741c1fd8df0b1adc483656e126b72102874859631b222fe72c8946c6d23dc34"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/audio_frontend.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0092",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4d87f7ab2dd6afe6d8c7864a0923cb4e585492d4afabcea93ea1ee19f708e661"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/capabilities.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0093",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0da260b97acd36e15aab8fd03c504c510fb141d52cb9e7c5e99025dffb926acc"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/creation_field.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0094",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1b15d426ac47c73a4e74fcd2ce012eceb3352c5fb1d369efbcc47f0afddb452e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/creation_field_demo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0095",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "82d840853841642c8f3dab42e6b75a9afa833d70be384fdf7cb58db87191f420"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/creation_pipeline.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0096",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1e9e0bba59c6115215fbc4c3a3138493601dd4a3bc67322173c06505679a6a4d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/demo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0097",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "422f69df3221d95a85ca045e02ae5ec536db5002615cfd3185d427e2257da008"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/domain.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0098",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7aea4dfe496df5376a230756649f07bf95c1913eebab729412617d5651d12a96"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/engine_contracts.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0099",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "013b2499b459f5db3f98549e3864b3964e21997d88a2927c826bf740ae6c165d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/first_party_tts.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0100",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eca7efbeea0edb113112a54a18e41f8a88dcd3b396e13af1b26fc07b6b1f2cd4"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/guide_continuity.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0101",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "499d62269621847f028582af04f4a354b516c5c73a5c00503c29552a1660f8fb"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/guide_presence.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0102",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6f64f9f32f6d6fb790735a79e91da52feab19bd81418b53ea12ee0829e9e16e3"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/host_accelerator.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0103",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4c043d40a6563e3730ec228346820be1144c4c09fff52a5c02a5a865d8b4573e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/hosted_demo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0104",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6c9dc799435907ad4c560c8352f05674deb109ebae1d098e618a3dd006cfb3bb"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/hosted_shell.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0105",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "34fa3105de629d636c2eb390557d7d49611461d722a2537065f2ba8e432d6288"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/installer.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0106",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8d498fe6132c5ecfb4c84a330d3d8c40cf2cc39b0d769c7299d63441830ef3f5"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/intent_engine.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0107",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d7fd958ae8804c319f080f0b442325eee2b81b7fda77651683e814a6f82acb63"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/intent_forge_demo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0108",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "57f4650ae0218cf2e2160b9c202901bc7f284013087dfbd9933aecd27eb18ece"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/learned_router.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0109",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "49b734720b8397dda7b4b49f387856686273d4f247c33bbea16a48ebf1ac1f57"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/living_memory.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0110",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "07a25760715c7636d44cd1dff6ec0a4d2f0a71f631d041dc57bd16c2a5392bf1"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/local_intelligence.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0111",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ea7c4e6b407e00521de3dd74d926750fc5f73691d1e804057f40e83f01b71ec5"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/machine_profile.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0112",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b823d1bfa48eb87ebdf40d21dfc59709831b0c4c8e752b4e2298683a8695764a"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/materializer.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0113",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4f23945fb46665780c670008149a5909cb4d87ee298697b648ebbbbcefd1b7b4"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/materializer_demo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0114",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0f8d773f5220f2e6ef33f1237775005fa6e9ef19446cc1db2af7275711d835ff"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/memory_demo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0115",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "29329d88baa70fcd8e6c8c8500276c7128ccd7d11cae2c1d457dc26ac9650516"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/offline_update.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0116",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a016ac31ad605d216fd2ad6798a561ed51220cf7c459b9a56458fbc4d4c586ac"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/platform_contracts.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0117",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b51596905800139b0b6e851f490e1a9e880afa93c3f1e4629fe3b2b6b4371e26"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/revolution_contracts.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0118",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "437d779d940db1e2139e17e55c3bdabad73b9c34c571e8da2852a484b39576ba"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/semantic_fulfillment.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0119",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "388da71da0743bfdf198a1020926e66ecf8d5d33c59021d03ccc35f32f444b23"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/semantic_multiverse.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0120",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "59b3e239030fb12344cc773fe26ce5be9ec77dface577f1fc1133c88956c55b6"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/simulation.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0121",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aee5f4406a429ca511bd5887544c96d8b11a15048a585a97ee29bc3555b4629a"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/simulation_demo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0122",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2a9ca2850eb2d0e9b35e7545970312373d1c8812756660806ec316282c245b58"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/sovereign_materializer.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0123",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e6da4a486377b92f6bb081350bd6b5a7cbee84e80de01d6ce87eecf8e880029e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/t_forge.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0124",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60c65b70f4e411260a8ec1bd53b7f0c1e82e7dddb65e261063b4c6371b0ba8fa"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/tts_streaming.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0125",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "247becd53de2b5dbfa98b624d7289034fc15c5e689e6cea2eae74fe5332b1f45"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/vm_controller.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0126",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "933401de31ea56a7ebaffa3cbadddc5b84e9e241e13fbb2ea755c45ea4d9c953"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/voice_adopt.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0127",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "06fd547ada7de24eb45de00e24d2770cf25808ecafb3f37a1fd7365ec03b93d2"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/voice_bridge.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0128",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "76ba6fdb5a5499c8f6bbc4493660dd59a1660d56cd84585da5dbf6acae9d9864"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/voice_build.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0129",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "72d5878d1d400579281d65d3a133ddb07e8b52afc1a052ad15fd85cd36bc411d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/voice_candidate.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0130",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7635f2689c62d0b7a874c3bc94fba44fe70b3c9e8c62c814eaa7c140f45e709d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/voice_cli.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0131",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "398e7ffa1d418689746a9d5ca93e91b4635610eb8b80d344a791df543dbaa6a1"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/voice_duplex.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0132",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "16ee635e52e3c3f07b72d601865343ecb8ea409440e246cb048041f482cabac5"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/voice_physical.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0133",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b9f13fb8abb0208a23b63c5ce4282a4216a5366fe3055b7f6403ee853ab1e34"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/voice_smoke.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0134",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "77e7fc0b8e72b142c03131256b1ad936409c70c39d1884076c44b7c8bda409af"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/product/whisper_worker.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0135",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "397df53b545ba239a7aa5709ffd248861adba6bc203cbbcbf436f29f00166536"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/__init__.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0136",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dc8f2b75b6fec3a3994944f21020048fac7dd411eb3796e30d42f3e241672b17"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/adaptativo.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0137",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3fbff6de6b2fd8da124b2c4e84243ceac11d9602aac73118c2b49b78f8ad748d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/analyzer.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0138",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ec9b71d040ffb7fd0c38e3f1e6f8821eac8aa290b815679460009264167edef1"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/api.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0139",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f22d7bb5bbfa071e7bd79f92a1affe25a6d8a0a20f6b4c3fcf4e3dbedb57bc43"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/artifact.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0140",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fbe8edf87e059aa632ec68ec20162642f97b8533d4cf460bc4df23ffdf35a0de"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/ast.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0141",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f546a27b3421d20a8fcfc7a67f646c6079ccad8879c5efd74517e5babfcec2ab"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/authority.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0142",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "459d84fd6e40895f873bc6555333d121c3331f2410f0f4b8e6fb72f7a5bb5db9"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/autograd.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0143",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5313548499837bbb2ef6dacb1d4413d183c1e553756e6e4c5304403aa077cf0c"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/backend.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0144",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6732b8c20d2b9440d30a4878db604c9274317b5aa5d7bf587c313a5264cf8c92"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/benchmark.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0145",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b31f38a03bf09b2e590a8c38b01bfbaab189e0257ae8e21f0968107418bff61c"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/borboleta.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0146",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "10e57837820c99bba52875b3bf5f7300c64928b8dbf794e8d701fb15f998f8dc"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/causal_profiler.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0147",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d2f7dafe5349a5b998f59d1eaaf4b3962554e099bf1cdce79834ed09dac454d5"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/cli.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0148",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2eb3e9d5e336d31b1f72d6aed3a010ec13e45c32adf0e693a3dd35f3c82260ec"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/diagnostics.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0149",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f343276412002260438178f90ec8488e94817239a002b9eac6d1e9227a9c2e02"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/effects.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0150",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7f86a4f3ef5e2743e4133bd3b0d039b3d1054868c0140bfeb67aa062c8cab8a5"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/expression_ast.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0151",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c14feb3c18bb09a3a5d04776f908f00a8cbb0db2f480130fe13035d8f984efee"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/full_work_unit.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0152",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9bfedb4b3493a78f469c0fe98293169061f2f92867ee4492fb9b0a0e0509b764"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/graph.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0153",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cefd321c2c3fd61db635b9ab7bd799d9b185b6cfd8cc5b385d4b0a1f63d56892"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/ir.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0154",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b86830e9ed1d062d7dbad4414322b2c77d48e33fa4c535e8b14ab0e3cb96c865"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/learn.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0155",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fc6966f34ab42f07bfe50b645bcea14788f35772d25443ff87e8ca93da17bb3d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/learn_canary.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0156",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4d897e6a5154ae5f631432ce11ac4d5cbef387a6a1ff843746a38090c651183e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/learn_native.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0157",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4b1afdb80ea9a6d3ed1e1d74261a1c09263c67b4d75f601ddd454804c97be1ae"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/lexer.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0158",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6195cb25f5472067c647933edff8d9c7dfd781d4e07245a60c3cd74bec1e7c6b"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/linear_algebra.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0159",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "378eea216869848b1699fd65948888306f5af8bbb30fbcef35b5ab2abb247c43"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/measurement.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0160",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d928fd8e6209449ed6d03141a2dfec0c86dfcc77651834b863a8471c8ebb4e2f"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/native.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0161",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3cffbea04ccbfb9bb11e09f09730d6564ba5b6bd5e093757edb36160284d3974"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/native_benchmark.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0162",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eab0ede77232d4dce184b7f3aae8bfaae13b7291da0e3fe63f14e09d305f290f"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/parity.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0163",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f541a69dca78a84234e0367b06d948978ae770014a43c082208a797752399536"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/parser.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0164",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8e7fa916e2b85c94cf992a18db60ede66b199951f4e502660b8c1e91a6199c96"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/productive.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0165",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "50e33a83bc4703d1f165bf2a78c14fe95f286562481f7ffb5be524fcb5f28ef6"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/pytorch_runtime.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0166",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "907b572344443646f4ca75fdbc98ffa9f92349ba03fd8448b6d2345e9f908c46"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/resource.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0167",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "10fc9b4fe251150dd8a8799f2412239e4243c43e98971be76e18dbddaf8175b2"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/runner.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0168",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7585e623a1c678514f8e74914d47df639ccc4bdfd0460b818585c85413b3df46"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/scheduler_ablation.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0169",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "53508ec2cd040a9c7a0a0025607304f28b49c6f8c6d6ab36db280277a3ad3d5e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/scientific.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0170",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9d48b40665bf1cdfcae42252ecc015ce55edac089953a80923906df896023346"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/semantic_ir.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0171",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a787568a39f91f82fa955eae581cf0c737baa489b4b59c40eef8f914298b6c3d"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/simd_benchmark.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0172",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bc8d19fd468d136afc1414abb79cb4186e6c20ad2d6a53a5f05616c8c8e99004"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/sovereignty.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0173",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a073df6d681f8d5d757642b11326c4c071d0706b2a75c6a477b8a652d0327a04"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/stdlib.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0174",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "604f73682f23ed9e7d10a26aaa4c101da892309056298558513e1be5e4178413"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/symbols.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0175",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5250ca0659d8e9393b83896a730004e900bd875ed8fd65489a79141cb1e29ab2"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/tcap.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0176",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cfb8b71b14e613336c4e2f27c4655a5d7974152a00427bacc96249b8028db0a9"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/tensor.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0177",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "79cc57dd3fc1f301a4b35a3f51795351dc01c28ae80bcfd9ab47a8c7f366e0f5"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/tensor_cpu.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0178",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0aae99c332ddad6acd23fbc7c0289c8a7dd79153c30bd35cb9d3334a54c55647"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/tensor_lab.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0179",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ff6a39e0acb3436a8419dab3748b652eacc296e487f45fdd943d374ce57a133e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/tensor_suite.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0180",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1e2667c232b613f2ccee52f64b429da20240150307fcb42217ae0f74c5675fe3"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/thermal.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0181",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8b8a6ee1fe281502406cba279b7e0425ebf170e23034201ba679236cce2f98ef"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/thermal_probe.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0182",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "80ca6a26593e1ca1fe8406ff1b04c1520bba77b64a73a249f34a09fbfdd4acd2"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/thermal_watchdog.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0183",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ad15e04ad3bae0dbd26ea8be7497dd9b901627d60488e4d0706dbd44495053b6"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/training.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0184",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "230eb164e41ecf04410d88036703d8e5b1c4a9af5e943e30b8ec4893c44a66af"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/typesys.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0185",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0a3fe3b9b36a594363861cc4ae29bbe22f92cd3175f6b7ef8b1915e1241694b6"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/v2_ast.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0186",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d03a1a33a0757d757de51ff2cbfb0ee2078e6dc5ff6a210ed0fca575ad1425f5"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/v2_ir.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0187",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f1b88501f562db433c2dffd9a6bf1aadbe9c7be70d760515af8fcf2d07a1cb0a"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/v2_parser.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0188",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cc505b095b8dab4c1f1229a4cbeb1e25074f1e2ec01e3953e891c106f64b8cad"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/v2_runtime.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0189",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a9854dcf029c4058dfa514fa1896a547e46f9a1a08da779ecdbce89ca3e71c98"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/v2_semantics.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0190",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f1026484f3aadb4971dbc14f6325a311cd1bdd3caa5d367118b3aab123b4113b"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/v2_tcap.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0191",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5d60123a6fe5715028f9ec1ec0f467660db48aae535af55fbbd0ec812731b779"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/window_calibration.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0192",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8c6639da59f263956219c00e82407d8328b3685eb7f9b483ccffde3283b7ab6e"
+        }
+      ],
+      "fileName": "OWNER_VM/app/src/casulo/t/workspace.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0193",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "84b70fed87a4644acc525051133aa6a4d0de209bc0aa20a6ade61c3ba5ffd541"
+        }
+      ],
+      "fileName": "OWNER_VM/app/t-runtime/target/release/casulo-t-runtime.exe"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0194",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f6bd394faf3469d155efa7615acb2eaf8df89407aec1c284d1fd7377f8207ae3"
+        }
+      ],
+      "fileName": "OWNER_VM/app/tools/casulo_owner_vm_inspect.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0195",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6968bafc57fbbd24b89e665f0f33a7123efd497907d448a47103f1524ad7c76a"
+        }
+      ],
+      "fileName": "OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0196",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "74d5faf678a0a56ef611ccbfd3dd8fcf971c008f3cd8299240f0e56180c2f5be"
+        }
+      ],
+      "fileName": "OWNER_VM/app/tools/human_proof_control.pyw"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0197",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "052ccdc0f8969b1148f05dba95873f9dd831a257b9e38b12fde88f79936184eb"
+        }
+      ],
+      "fileName": "OWNER_VM/app/tools/human_proof_window.pyw"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0198",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "659a5914bd57e598f1ab64e56e89161dc0b492ee33b5f2f8b1400c2a0bb827cd"
+        }
+      ],
+      "fileName": "OWNER_VM/app/tools/run_t85_integrated_rehearsal.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0199",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "58c14383dc2f568b34d54b363f7dc5c1e5291fa40bb92014ec8098a4db8763cb"
+        }
+      ],
+      "fileName": "OWNER_VM/app/tools/stark_jobs_vm_probe.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0200",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "84d28c751262d13711cb7560df0b78b6a49760b7a55fb3ab39c3feaa1efa8363"
+        }
+      ],
+      "fileName": "OWNER_VM/app/tools/t85_appliance_probe.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0201",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b"
+        }
+      ],
+      "fileName": "OWNER_VM/casulo-native-generative-interactive.img"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0202",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6a705a1fed212f4e5babb222a382a4b6cfa51affc26339beb4dfac91080d0cdb"
+        }
+      ],
+      "fileName": "OWNER_VM/CONTENT_REGISTRY.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0203",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c2c3a8360ade0f2d4aeb68e66fc0a3804908404993d439c6ced3b5be60b3002a"
+        }
+      ],
+      "fileName": "OWNER_VM/VM_PROFILE.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0204",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eeb43305a3fde15269b1422b88622642c84c036e7a5a5a2a9348f59a2f570d1f"
+        }
+      ],
+      "fileName": "RESTORE_CASULO_OWNER_T85.vbs"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0205",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7400dc9a49c80a8e98f1e1acbb91edd5c597e3c89c3b53eb36d9df0ca1edc016"
+        }
+      ],
+      "fileName": "SIGNING_KEY.pub"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0206",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4ecc7fea7e4d3d9bc75c55595220a6c1331d5cdb5b54938bdb988000e9891fd6"
+        }
+      ],
+      "fileName": "START_CASULO_OWNER_T85.vbs"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0207",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f3df9930e14fc280c09cc4882a60114f98358da129a17e3e47c1ccae86dcae9b"
+        }
+      ],
+      "fileName": "T85_CLAIMS_AND_LIMITATIONS.md"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0208",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4ca6fae0247de4df6beff06425507466be2359b0126c71800697ff51f2e4681e"
+        }
+      ],
+      "fileName": "T85_HUMAN_PROOF_RUNBOOK.md"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0209",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c9bb9fae1514106b36e7d543b0b1b74ef1afe621738117f5c058de98c975e940"
+        }
+      ],
+      "fileName": "T85_INTEGRATED_REHEARSAL.md"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0210",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bbe8f5e83e8fd8226669d98466abd2c5f91f0b6608c1e7e059880339cf51af26"
+        }
+      ],
+      "fileName": "T85_ROLLBACK.md"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0211",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2f0c9afe1b66e2da86a8cc7be4fc40b26964d83cb2bba043f8f6ac328edcd061"
+        }
+      ],
+      "fileName": "VERIFY_CASULO_OWNER_T85.vbs"
+    }
+  ],
+  "name": "casulo-owner-t85-human-proof",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-CasuloT85",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "LicenseRef-Teloscorp-Proprietary",
+      "name": "Casulo owner T85 private application"
+    },
+    {
+      "SPDXID": "SPDXRef-TRuntime",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "LicenseRef-Teloscorp-Proprietary",
+      "name": "Casulo T runtime"
+    },
+    {
+      "SPDXID": "SPDXRef-Qwen",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "name": "Qwen3-4B Q4_K_M bootstrap reference"
+    },
+    {
+      "SPDXID": "SPDXRef-LlamaCpp",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "name": "llama.cpp b10362 runtime reference"
+    },
+    {
+      "SPDXID": "SPDXRef-Python",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "PSF-2.0",
+      "name": "Python runtime host dependency"
+    },
+    {
+      "SPDXID": "SPDXRef-QEMU",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-2.0-only",
+      "name": "QEMU host dependency"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

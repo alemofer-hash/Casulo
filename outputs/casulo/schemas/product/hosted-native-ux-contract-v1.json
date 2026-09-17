@@ -1,0 +1,41 @@
+{
+  "event_kinds": [
+    "PRESENCE_READY",
+    "MODEL_LOADING",
+    "MODEL_READY",
+    "INPUT_REQUEST",
+    "ASSISTANT_START",
+    "ASSISTANT_TOKEN",
+    "ASSISTANT_END",
+    "JOB_STARTED",
+    "JOB_MILESTONE",
+    "JOB_COMPLETED",
+    "JOB_FAILED",
+    "JOB_CANCELLED",
+    "NOTICE",
+    "RECOVERABLE_ERROR"
+  ],
+  "forbidden_progress_fields": [
+    "progress_percent",
+    "percentage",
+    "eta",
+    "fake_progress"
+  ],
+  "invariants": {
+    "assistant_stream": "START then ordered TOKEN then END",
+    "cancellation": "late completion after cancellation is rejected",
+    "evidence": "every job event carries a non-zero SHA-256 digest",
+    "model_readiness": "PRESENCE_READY is distinct from MODEL_READY",
+    "progress": "no percentage or ETA without a physical progress contract"
+  },
+  "max_event_bytes": 32768,
+  "priorities": [
+    "PRESENCE",
+    "FLOW",
+    "SYSTEM",
+    "BACKGROUND",
+    "AUDIT"
+  ],
+  "schema": "casulo.hosted-native-ux-contract/1.0",
+  "wire_schema": "casulo.owner-ux-event/1.0"
+}

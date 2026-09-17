@@ -1,0 +1,21 @@
+{
+  "schema": "casulo.semantic-multiverse-disk-budget/1.0",
+  "baseline_free_gib": 81.93,
+  "minimum_reserve_gib": 25.0,
+  "planned_worst_case_incremental_gib": {
+    "manifested_baseline_without_weights": 0.25,
+    "builds_and_tests": 4.0,
+    "catalog_universes_and_synthetic_data": 2.0,
+    "sparse_overlay_and_snapshot": 10.0,
+    "receipts_feedback_and_logs": 1.0,
+    "staging": 5.0,
+    "optional_rd": 0.0,
+    "new_model": 0.0,
+    "total": 22.25
+  },
+  "projected_free_worst_case_gib": 59.68,
+  "projected_margin_above_reserve_gib": 34.68,
+  "reserve_pass": true,
+  "gc_policy": "DRY_RUN_ONLY",
+  "weights_or_vm_base_duplicated": false
+}

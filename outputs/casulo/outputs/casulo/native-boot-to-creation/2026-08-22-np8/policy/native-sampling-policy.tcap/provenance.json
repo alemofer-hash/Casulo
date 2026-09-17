@@ -1,0 +1,11 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/owner.native.sampling_policy.t",
+      "module": "owner.native.sampling_policy",
+      "sha256": "591a3a2b0c2947ba2ff03c4cc84f1aa17f0c54664553bd758d126a1eb3d3abdd"
+    }
+  ]
+}

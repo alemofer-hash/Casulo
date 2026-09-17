@@ -1,0 +1,9 @@
+{
+  "acceptance_sha256": "3b7e8a8c407cb18b59783f6d7121dcf030e029fef64665607aa170ab36dcb6ff",
+  "holdout_id": "holdout-linear-mae-v1",
+  "judge_receipt_hash": "af2ba30906c203329fd09290d92a4c8fd5ffb4b21485c0278e8389b21cef26b8",
+  "maximum_abs_difference": 4.440892098500626e-15,
+  "publisher_consumed_t_result": true,
+  "schema": "casulo.interlocution-holdout-acceptance/1.0",
+  "status": "ACCEPTED_BY_T_JUDGE"
+}

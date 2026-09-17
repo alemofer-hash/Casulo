@@ -1,0 +1,209 @@
+{
+  "artifacts": [
+    {
+      "bytes": 3015,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\preflight-receipt.json",
+      "sha256": "f73ca36b85678e7837147d14b1225d7dad1dcc6eaebaff42b56b25e9d24728aa"
+    },
+    {
+      "bytes": 822,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\sm0-sm7-final\\sm0-sm7-acceptance.json",
+      "sha256": "6ba656b14154af2cf8f9c38fbaa963daf6048a3b089728db9b2bdd91b364fe71"
+    },
+    {
+      "bytes": 20241,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\semantic-route\\semantic-route-reseal.json",
+      "sha256": "ba20cfc86896d8955b3ba85811aa2c50bc763cb6ec8c1c748dfd9f8214dcd46b"
+    },
+    {
+      "bytes": 9713,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\einstein-v1.1\\einstein-component-audit.json",
+      "sha256": "a19c9717c60023df96e5d42d190a637e1fcdffa2a81e8185534c9908f2ae4b03"
+    },
+    {
+      "bytes": 58465,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\gates\\sm10-final.xml",
+      "sha256": "11d073700c24371b22a8d81db5c5a01b456ee63fdaf78a202e2d62ff1b5f7917"
+    },
+    {
+      "bytes": 64,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\gates\\compileall-final.json",
+      "sha256": "f91878ab81c8a3e86a01dcc04a8fad2fa81ee46002ec35e60bed2033a22ccff6"
+    },
+    {
+      "bytes": 66,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\gates\\cargo-native-final.json",
+      "sha256": "feff9e06dc415bc41bebbce969886543cde958cbcca4f3262b6e93d40aa39322"
+    },
+    {
+      "bytes": 50112,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\release\\owner\\casulo-owner-semantic-multiverse-reinspection.zip",
+      "sha256": "b6c65a5b3af0ffb032e7a3b5b62cd013c59aa198d2dfecc4fce59772063f6841"
+    },
+    {
+      "bytes": 1254,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\release\\owner\\build-result.json",
+      "sha256": "bc86f868b734af77e98c27bd19b16efc7e1119e83212b871d79d2c346a2e001e"
+    },
+    {
+      "bytes": 3163,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\release\\owner\\extracted-audit-valid.json",
+      "sha256": "7095866572ca5c54105bb896c2948daeb2564f178c4e4bf1776ce11aa2e3f205"
+    },
+    {
+      "bytes": 341,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\release\\public-source-audit.json",
+      "sha256": "6c342e03892d9fe70772c10d01626676ed1cbf8b983a01a09c6c7971f7f2603b"
+    },
+    {
+      "bytes": 437,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\release\\public-package-audit.json",
+      "sha256": "c0f4a6b7682e78edf729ecf96775b23aa295a3c7dce332dc8176ba92976987d1"
+    },
+    {
+      "bytes": 12113,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\einstein-v1.1\\casulo-owner-einstein-local-evaluator-v1.1.casulo.zip",
+      "sha256": "9ceefac252271d66f305e34d0c595606104237cfe534004e935b652660abe37f"
+    },
+    {
+      "bytes": 2162688,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\casulo-native-generative-interactive.img",
+      "sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b"
+    },
+    {
+      "bytes": 328192,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\semantic-multiverse\\initial-owner-state-reinspection-2026-08-13\\owner-overlay.qcow2",
+      "sha256": "bce6167d8304c9199d431e764e4d02a0f8273f5e604377726a68daa9bb71f1d3"
+    },
+    {
+      "bytes": 1230,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\CASULO_SEMANTIC_MULTIVERSE_VM_INSPECT.ps1",
+      "sha256": "d8d64e44255b4fe8a4627ba2d849fc3456ec1c8d2bd6ab853eb733c5ef129a7a"
+    },
+    {
+      "bytes": 9165,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\tools\\casulo_semantic_multiverse_vm_inspect.py",
+      "sha256": "1e2777f2f3a41cb4eddb715c81b45089f9fc81e86dc8b71fba379bdcd8b0f578"
+    },
+    {
+      "bytes": 8035,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\tools\\casulo_semantic_multiverse.py",
+      "sha256": "89578c024f0539beab7c03e913704d7cbca1343c8db9575189bdfccb06adf9c3"
+    },
+    {
+      "bytes": 2549,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\semantic-multiverse\\handoff-reinspection-2026-08-13\\INTEGRATED_EVIDENCE.json",
+      "sha256": "323b248916bcd89f291b0a1f904a28c73ea73ce5032b897bc8968e2b0bfc1733"
+    },
+    {
+      "bytes": 1419,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\semantic-multiverse\\handoff-reinspection-2026-08-13\\SBOM.spdx.json",
+      "sha256": "69bd1b752fc1476808cc219135a26186b79dc67ecc179ba8027228bd808ed09e"
+    },
+    {
+      "bytes": 524,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\semantic-multiverse\\handoff-reinspection-2026-08-13\\SUPERSESSION.json",
+      "sha256": "7e32b8c15fbd8733a6e8a8b41c672a8c3994e46d8b7c3f0caae55f1637af519c"
+    }
+  ],
+  "boundaries": {
+    "block_device": "PROHIBITED",
+    "cloud": "RELEASE_LOCKED",
+    "public": "NO_PRIVATE_COMPONENTS",
+    "qpu": "UNAVAILABLE_DENY",
+    "usb": "PROHIBITED"
+  },
+  "checks": {
+    "cancellation_and_quarantine_pass": true,
+    "clean_snapshot_present": true,
+    "cloud_fail_closed": true,
+    "compileall_pass": true,
+    "editions_signed_separately": true,
+    "einstein_component_pass": true,
+    "full_regression_pass": true,
+    "g10_24_of_24_preserved": true,
+    "g10_four_hashes_preserved": true,
+    "historical_archive_immutable": true,
+    "launcher_command_surface_complete": true,
+    "launcher_new_clean_state": true,
+    "minimum_25_gib_reserve": true,
+    "model_and_runtime_verified": true,
+    "native_base_read_only": true,
+    "native_cargo_pass": true,
+    "no_external_api_or_fake": true,
+    "owner_allowlist_pass": true,
+    "owner_extracted_audit_pass": true,
+    "preflight_hashes_pass": true,
+    "prompt_injection_denied": true,
+    "public_package_clean": true,
+    "public_source_12_files_clean": true,
+    "scientific_campaign_not_started": true,
+    "semantic_receipts_28_and_5": true,
+    "semantic_route_pass": true,
+    "sm0_sm7_pass": true,
+    "usb_qpu_block_device_denied": true,
+    "working_set_and_reboot_pass": true
+  },
+  "created_utc": "2026-08-13T03:36:35.936502+00:00",
+  "dependencies": {
+    "model": {
+      "bytes": 2497280256,
+      "embedded": false,
+      "license": "Apache-2.0",
+      "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+    },
+    "new_downloads_or_installs": 0,
+    "runtime": {
+      "bytes": 9216,
+      "embedded": false,
+      "license": "MIT",
+      "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\runtime\\llama-server.exe",
+      "sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e"
+    }
+  },
+  "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "g10_baseline_hashes": {
+    "product-demos/generative-vm/sprint10-integrated-attempt12/g10-integrated-handoff.json": "c698f3d649f0216b173270ca33f78617c4d8c37575a410798022243a90b9c9d6",
+    "release/CASULO_OWNER_VM_INSPECT.ps1": "e0452669dc33ce20320c59ccc4af94500561192cc9f52e9f8270fcea4fc0db12",
+    "release/generative-vm/casulo-owner-generative-vm-g10-complete.zip": "bd223daf90ec64549d693fddce853cdc601d19c7c0d4c734ce90088b11fa9477",
+    "release/generative-vm/handoff/MANIFEST.json": "3529733742e6cd52537f1651a0488061e2f88dc4020339a450a14c57e8d69651"
+  },
+  "gates": {
+    "SM0": "PASS",
+    "SM1": "PASS",
+    "SM10": "PASS",
+    "SM2": "PASS",
+    "SM3": "PASS",
+    "SM4": "PASS",
+    "SM5": "PASS",
+    "SM6": "PASS",
+    "SM7": "PASS",
+    "SM8": "PASS",
+    "SM9": "PASS"
+  },
+  "historical_hashes": {
+    "checkpoint_manifest": "e595c97b86721c3b58b0d2e4ea62771b1cb63c6587ccc9794ef0e33f2b7446fa",
+    "einstein_evidence": "003f5644e8f12a57478f795b799405fede46b23c6b18c4ca6e99000a60d678d5",
+    "einstein_package": "554da5a1341f84077c0434f79b9dacd00ba6d5dd96869a91deb92b93002c7860",
+    "preserved_archive": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1",
+    "previous_handoff_manifest": "0cb6d6a6fd09983da65c2f17bc8274085ae280344448d869b5590eb151a389d0"
+  },
+  "owner": "Guilherme Moura Fernandes",
+  "profile": "casulo-owner-semantic-multiverse-reinspection",
+  "schema": "casulo.semantic-multiverse-reinspection-handoff/1.0",
+  "state": "READY_FOR_GUILHERME_SEMANTIC_MULTIVERSE_REINSPECTION",
+  "storage": {
+    "free_bytes_at_seal": 88598003712,
+    "minimum_reserve_bytes": 26843545600
+  },
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\gates\\sm10-final.xml",
+    "seconds": 30.473,
+    "sha256": "11d073700c24371b22a8d81db5c5a01b456ee63fdaf78a202e2d62ff1b5f7917",
+    "skipped": 2,
+    "tests": 454
+  }
+}

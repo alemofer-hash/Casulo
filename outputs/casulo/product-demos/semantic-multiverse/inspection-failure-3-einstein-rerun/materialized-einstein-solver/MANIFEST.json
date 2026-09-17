@@ -1,0 +1,43 @@
+{
+  "cloud": "RELEASE_LOCKED",
+  "external_ai_api": false,
+  "fake_engine": false,
+  "files": {
+    "base-creation-evidence.json": "8979d6ecf0b5d268bec26673939b949e0233b1eb1de3c8cce092e88ad0788650",
+    "einstein_solver.py": "f179747673d5416e85e4dfd7f6f5a0e3c9a7fd16be85dbd05b1f003ae8004e64",
+    "example-input.json": "deaaaa121a2b74f107e12c72b73e791ba73871befc59316dc82ce135ebf73390",
+    "example-output.json": "1cb07e39b4345d6ac74fdf063e1230cf7231d8af860e702e1d45f6ff96e3e05d",
+    "external-execution.json": "e58d4b005e7d545638b48d1849f8c7cec589f959d011095ff09d3ce39461c52a",
+    "forge-receipt.json": "c5dc152941d77da1d56064a72d03d6f8a6cb132e870aa1421f761bb5ea9f5998",
+    "semantic-session.json": "2cf90d7d7eefd59762e587681156070a86ea1995b431cbfe62bec9d834029142",
+    "solver-contract.t": "e6c726e817db5a761a1d6934c17a2491cb92a3300b1d90f626a241d4387e08ff",
+    "solver-contract.tcap": "fadf8a19c7d0923fb8c35b57994695a0982ebebf1bd528efb50ec0ea5545475d",
+    "solver-plan-repair.json": "6949cb2fa67cca52160a4dbdf3931b4831c757b09cd9fdafa843aef9307fabca",
+    "solver-spec.json": "e2476f43d7df75ac2f16b72335c371003d045e282fdc768bed1f37bde1cdf4ef"
+  },
+  "global_einstein_solver_claim": false,
+  "inputs": [
+    "boundary_conditions",
+    "constants",
+    "coordinates",
+    "energy_momentum_tensor",
+    "initial_conditions",
+    "metric",
+    "tolerances"
+  ],
+  "outputs": [
+    "connection",
+    "einstein_tensor",
+    "field_equation_residual",
+    "ricci_scalar",
+    "ricci_tensor"
+  ],
+  "profile": "owner-local-scientific-sandbox",
+  "schema": "casulo.einstein-solver-package/1.0",
+  "scientific_claim": "local 4D Einstein field-equation residual evaluator",
+  "simulation_real_effects": false,
+  "t_compiled": true,
+  "t_generated": true,
+  "tcap_sha256": "fadf8a19c7d0923fb8c35b57994695a0982ebebf1bd528efb50ec0ea5545475d",
+  "usb": "PROHIBITED"
+}

@@ -1,0 +1,71 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "enums": [],
+  "fields": [
+    {
+      "name": "Level",
+      "traces": [
+        {
+          "name": "value",
+          "type_name": "Text"
+        }
+      ]
+    }
+  ],
+  "language": "T/1.1",
+  "module": "precision",
+  "operations": [
+    {
+      "cfg": {
+        "blocks": [
+          {
+            "id": "block/root.0",
+            "instruction_paths": [
+              "root.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "exit",
+            "instruction_paths": [],
+            "successors": []
+          }
+        ],
+        "entry": "block/root.0",
+        "exit": "exit"
+      },
+      "contract": {
+        "effect_contract": {
+          "declared": [
+            "manifest"
+          ],
+          "schema": "casulo-t-effects/1.0"
+        }
+      },
+      "input_type": "Level",
+      "instructions": [
+        {
+          "arguments": [
+            "\"manifest: precision.level2; trace: 'Precision level set to 2'; effects: [manifest]; emit: 'Precision level 2 activated.'\""
+          ],
+          "else_body": [],
+          "op": "emit",
+          "result": null,
+          "then_body": [],
+          "type_name": "Text"
+        }
+      ],
+      "kind": "condense",
+      "name": "SetPrecision",
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "records": [],
+  "uses": [],
+  "version": "crisalida-ir/1.0"
+}

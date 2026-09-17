@@ -1,0 +1,16 @@
+{
+  "modules": {
+    "owner.agent.csv_guardian.delivery": {
+      "deadline_ms": 3000,
+      "steps": 2048
+    },
+    "owner.agent.csv_guardian.pipeline": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    },
+    "owner.agent.csv_guardian.policy": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "accelerators": [
+    "whpx",
+    "tcg"
+  ],
+  "base_image": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\casulo-native-generative-interactive.img",
+  "base_image_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+  "base_os_read_only": true,
+  "clipboard": false,
+  "cloud": "RELEASE_LOCKED",
+  "external_media": "NOT_IN_USE",
+  "free_bytes": 83672272896,
+  "host_block_devices": false,
+  "minimum_reserve_bytes": 21474836480,
+  "network": "denied",
+  "overlay_exists": true,
+  "ovmf_code": "C:\\Program Files\\qemu\\share\\edk2-x86_64-code.fd",
+  "ovmf_code_sha256": "33090cc07675baa5190d9f1e84bf5176b33bcbfa9bacac522961150cdb6dbb2a",
+  "qemu": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+  "qemu_img_version": "qemu-img version 11.0.50 (v11.0.0-12631-g54e84cdc7a)",
+  "qemu_sha256": "b396eb9b669f6282ec60f0d46e6addca8c669992e67a34365be44cd3cb97c9a7",
+  "qemu_version": "QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a)",
+  "read_only": true,
+  "ready": true,
+  "reserve_pass": true,
+  "schema": "casulo.vm-doctor/1.0",
+  "selected_acceleration": "whpx",
+  "shared_folder": false,
+  "state_root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\semantic-multiverse\\initial-owner-state-reinspection-2026-08-13"
+}

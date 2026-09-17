@@ -1,0 +1,22 @@
+{
+  "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint2\\casulo-owner-generative-s2.zip",
+  "artifact_bytes": 15886,
+  "artifact_sha256": "22b4857605893db8c94a3b5ecee823db32861241508b1debb41817021c74d6e7",
+  "audit": {
+    "allowlist_exact": true,
+    "files": [
+      "OWNER_ARTIFACT.json",
+      "casulo_owner/__init__.py",
+      "casulo_owner/assets/generative-candidate.json",
+      "casulo_owner/generative_engine.py",
+      "casulo_owner/generative_model.py",
+      "casulo_owner/local_model_runtime.py"
+    ],
+    "forbidden_findings": [],
+    "generative_adapter_present": true,
+    "pass": true,
+    "reference_engine_absent": true,
+    "schema": "casulo-owner-generative-artifact-audit/1.0"
+  },
+  "schema": "casulo-owner-generative-build-result/1.0"
+}

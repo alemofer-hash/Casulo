@@ -1,0 +1,51 @@
+{
+  "agent_id": "datavalidator",
+  "case_id": "data-01",
+  "constraints": [
+    {
+      "error_code": "datavalidator_byte_preservation_failed",
+      "field_name": "preserve_original_bytes",
+      "requirement_id": "original-preserved",
+      "success_value": "ORIGINAL_PRESERVED_SATISFIED"
+    },
+    {
+      "error_code": "datavalidator_schema_version_mismatch",
+      "field_name": "apply_versioned_schema",
+      "requirement_id": "versioned-schema",
+      "success_value": "VERSIONED_SCHEMA_SATISFIED"
+    },
+    {
+      "error_code": "datavalidator_rejection_explanation_missing",
+      "field_name": "provide_rejection_diagnostic",
+      "requirement_id": "diagnostic-per-rejection",
+      "success_value": "DIAGNOSTIC_PER_REJECTION_SATISFIED"
+    }
+  ],
+  "module_suffixes": [
+    "byte_preserver",
+    "schema_applier",
+    "rejection_explainer"
+  ],
+  "raw_sha256": "d172726d6737d5369521ee13334f07c25c239223c0b5aec7344b4da9796aa687",
+  "rejected_candidates": [],
+  "request": "Validador local de CSV que preserva bytes originais, aplica schema versionado e explica cada rejeição.",
+  "schema": "casulo.t85-agent-plan/1.0",
+  "stochastic_trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "2940e67e7e6508c4f52fc303f1d0b83087ebd1127862c99b08cf3569362831d8",
+    "ended_monotonic_ns": 31645490896200,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "t85:data-01:architecture:0",
+    "output_sha256": "d172726d6737d5369521ee13334f07c25c239223c0b5aec7344b4da9796aa687",
+    "sampling_policy_id": "casulo-t85-architecture-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 31612032769100,
+    "stream_events": 207
+  },
+  "success_events_origin": "canonical_derivation_from_frozen_requirement_id",
+  "summary": "Arquitetura de validação local de arquivos CSV com preservação de bytes originais, aplicação de schema versionado e diagnóstico por rejeição."
+}

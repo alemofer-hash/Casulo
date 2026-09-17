@@ -1,0 +1,11 @@
+{"byte_offset":34712820,"event":"campaign_formal_start","local":"2026-08-07T18:51:59.688105-03:00","monotonic_ns":7024943902800,"pid":8700,"utc":"2026-08-07T21:51:59.688105+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T18:51:59.866449-03:00","monotonic_ns":7025103516700,"pid":8700,"utc":"2026-08-07T21:51:59.866449+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T18:52:06.872301-03:00","monotonic_ns":7032956643000,"new_samples":33,"pid":8700,"utc":"2026-08-07T21:52:06.872301+00:00"}
+{"event":"idle_start","local":"2026-08-07T18:53:04.286892-03:00","monotonic_ns":7089523941100,"pid":4688,"seconds":60.0,"utc":"2026-08-07T21:53:04.286892+00:00"}
+{"event":"idle_end","local":"2026-08-07T18:54:04.291052-03:00","monotonic_ns":7149528121700,"pid":4688,"utc":"2026-08-07T21:54:04.291052+00:00"}
+{"K":36,"event":"window_start","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:57:58.685208-03:00","monotonic_ns":7383922250900,"pid":4688,"stage":"probe-eager-10s","utc":"2026-08-07T21:57:58.685208+00:00"}
+{"K":36,"event":"window_end","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:58:07.394208-03:00","monotonic_ns":7392631268600,"pid":4688,"stage":"probe-eager-10s","utc":"2026-08-07T21:58:07.394208+00:00"}
+{"K":83,"event":"window_start","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T19:00:50.346047-03:00","monotonic_ns":7555583088800,"pid":4688,"stage":"probe-eager-20s","utc":"2026-08-07T22:00:50.346047+00:00"}
+{"K":83,"event":"window_end","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T19:01:13.641502-03:00","monotonic_ns":7578878594100,"pid":4688,"stage":"probe-eager-20s","utc":"2026-08-07T22:01:13.641502+00:00"}
+{"K":30922,"event":"window_start","implementation":"t-general-ir-tcap/0.1","local":"2026-08-07T19:02:55.474612-03:00","monotonic_ns":7680711658300,"pid":4688,"stage":"probe-tcap-10s","utc":"2026-08-07T22:02:55.474612+00:00"}
+{"event":"protocol_superseded","local":"2026-08-07T19:04:44.142232-03:00","monotonic_ns":7789379352600,"pid":29084,"reason":"Transient throttling during TCAP runtime probe now completes the unit, rejects the window, and retries after clean stability instead of terminating the worker.","utc":"2026-08-07T22:04:44.142232+00:00"}

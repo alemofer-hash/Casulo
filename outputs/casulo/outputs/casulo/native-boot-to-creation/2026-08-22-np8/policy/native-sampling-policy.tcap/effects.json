@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "owner.native.sampling_policy": {
+      "decide": []
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casulo://schemas/engine-transport/1.0",
+  "title": "Casulo Engine Transport Envelope 1.0",
+  "type": "object",
+  "required": ["schema", "request_id", "sequence", "kind", "payload_sha256", "deadline_ms", "cancel_token_id"],
+  "properties": {
+    "schema": {"const": "casulo.engine-transport/1.0"},
+    "request_id": {"type": "string", "minLength": 1},
+    "sequence": {"type": "integer", "minimum": 1},
+    "kind": {"type": "string", "minLength": 1},
+    "payload_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "deadline_ms": {"type": "integer", "minimum": 1, "maximum": 600000},
+    "cancel_token_id": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

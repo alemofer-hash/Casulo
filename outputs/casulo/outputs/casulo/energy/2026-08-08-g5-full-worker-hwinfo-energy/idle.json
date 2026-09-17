@@ -1,0 +1,31 @@
+{
+  "end_utc": "2026-08-08T14:16:44.203159+00:00",
+  "start_utc": "2026-08-08T14:15:44.202674+00:00",
+  "window": {
+    "average_watts": 9.052604951934619,
+    "coverage": 1.0,
+    "duration_seconds": 60.000485,
+    "end_utc": "2026-08-08T14:16:44.203159+00:00",
+    "energy_joules": 543.1606876294788,
+    "first_sample_utc": "2026-08-08T14:15:44.202674+00:00",
+    "last_sample_utc": "2026-08-08T14:16:44.203159+00:00",
+    "maximum_gap_seconds": 0.275,
+    "median_interval_seconds": 0.2515,
+    "reason_code": "valid_hwinfo_cpu_package_energy_window",
+    "sample_count": 241,
+    "schema": "casulo-energy-hwinfo-window/1.0",
+    "sensor": {
+      "index": 164,
+      "kind": "package_power",
+      "literal_name": "Potência total da CPU [W]",
+      "normalized_name": "potencia total da cpu w",
+      "provenance": "hwinfo_reported_cpu_package",
+      "session_id": 0,
+      "si_scale": 1.0,
+      "unit": "w"
+    },
+    "source_session_id": 0,
+    "start_utc": "2026-08-08T14:15:44.202674+00:00",
+    "status": "PASS"
+  }
+}

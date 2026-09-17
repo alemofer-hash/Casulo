@@ -1,0 +1,101 @@
+{
+  "ablations": {
+    "all_hot": "NOT_APPLICABLE_TO_SINGLE_PRIMITIVE_FLOOD_WORKLOAD",
+    "causal_rejection": "WRONG_DATASET_REJECTED_BEFORE_WORK_IN_TI6",
+    "no_evidence_gate": "EXECUTION_POSSIBLE_BUT_T_PUBLICATION_AUTHORITY_ABSENT",
+    "no_interlocution": "FAIL_CLOSED_BEFORE_WORK_BY_CONTRACT_TEST",
+    "posthoc_t_audit": "B_RESULT_IGNORED_AND_COUNTS_AS_ZERO_AUTHORITY",
+    "selected_working_set": "T_SELECTED_ALL_1024_RECORDS_REQUIRED_BY_CONFIRMED_R",
+    "t_architecture_without_judge": "C_EXECUTES_BUT_FINAL_ACCEPTANCE_IS_FOREIGN"
+  },
+  "claim": "material observed reduction in end-to-end wall time, process CPU time and peak RSS for this host/workload; no energy claim",
+  "end_to_end": {
+    "amortization_point_trainings": 0.012664149094428664,
+    "compile_included_in_samples": false,
+    "compile_wall_seconds_separate": 0.0413905,
+    "cpu_time_ratio_ci95": {
+      "lower": 0.09930715935334873,
+      "resamples": 20000,
+      "seed": 2026081904,
+      "upper": 0.11475409836065574
+    },
+    "definition": "clean process including imports, T authority, training, receipts, independent audit, T judgment and publication",
+    "human_interlocution_reason": "historical confirmation event has no valid duration measurement",
+    "human_interlocution_time": null,
+    "median_A_seconds_per_training": 3.9348421,
+    "median_D_over_A_observed_cpu_time_ratio": 0.10609480812641084,
+    "median_D_over_A_wall_ratio": 0.1695562192953054,
+    "median_D_seconds_per_training": 0.66652145
+  },
+  "phi_logical": {
+    "active_state_bytes": {
+      "status": "NOT_DIRECTLY_INSTRUMENTED",
+      "value": null
+    },
+    "allocations": {
+      "status": "NOT_INSTRUMENTED",
+      "value": null
+    },
+    "bytes_moved": {
+      "status": "NOT_INSTRUMENTED",
+      "value": null
+    },
+    "executed_network_operations": {
+      "candidate_over_baseline": 1.0,
+      "status": "ESTIMATED_SAME_MATHEMATICAL_TRAINING"
+    },
+    "model_calls": {
+      "A": 0,
+      "D": 0,
+      "status": "OBSERVED_NO_NEURAL_INTERLOCUTOR_IN_REPETITIONS"
+    },
+    "peak_working_set": {
+      "A_median_bytes": 327565312,
+      "D_median_bytes": 43249664,
+      "proxy": "process-tree peak RSS"
+    },
+    "processed_tokens": {
+      "A": 0,
+      "D": 0,
+      "status": "OBSERVED_NO_TOKEN_PATH_IN_REPETITIONS"
+    }
+  },
+  "protocol": "ti10-v2",
+  "psi_physical": {
+    "energy_status": "BLOCKED_NO_ENERGY_MEASUREMENT_IN_THIS_PROTOCOL",
+    "package_joules": null,
+    "peak_rss_ratio_D_over_A": 0.1320337117991297,
+    "process_cycles": {
+      "end_to_end": null,
+      "limitation": "no unified cycle counter across process tree",
+      "steady_state_child_ratio": 0.028406296740716024
+    },
+    "total_system_joules": null,
+    "wall_time_ratio_D_over_A": 0.1695562192953054
+  },
+  "schema": "casulo.interlocution-ti9-ti11-expanded-analysis/1.0",
+  "steady_state": {
+    "definition": "child-reported synchronous training only; excludes imports, authority, audit, judgment and publication",
+    "median_D_over_A_thread_cycles_ratio": 0.028406296740716024,
+    "median_D_over_A_wall_ratio": 0.025421863784326156,
+    "paired_bootstrap_ci95": {
+      "lower": 0.02469135896993784,
+      "resamples": 20000,
+      "seed": 2026081902,
+      "upper": 0.026730883824250595
+    },
+    "thread_cycles_ci95": {
+      "lower": 0.027468034989324736,
+      "resamples": 20000,
+      "seed": 2026081903,
+      "upper": 0.02845109888788855
+    }
+  },
+  "t_overhead": {
+    "median_architecture_seconds_per_window": 0.352868,
+    "median_independent_audit_seconds_per_window": 0.0307725,
+    "median_judgment_seconds_per_window": 0.0386681,
+    "median_publication_seconds_per_window": 0.0022317
+  },
+  "valid_paired_blocks": 7
+}

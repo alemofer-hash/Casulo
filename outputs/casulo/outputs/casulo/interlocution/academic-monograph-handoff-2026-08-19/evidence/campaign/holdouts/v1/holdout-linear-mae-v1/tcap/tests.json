@@ -1,0 +1,7 @@
+{
+  "properties": [
+    "nine_surfaces",
+    "fail_closed",
+    "holdout_frozen_before_results"
+  ]
+}

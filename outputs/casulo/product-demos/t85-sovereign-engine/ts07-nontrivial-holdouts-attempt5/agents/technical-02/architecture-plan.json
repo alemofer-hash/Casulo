@@ -1,0 +1,50 @@
+{
+  "agent_id": "mass_balance_calculator_v2",
+  "case_id": "technical-02",
+  "constraints": [
+    {
+      "error_code": "invalid_unit_format",
+      "field_name": "unit_consistent",
+      "requirement_id": "unit-consistency",
+      "success_value": "UNIT_FORMAT_VALID"
+    },
+    {
+      "error_code": "mass_mismatch_detected",
+      "field_name": "mass_conserved",
+      "requirement_id": "mass-conservation",
+      "success_value": "MASS_CONSERVED"
+    },
+    {
+      "error_code": "residual_unit_mismatch",
+      "field_name": "residual_valid",
+      "requirement_id": "residual-output",
+      "success_value": "RESIDUAL_UNITS_MATCH"
+    }
+  ],
+  "module_suffixes": [
+    "unit_parser",
+    "mass_checker",
+    "output_validator"
+  ],
+  "raw_sha256": "fe986d4d218d4a36234f2ad3808e5ca4bf8cea0be1ad4b563de64e93499e9750",
+  "rejected_candidates": [],
+  "request": "Calculadora de balanço de massa para um volume de controle, com unidades declaradas e verificação de conservação.",
+  "schema": "casulo.t85-agent-plan/1.0",
+  "stochastic_trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "e44584f6acf70167bb211834489742cb9da9c345f20c5efb72390c16201727a3",
+    "ended_monotonic_ns": 31361157988800,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "t85:technical-02:architecture:0",
+    "output_sha256": "fe986d4d218d4a36234f2ad3808e5ca4bf8cea0be1ad4b563de64e93499e9750",
+    "sampling_policy_id": "casulo-t85-architecture-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 31323561883500,
+    "stream_events": 226
+  },
+  "summary": "Arquitetura de agente para cálculo de balanço de massa em um volume de controle, com verificação de unidades e conservação da massa."
+}

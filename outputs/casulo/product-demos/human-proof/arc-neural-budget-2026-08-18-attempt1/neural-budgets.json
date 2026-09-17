@@ -1,0 +1,65 @@
+{
+  "budgets": [
+    {
+      "budget_id": "arc7-dialogue-v1",
+      "max_context_chars": 16384,
+      "max_conversation_messages": 8,
+      "max_generated_tokens": 768,
+      "max_memory_items": 12,
+      "operation": "DIALOGUE",
+      "sampling_family": "dialogue",
+      "structured_output": false
+    },
+    {
+      "budget_id": "arc7-intent-reconstruction-v1",
+      "max_context_chars": 20000,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 768,
+      "max_memory_items": 0,
+      "operation": "INTENT_RECONSTRUCTION",
+      "sampling_family": "planning",
+      "structured_output": true
+    },
+    {
+      "budget_id": "arc7-intent-refinement-v1",
+      "max_context_chars": 24000,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 768,
+      "max_memory_items": 0,
+      "operation": "INTENT_REFINEMENT",
+      "sampling_family": "planning",
+      "structured_output": true
+    },
+    {
+      "budget_id": "arc7-semantic-routing-v1",
+      "max_context_chars": 8192,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 384,
+      "max_memory_items": 0,
+      "operation": "SEMANTIC_ROUTING",
+      "sampling_family": "planning",
+      "structured_output": true
+    },
+    {
+      "budget_id": "arc7-t-synthesis-v1",
+      "max_context_chars": 32768,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 1536,
+      "max_memory_items": 0,
+      "operation": "T_SYNTHESIS",
+      "sampling_family": "code",
+      "structured_output": true
+    },
+    {
+      "budget_id": "arc7-t-repair-v1",
+      "max_context_chars": 16384,
+      "max_conversation_messages": 0,
+      "max_generated_tokens": 384,
+      "max_memory_items": 0,
+      "operation": "T_REPAIR",
+      "sampling_family": "code",
+      "structured_output": true
+    }
+  ],
+  "schema": "casulo.neural-budgets/1.0"
+}

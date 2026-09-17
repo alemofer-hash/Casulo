@@ -1,0 +1,16 @@
+{
+  "commercial_ai_api_used": false,
+  "context_digest": "78eadfea462706068a83e7ffc2fb0c25721b680d8bf2633112cc52a6334d2b0e",
+  "ended_monotonic_ns": 6258871916500,
+  "external_network_used": false,
+  "finish_reason": "stop",
+  "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "operation_id": "intent-twin:automated:arc-neural-contract-smoke:candidate-1",
+  "output_sha256": "db093a95b94ac17cf5f3e40d461cf3b40bbd60bf54a69b2f412553bc5bf23605",
+  "sampling_policy_id": "casulo-sampling-planning-v1",
+  "schema": "casulo-stochastic-trace/1.0",
+  "seed_if_available": null,
+  "started_monotonic_ns": 6069741099100,
+  "stream_events": 693
+}

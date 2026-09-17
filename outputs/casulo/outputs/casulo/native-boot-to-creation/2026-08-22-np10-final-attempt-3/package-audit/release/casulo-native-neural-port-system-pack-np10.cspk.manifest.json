@@ -1,0 +1,100 @@
+{
+  "bytes": 109690,
+  "compilation_cache_contract": "live generated T source must match compiled source hash before execution",
+  "entries": [
+    {
+      "bytes": 12872,
+      "kind": 1,
+      "name": "BOOTSTRAP_TCAP",
+      "offset": 528,
+      "sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa",
+      "source": "release/FloodSurrogate.tcap",
+      "source_sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa"
+    },
+    {
+      "bytes": 1016,
+      "kind": 2,
+      "name": "UX_CONTRACT",
+      "offset": 13400,
+      "sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9",
+      "source": "schemas/product/hosted-native-ux-contract-v1.json",
+      "source_sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9"
+    },
+    {
+      "bytes": 434,
+      "kind": 3,
+      "name": "GUIDE_T_SOURCE",
+      "offset": 14416,
+      "sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565",
+      "source": "examples/t/revolution/agent_logic.t",
+      "source_sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565"
+    },
+    {
+      "bytes": 2112,
+      "kind": 4,
+      "name": "MODEL_GGUF_PROBE",
+      "offset": 14850,
+      "sha256": "47b0f62fa715d0de910a7aef18005eaa27ef23b65326aa243253af85faedf495",
+      "source": "release/casulo-native-qwen3-weight-formats-probe-v2.gguf",
+      "source_sha256": "47b0f62fa715d0de910a7aef18005eaa27ef23b65326aa243253af85faedf495"
+    },
+    {
+      "bytes": 39067,
+      "kind": 5,
+      "name": "NATIVE_SAMPLING_POLICY",
+      "offset": 16962,
+      "sha256": "952b2d8860a89363346d46233736fef6f047080521452357e780726c861cf330",
+      "source": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-policies/token-policy.bundle.json",
+      "source_sha256": "952b2d8860a89363346d46233736fef6f047080521452357e780726c861cf330"
+    },
+    {
+      "bytes": 1221,
+      "kind": 6,
+      "name": "NATIVE_CREATION_PROMPT",
+      "offset": 56029,
+      "sha256": "9f4c7d1e43e9f500cf489dcb9d4ab48b168ab77a237adfe4f1b6eb9e517272d5",
+      "source": "private/casulo-owner/native-creation-prompt.json",
+      "source_sha256": "9f4c7d1e43e9f500cf489dcb9d4ab48b168ab77a237adfe4f1b6eb9e517272d5"
+    },
+    {
+      "bytes": 13567,
+      "kind": 7,
+      "name": "NATIVE_CREATION_ARTIFACT",
+      "offset": 57250,
+      "sha256": "03286c4473b440279372ec82c3aeffca9bd856d36b728ca0e009b6abad1abe16",
+      "source": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-policies/creation-artifact.bundle.json",
+      "source_sha256": "03286c4473b440279372ec82c3aeffca9bd856d36b728ca0e009b6abad1abe16"
+    },
+    {
+      "bytes": 38873,
+      "kind": 8,
+      "name": "NATIVE_CREATION_ACCEPTANCE",
+      "offset": 70817,
+      "sha256": "33ddf4f430bd6839bbbd55675cca4848303f303efcacdb60c36a77d9700031ea",
+      "source": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-policies/acceptance-policy.bundle.json",
+      "source_sha256": "33ddf4f430bd6839bbbd55675cca4848303f303efcacdb60c36a77d9700031ea"
+    }
+  ],
+  "external_api": false,
+  "file": "release/casulo-native-neural-port-system-pack-np10.cspk",
+  "model_embedded": false,
+  "network": false,
+  "physical_device_written": false,
+  "policies": {
+    "acceptance": {
+      "source_sha256": "30a2a7d67ff35c6411a87bd32f38f98d4e2f5ad31b19013ded8528f164d4bbe9",
+      "tcap_hash": "88a84acf9f864c7144b5203c977ee356680837c960541148590f52a175ddf8eb"
+    },
+    "artifact": {
+      "source_sha256": "cc120e8f626c222674f8d950027f2265a05a59bd2167689bc746273f557ea0b3",
+      "tcap_hash": "4544901e4dfc9bc996f28356a62093f5e475e6ed16d031b2602b092b9ee907e7"
+    },
+    "token": {
+      "source_sha256": "9f24aaf056ab48756eaa0dff90169e02ed5234812e6e52de80f046f7f82347b2",
+      "tcap_hash": "394e70542844f1c1bcfbbd73df41e223f6a1d5a7b1f613a636fa9b72d907b60e"
+    }
+  },
+  "prompt_sha256": "9f4c7d1e43e9f500cf489dcb9d4ab48b168ab77a237adfe4f1b6eb9e517272d5",
+  "schema": "casulo-native-creation-system-pack/1.0",
+  "sha256": "4f5e9fb34de09a3fe59b49c233802312a1c2e4d86ec7d00ca2d1dc1638f7eeb1"
+}

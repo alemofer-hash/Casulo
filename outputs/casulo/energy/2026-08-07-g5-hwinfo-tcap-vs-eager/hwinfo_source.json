@@ -1,0 +1,76 @@
+{
+  "inspection": {
+    "bom": "UTF-8",
+    "candidate_energy_sensors": [
+      {
+        "index": 164,
+        "kind": "package_power",
+        "literal_name": "Potência total da CPU [W]",
+        "normalized_name": "potencia total da cpu w",
+        "provenance": "hwinfo_reported_cpu_package",
+        "session_id": 0,
+        "si_scale": 1.0,
+        "unit": "w"
+      }
+    ],
+    "column_counts": [
+      342
+    ],
+    "complete_rows": 758,
+    "decimal_separator": ".",
+    "delimiter": ",",
+    "duplicate_sensor_names": [
+      "cpu inteira c"
+    ],
+    "duplicate_timestamps": 0,
+    "encoding": "utf-8-sig",
+    "explicit_estimate": false,
+    "first_timestamp_utc": "2026-08-07T17:19:24.876000+00:00",
+    "header_count": 1,
+    "incomplete_rows": 0,
+    "invalid_rows": 0,
+    "last_timestamp_utc": "2026-08-07T17:44:39.935000+00:00",
+    "sampling": {
+      "gaps_over_5x_median": [],
+      "intervals": 757,
+      "maximum_seconds": 2.069,
+      "median_seconds": 2.001,
+      "minimum_seconds": 1.953,
+      "p95_seconds": 2.015
+    },
+    "schema": "casulo-energy-hwinfo-source/1.0",
+    "selected_energy_sensor": {
+      "index": 164,
+      "kind": "package_power",
+      "literal_name": "Potência total da CPU [W]",
+      "normalized_name": "potencia total da cpu w",
+      "provenance": "hwinfo_reported_cpu_package",
+      "session_id": 0,
+      "si_scale": 1.0,
+      "unit": "w"
+    },
+    "session_count": 1,
+    "snapshot": {
+      "bytes_read": 1272471,
+      "complete_bytes": 1272471,
+      "file_size_at_open": 1272471,
+      "mtime_ns": 1786124679949097900,
+      "partial_final_line_ignored": false,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+      "sha256": "20a09459c4f0b8548df331feeb4aae2c1f17c27480638c25adb1f759f0f46dba"
+    },
+    "timestamp_regressions": 0
+  },
+  "scientific_scope": "HWiNFO-reported CPU package energy on bare-metal Windows",
+  "snapshot": {
+    "bytes_read": 1272471,
+    "complete_bytes": 1272471,
+    "file_size_at_open": 1272471,
+    "mtime_ns": 1786124679949097900,
+    "partial_final_line_ignored": false,
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+    "sha256": "20a09459c4f0b8548df331feeb4aae2c1f17c27480638c25adb1f759f0f46dba"
+  },
+  "source_csv": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+  "status": "PASS"
+}

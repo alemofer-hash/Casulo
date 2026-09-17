@@ -1,0 +1,5 @@
+{"byte_offset":18676230,"event":"campaign_formal_start","local":"2026-08-07T18:11:35.785599-03:00","monotonic_ns":4601034721900,"pid":25108,"utc":"2026-08-07T21:11:35.785599+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T18:11:35.864248-03:00","monotonic_ns":4601101320100,"pid":25108,"utc":"2026-08-07T21:11:35.864248+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T18:11:41.676768-03:00","monotonic_ns":4607589569900,"new_samples":24,"pid":25108,"utc":"2026-08-07T21:11:41.676768+00:00"}
+{"event":"thermal_abort","local":"2026-08-07T18:12:57.015000-03:00","monotonic_ns":4682837678200,"pid":25840,"stage":"cooldown_or_stability","temperature_c":63.0,"throttling":true,"utc":"2026-08-07T21:12:57.015000+00:00"}
+{"event":"protocol_superseded","local":"2026-08-07T18:16:04.884701-03:00","monotonic_ns":4870121889500,"pid":25596,"reason":"Pre-window transient throttling exposed an overly strict cooldown terminal rule; campaign preserved and replaced before any workload.","utc":"2026-08-07T21:16:04.884701+00:00"}

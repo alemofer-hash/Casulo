@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casulo/T — laboratório tensorial</title>
+<style>
+body{font-family:Inter,Segoe UI,sans-serif;background:#0b1020;color:#edf2ff;
+margin:0;padding:32px}main{max-width:1100px;margin:auto}h1{font-size:42px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+article{background:#151d35;border:1px solid #2b385e;border-radius:14px;
+padding:18px}table{width:100%;border-collapse:collapse;margin-top:24px;
+background:#11192d}th,td{padding:14px;border-bottom:1px solid #2b385e;
+text-align:left}.guard{color:#ffce73}code{color:#8ee8d1}
+</style>
+</head>
+<body><main>
+<p>Teloscorp · Casulo · Otimização de Tráfego de Informação</p>
+<h1>Laboratório tensorial pré-registrado</h1>
+<p class="guard">Este relatório ainda não é um veredito. Claims permanecem
+bloqueados até o julgamento independente.</p>
+<div class="cards"><article><h3>casulo-linear-algebra-c99-openmp/0.3</h3><strong>AVAILABLE</strong></article><article><h3>pytorch-eager-autograd-cpu</h3><strong>AVAILABLE</strong></article><article><h3>pytorch-inductor-autograd-cpu</h3><strong>AVAILABLE</strong></article></div>
+<table><thead><tr><th>Baseline</th><th>Mediana</th><th>IC95%</th>
+<th>Break-even</th></tr></thead><tbody><tr><td>pytorch-eager-autograd-cpu</td><td>2.497×</td><td>2.343× – 2.658×</td><td>1466</td></tr><tr><td>pytorch-inductor-autograd-cpu</td><td>1.358×</td><td>1.039× – 2.574×</td><td>0</td></tr></tbody></table>
+<h2>Estabilidade metrológica</h2>
+<p>Invocações por lote:
+<code>256</code>.
+CV máximo selado:
+<code>0.15</code>.
+</p>
+<table><thead><tr><th>Backend</th><th>Coeficiente de variação</th>
+</tr></thead><tbody><tr><td>casulo-linear-algebra-c99-openmp/0.3</td><td>8.04%</td></tr><tr><td>pytorch-eager-autograd-cpu</td><td>26.33%</td></tr><tr><td>pytorch-inductor-autograd-cpu</td><td>64.73%</td></tr></tbody></table>
+<p>Energia elétrica: <code>null</code>. Medição:
+<code>False</code>.</p>
+<p>Experimento: <code>sha256:15193bb0c7ccf4d0ca0a7d5eff0002d4c09b5bedfeebf6279514a64c68c27cf7</code></p>
+</main></body></html>

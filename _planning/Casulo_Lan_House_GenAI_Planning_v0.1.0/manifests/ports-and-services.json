@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "public_lan_entrypoint": {"service": "casulo-gateway", "port": 8443, "protocol": "https"},
+  "internal_services": [
+    {"service": "llama-server", "address": "127.0.0.1", "port": 8081},
+    {"service": "asr", "address": "127.0.0.1", "port": 8082},
+    {"service": "tts", "address": "127.0.0.1", "port": 8083},
+    {"service": "agent-worker", "address": "127.0.0.1", "port": 8084}
+  ],
+  "release_blockers": [
+    "Any internal service bound to 0.0.0.0, ::, or a LAN address",
+    "Router port forwarding or UPnP mapping",
+    "Gateway without HTTPS",
+    "Gateway without device authentication"
+  ]
+}
+

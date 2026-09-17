@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc11-integrated",
+  "gate_sha256": "9a193acdc08722a67a07bb785a1d16638763c72ee30aff3e45c9b167a7158f28",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC11_INTEGRATED_HUMAN_PROOF_REHEARSAL_PASS",
+  "timestamp": "2026-08-14T21:37:05.736285+00:00"
+}

@@ -1,0 +1,145 @@
+{
+  "delta": {
+    "affected_paths": [
+      [
+        "identity",
+        "name"
+      ],
+      [
+        "purpose",
+        "behavior"
+      ],
+      [
+        "behavior",
+        "autonomy"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "data",
+        "storage"
+      ],
+      [
+        "output",
+        "format"
+      ],
+      [
+        "constraints",
+        "simulation"
+      ]
+    ],
+    "base_version": 0,
+    "confidence": 0.85,
+    "confirmation_state": "PROPOSED",
+    "creation_id": "creation:open-ended-holdout",
+    "delta_id": "intent:gen:c48dfa4869034c781ff0464c",
+    "operations": [
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "name"
+        ],
+        "value": {
+          "type": "string",
+          "value": "Cartografo de Duvidas"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "purpose",
+          "behavior"
+        ],
+        "value": {
+          "type": "string",
+          "value": "Registra hipoteses concorrentes, marca qual evidencia enfraquece cada uma e monta o proximo experimento sem tratar hipotese como fato"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "autonomy"
+        ],
+        "value": {
+          "type": "boolean",
+          "value": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "input"
+        ],
+        "value": {
+          "type": "string",
+          "value": "Conversa de pesquisa"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "data",
+          "storage"
+        ],
+        "value": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "output",
+          "format"
+        ],
+        "value": {
+          "type": "string",
+          "value": "Texto estruturado"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "constraints",
+          "simulation"
+        ],
+        "value": {
+          "type": "boolean",
+          "value": true
+        }
+      }
+    ],
+    "rationale": "A proposta visa a criação de um novo agente local com funcionalidades específicas para gerenciamento de hipóteses em uma conversa de pesquisa, sem gravar arquivos reais durante a simulação.",
+    "schema": "casulo.intent-delta/1.0",
+    "source_event_ids": [
+      "voice:g5:novel-idea"
+    ]
+  },
+  "requested_capabilities": [
+    "Registra hipoteses concorrentes",
+    "Marca qual evidencia enfraquece cada uma",
+    "Monta o proximo experimento",
+    "Não tratar hipotese como fato"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "212b20a597b379980796c9a2725ad58367222f4f9f2abb562c2599bea2ed36c2",
+    "ended_monotonic_ns": 32174225161900,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "intent:voice:g5:novel-idea",
+    "output_sha256": "c48dfa4869034c781ff0464c3443f605937aae9522aa5a9b18cb03c139c8f21f",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 32113838276700,
+    "stream_events": 426
+  }
+}

@@ -1,0 +1,1 @@
+{"failure_mode":"FAIL_CLOSED","required_invariants":["intent","constraints","units","uncertainty","provenance"],"schema":"casulo.universe-verifiers/1.0","universe_id":"diagnostico"}

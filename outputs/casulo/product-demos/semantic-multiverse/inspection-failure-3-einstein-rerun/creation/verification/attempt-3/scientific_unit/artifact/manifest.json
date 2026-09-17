@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:3d954df4e2d2f8ce2c1db41d94f3828eda06fa8a93a1a468f510dc849156445d",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "bca72244785564942ed3a4454c34ecda7245e06e18dc982287a2ab19a621b46a"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "435c5abb86aeaba697b5cd4cd2435dc6abadd025cf9347158f1c70696fa381b4",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "847fb8d9a3788328e1662138bb20ad29ea049d86b724da8efa88670b64995366",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "scientific",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "a138a62b1201c56a8ad8b6ac92e0c485cc20500bf183775bf791af1da51149f6"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "ScientificEvaluator",
+        "judgements": [],
+        "name": "Evaluate",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "8cc2b976528eee63d1da15edc54e8fff6a0c65642a3560ef569809cd8456fe80"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "ScientificEvaluator",
+      "kind": "condense",
+      "name": "Evaluate",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "9cc99c9d4d08c97482e7e784f9bc9a13409c66d92436f4544b341092ccd11572"
+  }
+}

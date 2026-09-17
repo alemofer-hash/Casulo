@@ -1,0 +1,11 @@
+{
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "exact_resume_command": "py -3.13 -m casulo.livelab.energy_cli run --source hwinfo-csv --csv benchmarks\\\\results\\\\2026-08-02-sprint025-ablation\\\\hwinfo-live-ablation.CSV --comparison flood-tcap-vs-eager --campaign-id 2026-08-07-g5-hwinfo-tcap-vs-eager-02 --tcap release\\\\FloodSurrogate.tcap",
+  "observed_at_utc": "2026-08-07T17:59:01.459050+00:00",
+  "reason_code": "THERMAL_ENVELOPE_INCOMPATIBLE_WITH_REQUIRED_HWINFO_WINDOW",
+  "scientific_consequence": "No TCAP/Eager joules-per-training ratio can be computed from this campaign.",
+  "single_physical_action": "Provide an active cooling configuration that keeps a one-thread PyTorch Eager 120-second validation below 75 C with zero HWiNFO throttling, then rerun the frozen casulo-energy command.",
+  "summary": "The host reached 76 C on the final short-probe attempt and an earlier rejected attempt recorded 81 C with HWiNFO thermal throttling; K was never frozen and no definitive pair started.",
+  "terminal_state": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT"
+}

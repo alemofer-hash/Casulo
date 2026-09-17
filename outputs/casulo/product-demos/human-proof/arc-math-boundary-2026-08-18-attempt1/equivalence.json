@@ -1,0 +1,12 @@
+{
+  "candidate_kernel": "living-memory/sparse-signed-cosine-python-v1",
+  "candidate_output_hash": "b626514b4b71997aa4ef5a7af489b0d60fe888fd20a24a1ee33d09072b3526a0",
+  "cases": 10,
+  "max_absolute_difference": 0.0,
+  "passed": true,
+  "receipt_hash": "71bba98051aadd7b116abbdbd36cf503bc6e7a8a162d874a38ff07d0cc7d81f4",
+  "reference_kernel": "living-memory/dense-signed-cosine-python-v1",
+  "reference_output_hash": "b626514b4b71997aa4ef5a7af489b0d60fe888fd20a24a1ee33d09072b3526a0",
+  "schema": "casulo.math-kernel-equivalence/1.0",
+  "tolerance": 1e-15
+}

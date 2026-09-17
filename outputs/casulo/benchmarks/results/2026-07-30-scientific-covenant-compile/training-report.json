@@ -1,0 +1,417 @@
+{
+  "artifact_id": "sha256:6bfda409e5c0c5a36400d5178902d46ef6ff610d5d3ab4acf4f742ff48dbc3a6",
+  "baseline": {
+    "autograd": true,
+    "avx2": true,
+    "comparison_note": "baseline industrial compilado; custo de compilação registrado separadamente e excluído das amostras aquecidas",
+    "compilation_in_timed_samples": false,
+    "compilation_wall_ns": 10693516000,
+    "compile_backend": "inductor",
+    "dtype": "float64",
+    "fullgraph_forward": true,
+    "mkl": true,
+    "name": "PyTorch compile Inductor CPU",
+    "optimizer": "torch.optim.SGD",
+    "threads": 1,
+    "timing_scope": "steady-state-after-compile",
+    "version": "2.12.1+cpu"
+  },
+  "casulo_t": {
+    "cpu_ns_samples": [
+      15625000,
+      15625000,
+      15625000,
+      31250000,
+      31250000,
+      15625000,
+      46875000,
+      31250000,
+      46875000,
+      31250000,
+      46875000,
+      31250000,
+      46875000,
+      31250000,
+      31250000,
+      46875000,
+      46875000,
+      31250000,
+      31250000,
+      46875000,
+      46875000
+    ],
+    "median_cpu_ns": 31250000,
+    "median_wall_ns": 35718600,
+    "name": "casulo_t_c99_openmp_fused",
+    "samples": 21,
+    "wall_ns_samples": [
+      16627600,
+      19235700,
+      15986000,
+      19188500,
+      18035200,
+      19779900,
+      45489600,
+      35843300,
+      36952500,
+      34753900,
+      35253700,
+      33885400,
+      43319900,
+      41632300,
+      35718600,
+      41297800,
+      47614400,
+      37370400,
+      36953800,
+      34415500,
+      47849300
+    ]
+  },
+  "comparison": {
+    "claim": "6x demonstrado no treinamento declarado",
+    "claim_gate_6x": true,
+    "paired_speedup_ci95": {
+      "confidence": 0.95,
+      "lower": 12.496743035085805,
+      "method": "paired-bootstrap-median",
+      "resamples": 2000,
+      "seed": 20308779,
+      "upper": 15.383164873824505
+    },
+    "paired_speedup_median": 14.255580402716161,
+    "paired_speedup_samples": [
+      14.037912867762035,
+      12.496743035085805,
+      15.464431377455274,
+      12.107642598431353,
+      14.718339691270405,
+      19.153155476013527,
+      11.662439326791178,
+      15.920791333387271,
+      15.383164873824505,
+      16.468983337121877,
+      19.997478278875693,
+      13.909002107102173,
+      15.088049603069258,
+      14.255580402716161,
+      16.32194710878926,
+      14.668933938369598,
+      10.917648862528983,
+      11.28443366942821,
+      12.248983866341215,
+      12.929052316543418,
+      10.232318968093578
+    ],
+    "ratio_of_medians": 13.707404545530899,
+    "scheduler": {
+      "bounded_workers": [
+        1,
+        2,
+        4
+      ],
+      "partitions": "contiguous",
+      "protocol": "casulo-training-scheduler/0.1",
+      "reason": "lote compacto: sincronização custaria mais que a partição",
+      "reduction_order": "worker-index",
+      "requested_workers": "auto",
+      "selected_workers": 1,
+      "work_per_epoch": 65536
+    },
+    "scope": "treinamento completo em memória: forward, backward, SGD e perda final",
+    "workers": 1
+  },
+  "compiler": {
+    "binary_sha256": "61370c6bccd8a50740a4ab3c4f0ed39d5e08c86ff10074892bd00d447dcb37aa",
+    "command": [
+      "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+      "-std=c99",
+      "-O3",
+      "-march=native",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-fopenmp",
+      "-shared",
+      "-Wl,--no-insert-timestamp,--image-base,0x180000000",
+      "-s",
+      "-fopt-info-vec-optimized=C:\\Users\\guimo\\.casulo-native\\training\\86fe83358cf8b0e318709606\\vectorization.txt",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-scientific-covenant-compile\\artifact\\casulo_training.c",
+      "-o",
+      "C:\\Users\\guimo\\.casulo-native\\training\\86fe83358cf8b0e318709606\\casulo_training.dll"
+    ],
+    "compiler": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+    "compiler_version": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+    "library": "C:\\Users\\guimo\\.casulo-native\\training\\86fe83358cf8b0e318709606\\casulo_training.dll",
+    "openmp": true,
+    "source_sha256": "7896c91bb9f5729f1db5025eb79054bec859bc00abe1d2bcfc50cd3a20705092",
+    "vectorization_report": [
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:39:20: optimized: loop vectorized using 32 byte vectors and unroll factor 4",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:33:20: optimized: loop vectorized using 32 byte vectors and unroll factor 1",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:23:15: optimized: basic block part vectorized using 32 byte vectors",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:23:15: optimized: basic block part vectorized using 32 byte vectors",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:23:15: optimized: basic block part vectorized using 32 byte vectors",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:23:15: optimized: basic block part vectorized using 32 byte vectors",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:149:40: optimized: loop vectorized using 32 byte vectors and unroll factor 1",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:120:36: optimized: loop vectorized using 32 byte vectors and unroll factor 1",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:136:62: optimized: basic block part vectorized using 16 byte vectors",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:96:9: optimized: basic block part vectorized using 32 byte vectors",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:96:9: optimized: basic block part vectorized using 32 byte vectors",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\work\\ml-contiguous-w1\\artifact\\casulo_training.c:158:28: optimized: loop vectorized using 32 byte vectors and unroll factor 4"
+    ]
+  },
+  "dataset": {
+    "feature_names": [
+      "precipitation",
+      "soil_moisture",
+      "slope",
+      "impervious_fraction",
+      "upstream_flow",
+      "wind_setup",
+      "pressure_anomaly",
+      "pump_availability"
+    ],
+    "features": 8,
+    "precision": "float64",
+    "protocol": "casulo-hydrology-surrogate/0.1",
+    "records": 1024,
+    "seed": 20260730,
+    "sha256": "2e95b25f761d617490d30082d17a7c191356f8441e0d04555df2fbd2f4b46e94",
+    "target": "normalized_peak_level_proxy",
+    "validation_records": 256
+  },
+  "energy": {
+    "cpu_time_is_energy": false,
+    "electrical_energy_measured": false,
+    "joules": null,
+    "warning": "tempo de CPU não é medição elétrica; joules exigem instrumento"
+  },
+  "environment": {
+    "machine": "AMD64",
+    "physical_scope": "mesmo processo, mesmo dataset em memória, 1 worker",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2",
+    "scheduler": {
+      "bounded_workers": [
+        1,
+        2,
+        4
+      ],
+      "partitions": "contiguous",
+      "protocol": "casulo-training-scheduler/0.1",
+      "reason": "lote compacto: sincronização custaria mais que a partição",
+      "reduction_order": "worker-index",
+      "requested_workers": "auto",
+      "selected_workers": 1,
+      "work_per_epoch": 65536
+    }
+  },
+  "model": {
+    "activation": "relu",
+    "batch": "full",
+    "epochs": 400,
+    "hidden_features": 8,
+    "input_features": 8,
+    "learning_rate": 0.018,
+    "loss": "mse",
+    "module": "casulo.flood_rs",
+    "name": "FloodSurrogate",
+    "optimizer": "sgd",
+    "output_features": 1,
+    "precision": "float64",
+    "seed": 260730,
+    "target_loss": 0.08
+  },
+  "outcomes": {
+    "casulo_t": {
+      "backend": "c99-openmp-fused/0.4",
+      "final_loss": 0.04425897153293169,
+      "initial_loss": 1.440255837603373,
+      "parameter_sha256": "773788be40942a5cd3a1b3ae319e80a51d64015c203cf51d39f2104e26f93972",
+      "prediction_sha256": "dff32ebb3bdc87197ee68cc2e3fe31284845d09c2a2db961e1d7dab05986a96c",
+      "validation_loss": 0.043193674295523274
+    },
+    "initial_parameter_sha256": "2e257ef5da0f2b29af03c7d099b7a9c69cb38e372820db37f87a4ef05f03885e",
+    "pytorch": {
+      "backend": "pytorch-compile-inductor-cpu",
+      "final_loss": 0.044258971532931735,
+      "initial_loss": 1.4402558376033736,
+      "parameter_sha256": "71292c30751bb33cf47a69648c65bc59cb1e7b014a4113717bf8b05348aef1a9",
+      "prediction_sha256": "602847f4583c8fc9c97ada47838532058310175adddf2f6feef260df8118ef1a",
+      "validation_loss": 0.043193674295523274
+    }
+  },
+  "protocol": "casulo-training-benchmark/0.1",
+  "pytorch": {
+    "cpu_ns_samples": [
+      218750000,
+      234375000,
+      250000000,
+      218750000,
+      234375000,
+      328125000,
+      515625000,
+      578125000,
+      546875000,
+      562500000,
+      671875000,
+      468750000,
+      640625000,
+      546875000,
+      593750000,
+      593750000,
+      515625000,
+      421875000,
+      453125000,
+      437500000,
+      468750000
+    ],
+    "median_cpu_ns": 468750000,
+    "median_wall_ns": 489609300,
+    "name": "pytorch_compile_inductor_cpu_full_batch",
+    "samples": 21,
+    "wall_ns_samples": [
+      233416800,
+      240383600,
+      247214400,
+      232327500,
+      265448200,
+      378847500,
+      530519700,
+      570653700,
+      568446400,
+      572361400,
+      704985100,
+      471312100,
+      653612800,
+      593492600,
+      582997100,
+      605794700,
+      519837300,
+      421703800,
+      452646500,
+      444959800,
+      489609300
+    ]
+  },
+  "quality": {
+    "casulo_t_deterministic": true,
+    "casulo_t_final_loss": 0.04425897153293169,
+    "casulo_t_validation_loss": 0.043193674295523274,
+    "casulo_t_validation_r2": 0.9568063257044768,
+    "equivalent_training": true,
+    "final_loss_difference": 4.163336342344337e-17,
+    "initial_loss_difference": 6.661338147750939e-16,
+    "numeric_tolerance": 2e-09,
+    "parameter_max_abs_difference": 2.220446049250313e-16,
+    "prediction_max_abs_difference": 1.3322676295501878e-15,
+    "prediction_rmse_difference": 2.00921121820677e-16,
+    "protocol": "casulo-training-equivalence/0.1",
+    "pytorch_deterministic": true,
+    "pytorch_final_loss": 0.044258971532931735,
+    "pytorch_validation_loss": 0.043193674295523274,
+    "pytorch_validation_r2": 0.9568063257044768,
+    "quality_target": 0.08,
+    "quality_target_reached": true,
+    "same_architecture": true,
+    "same_dataset": true,
+    "same_epochs": true,
+    "same_initial_parameters": true,
+    "same_learning_rate": true,
+    "same_optimizer": true,
+    "validation_loss_difference": 0.0
+  },
+  "scientific": {
+    "bound_design": {
+      "bootstrap_resamples": 2000,
+      "implementation": {
+        "binding": "sha256-source-files",
+        "files": {
+          "scientific.py": "fd72d09e07480c7df1319a14e8030a7e0893b7c3f04d9b908801fd854ae837ed",
+          "training.py": "9e90eac002d5beb1b5a1ff5e3bde6580af6e0ca52b7e58a3344aa0ce66959f2e"
+        }
+      },
+      "model": {
+        "activation": "relu",
+        "batch": "full",
+        "epochs": 400,
+        "hidden_features": 8,
+        "input_features": 8,
+        "learning_rate": 0.018,
+        "loss": "mse",
+        "module": "casulo.flood_rs",
+        "name": "FloodSurrogate",
+        "optimizer": "sgd",
+        "output_features": 1,
+        "precision": "float64",
+        "seed": 260730,
+        "target_loss": 0.08
+      },
+      "records": 1024,
+      "samples": 21,
+      "seed": 20260730,
+      "source_sha256": "b24746c7b622c7760a685d8fdb8a79d8c2fd8ace966e63e1ffc75c31d12c4948",
+      "warmups": 3,
+      "workers": "auto"
+    },
+    "claims_allowed": true,
+    "experiment_id": "sha256:dbc62856d6387de253889548614bc860bf19fbf82f5c82c90b859fd6914824e2",
+    "invariants": [
+      {
+        "id": "HYPOTHESIS_BEFORE_MEASUREMENT",
+        "rule": "hipótese, métricas, baselines e gates são selados antes da medição"
+      },
+      {
+        "id": "QUALITY_BEFORE_SPEED",
+        "rule": "nenhum ganho é válido sem equivalência e qualidade"
+      },
+      {
+        "id": "ALL_REGISTERED_BASELINES_REPORTED",
+        "rule": "baseline obrigatório ausente torna o veredito inconclusivo"
+      },
+      {
+        "id": "RAW_SAMPLES_PRESERVED",
+        "rule": "amostras brutas e ordem pareada são parte da evidência"
+      },
+      {
+        "id": "UNCERTAINTY_REQUIRED",
+        "rule": "mediana sem intervalo de incerteza não libera alegação"
+      },
+      {
+        "id": "NEGATIVE_AND_NULL_PRESERVED",
+        "rule": "resultados negativos, nulos e falhas permanecem publicados"
+      },
+      {
+        "id": "UNMEASURED_IS_NULL",
+        "rule": "grandeza não medida é null e jamais é estimada como observação"
+      },
+      {
+        "id": "NO_CHERRY_PICKING",
+        "rule": "todas as execuções pré-registradas entram no veredito"
+      },
+      {
+        "id": "SCOPE_BOUND_CLAIMS",
+        "rule": "toda alegação nomeia carga, baseline, máquina e horizonte medidos"
+      },
+      {
+        "id": "CORRECTION_CREATES_NEW_VERSION",
+        "rule": "correção lógica gera novo protocolo e não sobrescreve evidência"
+      },
+      {
+        "id": "INDEPENDENT_RECOMPUTATION",
+        "rule": "o juiz recalcula métricas a partir das amostras brutas"
+      },
+      {
+        "id": "JUDGE_CANNOT_OPTIMIZE",
+        "rule": "o juiz classifica evidência e não altera código, dados ou parâmetros"
+      }
+    ],
+    "observed_baseline": "pytorch-compile-inductor-cpu",
+    "preregistration_file_sha256": "1d6bc26b4611d6f52535f42814e5645b1dab6d9dbb05fc47dd8b44f78d6c7cb5",
+    "protocol": "casulo-scientific-covenant/1.0",
+    "required_baselines": [
+      "pytorch-compile-inductor-cpu"
+    ],
+    "status": "PREREGISTERED"
+  }
+}

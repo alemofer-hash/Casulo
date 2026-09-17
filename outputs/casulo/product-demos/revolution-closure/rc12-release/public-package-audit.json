@@ -1,0 +1,8 @@
+{
+  "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\human-proof\\OWNER_VM\\editions\\public\\casulo_public-0.1.0a1-py3-none-any.whl",
+  "content_tree_sha256": "0d42d0b3a164bb2f1370ca49f9b3222fb09641a58b1374cd27342b9fd35756e1",
+  "files_scanned": 8,
+  "forbidden_findings": [],
+  "private_components_absent": true,
+  "schema": "casulo-public-audit/1.0"
+}

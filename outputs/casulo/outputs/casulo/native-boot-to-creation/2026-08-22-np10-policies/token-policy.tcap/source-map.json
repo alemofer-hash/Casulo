@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.native.creation_token_policy.t",
+      "module": "owner.native.creation_token_policy",
+      "sha256": "9f24aaf056ab48756eaa0dff90169e02ed5234812e6e52de80f046f7f82347b2"
+    }
+  ]
+}

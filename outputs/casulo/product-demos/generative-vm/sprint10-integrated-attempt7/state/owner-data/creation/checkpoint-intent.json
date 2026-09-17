@@ -1,0 +1,95 @@
+{
+  "delta": {
+    "affected_paths": [
+      [
+        "identity",
+        "name"
+      ],
+      [
+        "purpose",
+        "transform"
+      ],
+      [
+        "behavior",
+        "preserve"
+      ],
+      [
+        "behavior",
+        "explain"
+      ]
+    ],
+    "base_version": 0,
+    "confidence": 0.85,
+    "confirmation_state": "PROPOSED",
+    "creation_id": "creation:open-ended-holdout",
+    "delta_id": "intent:gen:6ddeb61e8b35ea3cfb65e3a8",
+    "operations": [
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "name"
+        ],
+        "value": {
+          "agent": "B14C"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "purpose",
+          "transform"
+        ],
+        "value": {
+          "contradictory fieldbooks into reversible decisions": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "preserve"
+        ],
+        "value": {
+          "rejected trails": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "explain"
+        ],
+        "value": {
+          "origin of each conclusion": true
+        }
+      }
+    ],
+    "rationale": "A proposta visa alterar a CreationSpec para incluir um novo agente inédito com funcionalidades específicas relacionadas à transformação, preservação e explicação de dados.",
+    "schema": "casulo.intent-delta/1.0",
+    "source_event_ids": [
+      "voice:g5:novel-idea"
+    ]
+  },
+  "requested_capabilities": [
+    "transform contradictory fieldbooks into reversible decisions",
+    "preserve rejected trails",
+    "explain the origin of each conclusion"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "d28655a1ef6c6e61469f279cf4cd794b52c50512b3a15d2c51a175b207aa6dec",
+    "ended_monotonic_ns": 41073138827900,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "intent:voice:g5:novel-idea",
+    "output_sha256": "6ddeb61e8b35ea3cfb65e3a84d091f27af96b949a6313d9afbe3525ab2805477",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 41036658817400,
+    "stream_events": 233
+  }
+}

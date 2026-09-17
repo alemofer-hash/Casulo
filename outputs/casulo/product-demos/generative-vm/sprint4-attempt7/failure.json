@@ -1,0 +1,14 @@
+{
+  "schema": "casulo-generative-t-synthesis-failure/1.0",
+  "attempt": 7,
+  "gate": "GENERATIVE_T_SYNTHESIS_FAIL",
+  "stage": "forge-dependency-contract",
+  "error": "generated dependency set was invalid",
+  "root_cause": "The model had authority over build topology and emitted self or duplicate dependencies",
+  "contract_change": "build dependencies are derived as an acyclic chain from generated unit order",
+  "partial_result_reused": false,
+  "external_ai_api_used": false,
+  "fake_engine_used": false,
+  "scientific_benchmark": false,
+  "preserved": true
+}

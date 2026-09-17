@@ -1,0 +1,131 @@
+{
+  "creation_sha256": "6fe06ead5124492cec61976ad06c5b01e58c885ad0fc6a754032dbf7dc1ac94f",
+  "entry_unit": "creation_unit",
+  "project_id": "t-project:13aea0788cf4ecd0301839fc",
+  "tests": [
+    {
+      "expected_contains": "RegisterHypotheses",
+      "input": "{'behavior': {'autonomy': true}, 'constraints': {'simulation': true}, 'data': {'storage': false}, 'identity': {'name': 'Cartografo de Duvidas'}, 'interface': {'input': 'Conversa de pesquisa', 'output': {'format': 'Texto estruturado'}}, 'purpose': {'behavior': 'Registra hipoteses concorrentes, marca qual evidencia enfraquece cada uma e monta o proximo experimento sem tratar hipotese como fato'}}",
+      "name": "TestCreationUnit",
+      "unit_id": "creation_unit"
+    },
+    {
+      "expected_contains": "LogConversations",
+      "input": "{'behavior': {'autonomy': true}, 'constraints': {'simulation': true}, 'data': {'storage': false}, 'identity': {'name': 'Cartografo de Duvidas'}, 'interface': {'input': 'Conversa de pesquisa', 'output': {'format': 'Texto estruturado'}}, 'purpose': {'behavior': 'Registra hipoteses concorrentes, marca qual evidencia enfraquece cada uma e monta o proximo experimento sem tratar hipotese como fato'}}",
+      "name": "TestTraceUnit",
+      "unit_id": "trace_unit"
+    },
+    {
+      "expected_contains": "TrackEvidence",
+      "input": "{'behavior': {'autonomy': true}, 'constraints': {'simulation': true}, 'data': {'storage': false}, 'identity': {'name': 'Cartografo de Duvidas'}, 'interface': {'input': 'Conversa de pesquisa', 'output': {'format': 'Texto estruturado'}}, 'purpose': {'behavior': 'Registra hipoteses concorrentes, marca qual evidencia enfraquece cada uma e monta o proximo experimento sem tratar hipotese como fato'}}",
+      "name": "TestEffectUnit",
+      "unit_id": "effect_unit"
+    },
+    {
+      "expected_contains": "AccessResearchLogs",
+      "input": "{'behavior': {'autonomy': true}, 'constraints': {'simulation': true}, 'data': {'storage': false}, 'identity': {'name': 'Cartografo de Duvidas'}, 'interface': {'input': 'Conversa de pesquisa', 'output': {'format': 'Texto estruturado'}}, 'purpose': {'behavior': 'Registra hipoteses concorrentes, marca qual evidencia enfraquece cada uma e monta o proximo experimento sem tratar hipotese como fato'}}",
+      "name": "TestCapabilityUnit",
+      "unit_id": "capability_unit"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "ce14eac200c4bdc79a15a1d9882b302909b66b1f83deee5da6c031e63c66ca04",
+    "ended_monotonic_ns": 32341344516200,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5",
+    "output_sha256": "13aea0788cf4ecd0301839fc165192de71c4059022b4adc6254eb2847f637bdf",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 32174227949100,
+    "stream_events": 1056
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield Cartografo_de_Duvidas\n  trace value: Text\n\ncondense RegisterHypotheses in Cartografo_de_Duvidas\n  effects [manifest]\n  emit \"RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence.\"\n",
+      "unit_id": "creation_unit",
+      "watch_paths": [
+        [
+          "creation_unit",
+          "module",
+          "field_name",
+          "operation_name"
+        ],
+        [
+          "creation_unit",
+          "module",
+          "field_name",
+          "emit_literal"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit"
+      ],
+      "source": "language T/1.1\nmodule trace\n\ncapability manifest\n\nfield TextualTrace\n  trace value: Text\n\ncondense LogConversations in TextualTrace\n  effects [manifest]\n  emit \"LogConversations: Record and structure research conversations to track hypothesis development and evidence evaluation.\"\n",
+      "unit_id": "trace_unit",
+      "watch_paths": [
+        [
+          "trace_unit",
+          "module",
+          "field_name",
+          "operation_name"
+        ],
+        [
+          "trace_unit",
+          "module",
+          "field_name",
+          "emit_literal"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "trace_unit"
+      ],
+      "source": "language T/1.1\nmodule effects\n\ncapability manifest\n\nfield ManifestEffects\n  trace value: Text\n\ncondense TrackEvidence in ManifestEffects\n  effects [manifest]\n  emit \"TrackEvidence: Monitor and record evidence that supports or refutes hypotheses in the research process.\"\n",
+      "unit_id": "effect_unit",
+      "watch_paths": [
+        [
+          "effect_unit",
+          "module",
+          "field_name",
+          "operation_name"
+        ],
+        [
+          "effect_unit",
+          "module",
+          "field_name",
+          "emit_literal"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "effect_unit"
+      ],
+      "source": "language T/1.1\nmodule capabilities\n\ncapability manifest\n\nfield MemoryRead\n  trace value: Text\n\ncondense AccessResearchLogs in MemoryRead\n  effects [manifest]\n  emit \"AccessResearchLogs: Retrieve and analyze historical research logs to inform current hypothesis evaluation.\"\n",
+      "unit_id": "capability_unit",
+      "watch_paths": [
+        [
+          "capability_unit",
+          "module",
+          "field_name",
+          "operation_name"
+        ],
+        [
+          "capability_unit",
+          "module",
+          "field_name",
+          "emit_literal"
+        ]
+      ]
+    }
+  ]
+}

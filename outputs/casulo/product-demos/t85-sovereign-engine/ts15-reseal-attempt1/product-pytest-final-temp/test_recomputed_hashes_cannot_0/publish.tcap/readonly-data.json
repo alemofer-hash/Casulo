@@ -1,0 +1,15 @@
+{
+  "states": {
+    "owner.publish": [
+      {
+        "initial": 0,
+        "name": "attempts",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ]
+  }
+}

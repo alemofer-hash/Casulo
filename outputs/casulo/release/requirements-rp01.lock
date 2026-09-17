@@ -1,0 +1,13 @@
+# Casulo SO Research Preview 0.1
+# Exact direct dependencies validated on CPython 3.13.2 / Windows x86-64.
+# This is a reproducibility lock, not a claim that every wheel is portable.
+build==1.5.0
+hypothesis==6.165.2
+numpy==2.3.5
+psutil==7.2.2
+pyperf==2.10.0
+pytest==9.1.1
+pytest-cov==7.1.0
+ruff==0.15.16
+torch==2.12.1
+twine==7.0.0

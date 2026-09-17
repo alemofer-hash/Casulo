@@ -1,0 +1,12 @@
+{"event":"USER_PURPOSE_RECEIVED","intent_sha256":"18c06cdbee3f50b56effe5c991f9ee62d5b29785060df564c1407521308983e5","source":"actual confirmed user goal","step":1}
+{"confirmation":{"event_sha256":"4e1f625d946f1a999bad3c1f15e233d97f1c9ff793d71e3129a023205929c7f5","kind":"EXPLICIT_USER_GOAL_SUBMISSION","model_may_confirm":false},"event":"MATERIAL_GAPS_RESOLVED_AND_HUMAN_CONFIRMED","material_gaps":[],"step":2}
+{"event":"REQUIREMENT_GRAPH_BOUND","graph_sha256":"e5cc261d08a8281088dbf54dd52fcdbd34e206f2f348d88d8c128604a571e86a","hard_requirements":9,"step":3}
+{"event":"TRAINING_AUTHORITY_PLAN_COMPILED_BY_GENERAL_T2","step":4,"tcap_hash":"4c3a538736c68f0343e2050aa939ea3a55b3fd930ce4ffbe2c2341a1d0fd45d0"}
+{"dataset_sha256":"f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802","event":"RUNTIME_DATASET_ACCEPTED_BY_T","receipt_hash":"a04109bf573c248e3e88371300716a85217d197042ee7b20030f8a8c1357f15b","step":5}
+{"event":"TAMPERED_DATASET_REJECTED_BY_T","reason":"T authority unavailable: input T duplicado ou fora do scratch","status":"PASS","step":6}
+{"epochs":400,"event":"FULL_TRAINING_COMPLETED","optimizer_steps":400,"records_visited":409600,"step":7,"work_chain_tip":"162533641d27c8f1e2440fe680e4edb4c5d206558618c1caa89645e61a460d2f"}
+{"baseline_learning_rate":"0.018","baseline_tcap_hash":"4c3a538736c68f0343e2050aa939ea3a55b3fd930ce4ffbe2c2341a1d0fd45d0","event":"T_POLICY_MUTATION_CHANGED_EXECUTION_CONTRACT","mutated_learning_rate":"0.009","mutated_tcap_hash":"78b029487dac7b88271d055ea6241261890d15438c1126db5a2346cd131b9f53","primitive_action":"REFUSE_UNSUPPORTED_POLICY_BEFORE_WORK","step":8}
+{"event":"INCOMPLETE_EXECUTION_REJECTED","reason":"summary receipt file hash mismatch","status":"PASS","step":9}
+{"event":"INDEPENDENT_VERIFIER_ACCEPTED_COMPLETE_WORK","step":10,"verification_sha256":"59b70d020f565b7febd0e47744ab25ff418e2a3fb1504ac2f9bc7a4242607568"}
+{"decision":"PUBLISH","event":"T_JUDGE_AUTHORIZED_PUBLICATION","judge_receipt_hash":"8f033ca12ef6c3873632da490dee0411645f1ca334672bcdaaf216905447786a","step":11}
+{"end_to_end_wall_ratio_D_over_A":0.1695562192953054,"energy":"NOT_MEASURED","event":"COST_COMPARISON_INSPECTED","peak_rss_ratio_D_over_A":0.1320337117991297,"step":12}

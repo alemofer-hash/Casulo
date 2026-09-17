@@ -1,0 +1,1 @@
+{"receipts":[{"producer":"clean-room-process","requirement_id":"standalone","verdict":"PASS"},{"producer":"round-trip-importer","requirement_id":"preserve-input","verdict":"PASS"},{"producer":"simulation-runtime","requirement_id":"deny-effects","verdict":"PASS"}],"schema":"casulo.evidence-set/1.0"}

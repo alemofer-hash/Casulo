@@ -1,0 +1,32 @@
+{
+  "modules": {
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.dataset_identity_integrity": {
+      "decide": []
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.equivalence_acceptance": {
+      "judge": [],
+      "policy": []
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.initialization_bundle": {
+      "decide": []
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.loss_function": {
+      "decide": []
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.numerical_precision": {
+      "decide": []
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.optimizer_state": {
+      "decide": []
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.stopping": {
+      "decide": []
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.update_rule": {
+      "decide": []
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.working_set": {
+      "decide": []
+    }
+  }
+}

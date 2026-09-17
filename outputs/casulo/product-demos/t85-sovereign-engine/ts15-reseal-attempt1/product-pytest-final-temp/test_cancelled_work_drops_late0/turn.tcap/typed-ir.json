@@ -1,0 +1,356 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 3000,
+        "steps": 2048
+      },
+      "capabilities": [],
+      "enums": [
+        {
+          "cases": [
+            "BARGE_IN",
+            "COMMIT_FINAL",
+            "LISTEN",
+            "SHOW_PROGRESS",
+            "IGNORE"
+          ],
+          "name": "TurnDecision"
+        }
+      ],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "event_kind"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "JOB_EVENT"
+                }
+              },
+              "else": [
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "speech_detected"
+                    ],
+                    "root": "input"
+                  },
+                  "else": [
+                    {
+                      "condition": {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "event_kind"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "eq",
+                        "right": {
+                          "op": "const",
+                          "value": "TEXT_FINAL"
+                        }
+                      },
+                      "else": [
+                        {
+                          "op": "return_ok",
+                          "value": {
+                            "op": "const",
+                            "value": "IGNORE"
+                          }
+                        }
+                      ],
+                      "op": "if",
+                      "then": [
+                        {
+                          "condition": {
+                            "op": "path",
+                            "path": [
+                              "transcript_final"
+                            ],
+                            "root": "input"
+                          },
+                          "error": "text_not_final",
+                          "op": "require"
+                        },
+                        {
+                          "condition": {
+                            "op": "path",
+                            "path": [
+                              "transcript_nonempty"
+                            ],
+                            "root": "input"
+                          },
+                          "error": "empty_final",
+                          "op": "require"
+                        },
+                        {
+                          "name": "committed_turns",
+                          "op": "set_state",
+                          "value": {
+                            "args": [
+                              {
+                                "op": "path",
+                                "path": [
+                                  "committed_turns"
+                                ],
+                                "root": "state"
+                              },
+                              {
+                                "op": "const",
+                                "value": 1
+                              }
+                            ],
+                            "name": "add",
+                            "op": "call"
+                          }
+                        },
+                        {
+                          "op": "return_ok",
+                          "value": {
+                            "op": "const",
+                            "value": "COMMIT_FINAL"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "condition": {
+                        "op": "path",
+                        "path": [
+                          "tts_active"
+                        ],
+                        "root": "input"
+                      },
+                      "else": [
+                        {
+                          "condition": {
+                            "op": "path",
+                            "path": [
+                              "transcript_final"
+                            ],
+                            "root": "input"
+                          },
+                          "else": [
+                            {
+                              "op": "return_ok",
+                              "value": {
+                                "op": "const",
+                                "value": "LISTEN"
+                              }
+                            }
+                          ],
+                          "op": "if",
+                          "then": [
+                            {
+                              "condition": {
+                                "op": "path",
+                                "path": [
+                                  "transcript_nonempty"
+                                ],
+                                "root": "input"
+                              },
+                              "error": "empty_final",
+                              "op": "require"
+                            },
+                            {
+                              "name": "committed_turns",
+                              "op": "set_state",
+                              "value": {
+                                "args": [
+                                  {
+                                    "op": "path",
+                                    "path": [
+                                      "committed_turns"
+                                    ],
+                                    "root": "state"
+                                  },
+                                  {
+                                    "op": "const",
+                                    "value": 1
+                                  }
+                                ],
+                                "name": "add",
+                                "op": "call"
+                              }
+                            },
+                            {
+                              "op": "return_ok",
+                              "value": {
+                                "op": "const",
+                                "value": "COMMIT_FINAL"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "op": "if",
+                      "then": [
+                        {
+                          "op": "return_ok",
+                          "value": {
+                            "op": "const",
+                            "value": "BARGE_IN"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "job_event_authenticated"
+                    ],
+                    "root": "input"
+                  },
+                  "error": "progress_event_untrusted",
+                  "op": "require"
+                },
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "SHOW_PROGRESS"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "coordinate",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "TurnInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "owner.guide.turn_coordinator",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "event_kind",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "speech_detected",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "transcript_final",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "transcript_nonempty",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "tts_active",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "job_event_authenticated",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "TurnInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": [
+        {
+          "initial": 0,
+          "name": "committed_turns",
+          "type": {
+            "arguments": [],
+            "bound": null,
+            "name": "Int"
+          }
+        }
+      ]
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

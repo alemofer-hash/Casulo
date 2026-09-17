@@ -1,0 +1,87 @@
+{
+  "affinity": [
+    4
+  ],
+  "baseline": "pytorch-eager-fullstep/1",
+  "campaign_id": "2026-08-07-g5-hwinfo-thermal-recovery-250ms-90c-start70-final4",
+  "candidate": "t-general-ir-tcap/0.1",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "claim_scope": "HWiNFO-reported CPU package energy on bare-metal Windows",
+  "created_at_utc": "2026-08-07T21:51:59.688105+00:00",
+  "epochs": 400,
+  "equivalence_absolute_tolerance": 1e-09,
+  "fallback_250ms": {
+    "median_interval_max_seconds": 0.3,
+    "minimum_coverage": 0.98,
+    "minimum_samples": 60,
+    "minimum_window_seconds": 20,
+    "separate_campaign_required": true
+  },
+  "integration": "trapezoidal_real_timestamps_with_boundary_interpolation",
+  "maximum_gap_factor": 5.0,
+  "minimum_coverage": 0.98,
+  "minimum_samples_per_window": 60,
+  "outlier_removal_after_observation": false,
+  "pairs_required": 21,
+  "physical_watchdog_reader": {
+    "full_csv_reparse_per_guard_poll": false,
+    "guard_poll_seconds": 0.25,
+    "implementation": "bounded-live-tail-v1",
+    "maximum_bytes_per_poll": 262144,
+    "scientific_integration_uses_full_immutable_snapshot": true
+  },
+  "polling_gate": {
+    "median_interval_max_seconds": 0.3,
+    "p95_interval_max_seconds": null,
+    "required_before_any_workload": true
+  },
+  "polling_mode_ms": 250,
+  "precision": "float64",
+  "probe_sequence_seconds": [
+    10,
+    20
+  ],
+  "schedule": "deterministic alternating AB/BA with preregistered replacements",
+  "schema": "casulo-hwinfo-thermal-recovery/1.0",
+  "source_csv": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+  "source_sensor": {
+    "index": 164,
+    "kind": "package_power",
+    "literal_name": "Potência total da CPU [W]",
+    "normalized_name": "potencia total da cpu w",
+    "provenance": "hwinfo_reported_cpu_package",
+    "session_id": 0,
+    "si_scale": 1.0,
+    "unit": "w"
+  },
+  "target_samples_per_window": 70,
+  "target_window_formula": "max(20 seconds, 70 * median_sampling_interval)",
+  "thermal": {
+    "abort_c": 90.0,
+    "experiment_local_exception": {
+      "authorized_at_utc": "2026-08-07T21:51:59.688105+00:00",
+      "default_abort_c_preserved": 74.5,
+      "enabled": true,
+      "maximum_exception_abort_c": 90.0,
+      "scope": "this campaign only"
+    },
+    "hard_claim_limit_c": 90.0,
+    "instantaneous_throttling_allowed": false,
+    "maximum_median_temperature_asymmetry_c": 3.0,
+    "preabort_c": 89.5,
+    "stable_start_seconds": 30,
+    "start_threshold_exception": {
+      "authorized_at_utc": "2026-08-07T21:51:59.688105+00:00",
+      "derived_formula_preserved_for_audit": "min(idle_temperature_median + 3 C, 60 C)",
+      "enabled": true,
+      "override_c": 70.0,
+      "scope": "this campaign only"
+    },
+    "start_threshold_formula": "min(idle_temperature_median + 3 C, 60 C)",
+    "start_threshold_override_c": 70.0
+  },
+  "threads": 1,
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "warmups": 3,
+  "workload": "FloodSurrogate"
+}

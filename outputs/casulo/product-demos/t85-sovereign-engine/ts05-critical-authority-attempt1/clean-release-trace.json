@@ -1,0 +1,18 @@
+{
+  "artifact_root": "clean-owner-critical",
+  "committed": true,
+  "decision_source": "compiled_T_only",
+  "foreign_primitive_calls": [
+    "034a030b11d4ee5654e1d7ed374c5f0497aa11e920277eac6c1246605cd5295e"
+  ],
+  "input_class": "contract_gate_not_human_proof",
+  "receipt_chain": [
+    "c87805cbb8910d0fa8062497c9f5534d272b3b2d2ddba9e49320b0f85e43078e",
+    "3fc605b810640f0a054efe06720f3719420b082e86b1194621a1daa7492419da",
+    "0ac7dbff483209000c7c4164203a85e5016d11ec8c96062c5174e3a1ab12cd0f",
+    "034a030b11d4ee5654e1d7ed374c5f0497aa11e920277eac6c1246605cd5295e"
+  ],
+  "runtime_sha256": "84b70fed87a4644acc525051133aa6a4d0de209bc0aa20a6ade61c3ba5ffd541",
+  "schema": "casulo.t85.clean-critical-trace/1.0",
+  "tcap_hash": "d806a67b8f077c0076fb0257b9df22f4aba70f679af93fa28a4d9bdc50351143"
+}

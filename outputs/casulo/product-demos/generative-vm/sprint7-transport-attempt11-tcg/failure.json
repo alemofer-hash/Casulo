@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 11,
+  "failure": "TRANSIENT_EMPTY_QEMU_IMG_VERSION_OUTPUT",
+  "qemu_img_manual_recheck": "PASS",
+  "preserved": true,
+  "neural_evidence": false
+}

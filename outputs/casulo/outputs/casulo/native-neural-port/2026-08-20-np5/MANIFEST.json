@@ -1,0 +1,105 @@
+{
+  "schema": "casulo-native-neural-port-evidence/0.1",
+  "campaign_id": "2026-08-20-np5",
+  "closed_date": "2026-08-21",
+  "state": "NATIVE_BOUNDED_TOKENIZER_AND_EMBEDDING_VALIDATED_ONE_BLOCK_PENDING",
+  "source_model": {
+    "file_name": "Qwen3-4B-Q4_K_M.gguf",
+    "bytes": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "copied_into_repository": false,
+    "unchanged": true
+  },
+  "oracle": {
+    "file_name": "llama-tokenize.exe",
+    "revision": "llama.cpp b10362",
+    "sha256": "4b63587d19ac1fecabce65aa4e7da41212865cb323804882b9f68ed44a5ec573",
+    "offline": true,
+    "external_api": false
+  },
+  "authoritative_image": {
+    "path": "release/casulo-native-neural-port-np5-attempt-3.img",
+    "bytes": 3211264,
+    "sha256": "ff14b7f54a5a12576f5b3e0d561bff324a7af3dedb8a851a68c7de20edd09301",
+    "manifest_sha256": "de790f581830a68485d90ea4a7171962de395beeb2f091a259c347ecbe1b1e97",
+    "system_pack": "release/casulo-native-neural-port-system-pack-v3.cspk",
+    "system_pack_sha256": "c209aae87feb8549ddadca6ff6b454060fcb99783d1a07ee5849402baaf0ee4d"
+  },
+  "validation": {
+    "python_tests_passed": 21,
+    "rust_tests_passed": 9,
+    "qemu_boots_passed": 3,
+    "qemu_boots_total": 3,
+    "unique_serial_hashes": 1,
+    "missing_model_rejected": true,
+    "truncated_model_rejected": true,
+    "special_token_syntax_rejected": true,
+    "unsupported_script_rejected": true,
+    "invalid_embedding_token_rejected": true,
+    "chat_template_executed": false,
+    "transformer_executed": false,
+    "first_model_derived_output_token": false
+  },
+  "tokenizer": {
+    "model": "gpt2",
+    "pre": "qwen2-bounded-latin/0.1",
+    "vocabulary": 151936,
+    "merges": 151387,
+    "frozen_cases": [
+      {"text": "Casulo", "ids": [49242, 8763]},
+      {"text": "hello world", "ids": [14990, 1879]},
+      {"text": "Olá, Casulo.", "ids": [42719, 1953, 11, 11054, 8763, 13]}
+    ],
+    "scope": "ordinary ASCII and Latin bounded path; no complete Qwen2 compatibility claim"
+  },
+  "embedding": {
+    "tensor": "token_embd.weight",
+    "type": "Q6_K",
+    "token_id": 49242,
+    "decoded_values": 2560,
+    "row_offset": 109374792,
+    "row_bytes": 2100,
+    "raw_sha256": "3ba52dc117730ee5d8533687c629c39fa66b96aa6de98a6361e427ccc956886b",
+    "decoded_f32_sha256": "3007f5b6e6517db829162dfdfe541d1762cb72ce23676453006db25b699b2d7f",
+    "sum_f32_bits": "3f7e76a4"
+  },
+  "preserved_failures": [
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-20-np5/tokenizer-inventory.json",
+      "sha256": "c581ad976fd40ee8e696e5618268dc649e7d50aae6698877f0ee0c548fd4622a",
+      "cause": "CP-1252 console could not encode GPT-2 visible-space character after the UTF-8 artifact was written"
+    },
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-20-np5/qemu-smoke-1boot.json",
+      "sha256": "c758a256558ff929ea8c1d8fcb21cddc10180bdbdf9034c4bcf0ce22fdc03b76",
+      "cause": "builder defaulted to superseded system pack v1; global gate rejected old Q4_K projection with Dot"
+    },
+    {
+      "artifact": "release/casulo-native-neural-port-np5-attempt-2.img",
+      "sha256": "76659e0c84abb648b5f8d57cf65bdf3a607e8ecbfdba8ee443f61d513b812c41",
+      "cause": "built with superseded system pack v1; not authoritative"
+    }
+  ],
+  "evidence": {
+    "tokenizer_inventory_sha256": "4ac2ca17a242f457ec3aa3bb93f9cfa9882a4148cc1210913cb5e1fe0bc2c2c2",
+    "final_smoke_sha256": "9fd4dfd280661dfd124c1abec90c51695920f47231d76c0b7406bf3454fca194",
+    "definitive_three_boots_sha256": "0e8f1d1a131f7f2c0a8c65c33c4ea4f34c58309eb7ab13e3b4298934597a5426"
+  },
+  "source_hashes": {
+    "os/native-model/src/lib.rs": "baffaaee7cf0b430e58b7a21c7bc00568d9c50f37cd5450f5778c15ef1531d25",
+    "os/kernel/src/model_tokenizer_probe.rs": "4b8b0e1afb014e9e01e2178ced9389a3b8b4f616e53169f67153db42b4d6c8d3",
+    "os/kernel/src/main.rs": "0aecb8b761d309ba82789a16fb47da88edc08e717412688a1fc9b1bcdbef358b",
+    "os/kernel/build.rs": "99eca0731c915decb8bc8a179ecace16ad95432658462e4d38e989c0f16fb079",
+    "os/tools/inventory_native_tokenizer.py": "170a27e249474c971836bb53357fc6c53cbc54b176ce1996a1fad2f3930903f2",
+    "os/tools/build_native_neural_port_image.py": "c47039c7ab1eafb6dbd3cc1b02713a32f3accc72e80e3ebbae120be5b7e8f149",
+    "os/tools/run_native_tokenizer_embedding_qemu.py": "0ee4c5cc37544e2484fdef41b0b89c8d11d19bed8da0ff1396a9d358c0d4724a",
+    "tests/product/test_native_tokenizer_embedding_runner.py": "dedb760677123eef4ecd1b51fbe30f311a13e9d6a52c12474a11a47b36b8e154"
+  },
+  "claims_not_authorized": [
+    "complete Qwen2 tokenizer compatibility",
+    "chat-template execution",
+    "Transformer execution",
+    "logits or model-derived output token",
+    "inference performance, compression or energy advantage"
+  ]
+}

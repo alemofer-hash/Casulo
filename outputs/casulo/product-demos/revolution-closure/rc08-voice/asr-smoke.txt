@@ -1,0 +1,14 @@
+{
+  "device_capture": false,
+  "finalize_and_shutdown_ms": 3818.693,
+  "locale": "pt-BR",
+  "passed": true,
+  "process_start_ms": 163.151,
+  "sample_rate": 16000,
+  "samples": 16000,
+  "schema": "casulo-asr-smoke/1.0",
+  "speaker_output": false,
+  "synthetic_silence": true,
+  "threads": 1,
+  "transcript": "[M�SICA DE FUNDO]"
+}

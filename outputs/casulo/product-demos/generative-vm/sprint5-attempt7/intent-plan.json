@@ -1,0 +1,121 @@
+{
+  "affected_paths": [
+    [
+      "identity",
+      "name"
+    ],
+    [
+      "purpose",
+      "behavior"
+    ],
+    [
+      "behavior",
+      "autonomy"
+    ],
+    [
+      "interface",
+      "input"
+    ],
+    [
+      "data",
+      "storage"
+    ],
+    [
+      "output",
+      "format"
+    ],
+    [
+      "constraints",
+      "simulation"
+    ]
+  ],
+  "base_version": 0,
+  "confidence": 0.85,
+  "confirmation_state": "PROPOSED",
+  "creation_id": "creation:open-ended-holdout",
+  "delta_id": "intent:gen:c48dfa4869034c781ff0464c",
+  "operations": [
+    {
+      "action": "set",
+      "path": [
+        "identity",
+        "name"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Cartografo de Duvidas"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "purpose",
+        "behavior"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Registra hipoteses concorrentes, marca qual evidencia enfraquece cada uma e monta o proximo experimento sem tratar hipotese como fato"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "autonomy"
+      ],
+      "value": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "input"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Conversa de pesquisa"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "data",
+        "storage"
+      ],
+      "value": {
+        "type": "boolean",
+        "value": false
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "output",
+        "format"
+      ],
+      "value": {
+        "type": "string",
+        "value": "Texto estruturado"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "constraints",
+        "simulation"
+      ],
+      "value": {
+        "type": "boolean",
+        "value": true
+      }
+    }
+  ],
+  "rationale": "A proposta visa a criação de um novo agente local com funcionalidades específicas para gerenciamento de hipóteses em uma conversa de pesquisa, sem gravar arquivos reais durante a simulação.",
+  "schema": "casulo.intent-delta/1.0",
+  "source_event_ids": [
+    "voice:g5:novel-idea"
+  ]
+}

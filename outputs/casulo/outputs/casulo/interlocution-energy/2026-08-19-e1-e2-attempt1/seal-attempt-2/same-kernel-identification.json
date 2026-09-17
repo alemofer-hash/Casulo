@@ -1,0 +1,39 @@
+{
+  "D_child_seconds": 0.0729951,
+  "D_executable_sha256": "687d61ce424b84c066211f41b45bd8ea5d64270654a8eb1ad564245962a0777b",
+  "D_over_E_end_to_end_ratio_at_K2": 8.011637874902682,
+  "D_total_seconds": 0.8551438,
+  "E_child_seconds": 0.0669681,
+  "E_executable_sha256": "687d61ce424b84c066211f41b45bd8ea5d64270654a8eb1ad564245962a0777b",
+  "E_parent_seconds": 0.1067377,
+  "equivalence": {
+    "cases": [
+      {
+        "case_id": 1,
+        "counters_equal": true,
+        "loss_abs": 0.0,
+        "parameter_max_abs": 0.0,
+        "passed": true,
+        "prediction_max_abs": 0.0
+      },
+      {
+        "case_id": 2,
+        "counters_equal": true,
+        "loss_abs": 0.0,
+        "parameter_max_abs": 0.0,
+        "passed": true,
+        "prediction_max_abs": 0.0
+      }
+    ],
+    "maximum_loss_abs_difference": 0.0,
+    "maximum_parameter_abs_difference": 0.0,
+    "maximum_prediction_abs_difference": 0.0,
+    "status": "PASS",
+    "tolerance": 1e-09
+  },
+  "gate": "PASS_SAME_EXECUTABLE_SAME_INPUTS_SAME_RESULT",
+  "pilot_K": 2,
+  "receipt_boundary": "work receipts are supervisor-derived from completed result bytes; not kernel-internal signatures",
+  "same_result_sha256": true,
+  "schema": "casulo.interlocution-same-kernel-identification/1.0"
+}

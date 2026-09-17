@@ -1,0 +1,9 @@
+{
+  "algorithm": "ssh-ed25519",
+  "label": "DEVELOPMENT_SIGNATURE_NOT_COMMERCIAL_RELEASE",
+  "manifest_sha256": "4fb09152ce67dba8fe05dba830351e628b74b44478fa97df3c44c34d7621560c",
+  "namespace": "casulo-native-boot-to-creation",
+  "schema": "casulo.development-signature/1.0",
+  "signature_sha256": "e597173ce996a2bf58296af9bde4e36cd871070abddc23cfb88203b3ab0fb27d",
+  "verified": true
+}

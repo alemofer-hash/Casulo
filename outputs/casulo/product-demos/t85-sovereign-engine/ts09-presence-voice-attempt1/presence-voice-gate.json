@@ -1,0 +1,58 @@
+{
+  "audio_frontend": {
+    "agc_gain": 1.0,
+    "double_talk": false,
+    "echo_scale": 0.6999724640338981,
+    "input_rms": 2973.0293147310203,
+    "output_rms": 0.0,
+    "residual_rms": 0.3705692152066547,
+    "samples": 320
+  },
+  "barge_ins": 120,
+  "cancelled_formant_frames": 11,
+  "checks": {
+    "aec_reference_reduces_echo": true,
+    "all_finals_committed_by_t": true,
+    "asr_finals": true,
+    "asr_partials": true,
+    "barge_in_every_turn": true,
+    "cancel_late_result_drop": true,
+    "physical_devices_opened": false,
+    "presence_lane_nonblocking": true,
+    "progress_only_authenticated": true,
+    "raw_pcm_persisted": false,
+    "receipts_present": true,
+    "synthetic_duration_60_minutes": true,
+    "text_fallback": true,
+    "tts_cancelled": true,
+    "tts_streaming_frames": true
+  },
+  "claim_boundary": "synthetic 60-minute logical gate; no microphone, speaker or human chemistry claim",
+  "finals": 120,
+  "formant_frames": 152,
+  "gate": "TS9_PRESENCE_VOICE_SYNTHETIC_PASS",
+  "job_statuses": [
+    "STARTED",
+    "COMPLETED",
+    "STARTED",
+    "CANCELLED"
+  ],
+  "locks": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network": "OFF",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb": "PROHIBITED"
+  },
+  "logical_duration_seconds": 3600.72,
+  "max_cancel_latency_ns": 1000000,
+  "partials": 120,
+  "physical_gate": "PENDING_GUILHERME_EXPLICIT_CONSENT",
+  "schema": "casulo.t85-presence-voice-gate/1.0",
+  "t_receipts": 384,
+  "text_fallback_commits": 20,
+  "turns": 120,
+  "voice_quality": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "wall_probe_seconds": 12.624092800004291,
+  "work_result_sha256": "c58ae98b9b24c27b523b550a5a29d85d75c3a89bb736e1217ececf562952a564"
+}

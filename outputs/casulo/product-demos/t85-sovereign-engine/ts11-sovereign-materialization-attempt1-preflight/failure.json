@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.t85-development-failure/1.0",
+  "gate": "TS11_PREFLIGHT_FAIL",
+  "stage": "SIMULATION_FIXTURE",
+  "cause": "test fixture supplied zero simulation steps; the existing contract correctly requires 1..128 steps",
+  "affected_tests": 3,
+  "package_published": false,
+  "preserved": true
+}

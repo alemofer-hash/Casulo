@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.t85-development-failure/1.0",
+  "gate": "TS11_FAIL",
+  "stage": "V1_IMPORT_TO_V2_EDIT",
+  "cause": "copy.deepcopy cannot pickle CreationSpec mappingproxy; use canonical JSON materialization for editable copy",
+  "v1_was_published": true,
+  "v2_was_published": false,
+  "preserved": true
+}

@@ -1,0 +1,63 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.p12
+*.key
+secrets/
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*_venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Rust build products
+target/
+target-msvc/
+
+# Node/frontend dependencies and generated output
+node_modules/
+.next/
+dist/
+coverage/
+
+# General generated output and caches
+build/
+out/
+tmp/
+temp/
+.tmp/
+.cache/
+*.log
+
+# Local models, generated indexes, and ephemeral runtime data
+models/**/*.gguf
+models/**/*.bin
+runtime-data/
+indexes/
+audio-temp/
+
+# Explicit multi-gigabyte generated/release artifacts found at Stage Zero
+/outputs/casulo/release/casulo-native-neural-port-np11.img
+/outputs/casulo/release/casulo-native-physical-creation-system-pack-v1.cspk
+/outputs/casulo/release/CASULO_UEFI_COEXISTENCE_BUNDLE_2026-08-22/ramdisk
+
+# OS/editor
+Thumbs.db
+.DS_Store
+*.swp
+
+# Stage Zero evidence is intentionally tracked.
+# Lockfiles, sources, tests, documentation, and small fixtures are intentionally tracked.
+
+# Additional generated test workspaces discovered during staging
+.pytest-*/
+.hypothesis/
+.tmp-*/

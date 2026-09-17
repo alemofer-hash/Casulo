@@ -1,0 +1,96 @@
+{
+  "modules": {
+    "owner.materialization.lifecycle": {
+      "enums": [
+        {
+          "cases": [
+            "PREPARED",
+            "SEALED",
+            "PUBLISH"
+          ],
+          "name": "MaterializationDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "action",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "human_approved",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "simulation_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "effects_safe",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "candidate_hash",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "candidate_hash_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "atomic_ready",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "MaterializationInput"
+        }
+      ],
+      "version": 2
+    }
+  }
+}

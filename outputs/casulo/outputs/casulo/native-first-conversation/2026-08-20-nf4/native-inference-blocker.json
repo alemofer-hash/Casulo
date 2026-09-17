@@ -1,0 +1,73 @@
+{
+  "adopted_runtime": {
+    "format": "PE_COFF_WINDOWS",
+    "license": "MIT",
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\runtime\\llama-server.exe",
+    "source_files_in_cache": []
+  },
+  "adoption_present": true,
+  "blockers": [
+    {
+      "causal": true,
+      "id": "NATIVE_RUNTIME_TARGET",
+      "observed": "PE_COFF_WINDOWS",
+      "required": "freestanding x86_64 Casulo ABI object/library"
+    },
+    {
+      "causal": true,
+      "id": "NATIVE_RUNTIME_SOURCE",
+      "observed_files": [],
+      "required": "audited llama.cpp/ggml source or a first-party compatible decoder implementation"
+    },
+    {
+      "causal": true,
+      "id": "MODEL_ADDRESS_SPACE",
+      "observed": "single small TCAP ramdisk; no GGUF mapping into ring 3",
+      "required": "content-addressed model pack, bounded mapping and read-only tensor views"
+    },
+    {
+      "causal": true,
+      "id": "MEMORY_ENVELOPE",
+      "model_bytes": 2497280256,
+      "observed_kernel_heap_expression": "2 * 1024 * 1024",
+      "observed_qemu_ram": "256M",
+      "required": "model plus KV/graph workspace admitted before execution"
+    },
+    {
+      "causal": true,
+      "id": "MODEL_GRAPH_RUNTIME",
+      "observed": "MODEL_ASSERT + bounded DOT_I16X4 + TOKEN_EMIT only",
+      "required": "GGUF metadata/tensor loader, Q4_K kernels, RMSNorm, RoPE, attention, FFN, KV cache, tokenizer and sampler"
+    },
+    {
+      "causal": true,
+      "id": "FREESTANDING_SERVICES",
+      "observed": "no libc/libc++, file/mmap API, production threadpool or AVX process-state contract",
+      "required": "narrow equivalents or runtime adaptation behind manifest-listed primitives"
+    }
+  ],
+  "cache": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362",
+  "captured_at": "2026-08-20T23:22:15.228304+00:00",
+  "classification_gate_passed": true,
+  "external_api_used": false,
+  "first_model_derived_token": false,
+  "forbidden_interpretation": "The NF3 token event is not a neural token and Windows llama.cpp cannot be executed as Casulo Native evidence.",
+  "model": {
+    "bytes": 2497280256,
+    "expected_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "hash_valid": true,
+    "license": "Apache-2.0",
+    "present": true,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "network_used": false,
+  "next_engineering_action": "adopt or implement an audited freestanding GGUF/Qwen decoder behind the NF3 ABI, then raise the bounded memory envelope before attaching model bytes read-only",
+  "nf3": {
+    "abi": "ring3-capability-primitives/0.1",
+    "model_bytes_consumed": 0,
+    "neural_inference_executed": false
+  },
+  "nf4_state": "BLOCKED_NATIVE_QWEN_RUNTIME_PORT",
+  "physical_device_written": false,
+  "schema": "casulo-native-inference-doctor/0.1"
+}

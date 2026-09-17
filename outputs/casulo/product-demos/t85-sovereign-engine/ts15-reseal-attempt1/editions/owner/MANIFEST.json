@@ -1,0 +1,25 @@
+{
+  "engine_boundary": "owner-direct-first-party",
+  "package": "casulo-owner",
+  "production_eligible": false,
+  "profile": "owner",
+  "public_audit": null,
+  "redistributable": false,
+  "release_state": "PRODUCT_ALPHA_LOCAL",
+  "sbom": {
+    "file": "SBOM.spdx.json",
+    "sha256": "1fe2d17cd6071c0c2fff7ce69025d78088d16c9e8887955a1a3e39c1f4eba2ab"
+  },
+  "schema": "casulo-product-edition-release/1.0",
+  "signing": {
+    "algorithm": "ssh-ed25519",
+    "development_key": true,
+    "identity": "casulo-owner-dev",
+    "namespace": "casulo-release",
+    "public_key_fingerprint": "SHA256:WV2iEwZ00CJO+pA3CDyw8EWCYLp3Y8r7qvGHRKIOpfs"
+  },
+  "wheel": {
+    "file": "casulo_owner-0.1.0a1-py3-none-any.whl",
+    "sha256": "43c3eacfc3f6f0ae4587b1a01e2b855cd87d002f5859bd016bc1b6aca8554793"
+  }
+}

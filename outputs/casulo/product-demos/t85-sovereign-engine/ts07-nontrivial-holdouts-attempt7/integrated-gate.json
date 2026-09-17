@@ -1,0 +1,25 @@
+{
+  "agent_ids": [
+    "data_validator_01",
+    "t_interactive_01",
+    "t_mass_balance"
+  ],
+  "checks": {
+    "hosted": true,
+    "native": true,
+    "no_external_api": true,
+    "no_fake_template_replay": true,
+    "success_events_canonically_bound": true,
+    "three_agents": true
+  },
+  "gate": "TS7_T_NONTRIVIAL_HOLDOUTS_PASS",
+  "holdout_case_ids": [
+    "data-01",
+    "interactive-01",
+    "technical-02"
+  ],
+  "hosted_receipts": 33,
+  "human_proof": "NOT_EXECUTED",
+  "native_cases": 3,
+  "schema": "casulo.t85.ts7-integrated/1.0"
+}

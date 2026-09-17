@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "stage": "CORRECTED_DIALOGUE_AFTER_MIDSTREAM_CANCEL",
+  "error": "empty_response_from_reused_cancelled_runtime_slot",
+  "creation_started": false,
+  "root_cause": "A conexão cancelada foi fechada, mas a correção reutilizou imediatamente o mesmo processo/slot local.",
+  "correction": "Reiniciar o LocalModelRuntime entre cancelamento e operação corrigida, preservando contexto e trace externos.",
+  "preserved": true
+}

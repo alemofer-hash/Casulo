@@ -1,0 +1,26 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/owner.critical.capabilities.t",
+      "module": "owner.critical.capabilities",
+      "sha256": "cf56f4552d9865cceeae149a048901e1ff98571c0ab07bb112cacf9486f3c72e"
+    },
+    {
+      "file": "sources/owner.critical.fulfillment.t",
+      "module": "owner.critical.fulfillment",
+      "sha256": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd"
+    },
+    {
+      "file": "sources/owner.critical.intent.t",
+      "module": "owner.critical.intent",
+      "sha256": "41e1cf81f635e3387275ed9ed0996f3141144119c6d0d327009a93088a6395bc"
+    },
+    {
+      "file": "sources/owner.critical.publish.t",
+      "module": "owner.critical.publish",
+      "sha256": "c6fa0d20d895c977ce9469ff9d4d440c0df2eccc2e5bec91b3a03fca363e42d7"
+    }
+  ]
+}

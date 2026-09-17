@@ -1,0 +1,12 @@
+﻿{
+    "paths":  [
+                  "src",
+                  "private/casulo-owner/src",
+                  "editions/casulo-public",
+                  "services/casulo-cloud-standby",
+                  "tools"
+              ],
+    "timestamp":  "2026-08-14T21:46:07.7005921Z",
+    "schema":  "casulo.compileall/1.0",
+    "exit_code":  0
+}

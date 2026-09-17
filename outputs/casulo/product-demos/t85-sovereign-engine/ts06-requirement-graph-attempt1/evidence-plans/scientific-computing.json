@@ -1,0 +1,87 @@
+{
+  "expected_evidence_tokens": [
+    "c2cad90e33f63e471fbcf4ac5972fc7aab1201bf1138d852b7795d2e2bdd07ff",
+    "a2991616e0e37b603ddf11ab6dd1cee80069217fe5e126024fbcdb5d112a8752",
+    "a4da4f7393d98ae8dda56f8d41e7c4b5027a467b4a321e737f174e1d9e152243",
+    "bd4b6d042cc36dbf6bf6bc0e49cd61cbf8243a0e248345d920c334c9ead0d40b",
+    "e01ea273f3c6a590684603ae0f3954883cbe682446083aeb9edcc50e02ec2ce2",
+    "0468009ebf716f5eb3a894d2ed1c7d3974085e62d0fd138899b82cc7a23b182a",
+    "3f5e455e5bee803cd179d17871efa80c45900dc4a3485166235219718f5989d6"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "scientific-computing:inputs",
+      "scope": "scientific-computing",
+      "source_event_ids": [
+        "human:scientific-computing"
+      ],
+      "verifier_ids": [
+        "domain:inputs"
+      ]
+    },
+    {
+      "requirement_id": "scientific-computing:connection",
+      "scope": "scientific-computing",
+      "source_event_ids": [
+        "human:scientific-computing"
+      ],
+      "verifier_ids": [
+        "domain:connection"
+      ]
+    },
+    {
+      "requirement_id": "scientific-computing:ricci",
+      "scope": "scientific-computing",
+      "source_event_ids": [
+        "human:scientific-computing"
+      ],
+      "verifier_ids": [
+        "domain:ricci"
+      ]
+    },
+    {
+      "requirement_id": "scientific-computing:einstein",
+      "scope": "scientific-computing",
+      "source_event_ids": [
+        "human:scientific-computing"
+      ],
+      "verifier_ids": [
+        "domain:einstein"
+      ]
+    },
+    {
+      "requirement_id": "scientific-computing:residual",
+      "scope": "scientific-computing",
+      "source_event_ids": [
+        "human:scientific-computing"
+      ],
+      "verifier_ids": [
+        "domain:residual"
+      ]
+    },
+    {
+      "requirement_id": "scientific-computing:scope",
+      "scope": "scientific-computing",
+      "source_event_ids": [
+        "human:scientific-computing"
+      ],
+      "verifier_ids": [
+        "domain:scope"
+      ]
+    },
+    {
+      "requirement_id": "scientific-computing:global-denial",
+      "scope": "scientific-computing",
+      "source_event_ids": [
+        "human:scientific-computing"
+      ],
+      "verifier_ids": [
+        "domain:global-denial"
+      ]
+    }
+  ],
+  "project_id": "scientific-computing",
+  "schema": "casulo.evidence-plan/1.0"
+}

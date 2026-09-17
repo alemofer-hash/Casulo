@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.multiverse.lifecycle_policy"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "f0ac252849ea3dc2604edae8a6bcd8908dbe50356696d0f7563ae9355d3d3062"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "9068e64196324065977a8d2125b70a94300e3c31bbcbf5ed65831cc593e8ff9e"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "47cb3d650ad2ebdd98b8de8a25aecc31c5cd3818c445dac2a95c991e02946f1a"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "341ea063f04844289eaac37f167e6f6f6af02986ef5bc541a175c1e33c35e51a"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "52aca88984f12f4d495cd8ad0eb5e720707acc1b42b497260dedace6fd4edd8e"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "5c5b392f249ddda342a827a0f1f8fb3646c6f532632c978a76eecba7ae4283d2"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "73a76dd84dda83b028383ee26920e4c8bee44f72789d005db56159e3bc07e6e6"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "52751b2cfe99e1d818ce572764ce2e23b4da99f41033182549e781726fcb9981"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "2eb3d3c99dd471affc2d6bed5920649dce6e398ef39e51cedde04951e17b4332"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "26e9c4e7a1d449f465943d92a3e30ca85667cb90d25b660a708c90d8bf2f9d8f"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "cdbfc9b70611855085a431fe50f5847e905f995e9ab62ed08a675c1370337142"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.multiverse.lifecycle_policy.t",
+      "module": "owner.multiverse.lifecycle_policy",
+      "sha256": "b3f8242262906af9875f2213febe822c31f8694b83c9c261063b1d40e94a1faf"
+    }
+  ],
+  "tcap_hash": "ece17cd3e727744c4f96f12816cf380d65af2da98a25bc90e4a076e0f007da95"
+}

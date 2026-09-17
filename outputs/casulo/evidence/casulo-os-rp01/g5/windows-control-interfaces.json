@@ -1,0 +1,24 @@
+{
+  "controls": [
+    {
+      "control": "uclamp",
+      "evidence": {},
+      "reason_code": "unsupported_os:windows",
+      "status": "unavailable"
+    },
+    {
+      "control": "perf",
+      "evidence": {},
+      "reason_code": "unsupported_os:windows",
+      "status": "unavailable"
+    },
+    {
+      "control": "sched_ext",
+      "evidence": {},
+      "reason_code": "unsupported_os:windows",
+      "status": "unavailable"
+    }
+  ],
+  "mutation_performed": false,
+  "schema": "casulo-livelab-control-probe/1"
+}

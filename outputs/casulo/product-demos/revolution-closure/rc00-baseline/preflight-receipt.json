@@ -1,0 +1,8 @@
+{
+  "baseline_manifest_sha256": "9a9916ca224d17484ee460577ede346d28558ed941c4447f36d190c24890f398",
+  "evidence_root": "product-demos/revolution-closure/rc00-baseline",
+  "gate_sha256": "fb71cd19af5db8b392d9f0b612f3a10f487e9973bf61a0960be3c7f4b1b8a43a",
+  "schema": "casulo.revolution-closure/1.0/preflight-receipt",
+  "state": "BLOCKED_BASELINE_DIVERGENCE",
+  "timestamp": "2026-08-14T19:37:12.765307+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "bytes": 2162688,
+  "claim": "bounded natural-language request is decoded by the adopted model, judged token-by-token by T, mapped to a content-addressed compiled T artifact, simulated, materialized and projected in Native",
+  "first_model_derived_token": true,
+  "full_model_mapped": false,
+  "full_model_resident_after_admission": true,
+  "host_bridge": false,
+  "image": "release/casulo-native-neural-port-np10-attempt-3.img",
+  "kernel_float_profile": "sse2-hardware-f32",
+  "network": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-neural-port-image/0.1",
+  "sha256": "e6f3d33f5f4cad7d9462b9d52af62106ce827b499dea1f11abd8885b66daff72",
+  "stage": "NP10_NATIVE_BOOT_TO_CREATION",
+  "system_pack": "release/casulo-native-neural-port-system-pack-np10.cspk",
+  "system_pack_sha256": "4f5e9fb34de09a3fe59b49c233802312a1c2e4d86ec7d00ca2d1dc1638f7eeb1",
+  "target": "x86_64-casulo-native",
+  "target_spec": "os/targets/x86_64-casulo-native.json",
+  "target_spec_sha256": "b52bfc3c1fca088b4a5484f4a4f5d5b459cdcab77febc5f9dc3cddf4d3818638"
+}

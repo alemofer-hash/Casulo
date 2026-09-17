@@ -1,0 +1,157 @@
+{
+  "artifact": {
+    "abi": "casulo-learn-context-sysv64/0.1",
+    "content_sha256": "2c96fbfdb422a90dc58d98e6a4d213b4ca7a2a3015c9203fe39ea8d68aed9f88",
+    "entry_offset": 0,
+    "file": "FloodSurrogate.tcap",
+    "sha256": "a050b96fc694867f80b55ec4eb748a0c0578eb48de3e7b789e84a7394748506a",
+    "target": "x86_64-casulo-none"
+  },
+  "canary_scope": {
+    "epochs": 400,
+    "expected_final_loss": 0.007241680427492191,
+    "expected_initial_loss": 0.5514087300000001,
+    "float_loop_order": "casulo-learn-f64-loop-order/1",
+    "historical_performance_record_count": 1024,
+    "not_a_performance_campaign": true,
+    "records": 8,
+    "role": "bounded-correctness-canary",
+    "segment": "canary",
+    "segment_bytes": 1952,
+    "segment_sha256": "56faf993c90c58a68a35ee2469567b756bb10dcde129c391b27eb8282b117fc9",
+    "target_loss": 0.08,
+    "tolerance": 1e-09
+  },
+  "claims": {
+    "host_canary_oracle_equivalence_proven": true,
+    "kernel_execution_proven": false,
+    "native_payload_built": true,
+    "numerical_equivalence_proven_on_kernel": false,
+    "performance_measured": false,
+    "raw_payload_executed_at_dynamic_host_address": true,
+    "tcap_integrity_validated": true
+  },
+  "compiler": {
+    "commit": "test-commit",
+    "name": "casulo-t-general-ir",
+    "underlying_toolchain": {
+      "entry_virtual_address": "0x1000",
+      "float_execution": "sse2-hard-float-memory-context",
+      "llvm_version": "22.1.0",
+      "position_independent_audit": {
+        "forbidden_linkage_sections": "absent",
+        "got_plt_references": "absent",
+        "indirect_control_transfers": "absent",
+        "low_page_references": "absent",
+        "protocol": "casulo-raw-aot-self-contained-audit/1.0",
+        "status": "PASS",
+        "undefined_symbols": "absent"
+      },
+      "raw_entry_offset": 0,
+      "relocations": "none",
+      "runtime_position_independent_audit": {
+        "abi": "casulo-learn-context-sysv64/0.1",
+        "epochs": 400,
+        "loaded_at_link_address": false,
+        "protocol": "casulo-raw-aot-runtime-audit/1.0",
+        "quality_target_met": true,
+        "records": 8,
+        "status": "PASS",
+        "tolerance": 1e-09
+      },
+      "rustc_commit": "905b9269674ced4b5239f485609a3bf0ab02d01b",
+      "rustc_release": "1.95.0-nightly",
+      "target": "x86_64-unknown-none"
+    },
+    "version": "0.1+rustc-1.95.0-nightly"
+  },
+  "energy": {
+    "joules": null,
+    "status": "unavailable"
+  },
+  "equivalence": {
+    "general_ir_graph_conformance": "PASS",
+    "host_numerical_canary": {
+      "epochs": 400,
+      "final_loss": 0.007241680427492191,
+      "initial_loss": 0.5514087300000001,
+      "max_abs_parameter_difference": 0.0,
+      "protocol": "casulo-learn-numerical-canary/1.0",
+      "records": 8,
+      "status": "PASS",
+      "target_loss": 0.08,
+      "tolerance": 1e-09
+    },
+    "legacy_oracle": {
+      "differences": {},
+      "passed": true,
+      "protocol": "casulo-learn-legacy-oracle/0.1",
+      "role": "equivalence-comparator-only"
+    },
+    "native_kernel_execution": "NOT_RUN",
+    "quality_gate": "BLOCKED_KERNEL_EXECUTION",
+    "raw_host_runtime_audit": {
+      "abi": "casulo-learn-context-sysv64/0.1",
+      "epochs": 400,
+      "loaded_at_link_address": false,
+      "protocol": "casulo-raw-aot-runtime-audit/1.0",
+      "quality_target_met": true,
+      "records": 8,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    "reason": "host builder cannot substitute for isolated Casulo OS execution"
+  },
+  "negative_validation": {
+    "legacy_divergence_policy": "REJECT_BUILD",
+    "single_byte_segment_corruption": "REJECTED",
+    "unsupported_ir_or_graph_policy": "REJECT_BUILD"
+  },
+  "pipeline": {
+    "canary_sha256": "56faf993c90c58a68a35ee2469567b756bb10dcde129c391b27eb8282b117fc9",
+    "graph_sha256": "67ee0d7e20c8c955f2c129f1193d020b4aac0953fd0c864ff9f25d0d728a2ec3",
+    "ir_sha256": "4162fc673c71e1b777ec57f7924ed756f5e9a9771ccb5624d38d8cd2cf6e659f",
+    "native_binary_sha256": "7e2e81d4816a033df6e86714b883fbf41928b518fadb8a8153eca4d06935d198",
+    "native_source_sha256": "dc1489a05a7bfd0174e8df858891bb5d7a69ca8c4e228024edea5b78d47bcfb8",
+    "path": [
+      "T",
+      "AST",
+      "Larva analysis",
+      "Crisalida IR",
+      "Metamorfose graph",
+      "native plan",
+      "Rust AOT",
+      "TCAP"
+    ],
+    "plan_sha256": "7ab89bbfff615baa8984f33d580cc79d62503f1401e9fac6eb4d80246b780b91"
+  },
+  "protocol": "casulo-learn-tcap-evidence/0.1",
+  "resource_contract": {
+    "arena_bytes": 656,
+    "deadline_ns": null,
+    "deterministic": true,
+    "energy_budget_joules": null,
+    "max_threads": 1,
+    "memory_limit_bytes": 299008,
+    "numerical_precision": "float64",
+    "permissions": [
+      "memory",
+      "console"
+    ],
+    "priority": 0,
+    "protocol": "casulo-resource-contract/1",
+    "quality_definition": {
+      "loss": "mse",
+      "max_abs_parameter_difference": 1e-09,
+      "max_prediction_rmse_difference": 1e-09,
+      "protocol": "casulo-learn-equivalence/0.1",
+      "target_loss": 0.08
+    },
+    "residual_routing": {
+      "audit": "ATTRACTOR_AUDIT",
+      "invalid": "QUARANTINE",
+      "retry": "ATTRACTOR_RETRY"
+    },
+    "semantic_class": "FLOW"
+  }
+}

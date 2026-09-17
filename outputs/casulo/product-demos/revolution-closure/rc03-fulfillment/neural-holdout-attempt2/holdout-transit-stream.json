@@ -1,0 +1,134 @@
+{
+  "accepted": true,
+  "attempts": [
+    {
+      "attempt": 0,
+      "candidate": {
+        "claims": [
+          "original-preserved: All event data is preserved in its original form alongside the transformed data.",
+          "bounded-memory: The system operates within a memory limit of 1 GB to ensure resource constraints are not exceeded.",
+          "event-time: Events are processed in the order they occur, maintaining temporal consistency.",
+          "explainable-transform: Every transformation applied to event data is accompanied by an explanation that is stored and accessible."
+        ],
+        "stream": {
+          "explain_transform": true,
+          "memory_limit_bytes": 1073741824,
+          "pipeline": [
+            "input",
+            "anomaly_detection",
+            "data_preservation",
+            "explanation_generation"
+          ],
+          "preserve_original": true,
+          "time_semantics": "event-time"
+        }
+      },
+      "fulfillment": {
+        "accepted": true,
+        "candidate_sha256": "21bb8ca553433bdc5590ecfdb6639c58e876f78cf2ad9005a15e76a5af7aa7f0",
+        "coverage": 1.0,
+        "diagnostics": [],
+        "evidence": [
+          {
+            "artifact_sha256": "21bb8ca553433bdc5590ecfdb6639c58e876f78cf2ad9005a15e76a5af7aa7f0",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "21bb8ca553433bdc5590ecfdb6639c58e876f78cf2ad9005a15e76a5af7aa7f0"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:stream-processing@1.0",
+            "receipt_id": "evidence:21bb8ca553433bdc:original",
+            "requirement_id": "stream-processing:original",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:original"
+          },
+          {
+            "artifact_sha256": "21bb8ca553433bdc5590ecfdb6639c58e876f78cf2ad9005a15e76a5af7aa7f0",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "21bb8ca553433bdc5590ecfdb6639c58e876f78cf2ad9005a15e76a5af7aa7f0"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:stream-processing@1.0",
+            "receipt_id": "evidence:21bb8ca553433bdc:memory",
+            "requirement_id": "stream-processing:memory",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:memory"
+          },
+          {
+            "artifact_sha256": "21bb8ca553433bdc5590ecfdb6639c58e876f78cf2ad9005a15e76a5af7aa7f0",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "21bb8ca553433bdc5590ecfdb6639c58e876f78cf2ad9005a15e76a5af7aa7f0"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:stream-processing@1.0",
+            "receipt_id": "evidence:21bb8ca553433bdc:event-time",
+            "requirement_id": "stream-processing:event-time",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:event-time"
+          },
+          {
+            "artifact_sha256": "21bb8ca553433bdc5590ecfdb6639c58e876f78cf2ad9005a15e76a5af7aa7f0",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "21bb8ca553433bdc5590ecfdb6639c58e876f78cf2ad9005a15e76a5af7aa7f0"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:stream-processing@1.0",
+            "receipt_id": "evidence:21bb8ca553433bdc:explain",
+            "requirement_id": "stream-processing:explain",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:explain"
+          }
+        ],
+        "hard_failures": [],
+        "pack_id": "stream-processing",
+        "schema": "casulo.fulfillment-result/1.0",
+        "spec_gap": 0.0,
+        "unknown": [],
+        "unsupported_claims": [],
+        "verdicts": {
+          "stream-processing:event-time": "PASS",
+          "stream-processing:explain": "PASS",
+          "stream-processing:memory": "PASS",
+          "stream-processing:original": "PASS"
+        }
+      },
+      "raw_sha256": "5f6b2c76fb1e1e42049177892b4f0370953ceb2d3f9cb2590eb1cc41c9f0265d",
+      "structured": true,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "4e0dcc8faf7c44220d74c07a4b7773074a6530e960a072248ad56aa466678878",
+        "ended_monotonic_ns": 12391948370800,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-transit-stream:attempt:0",
+        "output_sha256": "5f6b2c76fb1e1e42049177892b4f0370953ceb2d3f9cb2590eb1cc41c9f0265d",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12363588907800,
+        "stream_events": 178
+      }
+    }
+  ],
+  "domain": "stream-processing",
+  "family_id": "holdout-transit-stream",
+  "pack_id": "stream-processing",
+  "request_sha256": "6820bdbe5a6cabc373e9d34eb4a48104b32dc73b976133f6e64562183c327434"
+}

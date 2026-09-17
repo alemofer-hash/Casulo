@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "owner.materialization.lifecycle": [
+      "manifest"
+    ]
+  }
+}

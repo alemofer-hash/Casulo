@@ -1,0 +1,9 @@
+{
+  "properties": [
+    "decoder_required",
+    "per_token_exact_logits_identity",
+    "receipt_chain_required",
+    "late_publication_denied",
+    "cancellation_fail_closed"
+  ]
+}

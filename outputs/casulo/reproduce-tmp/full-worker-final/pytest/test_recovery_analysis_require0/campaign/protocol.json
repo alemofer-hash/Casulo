@@ -1,0 +1,11 @@
+{
+  "pairs_required": 21,
+  "source_sensor": {
+    "literal_name": "Potência total da CPU [W]",
+    "unit": "w"
+  },
+  "thermal": {
+    "abort_c": 74.5,
+    "maximum_median_temperature_asymmetry_c": 3.0
+  }
+}

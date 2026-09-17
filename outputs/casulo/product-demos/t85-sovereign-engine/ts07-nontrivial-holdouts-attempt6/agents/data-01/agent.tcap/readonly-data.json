@@ -1,0 +1,27 @@
+{
+  "states": {
+    "owner.agent.datavalidator.byte_preserver": [
+      {
+        "initial": 0,
+        "name": "accepted",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ],
+    "owner.agent.datavalidator.rejection_explainer": [],
+    "owner.agent.datavalidator.schema_applier": [
+      {
+        "initial": 0,
+        "name": "transitions",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ]
+  }
+}

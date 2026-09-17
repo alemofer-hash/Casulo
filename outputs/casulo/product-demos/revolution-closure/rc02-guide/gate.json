@@ -1,0 +1,111 @@
+{
+  "authorized_claims": [
+    "Guide continuity, project isolation, grounded progress and real local-neural context integration passed"
+  ],
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "commands": [
+    [
+      "C:\\Python313\\python.exe",
+      "tools/guide_continuity_probe.py",
+      "--repo",
+      ".",
+      "--output",
+      "product-demos/revolution-closure/rc02-guide/synthetic-2h"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "tools/guide_neural_continuity_probe.py",
+      "--repo",
+      ".",
+      "--candidate",
+      "release/generative-candidates/qwen3-4b-q4km-llamacpp-b10362.json",
+      "--cache",
+      "%LOCALAPPDATA%/Casulo/cache/generative",
+      "--output",
+      "product-demos/revolution-closure/rc02-guide/neural-attempt3",
+      "--threads",
+      "4"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc02-guide\\gate-pytest-temp",
+      "tests/product/test_guide_continuity.py",
+      "tests/product/test_guide_presence.py",
+      "tests/product/test_generative_dialogue_core.py"
+    ]
+  ],
+  "forbidden_claims": [
+    "human chemistry approved",
+    "physical voice approved",
+    "commercial release"
+  ],
+  "gate_id": "RC2_GUIDE_COLLEAGUE_LOOP_PASS",
+  "input_hashes": {
+    "model": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "previous_gate": "2913e0848f0159b1a20f4c29d1300042e51ae0d83b7d526851028ff290910dc3"
+  },
+  "machine_profile_sha256": "7ca1b196f47eb6e20769ae165c1b1a322d9f9abdd2ebc3dc4a7201acff8dd718",
+  "model_adapter_hashes": {},
+  "open_findings": [
+    {
+      "severity": "P2",
+      "summary": "physical voice validation remains pending RC8 and Guilherme"
+    },
+    {
+      "severity": "P2",
+      "summary": "human chemistry remains exclusively pending Guilherme"
+    }
+  ],
+  "output_hashes": {
+    "product-demos/revolution-closure/rc02-guide/neural-attempt1/guide-neural-continuity.json": "8d646a390e957631089a717a23d9709e3100d11184fbd86fc751df4d6ee837f0",
+    "product-demos/revolution-closure/rc02-guide/neural-attempt1/stochastic-traces.jsonl": "1e9d4544c5728652e5893a38d51d240d1932694455e1b48c67ee07bdc1b7e100",
+    "product-demos/revolution-closure/rc02-guide/neural-attempt2/guide-neural-continuity.json": "f3f4c41c535efcd6f61832ec102df50541e719614b5bc5c9be3ccf23a0ec9178",
+    "product-demos/revolution-closure/rc02-guide/neural-attempt2/stochastic-traces.jsonl": "c29b0e6030fc045f6c6ccc3ee8959e4dff5f5c009b0a993415519285f727978b",
+    "product-demos/revolution-closure/rc02-guide/neural-attempt3/guide-neural-continuity.json": "945e3c9d171aa90590619ea476a303f8a0efb0079e05e93a8bfa351b23903647",
+    "product-demos/revolution-closure/rc02-guide/neural-attempt3/stochastic-traces.jsonl": "51399e6fcb6a617a5ab2a6886dc088b4b674570affefbe3be23fa73b989905d8",
+    "product-demos/revolution-closure/rc02-guide/synthetic-2h/guide-continuity-probe.json": "bd2ae76b77eb01c455e2199d5d3bbc91c96c1cc1e396a32dce3bf0b4f63c1dd6",
+    "product-demos/revolution-closure/rc02-guide/synthetic-2h/guide-events.jsonl": "0a75fe9b3549559e67d9bb57e4d9bbae87151dd84c66adaf894833774af877b7",
+    "product-demos/revolution-closure/rc02-guide/tests.txt": "48fb5bce409df99076a519ae2f2e3ae6fbaa9951121cd34e8b4850a942bf73e6"
+  },
+  "previous_gate_hash": "2913e0848f0159b1a20f4c29d1300042e51ae0d83b7d526851028ff290910dc3",
+  "sampling_policy": "casulo-sampling-dialogue-v1",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "status": "PASS",
+  "test_summary": {
+    "failed_neural_attempts_preserved": [
+      "neural-attempt1",
+      "neural-attempt2"
+    ],
+    "neural": {
+      "all_checks": true,
+      "gate": true,
+      "no_external_api": true,
+      "no_fake": true,
+      "real_model": true,
+      "stochastic_seed_absent": true
+    },
+    "pytest_exit_code": 0,
+    "pytest_summary": ".......................                                                  [100%]\n23 passed in 0.73s",
+    "synthetic": {
+      "event_chain": true,
+      "pass": true,
+      "reboot_equal": true,
+      "three_projects": true,
+      "two_hours": true,
+      "zero_constraint_loss": true,
+      "zero_cross_project_bleed": true,
+      "zero_false_progress": true
+    }
+  },
+  "timestamp": "2026-08-14T20:12:48.528712+00:00",
+  "tool_versions": {
+    "python": "3.13.2"
+  },
+  "worktree_manifest_sha256": "066698f9b6ac67be76aed86bc83c412c4fcd5377e6a2e699a3a106000a4314e9"
+}

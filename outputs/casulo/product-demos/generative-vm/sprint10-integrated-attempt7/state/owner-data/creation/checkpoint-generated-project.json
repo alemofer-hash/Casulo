@@ -1,0 +1,99 @@
+{
+  "creation_sha256": "8e79ef056a22483c5a3c48bc96166511e5befb91a0906ebb28030427f7006ac1",
+  "entry_unit": "creation_unit_01",
+  "project_id": "t-project:bd82183ea394f91bd86adb83",
+  "tests": [
+    {
+      "expected_contains": "B14C: memory.read() in trace value",
+      "input": "B14C: memory.read()",
+      "name": "test_creation_B14C",
+      "unit_id": "creation_unit_01"
+    },
+    {
+      "expected_contains": "B14C: trace value: 'Creation of B14C'",
+      "input": "B14C: trace value: 'Creation of B14C'",
+      "name": "test_trace_B14C",
+      "unit_id": "trace_unit_02"
+    },
+    {
+      "expected_contains": "B14C: effects [manifest] = 'memory.read()'",
+      "input": "B14C: effects [manifest] = 'memory.read()'",
+      "name": "test_effects_B14C",
+      "unit_id": "effect_unit_03"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "6b76e13d597a6c1ab08eab6ac333dc6ea48d3c63ac99272cd4ff3180ae8d0d9b",
+    "ended_monotonic_ns": 41168399666500,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5",
+    "output_sha256": "bd82183ea394f91bd86adb836eabe29325c362f4b84df6b54e193ebfb397feda",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 41073141220600,
+    "stream_events": 596
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield B14C\n  trace value: Text\n\ncondense B14C_init in B14C\n  effects [manifest]\n  emit \"B14C: memory.read()\"\n",
+      "unit_id": "creation_unit_01",
+      "watch_paths": [
+        [
+          "creation_unit_01",
+          "B14C",
+          "B14C_init"
+        ],
+        [
+          "creation_unit_01",
+          "B14C",
+          "B14C_init",
+          "memory.read"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit_01"
+      ],
+      "source": "language T/1.1\nmodule trace\n\ncapability manifest\n\nfield B14C\n  trace value: Text\n\ncondense B14C_trace in B14C\n  effects [manifest]\n  emit \"B14C: trace value: 'Creation of B14C'\"\n",
+      "unit_id": "trace_unit_02",
+      "watch_paths": [
+        [
+          "creation_unit_01",
+          "B14C",
+          "B14C_init"
+        ],
+        [
+          "trace_unit_02",
+          "B14C",
+          "B14C_trace"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "trace_unit_02"
+      ],
+      "source": "language T/1.1\nmodule effects\n\ncapability manifest\n\nfield B14C\n  trace value: Text\n\ncondense B14C_effects in B14C\n  effects [manifest]\n  emit \"B14C: effects [manifest] = 'memory.read()'\"\n",
+      "unit_id": "effect_unit_03",
+      "watch_paths": [
+        [
+          "creation_unit_01",
+          "B14C",
+          "B14C_init"
+        ],
+        [
+          "effect_unit_03",
+          "B14C",
+          "B14C_effects"
+        ]
+      ]
+    }
+  ]
+}

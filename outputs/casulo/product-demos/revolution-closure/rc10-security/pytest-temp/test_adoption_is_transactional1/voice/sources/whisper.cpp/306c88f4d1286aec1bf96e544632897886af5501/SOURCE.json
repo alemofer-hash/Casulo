@@ -1,0 +1,7 @@
+{
+  "commit": "306c88f4d1286aec1bf96e544632897886af5501",
+  "license": "MIT",
+  "repository": "https://github.com/ggml-org/whisper.cpp.git",
+  "schema": "casulo-voice-source/1.0",
+  "tag": "v1.9.2"
+}

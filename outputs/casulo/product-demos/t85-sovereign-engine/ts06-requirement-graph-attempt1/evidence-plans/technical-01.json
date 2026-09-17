@@ -1,0 +1,43 @@
+{
+  "expected_evidence_tokens": [
+    "5ba0ebc60f79b7128778ba53765924c748a37c973491a11091acc1b6b00558e1",
+    "b7ad0cb490d74e1c37031b6c9e50b64a375745332efcf2f4ad60590d3fc77c84",
+    "b6bcf21773d5abc75ccf5eb8e8f13e39f616bd9d0a51b2366ffe1f3167a508e7"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "technical-01:tensor-construction",
+      "scope": "technical-01",
+      "source_event_ids": [
+        "sealed:technical-01"
+      ],
+      "verifier_ids": [
+        "domain:tensor-construction"
+      ]
+    },
+    {
+      "requirement_id": "technical-01:minkowski-residual",
+      "scope": "technical-01",
+      "source_event_ids": [
+        "sealed:technical-01"
+      ],
+      "verifier_ids": [
+        "domain:minkowski-residual"
+      ]
+    },
+    {
+      "requirement_id": "technical-01:global-solver-refusal",
+      "scope": "technical-01",
+      "source_event_ids": [
+        "sealed:technical-01"
+      ],
+      "verifier_ids": [
+        "domain:global-solver-refusal"
+      ]
+    }
+  ],
+  "project_id": "technical-01",
+  "schema": "casulo.evidence-plan/1.0"
+}

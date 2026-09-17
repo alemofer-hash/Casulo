@@ -1,0 +1,1094 @@
+{
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network_default": "OFF",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb_block_devices": "PROHIBITED"
+  },
+  "bundled_tools": [
+    "human_proof_window.pyw",
+    "human_proof_control.pyw",
+    "casulo_semantic_multiverse_vm_inspect.py",
+    "casulo_owner_vm_inspect.py",
+    "stark_jobs_vm_probe.py",
+    "t85_appliance_probe.py",
+    "run_t85_integrated_rehearsal.py"
+  ],
+  "checkout_dependency": false,
+  "content_registry_sha256": "6a705a1fed212f4e5babb222a382a4b6cfa51affc26339beb4dfac91080d0cdb",
+  "created": "2026-08-15T03:44:22.256157+00:00",
+  "entrypoints": [
+    "COLLECT_T85_FEEDBACK.vbs",
+    "RESTORE_CASULO_OWNER_T85.vbs",
+    "START_CASULO_OWNER_T85.vbs",
+    "VERIFY_CASULO_OWNER_T85.vbs"
+  ],
+  "files": [
+    {
+      "bytes": 150,
+      "path": "ALLOWED_SIGNERS",
+      "sha256": "611a26ab384a607b29ad0c9526de62cfe70249b7badf9b1b5f5fcecd3661639b"
+    },
+    {
+      "bytes": 870,
+      "path": "COLLECT_T85_FEEDBACK.vbs",
+      "sha256": "dcba279346bd18df97e96a2125c8f0792e9032bed3d9a1cd09921c05e9825881"
+    },
+    {
+      "bytes": 346,
+      "path": "DEVELOPMENT_SIGNATURE.json",
+      "sha256": "c8b32d5ef491f6f513e470fd04489dfedb674f008a8ab73cbcbc8b08dc321681"
+    },
+    {
+      "bytes": 2447,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/__init__.py",
+      "sha256": "882b2211a30aef54dd2e36d5ae460d184f68584d44100cfb74d9ad51403f072f"
+    },
+    {
+      "bytes": 939,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/adapter.py",
+      "sha256": "dc10ce46ece13db5551e608d66ee5c5db611305d1c8946895b97e23d7aabd283"
+    },
+    {
+      "bytes": 12781,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/alpha_demo.py",
+      "sha256": "dc0d199d60ea236e774a426738340c9f8819bf933fc03ae8d1b9ae66629b3f59"
+    },
+    {
+      "bytes": 6887,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/dialogue_core.py",
+      "sha256": "c37d9d2782df24881f3259f36441f46bdd558a59440d400c8f97bc84ebb91fab"
+    },
+    {
+      "bytes": 14228,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/einstein_solver_kernel.py",
+      "sha256": "609939f06313978c1b7768c84644d64918af2380b717faf2c047736e0fa9516d"
+    },
+    {
+      "bytes": 18124,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_agent_probe.py",
+      "sha256": "872a3cd6a26b3031634d39b2fbccef3a035cb2bb792df779a487e47c630fcada"
+    },
+    {
+      "bytes": 1639,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_cli.py",
+      "sha256": "fa77cec03c7126c107ab191aa4ca15ae4ee6a7bae8edfab689969eabd6ee3c34"
+    },
+    {
+      "bytes": 8139,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_dialogue_probe.py",
+      "sha256": "b33198616224fb0abf9d2a41696058dacd152d4e18c3f0a6d11b7f049561a380"
+    },
+    {
+      "bytes": 11750,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_engine.py",
+      "sha256": "ad0de66fe57b77bc6250ec5d460bbb75f3fd1c70ed4ef7050cc09fb7f8c3d48a"
+    },
+    {
+      "bytes": 32633,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_forge.py",
+      "sha256": "21d25f76e882db891a057d6d9e1dcb86fddd7e1314b3bf1929888b02f4ecf11d"
+    },
+    {
+      "bytes": 9657,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_forge_probe.py",
+      "sha256": "ed91b23bb9cc0216d3a54eb0b495bfc2e510dabd2d5f3ef64dfdc3538dd5f62d"
+    },
+    {
+      "bytes": 19725,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_model.py",
+      "sha256": "5a9c6cb26374a4cea4fa8c14b217f72ed6b2197473633e527d903782c7cc3fd7"
+    },
+    {
+      "bytes": 6186,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/generative_probe.py",
+      "sha256": "c32f5a1daf297e0cfc7db198b8e2a6f649ce0219d8437fa58752d03974e37925"
+    },
+    {
+      "bytes": 8284,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/inspection.py",
+      "sha256": "3bf669fa9feed943c2df1c7440132557e43a4ba8c3d69b787f811db5fc6678f5"
+    },
+    {
+      "bytes": 17399,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/local_model_runtime.py",
+      "sha256": "08883bc84b4381e549f53df6ed774bc431dd227cbe666827f3f94a80f457b060"
+    },
+    {
+      "bytes": 4439,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/motor.py",
+      "sha256": "1e1480b88285f78f8068da7229e53f5d437effd1ade62492de6530a735b916bc"
+    },
+    {
+      "bytes": 9895,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/science_bros_probe.py",
+      "sha256": "d532fbae83e7bdce40ff11d5d6dc14a440e8eb9353f4584223b1eca86f487ed6"
+    },
+    {
+      "bytes": 5442,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/scientific_solver.py",
+      "sha256": "801177d7a9439398ddc96bd97d4550d50e497a2cd1d2f2e4926fd5daf109527f"
+    },
+    {
+      "bytes": 18224,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/semantic_multiverse.py",
+      "sha256": "697fbecdc3a9bf5337ef0a153398ea9151a5196f6ac5c6aaeea6071a3a4cc87e"
+    },
+    {
+      "bytes": 16330,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_agent_synthesis.py",
+      "sha256": "7b1d2b30ad120f4ccf4e096703985a1c79a3a6731724d44db4ac47d4fea5bbc5"
+    },
+    {
+      "bytes": 6854,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_authority.py",
+      "sha256": "93511997de6d7af507fe5c3b7f5904c74e908f364766ba7a718c67ef0ab22bd0"
+    },
+    {
+      "bytes": 12519,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_continuity.py",
+      "sha256": "0ef2e4f482f9ef586b2bfc0cb7e11ce31a2f84d6b049deb8b28bd2ec3b57847a"
+    },
+    {
+      "bytes": 7797,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_materialization.py",
+      "sha256": "f68085e9f3b312935ab8397589ddd9f3a4b5a8bac2e91641f4b8224ee2a7a3a0"
+    },
+    {
+      "bytes": 26498,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_physical_multiverse.py",
+      "sha256": "b167fd1a0d1645a6c1850de684aba64cf1bbf5a4f7255162d4bf2ced8d5fc920"
+    },
+    {
+      "bytes": 7134,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_presence.py",
+      "sha256": "325cb4f3c0c30c4648bd5c4680455e0c3e0bd7019c381150381486bb93a47bef"
+    },
+    {
+      "bytes": 4552,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/t85_requirements.py",
+      "sha256": "2dcb608598fa7f237a4b97dad5735b3b235ccde4760bd04f7ba37507db669638"
+    },
+    {
+      "bytes": 12937,
+      "path": "OWNER_VM/app/private/casulo-owner/src/casulo_owner/verifier_repair.py",
+      "sha256": "bfc4ac03a9af7e5543a99a61856c1005db3f7e525a0353e73aad0c27bebeeaa3"
+    },
+    {
+      "bytes": 685,
+      "path": "OWNER_VM/app/private/casulo-owner/t-v2/critical-capabilities.t",
+      "sha256": "cf56f4552d9865cceeae149a048901e1ff98571c0ab07bb112cacf9486f3c72e"
+    },
+    {
+      "bytes": 1710,
+      "path": "OWNER_VM/app/private/casulo-owner/t-v2/critical-fulfillment.t",
+      "sha256": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd"
+    },
+    {
+      "bytes": 535,
+      "path": "OWNER_VM/app/private/casulo-owner/t-v2/critical-intent.t",
+      "sha256": "41e1cf81f635e3387275ed9ed0996f3141144119c6d0d327009a93088a6395bc"
+    },
+    {
+      "bytes": 670,
+      "path": "OWNER_VM/app/private/casulo-owner/t-v2/critical-publish.t",
+      "sha256": "c6fa0d20d895c977ce9469ff9d4d440c0df2eccc2e5bec91b3a03fca363e42d7"
+    },
+    {
+      "bytes": 943,
+      "path": "OWNER_VM/app/private/casulo-owner/t-v2/guide-context-policy.t",
+      "sha256": "c26919a1d95d972bdc2da7e27a5876b07aaa268b27de7761f78deea74c01106e"
+    },
+    {
+      "bytes": 1705,
+      "path": "OWNER_VM/app/private/casulo-owner/t-v2/materialization-lifecycle.t",
+      "sha256": "1de18db5b885ea8ff4b5aadbdbe91b8ec8cd5f1d197ad407c472142b6e582528"
+    },
+    {
+      "bytes": 1359,
+      "path": "OWNER_VM/app/private/casulo-owner/t-v2/turn-coordinator.t",
+      "sha256": "6e68cf67a4940693a684513d156c143390a88b11db902ae1495a626f4428cce8"
+    },
+    {
+      "bytes": 995,
+      "path": "OWNER_VM/app/private/casulo-owner/t-v2/universe-lifecycle-policy.t",
+      "sha256": "b3f8242262906af9875f2213febe822c31f8694b83c9c261063b1d40e94a1faf"
+    },
+    {
+      "bytes": 2180,
+      "path": "OWNER_VM/app/registry/qwen3-4b-q4km-llamacpp-b10362.json",
+      "sha256": "42b2c54788298c10c781695d48f9f7867f5cb25e6407f90dcf0ff45466c70562"
+    },
+    {
+      "bytes": 2180,
+      "path": "OWNER_VM/app/release/generative-candidates/qwen3-4b-q4km-llamacpp-b10362.json",
+      "sha256": "42b2c54788298c10c781695d48f9f7867f5cb25e6407f90dcf0ff45466c70562"
+    },
+    {
+      "bytes": 666,
+      "path": "OWNER_VM/app/release/voice-candidates/casulo-formant-ptbr-v1.json",
+      "sha256": "02f602b602178614d051ed4465cf0af12d1adb1927c37bdd74aae9a6a38ea0df"
+    },
+    {
+      "bytes": 532,
+      "path": "OWNER_VM/app/release/voice-candidates/microsoft-maria-direct-system.json",
+      "sha256": "da501dffee39dff0b58fe3e6e9378cf272fbc54a1e9fb3304f02f192adfe2b12"
+    },
+    {
+      "bytes": 693,
+      "path": "OWNER_VM/app/release/voice-candidates/microsoft-maria-system.json",
+      "sha256": "5920e79feb41195d80960c4a13e2ad3b527ac4afbd76d41f662fa379f8870a82"
+    },
+    {
+      "bytes": 1860,
+      "path": "OWNER_VM/app/release/voice-candidates/tts-sherpa-edresson-license-review.json",
+      "sha256": "61708278942756ce8f01c46303f0f256e975b6a3dfa13f217007130b9cda7fe8"
+    },
+    {
+      "bytes": 889,
+      "path": "OWNER_VM/app/release/voice-candidates/whisper-cpp-base-q5_1-v1.9.2.json",
+      "sha256": "c0da501f4a42227a1665ca1316c0ffa0764597a90c61371329a9b2ef8ac97db8"
+    },
+    {
+      "bytes": 990,
+      "path": "OWNER_VM/app/release/voice-candidates/whisper-cpp-v1.9.2.json",
+      "sha256": "22b51cad30a44a4ed43fc461b1d20179f619dc1dc5d76a4a9f101d4f4c998ab9"
+    },
+    {
+      "bytes": 484,
+      "path": "OWNER_VM/app/src/casulo/__init__.py",
+      "sha256": "0a638fe03b95c9c0cd87afb8ec76e6eb43ef7db052ce65abf5ab933750c812b1"
+    },
+    {
+      "bytes": 49,
+      "path": "OWNER_VM/app/src/casulo/__main__.py",
+      "sha256": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7"
+    },
+    {
+      "bytes": 1776,
+      "path": "OWNER_VM/app/src/casulo/casulo.py",
+      "sha256": "71fe2348a43ea2272c191e9326597d7835638e660a39724206b4775292bc55e1"
+    },
+    {
+      "bytes": 1287,
+      "path": "OWNER_VM/app/src/casulo/cli.py",
+      "sha256": "adc3978b3a51f2b656af670463a829eb75af72e614c3caa78bfaf7c3c4e7bca3"
+    },
+    {
+      "bytes": 3451,
+      "path": "OWNER_VM/app/src/casulo/emissao.py",
+      "sha256": "9e86b68c215ed90779e694abb4353c403f9ed70f984bf4e82dcb3301e50a944c"
+    },
+    {
+      "bytes": 21503,
+      "path": "OWNER_VM/app/src/casulo/evolucao.py",
+      "sha256": "c94d89dabe87ceb8dbb010d09bdc5149b86f07ba46ae1743ef14074b31e845ca"
+    },
+    {
+      "bytes": 3705,
+      "path": "OWNER_VM/app/src/casulo/livelab/__init__.py",
+      "sha256": "8cb3ca3e5df5fbe875a7646b386cd51cdb891478733bdc2e07da5a7ea9384b80"
+    },
+    {
+      "bytes": 8324,
+      "path": "OWNER_VM/app/src/casulo/livelab/ablations.py",
+      "sha256": "95a48b4dbde95fbcce46b518bc1e1b90ba809a65323485d481098a0405bec9d6"
+    },
+    {
+      "bytes": 3987,
+      "path": "OWNER_VM/app/src/casulo/livelab/baselines.py",
+      "sha256": "7197b6551b0a2dbe84dc13c7d5fd6f290e0ee9fd11a697985a4b420dfc92a32c"
+    },
+    {
+      "bytes": 23859,
+      "path": "OWNER_VM/app/src/casulo/livelab/campaign.py",
+      "sha256": "9f05d7c3a660ad9718a372b3f3c993a69056848931987f57d44a721ca9e7028e"
+    },
+    {
+      "bytes": 6031,
+      "path": "OWNER_VM/app/src/casulo/livelab/capabilities.py",
+      "sha256": "8c8bf7f7f3c2f70c8fed5e8d6f860f4fc455f76848988e26030e810e0abbc55a"
+    },
+    {
+      "bytes": 1428,
+      "path": "OWNER_VM/app/src/casulo/livelab/child_runner.py",
+      "sha256": "92919230af54895648d724a758d6937056d79e21c834a24be9bd8d95d39b5f85"
+    },
+    {
+      "bytes": 2573,
+      "path": "OWNER_VM/app/src/casulo/livelab/controls.py",
+      "sha256": "e3c6b66c6140f77c26b7ab578db2c9f523d63ee9d9e2b2006a14fc288fd48608"
+    },
+    {
+      "bytes": 6816,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy.py",
+      "sha256": "ad4646af01aaeb9c3c80f81a812d5185cc0f162dfe6880b90476cb339d6dfc8c"
+    },
+    {
+      "bytes": 22079,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_cli.py",
+      "sha256": "69d59e06b34b3cb91d10a507eef710aae3df7d198cd27c0ed47c9957f7d954f7"
+    },
+    {
+      "bytes": 8821,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_unit.py",
+      "sha256": "2c3641cc0ed71b00cc92eac7ccd56e8723023922598482ca048c1051af9e687e"
+    },
+    {
+      "bytes": 1383,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/__init__.py",
+      "sha256": "1e2e88dd500535a728170a6f5eae2790b4309534c72529d66cb5939b3528f4e1"
+    },
+    {
+      "bytes": 10019,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/analysis.py",
+      "sha256": "b9389bed4e608d7ddbf4fce6750427823db58e81cf98a341c7fe0adbed6eaef4"
+    },
+    {
+      "bytes": 4179,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/artifacts.py",
+      "sha256": "c78a9344404be4066b5d6ea28cef83b66ba2ae736b452e5b2a369c9b5631f0db"
+    },
+    {
+      "bytes": 5417,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/battery_guard.py",
+      "sha256": "148f6e42ceb835685a3015d3056435a04a9acf55f1a1507a6c288041c5fb2570"
+    },
+    {
+      "bytes": 13041,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/capabilities.py",
+      "sha256": "df794a5f73f080d6b38e482604bf13c63c77bacb121157bb3716d9d11b6c955b"
+    },
+    {
+      "bytes": 26736,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/full_workers.py",
+      "sha256": "0e695d53e74720bf6a97c9986609f193f566f6fd5fbc8176c6917a81c2187d58"
+    },
+    {
+      "bytes": 23525,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/hwinfo.py",
+      "sha256": "05a84a0c2d77cbd7a07d173bf143e4451fdd0ef914ea496ecec94d31fb37b371"
+    },
+    {
+      "bytes": 56868,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/hwinfo_campaign.py",
+      "sha256": "d92788f4e0faf441bead97ae55880620b78d0ba8efea9adc20e1cb3a0bfd6421"
+    },
+    {
+      "bytes": 84721,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/hwinfo_recovery.py",
+      "sha256": "5d67f85090a47e46b7dcf513c5f6cb7284c8fa01fea6b65cb190f79f6a414688"
+    },
+    {
+      "bytes": 14717,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/hwinfo_workers.py",
+      "sha256": "8c277755fbd8b0afbdcc357faf06ede4071e6ef8777cceed5218c95525f65ca0"
+    },
+    {
+      "bytes": 22783,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/paired_runner.py",
+      "sha256": "7601140cef148f48bf1424cf4142ac56a9c2b0d27924f463394f50e84a3a9d05"
+    },
+    {
+      "bytes": 4357,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/protocol.py",
+      "sha256": "ada186a42551503c6919e33045ed7e0ac371bf7b990da1b4b40b009c50b69ac7"
+    },
+    {
+      "bytes": 5186,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/rapl.py",
+      "sha256": "b7a2aedbc650dc5ac3018a5ef83359840c458ac4621f01e675b00df9ed49518a"
+    },
+    {
+      "bytes": 5851,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/schemas.py",
+      "sha256": "3da1c3eb3c031ee1edb6ac00a53481914fe8d3372cb56bf4cc993d1e03348dd8"
+    },
+    {
+      "bytes": 3928,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/thermal_guard.py",
+      "sha256": "59468f6e08ad083fef87895e36b0494ebfa8e1705d7390bb6b552e427c038881"
+    },
+    {
+      "bytes": 7824,
+      "path": "OWNER_VM/app/src/casulo/livelab/energy_v1/wall_meter.py",
+      "sha256": "c7ed047c7ed44b8302e244cd6d57c8bfdbaf263f0a534977f808857a4613ed29"
+    },
+    {
+      "bytes": 11037,
+      "path": "OWNER_VM/app/src/casulo/livelab/executor.py",
+      "sha256": "9ef7afbf028f1d367a478a5a082ee273fb3710ab1e4982181ba6bf1f3caab5cf"
+    },
+    {
+      "bytes": 8281,
+      "path": "OWNER_VM/app/src/casulo/livelab/isolation.py",
+      "sha256": "931fff570eb66b0a5144bb318aa966b70c5d15e03bea42bdea077cf1baeac44b"
+    },
+    {
+      "bytes": 1779,
+      "path": "OWNER_VM/app/src/casulo/livelab/preflight.py",
+      "sha256": "ed162cc8b8fa2257a07120441e91b459c1549bee299e796e35f73799c329bc24"
+    },
+    {
+      "bytes": 4109,
+      "path": "OWNER_VM/app/src/casulo/livelab/reporting.py",
+      "sha256": "c5ac9b7e2e14b0b744048653fc43675d0da18eb928eebd8f29c5262a6f76b5fd"
+    },
+    {
+      "bytes": 9449,
+      "path": "OWNER_VM/app/src/casulo/livelab/scheduler.py",
+      "sha256": "7ce94e32a01d1bd91643cb8685090eec315e24e5e97756d44d633d8243dbd5e8"
+    },
+    {
+      "bytes": 15072,
+      "path": "OWNER_VM/app/src/casulo/livelab/scheduler_evidence.py",
+      "sha256": "ae54837a6119a2f1b3ecab4c97914861ca5e3ec491189017d74e00aeb7e0a5fe"
+    },
+    {
+      "bytes": 22975,
+      "path": "OWNER_VM/app/src/casulo/livelab/workload_adapters.py",
+      "sha256": "ba75df2adc107d1dc72fca6a795186929d5f6f87a4bbf73f31db3faa2ef26b32"
+    },
+    {
+      "bytes": 17215,
+      "path": "OWNER_VM/app/src/casulo/livelab/workloads.py",
+      "sha256": "56d8900e8e488d9d7eaedc10e1dcd100ebf0011ff4f401787a4ef724a73ebfb7"
+    },
+    {
+      "bytes": 623,
+      "path": "OWNER_VM/app/src/casulo/marca.py",
+      "sha256": "b14d57d587ff7aa14617bfdf966788ee78cd9c222ef8d0bb73e89defc0501df4"
+    },
+    {
+      "bytes": 5397,
+      "path": "OWNER_VM/app/src/casulo/modelos.py",
+      "sha256": "75cbe68a59f120c6103b80bfa040417df2c8a8f7d42cc9aac298f82a10c97461"
+    },
+    {
+      "bytes": 3094,
+      "path": "OWNER_VM/app/src/casulo/product/__init__.py",
+      "sha256": "6292fafb90d599eb2c033abfd2f22f2c853a91b1aa38fb06ba9c8ce8f29b92f8"
+    },
+    {
+      "bytes": 661,
+      "path": "OWNER_VM/app/src/casulo/product/assets/stark-jobs-v1.json",
+      "sha256": "15afc983c6c38af090ae3e671805f84aa9cefc3984dafe2810aff01e4dc90e90"
+    },
+    {
+      "bytes": 2844,
+      "path": "OWNER_VM/app/src/casulo/product/audio_frontend.py",
+      "sha256": "2741c1fd8df0b1adc483656e126b72102874859631b222fe72c8946c6d23dc34"
+    },
+    {
+      "bytes": 4136,
+      "path": "OWNER_VM/app/src/casulo/product/capabilities.py",
+      "sha256": "4d87f7ab2dd6afe6d8c7864a0923cb4e585492d4afabcea93ea1ee19f708e661"
+    },
+    {
+      "bytes": 16751,
+      "path": "OWNER_VM/app/src/casulo/product/creation_field.py",
+      "sha256": "0da260b97acd36e15aab8fd03c504c510fb141d52cb9e7c5e99025dffb926acc"
+    },
+    {
+      "bytes": 2884,
+      "path": "OWNER_VM/app/src/casulo/product/creation_field_demo.py",
+      "sha256": "1b15d426ac47c73a4e74fcd2ce012eceb3352c5fb1d369efbcc47f0afddb452e"
+    },
+    {
+      "bytes": 4283,
+      "path": "OWNER_VM/app/src/casulo/product/creation_pipeline.py",
+      "sha256": "82d840853841642c8f3dab42e6b75a9afa833d70be384fdf7cb58db87191f420"
+    },
+    {
+      "bytes": 2094,
+      "path": "OWNER_VM/app/src/casulo/product/demo.py",
+      "sha256": "1e9e0bba59c6115215fbc4c3a3138493601dd4a3bc67322173c06505679a6a4d"
+    },
+    {
+      "bytes": 20859,
+      "path": "OWNER_VM/app/src/casulo/product/domain.py",
+      "sha256": "422f69df3221d95a85ca045e02ae5ec536db5002615cfd3185d427e2257da008"
+    },
+    {
+      "bytes": 3114,
+      "path": "OWNER_VM/app/src/casulo/product/engine_contracts.py",
+      "sha256": "7aea4dfe496df5376a230756649f07bf95c1913eebab729412617d5651d12a96"
+    },
+    {
+      "bytes": 5069,
+      "path": "OWNER_VM/app/src/casulo/product/first_party_tts.py",
+      "sha256": "013b2499b459f5db3f98549e3864b3964e21997d88a2927c826bf740ae6c165d"
+    },
+    {
+      "bytes": 20578,
+      "path": "OWNER_VM/app/src/casulo/product/guide_continuity.py",
+      "sha256": "eca7efbeea0edb113112a54a18e41f8a88dcd3b396e13af1b26fc07b6b1f2cd4"
+    },
+    {
+      "bytes": 12079,
+      "path": "OWNER_VM/app/src/casulo/product/guide_presence.py",
+      "sha256": "499d62269621847f028582af04f4a354b516c5c73a5c00503c29552a1660f8fb"
+    },
+    {
+      "bytes": 4318,
+      "path": "OWNER_VM/app/src/casulo/product/host_accelerator.py",
+      "sha256": "6f64f9f32f6d6fb790735a79e91da52feab19bd81418b53ea12ee0829e9e16e3"
+    },
+    {
+      "bytes": 2778,
+      "path": "OWNER_VM/app/src/casulo/product/hosted_demo.py",
+      "sha256": "4c043d40a6563e3730ec228346820be1144c4c09fff52a5c02a5a865d8b4573e"
+    },
+    {
+      "bytes": 9175,
+      "path": "OWNER_VM/app/src/casulo/product/hosted_shell.py",
+      "sha256": "6c9dc799435907ad4c560c8352f05674deb109ebae1d098e618a3dd006cfb3bb"
+    },
+    {
+      "bytes": 6949,
+      "path": "OWNER_VM/app/src/casulo/product/installer.py",
+      "sha256": "34fa3105de629d636c2eb390557d7d49611461d722a2537065f2ba8e432d6288"
+    },
+    {
+      "bytes": 4678,
+      "path": "OWNER_VM/app/src/casulo/product/intent_engine.py",
+      "sha256": "8d498fe6132c5ecfb4c84a330d3d8c40cf2cc39b0d769c7299d63441830ef3f5"
+    },
+    {
+      "bytes": 2758,
+      "path": "OWNER_VM/app/src/casulo/product/intent_forge_demo.py",
+      "sha256": "d7fd958ae8804c319f080f0b442325eee2b81b7fda77651683e814a6f82acb63"
+    },
+    {
+      "bytes": 6496,
+      "path": "OWNER_VM/app/src/casulo/product/learned_router.py",
+      "sha256": "57f4650ae0218cf2e2160b9c202901bc7f284013087dfbd9933aecd27eb18ece"
+    },
+    {
+      "bytes": 16910,
+      "path": "OWNER_VM/app/src/casulo/product/living_memory.py",
+      "sha256": "49b734720b8397dda7b4b49f387856686273d4f247c33bbea16a48ebf1ac1f57"
+    },
+    {
+      "bytes": 9149,
+      "path": "OWNER_VM/app/src/casulo/product/local_intelligence.py",
+      "sha256": "07a25760715c7636d44cd1dff6ec0a4d2f0a71f631d041dc57bd16c2a5392bf1"
+    },
+    {
+      "bytes": 10707,
+      "path": "OWNER_VM/app/src/casulo/product/machine_profile.py",
+      "sha256": "ea7c4e6b407e00521de3dd74d926750fc5f73691d1e804057f40e83f01b71ec5"
+    },
+    {
+      "bytes": 24007,
+      "path": "OWNER_VM/app/src/casulo/product/materializer.py",
+      "sha256": "b823d1bfa48eb87ebdf40d21dfc59709831b0c4c8e752b4e2298683a8695764a"
+    },
+    {
+      "bytes": 2327,
+      "path": "OWNER_VM/app/src/casulo/product/materializer_demo.py",
+      "sha256": "4f23945fb46665780c670008149a5909cb4d87ee298697b648ebbbbcefd1b7b4"
+    },
+    {
+      "bytes": 1594,
+      "path": "OWNER_VM/app/src/casulo/product/memory_demo.py",
+      "sha256": "0f8d773f5220f2e6ef33f1237775005fa6e9ef19446cc1db2af7275711d835ff"
+    },
+    {
+      "bytes": 7193,
+      "path": "OWNER_VM/app/src/casulo/product/offline_update.py",
+      "sha256": "29329d88baa70fcd8e6c8c8500276c7128ccd7d11cae2c1d457dc26ac9650516"
+    },
+    {
+      "bytes": 5093,
+      "path": "OWNER_VM/app/src/casulo/product/platform_contracts.py",
+      "sha256": "a016ac31ad605d216fd2ad6798a561ed51220cf7c459b9a56458fbc4d4c586ac"
+    },
+    {
+      "bytes": 13996,
+      "path": "OWNER_VM/app/src/casulo/product/revolution_contracts.py",
+      "sha256": "b51596905800139b0b6e851f490e1a9e880afa93c3f1e4629fe3b2b6b4371e26"
+    },
+    {
+      "bytes": 18323,
+      "path": "OWNER_VM/app/src/casulo/product/semantic_fulfillment.py",
+      "sha256": "437d779d940db1e2139e17e55c3bdabad73b9c34c571e8da2852a484b39576ba"
+    },
+    {
+      "bytes": 29623,
+      "path": "OWNER_VM/app/src/casulo/product/semantic_multiverse.py",
+      "sha256": "388da71da0743bfdf198a1020926e66ecf8d5d33c59021d03ccc35f32f444b23"
+    },
+    {
+      "bytes": 15928,
+      "path": "OWNER_VM/app/src/casulo/product/simulation.py",
+      "sha256": "59b3e239030fb12344cc773fe26ce5be9ec77dface577f1fc1133c88956c55b6"
+    },
+    {
+      "bytes": 3052,
+      "path": "OWNER_VM/app/src/casulo/product/simulation_demo.py",
+      "sha256": "aee5f4406a429ca511bd5887544c96d8b11a15048a585a97ee29bc3555b4629a"
+    },
+    {
+      "bytes": 17429,
+      "path": "OWNER_VM/app/src/casulo/product/sovereign_materializer.py",
+      "sha256": "2a9ca2850eb2d0e9b35e7545970312373d1c8812756660806ec316282c245b58"
+    },
+    {
+      "bytes": 7535,
+      "path": "OWNER_VM/app/src/casulo/product/t_forge.py",
+      "sha256": "e6da4a486377b92f6bb081350bd6b5a7cbee84e80de01d6ce87eecf8e880029e"
+    },
+    {
+      "bytes": 9828,
+      "path": "OWNER_VM/app/src/casulo/product/tts_streaming.py",
+      "sha256": "60c65b70f4e411260a8ec1bd53b7f0c1e82e7dddb65e261063b4c6371b0ba8fa"
+    },
+    {
+      "bytes": 28081,
+      "path": "OWNER_VM/app/src/casulo/product/vm_controller.py",
+      "sha256": "247becd53de2b5dbfa98b624d7289034fc15c5e689e6cea2eae74fe5332b1f45"
+    },
+    {
+      "bytes": 12935,
+      "path": "OWNER_VM/app/src/casulo/product/voice_adopt.py",
+      "sha256": "933401de31ea56a7ebaffa3cbadddc5b84e9e241e13fbb2ea755c45ea4d9c953"
+    },
+    {
+      "bytes": 10269,
+      "path": "OWNER_VM/app/src/casulo/product/voice_bridge.py",
+      "sha256": "06fd547ada7de24eb45de00e24d2770cf25808ecafb3f37a1fd7365ec03b93d2"
+    },
+    {
+      "bytes": 3837,
+      "path": "OWNER_VM/app/src/casulo/product/voice_build.py",
+      "sha256": "76ba6fdb5a5499c8f6bbc4493660dd59a1660d56cd84585da5dbf6acae9d9864"
+    },
+    {
+      "bytes": 9982,
+      "path": "OWNER_VM/app/src/casulo/product/voice_candidate.py",
+      "sha256": "72d5878d1d400579281d65d3a133ddb07e8b52afc1a052ad15fd85cd36bc411d"
+    },
+    {
+      "bytes": 9300,
+      "path": "OWNER_VM/app/src/casulo/product/voice_cli.py",
+      "sha256": "7635f2689c62d0b7a874c3bc94fba44fe70b3c9e8c62c814eaa7c140f45e709d"
+    },
+    {
+      "bytes": 7940,
+      "path": "OWNER_VM/app/src/casulo/product/voice_duplex.py",
+      "sha256": "398e7ffa1d418689746a9d5ca93e91b4635610eb8b80d344a791df543dbaa6a1"
+    },
+    {
+      "bytes": 7834,
+      "path": "OWNER_VM/app/src/casulo/product/voice_physical.py",
+      "sha256": "16ee635e52e3c3f07b72d601865343ecb8ea409440e246cb048041f482cabac5"
+    },
+    {
+      "bytes": 2168,
+      "path": "OWNER_VM/app/src/casulo/product/voice_smoke.py",
+      "sha256": "3b9f13fb8abb0208a23b63c5ce4282a4216a5366fe3055b7f6403ee853ab1e34"
+    },
+    {
+      "bytes": 8746,
+      "path": "OWNER_VM/app/src/casulo/product/whisper_worker.py",
+      "sha256": "77e7fc0b8e72b142c03131256b1ad936409c70c39d1884076c44b7c8bda409af"
+    },
+    {
+      "bytes": 13449,
+      "path": "OWNER_VM/app/src/casulo/t/__init__.py",
+      "sha256": "397df53b545ba239a7aa5709ffd248861adba6bc203cbbcbf436f29f00166536"
+    },
+    {
+      "bytes": 17066,
+      "path": "OWNER_VM/app/src/casulo/t/adaptativo.py",
+      "sha256": "dc8f2b75b6fec3a3994944f21020048fac7dd411eb3796e30d42f3e241672b17"
+    },
+    {
+      "bytes": 28623,
+      "path": "OWNER_VM/app/src/casulo/t/analyzer.py",
+      "sha256": "3fbff6de6b2fd8da124b2c4e84243ceac11d9602aac73118c2b49b78f8ad748d"
+    },
+    {
+      "bytes": 2721,
+      "path": "OWNER_VM/app/src/casulo/t/api.py",
+      "sha256": "ec9b71d040ffb7fd0c38e3f1e6f8821eac8aa290b815679460009264167edef1"
+    },
+    {
+      "bytes": 19520,
+      "path": "OWNER_VM/app/src/casulo/t/artifact.py",
+      "sha256": "f22d7bb5bbfa071e7bd79f92a1affe25a6d8a0a20f6b4c3fcf4e3dbedb57bc43"
+    },
+    {
+      "bytes": 4514,
+      "path": "OWNER_VM/app/src/casulo/t/ast.py",
+      "sha256": "fbe8edf87e059aa632ec68ec20162642f97b8533d4cf460bc4df23ffdf35a0de"
+    },
+    {
+      "bytes": 8562,
+      "path": "OWNER_VM/app/src/casulo/t/authority.py",
+      "sha256": "f546a27b3421d20a8fcfc7a67f646c6079ccad8879c5efd74517e5babfcec2ab"
+    },
+    {
+      "bytes": 37155,
+      "path": "OWNER_VM/app/src/casulo/t/autograd.py",
+      "sha256": "459d84fd6e40895f873bc6555333d121c3331f2410f0f4b8e6fb72f7a5bb5db9"
+    },
+    {
+      "bytes": 53895,
+      "path": "OWNER_VM/app/src/casulo/t/backend.py",
+      "sha256": "5313548499837bbb2ef6dacb1d4413d183c1e553756e6e4c5304403aa077cf0c"
+    },
+    {
+      "bytes": 7011,
+      "path": "OWNER_VM/app/src/casulo/t/benchmark.py",
+      "sha256": "6732b8c20d2b9440d30a4878db604c9274317b5aa5d7bf587c313a5264cf8c92"
+    },
+    {
+      "bytes": 30022,
+      "path": "OWNER_VM/app/src/casulo/t/borboleta.py",
+      "sha256": "b31f38a03bf09b2e590a8c38b01bfbaab189e0257ae8e21f0968107418bff61c"
+    },
+    {
+      "bytes": 21508,
+      "path": "OWNER_VM/app/src/casulo/t/causal_profiler.py",
+      "sha256": "10e57837820c99bba52875b3bf5f7300c64928b8dbf794e8d701fb15f998f8dc"
+    },
+    {
+      "bytes": 76535,
+      "path": "OWNER_VM/app/src/casulo/t/cli.py",
+      "sha256": "d2f7dafe5349a5b998f59d1eaaf4b3962554e099bf1cdce79834ed09dac454d5"
+    },
+    {
+      "bytes": 1623,
+      "path": "OWNER_VM/app/src/casulo/t/diagnostics.py",
+      "sha256": "2eb3e9d5e336d31b1f72d6aed3a010ec13e45c32adf0e693a3dd35f3c82260ec"
+    },
+    {
+      "bytes": 1448,
+      "path": "OWNER_VM/app/src/casulo/t/effects.py",
+      "sha256": "f343276412002260438178f90ec8488e94817239a002b9eac6d1e9227a9c2e02"
+    },
+    {
+      "bytes": 9489,
+      "path": "OWNER_VM/app/src/casulo/t/expression_ast.py",
+      "sha256": "7f86a4f3ef5e2743e4133bd3b0d039b3d1054868c0140bfeb67aa062c8cab8a5"
+    },
+    {
+      "bytes": 13500,
+      "path": "OWNER_VM/app/src/casulo/t/full_work_unit.py",
+      "sha256": "c14feb3c18bb09a3a5d04776f908f00a8cbb0db2f480130fe13035d8f984efee"
+    },
+    {
+      "bytes": 13840,
+      "path": "OWNER_VM/app/src/casulo/t/graph.py",
+      "sha256": "9bfedb4b3493a78f469c0fe98293169061f2f92867ee4492fb9b0a0e0509b764"
+    },
+    {
+      "bytes": 19016,
+      "path": "OWNER_VM/app/src/casulo/t/ir.py",
+      "sha256": "cefd321c2c3fd61db635b9ab7bd799d9b185b6cfd8cc5b385d4b0a1f63d56892"
+    },
+    {
+      "bytes": 4975,
+      "path": "OWNER_VM/app/src/casulo/t/learn.py",
+      "sha256": "b86830e9ed1d062d7dbad4414322b2c77d48e33fa4c535e8b14ab0e3cb96c865"
+    },
+    {
+      "bytes": 16281,
+      "path": "OWNER_VM/app/src/casulo/t/learn_canary.py",
+      "sha256": "fc6966f34ab42f07bfe50b645bcea14788f35772d25443ff87e8ca93da17bb3d"
+    },
+    {
+      "bytes": 40570,
+      "path": "OWNER_VM/app/src/casulo/t/learn_native.py",
+      "sha256": "4d897e6a5154ae5f631432ce11ac4d5cbef387a6a1ff843746a38090c651183e"
+    },
+    {
+      "bytes": 2837,
+      "path": "OWNER_VM/app/src/casulo/t/lexer.py",
+      "sha256": "4b1afdb80ea9a6d3ed1e1d74261a1c09263c67b4d75f601ddd454804c97be1ae"
+    },
+    {
+      "bytes": 12544,
+      "path": "OWNER_VM/app/src/casulo/t/linear_algebra.py",
+      "sha256": "6195cb25f5472067c647933edff8d9c7dfd781d4e07245a60c3cd74bec1e7c6b"
+    },
+    {
+      "bytes": 12816,
+      "path": "OWNER_VM/app/src/casulo/t/measurement.py",
+      "sha256": "378eea216869848b1699fd65948888306f5af8bbb30fbcef35b5ab2abb247c43"
+    },
+    {
+      "bytes": 47666,
+      "path": "OWNER_VM/app/src/casulo/t/native.py",
+      "sha256": "d928fd8e6209449ed6d03141a2dfec0c86dfcc77651834b863a8471c8ebb4e2f"
+    },
+    {
+      "bytes": 11343,
+      "path": "OWNER_VM/app/src/casulo/t/native_benchmark.py",
+      "sha256": "3cffbea04ccbfb9bb11e09f09730d6564ba5b6bd5e093757edb36160284d3974"
+    },
+    {
+      "bytes": 23095,
+      "path": "OWNER_VM/app/src/casulo/t/parity.py",
+      "sha256": "eab0ede77232d4dce184b7f3aae8bfaae13b7291da0e3fe63f14e09d305f290f"
+    },
+    {
+      "bytes": 24478,
+      "path": "OWNER_VM/app/src/casulo/t/parser.py",
+      "sha256": "f541a69dca78a84234e0367b06d948978ae770014a43c082208a797752399536"
+    },
+    {
+      "bytes": 6088,
+      "path": "OWNER_VM/app/src/casulo/t/productive.py",
+      "sha256": "8e7fa916e2b85c94cf992a18db60ede66b199951f4e502660b8c1e91a6199c96"
+    },
+    {
+      "bytes": 9621,
+      "path": "OWNER_VM/app/src/casulo/t/pytorch_runtime.py",
+      "sha256": "50e33a83bc4703d1f165bf2a78c14fe95f286562481f7ffb5be524fcb5f28ef6"
+    },
+    {
+      "bytes": 5701,
+      "path": "OWNER_VM/app/src/casulo/t/resource.py",
+      "sha256": "907b572344443646f4ca75fdbc98ffa9f92349ba03fd8448b6d2345e9f908c46"
+    },
+    {
+      "bytes": 3117,
+      "path": "OWNER_VM/app/src/casulo/t/runner.py",
+      "sha256": "10fc9b4fe251150dd8a8799f2412239e4243c43e98971be76e18dbddaf8175b2"
+    },
+    {
+      "bytes": 25665,
+      "path": "OWNER_VM/app/src/casulo/t/scheduler_ablation.py",
+      "sha256": "7585e623a1c678514f8e74914d47df639ccc4bdfd0460b818585c85413b3df46"
+    },
+    {
+      "bytes": 30472,
+      "path": "OWNER_VM/app/src/casulo/t/scientific.py",
+      "sha256": "53508ec2cd040a9c7a0a0025607304f28b49c6f8c6d6ab36db280277a3ad3d5e"
+    },
+    {
+      "bytes": 11933,
+      "path": "OWNER_VM/app/src/casulo/t/semantic_ir.py",
+      "sha256": "9d48b40665bf1cdfcae42252ecc015ce55edac089953a80923906df896023346"
+    },
+    {
+      "bytes": 6838,
+      "path": "OWNER_VM/app/src/casulo/t/simd_benchmark.py",
+      "sha256": "a787568a39f91f82fa955eae581cf0c737baa489b4b59c40eef8f914298b6c3d"
+    },
+    {
+      "bytes": 5925,
+      "path": "OWNER_VM/app/src/casulo/t/sovereignty.py",
+      "sha256": "bc8d19fd468d136afc1414abb79cb4186e6c20ad2d6a53a5f05616c8c8e99004"
+    },
+    {
+      "bytes": 7314,
+      "path": "OWNER_VM/app/src/casulo/t/stdlib.py",
+      "sha256": "a073df6d681f8d5d757642b11326c4c071d0706b2a75c6a477b8a652d0327a04"
+    },
+    {
+      "bytes": 3470,
+      "path": "OWNER_VM/app/src/casulo/t/symbols.py",
+      "sha256": "604f73682f23ed9e7d10a26aaa4c101da892309056298558513e1be5e4178413"
+    },
+    {
+      "bytes": 12072,
+      "path": "OWNER_VM/app/src/casulo/t/tcap.py",
+      "sha256": "5250ca0659d8e9393b83896a730004e900bd875ed8fd65489a79141cb1e29ab2"
+    },
+    {
+      "bytes": 29771,
+      "path": "OWNER_VM/app/src/casulo/t/tensor.py",
+      "sha256": "cfb8b71b14e613336c4e2f27c4655a5d7974152a00427bacc96249b8028db0a9"
+    },
+    {
+      "bytes": 89199,
+      "path": "OWNER_VM/app/src/casulo/t/tensor_cpu.py",
+      "sha256": "79cc57dd3fc1f301a4b35a3f51795351dc01c28ae80bcfd9ab47a8c7f366e0f5"
+    },
+    {
+      "bytes": 73276,
+      "path": "OWNER_VM/app/src/casulo/t/tensor_lab.py",
+      "sha256": "0aae99c332ddad6acd23fbc7c0289c8a7dd79153c30bd35cb9d3334a54c55647"
+    },
+    {
+      "bytes": 29811,
+      "path": "OWNER_VM/app/src/casulo/t/tensor_suite.py",
+      "sha256": "ff6a39e0acb3436a8419dab3748b652eacc296e487f45fdd943d374ce57a133e"
+    },
+    {
+      "bytes": 24118,
+      "path": "OWNER_VM/app/src/casulo/t/thermal.py",
+      "sha256": "1e2667c232b613f2ccee52f64b429da20240150307fcb42217ae0f74c5675fe3"
+    },
+    {
+      "bytes": 2076,
+      "path": "OWNER_VM/app/src/casulo/t/thermal_probe.py",
+      "sha256": "8b8a6ee1fe281502406cba279b7e0425ebf170e23034201ba679236cce2f98ef"
+    },
+    {
+      "bytes": 20674,
+      "path": "OWNER_VM/app/src/casulo/t/thermal_watchdog.py",
+      "sha256": "80ca6a26593e1ca1fe8406ff1b04c1520bba77b64a73a249f34a09fbfdd4acd2"
+    },
+    {
+      "bytes": 60786,
+      "path": "OWNER_VM/app/src/casulo/t/training.py",
+      "sha256": "ad15e04ad3bae0dbd26ea8be7497dd9b901627d60488e4d0706dbd44495053b6"
+    },
+    {
+      "bytes": 10373,
+      "path": "OWNER_VM/app/src/casulo/t/typesys.py",
+      "sha256": "230eb164e41ecf04410d88036703d8e5b1c4a9af5e943e30b8ec4893c44a66af"
+    },
+    {
+      "bytes": 1674,
+      "path": "OWNER_VM/app/src/casulo/t/v2_ast.py",
+      "sha256": "0a3fe3b9b36a594363861cc4ae29bbe22f92cd3175f6b7ef8b1915e1241694b6"
+    },
+    {
+      "bytes": 5129,
+      "path": "OWNER_VM/app/src/casulo/t/v2_ir.py",
+      "sha256": "d03a1a33a0757d757de51ff2cbfb0ee2078e6dc5ff6a210ed0fca575ad1425f5"
+    },
+    {
+      "bytes": 14561,
+      "path": "OWNER_VM/app/src/casulo/t/v2_parser.py",
+      "sha256": "f1b88501f562db433c2dffd9a6bf1aadbe9c7be70d760515af8fcf2d07a1cb0a"
+    },
+    {
+      "bytes": 8309,
+      "path": "OWNER_VM/app/src/casulo/t/v2_runtime.py",
+      "sha256": "cc505b095b8dab4c1f1229a4cbeb1e25074f1e2ec01e3953e891c106f64b8cad"
+    },
+    {
+      "bytes": 9851,
+      "path": "OWNER_VM/app/src/casulo/t/v2_semantics.py",
+      "sha256": "a9854dcf029c4058dfa514fa1896a547e46f9a1a08da779ecdbce89ca3e71c98"
+    },
+    {
+      "bytes": 11662,
+      "path": "OWNER_VM/app/src/casulo/t/v2_tcap.py",
+      "sha256": "f1026484f3aadb4971dbc14f6325a311cd1bdd3caa5d367118b3aab123b4113b"
+    },
+    {
+      "bytes": 18031,
+      "path": "OWNER_VM/app/src/casulo/t/window_calibration.py",
+      "sha256": "5d60123a6fe5715028f9ec1ec0f467660db48aae535af55fbbd0ec812731b779"
+    },
+    {
+      "bytes": 26629,
+      "path": "OWNER_VM/app/src/casulo/t/workspace.py",
+      "sha256": "8c6639da59f263956219c00e82407d8328b3685eb7f9b483ccffde3283b7ab6e"
+    },
+    {
+      "bytes": 1574134,
+      "path": "OWNER_VM/app/t-runtime/target/release/casulo-t-runtime.exe",
+      "sha256": "84b70fed87a4644acc525051133aa6a4d0de209bc0aa20a6ade61c3ba5ffd541"
+    },
+    {
+      "bytes": 16456,
+      "path": "OWNER_VM/app/tools/casulo_owner_vm_inspect.py",
+      "sha256": "f6bd394faf3469d155efa7615acb2eaf8df89407aec1c284d1fd7377f8207ae3"
+    },
+    {
+      "bytes": 12521,
+      "path": "OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py",
+      "sha256": "6968bafc57fbbd24b89e665f0f33a7123efd497907d448a47103f1524ad7c76a"
+    },
+    {
+      "bytes": 8655,
+      "path": "OWNER_VM/app/tools/human_proof_control.pyw",
+      "sha256": "74d5faf678a0a56ef611ccbfd3dd8fcf971c008f3cd8299240f0e56180c2f5be"
+    },
+    {
+      "bytes": 10529,
+      "path": "OWNER_VM/app/tools/human_proof_window.pyw",
+      "sha256": "052ccdc0f8969b1148f05dba95873f9dd831a257b9e38b12fde88f79936184eb"
+    },
+    {
+      "bytes": 32155,
+      "path": "OWNER_VM/app/tools/run_t85_integrated_rehearsal.py",
+      "sha256": "659a5914bd57e598f1ab64e56e89161dc0b492ee33b5f2f8b1400c2a0bb827cd"
+    },
+    {
+      "bytes": 7982,
+      "path": "OWNER_VM/app/tools/stark_jobs_vm_probe.py",
+      "sha256": "58c14383dc2f568b34d54b363f7dc5c1e5291fa40bb92014ec8098a4db8763cb"
+    },
+    {
+      "bytes": 6170,
+      "path": "OWNER_VM/app/tools/t85_appliance_probe.py",
+      "sha256": "84d28c751262d13711cb7560df0b78b6a49760b7a55fb3ab39c3feaa1efa8363"
+    },
+    {
+      "bytes": 2162688,
+      "path": "OWNER_VM/casulo-native-generative-interactive.img",
+      "sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b"
+    },
+    {
+      "bytes": 10443,
+      "path": "OWNER_VM/CONTENT_REGISTRY.json",
+      "sha256": "6a705a1fed212f4e5babb222a382a4b6cfa51affc26339beb4dfac91080d0cdb"
+    },
+    {
+      "bytes": 626,
+      "path": "OWNER_VM/VM_PROFILE.json",
+      "sha256": "c2c3a8360ade0f2d4aeb68e66fc0a3804908404993d439c6ced3b5be60b3002a"
+    },
+    {
+      "bytes": 869,
+      "path": "RESTORE_CASULO_OWNER_T85.vbs",
+      "sha256": "eeb43305a3fde15269b1422b88622642c84c036e7a5a5a2a9348f59a2f570d1f"
+    },
+    {
+      "bytes": 64271,
+      "path": "SBOM.spdx.json",
+      "sha256": "42be95ebd7229253020b81700e308b5d0ab7efdec70fb49da207d0e8f442c55f"
+    },
+    {
+      "bytes": 118,
+      "path": "SIGNING_KEY.pub",
+      "sha256": "7400dc9a49c80a8e98f1e1acbb91edd5c597e3c89c3b53eb36d9df0ca1edc016"
+    },
+    {
+      "bytes": 860,
+      "path": "START_CASULO_OWNER_T85.vbs",
+      "sha256": "4ecc7fea7e4d3d9bc75c55595220a6c1331d5cdb5b54938bdb988000e9891fd6"
+    },
+    {
+      "bytes": 752,
+      "path": "T85_CLAIMS_AND_LIMITATIONS.md",
+      "sha256": "f3df9930e14fc280c09cc4882a60114f98358da129a17e3e47c1ccae86dcae9b"
+    },
+    {
+      "bytes": 881,
+      "path": "T85_HUMAN_PROOF_RUNBOOK.md",
+      "sha256": "4ca6fae0247de4df6beff06425507466be2359b0126c71800697ff51f2e4681e"
+    },
+    {
+      "bytes": 3277,
+      "path": "T85_INTEGRATED_REHEARSAL.md",
+      "sha256": "c9bb9fae1514106b36e7d543b0b1b74ef1afe621738117f5c058de98c975e940"
+    },
+    {
+      "bytes": 307,
+      "path": "T85_ROLLBACK.md",
+      "sha256": "bbe8f5e83e8fd8226669d98466abd2c5f91f0b6608c1e7e059880339cf51af26"
+    },
+    {
+      "bytes": 868,
+      "path": "VERIFY_CASULO_OWNER_T85.vbs",
+      "sha256": "2f0c9afe1b66e2da86a8cc7be4fc40b26964d83cb2bba043f8f6ac328edcd061"
+    }
+  ],
+  "human_proof": "PENDING_GUILHERME",
+  "pythonpath_dependency": false,
+  "schema": "casulo.t85-human-proof-release/1.0",
+  "signature": "DEVELOPMENT_NOT_COMMERCIAL",
+  "state": "T85_TECHNICAL_CANDIDATE_PENDING_HUMAN_PROOF"
+}

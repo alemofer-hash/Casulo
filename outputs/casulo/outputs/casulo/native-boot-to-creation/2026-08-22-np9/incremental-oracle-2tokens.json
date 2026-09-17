@@ -1,0 +1,87 @@
+{
+  "claim": "bounded greedy incremental decoding with persistent per-layer KV state",
+  "kv_state": {
+    "layers": 36,
+    "positions": 2,
+    "values": 147456
+  },
+  "model": {
+    "architecture": "qwen3",
+    "bytes": 2497280256,
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "oracle": {
+    "external_api": false,
+    "implementation": "independent Python/NumPy incremental GGUF decoder",
+    "numpy_version": "2.3.5"
+  },
+  "schema": "casulo-native-qwen-incremental-oracle/0.1",
+  "token_count": 2,
+  "token_ids": [
+    49242,
+    6237
+  ],
+  "tokens": [
+    {
+      "attention_weight_count": 1152,
+      "context": 1,
+      "greedy_token_id": 6237,
+      "greedy_token_logit": 13.32108211517334,
+      "hidden_chain_sha256": "95bdd58611fd91b788d6cc36785904a07017cb9cfd8398c10f1731f2d276fd94",
+      "input_token_id": 49242,
+      "logits_sha256_f32_le": "39fe075c76c23b1a48a3468054738f16c3b5fe5965d23d7042c474b1d1f4ace9",
+      "normalized_output": {
+        "first_bits": [
+          "bccccb7d",
+          "c06b8e35",
+          "c023c6b8",
+          "c098002f",
+          "bf34407f",
+          "3ee8b873",
+          "3f10796f",
+          "413f5312"
+        ],
+        "l2_f64": 111.41120672835486,
+        "max": 16.936777114868164,
+        "min": -20.579425811767578,
+        "sha256_f32_le": "245cfe49f1fce52918a394f7564246d70963ca6d7b4dd17543d03e838a945e72",
+        "shape": [
+          2560
+        ],
+        "sum_f64": -146.86339519638568
+      },
+      "position": 0
+    },
+    {
+      "attention_weight_count": 2304,
+      "context": 2,
+      "greedy_token_id": 374,
+      "greedy_token_logit": 17.10039710998535,
+      "hidden_chain_sha256": "a844383e3eed4fa17bd7450ce9a917bc773de8c6e277cd650c0a1e927eb361e5",
+      "input_token_id": 6237,
+      "logits_sha256_f32_le": "07b6bc31a8d18d9b964301aeb081bc5544040fd1b7e1b190a715a5484c49fb95",
+      "normalized_output": {
+        "first_bits": [
+          "3e0e2d08",
+          "403abed9",
+          "bfd07df5",
+          "c04244a7",
+          "bf2bc084",
+          "3fa1e32d",
+          "be6fa54c",
+          "42206136"
+        ],
+        "l2_f64": 121.32923494193282,
+        "max": 49.780635833740234,
+        "min": -16.454896926879883,
+        "sha256_f32_le": "235445654241dcc403fd998ab521d798cb16985889d2d5ec926a46ff108114a8",
+        "shape": [
+          2560
+        ],
+        "sum_f64": 217.58907656243537
+      },
+      "position": 1
+    }
+  ]
+}

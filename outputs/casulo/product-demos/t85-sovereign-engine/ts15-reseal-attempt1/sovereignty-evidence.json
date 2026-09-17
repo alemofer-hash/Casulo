@@ -1,0 +1,84 @@
+{
+  "critical_degrees": {
+    "capabilities_effects": 1.0,
+    "hard_requirement_fulfillment": 1.0,
+    "material_intent": 1.0,
+    "publish_commit": 1.0
+  },
+  "migrated_surfaces": [
+    "agent_behavior",
+    "capabilities_effects",
+    "hard_requirement_fulfillment",
+    "jobs_concurrency_cancel",
+    "material_intent",
+    "materialization_lifecycle",
+    "memory_governance",
+    "publish_commit",
+    "semantic_routing_lifecycle",
+    "simulation_acceptance"
+  ],
+  "schema": "casulo.t85-final-authority-evidence/1.0",
+  "sealed_evidence": {
+    "ts05-critical-authority-attempt1": {
+      "files": 87,
+      "gate": "TS5_CRITICAL_AUTHORITY_PASS",
+      "manifest_sha256": "0c1f61be3513e5a7970ec2bfd8d5bc67f887e40c64569d2afda12911e6a19768",
+      "mismatches": [],
+      "valid": true
+    },
+    "ts06-requirement-graph-attempt1": {
+      "files": 105,
+      "gate": "TS6_T_REQUIREMENT_GRAPH_PASS",
+      "manifest_sha256": "fb460970791d6f1dbfa0a3e9f52c224c0b8c49b4da96607dc7310c4a1fd287fb",
+      "mismatches": [],
+      "valid": true
+    },
+    "ts07-nontrivial-holdouts-attempt7": {
+      "files": 163,
+      "gate": "TS7_T_NONTRIVIAL_HOLDOUTS_PASS",
+      "manifest_sha256": "3f346d0bcdc5d46099a25d4973cc6c92853f3420ca2a2a63041207cbdc6c7415",
+      "mismatches": [],
+      "valid": true
+    },
+    "ts08-guide-memory-attempt1": {
+      "files": 1540,
+      "gate": "TS8_GUIDE_LIVING_MEMORY_PASS",
+      "manifest_sha256": "70eb6ac250d0568040e3c1178139bcb544c9a08141f294d7ad5c18af77b90baa",
+      "mismatches": [],
+      "valid": true
+    },
+    "ts09-presence-voice-attempt1": {
+      "files": 788,
+      "gate": "TS9_PRESENCE_VOICE_SYNTHETIC_PASS",
+      "manifest_sha256": "52ec4ab3771656747c3ce4a63120a8a6e799fd131514e6df7c72cfed53d1bb2d",
+      "mismatches": [],
+      "valid": true
+    },
+    "ts10-physical-multiverse-attempt5": {
+      "files": 219,
+      "gate": "TS10_PHYSICAL_SEMANTIC_MULTIVERSE_PASS",
+      "manifest_sha256": "65dc705a9e6bce06d51ccf0e868ae2953af48272293ed6886638c5968dcb906f",
+      "mismatches": [],
+      "valid": true
+    },
+    "ts11-sovereign-materialization-attempt3": {
+      "files": 119,
+      "gate": "TS11_SOVEREIGN_MATERIALIZATION_PASS",
+      "manifest_sha256": "e1e0cb5c6bc1e076185ceb0552ab82d2d2433a464f12c0ae584c74fae7b9cc77",
+      "mismatches": [],
+      "valid": true
+    },
+    "ts14-integrated-rehearsal-attempt3": {
+      "files": 333,
+      "gate": "TS14_INTEGRATED_REHEARSAL_PASS",
+      "manifest_sha256": "a3fb7af7ca0d796185e2236488867ac3a951052fc83170f40591fde1384222e1",
+      "mismatches": [],
+      "valid": true
+    }
+  },
+  "unmigrated_surfaces": {
+    "interface_state": "renderer and Creation Field state remain foreign implementations",
+    "recovery_update": "A/B updater is fail-closed and signed but not decided by a T module",
+    "tools_composition": "foreign simulation/tool primitives remain Python-owned; T gates use and publication but does not compose arbitrary tools"
+  }
+}

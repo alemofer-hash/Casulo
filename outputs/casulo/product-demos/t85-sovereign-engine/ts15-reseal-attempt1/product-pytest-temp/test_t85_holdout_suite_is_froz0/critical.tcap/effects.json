@@ -1,0 +1,18 @@
+{
+  "modules": {
+    "owner.critical.capabilities": {
+      "decide": []
+    },
+    "owner.critical.fulfillment": {
+      "decide": []
+    },
+    "owner.critical.intent": {
+      "decide": []
+    },
+    "owner.critical.publish": {
+      "decide": [
+        "manifest"
+      ]
+    }
+  }
+}

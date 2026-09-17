@@ -1,0 +1,20 @@
+{
+  "cancel_latency_ns": 15806900,
+  "consent_recorded": true,
+  "duration_requested_s": 15.0,
+  "first_voice_s": 2.3840338999980304,
+  "frames": 706,
+  "input_device": 1,
+  "partials": [
+    "[MÚSICA DE FUNDO]",
+    "Vai!",
+    "Vai cadupe."
+  ],
+  "passed": false,
+  "raw_audio_persisted": false,
+  "schema": "casulo-physical-barge-in-smoke/1.0",
+  "sentinel_heard": false,
+  "streaming_playback": true,
+  "transcript": "Vai cadupe.",
+  "voiced_frames": 27
+}

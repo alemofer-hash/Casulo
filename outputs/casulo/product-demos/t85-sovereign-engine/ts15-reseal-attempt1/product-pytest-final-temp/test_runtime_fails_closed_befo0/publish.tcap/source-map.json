@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.publish.t",
+      "module": "owner.publish",
+      "sha256": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "base_sha256_after": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+  "base_sha256_before": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+  "checks": {
+    "base_immutable": true,
+    "block_devices_absent": true,
+    "crash_recovery": true,
+    "doctor": true,
+    "missing_restore_recoverable": true,
+    "network_denied": true,
+    "restore": true,
+    "snapshots_distinct": true,
+    "three_cycles": true
+  },
+  "clean_snapshot": {
+    "created": true,
+    "idempotent": false,
+    "overlay_sha256": "c368bb2fc2179d95d24e0bb3383455b83c8bec359e3c2ed7fd5e291b7e781658",
+    "snapshot": "clean-owner"
+  },
+  "crash": {
+    "base_unchanged": true,
+    "overlay_check_output": "No errors were found on the image.\nImage end offset: 524288\n",
+    "overlay_check_returncode": 0,
+    "process_terminated": true
+  },
+  "cycles": [
+    {
+      "acceleration": "tcg",
+      "base_sha256_after": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "base_sha256_before": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "base_unchanged": true,
+      "bridge_ready_monotonic_ns": 16706297496500,
+      "host_block_devices": false,
+      "live_serial_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\vm-packaged-probe\\state\\bridge-live.serial.bin",
+      "network": "denied",
+      "passed": true,
+      "provider_ended_monotonic_ns": 16706357335200,
+      "provider_started_monotonic_ns": 16706297497100,
+      "request_seen": true,
+      "response_bytes": 23,
+      "response_sent": true,
+      "response_sha256": "b9c042e4ecff229367bfc4b4fed62c96292f6a80e66597546b7e3d8ac6a4467d",
+      "returncode": 33,
+      "serial": "\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01HBdsDxe: loading Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\r\nBdsDxe: starting Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\r\nINFO : Framebuffer info: FrameBufferInfo { byte_len: 4096000, width: 1280, height: 800, pixel_format: Bgr, bytes_per_pixel: 4, stride: 1280 }\r\nINFO : UEFI bootloader started\r\nINFO : Using framebuffer at 0x80000000\r\nINFO : Reading configuration from disk was successful\r\nINFO : Trying to load ramdisk via Disk\r\nINFO : Loaded ramdisk\r\nTRACE: exiting boot services\r\nTRACE: switching to new level 4 table\r\nINFO : New page table at: PhysFrame[4KiB](0x101000)\r\nINFO : Elf file loaded at Pointer {\r\n    addr: 0x000000007e183000,\r\n    metadata: 694664,\r\n}\r\nINFO : virtual_address_offset: 0x10000000000\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 0, physical_addr: 0, file_size: d23c, mem_size: d23c, align: 1000 })\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: d240, virtual_addr: e240, physical_addr: e240, file_size: 4aa06, mem_size: 4aa06, align: 1000 })\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 57c48, virtual_addr: 59c48, physical_addr: 59c48, file_size: 40f8, mem_size: 43b8, align: 1000 })\r\nINFO : Mapping bss section\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 5bd40, virtual_addr: 5ed40, physical_addr: 5ed40, file_size: 20, mem_size: 13250, align: 1000 })\r\nINFO : Mapping bss section\r\nINFO : Entry point at: 0x10000037c60\r\nINFO : Creating GDT at PhysAddr(0x144000)\r\nINFO : Map framebuffer\r\nINFO : Map physical memory\r\nINFO : Allocate bootinfo\r\nINFO : Create Memory Map\r\nINFO : Create bootinfo\r\nINFO : Jumping to kernel entry point at VirtAddr(0x10000037c60)\r\nSMP_START_ATTEMPT=1\r\nSMP_START_RETURNED=1\r\nRING3_CONSOLE_WRITE=PASS\nCASULO_NATIVE_BOOT_OK\r\nVERSION=Research Preview 0.1\r\nARCH=x86_64\r\nUEFI=true\r\nMEMORY_REGIONS=111\r\nFRAMEBUFFER=painted\r\nPANIC_DUMP=armed\r\nG1_BOOT_SMOKE=PASS\r\nPHYSICAL_USABLE_BYTES=4283064320\r\nPHYSICAL_USABLE_FRAMES=1045670\r\nPAGING=active\r\nLOW_USABLE_FRAME=0x1000\r\nHEAP_PAGES=64\r\nHEAP_ALLOC=PASS\r\nHEAP_KERNEL_ONLY=PASS\r\nGUARD_PAGE_UNMAPPED=PASS\r\nGDT_IDT=loaded\r\nTIMER_SOURCE=8254_PIT_IRQ0\r\nTIMER_HZ=100\r\nTIMER_TICKS=4\r\nWATCHDOG_CONTRACT=PASS\r\nFAULTS_CONTAINED=1\r\nGUARD_FAULT_CONTAINMENT=PASS\r\nCPU_VENDOR=AuthenticAMD\r\nTOPOLOGY_LOGICAL_CPUS=4\r\nTOPOLOGY_THREADS_PER_CORE=1\r\nTOPOLOGY_BSP_X2APIC_ID=0\r\nX2APIC_SUPPORTED=false\r\nHYPERVISOR_PRESENT=true\r\nSMP_SCOPE=bounded-qemu-2vcpu\r\nSMP_MADT_VALID=PASS\r\nSMP_APS_EXPECTED=1\r\nSMP_APS_STARTED=1\r\nSMP_TARGET_APIC_ID=1\r\nSMP_LAPIC_PHYSICAL=0xfee00000\r\nSMP_BOUNDED=true\r\nSMP_GATE=PASS\r\nRING3_PROCESSES=4\r\nRING3_EXIT_STATUS=42\r\nPROCESS_SEPARATE_CR3=PASS\r\nKERNEL_USER_ACCESS=DENIED\r\nUSER_PAGING_BRANCH_PRIVATE=PASS\r\nUSER_CODE_RX=PASS\r\nUSER_STACK_NX=PASS\r\nSYSCALL_ABI=syscall-sysretq/0.1\r\nSYSCALL_COUNT=8\r\nSYSCALL_DEFINED_MASK=0x7f\r\nSYSCALL_PERMISSION_MASK=0x7f\r\nSYSCALL_ENOSYS=PASS\r\nSYSCALL_IPC_ROUNDTRIP=PASS\r\nSYSCALL_TRACE_EVENTS=1\r\nSYSCALL_CONSOLE_BYTES=25\r\nYIELD_KERNEL_RETURNS=1\r\nUSER_FAULTS_CONTAINED=1\r\nRING3_PAGE_FAULT_CONTAINMENT=PASS\r\nPROCESS_ROOTS_DISTINCT=PASS\r\nPROCESS_A_PRIVATE_READ=PASS\r\nPROCESS_B_CROSS_ACCESS=DENIED\r\nUSER_WATCHDOG_BUDGET_TICKS=3\r\nUSER_WATCHDOG_ELAPSED_TICKS=3\r\nNON_YIELDING_PREEMPTION=PASS\r\nPOST_PREEMPT_KERNEL_PROGRESS=PASS\r\nTCAP_RAMDISK_BYTES=12872\r\nTCAP_HEADER_VERSION=1.0\r\nTCAP_TARGET=x86_64-casulo-none\r\nTCAP_ABI=casulo-learn-context-sysv64/0.1\r\nTCAP_VALIDATION=PASS\r\nTCAP_ARTIFACT=FloodSurrogate.tcap\r\nTCAP_HASH_SHA256=32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa\r\nTCAP_CODE_BYTES=2680\r\nTCAP_ENTRY_OFFSET=0\r\nTCAP_SSE2_STATE=PASS\r\nTCAP_RESOURCE_MEMORY_LIMIT=299008\r\nTCAP_RESOURCE_ARENA_BYTES=656\r\nTCAP_RESOURCE_MAPPING_BYTES=16384\r\nTCAP_RESOURCE_CEILINGS=PASS\r\nTCAP_CODE_RX=PASS\r\nTCAP_DATA_RW_NX=PASS\r\nTCAP_STACK_RW_NX=PASS\r\nTCAP_RING3_EXIT_STATUS=0\r\nTCAP_RING3_SYSCALLS=1\r\nTCAP_SYSCALL_PERMISSION_MASK=0x3\r\nTCAP_PERMISSION_DENIED_SYSCALLS=1\r\nTCAP_PERMISSION_AUDIT_EVENTS=1\r\nTCAP_PERMISSION_NEGATIVE=PASS\r\nTCAP_EPOCHS=400\r\nTCAP_RECORDS=8\r\nTCAP_INPUTS=8\r\nTCAP_HIDDEN=8\r\nTCAP_OUTPUTS=1\r\nTCAP_INITIAL_LOSS=0.55140873000000012\r\nTCAP_FINAL_LOSS=0.00724168042749219\r\nTCAP_MAX_PARAMETER_DIFF=0.00000000000000000\r\nTCAP_NUMERICAL_EQUIVALENCE=PASS\r\nTCAP_CORRUPTION=QUARANTINE_EXECUTION_COUNT_0:PASS\r\nTCAP_PERFORMANCE_CLAIM=NONE\r\nFLOOD_SURROGATE_EXECUTION=PASS\r\nFLOOD_SURROGATE_EXIT_STATUS=0\r\nG2_KERNEL_PRIMITIVES=PASS\r\nG2_FULL_GATE=PASS\r\nG3_TCAP_GATE=PASS\r\nCASULO_G4_POLICY_ID=semantic_v1\r\nCASULO_G4_HARD_GATES=integrity,permissions,quality,isolation\r\nCASULO_G4_AUDIT_BOUND_TICKS=4\r\nCASULO_G4_QUARANTINE_DISPATCHES=0\r\nCASULO_G4_QUARANTINED_TASKS=5\r\nCASULO_G4_REFERENCE_VECTOR_SHA256=c76b1fd397b2a5e84fc6443c027e3d9545ee9dca78f005dfb5c8c962035ae766\r\nCASULO_G4_REFERENCE_TRACE_MATCH=PASS\r\nCASULO_G4_RING3_DISPATCHES=90\r\nCASULO_G4_YIELD_KERNEL_RETURNS=90\r\nCASULO_G4_FINITE_WORK=PASS\r\nCASULO_G4_HELP_P95_LOGICAL_TICKS=semantic:5,conventional:10\r\nCASULO_G4_NO_HELP_P95_LOGICAL_TICKS=semantic:6,conventional:6\r\nCASULO_G4_METRIC_SCOPE=logical-operation-count-not-wall-clock\r\nCONVENTIONAL_POLICY=PASS\r\nSEMANTIC_POLICY=PASS\r\nEQUIVALENCE_JUDGE=PASS\r\nSCHEDULER_TIMELINE=PASS\r\nFLOW_DISPATCHES=4\r\nATTRACTOR_AUDIT_DISPATCHES=4\r\nNON_STARVATION=PASS\r\nAUDIT_STARVATION=0\r\nAUDIT_MAX_GAP_LOGICAL_TICKS=4\r\nTCAP_CORRUPT_RESULT=QUARANTINE\r\nTCAP_CORRUPT_EXECUTED=0\r\nTIMING_STATUS=unavailable\r\nENERGY_STATUS=unavailable\r\nCASULO_SHELL_SCOPE=bounded-read-only-parser/0.1\r\nCASULO_SHELL_COMMANDS=help,status,topology,scheduler\r\nCASULO_SHELL_SELF_TEST=PASS\r\nG7_DEMO_PAYLOAD_GATE=PASS\r\nG4_SEMANTIC_SCHEDULER_GATE=PASS\r\nG7_DEMO_COMPLETE=PASS\r\nSHUTDOWN_PATH=isa-debug-exit/0.1\r\nREBOOT_PATH=8042-reset-probe-validated/0.1\r\nOWNER_BRIDGE_SCHEMA=casulo-owner-serial/1.0\r\nOWNER_BRIDGE_CAPABILITY=guide.response.receive\r\nOWNER_BRIDGE_TRUST=UNTRUSTED_DATA_ONLY\r\nOWNER_BRIDGE_REQUEST=resume-owner-creation\r\nOWNER_BRIDGE_READY=1\r\nOWNER_ENGINE_RESPONSE_RECEIVED_BYTES=23\r\nOWNER_GENERATIVE_BRIDGE=PASS\r\n",
+      "serial_sha256": "c1abd51f23823831aba16b8921b14cc80048fd81aa6bbad5065812daf9a99dfc",
+      "timed_out": false
+    },
+    {
+      "acceleration": "tcg",
+      "base_sha256_after": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "base_sha256_before": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "base_unchanged": true,
+      "bridge_ready_monotonic_ns": 16710300561600,
+      "host_block_devices": false,
+      "live_serial_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\vm-packaged-probe\\state\\bridge-live.serial.bin",
+      "network": "denied",
+      "passed": true,
+      "provider_ended_monotonic_ns": 16710359842600,
+      "provider_started_monotonic_ns": 16710300562300,
+      "request_seen": true,
+      "response_bytes": 23,
+      "response_sent": true,
+      "response_sha256": "d1f6b60c26c0089b7f3581190e9650efa364d30ae2ff9e7196dc451fc0cedf5e",
+      "returncode": 33,
+      "serial": "\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01HBdsDxe: loading Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\r\nBdsDxe: starting Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\r\nINFO : Framebuffer info: FrameBufferInfo { byte_len: 4096000, width: 1280, height: 800, pixel_format: Bgr, bytes_per_pixel: 4, stride: 1280 }\r\nINFO : UEFI bootloader started\r\nINFO : Using framebuffer at 0x80000000\r\nINFO : Reading configuration from disk was successful\r\nINFO : Trying to load ramdisk via Disk\r\nINFO : Loaded ramdisk\r\nTRACE: exiting boot services\r\nTRACE: switching to new level 4 table\r\nINFO : New page table at: PhysFrame[4KiB](0x101000)\r\nINFO : Elf file loaded at Pointer {\r\n    addr: 0x000000007e17c000,\r\n    metadata: 694664,\r\n}\r\nINFO : virtual_address_offset: 0x10000000000\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 0, physical_addr: 0, file_size: d23c, mem_size: d23c, align: 1000 })\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: d240, virtual_addr: e240, physical_addr: e240, file_size: 4aa06, mem_size: 4aa06, align: 1000 })\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 57c48, virtual_addr: 59c48, physical_addr: 59c48, file_size: 40f8, mem_size: 43b8, align: 1000 })\r\nINFO : Mapping bss section\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 5bd40, virtual_addr: 5ed40, physical_addr: 5ed40, file_size: 20, mem_size: 13250, align: 1000 })\r\nINFO : Mapping bss section\r\nINFO : Entry point at: 0x10000037c60\r\nINFO : Creating GDT at PhysAddr(0x144000)\r\nINFO : Map framebuffer\r\nINFO : Map physical memory\r\nINFO : Allocate bootinfo\r\nINFO : Create Memory Map\r\nINFO : Create bootinfo\r\nINFO : Jumping to kernel entry point at VirtAddr(0x10000037c60)\r\nSMP_START_ATTEMPT=1\r\nSMP_START_RETURNED=1\r\nRING3_CONSOLE_WRITE=PASS\nCASULO_NATIVE_BOOT_OK\r\nVERSION=Research Preview 0.1\r\nARCH=x86_64\r\nUEFI=true\r\nMEMORY_REGIONS=111\r\nFRAMEBUFFER=painted\r\nPANIC_DUMP=armed\r\nG1_BOOT_SMOKE=PASS\r\nPHYSICAL_USABLE_BYTES=4283064320\r\nPHYSICAL_USABLE_FRAMES=1045670\r\nPAGING=active\r\nLOW_USABLE_FRAME=0x1000\r\nHEAP_PAGES=64\r\nHEAP_ALLOC=PASS\r\nHEAP_KERNEL_ONLY=PASS\r\nGUARD_PAGE_UNMAPPED=PASS\r\nGDT_IDT=loaded\r\nTIMER_SOURCE=8254_PIT_IRQ0\r\nTIMER_HZ=100\r\nTIMER_TICKS=4\r\nWATCHDOG_CONTRACT=PASS\r\nFAULTS_CONTAINED=1\r\nGUARD_FAULT_CONTAINMENT=PASS\r\nCPU_VENDOR=AuthenticAMD\r\nTOPOLOGY_LOGICAL_CPUS=4\r\nTOPOLOGY_THREADS_PER_CORE=1\r\nTOPOLOGY_BSP_X2APIC_ID=0\r\nX2APIC_SUPPORTED=false\r\nHYPERVISOR_PRESENT=true\r\nSMP_SCOPE=bounded-qemu-2vcpu\r\nSMP_MADT_VALID=PASS\r\nSMP_APS_EXPECTED=1\r\nSMP_APS_STARTED=1\r\nSMP_TARGET_APIC_ID=1\r\nSMP_LAPIC_PHYSICAL=0xfee00000\r\nSMP_BOUNDED=true\r\nSMP_GATE=PASS\r\nRING3_PROCESSES=4\r\nRING3_EXIT_STATUS=42\r\nPROCESS_SEPARATE_CR3=PASS\r\nKERNEL_USER_ACCESS=DENIED\r\nUSER_PAGING_BRANCH_PRIVATE=PASS\r\nUSER_CODE_RX=PASS\r\nUSER_STACK_NX=PASS\r\nSYSCALL_ABI=syscall-sysretq/0.1\r\nSYSCALL_COUNT=8\r\nSYSCALL_DEFINED_MASK=0x7f\r\nSYSCALL_PERMISSION_MASK=0x7f\r\nSYSCALL_ENOSYS=PASS\r\nSYSCALL_IPC_ROUNDTRIP=PASS\r\nSYSCALL_TRACE_EVENTS=1\r\nSYSCALL_CONSOLE_BYTES=25\r\nYIELD_KERNEL_RETURNS=1\r\nUSER_FAULTS_CONTAINED=1\r\nRING3_PAGE_FAULT_CONTAINMENT=PASS\r\nPROCESS_ROOTS_DISTINCT=PASS\r\nPROCESS_A_PRIVATE_READ=PASS\r\nPROCESS_B_CROSS_ACCESS=DENIED\r\nUSER_WATCHDOG_BUDGET_TICKS=3\r\nUSER_WATCHDOG_ELAPSED_TICKS=3\r\nNON_YIELDING_PREEMPTION=PASS\r\nPOST_PREEMPT_KERNEL_PROGRESS=PASS\r\nTCAP_RAMDISK_BYTES=12872\r\nTCAP_HEADER_VERSION=1.0\r\nTCAP_TARGET=x86_64-casulo-none\r\nTCAP_ABI=casulo-learn-context-sysv64/0.1\r\nTCAP_VALIDATION=PASS\r\nTCAP_ARTIFACT=FloodSurrogate.tcap\r\nTCAP_HASH_SHA256=32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa\r\nTCAP_CODE_BYTES=2680\r\nTCAP_ENTRY_OFFSET=0\r\nTCAP_SSE2_STATE=PASS\r\nTCAP_RESOURCE_MEMORY_LIMIT=299008\r\nTCAP_RESOURCE_ARENA_BYTES=656\r\nTCAP_RESOURCE_MAPPING_BYTES=16384\r\nTCAP_RESOURCE_CEILINGS=PASS\r\nTCAP_CODE_RX=PASS\r\nTCAP_DATA_RW_NX=PASS\r\nTCAP_STACK_RW_NX=PASS\r\nTCAP_RING3_EXIT_STATUS=0\r\nTCAP_RING3_SYSCALLS=1\r\nTCAP_SYSCALL_PERMISSION_MASK=0x3\r\nTCAP_PERMISSION_DENIED_SYSCALLS=1\r\nTCAP_PERMISSION_AUDIT_EVENTS=1\r\nTCAP_PERMISSION_NEGATIVE=PASS\r\nTCAP_EPOCHS=400\r\nTCAP_RECORDS=8\r\nTCAP_INPUTS=8\r\nTCAP_HIDDEN=8\r\nTCAP_OUTPUTS=1\r\nTCAP_INITIAL_LOSS=0.55140873000000012\r\nTCAP_FINAL_LOSS=0.00724168042749219\r\nTCAP_MAX_PARAMETER_DIFF=0.00000000000000000\r\nTCAP_NUMERICAL_EQUIVALENCE=PASS\r\nTCAP_CORRUPTION=QUARANTINE_EXECUTION_COUNT_0:PASS\r\nTCAP_PERFORMANCE_CLAIM=NONE\r\nFLOOD_SURROGATE_EXECUTION=PASS\r\nFLOOD_SURROGATE_EXIT_STATUS=0\r\nG2_KERNEL_PRIMITIVES=PASS\r\nG2_FULL_GATE=PASS\r\nG3_TCAP_GATE=PASS\r\nCASULO_G4_POLICY_ID=semantic_v1\r\nCASULO_G4_HARD_GATES=integrity,permissions,quality,isolation\r\nCASULO_G4_AUDIT_BOUND_TICKS=4\r\nCASULO_G4_QUARANTINE_DISPATCHES=0\r\nCASULO_G4_QUARANTINED_TASKS=5\r\nCASULO_G4_REFERENCE_VECTOR_SHA256=c76b1fd397b2a5e84fc6443c027e3d9545ee9dca78f005dfb5c8c962035ae766\r\nCASULO_G4_REFERENCE_TRACE_MATCH=PASS\r\nCASULO_G4_RING3_DISPATCHES=90\r\nCASULO_G4_YIELD_KERNEL_RETURNS=90\r\nCASULO_G4_FINITE_WORK=PASS\r\nCASULO_G4_HELP_P95_LOGICAL_TICKS=semantic:5,conventional:10\r\nCASULO_G4_NO_HELP_P95_LOGICAL_TICKS=semantic:6,conventional:6\r\nCASULO_G4_METRIC_SCOPE=logical-operation-count-not-wall-clock\r\nCONVENTIONAL_POLICY=PASS\r\nSEMANTIC_POLICY=PASS\r\nEQUIVALENCE_JUDGE=PASS\r\nSCHEDULER_TIMELINE=PASS\r\nFLOW_DISPATCHES=4\r\nATTRACTOR_AUDIT_DISPATCHES=4\r\nNON_STARVATION=PASS\r\nAUDIT_STARVATION=0\r\nAUDIT_MAX_GAP_LOGICAL_TICKS=4\r\nTCAP_CORRUPT_RESULT=QUARANTINE\r\nTCAP_CORRUPT_EXECUTED=0\r\nTIMING_STATUS=unavailable\r\nENERGY_STATUS=unavailable\r\nCASULO_SHELL_SCOPE=bounded-read-only-parser/0.1\r\nCASULO_SHELL_COMMANDS=help,status,topology,scheduler\r\nCASULO_SHELL_SELF_TEST=PASS\r\nG7_DEMO_PAYLOAD_GATE=PASS\r\nG4_SEMANTIC_SCHEDULER_GATE=PASS\r\nG7_DEMO_COMPLETE=PASS\r\nSHUTDOWN_PATH=isa-debug-exit/0.1\r\nREBOOT_PATH=8042-reset-probe-validated/0.1\r\nOWNER_BRIDGE_SCHEMA=casulo-owner-serial/1.0\r\nOWNER_BRIDGE_CAPABILITY=guide.response.receive\r\nOWNER_BRIDGE_TRUST=UNTRUSTED_DATA_ONLY\r\nOWNER_BRIDGE_REQUEST=resume-owner-creation\r\nOWNER_BRIDGE_READY=1\r\nOWNER_ENGINE_RESPONSE_RECEIVED_BYTES=23\r\nOWNER_GENERATIVE_BRIDGE=PASS\r\n",
+      "serial_sha256": "8aceef33f3ec7274f318d4877df13768b0fe2870dd19d2c23006a8d495737afa",
+      "timed_out": false
+    },
+    {
+      "acceleration": "tcg",
+      "base_sha256_after": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "base_sha256_before": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "base_unchanged": true,
+      "bridge_ready_monotonic_ns": 16714220428600,
+      "host_block_devices": false,
+      "live_serial_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\vm-packaged-probe\\state\\bridge-live.serial.bin",
+      "network": "denied",
+      "passed": true,
+      "provider_ended_monotonic_ns": 16714281768700,
+      "provider_started_monotonic_ns": 16714220429100,
+      "request_seen": true,
+      "response_bytes": 23,
+      "response_sent": true,
+      "response_sha256": "3333cbf6e345ac4811dea5bb0a08fd6f8ae57ad8212563f965606f9cda157533",
+      "returncode": 33,
+      "serial": "\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01HBdsDxe: loading Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\r\nBdsDxe: starting Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\r\nINFO : Framebuffer info: FrameBufferInfo { byte_len: 4096000, width: 1280, height: 800, pixel_format: Bgr, bytes_per_pixel: 4, stride: 1280 }\r\nINFO : UEFI bootloader started\r\nINFO : Using framebuffer at 0x80000000\r\nINFO : Reading configuration from disk was successful\r\nINFO : Trying to load ramdisk via Disk\r\nINFO : Loaded ramdisk\r\nTRACE: exiting boot services\r\nTRACE: switching to new level 4 table\r\nINFO : New page table at: PhysFrame[4KiB](0x101000)\r\nINFO : Elf file loaded at Pointer {\r\n    addr: 0x000000007e17c000,\r\n    metadata: 694664,\r\n}\r\nINFO : virtual_address_offset: 0x10000000000\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 0, physical_addr: 0, file_size: d23c, mem_size: d23c, align: 1000 })\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: d240, virtual_addr: e240, physical_addr: e240, file_size: 4aa06, mem_size: 4aa06, align: 1000 })\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 57c48, virtual_addr: 59c48, physical_addr: 59c48, file_size: 40f8, mem_size: 43b8, align: 1000 })\r\nINFO : Mapping bss section\r\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 5bd40, virtual_addr: 5ed40, physical_addr: 5ed40, file_size: 20, mem_size: 13250, align: 1000 })\r\nINFO : Mapping bss section\r\nINFO : Entry point at: 0x10000037c60\r\nINFO : Creating GDT at PhysAddr(0x144000)\r\nINFO : Map framebuffer\r\nINFO : Map physical memory\r\nINFO : Allocate bootinfo\r\nINFO : Create Memory Map\r\nINFO : Create bootinfo\r\nINFO : Jumping to kernel entry point at VirtAddr(0x10000037c60)\r\nSMP_START_ATTEMPT=1\r\nSMP_START_RETURNED=1\r\nRING3_CONSOLE_WRITE=PASS\nCASULO_NATIVE_BOOT_OK\r\nVERSION=Research Preview 0.1\r\nARCH=x86_64\r\nUEFI=true\r\nMEMORY_REGIONS=111\r\nFRAMEBUFFER=painted\r\nPANIC_DUMP=armed\r\nG1_BOOT_SMOKE=PASS\r\nPHYSICAL_USABLE_BYTES=4283064320\r\nPHYSICAL_USABLE_FRAMES=1045670\r\nPAGING=active\r\nLOW_USABLE_FRAME=0x1000\r\nHEAP_PAGES=64\r\nHEAP_ALLOC=PASS\r\nHEAP_KERNEL_ONLY=PASS\r\nGUARD_PAGE_UNMAPPED=PASS\r\nGDT_IDT=loaded\r\nTIMER_SOURCE=8254_PIT_IRQ0\r\nTIMER_HZ=100\r\nTIMER_TICKS=4\r\nWATCHDOG_CONTRACT=PASS\r\nFAULTS_CONTAINED=1\r\nGUARD_FAULT_CONTAINMENT=PASS\r\nCPU_VENDOR=AuthenticAMD\r\nTOPOLOGY_LOGICAL_CPUS=4\r\nTOPOLOGY_THREADS_PER_CORE=1\r\nTOPOLOGY_BSP_X2APIC_ID=0\r\nX2APIC_SUPPORTED=false\r\nHYPERVISOR_PRESENT=true\r\nSMP_SCOPE=bounded-qemu-2vcpu\r\nSMP_MADT_VALID=PASS\r\nSMP_APS_EXPECTED=1\r\nSMP_APS_STARTED=1\r\nSMP_TARGET_APIC_ID=1\r\nSMP_LAPIC_PHYSICAL=0xfee00000\r\nSMP_BOUNDED=true\r\nSMP_GATE=PASS\r\nRING3_PROCESSES=4\r\nRING3_EXIT_STATUS=42\r\nPROCESS_SEPARATE_CR3=PASS\r\nKERNEL_USER_ACCESS=DENIED\r\nUSER_PAGING_BRANCH_PRIVATE=PASS\r\nUSER_CODE_RX=PASS\r\nUSER_STACK_NX=PASS\r\nSYSCALL_ABI=syscall-sysretq/0.1\r\nSYSCALL_COUNT=8\r\nSYSCALL_DEFINED_MASK=0x7f\r\nSYSCALL_PERMISSION_MASK=0x7f\r\nSYSCALL_ENOSYS=PASS\r\nSYSCALL_IPC_ROUNDTRIP=PASS\r\nSYSCALL_TRACE_EVENTS=1\r\nSYSCALL_CONSOLE_BYTES=25\r\nYIELD_KERNEL_RETURNS=1\r\nUSER_FAULTS_CONTAINED=1\r\nRING3_PAGE_FAULT_CONTAINMENT=PASS\r\nPROCESS_ROOTS_DISTINCT=PASS\r\nPROCESS_A_PRIVATE_READ=PASS\r\nPROCESS_B_CROSS_ACCESS=DENIED\r\nUSER_WATCHDOG_BUDGET_TICKS=3\r\nUSER_WATCHDOG_ELAPSED_TICKS=3\r\nNON_YIELDING_PREEMPTION=PASS\r\nPOST_PREEMPT_KERNEL_PROGRESS=PASS\r\nTCAP_RAMDISK_BYTES=12872\r\nTCAP_HEADER_VERSION=1.0\r\nTCAP_TARGET=x86_64-casulo-none\r\nTCAP_ABI=casulo-learn-context-sysv64/0.1\r\nTCAP_VALIDATION=PASS\r\nTCAP_ARTIFACT=FloodSurrogate.tcap\r\nTCAP_HASH_SHA256=32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa\r\nTCAP_CODE_BYTES=2680\r\nTCAP_ENTRY_OFFSET=0\r\nTCAP_SSE2_STATE=PASS\r\nTCAP_RESOURCE_MEMORY_LIMIT=299008\r\nTCAP_RESOURCE_ARENA_BYTES=656\r\nTCAP_RESOURCE_MAPPING_BYTES=16384\r\nTCAP_RESOURCE_CEILINGS=PASS\r\nTCAP_CODE_RX=PASS\r\nTCAP_DATA_RW_NX=PASS\r\nTCAP_STACK_RW_NX=PASS\r\nTCAP_RING3_EXIT_STATUS=0\r\nTCAP_RING3_SYSCALLS=1\r\nTCAP_SYSCALL_PERMISSION_MASK=0x3\r\nTCAP_PERMISSION_DENIED_SYSCALLS=1\r\nTCAP_PERMISSION_AUDIT_EVENTS=1\r\nTCAP_PERMISSION_NEGATIVE=PASS\r\nTCAP_EPOCHS=400\r\nTCAP_RECORDS=8\r\nTCAP_INPUTS=8\r\nTCAP_HIDDEN=8\r\nTCAP_OUTPUTS=1\r\nTCAP_INITIAL_LOSS=0.55140873000000012\r\nTCAP_FINAL_LOSS=0.00724168042749219\r\nTCAP_MAX_PARAMETER_DIFF=0.00000000000000000\r\nTCAP_NUMERICAL_EQUIVALENCE=PASS\r\nTCAP_CORRUPTION=QUARANTINE_EXECUTION_COUNT_0:PASS\r\nTCAP_PERFORMANCE_CLAIM=NONE\r\nFLOOD_SURROGATE_EXECUTION=PASS\r\nFLOOD_SURROGATE_EXIT_STATUS=0\r\nG2_KERNEL_PRIMITIVES=PASS\r\nG2_FULL_GATE=PASS\r\nG3_TCAP_GATE=PASS\r\nCASULO_G4_POLICY_ID=semantic_v1\r\nCASULO_G4_HARD_GATES=integrity,permissions,quality,isolation\r\nCASULO_G4_AUDIT_BOUND_TICKS=4\r\nCASULO_G4_QUARANTINE_DISPATCHES=0\r\nCASULO_G4_QUARANTINED_TASKS=5\r\nCASULO_G4_REFERENCE_VECTOR_SHA256=c76b1fd397b2a5e84fc6443c027e3d9545ee9dca78f005dfb5c8c962035ae766\r\nCASULO_G4_REFERENCE_TRACE_MATCH=PASS\r\nCASULO_G4_RING3_DISPATCHES=90\r\nCASULO_G4_YIELD_KERNEL_RETURNS=90\r\nCASULO_G4_FINITE_WORK=PASS\r\nCASULO_G4_HELP_P95_LOGICAL_TICKS=semantic:5,conventional:10\r\nCASULO_G4_NO_HELP_P95_LOGICAL_TICKS=semantic:6,conventional:6\r\nCASULO_G4_METRIC_SCOPE=logical-operation-count-not-wall-clock\r\nCONVENTIONAL_POLICY=PASS\r\nSEMANTIC_POLICY=PASS\r\nEQUIVALENCE_JUDGE=PASS\r\nSCHEDULER_TIMELINE=PASS\r\nFLOW_DISPATCHES=4\r\nATTRACTOR_AUDIT_DISPATCHES=4\r\nNON_STARVATION=PASS\r\nAUDIT_STARVATION=0\r\nAUDIT_MAX_GAP_LOGICAL_TICKS=4\r\nTCAP_CORRUPT_RESULT=QUARANTINE\r\nTCAP_CORRUPT_EXECUTED=0\r\nTIMING_STATUS=unavailable\r\nENERGY_STATUS=unavailable\r\nCASULO_SHELL_SCOPE=bounded-read-only-parser/0.1\r\nCASULO_SHELL_COMMANDS=help,status,topology,scheduler\r\nCASULO_SHELL_SELF_TEST=PASS\r\nG7_DEMO_PAYLOAD_GATE=PASS\r\nG4_SEMANTIC_SCHEDULER_GATE=PASS\r\nG7_DEMO_COMPLETE=PASS\r\nSHUTDOWN_PATH=isa-debug-exit/0.1\r\nREBOOT_PATH=8042-reset-probe-validated/0.1\r\nOWNER_BRIDGE_SCHEMA=casulo-owner-serial/1.0\r\nOWNER_BRIDGE_CAPABILITY=guide.response.receive\r\nOWNER_BRIDGE_TRUST=UNTRUSTED_DATA_ONLY\r\nOWNER_BRIDGE_REQUEST=resume-owner-creation\r\nOWNER_BRIDGE_READY=1\r\nOWNER_ENGINE_RESPONSE_RECEIVED_BYTES=23\r\nOWNER_GENERATIVE_BRIDGE=PASS\r\n",
+      "serial_sha256": "8aceef33f3ec7274f318d4877df13768b0fe2870dd19d2c23006a8d495737afa",
+      "timed_out": false
+    }
+  ],
+  "doctor": {
+    "accelerators": [
+      "whpx",
+      "tcg"
+    ],
+    "base_image": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\human-proof\\OWNER_VM\\casulo-native-generative-interactive.img",
+    "base_image_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+    "base_os_read_only": true,
+    "clipboard": false,
+    "cloud": "RELEASE_LOCKED",
+    "external_media": "NOT_IN_USE",
+    "free_bytes": 83592081408,
+    "host_block_devices": false,
+    "minimum_reserve_bytes": 21474836480,
+    "network": "denied",
+    "overlay_exists": false,
+    "ovmf_code": "C:\\Program Files\\qemu\\share\\edk2-x86_64-code.fd",
+    "ovmf_code_sha256": "33090cc07675baa5190d9f1e84bf5176b33bcbfa9bacac522961150cdb6dbb2a",
+    "qemu": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+    "qemu_img_version": "qemu-img version 11.0.50 (v11.0.0-12631-g54e84cdc7a)",
+    "qemu_sha256": "b396eb9b669f6282ec60f0d46e6addca8c669992e67a34365be44cd3cb97c9a7",
+    "qemu_version": "QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a)",
+    "read_only": true,
+    "ready": true,
+    "reserve_pass": true,
+    "schema": "casulo.vm-doctor/1.0",
+    "selected_acceleration": "whpx",
+    "shared_folder": false,
+    "state_root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\vm-packaged-probe\\state"
+  },
+  "gate": "PASS",
+  "guest_network_default": "OFF",
+  "live_snapshot": {
+    "created": true,
+    "idempotent": false,
+    "overlay_sha256": "36df9edf44749fdf32f05cac430ee8bb9b542dbdf0bb8eeb5c27aa70cc552916",
+    "snapshot": "owner-live"
+  },
+  "missing_restore": {
+    "message": "snapshot inexistente: owner-live; execute :snapshot antes de :restore",
+    "overlay_preserved": true,
+    "recoverable": true
+  },
+  "restore": {
+    "base_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+    "restored": "owner-live"
+  },
+  "schema": "casulo.vm-appliance-probe/1.0",
+  "usb_block_devices": "PROHIBITED"
+}

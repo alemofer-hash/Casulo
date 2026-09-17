@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="7.380" timestamp="2026-08-15T00:13:59.785657-03:00" hostname="LAPTOP-EET830EF"><testcase classname="tests.product.test_t85_human_proof_release" name="test_t85_release_is_self_contained_and_verifies" time="6.580" /><testcase classname="tests.product.test_t85_human_proof_release" name="test_t85_release_contains_runtime_registry_and_no_private_key" time="0.014"><failure message="AssertionError: assert False&#10; +  where False = is_file()&#10; +    where is_file = (WindowsPath('C:/Users/guimo/Documents/Codex/2026-07-28/ex/outputs/casulo/release/t85-human-proof') / 'app/t-runtime/target/release/casulo-t-runtime.exe').is_file">def test_t85_release_contains_runtime_registry_and_no_private_key() -&gt; None:
+        registry = json.loads((RELEASE / "OWNER_VM/CONTENT_REGISTRY.json").read_text(encoding="utf-8"))
+        assert registry["t_runtime"]["embedded"] is True
+        assert registry["model"]["embedded"] is False
+        assert registry["neural_runtime"]["embedded"] is False
+        assert not any(path.name in {"owner-ed25519", "public-ed25519", "cloud-standby-ed25519"} for path in RELEASE.rglob("*"))
+&gt;       assert (RELEASE / registry["t_runtime"]["relative"]).is_file()
+E       AssertionError: assert False
+E        +  where False = is_file()
+E        +    where is_file = (WindowsPath('C:/Users/guimo/Documents/Codex/2026-07-28/ex/outputs/casulo/release/t85-human-proof') / 'app/t-runtime/target/release/casulo-t-runtime.exe').is_file
+
+tests\product\test_t85_human_proof_release.py:42: AssertionError</failure></testcase></testsuite></testsuites>

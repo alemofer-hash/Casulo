@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 19,
+  "failure": "HLT_WAIT_NEVER_RESUMED_AT_LATE_BOOT_STAGE",
+  "root_cause": "maskable interrupts unavailable after prior ring-3 probes, so UART was never repolled",
+  "action": "Replaced HLT/timer wait with bounded TSC polling for preloaded response boot",
+  "preserved": true,
+  "neural_evidence": false
+}

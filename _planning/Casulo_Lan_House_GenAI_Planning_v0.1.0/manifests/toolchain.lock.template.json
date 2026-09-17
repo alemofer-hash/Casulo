@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "generated_utc": null,
+  "host": {},
+  "tools": {},
+  "notes": "Generate with scripts/05-freeze-toolchain.ps1 -Apply after installation. Commit the generated lock only after review."
+}
+

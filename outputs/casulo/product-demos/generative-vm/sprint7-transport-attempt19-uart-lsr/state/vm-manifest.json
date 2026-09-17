@@ -1,0 +1,16 @@
+{
+  "base_image": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint7-transport-attempt19-uart-lsr\\images\\casulo-generative-bridge-base.img",
+  "base_read_only": true,
+  "base_sha256": "6569fa58e0a5d1eebdd497e0733af2819c9906deb6355fb8a398c55f1746f4fa",
+  "cloud": "RELEASE_LOCKED",
+  "external_media": "NOT_IN_USE",
+  "machine": "q35",
+  "network": "denied",
+  "overlay": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint7-transport-attempt19-uart-lsr\\state\\owner-overlay.qcow2",
+  "overlay_format": "qcow2",
+  "overlay_quota_gib": 12,
+  "ovmf_vars": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint7-transport-attempt19-uart-lsr\\state\\OVMF_VARS.fd",
+  "physical_devices": false,
+  "qmp": "tcp-loopback-ephemeral-only",
+  "schema": "casulo.vm-profile/1.0"
+}

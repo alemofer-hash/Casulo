@@ -1,0 +1,11 @@
+{
+  "analysis_json_trusted": false,
+  "authority_surfaces": 9,
+  "holdout_id": "holdout-linear-mae-v1",
+  "maximum_abs_difference": 4.440892098500626e-15,
+  "schema": "casulo.interlocution-independent-holdout-verification/1.0",
+  "status": "PASS",
+  "trainer_imported": false,
+  "verification_sha256": "9d7e14ac363484773ae97902d2b338a7c036dc22813816f863a51a5f01edb32b",
+  "work_units": 2
+}

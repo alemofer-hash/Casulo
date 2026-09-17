@@ -1,0 +1,50 @@
+{
+  "agent_id": "data_validator_01",
+  "case_id": "data-01",
+  "constraints": [
+    {
+      "error_code": "csv_preserve_failed",
+      "field_name": "preserve_original_bytes",
+      "requirement_id": "original-preserved",
+      "success_value": "BYTES_PRESERVED"
+    },
+    {
+      "error_code": "schema_versioning_error",
+      "field_name": "apply_versioned_schema",
+      "requirement_id": "versioned-schema",
+      "success_value": "SCHEMA_VERSION_APPLIED"
+    },
+    {
+      "error_code": "no_diagnostic_for_rejection",
+      "field_name": "provide_rejection_diagnostic",
+      "requirement_id": "diagnostic-per-rejection",
+      "success_value": "REJECTION_DIAGNOSTIC_PROVIDED"
+    }
+  ],
+  "module_suffixes": [
+    "csv",
+    "schema",
+    "diag"
+  ],
+  "raw_sha256": "f171a2d43b3a462e258a004558a6f79df0ba61973627f0c859c74468437712f6",
+  "rejected_candidates": [],
+  "request": "Validador local de CSV que preserva bytes originais, aplica schema versionado e explica cada rejeição.",
+  "schema": "casulo.t85-agent-plan/1.0",
+  "stochastic_trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "5b96614e4febf0b76fb9976d702df64db48a7c133d3aeb16a2de2d3649cf249f",
+    "ended_monotonic_ns": 31090533711700,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "t85:data-01:architecture:0",
+    "output_sha256": "f171a2d43b3a462e258a004558a6f79df0ba61973627f0c859c74468437712f6",
+    "sampling_policy_id": "casulo-t85-architecture-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 31049756842800,
+    "stream_events": 236
+  },
+  "summary": "Arquitetura de validação local de arquivos CSV com preservação de bytes originais, aplicação de schema versionado e diagnóstico por rejeição."
+}

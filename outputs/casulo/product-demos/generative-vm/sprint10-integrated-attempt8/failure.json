@@ -1,0 +1,18 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "attempt": "sprint10-integrated-attempt8",
+  "gate": "GENERATIVE_VM_HANDOFF_SCENARIO_FAIL",
+  "failed_before_repair": true,
+  "failed_operation": "tforge-project-validation",
+  "observed": {
+    "conversation_traces_present": 2,
+    "intent_checkpoint_present": true,
+    "generated_project_checkpoint_present": true,
+    "compiler_diagnostic": "T3001",
+    "compiler_message_class": "duplicate declaration",
+    "project_applied": false
+  },
+  "classification": "SEMANTICALLY_INVALID_T_PROJECT_REJECTED_BY_FORGE",
+  "preservation": "VM, overlay and neural checkpoints retained; no prior evidence overwritten",
+  "scientific_benchmark_started": false
+}

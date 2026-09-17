@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:ed823f1a87d4613ac8b45c7938fc6bee4cf9716e94c415c4c5d5cd394222c50b",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "b476ee76b1761e4011cc14f11e3c925fc0921b7021347799d6eb2a8ce5b3da97"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "fb2ffa58832a8f8e80a4269bbb972bb621f862ea336da60a70d3b7b8e682e450",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "9450c82228e6182eec511a93c57b059fdb2af58b9bdb40d0328383da963eb4b8",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "creation",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "ef24e832fffbc45fc4827032a48e8c71aa1f0d9894dd9fa8df8542d629c09073"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "Cartografo_de_Duvidas",
+        "judgements": [],
+        "name": "RegisterHypotheses",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "47c74fe759c7dc7f625734a5e6c74d330de01fa44ea6bbac45fe0ee44ee47f29"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "Cartografo_de_Duvidas",
+      "kind": "condense",
+      "name": "RegisterHypotheses",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "6e689cd8f740c152408e63dcac4e1242ae9638ae83e3d1c00db045b1e205ab45"
+  }
+}

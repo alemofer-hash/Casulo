@@ -1,0 +1,179 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "owner.guide.context_policy"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "project_match"
+                ],
+                "root": "input"
+              },
+              "error": "project_scope_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "budget_valid"
+                ],
+                "root": "input"
+              },
+              "error": "context_budget_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "mandatory_preserved"
+                ],
+                "root": "input"
+              },
+              "error": "hard_constraint_loss",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "ambiguity_present"
+                ],
+                "root": "input"
+              },
+              "else": [
+                {
+                  "name": "selections",
+                  "op": "set_state",
+                  "value": {
+                    "args": [
+                      {
+                        "op": "path",
+                        "path": [
+                          "selections"
+                        ],
+                        "root": "state"
+                      },
+                      {
+                        "op": "const",
+                        "value": 1
+                      }
+                    ],
+                    "name": "add",
+                    "op": "call"
+                  }
+                },
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "SELECT"
+                  }
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "human_resolution_present"
+                    ],
+                    "root": "input"
+                  },
+                  "else": [
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "ASK_HUMAN"
+                      }
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "name": "selections",
+                      "op": "set_state",
+                      "value": {
+                        "args": [
+                          {
+                            "op": "path",
+                            "path": [
+                              "selections"
+                            ],
+                            "root": "state"
+                          },
+                          {
+                            "op": "const",
+                            "value": 1
+                          }
+                        ],
+                        "name": "add",
+                        "op": "call"
+                      }
+                    },
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "SELECT"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "ContextPolicyInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.guide.context_policy"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

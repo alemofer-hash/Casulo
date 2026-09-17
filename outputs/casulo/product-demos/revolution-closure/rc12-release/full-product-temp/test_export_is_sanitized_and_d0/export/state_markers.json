@@ -1,0 +1,9 @@
+[
+  {
+    "note_id": "note:1",
+    "state": "FIRST_FORM",
+    "source_event_ids": [
+      "text:1"
+    ]
+  }
+]

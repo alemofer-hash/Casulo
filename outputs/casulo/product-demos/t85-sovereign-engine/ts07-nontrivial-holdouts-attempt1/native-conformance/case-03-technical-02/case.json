@@ -1,0 +1,105 @@
+{
+  "agent_id": "mass_balance_calculator_v2",
+  "bundle_sha256": "5d83ed96d2b5b0b1ae77369b4280a64221ff60f916e5bc55f731785e812a0f3d",
+  "case_id": "technical-02",
+  "checks": {
+    "isolated": true,
+    "native_gate": true,
+    "observable_equal": true,
+    "qemu_success": true,
+    "receipt_equal": true,
+    "runtime_ids_distinct": true
+  },
+  "image_sha256": "19c1de8d77e125ae596e5dccf83e15f065871e60ce63bbe6fee3a61f8734ab4d",
+  "native_observable": {
+    "diagnostics": [],
+    "events": [],
+    "jobs": [
+      {
+        "limit": 32,
+        "name": "audit",
+        "payload": [
+          "PASS",
+          "PASS",
+          "PASS"
+        ],
+        "status": "joined"
+      }
+    ],
+    "requested_effects": [],
+    "result": {
+      "kind": "ok",
+      "value": "READY"
+    },
+    "state_delta": {
+      "accepted": 1
+    }
+  },
+  "native_receipt": {
+    "canonical_input_hash": "cf122bc4c35e346401d78c093b12275b40bc14e3839c912d5fc328b2ab156771",
+    "canonical_output_hash": "8b2a6963b61fdc992a32afd0c04bdc93347f9ac0708c4272e2196ca07e6a3e59",
+    "decision_id": "decision:8b2a6963b61fdc992a32afd0",
+    "effects_requested": [],
+    "foreign_calls": [],
+    "grants_consumed": [],
+    "monotonic_timestamp_ns": 9,
+    "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "receipt_hash": "d81f144764c1ab504995fcf7834cc9309c46be871659c7f00850c0b839605540",
+    "result": "ok",
+    "runtime_function": "owner.agent.mass_balance_calculator_v2.unit_parser::decide",
+    "runtime_id": "t-runtime/native-2.0",
+    "schema": "casulo.t-decision-receipt/2.0",
+    "scope_id": "agent:technical-02",
+    "surface_id": "agent_behavior",
+    "t_ir_hash": "7661561544b23bd9b669227ad92a2227ffe9249ebd05962d312c1f074948f3f5",
+    "t_source_hash": "9a23159fcd8f310e0551244137d1a4f70e874592b3e382bfe8dc78141ad8bdb2",
+    "tcap_hash": "32be42ca477a8b18f2c78d3ce2f1f2711619b80e6a60983951e51aff48c4282b"
+  },
+  "productive": {
+    "observable": {
+      "diagnostics": [],
+      "events": [],
+      "jobs": [
+        {
+          "limit": 32,
+          "name": "audit",
+          "payload": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "joined"
+        }
+      ],
+      "requested_effects": [],
+      "result": {
+        "kind": "ok",
+        "value": "READY"
+      },
+      "state_delta": {
+        "accepted": 1
+      }
+    },
+    "runtime_receipt": {
+      "canonical_input_hash": "cf122bc4c35e346401d78c093b12275b40bc14e3839c912d5fc328b2ab156771",
+      "canonical_output_hash": "8b2a6963b61fdc992a32afd0c04bdc93347f9ac0708c4272e2196ca07e6a3e59",
+      "decision_id": "decision:8b2a6963b61fdc992a32afd0",
+      "effects_requested": [],
+      "foreign_calls": [],
+      "grants_consumed": [],
+      "monotonic_timestamp_ns": 1,
+      "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_hash": "24ddb7da39f56d802fe31a4a538d1bc2d0f028a9909dc83737d13dae5bfacf05",
+      "result": "ok",
+      "runtime_function": "owner.agent.mass_balance_calculator_v2.unit_parser::decide",
+      "runtime_id": "t-runtime/rust-2.0",
+      "schema": "casulo.t-decision-receipt/2.0",
+      "scope_id": "agent:technical-02",
+      "surface_id": "agent_behavior",
+      "t_ir_hash": "7661561544b23bd9b669227ad92a2227ffe9249ebd05962d312c1f074948f3f5",
+      "t_source_hash": "9a23159fcd8f310e0551244137d1a4f70e874592b3e382bfe8dc78141ad8bdb2",
+      "tcap_hash": "32be42ca477a8b18f2c78d3ce2f1f2711619b80e6a60983951e51aff48c4282b"
+    }
+  },
+  "serial_sha256": "c127b0c5956dc0fee24e33e3ae0b5d740094af86b3a75e9726f5d7b25dde933e"
+}

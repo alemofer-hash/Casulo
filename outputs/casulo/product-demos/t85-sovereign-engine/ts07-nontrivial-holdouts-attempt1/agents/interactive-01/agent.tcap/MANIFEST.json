@@ -1,0 +1,83 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.interactive_talk_01.memory"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "468190e6b9611c879f9c76e6f611d79048b308a9e947c5a406cd1433523aaafd"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "7ef8c99eeb14aff32684664fdd431364ec1b0bc48b279cad0b01c55d252f2cdd"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "35fb7a67a03eb670629149df239d538b7f91ac075a0ea37e56b6b98b580c625d"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "8dbd3063fdf144507ff13fe6ec00e2255195fe50b90e0917af93754e631bca3b"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "d773f1427014c51a7688694311de4a1f50b6a82854fd355a958ad742fb8afac3"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "c112e7403cf2dc760455e31a92189031726c6003b7813c7a043d1aa1d6565731"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "15438b25cd5e7390ab82a70be8cf3c8acfe6f02a87e25aef7c67da4bd210fbe0"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "a2a0dba65997db3e1c75999824af1ab0e2e5d12e1616a36627a30c27497df076"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "b94c3d27a443a64893f7879f4402ce76b1db11516564ba39783691676bb2c30c"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "c0e4b79d9fadd7ac38954b28413c8f8dd02a8ee4f7376fa81ac49689fb430d40"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "b0eb0133016091a7953571c86a88a3211e0fc1f18726da5e6aada9ae2bd25a63"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "f07b767519feec43e4d7f5ea2d42f25f5dbb4d03c3e2e7b96a32beacd423c64f"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.agent.interactive_talk_01.memory.t",
+      "module": "owner.agent.interactive_talk_01.memory",
+      "sha256": "8273f3f79dd9a12cae1d8cc43da1ccaa2881f6af86a8c92ad5c43ae5a49d1194"
+    },
+    {
+      "file": "sources/owner.agent.interactive_talk_01.interrupt.t",
+      "module": "owner.agent.interactive_talk_01.interrupt",
+      "sha256": "6d09b20a9b80a218d6bb1dc772f25060db0425503aa2340d437f830abd3619e1"
+    },
+    {
+      "file": "sources/owner.agent.interactive_talk_01.export.t",
+      "module": "owner.agent.interactive_talk_01.export",
+      "sha256": "a40485b7d38712f7cb1e670e33a8108d2d6de491a45870d4729efcfcab9c939e"
+    }
+  ],
+  "tcap_hash": "9bc9354ce8ce1344a3f89952407766190c73313d7c4af0b8974475c6e5c437e6"
+}

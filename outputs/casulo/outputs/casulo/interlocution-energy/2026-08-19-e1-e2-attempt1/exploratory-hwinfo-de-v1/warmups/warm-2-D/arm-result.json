@@ -1,0 +1,54 @@
+{
+  "arm": "D",
+  "count": 1,
+  "energy": {
+    "package_joules": null,
+    "reason": "NO_ENERGY_INSTRUMENT_USED_IN_TI9_TI10",
+    "total_system_joules": null
+  },
+  "inner_total_ns": 438645500,
+  "phases_ns": {
+    "independent_audit_ns": 26797200,
+    "publication_ns": 2178100,
+    "t_architecture_ns": 221170800,
+    "t_judgment_ns": 45694000,
+    "training_and_receipting_ns": 136534400
+  },
+  "publication": {
+    "accepted": true,
+    "arm": "D",
+    "publication_authority": "T_JUDGE_CONSUMED",
+    "result_sha256": "0e5f59d29e9f51fb2dfb4349262301fde351c924e9317344fa6768ef2a724d4d",
+    "t_judge_required": true
+  },
+  "result_file": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\interlocution-energy\\2026-08-19-e1-e2-attempt1\\exploratory-hwinfo-de-v1\\warmups\\warm-2-D\\worker\\worker-result.bin",
+  "result_sha256": "0e5f59d29e9f51fb2dfb4349262301fde351c924e9317344fa6768ef2a724d4d",
+  "schema": "casulo.interlocution-arm-result/1.0",
+  "start": 1,
+  "summary_sha256": "3b81aa918d8288a854dd68b70471e28a41ae5dd30ddbf38a8c2a37a704d0f055",
+  "work_summary": {
+    "K_completed": 1,
+    "K_requested": 1,
+    "K_started": 1,
+    "authority_chain_tip": "21842288a5385b90ec4276812d3bfe9029bee29a5e120371dcbd67d11d0e4c16",
+    "child_timing": {
+      "count": 1,
+      "parent_monotonic_ns": 51714700,
+      "qpc_frequency": 10000000,
+      "qpc_ticks": 359895,
+      "start": 1,
+      "thread_cycles": 80360219,
+      "worker_monotonic_ns": 35980400
+    },
+    "epochs_completed": 400,
+    "optimizer_steps": 400,
+    "parameter_writes": 32400,
+    "receipt_file_sha256": "11415790941b8869b535b6e65c59277ad5a11c628bd6b353da85d7ddd7c19b44",
+    "records_visited": 409600,
+    "result_file_sha256": "0e5f59d29e9f51fb2dfb4349262301fde351c924e9317344fa6768ef2a724d4d",
+    "schema": "casulo.interlocution-worker-summary/1.0",
+    "status": "WORK_COMPLETED_RECEIPTED",
+    "summary_sha256": "4eee45b9df2b9dcb40422a19ec0bff2f84638bd39b7078bd1832986f00767639",
+    "work_chain_tip": "7b8e4849315415592ecf5f213d76b0e2f773d003cc458db10acf953cfabcfd24"
+  }
+}

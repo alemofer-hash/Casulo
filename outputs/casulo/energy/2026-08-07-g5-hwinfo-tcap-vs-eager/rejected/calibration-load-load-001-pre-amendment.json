@@ -1,0 +1,10 @@
+{
+  "implementation": "pytorch-eager-fullstep/1",
+  "note": "attempt stopped by physical ceiling before calibration result was frozen",
+  "pair_id": "calibration-load",
+  "promoted_to_scientific_sample": false,
+  "reason_code": "maximum_continuous_seconds_exceeded",
+  "recovered_from_transactional_markers": true,
+  "schema": "casulo-hwinfo-rejected-segment/1.0",
+  "segment_id": "load-001"
+}

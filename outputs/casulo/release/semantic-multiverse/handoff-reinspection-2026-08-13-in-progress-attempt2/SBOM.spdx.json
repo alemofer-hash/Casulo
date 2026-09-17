@@ -1,0 +1,45 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "created": "2026-08-13T03:35:18.525406+00:00",
+    "creators": [
+      "Person: Guilherme Moura Fernandes",
+      "Tool: Casulo reseal"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://teloscorp.invalid/spdx/casulo-semantic-reinspection/2026-08-13",
+  "name": "casulo-owner-semantic-multiverse-reinspection",
+  "packages": [
+    {
+      "embedded": true,
+      "licenseConcluded": "LicenseRef-Teloscorp-Proprietary",
+      "name": "Casulo owner Semantic Multiverse",
+      "sha256": "b6c65a5b3af0ffb032e7a3b5b62cd013c59aa198d2dfecc4fce59772063f6841"
+    },
+    {
+      "embedded": true,
+      "licenseConcluded": "LicenseRef-Teloscorp-Proprietary",
+      "name": "Einstein local 4D evaluator v1.1",
+      "sha256": "9ceefac252271d66f305e34d0c595606104237cfe534004e935b652660abe37f"
+    },
+    {
+      "embedded": false,
+      "licenseConcluded": "Apache-2.0",
+      "name": "Qwen3-4B Q4_K_M",
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+    },
+    {
+      "embedded": false,
+      "licenseConcluded": "MIT",
+      "name": "llama.cpp b10362",
+      "sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e"
+    },
+    {
+      "embedded": false,
+      "licenseConcluded": "GPL-2.0-or-later AND BSD-2-Clause-Patent",
+      "name": "QEMU/OVMF"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

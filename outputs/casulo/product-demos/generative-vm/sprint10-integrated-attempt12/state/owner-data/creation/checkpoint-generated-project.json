@@ -1,0 +1,99 @@
+{
+  "candidate_rejections": [],
+  "creation_sha256": "11259e76baf4e0a178701bbfc1967e23535c869f5ee75748207e19422adfd80b",
+  "entry_unit": "creation_init",
+  "project_id": "t-project:14df823daf568df8b3debed5",
+  "tests": [
+    {
+      "expected_contains": "init:G61H:memory.read",
+      "input": "memory.read:G61H:creation:open-ended-holdout",
+      "name": "creation_init_test",
+      "unit_id": "creation_init"
+    },
+    {
+      "expected_contains": "reject:G61H:memory.read",
+      "input": "memory.read:G61H:creation:open-ended-holdout",
+      "name": "data_rejection_test",
+      "unit_id": "data_rejection"
+    },
+    {
+      "expected_contains": "link:G61H:memory.read",
+      "input": "memory.read:G61H:creation:open-ended-holdout",
+      "name": "interface_link_test",
+      "unit_id": "interface_link"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "8ae49d4ad3b083c764c39a3014ed651d02b7d766d964e3cc2fe70943921bdba5",
+    "ended_monotonic_ns": 2923567105800,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+    "output_sha256": "14df823daf568df8b3debed58d85ab3e33225d988751cda29127fcd79d5056ec",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 2814724413500,
+    "stream_events": 527
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield G61H\n  trace value: Text\n\ncondense G61H_init in G61H\n  effects [manifest]\n  emit \"init:G61H:memory.read:creation:open-ended-holdout\"\n",
+      "unit_id": "creation_init",
+      "watch_paths": [
+        [
+          "memory.read",
+          "G61H",
+          "init"
+        ],
+        [
+          "G61H",
+          "init",
+          "memory.read"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_init"
+      ],
+      "source": "language T/1.1\nmodule data\n\ncapability manifest\n\nfield G61H\n  trace value: Text\n\ncondense G61H_reject in G61H\n  effects [manifest]\n  emit \"reject:G61H:memory.read:creation:open-ended-holdout\"\n",
+      "unit_id": "data_rejection",
+      "watch_paths": [
+        [
+          "memory.read",
+          "G61H",
+          "reject"
+        ],
+        [
+          "G61H",
+          "reject",
+          "memory.read"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "data_rejection"
+      ],
+      "source": "language T/1.1\nmodule interface\n\ncapability manifest\n\nfield G61H\n  trace value: Text\n\ncondense G61H_link in G61H\n  effects [manifest]\n  emit \"link:G61H:memory.read:creation:open-ended-holdout\"\n",
+      "unit_id": "interface_link",
+      "watch_paths": [
+        [
+          "memory.read",
+          "G61H",
+          "link"
+        ],
+        [
+          "G61H",
+          "link",
+          "memory.read"
+        ]
+      ]
+    }
+  ]
+}

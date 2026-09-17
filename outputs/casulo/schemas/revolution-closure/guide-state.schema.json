@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casulo://schemas/guide-state/1.0",
+  "title": "Casulo Guide State 1.0",
+  "type": "object",
+  "required": ["schema", "thread", "projects", "commitments", "hypotheses", "rejected", "open_questions", "uncertainties", "collaboration_policy", "jobs"],
+  "properties": {
+    "schema": {"const": "casulo.guide-state/1.0"},
+    "thread": {"type": "array", "items": {"type": "string"}},
+    "projects": {"type": "object"},
+    "commitments": {"type": "array"},
+    "hypotheses": {"type": "array"},
+    "rejected": {"type": "array"},
+    "open_questions": {"type": "array"},
+    "uncertainties": {"type": "array"},
+    "collaboration_policy": {"type": "object"},
+    "jobs": {"type": "object"}
+  },
+  "additionalProperties": false
+}

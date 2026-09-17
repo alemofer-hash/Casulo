@@ -1,0 +1,68 @@
+{
+  "battery": {
+    "ac_connected": true,
+    "charge_now_coulombs": null,
+    "charge_resolution_coulombs": null,
+    "current_now_amperes": null,
+    "energy_now_joules": null,
+    "energy_resolution_joules": null,
+    "monotonic_ns": 18484220953200,
+    "observed_at_utc": "2026-08-07T17:02:48.981003+00:00",
+    "percent": 100.0,
+    "power_now_watts": null,
+    "present": true,
+    "source": "windows_psutil_status_only",
+    "status": "Full",
+    "voltage_now_volts": null
+  },
+  "controlled_workload_started": false,
+  "observed_at_utc": "2026-08-07T17:02:48.981194+00:00",
+  "physical_domains": [],
+  "rapl": {
+    "hierarchical_zones_never_summed": true,
+    "validations": [
+      {
+        "controlled_load_iterations": 0,
+        "delta_uj": null,
+        "domain": null,
+        "physical": false,
+        "reason_code": "rapl_powercap_unsupported_os:windows",
+        "rollovers": null,
+        "samples": [],
+        "valid": false,
+        "zone_id": null
+      }
+    ],
+    "zones": []
+  },
+  "ready": false,
+  "reason_codes": [
+    "CPU_PACKAGE_RAPL_UNAVAILABLE",
+    "TOTAL_SYSTEM_WALL_METER_NOT_CONFIGURED"
+  ],
+  "schema": "casulo-energy-capabilities/1.0",
+  "sources": {
+    "BATTERY_DELTA": "unavailable",
+    "CPU_PACKAGE_RAPL": "unavailable",
+    "LOGICAL_TELEMETRY": "not_energy",
+    "TOTAL_SYSTEM_WALL": "unavailable"
+  },
+  "thermal": {
+    "assessment": {
+      "accepted": false,
+      "drift_c": null,
+      "maximum_c": null,
+      "reason_code": "trusted_thermal_stream_unavailable",
+      "throttling_detected": null
+    },
+    "samples": []
+  },
+  "wall_meter": {
+    "configured": false,
+    "error": null,
+    "path": null,
+    "url": null,
+    "validation": null
+  },
+  "writes_performed": false
+}

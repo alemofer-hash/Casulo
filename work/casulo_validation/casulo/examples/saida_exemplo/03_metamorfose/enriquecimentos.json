@@ -1,0 +1,63 @@
+{
+  "assinatura": "Casulo — invento original de Guimo para Otimização de Tráfego de Informação.",
+  "estatisticas_de_campos": {
+    "_linha_origem": {
+      "nulos": 0,
+      "preenchidos": 3,
+      "quantidade": 3,
+      "tipos_observados": [
+        "int"
+      ]
+    },
+    "destino": {
+      "nulos": 0,
+      "preenchidos": 3,
+      "quantidade": 3,
+      "tipos_observados": [
+        "str"
+      ]
+    },
+    "mensagem": {
+      "nulos": 0,
+      "preenchidos": 3,
+      "quantidade": 3,
+      "tipos_observados": [
+        "str"
+      ]
+    },
+    "origem": {
+      "nulos": 0,
+      "preenchidos": 3,
+      "quantidade": 3,
+      "tipos_observados": [
+        "str"
+      ]
+    },
+    "prioridade": {
+      "nulos": 0,
+      "preenchidos": 3,
+      "quantidade": 3,
+      "tipos_observados": [
+        "str"
+      ]
+    },
+    "timestamp": {
+      "nulos": 0,
+      "preenchidos": 3,
+      "quantidade": 3,
+      "tipos_observados": [
+        "str"
+      ]
+    }
+  },
+  "inventor": "Guimo",
+  "mapa_de_navegacao": {
+    "destino": "destino",
+    "linha_origem": "_linha_origem",
+    "mensagem": "mensagem",
+    "origem": "origem",
+    "prioridade": "prioridade",
+    "timestamp": "timestamp"
+  },
+  "marca": "Casulo"
+}

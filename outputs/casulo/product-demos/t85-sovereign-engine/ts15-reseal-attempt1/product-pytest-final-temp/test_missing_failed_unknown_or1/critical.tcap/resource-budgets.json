@@ -1,0 +1,20 @@
+{
+  "modules": {
+    "owner.critical.capabilities": {
+      "deadline_ms": 1000,
+      "steps": 1024
+    },
+    "owner.critical.fulfillment": {
+      "deadline_ms": 1000,
+      "steps": 2048
+    },
+    "owner.critical.intent": {
+      "deadline_ms": 1000,
+      "steps": 256
+    },
+    "owner.critical.publish": {
+      "deadline_ms": 1000,
+      "steps": 512
+    }
+  }
+}

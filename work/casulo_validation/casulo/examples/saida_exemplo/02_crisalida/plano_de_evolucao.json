@@ -1,0 +1,26 @@
+{
+  "custo_de_evolucao": 0.00894098828125,
+  "decisao": "PROSSEGUIR",
+  "fase": "CRISALIDA",
+  "fase_matematica": 7.370710838816036e-05,
+  "intensidade_de_atrito": 0.025,
+  "operacoes": [
+    "preservar_fonte_original",
+    "atribuir_identidade_aos_registros",
+    "preservar_campos_originais",
+    "criar_indice_de_navegacao",
+    "calcular_estatisticas_de_campos",
+    "verificar_conservacao"
+  ],
+  "pesos": [
+    0.35,
+    0.3,
+    0.22,
+    0.13
+  ],
+  "razoes": [
+    "atrito_abaixo_do_limiar_de_revisao"
+  ],
+  "severidade": "BAIXA",
+  "volume_de_transformacao": 6.590143935367827e-07
+}

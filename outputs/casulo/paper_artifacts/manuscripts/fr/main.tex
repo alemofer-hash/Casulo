@@ -1,0 +1,25 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{booktabs,hyperref,geometry}
+\geometry{margin=2.5cm}
+\title{Le langage T comme optimisation de la gestion de l'utilisation du processeur pendant l'entraînement de réseaux de neurones artificiels}
+\author{Guilherme Moura Fernandes\\\textit{Affiliation : [à compléter] -- Courriel : [à compléter] -- ORCID : [le cas échéant]}}
+\date{Brouillon scientifique privé -- non soumis}
+\begin{document}\maketitle
+\begin{abstract}
+Nous présentons l'architecture auditable Casulo/Langage T et évaluons, sans généralisation universelle, un exécuteur C spécialisé pour un réseau neuronal peu profond sur CPU. Les données historiques gelées préservent paramètres, prédictions et perte par rapport à PyTorch. Sur 21 paires historiques, l'accélération médiane atteint 8,958 par rapport à PyTorch Eager (IC bootstrap apparié à 95\% : 8,075--9,872). Le comparateur Inductor disponible ne compile que la passe avant et reste secondaire. L'énergie électrique n'a pas été mesurée. Le résultat étaye une hypothèse de réduction du surcoût dans un domaine restreint, pas une supériorité générale du langage.
+\end{abstract}
+\section{Introduction} Motivation, problème, contributions vérifiables et questions.
+\section{Travaux connexes} Compilateurs tensoriels, spécialisation, fusion, mesures rigoureuses et énergie.
+\section{Architecture} Frontend général, IR, graphe, artefact adressé par contenu, backend CPU et chemin spécialisé séparé.
+\section{Méthodologie} Équivalence d'abord, plan apparié, échauffement, sessions, comparateurs et pacte thermique.
+\section{Résultats historiques} Médianes, intervalles, échantillons bruts et équivalence.
+\section{Analyse causale et ablations} Spécialisation, Python, autograd, allocation, parallélisme et compilateur.
+\section{Menaces à la validité} Un hôte, sessions historiques, petit modèle synthétique, float64, Inductor incomplet et absence de joules.
+\section{Conclusion} Résultat prometteur mais spécifique; validation multi-hôte et intégration du frontend restent ouvertes.
+\section*{Disponibilité} Paquet privé vérifiable par hachage; diffusion publique soumise à la décision explicite de l'auteur.
+\bibliographystyle{plain}\bibliography{../references}
+\end{document}
+

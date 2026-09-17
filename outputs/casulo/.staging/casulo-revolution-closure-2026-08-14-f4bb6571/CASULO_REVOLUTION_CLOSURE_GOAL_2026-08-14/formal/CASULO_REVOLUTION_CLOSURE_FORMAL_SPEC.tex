@@ -1,0 +1,335 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\geometry{margin=2.1cm}
+\hypersetup{colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!55!black}
+\setlist{nosep,leftmargin=*}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setcounter{tocdepth}{1}
+\newcommand{\Casulo}{\textsc{Casulo}}
+\newcommand{\Tlang}{\textsf{T}}
+\newcommand{\Pass}{\textsc{Pass}}
+\newcommand{\Fail}{\textsc{Fail}}
+\newcommand{\Unknown}{\textsc{Unknown}}
+\renewcommand{\abstractname}{Resumo}
+\renewcommand{\contentsname}{Sumário}
+
+\title{\textbf{Casulo Revolution Closure}\\
+\large Especificação formal dos nove pilares para prova humana}
+\author{Visão: Guilherme Moura Fernandes\\Formalização de engenharia para execução pelo Codex}
+\date{14 de agosto de 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Este documento formaliza a transição do protótipo generativo owner do \Casulo
+para um candidato integrado de prova humana. O objetivo é combinar criatividade
+neural estocástica com memória, verificação semântica, soberania da linguagem
+\Tlang, ativação esparsa de universos, voz duplex, materialização e confiança.
+As equações definem contratos de produto; não constituem alegação de
+superioridade universal, compressão arbitrária, inteligência psicométrica,
+vantagem energética ou capacidade quântica.
+\end{abstract}
+
+{\small\tableofcontents}
+\newpage
+
+\section{Notação e fronteira de autoridade}
+
+Seja $x_t$ o turno atual, $C_t$ o contexto selecionado, $A_t$ o conjunto de
+universos ativos e $\theta$ os parâmetros neurais. Uma resposta é amostrada por
+\begin{equation}
+y_t \sim p_\theta(y\mid x_t,C_t,A_t).
+\end{equation}
+A amostragem pode variar, mas a saída neural não possui autoridade. Uma ação
+$a$ só é permitida quando
+\begin{equation}
+\operatorname{Permit}(a)=
+\operatorname{Grant}(a)\land
+\operatorname{Policy}(a)\land
+\operatorname{Scope}(a)\land
+\operatorname{ValidConsent}(a)\land
+\neg\operatorname{Revoked}(a).
+\end{equation}
+Logo, proposta neural, contrato tipado, validação, política, confirmação e
+efeito são fases distintas.
+
+\section{Continuidade do Guia}
+
+O estado canônico do Guia no instante $t$ é
+\begin{equation}
+G_t=(\mathcal T_t,\mathcal P_t,\mathcal C_t,\mathcal H_t,
+\mathcal R_t,\mathcal Q_t,\mathcal U_t,\Pi_t,\mathcal J_t),
+\end{equation}
+onde $\mathcal T$ é o fio, $\mathcal P$ os projetos, $\mathcal C$ os
+compromissos, $\mathcal H$ as hipóteses, $\mathcal R$ os rejeitados,
+$\mathcal Q$ as questões abertas, $\mathcal U$ as incertezas, $\Pi$ a política
+de colaboração e $\mathcal J$ os jobs.
+
+\subsection{Seleção de memória}
+
+Para memória $m$ e consulta $q$:
+\begin{align}
+s(m,q)=&\;w_s\cos(e_m,e_q)
++w_p\mathbf 1[\operatorname{project}(m)=p_q]
++w_c\operatorname{criticality}(m)\\
+&+w_u\operatorname{unresolved}(m)
++w_r e^{-\Delta t/\tau}
+-w_x\operatorname{conflictRisk}(m)
+-w_v\operatorname{privacyCost}(m).
+\end{align}
+O contexto é escolhido por
+\begin{equation}
+C_t^*=\arg\max_{C\subseteq M}\sum_{m\in C}s(m,q_t),
+\quad
+\sum_{m\in C}\operatorname{cost}(m)\le B_C,
+\quad M_{\mathrm{mandatory}}\subseteq C.
+\end{equation}
+Restrições obrigatórias não competem por similaridade.
+
+\subsection{Valor de uma pergunta}
+
+Se $Z$ representa uma interpretação material ainda incerta, o ganho de
+informação de uma pergunta $q$ é
+\begin{equation}
+IG(q)=H(Z\mid h_t)-
+\mathbb E_{a\sim p(a\mid q,h_t)}[H(Z\mid h_t,q,a)].
+\end{equation}
+A pergunta é feita quando $IG(q)$ supera seu custo de interrupção, ou quando
+uma restrição dura permanece indefinida.
+
+\subsection{Contradição}
+
+Para fala $x$ e compromisso $c$:
+\begin{equation}
+\Gamma(x,c)=\operatorname{entailmentConflict}(x,c)
+\operatorname{scopeOverlap}(x,c)
+\operatorname{confidence}(x,c).
+\end{equation}
+Conflito alto em restrição dura bloqueia promoção e requer decisão humana; não
+sobrescreve a memória.
+
+\section{Cumprimento semântico}
+
+Um pedido produz obrigações
+\begin{equation}
+O=\{(o_i,w_i,c_i)\}_{i=1}^{n},
+\qquad c_i\in\{\mathrm{HARD},\mathrm{SOFT}\}.
+\end{equation}
+Cada verificador retorna
+\begin{equation}
+v_i\in\{\Pass,\Fail,\Unknown\}.
+\end{equation}
+A cobertura informativa é
+\begin{equation}
+\operatorname{Coverage}=
+\frac{\sum_i w_i\mathbf 1[v_i=\Pass]}{\sum_i w_i},
+\end{equation}
+mas o aceite exige
+\begin{equation}
+\operatorname{Accept}=
+\mathbf 1[\forall i:c_i=\mathrm{HARD}\Rightarrow v_i=\Pass]
+\land\mathbf 1[\mathrm{Safety}=\Pass]
+\land\mathbf 1[\mathrm{NoUnsupportedClaim}].
+\end{equation}
+Uma média nunca compensa requisito duro falso. O gap auxiliar é
+\begin{equation}
+\operatorname{SpecGap}=
+\frac{\sum_i w_i(1-e_i)}{\sum_iw_i},\qquad e_i\in[0,1].
+\end{equation}
+Autoavaliação do próprio gerador não é evidência independente. Tipos,
+compilação, propriedades, simulação, execução limpa, invariantes de domínio e
+revisão humana são classes distintas de prova.
+
+\section{Soberania da linguagem T}
+
+Para superfície de comportamento $j$, peso $w_j$ e grau
+$d_j\in\{0,0.5,1\}$, define-se
+\begin{equation}
+S_T=\frac{\sum_jw_jd_j}{\sum_jw_j}.
+\end{equation}
+O gate requer $S_T\ge0.80$ e grau $1$ para decisão de capabilities, intenção
+material e publicação. A métrica não é contagem de linhas. Código estrangeiro
+é permitido como primitiva sob ABI, effects, ownership, licença, hash, limite e
+falha declarados.
+
+\section{Adaptação neural first-party}
+
+Os pesos efetivos podem ser decompostos como
+\begin{equation}
+\theta_{\Casulo}=\theta_0+\Delta\theta_G+\sum_i\Delta\theta_{U_i},
+\end{equation}
+em que $\theta_0$ é a base bootstrap declarada, $\Delta\theta_G$ é um adapter
+do Guia e $\Delta\theta_{U_i}$ são especialistas opcionais.
+
+Para LoRA,
+\begin{equation}
+W'=W+\frac{\alpha}{r}BA.
+\end{equation}
+O treinamento supervisionado minimiza
+\begin{equation}
+\mathcal L_{\mathrm{SFT}}=-\sum_t m_t\log p_\theta(y_t\mid x,y_{<t}),
+\end{equation}
+com máscara $m_t$ sobre tokens alvo. Quando existirem preferências humanas
+suficientes, DPO pode usar
+\begin{align}
+\mathcal L_{\mathrm{DPO}}=-\log\sigma\{\beta[&
+(\log\pi_\theta(y_w\mid x)-\log\pi_{\mathrm{ref}}(y_w\mid x))\\
+&-(\log\pi_\theta(y_l\mid x)-\log\pi_{\mathrm{ref}}(y_l\mid x))]\}.
+\end{align}
+O GGUF quantizado de inferência não é tratado como checkpoint diretamente
+treinável. Promoção exige ganho pré-registrado, zero regressão crítica,
+linhagem, licença, compatibilidade e rollback.
+
+\section{Semantic Multiverse}
+
+\subsection{Universos e partição}
+
+Considere grafo $G=(V,E,w)$ e partição $P=\{U_1,\ldots,U_k\}$. Um custo de
+partição é
+\begin{align}
+J(P)=&\lambda_1\sum_{(u,v)\in E}w_{uv}\mathbf1[P(u)\ne P(v)]
++\lambda_2\operatorname{BudgetPenalty}(P)\\
+&+\lambda_3\operatorname{Redundancy}(P)
++\lambda_4\operatorname{SemanticLoss}(P,Q)
++\lambda_5\operatorname{ExpectedWakeCost}(P,Q).
+\end{align}
+Não é necessário resolver o ótimo global; a heurística deve ser explicável e
+avaliada contra baseline real.
+
+\subsection{Roteamento}
+
+Para rota $\pi$, conjunto ativo $A$ e consulta $q$:
+\begin{align}
+J_{\mathrm{route}}(\pi,A\mid q)=&
+\alpha T_{\mathrm{pred}}+\beta\operatorname{RAM}(A)
++\gamma\operatorname{BytesRead}+\delta\operatorname{WakeCost}\\
+&+\eta\operatorname{CrossingCost}(\pi)
++\rho\operatorname{SemanticRisk}(\pi,q).
+\end{align}
+Minimiza-se $J_{\mathrm{route}}$ sob cobertura de capabilities, invariantes,
+proveniência, fidelidade e budgets.
+
+\subsection{Estado suficiente}
+
+Uma transição $\Phi_{ij}$ produz $m_{ij}=S_{ij}(x_i,q,\Gamma)$. Para workload
+$Q_{ij}$:
+\begin{equation}
+\forall q\in Q_{ij}:\quad
+d(f_j(m_{ij},q),f_j(x_i,q))\le\varepsilon_{ij}.
+\end{equation}
+Para constraints, unidades e raiz de provenance, a tolerância é zero.
+
+\subsection{Termostato}
+
+\begin{align}
+H_i(t)=&aP(\mathrm{nextUse}_i)+b\operatorname{recency}_i
++c\operatorname{frequency}_i+d\operatorname{criticality}_i\\
+&-e\operatorname{wakeCost}_i-f\operatorname{size}_i
+-g\operatorname{pressure}(t).
+\end{align}
+Ativa-se em $H_i\ge\theta_{\mathrm{on}}$ e congela-se em
+$H_i\le\theta_{\mathrm{off}}$, com
+$\theta_{\mathrm{off}}<\theta_{\mathrm{on}}$, lease e tempo mínimo de
+residência.
+
+\subsection{Freeze, thaw e crescimento}
+
+Para $F_i=\operatorname{Freeze}(U_i)$ e
+$U_i'=\operatorname{Thaw}(F_i)$:
+\begin{equation}
+\forall I_k\in\mathcal I_i:\quad I_k(U_i')=I_k(U_i).
+\end{equation}
+O armazenamento após $n$ sessões é
+\begin{equation}
+D_n=B_{\mathrm{unique}}+\sum_{s=1}^{n}\Delta_{s,\mathrm{unique}}
++\operatorname{Index}_n+\operatorname{Receipts}_n+\operatorname{Snapshots}_n.
+\end{equation}
+Todo crescimento deve ser explicado; blobs idênticos não são duplicados.
+
+\section{Voz e tempo de interação}
+
+O tempo de um turno pode ser decomposto como
+\begin{equation}
+T_{\mathrm{turn}}=T_{\mathrm{endpoint}}+T_{\mathrm{ASR}}
++T_{\mathrm{route}}+T_{\mathrm{firstToken}}+T_{\mathrm{TTS}}.
+\end{equation}
+O barge-in mede
+\begin{equation}
+T_{\mathrm{barge}}=t_{\mathrm{playbackStopped}}
+-t_{\mathrm{localSpeechDecision}}.
+\end{equation}
+WER e ERLE são diagnósticos:
+\begin{equation}
+\mathrm{WER}=\frac{S+D+I}{N},\qquad
+\mathrm{ERLE}=10\log_{10}\frac{\sum_nd(n)^2}{\sum_ne(n)^2}.
+\end{equation}
+A interrupção acústica não depende de uma frase mágica e é separada da qualidade
+semântica do ASR.
+
+\section{Materialização e round-trip}
+
+O ciclo é
+\begin{equation}
+\mathrm{CreationSpec}\to\Tlang/\mathrm{TCAP}\to
+\mathrm{Simulation}\to\mathrm{Package}\to\mathrm{ExternalRun}
+\to\mathrm{Import}\to\mathrm{Edit}.
+\end{equation}
+A fidelidade é
+\begin{equation}
+R=\frac{\sum_iw_i\mathbf1[operatorname{canonical}(o_i^{\mathrm{import}})
+=\operatorname{canonical}(o_i^{\mathrm{export}})]}{\sum_iw_i}.
+\end{equation}
+Identidade, constraints, capabilities, provenance e fonte \Tlang exigem
+fidelidade individual igual a $1$.
+
+\section{Proveniência, integridade e segurança}
+
+Receipts formam cadeia
+\begin{equation}
+H_k=\operatorname{SHA256}(H_{k-1}\parallel
+\operatorname{canonical}(R_k)).
+\end{equation}
+Conteúdo recuperado ou gerado é rotulado como dado não confiável. Capabilities
+não são inferidas do texto. Publicação é atômica e somente os mesmos bytes
+validados podem ser assinados.
+
+\section{Critérios absolutos do gate}
+
+Independentemente de scores médios:
+\begin{align*}
+&\operatorname{MandatoryConstraintLoss}=0,\\
+&\operatorname{CrossProjectBleed}=0,\\
+&\operatorname{FalseCompletionOnDecoys}=0,\\
+&\operatorname{UnauthorizedEffects}=0,\\
+&\operatorname{SecretsInArtifacts}=0,\\
+&\operatorname{PrivateComponentsInPublic}=0,\\
+&\operatorname{InvalidUpdatesAccepted}=0,\\
+&\operatorname{OpenP0}=0,\quad
+\operatorname{OpenP1OnSupportedPath}=0.
+\end{align*}
+Thresholds de latência e qualidade são congelados antes da otimização para o
+Machine Profile. O gate final autoriza somente o estado
+\texttt{READY\_FOR\_GUILHERME\_CASULO\_BETA\_HUMAN\_PROOF}; não substitui a
+avaliação humana.
+
+\section{Limites informacionais e claims}
+
+Um pacote de $B$ bits não representa reversivelmente todo conjunto arbitrário
+com complexidade descritiva maior que $B$. O \Casulo explora estrutura,
+redundância, geração e equivalência operacional em workloads definidos. Não
+alega compressão universal, datacenter literal em 32 GB, QPU, vantagem quântica,
+eficiência energética universal, foundation model treinado do zero ou
+consciência.
+
+\end{document}

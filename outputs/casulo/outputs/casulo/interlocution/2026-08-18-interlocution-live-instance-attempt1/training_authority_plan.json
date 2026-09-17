@@ -1,0 +1,57 @@
+{
+  "authority_rule": "T_RESULT_REQUIRED_NO_AFFIRMATIVE_FOREIGN_FALLBACK",
+  "campaign_id": "2026-08-18-interlocution-live-instance-attempt1",
+  "decisions": [
+    {
+      "dataset_sha256": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+      "input_features": 8,
+      "records_per_epoch": 1024,
+      "surface": "dataset_identity_integrity"
+    },
+    {
+      "bundle_sha256": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+      "state_policy": "reset_each_case",
+      "surface": "initialization_bundle"
+    },
+    {
+      "dtype": "float64",
+      "surface": "numerical_precision"
+    },
+    {
+      "loss": "mse",
+      "surface": "loss_function"
+    },
+    {
+      "learning_rate": 0.018,
+      "optimizer": "sgd",
+      "surface": "update_rule"
+    },
+    {
+      "policy": "reset_each_case",
+      "surface": "optimizer_state"
+    },
+    {
+      "count": 1024,
+      "policy": "all_records",
+      "start": 0,
+      "surface": "working_set"
+    },
+    {
+      "epochs": 400,
+      "policy": "fixed_epochs",
+      "surface": "stopping"
+    },
+    {
+      "absolute_tolerance": 1e-09,
+      "require_exact_counters": true,
+      "require_no_nan_inf": true,
+      "surface": "equivalence_acceptance"
+    }
+  ],
+  "intent_sha256": "18c06cdbee3f50b56effe5c991f9ee62d5b29785060df564c1407521308983e5",
+  "plan_sha256": "18bfc5d0d80fe52c347744ba7ca330653e7ba064ecba2f406efe63f05e8ded4e",
+  "primitive_policy": "FOREIGN_EXECUTION_T_DECIDES_INVOCATION",
+  "publication_policy": "T_JUDGE_RECEIPT_REQUIRED",
+  "requirement_graph_sha256": "e5cc261d08a8281088dbf54dd52fcdbd34e206f2f348d88d8c128604a571e86a",
+  "schema": "casulo.interlocution-training-authority-plan/1.0"
+}

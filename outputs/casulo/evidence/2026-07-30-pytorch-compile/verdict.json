@@ -1,0 +1,44 @@
+{
+  "classification": "POSITIVE",
+  "covenant": "casulo-scientific-covenant/1.0",
+  "energy": {
+    "joules": null,
+    "measured": false
+  },
+  "evidence": {
+    "integrity_failures": [],
+    "missing_required_baselines": [],
+    "observed_baselines": [
+      "pytorch-compile-inductor-cpu"
+    ],
+    "preregistration_file_sha256": "1d6bc26b4611d6f52535f42814e5645b1dab6d9dbb05fc47dd8b44f78d6c7cb5",
+    "quality_failures": [],
+    "report_file_sha256": "384e56a2d34457f01f905d7d284945d665785300a06315892f598d389035acf8"
+  },
+  "experiment_id": "sha256:dbc62856d6387de253889548614bc860bf19fbf82f5c82c90b859fd6914824e2",
+  "interpretation": "hipótese superou o limiar pré-registrado com qualidade válida",
+  "judge": {
+    "can_modify_experiment": false,
+    "implementation": "python-standard-library",
+    "recomputed_from_raw_samples": true
+  },
+  "protocol": "casulo-scientific-verdict/1.0",
+  "recomputed_metrics": {
+    "commercial_gate": true,
+    "commercial_threshold": 6.0,
+    "independent_bootstrap_ci95": {
+      "lower": 12.496743035085805,
+      "method": "independent-python-bootstrap-median",
+      "resamples": 10000,
+      "upper": 15.383164873824505
+    },
+    "paired_samples": 21,
+    "paired_speedup_median": 14.255580402716161,
+    "superiority_threshold": 1.0
+  },
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "742f7169f65a266573efb73e5cbf2bdfbc76020de6b15cf0f76a0d3a8d132d93"
+  },
+  "verdict_id": "sha256:742f7169f65a266573efb73e5cbf2bdfbc76020de6b15cf0f76a0d3a8d132d93"
+}

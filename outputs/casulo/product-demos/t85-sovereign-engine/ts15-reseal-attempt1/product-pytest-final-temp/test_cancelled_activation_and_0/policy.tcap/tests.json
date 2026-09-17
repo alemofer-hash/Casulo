@@ -1,0 +1,8 @@
+{
+  "properties": [
+    "trusted_route",
+    "bundle_integrity",
+    "capability_non_amplification",
+    "lease_safe_hibernate"
+  ]
+}

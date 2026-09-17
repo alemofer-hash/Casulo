@@ -1,0 +1,43 @@
+{
+  "expected_evidence_tokens": [
+    "2111b00a82da4f507cefd31311e6d2b64278b56008c2e606c2401456059e9eaf",
+    "e26b2db7315c7ca8551d90aa3dac131d13fb57a066890f4ac30acf7f9f1f6b19",
+    "87d3de1026b159bac04b5c59febbf2df620db90a069c0c83a677c53d320c83d6"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "technical-02:unit-consistency",
+      "scope": "technical-02",
+      "source_event_ids": [
+        "sealed:technical-02"
+      ],
+      "verifier_ids": [
+        "domain:unit-consistency"
+      ]
+    },
+    {
+      "requirement_id": "technical-02:mass-conservation",
+      "scope": "technical-02",
+      "source_event_ids": [
+        "sealed:technical-02"
+      ],
+      "verifier_ids": [
+        "domain:mass-conservation"
+      ]
+    },
+    {
+      "requirement_id": "technical-02:residual-output",
+      "scope": "technical-02",
+      "source_event_ids": [
+        "sealed:technical-02"
+      ],
+      "verifier_ids": [
+        "domain:residual-output"
+      ]
+    }
+  ],
+  "project_id": "technical-02",
+  "schema": "casulo.evidence-plan/1.0"
+}

@@ -1,0 +1,37 @@
+\chapter{Evidência empírica}
+\label{chap:evidencia}
+
+Este exemplar não substitui a recomposição dos arquivos fornecidos. A figura a
+seguir demonstra o padrão visual esperado para razões pareadas, mas o manuscrito
+final deve gerar seus pontos diretamente de
+\texttt{analysis-expanded.json}.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=.82\textwidth,height=6cm,
+  ybar,bar width=13pt,
+  ymin=0,ymax=1.05,
+  ylabel={Razão D/A},
+  symbolic x coords={Wall,CPU,RSS,Ciclos},
+  xtick=data,
+  axis line style={CasuloNavy},
+  tick label style={font=\small},
+  nodes near coords,
+  nodes near coords style={font=\scriptsize},
+  every axis plot/.append style={fill=CasuloTeal,draw=CasuloNavy}
+]
+\addplot coordinates {(Wall,0.1696) (CPU,0.1061) (RSS,0.1320) (Ciclos,0.0284)};
+\addplot[sharp plot,no marks,very thick,CasuloAmber] coordinates {(Wall,1) (Ciclos,1)};
+\end{axis}
+\end{tikzpicture}
+\caption{Exemplo editorial com valores resumidos preservados. A versão final
+deve mostrar incerteza, pares e proveniência completa.}
+\label{fig:razoes}
+\end{figure}
+
+O resultado deve ser interpretado como redução não energética delimitada. A
+literatura de custo computacional e energia alerta contra converter apenas
+tempo ou utilização em impacto energético \parencite{strubell2019energy,
+schwartz2020greenai}.

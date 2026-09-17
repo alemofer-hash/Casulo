@@ -1,0 +1,184 @@
+{
+  "candidate_rejections": [],
+  "creation_sha256": "ea2fd27d63de5a9dc809edde865b364d6372030e01ac6df7aa5b5110bc3b1674",
+  "entry_unit": "creation_unit",
+  "project_id": "t-project:1742a428ede83931180c6d4a",
+  "tests": [
+    {
+      "expected_contains": "creation:open-ended-holdout",
+      "input": "creation:open-ended-holdout",
+      "name": "creation_unit_test",
+      "unit_id": "creation_unit"
+    },
+    {
+      "expected_contains": "reversibility:validation",
+      "input": "reversibility:validation",
+      "name": "reversibility_unit_test",
+      "unit_id": "reversibility_unit"
+    },
+    {
+      "expected_contains": "preservation:log",
+      "input": "preservation:log",
+      "name": "preservation_unit_test",
+      "unit_id": "preservation_unit"
+    },
+    {
+      "expected_contains": "trace:log",
+      "input": "trace:log",
+      "name": "trace_unit_test",
+      "unit_id": "trace_unit"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "1c9ed016afda1da424295ce339c388af841ad11767a12233d116ef2c77236636",
+    "ended_monotonic_ns": 15889179449500,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+    "output_sha256": "1742a428ede83931180c6d4a6d783d7e7be0c287ff5e40a133e29de65fb1539f",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 15739366501600,
+    "stream_events": 685
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Initialize in CreationSpec\n  effects [manifest]\n  emit \"creation:open-ended-holdout\"\n",
+      "unit_id": "creation_unit",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "content",
+          "behavior",
+          "autonomy",
+          "description"
+        ],
+        [
+          "content",
+          "constraints",
+          "reversibility",
+          "description"
+        ],
+        [
+          "content",
+          "data",
+          "preservation",
+          "description"
+        ],
+        [
+          "content",
+          "identity",
+          "purpose",
+          "description"
+        ],
+        [
+          "content",
+          "interface",
+          "input",
+          "description"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit"
+      ],
+      "source": "language T/1.1\nmodule reversibility\n\ncapability manifest\n\nfield ReversibilitySpec\n  trace value: Text\n\ncondense Validate in ReversibilitySpec\n  effects [manifest]\n  emit \"reversibility:validation\"\n",
+      "unit_id": "reversibility_unit",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "content",
+          "constraints",
+          "reversibility",
+          "description"
+        ],
+        [
+          "content",
+          "behavior",
+          "autonomy",
+          "description"
+        ],
+        [
+          "content",
+          "data",
+          "preservation",
+          "description"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "reversibility_unit"
+      ],
+      "source": "language T/1.1\nmodule preservation\n\ncapability manifest\n\nfield PreservationSpec\n  trace value: Text\n\ncondense Record in PreservationSpec\n  effects [manifest]\n  emit \"preservation:log\"\n",
+      "unit_id": "preservation_unit",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "content",
+          "data",
+          "preservation",
+          "description"
+        ],
+        [
+          "content",
+          "identity",
+          "purpose",
+          "description"
+        ],
+        [
+          "content",
+          "interface",
+          "input",
+          "description"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "preservation_unit"
+      ],
+      "source": "language T/1.1\nmodule trace\n\ncapability manifest\n\nfield TraceSpec\n  trace value: Text\n\ncondense Log in TraceSpec\n  effects [manifest]\n  emit \"trace:log\"\n",
+      "unit_id": "trace_unit",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "content",
+          "behavior",
+          "autonomy",
+          "description"
+        ],
+        [
+          "content",
+          "constraints",
+          "reversibility",
+          "description"
+        ],
+        [
+          "content",
+          "data",
+          "preservation",
+          "description"
+        ]
+      ]
+    }
+  ]
+}

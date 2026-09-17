@@ -1,0 +1,12 @@
+{
+  "schema": "casulo.t85.failed-attempt/1.0",
+  "state": "FAILED_NEURAL_ARCHITECTURE_CANDIDATES_EXHAUSTED",
+  "preserved": true,
+  "completed_agents": ["data_validator_01"],
+  "failed_case": "interactive-01",
+  "attempts": 3,
+  "diagnostic": "neural plan did not cover exact HARD requirements",
+  "root_cause": "JSON schema constrained shape but did not constrain dynamic requirement identities",
+  "repair": "inject the frozen HARD requirement IDs as an enum in the per-case response schema",
+  "next_attempt": "ts07-nontrivial-holdouts-attempt3"
+}

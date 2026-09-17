@@ -1,0 +1,64 @@
+{
+  "schema": "casulo.t85.gate/1.0",
+  "sprint": "TS3",
+  "gate": "TS3_TCAP_V2_CONFORMANCE_PASS",
+  "status": "PASS",
+  "created_at": "2026-08-14T22:00:08-03:00",
+  "previous_gate_sha256": "ce4c909205d20a3a92374afca335be52d9b1e8938b8819efe36dafe8769ad3c5",
+  "language": "T/2.0",
+  "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa",
+  "runtimes": [
+    "t-runtime/reference-2.0",
+    "t-runtime/rust-2.0",
+    "t-runtime/native-2.0"
+  ],
+  "checks": {
+    "typed_ir": "PASS",
+    "functional_bytecode_nonempty": "PASS",
+    "verified_loader": "PASS",
+    "runtime_receipts": "PASS",
+    "resource_limits": "PASS",
+    "cancel": "PASS",
+    "effect_escalation": "DENIED",
+    "malformed_bytecode": "DENIED",
+    "source_ir_divergence": "DENIED",
+    "schema_future": "DENIED",
+    "native_corruption": "QUARANTINE",
+    "reference_productive_native_differential": "5/5 PASS",
+    "resource_exhaustion_differential": "1/1 PASS",
+    "native_v1_regression": "PASS",
+    "scientific_benchmark": "NOT_STARTED"
+  },
+  "tests": {
+    "passed": 55,
+    "subtests_passed": 42,
+    "failed": 0,
+    "xml_sha256": "927d6ae17b17b582d03f3da849d1bec4e072ec804bd4c41064310993d16f0619"
+  },
+  "artifacts": [
+    {"path":"src/casulo/t/v2_ir.py","sha256":"d03a1a33a0757d757de51ff2cbfb0ee2078e6dc5ff6a210ed0fca575ad1425f5"},
+    {"path":"src/casulo/t/v2_tcap.py","sha256":"f1026484f3aadb4971dbc14f6325a311cd1bdd3caa5d367118b3aab123b4113b"},
+    {"path":"src/casulo/t/v2_runtime.py","sha256":"cc505b095b8dab4c1f1229a4cbeb1e25074f1e2ec01e3953e891c106f64b8cad"},
+    {"path":"t-runtime/src/main.rs","sha256":"4832f0b967710ebd477dc200f428f64553c0b7da1c86fc8de949f66a2e679e65"},
+    {"path":"os/kernel/src/tcap_v2.rs","sha256":"8632a435251a67fc6a509844ce4569100e9515791a6e93910b46a0a9c91c94bc"},
+    {"path":"os/tools/run_t_v2_native_conformance.py","sha256":"c84f395cad2d1c78deb04830e22ce12d0162e71678021a5b8b1167f9a6ebc2a3"},
+    {"path":"tests/product/test_t_v2_adversarial.py","sha256":"0d0162ff0fb1c56e207065ee1c6e9875f1f403753328eacee106b9eac03a8ba6"},
+    {"path":"product-demos/t85-sovereign-engine/ts03-tcap-v2-attempt5/native/native-conformance.json","sha256":"c6b3af6d7080788c59348fe3bdd860e19b64ace3981cad463468982986dc2c3c"},
+    {"path":"product-demos/t85-sovereign-engine/ts03-tcap-v2-attempt5/native-v1-regression.json","sha256":"441682c202853d337be92df969ed253de42f0015417d13e50e473371863fdd0f"},
+    {"path":"docs/product/T_V2_RUNTIME_ABI.md","sha256":"f535196ea9d443b504d9d1f930ce704214a7fee143322621abac8221df499ce6"},
+    {"path":"docs/product/TCAP_V2_SPEC.md","sha256":"d4c02d5d4f6d161a1da2f45d94737f4aac4f3dc2e782869e575bc695479dfbd1"},
+    {"path":"docs/product/TS3_TCAP_V2_CONFORMANCE.md","sha256":"fa2a2c70f5d91d9668ef5ca3866b844b34585164b6a5dc0e020d8f06019f8012"}
+  ],
+  "attempt_history": [
+    {"attempt":1,"status":"FAIL_INFRASTRUCTURE_TIMEOUT"},
+    {"attempt":2,"status":"FAIL_NATIVE_RESOURCE_BOUND"},
+    {"attempt":3,"status":"PASS_SUPERSEDED_BY_STRONGER_CORPUS"},
+    {"attempt":4,"status":"PASS_SUPERSEDED_BY_RESOURCE_EXHAUSTION_DIFFERENTIAL"},
+    {"attempt":5,"status":"PASS"}
+  ],
+  "limitations": [
+    "Native T/2.0 interpreter executes in the guest kernel, not ring 3.",
+    "CSV grants exist only in the Rust CLI conformance harness; owner integration must use Trust Plane handles."
+  ],
+  "next": "TS4 sovereign Casulo T standard library and simulated vertical slice"
+}

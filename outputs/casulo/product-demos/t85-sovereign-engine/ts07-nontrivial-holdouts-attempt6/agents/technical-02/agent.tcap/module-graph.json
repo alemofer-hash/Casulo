@@ -1,0 +1,25 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.t_mass_balance.units"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.agent.t_mass_balance.units"
+    },
+    {
+      "imports": [
+        "owner.agent.t_mass_balance.units"
+      ],
+      "name": "owner.agent.t_mass_balance.mass"
+    },
+    {
+      "imports": [
+        "owner.agent.t_mass_balance.mass"
+      ],
+      "name": "owner.agent.t_mass_balance.output"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

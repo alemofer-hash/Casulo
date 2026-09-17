@@ -1,0 +1,83 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.ts14_mycelium_reconciler.growth"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "86fcdb3156bffe99c8bff0af104e4a6cf6e11a211863a8c0ab24c2feb3e51609"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "c03530f96d2f946a6f6dd14bd79a9af14f6d57555909c6aca15a585830c444ca"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "35fb7a67a03eb670629149df239d538b7f91ac075a0ea37e56b6b98b580c625d"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "68f5a7e52db3ce29d1ea8ea86b727eebf74904ad7edb45a6604a4da1e1b2b2e8"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "660d954a001a5e57b62625a7cda567246caa5e9448e5a486534954d053fdda5e"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "cf31fe25ff8fbf8a16916b4c260adb4030a52cb2630558a157ee94ce68d18dff"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "0979b9317fad1f25c76aaa576c8857da31573d70111dfd8488c5194e59e5d6f0"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "3ac6050a665f12e8a21a55185af67513f5ed3590a6a3209f4fec100644dc7ce2"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "90ae512fe65a1d4a028494424312b6493aa4195d624dbe2f1a03925c15f4c5fa"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "a54d6ab6ca6c96c59d27f327171e88b421c9f5779ad6af0f9109eca1ae6a74b8"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "46d43064683a1c00a0705319c0a742e09c0d3a172a8b9aff8d9f84769fabd945"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "587b1f6f14d710f1310d4d680b7468dff74809d800c66909040f8b094c6b0526"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.agent.ts14_mycelium_reconciler.growth.t",
+      "module": "owner.agent.ts14_mycelium_reconciler.growth",
+      "sha256": "7a05fef7bccd5c8d5a94a2b6cc6de2d9fa2dee07355386c6547d04cc2b0e7885"
+    },
+    {
+      "file": "sources/owner.agent.ts14_mycelium_reconciler.unit.t",
+      "module": "owner.agent.ts14_mycelium_reconciler.unit",
+      "sha256": "964af302922de10cb69758af2d9824dcf4a72e56fdbbae4ea3a8bd0c06ce20c9"
+    },
+    {
+      "file": "sources/owner.agent.ts14_mycelium_reconciler.protocol.t",
+      "module": "owner.agent.ts14_mycelium_reconciler.protocol",
+      "sha256": "2758623a4bb99f8dfd972c381542e139214564477b11d2991b79298cb8e599a8"
+    }
+  ],
+  "tcap_hash": "ae3f65a1187fa46bef806799754faf875fc7d8279a3ab5ba104a0ae2aac1a8ea"
+}

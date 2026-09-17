@@ -1,0 +1,6 @@
+{
+  "error_type": "DomainError",
+  "message": "IT152: hipóteses precisam declarar exclusão mútua verificável",
+  "preserved": true,
+  "schema": "casulo.arc-intent-twin-smoke-failure/1.0"
+}

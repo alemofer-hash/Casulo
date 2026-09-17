@@ -1,0 +1,78 @@
+{
+    "schema":  "casulo-host-space-report/1.0",
+    "created_at":  "2026-08-11T21:26:39.9470245Z",
+    "mode":  "execute",
+    "protected_roots":  [
+                            "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo",
+                            "C:\\Users\\guimo\\Downloads\\Jaderson"
+                        ],
+    "include_download_projects":  false,
+    "free_bytes_before":  23992713216,
+    "free_bytes_after":  25398640640,
+    "reclaimed_bytes_observed":  1405927424,
+    "actions":  [
+                    {
+                        "path":  "C:\\Users\\guimo\\AppData\\Local\\pip\\Cache",
+                        "kind":  "regenerable_cache",
+                        "contents_only":  true,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  113119,
+                        "action":  "partial_or_locked",
+                        "error":  "Acesso negado ao caminho."
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\AppData\\Local\\npm-cache",
+                        "kind":  "regenerable_cache",
+                        "contents_only":  true,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "deleted",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\.cache",
+                        "kind":  "regenerable_cache",
+                        "contents_only":  true,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "deleted",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\AppData\\Local\\Temp",
+                        "kind":  "user_temp",
+                        "contents_only":  true,
+                        "minimum_age_hours":  24,
+                        "bytes_before":  1462068262,
+                        "action":  "partial_or_locked",
+                        "error":  "O processo não pode acessar o arquivo \u0027dunamis-2026-08-11_17-17-54.log\u0027 porque ele está sendo usado por outro processo. | O processo não pode acessar o arquivo \u0027AdobeIPCBroker.log\u0027 porque ele está sendo usado por outro processo. | Acesso negado ao caminho. | O processo não pode acessar o arquivo \u0027DLM.log\u0027 porque ele está sendo usado por outro processo. | Acesso negado ao caminho. | O acesso ao caminho \u0027C:\\Users\\guimo\\AppData\\Local\\Temp\\pip-build-tracker-9t4nyuhi\u0027 foi negado. | O acesso ao caminho \u0027C:\\Users\\guimo\\AppData\\Local\\Temp\\pip-build-tracker-n840ul7u\u0027 foi negado. | O acesso ao caminho \u0027C:\\Users\\guimo\\AppData\\Local\\Temp\\pip-build-tracker-y5gt37fc\u0027 foi negado. | O acesso ao caminho \u0027C:\\Users\\guimo\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-dmcu1z8u\u0027 foi negado. | O acesso ao caminho \u0027C:\\Users\\guimo\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-ig7bc_30\u0027 foi negado."
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\Downloads\\archlinux-2026.07.01-x86_64.iso",
+                        "kind":  "redundant_or_regenerable_file",
+                        "contents_only":  false,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "not_present",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\Downloads\\CASULO_PRODUCT_EXECUTION_PACKAGE_2026-08-11 (1).zip",
+                        "kind":  "redundant_or_regenerable_file",
+                        "contents_only":  false,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "not_present",
+                        "error":  null
+                    },
+                    {
+                        "path":  "C:\\Users\\guimo\\Downloads\\CASULO_PRODUCT_EXECUTION_PACKAGE_2026-08-11 (2).zip",
+                        "kind":  "redundant_or_regenerable_file",
+                        "contents_only":  false,
+                        "minimum_age_hours":  0,
+                        "bytes_before":  0,
+                        "action":  "not_present",
+                        "error":  null
+                    }
+                ]
+}

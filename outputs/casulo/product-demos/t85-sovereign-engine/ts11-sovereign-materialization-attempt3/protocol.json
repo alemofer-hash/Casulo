@@ -1,0 +1,2 @@
+{"clean_environment":{"PYTHONPATH":false,"checkout":false,"external_network":false},"locks":{"cloud":"RELEASE_LOCKED","guest_network":"OFF","qpu":"UNAVAILABLE_DENY","scientific_benchmark":"NOT_STARTED","usb":"PROHIBITED"},"profiles":["casulo-package","cli","api-loopback","local-service","desktop-web-local"],"schema":"casulo.t85-sovereign-materialization-protocol/1.0","source_agent":"TS7 data_validator_01 sealed neural holdout"}
+

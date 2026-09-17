@@ -1,0 +1,183 @@
+{
+  "artifact_id": "sha256:eb82896a12b2bf904456c376365b244ae98692e35692c0c2209cf092d1d1ab7f",
+  "batch_size": 256,
+  "comparison": {
+    "cpu_work_ratio": null,
+    "floating_point": "strict-no-reassociation",
+    "minimum_batch_records": 512,
+    "paired_wall_speedup_ci95": {
+      "confidence": 0.95,
+      "lower": 0.961517774191971,
+      "method": "paired-bootstrap-median",
+      "resamples": 2000,
+      "seed": 11011,
+      "upper": 1.0458352508053383
+    },
+    "paired_wall_speedup_median": 1.0283610909968621,
+    "paired_wall_speedup_samples": [
+      1.0004059587687093,
+      1.0283610909968621,
+      1.017967402792457,
+      0.9309551597571083,
+      0.961517774191971,
+      1.0406646656782266,
+      1.0458352508053383,
+      1.0319060081296285,
+      1.0546757730411287
+    ],
+    "protocol": "casulo-simd/0.1",
+    "reported_vector_width_bytes": [
+      32
+    ],
+    "scope": "kernel C99 estrito pré-materializado",
+    "semantically_equivalent": true,
+    "sprint_011_exit_reached": false,
+    "vectorized_report_lines": [
+      "$CASULO_ARTIFACT/casulo_native.c:56:34: optimized: loop vectorized using 32 byte vectors and unroll factor 4"
+    ],
+    "wall_speedup": 1.024825516218855
+  },
+  "dataset_sha256": "bb2ab84ea762bc15783a904038d45e6fa972b7090b9ac7dd471d92b931b9872f",
+  "environment": {
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2"
+  },
+  "equivalence_sha256": "6865d44556e6ae704fb14bf8295e223c6e259abf8e825f6bd5b23c5a162bd148",
+  "operation": "WaterBalance",
+  "protocol": "casulo-simd-benchmark/0.1",
+  "scalar_compiler": {
+    "binary_sha256": "3c73254835467b3da35cd1737f87e8152cc92b1bc9e8aa3246e4f4f7972f3f2e",
+    "cache_hit": true,
+    "command": [
+      "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+      "-std=c99",
+      "-O3",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-shared",
+      "-fno-tree-vectorize",
+      "-Wl,--no-insert-timestamp,--image-base,0x180000000",
+      "-s",
+      "$CASULO_ARTIFACT/casulo_native.c",
+      "-o",
+      "$CASULO_NATIVE_OUTPUT"
+    ],
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+    "profile": "scalar",
+    "target": "portable-scalar",
+    "vectorization_report": [],
+    "version": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0"
+  },
+  "scalar_kernel": {
+    "cpu_ns_per_record": 30.517578125,
+    "cpu_ns_samples": [
+      15625000,
+      15625000,
+      0,
+      0,
+      15625000,
+      15625000,
+      0,
+      0,
+      15625000
+    ],
+    "iterations": 2000,
+    "median_cpu_ns": 15625000,
+    "median_wall_ns": 5667900,
+    "name": "c99_scalar_strict_kernel",
+    "records_per_sample": 256,
+    "samples": 9,
+    "throughput_records_per_second": 90333280.40367685,
+    "wall_ns_per_record": 11.0701171875,
+    "wall_ns_samples": [
+      5667900,
+      5964700,
+      5490000,
+      5503900,
+      5899200,
+      5755500,
+      5681500,
+      5559600,
+      5621000
+    ]
+  },
+  "simd_compiler": {
+    "binary_sha256": "69a84fcbf9e225b7ec22f093f19b9dbfdce68f7b1b7acbaa35f24aec8f80f71c",
+    "cache_hit": true,
+    "command": [
+      "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+      "-std=c99",
+      "-O3",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-shared",
+      "-march=native",
+      "-ftree-vectorize",
+      "-fopt-info-vec-all=$CASULO_VECTOR_REPORT",
+      "-Wl,--no-insert-timestamp,--image-base,0x180000000",
+      "-s",
+      "$CASULO_ARTIFACT/casulo_native.c",
+      "-o",
+      "$CASULO_NATIVE_OUTPUT"
+    ],
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+    "profile": "simd",
+    "target": "host-simd:fe90a45a7a034b73",
+    "vectorization_report": [
+      "$CASULO_ARTIFACT/casulo_native.c:20:12: note: ***** Analysis failed with vector mode VOID",
+      "$CASULO_ARTIFACT/casulo_native.c:24:12: note: ***** Analysis failed with vector mode VOID",
+      "$CASULO_ARTIFACT/casulo_native.c:56:34: optimized: loop vectorized using 32 byte vectors and unroll factor 4",
+      "$CASULO_ARTIFACT/casulo_native.c:56:34: optimized: epilogue loop vectorized using 16 byte vectors and unroll factor 2",
+      "$CASULO_ARTIFACT/casulo_native.c:48:34: missed: couldn't vectorize loop",
+      "$CASULO_ARTIFACT/casulo_native.c:49:33: missed: not vectorized: no vectype for stmt: _12 = *_11;",
+      "scalar_type: const double",
+      "$CASULO_ARTIFACT/casulo_native.c:27:23: note: vectorized 1 loops in function.",
+      "$CASULO_ARTIFACT/casulo_native.c:59:28: missed: statement clobbers memory: __builtin_memset (states_44(D), 1, records_48(D));",
+      "$CASULO_ARTIFACT/casulo_native.c:42:24: note: ***** Analysis failed with vector mode V4DF",
+      "$CASULO_ARTIFACT/casulo_native.c:42:24: note: ***** The result for vector mode V32QI would be the same",
+      "$CASULO_ARTIFACT/casulo_native.c:42:24: note: ***** Re-trying analysis with vector mode V16QI",
+      "$CASULO_ARTIFACT/casulo_native.c:42:24: note: ***** Analysis failed with vector mode V16QI",
+      "$CASULO_ARTIFACT/casulo_native.c:42:24: note: ***** Re-trying analysis with vector mode V8QI",
+      "$CASULO_ARTIFACT/casulo_native.c:42:24: note: ***** Analysis failed with vector mode V8QI",
+      "$CASULO_ARTIFACT/casulo_native.c:42:24: note: ***** Re-trying analysis with vector mode V4QI",
+      "$CASULO_ARTIFACT/casulo_native.c:42:24: note: ***** Analysis failed with vector mode V4QI"
+    ],
+    "version": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0"
+  },
+  "simd_kernel": {
+    "cpu_ns_per_record": 0.0,
+    "cpu_ns_samples": [
+      0,
+      0,
+      0,
+      15625000,
+      0,
+      0,
+      0,
+      15625000,
+      0
+    ],
+    "iterations": 2000,
+    "median_cpu_ns": 0,
+    "median_wall_ns": 5530600,
+    "name": "c99_host_simd_strict_kernel",
+    "records_per_sample": 256,
+    "samples": 9,
+    "throughput_records_per_second": 92575850.7214407,
+    "wall_ns_per_record": 10.801953125,
+    "wall_ns_samples": [
+      5665600,
+      5800200,
+      5393100,
+      5912100,
+      6135300,
+      5530600,
+      5432500,
+      5387700,
+      5329600
+    ]
+  }
+}

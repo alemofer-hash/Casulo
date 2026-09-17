@@ -1,0 +1,34 @@
+{
+  "schema": "casulo-energy-commands/1.0",
+  "description": "Complete 400-epoch TCAP canary, fresh state per invocation; compilation excluded.",
+  "commands": [
+    {
+      "implementation": "t-general-ir-tcap/0.1",
+      "argv": ["{python}", "-m", "casulo.livelab.energy_unit", "--implementation", "t-general-ir-tcap/0.1", "--tcap", "{repo}/release/FloodSurrogate.tcap"],
+      "cwd": "{repo}",
+      "environment": {"OMP_NUM_THREADS": "4", "OPENBLAS_NUM_THREADS": "4", "MKL_NUM_THREADS": "4", "NUMEXPR_NUM_THREADS": "4"},
+      "timeout_seconds": 120.0,
+      "workload": "flood-surrogate-canary-400",
+      "seed": 260807,
+      "executable_sha256": null,
+      "tcap_sha256": "2fb6db0d9622382718263dc0ba3b565bdd53ef27bbd9355d40764d1d71643d19",
+      "dataset_sha256": "56faf993c90c58a68a35ee2469567b756bb10dcde129c391b27eb8282b117fc9",
+      "configuration_sha256": "05d9ecd954b335a051308c4834d24787eebad0d0af25de9b1bf2752cd2076fab",
+      "compilation_included": false
+    },
+    {
+      "implementation": "pytorch-eager-fullstep/1",
+      "argv": ["{python}", "-m", "casulo.livelab.energy_unit", "--implementation", "pytorch-eager-fullstep/1", "--tcap", "{repo}/release/FloodSurrogate.tcap"],
+      "cwd": "{repo}",
+      "environment": {"OMP_NUM_THREADS": "4", "OPENBLAS_NUM_THREADS": "4", "MKL_NUM_THREADS": "4", "NUMEXPR_NUM_THREADS": "4"},
+      "timeout_seconds": 120.0,
+      "workload": "flood-surrogate-canary-400",
+      "seed": 260807,
+      "executable_sha256": null,
+      "tcap_sha256": "2fb6db0d9622382718263dc0ba3b565bdd53ef27bbd9355d40764d1d71643d19",
+      "dataset_sha256": "56faf993c90c58a68a35ee2469567b756bb10dcde129c391b27eb8282b117fc9",
+      "configuration_sha256": "05d9ecd954b335a051308c4834d24787eebad0d0af25de9b1bf2752cd2076fab",
+      "compilation_included": false
+    }
+  ]
+}

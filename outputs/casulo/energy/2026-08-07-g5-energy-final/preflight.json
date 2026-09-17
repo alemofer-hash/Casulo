@@ -1,0 +1,11 @@
+{
+  "campaign_id": "2026-08-07-g5-energy-final",
+  "domain": "CPU_PACKAGE_RAPL",
+  "observed_at_utc": "2026-08-07T17:02:48.984609+00:00",
+  "reason_codes": [
+    "CPU_PACKAGE_RAPL_UNAVAILABLE",
+    "TOTAL_SYSTEM_WALL_METER_NOT_CONFIGURED"
+  ],
+  "status": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "workload_started": false
+}

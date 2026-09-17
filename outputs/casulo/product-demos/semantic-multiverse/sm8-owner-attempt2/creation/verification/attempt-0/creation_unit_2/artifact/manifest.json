@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:d78aa41ca0ceaa4653e1ee1f457aa786f3ad493008a9ac9e316ab79b74041470",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "9750e9c2edca2f2ae001c2c086bcf6df56bed63f16e585c05676ff79a1498bd0"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "3b62d3ad0946e50e931c14a6ffff57eaf458837529d016557889ab6d60739466",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "059a1af02755bee6797ca7761a7fbb86cf0fb37406ac9affdf9f37165e37b4f6",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "data",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "1404bcc5f4c6b81a9a6ee317ba0e9c61e0c2d8aa2219f94bb025f5d414a53186"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "SimulatedVibrationData",
+        "judgements": [],
+        "name": "Generate",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "08a35d8ea6fdbd20b936ecccf906dc67178cce281796b5824eb05baf70e3e1ea"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "SimulatedVibrationData",
+      "kind": "condense",
+      "name": "Generate",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "49a0d8902473e730c514c613019acca869bc6ad1a5afb9e790f0b755a0ddfb31"
+  }
+}

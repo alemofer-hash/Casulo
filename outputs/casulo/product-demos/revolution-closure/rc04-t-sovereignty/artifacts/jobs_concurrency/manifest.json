@@ -1,0 +1,103 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:f94652691dfd814e1f2b2f65f87a2c3296d8d0abb3ae7f9ff22986fe66dac44c",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "c115176f6c7ccfcead46ec17c5ffba40a9e935a3597d5a04a8cbe21c0fa51be3"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "34cd4120a84258e5d023d878ef54a8e9a0fb375d947eeaa2e6847be21ee08a60",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "1c3c28046862cb90695c8d2145b2016a5ad7a97c8853597af6f0eec0038aaada",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "casulo.revolution.jobs",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "daff035244f9eee5214cb330b136201876303f99501a2adcb2e545ba906b444b"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "receipt_present",
+          "cancelled",
+          "generation_matches"
+        ],
+        "input_type": "JobDecision",
+        "judgements": [],
+        "name": "PublishJob",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "38a0417d181416399c3c711ccde298125fa4a6271e23286c7fb213f85f363003"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "JobDecision",
+      "kind": "condense",
+      "name": "PublishJob",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 7,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "15bb2fc3ca7e40a4694b71b27de12a706f5d76e4cc40e7068783e0594658fdf0"
+  }
+}

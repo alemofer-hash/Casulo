@@ -1,0 +1,14 @@
+{
+  "schema": "casulo-generative-t-synthesis-failure/1.0",
+  "attempt": 6,
+  "gate": "GENERATIVE_T_SYNTHESIS_FAIL",
+  "stage": "llama-json-schema-grammar",
+  "error": "local structured generation failed before tokens",
+  "root_cause": "llama.cpp schema conversion did not safely support prefixItems with items=false",
+  "contract_change": "neural output is now a typed T AST and deterministic lowering emits source",
+  "partial_result_reused": false,
+  "external_ai_api_used": false,
+  "fake_engine_used": false,
+  "scientific_benchmark": false,
+  "preserved": true
+}

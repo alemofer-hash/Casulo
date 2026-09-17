@@ -1,0 +1,133 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "t.core.result"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "ef6123d29d5c8086ca6f2456c5c418cf2c1c655255e460c7bd745f1fee11f08b"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "cf8cc9f7ea290343b71afe41f06f4e8b5a53473109e48e1c02cbe7026652df36"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "5ab2dac54cecbb10816b6c0575bcb6ec74db726242bc25e31f4042fb8beeb5ea"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "27fd82be4a005a6140a3ca891078dcdff5e1d5cc1983b552fc7558e640ceef19"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "6f929b6954a4e2891ca32ef7e13a9d242ad1a25a9036dbcebdaf7689e90a4cce"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "bc97e978ec79ce5ea0068ae37ae6b81542089b90c6d9781fffceec48f98fa285"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "039774ce769cc79d632085fa2117d20d877f4308f1a74ef4d17a34b8b20c1d80"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "8c701ecb1601542f3efcdaf0f8ed4400260d2bc1c35af58370b28cec652c7eba"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "445c4e8a41ad81e33b3fdc69255dd4466ea4b5a9b8825c326a3da43f1546d86c"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "7f179521a6b21ed918d3577e88864f91761e6a9a3e91d081b321dddd0360396e"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "5bbdbd79353a624aca228727fcb5569c507ab7be43efaf1334cf23c3e19a149f"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "d835432602ad8eccf1785c4cfbd1d918b5a38356f176c7fedd81927da05bf2a9"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/t.casulo.capabilities.t",
+      "module": "t.casulo.capabilities",
+      "sha256": "279f2a0865653ab9de37c1ff087a27974d33f37c2e03892ef9aae6df3ac19673"
+    },
+    {
+      "file": "sources/t.casulo.dialogue.t",
+      "module": "t.casulo.dialogue",
+      "sha256": "a28ba0ee63aa090b960ffec3edd0ac0238c28a63dd1f476780fdaba0696943f7"
+    },
+    {
+      "file": "sources/t.casulo.intent.t",
+      "module": "t.casulo.intent",
+      "sha256": "14782b1b13b311dd1fa0e1352d9cc5871754470eff21fa7e727969f15cfed8cb"
+    },
+    {
+      "file": "sources/t.casulo.jobs.t",
+      "module": "t.casulo.jobs",
+      "sha256": "40d77c8da1a58236b2b8b3e54c158a32972c5212a47b0196c3e7d8789278173f"
+    },
+    {
+      "file": "sources/t.casulo.materialization.t",
+      "module": "t.casulo.materialization",
+      "sha256": "22d6dfb46d3b31554401199173250148f95d3b60508240ec44627845808c73db"
+    },
+    {
+      "file": "sources/t.casulo.memory_policy.t",
+      "module": "t.casulo.memory_policy",
+      "sha256": "e3d19d86ef961fa9fac74a476fba6b994ec81619da8d23c5b8901ccb4bafb2db"
+    },
+    {
+      "file": "sources/t.casulo.receipts.t",
+      "module": "t.casulo.receipts",
+      "sha256": "0302d4deae029e399bd3959dc37c0470ccf4303505e46f0273d4a3177669c82a"
+    },
+    {
+      "file": "sources/t.casulo.requirements.t",
+      "module": "t.casulo.requirements",
+      "sha256": "fcb34d9eceb44c3b7669ebaa10d8d45ac1c33f244270616e041a391c4bec355c"
+    },
+    {
+      "file": "sources/t.casulo.simulation.t",
+      "module": "t.casulo.simulation",
+      "sha256": "3ff0be4afd824e68083b19ee2fb1de5e16259a947a6767c36ead8af623f393df"
+    },
+    {
+      "file": "sources/t.casulo.universes.t",
+      "module": "t.casulo.universes",
+      "sha256": "21dbec704dd8ca7ece1594f75e38eaa307be0b7d2e19484f3d46f1db58b0cf7a"
+    },
+    {
+      "file": "sources/t.core.canonical.t",
+      "module": "t.core.canonical",
+      "sha256": "94d2d4cc4454858c6dee014c9989cf954f63a2643d864a36ea209c912671bd1c"
+    },
+    {
+      "file": "sources/t.core.collections.t",
+      "module": "t.core.collections",
+      "sha256": "42a3705824428f488fd0c68f345a79a49c1981688c8ffd4d72690a2841552e21"
+    },
+    {
+      "file": "sources/t.core.result.t",
+      "module": "t.core.result",
+      "sha256": "7f376b68037ed8cfc4a02c0786f7a83a7f8840276f1a330e51f600bd0e01d783"
+    }
+  ],
+  "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 10,
+  "failure": "WHPX_DID_NOT_REACH_BRIDGE_RECEIPT_WITHIN_DIAGNOSTIC_WINDOW",
+  "action": "Owned processes terminated; G7 bridge moved to declared TCG fallback",
+  "preserved": true,
+  "neural_evidence": false
+}

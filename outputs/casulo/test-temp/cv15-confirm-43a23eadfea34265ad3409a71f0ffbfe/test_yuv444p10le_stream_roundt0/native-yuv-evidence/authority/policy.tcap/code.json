@@ -1,0 +1,403 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "compression.casv"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "segment_index"
+                  ],
+                  "root": "input"
+                },
+                "op": "ge",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "invalid_segment_index",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "no_foreign_bitstream"
+                ],
+                "root": "input"
+              },
+              "error": "foreign_video_bitstream_forbidden",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "raw_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "empty_canonical_media",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "generative_candidate_available"
+                ],
+                "root": "input"
+              },
+              "else": [
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "direct_zlib_bytes"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "le",
+                    "right": {
+                      "op": "path",
+                      "path": [
+                        "raw_bytes"
+                      ],
+                      "root": "input"
+                    }
+                  },
+                  "else": [
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "CANONICAL_RAW"
+                      }
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "CANONICAL_ZLIB"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "exact_generative_reconstruction"
+                    ],
+                    "root": "input"
+                  },
+                  "error": "generative_roundtrip_failed",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "op": "and",
+                    "values": [
+                      {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "generative_bytes"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "le",
+                        "right": {
+                          "op": "path",
+                          "path": [
+                            "direct_zlib_bytes"
+                          ],
+                          "root": "input"
+                        }
+                      },
+                      {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "generative_bytes"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "le",
+                        "right": {
+                          "op": "path",
+                          "path": [
+                            "raw_bytes"
+                          ],
+                          "root": "input"
+                        }
+                      }
+                    ]
+                  },
+                  "else": [
+                    {
+                      "condition": {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "direct_zlib_bytes"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "le",
+                        "right": {
+                          "op": "path",
+                          "path": [
+                            "raw_bytes"
+                          ],
+                          "root": "input"
+                        }
+                      },
+                      "else": [
+                        {
+                          "op": "return_ok",
+                          "value": {
+                            "op": "const",
+                            "value": "CANONICAL_RAW"
+                          }
+                        }
+                      ],
+                      "op": "if",
+                      "then": [
+                        {
+                          "op": "return_ok",
+                          "value": {
+                            "op": "const",
+                            "value": "CANONICAL_ZLIB"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "GENERATIVE_EXACT"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "CandidateEvidence"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "exact_reconstruction"
+                ],
+                "root": "input"
+              },
+              "error": "independent_reconstruction_failed",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "no_foreign_bitstream"
+                ],
+                "root": "input"
+              },
+              "error": "foreign_video_bitstream_forbidden",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "source_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "empty_canonical_media",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "archive_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "gt",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "empty_archive",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "partition_exact"
+                ],
+                "root": "input"
+              },
+              "error": "base_dynamics_residual_partition_failed",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "archive_bytes"
+                  ],
+                  "root": "input"
+                },
+                "op": "lt",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "source_bytes"
+                  ],
+                  "root": "input"
+                }
+              },
+              "else": [
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "REJECT"
+                  }
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "ACCEPT"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "judge",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "ArchiveEvidence"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "compression.casv"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

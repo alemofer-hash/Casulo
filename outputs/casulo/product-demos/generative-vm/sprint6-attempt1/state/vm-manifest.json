@@ -1,0 +1,16 @@
+{
+  "base_image": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint6-attempt1\\images\\casulo-native-base.img",
+  "base_read_only": true,
+  "base_sha256": "81a22a34dc2bf76d05ae524bb41924a7bc2362c285c9ca8e47a6842f6bfcc754",
+  "cloud": "RELEASE_LOCKED",
+  "external_media": "NOT_IN_USE",
+  "machine": "q35",
+  "network": "denied",
+  "overlay": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint6-attempt1\\state\\owner-overlay.qcow2",
+  "overlay_format": "qcow2",
+  "overlay_quota_gib": 12,
+  "ovmf_vars": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint6-attempt1\\state\\OVMF_VARS.fd",
+  "physical_devices": false,
+  "qmp": "local-named-pipe-only",
+  "schema": "casulo.vm-profile/1.0"
+}

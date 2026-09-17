@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casulo.creation/1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "creation_id", "version", "state", "content", "capabilities", "rejected_delta_ids"],
+  "properties": {
+    "schema": {"const": "casulo.creation/1.0"},
+    "creation_id": {"type": "string", "minLength": 1},
+    "version": {"type": "integer", "minimum": 0},
+    "state": {"enum": ["SILENCE", "FIRST_INTENT", "LISTENING", "FIRST_FORM", "CLARIFICATION", "CONFIRMATION", "PERSONALITY", "SIMULATION", "INTERRUPTION", "CORRECTION", "AGREEMENT", "MATERIALIZATION"]},
+    "content": {"type": "object"},
+    "capabilities": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[^.]+\\..+$"}},
+    "rejected_delta_ids": {"type": "array", "items": {"type": "string"}}
+  }
+}

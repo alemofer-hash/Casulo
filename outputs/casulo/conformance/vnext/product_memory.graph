@@ -1,0 +1,24 @@
+metamorfose-graph/1.0
+module casulo.product.memory
+
+capability manifest
+
+type record MemoryQuery members=text:Text
+type record RecallReply members=outcome:Result[Text,RecallError]
+type enum RecallError members=NotFound,Ambiguous
+
+operation Recall cacheable=true cost=4 effects=manifest
+  permissions manifest
+  cfg entry=block/root.0
+  cfg-block block/root.0 successors=block/root.0.then.0,block/root.0.else.0
+  cfg-block block/root.0.else.0 successors=exit
+  cfg-block block/root.0.then.0 successors=exit
+  cfg-block exit successors=-
+  node Recall/input/text kind=input defines=text uses=- effect=read cost=0
+  node Recall/instruction/root.0/if kind=if defines=- uses=text effect=control cost=2
+  node Recall/instruction/root.0.then.0/emit kind=emit defines=- uses=- effect=manifest cost=1
+  node Recall/instruction/root.0.else.0/emit kind=emit defines=- uses=text effect=manifest cost=1
+  edge Recall/input/text -> Recall/instruction/root.0/if kind=data name=text
+  edge Recall/instruction/root.0/if -> Recall/instruction/root.0.then.0/emit kind=control
+  edge Recall/instruction/root.0/if -> Recall/instruction/root.0.else.0/emit kind=control
+  edge Recall/input/text -> Recall/instruction/root.0.else.0/emit kind=data name=text

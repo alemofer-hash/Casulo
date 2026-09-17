@@ -1,0 +1,21 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/owner.agent.t_mass_balance.units.t",
+      "module": "owner.agent.t_mass_balance.units",
+      "sha256": "1e1c7af925e2dcf17db44994fcc3569b53ec5c32590ceb6f75c15a2e1cb51acb"
+    },
+    {
+      "file": "sources/owner.agent.t_mass_balance.mass.t",
+      "module": "owner.agent.t_mass_balance.mass",
+      "sha256": "50d8e8a1e938e4e760a91b2369616523b82de16652afd56845e04a317936b400"
+    },
+    {
+      "file": "sources/owner.agent.t_mass_balance.output.t",
+      "module": "owner.agent.t_mass_balance.output",
+      "sha256": "4e7773035c151b70eec08b37db2842b14d247ef9a93b3fca626df630c0177977"
+    }
+  ]
+}

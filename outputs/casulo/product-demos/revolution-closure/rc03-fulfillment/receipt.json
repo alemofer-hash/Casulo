@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc03-fulfillment",
+  "gate_sha256": "764a3554bf0d3c74ff20a100fb4f3bb91f8939549c651dfba91361d96a4baab3",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC3_SEMANTIC_FULFILLMENT_PASS",
+  "timestamp": "2026-08-14T20:53:42.573956+00:00"
+}

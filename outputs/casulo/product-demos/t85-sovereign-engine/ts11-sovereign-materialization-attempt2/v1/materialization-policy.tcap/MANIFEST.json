@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.materialization.lifecycle"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "b8a808685c36e22842b92010c9eaeae69e8f1cf5e676449f9085c343fdf529f0"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "ebf6c1fcac222e88b341228aa881d10aec6b908b27f75047062e7d585f2ea133"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "5e4f1a63a8e6816a813295ff80be7aa4690916373eba7576944a976e14f7f9ef"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "57d1a0a279b4d0c28b2a1cd38304d1768ad3e0de02a09c057a4d4a636c8bf209"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "e352d1f5d52d07433e825d4b5306390812e5a8ca528e9745dc70fb9fd625e77e"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "d85ba8e83a29747ef138df4240b928e70db122dc90d0ae3e18fd036616f245e7"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "2a27a39208169b3b083cf53026bb137e535135f55d541856aec35fdd4933084e"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "72bb6338b6626989c5a4313404d82d259ccca90ee3435f2d4bc50a15354b3dee"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "a3b9aa52875bb5f0229e3dbb50b51c2c385e0f2f858cb4a82d4f040e3a153ef3"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "f5d9ac7d03589c2c5b0e2b50592b219909771d9f39040e22365a440a47f27293"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "1fadff3c6abf2bf44f3d819f96a70b41bf69a714eba4f545b9db8f44456de75a"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.materialization.lifecycle.t",
+      "module": "owner.materialization.lifecycle",
+      "sha256": "1de18db5b885ea8ff4b5aadbdbe91b8ec8cd5f1d197ad407c472142b6e582528"
+    }
+  ],
+  "tcap_hash": "ba64c888037adec43c36f5c23378b92b0f2da97a2a6eac9b7d1cd9f78401ede6"
+}

@@ -1,0 +1,33 @@
+{
+  "available_to_generation_context": false,
+  "families": [
+    {
+      "domain": "scientific-computing",
+      "family_id": "holdout-scientific-tensor",
+      "sealed_payload_sha256": "cbf0d35713d3e6cbc004068f909e949cc034eb47624038db54620f54a23782b2"
+    },
+    {
+      "domain": "administrative-workflow",
+      "family_id": "holdout-public-workflow",
+      "sealed_payload_sha256": "98332957dfe47e89f2e7c3702fd2b19072d76de7ba387342889ce90ca21902fb"
+    },
+    {
+      "domain": "stream-processing",
+      "family_id": "holdout-transit-stream",
+      "sealed_payload_sha256": "c12a52a01cd3a770a796e9c2daae754ba7f945fdfdef591547be55caab65c7ab"
+    },
+    {
+      "domain": "interactive-creative-tool",
+      "family_id": "holdout-creative-dialogue",
+      "sealed_payload_sha256": "cc19dc3441a9a7ddf334ce48fbe7d6789ab7c11e7d08c45c69092bb86fd9e844"
+    },
+    {
+      "domain": "local-software-service",
+      "family_id": "holdout-secure-service",
+      "sealed_payload_sha256": "7e8d6e9f048a6392dc3e6b9748e2f207a80b409693383aaf2e43b3c1edf2c0fb"
+    }
+  ],
+  "pass": true,
+  "schema": "casulo.holdout-family-seal/1.0",
+  "suite_sha256": "e2d37c25cb5a3b0ad21313de71526014b7473a2bd6a5188d2b165e53e4c4c620"
+}

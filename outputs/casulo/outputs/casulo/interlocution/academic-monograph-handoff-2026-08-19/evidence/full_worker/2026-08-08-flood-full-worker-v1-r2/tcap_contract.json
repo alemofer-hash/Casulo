@@ -1,0 +1,21 @@
+{
+  "batch_size": 1024,
+  "dataset_hash": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+  "epochs": 400,
+  "expected_optimizer_steps": 400,
+  "expected_parameter_writes": 32400,
+  "expected_record_visits": 409600,
+  "general_ir_sha256": "4162fc673c71e1b777ec57f7924ed756f5e9a9771ccb5624d38d8cd2cf6e659f",
+  "graph_sha256": "67ee0d7e20c8c955f2c129f1193d020b4aac0953fd0c864ff9f25d0d728a2ec3",
+  "hidden_features": 8,
+  "initialization_bundle_hash": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+  "input_features": 8,
+  "learning_rate": 0.018,
+  "optimizer": "sgd",
+  "output_features": 1,
+  "precision": "float64",
+  "records_per_epoch": 1024,
+  "scientific_eligible": true,
+  "work_unit_schema": "casulo-flood-work-unit/1.0",
+  "workload_class": "SCIENTIFIC_WORK_UNIT"
+}

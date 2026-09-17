@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 6,
+  "failure": "LONGER_GUEST_TIMEOUT_IMAGE_DID_NOT_COMPLETE_HANDSHAKE",
+  "action": "Owned processes terminated; exact previously passing 120 second constant restored",
+  "preserved": true,
+  "neural_evidence": false
+}

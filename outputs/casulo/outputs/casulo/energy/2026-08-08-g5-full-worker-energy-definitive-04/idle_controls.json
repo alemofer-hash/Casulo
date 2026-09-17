@@ -1,0 +1,62 @@
+{
+  "stability": {
+    "gate": "FAIL",
+    "initial_ceiling_c": 60.0,
+    "longest_stability_end_utc": "2026-08-08T16:17:53.761000+00:00",
+    "longest_stability_start_utc": "2026-08-08T16:17:46.468000+00:00",
+    "longest_symmetric_stability_band_seconds": 7.293,
+    "required_stability_seconds": 30.0,
+    "samples": 4790,
+    "sampling": {
+      "gaps_over_5x_median": [],
+      "intervals": 4789,
+      "maximum_seconds": 0.339,
+      "median_seconds": 0.252,
+      "p95_seconds": 0.266
+    },
+    "stability_band_tolerance_c": 1.0,
+    "temperature_c": {
+      "final": 50.0,
+      "initial": 53.0,
+      "maximum": 77.0,
+      "median": 54.0,
+      "minimum": 46.0
+    },
+    "throttle_event_count": 4,
+    "throttle_events": [
+      {
+        "active_instantaneous_columns": [
+          "Estrangulamento térmico do núcleo (avg) [Yes/No]",
+          "P-core 1 Estrangulamento térmico [Yes/No]"
+        ],
+        "temperature_c": 70.0,
+        "timestamp_utc": "2026-08-08T16:10:34.111000+00:00"
+      },
+      {
+        "active_instantaneous_columns": [
+          "Estrangulamento térmico do núcleo (avg) [Yes/No]",
+          "P-core 1 Estrangulamento térmico [Yes/No]"
+        ],
+        "temperature_c": 60.0,
+        "timestamp_utc": "2026-08-08T16:10:34.360000+00:00"
+      },
+      {
+        "active_instantaneous_columns": [
+          "Estrangulamento térmico do núcleo (avg) [Yes/No]",
+          "P-core 1 Estrangulamento térmico [Yes/No]"
+        ],
+        "temperature_c": 73.0,
+        "timestamp_utc": "2026-08-08T16:10:34.612000+00:00"
+      },
+      {
+        "active_instantaneous_columns": [
+          "Estrangulamento térmico do núcleo (avg) [Yes/No]",
+          "P-core 1 Estrangulamento térmico [Yes/No]"
+        ],
+        "temperature_c": 57.0,
+        "timestamp_utc": "2026-08-08T16:14:36.577000+00:00"
+      }
+    ]
+  },
+  "status": "BLOCKED_BEFORE_CONTROL_A"
+}

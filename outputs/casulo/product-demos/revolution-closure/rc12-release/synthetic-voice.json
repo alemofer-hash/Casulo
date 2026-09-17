@@ -1,0 +1,32 @@
+{
+  "audio_frontend": {
+    "agc_gain": 1.0,
+    "double_talk": false,
+    "echo_scale": 0.6999724640338981,
+    "input_rms": 2973.0293147310203,
+    "output_rms": 0.0,
+    "residual_rms": 0.3705692152066547,
+    "samples": 320
+  },
+  "cancelled_frames": 11,
+  "checks": {
+    "physical_device_opened": false,
+    "raw_pcm_persisted": false,
+    "synthetic_echo_reduced": true,
+    "tts_cancelled": true,
+    "tts_pcm_nonempty": true
+  },
+  "claim_boundary": "synthetic implementation smoke only; physical voice and chemistry remain Guilherme-only",
+  "schema": "casulo.rc12-synthetic-voice/1.0",
+  "state": "PASS",
+  "tts": {
+    "backend": "casulo-first-party-formant",
+    "cancelled": false,
+    "frames": 160,
+    "license": "MIT-first-party-no-model",
+    "pcm_sha256": "56f25974ff2423831c0d6f880f97b92ae3f4f44d5b127da713c7f8dc039ff0a0",
+    "sample_rate": 16000,
+    "samples": 51120,
+    "text_sha256": "d482bc3c95678734550c04d9cda72f929fa9fb2535d8b8882ebe931731db1e8a"
+  }
+}

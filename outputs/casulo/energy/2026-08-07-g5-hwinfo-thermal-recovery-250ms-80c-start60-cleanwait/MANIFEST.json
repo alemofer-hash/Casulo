@@ -1,0 +1,97 @@
+{
+  "campaign_id": "2026-08-07-g5-hwinfo-thermal-recovery-250ms-80c-start60-cleanwait",
+  "files": [
+    {
+      "bytes": 177956,
+      "path": "analysis.json",
+      "sha256": "57045c8cee4a170216f380bec577fd0d186834c1e2cc91714f01765671f86d77"
+    },
+    {
+      "bytes": 1052,
+      "path": "benchmark_markers.jsonl",
+      "sha256": "c41c70ad2ec8281e0ccd571d9e8348a1a2f0bdeca3270f8027fad168d18be0a6"
+    },
+    {
+      "bytes": 118,
+      "path": "frozen_k.json",
+      "sha256": "18fce41c1b6dd24a834487bcca1b7fb907483132802b824a3fcab214e2bcec17"
+    },
+    {
+      "bytes": 182,
+      "path": "input_hashes.json",
+      "sha256": "eada841120880396e57a80c3a474b6864f4e09d747a2af3759bf83eb81265f6f"
+    },
+    {
+      "bytes": 926,
+      "path": "observer_overhead.json",
+      "sha256": "344f98508aaebd37ae8a4307028ca0ed0d55927954c8d263a16bcdd55e72cda6"
+    },
+    {
+      "bytes": 806,
+      "path": "polling_validation.json",
+      "sha256": "3fed301bca6fe5b487a4a81ea8f8af5508a5f32464e0faff89717b55cc4fd2a2"
+    },
+    {
+      "bytes": 3066,
+      "path": "protocol.json",
+      "sha256": "5ad6e8c38f788afc3110d8e31fb7f1d8d876ac398c799514e385a541d153999e"
+    },
+    {
+      "bytes": 784,
+      "path": "report.md",
+      "sha256": "1b646296a359642eb1a525c77731f1d2c38c392f318b46fbd70aeae7b9ab4a2f"
+    },
+    {
+      "bytes": 8901,
+      "path": "schedule.json",
+      "sha256": "664a598ba135ac0f4c8ee40e7668f118ce7e320c8b8817039f29f673041eff89"
+    },
+    {
+      "bytes": 108,
+      "path": "source_csv_final.sha256",
+      "sha256": "a2dd5b7f07263410281ed7f200938f99f0e56d166eee6cd7085ad7e97603b76f"
+    },
+    {
+      "bytes": 108,
+      "path": "source_csv_initial.sha256",
+      "sha256": "832de753a52feacae3dc9c47618b638aeccae23014d79cdb7b8a76b9a9a667b5"
+    },
+    {
+      "bytes": 7790,
+      "path": "source_initial.json",
+      "sha256": "0050b3e14aaf662975d4b7b5f7c02f7a2d891a838fc9146d3597fbb103069611"
+    },
+    {
+      "bytes": 1773076,
+      "path": "source_segment.csv",
+      "sha256": "6446fc5d9261d54bebab5bd49bd113af9b3596e858e1848f2303a543a2ac320b"
+    },
+    {
+      "bytes": 178184,
+      "path": "thermal_calibration.json",
+      "sha256": "f95cc3b32815f0c99323b8b2bf823782cbc54fc888cf1591763510edf2473f54"
+    },
+    {
+      "bytes": 1251,
+      "path": "worker_build.json",
+      "sha256": "854d06ebfb088d932340df3e58322db7f7d95e57213776a245ea83c48c1c73b8"
+    },
+    {
+      "bytes": 579,
+      "path": "worker_environment.json",
+      "sha256": "eb6609174467c24a8577cc0537c036c448feb1dc04d36ebadde2308ff0464c1b"
+    },
+    {
+      "bytes": 2116085,
+      "path": "workers/tcap_hwinfo_worker.exe",
+      "sha256": "0f77d7f7a0bd658f090f61a7132e89d3528aeb7909a87f441fd283183de54dc1"
+    },
+    {
+      "bytes": 21383,
+      "path": "workers/tcap_hwinfo_worker.rs",
+      "sha256": "93b14e17a279c5a1bb55257555ddb6b04bcd3ca444fcb518ffaae2f8dee40565"
+    }
+  ],
+  "schema": "casulo-hwinfo-thermal-recovery-manifest/1.0",
+  "sealed_at_utc": "2026-08-07T21:20:35.511899+00:00"
+}

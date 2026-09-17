@@ -1,0 +1,54 @@
+{
+  "answer": "Você rejeitou explicitamente a transformação do Casulo em dashboard convencional. A direção de interface que você já rejeitou é a de se tornar um sistema de controle centralizado e visualizável, com interface de usuário tradicional.\n\nA restrição de rede está clara: não há conexão com outros sistemas ou servidores externos. O Casulo opera em isolamento, sem acesso a redes públicas ou privadas além do que foi explicitamente permitido.\n\nQuanto ao job \"rc2:job\", sabemos que ele foi iniciado com a validação de um novo componente, mas não há resultados de compilação ainda. O sistema está em fase inicial de verificação e preparação, sem produção real de output ou funcionalidade.\n\nConsequência útil: mantenha o foco na construção incremental e no teste de componentes isolados. Se o job \"rc2:job\" for bem-sucedido, ele pode servir como base para a implementação de novos módulos ou funções dentro do sistema, sem depender de interfaces ou redes externas. Isso reforça a independ",
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "checks": {
+    "completed": true,
+    "job_not_falsely_completed": true,
+    "no_external_ai_api": true,
+    "no_fake_engine": true,
+    "offline_constraint_recalled": false,
+    "rejected_dashboard_recalled": true,
+    "streaming": true,
+    "useful_consequence_present": true
+  },
+  "context_digest": "43c12ea810b2618c6bb4f65e86624ac45a0619e4046897bb6e3e7df6064f56e2",
+  "directive": {
+    "conflicts": [],
+    "context_refs": [
+      "rc2:rejected-dashboard",
+      "rc2:purpose"
+    ],
+    "mandatory_constraints": [
+      "O fluxo principal permanece offline e sem API externa."
+    ],
+    "project_id": "rc2-guide-neural"
+  },
+  "external_ai_api_used": false,
+  "fake_engine_used": false,
+  "gate": "FAIL",
+  "human_chemistry_status": "PENDING_GUILHERME",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "physical_voice_validation": "PENDING_RC8_AND_GUILHERME",
+  "sampling_policy_id": "casulo-sampling-dialogue-v1",
+  "schema": "casulo.guide-neural-continuity/1.0",
+  "seed": null,
+  "state_sha256": "dd5461a112e39e596b0bd24de89e83e721e281f53255019f9bfc4abe38b5c4d3",
+  "stream_fragments": 240,
+  "terminal": "COMPLETED",
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "0a53704bcbd62f224dbd5337ad0fa004fb6a888ebe082d7a7e8757fad6c0e179",
+    "ended_monotonic_ns": 10676662277000,
+    "external_network_used": false,
+    "finish_reason": "length",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "owner:rc2:neural:1",
+    "output_sha256": "aaa1699aca7ae80d4925eccc86c5c60fe4e8c4f58bfd047b1ef25f803ee3e3f3",
+    "sampling_policy_id": "casulo-sampling-dialogue-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 10601335730000,
+    "stream_events": 240
+  }
+}

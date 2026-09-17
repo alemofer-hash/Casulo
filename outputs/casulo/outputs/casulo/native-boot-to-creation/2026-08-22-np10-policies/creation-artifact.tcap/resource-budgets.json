@@ -1,0 +1,8 @@
+{
+  "modules": {
+    "owner.generated.some_dois_numeros": {
+      "deadline_ms": 1000,
+      "steps": 64
+    }
+  }
+}

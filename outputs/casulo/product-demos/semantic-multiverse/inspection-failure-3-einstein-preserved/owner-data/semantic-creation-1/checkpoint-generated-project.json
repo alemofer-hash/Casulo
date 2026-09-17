@@ -1,0 +1,108 @@
+{
+  "candidate_rejections": [
+    {
+      "error_class": "ForgeError",
+      "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+      "phase": "synthesis",
+      "raw_sha256": "36743be39130609e965b742f42baf5148b46ffb8abee5231f14702cd2642d8bb",
+      "reason": "projeto_T_reprovado",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "294ffa860544574e69f039a4a918b5faf220f90feac0fe3ccaa2177d2288c90d",
+        "ended_monotonic_ns": 10355717442200,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+        "output_sha256": "36743be39130609e965b742f42baf5148b46ffb8abee5231f14702cd2642d8bb",
+        "sampling_policy_id": "casulo-sampling-code-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 10239326288300,
+        "stream_events": 507
+      }
+    }
+  ],
+  "creation_sha256": "c6f572ecc2a059fab926e132d70f6564e584abdd5eaa6d08376e82e748502ab6",
+  "entry_unit": "creation.open-ended-holdout.memory.read",
+  "project_id": "t-project:764582d4db52b0ed460dd960",
+  "tests": [
+    {
+      "expected_contains": "manifest: memory.read; trace: 'Memory read';",
+      "input": "memory.read: true",
+      "name": "TestMemoryRead",
+      "unit_id": "creation.open-ended-holdout.memory.read"
+    },
+    {
+      "expected_contains": "manifest: autonomy.level3; trace: 'Autonomy';",
+      "input": "autonomy.level: 3",
+      "name": "TestAutonomyLevel3",
+      "unit_id": "creation.open-ended-holdout.autonomy.level3"
+    },
+    {
+      "expected_contains": "manifest: precision.level2; trace: 'Precision';",
+      "input": "precision.level: 2",
+      "name": "TestPrecisionLevel2",
+      "unit_id": "creation.open-ended-holdout.precision.level2"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "294ffa860544574e69f039a4a918b5faf220f90feac0fe3ccaa2177d2288c90d",
+    "ended_monotonic_ns": 10437118963100,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5:candidate-1",
+    "output_sha256": "764582d4db52b0ed460dd960ad89a70475720b22ebfd04c1192a9da9dba07d2d",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 10355723860300,
+    "stream_events": 517
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule memory\n\ncapability manifest\n\nfield Read\n  trace value: Text\n\ncondense ReadValue in Read\n  effects [manifest]\n  emit \"manifest: memory.read; trace: 'Memory read initiated'; effects: [manifest]; emit: 'Memory value retrieved.'\"\n",
+      "unit_id": "creation.open-ended-holdout.memory.read",
+      "watch_paths": [
+        [
+          "memory",
+          "read",
+          "value"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation.open-ended-holdout.memory.read"
+      ],
+      "source": "language T/1.1\nmodule autonomy\n\ncapability manifest\n\nfield Level\n  trace value: Text\n\ncondense SetAutonomy in Level\n  effects [manifest]\n  emit \"manifest: autonomy.level3; trace: 'Autonomy level set to 3'; effects: [manifest]; emit: 'Autonomy level 3 activated.'\"\n",
+      "unit_id": "creation.open-ended-holdout.autonomy.level3",
+      "watch_paths": [
+        [
+          "autonomy",
+          "level",
+          "3"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation.open-ended-holdout.autonomy.level3"
+      ],
+      "source": "language T/1.1\nmodule precision\n\ncapability manifest\n\nfield Level\n  trace value: Text\n\ncondense SetPrecision in Level\n  effects [manifest]\n  emit \"manifest: precision.level2; trace: 'Precision level set to 2'; effects: [manifest]; emit: 'Precision level 2 activated.'\"\n",
+      "unit_id": "creation.open-ended-holdout.precision.level2",
+      "watch_paths": [
+        [
+          "precision",
+          "level",
+          "2"
+        ]
+      ]
+    }
+  ]
+}

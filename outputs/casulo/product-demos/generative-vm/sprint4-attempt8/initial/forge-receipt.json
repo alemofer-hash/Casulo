@@ -1,0 +1,52 @@
+{
+  "affected_paths": [],
+  "artifacts": [
+    {
+      "artifact_sha256": "26bff2f28f1f36983ce448da01f440c80798423077043fe7f507ca6aa2cd2dc9",
+      "dependency_artifact_sha256": {},
+      "graph_sha256": "5a7c8b9f9a5d516207331fab0b47a348d284a2aa5a7bcabf5f4481027f29801a",
+      "ir_sha256": "879ee533c2963062eb88363a8b2733db2a5b53649c3de343b0621cd8ac622d3b",
+      "source_sha256": "289d49082655d10261be29e2e5f2c6f81192555417e37dddbf8617f34686176c",
+      "unit_id": "creation_unit"
+    },
+    {
+      "artifact_sha256": "9b9514a6a9839a6078a3f0976cf81e04629fa1200b7bf723cb9ab17424e1b81a",
+      "dependency_artifact_sha256": {
+        "creation_unit": "26bff2f28f1f36983ce448da01f440c80798423077043fe7f507ca6aa2cd2dc9"
+      },
+      "graph_sha256": "fb33a7c9401ef55fe102390dd22bf1c0bd704e1a903d14e26b2c4f8fa977ed4b",
+      "ir_sha256": "d87f2628ebc91d38293fa610f0e58c4154a5087e1b7308c299634ed603aaceec",
+      "source_sha256": "8ecad89adcdbd6fa9417983f26ca249e34356b41cfa5a20c97d08fdbb26585bc",
+      "unit_id": "validation_unit"
+    },
+    {
+      "artifact_sha256": "57fee00214e7251ae3ea9f2289e899fd6f6031d9a1dbf309b15b724693cd227e",
+      "dependency_artifact_sha256": {
+        "validation_unit": "9b9514a6a9839a6078a3f0976cf81e04629fa1200b7bf723cb9ab17424e1b81a"
+      },
+      "graph_sha256": "941535297f71468a1c1441808c8f8ea7ff674e6db5ca351cd6b7828fb293c228",
+      "ir_sha256": "63026bea01c55417ffcdf0a6f71f1a73f6e14698426b1493ee23b9f7adb1ca6b",
+      "source_sha256": "f77347e04176cd42a9fa55652d4529e25a69af3713d3fb941b0e71d63c9839f8",
+      "unit_id": "tracking_unit"
+    },
+    {
+      "artifact_sha256": "10cdb91c43f4540298f79a5961496cc7cbf50ae73b096f8ba1b82166d7e72ed5",
+      "dependency_artifact_sha256": {
+        "tracking_unit": "57fee00214e7251ae3ea9f2289e899fd6f6031d9a1dbf309b15b724693cd227e"
+      },
+      "graph_sha256": "2f220ad949ea5c6a810bc63fd130744bd9356c1ea39b1d22309cfa5221500d6d",
+      "ir_sha256": "d4a3c2693ae2cf831f8ac48977419b04d564f1408c62da6c802bf6efca3943fa",
+      "source_sha256": "9640dbc22831a6702c692b993dc3c5bc8b39bd139a0b4436c7dde082c76c8ae9",
+      "unit_id": "identity_unit"
+    }
+  ],
+  "build_id": "forge:1",
+  "rebuilt_units": [
+    "creation_unit",
+    "validation_unit",
+    "tracking_unit",
+    "identity_unit"
+  ],
+  "reused_units": [],
+  "schema": "casulo.t-forge-receipt/1.0"
+}

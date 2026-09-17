@@ -1,0 +1,195 @@
+{
+  "delta": {
+    "affected_paths": [
+      [
+        "identity",
+        "purpose"
+      ],
+      [
+        "identity",
+        "behavior"
+      ],
+      [
+        "identity",
+        "interface"
+      ],
+      [
+        "identity",
+        "data"
+      ],
+      [
+        "identity",
+        "output"
+      ],
+      [
+        "identity",
+        "constraints"
+      ],
+      [
+        "identity",
+        "behavior"
+      ],
+      [
+        "identity",
+        "purpose"
+      ],
+      [
+        "identity",
+        "interface"
+      ],
+      [
+        "identity",
+        "data"
+      ],
+      [
+        "identity",
+        "output"
+      ],
+      [
+        "identity",
+        "constraints"
+      ]
+    ],
+    "base_version": 0,
+    "confidence": 0.85,
+    "confirmation_state": "PROPOSED",
+    "creation_id": "creation:open-ended-holdout",
+    "delta_id": "intent:gen:d5bbc87bc966475b3bf9eb4f",
+    "operations": [
+      {
+        "action": "remove",
+        "path": [
+          "identity",
+          "purpose"
+        ]
+      },
+      {
+        "action": "remove",
+        "path": [
+          "identity",
+          "behavior"
+        ]
+      },
+      {
+        "action": "remove",
+        "path": [
+          "identity",
+          "interface"
+        ]
+      },
+      {
+        "action": "remove",
+        "path": [
+          "identity",
+          "data"
+        ]
+      },
+      {
+        "action": "remove",
+        "path": [
+          "identity",
+          "output"
+        ]
+      },
+      {
+        "action": "remove",
+        "path": [
+          "identity",
+          "constraints"
+        ]
+      },
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "behavior"
+        ],
+        "value": {
+          "autonomy": "true",
+          "monitoring": "vibrational_patterns_in_simulated_centrifugal_pump"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "purpose"
+        ],
+        "value": {
+          "analysis": "evaluate_vibrational_signals_from_simulated_centrifugal_pump",
+          "hypothesis_testing": "electrical_and_mechanical_hypotheses"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "interface"
+        ],
+        "value": {
+          "maintenance_interface": "reversible"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "data"
+        ],
+        "value": {
+          "input": "vibrational_signals_from_simulated_centrifugal_pump",
+          "output": "analysis_results_and_hypotheses"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "output"
+        ],
+        "value": {
+          "hypotheses": "electrical_and_mechanical_hypotheses",
+          "reports": "vibrational_analysis_report"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "constraints"
+        ],
+        "value": {
+          "no_real_equipment_activation": "true"
+        }
+      }
+    ],
+    "rationale": "A proposta visa a redefinição da CreationSpec com base em uma nova abordagem que envolve a observação de padrões vibratórios em um sistema simulado, a análise de hipóteses multidisciplinares e a implementação de uma interface de manutenção reversível sem a necessidade de interação física com equipamentos reais.",
+    "schema": "casulo.intent-delta/1.0",
+    "source_event_ids": [
+      "voice:g5:novel-idea"
+    ]
+  },
+  "requested_capabilities": [
+    "monitoring_vibrational_patterns_in_simulated_centrifugal_pump",
+    "evaluate_vibrational_signals_from_simulated_centrifugal_pump",
+    "test_electrical_and_mechanical_hypotheses",
+    "generate_reversible_maintenance_interface",
+    "analyze_vibrational_data_for_maintenance_decisions"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "d03594bee524f1769583e727b3985fbb45d13ab5594ea7c5785b9019df76fdbf",
+    "ended_monotonic_ns": 7157772960400,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "intent:voice:g5:novel-idea",
+    "output_sha256": "d5bbc87bc966475b3bf9eb4f690f280d5b131139b572c5f0bf913ae5e6ca95be",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 7053131964500,
+    "stream_events": 635
+  }
+}

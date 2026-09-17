@@ -1,0 +1,10 @@
+{
+  "ads_rejected": true,
+  "junction_created": true,
+  "junction_rejected": true,
+  "package_ads_rejected": true,
+  "physical_symlink": {
+    "error": "OSError: [WinError 1314] O cliente não tem o privilégio necessário: 'C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\product-demos\\\\t85-sovereign-engine\\\\ts13-supply-chain-attempt2\\\\path-attacks\\\\base.img' -> 'C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\product-demos\\\\t85-sovereign-engine\\\\ts13-supply-chain-attempt2\\\\path-attacks\\\\base-link.img'",
+    "status": "NOT_EXECUTED_HOST_PRIVILEGE"
+  }
+}

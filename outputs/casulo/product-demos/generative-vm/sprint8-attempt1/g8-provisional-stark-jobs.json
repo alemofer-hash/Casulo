@@ -1,0 +1,201 @@
+{
+  "checks": {
+    "accessible_not_color_only": true,
+    "all_twelve_states": true,
+    "dashboard_absent": true,
+    "decorative_telemetry_absent": true,
+    "formed_states_use_real_artifacts": true,
+    "g7_receipt_bound": true,
+    "provenance_required": true,
+    "provisional_only": true,
+    "reduced_motion": true,
+    "silence_has_no_nodes": true,
+    "tokens_externalized": true,
+    "voice_priority_contract_preserved": true
+  },
+  "cloud": "RELEASE_LOCKED",
+  "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "forge_receipt": {
+    "affected_paths": [],
+    "artifacts": [
+      {
+        "artifact_sha256": "9912dc0cd3d7c468410cae14413da2bd7e74f200587e09514ffe2700d19bfee5",
+        "dependency_artifact_sha256": {},
+        "graph_sha256": "d0217705d698817f11f579e5dc5ec4350f888be85541844fb92f0be55379b90d",
+        "ir_sha256": "c1b24a472fa91ba639e584a55ae7e881f5b7b89fc9852f0f3b3df9d5402c6e5c",
+        "source_sha256": "2b30f63a929c1453ed2478476e1418b33a438c408f096b8aa75b2b8fc2f811d8",
+        "unit_id": "creation_unit_1"
+      },
+      {
+        "artifact_sha256": "b027d7eb470b2cb4ea87d8166a3e21348fafd9161432a2ccfcc82c2bd360c993",
+        "dependency_artifact_sha256": {
+          "creation_unit_1": "9912dc0cd3d7c468410cae14413da2bd7e74f200587e09514ffe2700d19bfee5"
+        },
+        "graph_sha256": "478e1ba7f5c581d10179e1bdc0e60a01663664c8ba5f06fdd77cf36ddab0af46",
+        "ir_sha256": "6870210d94754ba4a0e669876bf7854bf7f62d64c407fdf507ff27416ddf47df",
+        "source_sha256": "944d9d39627ac7cf1ade54c68ee991e5009a7606bc69a61011f33cfcd5581354",
+        "unit_id": "creation_unit_2"
+      },
+      {
+        "artifact_sha256": "989901c76ae7276d8ad31fafda4023c75f4597ed7558cbf02bc26b750886d596",
+        "dependency_artifact_sha256": {
+          "creation_unit_2": "b027d7eb470b2cb4ea87d8166a3e21348fafd9161432a2ccfcc82c2bd360c993"
+        },
+        "graph_sha256": "ca6ab972279de58f7af240859d844832bc3cb481fccbc92ca405a4bb5518d582",
+        "ir_sha256": "e6548374eec14ee50e22519de8bd9516861343d6a12b50bd8215e893ee114860",
+        "source_sha256": "9b909749c24d3c8a50619b17a22b5e6109c586292c6244530bc59e3255260df2",
+        "unit_id": "creation_unit_3"
+      },
+      {
+        "artifact_sha256": "48a8d4784211418c7c4776e9c5a3f5db5a977babe8c1a8a811a8e9d4ac9fd90a",
+        "dependency_artifact_sha256": {
+          "creation_unit_3": "989901c76ae7276d8ad31fafda4023c75f4597ed7558cbf02bc26b750886d596"
+        },
+        "graph_sha256": "27ea57a0c937c9246b98918ac851c93546015b0371095d2b46dc91928c70bfe6",
+        "ir_sha256": "69db39a124794af2a3474bbd89e653e65a95dfe32038218f03b478aba875ce3c",
+        "source_sha256": "5a6eaa623d752824e260b5524aca0d685af62a371826abda23852ba8a577967e",
+        "unit_id": "creation_unit_4"
+      }
+    ],
+    "build_id": "forge:g8:sealed-g7-project",
+    "rebuilt_units": [
+      "creation_unit_1",
+      "creation_unit_2",
+      "creation_unit_3",
+      "creation_unit_4"
+    ],
+    "reused_units": [],
+    "schema": "casulo.t-forge-receipt/1.0"
+  },
+  "gate": "PROVISIONAL_STARK_JOBS_VM_PASS",
+  "index": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint8-attempt1\\index.html",
+  "index_sha256": "08603efb2a89b91773eec9c583d7b5c83154b8a36aa2c6dea2b989fcdeabbdd4",
+  "native_guest_renderer_complete": false,
+  "pages": [
+    {
+      "content_sha256": "b624ba6ee3363ff5651d95c090eebf2bf70d0738cd203c96ab765187fee329b7",
+      "file": "00-silence.html",
+      "file_sha256": "7a0b0ba144da0e328984774be18840ac829613128dd889c9fd3b8b09af9a9d57",
+      "nodes": 0,
+      "provenance": [],
+      "state": "SILENCE"
+    },
+    {
+      "content_sha256": "508f6a55dce4c8e1b935f430fb3943feb33ead361195d114185960e1397fe7e4",
+      "file": "01-first_intent.html",
+      "file_sha256": "d828094fbab8efbb3571f74777ab34ba4eff3422e00890334439965d315a71e7",
+      "nodes": 1,
+      "provenance": [
+        "g7:first_intent"
+      ],
+      "state": "FIRST_INTENT"
+    },
+    {
+      "content_sha256": "752f473efb2683425c5704c05be78b24455ea0a440cd29222e997c18c6904be2",
+      "file": "02-listening.html",
+      "file_sha256": "39cf7741ea2f4876df202ebda9e96393cdbcd2c75503fb8e4a3146bea57561eb",
+      "nodes": 1,
+      "provenance": [
+        "g7:listening"
+      ],
+      "state": "LISTENING"
+    },
+    {
+      "content_sha256": "d0bb4d8ead93f56dcf6a3a588051fb5e5b6b2fc4eee1a5f12e045d97faee3f27",
+      "file": "03-first_form.html",
+      "file_sha256": "10f9ee3a58ef09b0fefafc32e1bdaf93b15e09d0f62e4b46df855ce83a9034fb",
+      "nodes": 4,
+      "provenance": [
+        "g7:first_form"
+      ],
+      "state": "FIRST_FORM"
+    },
+    {
+      "content_sha256": "a84f0bbcde81f70c2688690415f297e1ad1329f417f94593adc1c629ab63a47a",
+      "file": "04-clarification.html",
+      "file_sha256": "3fddeef95e8be8b17dc5247647ce571d736e8662908f2ad3a0116fe3d37347bf",
+      "nodes": 1,
+      "provenance": [
+        "g7:clarification"
+      ],
+      "state": "CLARIFICATION"
+    },
+    {
+      "content_sha256": "ea834a91e8ed111897a8b73a4a6da694924dc2a70eafede65c8389092130c64a",
+      "file": "05-confirmation.html",
+      "file_sha256": "6d92c52646b6c10a69126314b8ef0fe679e1fb96a07db76e37566197cc6045d7",
+      "nodes": 4,
+      "provenance": [
+        "g7:confirmation"
+      ],
+      "state": "CONFIRMATION"
+    },
+    {
+      "content_sha256": "69c806e8ed0c9ce5caa8a9b6e110059f04a634023693234a8c2d4b1661ab661e",
+      "file": "06-personality.html",
+      "file_sha256": "f1ac4d1de0643ac721bfc99bfa113810a0f6f75c4c325e37a81ca0c70eb72bd9",
+      "nodes": 4,
+      "provenance": [
+        "g7:personality"
+      ],
+      "state": "PERSONALITY"
+    },
+    {
+      "content_sha256": "4cf59c774e515e5808bbcb826109e242b0217d5494db7658e5fd7feda3250da0",
+      "file": "07-simulation.html",
+      "file_sha256": "4c4e3ef098742150bc0b3944e62a722cc9b7cbf23bcdb370e06d5880bac82018",
+      "nodes": 4,
+      "provenance": [
+        "g7:simulation"
+      ],
+      "state": "SIMULATION"
+    },
+    {
+      "content_sha256": "a7c445cbf10755206d62c7108af43b45393e3bc006e17ab8f7eb623954b68029",
+      "file": "08-interruption.html",
+      "file_sha256": "f9dc9311effb32b49e6499e27a10105ec808f3d841c53300703f8f29e7f42393",
+      "nodes": 4,
+      "provenance": [
+        "g7:interruption"
+      ],
+      "state": "INTERRUPTION"
+    },
+    {
+      "content_sha256": "6df37fdfce410c29fe1ffb228070bd8228a06f61c3d19cb4b96712ff65bd2876",
+      "file": "09-correction.html",
+      "file_sha256": "0005d5bd56eb7c0f4dfc44c44e2a6794f0840c5474bebe49dbf490c958846f98",
+      "nodes": 4,
+      "provenance": [
+        "g7:correction"
+      ],
+      "state": "CORRECTION"
+    },
+    {
+      "content_sha256": "82131b86d8d5d9b206c7c09f80631f5da6dfb93e002023abcee75834a66b144b",
+      "file": "10-agreement.html",
+      "file_sha256": "170f6449206868f6e876a863c3fbad7d9d321af2d9705780f47f5b45af9c9ce5",
+      "nodes": 4,
+      "provenance": [
+        "g7:agreement"
+      ],
+      "state": "AGREEMENT"
+    },
+    {
+      "content_sha256": "16e61548e69f6590c4678eb983a183d3333cf752c36d49bf2418241b0529479d",
+      "file": "11-materialization.html",
+      "file_sha256": "6001e3d8298273cca8dda31a07a1ed364335766341cd8d855213667c74d07c8c",
+      "nodes": 4,
+      "provenance": [
+        "g7:materialization"
+      ],
+      "state": "MATERIALIZATION"
+    }
+  ],
+  "render_execution_location": "HOSTED_VM_PROFILE_FIRST_PARTY_DISPLAY",
+  "schema": "casulo.provisional-stark-jobs-vm/1.0",
+  "source_g7": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint7-e2e-attempt2\\g7-generative-owner-vm-e2e.json",
+  "source_g7_sha256": "da1dee120eb10539ada1435e7cf38c62a21d4c87ce21dec701969e5320cae604",
+  "theme_id": "stark-jobs-provisional-v1",
+  "theme_sha256": "15afc983c6c38af090ae3e671805f84aa9cefc3984dafe2810aff01e4dc90e90",
+  "usb": "PROHIBITED"
+}

@@ -1,0 +1,33 @@
+{
+  "authorized_claim": "avaliador tensorial local 4D parametrizavel; Minkowski no vacuo validado",
+  "bounded_kernel": {
+    "candidate_sha256": "c64271bb1c4789c9798a14cfd8bd0960a89a0d8dc93f9b633b591cdb3f29f009",
+    "evidence_count": 7,
+    "evidence_plan_hash": "dc86c4f04d5329dcf52df9ae024ffb4b4414dea2bb8eb340702f454dcc7a4d5c",
+    "foreign_acceptance_consumed": false,
+    "fulfillment_receipt": {
+      "canonical_input_hash": "fb1554a3c015f684bc3f7828392a3e34278812f185d1698afa0007a928c94874",
+      "canonical_output_hash": "5ad5721cea0cda271a9b13108d2059c5b168b1ac5a712d17da5a104b36cea3e8",
+      "decision_id": "decision:5ad5721cea0cda271a9b1310",
+      "effects_requested": [],
+      "foreign_calls": [],
+      "grants_consumed": [],
+      "monotonic_timestamp_ns": 1,
+      "previous_receipt_hash": "35b47fad208905d26486b87dac6465c9850e6494c084833a23c8fd909cc265d3",
+      "receipt_hash": "de6a32ba543ae5217ceda24b58e6a9d7fa074f1773f9465b1d24db6814b3d7a1",
+      "result": "ok",
+      "runtime_function": "owner.critical.fulfillment::decide",
+      "runtime_id": "t-runtime/rust-2.0",
+      "schema": "casulo.t-decision-receipt/2.0",
+      "scope_id": "creation:scientific-computing",
+      "surface_id": "hard_requirement_fulfillment",
+      "t_ir_hash": "0884e393507fafbfe867c449df867817c2af0271fcd2a65b07aef4aa9f527197",
+      "t_source_hash": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd",
+      "tcap_hash": "ce5e4c4585a7c3de745ed012f7a9052b768bcaa8cb1306ba192d2139d613510a"
+    },
+    "pack_id": "scientific-computing",
+    "status": "PASS"
+  },
+  "forbidden_claim": "solver geral das PDEs de Einstein",
+  "generic_text_candidate": "BLOCKED:T denied critical decision: hard_requirement_not_pass"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "casulo-native-boot-to-creation-validation/1.0",
+  "state": "CASULO_NATIVE_BOOT_TO_CREATION_PROOF",
+  "normal_boots": {
+    "passed": 3,
+    "failed": 0,
+    "report_sha256": "42ff3f864ccdf4e46389d74ecd6fb0ee0b6e398e6a7d06bc757402b2f8a601d3"
+  },
+  "cancellation_boots": {
+    "passed": 1,
+    "failed": 0,
+    "report_sha256": "0c86fc1c6483218b93aff31f26c3e58389cc9a4004bc034dde44eacf316ad092"
+  },
+  "python_product_t_qemu": {
+    "passed": 593,
+    "skipped": 2,
+    "failed": 0,
+    "elapsed_seconds": 49.18
+  },
+  "python_release_focus": {
+    "passed": 10,
+    "skipped": 0,
+    "failed": 0
+  },
+  "cargo_native_image_check": "PASS",
+  "cargo_native_model_host": {
+    "passed": 19,
+    "failed": 0
+  },
+  "cargo_presentation_host": {
+    "passed": 9,
+    "failed": 0
+  },
+  "invalid_invocation_preserved": {
+    "command": "cargo +nightly-2026-02-01 test -Z bindeps --manifest-path os/Cargo.toml --workspace --locked --offline",
+    "classification": "INVALID_MIXED_TARGET_WORKSPACE_INVOCATION",
+    "reason": "host serde/std crates were forced onto x86_64-unknown-none; the separately targeted host and no_std gates passed"
+  },
+  "package": {
+    "archive_sha256": "297d6035ee80e30d72083c16ca4900822e7ff6bda4a18a3acfc67a81495cd2ff",
+    "signature": "PASS",
+    "manifest": "PASS",
+    "sha256sums": "PASS",
+    "extracted_launcher_help": "PASS",
+    "model_embedded": false,
+    "physical_device_command": false
+  },
+  "public_private_components_absent": true,
+  "guest_network": "OFF",
+  "cloud": "RELEASE_LOCKED",
+  "usb_or_block_device_written": false,
+  "scientific_benchmark_started": false,
+  "performance_claim": false,
+  "energy_claim": false
+}

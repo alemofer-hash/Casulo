@@ -1,0 +1,25 @@
+{
+  "addendum_sha256": "1c4abb9a82f39a3f8550dee9222f5c142d59b8fd40cc7debb3a5f024f20799de",
+  "created_at_utc": "2026-08-19T03:26:35.944655+00:00",
+  "extends_manifest_file_sha256": "be5e2d7f40c66d8f7d73862d21030098eea2115a1cecceffc07b2a7303e9e31c",
+  "extends_manifest_internal_sha256": "fd39a2332c7800f57c872e954559d2b39d12552dc0b15a87146ab249eca6e14b",
+  "files": [
+    {
+      "bytes": 1058,
+      "path": "frozen_protocol.json",
+      "sha256": "bfba95e059af80e282779a4ee3ec3c162499cdd62d905140988c9080dc27c5c0"
+    },
+    {
+      "bytes": 597,
+      "path": "counters/summary.json",
+      "sha256": "5d5b5fb6a5125f24f74f82a24d0c3ba276be5cc67f6c94bea1f86d86719d2015"
+    },
+    {
+      "bytes": 1018,
+      "path": "ablations/summary.json",
+      "sha256": "6ade5afe025eabcdd1e6c2d215e392dccbcb640c90aa0695ae5a55efa54c21c6"
+    }
+  ],
+  "schema": "casulo.interlocution-manifest-addendum/1.0",
+  "supersedes_nothing": true
+}

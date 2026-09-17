@@ -1,0 +1,139 @@
+{
+  "c_critical": 0.0,
+  "p_authority": 1.0,
+  "s_authority": 0.0,
+  "s_execution": 0.0,
+  "schema": "casulo.t-authority-audit/2.0",
+  "surfaces": [
+    {
+      "critical": true,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/intent_engine.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "material_intent",
+      "weight": 6
+    },
+    {
+      "critical": true,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/capabilities.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "capabilities_effects",
+      "weight": 8
+    },
+    {
+      "critical": true,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/semantic_fulfillment.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "hard_requirement_fulfillment",
+      "weight": 7
+    },
+    {
+      "critical": true,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/materializer.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "publish_commit",
+      "weight": 8
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [
+        "private/casulo-owner/src/casulo_owner/generative_forge.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "agent_behavior",
+      "weight": 6
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/living_memory.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "memory_governance",
+      "weight": 5
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/semantic_multiverse.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "semantic_routing_lifecycle",
+      "weight": 5
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/simulation.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "tools_composition",
+      "weight": 4
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/guide_presence.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "jobs_concurrency_cancel",
+      "weight": 3
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/simulation.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "simulation_acceptance",
+      "weight": 4
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/creation_field.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "interface_state",
+      "weight": 2
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/materializer.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "materialization_lifecycle",
+      "weight": 4
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [
+        "src/casulo/product/offline_update.py"
+      ],
+      "execution_credit": 0.0,
+      "id": "recovery_update",
+      "weight": 3
+    }
+  ]
+}

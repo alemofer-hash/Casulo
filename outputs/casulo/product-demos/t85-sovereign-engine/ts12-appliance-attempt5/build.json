@@ -1,0 +1,13 @@
+{
+  "bytes": 6266710,
+  "checkout_dependency": false,
+  "files": 213,
+  "manifest_sha256": "f10be0ad2f7022b001e1775ba9e6e91909db48ff1960ac8d85bb51d9f338dfb3",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "output": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\t85-human-proof",
+  "pythonpath_dependency": false,
+  "runtime_sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e",
+  "schema": "casulo.t85-human-proof-build/1.0",
+  "sha256sums_sha256": "5405cf07c057807c631243683cc528a75fa985caf657760520c780a11a9d2864",
+  "signature_verified": true
+}

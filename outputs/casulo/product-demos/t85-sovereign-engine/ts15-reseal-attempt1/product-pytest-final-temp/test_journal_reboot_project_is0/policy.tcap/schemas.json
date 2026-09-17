@@ -1,0 +1,71 @@
+{
+  "modules": {
+    "owner.guide.context_policy": {
+      "enums": [
+        {
+          "cases": [
+            "SELECT",
+            "ASK_HUMAN"
+          ],
+          "name": "ContextDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "project_match",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "budget_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "mandatory_preserved",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "ambiguity_present",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "human_resolution_present",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "ContextPolicyInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

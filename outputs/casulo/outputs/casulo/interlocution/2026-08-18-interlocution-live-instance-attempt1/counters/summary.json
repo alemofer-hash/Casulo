@@ -1,0 +1,16 @@
+{
+  "canary_eight_record_trainings": 0,
+  "categories": {
+    "flood_equivalence_candidate_and_oracle": 6,
+    "full_worker_smoke": 1,
+    "holdout_candidates_and_oracles": 8,
+    "live_demo_v2": 1,
+    "ti10_warmups_references_and_samples": 63
+  },
+  "complete_trainings": 79,
+  "counters_sha256": "1a8ce18b53886a7bebbe8b33fd55547ccbd55bb76dbd3a295729dd1bd2e87a84",
+  "governed_work_receipts": 39,
+  "normalization_uses_completed_receipts": true,
+  "schema": "casulo.interlocution-counter-summary/1.0",
+  "scope": "principal scientific artifacts; failed attempts and regression tests excluded"
+}

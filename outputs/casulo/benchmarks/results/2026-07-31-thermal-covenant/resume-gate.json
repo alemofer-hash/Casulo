@@ -1,0 +1,40 @@
+{
+  "protocol": "casulo-thermal-gate/0.1",
+  "kind": "THERMAL_RESUME_GATE",
+  "evaluated_at_utc": "2026-07-31T18:23:38.158810+00:00",
+  "required_sessions": 3,
+  "accepted_sessions": 3,
+  "status": "PASSED",
+  "roadmap_may_resume": true,
+  "sessions": [
+    {
+      "session_id": "thermal-validation-01-idle",
+      "session_sha256": "064ba6b553b159056c35213b360759410ef4d403cb7dfe148c7893781b615084",
+      "status": "PASSED_TELEMETRY",
+      "peak_temperature_celsius": 60.0,
+      "telemetry_eligible": true,
+      "physical_attestation_accepted": true,
+      "accepted": true
+    },
+    {
+      "session_id": "thermal-validation-02-one-core",
+      "session_sha256": "15d9b0246026d75c090dd73258673f8fcd34180784ad3325f44ecf32258719e5",
+      "status": "PASSED_TELEMETRY",
+      "peak_temperature_celsius": 61.0,
+      "telemetry_eligible": true,
+      "physical_attestation_accepted": true,
+      "accepted": true
+    },
+    {
+      "session_id": "thermal-validation-03-two-core",
+      "session_sha256": "baf94d550f99911b4b330fe5182a3ed4b4366101814903b9fbcd2a971904ce60",
+      "status": "PASSED_TELEMETRY",
+      "peak_temperature_celsius": 67.0,
+      "telemetry_eligible": true,
+      "physical_attestation_accepted": true,
+      "accepted": true
+    }
+  ],
+  "reasons": [],
+  "claim": null
+}

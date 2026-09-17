@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "bytes": 12872,
+    "content_sha256": "2c96fbfdb422a90dc58d98e6a4d213b4ca7a2a3015c9203fe39ea8d68aed9f88",
+    "path": "release/FloodSurrogate.tcap",
+    "sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa"
+  },
+  "canary": {
+    "epochs": 400,
+    "expected_final_loss": 0.007241680427492191,
+    "expected_initial_loss": 0.5514087300000001,
+    "records": 8,
+    "role": "bounded-correctness-canary",
+    "segment_bytes": 1952,
+    "segment_sha256": "56faf993c90c58a68a35ee2469567b756bb10dcde129c391b27eb8282b117fc9",
+    "target_loss": 0.08,
+    "tolerance": 1e-09
+  },
+  "compiler": {
+    "commit": "df12e916c90d9bd2b966326275dc191573f38abd+dirty-tree-6c933488ed0d55b2d1a5fa4d2a2bb19d90d3badb844d2deeb745c4151ffbd897",
+    "name": "casulo-t-general-ir",
+    "version": "0.1+rustc-1.95.0-nightly"
+  },
+  "performance_measured": false,
+  "protocol": "casulo-tcap-two-build-reproducibility/1.1",
+  "raw_aot": {
+    "bytes": 2680,
+    "dynamic_address_runtime_audit": "PASS",
+    "float_execution": "sse2-hard-float-memory-context",
+    "forbidden_got_plt_undefined_low_page": "absent",
+    "sha256": "7e2e81d4816a033df6e86714b883fbf41928b518fadb8a8153eca4d06935d198",
+    "static_self_containment_audit": "PASS"
+  },
+  "status": "PASS",
+  "two_independent_builds": {
+    "byte_for_byte_equal": true,
+    "first_sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa",
+    "second_sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa",
+    "temporary_second_build_preserved": false
+  }
+}

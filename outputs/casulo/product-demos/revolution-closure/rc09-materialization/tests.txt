@@ -1,0 +1,4 @@
+ERROR: file or directory not found: tests/product/test_capabilities.py
+
+
+no tests ran in 0.30s

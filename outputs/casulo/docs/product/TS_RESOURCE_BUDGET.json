@@ -1,0 +1,21 @@
+{
+  "schema": "casulo.t85.resource-budget/1.0",
+  "captured_at": "2026-08-14T21:21:38-03:00",
+  "free_bytes_before": 83413475328,
+  "free_gib_before": 77.68,
+  "minimum_free_gib": 25,
+  "projected_peak_gib": 38,
+  "projected_free_after_peak_gib": 39.68,
+  "classes_gib": {
+    "t_v2_source_build": 4,
+    "conformance_fuzz": 4,
+    "universe_bundles_traces": 6,
+    "vm_overlays_snapshots": 12,
+    "release_staging_roundtrip": 8,
+    "failure_margin_logs": 4
+  },
+  "install_or_download_planned": false,
+  "shared_cache_deletion_authorized": false,
+  "gate": "PASS"
+}
+

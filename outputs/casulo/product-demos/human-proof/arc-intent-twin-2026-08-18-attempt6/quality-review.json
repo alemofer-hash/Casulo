@@ -1,0 +1,14 @@
+{
+  "schema": "casulo.arc-intent-twin-quality-review/1.0",
+  "technical_contract_gate": "PASS",
+  "neural_runtime_gate": "PASS",
+  "semantic_quality_gate": "FAIL_HYPOTHESIS_CONFLICTS_WITH_HARD_OBSERVATION",
+  "detail": "A alternativa action_without_explanation conflita com o requisito HARD explícito de explicar conflitos; exclusão mútua formal não basta para provar compatibilidade semântica.",
+  "intent_twin_sha256": "02f0c59ca1b09e1c786ef9c2b78b7ae5da5b39d18266869f44454cfe2f888d7b",
+  "candidate_rejections": 0,
+  "human_confirmation": false,
+  "t_started": false,
+  "materialization_started": false,
+  "next_gate": "ARC_HYPOTHESIS_COMPATIBILITY_MATRIX",
+  "preserved": true
+}

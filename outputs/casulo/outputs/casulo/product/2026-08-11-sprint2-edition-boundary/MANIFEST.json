@@ -1,0 +1,28 @@
+{
+  "schema": "casulo-product-checkpoint/1.0",
+  "checkpoint": "2026-08-11-sprint2-edition-boundary",
+  "source_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "source_date_epoch_policy": "git HEAD commit timestamp",
+  "cloud_release_state": "RELEASE_LOCKED",
+  "artifacts": [
+    {
+      "edition": "public",
+      "path": "dist/casulo_public-0.1.0a1-py3-none-any.whl",
+      "sha256": "096068c3b42d3dc158932d1ed1eff8f2c5cc890c02faaddfe52831193ebf46f4",
+      "private_components_absent": true,
+      "audit": "public-wheel-audit.json"
+    },
+    {
+      "edition": "owner",
+      "path": "dist/casulo_owner-0.1.0a1-py3-none-any.whl",
+      "sha256": "225743abca394e492c6ed2e204dd973f0529a7e77ced7f12e7280174f86d7d51",
+      "redistributable": false
+    },
+    {
+      "edition": "cloud-standby",
+      "path": "dist/casulo_cloud_standby-0.1.0a1-py3-none-any.whl",
+      "sha256": "3de04609b8beaa7128ec01d54bee1e5c349e25a36e11ce3d2d2231a325fb6ab2",
+      "production_release": "DENIED"
+    }
+  ]
+}

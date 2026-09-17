@@ -1,0 +1,114 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 64
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "args": [
+                  {
+                    "op": "path",
+                    "path": [
+                      "left"
+                    ],
+                    "root": "input"
+                  },
+                  {
+                    "op": "path",
+                    "path": [
+                      "right"
+                    ],
+                    "root": "input"
+                  }
+                ],
+                "name": "add",
+                "op": "call"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "execute",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "SomeDoisNumerosInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "owner.generated.some_dois_numeros",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "left",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "right",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "SomeDoisNumerosInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

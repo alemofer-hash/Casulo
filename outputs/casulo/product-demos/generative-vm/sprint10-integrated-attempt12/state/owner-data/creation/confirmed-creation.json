@@ -1,0 +1,52 @@
+{
+  "capabilities": [
+    "memory.read"
+  ],
+  "content": {
+    "behavior": {
+      "autonomy": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    "data": {
+      "rejected_alternatives": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    "identity": {
+      "name": {
+        "type": "string",
+        "value": "G61H"
+      }
+    },
+    "interface": {
+      "input_format": {
+        "type": "string",
+        "value": "divergent_reports"
+      },
+      "output_format": {
+        "type": "string",
+        "value": "reversible_decisions"
+      }
+    },
+    "output": {
+      "evidence_linking": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    "purpose": {
+      "type": {
+        "type": "string",
+        "value": "conversion"
+      }
+    }
+  },
+  "creation_id": "creation:open-ended-holdout",
+  "rejected_delta_ids": [],
+  "schema": "casulo.creation/1.0",
+  "state": "CONFIRMATION",
+  "version": 5
+}

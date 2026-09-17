@@ -1,0 +1,167 @@
+{
+  "accepted": true,
+  "critical_complete": true,
+  "foreign_boundaries": [
+    {
+      "api_version": "casulo-artifact/0.8",
+      "artifact_sha256": "5313548499837bbb2ef6dacb1d4413d183c1e553756e6e4c5304403aa077cf0c",
+      "boundary_id": "python-reference-backend",
+      "capabilities": [
+        "manifest"
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "failure_mapping": "typed diagnostic",
+      "implementation_language": "Python",
+      "input_types": [
+        "ValidatedRecord"
+      ],
+      "license": "MIT",
+      "memory_ownership": "caller-owned",
+      "output_types": [
+        "DecisionReceipt"
+      ],
+      "sandbox_profile": "owner-hosted",
+      "schema": "casulo.foreign-boundary/1.0",
+      "threading_model": "single-threaded",
+      "timeout_ms": 5000
+    },
+    {
+      "api_version": "llama.cpp-server/b10362",
+      "artifact_sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e",
+      "boundary_id": "llama-cpp-local-runtime",
+      "capabilities": [
+        "model.infer"
+      ],
+      "effects": [
+        "model.infer"
+      ],
+      "failure_mapping": "GenerativeRuntimeError",
+      "implementation_language": "C++",
+      "input_types": [
+        "PromptEnvelope"
+      ],
+      "license": "MIT",
+      "memory_ownership": "process-isolated",
+      "output_types": [
+        "TokenStream"
+      ],
+      "sandbox_profile": "loopback-owner",
+      "schema": "casulo.foreign-boundary/1.0",
+      "threading_model": "bounded worker",
+      "timeout_ms": 120000
+    },
+    {
+      "api_version": "casulo-native/0.1",
+      "artifact_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "boundary_id": "casulo-native-image",
+      "capabilities": [
+        "memory"
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "failure_mapping": "VM diagnostic",
+      "implementation_language": "Rust/x86-64",
+      "input_types": [
+        "TCAP"
+      ],
+      "license": "MIT",
+      "memory_ownership": "guest-owned",
+      "output_types": [
+        "KernelReceipt"
+      ],
+      "sandbox_profile": "qemu-no-network",
+      "schema": "casulo.foreign-boundary/1.0",
+      "threading_model": "kernel scheduler",
+      "timeout_ms": 120000
+    }
+  ],
+  "receipts": [
+    {
+      "artifact_id": "sha256:0794ad3e854b37bd031f1d8ac6603d667146324d9ade80b9aafd92806c4b16b3",
+      "graph_sha256": "2044d3bd69757bc7c55d1af2128568540c4d465d51f03101be34757c408a11ff",
+      "ir_sha256": "4b4574683b10dcecdbacab23205d3db84c6455e782a2fa1f2da22b4eee59e641",
+      "operation": "EvaluateRequirement",
+      "result": "PASS",
+      "source_sha256": "0583cfeb2f9d31aedf10494c1070d26aec7c447ce59a04a3207acc3f86aaf0ff",
+      "surface": "intent_requirements"
+    },
+    {
+      "artifact_id": "sha256:57cbb94b287ae34488defbb0d25797bc8d9f49b70e550a13d445cd3da8304cf5",
+      "graph_sha256": "c5a7422d11e573a6347cde9ae28dcfc8f49bb34b36a972f4486567e08616f0a0",
+      "ir_sha256": "d1265fcfcbec622175cd1b753185d3ca9d555cb022a1fd81732ccef714151ca6",
+      "operation": "AdvanceAgent",
+      "result": "READY",
+      "source_sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565",
+      "surface": "agent_logic"
+    },
+    {
+      "artifact_id": "sha256:82e1f0291f18016d5e588595d180b2b03c91cbd133c2afab18d8d1968dd37c6e",
+      "graph_sha256": "d7b0710d104b367a21256fe4c9ed8e12115d105a4b6d8f75d0ca72853b673d8d",
+      "ir_sha256": "d61c2604188bf05e6219c715585ccc4f492dc9eff4ba066926e2d76a54fb414b",
+      "operation": "AuthorizeTool",
+      "result": "SIMULATE",
+      "source_sha256": "2d567c5d6a1f16acc47cfdc3f9ee23e16903d319b67e239de4c9c4fc6b7058a3",
+      "surface": "tools_composition"
+    },
+    {
+      "artifact_id": "sha256:25a37cb4438272dfcb2841fea682b26f6cb9512ad50f5ba9104367bd5233e03c",
+      "graph_sha256": "1940b11555f14ed943969288016c43ee0ace42a299304c162573aefdf6e067b0",
+      "ir_sha256": "ebd036a3c1b2f037f347f5e6a4894df0226c1e26e4d4f09d7e78ba07e397ac96",
+      "operation": "AcceptMemory",
+      "result": "ACCEPT",
+      "source_sha256": "7b8a6fd97bee199fb3b84eac847fe839fe5b487afb68d7c6f83555ae4fdb7584",
+      "surface": "memory"
+    },
+    {
+      "artifact_id": "sha256:f94652691dfd814e1f2b2f65f87a2c3296d8d0abb3ae7f9ff22986fe66dac44c",
+      "graph_sha256": "34cd4120a84258e5d023d878ef54a8e9a0fb375d947eeaa2e6847be21ee08a60",
+      "ir_sha256": "1c3c28046862cb90695c8d2145b2016a5ad7a97c8853597af6f0eec0038aaada",
+      "operation": "PublishJob",
+      "result": "PUBLISH",
+      "source_sha256": "15bb2fc3ca7e40a4694b71b27de12a706f5d76e4cc40e7068783e0594658fdf0",
+      "surface": "jobs_concurrency"
+    },
+    {
+      "artifact_id": "sha256:0f9495122422b7ce1ef0a1ec47b2699d28ba6985b2796e9bbe2159a134ae7247",
+      "graph_sha256": "aff3a02e26c541210b4b200f85dfdb035e444e1997ed769ba2edf3c5826b0c72",
+      "ir_sha256": "7d268711447a56a15cc8daf7efabf94d1e3aba404765244198bb41f433216dad",
+      "operation": "DecidePermit",
+      "result": "PERMIT",
+      "source_sha256": "7a488e55d1b4e44dc30c971c976d943550f58fef132de15e4ea37f293b791501",
+      "surface": "effects_capabilities"
+    },
+    {
+      "artifact_id": "sha256:60e8c34ebc4f98911e5f780d12fee92463b8b0e7f48e5be10d0882c09ef2ad05",
+      "graph_sha256": "897c82946edf0829c3e405f2465009979f68385b7bbeab5ff905708176837ca9",
+      "ir_sha256": "5f307ead1a1621d426abe2cb8a3ae404aa7c7a461f7ddc8e3bc4db80cdc21c4e",
+      "operation": "RenderState",
+      "result": "RENDER",
+      "source_sha256": "bc6c38f042a12bd5df248f4259b4dc00591866293203a2b061307a3786614ecf",
+      "surface": "interfaces"
+    },
+    {
+      "artifact_id": "sha256:9c96a34358d76874f0ac76134f0a111ca8a4cc67b5b02b322bd1d1dff9d2820e",
+      "graph_sha256": "eec9b9e8489400a9fc3b12e575f1529fc5c9824f62e4c3fb3fe0ab769728e072",
+      "ir_sha256": "1550b18fc23b0a7f8d1719ca5d1a39aefbf45e5ce624f7d2560a66016e08238a",
+      "operation": "AcceptSimulation",
+      "result": "PASS",
+      "source_sha256": "0075a655c8d9a4507ebcd700d42770f0e7837c08a258c114cc62bd9d5a191f0b",
+      "surface": "tests_simulation"
+    },
+    {
+      "artifact_id": "sha256:d704f8238fc7923d9cc6ccadae23f2767149ed368873fd092144319e152d2da4",
+      "graph_sha256": "2b9f4e9950da7828e8f6264b074a201053c10f8eddabdebce31586ab92693a6e",
+      "ir_sha256": "edb4c4d7a5b897cd48f597088a8cce0a9510aee133d564a3a77aeb3f1eaafdff",
+      "operation": "PublishArtifact",
+      "result": "PUBLISH",
+      "source_sha256": "5ed0e93ecba74a7d2afb74edff7174337a5ae31d052c488386edc1f0db04b27a",
+      "surface": "materialization"
+    }
+  ],
+  "schema": "casulo.t-sovereignty-audit/1.0",
+  "score": 1.0,
+  "threshold": 0.8
+}

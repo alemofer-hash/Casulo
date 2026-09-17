@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 14,
+  "failure": "PACED_WRITE_STILL_NOT_DELIVERED_WITH_QEMU_AS_SOCKET_CLIENT",
+  "action": "Switched QEMU chardev to loopback server and controller to immediate client",
+  "preserved": true,
+  "neural_evidence": false
+}

@@ -1,0 +1,195 @@
+{
+  "modules": {
+    "owner.agent.data_validator_01.csv_parser": {
+      "enums": [
+        {
+          "cases": [
+            "READY",
+            "BLOCKED"
+          ],
+          "name": "PolicyDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "project_match",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "evidence_statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "List"
+              }
+            },
+            {
+              "name": "preserve_original_bytes",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "apply_versioned_schema",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "provide_rejection_diagnostic",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "PolicyInput"
+        }
+      ],
+      "version": 1
+    },
+    "owner.agent.data_validator_01.diagnostic_core": {
+      "enums": [
+        {
+          "cases": [
+            "SIMULATED",
+            "COMMITTED",
+            "AUDITED"
+          ],
+          "name": "PublishDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "simulated",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "approved",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "PublishInput"
+        }
+      ],
+      "version": 1
+    },
+    "owner.agent.data_validator_01.schema_engine": {
+      "enums": [
+        {
+          "cases": [
+            #PLANNED",
+            "EVIDENCE_OK",
+            "WORKFLOW_READY"
+          ],
+          "name": "WorkflowDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "evidence_result",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "evidence_statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "List"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "WorkflowInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

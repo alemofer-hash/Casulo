@@ -1,0 +1,3 @@
+{"byte_offset":65,"event":"campaign_formal_start","local":"2026-08-08T11:43:06.422677-03:00","monotonic_ns":6636681366800,"pid":21968,"utc":"2026-08-08T14:43:06.422677+00:00"}
+{"event":"polling_validation_start","local":"2026-08-08T11:43:06.443182-03:00","monotonic_ns":6636689961200,"pid":21968,"utc":"2026-08-08T14:43:06.443182+00:00"}
+{"event":"polling_validation_end","local":"2026-08-08T11:43:08.117419-03:00","monotonic_ns":6638988410600,"new_samples":15,"pid":21968,"utc":"2026-08-08T14:43:08.117419+00:00"}

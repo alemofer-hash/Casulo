@@ -1,0 +1,20 @@
+include CHANGELOG.md
+include CITATION.cff
+include CONTRIBUTING.md
+include LICENSE
+include NOTICE.md
+include README.md
+include SECURITY.md
+recursive-include conformance *.graph *.ir *.json *.t
+recursive-include docs *.md
+recursive-include evidence *.html *.json *.md SHA256SUMS
+recursive-include benchmarks/results/2026-07-30-sprint012-training-proof *.c *.html *.json *.md *.t SHA256SUMS
+recursive-include benchmarks/results/2026-07-30-sprint012-training-auto *.c *.html *.json *.t
+recursive-include benchmarks/results/2026-07-30-sprint012-training-optimized *.c *.html *.json *.t
+recursive-include benchmarks/results/2026-07-30-scientific-covenant-eager *.c *.html *.json *.md *.t
+recursive-include benchmarks/results/2026-07-30-tensor-lab-sprint019 *.c *.html *.json *.md *.txt
+recursive-include examples *.csv *.json *.py *.t *.toml *.lock
+prune examples/t/.casulo
+prune examples/t-project-training/.casulo
+recursive-include tests *.py
+recursive-include tools *.py

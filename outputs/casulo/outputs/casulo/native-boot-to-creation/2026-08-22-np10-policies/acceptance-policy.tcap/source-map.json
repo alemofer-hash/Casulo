@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.native.creation_acceptance.t",
+      "module": "owner.native.creation_acceptance",
+      "sha256": "30a2a7d67ff35c6411a87bd32f38f98d4e2f5ad31b19013ded8528f164d4bbe9"
+    }
+  ]
+}

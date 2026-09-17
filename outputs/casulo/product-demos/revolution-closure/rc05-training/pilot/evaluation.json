@@ -1,0 +1,162 @@
+{
+  "absolute_gain": 0.75,
+  "baseline_accuracy": 0.25,
+  "baseline_rows": [
+    {
+      "expected": "intencao",
+      "id": "i05",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "intencao",
+      "id": "i06",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "sinais",
+      "id": "s05",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "sinais",
+      "id": "s06",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "engenharia",
+      "id": "e05",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "engenharia",
+      "id": "e06",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "diagnostico",
+      "id": "d05",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "diagnostico",
+      "id": "d06",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "interface",
+      "id": "u05",
+      "predicted": "interface"
+    },
+    {
+      "expected": "interface",
+      "id": "u06",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "materializacao",
+      "id": "m05",
+      "predicted": "intencao"
+    },
+    {
+      "expected": "materializacao",
+      "id": "m06",
+      "predicted": "intencao"
+    }
+  ],
+  "candidate_accuracy": 1.0,
+  "candidate_rows": [
+    {
+      "confidence": 0.9987714840767783,
+      "expected": "intencao",
+      "id": "i05",
+      "predicted": "intencao"
+    },
+    {
+      "confidence": 0.9999926757523935,
+      "expected": "intencao",
+      "id": "i06",
+      "predicted": "intencao"
+    },
+    {
+      "confidence": 0.9926788031794672,
+      "expected": "sinais",
+      "id": "s05",
+      "predicted": "sinais"
+    },
+    {
+      "confidence": 0.9999999819188988,
+      "expected": "sinais",
+      "id": "s06",
+      "predicted": "sinais"
+    },
+    {
+      "confidence": 0.9999999006875934,
+      "expected": "engenharia",
+      "id": "e05",
+      "predicted": "engenharia"
+    },
+    {
+      "confidence": 0.999999889146502,
+      "expected": "engenharia",
+      "id": "e06",
+      "predicted": "engenharia"
+    },
+    {
+      "confidence": 0.9999999803065293,
+      "expected": "diagnostico",
+      "id": "d05",
+      "predicted": "diagnostico"
+    },
+    {
+      "confidence": 0.9455387422803696,
+      "expected": "diagnostico",
+      "id": "d06",
+      "predicted": "diagnostico"
+    },
+    {
+      "confidence": 0.9998028417860876,
+      "expected": "interface",
+      "id": "u05",
+      "predicted": "interface"
+    },
+    {
+      "confidence": 0.9997509890156637,
+      "expected": "interface",
+      "id": "u06",
+      "predicted": "interface"
+    },
+    {
+      "confidence": 0.9999999970780202,
+      "expected": "materializacao",
+      "id": "m05",
+      "predicted": "materializacao"
+    },
+    {
+      "confidence": 0.9999999736540881,
+      "expected": "materializacao",
+      "id": "m06",
+      "predicted": "materializacao"
+    }
+  ],
+  "casulo_4b_adapter": "DEFERRED_COMPUTE_NOT_AVAILABLE",
+  "critical_safety_regressions": 0,
+  "dpo": "NOT_JUSTIFIED_YET",
+  "license_and_lineage": "PASS",
+  "mandatory_constraint_regressions": 0,
+  "model_sha256": "4f57fae396cbcf753e7fdd1623547d58f5ff01faacfe0fb15ff790eb34495473",
+  "policy": {
+    "baseline": "exact-universe-name-or-intencao",
+    "critical_safety_regressions_allowed": 0,
+    "frozen_before_training": true,
+    "holdout_human": "NOT_CREATED_PENDING_GUILHERME",
+    "mandatory_constraint_regressions_allowed": 0,
+    "minimum_absolute_gain": 0.15,
+    "minimum_candidate_accuracy": 0.75,
+    "policy_id": "router-rc5-promotion-v1",
+    "primary_metric": "top1_accuracy",
+    "schema": "casulo.router-promotion-policy/1.0"
+  },
+  "promotion_state": "OWNER_PROMOTED",
+  "runtime_compatibility": "PASS",
+  "schema": "casulo.learned-router-evaluation/1.0"
+}

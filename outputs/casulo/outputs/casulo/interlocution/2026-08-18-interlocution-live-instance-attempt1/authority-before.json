@@ -1,0 +1,27 @@
+{
+  "schema": "casulo.interlocution-authority-audit/1.0",
+  "campaign_id": "2026-08-18-interlocution-live-instance-attempt1",
+  "phase": "before",
+  "binary_authority_score": 0.0,
+  "qualified_surfaces": 0,
+  "required_surfaces": 9,
+  "criterion": "all causal-authority conditions must pass; partial evidence receives zero",
+  "surfaces": [
+    {"id":"dataset_identity_integrity","current_source":"Python full_work_unit.build_dataset_payload","t_partial":true,"t_authority":false,"blocking_gap":"dataset hash and acceptance are not decided by T at runtime"},
+    {"id":"initialization_bundle","current_source":"Python full_work_unit.build_initialization_payload","t_partial":true,"t_authority":false,"blocking_gap":"scientific case seeds, nonces and parameters are selected outside T"},
+    {"id":"numerical_precision","current_source":"T learn plus duplicated Python/Rust constants","t_partial":true,"t_authority":false,"blocking_gap":"no internal causal decision receipt and foreign constants duplicate authority"},
+    {"id":"loss_function","current_source":"T learn plus fixed MSE kernel","t_partial":true,"t_authority":false,"blocking_gap":"no supported causal mutation path or internal T receipt"},
+    {"id":"update_rule","current_source":"T learning_rate plus fixed SGD worker","t_partial":true,"t_authority":false,"blocking_gap":"algorithm is fixed outside T and decision receipt is post hoc"},
+    {"id":"optimizer_state","current_source":"PyTorch optimizer or native arrays","t_partial":false,"t_authority":false,"blocking_gap":"reset, transition and reuse policy are foreign"},
+    {"id":"working_set","current_source":"Python/Rust RECORDS and full batch constants","t_partial":true,"t_authority":false,"blocking_gap":"concrete selection is not made by T"},
+    {"id":"stopping","current_source":"T epochs plus fixed worker loop","t_partial":true,"t_authority":false,"blocking_gap":"target_loss does not decide stop and no causal T stop receipt exists"},
+    {"id":"equivalence_acceptance","current_source":"Python compare_results and validate_receipts","t_partial":true,"t_authority":false,"blocking_gap":"publisher does not consume a T judge decision"}
+  ],
+  "evidence": {
+    "t_source": "examples/t/flood_surrogate_training.t",
+    "builder": "src/casulo/t/full_work_unit.py",
+    "worker": "src/casulo/livelab/energy_v1/full_workers.py",
+    "runner": "tools/run_full_worker_validation.py",
+    "full_worker_manifest_sha256": "881347c8d6e6d3dc3c7c500cb1f5e34b07f03cbdb76f30e61859d1c458aebbe4"
+  }
+}

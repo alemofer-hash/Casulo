@@ -1,0 +1,21 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/owner.agent.t_interactive_01.memory.t",
+      "module": "owner.agent.t_interactive_01.memory",
+      "sha256": "0bd62bf8e4af3e9adafecb8f475ce872afb8e3d181bd0a6ac2478f6eb9bc387b"
+    },
+    {
+      "file": "sources/owner.agent.t_interactive_01.interruption.t",
+      "module": "owner.agent.t_interactive_01.interruption",
+      "sha256": "88a52fdf39ebce5f262dde20701bf60ea3891506dfc475a48169aef870c8a3b3"
+    },
+    {
+      "file": "sources/owner.agent.t_interactive_01.export.t",
+      "module": "owner.agent.t_interactive_01.export",
+      "sha256": "63f683a2e0c661f660a6910f681fb34ee196ff6bcf8fb39adbc8927134dc0449"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [
+        "manifest"
+      ],
+      "enums": [
+        {
+          "cases": [
+            "PUBLISH",
+            "BLOCKED"
+          ],
+          "name": "PublishDecision"
+        }
+      ],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "confirmed"
+                ],
+                "root": "input"
+              },
+              "error": "intent_unconfirmed",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "left": {
+                      "name": "status",
+                      "op": "name"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "PASS"
+                    }
+                  },
+                  "error": "hard_requirement_not_pass",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "hard_statuses"
+                ],
+                "root": "input"
+              },
+              "limit": 64,
+              "name": "status",
+              "op": "for"
+            },
+            {
+              "name": "attempts",
+              "op": "set_state",
+              "value": {
+                "args": [
+                  {
+                    "op": "path",
+                    "path": [
+                      "attempts"
+                    ],
+                    "root": "state"
+                  },
+                  {
+                    "op": "const",
+                    "value": 1
+                  }
+                ],
+                "name": "add",
+                "op": "call"
+              }
+            },
+            {
+              "limit": 64,
+              "name": "audit",
+              "op": "spawn_job",
+              "payload": {
+                "op": "path",
+                "path": [
+                  "hard_statuses"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "name": "audit",
+              "op": "join_job"
+            },
+            {
+              "effect": "manifest",
+              "op": "request_effect"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "confirmed"
+                ],
+                "root": "input"
+              },
+              "else": [
+                {
+                  "op": "return_error",
+                  "value": {
+                    "op": "const",
+                    "value": "BLOCKED"
+                  }
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "PUBLISH"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            "manifest"
+          ],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PublishInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "owner.publish",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "hard_statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 64,
+                "name": "List"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "PublishInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": [
+        {
+          "initial": 0,
+          "name": "attempts",
+          "type": {
+            "arguments": [],
+            "bound": null,
+            "name": "Int"
+          }
+        }
+      ]
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

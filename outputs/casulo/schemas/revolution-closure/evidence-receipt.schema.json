@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casulo://schemas/evidence-receipt/1.0",
+  "title": "Casulo Evidence Receipt 1.0",
+  "type": "object",
+  "required": ["schema", "receipt_id", "requirement_id", "verifier_id", "verdict", "evidence_class", "artifact_sha256", "producer", "input_hashes", "occurred_at", "independent"],
+  "properties": {
+    "schema": {"const": "casulo.evidence-receipt/1.0"},
+    "receipt_id": {"type": "string", "minLength": 1},
+    "requirement_id": {"type": "string", "minLength": 1},
+    "verifier_id": {"type": "string", "minLength": 1},
+    "verdict": {"enum": ["PASS", "FAIL", "UNKNOWN"]},
+    "evidence_class": {"enum": ["TYPE_CHECK", "COMPILE", "PROPERTY", "SIMULATION", "CLEAN_EXECUTION", "DOMAIN_INVARIANT", "HUMAN_REVIEW", "GENERATOR_SELF_REPORT"]},
+    "artifact_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "producer": {"type": "string", "minLength": 1},
+    "input_hashes": {"type": "array", "items": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+    "occurred_at": {"type": "string", "minLength": 1},
+    "detail": {"type": "string"},
+    "independent": {"type": "boolean"}
+  },
+  "additionalProperties": false
+}

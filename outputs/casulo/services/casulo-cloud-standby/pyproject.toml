@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "casulo-cloud-standby"
+version = "0.1.0a1"
+description = "Infraestrutura privada first-party do Casulo Cloud, release locked."
+requires-python = ">=3.11"
+dependencies = ["casulo==0.25.0a1"]
+
+[project.scripts]
+casulo-cloud-standby-demo = "casulo_cloud_standby.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

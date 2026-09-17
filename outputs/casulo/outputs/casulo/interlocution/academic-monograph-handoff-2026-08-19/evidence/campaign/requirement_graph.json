@@ -1,0 +1,82 @@
+{
+  "campaign_id": "2026-08-18-interlocution-live-instance-attempt1",
+  "false_hard_completion_allowed": false,
+  "graph_sha256": "e5cc261d08a8281088dbf54dd52fcdbd34e206f2f348d88d8c128604a571e86a",
+  "intent_sha256": "18c06cdbee3f50b56effe5c991f9ee62d5b29785060df564c1407521308983e5",
+  "material_gaps": [],
+  "requirements": [
+    {
+      "description": "dataset identity and 1,024-record integrity",
+      "expected": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+      "id": "R-DATASET",
+      "kind": "HARD",
+      "missing_evidence_is": "UNKNOWN",
+      "state_before_execution": "UNVERIFIED"
+    },
+    {
+      "description": "content-addressed independent initialization",
+      "expected": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+      "id": "R-INIT",
+      "kind": "HARD",
+      "missing_evidence_is": "UNKNOWN",
+      "state_before_execution": "UNVERIFIED"
+    },
+    {
+      "description": "float64 numerical precision",
+      "expected": "float64",
+      "id": "R-PRECISION",
+      "kind": "HARD",
+      "missing_evidence_is": "UNKNOWN",
+      "state_before_execution": "UNVERIFIED"
+    },
+    {
+      "description": "MSE loss",
+      "expected": "mse",
+      "id": "R-LOSS",
+      "kind": "HARD",
+      "missing_evidence_is": "UNKNOWN",
+      "state_before_execution": "UNVERIFIED"
+    },
+    {
+      "description": "SGD update at learning rate 0.018",
+      "expected": "0.018",
+      "id": "R-UPDATE",
+      "kind": "HARD",
+      "missing_evidence_is": "UNKNOWN",
+      "state_before_execution": "UNVERIFIED"
+    },
+    {
+      "description": "optimizer state reset for each case",
+      "expected": "reset_each_case",
+      "id": "R-OPTSTATE",
+      "kind": "HARD",
+      "missing_evidence_is": "UNKNOWN",
+      "state_before_execution": "UNVERIFIED"
+    },
+    {
+      "description": "all 1,024 records per fixed-count epoch",
+      "expected": "all_records",
+      "id": "R-WORKSET",
+      "kind": "HARD",
+      "missing_evidence_is": "UNKNOWN",
+      "state_before_execution": "UNVERIFIED"
+    },
+    {
+      "description": "400 complete epochs",
+      "expected": "400",
+      "id": "R-STOP",
+      "kind": "HARD",
+      "missing_evidence_is": "UNKNOWN",
+      "state_before_execution": "UNVERIFIED"
+    },
+    {
+      "description": "equivalence and acceptance are fail-closed",
+      "expected": "1e-09",
+      "id": "R-JUDGE",
+      "kind": "HARD",
+      "missing_evidence_is": "UNKNOWN",
+      "state_before_execution": "UNVERIFIED"
+    }
+  ],
+  "schema": "casulo.interlocution-requirement-graph/1.0"
+}

@@ -1,0 +1,234 @@
+{
+  "comparisons": [
+    {
+      "label": "pytorch_eager",
+      "source": "benchmarks/results/2026-07-30-scientific-covenant-eager/training-report.json",
+      "source_sha256": "2633b6596f0ef4855e730b3596515f88233886cd16421cd41a19338268175d27",
+      "historical_measurement": true,
+      "current_execution_reproduced_performance": false,
+      "baseline_name": "PyTorch eager CPU",
+      "baseline_version": "2.12.1+cpu",
+      "baseline_threads": 1,
+      "candidate_backend": "c99-openmp-fused/0.4",
+      "samples": 21,
+      "warmups": 3,
+      "candidate_median_wall_ns": 35311100.0,
+      "candidate_mean_wall_ns": 39179847.61904762,
+      "candidate_stdev_wall_ns": 8268832.284284103,
+      "candidate_mean_ci95_normal_ns": [
+        35643209.63289581,
+        42716485.60519943
+      ],
+      "baseline_median_wall_ns": 337063500.0,
+      "baseline_mean_wall_ns": 352076661.9047619,
+      "baseline_stdev_wall_ns": 61312427.372389,
+      "baseline_mean_ci95_normal_ns": [
+        325852903.55371946,
+        378300420.25580436
+      ],
+      "paired_speedup_median": 8.957846116377004,
+      "paired_speedup_mean": 9.229854833277665,
+      "paired_speedup_ci95_bootstrap": [
+        8.075179274795767,
+        9.872415698954605
+      ],
+      "reported_ci95": [
+        8.075179274795767,
+        9.872415698954605
+      ],
+      "reported_statistics_reproduced": true,
+      "ratio_of_medians": 9.545539504575048,
+      "all_pairs_favor_candidate": true,
+      "two_sided_exact_sign_test_p": 9.5367431640625e-07,
+      "mean_log_ratio": 2.2016972461298563,
+      "paired_log_ratio_effect_dz": 11.021492967404093,
+      "equivalent_training": true,
+      "quality_target_reached": true,
+      "parameter_max_abs_difference": 2.220446049250313e-16,
+      "prediction_max_abs_difference": 8.881784197001252e-16,
+      "validation_loss_difference": 0.0,
+      "electrical_energy_measured": false,
+      "energy_joules": null,
+      "model": {
+        "activation": "relu",
+        "batch": "full",
+        "epochs": 400,
+        "hidden_features": 8,
+        "input_features": 8,
+        "learning_rate": 0.018,
+        "loss": "mse",
+        "module": "casulo.flood_rs",
+        "name": "FloodSurrogate",
+        "optimizer": "sgd",
+        "output_features": 1,
+        "precision": "float64",
+        "seed": 260730,
+        "target_loss": 0.08
+      },
+      "dataset": {
+        "feature_names": [
+          "precipitation",
+          "soil_moisture",
+          "slope",
+          "impervious_fraction",
+          "upstream_flow",
+          "wind_setup",
+          "pressure_anomaly",
+          "pump_availability"
+        ],
+        "features": 8,
+        "precision": "float64",
+        "protocol": "casulo-hydrology-surrogate/0.1",
+        "records": 1024,
+        "seed": 20260730,
+        "sha256": "2e95b25f761d617490d30082d17a7c191356f8441e0d04555df2fbd2f4b46e94",
+        "target": "normalized_peak_level_proxy",
+        "validation_records": 256
+      },
+      "environment": {
+        "machine": "AMD64",
+        "physical_scope": "mesmo processo, mesmo dataset em memória, 1 worker",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+        "python": "3.13.2",
+        "scheduler": {
+          "bounded_workers": [
+            1,
+            2,
+            4
+          ],
+          "partitions": "contiguous",
+          "protocol": "casulo-training-scheduler/0.1",
+          "reason": "lote compacto: sincronização custaria mais que a partição",
+          "reduction_order": "worker-index",
+          "requested_workers": "auto",
+          "selected_workers": 1,
+          "work_per_epoch": 65536
+        }
+      },
+      "limitations": [
+        "single historical host and measurement session",
+        "small synthetic CPU-only full-batch MLP",
+        "float64, one selected worker, in-memory data",
+        "no electrical energy measurement",
+        "no current independent performance rerun",
+        "speedup cannot be generalized beyond this workload and configuration"
+      ]
+    },
+    {
+      "label": "pytorch_inductor",
+      "source": "benchmarks/results/2026-07-30-scientific-covenant-compile/training-report.json",
+      "source_sha256": "384e56a2d34457f01f905d7d284945d665785300a06315892f598d389035acf8",
+      "historical_measurement": true,
+      "current_execution_reproduced_performance": false,
+      "baseline_name": "PyTorch compile Inductor CPU",
+      "baseline_version": "2.12.1+cpu",
+      "baseline_threads": 1,
+      "candidate_backend": "c99-openmp-fused/0.4",
+      "samples": 21,
+      "warmups": 3,
+      "candidate_median_wall_ns": 35718600.0,
+      "candidate_mean_wall_ns": 33200157.14285714,
+      "candidate_stdev_wall_ns": 10612106.97079385,
+      "candidate_mean_ci95_normal_ns": [
+        28661284.01837155,
+        37739030.26734273
+      ],
+      "baseline_median_wall_ns": 489609300.0,
+      "baseline_mean_wall_ns": 465741442.85714287,
+      "baseline_stdev_wall_ns": 148335932.20041317,
+      "baseline_mean_ci95_normal_ns": [
+        402297116.68205464,
+        529185769.0322311
+      ],
+      "paired_speedup_median": 14.255580402716161,
+      "paired_speedup_mean": 14.250811097095275,
+      "paired_speedup_ci95_bootstrap": [
+        12.496743035085805,
+        15.383164873824505
+      ],
+      "reported_ci95": [
+        12.496743035085805,
+        15.383164873824505
+      ],
+      "reported_statistics_reproduced": true,
+      "ratio_of_medians": 13.707404545530899,
+      "all_pairs_favor_candidate": true,
+      "two_sided_exact_sign_test_p": 9.5367431640625e-07,
+      "mean_log_ratio": 2.641982634386292,
+      "paired_log_ratio_effect_dz": 15.01463797938895,
+      "equivalent_training": true,
+      "quality_target_reached": true,
+      "parameter_max_abs_difference": 2.220446049250313e-16,
+      "prediction_max_abs_difference": 1.3322676295501878e-15,
+      "validation_loss_difference": 0.0,
+      "electrical_energy_measured": false,
+      "energy_joules": null,
+      "model": {
+        "activation": "relu",
+        "batch": "full",
+        "epochs": 400,
+        "hidden_features": 8,
+        "input_features": 8,
+        "learning_rate": 0.018,
+        "loss": "mse",
+        "module": "casulo.flood_rs",
+        "name": "FloodSurrogate",
+        "optimizer": "sgd",
+        "output_features": 1,
+        "precision": "float64",
+        "seed": 260730,
+        "target_loss": 0.08
+      },
+      "dataset": {
+        "feature_names": [
+          "precipitation",
+          "soil_moisture",
+          "slope",
+          "impervious_fraction",
+          "upstream_flow",
+          "wind_setup",
+          "pressure_anomaly",
+          "pump_availability"
+        ],
+        "features": 8,
+        "precision": "float64",
+        "protocol": "casulo-hydrology-surrogate/0.1",
+        "records": 1024,
+        "seed": 20260730,
+        "sha256": "2e95b25f761d617490d30082d17a7c191356f8441e0d04555df2fbd2f4b46e94",
+        "target": "normalized_peak_level_proxy",
+        "validation_records": 256
+      },
+      "environment": {
+        "machine": "AMD64",
+        "physical_scope": "mesmo processo, mesmo dataset em memória, 1 worker",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+        "python": "3.13.2",
+        "scheduler": {
+          "bounded_workers": [
+            1,
+            2,
+            4
+          ],
+          "partitions": "contiguous",
+          "protocol": "casulo-training-scheduler/0.1",
+          "reason": "lote compacto: sincronização custaria mais que a partição",
+          "reduction_order": "worker-index",
+          "requested_workers": "auto",
+          "selected_workers": 1,
+          "work_per_epoch": 65536
+        }
+      },
+      "limitations": [
+        "single historical host and measurement session",
+        "small synthetic CPU-only full-batch MLP",
+        "float64, one selected worker, in-memory data",
+        "no electrical energy measurement",
+        "no current independent performance rerun",
+        "speedup cannot be generalized beyond this workload and configuration"
+      ]
+    }
+  ]
+}

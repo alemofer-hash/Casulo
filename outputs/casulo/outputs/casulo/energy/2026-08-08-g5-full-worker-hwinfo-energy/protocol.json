@@ -1,0 +1,65 @@
+{
+  "affinity": [
+    4
+  ],
+  "campaign_id": "2026-08-08-g5-full-worker-hwinfo-energy",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "contract": {
+    "batch_size": 1024,
+    "dataset_hash": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+    "epochs": 400,
+    "expected_optimizer_steps": 400,
+    "expected_parameter_writes": 32400,
+    "expected_record_visits": 409600,
+    "general_ir_sha256": "4162fc673c71e1b777ec57f7924ed756f5e9a9771ccb5624d38d8cd2cf6e659f",
+    "graph_sha256": "67ee0d7e20c8c955f2c129f1193d020b4aac0953fd0c864ff9f25d0d728a2ec3",
+    "hidden_features": 8,
+    "initialization_bundle_hash": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+    "input_features": 8,
+    "learning_rate": 0.018,
+    "optimizer": "sgd",
+    "output_features": 1,
+    "precision": "float64",
+    "records_per_epoch": 1024,
+    "scientific_eligible": true,
+    "work_unit_schema": "casulo-flood-work-unit/1.0",
+    "workload_class": "SCIENTIFIC_WORK_UNIT"
+  },
+  "minimum_coverage": 0.98,
+  "minimum_samples": 60,
+  "pair_count": 21,
+  "sampling": {
+    "gaps_over_5x_median": [],
+    "intervals": 17854,
+    "maximum_seconds": 0.893,
+    "median_seconds": 0.251,
+    "minimum_seconds": 0.116,
+    "p95_seconds": 0.267
+  },
+  "schema": "casulo-full-worker-energy-protocol/1.0",
+  "sensor": {
+    "index": 164,
+    "kind": "package_power",
+    "literal_name": "Potência total da CPU [W]",
+    "normalized_name": "potencia total da cpu w",
+    "provenance": "hwinfo_reported_cpu_package",
+    "session_id": 0,
+    "si_scale": 1.0,
+    "unit": "w"
+  },
+  "source_csv": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+  "source_csv_final_sha256": "cfbba20b181c10db02a2ed4be22d60a33814ae6c0d457704f12d53e80e44022c",
+  "source_csv_initial_sha256": "1d5fa5f1033dfcac0e6185e4e4757d0ca15ad0e4cc47e1bb64324d6c7551fe4f",
+  "source_scope": "HWiNFO-reported CPU package energy on bare-metal Windows",
+  "thermal_hard_limit_c": 90.0,
+  "thermal_pair_tolerance_c": 1.0,
+  "thermal_start_target_c": 60.0,
+  "threads": 1,
+  "throttling_allowed": false,
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "window_equivalent_K": {
+    "pytorch-eager-fullstep/2.0": 66,
+    "t-general-ir-tcap-full/1.0": 620
+  },
+  "work_equivalent_K": 620
+}

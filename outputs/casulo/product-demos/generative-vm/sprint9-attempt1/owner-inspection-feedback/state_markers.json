@@ -1,0 +1,18 @@
+[
+  {
+    "note_id": "note:g9:voice-latency",
+    "state": "SIMULATION",
+    "source_event_ids": [
+      "voice:g9:note",
+      "g7:simulation"
+    ]
+  },
+  {
+    "note_id": "note:g9:visual-change",
+    "state": "FIRST_FORM",
+    "source_event_ids": [
+      "text:g9:note",
+      "g8:first-form"
+    ]
+  }
+]

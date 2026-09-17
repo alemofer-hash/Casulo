@@ -1,0 +1,11 @@
+claim_id,claim,status,evidence,limitation
+C1,"O benchmark WaterBalance teve ganho histórico mediano de 6,095936x sobre Python escalar",SUPPORTED_HISTORICAL,"evidence/2026-07-30-marco4-6x/evidence.json","Não é treinamento nem PyTorch"
+C2,"O FloodSurrogate especializado foi numericamente equivalente ao PyTorch Eager na sessão histórica",SUPPORTED_HISTORICAL,"benchmarks/results/2026-07-30-scientific-covenant-eager/training-report.json","Caso sintético pequeno; uma sessão"
+C3,"O candidato teve speedup histórico mediano de 8,957846x sobre Eager",SUPPORTED_HISTORICAL,"training-report.json + reanálise independente no pacote","Não universal; IC condicional à sessão"
+C4,"O candidato teve speedup histórico mediano de 14,25558x sobre o comparador Inductor implementado",SUPPORTED_HISTORICAL,"benchmarks/results/2026-07-30-scientific-covenant-compile/training-report.json","Apenas forward compilado; custo de compilação excluído"
+C5,"A Linguagem T é uniformemente mais rápida que PyTorch/Inductor",UNSUPPORTED,"Nenhuma","Requer matriz ampla, passo completo compilado e hosts independentes"
+C6,"O sistema economiza energia",UNMEASURED,"Campos energy.joules são nulos","Exige instrumento elétrico"
+C7,"O ganho equivale a centenas de processadores",REJECTED,"Nenhuma","Speedup de software num problema pequeno não escala dessa forma"
+C8,"A especialização C reduz overhead dinâmico no workload",PLAUSIBLE_NOT_ISOLATED,"Inspeção de src/casulo/t/training.py","Exige ablações e perfis causais"
+C9,"O frontend geral da Linguagem T compila hoje todo o treinamento",FALSE_FOR_AUDITED_COMMIT,"Parser learn especializado separado","Necessária integração ao frontend/IR geral"
+C10,"A tentativa térmica de 02/08 produziu benchmark",FALSE,"thermal-block-00.json","Bloqueada antes do início; elapsed_seconds=0"

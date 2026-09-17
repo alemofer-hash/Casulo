@@ -1,0 +1,8 @@
+{
+  "modules": {
+    "owner.native.creation_token_policy": {
+      "deadline_ms": 1000,
+      "steps": 256
+    }
+  }
+}

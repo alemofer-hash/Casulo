@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.agent.ts14_mycelium_reconciler.growth.t",
+      "module": "owner.agent.ts14_mycelium_reconciler.growth",
+      "sha256": "7a05fef7bccd5c8d5a94a2b6cc6de2d9fa2dee07355386c6547d04cc2b0e7885"
+    },
+    {
+      "file": "sources/owner.agent.ts14_mycelium_reconciler.unit.t",
+      "module": "owner.agent.ts14_mycelium_reconciler.unit",
+      "sha256": "964af302922de10cb69758af2d9824dcf4a72e56fdbbae4ea3a8bd0c06ce20c9"
+    },
+    {
+      "file": "sources/owner.agent.ts14_mycelium_reconciler.protocol.t",
+      "module": "owner.agent.ts14_mycelium_reconciler.protocol",
+      "sha256": "2758623a4bb99f8dfd972c381542e139214564477b11d2991b79298cb8e599a8"
+    }
+  ]
+}

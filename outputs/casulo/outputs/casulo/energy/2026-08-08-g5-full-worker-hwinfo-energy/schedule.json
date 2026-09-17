@@ -1,0 +1,341 @@
+{
+  "pairs": [
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 1
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 2
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 3
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 4
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 5
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 6
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 7
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 8
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 9
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 10
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 11
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 12
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 13
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 14
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 15
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 16
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 17
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 18
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 19
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 20
+    },
+    {
+      "mode": "work-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 21
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 1
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 2
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 3
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 4
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 5
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 6
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 7
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 8
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 9
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 10
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 11
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 12
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 13
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 14
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 15
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 16
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 17
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 18
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 19
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "pytorch-eager-fullstep/2.0",
+        "t-general-ir-tcap-full/1.0"
+      ],
+      "pair_id": 20
+    },
+    {
+      "mode": "window-equivalent",
+      "order": [
+        "t-general-ir-tcap-full/1.0",
+        "pytorch-eager-fullstep/2.0"
+      ],
+      "pair_id": 21
+    }
+  ],
+  "schema": "casulo-full-worker-energy-schedule/1.0"
+}

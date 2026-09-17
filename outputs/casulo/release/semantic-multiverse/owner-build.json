@@ -1,0 +1,28 @@
+{
+  "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\semantic-multiverse\\casulo-owner-semantic-multiverse-v1.zip",
+  "artifact_bytes": 43067,
+  "artifact_sha256": "1bdbef53e6cdec254e2459d8177c8f4a714fda4174f8428baa8119c254e2f26c",
+  "audit": {
+    "allowlist_exact": true,
+    "files": [
+      "OWNER_ARTIFACT.json",
+      "casulo_owner/__init__.py",
+      "casulo_owner/assets/generative-candidate.json",
+      "casulo_owner/dialogue_core.py",
+      "casulo_owner/generative_agent_probe.py",
+      "casulo_owner/generative_engine.py",
+      "casulo_owner/generative_forge.py",
+      "casulo_owner/generative_model.py",
+      "casulo_owner/inspection.py",
+      "casulo_owner/local_model_runtime.py",
+      "casulo_owner/semantic_multiverse.py",
+      "casulo_owner/verifier_repair.py"
+    ],
+    "forbidden_findings": [],
+    "generative_adapter_present": true,
+    "pass": true,
+    "reference_engine_absent": true,
+    "schema": "casulo-owner-generative-artifact-audit/1.0"
+  },
+  "schema": "casulo-owner-generative-build-result/1.0"
+}

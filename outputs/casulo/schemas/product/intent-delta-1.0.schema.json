@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casulo.intent-delta/1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "delta_id", "creation_id", "base_version", "operations", "rationale", "source_event_ids", "confidence", "confirmation_state", "affected_paths"],
+  "properties": {
+    "schema": {"const": "casulo.intent-delta/1.0"},
+    "delta_id": {"type": "string", "minLength": 1},
+    "creation_id": {"type": "string", "minLength": 1},
+    "base_version": {"type": "integer", "minimum": 0},
+    "operations": {"type": "array", "minItems": 1},
+    "rationale": {"type": "string", "minLength": 1},
+    "source_event_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "confirmation_state": {"enum": ["PROVISIONAL", "PROPOSED", "CONFIRMED", "REJECTED"]},
+    "affected_paths": {"type": "array", "minItems": 1}
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "owner.native.creation_acceptance": {
+      "decide": []
+    }
+  }
+}

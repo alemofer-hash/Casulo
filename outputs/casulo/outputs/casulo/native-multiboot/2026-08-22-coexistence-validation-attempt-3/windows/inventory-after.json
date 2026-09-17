@@ -1,0 +1,36 @@
+{
+  "boot_managers": [
+    "windows-boot-manager"
+  ],
+  "fallback_bootx64_present": true,
+  "files": {
+    "ARCH_LINUX_MUST_SURVIVE.txt": {
+      "bytes": 20,
+      "sha256": "a1cc4f2f0e4cf280f23439f9455a1d100ea1b11657e62ffc5f26e2cdef3bfcb7"
+    },
+    "EFI/BOOT/BOOTX64.EFI": {
+      "bytes": 27,
+      "sha256": "b4f008423f63511c4c1b1266a44f674fb1136e390c95c6395fb1ef6f5938fea3"
+    },
+    "EFI/Microsoft/Boot/bootmgfw.efi": {
+      "bytes": 25,
+      "sha256": "473f8c969f07e8a07a42025495289d1d1912b470b1f39ab1f5bff73de958180f"
+    },
+    "EFI/Teloscorp/Casulo/CasuloX64.efi": {
+      "bytes": 155648,
+      "sha256": "dba2b8ab4330729db41e95638a9fda275a06cde7e52dcd60db3ff17ead4f71c1"
+    },
+    "kernel-x86_64": {
+      "bytes": 547552,
+      "sha256": "212faf45702763b2e070bcb1532eb2b2affa15a6005dcc92106ab42cf26bf2ef"
+    },
+    "ramdisk": {
+      "bytes": 2497390010,
+      "sha256": "d233d0c5c23d0cf6e0a638fa8ce756eee076fd717d8dbd16f7293f278bbb1b61"
+    }
+  },
+  "read_only_inspection": true,
+  "root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-multiboot\\2026-08-22-coexistence-validation-attempt-3\\windows\\esp",
+  "schema": "casulo-efi-inventory/1.0",
+  "tree_sha256": "4c20bf2a6ac7a228b89124947a61b3c20c8755c18f3bacaefba21c1948fde9a6"
+}

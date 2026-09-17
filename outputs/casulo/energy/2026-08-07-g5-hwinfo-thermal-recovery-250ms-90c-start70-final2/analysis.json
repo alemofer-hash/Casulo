@@ -1,0 +1,12 @@
+{
+  "calibration_windows": 0,
+  "campaign_id": "2026-08-07-g5-hwinfo-thermal-recovery-250ms-90c-start70-final2",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "equivalence_gates": 0,
+  "reason": "Initial stability incorrectly retained a fixed 60 C threshold despite the frozen 70 C campaign override; corrected before idle or workload.",
+  "schema": "casulo-hwinfo-thermal-recovery-analysis/1.0",
+  "scientific_judgment": "NO_ENERGY_RESULT",
+  "terminal_state": "SUPERSEDED_BEFORE_DEFINITIVE_CAMPAIGN",
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "valid_pairs": 0
+}

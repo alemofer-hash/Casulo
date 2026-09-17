@@ -1,0 +1,20 @@
+{
+  "format": "casulo-tensor-suite-cases/0.1",
+  "cases": [
+    {
+      "name": "tall-batch",
+      "graph": "heldout-tall.tensor.json",
+      "wrt": ["weight1", "weight2"]
+    },
+    {
+      "name": "wide-input",
+      "graph": "heldout-wide.tensor.json",
+      "wrt": ["weight1", "weight2"]
+    },
+    {
+      "name": "deep-bottleneck",
+      "graph": "heldout-deep.tensor.json",
+      "wrt": ["weight1", "weight2", "weight3"]
+    }
+  ]
+}

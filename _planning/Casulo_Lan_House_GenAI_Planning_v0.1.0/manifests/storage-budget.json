@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "ssd_total_gb": 256,
+  "free_at_planning_gb": 127,
+  "minimum_free_gate_gb": 30,
+  "budgets_gb": {
+    "windows_and_pagefile_reserve": 30,
+    "wsl_and_toolchain_target": 20,
+    "repository_builds_tests_target": 15,
+    "llm_models_target": 16,
+    "speech_and_embeddings_target": 4,
+    "caches_and_offline_bundle_target": 15,
+    "memory_indexes_logs_snapshots_target": 12,
+    "unallocated_margin": 15
+  }
+}
+

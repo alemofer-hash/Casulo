@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc06-semantic-multiverse",
+  "gate_sha256": "6bfdb57f8b1e89439942a38b1ac2d5fde18493895f529bd1b974657de2d0dd31",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC6_SEMANTIC_MULTIVERSE_PRODUCT_VALIDATION_PASS",
+  "timestamp": "2026-08-14T20:58:03.614692+00:00"
+}

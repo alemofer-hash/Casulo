@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "owner.multiverse.lifecycle_policy": {
+      "decide": []
+    }
+  }
+}

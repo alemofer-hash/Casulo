@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.mass_balance_calculator_v2.conservation_check": [
+      "simulation"
+    ],
+    "owner.agent.mass_balance_calculator_v2.mass_flow": [],
+    "owner.agent.mass_balance_calculator_v2.unit_parser": []
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "canonical_sha256": "f704ba8a9d4a2e6823981c505896094882267cc8b5856902d903079680ebfe74",
+  "confirmation_event_ids": [
+    "human:smoke:confirm"
+  ],
+  "creation_id": "creation:arc6-smoke",
+  "gaps": [],
+  "hypotheses": [
+    {
+      "choice_value": "confirm-first",
+      "confidence": 1.0,
+      "consequences": [
+        "Preserva decisão e pede confirmação"
+      ],
+      "decision_dimension": "autonomia",
+      "excludes_choice_value": "execute-first",
+      "hypothesis_id": "hyp:consultive",
+      "interpretation": "Agente consultivo com confirmação",
+      "requirement_impacts": [
+        {
+          "observation_id": "obs:purpose",
+          "rationale": "preservado pelo contrato confirm-first",
+          "status": "PRESERVES"
+        },
+        {
+          "observation_id": "obs:approval",
+          "rationale": "preservado pelo contrato confirm-first",
+          "status": "PRESERVES"
+        }
+      ],
+      "supporting_observation_ids": [
+        "obs:purpose",
+        "obs:approval"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "affected_paths": [
+        [
+          "purpose",
+          "summary"
+        ]
+      ],
+      "confidence": 1.0,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:purpose",
+      "source_event_ids": [
+        "human:smoke:idea"
+      ],
+      "statement": "Preservar decisões",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance"
+      ]
+    },
+    {
+      "affected_paths": [
+        [
+          "behavior",
+          "approval"
+        ]
+      ],
+      "confidence": 1.0,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:approval",
+      "source_event_ids": [
+        "human:smoke:idea"
+      ],
+      "statement": "Exigir confirmação antes da revisão",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:process"
+      ]
+    }
+  ],
+  "schema": "casulo.intent-twin/1.0",
+  "selected_hypothesis_id": "hyp:consultive",
+  "stakes": "MATERIAL",
+  "summary": "Agente consultivo",
+  "task_kind": "CREATION",
+  "twin_id": "twin:arc6-smoke"
+}

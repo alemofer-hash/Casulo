@@ -1,0 +1,10 @@
+{
+  "schema": "casulo-definitive-idle-controls-rejection/1.0",
+  "attempt": 2,
+  "accepted": false,
+  "completed_controls": ["A_HWINFO_ONLY"],
+  "reason": "pre-window guard still used bounded 256 KiB tail reads at 250 ms and contaminated host CPU",
+  "observed_process_cpu_percent_of_one_core_approx": 45.0,
+  "workloads_executed": 0,
+  "correction": "all pre-window and critical-path guard reads now use append-only-incremental-v1"
+}

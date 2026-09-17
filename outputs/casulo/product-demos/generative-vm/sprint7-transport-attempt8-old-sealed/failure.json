@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 8,
+  "failure": "STATIC_PROVIDER_WAS_REENTERED_AFTER_SEND",
+  "root_cause": "provider_thread remained None on the synchronous path and cumulative READY marker retriggered sends",
+  "action": "Added explicit provider_started state; owned processes terminated",
+  "preserved": true,
+  "neural_evidence": false
+}

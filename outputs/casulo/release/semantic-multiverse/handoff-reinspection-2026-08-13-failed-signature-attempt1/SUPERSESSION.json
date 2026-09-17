@@ -1,0 +1,12 @@
+{
+  "commercial_release": false,
+  "created_utc": "2026-08-13T03:34:08.086359+00:00",
+  "reason": "third human inspection corrections resealed; historical evidence remains immutable",
+  "replacement_state": "READY_FOR_GUILHERME_SEMANTIC_MULTIVERSE_REINSPECTION",
+  "schema": "casulo.semantic-multiverse-supersession/1.0",
+  "superseded_manifest": {
+    "path": "release/semantic-multiverse/handoff/MANIFEST.json",
+    "preserved": true,
+    "sha256": "e595c97b86721c3b58b0d2e4ea62771b1cb63c6587ccc9794ef0e33f2b7446fa"
+  }
+}

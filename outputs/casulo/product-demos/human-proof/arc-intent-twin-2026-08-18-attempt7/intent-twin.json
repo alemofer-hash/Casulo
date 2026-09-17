@@ -1,0 +1,94 @@
+{
+  "canonical_sha256": "64db666f68fd6cf06071f37a676d008cf3240e73b34176b6adb9263d94e2f7e7",
+  "confirmation_event_ids": [],
+  "creation_id": "creation:arc-neural-smoke",
+  "gaps": [],
+  "hypotheses": [
+    {
+      "choice_value": "analise_e_comparacao",
+      "confidence": 0.93,
+      "consequences": [
+        "identificacao_de_conflitos_entre_propostas",
+        "solicitacao_de_autorizacao_humana_antes_de_execucao"
+      ],
+      "decision_dimension": "comparacao_propostas_arquitetura",
+      "excludes_choice_value": "execucao_real_de_alteracoes",
+      "hypothesis_id": "hyp:6a1b2c849cb2c44f:1",
+      "interpretation": "O agente deve ser programado para analisar e comparar duas propostas de arquitetura, identificar conflitos entre elas e solicitar a autorização humana antes de realizar qualquer alteração baseada na comparação.",
+      "requirement_impacts": [
+        {
+          "observation_id": "obs:6a1b2c849cb2c44f:1",
+          "rationale": "O agente deve ser capaz de comparar propostas de arquitetura e identificar conflitos.",
+          "status": "PRESERVES"
+        },
+        {
+          "observation_id": "obs:6a1b2c849cb2c44f:2",
+          "rationale": "A confirmação humana é necessária antes de qualquer ação baseada na comparação.",
+          "status": "PRESERVES"
+        }
+      ],
+      "supporting_observation_ids": [
+        "obs:6a1b2c849cb2c44f:1",
+        "obs:6a1b2c849cb2c44f:2"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "affected_paths": [
+        [
+          "comparar_propostas_arquitetura"
+        ],
+        [
+          "explicar_conflitos"
+        ],
+        [
+          "nunca_execute_alteracoes_reais_sem_confirmacao_humana"
+        ]
+      ],
+      "confidence": 0.95,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:6a1b2c849cb2c44f:1",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "Crie um agente local que compare duas propostas de arquitetura, explique conflitos e nunca execute alterações reais sem confirmação humana.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    },
+    {
+      "affected_paths": [
+        [
+          "apresentar_duas_propostas"
+        ],
+        [
+          "identificar_conflito_principal"
+        ],
+        [
+          "pedir_confirmacao_antes_de_agir"
+        ]
+      ],
+      "confidence": 0.92,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:6a1b2c849cb2c44f:2",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "A resposta deve apresentar as duas propostas, o conflito principal e pedir confirmação antes de agir.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    }
+  ],
+  "schema": "casulo.intent-twin/1.0",
+  "selected_hypothesis_id": "hyp:6a1b2c849cb2c44f:1",
+  "stakes": "HIGH",
+  "summary": "Reconstrução da intenção com base no pedido humano e no comportamento observável desejado.",
+  "task_kind": "CREATION",
+  "twin_id": "intent-twin:6a1b2c849cb2c44f"
+}

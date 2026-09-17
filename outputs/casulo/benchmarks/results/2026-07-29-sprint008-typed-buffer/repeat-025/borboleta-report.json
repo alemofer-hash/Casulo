@@ -1,0 +1,307 @@
+{
+  "adaptation": {
+    "assessment": "CORRECT",
+    "decision": {
+      "buffered": true,
+      "cacheable": true,
+      "confidence": 0.482992,
+      "cost_model": "casulo-cost-model/0.3",
+      "estimated_cache_bytes": 478800,
+      "estimated_speedup": 0.9821282267414437,
+      "memory_budget_bytes": 67108864,
+      "operation": "WaterBalance",
+      "operation_cost": 8,
+      "protocol": "casulo-adaptive/0.3",
+      "reasons": [
+        "custo estático da operação: 8",
+        "repetição perfilada/estimada: 0.3000",
+        "fronteira conservadora: 0.3121",
+        "buffer tipado: disponível",
+        "perfil: deterministic_compiled_collision_estimate (256/2000)",
+        "layout tipado amortiza objetos mesmo sem repetição suficiente"
+      ],
+      "repetition_rate": 0.3,
+      "repetition_threshold": 0.3021313237735105,
+      "safety_margin": 0.01,
+      "strategy": "FUSE_TYPED_BATCH",
+      "use_buffer": true,
+      "use_cache": true
+    },
+    "end_to_end_regret_ratio": 1.3679060948604016,
+    "end_to_end_verdict": "improvement",
+    "end_to_end_wall_speedup": 3.0329903608508073,
+    "end_to_end_wall_speedup_ci95_bootstrap": [
+      2.7764108629810473,
+      3.487247619286357
+    ],
+    "median_best_strategy": "FUSE_TYPED_BATCH",
+    "prediction_correct": true,
+    "profile": {
+      "estimated_cache_bytes": 478800,
+      "mean_payload_bytes": 86.0,
+      "profile_mode": "deterministic_compiled_collision_estimate",
+      "records": 2000,
+      "repeated_records": 600,
+      "repetition_rate": 0.3,
+      "sample_matching_pairs": 7,
+      "sample_unique_records": 249,
+      "sampled_records": 256,
+      "total_payload_bytes": 172000,
+      "unique_records": 1400
+    },
+    "selected_kernel_regret_ratio": 1.0,
+    "selection_overhead_ratio": 1.3679060948604016,
+    "statistically_preferred_strategy": "FUSE_TYPED_BATCH"
+  },
+  "adaptive": {
+    "cpu_ns_samples": [
+      62500000,
+      46875000,
+      93750000,
+      62500000,
+      62500000,
+      46875000,
+      78125000,
+      62500000,
+      93750000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 62500000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 51585024,
+    "median_wall_ns": 94510000,
+    "name": "casulo_adaptive_end_to_end",
+    "rss_observed_bytes_samples": [
+      51281920,
+      51585024,
+      51601408,
+      51617792,
+      51617792,
+      51372032,
+      51249152,
+      51466240,
+      51630080
+    ],
+    "throughput_records_per_second": 105808.90911014708,
+    "wall_ns_samples": [
+      61379100,
+      51483300,
+      104818600,
+      60504600,
+      57703200,
+      126764300,
+      107709300,
+      117263300,
+      94510000
+    ]
+  },
+  "artifact_id": "sha256:e47e11c2343a8fb2903f74bbe29b250b7396c3f03147d4b62cf16fe972d67e44",
+  "caveats": [
+    "dataset sintético mede o runtime, não a acurácia hidrológica",
+    "o ganho depende da taxa de repetição declarada no manifesto",
+    "resultados de um único computador não generalizam sem replicação",
+    "turbo, temperatura e processos concorrentes afetam tempo e energia",
+    "energia elétrica indisponível nesta execução"
+  ],
+  "comparison": {
+    "cpu_work_ratio": 3.5,
+    "electrical_energy_ratio": null,
+    "representation": {
+      "available": true,
+      "hot_path": {
+        "column_bytes": 48000,
+        "column_type": "float64",
+        "evidence_flag_bytes": 3000,
+        "index_bytes": 10000,
+        "lateral_value_cells": 1500,
+        "records": 2000,
+        "reference_field_writes_avoided": 12000,
+        "reference_intermediate_lists_avoided": 7500,
+        "reference_intermediate_mappings_avoided": 9000,
+        "unique_records": 1500
+      },
+      "method": "tracemalloc_single_cold_call",
+      "object_reference": {
+        "current_traced_bytes": 3558924,
+        "peak_traced_bytes": 6012252,
+        "records": 2000,
+        "retained_blocks": 43254,
+        "retained_bytes": 3558924
+      },
+      "peak_traced_bytes_reduction": 0.3783695360740036,
+      "retained_blocks_reduction": 0.005386785037222008,
+      "semantically_equivalent": true,
+      "typed_buffer": {
+        "current_traced_bytes": 3443964,
+        "peak_traced_bytes": 3737399,
+        "records": 2000,
+        "retained_blocks": 43021,
+        "retained_bytes": 3443964
+      }
+    },
+    "scope": "referência escalar sem cache versus lote Casulo com cache frio por chamada e deduplicação intralote",
+    "semantic_projection_excludes": [
+      "cache"
+    ],
+    "semantically_equivalent": true,
+    "verdict": "improvement",
+    "wall_speedup_ci95_bootstrap": [
+      3.327122626379266,
+      3.8946708914870816
+    ],
+    "wall_speedup_interpretation": "valores acima de 1 indicam que a estratégia Casulo é mais rápida",
+    "wall_speedup_median": 3.5463011326864207
+  },
+  "config": {
+    "bootstrap_resamples": 2000,
+    "duplicate_rate": 0.25,
+    "iterations": 5,
+    "records": 2000,
+    "samples": 9,
+    "seed": 8020,
+    "warmups": 2
+  },
+  "dataset": {
+    "duplicate_rate": 0.25,
+    "name": "hydrological-water-balance-synthetic",
+    "protocol": "casulo-dataset/hydrological-synthetic/0.1",
+    "records": 2000,
+    "seed": 8020,
+    "sha256": "a63fc6e12791f80b2fbd21412bdb42d149b3034840f1fbb0ab59d5ce51fdc4ab"
+  },
+  "energy": {
+    "electrical_energy_measured": false,
+    "method": "unavailable",
+    "quality": "not_measured",
+    "unit": null,
+    "warning": "nenhum contador elétrico cumulativo foi encontrado; tempo de CPU permanece apenas como proxy de trabalho, nunca como joules"
+  },
+  "environment": {
+    "cpu_logical": 12,
+    "cpu_physical": 10,
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "memory_total_bytes": 16890978304,
+    "os": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2"
+  },
+  "equivalence_sha256": "053589355008d5b092073c19db5ab7c3e892426bf132d002d57bfa99ff4091fe",
+  "generated_at_utc": "2026-07-29T22:49:24Z",
+  "operation": "WaterBalance",
+  "optimized": {
+    "cpu_ns_samples": [
+      46875000,
+      62500000,
+      46875000,
+      46875000,
+      78125000,
+      62500000,
+      78125000,
+      93750000,
+      78125000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 62500000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 51429376,
+    "median_wall_ns": 69091000,
+    "name": "casulo_metamorfose_fused_batch",
+    "rss_observed_bytes_samples": [
+      51281920,
+      51548160,
+      51601408,
+      51601408,
+      51617792,
+      51331072,
+      51335168,
+      51429376,
+      51367936
+    ],
+    "throughput_records_per_second": 144736.65166230046,
+    "wall_ns_samples": [
+      48053900,
+      49881600,
+      50081200,
+      49836400,
+      69091000,
+      98718200,
+      106560200,
+      107367800,
+      89147800
+    ]
+  },
+  "protocol": "casulo-borboleta/0.4",
+  "scalar": {
+    "cpu_ns_samples": [
+      171875000,
+      140625000,
+      171875000,
+      171875000,
+      218750000,
+      343750000,
+      312500000,
+      312500000,
+      296875000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 218750000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 51466240,
+    "median_wall_ns": 304723900,
+    "name": "python_scalar_reference",
+    "rss_observed_bytes_samples": [
+      51089408,
+      51585024,
+      51601408,
+      51601408,
+      51372032,
+      51314688,
+      51335168,
+      51466240,
+      51630080
+    ],
+    "throughput_records_per_second": 32816.592331615604,
+    "wall_ns_samples": [
+      170413600,
+      165962200,
+      214808600,
+      175325600,
+      304723900,
+      384474900,
+      375609000,
+      326537600,
+      316478400
+    ]
+  }
+}

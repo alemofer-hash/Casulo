@@ -1,0 +1,489 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "model_output_valid"
+                ],
+                "root": "input"
+              },
+              "error": "creation_spec_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "creation_name"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "SomeDoisNumeros"
+                }
+              },
+              "error": "unsupported_creation_name",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "function_name"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "SomeDoisNumeros"
+                }
+              },
+              "error": "unsupported_function_name",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "input_contract"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "numero1,numero2"
+                }
+              },
+              "error": "input_contract_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "output_contract"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "resultado."
+                }
+              },
+              "error": "output_contract_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "generated_t_source_sha256"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 64
+                }
+              },
+              "error": "generated_source_identity_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "generated_t_source_sha256"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "compiled_t_source_sha256"
+                  ],
+                  "root": "input"
+                }
+              },
+              "error": "compiled_source_not_causal",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "artifact_tcap_hash"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 64
+                }
+              },
+              "error": "artifact_identity_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "simulation_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "simulation_failed",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "simulation_left"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 7
+                }
+              },
+              "error": "simulation_left_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "simulation_right"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 11
+                }
+              },
+              "error": "simulation_right_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "simulation_result"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "expected_result"
+                  ],
+                  "root": "input"
+                }
+              },
+              "error": "simulation_result_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "expected_result"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 18
+                }
+              },
+              "error": "expected_result_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "effects_requested"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "real_effects_denied",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "materialization_hash"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 64
+                }
+              },
+              "error": "materialization_identity_invalid",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "ACCEPT_MATERIALIZATION"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "NativeCreationAcceptanceInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "owner.native.creation_acceptance",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "model_output_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "creation_name",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "function_name",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "input_contract",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "output_contract",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "generated_t_source_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "compiled_t_source_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "artifact_tcap_hash",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "simulation_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "simulation_left",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "simulation_right",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "simulation_result",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "expected_result",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "effects_requested",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "materialization_hash",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "NativeCreationAcceptanceInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

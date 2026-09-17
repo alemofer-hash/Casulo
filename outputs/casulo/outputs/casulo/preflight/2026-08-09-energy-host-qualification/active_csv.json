@@ -1,0 +1,164 @@
+{
+  "active_count": 1,
+  "bom": "UTF-8",
+  "candidates": [
+    {
+      "active": false,
+      "growth_bytes_3s": 0,
+      "mtime_age_seconds": 796955.919598,
+      "mtime_final_utc": "2026-07-31T19:01:47.988246+00:00",
+      "mtime_initial_utc": "2026-07-31T19:01:47.988246+00:00",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-31-thermal-covenant\\hwinfo-live-continuous.CSV",
+      "size_final": 2477010,
+      "size_initial": 2477010
+    },
+    {
+      "active": false,
+      "growth_bytes_3s": 0,
+      "mtime_age_seconds": 800042.129389,
+      "mtime_final_utc": "2026-07-31T18:10:21.778455+00:00",
+      "mtime_initial_utc": "2026-07-31T18:10:21.778455+00:00",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-31-thermal-covenant\\hwinfo-live.CSV",
+      "size_final": 38002,
+      "size_initial": 38002
+    },
+    {
+      "active": true,
+      "growth_bytes_3s": 19940,
+      "mtime_age_seconds": 0.084122,
+      "mtime_final_utc": "2026-08-10T00:24:23.823722+00:00",
+      "mtime_initial_utc": "2026-08-10T00:24:20.802387+00:00",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+      "size_final": 5307492,
+      "size_initial": 5287552
+    },
+    {
+      "active": false,
+      "growth_bytes_3s": 0,
+      "mtime_age_seconds": 121373.80731,
+      "mtime_final_utc": "2026-08-08T14:41:30.100534+00:00",
+      "mtime_initial_utc": "2026-08-08T14:41:30.100534+00:00",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\energy\\2026-08-08-g5-full-worker-energy-definitive\\throttle_event_excerpt.csv",
+      "size_final": 409169,
+      "size_initial": 409169
+    },
+    {
+      "active": false,
+      "growth_bytes_3s": 0,
+      "mtime_age_seconds": 121373.80731,
+      "mtime_final_utc": "2026-08-08T14:41:30.100534+00:00",
+      "mtime_initial_utc": "2026-08-08T14:41:30.100534+00:00",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\energy\\2026-08-08-g5-full-worker-energy-definitive-02\\throttle_event_excerpt.csv",
+      "size_final": 409169,
+      "size_initial": 409169
+    },
+    {
+      "active": false,
+      "growth_bytes_3s": 0,
+      "mtime_age_seconds": 121373.80731,
+      "mtime_final_utc": "2026-08-08T14:41:30.100534+00:00",
+      "mtime_initial_utc": "2026-08-08T14:41:30.100534+00:00",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\energy\\2026-08-08-g5-full-worker-energy-definitive-03\\throttle_event_excerpt.csv",
+      "size_final": 409169,
+      "size_initial": 409169
+    },
+    {
+      "active": false,
+      "growth_bytes_3s": 0,
+      "mtime_age_seconds": 114701.197329,
+      "mtime_final_utc": "2026-08-08T16:32:42.710515+00:00",
+      "mtime_initial_utc": "2026-08-08T16:32:42.710515+00:00",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\energy\\2026-08-08-g5-full-worker-energy-definitive-04\\raw\\failed_idle_stability_segment.csv",
+      "size_final": 7959977,
+      "size_initial": 7959977
+    },
+    {
+      "active": false,
+      "growth_bytes_3s": 0,
+      "mtime_age_seconds": 121373.80731,
+      "mtime_final_utc": "2026-08-08T14:41:30.100534+00:00",
+      "mtime_initial_utc": "2026-08-08T14:41:30.100534+00:00",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\energy\\2026-08-08-g5-full-worker-energy-definitive-04\\throttle_event_excerpt.csv",
+      "size_final": 409169,
+      "size_initial": 409169
+    },
+    {
+      "active": false,
+      "growth_bytes_3s": 0,
+      "mtime_age_seconds": 122599.494633,
+      "mtime_final_utc": "2026-08-08T14:21:04.413211+00:00",
+      "mtime_initial_utc": "2026-08-08T14:21:04.413211+00:00",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\energy\\2026-08-08-g5-full-worker-hwinfo-energy\\source_segment.csv",
+      "size_final": 2104251,
+      "size_initial": 2104251
+    }
+  ],
+  "decimal_separator": ".",
+  "delimiter": ",",
+  "encoding": "utf-8-sig",
+  "last_timestamp_before_polling_utc": "2026-08-10T00:24:23.779000+00:00",
+  "package_power_sensor": {
+    "index": 164,
+    "kind": "package_power",
+    "literal_name": "Potência total da CPU [W]",
+    "normalized_name": "potencia total da cpu w",
+    "provenance": "hwinfo_reported_cpu_package",
+    "session_id": 0,
+    "si_scale": 1.0,
+    "unit": "w"
+  },
+  "schema": "casulo-energy-active-csv/1.0",
+  "searched_roots": [
+    "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results",
+    "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo"
+  ],
+  "selected": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+  "selected_sensors": {
+    "battery_level": "Nível de carga [%]",
+    "battery_rate": "Taxa de carga [W]",
+    "core_temperature": "Temperaturas centrais (avg) [°C]",
+    "effective_clock": "Relógios efetivos núcleo (avg) [MHz]",
+    "package_power": "Potência total da CPU [W]",
+    "package_temperatures": [
+      "CPU Inteira [°C]",
+      "CPU Inteira [°C]"
+    ],
+    "power_limit": [
+      "Limite de potência do núcleo excedido (avg) [Yes/No]",
+      "P-core 0 Limite de potência excedido [Yes/No]",
+      "P-core 1 Limite de potência excedido [Yes/No]",
+      "E-core 2 Limite de potência excedido [Yes/No]",
+      "E-core 3 Limite de potência excedido [Yes/No]",
+      "E-core 4 Limite de potência excedido [Yes/No]",
+      "E-core 5 Limite de potência excedido [Yes/No]",
+      "E-core 6 Limite de potência excedido [Yes/No]",
+      "E-core 7 Limite de potência excedido [Yes/No]",
+      "E-core 8 Limite de potência excedido [Yes/No]",
+      "E-core 9 Limite de potência excedido [Yes/No]",
+      "Limite de potência do pacote / anel excedido [Yes/No]"
+    ],
+    "thermal_throttling": [
+      "Estrangulamento térmico do núcleo (avg) [Yes/No]",
+      "P-core 0 Estrangulamento térmico [Yes/No]",
+      "P-core 1 Estrangulamento térmico [Yes/No]",
+      "E-core 2 Estrangulamento térmico [Yes/No]",
+      "E-core 3 Estrangulamento térmico [Yes/No]",
+      "E-core 4 Estrangulamento térmico [Yes/No]",
+      "E-core 5 Estrangulamento térmico [Yes/No]",
+      "E-core 6 Estrangulamento térmico [Yes/No]",
+      "E-core 7 Estrangulamento térmico [Yes/No]",
+      "E-core 8 Estrangulamento térmico [Yes/No]",
+      "E-core 9 Estrangulamento térmico [Yes/No]"
+    ],
+    "total_cpu_utility": "Utilização total da CPU [%]"
+  },
+  "snapshot_before_polling": {
+    "bytes_read": 5307492,
+    "complete_bytes": 5307492,
+    "file_size_at_open": 5307492,
+    "mtime_ns": 1786321463823722000,
+    "partial_final_line_ignored": false,
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+    "sha256": "d30598e105d5ba1f252826f4aeb9bc5d7be6c3f23bea696f897b7a08cedbca71"
+  }
+}

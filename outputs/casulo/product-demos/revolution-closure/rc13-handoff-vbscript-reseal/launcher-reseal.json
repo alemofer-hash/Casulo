@@ -1,0 +1,94 @@
+{
+  "checks": {
+    "all_bom_free": true,
+    "all_parse_in_real_wsh": true,
+    "base_unchanged": true,
+    "focused_regression": true,
+    "four_launchers": true,
+    "old_failure_reproduced_by_bytes": true,
+    "old_launcher_preserved": true,
+    "old_manifest_preserved": true,
+    "owner_artifact_unchanged": true,
+    "prior_gates_preserved": true,
+    "release_signature_and_hashes": true,
+    "storage_reserve": true
+  },
+  "failure": {
+    "character": 1,
+    "code": "800A0408",
+    "line": 1,
+    "message": "Invalid character",
+    "work_started": false
+  },
+  "gate": "RC13_HANDOFF_COMPLETE_VBSCRIPT_RESEAL",
+  "launchers": [
+    {
+      "exit_code": 0,
+      "first_bytes_hex": "4f 70 74 69",
+      "name": "COLLECT_FEEDBACK.vbs",
+      "sha256": "7288a81f62e743bddd7ba30ccca6c164b9a4d94da329be447150cad270b0d468",
+      "stderr": "",
+      "stdout": "CASULO_VBS_PARSE_PASS",
+      "utf16_bom_absent": true,
+      "utf8_bom_absent": true
+    },
+    {
+      "exit_code": 0,
+      "first_bytes_hex": "4f 70 74 69",
+      "name": "RESTORE_CLEAN_STATE.vbs",
+      "sha256": "9d8a6029be1bed335330dcc0d7748abc8a86c768724f334042a10eed96f889ff",
+      "stderr": "",
+      "stdout": "CASULO_VBS_PARSE_PASS",
+      "utf16_bom_absent": true,
+      "utf8_bom_absent": true
+    },
+    {
+      "exit_code": 0,
+      "first_bytes_hex": "4f 70 74 69",
+      "name": "START_CASULO_OWNER.vbs",
+      "sha256": "bb5d0759ce664b812e3dd66dcc50c984d02273789040a868eb4b8a1419c5ceea",
+      "stderr": "",
+      "stdout": "CASULO_VBS_PARSE_PASS",
+      "utf16_bom_absent": true,
+      "utf8_bom_absent": true
+    },
+    {
+      "exit_code": 0,
+      "first_bytes_hex": "4f 70 74 69",
+      "name": "VERIFY_RELEASE.vbs",
+      "sha256": "d3322c39ea7878f3dd35f8ce7365c7a8cd2e4e78ab497d835d6d5c3b847cc00e",
+      "stderr": "",
+      "stdout": "CASULO_VBS_PARSE_PASS",
+      "utf16_bom_absent": true,
+      "utf8_bom_absent": true
+    }
+  ],
+  "new_manifest_sha256": "b6bfaa8166b0b2174392be64c1936a266e8a8cd119c9c7a8ab5e38017c2c4196",
+  "new_sha256sums_sha256": "b5c820b66b24b30a07265b7182f1c5f684233c0f9cbb86d2ba511239c01ad42c",
+  "new_signature_sha256": "bd4f0309bfec4c210a27b3a9a1f0255df86f87e2329ebd268ec66fed05e3e782",
+  "old_manifest_sha256": "7a8b4c4f2e7538c40347ead4a9caed68b7031419695bad28d93c0919d10d13f2",
+  "prior_rc12_gate_sha256": "c93e4109415c3282d81f24940b6f8283f1c0d5cecc9be1f7864cbd918c0f5d77",
+  "prior_rc13_gate_sha256": "d0466ac1d0625ac0f441346f7a1f696d9ef14d9ae3c2c571abb4cfeeaec39597",
+  "schema": "casulo.revolution-closure-launcher-reseal/1.0",
+  "state": "READY_FOR_GUILHERME_CASULO_BETA_HUMAN_PROOF",
+  "timestamp": "2026-08-14T22:02:13.417052+00:00",
+  "verification": {
+    "checks": {
+      "base_vm": true,
+      "cloud_locked": true,
+      "development_signature": true,
+      "guest_network_off": true,
+      "human_proof_pending": true,
+      "manifest_files": true,
+      "model_verified": true,
+      "physical_devices_prohibited": true,
+      "runtime_available": true
+    },
+    "manifest_sha256": "b6bfaa8166b0b2174392be64c1936a266e8a8cd119c9c7a8ab5e38017c2c4196",
+    "mismatches": [],
+    "read_only": true,
+    "ready": true,
+    "schema": "casulo.human-proof-verification/1.0",
+    "signature_output": "Good \"casulo-human-proof\" signature for casulo-owner-human-proof-dev with ED25519 key SHA256:WV2iEwZ00CJO+pA3CDyw8EWCYLp3Y8r7qvGHRKIOpfs"
+  }
+}

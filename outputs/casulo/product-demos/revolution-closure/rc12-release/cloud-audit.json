@@ -1,0 +1,6 @@
+﻿{
+    "release_state":  "RELEASE_LOCKED",
+    "pass":  true,
+    "schema":  "casulo.rc12-cloud-audit/1.0",
+    "production_eligible":  false
+}

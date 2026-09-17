@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-17T21:46:40.2354988Z",
+  "nested_git": [
+    {
+      "RelativePath": "outputs\\casulo\\.git",
+      "Files": 84,
+      "Bytes": 3922808,
+      "Head": "ref: refs/heads/product/semantic-multiverse",
+      "ConfigContainsRemote": false,
+      "ConfigCredentialPatternDetected": false
+    },
+    {
+      "RelativePath": "outputs\\casulo\\.tmp\\bootloader-v0.11.15-source\\.git",
+      "Files": 25,
+      "Bytes": 200972,
+      "Head": "255e9c08b57323e034547d0937ac5347e972d706",
+      "ConfigContainsRemote": true,
+      "ConfigCredentialPatternDetected": false
+    }
+  ]
+}

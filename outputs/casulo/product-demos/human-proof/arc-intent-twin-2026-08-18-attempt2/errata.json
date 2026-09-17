@@ -1,0 +1,18 @@
+{
+  "schema": "casulo.arc-intent-twin-smoke-errata/1.0",
+  "original_gate": "ARC_INTENT_TWIN_NEURAL_CONTRACT_FAIL",
+  "preserve_original_report": true,
+  "findings": [
+    {
+      "code": "ARC_SMOKE_JUDGE_POLARITY",
+      "detail": "O juiz aplicava all() a dois controles cujo valor seguro esperado era false."
+    },
+    {
+      "code": "ARC_MODEL_TASK_KIND_DIVERGENCE",
+      "detail": "O modelo classificou um comando explícito :criar como CONVERSATION. O contexto determinístico da interface agora tem autoridade sobre task_kind e a divergência é registrada."
+    }
+  ],
+  "model_output_preserved": true,
+  "intent_twin_sha256": "ca68e3910619e61ebe56b9a310a4b490c469f596dbbc460b2e5b045ddfe83a34",
+  "superseded_by_validation": "arc-intent-twin-2026-08-18-attempt3"
+}

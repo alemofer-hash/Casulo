@@ -1,0 +1,25 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.datavalidator.byte_preserver"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.agent.datavalidator.byte_preserver"
+    },
+    {
+      "imports": [
+        "owner.agent.datavalidator.byte_preserver"
+      ],
+      "name": "owner.agent.datavalidator.schema_applier"
+    },
+    {
+      "imports": [
+        "owner.agent.datavalidator.schema_applier"
+      ],
+      "name": "owner.agent.datavalidator.rejection_explainer"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

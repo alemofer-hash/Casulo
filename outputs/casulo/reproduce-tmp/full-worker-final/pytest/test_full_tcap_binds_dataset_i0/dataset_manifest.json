@@ -1,0 +1,12 @@
+{
+  "alignment": 8,
+  "bytes": 73752,
+  "generator_dataset_sha256": "2e95b25f761d617490d30082d17a7c191356f8441e0d04555df2fbd2f4b46e94",
+  "input_features": 8,
+  "precision": "float64-little-endian",
+  "records": 1024,
+  "schema": "casulo-flood-dataset-binary/1.0",
+  "seed": 20260730,
+  "sha256": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+  "target_features": 1
+}

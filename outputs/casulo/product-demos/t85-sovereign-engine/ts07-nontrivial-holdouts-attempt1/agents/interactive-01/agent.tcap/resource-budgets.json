@@ -1,0 +1,16 @@
+{
+  "modules": {
+    "owner.agent.interactive_talk_01.export": {
+      "deadline_ms": 3000,
+      "steps": 2048
+    },
+    "owner.agent.interactive_talk_01.interrupt": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    },
+    "owner.agent.interactive_talk_01.memory": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    }
+  }
+}

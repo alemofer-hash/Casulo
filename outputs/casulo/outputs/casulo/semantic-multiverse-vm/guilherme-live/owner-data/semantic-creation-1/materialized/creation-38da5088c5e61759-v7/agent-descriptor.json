@@ -1,0 +1,1 @@
+{"artifact_id":"sha256:7071ded90379790496fb09c9daef652791746952467bef025feaef1dce3d5707","executable_file":"agent.py","operation":"ReadValue","real_effects_included":false,"schema":"casulo.materialized-t-agent/1.0","tcap_file":"agent.tcap"}

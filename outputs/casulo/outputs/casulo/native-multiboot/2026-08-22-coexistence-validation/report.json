@@ -1,0 +1,58 @@
+{
+  "bundle": "release/CASULO_UEFI_COEXISTENCE_BUNDLE_2026-08-22",
+  "bundle_manifest_sha256": "e184ae82e0619c32adc3af5017410f9891c4076e9e71f3e5772591806044ba63",
+  "cases": [
+    {
+      "boot_managers": [
+        "windows-boot-manager"
+      ],
+      "exact_tree_restored": true,
+      "fallback_unchanged": true,
+      "passed": true,
+      "plan_state": "READY_NON_DESTRUCTIVE",
+      "preexisting_bytes_preserved": true,
+      "scenario": "windows"
+    },
+    {
+      "boot_managers": [
+        "windows-boot-manager",
+        "grub"
+      ],
+      "exact_tree_restored": true,
+      "fallback_unchanged": true,
+      "passed": true,
+      "plan_state": "READY_NON_DESTRUCTIVE",
+      "preexisting_bytes_preserved": true,
+      "scenario": "grub"
+    },
+    {
+      "boot_managers": [
+        "windows-boot-manager",
+        "systemd-boot"
+      ],
+      "exact_tree_restored": true,
+      "fallback_unchanged": true,
+      "passed": true,
+      "plan_state": "READY_NON_DESTRUCTIVE",
+      "preexisting_bytes_preserved": true,
+      "scenario": "systemd-boot"
+    },
+    {
+      "boot_managers": [
+        "windows-boot-manager",
+        "refind"
+      ],
+      "exact_tree_restored": true,
+      "fallback_unchanged": true,
+      "passed": true,
+      "plan_state": "READY_NON_DESTRUCTIVE",
+      "preexisting_bytes_preserved": true,
+      "scenario": "refind"
+    }
+  ],
+  "passed": true,
+  "physical_device_written": false,
+  "raw_image_written_to_device": false,
+  "schema": "casulo-multiboot-coexistence-validation/1.0",
+  "state": "CASULO_MULTIBOOT_NON_DESTRUCTIVE_VALIDATED"
+}

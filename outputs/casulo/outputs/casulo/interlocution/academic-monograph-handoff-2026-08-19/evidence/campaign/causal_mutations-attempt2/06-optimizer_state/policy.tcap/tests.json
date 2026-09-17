@@ -1,0 +1,6 @@
+{
+  "properties": [
+    "causal_mutation",
+    "optimizer_state"
+  ]
+}

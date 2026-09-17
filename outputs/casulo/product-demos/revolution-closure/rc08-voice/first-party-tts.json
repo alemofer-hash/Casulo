@@ -1,0 +1,18 @@
+{
+  "cancelled_frames": 8,
+  "full_frames": 154,
+  "human_voice_approval": "PENDING_GUILHERME",
+  "physical_playback_performed": false,
+  "raw_pcm_persisted": false,
+  "receipt": {
+    "backend": "casulo-first-party-formant",
+    "cancelled": false,
+    "frames": 154,
+    "license": "MIT-first-party-no-model",
+    "pcm_sha256": "452f553a591c5c161f6f9427c987cb610107be63b6117e1ad65f21b67844d1fd",
+    "sample_rate": 16000,
+    "samples": 49120,
+    "text_sha256": "a8424385d02d6f1904a03a725f3d0906880087bc953f45709271a401329f6102"
+  },
+  "schema": "casulo-first-party-tts-evidence/1.0"
+}

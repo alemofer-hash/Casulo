@@ -1,0 +1,9 @@
+{
+  "properties": [
+    "human_approval",
+    "simulation_pass",
+    "secret_and_effect_denial",
+    "hash_seal",
+    "atomic_publish"
+  ]
+}

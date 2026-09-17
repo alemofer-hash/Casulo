@@ -1,0 +1,24 @@
+{
+  "physical_device_written": false,
+  "python_focused": {
+    "passed": 24,
+    "failed": 0,
+    "seconds": 3.74
+  },
+  "qemu_np11": {
+    "attempt_1": "PRESERVED_TIMEOUT_AFTER_TOKEN_26",
+    "attempt_2": "PASS_BOOT_TO_CREATION_T_AUTHORIZED",
+    "fw_cfg_model_transport": false,
+    "image_read_only": true,
+    "network": false
+  },
+  "schema": "casulo-native-multiboot-test-summary/1.0",
+  "synthetic_coexistence": {
+    "attempt": 4,
+    "cases": 4,
+    "passed": true,
+    "preexisting_bytes_preserved": true,
+    "rollback_exact": true
+  }
+}
+

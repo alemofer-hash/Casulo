@@ -1,0 +1,164 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:58aa1973f583e57039baffd6364b9f20a6262d31f448f6b9022d1152f30cbbb7",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "contradicao produtiva",
+          "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence.",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "67c6611be1d500f066e2e8a43267296e6a4891323f1570420582b3a97b04e87d",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation_unit"
+        }
+      ],
+      "finished_ns": 32342007020800,
+      "project_id": "t-project:13aea0788cf4ecd0301839fc",
+      "started_ns": 32341376802000,
+      "tcap_sha256": "47227645ea767d183f49debfb6e2c7b56f30bcd52e37fe5dde3f5e097936961e",
+      "tests": [
+        {
+          "expected_contains": "RegisterHypotheses",
+          "name": "TestCreationUnit",
+          "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence.",
+          "operation": "RegisterHypotheses",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "dd3414189b12c4b7f5eb72a6ba405831241464414b1f75cead1a51a9d4318033",
+          "unit_id": "creation_unit",
+          "wall_ns": 99063900
+        },
+        {
+          "expected_contains": "LogConversations",
+          "name": "TestTraceUnit",
+          "observed": "LogConversations: Record and structure research conversations to track hypothesis development and evidence evaluation.",
+          "operation": "LogConversations",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "6b2536e6297db4c9cbe07d38aeb3f6c1e4318fa4ec37d8f28c7643cbdbf384df",
+          "unit_id": "trace_unit",
+          "wall_ns": 101101700
+        },
+        {
+          "expected_contains": "TrackEvidence",
+          "name": "TestEffectUnit",
+          "observed": "TrackEvidence: Monitor and record evidence that supports or refutes hypotheses in the research process.",
+          "operation": "TrackEvidence",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "b2c30f7d63fd8b694e953b853a727292cdb433b1188dab12113a441964633a1d",
+          "unit_id": "effect_unit",
+          "wall_ns": 101615600
+        },
+        {
+          "expected_contains": "AccessResearchLogs",
+          "name": "TestCapabilityUnit",
+          "observed": "AccessResearchLogs: Retrieve and analyze historical research logs to inform current hypothesis evaluation.",
+          "operation": "AccessResearchLogs",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "7ec0ec510ad0e27508161607279d111101c84317007dc60e782d9462faed6dd3",
+          "unit_id": "capability_unit",
+          "wall_ns": 99218600
+        },
+        {
+          "expected_contains": "contradicao produtiva",
+          "name": "human-holdout-acceptance",
+          "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence.",
+          "operation": "RegisterHypotheses",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "96d3102fc768360fcc3ef4bc26e4c91b352154fbc42ea9cdf170629cc78fdd4e",
+          "unit_id": "creation_unit",
+          "wall_ns": 73367300
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [],
+      "finished_ns": 32374183192800,
+      "project_id": "t-project:495aad60e8cd63bdecea7f5a",
+      "started_ns": 32373542761300,
+      "tcap_sha256": "5cb8a809cb83b3a88e1678b1db0ccdb877651173d88ca4f7385c06221445d527",
+      "tests": [
+        {
+          "expected_contains": "RegisterHypotheses",
+          "name": "TestCreationUnit",
+          "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence. contradicao produtiva",
+          "operation": "RegisterHypotheses",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "137a0542b3764fedbdeec62dc83d5f9bd62a1918defbac501caa888fe60fa1ca",
+          "unit_id": "creation_unit",
+          "wall_ns": 107197000
+        },
+        {
+          "expected_contains": "LogConversations",
+          "name": "TestTraceUnit",
+          "observed": "LogConversations: Record and structure research conversations to track hypothesis development and evidence evaluation.",
+          "operation": "LogConversations",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "f7d3d8d52e281026027a8b41621bb87c062b9cff640c6cf20c09d991c1d287e5",
+          "unit_id": "trace_unit",
+          "wall_ns": 101410900
+        },
+        {
+          "expected_contains": "TrackEvidence",
+          "name": "TestEffectUnit",
+          "observed": "TrackEvidence: Monitor and record evidence that supports or refutes hypotheses in the research process.",
+          "operation": "TrackEvidence",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "516a24e61242e2341efeff87cea3ad709b8e83bb619c51ae5ba2330cddf4788d",
+          "unit_id": "effect_unit",
+          "wall_ns": 96329500
+        },
+        {
+          "expected_contains": "AccessResearchLogs",
+          "name": "TestCapabilityUnit",
+          "observed": "AccessResearchLogs: Retrieve and analyze historical research logs to inform current hypothesis evaluation.",
+          "operation": "AccessResearchLogs",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "ed45c6712c4559ed8abd69bc7542f8b3a959f38f42ff0d0730b2ab1ff8534d94",
+          "unit_id": "capability_unit",
+          "wall_ns": 110104600
+        },
+        {
+          "expected_contains": "contradicao produtiva",
+          "name": "human-holdout-acceptance",
+          "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence. contradicao produtiva",
+          "operation": "RegisterHypotheses",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "6429003fe2f2e151befc2705b4dd8ebe76b814ef1713878baf6c4a12a0a49fd8",
+          "unit_id": "creation_unit",
+          "wall_ns": 74527800
+        }
+      ]
+    }
+  ],
+  "budget": 2,
+  "project_id": "t-project:495aad60e8cd63bdecea7f5a",
+  "receipt_sha256": "7e9735af3a4e0300bba52c23ba6f03806e4617c7768aef06febd4c49b907df92",
+  "repair_count": 1,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "PASS",
+  "tcap_sha256": "5cb8a809cb83b3a88e1678b1db0ccdb877651173d88ca4f7385c06221445d527"
+}

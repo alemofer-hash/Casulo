@@ -1,0 +1,6 @@
+{
+  "capability_denied": "T denied critical decision: capability_not_granted",
+  "hard_unknown": "T denied critical decision: hard_requirement_not_pass",
+  "publish_unapproved": "T denied critical decision: publish_human_approval_required",
+  "unconfirmed": "T denied critical decision: human_confirmation_required"
+}

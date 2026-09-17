@@ -1,0 +1,85 @@
+{
+  "active_raw": {
+    "command": [
+      "powercfg",
+      "/getactivescheme"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "GUID do Esquema de Energia: 381b4222-f694-41f0-9685-ff5bb260df2e  (Equilibrado)"
+  },
+  "captured_at_utc": "2026-08-10T01:48:43.083089+00:00",
+  "change_command": null,
+  "changed": false,
+  "chosen": {
+    "guid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+    "name": "Equilibrado"
+  },
+  "frozen_for_future_campaign": true,
+  "oem_mode": "NOT_EXPOSED_BY_READ_ONLY_WINDOWS_INTERFACE",
+  "oem_system": {
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "Get-CimInstance Win32_ComputerSystem | Select-Object Manufacturer,Model | ConvertTo-Json -Compress"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"Manufacturer\":\"LENOVO\",\"Model\":\"82VY\"}"
+  },
+  "previous": {
+    "guid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+    "name": "Equilibrado"
+  },
+  "processor_settings": {
+    "PERFBOOSTMODE": {
+      "command": [
+        "powercfg",
+        "/qh",
+        "SCHEME_CURRENT",
+        "SUB_PROCESSOR",
+        "PERFBOOSTMODE"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "GUID do Esquema de Energia: 381b4222-f694-41f0-9685-ff5bb260df2e  (Equilibrado)\n  Alias GUID: SCHEME_BALANCED\n  GUID de Subgrupos: 54533251-82be-4824-96c1-47b60b740d00  (Gerenciamento de energia do processador)\n    Alias GUID: SUB_PROCESSOR\n    GUID de Configuração de Energia: be337238-0d82-4146-a960-4f3749d470c7  (Modo de aumento de desempenho de processador)\n      Alias GUID: PERFBOOSTMODE\n      Índice de Configurações Possíveis: 000\n      Nome Amigável de Configuração Possível: Desabilitado\n      Índice de Configurações Possíveis: 001\n      Nome Amigável de Configuração Possível: Habilitado\n      Índice de Configurações Possíveis: 002\n      Nome Amigável de Configuração Possível: Agressivo\n      Índice de Configurações Possíveis: 003\n      Nome Amigável de Configuração Possível: Habilitado para Eficiência\n      Índice de Configurações Possíveis: 004\n      Nome Amigável de Configuração Possível: Eficiência Agressiva\n      Índice de Configurações Possíveis: 005\n      Nome Amigável de Configuração Possível: Agressivo em Garantida\n      Índice de Configurações Possíveis: 006\n      Nome Amigável de Configuração Possível: Agressivo e Eficiente em Garantida\n    Índice de Configurações de Correntes Alternadas Atuais: 0x00000002\n    Índice de Configurações de Correntes Contínuas Atuais: 0x00000002"
+    },
+    "PROCTHROTTLEMAX": {
+      "command": [
+        "powercfg",
+        "/qh",
+        "SCHEME_CURRENT",
+        "SUB_PROCESSOR",
+        "PROCTHROTTLEMAX"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "GUID do Esquema de Energia: 381b4222-f694-41f0-9685-ff5bb260df2e  (Equilibrado)\n  Alias GUID: SCHEME_BALANCED\n  GUID de Subgrupos: 54533251-82be-4824-96c1-47b60b740d00  (Gerenciamento de energia do processador)\n    Alias GUID: SUB_PROCESSOR\n    GUID de Configuração de Energia: bc5038f7-23e0-4960-96da-33abaf5935ec  (Estado de desempenho máximo)\n      Alias GUID: PROCTHROTTLEMAX\n      Configuração Mínima Possível: 0x00000000\n      Configuração Máxima Possível: 0x00000064\n      Incremento de Configurações Possíveis: 0x00000001\n      Unidades de Configurações Possíveis: %\n    Índice de Configurações de Correntes Alternadas Atuais: 0x00000064\n    Índice de Configurações de Correntes Contínuas Atuais: 0x00000064"
+    },
+    "PROCTHROTTLEMIN": {
+      "command": [
+        "powercfg",
+        "/qh",
+        "SCHEME_CURRENT",
+        "SUB_PROCESSOR",
+        "PROCTHROTTLEMIN"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "GUID do Esquema de Energia: 381b4222-f694-41f0-9685-ff5bb260df2e  (Equilibrado)\n  Alias GUID: SCHEME_BALANCED\n  GUID de Subgrupos: 54533251-82be-4824-96c1-47b60b740d00  (Gerenciamento de energia do processador)\n    Alias GUID: SUB_PROCESSOR\n    GUID de Configuração de Energia: 893dee8e-2bef-41e0-89c6-b55d0929964c  (Estado de desempenho mínimo)\n      Alias GUID: PROCTHROTTLEMIN\n      Configuração Mínima Possível: 0x00000000\n      Configuração Máxima Possível: 0x00000064\n      Incremento de Configurações Possíveis: 0x00000001\n      Unidades de Configurações Possíveis: %\n    Índice de Configurações de Correntes Alternadas Atuais: 0x00000005\n    Índice de Configurações de Correntes Contínuas Atuais: 0x00000005"
+    },
+    "SYSCOOLPOL": {
+      "command": [
+        "powercfg",
+        "/qh",
+        "SCHEME_CURRENT",
+        "SUB_PROCESSOR",
+        "SYSCOOLPOL"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "GUID do Esquema de Energia: 381b4222-f694-41f0-9685-ff5bb260df2e  (Equilibrado)\n  Alias GUID: SCHEME_BALANCED\n  GUID de Subgrupos: 54533251-82be-4824-96c1-47b60b740d00  (Gerenciamento de energia do processador)\n    Alias GUID: SUB_PROCESSOR\n    GUID de Configuração de Energia: 94d3a615-a899-4ac5-ae2b-e4d8f634367f  (Política de resfriamento do sistema)\n      Alias GUID: SYSCOOLPOL\n      Índice de Configurações Possíveis: 000\n      Nome Amigável de Configuração Possível: Passivo\n      Índice de Configurações Possíveis: 001\n      Nome Amigável de Configuração Possível: Ativo\n    Índice de Configurações de Correntes Alternadas Atuais: 0x00000001\n    Índice de Configurações de Correntes Contínuas Atuais: 0x00000000"
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "claims": {
+    "authorized": [
+      "Native parsed GGUF v3 metadata from a content-addressed projection",
+      "Native consumed authentic F32, Q4_K and Q6_K bytes from the adopted model",
+      "corrected Q4_K and Q6_K arithmetic probes passed three read-only QEMU boots"
+    ],
+    "not_authorized": [
+      "full Qwen model mapped by Casulo Native",
+      "model-derived token emitted by Casulo Native",
+      "native neural conversation",
+      "performance, energy or superiority claim"
+    ]
+  },
+  "classification": "MODEL_INVENTORY_NOT_FULL_NATIVE_INFERENCE",
+  "current_native_envelope": {
+    "full_model_fits_current_guest_memory": false,
+    "full_model_fits_current_kernel_heap": false,
+    "kernel_heap_bytes": 2097152,
+    "qemu_guest_memory_bytes": 268435456
+  },
+  "largest_tensors": [
+    {
+      "absolute_offset": 5966592,
+      "dimensions": [
+        2560,
+        151936
+      ],
+      "name": "token_embd.weight",
+      "payload_bytes": 319065600,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 340464896,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.0.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 404353280,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.1.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 468241664,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.2.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 532130048,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.3.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 709602560,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.6.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 887075072,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.9.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 1064547584,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.12.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 1242020096,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.15.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 1419492608,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.18.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 1596965120,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.21.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    },
+    {
+      "absolute_offset": 1774437632,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "name": "blk.24.ffn_down.weight",
+      "payload_bytes": 20428800,
+      "type": "Q6_K"
+    }
+  ],
+  "np3_evidence": {
+    "boots": 3,
+    "claim": "authentic F32/Q4_K/Q6_K samples consumed in Native; no full inference or token",
+    "first_model_derived_token": false,
+    "full_model_mapped": false,
+    "image_sha256": "9468e523313c34df183d022eb7536104b09fbba5d39ee745f5373a08f7ab778d",
+    "passed": true,
+    "probe_manifest_sha256": "a54dea2c1c652f7b98f497d427094c41d857f0193249dd2bf98b7bccb22d6246",
+    "state": "NATIVE_ALL_MODEL_WEIGHT_FORMATS_VALIDATED"
+  },
+  "qwen3_config": {
+    "attention_head_count": 32,
+    "attention_head_count_kv": 8,
+    "block_count": 36,
+    "context_length": 40960,
+    "embedding_length": 2560,
+    "feed_forward_length": 9728,
+    "rms_epsilon": 9.999999974752427e-07,
+    "rope_frequency_base": 1000000.0
+  },
+  "remaining_native_decoder_surfaces": [
+    "read-only full-model mapping without duplicating the owner weights",
+    "tokenizer and Qwen chat-template boundary",
+    "Q6_K embedding row lookup",
+    "RMSNorm and quantized matrix-vector kernels",
+    "Q/K normalization, RoPE, grouped-query attention and KV cache",
+    "SwiGLU feed-forward path across 36 transformer blocks",
+    "output projection, sampling and token streaming",
+    "bounded allocator, cancellation, watchdog and capability receipts"
+  ],
+  "schema": "casulo-native-qwen-inventory/0.1",
+  "source_model": {
+    "accounted_tensor_payload_bytes": 2491323904,
+    "alignment_or_trailing_bytes": 0,
+    "architecture": "qwen3",
+    "bytes": 2497280256,
+    "data_offset": 5956352,
+    "file_name": "Qwen3-4B-Q4_K_M.gguf",
+    "gguf_version": 3,
+    "license": "Apache-2.0",
+    "metadata_count": 28,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "tensor_count": 398,
+    "tensor_region_bytes": 2491323904
+  },
+  "tensor_formats": {
+    "F32": {
+      "payload_bytes": 784384,
+      "tensor_count": 145
+    },
+    "Q4_K": {
+      "payload_bytes": 1765048320,
+      "tensor_count": 216
+    },
+    "Q6_K": {
+      "payload_bytes": 725491200,
+      "tensor_count": 37
+    }
+  }
+}

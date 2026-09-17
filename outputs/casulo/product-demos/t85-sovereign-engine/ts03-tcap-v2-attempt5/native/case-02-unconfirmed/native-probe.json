@@ -1,0 +1,173 @@
+{
+  "bundle_sha256": "67d622bb1214fe370c845051e67294ea6bd232e62ea4d0c5bd83e0eee71b0ca5",
+  "manifest": {
+    "entry": {
+      "function": "decide",
+      "module": "owner.publish"
+    },
+    "schema": "casulo.tcap/2.0",
+    "sections": {
+      "capabilities": {
+        "file": "capabilities.json",
+        "sha256": "6064b8662c9d33dc77e0517902b779c37d93fba4093f9ec6cab014f113c518ab"
+      },
+      "effects": {
+        "file": "effects.json",
+        "sha256": "a6c47ac8d038e48e3bb66ee43f0de74f7eab01614abfd519f0dcc914311c7024"
+      },
+      "foreign_boundaries": {
+        "file": "foreign-boundaries.json",
+        "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+      },
+      "functional_code": {
+        "file": "code.json",
+        "sha256": "4ca85b4c96d0d66efdc9923ce52452acf448233635ff8ddb15d0290c6d7f9352"
+      },
+      "header": {
+        "file": "header.json",
+        "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+      },
+      "module_graph": {
+        "file": "module-graph.json",
+        "sha256": "348ff7efab7cf58638bf3375cc43d780308944da6b440dfdfd6bd8ae07f61191"
+      },
+      "provenance": {
+        "file": "provenance.json",
+        "sha256": "c152715281d5e3fc9c8be42d807d98d6d9fc1c76618973023c3b915a11743ed4"
+      },
+      "readonly_data": {
+        "file": "readonly-data.json",
+        "sha256": "68be4d5012cc1e761f386d72fbec74a40ae65e1ff0ddf4f710a99b95884155ea"
+      },
+      "resource_budgets": {
+        "file": "resource-budgets.json",
+        "sha256": "740b39bffdf77504c45e82c2e9f55c7e924bf06fb173654e4d87516bd94f2bf9"
+      },
+      "schemas": {
+        "file": "schemas.json",
+        "sha256": "ddd519a5a030af65e9ccb04ea0328a55cb19446b4c69bd42b234fce3c1184fa5"
+      },
+      "signature_class": {
+        "file": "signature-class.json",
+        "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+      },
+      "source_map": {
+        "file": "source-map.json",
+        "sha256": "b64dc6e89ca1b2252b4bf07b1cb7cb5c312e6c8c043419e36eeeb1660dd79712"
+      },
+      "tests": {
+        "file": "tests.json",
+        "sha256": "d735dd6980bfb99451875b32c6b28aa0798e85a937a1bf86c71c0881bcfd6ede"
+      },
+      "typed_ir": {
+        "file": "typed-ir.json",
+        "sha256": "40fd6916ce0d1ad88f578a5367257dbfbcec8523d81ac9eafd713bd673c5c1f6"
+      }
+    },
+    "sources": [
+      {
+        "file": "sources/owner.publish.t",
+        "module": "owner.publish",
+        "sha256": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3"
+      }
+    ],
+    "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+  },
+  "request": {
+    "function": "decide",
+    "grants": [
+      "manifest"
+    ],
+    "payload": {
+      "cancelled": false,
+      "confirmed": false,
+      "hard_statuses": [
+        "PASS"
+      ]
+    },
+    "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "scope_id": "native-conformance:unconfirmed",
+    "surface_id": "publish_commit"
+  },
+  "schema": "casulo.native-t-v2-probe/1.0",
+  "sections": {
+    "capabilities": {
+      "content_utf8": "{\n  \"modules\": {\n    \"owner.publish\": [\n      \"manifest\"\n    ]\n  }\n}\n",
+      "file": "capabilities.json",
+      "sha256": "6064b8662c9d33dc77e0517902b779c37d93fba4093f9ec6cab014f113c518ab"
+    },
+    "effects": {
+      "content_utf8": "{\n  \"modules\": {\n    \"owner.publish\": {\n      \"decide\": [\n        \"manifest\"\n      ]\n    }\n  }\n}\n",
+      "file": "effects.json",
+      "sha256": "a6c47ac8d038e48e3bb66ee43f0de74f7eab01614abfd519f0dcc914311c7024"
+    },
+    "foreign_boundaries": {
+      "content_utf8": "{\n  \"items\": []\n}\n",
+      "file": "foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    "functional_code": {
+      "content_utf8": "{\n  \"encoding\": \"structured-opcodes\",\n  \"entry\": {\n    \"function\": \"decide\",\n    \"module\": \"owner.publish\"\n  },\n  \"modules\": [\n    {\n      \"functions\": [\n        {\n          \"code\": [\n            {\n              \"op\": \"cancel_if\",\n              \"value\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"cancelled\"\n                ],\n                \"root\": \"input\"\n              }\n            },\n            {\n              \"condition\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"confirmed\"\n                ],\n                \"root\": \"input\"\n              },\n              \"error\": \"intent_unconfirmed\",\n              \"op\": \"require\"\n            },\n            {\n              \"body\": [\n                {\n                  \"condition\": {\n                    \"left\": {\n                      \"name\": \"status\",\n                      \"op\": \"name\"\n                    },\n                    \"op\": \"eq\",\n                    \"right\": {\n                      \"op\": \"const\",\n                      \"value\": \"PASS\"\n                    }\n                  },\n                  \"error\": \"hard_requirement_not_pass\",\n                  \"op\": \"require\"\n                }\n              ],\n              \"iterable\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"hard_statuses\"\n                ],\n                \"root\": \"input\"\n              },\n              \"limit\": 64,\n              \"name\": \"status\",\n              \"op\": \"for\"\n            },\n            {\n              \"name\": \"attempts\",\n              \"op\": \"set_state\",\n              \"value\": {\n                \"args\": [\n                  {\n                    \"op\": \"path\",\n                    \"path\": [\n                      \"attempts\"\n                    ],\n                    \"root\": \"state\"\n                  },\n                  {\n                    \"op\": \"const\",\n                    \"value\": 1\n                  }\n                ],\n                \"name\": \"add\",\n                \"op\": \"call\"\n              }\n            },\n            {\n              \"limit\": 64,\n              \"name\": \"audit\",\n              \"op\": \"spawn_job\",\n              \"payload\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"hard_statuses\"\n                ],\n                \"root\": \"input\"\n              }\n            },\n            {\n              \"name\": \"audit\",\n              \"op\": \"join_job\"\n            },\n            {\n              \"effect\": \"manifest\",\n              \"op\": \"request_effect\"\n            },\n            {\n              \"condition\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"confirmed\"\n                ],\n                \"root\": \"input\"\n              },\n              \"else\": [\n                {\n                  \"op\": \"return_error\",\n                  \"value\": {\n                    \"op\": \"const\",\n                    \"value\": \"BLOCKED\"\n                  }\n                }\n              ],\n              \"op\": \"if\",\n              \"then\": [\n                {\n                  \"op\": \"return_ok\",\n                  \"value\": {\n                    \"op\": \"const\",\n                    \"value\": \"PUBLISH\"\n                  }\n                }\n              ]\n            }\n          ],\n          \"effects\": [\n            \"manifest\"\n          ],\n          \"name\": \"decide\",\n          \"parameter\": {\n            \"name\": \"input\",\n            \"type\": {\n              \"arguments\": [],\n              \"bound\": null,\n              \"name\": \"PublishInput\"\n            }\n          },\n          \"return_type\": {\n            \"arguments\": [\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              },\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            ],\n            \"bound\": null,\n            \"name\": \"Result\"\n          }\n        }\n      ],\n      \"name\": \"owner.publish\"\n    }\n  ],\n  \"schema\": \"casulo.t-bytecode/2.0\"\n}\n",
+      "file": "code.json",
+      "sha256": "4ca85b4c96d0d66efdc9923ce52452acf448233635ff8ddb15d0290c6d7f9352"
+    },
+    "header": {
+      "content_utf8": "{\n  \"schema\": \"casulo.tcap/2.0\",\n  \"target\": \"portable-t-vm\",\n  \"verified_before_execution\": true\n}\n",
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "content_utf8": "{\n  \"entry\": {\n    \"function\": \"decide\",\n    \"module\": \"owner.publish\"\n  },\n  \"modules\": [\n    {\n      \"imports\": [],\n      \"name\": \"owner.publish\"\n    }\n  ],\n  \"schema\": \"casulo.t-module-graph/2.0\"\n}\n",
+      "file": "module-graph.json",
+      "sha256": "348ff7efab7cf58638bf3375cc43d780308944da6b440dfdfd6bd8ae07f61191"
+    },
+    "provenance": {
+      "content_utf8": "{\n  \"builder\": \"casulo-python-tooling\",\n  \"compiler\": \"T/2.0\",\n  \"sources\": [\n    {\n      \"file\": \"sources/owner.publish.t\",\n      \"module\": \"owner.publish\",\n      \"sha256\": \"21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3\"\n    }\n  ]\n}\n",
+      "file": "provenance.json",
+      "sha256": "c152715281d5e3fc9c8be42d807d98d6d9fc1c76618973023c3b915a11743ed4"
+    },
+    "readonly_data": {
+      "content_utf8": "{\n  \"states\": {\n    \"owner.publish\": [\n      {\n        \"initial\": 0,\n        \"name\": \"attempts\",\n        \"type\": {\n          \"arguments\": [],\n          \"bound\": null,\n          \"name\": \"Int\"\n        }\n      }\n    ]\n  }\n}\n",
+      "file": "readonly-data.json",
+      "sha256": "68be4d5012cc1e761f386d72fbec74a40ae65e1ff0ddf4f710a99b95884155ea"
+    },
+    "resource_budgets": {
+      "content_utf8": "{\n  \"modules\": {\n    \"owner.publish\": {\n      \"deadline_ms\": 5000,\n      \"steps\": 4096\n    }\n  }\n}\n",
+      "file": "resource-budgets.json",
+      "sha256": "740b39bffdf77504c45e82c2e9f55c7e924bf06fb173654e4d87516bd94f2bf9"
+    },
+    "schemas": {
+      "content_utf8": "{\n  \"modules\": {\n    \"owner.publish\": {\n      \"enums\": [\n        {\n          \"cases\": [\n            \"PUBLISH\",\n            \"BLOCKED\"\n          ],\n          \"name\": \"PublishDecision\"\n        }\n      ],\n      \"records\": [\n        {\n          \"members\": [\n            {\n              \"name\": \"confirmed\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            },\n            {\n              \"name\": \"hard_statuses\",\n              \"type\": {\n                \"arguments\": [\n                  {\n                    \"arguments\": [],\n                    \"bound\": null,\n                    \"name\": \"Text\"\n                  }\n                ],\n                \"bound\": 64,\n                \"name\": \"List\"\n              }\n            },\n            {\n              \"name\": \"cancelled\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            }\n          ],\n          \"name\": \"PublishInput\"\n        }\n      ],\n      \"version\": 1\n    }\n  }\n}\n",
+      "file": "schemas.json",
+      "sha256": "ddd519a5a030af65e9ccb04ea0328a55cb19446b4c69bd42b234fce3c1184fa5"
+    },
+    "signature_class": {
+      "content_utf8": "{\n  \"value\": \"DEVELOPMENT_NOT_COMMERCIAL\"\n}\n",
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "content_utf8": "{\n  \"sources\": [\n    {\n      \"file\": \"sources/owner.publish.t\",\n      \"module\": \"owner.publish\",\n      \"sha256\": \"21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3\"\n    }\n  ]\n}\n",
+      "file": "source-map.json",
+      "sha256": "b64dc6e89ca1b2252b4bf07b1cb7cb5c312e6c8c043419e36eeeb1660dd79712"
+    },
+    "tests": {
+      "content_utf8": "{\n  \"properties\": [\n    \"hard_unknown_never_publishes\",\n    \"capability_required\"\n  ]\n}\n",
+      "file": "tests.json",
+      "sha256": "d735dd6980bfb99451875b32c6b28aa0798e85a937a1bf86c71c0881bcfd6ede"
+    },
+    "typed_ir": {
+      "content_utf8": "{\n  \"modules\": [\n    {\n      \"budgets\": {\n        \"deadline_ms\": 5000,\n        \"steps\": 4096\n      },\n      \"capabilities\": [\n        \"manifest\"\n      ],\n      \"enums\": [\n        {\n          \"cases\": [\n            \"PUBLISH\",\n            \"BLOCKED\"\n          ],\n          \"name\": \"PublishDecision\"\n        }\n      ],\n      \"functions\": [\n        {\n          \"code\": [\n            {\n              \"op\": \"cancel_if\",\n              \"value\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"cancelled\"\n                ],\n                \"root\": \"input\"\n              }\n            },\n            {\n              \"condition\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"confirmed\"\n                ],\n                \"root\": \"input\"\n              },\n              \"error\": \"intent_unconfirmed\",\n              \"op\": \"require\"\n            },\n            {\n              \"body\": [\n                {\n                  \"condition\": {\n                    \"left\": {\n                      \"name\": \"status\",\n                      \"op\": \"name\"\n                    },\n                    \"op\": \"eq\",\n                    \"right\": {\n                      \"op\": \"const\",\n                      \"value\": \"PASS\"\n                    }\n                  },\n                  \"error\": \"hard_requirement_not_pass\",\n                  \"op\": \"require\"\n                }\n              ],\n              \"iterable\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"hard_statuses\"\n                ],\n                \"root\": \"input\"\n              },\n              \"limit\": 64,\n              \"name\": \"status\",\n              \"op\": \"for\"\n            },\n            {\n              \"name\": \"attempts\",\n              \"op\": \"set_state\",\n              \"value\": {\n                \"args\": [\n                  {\n                    \"op\": \"path\",\n                    \"path\": [\n                      \"attempts\"\n                    ],\n                    \"root\": \"state\"\n                  },\n                  {\n                    \"op\": \"const\",\n                    \"value\": 1\n                  }\n                ],\n                \"name\": \"add\",\n                \"op\": \"call\"\n              }\n            },\n            {\n              \"limit\": 64,\n              \"name\": \"audit\",\n              \"op\": \"spawn_job\",\n              \"payload\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"hard_statuses\"\n                ],\n                \"root\": \"input\"\n              }\n            },\n            {\n              \"name\": \"audit\",\n              \"op\": \"join_job\"\n            },\n            {\n              \"effect\": \"manifest\",\n              \"op\": \"request_effect\"\n            },\n            {\n              \"condition\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"confirmed\"\n                ],\n                \"root\": \"input\"\n              },\n              \"else\": [\n                {\n                  \"op\": \"return_error\",\n                  \"value\": {\n                    \"op\": \"const\",\n                    \"value\": \"BLOCKED\"\n                  }\n                }\n              ],\n              \"op\": \"if\",\n              \"then\": [\n                {\n                  \"op\": \"return_ok\",\n                  \"value\": {\n                    \"op\": \"const\",\n                    \"value\": \"PUBLISH\"\n                  }\n                }\n              ]\n            }\n          ],\n          \"effects\": [\n            \"manifest\"\n          ],\n          \"name\": \"decide\",\n          \"parameter\": {\n            \"name\": \"input\",\n            \"type\": {\n              \"arguments\": [],\n              \"bound\": null,\n              \"name\": \"PublishInput\"\n            }\n          },\n          \"return_type\": {\n            \"arguments\": [\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              },\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            ],\n            \"bound\": null,\n            \"name\": \"Result\"\n          }\n        }\n      ],\n      \"imports\": [],\n      \"module\": \"owner.publish\",\n      \"records\": [\n        {\n          \"members\": [\n            {\n              \"name\": \"confirmed\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            },\n            {\n              \"name\": \"hard_statuses\",\n              \"type\": {\n                \"arguments\": [\n                  {\n                    \"arguments\": [],\n                    \"bound\": null,\n                    \"name\": \"Text\"\n                  }\n                ],\n                \"bound\": 64,\n                \"name\": \"List\"\n              }\n            },\n            {\n              \"name\": \"cancelled\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            }\n          ],\n          \"name\": \"PublishInput\"\n        }\n      ],\n      \"schema\": \"casulo.t-ir/2.0\",\n      \"schema_version\": 1,\n      \"states\": [\n        {\n          \"initial\": 0,\n          \"name\": \"attempts\",\n          \"type\": {\n            \"arguments\": [],\n            \"bound\": null,\n            \"name\": \"Int\"\n          }\n        }\n      ]\n    }\n  ],\n  \"schema\": \"casulo.t-ir-bundle/2.0\"\n}\n",
+      "file": "typed-ir.json",
+      "sha256": "40fd6916ce0d1ad88f578a5367257dbfbcec8523d81ac9eafd713bd673c5c1f6"
+    }
+  },
+  "sources": [
+    {
+      "content_utf8": "language T/2.0\nmodule owner.publish\nbudget steps 4096\nbudget deadline_ms 5000\nschema version 1\ncapability manifest\n\nrecord PublishInput\n  member confirmed: Bool\n  member hard_statuses: List<Text,64>\n  member cancelled: Bool\n\nenum PublishDecision\n  case PUBLISH\n  case BLOCKED\n\nstate attempts: Int = 0\n\nfn decide(input: PublishInput) -> Result<Text,Text>\n  effects [manifest]\n  cancel if input.cancelled\n  requires input.confirmed else \"intent_unconfirmed\"\n  for status in input.hard_statuses limit 64\n    requires status == \"PASS\" else \"hard_requirement_not_pass\"\n  set state.attempts = add(state.attempts, 1)\n  spawn job audit using input.hard_statuses limit 64\n  join job audit\n  request effect manifest\n  if input.confirmed\n    return ok \"PUBLISH\"\n  else\n    return error \"BLOCKED\"\n\n",
+      "file": "sources/owner.publish.t",
+      "module": "owner.publish",
+      "sha256": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3"
+    }
+  ]
+}

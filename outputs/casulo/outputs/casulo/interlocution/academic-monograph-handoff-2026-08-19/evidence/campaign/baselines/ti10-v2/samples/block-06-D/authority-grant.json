@@ -1,0 +1,51 @@
+{
+  "campaign_id": "2026-08-18-interlocution-live-instance-attempt1",
+  "config_from_t": {
+    "absolute_tolerance": "1e-09",
+    "bundle_sha256": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+    "dataset_sha256": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+    "dtype": "float64",
+    "epochs": "400",
+    "initialization_state_policy": "reset_each_case",
+    "input_features": "8",
+    "learning_rate": "0.018",
+    "loss": "mse",
+    "optimizer": "sgd",
+    "optimizer_state_policy": "reset_each_case",
+    "records": "1024",
+    "require_exact_counters": "true",
+    "require_no_nan_inf": "true",
+    "stopping_policy": "fixed_epochs",
+    "working_set_count": "1024",
+    "working_set_policy": "all_records",
+    "working_set_start": "0"
+  },
+  "foreign_affirmative_fallback": false,
+  "generated_at_utc": "2026-08-19T03:09:35.137270+00:00",
+  "grant_sha256": "831c1d0d336ffd55008dafd21007d1dc57876014457cfc634305edb35ea9b2cb",
+  "plan_sha256": "18bfc5d0d80fe52c347744ba7ca330653e7ba064ecba2f406efe63f05e8ded4e",
+  "receipt_chain": [
+    "a04109bf573c248e3e88371300716a85217d197042ee7b20030f8a8c1357f15b",
+    "a053e38a060d60564f9de332ee1eb376102886287348dcdd4d6d9f9f9315da4d",
+    "ece4112ba7e67462d48337d4899e158afd9bf037aac5e4a7fcee5e8d83550c2e",
+    "84ea4713e0e4e542b289d43c924b98dc9493bfa21c9e42eb6738d1876ccb29e0",
+    "c3f03e9f1bb2267ad3ea50233da7a82a496b401ed57684d8ab1b04f456546950",
+    "a8d6e25d2820219e6f2c7b59e386fde12f029df6a76d538f7a49a1e3741ef613",
+    "4d0caaf5d8ced7ebc5c7d8bdafd4ea3fbb7f0d45229fb698954f811161ba2f92",
+    "c11d66f63bb882d9a33a4252a9648151308aefd37bc6901172e5f50508e023d3",
+    "21842288a5385b90ec4276812d3bfe9029bee29a5e120371dcbd67d11d0e4c16"
+  ],
+  "schema": "casulo.interlocution-authority-grant/1.0",
+  "surfaces": [
+    "dataset_identity_integrity",
+    "initialization_bundle",
+    "numerical_precision",
+    "loss_function",
+    "update_rule",
+    "optimizer_state",
+    "working_set",
+    "stopping",
+    "equivalence_acceptance"
+  ],
+  "tcap_hash": "4c3a538736c68f0343e2050aa939ea3a55b3fd930ce4ffbe2c2341a1d0fd45d0"
+}

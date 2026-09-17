@@ -1,0 +1,12 @@
+{"byte_offset":27559499,"event":"campaign_formal_start","local":"2026-08-07T18:33:58.261496-03:00","monotonic_ns":5943509435200,"pid":8352,"utc":"2026-08-07T21:33:58.261496+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T18:33:58.352278-03:00","monotonic_ns":5943589332100,"pid":8352,"utc":"2026-08-07T21:33:58.352278+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T18:34:04.594393-03:00","monotonic_ns":5951711600800,"new_samples":24,"pid":8352,"utc":"2026-08-07T21:34:04.594393+00:00"}
+{"event":"idle_start","local":"2026-08-07T18:37:29.666902-03:00","monotonic_ns":6154903941800,"pid":18344,"seconds":60.0,"utc":"2026-08-07T21:37:29.666902+00:00"}
+{"event":"idle_end","local":"2026-08-07T18:38:29.669865-03:00","monotonic_ns":6214906961300,"pid":18344,"utc":"2026-08-07T21:38:29.669865+00:00"}
+{"K":38,"event":"window_start","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:40:04.513970-03:00","monotonic_ns":6309751010900,"pid":18344,"stage":"probe-eager-10s","utc":"2026-08-07T21:40:04.513970+00:00"}
+{"K":38,"event":"window_end","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:40:13.236759-03:00","monotonic_ns":6318473839600,"pid":18344,"stage":"probe-eager-10s","utc":"2026-08-07T21:40:13.236759+00:00"}
+{"K":88,"event":"window_start","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:41:50.152452-03:00","monotonic_ns":6415389502000,"pid":18344,"stage":"probe-eager-20s","utc":"2026-08-07T21:41:50.152452+00:00"}
+{"K":88,"event":"window_end","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:42:13.840130-03:00","monotonic_ns":6439077211800,"pid":18344,"stage":"probe-eager-20s","utc":"2026-08-07T21:42:13.840130+00:00"}
+{"K":39961,"event":"window_start","implementation":"t-general-ir-tcap/0.1","local":"2026-08-07T18:43:23.940183-03:00","monotonic_ns":6509177226600,"pid":18344,"stage":"qualification-t-general-ir-tcap/0.1","utc":"2026-08-07T21:43:23.940183+00:00"}
+{"K":39961,"event":"window_end","implementation":"t-general-ir-tcap/0.1","local":"2026-08-07T18:43:35.990641-03:00","monotonic_ns":6521227702600,"pid":18344,"stage":"qualification-t-general-ir-tcap/0.1","utc":"2026-08-07T21:43:35.990641+00:00"}
+{"event":"protocol_superseded","local":"2026-08-07T18:44:21.850293-03:00","monotonic_ns":6567087387600,"pid":23864,"reason":"TCAP one-training runtime extrapolation produced a 12-second qualification; dedicated TCAP runtime probe added before K freeze.","utc":"2026-08-07T21:44:21.850293+00:00"}

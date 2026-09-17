@@ -1,0 +1,13 @@
+{
+  "cancelled": false,
+  "confirmed": true,
+  "evidence_statuses": [
+    "PASS",
+    "PASS",
+    "PASS"
+  ],
+  "mass_balance_verified": true,
+  "project_match": true,
+  "residual_accepted": true,
+  "unit_validated": true
+}

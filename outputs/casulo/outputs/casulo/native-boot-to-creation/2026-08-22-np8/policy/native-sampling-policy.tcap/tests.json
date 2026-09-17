@@ -1,0 +1,7 @@
+{
+  "properties": [
+    "decoder_required",
+    "exact_logits_identity",
+    "late_publication_denied"
+  ]
+}

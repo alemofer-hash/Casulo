@@ -1,0 +1,9 @@
+{
+  "schema": "casulo-definitive-idle-controls-rejection/1.0",
+  "attempt": 1,
+  "accepted": false,
+  "completed_controls": ["A_HWINFO_ONLY"],
+  "reason": "matched-start reference selected from first in-window sample instead of the stable pre-window guard",
+  "workloads_executed": 0,
+  "correction": "resume A unchanged and use matched_start_guard.temperature_c as the reference for B and C"
+}

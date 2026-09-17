@@ -1,0 +1,41 @@
+{
+  "outside_scientific_samples": true,
+  "warmups": [
+    {
+      "elapsed_seconds": 0.0807834,
+      "implementation": "baseline",
+      "index": 1,
+      "output_sha256": "44c32c0bf4f665d42f890db37d9eef40d82f33c1379e1871917625787d164d4b"
+    },
+    {
+      "elapsed_seconds": 0.0803462,
+      "implementation": "baseline",
+      "index": 2,
+      "output_sha256": "44c32c0bf4f665d42f890db37d9eef40d82f33c1379e1871917625787d164d4b"
+    },
+    {
+      "elapsed_seconds": 0.0668049,
+      "implementation": "baseline",
+      "index": 3,
+      "output_sha256": "44c32c0bf4f665d42f890db37d9eef40d82f33c1379e1871917625787d164d4b"
+    },
+    {
+      "elapsed_seconds": 0.0815595,
+      "implementation": "candidate",
+      "index": 1,
+      "output_sha256": "44c32c0bf4f665d42f890db37d9eef40d82f33c1379e1871917625787d164d4b"
+    },
+    {
+      "elapsed_seconds": 0.1164765,
+      "implementation": "candidate",
+      "index": 2,
+      "output_sha256": "44c32c0bf4f665d42f890db37d9eef40d82f33c1379e1871917625787d164d4b"
+    },
+    {
+      "elapsed_seconds": 0.0694685,
+      "implementation": "candidate",
+      "index": 3,
+      "output_sha256": "44c32c0bf4f665d42f890db37d9eef40d82f33c1379e1871917625787d164d4b"
+    }
+  ]
+}

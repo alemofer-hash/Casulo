@@ -1,0 +1,370 @@
+{
+  "checks": {
+    "baseline_doctor": true,
+    "catalog_resumed": true,
+    "cloud_locked": true,
+    "external_ai_api_absent": true,
+    "fake_engine_absent": true,
+    "neural_stochastic_route": true,
+    "public_private_absent": true,
+    "real_creation_materialized": true,
+    "real_t_forge_and_tcap": true,
+    "scientific_benchmark_absent": true,
+    "single_model_runtime_at_a_time": true,
+    "strict_hot_subset": true,
+    "three_or_more_universes": true,
+    "transition_receipts": true,
+    "usb_prohibited": true,
+    "visual_from_receipts": true,
+    "vm_boot_before": true,
+    "vm_reboot_after": true
+  },
+  "cloud": "RELEASE_LOCKED",
+  "creation_archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\creation\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+  "creation_gate": "FIRST_OPEN_ENDED_AGENT_CREATED",
+  "gate": "SM8_OWNER_VERTICAL_SLICE_PASS",
+  "public_audit": {
+    "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\editions\\casulo-public",
+    "content_tree_sha256": "a637fedd674f054b31a54d59d14fe103f110e4b9e0c339aeb475998d3f91db2b",
+    "files_scanned": 14,
+    "forbidden_findings": [],
+    "private_components_absent": true,
+    "schema": "casulo-public-audit/1.0"
+  },
+  "reboot": {
+    "catalog_sha256": "0a9b172255f51332b763aa006ddd059547007aa7e7e6b4ad498f3c893d60bcfd",
+    "false_hot_persistence": false,
+    "hot_after_reboot": [],
+    "restored_session_hashes": [
+      "7fd4cf746ed6ea6b809e0b2528aaa3c1736ee879bee393353210e2dd2588f2c8"
+    ],
+    "sessions": 1
+  },
+  "route": [
+    "intencao",
+    "sinais",
+    "diagnostico"
+  ],
+  "route_trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "f9aa4f98b0bb713c0d64654738518cd48827f063174f3908fd3d795a9c39fbe1",
+    "ended_monotonic_ns": 15607472110300,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "semantic-route-live-1",
+    "output_sha256": "467794be66fea51f8204cd7bcd386ab5555fc6d2eeb97b8b111c7bdd0d50bd1b",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 15585019511300,
+    "stream_events": 137
+  },
+  "schema": "casulo.semantic-multiverse-owner-e2e/1.0",
+  "session": {
+    "cloud": "RELEASE_LOCKED",
+    "confirmation_source": "AUTOMATED_ACCEPTANCE_SCENARIO",
+    "confirmed_delta_hash": "b3cbd41119facba1d24091ca9ba5d4dd8d42ac81e6ee83f486ced26a5928e82b",
+    "final_state": {
+      "constraints": [
+        "sem API externa",
+        "capabilities deny-by-default",
+        "efeitos reais proibidos na simulação"
+      ],
+      "intent": "Quero um agente local para planejar o restauro conservativo de fotografias analógicas escaneadas. O usuário descreve riscos, fungos, rasgos, manchas e intenção estética; o agente deve propor uma sequência reversível, preservar o original, registrar proveniência e recusar qualquer sobrescrita destrutiva. Ainda estou explorando: diferencie hipótese de decisão confirmada.",
+      "provenance": [
+        "semantic-route-live-1",
+        "467794be66fea51f8204cd7bcd386ab5555fc6d2eeb97b8b111c7bdd0d50bd1b",
+        "d0f3d67c0e63b7a10d1ce6b4600d54062aef28423e26c840b4cf5f8c299eb555",
+        "e52c6f19a4c5c04c8681e8087a0d5bf5294c3c15d64c33b6b7c1dfbcaf8e969f"
+      ],
+      "uncertainty": "explicit",
+      "units": "SI"
+    },
+    "hot_at_completion": [
+      "diagnostico"
+    ],
+    "idea_sha256": "23db5e2de4f2d5267ac3407f06cfc032bc4df9ae59df9a255b0991f3a400af59",
+    "lifecycle_receipts": [
+      {
+        "after": "WARMING",
+        "before": "FROZEN",
+        "committed": false,
+        "event_id": "lifecycle:1",
+        "memory_bytes": 0,
+        "monotonic_ns": 15944543341900,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "WARM",
+        "before": "WARMING",
+        "committed": true,
+        "event_id": "lifecycle:2",
+        "memory_bytes": 0,
+        "monotonic_ns": 15944543356100,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "ACTIVATING",
+        "before": "WARM",
+        "committed": false,
+        "event_id": "lifecycle:3",
+        "memory_bytes": 0,
+        "monotonic_ns": 15944543367400,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "HOT",
+        "before": "ACTIVATING",
+        "committed": true,
+        "event_id": "lifecycle:4",
+        "memory_bytes": 12582912,
+        "monotonic_ns": 15944543373400,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "WARMING",
+        "before": "FROZEN",
+        "committed": false,
+        "event_id": "lifecycle:5",
+        "memory_bytes": 12582912,
+        "monotonic_ns": 15944543424600,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      },
+      {
+        "after": "WARM",
+        "before": "WARMING",
+        "committed": true,
+        "event_id": "lifecycle:6",
+        "memory_bytes": 12582912,
+        "monotonic_ns": 15944543429700,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      },
+      {
+        "after": "ACTIVATING",
+        "before": "WARM",
+        "committed": false,
+        "event_id": "lifecycle:7",
+        "memory_bytes": 12582912,
+        "monotonic_ns": 15944543438300,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      },
+      {
+        "after": "HOT",
+        "before": "ACTIVATING",
+        "committed": true,
+        "event_id": "lifecycle:8",
+        "memory_bytes": 26214400,
+        "monotonic_ns": 15944543443100,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      },
+      {
+        "after": "WARMING",
+        "before": "FROZEN",
+        "committed": false,
+        "event_id": "lifecycle:9",
+        "memory_bytes": 26214400,
+        "monotonic_ns": 15944543558600,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "WARM",
+        "before": "WARMING",
+        "committed": true,
+        "event_id": "lifecycle:10",
+        "memory_bytes": 26214400,
+        "monotonic_ns": 15944543563800,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "ACTIVATING",
+        "before": "WARM",
+        "committed": false,
+        "event_id": "lifecycle:11",
+        "memory_bytes": 26214400,
+        "monotonic_ns": 15944543571200,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "HOT",
+        "before": "ACTIVATING",
+        "committed": true,
+        "event_id": "lifecycle:12",
+        "memory_bytes": 41943040,
+        "monotonic_ns": 15944543576300,
+        "reason": "generative-route",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "diagnostico"
+      },
+      {
+        "after": "QUIESCING",
+        "before": "HOT",
+        "committed": false,
+        "event_id": "lifecycle:13",
+        "memory_bytes": 29360128,
+        "monotonic_ns": 15944543677000,
+        "reason": "pressure",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "FROZEN",
+        "before": "QUIESCING",
+        "committed": true,
+        "event_id": "lifecycle:14",
+        "memory_bytes": 29360128,
+        "monotonic_ns": 15944543682100,
+        "reason": "pressure",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "intencao"
+      },
+      {
+        "after": "QUIESCING",
+        "before": "HOT",
+        "committed": false,
+        "event_id": "lifecycle:15",
+        "memory_bytes": 15728640,
+        "monotonic_ns": 15944543689500,
+        "reason": "pressure",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      },
+      {
+        "after": "FROZEN",
+        "before": "QUIESCING",
+        "committed": true,
+        "event_id": "lifecycle:16",
+        "memory_bytes": 15728640,
+        "monotonic_ns": 15944543693500,
+        "reason": "pressure",
+        "schema": "casulo.universe-lifecycle-receipt/1.0",
+        "universe_id": "sinais"
+      }
+    ],
+    "network": "DENIED",
+    "operation_id": "semantic-route-live-1",
+    "proposal": {
+      "rationale": "O universo 'intencao' é essencial para capturar a intenção estética do usuário em relação ao restauro. O universo 'sinais' permite identificar riscos, fungos, rasgos e manchas presentes nas fotografias analógicas. O universo 'diagnostico' fornece a capacidade de analisar e classificar os elementos visuais e materiais do objeto, garantindo uma avaliação precisa para o restauro conservativo.",
+      "raw_sha256": "467794be66fea51f8204cd7bcd386ab5555fc6d2eeb97b8b111c7bdd0d50bd1b",
+      "route": [
+        "intencao",
+        "sinais",
+        "diagnostico"
+      ],
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "f9aa4f98b0bb713c0d64654738518cd48827f063174f3908fd3d795a9c39fbe1",
+        "ended_monotonic_ns": 15607472110300,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "semantic-route-live-1",
+        "output_sha256": "467794be66fea51f8204cd7bcd386ab5555fc6d2eeb97b8b111c7bdd0d50bd1b",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 15585019511300,
+        "stream_events": 137
+      }
+    },
+    "qpu": "UNAVAILABLE_DENY",
+    "schema": "casulo.owner-semantic-multiverse-session/1.0",
+    "semantic_ir_sha256": "5d495f17342bdc1099271d7beabb198932ef7d9cb227d74025703afd610d3b27",
+    "semantic_tcap_deduplicated": false,
+    "semantic_tcap_sha256": "217ab7815e8c94faaf6094098e85dcb627e1a7899bad3b12228694a051863a82",
+    "strict_hot_subset": true,
+    "transition_receipts": [
+      {
+        "bytes_read": 1067,
+        "bytes_transferred": 644,
+        "capabilities_used": [
+          "model.infer"
+        ],
+        "committed": true,
+        "contract_version": "1.0",
+        "destination": "sinais",
+        "fallback_used": false,
+        "input_hash": "797d7667e2c24080ca4997b3e700c31fa1fce0260b4d864f06ae9bb8188e3646",
+        "latency_ns": 38500,
+        "omitted_fields": [
+          "route_rationale"
+        ],
+        "output_hash": "d0f3d67c0e63b7a10d1ce6b4600d54062aef28423e26c840b4cf5f8c299eb555",
+        "preserved_invariants": [
+          "intent",
+          "constraints",
+          "units",
+          "uncertainty",
+          "provenance"
+        ],
+        "provenance_root": "25eeb4547d262abf51f2d2100ee33ff0b924c9a2e5abd84dcb1c633535d8910d",
+        "schema": "casulo.semantic-transition-receipt/1.0",
+        "source": "intencao",
+        "transition_id": "intencao-sinais-v1",
+        "uncertainty": 0.1
+      },
+      {
+        "bytes_read": 711,
+        "bytes_transferred": 711,
+        "capabilities_used": [
+          "model.infer"
+        ],
+        "committed": true,
+        "contract_version": "1.0",
+        "destination": "diagnostico",
+        "fallback_used": false,
+        "input_hash": "e52c6f19a4c5c04c8681e8087a0d5bf5294c3c15d64c33b6b7c1dfbcaf8e969f",
+        "latency_ns": 26500,
+        "omitted_fields": [],
+        "output_hash": "e52c6f19a4c5c04c8681e8087a0d5bf5294c3c15d64c33b6b7c1dfbcaf8e969f",
+        "preserved_invariants": [
+          "intent",
+          "constraints",
+          "units",
+          "uncertainty",
+          "provenance"
+        ],
+        "provenance_root": "fce23e4d09473400ff0bcb5c7ad03682a34e496f1de1044451e1f8a59f3209b8",
+        "schema": "casulo.semantic-transition-receipt/1.0",
+        "source": "sinais",
+        "transition_id": "sinais-diagnostico-v1",
+        "uncertainty": 0.1
+      }
+    ],
+    "universes_installed": 6,
+    "universes_visited": [
+      "intencao",
+      "sinais",
+      "diagnostico"
+    ],
+    "usb": "PROHIBITED"
+  },
+  "usb": "PROHIBITED",
+  "visual": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\semantic-visual\\index.html",
+  "vm_serial_after_sha256": "9bcd62469cbd86a5fb3bbefbf23e8675c7891b4e34572ab8aff67efa8a2721b4",
+  "vm_serial_before_sha256": "247c13402796919a49f80df53f1726deabf2f8e2319911d90fef73e3e6e8014e"
+}

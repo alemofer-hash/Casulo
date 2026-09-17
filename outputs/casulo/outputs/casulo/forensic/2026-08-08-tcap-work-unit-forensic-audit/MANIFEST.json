@@ -1,0 +1,57 @@
+{
+  "campaign_id": "2026-08-08-tcap-work-unit-forensic-audit",
+  "files": [
+    {
+      "bytes": 790,
+      "path": "historical_comparison.json",
+      "sha256": "643283e5f0a0ea80f076dc2bb71dcb36ce28ba31693ea4ef4d9bad9514d0995d"
+    },
+    {
+      "bytes": 287,
+      "path": "k_linearity.json",
+      "sha256": "74cc45a3a5a83c948283d5b0f72e605d3207dd75a2f600d6d727f5eac48cd372"
+    },
+    {
+      "bytes": 599,
+      "path": "operation_accounting.json",
+      "sha256": "aef68b55b95cb4e38f6b13908d41d1ec6a3f291bcdcb05e9a743697d45b40b62"
+    },
+    {
+      "bytes": 31405,
+      "path": "original_evidence_inventory.json",
+      "sha256": "02d618d89e61169ea961b59ed5e2944351311f508bd445ce1fe4960ebd62aa0b"
+    },
+    {
+      "bytes": 126619,
+      "path": "pair_recomposition.json",
+      "sha256": "e5bbc8f6293e04f7c50b2c78c7825bd2fe5a56eb7e5a15f652dc4a2f4a4095e8"
+    },
+    {
+      "bytes": 242,
+      "path": "receipt_chain.json",
+      "sha256": "df3df8bd4f0e52f55b8f01f80a45c07446c9ebbce0c4a66ce4f3638ef087a943"
+    },
+    {
+      "bytes": 59591,
+      "path": "regressions.xml",
+      "sha256": "a30be159c25e2bc71e6fa0d21e825105700a061b3b1bc75870e882dda3a97edf"
+    },
+    {
+      "bytes": 896,
+      "path": "terminal_state.json",
+      "sha256": "4bb7032432370dbb80de758199265bc14c48271929f7e161b21683268a48b989"
+    },
+    {
+      "bytes": 9247,
+      "path": "timing_crosscheck.json",
+      "sha256": "fdf648d23eeb3214cdb17ea5d2cf94329ba5c8c8c713377ca589cc90cd12008e"
+    },
+    {
+      "bytes": 0,
+      "path": "work_receipts.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "schema": "casulo-forensic-manifest/1.0",
+  "terminal_state": "INVALIDATED_INCOMPLETE_WORK_UNIT"
+}

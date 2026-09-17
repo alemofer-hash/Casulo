@@ -1,0 +1,16 @@
+{
+  "modules": {
+    "owner.agent.data_validator_01.csv_parser": {
+      "deadline_ms": 3000,
+      "steps": 4196
+    },
+    "owner.agent.data_validator_01.diagnostic_core": {
+      "deadline_ms": 3000,
+      "steps": 2048
+    },
+    "owner.agent.data_validator_01.schema_engine": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    }
+  }
+}

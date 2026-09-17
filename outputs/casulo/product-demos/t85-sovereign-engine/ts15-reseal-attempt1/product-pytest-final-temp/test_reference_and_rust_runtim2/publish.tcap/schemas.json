@@ -1,0 +1,53 @@
+{
+  "modules": {
+    "owner.publish": {
+      "enums": [
+        {
+          "cases": [
+            "PUBLISH",
+            "BLOCKED"
+          ],
+          "name": "PublishDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "hard_statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 64,
+                "name": "List"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "PublishInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

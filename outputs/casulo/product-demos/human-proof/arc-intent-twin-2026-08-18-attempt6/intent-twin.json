@@ -1,0 +1,101 @@
+{
+  "canonical_sha256": "02f0c59ca1b09e1c786ef9c2b78b7ae5da5b39d18266869f44454cfe2f888d7b",
+  "confirmation_event_ids": [],
+  "creation_id": "creation:arc-neural-smoke",
+  "gaps": [],
+  "hypotheses": [
+    {
+      "choice_value": "explanation_before_action",
+      "confidence": 0.93,
+      "consequences": [
+        "INFERRED: O agente não realizará alterações reais sem a confirmação humana.",
+        "INFERRED: A comunicação dos conflitos é uma etapa obrigatória no processo de decisão."
+      ],
+      "decision_dimension": "conflict_resolution_method",
+      "excludes_choice_value": "action_without_explanation",
+      "hypothesis_id": "hyp:db093a95b94ac17c:1",
+      "interpretation": "O agente deve ser programado para comparar duas propostas de arquitetura, identificar conflitos entre elas e comunicar esses conflitos a um usuário humano antes de qualquer ação que altere a arquitetura real.",
+      "supporting_observation_ids": [
+        "obs:db093a95b94ac17c:1",
+        "obs:db093a95b94ac17c:2"
+      ]
+    },
+    {
+      "choice_value": "action_without_explanation",
+      "confidence": 0.92,
+      "consequences": [
+        "INFERRED: O agente não realizará alterações reais sem a confirmação humana.",
+        "INFERRED: A comunicação dos conflitos é uma etapa obrigatória no processo de decisão."
+      ],
+      "decision_dimension": "conflict_resolution_method",
+      "excludes_choice_value": "explanation_before_action",
+      "hypothesis_id": "hyp:db093a95b94ac17c:2",
+      "interpretation": "O agente deve ser programado para comparar duas propostas de arquitetura, identificar conflitos entre elas e solicitar explicitamente a autorização do usuário humano antes de qualquer alteração na arquitetura real.",
+      "supporting_observation_ids": [
+        "obs:db093a95b94ac17c:1",
+        "obs:db093a95b94ac17c:2"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "affected_paths": [
+        [
+          "agent_local_creation"
+        ],
+        [
+          "architecture_proposals_comparison"
+        ],
+        [
+          "conflict_explanation"
+        ],
+        [
+          "no_real_changes_without_human_confirmation"
+        ]
+      ],
+      "confidence": 0.95,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:db093a95b94ac17c:1",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "Crie um agente local que compare duas propostas de arquitetura, explique conflitos e nunca execute alterações reais sem confirmação humana.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    },
+    {
+      "affected_paths": [
+        [
+          "present_two_proposals"
+        ],
+        [
+          "explain_main_conflict"
+        ],
+        [
+          "request_human_confirmation_before_action"
+        ]
+      ],
+      "confidence": 0.92,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:db093a95b94ac17c:2",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "A resposta deve apresentar as duas propostas, o conflito principal e pedir confirmação antes de agir.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    }
+  ],
+  "schema": "casulo.intent-twin/1.0",
+  "selected_hypothesis_id": "hyp:db093a95b94ac17c:1",
+  "stakes": "HIGH",
+  "summary": "Reconstrução da intenção com base no pedido humano e no comportamento observável desejado.",
+  "task_kind": "CREATION",
+  "twin_id": "intent-twin:db093a95b94ac17c"
+}

@@ -1,0 +1,152 @@
+{
+  "campaign_id": "2026-08-07-g5-hwinfo-tcap-vs-eager",
+  "files": [
+    {
+      "bytes": 9810,
+      "path": "analysis.json",
+      "sha256": "b63dbd5674783a227e9dc3f539a053c449162de92586aa096ec5cfa2396ae803"
+    },
+    {
+      "bytes": 3712,
+      "path": "benchmark_markers.jsonl",
+      "sha256": "e5d3a160ed42f27217f44a6205fa6df5b323fea7bd397b2732debd330a30df12"
+    },
+    {
+      "bytes": 4946,
+      "path": "calibration.json",
+      "sha256": "26b0227c3063cdebc40667ccad9f1c275de5567261e81e38f802c40b91243808"
+    },
+    {
+      "bytes": 1126,
+      "path": "campaign_blocker.json",
+      "sha256": "111d2d1c11e2c99bd8d1174d118150d78d41215d0dd14643445017017173bd68"
+    },
+    {
+      "bytes": 7189,
+      "path": "equivalence/gate-pre-affinity-amendment.json",
+      "sha256": "d629f2d2953a755a3383ad864523129d563c1c3ca71e2df3dbf9386d7169ed08"
+    },
+    {
+      "bytes": 7187,
+      "path": "equivalence/gate.json",
+      "sha256": "190f95d311c276b828e2c5eec9c38c6c476f6b5be6a105a7ecccd2d52628c0b2"
+    },
+    {
+      "bytes": 2930,
+      "path": "equivalence/pytorch-eager-fullstep_1.json",
+      "sha256": "eae92bcde2bda04290f082a5aeef84fb0ce67973143fd07dee37d209eee364e0"
+    },
+    {
+      "bytes": 2926,
+      "path": "equivalence/t-general-ir-tcap_0.1.json",
+      "sha256": "93b703d25f3faace59843c2982d963ad71a28bf0aa49c72423d49a93fe7bce89"
+    },
+    {
+      "bytes": 544072,
+      "path": "extracted_campaign.csv",
+      "sha256": "4978aaeab82fa38e51d9e5236e1cfe0941753aeacc0e4a2f2a91a6dd5a0bb396"
+    },
+    {
+      "bytes": 469,
+      "path": "h0_initial_capture.json",
+      "sha256": "df980f4965247154416b1f4a704ab878dd9ab602644be8089e56e679c518884c"
+    },
+    {
+      "bytes": 2625,
+      "path": "hwinfo_source.json",
+      "sha256": "d37db1a80830b90e35ab7c226e6b165874adf78a965c973a6d037648fe91c6d8"
+    },
+    {
+      "bytes": 1262,
+      "path": "hwinfo_watch.json",
+      "sha256": "8a6e92312fa7a13b5ca0ec51e788e8bfc68d581404dfc95972521422a3245ef7"
+    },
+    {
+      "bytes": 270,
+      "path": "input_hashes.json",
+      "sha256": "e35b0fe347d5a473b134062cf975d36cfeb508d785272c17de555aab187d87a9"
+    },
+    {
+      "bytes": 680,
+      "path": "protocol-amendment-001.json",
+      "sha256": "dcdf0f5e48087f9d20dc9ab80acc5cf8a324cd0bf962cd7248996ddc77fd5f4e"
+    },
+    {
+      "bytes": 788,
+      "path": "protocol-amendment-002.json",
+      "sha256": "dd207ea88ea6bee69d134610cb56c187d95399fad1e7f2ea224d6390de04477b"
+    },
+    {
+      "bytes": 1374,
+      "path": "protocol-pre-safety-amendment-002.json",
+      "sha256": "541599677d4658aa402fcd7392bb4ef901f9b763f51be8d650654e692b33279d"
+    },
+    {
+      "bytes": 1326,
+      "path": "protocol-pre-safety-amendment.json",
+      "sha256": "5694ecc01dfac6a1c29f4296d77337ea37945b0a1d7671148fb60b9384298ed6"
+    },
+    {
+      "bytes": 1373,
+      "path": "protocol.json",
+      "sha256": "db91164d4fb33be9cd6406fed25f59db89f3303c69a4742c9e54d7c9f281736f"
+    },
+    {
+      "bytes": 285,
+      "path": "rejected/calibration-attempt-002-warning-temperature.json",
+      "sha256": "14fa4e051bf13ea5ee375727c3670ef38298af0c5b58fc23d25fc3d8ce28ee09"
+    },
+    {
+      "bytes": 302,
+      "path": "rejected/calibration-attempt-003-warning-temperature.json",
+      "sha256": "ccfe6cd0394787b84065021b9469d3dfd6cef65ed1ef76e48ba2dbe91aca1c8e"
+    },
+    {
+      "bytes": 394,
+      "path": "rejected/calibration-load-load-001-pre-amendment.json",
+      "sha256": "dec012e921336fed1918af1b1463721ddb259879d1ee3f93d6b3fe160e5bb28d"
+    },
+    {
+      "bytes": 1697,
+      "path": "report.md",
+      "sha256": "435c96587e79cc6a0c65ba05739e0eea52064c2b31f2d52d92f3b959a18adcf1"
+    },
+    {
+      "bytes": 2523,
+      "path": "schedule.json",
+      "sha256": "e34e716536fd86bfa3890f18c0c20fa0785dcba2d2c467b5ba8b46d73fd9e7ff"
+    },
+    {
+      "bytes": 107,
+      "path": "source_csv_final.sha256",
+      "sha256": "975235c5e5547986c20609e975007ca1ca635448898e4618bcfe924af87944c5"
+    },
+    {
+      "bytes": 106,
+      "path": "source_csv_initial.sha256",
+      "sha256": "322e3c6608620bf7bfd71fe2785d71383a943503c5513e5664eec75017eb1955"
+    },
+    {
+      "bytes": 1189,
+      "path": "worker_build.json",
+      "sha256": "bbf115e00e572df6c8948751eaeda01e0d039443009981cd3daeee8ed2f580d6"
+    },
+    {
+      "bytes": 579,
+      "path": "worker_environment.json",
+      "sha256": "e5e8945a0befa268296c6fe63f3151041283c8a2c5c53b2b491a9e0729bd2dee"
+    },
+    {
+      "bytes": 2116085,
+      "path": "workers/tcap_hwinfo_worker.exe",
+      "sha256": "092289945ec39888f83dbab4681dbc6550b0de5dbd5b0c8ba61e13d3b1dc1ba7"
+    },
+    {
+      "bytes": 21383,
+      "path": "workers/tcap_hwinfo_worker.rs",
+      "sha256": "93b14e17a279c5a1bb55257555ddb6b04bcd3ca444fcb518ffaae2f8dee40565"
+    }
+  ],
+  "schema": "casulo-hwinfo-energy-manifest/1.0",
+  "sealed_at_utc": "2026-08-07T18:01:19.161847+00:00"
+}

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "casulo-owner"
+version = "0.1.0a1"
+description = "Edição privada e não redistribuível de Guilherme Moura Fernandes."
+requires-python = ">=3.11"
+dependencies = ["casulo==0.25.0a1"]
+
+[project.scripts]
+casulo-owner-alpha-demo = "casulo_owner.alpha_demo:main"
+casulo-owner-generative = "casulo_owner.generative_cli:main"
+casulo-owner-generative-probe = "casulo_owner.generative_probe:main"
+casulo-owner-dialogue-probe = "casulo_owner.generative_dialogue_probe:main"
+casulo-owner-science-bros-probe = "casulo_owner.science_bros_probe:main"
+casulo-owner-generative-forge-probe = "casulo_owner.generative_forge_probe:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

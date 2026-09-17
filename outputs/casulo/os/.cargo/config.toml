@@ -1,0 +1,6 @@
+[unstable]
+bindeps = true
+
+[build]
+target-dir = "target"
+

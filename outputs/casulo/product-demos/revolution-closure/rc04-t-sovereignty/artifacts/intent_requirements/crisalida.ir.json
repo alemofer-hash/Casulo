@@ -1,0 +1,202 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "enums": [],
+  "fields": [],
+  "language": "T/1.1",
+  "module": "casulo.revolution.requirements",
+  "operations": [
+    {
+      "cfg": {
+        "blocks": [
+          {
+            "id": "block/root.0",
+            "instruction_paths": [
+              "root.0"
+            ],
+            "successors": [
+              "block/root.0.then.0",
+              "block/root.0.else.0"
+            ]
+          },
+          {
+            "id": "block/root.0.else.0",
+            "instruction_paths": [
+              "root.0.else.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0",
+            "instruction_paths": [
+              "root.0.then.0"
+            ],
+            "successors": [
+              "block/root.0.then.0.then.0",
+              "block/root.0.then.0.else.0"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0.else.0",
+            "instruction_paths": [
+              "root.0.then.0.else.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0.then.0",
+            "instruction_paths": [
+              "root.0.then.0.then.0"
+            ],
+            "successors": [
+              "block/root.0.then.0.then.0.then.0",
+              "block/root.0.then.0.then.0.else.0"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0.then.0.else.0",
+            "instruction_paths": [
+              "root.0.then.0.then.0.else.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "block/root.0.then.0.then.0.then.0",
+            "instruction_paths": [
+              "root.0.then.0.then.0.then.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "exit",
+            "instruction_paths": [],
+            "successors": []
+          }
+        ],
+        "entry": "block/root.0",
+        "exit": "exit"
+      },
+      "contract": {
+        "effect_contract": {
+          "declared": [
+            "manifest"
+          ],
+          "schema": "casulo-t-effects/1.0"
+        }
+      },
+      "input_type": "RequirementDecision",
+      "instructions": [
+        {
+          "arguments": [
+            "schema_valid"
+          ],
+          "else_body": [
+            {
+              "arguments": [
+                "\"FAIL\""
+              ],
+              "else_body": [],
+              "op": "emit",
+              "result": null,
+              "then_body": [],
+              "type_name": "Text"
+            }
+          ],
+          "op": "if",
+          "result": null,
+          "then_body": [
+            {
+              "arguments": [
+                "evidence_present"
+              ],
+              "else_body": [
+                {
+                  "arguments": [
+                    "\"UNKNOWN\""
+                  ],
+                  "else_body": [],
+                  "op": "emit",
+                  "result": null,
+                  "then_body": [],
+                  "type_name": "Text"
+                }
+              ],
+              "op": "if",
+              "result": null,
+              "then_body": [
+                {
+                  "arguments": [
+                    "safety_pass"
+                  ],
+                  "else_body": [
+                    {
+                      "arguments": [
+                        "\"FAIL\""
+                      ],
+                      "else_body": [],
+                      "op": "emit",
+                      "result": null,
+                      "then_body": [],
+                      "type_name": "Text"
+                    }
+                  ],
+                  "op": "if",
+                  "result": null,
+                  "then_body": [
+                    {
+                      "arguments": [
+                        "\"PASS\""
+                      ],
+                      "else_body": [],
+                      "op": "emit",
+                      "result": null,
+                      "then_body": [],
+                      "type_name": "Text"
+                    }
+                  ],
+                  "type_name": "Bool"
+                }
+              ],
+              "type_name": "Bool"
+            }
+          ],
+          "type_name": "Bool"
+        }
+      ],
+      "kind": "condense",
+      "name": "EvaluateRequirement",
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "records": [
+    {
+      "name": "RequirementDecision",
+      "traces": [
+        {
+          "name": "schema_valid",
+          "type_name": "Bool"
+        },
+        {
+          "name": "evidence_present",
+          "type_name": "Bool"
+        },
+        {
+          "name": "safety_pass",
+          "type_name": "Bool"
+        }
+      ]
+    }
+  ],
+  "uses": [],
+  "version": "crisalida-ir/1.0"
+}

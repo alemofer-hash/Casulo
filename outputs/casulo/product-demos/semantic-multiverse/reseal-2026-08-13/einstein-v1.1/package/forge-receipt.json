@@ -1,0 +1,19 @@
+{
+  "affected_paths": [],
+  "artifacts": [
+    {
+      "artifact_sha256": "d12bdc611935410c9459ba235b26c69dc11f77e0537774e537698e42682e0ce3",
+      "dependency_artifact_sha256": {},
+      "graph_sha256": "02a759ab8dba15d9eb7bdf619c68a4af536f2de4ac83a999ca61c788c43ad163",
+      "ir_sha256": "71fade95db784d0c60ec858b5f39a80fa39f672f220a580cabe5e71af7e4dd22",
+      "source_sha256": "720dba64871169c30b337b7f65bd86ac1229bf47ee15872164054c545cdf5a9c",
+      "unit_id": "einstein-local-residual"
+    }
+  ],
+  "build_id": "forge:1",
+  "rebuilt_units": [
+    "einstein-local-residual"
+  ],
+  "reused_units": [],
+  "schema": "casulo.t-forge-receipt/1.0"
+}

@@ -1,0 +1,101 @@
+{
+  "preliminary_metrics": {
+    "battery_level_percent": {
+      "final": 100.0,
+      "initial": 100.0,
+      "maximum": 100.0,
+      "median": 100.0,
+      "minimum": 100.0,
+      "p95": 100.0,
+      "samples": 65
+    },
+    "battery_rate_w": {
+      "final": 0.0,
+      "initial": 0.0,
+      "maximum": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "p95": 0.0,
+      "samples": 65
+    },
+    "core_temperature_c": {
+      "final": 42.0,
+      "initial": 45.0,
+      "maximum": 46.0,
+      "median": 42.0,
+      "minimum": 41.0,
+      "p95": 44.0,
+      "samples": 65
+    },
+    "coverage": 1.0,
+    "effective_clock_mhz": {
+      "final": 226.0,
+      "initial": 588.1,
+      "maximum": 617.7,
+      "median": 238.4,
+      "minimum": 199.3,
+      "p95": 470.6599999999999,
+      "samples": 65
+    },
+    "last_30_seconds": {
+      "samples": 65,
+      "temperature_range_c": 5.0,
+      "temperature_slope_c_per_s": -0.10427590170011365
+    },
+    "last_60_second_samples": 65,
+    "observed_span_seconds": 16.279,
+    "package_power_w": {
+      "final": 5.139,
+      "initial": 7.235,
+      "maximum": 10.107,
+      "median": 5.021,
+      "minimum": 4.042,
+      "p95": 8.2296,
+      "samples": 65
+    },
+    "package_temperature_c": {
+      "final": 43.0,
+      "initial": 46.0,
+      "maximum": 47.0,
+      "median": 43.0,
+      "minimum": 41.0,
+      "p95": 45.8,
+      "samples": 65
+    },
+    "power_limit_events": [],
+    "sampling": {
+      "first_timestamp_utc": "2026-08-10T03:37:09.645000+00:00",
+      "gaps_over_5x_median": [],
+      "last_timestamp_utc": "2026-08-10T03:37:25.924000+00:00",
+      "maximum_seconds": 0.273,
+      "median_seconds": 0.254,
+      "minimum_seconds": 0.234,
+      "new_samples": 65,
+      "p95_seconds": 0.2687,
+      "strictly_increasing_timestamps": true
+    },
+    "thermal_throttle_events": [],
+    "total_cpu_usage_percent": {
+      "final": 12.7,
+      "initial": 28.9,
+      "maximum": 34.8,
+      "median": 15.7,
+      "minimum": 10.7,
+      "p95": 27.65999999999999,
+      "samples": 65
+    },
+    "total_cpu_utility_percent": {
+      "final": 11.2,
+      "initial": 27.0,
+      "maximum": 29.3,
+      "median": 12.1,
+      "minimum": 10.0,
+      "p95": 21.48,
+      "samples": 65
+    },
+    "zero_throttling_last_60s": true
+  },
+  "reason": "P0-P7 prerequisite gate failed; starting a 20-minute qualifying window would violate the frozen protocol",
+  "status": "NOT_STARTED",
+  "workloads_executed": false
+}

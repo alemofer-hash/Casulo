@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "code": "NB108",
+      "operation": "T_SYNTHESIS",
+      "status": "DENIED"
+    },
+    {
+      "code": "NB109",
+      "operation": "T_SYNTHESIS",
+      "status": "DENIED"
+    },
+    {
+      "code": "NB110",
+      "operation": "T_REPAIR",
+      "status": "DENIED"
+    },
+    {
+      "code": "NB111",
+      "operation": "INTENT_REFINEMENT",
+      "status": "DENIED"
+    }
+  ]
+}

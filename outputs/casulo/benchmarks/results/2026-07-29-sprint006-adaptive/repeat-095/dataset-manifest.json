@@ -1,0 +1,8 @@
+{
+  "duplicate_rate": 0.95,
+  "name": "hydrological-water-balance-synthetic",
+  "protocol": "casulo-dataset/hydrological-synthetic/0.1",
+  "records": 2000,
+  "seed": 6006,
+  "sha256": "aba796ae7618465afd51af1c5ea39063f2b3fcda760c6ce2890488ced4c6ed62"
+}

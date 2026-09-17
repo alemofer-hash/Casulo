@@ -1,0 +1,20 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "attempt": "sprint10-integrated-attempt9",
+  "gate": "GENERATIVE_VM_HANDOFF_SCENARIO_FAIL",
+  "failed_before_materialization": true,
+  "failed_operation": "bounded-verifier-repair",
+  "observed": {
+    "real_verifier_attempts": 3,
+    "repairs_completed": 2,
+    "repair_budget": 2,
+    "creation_unit_repaired": true,
+    "capabilities_unit_repaired": true,
+    "remaining_diagnostic_unit": "tracing_unit",
+    "candidate_applied_without_validation": false
+  },
+  "classification": "REPAIR_BUDGET_EXHAUSTED_WITH_ONE_DISTINCT_UNIT_REMAINING",
+  "repair_receipt": "state/owner-data/creation/repair-outcome.json",
+  "preservation": "All three verifier attempts, compiler artifacts, diagnostics, hashes and VM state retained",
+  "scientific_benchmark_started": false
+}

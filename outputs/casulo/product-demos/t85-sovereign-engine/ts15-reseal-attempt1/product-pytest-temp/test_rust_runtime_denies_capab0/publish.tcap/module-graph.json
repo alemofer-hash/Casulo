@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.publish"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.publish"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

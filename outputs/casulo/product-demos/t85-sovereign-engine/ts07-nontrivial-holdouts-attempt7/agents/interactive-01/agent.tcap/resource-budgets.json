@@ -1,0 +1,16 @@
+{
+  "modules": {
+    "owner.agent.t_interactive_01.export": {
+      "deadline_ms": 3000,
+      "steps": 2048
+    },
+    "owner.agent.t_interactive_01.interrupt": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    },
+    "owner.agent.t_interactive_01.memory": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    }
+  }
+}

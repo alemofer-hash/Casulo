@@ -1,0 +1,68 @@
+{
+  "arquivos": [
+    {
+      "caminho": "00_ovo/fonte_original.csv",
+      "quantidade_bytes": 227,
+      "sha256": "647e203f534383a6172d396ce294a1e970534f12f2dcdd095845d4a824e25d91"
+    },
+    {
+      "caminho": "01_larva/inventario.json",
+      "quantidade_bytes": 1553,
+      "sha256": "6a4ee6ddbd41b0816317ff49db34df6c19ca0bea6ee4e141f99b2bafef57977b"
+    },
+    {
+      "caminho": "02_crisalida/plano_de_evolucao.json",
+      "quantidade_bytes": 620,
+      "sha256": "677b9e2ba8e881734532f7238a52cf78c62d11af5277356cf04faa98b13bb127"
+    },
+    {
+      "caminho": "03_metamorfose/conteudo_integral.jsonl",
+      "quantidade_bytes": 1274,
+      "sha256": "184421deeaed7110a78276f58abe856f0c467e0b352bb4826a6c34d8139ab1e4"
+    },
+    {
+      "caminho": "03_metamorfose/enriquecimentos.json",
+      "quantidade_bytes": 1313,
+      "sha256": "16cd33750216ecdae7133a4674ba43d8a37f64cd8d2cd5ae93f81d6243a7994a"
+    },
+    {
+      "caminho": "03_metamorfose/quarentena.jsonl",
+      "quantidade_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "caminho": "04_borboleta/indice.json",
+      "quantidade_bytes": 558,
+      "sha256": "de93ecd25d4cfbe0ae6d06f12bfb63e3fa94da10927dfbd2a095ae1f84346be4"
+    },
+    {
+      "caminho": "04_borboleta/prova_de_conservacao.json",
+      "quantidade_bytes": 547,
+      "sha256": "b42e2ef25cfc9cab3e535928f8f70099798d1737c051bc1c74806b159f09dd21"
+    },
+    {
+      "caminho": "MARCA_E_AUTORIA.txt",
+      "quantidade_bytes": 282,
+      "sha256": "b2d16f030ea2ca9173db96c02f6d2b8e44f44b8d1195c3375b88738706f6dc16"
+    }
+  ],
+  "assinatura_do_invento": "Casulo — invento original da Teloscorp para Otimização de Tráfego de Informação.",
+  "autoria_publica": "Teloscorp",
+  "fases": [
+    "OVO",
+    "LARVA",
+    "CRISALIDA",
+    "METAMORFOSE",
+    "BORBOLETA"
+  ],
+  "fonte": {
+    "arquivo_de_origem": "entrada_exemplo.csv",
+    "extensao": ".csv",
+    "fase": "OVO",
+    "nome": "entrada_exemplo.csv",
+    "quantidade_bytes": 227,
+    "sha256": "647e203f534383a6172d396ce294a1e970534f12f2dcdd095845d4a824e25d91"
+  },
+  "marca": "Casulo",
+  "prova_aprovada": true
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "root": "C:\\Users\\guimo\\Downloads\\ex",
+  "generated_utc": "2026-09-17T21:11:50.6416617Z",
+  "note": "Classes overlap by design; unclassified means no classifier matched.",
+  "classes": [
+    {
+      "class": "source",
+      "files": 31280,
+      "bytes": 223988922
+    },
+    {
+      "class": "tests",
+      "files": 1700,
+      "bytes": 13994112
+    },
+    {
+      "class": "documentation_architecture",
+      "files": 1382,
+      "bytes": 5213619
+    },
+    {
+      "class": "models_weights",
+      "files": 801,
+      "bytes": 10765056
+    },
+    {
+      "class": "generated_artifacts",
+      "files": 181668,
+      "bytes": 19323297404
+    },
+    {
+      "class": "environments_caches",
+      "files": 47487,
+      "bytes": 9619933297
+    },
+    {
+      "class": "private_data_candidates",
+      "files": 6257,
+      "bytes": 348956076
+    },
+    {
+      "class": "experiments_proofs",
+      "files": 18192,
+      "bytes": 308729055
+    }
+  ],
+  "unclassified_files": 123,
+  "unclassified_bytes": 11745414,
+  "files_over_100mb": 10,
+  "nested_git_directories": 2,
+  "duplicate_hash_groups": 8990,
+  "duplicate_bytes_excluding_one_copy_per_group": 4816363659,
+  "divergent_basename_groups": 3747
+}

@@ -1,0 +1,67 @@
+{
+  "candidate_workload_executed": false,
+  "host_cpu_percent_median": 33.6,
+  "host_cpu_percent_samples": [
+    43.3,
+    37.4,
+    27.9,
+    33.6,
+    33.6,
+    48.4,
+    37.6,
+    41.9,
+    29.0,
+    24.0,
+    28.0,
+    33.8,
+    39.4,
+    35.5,
+    40.0,
+    25.3,
+    39.5,
+    41.6,
+    32.8,
+    31.5,
+    26.6,
+    25.3,
+    23.3,
+    19.0
+  ],
+  "hwinfo_cpu_seconds_delta": 1.515625,
+  "hwinfo_process_after": [
+    {
+      "name": "HWiNFO64.EXE",
+      "pid": 24580,
+      "system_cpu_seconds": 53.140625,
+      "user_cpu_seconds": 39.28125
+    }
+  ],
+  "hwinfo_process_before": [
+    {
+      "name": "HWiNFO64.EXE",
+      "pid": 24580,
+      "system_cpu_seconds": 52.125,
+      "user_cpu_seconds": 38.78125
+    }
+  ],
+  "limitation": "active observer overhead probes require polling gate PASS",
+  "rejected_reader": "full-csv-reparse-per-guard-poll",
+  "replacement_reader": "bounded-live-tail-v1",
+  "schema": "casulo-hwinfo-observer-overhead/1.0",
+  "selective_subtraction_allowed": false,
+  "status": "REJECTED_AND_CORRECTED_BEFORE_WORKLOAD",
+  "watchdog_microbenchmark": {
+    "full_over_tail_latency_ratio": 27.028789639969272,
+    "full_parse_calls": 3,
+    "full_parse_mean_ms": 284.71056666679334,
+    "full_parse_total_seconds": 0.8541317000003801,
+    "initial_full_seconds": 0.1372943999999734,
+    "measured_at_utc": "2026-08-07T20:29:00Z",
+    "note": "diagnostic microbenchmark only; not an energy result",
+    "tail_calls": 100,
+    "tail_mean_ms": 10.533604000002015,
+    "tail_total_seconds": 1.0533604000002015
+  },
+  "window_seconds": 7.249719,
+  "workload_probe_executed": false
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "casulo-native-package-independent-audit/1.0",
+  "archive_sha256": "297d6035ee80e30d72083c16ca4900822e7ff6bda4a18a3acfc67a81495cd2ff",
+  "zip_test": "PASS",
+  "signature": "PASS",
+  "sha256sums_failures": [],
+  "manifest_failures": [],
+  "launcher_help": "PASS",
+  "powershell_launcher_present": true,
+  "vbs_launcher_present": true,
+  "image_present": true,
+  "python_launcher_present": true,
+  "gguf_embedded_count": 0,
+  "physical_drive_command_findings": 0,
+  "physical_drive_denylist_present": true,
+  "post_extraction_pycache_ignored": true
+}

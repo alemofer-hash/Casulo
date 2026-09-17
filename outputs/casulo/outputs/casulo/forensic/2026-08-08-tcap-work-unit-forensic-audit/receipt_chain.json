@@ -1,0 +1,7 @@
+{
+  "aggregate_hash": null,
+  "reason": "old worker emitted wrapper K and final output, not per-unit runtime receipts",
+  "receipts": 0,
+  "schema": "casulo-forensic-receipt-chain/1.0",
+  "status": "FAIL_NOT_IMPLEMENTED_IN_AFFECTED_WORKER"
+}

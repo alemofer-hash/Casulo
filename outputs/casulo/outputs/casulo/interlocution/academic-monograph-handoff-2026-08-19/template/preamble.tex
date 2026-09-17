@@ -1,0 +1,139 @@
+\usepackage{iftex}
+\ifLuaTeX
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \IfFontExistsTF{Libertinus Serif}{
+    \setmainfont{Libertinus Serif}
+    \setsansfont{Libertinus Sans}
+    \setmonofont{Libertinus Mono}[Scale=0.90]
+    \setmathfont{Libertinus Math}
+  }{
+    \setmainfont{TeX Gyre Pagella}
+    \setsansfont{TeX Gyre Heros}
+    \setmonofont{Latin Modern Mono}[Scale=0.90]
+    \setmathfont{TeX Gyre Pagella Math}
+  }
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage[brazil,english]{babel}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{geometry}
+\geometry{inner=30mm,outer=22mm,top=27mm,bottom=28mm,headsep=8mm}
+\setstretch{1.16}
+\setlength{\parindent}{1.35em}
+\setlength{\parskip}{0.15em}
+
+\usepackage{xcolor}
+\definecolor{CasuloNavy}{HTML}{14243B}
+\definecolor{CasuloAmber}{HTML}{B36A21}
+\definecolor{CasuloTeal}{HTML}{1F6F78}
+\definecolor{CasuloMist}{HTML}{EEF2F4}
+\definecolor{CasuloInk}{HTML}{18212B}
+
+\addtokomafont{chapter}{\color{CasuloNavy}\sffamily\bfseries}
+\addtokomafont{section}{\color{CasuloNavy}\sffamily\bfseries}
+\addtokomafont{subsection}{\color{CasuloTeal}\sffamily\bfseries}
+\RedeclareSectionCommand[beforeskip=-1.2\baselineskip,afterskip=.7\baselineskip]{chapter}
+
+\usepackage{scrlayer-scrpage}
+\usepackage{scrhack}
+\clearpairofpagestyles
+\ihead{\small\headmark}
+\ohead{\small\pagemark}
+\setkomafont{pageheadfoot}{\color{CasuloNavy}\sffamily}
+\pagestyle{scrheadings}
+\automark[section]{chapter}
+
+\usepackage{amsmath,amssymb,mathtools}
+\numberwithin{equation}{chapter}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{siunitx}
+\sisetup{locale=DE,detect-all,group-separator={\,},output-decimal-marker={,}}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc,shapes.geometric,backgrounds}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\usepackage{listings}
+\lstdefinelanguage{TLang}{
+  morekeywords={agent,policy,require,effect,capability,let,if,else,match,accept,reject,emit,learn},
+  sensitive=true,
+  morecomment=[l]{//},
+  morestring=[b]"
+}
+\lstdefinestyle{casulo}{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{CasuloTeal}\bfseries,
+  commentstyle=\color{black!55}\itshape,
+  stringstyle=\color{CasuloAmber},
+  backgroundcolor=\color{CasuloMist},
+  frame=single,
+  rulecolor=\color{CasuloNavy!25},
+  numbers=left,
+  numberstyle=\scriptsize\color{black!45},
+  breaklines=true,
+  columns=fullflexible,
+  showstringspaces=false,
+  xleftmargin=1.5em,
+  framexleftmargin=1em
+}
+\lstset{style=casulo}
+
+\usepackage[most]{tcolorbox}
+\newtcolorbox{claimbox}[1]{
+  colback=CasuloMist,colframe=CasuloNavy,
+  title={#1},fonttitle=\sffamily\bfseries,
+  boxrule=0.7pt,arc=1.5mm
+}
+
+\usepackage{csquotes}
+\ifdefined\TectonicSmoke
+  \def\CasuloBibBackend{bibtex}
+\else
+  \def\CasuloBibBackend{biber}
+\fi
+\usepackage[
+  backend=\CasuloBibBackend,
+  style=authoryear,
+  giveninits=true,
+  maxcitenames=2,
+  maxbibnames=99,
+  doi=true,
+  url=true,
+  isbn=false,
+  sorting=nyt
+]{biblatex}
+\addbibresource{bibliography/references.bib}
+
+\usepackage{caption}
+\captionsetup{font=small,labelfont={bf,color=CasuloNavy}}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{hyperref}
+\hypersetup{
+  unicode=true,
+  colorlinks=true,
+  linkcolor=CasuloNavy,
+  citecolor=CasuloTeal,
+  urlcolor=CasuloAmber,
+  pdftitle={Princípio da Interlocução},
+  pdfauthor={Guilherme Moura Fernandes},
+  pdfsubject={Autoridade causal, integridade semântica e compressão operacional em treinamento neural},
+  pdfkeywords={Linguagem T, Casulo, integridade semântica, treinamento neural, compiladores, receipts}
+}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\newcommand{\LangT}{\textsf{T}}
+\newcommand{\Casulo}{\textsf{Casulo}}
+\newcommand{\TCAP}{\textsf{TCAP}}
+\newcommand{\evidence}[1]{\texttt{#1}}
+\newcommand{\status}[1]{\textsf{#1}}

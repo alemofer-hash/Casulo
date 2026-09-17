@@ -1,0 +1,34 @@
+{
+  "capabilities": [
+    "memory.read"
+  ],
+  "content": {
+    "behavior": {
+      "autonomy": {
+        "compare_alternatives": true,
+        "expose_primary_tension": true,
+        "offer_reversible_cost_option": true
+      }
+    },
+    "identity": {
+      "purpose": {
+        "description": "Fornecer uma análise de trade-offs em decisões técnicas, identificando a tensão principal, comparando alternativas e oferecendo uma opção reversível de custo"
+      }
+    },
+    "interface": {
+      "output_format": {
+        "fields": [
+          "tension",
+          "alternatives",
+          "reversible_option"
+        ],
+        "type": "structured"
+      }
+    }
+  },
+  "creation_id": "creation:open-ended-holdout",
+  "rejected_delta_ids": [],
+  "schema": "casulo.creation/1.0",
+  "state": "CONFIRMATION",
+  "version": 5
+}

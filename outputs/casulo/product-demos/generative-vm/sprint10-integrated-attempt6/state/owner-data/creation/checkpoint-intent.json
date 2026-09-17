@@ -1,0 +1,137 @@
+{
+  "delta": {
+    "affected_paths": [
+      [
+        "identity",
+        "name"
+      ],
+      [
+        "purpose",
+        "transform"
+      ],
+      [
+        "behavior",
+        "preserve"
+      ],
+      [
+        "behavior",
+        "track"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "data",
+        "source"
+      ],
+      [
+        "output",
+        "format"
+      ]
+    ],
+    "base_version": 0,
+    "confidence": 0.85,
+    "confirmation_state": "PROPOSED",
+    "creation_id": "creation:open-ended-holdout",
+    "delta_id": "intent:gen:adaf4f4751cacc769f3f42b5",
+    "operations": [
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "name"
+        ],
+        "value": {
+          "agent": "A92D"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "purpose",
+          "transform"
+        ],
+        "value": {
+          "research_notes": "reversible_decisions"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "preserve"
+        ],
+        "value": {
+          "rejected_hypotheses": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "track"
+        ],
+        "value": {
+          "origin_of_choices": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "input"
+        ],
+        "value": {
+          "research_notes": "reversible_decisions"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "data",
+          "source"
+        ],
+        "value": {
+          "research_notes": "reversible_decisions"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "output",
+          "format"
+        ],
+        "value": {
+          "reversible_decisions": "preserved_hypotheses"
+        }
+      }
+    ],
+    "rationale": "A proposta visa a modificação da CreationSpec para incluir uma nova entidade de agente inédito com funções específicas de transformação e preservação de informações.",
+    "schema": "casulo.intent-delta/1.0",
+    "source_event_ids": [
+      "voice:g5:novel-idea"
+    ]
+  },
+  "requested_capabilities": [
+    "transform research_notes into reversible_decisions",
+    "preserve rejected_hypotheses",
+    "track origin_of_choices"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "53251e73b0b6da2a277d0210c71910055ca3c75299c781df5997be361ede1b64",
+    "ended_monotonic_ns": 40460966078700,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "intent:voice:g5:novel-idea",
+    "output_sha256": "adaf4f4751cacc769f3f42b588d2c30b0071f14a354faacb82b04cab624bde9d",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 40410462388500,
+    "stream_events": 331
+  }
+}

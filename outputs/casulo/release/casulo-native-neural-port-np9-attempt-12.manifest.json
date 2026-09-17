@@ -1,0 +1,20 @@
+{
+  "bytes": 2162688,
+  "claim": "the admitted adopted model is resident in guest-owned RAM so incremental Native decoding can avoid fw_cfg I/O in the hot path; mult-token proof is a separate gate",
+  "first_model_derived_token": true,
+  "full_model_mapped": false,
+  "full_model_resident_after_admission": true,
+  "host_bridge": false,
+  "image": "release/casulo-native-neural-port-np9-attempt-12.img",
+  "kernel_float_profile": "sse2-hardware-f32",
+  "network": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-neural-port-image/0.1",
+  "sha256": "741404a9938410c9e131c14f36ce70a7b6c57a6f4f20d650e121aa1dba521483",
+  "stage": "NP9_RESIDENT_INCREMENTAL_MODEL_RUNTIME",
+  "system_pack": "release/casulo-native-neural-port-system-pack-np9-incremental-v1.cspk",
+  "system_pack_sha256": "97a7aa924b77543f5ada15c6ed13d418eda0a45b77766c1cfa583c8618bdff5a",
+  "target": "x86_64-casulo-native",
+  "target_spec": "os/targets/x86_64-casulo-native.json",
+  "target_spec_sha256": "b52bfc3c1fca088b4a5484f4a4f5d5b459cdcab77febc5f9dc3cddf4d3818638"
+}

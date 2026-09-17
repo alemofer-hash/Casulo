@@ -1,0 +1,1 @@
+Good "casulo-release" signature for casulo-cloud-standby-dev with ED25519 key SHA256:2FYYbkKHpnZlE0VCUCFP0vEEtOxS1DVZQxwy+gqXiLs

@@ -1,0 +1,61 @@
+{
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "owner_network_api": "ABSENT",
+    "physical_voice": "NOT_OPENED",
+    "scientific_benchmark": "NOT_STARTED"
+  },
+  "checks": {
+    "base_vm_hash": true,
+    "cloud_locked": true,
+    "final_gate": true,
+    "llama_runtime_tree": true,
+    "model_full_hash": true,
+    "ovmf": true,
+    "physical_voice_not_opened": true,
+    "public_private_zero": true,
+    "qemu": true,
+    "release_manifest_expected": true,
+    "release_verifier": true,
+    "t_runtime_hash": true
+  },
+  "created_utc": "2026-08-17T22:47:50.118318+00:00",
+  "model": {
+    "bytes": 2497280256,
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "read_only": true,
+  "ready": true,
+  "release": {
+    "checks": {
+      "base_vm": true,
+      "checkout_independent": true,
+      "cloud_locked": true,
+      "development_signature": true,
+      "guest_network_off": true,
+      "human_proof_pending": true,
+      "manifest_files": true,
+      "model_verified": true,
+      "physical_devices_prohibited": true,
+      "runtime_available": true
+    },
+    "manifest_sha256": "87c046056ee16dbc2f02350f50bde62f9bb617ebfe002eb993536a794393f8ee",
+    "mismatches": [],
+    "read_only": true,
+    "ready": true,
+    "schema": "casulo.human-proof-verification/1.0",
+    "signature_output": "Good \"casulo-t85-human-proof\" signature for casulo-owner-t85-human-proof-dev with ED25519 key SHA256:WV2iEwZ00CJO+pA3CDyw8EWCYLp3Y8r7qvGHRKIOpfs"
+  },
+  "runtime": {
+    "expected_files": 51,
+    "mismatches": []
+  },
+  "schema": "casulo.monday-discovery-doctor/1.0",
+  "vm": {
+    "base_hash": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+    "block_devices": "PROHIBITED",
+    "guest_network": "OFF",
+    "qemu_version": "QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a)"
+  }
+}

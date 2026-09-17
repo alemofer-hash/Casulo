@@ -1,0 +1,7 @@
+{
+  "properties": [
+    "critical_T_only",
+    "hard_unknown_blocks",
+    "publish_requires_human"
+  ]
+}

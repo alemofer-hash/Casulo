@@ -1,0 +1,140 @@
+{
+  "affected_paths": [
+    [
+      "identity",
+      "name"
+    ],
+    [
+      "purpose",
+      "description"
+    ],
+    [
+      "behavior",
+      "autonomy"
+    ],
+    [
+      "behavior",
+      "constraint"
+    ],
+    [
+      "interface",
+      "input"
+    ],
+    [
+      "interface",
+      "output"
+    ],
+    [
+      "data",
+      "type"
+    ],
+    [
+      "output",
+      "format"
+    ]
+  ],
+  "base_version": 0,
+  "confidence": 0.85,
+  "confirmation_state": "PROPOSED",
+  "creation_id": "creation:open-ended-holdout",
+  "delta_id": "intent:gen:a553f7dbca8a07ab416e5b61",
+  "operations": [
+    {
+      "action": "set",
+      "path": [
+        "identity",
+        "name"
+      ],
+      "value": {
+        "agent": "Bússola de Reversibilidade"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "purpose",
+        "description"
+      ],
+      "value": {
+        "identifica_hipotese_frágil": true,
+        "propoe_verificacao_pequena": true,
+        "recebe_decisao_arquitetura": true,
+        "termina_passo_reversivel": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "autonomy"
+      ],
+      "value": {
+        "identifica_hipotese_frágil": true,
+        "propoe_verificacao_pequena": true,
+        "recebe_decisao_arquitetura": true,
+        "termina_passo_reversivel": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "constraint"
+      ],
+      "value": {
+        "não_executa_efitos_reais": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "input"
+      ],
+      "value": {
+        "decisao_arquitetura": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "output"
+      ],
+      "value": {
+        "hipotese_frágil": true,
+        "passo_reversivel": true,
+        "verificacao_pequena": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "data",
+        "type"
+      ],
+      "value": {
+        "hipotese_frágil": "string",
+        "passo_reversivel": "string",
+        "verificacao_pequena": "string"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "output",
+        "format"
+      ],
+      "value": {
+        "hipotese_frágil": "text",
+        "passo_reversivel": "text",
+        "verificacao_pequena": "text"
+      }
+    }
+  ],
+  "rationale": "A proposta visa definir uma nova CreationSpec que define o comportamento e a identidade do agente Bússola de Reversibilidade, com base na fala humana fornecida.",
+  "schema": "casulo.intent-delta/1.0",
+  "source_event_ids": [
+    "voice:g5:novel-idea"
+  ]
+}

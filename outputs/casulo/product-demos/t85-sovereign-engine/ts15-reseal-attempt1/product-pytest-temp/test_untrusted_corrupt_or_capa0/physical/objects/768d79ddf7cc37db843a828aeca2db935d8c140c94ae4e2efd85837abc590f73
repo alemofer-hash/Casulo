@@ -1,0 +1,1 @@
+{"binding":"shared-content-addressed-policy","entrypoint":"owner.multiverse.lifecycle_policy::decide","lifecycle_policy_sha256":"b3f8242262906af9875f2213febe822c31f8694b83c9c261063b1d40e94a1faf","schema":"casulo.universe-t-binding/1.0"}

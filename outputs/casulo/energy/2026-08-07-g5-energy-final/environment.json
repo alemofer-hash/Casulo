@@ -1,0 +1,77 @@
+{
+  "battery": {
+    "ac_connected": true,
+    "charge_now_coulombs": null,
+    "charge_resolution_coulombs": null,
+    "current_now_amperes": null,
+    "energy_now_joules": null,
+    "energy_resolution_joules": null,
+    "monotonic_ns": 18484220953200,
+    "observed_at_utc": "2026-08-07T17:02:48.981003+00:00",
+    "percent": 100.0,
+    "power_now_watts": null,
+    "present": true,
+    "source": "windows_psutil_status_only",
+    "status": "Full",
+    "voltage_now_volts": null
+  },
+  "execution": {
+    "cwd": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo",
+    "executable": "C:\\Python313\\python.exe",
+    "process_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "threads_environment": {
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null
+    }
+  },
+  "frequency": {
+    "current_mhz": 1300,
+    "maximum_mhz": 1300,
+    "source": "Win32_Processor"
+  },
+  "host": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-1235U",
+    "execution_class": "bare_metal_with_hypervisor_enabled",
+    "firmware": "JKCN47WW",
+    "hypervisor_present": true,
+    "logical_cpus": 12,
+    "manufacturer": "LENOVO",
+    "microcode": "35-04-00-00",
+    "model": "82VY",
+    "physical_cores": 10
+  },
+  "observed_at_utc": "2026-08-07T17:02:46.806731+00:00",
+  "platform": {
+    "kernel": "11",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "release": "11",
+    "system": "Windows",
+    "version": "10.0.26200"
+  },
+  "power_policy": {
+    "governor": null,
+    "profile": "GUID do Esquema de Energia: 381b4222-f694-41f0-9685-ff5bb260df2e  (Equilibrado)"
+  },
+  "schema": "casulo-energy-environment/1.0",
+  "tooling": {
+    "perf": null,
+    "systemd_detect_virt": null
+  }
+}

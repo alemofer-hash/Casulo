@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.ts14_mycelium_reconciler.growth": [],
+    "owner.agent.ts14_mycelium_reconciler.protocol": [
+      "simulation"
+    ],
+    "owner.agent.ts14_mycelium_reconciler.unit": []
+  }
+}

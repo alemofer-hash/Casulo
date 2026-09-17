@@ -1,0 +1,136 @@
+{
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "classification": {
+    "INCONCLUSIVE": "baseline ou evidência obrigatória ausente",
+    "INVALID": "integridade, desenho ou equivalência violados",
+    "NEGATIVE": "qualidade aprovada e IC95% superior abaixo do limiar",
+    "NULL": "qualidade aprovada, mas intervalo cruza o limiar",
+    "POSITIVE": "qualidade aprovada e IC95% inferior acima do limiar"
+  },
+  "covenant": {
+    "invariants": [
+      {
+        "id": "HYPOTHESIS_BEFORE_MEASUREMENT",
+        "rule": "hipótese, métricas, baselines e gates são selados antes da medição"
+      },
+      {
+        "id": "QUALITY_BEFORE_SPEED",
+        "rule": "nenhum ganho é válido sem equivalência e qualidade"
+      },
+      {
+        "id": "ALL_REGISTERED_BASELINES_REPORTED",
+        "rule": "baseline obrigatório ausente torna o veredito inconclusivo"
+      },
+      {
+        "id": "RAW_SAMPLES_PRESERVED",
+        "rule": "amostras brutas e ordem pareada são parte da evidência"
+      },
+      {
+        "id": "UNCERTAINTY_REQUIRED",
+        "rule": "mediana sem intervalo de incerteza não libera alegação"
+      },
+      {
+        "id": "NEGATIVE_AND_NULL_PRESERVED",
+        "rule": "resultados negativos, nulos e falhas permanecem publicados"
+      },
+      {
+        "id": "UNMEASURED_IS_NULL",
+        "rule": "grandeza não medida é null e jamais é estimada como observação"
+      },
+      {
+        "id": "NO_CHERRY_PICKING",
+        "rule": "todas as execuções pré-registradas entram no veredito"
+      },
+      {
+        "id": "SCOPE_BOUND_CLAIMS",
+        "rule": "toda alegação nomeia carga, baseline, máquina e horizonte medidos"
+      },
+      {
+        "id": "CORRECTION_CREATES_NEW_VERSION",
+        "rule": "correção lógica gera novo protocolo e não sobrescreve evidência"
+      },
+      {
+        "id": "INDEPENDENT_RECOMPUTATION",
+        "rule": "o juiz recalcula métricas a partir das amostras brutas"
+      },
+      {
+        "id": "JUDGE_CANNOT_OPTIMIZE",
+        "rule": "o juiz classifica evidência e não altera código, dados ou parâmetros"
+      }
+    ],
+    "protocol": "casulo-scientific-covenant/1.0"
+  },
+  "design": {
+    "bootstrap_resamples": 2000,
+    "model": {
+      "activation": "relu",
+      "batch": "full",
+      "epochs": 400,
+      "hidden_features": 8,
+      "input_features": 8,
+      "learning_rate": 0.018,
+      "loss": "mse",
+      "module": "casulo.flood_rs",
+      "name": "FloodSurrogate",
+      "optimizer": "sgd",
+      "output_features": 1,
+      "precision": "float64",
+      "seed": 260730,
+      "target_loss": 0.08
+    },
+    "pairing": "alternating-order-same-process",
+    "precision": "float64",
+    "records": 1024,
+    "required_baselines": [
+      "pytorch-eager-cpu",
+      "pytorch-compile-inductor-cpu"
+    ],
+    "samples": 21,
+    "seed": 20260730,
+    "source": {
+      "path_hint": "flood_surrogate_training.t",
+      "sha256": "b24746c7b622c7760a685d8fdb8a79d8c2fd8ace966e63e1ffc75c31d12c4948"
+    },
+    "warmups": 3,
+    "workers": "auto"
+  },
+  "experiment_id": "sha256:c143ed9de4c57373370e7985356eb379ac7a636fd0b2d5ba8e0728957d886302",
+  "hypothesis": {
+    "candidate": "casulo-t-c99-openmp-fused",
+    "commercial_threshold": 6.0,
+    "direction": "greater_than",
+    "primary_metric": "paired_wall_speedup_median",
+    "quality_precedes_speed": true,
+    "superiority_threshold": 1.0
+  },
+  "observed_results_at_registration": false,
+  "protocol": "casulo-scientific-preregistration/1.0",
+  "quality_gates": {
+    "deterministic_backends": true,
+    "equivalent_training": true,
+    "quality_target_reached": true,
+    "same_architecture": true,
+    "same_dataset": true,
+    "same_epochs": true,
+    "same_initial_parameters": true,
+    "same_learning_rate": true,
+    "same_optimizer": true
+  },
+  "result_policy": {
+    "correction": "new-protocol-new-preregistration-new-result",
+    "failed_runs_are_evidence": true,
+    "overwrite": false,
+    "selection": "all-preregistered-runs"
+  },
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "c143ed9de4c57373370e7985356eb379ac7a636fd0b2d5ba8e0728957d886302"
+  },
+  "sealed_at_utc": "2026-07-30T14:55:15.964347+00:00",
+  "timestamp_limitation": "ordem temporal é demonstrada pelo arquivo e pelo histórico Git; não há carimbo externo confiável neste estágio",
+  "trusted_external_timestamp": false
+}

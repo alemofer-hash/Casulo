@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "decision_owner": "T",
+      "name": "casv-visual-primitives",
+      "role": "render RGB8 scene when available and encode exact canonical fallback selected by T"
+    }
+  ]
+}

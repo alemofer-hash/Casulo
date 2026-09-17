@@ -1,0 +1,88 @@
+{
+  "files": [
+    {
+      "bytes": 97676,
+      "path": "os/kernel/src/main.rs",
+      "sha256": "a2bc33da033e472b88f12fc5c0c89d5461154de50dfe4277717b4fa4fa4ddcf4"
+    },
+    {
+      "bytes": 11362,
+      "path": "os/kernel/src/fw_cfg.rs",
+      "sha256": "661749b21098c3d058e80002fa571a01c1cdde5dba4b6688ed0ea0c8584025f8"
+    },
+    {
+      "bytes": 33583,
+      "path": "os/kernel/src/memory.rs",
+      "sha256": "82c89dbe9053214625b611b85e24b699bd636ae387c9be001f87dd1c6f41aaf1"
+    },
+    {
+      "bytes": 27750,
+      "path": "os/kernel/src/model_creation_probe.rs",
+      "sha256": "6d0672bbaa3641c9b51a8f2f2fe83f18523eab07c94d7cc988f82e3e59fb2f8a"
+    },
+    {
+      "bytes": 4689,
+      "path": "os/kernel/src/system_pack.rs",
+      "sha256": "744ce2d7f5040272dee29be16648db28963b05c2b4f8d6ab90215f182a672bd0"
+    },
+    {
+      "bytes": 139275,
+      "path": "os/native-model/src/lib.rs",
+      "sha256": "8f6723fb973dbe179c67a66be4779ff54ad293841461a7358f87f68eaac8aeba"
+    },
+    {
+      "bytes": 7820,
+      "path": "os/tools/build_native_neural_port_image.py",
+      "sha256": "fb2d06d4b69ee1dd7732bdc558c610ce972295458d567418792e1488c5370dd9"
+    },
+    {
+      "bytes": 6698,
+      "path": "os/tools/build_native_creation_pack.py",
+      "sha256": "15cf019d07e23bd682d7adea0d359cbca69549572b1b6fc0eb77a23e326c891c"
+    },
+    {
+      "bytes": 15178,
+      "path": "os/tools/run_native_creation_qemu.py",
+      "sha256": "65f4295b85016cbdedeaf0a9e67753e0f8f883219a4d1a8cdd7d57f444cd5728"
+    },
+    {
+      "bytes": 6538,
+      "path": "os/tools/launch_native_creation_visible.py",
+      "sha256": "2bd75d3bef191f694156b0f475fc5ca25ee44a046536924205e84bd2c77d6a09"
+    },
+    {
+      "bytes": 5974,
+      "path": "tools/build_native_system_pack.py",
+      "sha256": "463e77b910758eef683beabd66b4cf2c7d807f61e648f1038fd558f6273c88c8"
+    },
+    {
+      "bytes": 1934,
+      "path": "private/casulo-owner/t-v2/native-creation-token-policy.t",
+      "sha256": "9f24aaf056ab48756eaa0dff90169e02ed5234812e6e52de80f046f7f82347b2"
+    },
+    {
+      "bytes": 336,
+      "path": "private/casulo-owner/t-v2/native-creation-add.t",
+      "sha256": "cc120e8f626c222674f8d950027f2265a05a59bd2167689bc746273f557ea0b3"
+    },
+    {
+      "bytes": 2023,
+      "path": "private/casulo-owner/t-v2/native-creation-acceptance.t",
+      "sha256": "30a2a7d67ff35c6411a87bd32f38f98d4e2f5ad31b19013ded8528f164d4bbe9"
+    },
+    {
+      "bytes": 1221,
+      "path": "private/casulo-owner/native-creation-prompt.json",
+      "sha256": "9f4c7d1e43e9f500cf489dcb9d4ab48b168ab77a237adfe4f1b6eb9e517272d5"
+    },
+    {
+      "bytes": 14319,
+      "path": "os/Cargo.lock",
+      "sha256": "7bd5dc6ac3ffd47c53d29019bf0a58119d503c1f4d5f36f51c849184a919045a"
+    }
+  ],
+  "git_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "rebuild_command": "python os/tools/build_native_neural_port_image.py --stage np10 --system-pack release/casulo-native-neural-port-system-pack-np10.cspk",
+  "schema": "casulo-native-source-provenance/1.0",
+  "worktree_dirty_preserved": true
+}

@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc08-voice",
+  "gate_sha256": "0fb746218edf8dc1d81012b1422d88aa384ae1b1d9c40aadd3c9e7297263caf3",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC8_VOICE_PRIMARY_IMPLEMENTATION_PASS",
+  "timestamp": "2026-08-14T21:12:19.209231+00:00"
+}

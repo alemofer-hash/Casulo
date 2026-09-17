@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "all_bom_free": true,
+    "all_parse_in_real_wsh": true,
+    "base_unchanged": true,
+    "focused_regression": true,
+    "four_launchers": true,
+    "old_failure_reproduced_by_bytes": true,
+    "old_launcher_preserved": true,
+    "old_manifest_preserved": true,
+    "owner_artifact_unchanged": true,
+    "prior_gates_preserved": true,
+    "release_signature_and_hashes": true,
+    "storage_reserve": true
+  },
+  "gate_id": "RC13_HANDOFF_COMPLETE_VBSCRIPT_RESEAL",
+  "release_manifest_sha256": "b6bfaa8166b0b2174392be64c1936a266e8a8cd119c9c7a8ab5e38017c2c4196",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "state": "READY_FOR_GUILHERME_CASULO_BETA_HUMAN_PROOF",
+  "status": "PASS",
+  "supersedes_manifest_sha256": "7a8b4c4f2e7538c40347ead4a9caed68b7031419695bad28d93c0919d10d13f2",
+  "timestamp": "2026-08-14T22:02:13.417052+00:00"
+}

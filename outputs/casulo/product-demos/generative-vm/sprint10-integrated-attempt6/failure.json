@@ -1,0 +1,17 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "attempt": "sprint10-integrated-attempt6",
+  "gate": "GENERATIVE_VM_HANDOFF_SCENARIO_FAIL",
+  "failed_before_materialization": true,
+  "failed_operation": "verifier-repair-revision",
+  "observed": {
+    "conversation_traces_present": 2,
+    "intent_checkpoint_present": true,
+    "generated_project_checkpoint_present": true,
+    "real_verifier_diagnostic_present": true,
+    "revision_candidate_applied": false
+  },
+  "classification": "INVALID_GENERATIVE_REVISION_CANDIDATE_REJECTED",
+  "preservation": "VM, overlay, checkpoints and attempt-0 compiler artifacts retained; no prior evidence overwritten",
+  "scientific_benchmark_started": false
+}

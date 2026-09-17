@@ -1,0 +1,48 @@
+{
+  "protocol": "casulo-window-preregistration/0.1",
+  "sealed_at_utc": "2026-07-31T18:37:22.932037+00:00",
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "workload": {
+    "graph_path_hint": "heldout-wide.tensor.json",
+    "graph_sha256": "669e16cbc2f811f7f939cf7dcb8acde118eefea20875099dcf99c9878f7d76f5",
+    "autograd_protocol": "casulo-autograd-ir/0.1",
+    "wrt": [
+      "weight1",
+      "weight2"
+    ],
+    "loss": "loss",
+    "input_seed": 20260731,
+    "backend": "casulo-candidate-only",
+    "workers": 2,
+    "gemm_workers": "adaptive",
+    "provider": "owned"
+  },
+  "design": {
+    "windows_ms": [
+      250.0,
+      500.0
+    ],
+    "samples_per_window": 7,
+    "warmups": 2,
+    "max_coefficient_of_variation": 0.15,
+    "cooldown_ms": 100,
+    "maximum_inner_iterations": 1000000,
+    "selection_rule": "first-ascending-window-with-cv-at-or-below-limit",
+    "stop_after_first_stable_window": true,
+    "uses_speedup_or_winner_selection": false
+  },
+  "scientific_scope": {
+    "claim_eligible": false,
+    "pytorch_loaded": false,
+    "purpose": "measurement-window-calibration-only",
+    "limitations": [
+      "a estabilidade vale apenas para o workload e host registrados",
+      "a calibração não mede superioridade nem economia de energia"
+    ]
+  },
+  "claim": null
+}

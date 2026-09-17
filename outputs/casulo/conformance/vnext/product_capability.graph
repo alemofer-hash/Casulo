@@ -1,0 +1,13 @@
+metamorfose-graph/1.0
+module casulo.product.presence
+
+capability manifest
+
+operation Present cacheable=true cost=1 effects=manifest
+  permissions manifest
+  cfg entry=block/root.0
+  cfg-block block/root.0 successors=exit
+  cfg-block exit successors=-
+  node Present/input/message kind=input defines=message uses=- effect=read cost=0
+  node Present/instruction/root.0/emit kind=emit defines=- uses=message effect=manifest cost=1
+  edge Present/input/message -> Present/instruction/root.0/emit kind=data name=message

@@ -1,0 +1,31 @@
+{
+  "CPU_PACKAGE_RAPL": {
+    "available": false,
+    "qualified": false,
+    "reason": "bare-metal Windows host exposes no validated Linux powercap energy_uj source"
+  },
+  "EXPLORATORY_HWINFO": {
+    "available": true,
+    "literal_sensor": "Potência total da CPU [W]",
+    "median_interval_seconds": 0.252,
+    "p95_interval_seconds": 0.271,
+    "provenance": "hwinfo_reported_cpu_package",
+    "qualified": false,
+    "reason": "reported package-power telemetry is usable only for exploratory trapezoidal integration",
+    "unit": "w"
+  },
+  "TOTAL_SYSTEM_WALL": {
+    "available": false,
+    "qualified": false,
+    "reason": "no calibrated physical wall analyzer with serial/certificate/export was detected"
+  },
+  "battery": {
+    "ac_connected": true,
+    "percent": 73,
+    "present": true,
+    "reason": "battery was charging during the exploratory campaign; total-system attribution is prohibited",
+    "stable_for_total_system": false
+  },
+  "observed_at_utc": "2026-08-20T01:24:17.176028+00:00",
+  "schema": "casulo.interlocution-energy-capabilities/2.0"
+}

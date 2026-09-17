@@ -1,0 +1,193 @@
+{
+  "boundaries": {
+    "block_devices": "PROHIBITED",
+    "cloud": "RELEASE_LOCKED",
+    "guest_network_default": "OFF",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb": "PROHIBITED"
+  },
+  "captured_utc": "2026-08-14T19:37:12.765307+00:00",
+  "g10": {
+    "pass": true,
+    "records": [
+      {
+        "actual_sha256": "3529733742e6cd52537f1651a0488061e2f88dc4020339a450a14c57e8d69651",
+        "expected_sha256": "3529733742e6cd52537f1651a0488061e2f88dc4020339a450a14c57e8d69651",
+        "pass": true,
+        "path": "release/generative-vm/handoff/MANIFEST.json"
+      },
+      {
+        "actual_sha256": "c698f3d649f0216b173270ca33f78617c4d8c37575a410798022243a90b9c9d6",
+        "expected_sha256": "c698f3d649f0216b173270ca33f78617c4d8c37575a410798022243a90b9c9d6",
+        "pass": true,
+        "path": "product-demos/generative-vm/sprint10-integrated-attempt12/g10-integrated-handoff.json"
+      },
+      {
+        "actual_sha256": "bd223daf90ec64549d693fddce853cdc601d19c7c0d4c734ce90088b11fa9477",
+        "expected_sha256": "bd223daf90ec64549d693fddce853cdc601d19c7c0d4c734ce90088b11fa9477",
+        "pass": true,
+        "path": "release/generative-vm/casulo-owner-generative-vm-g10-complete.zip"
+      },
+      {
+        "actual_sha256": "e0452669dc33ce20320c59ccc4af94500561192cc9f52e9f8270fcea4fc0db12",
+        "expected_sha256": "e0452669dc33ce20320c59ccc4af94500561192cc9f52e9f8270fcea4fc0db12",
+        "pass": true,
+        "path": "release/CASULO_OWNER_VM_INSPECT.ps1"
+      }
+    ]
+  },
+  "human_reinspection": "PENDING_GUILHERME",
+  "model_runtime": {
+    "llama_cpp_b10362": {
+      "bytes": 9216,
+      "license": "MIT",
+      "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\runtime\\llama-server.exe",
+      "present": true,
+      "role": "required-local-inference-runtime",
+      "sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e"
+    },
+    "qwen3_4b_q4_k_m": {
+      "bytes": 2497280256,
+      "license": "Apache-2.0",
+      "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+      "present": true,
+      "role": "required-bootstrap-model",
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+    }
+  },
+  "package": {
+    "entries": 22,
+    "hash_failures": [],
+    "manifest": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\.staging\\casulo-revolution-closure-2026-08-14-f4bb6571\\CASULO_REVOLUTION_CLOSURE_GOAL_2026-08-14\\MANIFEST.sha256",
+    "manifest_sha256": "673f35186479340caa31463135ea3abe5e2885eb6cece6de6cdc401ea882a095",
+    "missing_files": [],
+    "pass": true,
+    "uncovered_files": [],
+    "unsafe_archive_members": [],
+    "zip": "C:\\Users\\guimo\\Downloads\\CASULO_REVOLUTION_CLOSURE_GOAL_2026-08-14.zip",
+    "zip_bytes": 401917,
+    "zip_sha256": "f4bb65711916a50589cb278e2f52c4ce7253e5ddb77853dd52b95f49421efc2b"
+  },
+  "pass": false,
+  "read_only_checks": {
+    "model_doctor": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "casulo_owner.generative_cli",
+        "doctor",
+        "--candidate",
+        "release/generative-candidates/qwen3-4b-q4km-llamacpp-b10362.json",
+        "--cache",
+        "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative"
+      ],
+      "exit_code": 0,
+      "output": "product-demos/revolution-closure/rc00-baseline/model_doctor.txt",
+      "output_sha256": "56450fa53bdf1204057e7802027f7bf5109dd031fc1d48d85d00fece00860ac1",
+      "pass": true
+    },
+    "pass": false,
+    "product_smoke": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/product/test_semantic_multiverse_doctor.py",
+        "tests/product/test_research_retirement.py",
+        "tests/product/test_product_edition_release.py"
+      ],
+      "exit_code": 1,
+      "output": "product-demos/revolution-closure/rc00-baseline/product_smoke.txt",
+      "output_sha256": "7c7cdfe32d9a603d2c9178a3cdebb12bb416df4e9f6c50ffcb739f91a6d3b185",
+      "pass": false
+    },
+    "public_audit": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "tools/audit_public_artifact.py",
+        "editions/casulo-public"
+      ],
+      "exit_code": 0,
+      "output": "product-demos/revolution-closure/rc00-baseline/public_audit.txt",
+      "output_sha256": "6c342e03892d9fe70772c10d01626676ed1cbf8b983a01a09c6c7971f7f2603b",
+      "pass": true
+    },
+    "semantic_doctor": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "tools/casulo_semantic_multiverse.py",
+        "doctor",
+        "--repo",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "product-demos/revolution-closure/rc00-baseline/semantic_doctor.txt",
+      "output_sha256": "642f46cd42142fe539aee334e4cf8e84c758c8d5b617a986368d60c7fd9ed07e",
+      "pass": true
+    },
+    "vm_doctor": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "tools/casulo_vm.py",
+        "--base",
+        "release/casulo-native-generative-interactive.img",
+        "--state-root",
+        "release/semantic-multiverse/initial-owner-state-reinspection-2026-08-13",
+        "doctor"
+      ],
+      "exit_code": 0,
+      "output": "product-demos/revolution-closure/rc00-baseline/vm_doctor.txt",
+      "output_sha256": "7de0d05cffa587eaa802abe794171a03b6219d93be44536147517dec3f42affa",
+      "pass": true
+    }
+  },
+  "schema": "casulo.revolution-closure/1.0/baseline",
+  "semantic_reseal": {
+    "pass": true,
+    "records": [
+      {
+        "actual_sha256": "31764546c2dff61f68d2b00bbe4f78060cef4d1523234e7ad59ab1c24d9ad724",
+        "expected_sha256": "31764546c2dff61f68d2b00bbe4f78060cef4d1523234e7ad59ab1c24d9ad724",
+        "pass": true,
+        "path": "release/semantic-multiverse/handoff-reinspection-2026-08-13/MANIFEST.json"
+      },
+      {
+        "actual_sha256": "003f5644e8f12a57478f795b799405fede46b23c6b18c4ca6e99000a60d678d5",
+        "expected_sha256": "003f5644e8f12a57478f795b799405fede46b23c6b18c4ca6e99000a60d678d5",
+        "pass": true,
+        "path": "product-demos/semantic-multiverse/inspection-failure-3-einstein-rerun/einstein-solver-evidence.json"
+      },
+      {
+        "actual_sha256": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1",
+        "expected_sha256": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1",
+        "pass": true,
+        "path": "product-demos/semantic-multiverse/inspection-failure-3-einstein-preserved/owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7.casulo.zip"
+      },
+      {
+        "actual_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+        "expected_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+        "pass": true,
+        "path": "release/casulo-native-generative-interactive.img"
+      }
+    ]
+  },
+  "worktree": {
+    "branch": "product/semantic-multiverse",
+    "captured_utc": "2026-08-14T19:37:12.765307+00:00",
+    "collision": false,
+    "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+    "destructive_git_command_used": false,
+    "new_worktree_created": false,
+    "preexisting_changes_preserved": true,
+    "schema": "casulo.revolution-closure/1.0/worktree-manifest",
+    "status_all_lines": 16494,
+    "status_all_sha256": "e1a7532f9805c7bb4c7222b956b2d8c36e7bdf1de370787689e6071956bce845",
+    "status_short_lines": 196,
+    "status_short_sha256": "ef8e51218e11e9d19aa842c9f7aa8da3d31e0fc59dc0bc39fe1882dd47495223",
+    "worktrees_sha256": "c51ceb2d9f93006d9183bee1d477e50f254a556515b5ee4349b76a7e82988912"
+  }
+}

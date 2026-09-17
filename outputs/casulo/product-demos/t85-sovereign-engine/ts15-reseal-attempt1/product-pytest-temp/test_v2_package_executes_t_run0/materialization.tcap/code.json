@@ -1,0 +1,327 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "owner.materialization.lifecycle"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "action"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PREPARE"
+                }
+              },
+              "else": [
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "action"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "SEAL"
+                    }
+                  },
+                  "else": [
+                    {
+                      "condition": {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "action"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "eq",
+                        "right": {
+                          "op": "const",
+                          "value": "PUBLISH"
+                        }
+                      },
+                      "else": [
+                        {
+                          "op": "return_error",
+                          "value": {
+                            "op": "const",
+                            "value": "unknown_materialization_action"
+                          }
+                        }
+                      ],
+                      "op": "if",
+                      "then": [
+                        {
+                          "condition": {
+                            "left": {
+                              "op": "path",
+                              "path": [
+                                "previous"
+                              ],
+                              "root": "input"
+                            },
+                            "op": "eq",
+                            "right": {
+                              "op": "const",
+                              "value": "SEALED"
+                            }
+                          },
+                          "error": "seal_receipt_required",
+                          "op": "require"
+                        },
+                        {
+                          "condition": {
+                            "left": {
+                              "args": [
+                                {
+                                  "op": "path",
+                                  "path": [
+                                    "candidate_hash"
+                                  ],
+                                  "root": "input"
+                                }
+                              ],
+                              "name": "len",
+                              "op": "call"
+                            },
+                            "op": "ne",
+                            "right": {
+                              "op": "const",
+                              "value": 0
+                            }
+                          },
+                          "error": "candidate_hash_missing",
+                          "op": "require"
+                        },
+                        {
+                          "condition": {
+                            "op": "path",
+                            "path": [
+                              "candidate_hash_valid"
+                            ],
+                            "root": "input"
+                          },
+                          "error": "candidate_hash_invalid",
+                          "op": "require"
+                        },
+                        {
+                          "condition": {
+                            "op": "path",
+                            "path": [
+                              "atomic_ready"
+                            ],
+                            "root": "input"
+                          },
+                          "error": "atomic_publish_unavailable",
+                          "op": "require"
+                        },
+                        {
+                          "effect": "manifest",
+                          "op": "request_effect"
+                        },
+                        {
+                          "op": "return_ok",
+                          "value": {
+                            "op": "const",
+                            "value": "PUBLISH"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "condition": {
+                        "left": {
+                          "op": "path",
+                          "path": [
+                            "previous"
+                          ],
+                          "root": "input"
+                        },
+                        "op": "eq",
+                        "right": {
+                          "op": "const",
+                          "value": "PREPARED"
+                        }
+                      },
+                      "error": "prepare_receipt_required",
+                      "op": "require"
+                    },
+                    {
+                      "condition": {
+                        "left": {
+                          "args": [
+                            {
+                              "op": "path",
+                              "path": [
+                                "candidate_hash"
+                              ],
+                              "root": "input"
+                            }
+                          ],
+                          "name": "len",
+                          "op": "call"
+                        },
+                        "op": "ne",
+                        "right": {
+                          "op": "const",
+                          "value": 0
+                        }
+                      },
+                      "error": "candidate_hash_missing",
+                      "op": "require"
+                    },
+                    {
+                      "condition": {
+                        "op": "path",
+                        "path": [
+                          "candidate_hash_valid"
+                        ],
+                        "root": "input"
+                      },
+                      "error": "candidate_hash_invalid",
+                      "op": "require"
+                    },
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "SEALED"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "previous"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "FULFILLED"
+                    }
+                  },
+                  "error": "hard_fulfillment_required",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "human_approved"
+                    ],
+                    "root": "input"
+                  },
+                  "error": "publish_human_approval_required",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "simulation_status"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "PASS"
+                    }
+                  },
+                  "error": "simulation_pass_required",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "effects_safe"
+                    ],
+                    "root": "input"
+                  },
+                  "error": "real_effect_or_secret_denied",
+                  "op": "require"
+                },
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "PREPARED"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            "manifest"
+          ],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "MaterializationInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.materialization.lifecycle"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

@@ -1,0 +1,1781 @@
+{
+  "backends": {
+    "casulo-linear-algebra-c99-openmp/0.3": {
+      "arena_required_bytes": 663680,
+      "compilation": {
+        "cache_hit": false,
+        "codegen_wall_ns": 1521500,
+        "compiler_subprocess_wall_ns": 2699427600,
+        "compiler_total_wall_ns": 2878054800,
+        "plan_wall_ns": 1237800
+      },
+      "compiler": {
+        "backend": "casulo-linear-algebra-c99-openmp/0.3",
+        "binary_sha256": "025de1987ac5259cd05f6ce04507482ff7a7792533542d8557e214eb0aa50175",
+        "cache_hit": false,
+        "command": [
+          "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+          "-std=c99",
+          "-O3",
+          "-march=native",
+          "-fno-fast-math",
+          "-ffp-contract=fast",
+          "-fopenmp",
+          "-shared",
+          "-Wl,--no-insert-timestamp,--image-base,0x180000000",
+          "-s",
+          "-fopt-info-vec-optimized=C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-sprint023-stability-pcores\\native-cache\\tensor-cpu\\9a51fc22c7688b23e0a23a74\\vectorization.txt",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-sprint023-stability-pcores\\native-cache\\tensor-cpu\\9a51fc22c7688b23e0a23a74\\casulo_tensor_cpu.c",
+          "-o",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-sprint023-stability-pcores\\native-cache\\tensor-cpu\\9a51fc22c7688b23e0a23a74\\casulo_tensor_cpu.dll",
+          "-lm"
+        ],
+        "compilation_wall_ns": 2699427600,
+        "compiler": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+        "compiler_version": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+        "library": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-sprint023-stability-pcores\\native-cache\\tensor-cpu\\9a51fc22c7688b23e0a23a74\\casulo_tensor_cpu.dll",
+        "protocol": "casulo-tensor-cpu-build/0.3",
+        "source_sha256": "0ca2873ff271a0dc73915f743c249635bc14ed0260828e298b9e1eb2c9e73e9e",
+        "vectorization_report": []
+      },
+      "gemm_provider": {
+        "abi": "casulo-gemm-provider/0.1",
+        "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+        "external": true,
+        "float32_symbol": "scipy_cblas_sgemm64_",
+        "float64_symbol": "scipy_cblas_dgemm64_",
+        "implementation": "external-cblas-ilp64-runtime-function-pointer",
+        "provider_id": "numpy-scipy-openblas-ilp64",
+        "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+        "version": "0.3.30"
+      },
+      "gemm_workers": 1,
+      "preparation_wall_ns": 162257200,
+      "status": "AVAILABLE",
+      "version": "casulo-linear-algebra-c99-openmp/0.3",
+      "workers": 4
+    },
+    "pytorch-eager-autograd-cpu": {
+      "compilation": null,
+      "preparation_wall_ns": 6494150700,
+      "status": "AVAILABLE",
+      "threads": 4,
+      "version": "2.12.1+cpu"
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "compilation": {
+        "backend": "inductor",
+        "fullgraph": true,
+        "toolchain": {
+          "compiler": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+          "encoding_policy": {
+            "compiler_language": "en-US",
+            "subprocess": "utf-8"
+          },
+          "error": null,
+          "source": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat",
+          "status": "READY"
+        },
+        "wall_ns": 24186411300
+      },
+      "error": null,
+      "preparation_wall_ns": 3705410800,
+      "status": "AVAILABLE",
+      "threads": 4,
+      "version": "2.12.1+cpu"
+    }
+  },
+  "claim": null,
+  "comparisons": {
+    "pytorch-eager-autograd-cpu": {
+      "baseline": "pytorch-eager-autograd-cpu",
+      "baseline_compilation_wall_ns": 0,
+      "baseline_wall_ns_per_invocation_median": 3278135.9375,
+      "break_even_invocations": 1466,
+      "candidate_compilation_wall_ns": 2878054800,
+      "candidate_wall_ns_per_invocation_median": 1314425.0,
+      "cpu_speedup_median": 4.566666666666666,
+      "cpu_speedup_status": "MEASURED",
+      "paired_samples": 7,
+      "wall_speedup_ci95": {
+        "lower": 2.3431650676538367,
+        "method": "paired-bootstrap-median",
+        "resamples": 2000,
+        "upper": 2.65843903157985
+      },
+      "wall_speedup_median": 2.497449573958195
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "baseline": "pytorch-inductor-autograd-cpu",
+      "baseline_compilation_wall_ns": 24186411300,
+      "baseline_wall_ns_per_invocation_median": 1769056.640625,
+      "break_even_invocations": 0,
+      "candidate_compilation_wall_ns": 2878054800,
+      "candidate_wall_ns_per_invocation_median": 1314425.0,
+      "cpu_speedup_median": 2.227272727272727,
+      "cpu_speedup_status": "MEASURED",
+      "paired_samples": 7,
+      "wall_speedup_ci95": {
+        "lower": 1.038826764877638,
+        "method": "paired-bootstrap-median",
+        "resamples": 2000,
+        "upper": 2.574211993349218
+      },
+      "wall_speedup_median": 1.3578163215639423
+    }
+  },
+  "created_at_utc": "2026-07-31T02:57:39.032092+00:00",
+  "energy": {
+    "joules": null,
+    "measured": false,
+    "method": null,
+    "reason": "nenhum contador elétrico cumulativo foi integrado"
+  },
+  "environment": {
+    "compiler": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+    "logical_cpu_count": 12,
+    "machine": "AMD64",
+    "measurement_host": {
+      "active_power_scheme": {
+        "returncode": 0,
+        "status": "OBSERVED",
+        "value": "GUID do Esquema de Energia: 381b4222-f694-41f0-9685-ff5bb260df2e (Equilibrado)"
+      },
+      "available_memory_bytes": 1964519424,
+      "battery_percent": 65.0,
+      "cpu_frequency_mhz": 1300.0,
+      "cpu_frequency_per_cpu_mhz": [
+        1300.0
+      ],
+      "cpu_topology": {
+        "cores": [
+          {
+            "core_index": 0,
+            "efficiency_class": 1,
+            "logical_processors": [
+              0,
+              1
+            ],
+            "smt": true
+          },
+          {
+            "core_index": 1,
+            "efficiency_class": 1,
+            "logical_processors": [
+              2,
+              3
+            ],
+            "smt": true
+          },
+          {
+            "core_index": 2,
+            "efficiency_class": 0,
+            "logical_processors": [
+              4
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 3,
+            "efficiency_class": 0,
+            "logical_processors": [
+              5
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 4,
+            "efficiency_class": 0,
+            "logical_processors": [
+              6
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 5,
+            "efficiency_class": 0,
+            "logical_processors": [
+              7
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 6,
+            "efficiency_class": 0,
+            "logical_processors": [
+              8
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 7,
+            "efficiency_class": 0,
+            "logical_processors": [
+              9
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 8,
+            "efficiency_class": 0,
+            "logical_processors": [
+              10
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 9,
+            "efficiency_class": 0,
+            "logical_processors": [
+              11
+            ],
+            "smt": false
+          }
+        ],
+        "current_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "logical_cpu_count": 12,
+        "method": "GetLogicalProcessorInformationEx",
+        "reason": null
+      },
+      "observed_at_utc": "2026-07-31T02:57:38.909944+00:00",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "power_plugged": false,
+      "process_cpu_affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "system_load_percent": 89.6,
+      "temperature_celsius": null,
+      "temperature_source": null
+    },
+    "numpy": "2.3.5",
+    "physical_cpu_count": 10,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "process_priority": "32",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2",
+    "pytorch": "2.12.1+cpu",
+    "total_memory_bytes": 16890978304
+  },
+  "input": {
+    "generator": {
+      "algorithm": "numpy-pcg64-normal",
+      "protocol": "casulo-tensor-lab-input/0.1",
+      "seed": 20260730,
+      "weight_scale": 0.1
+    },
+    "protocol": "casulo-tensor-lab-input/0.1",
+    "sha256": "b1d185fce86906e5075db526a19c832b1f5ac1b9ae5fbb034a11fcb666763ee4",
+    "values": [
+      {
+        "dtype": "float32",
+        "name": "x",
+        "nbytes": 73728,
+        "shape": [
+          384,
+          48
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "weight1",
+        "nbytes": 18432,
+        "shape": [
+          48,
+          96
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "weight2",
+        "nbytes": 4608,
+        "shape": [
+          96,
+          12
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "target",
+        "nbytes": 18432,
+        "shape": [
+          384,
+          12
+        ]
+      }
+    ]
+  },
+  "measurement_stability": {
+    "affinity": {
+      "applied": false,
+      "effective": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "original": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "reason": "afinidade não solicitada",
+      "requested": null
+    },
+    "calibration": {
+      "algorithm": "per-backend-doubling-then-shared-maximum",
+      "all_backends_reached_target": true,
+      "maximum_iterations": 1000000,
+      "minimum_iterations": 16,
+      "protocol": "casulo-measurement-stability/0.1",
+      "required_iterations_by_backend": {
+        "casulo-linear-algebra-c99-openmp/0.3": 256,
+        "pytorch-eager-autograd-cpu": 128,
+        "pytorch-inductor-autograd-cpu": 256
+      },
+      "search_trace": {
+        "casulo-linear-algebra-c99-openmp/0.3": [
+          {
+            "cpu_ns": 31250000,
+            "iterations": 16,
+            "wall_ns": 33154100
+          },
+          {
+            "cpu_ns": 31250000,
+            "iterations": 32,
+            "wall_ns": 38557100
+          },
+          {
+            "cpu_ns": 62500000,
+            "iterations": 64,
+            "wall_ns": 91676200
+          },
+          {
+            "cpu_ns": 234375000,
+            "iterations": 128,
+            "wall_ns": 150247100
+          },
+          {
+            "cpu_ns": 281250000,
+            "iterations": 256,
+            "wall_ns": 325857800
+          }
+        ],
+        "pytorch-eager-autograd-cpu": [
+          {
+            "cpu_ns": 62500000,
+            "iterations": 16,
+            "wall_ns": 41132600
+          },
+          {
+            "cpu_ns": 78125000,
+            "iterations": 32,
+            "wall_ns": 101851400
+          },
+          {
+            "cpu_ns": 187500000,
+            "iterations": 64,
+            "wall_ns": 235509400
+          },
+          {
+            "cpu_ns": 359375000,
+            "iterations": 128,
+            "wall_ns": 455981300
+          }
+        ],
+        "pytorch-inductor-autograd-cpu": [
+          {
+            "cpu_ns": 46875000,
+            "iterations": 16,
+            "wall_ns": 14473700
+          },
+          {
+            "cpu_ns": 78125000,
+            "iterations": 32,
+            "wall_ns": 32922300
+          },
+          {
+            "cpu_ns": 109375000,
+            "iterations": 64,
+            "wall_ns": 67271500
+          },
+          {
+            "cpu_ns": 265625000,
+            "iterations": 128,
+            "wall_ns": 141455600
+          },
+          {
+            "cpu_ns": 421875000,
+            "iterations": 256,
+            "wall_ns": 391854000
+          }
+        ]
+      },
+      "selected_shared_iterations": 256,
+      "target_reached_during_search": {
+        "casulo-linear-algebra-c99-openmp/0.3": true,
+        "pytorch-eager-autograd-cpu": true,
+        "pytorch-inductor-autograd-cpu": true
+      },
+      "target_wall_ms": 250.0,
+      "target_wall_ns": 250000000,
+      "uses_speedup_or_winner_selection": false,
+      "verification": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 437500000,
+          "iterations": 256,
+          "target_reached": true,
+          "wall_ns": 2435416500
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 1140625000,
+          "iterations": 256,
+          "target_reached": true,
+          "wall_ns": 3248045200
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 890625000,
+          "iterations": 256,
+          "target_reached": true,
+          "wall_ns": 2726490700
+        }
+      }
+    },
+    "coefficient_of_variation": {
+      "casulo-linear-algebra-c99-openmp/0.3": 0.08042901672193278,
+      "pytorch-eager-autograd-cpu": 0.2633186372081991,
+      "pytorch-inductor-autograd-cpu": 0.6473306309479415
+    },
+    "cooldown_ms": 0,
+    "max_coefficient_of_variation": 0.15,
+    "protocol": "casulo-measurement-stability/0.1",
+    "selected_inner_iterations": 256,
+    "telemetry": {
+      "active_power_scheme": {
+        "returncode": 0,
+        "status": "OBSERVED",
+        "value": "GUID do Esquema de Energia: 381b4222-f694-41f0-9685-ff5bb260df2e (Equilibrado)"
+      },
+      "available_memory_bytes": 1963917312,
+      "battery_percent": 65.0,
+      "cpu_frequency_mhz": 1300.0,
+      "cpu_frequency_per_cpu_mhz": [
+        1300.0
+      ],
+      "cpu_topology": {
+        "cores": [
+          {
+            "core_index": 0,
+            "efficiency_class": 1,
+            "logical_processors": [
+              0,
+              1
+            ],
+            "smt": true
+          },
+          {
+            "core_index": 1,
+            "efficiency_class": 1,
+            "logical_processors": [
+              2,
+              3
+            ],
+            "smt": true
+          },
+          {
+            "core_index": 2,
+            "efficiency_class": 0,
+            "logical_processors": [
+              4
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 3,
+            "efficiency_class": 0,
+            "logical_processors": [
+              5
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 4,
+            "efficiency_class": 0,
+            "logical_processors": [
+              6
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 5,
+            "efficiency_class": 0,
+            "logical_processors": [
+              7
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 6,
+            "efficiency_class": 0,
+            "logical_processors": [
+              8
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 7,
+            "efficiency_class": 0,
+            "logical_processors": [
+              9
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 8,
+            "efficiency_class": 0,
+            "logical_processors": [
+              10
+            ],
+            "smt": false
+          },
+          {
+            "core_index": 9,
+            "efficiency_class": 0,
+            "logical_processors": [
+              11
+            ],
+            "smt": false
+          }
+        ],
+        "current_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "logical_cpu_count": 12,
+        "method": "GetLogicalProcessorInformationEx",
+        "reason": null
+      },
+      "observed_at_utc": "2026-07-31T02:57:38.980410+00:00",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "power_plugged": false,
+      "process_cpu_affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "system_load_percent": 72.0,
+      "temperature_celsius": null,
+      "temperature_source": null
+    }
+  },
+  "memory": {
+    "casulo-linear-algebra-c99-openmp/0.3": {
+      "limitations": "RSS é do processo inteiro, a sondagem é sequencial e pode perder picos menores que o intervalo de amostragem",
+      "method": "process-rss-polling-separate-from-timing",
+      "rss_after_bytes": 350720000,
+      "rss_before_bytes": 350654464,
+      "rss_peak_delta_bytes": 86016,
+      "rss_peak_observed_bytes": 350740480,
+      "sampling_interval_seconds": 0.001,
+      "status": "OBSERVED"
+    },
+    "pytorch-eager-autograd-cpu": {
+      "limitations": "RSS é do processo inteiro, a sondagem é sequencial e pode perder picos menores que o intervalo de amostragem",
+      "method": "process-rss-polling-separate-from-timing",
+      "rss_after_bytes": 350867456,
+      "rss_before_bytes": 350720000,
+      "rss_peak_delta_bytes": 167936,
+      "rss_peak_observed_bytes": 350887936,
+      "sampling_interval_seconds": 0.001,
+      "status": "OBSERVED"
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "limitations": "RSS é do processo inteiro, a sondagem é sequencial e pode perder picos menores que o intervalo de amostragem",
+      "method": "process-rss-polling-separate-from-timing",
+      "rss_after_bytes": 350867456,
+      "rss_before_bytes": 350867456,
+      "rss_peak_delta_bytes": 24576,
+      "rss_peak_observed_bytes": 350892032,
+      "sampling_interval_seconds": 0.001,
+      "status": "OBSERVED"
+    }
+  },
+  "protocol": "casulo-tensor-lab-report/0.2",
+  "quality": {
+    "details": {
+      "inductor_vs_numpy": {
+        "checks": [
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "loss",
+            "max_absolute_error": 0.0,
+            "max_relative_error": 0.0,
+            "name": "loss",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              1
+            ],
+            "shape_ok": true
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "gradient",
+            "max_absolute_error": 2.7939677238464355e-09,
+            "max_relative_error": 0.0007215007215007215,
+            "name": "weight1",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              48,
+              96
+            ],
+            "shape_ok": true
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "gradient",
+            "max_absolute_error": 7.450580596923828e-09,
+            "max_relative_error": 3.1373730148272246e-05,
+            "name": "weight2",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              96,
+              12
+            ],
+            "shape_ok": true
+          }
+        ],
+        "passed": true,
+        "reason": null,
+        "status": "PASS"
+      },
+      "native_vs_numpy": {
+        "checks": [
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 9.5367431640625e-07,
+            "max_relative_error": 0.001209817890637979,
+            "name": "hidden",
+            "numpy_sha256": "ad5e033769cc1553f4c67927100ae38e19ba385670b9efcd03ac55a97c220580",
+            "passed": true,
+            "pytorch_sha256": "a169ebf7367997c671d7fd407afabf1ee9333e0339ce0acc87cb33bd6ae38b2c",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              96
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 7.152557373046875e-07,
+            "max_relative_error": 0.0003782018940867536,
+            "name": "active",
+            "numpy_sha256": "e60994aed59eadfdf99e5b381d559dfae639a79c53ad4028a93e5903248dbaf0",
+            "passed": true,
+            "pytorch_sha256": "0aed366fbe67715fdb7ba7d79b192b42b1b53aad6f4d5f700e0ea12cb5beb375",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              96
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 3.5762786865234375e-07,
+            "max_relative_error": 0.0003030736607678926,
+            "name": "prediction",
+            "numpy_sha256": "9cce83d709cb6e0878f787e128b3df25211ac921de881d2c4eb1441f6cbee61b",
+            "passed": true,
+            "pytorch_sha256": "26a728dacba9d3591812e35a21096ec90eb8c49e0e376f52221d37bc216daf95",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              12
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 3.5762786865234375e-07,
+            "max_relative_error": 8.846034764916627e-05,
+            "name": "residual",
+            "numpy_sha256": "06ac684c79af98b55c17ae0ef450602b79639ced2776585815137de7b750173a",
+            "passed": true,
+            "pytorch_sha256": "4f09f7ad404eb370de5f975c8610affb4201606bb18ec9b5f1b6940d1e710791",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              12
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 1.9073486328125e-06,
+            "max_relative_error": 0.00017691287041132243,
+            "name": "squared",
+            "numpy_sha256": "76243e422fa11f27df3f5effcce5fc63dc8c8a63a969fd74c9c4b45facb7d0cb",
+            "passed": true,
+            "pytorch_sha256": "e2fa98616c549fbe03a2b3674ebf96a01329a045f6bb96cbbeec2fb163eda01a",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              12
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "loss",
+            "max_absolute_error": 0.0,
+            "max_relative_error": 0.0,
+            "name": "loss",
+            "numpy_sha256": "54a61c7398b80b6c7f4eb69a2f69eb84038b57833d428eafe4b476533b4d29a3",
+            "passed": true,
+            "pytorch_sha256": "54a61c7398b80b6c7f4eb69a2f69eb84038b57833d428eafe4b476533b4d29a3",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              1
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 4.6566128730773926e-09,
+            "max_relative_error": 0.001440922190201729,
+            "name": "weight1",
+            "numpy_sha256": "68e9ff3eff850a372e2e9d8b2be82c55a9fb6572c8c6d866e495b457c9da5ca2",
+            "passed": true,
+            "pytorch_sha256": "7beef39ddf5a75435d88364949b816872331dc599a18a6cf39eb2698c9f86338",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              48,
+              96
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 3.725290298461914e-09,
+            "max_relative_error": 4.403346543372963e-05,
+            "name": "weight2",
+            "numpy_sha256": "8a974f2739e4acb0a4924197a2172dffe630a986abbfa0c7f057dae23f836074",
+            "passed": true,
+            "pytorch_sha256": "fabdc4a0984d67e83a33df8180a003b9619b25b26f3b71a64d8de3ab81e22e76",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              96,
+              12
+            ]
+          }
+        ],
+        "device": "cpu",
+        "energy_joules": null,
+        "graph_sha256": "b70e121e5d65c9cb4530f153400b95bdbff11dade61159e1d33553bc55067db0",
+        "input_sha256": "b1d185fce86906e5075db526a19c832b1f5ac1b9ae5fbb034a11fcb666763ee4",
+        "numpy_version": "2.3.5",
+        "passed": true,
+        "protocol": "casulo-pytorch-parity/0.1",
+        "pytorch_version": "casulo-linear-algebra-c99-openmp/0.3+025de1987ac5259c",
+        "reason": null,
+        "status": "PASS",
+        "timing": null,
+        "tolerances": [
+          {
+            "absolute": 1e-05,
+            "dtype": "float32",
+            "relative": 0.0001
+          },
+          {
+            "absolute": 1e-10,
+            "dtype": "float64",
+            "relative": 1e-09
+          }
+        ]
+      },
+      "numpy_vs_pytorch_eager": {
+        "checks": [
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 7.152557373046875e-07,
+            "max_relative_error": 0.0002891241270444348,
+            "name": "hidden",
+            "numpy_sha256": "a169ebf7367997c671d7fd407afabf1ee9333e0339ce0acc87cb33bd6ae38b2c",
+            "passed": true,
+            "pytorch_sha256": "e7a37a5ab545f96aee51830d669e6c134a8251f3573480d00e0f28f054a4492a",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              96
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 7.152557373046875e-07,
+            "max_relative_error": 8.73351983717757e-05,
+            "name": "active",
+            "numpy_sha256": "0aed366fbe67715fdb7ba7d79b192b42b1b53aad6f4d5f700e0ea12cb5beb375",
+            "passed": true,
+            "pytorch_sha256": "383027ff368a8cafe29f9d9511f6b9d8879ee5542b8a54e9770c917add8a2035",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              96
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 2.384185791015625e-07,
+            "max_relative_error": 4.959549342283098e-05,
+            "name": "prediction",
+            "numpy_sha256": "26a728dacba9d3591812e35a21096ec90eb8c49e0e376f52221d37bc216daf95",
+            "passed": true,
+            "pytorch_sha256": "85f597007ddb680ffb02314e82e67792077c97dc1f35806443cfedbe63fd1077",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              12
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 2.384185791015625e-07,
+            "max_relative_error": 9.037260625559181e-06,
+            "name": "residual",
+            "numpy_sha256": "4f09f7ad404eb370de5f975c8610affb4201606bb18ec9b5f1b6940d1e710791",
+            "passed": true,
+            "pytorch_sha256": "49d5115b6e801f65d41b576a039815039061200c97ba0a705d53b58f53f105c1",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              12
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 1.9073486328125e-06,
+            "max_relative_error": 1.80645567041417e-05,
+            "name": "squared",
+            "numpy_sha256": "e2fa98616c549fbe03a2b3674ebf96a01329a045f6bb96cbbeec2fb163eda01a",
+            "passed": true,
+            "pytorch_sha256": "d682a6df3e94cdf6b7c0cf2e47202bea4f6793efabc627001a8fd94ee9bb0973",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              384,
+              12
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "loss",
+            "max_absolute_error": 0.0,
+            "max_relative_error": 0.0,
+            "name": "loss",
+            "numpy_sha256": "54a61c7398b80b6c7f4eb69a2f69eb84038b57833d428eafe4b476533b4d29a3",
+            "passed": true,
+            "pytorch_sha256": "54a61c7398b80b6c7f4eb69a2f69eb84038b57833d428eafe4b476533b4d29a3",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              1
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 3.725290298461914e-09,
+            "max_relative_error": 0.001440922190201729,
+            "name": "weight1",
+            "numpy_sha256": "7beef39ddf5a75435d88364949b816872331dc599a18a6cf39eb2698c9f86338",
+            "passed": true,
+            "pytorch_sha256": "8ca47688c9f60bf786c79f1f234758c839abae5ec02c2c60ce8d003fc0833048",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              48,
+              96
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 7.450580596923828e-09,
+            "max_relative_error": 2.67813723808875e-05,
+            "name": "weight2",
+            "numpy_sha256": "fabdc4a0984d67e83a33df8180a003b9619b25b26f3b71a64d8de3ab81e22e76",
+            "passed": true,
+            "pytorch_sha256": "2a03ed818aac000f2003c4594fb89609a41c38013ecbd68f6f4c97a42e336043",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              96,
+              12
+            ]
+          }
+        ],
+        "device": "cpu",
+        "energy_joules": null,
+        "graph_sha256": "b70e121e5d65c9cb4530f153400b95bdbff11dade61159e1d33553bc55067db0",
+        "input_sha256": "b1d185fce86906e5075db526a19c832b1f5ac1b9ae5fbb034a11fcb666763ee4",
+        "numpy_version": "2.3.5",
+        "passed": true,
+        "protocol": "casulo-pytorch-parity/0.1",
+        "pytorch_version": "2.12.1+cpu",
+        "reason": null,
+        "status": "PASS",
+        "timing": null,
+        "tolerances": [
+          {
+            "absolute": 1e-05,
+            "dtype": "float32",
+            "relative": 0.0001
+          },
+          {
+            "absolute": 1e-10,
+            "dtype": "float64",
+            "relative": 1e-09
+          }
+        ]
+      }
+    },
+    "finite_samples": true,
+    "inductor_vs_numpy_loss_and_gradients": "PASS",
+    "native_vs_numpy": "PASS",
+    "numpy_vs_pytorch_eager": "PASS",
+    "same_dtype": true,
+    "same_graph": true,
+    "same_inputs": true,
+    "same_workers_or_threads": true
+  },
+  "samples": [
+    {
+      "index": 0,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 390625000,
+          "cpu_ns_per_invocation": 1525878.90625,
+          "inner_iterations": 256,
+          "wall_ns": 343122300,
+          "wall_ns_per_invocation": 1340321.484375
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 828125000,
+          "cpu_ns_per_invocation": 3234863.28125,
+          "inner_iterations": 256,
+          "wall_ns": 839202800,
+          "wall_ns_per_invocation": 3278135.9375
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 750000000,
+          "cpu_ns_per_invocation": 2929687.5,
+          "inner_iterations": 256,
+          "wall_ns": 1401023600,
+          "wall_ns_per_invocation": 5472748.4375
+        }
+      },
+      "order": [
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ],
+      "telemetry_after": {
+        "available_memory_bytes": 1843761152,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:23.136572+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 46.3,
+        "temperature_celsius": null,
+        "temperature_source": null
+      },
+      "telemetry_before": {
+        "available_memory_bytes": 1845678080,
+        "battery_percent": 66.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:19.903120+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 41.1,
+        "temperature_celsius": null,
+        "temperature_source": null
+      }
+    },
+    {
+      "index": 1,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 343750000,
+          "cpu_ns_per_invocation": 1342773.4375,
+          "inner_iterations": 256,
+          "wall_ns": 349546100,
+          "wall_ns_per_invocation": 1365414.453125
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 1593750000,
+          "cpu_ns_per_invocation": 6225585.9375,
+          "inner_iterations": 256,
+          "wall_ns": 1340776000,
+          "wall_ns_per_invocation": 5237406.25
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 765625000,
+          "cpu_ns_per_invocation": 2990722.65625,
+          "inner_iterations": 256,
+          "wall_ns": 520932100,
+          "wall_ns_per_invocation": 2034891.015625
+        }
+      },
+      "order": [
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu"
+      ],
+      "telemetry_after": {
+        "available_memory_bytes": 1596678144,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:26.182778+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 86.4,
+        "temperature_celsius": null,
+        "temperature_source": null
+      },
+      "telemetry_before": {
+        "available_memory_bytes": 1843912704,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:23.138744+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 0.0,
+        "temperature_celsius": null,
+        "temperature_source": null
+      }
+    },
+    {
+      "index": 2,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 468750000,
+          "cpu_ns_per_invocation": 1831054.6875,
+          "inner_iterations": 256,
+          "wall_ns": 336492800,
+          "wall_ns_per_invocation": 1314425.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 2140625000,
+          "cpu_ns_per_invocation": 8361816.40625,
+          "inner_iterations": 256,
+          "wall_ns": 840373800,
+          "wall_ns_per_invocation": 3282710.15625
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 937500000,
+          "cpu_ns_per_invocation": 3662109.375,
+          "inner_iterations": 256,
+          "wall_ns": 452878500,
+          "wall_ns_per_invocation": 1769056.640625
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-inductor-autograd-cpu"
+      ],
+      "telemetry_after": {
+        "available_memory_bytes": 1643520000,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:28.689398+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 92.6,
+        "temperature_celsius": null,
+        "temperature_source": null
+      },
+      "telemetry_before": {
+        "available_memory_bytes": 1596055552,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:26.188923+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 0.0,
+        "temperature_celsius": null,
+        "temperature_source": null
+      }
+    },
+    {
+      "index": 3,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 359375000,
+          "cpu_ns_per_invocation": 1403808.59375,
+          "inner_iterations": 256,
+          "wall_ns": 306435700,
+          "wall_ns_per_invocation": 1197014.453125
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 1765625000,
+          "cpu_ns_per_invocation": 6896972.65625,
+          "inner_iterations": 256,
+          "wall_ns": 676107300,
+          "wall_ns_per_invocation": 2641044.140625
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 1078125000,
+          "cpu_ns_per_invocation": 4211425.78125,
+          "inner_iterations": 256,
+          "wall_ns": 300004200,
+          "wall_ns_per_invocation": 1171891.40625
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu",
+        "casulo-linear-algebra-c99-openmp/0.3"
+      ],
+      "telemetry_after": {
+        "available_memory_bytes": 1624555520,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:30.630417+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 88.4,
+        "temperature_celsius": null,
+        "temperature_source": null
+      },
+      "telemetry_before": {
+        "available_memory_bytes": 1643036672,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:28.690525+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 100.0,
+        "temperature_celsius": null,
+        "temperature_source": null
+      }
+    },
+    {
+      "index": 4,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 421875000,
+          "cpu_ns_per_invocation": 1647949.21875,
+          "inner_iterations": 256,
+          "wall_ns": 340600100,
+          "wall_ns_per_invocation": 1330469.140625
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 1359375000,
+          "cpu_ns_per_invocation": 5310058.59375,
+          "inner_iterations": 256,
+          "wall_ns": 905464600,
+          "wall_ns_per_invocation": 3536971.09375
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 921875000,
+          "cpu_ns_per_invocation": 3601074.21875,
+          "inner_iterations": 256,
+          "wall_ns": 353824500,
+          "wall_ns_per_invocation": 1382126.953125
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-eager-autograd-cpu"
+      ],
+      "telemetry_after": {
+        "available_memory_bytes": 2070167552,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:32.933540+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 79.7,
+        "temperature_celsius": null,
+        "temperature_source": null
+      },
+      "telemetry_before": {
+        "available_memory_bytes": 1624510464,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:30.631757+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 0.0,
+        "temperature_celsius": null,
+        "temperature_source": null
+      }
+    },
+    {
+      "index": 5,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 328125000,
+          "cpu_ns_per_invocation": 1281738.28125,
+          "inner_iterations": 256,
+          "wall_ns": 280235400,
+          "wall_ns_per_invocation": 1094669.53125
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 1875000000,
+          "cpu_ns_per_invocation": 7324218.75,
+          "inner_iterations": 256,
+          "wall_ns": 656637800,
+          "wall_ns_per_invocation": 2564991.40625
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 953125000,
+          "cpu_ns_per_invocation": 3723144.53125,
+          "inner_iterations": 256,
+          "wall_ns": 380508200,
+          "wall_ns_per_invocation": 1486360.15625
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu",
+        "casulo-linear-algebra-c99-openmp/0.3"
+      ],
+      "telemetry_after": {
+        "available_memory_bytes": 2138144768,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:34.952223+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 94.2,
+        "temperature_celsius": null,
+        "temperature_source": null
+      },
+      "telemetry_before": {
+        "available_memory_bytes": 2070306816,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:32.939511+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 100.0,
+        "temperature_celsius": null,
+        "temperature_source": null
+      }
+    },
+    {
+      "index": 6,
+      "measurements": {
+        "casulo-linear-algebra-c99-openmp/0.3": {
+          "cpu_ns": 359375000,
+          "cpu_ns_per_invocation": 1403808.59375,
+          "inner_iterations": 256,
+          "wall_ns": 304445400,
+          "wall_ns_per_invocation": 1189239.84375
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 1531250000,
+          "cpu_ns_per_invocation": 5981445.3125,
+          "inner_iterations": 256,
+          "wall_ns": 804112200,
+          "wall_ns_per_invocation": 3141063.28125
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 921875000,
+          "cpu_ns_per_invocation": 3601074.21875,
+          "inner_iterations": 256,
+          "wall_ns": 783707000,
+          "wall_ns_per_invocation": 3061355.46875
+        }
+      },
+      "order": [
+        "casulo-linear-algebra-c99-openmp/0.3",
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ],
+      "telemetry_after": {
+        "available_memory_bytes": 1980788736,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:37.568408+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 81.7,
+        "temperature_celsius": null,
+        "temperature_source": null
+      },
+      "telemetry_before": {
+        "available_memory_bytes": 2138079232,
+        "battery_percent": 65.0,
+        "cpu_frequency_mhz": 1300.0,
+        "cpu_frequency_per_cpu_mhz": [
+          1300.0
+        ],
+        "observed_at_utc": "2026-07-31T02:57:34.953409+00:00",
+        "power_plugged": false,
+        "process_cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "system_load_percent": 0.0,
+        "temperature_celsius": null,
+        "temperature_source": null
+      }
+    }
+  ],
+  "scientific": {
+    "bound_design": {
+      "arena_budget_bytes": 67108864,
+      "bootstrap_resamples": 2000,
+      "candidate_backend": "casulo-linear-algebra-c99-openmp/0.3",
+      "cooldown_ms": 0,
+      "cpu_affinity": null,
+      "gemm_provider": {
+        "abi": "casulo-gemm-provider/0.1",
+        "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+        "external": true,
+        "float32_symbol": "scipy_cblas_sgemm64_",
+        "float64_symbol": "scipy_cblas_dgemm64_",
+        "implementation": "external-cblas-ilp64-runtime-function-pointer",
+        "provider_id": "numpy-scipy-openblas-ilp64",
+        "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+        "version": "0.3.30"
+      },
+      "gemm_workers": 1,
+      "graph": {
+        "autograd_graph_sha256": "b70e121e5d65c9cb4530f153400b95bdbff11dade61159e1d33553bc55067db0",
+        "path_hint": "heldout-tall.tensor.json",
+        "sha256": "3dd087546a54de73b700fa8f7889019523475bb9694e0ecd313a3d61872a213e"
+      },
+      "implementation": {
+        "binding": "sha256-source-files",
+        "files": {
+          "autograd.py": "459d84fd6e40895f873bc6555333d121c3331f2410f0f4b8e6fb72f7a5bb5db9",
+          "linear_algebra.py": "6195cb25f5472067c647933edff8d9c7dfd781d4e07245a60c3cd74bec1e7c6b",
+          "measurement.py": "378eea216869848b1699fd65948888306f5af8bbb30fbcef35b5ab2abb247c43",
+          "parity.py": "eab0ede77232d4dce184b7f3aae8bfaae13b7291da0e3fe63f14e09d305f290f",
+          "tensor.py": "cfb8b71b14e613336c4e2f27c4655a5d7974152a00427bacc96249b8028db0a9",
+          "tensor_cpu.py": "0cae5c69e94e126992d85ed4438af89620671382989f81a01bf3472833721f5c",
+          "tensor_lab.py": "0aae99c332ddad6acd23fbc7c0289c8a7dd79153c30bd35cb9d3334a54c55647"
+        }
+      },
+      "inner_iterations": 16,
+      "input_generator": {
+        "algorithm": "numpy-pcg64-normal",
+        "protocol": "casulo-tensor-lab-input/0.1",
+        "seed": 20260730,
+        "weight_scale": 0.1
+      },
+      "inputs": [
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "x",
+          "shape": [
+            384,
+            48
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "weight1",
+          "shape": [
+            48,
+            96
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "weight2",
+          "shape": [
+            96,
+            12
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "target",
+          "shape": [
+            384,
+            12
+          ]
+        }
+      ],
+      "loss": "loss",
+      "max_coefficient_of_variation": 0.15,
+      "measurement_boundary": "prepared forward plus backward; compilation, preparation, validation and report generation excluded",
+      "measurement_calibration": {
+        "algorithm": "per-backend-doubling-then-shared-maximum",
+        "maximum_inner_iterations": 1000000,
+        "minimum_inner_iterations": 16,
+        "protocol": "casulo-measurement-stability/0.1",
+        "target_wall_ms": 250.0,
+        "uses_speedup_or_winner_selection": false
+      },
+      "memory_probe": "separate-phase-process-rss-sampling-not-in-timing-samples",
+      "order_policy": "balanced-six-permutation-cycle",
+      "pairing": "same-input-same-process-same-sample-index",
+      "required_baselines": [
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ],
+      "samples": 7,
+      "seed": 20260730,
+      "telemetry_policy": {
+        "before_and_after_each_sample": true,
+        "outside_timing_boundary": true,
+        "temperature_may_be_unavailable": true
+      },
+      "torch_threads": 4,
+      "warmups": 2,
+      "workers": 4,
+      "wrt": [
+        "weight1",
+        "weight2"
+      ]
+    },
+    "claims_allowed": false,
+    "covenant": "casulo-scientific-covenant/1.0",
+    "experiment_id": "sha256:15193bb0c7ccf4d0ca0a7d5eff0002d4c09b5bedfeebf6279514a64c68c27cf7",
+    "preregistration_file_sha256": "79099736e1dad55f84e4c4040ab5845ba5f2af2841fbc3b0cc99086af81d934d",
+    "status": "PREREGISTERED_AWAITING_INDEPENDENT_JUDGEMENT"
+  },
+  "thermal": {
+    "cpu_frequency_mhz": 1300.0,
+    "reason": "sensor de temperatura não exposto ao processo",
+    "temperature_celsius": null,
+    "temperature_source": null
+  }
+}

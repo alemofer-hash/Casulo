@@ -1,0 +1,71 @@
+{
+  "agent_name": "creation:open-ended-holdout",
+  "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "identity_source": "creation_id",
+  "pages": [
+    {
+      "nodes": 0,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\00-silence.html",
+      "state": "SILENCE"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\01-first_intent.html",
+      "state": "FIRST_INTENT"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\02-listening.html",
+      "state": "LISTENING"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\03-first_form.html",
+      "state": "FIRST_FORM"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\04-clarification.html",
+      "state": "CLARIFICATION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\05-confirmation.html",
+      "state": "CONFIRMATION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\06-personality.html",
+      "state": "PERSONALITY"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\07-simulation.html",
+      "state": "SIMULATION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\08-interruption.html",
+      "state": "INTERRUPTION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\09-correction.html",
+      "state": "CORRECTION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\10-agreement.html",
+      "state": "AGREEMENT"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\11-materialization.html",
+      "state": "MATERIALIZATION"
+    }
+  ],
+  "projection_diagnostics": [
+    "identity_name_missing"
+  ],
+  "schema": "casulo.owner-live-visual-timeline/1.0"
+}

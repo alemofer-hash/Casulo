@@ -1,0 +1,71 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "enums": [],
+  "fields": [
+    {
+      "name": "ReviewInput",
+      "traces": [
+        {
+          "name": "value",
+          "type_name": "Text"
+        }
+      ]
+    }
+  ],
+  "language": "T/1.1",
+  "module": "generated.review",
+  "operations": [
+    {
+      "cfg": {
+        "blocks": [
+          {
+            "id": "block/root.0",
+            "instruction_paths": [
+              "root.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "exit",
+            "instruction_paths": [],
+            "successors": []
+          }
+        ],
+        "entry": "block/root.0",
+        "exit": "exit"
+      },
+      "contract": {
+        "effect_contract": {
+          "declared": [
+            "manifest"
+          ],
+          "schema": "casulo-t-effects/1.0"
+        }
+      },
+      "input_type": "ReviewInput",
+      "instructions": [
+        {
+          "arguments": [
+            "\"revisão com confirmação obrigatória\""
+          ],
+          "else_body": [],
+          "op": "emit",
+          "result": null,
+          "then_body": [],
+          "type_name": "Text"
+        }
+      ],
+      "kind": "condense",
+      "name": "ReviewDecision",
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "records": [],
+  "uses": [],
+  "version": "crisalida-ir/1.0"
+}

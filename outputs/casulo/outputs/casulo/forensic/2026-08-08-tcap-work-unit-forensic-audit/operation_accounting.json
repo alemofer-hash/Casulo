@@ -1,0 +1,21 @@
+{
+  "affected_canary": {
+    "fraction_of_required_record_work": 0.0078125,
+    "optimizer_steps_by_static_loop": 400,
+    "parameter_writes_by_static_loop": 32400,
+    "records": 8,
+    "records_visited": 3200,
+    "runtime_counters_observed": false
+  },
+  "epochs": 400,
+  "parameter_count": 81,
+  "required": {
+    "conservative_arithmetic_operator_events": 129088800,
+    "optimizer_steps": 400,
+    "parameter_writes": 32400,
+    "records": 1024,
+    "records_visited": 409600
+  },
+  "schema": "casulo-forensic-operation-accounting/1.0",
+  "topology": "8x8x1-relu-mse-sgd-float64-full-batch"
+}

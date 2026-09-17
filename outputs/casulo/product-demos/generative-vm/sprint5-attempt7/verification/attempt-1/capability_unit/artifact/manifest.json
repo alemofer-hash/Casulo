@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:06a85f301fb8f1e813046b67b8fd32cc0fa6322b8fdc09dfc9bca911c0d35c68",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "1b7755903811f8e81f3e6fe05312a8c75dc376dfb3418327ff0c593c9156a1b0"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "979c3cea8d159781fa3611c8bd5887ff9e8cc8f8ebbaa08d9cd2276fef06521c",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "473f2e8d8421b1a833eb9e0c96615c76d5355b93e07e8fed0596a7ca41f17f89",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "capabilities",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "d25cb0fa76f5e2665ed849d54dcd94785a4bf8fe81a0cb4eaad9dde89e5c0d01"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "MemoryRead",
+        "judgements": [],
+        "name": "AccessResearchLogs",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "b44d7925d5323153d64877ccdff9188470b77ddf870ecacd11eeb522f26b6432"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "MemoryRead",
+      "kind": "condense",
+      "name": "AccessResearchLogs",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "d80639917bde58cc4ea5d6205a6ebe6ae056a38a1f0c0c64ca7014517dce8ea4"
+  }
+}

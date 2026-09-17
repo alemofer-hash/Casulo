@@ -1,0 +1,23 @@
+{
+  "constant_space_gate": true,
+  "cpu_gate": false,
+  "cpu_percent_of_one_core": 13.869275771636069,
+  "cpu_time_seconds": 2.0625,
+  "io_read_bytes_delta": 203829,
+  "io_write_bytes_delta": 34221,
+  "schema": "casulo-energy-observer-budget/1.0",
+  "source_file_size_bytes": 5408977,
+  "status": "FAIL",
+  "watcher": "append-only-incremental-v1",
+  "watcher_budget": {
+    "bytes_read_total": 99822,
+    "maximum_chunk_bytes": 1048576,
+    "maximum_observed_chunk_bytes": 1681,
+    "offset": 5408977,
+    "partial_bytes": 0,
+    "reader": "append-only-incremental-v1"
+  },
+  "working_set_final_bytes": 143572992,
+  "working_set_growth_bytes": -2654208,
+  "working_set_initial_bytes": 146227200
+}

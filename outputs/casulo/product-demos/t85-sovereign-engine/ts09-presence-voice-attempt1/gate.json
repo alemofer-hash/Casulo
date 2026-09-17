@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "aec_reference_reduces_echo": true,
+    "all_finals_committed_by_t": true,
+    "asr_finals": true,
+    "asr_partials": true,
+    "barge_in_every_turn": true,
+    "cancel_late_result_drop": true,
+    "physical_devices_opened": false,
+    "presence_lane_nonblocking": true,
+    "progress_only_authenticated": true,
+    "raw_pcm_persisted": false,
+    "receipts_present": true,
+    "synthetic_duration_60_minutes": true,
+    "text_fallback": true,
+    "tts_cancelled": true,
+    "tts_streaming_frames": true
+  },
+  "gate": "TS9_PRESENCE_VOICE_SYNTHETIC_PASS",
+  "physical_gate": "PENDING_GUILHERME_EXPLICIT_CONSENT"
+}

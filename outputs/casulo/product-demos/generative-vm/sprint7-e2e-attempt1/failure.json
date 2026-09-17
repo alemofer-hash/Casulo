@@ -1,0 +1,13 @@
+{
+  "schema": "casulo.generative-owner-vm-e2e-failure/1.0",
+  "attempt": 1,
+  "failure": "GUEST_RECEIPT_NOT_EMITTED_AFTER_GENERATIVE_PROVIDER_COMPLETED",
+  "classification": "VM_TRANSPORT_FAIL_AFTER_VALID_WORKER",
+  "preserved_creation_evidence": "state/owner-data/creation/g5-first-open-ended-agent.json",
+  "preserved_creation_evidence_sha256": "f9a2dc98dbe40337688af130e5c3ec529f450168b529598dcd964f72e81f81ee",
+  "process_action": "Owned probe, QEMU and llama-server processes terminated",
+  "gate": "GENERATIVE_OWNER_VM_E2E_FAIL",
+  "reuse_as_pass_prohibited": true,
+  "cloud": "RELEASE_LOCKED",
+  "usb": "PROHIBITED"
+}

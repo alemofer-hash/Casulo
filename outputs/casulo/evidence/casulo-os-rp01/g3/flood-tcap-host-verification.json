@@ -1,0 +1,36 @@
+{
+  "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\FloodSurrogate.tcap",
+  "canary": {
+    "epochs": 400,
+    "final_loss": 0.007241680427492191,
+    "initial_loss": 0.5514087300000001,
+    "max_abs_parameter_difference": 0.0,
+    "not_a_performance_campaign": true,
+    "protocol": "casulo-learn-numerical-canary/1.0",
+    "records": 8,
+    "role": "bounded-correctness-canary",
+    "segment_bytes": 1952,
+    "segment_sha256": "56faf993c90c58a68a35ee2469567b756bb10dcde129c391b27eb8282b117fc9",
+    "target_loss": 0.08,
+    "tolerance": 1e-09
+  },
+  "checks": {
+    "canonical_integrity": "PASS",
+    "ir_graph_semantic_mismatch": "REJECTED",
+    "legacy_oracle_comparator": "PASS",
+    "numerical_canary_independent_oracle": "PASS",
+    "numerical_canary_quality_target": "PASS",
+    "raw_aot_dynamic_address_runtime_audit": "PASS",
+    "raw_aot_self_contained_static_audit": "PASS",
+    "single_byte_corruption": "REJECTED",
+    "source_ir_graph_plan_trace": "PASS",
+    "target_abi_entry": "PASS"
+  },
+  "claims": {
+    "kernel_execution_proven": false,
+    "kernel_numerical_equivalence_proven": false,
+    "performance_measured": false
+  },
+  "protocol": "casulo-flood-tcap-independent-verification/0.1",
+  "sha256": "2fb6db0d9622382718263dc0ba3b565bdd53ef27bbd9355d40764d1d71643d19"
+}

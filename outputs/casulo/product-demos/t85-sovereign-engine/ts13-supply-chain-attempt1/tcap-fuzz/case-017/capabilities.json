@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.data_validator_01.csv_parser": [],
+    "owner.agent.eata_validator_01.diagnostic_core": [
+      "simulation"
+    ],
+    "owner.agent.data_validator_01.schema_engine": []
+  }
+}

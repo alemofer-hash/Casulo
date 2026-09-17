@@ -1,0 +1,18 @@
+{
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network_default": "OFF",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb_block_devices": "PROHIBITED"
+  },
+  "final_gate": "final-gate-attempt3.json",
+  "final_gate_sha256": "e704540e0382549bb667e9baa1d7a9e52d4ea14b0625f48517669808322f817f",
+  "human_proof": "PENDING_GUILHERME",
+  "launcher": "release/t85-human-proof/START_CASULO_OWNER_T85.vbs",
+  "manifest_sha256": "87c046056ee16dbc2f02350f50bde62f9bb617ebfe002eb993536a794393f8ee",
+  "runbook": "release/t85-human-proof/T85_HUMAN_PROOF_RUNBOOK.md",
+  "schema": "casulo.t85-human-proof-handoff/1.0",
+  "signature": "DEVELOPMENT_NOT_COMMERCIAL",
+  "state": "READY_FOR_GUILHERME_CASULO_T85_VM_HUMAN_PROOF"
+}

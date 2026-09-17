@@ -1,0 +1,11 @@
+{
+  "schema": "casulo.t85-gate-attempt-failure/1.0",
+  "status": "FAIL_NATIVE_RESOURCE_BOUND",
+  "stage": "native_tcap_parse",
+  "cause": "The preserved 256 KiB Native kernel heap exhausted while parsing the 19,985-byte self-contained TCAP v2 probe with typed IR and provenance.",
+  "observed_qemu_returncode": 35,
+  "panic": "kernel heap exhausted",
+  "conformance_result": null,
+  "history_preserved": true,
+  "corrective_action": "Raise the explicitly bounded guest heap to 2 MiB (0.78 percent of the 256 MiB guest profile), without changing host access, network or block-device policy."
+}

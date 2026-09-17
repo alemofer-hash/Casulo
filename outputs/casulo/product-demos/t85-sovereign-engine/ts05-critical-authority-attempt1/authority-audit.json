@@ -1,0 +1,133 @@
+{
+  "c_critical": 1.0,
+  "p_authority": 0.6923076923076923,
+  "s_authority": 0.4461538461538462,
+  "s_execution": 0.4461538461538462,
+  "schema": "casulo.t-authority-audit/2.0",
+  "surfaces": [
+    {
+      "critical": true,
+      "degree": 1.0,
+      "evidence_refs": [
+        "critical-receipts.json",
+        "clean-release-trace.json",
+        "mutation-test.json",
+        "bypass-test.json"
+      ],
+      "execution_credit": 1.0,
+      "id": "material_intent",
+      "weight": 6
+    },
+    {
+      "critical": true,
+      "degree": 1.0,
+      "evidence_refs": [
+        "critical-receipts.json",
+        "clean-release-trace.json",
+        "mutation-test.json",
+        "bypass-test.json"
+      ],
+      "execution_credit": 1.0,
+      "id": "capabilities_effects",
+      "weight": 8
+    },
+    {
+      "critical": true,
+      "degree": 1.0,
+      "evidence_refs": [
+        "critical-receipts.json",
+        "clean-release-trace.json",
+        "mutation-test.json",
+        "bypass-test.json"
+      ],
+      "execution_credit": 1.0,
+      "id": "hard_requirement_fulfillment",
+      "weight": 7
+    },
+    {
+      "critical": true,
+      "degree": 1.0,
+      "evidence_refs": [
+        "critical-receipts.json",
+        "clean-release-trace.json",
+        "mutation-test.json",
+        "bypass-test.json"
+      ],
+      "execution_credit": 1.0,
+      "id": "publish_commit",
+      "weight": 8
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [],
+      "execution_credit": 0.0,
+      "id": "agent_behavior",
+      "weight": 6
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [],
+      "execution_credit": 0.0,
+      "id": "memory_governance",
+      "weight": 5
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [],
+      "execution_credit": 0.0,
+      "id": "semantic_routing_lifecycle",
+      "weight": 5
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [],
+      "execution_credit": 0.0,
+      "id": "tools_composition",
+      "weight": 4
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [],
+      "execution_credit": 0.0,
+      "id": "jobs_concurrency_cancel",
+      "weight": 3
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [],
+      "execution_credit": 0.0,
+      "id": "simulation_acceptance",
+      "weight": 4
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [],
+      "execution_credit": 0.0,
+      "id": "interface_state",
+      "weight": 2
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [],
+      "execution_credit": 0.0,
+      "id": "materialization_lifecycle",
+      "weight": 4
+    },
+    {
+      "critical": false,
+      "degree": 0.0,
+      "evidence_refs": [],
+      "execution_credit": 0.0,
+      "id": "recovery_update",
+      "weight": 3
+    }
+  ]
+}

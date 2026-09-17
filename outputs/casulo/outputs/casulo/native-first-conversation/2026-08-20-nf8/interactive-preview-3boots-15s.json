@@ -1,0 +1,61 @@
+{
+  "boots": [
+    {
+      "attempt": 1,
+      "expected_non_exit_observed": true,
+      "forbidden_markers": [],
+      "missing_markers": [
+        "G7_DEMO_COMPLETE=PASS",
+        "CASULO_NATIVE_RENDERER_GATE=PASS",
+        "CASULO_NATIVE_SYSTEM_PACK_GATE=PASS",
+        "CASULO_NATIVE_PERSISTENCE_JOURNAL_GATE=PASS",
+        "CASULO_NATIVE_NEURAL_INFERENCE=NOT_EXECUTED",
+        "CASULO_NATIVE_INTERACTIVE_PREVIEW=READY",
+        "CASULO_NATIVE_INTERACTIVE_LIMIT=NO_NEURAL_CONVERSATION"
+      ],
+      "passed": false,
+      "serial_sha256": "1847190568b317f0d47ce7d69f768c91429cac4251f22536a311379f2592204d"
+    },
+    {
+      "attempt": 2,
+      "expected_non_exit_observed": true,
+      "forbidden_markers": [],
+      "missing_markers": [
+        "G7_DEMO_COMPLETE=PASS",
+        "CASULO_NATIVE_RENDERER_GATE=PASS",
+        "CASULO_NATIVE_SYSTEM_PACK_GATE=PASS",
+        "CASULO_NATIVE_PERSISTENCE_JOURNAL_GATE=PASS",
+        "CASULO_NATIVE_NEURAL_INFERENCE=NOT_EXECUTED",
+        "CASULO_NATIVE_INTERACTIVE_PREVIEW=READY",
+        "CASULO_NATIVE_INTERACTIVE_LIMIT=NO_NEURAL_CONVERSATION"
+      ],
+      "passed": false,
+      "serial_sha256": "5b6a048fdbb7dd4fee72ab038ba6620783f6445cc01401ed3dbf0daa321ead08"
+    },
+    {
+      "attempt": 3,
+      "expected_non_exit_observed": true,
+      "forbidden_markers": [],
+      "missing_markers": [
+        "G7_DEMO_COMPLETE=PASS",
+        "CASULO_NATIVE_SYSTEM_PACK_GATE=PASS",
+        "CASULO_NATIVE_PERSISTENCE_JOURNAL_GATE=PASS",
+        "CASULO_NATIVE_NEURAL_INFERENCE=NOT_EXECUTED",
+        "CASULO_NATIVE_INTERACTIVE_PREVIEW=READY",
+        "CASULO_NATIVE_INTERACTIVE_LIMIT=NO_NEURAL_CONVERSATION"
+      ],
+      "passed": false,
+      "serial_sha256": "dbdef4fd9073a609799fc2066db0eff0ec559c058c5ff1995b588c17f0f9fc38"
+    }
+  ],
+  "image": "release/casulo-native-first-conversation-nf8.img",
+  "image_sha256_after": "667e7a1db08a7fb034cc62ad5f35373c0cf5f3f790b66e8a7fed09663e0f7d11",
+  "image_sha256_before": "667e7a1db08a7fb034cc62ad5f35373c0cf5f3f790b66e8a7fed09663e0f7d11",
+  "image_unchanged": true,
+  "native_neural_inference": false,
+  "network": false,
+  "passed": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-interactive-preview-gate/0.1",
+  "virtual_usb_read_only": true
+}

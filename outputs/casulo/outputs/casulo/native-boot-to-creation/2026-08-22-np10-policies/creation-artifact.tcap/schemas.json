@@ -1,0 +1,39 @@
+{
+  "modules": {
+    "owner.generated.some_dois_numeros": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "left",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "right",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "SomeDoisNumerosInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{"byte_offset":23928853,"event":"campaign_formal_start","local":"2026-08-07T18:24:50.197313-03:00","monotonic_ns":5395454515400,"pid":28664,"utc":"2026-08-07T21:24:50.197313+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T18:24:50.333680-03:00","monotonic_ns":5395570749300,"pid":28664,"utc":"2026-08-07T21:24:50.333680+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T18:24:56.580140-03:00","monotonic_ns":5402644047400,"new_samples":26,"pid":28664,"utc":"2026-08-07T21:24:56.580140+00:00"}
+{"event":"idle_start","local":"2026-08-07T18:26:08.081463-03:00","monotonic_ns":5473318508800,"pid":16272,"seconds":60.0,"utc":"2026-08-07T21:26:08.081463+00:00"}
+{"event":"idle_end","local":"2026-08-07T18:27:08.086229-03:00","monotonic_ns":5533323298900,"pid":16272,"utc":"2026-08-07T21:27:08.086229+00:00"}
+{"K":36,"event":"window_start","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:29:00.972839-03:00","monotonic_ns":5646209878400,"pid":16272,"stage":"probe-eager-10s","utc":"2026-08-07T21:29:00.972839+00:00"}
+{"K":36,"event":"window_end","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:29:07.982577-03:00","monotonic_ns":5653219640400,"pid":16272,"stage":"probe-eager-10s","utc":"2026-08-07T21:29:07.982577+00:00"}
+{"K":103,"event":"window_start","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:30:21.945922-03:00","monotonic_ns":5727182964000,"pid":16272,"stage":"probe-eager-20s","utc":"2026-08-07T21:30:21.945922+00:00"}
+{"K":103,"event":"window_end","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T18:30:45.384854-03:00","monotonic_ns":5750621912200,"pid":16272,"stage":"probe-eager-20s","utc":"2026-08-07T21:30:45.384854+00:00"}
+{"event":"protocol_superseded","local":"2026-08-07T18:33:48.207396-03:00","monotonic_ns":5933444495400,"pid":15676,"reason":"Calibration K selection used an older Eager runtime instead of the latest accepted 20-second probe; preserved before qualification or definitive pairs.","utc":"2026-08-07T21:33:48.207396+00:00"}

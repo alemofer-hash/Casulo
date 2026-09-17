@@ -1,0 +1,720 @@
+{
+  "accounting": {
+    "blocks": true,
+    "greedy_logit": true,
+    "greedy_token": true,
+    "matvec_calls": true,
+    "multiply_accumulates": true
+  },
+  "aggregate_logit_sum_is_diagnostic_only": true,
+  "binary": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\os\\target\\release\\examples\\decoder_host.exe",
+    "sha256": "0a84303d11bab1fa6fd6c3bfc0bbc8e65945fb616be674be397600f71bec674e"
+  },
+  "block_checks": [
+    {
+      "block": 0,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 1,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 2,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 3,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 4,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 5,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 6,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 7,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 8,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 9,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 10,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 11,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 12,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 13,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 14,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 15,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 16,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 17,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 18,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 19,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 20,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 21,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 22,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 23,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 24,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 25,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 26,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 27,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 28,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 29,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 30,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 31,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 32,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 33,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 34,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    },
+    {
+      "block": 35,
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "present": true,
+        "square_sum_f64": true,
+        "sum_f64": true
+      },
+      "passed": true
+    }
+  ],
+  "claims": {
+    "blocks_completed": 36,
+    "external_api": false,
+    "logits_executed": true,
+    "output_token_published": false,
+    "sampling_executed": false
+  },
+  "final_norm_checks": {
+    "maximum": true,
+    "minimum": true,
+    "square_sum_f64": true,
+    "sum_f64": true,
+    "values": true
+  },
+  "logit_vectors": {
+    "checks": {
+      "all_finite": true,
+      "max_absolute_difference": 0.0002961158752441406,
+      "mean_absolute_difference": 6.224402197783875e-05,
+      "mean_bias": -5.70901404691261e-05,
+      "root_mean_square_difference": 7.334383474319402e-05,
+      "top20_identical": true,
+      "values": 151936,
+      "values_outside_frozen_tolerance": 0
+    },
+    "oracle_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-boot-to-creation\\2026-08-22-np7\\oracle-logits.f32le",
+    "oracle_sha256": "39fe075c76c23b1a48a3468054738f16c3b5fe5965d23d7042c474b1d1f4ace9",
+    "passed": true,
+    "rust_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-boot-to-creation\\2026-08-22-np7\\rust-logits-attempt-2.f32le",
+    "rust_sha256": "4760c2d93598f80a1b3b44cdbcb20fe4785af71127c6fe544c2996c07035a509"
+  },
+  "logits_checks": {
+    "maximum": true,
+    "minimum": true,
+    "square_sum_f64": true,
+    "sum_f64": false,
+    "values": true
+  },
+  "model": {
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+    "sha256_after": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "sha256_before": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "observed": {
+    "blocks": {
+      "0": {
+        "maximum": 4.999332428,
+        "minimum": -2.28426075,
+        "square_sum_f64": 150.92902421429199,
+        "sum_f64": 3.0202789241448045
+      },
+      "1": {
+        "maximum": 24.288686752,
+        "minimum": -13.726089478,
+        "square_sum_f64": 1340.5965146145884,
+        "sum_f64": 7.814193810103461
+      },
+      "2": {
+        "maximum": 33.875637054,
+        "minimum": -18.482538223,
+        "square_sum_f64": 2295.9211232058274,
+        "sum_f64": 14.172602063044906
+      },
+      "3": {
+        "maximum": 34.750461578,
+        "minimum": -17.714212418,
+        "square_sum_f64": 2230.052007633289,
+        "sum_f64": 12.144805811112747
+      },
+      "4": {
+        "maximum": 39.983535767,
+        "minimum": -17.773504257,
+        "square_sum_f64": 2663.787022084025,
+        "sum_f64": 14.358547355979681
+      },
+      "5": {
+        "maximum": 20.054172516,
+        "minimum": -11.325178146,
+        "square_sum_f64": 1143.4615901002194,
+        "sum_f64": 6.702037367969751
+      },
+      "6": {
+        "maximum": 7704.000488281,
+        "minimum": -2201.777832031,
+        "square_sum_f64": 64463301.194450326,
+        "sum_f64": 4516.857367550954
+      },
+      "7": {
+        "maximum": 7704.891601562,
+        "minimum": -2200.176269531,
+        "square_sum_f64": 64468241.488464296,
+        "sum_f64": 4528.242414650507
+      },
+      "8": {
+        "maximum": 7705.389648438,
+        "minimum": -2198.177978516,
+        "square_sum_f64": 64466764.23181844,
+        "sum_f64": 4539.122245615348
+      },
+      "9": {
+        "maximum": 7707.369140625,
+        "minimum": -2197.473144531,
+        "square_sum_f64": 64493445.110306196,
+        "sum_f64": 4546.41496525798
+      },
+      "10": {
+        "maximum": 7707.96875,
+        "minimum": -2195.195068359,
+        "square_sum_f64": 64493594.06289291,
+        "sum_f64": 4551.724544832483
+      },
+      "11": {
+        "maximum": 7708.350585938,
+        "minimum": -2192.186523438,
+        "square_sum_f64": 64487484.23625118,
+        "sum_f64": 4563.126419354696
+      },
+      "12": {
+        "maximum": 7708.803710938,
+        "minimum": -2189.577636719,
+        "square_sum_f64": 64482953.02901193,
+        "sum_f64": 4564.428037043661
+      },
+      "13": {
+        "maximum": 7712.195800781,
+        "minimum": -2190.721923828,
+        "square_sum_f64": 64538134.13733044,
+        "sum_f64": 4581.361993894912
+      },
+      "14": {
+        "maximum": 7712.749023438,
+        "minimum": -2189.329589844,
+        "square_sum_f64": 64540798.51900621,
+        "sum_f64": 4586.714467758313
+      },
+      "15": {
+        "maximum": 7715.445800781,
+        "minimum": -2190.930664062,
+        "square_sum_f64": 64588506.43741362,
+        "sum_f64": 4604.562069597188
+      },
+      "16": {
+        "maximum": 7965.806640625,
+        "minimum": -2194.023193359,
+        "square_sum_f64": 68558347.88705288,
+        "sum_f64": 4794.171333496459
+      },
+      "17": {
+        "maximum": 7964.674804688,
+        "minimum": -2192.262451172,
+        "square_sum_f64": 68535482.23817147,
+        "sum_f64": 4794.819977471605
+      },
+      "18": {
+        "maximum": 7965.79296875,
+        "minimum": -2191.046142578,
+        "square_sum_f64": 68549682.69935429,
+        "sum_f64": 4785.312138121575
+      },
+      "19": {
+        "maximum": 7965.461914062,
+        "minimum": -2189.689453125,
+        "square_sum_f64": 68540326.98298766,
+        "sum_f64": 4787.519120781682
+      },
+      "20": {
+        "maximum": 7964.247558594,
+        "minimum": -2188.485107422,
+        "square_sum_f64": 68518979.71081486,
+        "sum_f64": 4763.419667227194
+      },
+      "21": {
+        "maximum": 7963.991210938,
+        "minimum": -2186.771240234,
+        "square_sum_f64": 68509062.05337395,
+        "sum_f64": 4758.876929825172
+      },
+      "22": {
+        "maximum": 7963.096191406,
+        "minimum": -2183.485351562,
+        "square_sum_f64": 68481357.73193932,
+        "sum_f64": 4757.4805548377335
+      },
+      "23": {
+        "maximum": 7961.655761719,
+        "minimum": -2181.121337891,
+        "square_sum_f64": 68449246.36054279,
+        "sum_f64": 4750.094860030338
+      },
+      "24": {
+        "maximum": 7960.088867188,
+        "minimum": -2179.615966797,
+        "square_sum_f64": 68417376.09223367,
+        "sum_f64": 4760.2787219863385
+      },
+      "25": {
+        "maximum": 7960.475585938,
+        "minimum": -2178.859619141,
+        "square_sum_f64": 68419608.93583138,
+        "sum_f64": 4761.100623823702
+      },
+      "26": {
+        "maximum": 7961.128417969,
+        "minimum": -2178.412597656,
+        "square_sum_f64": 68426529.131255,
+        "sum_f64": 4774.428085165098
+      },
+      "27": {
+        "maximum": 7962.162109375,
+        "minimum": -2177.772216797,
+        "square_sum_f64": 68438247.4205948,
+        "sum_f64": 4779.755035474896
+      },
+      "28": {
+        "maximum": 7964.002929688,
+        "minimum": -2177.330322266,
+        "square_sum_f64": 68465136.82737994,
+        "sum_f64": 4792.9596916772425
+      },
+      "29": {
+        "maximum": 7963.571777344,
+        "minimum": -2177.189697266,
+        "square_sum_f64": 68456768.65004304,
+        "sum_f64": 4789.590623611584
+      },
+      "30": {
+        "maximum": 7963.725097656,
+        "minimum": -2177.292480469,
+        "square_sum_f64": 68458049.5685042,
+        "sum_f64": 4786.6661494113505
+      },
+      "31": {
+        "maximum": 7961.150390625,
+        "minimum": -2177.454589844,
+        "square_sum_f64": 68417829.2567349,
+        "sum_f64": 4787.846889748878
+      },
+      "32": {
+        "maximum": 7958.689453125,
+        "minimum": -2176.685791016,
+        "square_sum_f64": 68375502.2284163,
+        "sum_f64": 4791.988679973409
+      },
+      "33": {
+        "maximum": 7942.518066406,
+        "minimum": -2177.578857422,
+        "square_sum_f64": 68131587.59986064,
+        "sum_f64": 4734.875470370054
+      },
+      "34": {
+        "maximum": 6073.822753906,
+        "minimum": -2160.631347656,
+        "square_sum_f64": 41671846.2413178,
+        "sum_f64": 3139.927041001618
+      },
+      "35": {
+        "maximum": 2007.719238281,
+        "minimum": -286.733612061,
+        "square_sum_f64": 10161511.20489261,
+        "sum_f64": -1332.6592656970024
+      }
+    },
+    "scalar": {
+      "BLOCKS_COMPLETED": "36",
+      "CACHE_BYTES_LOADED": "5844334848",
+      "CACHE_LOADS": "697",
+      "ELAPSED_MS": "7841.373",
+      "GREEDY_TOKEN_ID": "6237",
+      "GREEDY_TOKEN_LOGIT": "13.321134567",
+      "GREEDY_TOKEN_TEXT_HEX": "756d73",
+      "HIDDEN_CHAIN_SHA256": "9b1a775cf3155060f8d8e1898822a684db5e1848a601e6c60a37b7a8b8b6079b",
+      "LOGITS_SHA256": "4760c2d93598f80a1b3b44cdbcb20fe4785af71127c6fe544c2996c07035a509",
+      "MATVEC_CALLS": "253",
+      "MULTIPLY_ACCUMULATES": "4022272000",
+      "WEIGHT_BYTES_READ": "2490539520"
+    },
+    "summaries": {
+      "FINAL_NORM": {
+        "maximum": 16.93683815,
+        "minimum": -20.579603195,
+        "square_sum_f64": 12412.706815308138,
+        "sum_f64": -146.86081642471254,
+        "values": 2560
+      },
+      "LOGITS": {
+        "maximum": 13.321134567,
+        "minimum": -10.867961884,
+        "square_sum_f64": 792394.8625210469,
+        "sum_f64": 15010.74779954506,
+        "values": 151936
+      }
+    }
+  },
+  "oracle": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-boot-to-creation\\2026-08-22-np7\\decoder-oracle-with-logits.json",
+    "sha256": "d53d5eb6faf18712e45a223277537b269a41be87a9b64cea3f4de720b0844e9f"
+  },
+  "process": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout_sha256": "44d9fdb9a78e3fa1c70cb024fb134dc03499edd942513d361c5bd8c35aa1470d"
+  },
+  "schema": "casulo-native-qwen-decoder-comparison/0.1",
+  "status": "PASS",
+  "tolerances": {
+    "absolute": 0.001,
+    "relative": 0.0005
+  }
+}

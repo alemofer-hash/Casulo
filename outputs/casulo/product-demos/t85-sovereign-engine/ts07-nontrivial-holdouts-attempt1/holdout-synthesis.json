@@ -1,0 +1,184 @@
+{
+  "agents": [
+    {
+      "T_fulfillment": {
+        "kind": "ok",
+        "value": "FULFILLED"
+      },
+      "T_publish": {
+        "kind": "ok",
+        "value": "COMMIT"
+      },
+      "agent_id": "data_validator_01",
+      "case_id": "data-01",
+      "constraint_mutation": {
+        "kind": "error",
+        "value": "csv_preserve_bytes_failure"
+      },
+      "emit_literal": false,
+      "enum_count": 3,
+      "external_ai_api": false,
+      "fake_engine": false,
+      "final_value": "AUDITED",
+      "fixed_template_selected_by_prompt": false,
+      "function_count": 11,
+      "hosted_receipts": 11,
+      "missing_capability": {
+        "kind": "error",
+        "value": "CAPABILITY_DENIED:simulation"
+      },
+      "model_generated_architecture": true,
+      "module_count": 3,
+      "neural_trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "4a9a36d0b82aad8a369c0a2df81701af601c3cc84c816dde82229347a4ca4e10",
+        "ended_monotonic_ns": 30355766776600,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "t85:data-01:architecture:0",
+        "output_sha256": "d81a838dabc8e9592ff799b5f77fe5cc0158b34814feb8ff878706ef58e2a7f5",
+        "sampling_policy_id": "casulo-t85-architecture-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 30318676495700,
+        "stream_events": 246
+      },
+      "record_count": 3,
+      "request_sha256": "ab99b62b02e900ab02850e3b5c4a022a59d9b50bb277c69237cde65576d6f9a9",
+      "tcap_hash": "0c18b7e348eab29cd7bd4077ab11daef840b3cfdc262d8869a6803f9b74d9352"
+    },
+    {
+      "T_fulfillment": {
+        "kind": "ok",
+        "value": "FULFILLED"
+      },
+      "T_publish": {
+        "kind": "ok",
+        "value": "COMMIT"
+      },
+      "agent_id": "interactive_talk_01",
+      "case_id": "interactive-01",
+      "constraint_mutation": {
+        "kind": "error",
+        "value": "interactive_talk_01_memory_01"
+      },
+      "emit_literal": false,
+      "enum_count": 3,
+      "external_ai_api": false,
+      "fake_engine": false,
+      "final_value": "AUDITED",
+      "fixed_template_selected_by_prompt": false,
+      "function_count": 11,
+      "hosted_receipts": 11,
+      "missing_capability": {
+        "kind": "error",
+        "value": "CAPABILITY_DENIED:simulation"
+      },
+      "model_generated_architecture": true,
+      "module_count": 3,
+      "neural_trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "b1596df3803d829d049162026dda90d7f5d03f3a8d8568749f42cd2d9cc67cb4",
+        "ended_monotonic_ns": 30394186573800,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "t85:interactive-01:architecture:0",
+        "output_sha256": "1d22c67bc4c835562f4e28a1119f2cd166331efdf3295f3e74b1bc21b26af7bc",
+        "sampling_policy_id": "casulo-t85-architecture-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 30356455115100,
+        "stream_events": 231
+      },
+      "record_count": 3,
+      "request_sha256": "0d85f6e0cc7a5b906d6a46e2adb87e6afdce833ef0a0ed1e6685c444a264a82d",
+      "tcap_hash": "9bc9354ce8ce1344a3f89952407766190c73313d7c4af0b8974475c6e5c437e6"
+    },
+    {
+      "T_fulfillment": {
+        "kind": "ok",
+        "value": "FULFILLED"
+      },
+      "T_publish": {
+        "kind": "ok",
+        "value": "COMMIT"
+      },
+      "agent_id": "mass_balance_calculator_v2",
+      "case_id": "technical-02",
+      "constraint_mutation": {
+        "kind": "error",
+        "value": "invalid_unit"
+      },
+      "emit_literal": false,
+      "enum_count": 3,
+      "external_ai_api": false,
+      "fake_engine": false,
+      "final_value": "AUDITED",
+      "fixed_template_selected_by_prompt": false,
+      "function_count": 11,
+      "hosted_receipts": 11,
+      "missing_capability": {
+        "kind": "error",
+        "value": "CAPABILITY_DENIED:simulation"
+      },
+      "model_generated_architecture": true,
+      "module_count": 3,
+      "neural_trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "a05712247b8f413bb67254fc48a8b098d76ef965e75762423bf410b56ace70ea",
+        "ended_monotonic_ns": 30429234654800,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "t85:technical-02:architecture:0",
+        "output_sha256": "1a62f4b68d09c6930e9e820142647a7654b30a8bbbe8f311a7626e855c567adb",
+        "sampling_policy_id": "casulo-t85-architecture-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 30395028774900,
+        "stream_events": 216
+      },
+      "record_count": 3,
+      "request_sha256": "7c35f2595a231c5125b46fbcb61bbdfcddff9a659d6cb4c8c71a842c6492852d",
+      "tcap_hash": "32be42ca477a8b18f2c78d3ce2f1f2711619b80e6a60983951e51aff48c4282b"
+    }
+  ],
+  "checks": {
+    "all_executed": true,
+    "all_fulfilled_and_committed_by_t": true,
+    "all_multimodule": true,
+    "all_records_enums": true,
+    "all_ten_functions": true,
+    "capability_blocks": true,
+    "mutation_blocks": true,
+    "neural_no_fixed_seed": true,
+    "no_external_api": true,
+    "no_fake_template_replay": true,
+    "three_distinct_agents": true,
+    "three_holdouts": true
+  },
+  "gate": "TS7_T_NONTRIVIAL_HOLDOUTS_HOSTED_PASS",
+  "holdout_suite_sha256": "4dbf4886d89858cd315b369a58cb42901210385676865bf8f0a7a1dc61a24eef",
+  "locks": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network": "OFF",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb": "PROHIBITED"
+  },
+  "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "native_conformance": "PENDING_APPLICABLE_PROBE",
+  "runtime": "llama.cpp-local-loopback",
+  "schema": "casulo.t85.holdout-synthesis/1.0",
+  "selected": [
+    "data-01",
+    "interactive-01",
+    "technical-02"
+  ]
+}

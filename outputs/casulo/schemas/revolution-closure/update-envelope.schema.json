@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casulo://schemas/update-envelope/1.0",
+  "title": "Casulo Offline Update Envelope 1.0",
+  "type": "object",
+  "required": ["schema", "release_id", "source_version", "target_version", "payload_sha256", "manifest_sha256", "signature", "rollback_slot", "atomic"],
+  "properties": {
+    "schema": {"const": "casulo.update-envelope/1.0"},
+    "release_id": {"type": "string", "minLength": 1},
+    "source_version": {"type": "string", "minLength": 1},
+    "target_version": {"type": "string", "minLength": 1},
+    "payload_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "signature": {"type": "string", "minLength": 1},
+    "rollback_slot": {"enum": ["A", "B"]},
+    "atomic": {"const": true}
+  },
+  "additionalProperties": false
+}

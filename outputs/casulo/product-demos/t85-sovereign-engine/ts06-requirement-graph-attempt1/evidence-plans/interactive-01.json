@@ -1,0 +1,43 @@
+{
+  "expected_evidence_tokens": [
+    "fcb9fb99874ba09a0454d7348be8985b4d3c9063d7eaafaebe3caa6bff27bd3e",
+    "514d1afede5ac73c8491627edecc242cc6862da22dc06d259ad3aaebbaa96168",
+    "2fe629fee1cf5f9c45946ca1bf4338f4476dc096733db4c489100791008fc76a"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "interactive-01:project-isolation",
+      "scope": "interactive-01",
+      "source_event_ids": [
+        "sealed:interactive-01"
+      ],
+      "verifier_ids": [
+        "domain:project-isolation"
+      ]
+    },
+    {
+      "requirement_id": "interactive-01:barge-in",
+      "scope": "interactive-01",
+      "source_event_ids": [
+        "sealed:interactive-01"
+      ],
+      "verifier_ids": [
+        "domain:barge-in"
+      ]
+    },
+    {
+      "requirement_id": "interactive-01:editable-export",
+      "scope": "interactive-01",
+      "source_event_ids": [
+        "sealed:interactive-01"
+      ],
+      "verifier_ids": [
+        "domain:editable-export"
+      ]
+    }
+  ],
+  "project_id": "interactive-01",
+  "schema": "casulo.evidence-plan/1.0"
+}

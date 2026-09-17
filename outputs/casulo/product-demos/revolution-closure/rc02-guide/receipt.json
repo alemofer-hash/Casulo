@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc02-guide",
+  "gate_sha256": "b88c8d6447b7cb94bf5c628207905eb9abca8f7c793b7936d088b1ae70e16fe4",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC2_GUIDE_COLLEAGUE_LOOP_PASS",
+  "timestamp": "2026-08-14T20:12:48.528712+00:00"
+}

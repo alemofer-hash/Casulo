@@ -1,0 +1,8 @@
+{
+  "properties": [
+    "decision_chain_is_causal",
+    "effects_are_granted",
+    "project_bleed_denied",
+    "hard_unknown_blocks"
+  ]
+}

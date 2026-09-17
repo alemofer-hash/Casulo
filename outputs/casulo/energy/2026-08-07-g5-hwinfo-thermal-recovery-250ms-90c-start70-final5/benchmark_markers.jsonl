@@ -1,0 +1,10 @@
+{"byte_offset":39825105,"event":"campaign_formal_start","local":"2026-08-07T19:04:50.060059-03:00","monotonic_ns":7795333263800,"pid":24216,"utc":"2026-08-07T22:04:50.060059+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T19:04:50.283000-03:00","monotonic_ns":7795520093200,"pid":24216,"utc":"2026-08-07T22:04:50.283000+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T19:04:57.960615-03:00","monotonic_ns":7804081489000,"new_samples":32,"pid":24216,"utc":"2026-08-07T22:04:57.960615+00:00"}
+{"event":"idle_start","local":"2026-08-07T19:05:55.225614-03:00","monotonic_ns":7860462672800,"pid":5556,"seconds":60.0,"utc":"2026-08-07T22:05:55.225614+00:00"}
+{"event":"idle_end","local":"2026-08-07T19:06:55.229502-03:00","monotonic_ns":7920466701400,"pid":5556,"utc":"2026-08-07T22:06:55.229502+00:00"}
+{"K":37,"event":"window_start","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T19:09:55.347912-03:00","monotonic_ns":8100584957000,"pid":5556,"stage":"probe-eager-10s","utc":"2026-08-07T22:09:55.347912+00:00"}
+{"K":37,"event":"window_end","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T19:10:05.083302-03:00","monotonic_ns":8110320366400,"pid":5556,"stage":"probe-eager-10s","utc":"2026-08-07T22:10:05.083302+00:00"}
+{"K":77,"event":"window_start","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T19:12:02.616587-03:00","monotonic_ns":8227853629800,"pid":5556,"stage":"probe-eager-20s","utc":"2026-08-07T22:12:02.616587+00:00"}
+{"K":77,"event":"window_end","implementation":"pytorch-eager-fullstep/1","local":"2026-08-07T19:12:19.611064-03:00","monotonic_ns":8244848129000,"pid":5556,"stage":"probe-eager-20s","utc":"2026-08-07T22:12:19.611064+00:00"}
+{"event":"protocol_superseded","local":"2026-08-07T19:13:33.177752-03:00","monotonic_ns":8318414844900,"pid":10944,"reason":"A clean Eager window lasted 16.99 seconds; runtime-only proportional K replacement added to meet the frozen 20-second minimum.","utc":"2026-08-07T22:13:33.177752+00:00"}

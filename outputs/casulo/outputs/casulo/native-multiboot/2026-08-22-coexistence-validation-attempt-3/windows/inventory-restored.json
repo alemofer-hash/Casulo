@@ -1,0 +1,24 @@
+{
+  "boot_managers": [
+    "windows-boot-manager"
+  ],
+  "fallback_bootx64_present": true,
+  "files": {
+    "ARCH_LINUX_MUST_SURVIVE.txt": {
+      "bytes": 20,
+      "sha256": "a1cc4f2f0e4cf280f23439f9455a1d100ea1b11657e62ffc5f26e2cdef3bfcb7"
+    },
+    "EFI/BOOT/BOOTX64.EFI": {
+      "bytes": 27,
+      "sha256": "b4f008423f63511c4c1b1266a44f674fb1136e390c95c6395fb1ef6f5938fea3"
+    },
+    "EFI/Microsoft/Boot/bootmgfw.efi": {
+      "bytes": 25,
+      "sha256": "473f8c969f07e8a07a42025495289d1d1912b470b1f39ab1f5bff73de958180f"
+    }
+  },
+  "read_only_inspection": true,
+  "root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-multiboot\\2026-08-22-coexistence-validation-attempt-3\\windows\\esp",
+  "schema": "casulo-efi-inventory/1.0",
+  "tree_sha256": "deec78ce0a3f5085305cdff36bd04acc28047de891a612b3d8363752b5add30f"
+}

@@ -1,0 +1,23 @@
+{
+  "claim_authorized": false,
+  "confirmatory_pairs": 0,
+  "equivalence": "PASS_ZERO_DIFFERENCE_ALL_THREE_ATTEMPTED_PAIRS",
+  "exploratory_D_joules_per_training": 0.3501007385688669,
+  "exploratory_D_over_E_ratio": 1.0493669931803848,
+  "exploratory_E_joules_per_training": 0.3340618247279724,
+  "exploratory_rejected_pairs": 1,
+  "exploratory_relative_change_D_vs_E": 0.049366993180384844,
+  "exploratory_valid_pairs": 2,
+  "schema": "casulo.interlocution-energy-e1-analysis/1.0",
+  "terminal_state": "E1_BLOCKED_PHYSICAL_INSTRUMENT",
+  "thermal": {
+    "maximum_valid_window_temperature_c": 65.0,
+    "throttling_valid_windows": 0
+  },
+  "why": [
+    "HWiNFO package power is not a calibrated physical total-system instrument",
+    "no valid RAPL cumulative package-energy source is exposed on this Windows host",
+    "only two thermally paired exploratory pairs were valid",
+    "battery charging prohibits total-system attribution"
+  ]
+}

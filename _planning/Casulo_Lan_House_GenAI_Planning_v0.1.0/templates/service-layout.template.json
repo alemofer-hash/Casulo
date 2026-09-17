@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "services": [
+    {"name": "gateway", "bind": "LAN_SELECTED", "port": 8443, "tls": true},
+    {"name": "llm", "bind": "127.0.0.1", "port": 8081, "tls": false},
+    {"name": "asr", "bind": "127.0.0.1", "port": 8082, "tls": false},
+    {"name": "tts", "bind": "127.0.0.1", "port": 8083, "tls": false},
+    {"name": "worker", "bind": "127.0.0.1", "port": 8084, "tls": false}
+  ],
+  "router": {
+    "port_forwarding_allowed": false,
+    "upnp_allowed": false,
+    "guest_network_allowed": false
+  }
+}
+

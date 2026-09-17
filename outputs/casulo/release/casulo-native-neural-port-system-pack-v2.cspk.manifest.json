@@ -1,0 +1,47 @@
+{
+  "bytes": 16706,
+  "entries": [
+    {
+      "bytes": 12872,
+      "kind": 1,
+      "name": "BOOTSTRAP_TCAP",
+      "offset": 272,
+      "sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa",
+      "source": "release/FloodSurrogate.tcap"
+    },
+    {
+      "bytes": 1016,
+      "kind": 2,
+      "name": "UX_CONTRACT",
+      "offset": 13144,
+      "sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9",
+      "source": "schemas/product/hosted-native-ux-contract-v1.json"
+    },
+    {
+      "bytes": 434,
+      "kind": 3,
+      "name": "GUIDE_T_SOURCE",
+      "offset": 14160,
+      "sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565",
+      "source": "examples/t/revolution/agent_logic.t"
+    },
+    {
+      "bytes": 2112,
+      "kind": 4,
+      "name": "MODEL_GGUF_PROBE",
+      "offset": 14594,
+      "sha256": "e403d7d0591b011cfd431ed0150e24e7960aa4aaadca89e42892c06cac38d830",
+      "source": "release/casulo-native-qwen3-weight-formats-probe-v1.gguf"
+    }
+  ],
+  "file": "release/casulo-native-neural-port-system-pack-v2.cspk",
+  "guide_t_source_execution": "NOT_EXECUTED",
+  "model_embedded": false,
+  "model_probe_claim": "one content-addressed Q4_K source block; not full model or token inference",
+  "model_probe_embedded": true,
+  "network": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-system-pack/1.0",
+  "sha256": "c08e512c270ef69e97a923266e51c069079c0a324c51871795c6151185921c98",
+  "t_execution": "BOOTSTRAP_TCAP_ONLY"
+}

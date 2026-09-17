@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc10-security",
+  "gate_sha256": "bb200475283558555f3a0900d210b4d038e2712fc73e1077b9847de658f669cd",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC10_SECURITY_TRUST_PASS",
+  "timestamp": "2026-08-14T21:24:34.900370+00:00"
+}

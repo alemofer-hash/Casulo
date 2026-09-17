@@ -1,0 +1,6 @@
+{
+  "properties": [
+    "causal_mutation",
+    "dataset_identity_integrity"
+  ]
+}

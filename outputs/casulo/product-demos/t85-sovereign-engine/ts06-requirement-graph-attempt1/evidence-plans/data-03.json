@@ -1,0 +1,43 @@
+{
+  "expected_evidence_tokens": [
+    "99f4cdc27ebe4e601187d2744f671d15d60b4a6f832114042a5bc14ed472affc",
+    "3943d671a5c1cd53173d55112526a7123d6e0bfaba3192645dd3f9fe71b78124",
+    "deac41356a856a07050a11bbd16cb7f957588a1a4c09b81c4c6ea7d826bb1b06"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "data-03:no-delete",
+      "scope": "data-03",
+      "source_event_ids": [
+        "sealed:data-03"
+      ],
+      "verifier_ids": [
+        "domain:no-delete"
+      ]
+    },
+    {
+      "requirement_id": "data-03:deterministic-dedup-key",
+      "scope": "data-03",
+      "source_event_ids": [
+        "sealed:data-03"
+      ],
+      "verifier_ids": [
+        "domain:deterministic-dedup-key"
+      ]
+    },
+    {
+      "requirement_id": "data-03:reversible-plan",
+      "scope": "data-03",
+      "source_event_ids": [
+        "sealed:data-03"
+      ],
+      "verifier_ids": [
+        "domain:reversible-plan"
+      ]
+    }
+  ],
+  "project_id": "data-03",
+  "schema": "casulo.evidence-plan/1.0"
+}

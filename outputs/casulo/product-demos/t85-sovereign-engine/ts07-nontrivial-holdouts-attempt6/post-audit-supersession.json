@@ -1,0 +1,12 @@
+{
+  "schema": "casulo-t85-post-audit/1.0",
+  "state": "SUPERSEDED_BEFORE_INTEGRATED_GATE",
+  "reason": "The hosted evidence is semantically clean, but the generated gate recorded success_events_canonically_bound without making it a mandatory check.",
+  "preserved_results": {
+    "hosted_gate": "TS7_T_NONTRIVIAL_HOLDOUTS_HOSTED_PASS",
+    "agents": 3,
+    "hosted_receipts": 33,
+    "critical_semantic_loss_observed": 0
+  },
+  "required_action": "Generate a new append-only attempt after the canonical-binding property becomes a hard gate condition."
+}

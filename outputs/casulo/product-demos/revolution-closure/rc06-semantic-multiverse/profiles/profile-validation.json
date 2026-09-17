@@ -1,0 +1,168 @@
+{
+  "checks": {
+    "all_hot_implemented": true,
+    "hard_contracts": true,
+    "no_capability_escalation": true,
+    "routes_correct": true,
+    "six_installed": true,
+    "sparse_budget": true,
+    "strict_sparse_working_set": true
+  },
+  "claims": [
+    "working-set behavior and operational hard-field equivalence for this declared local workload"
+  ],
+  "forbidden_claims": [
+    "universal compression",
+    "general superiority",
+    "energy advantage",
+    "datacenter in 32 GB"
+  ],
+  "gate": "PASS",
+  "metrics": {
+    "all_hot_peak_bytes": 91226112,
+    "installed_universes": 6,
+    "sparse_peak_hot_bytes": 50331648
+  },
+  "profiles": [
+    "REFERENCE_CONTEXT",
+    "SIMPLE_RETRIEVAL",
+    "SEMANTIC_MULTIVERSE",
+    "ALL_HOT"
+  ],
+  "rows": [
+    {
+      "all_hot": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "expected": "intencao",
+      "query_sha256": "01ff81d44efe1b5580433c8b9b1e5314a5b95a34d05af51dac4a81e5ee712fd4",
+      "reference_context": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "route_margin": 1.0,
+      "routed": "intencao",
+      "semantic_multiverse": {
+        "active_universes": 1,
+        "hard_contract_pass": true
+      },
+      "simple_retrieval": {
+        "active_universes": 1,
+        "hard_contract_pass": true
+      }
+    },
+    {
+      "all_hot": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "expected": "sinais",
+      "query_sha256": "3a81ab192fb5f6a4228ceeb5e54d7b4661dfd9484b88c3345c42801abeed3d85",
+      "reference_context": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "route_margin": 1.0,
+      "routed": "sinais",
+      "semantic_multiverse": {
+        "active_universes": 2,
+        "hard_contract_pass": true
+      },
+      "simple_retrieval": {
+        "active_universes": 1,
+        "hard_contract_pass": true
+      }
+    },
+    {
+      "all_hot": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "expected": "engenharia",
+      "query_sha256": "dbc9c735244667f8fb76ce431bdf557d22924f140662281007fd82d7c712ab24",
+      "reference_context": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "route_margin": 1.0,
+      "routed": "engenharia",
+      "semantic_multiverse": {
+        "active_universes": 3,
+        "hard_contract_pass": true
+      },
+      "simple_retrieval": {
+        "active_universes": 1,
+        "hard_contract_pass": true
+      }
+    },
+    {
+      "all_hot": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "expected": "diagnostico",
+      "query_sha256": "8534a3290a125e4641015c4f1bacd17b21087f1b92a14c53db0c0050bf86deaa",
+      "reference_context": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "route_margin": 1.0,
+      "routed": "diagnostico",
+      "semantic_multiverse": {
+        "active_universes": 3,
+        "hard_contract_pass": true
+      },
+      "simple_retrieval": {
+        "active_universes": 1,
+        "hard_contract_pass": true
+      }
+    },
+    {
+      "all_hot": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "expected": "interface",
+      "query_sha256": "2023b0a41b7e5dd87ed32c19fa64c8201d63865cd23aa741923f96d2786fbe77",
+      "reference_context": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "route_margin": 1.0,
+      "routed": "interface",
+      "semantic_multiverse": {
+        "active_universes": 3,
+        "hard_contract_pass": true
+      },
+      "simple_retrieval": {
+        "active_universes": 1,
+        "hard_contract_pass": true
+      }
+    },
+    {
+      "all_hot": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "expected": "materializacao",
+      "query_sha256": "48f62a6c6f8f140afd58f5b7127a1de98384ef1030e84f7cb683dcf9d3a48f38",
+      "reference_context": {
+        "active_universes": 6,
+        "hard_contract_pass": true
+      },
+      "route_margin": 1.0,
+      "routed": "materializacao",
+      "semantic_multiverse": {
+        "active_universes": 3,
+        "hard_contract_pass": true
+      },
+      "simple_retrieval": {
+        "active_universes": 1,
+        "hard_contract_pass": true
+      }
+    }
+  ],
+  "schema": "casulo.semantic-multiverse-product-validation/1.0",
+  "workload": "six declared sparse product intents, one per installed universe"
+}

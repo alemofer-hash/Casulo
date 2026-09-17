@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "base_read_only": true,
+    "clean_sparse_overlay": true,
+    "cloud_not_configured": true,
+    "commands_present": true,
+    "design_provisional": true,
+    "feedback_export_present": true,
+    "original_g10_launcher_unchanged": true,
+    "separate_launcher": true,
+    "usb_and_block_devices_absent": true,
+    "visual_from_receipts": true
+  },
+  "cloud": "RELEASE_LOCKED",
+  "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "gate": "SM9_VM_INSPECTION_READY",
+  "inspection_tool": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\tools\\casulo_semantic_multiverse_vm_inspect.py",
+    "sha256": "1ca46c4db2bf551fa8dcd55f30ee5cb86e4040ff7d9ba41d476f03878309536b"
+  },
+  "launcher": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\CASULO_SEMANTIC_MULTIVERSE_VM_INSPECT.ps1",
+    "sha256": "f599b15136ccb9c23e7b08c70f106df22da3f2b07348b8b09e616e3a36639c32"
+  },
+  "overlay": {
+    "bytes": 328192,
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\semantic-multiverse\\initial-owner-state\\owner-overlay.qcow2",
+    "sha256": "fa9bb9ca061c12ba355c7b689bd49083cd1500beca21d92323230b422e5ef9bb"
+  },
+  "schema": "casulo.semantic-multiverse-sm9-evidence/1.0",
+  "snapshot": "clean-semantic-multiverse",
+  "usb": "PROHIBITED"
+}

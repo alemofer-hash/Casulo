@@ -1,0 +1,94 @@
+{
+  "baseline_classifications": {
+    "pytorch-eager-autograd-cpu": "POSITIVE",
+    "pytorch-inductor-autograd-cpu": "NEGATIVE"
+  },
+  "claim": null,
+  "claim_eligible": false,
+  "classification": "NEGATIVE",
+  "commercial_gate": false,
+  "commercial_threshold": 6.0,
+  "covenant": "casulo-scientific-covenant/1.0",
+  "energy": {
+    "joules": null,
+    "measured": false
+  },
+  "evidence": {
+    "integrity_failures": [],
+    "missing_required_baselines": [],
+    "observed_baselines": [
+      "pytorch-eager-autograd-cpu",
+      "pytorch-inductor-autograd-cpu"
+    ],
+    "preregistration_file_sha256": "36ad51ea985b77009459c4f73d6234be80dfd4b08496fd1f98b0524eba5e1d54",
+    "quality_failures": [],
+    "report_file_sha256": "3e20748dad1ee5797e5c703bd2d00117a7e99b8ab9f65eb21874104639fa054f"
+  },
+  "experiment_id": "sha256:d75084e0a4ab450b9ee2ff42bea53263725afd21cf199ab3dbd7df7e5d087697",
+  "interpretation": "a hipótese foi refutada por ao menos um baseline obrigatório",
+  "judge": {
+    "can_modify_experiment": false,
+    "implementation": "python-standard-library",
+    "recomputed_from_raw_samples": true
+  },
+  "protocol": "casulo-tensor-lab-verdict/0.2",
+  "recomputed_metrics": {
+    "pytorch-eager-autograd-cpu": {
+      "classification": "POSITIVE",
+      "independent_bootstrap_ci95": {
+        "lower": 1.196576896848554,
+        "method": "independent-python-bootstrap-median",
+        "resamples": 10000,
+        "upper": 1.6918981004638038
+      },
+      "paired_samples": 9,
+      "wall_speedup_median": 1.4511417759898775
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "classification": "NEGATIVE",
+      "independent_bootstrap_ci95": {
+        "lower": 0.6519435221517926,
+        "method": "independent-python-bootstrap-median",
+        "resamples": 10000,
+        "upper": 0.8398284612071387
+      },
+      "paired_samples": 9,
+      "wall_speedup_median": 0.7276903174881599
+    }
+  },
+  "scope": {
+    "autograd_graph_sha256": "b70e121e5d65c9cb4530f153400b95bdbff11dade61159e1d33553bc55067db0",
+    "claim_eligible": false,
+    "dtype": [
+      "float32"
+    ],
+    "gemm_provider": {
+      "abi": "casulo-gemm-provider/0.1",
+      "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+      "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+      "external": true,
+      "float32_symbol": "scipy_cblas_sgemm64_",
+      "float64_symbol": "scipy_cblas_dgemm64_",
+      "implementation": "external-cblas-ilp64-runtime-function-pointer",
+      "provider_id": "numpy-scipy-openblas-ilp64",
+      "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+      "version": "0.3.30"
+    },
+    "gemm_workers": 1,
+    "graph_sha256": "3dd087546a54de73b700fa8f7889019523475bb9694e0ecd313a3d61872a213e",
+    "hypothesis_phase": "PREREGISTERED_UNOBSERVED_DESIGN",
+    "inner_iterations": 25,
+    "machine": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "required_baselines": [
+      "pytorch-eager-autograd-cpu",
+      "pytorch-inductor-autograd-cpu"
+    ],
+    "workers": 4
+  },
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "7711010186784685ed0aac7ae128eaab98662f499a3015d7c97a70e1068f875b"
+  },
+  "verdict_id": "sha256:7711010186784685ed0aac7ae128eaab98662f499a3015d7c97a70e1068f875b"
+}

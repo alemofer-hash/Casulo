@@ -1,0 +1,26 @@
+{
+  "schema": "casulo.t85.baseline-freeze/1.0",
+  "captured_at": "2026-08-14T21:22:00-03:00",
+  "gate": "TS0_BASELINE_FROZEN",
+  "branch": "product/semantic-multiverse",
+  "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "worktree_entries": 19802,
+  "worktree_sha256": "c5d8cf3b99fa6a158c357f116e2e5286af1faf861906dc25b9cc1709035457b7",
+  "free_bytes": 83413475328,
+  "goal_zip_sha256": "0359c78274d74017cd8279abaa849e8e46ecfed5d71fa5685d8fd35217f21140",
+  "goal_manifest_entries": 23,
+  "goal_manifest_valid": true,
+  "baseline_package_sha256": "415ea4a817bddfe6e845a5b12cc56e086de7b238ddc73d658c8d662c9f2c1b1e",
+  "baseline_repo_sha256": "a0addf60a073162d3e1881fe8ebdbc66e4b4ebc912048033d2e1456d7a1d4f14",
+  "normalized_content_equal": true,
+  "rc13_release": {
+    "manifest_sha256": "b6bfaa8166b0b2174392be64c1936a266e8a8cd119c9c7a8ab5e38017c2c4196",
+    "sha256sums_sha256": "b5c820b66b24b30a07265b7182f1c5f684233c0f9cbb86d2ba511239c01ad42c",
+    "owner_zip_sha256": "547cc4047b5d7523dae28960dbaa67971bdf952ece4a9e7b2a9f14a9104f6a9a",
+    "native_image_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+    "gate_sha256": "2d2de97b0d0d574a18d99274b9080d212dd159930dc552d821eba98332273c79"
+  },
+  "open_p0": 4,
+  "boundaries": {"cloud":"RELEASE_LOCKED","guest_network":"OFF","usb_block_devices":"PROHIBITED","qpu":"UNAVAILABLE_DENY","scientific_benchmark":"NOT_STARTED","signature":"DEVELOPMENT_NOT_COMMERCIAL","human_approval":"GUILHERME_ONLY"}
+}
+

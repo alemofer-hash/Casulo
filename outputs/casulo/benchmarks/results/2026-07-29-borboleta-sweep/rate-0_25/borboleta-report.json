@@ -1,0 +1,152 @@
+{
+  "artifact_id": "sha256:861b89d7ac890c08b6edf94e6baedfc6843f08466004fb64e9ffb2787fbd214d",
+  "caveats": [
+    "dataset sintético mede o runtime, não a acurácia hidrológica",
+    "o ganho depende da taxa de repetição declarada no manifesto",
+    "resultados de um único computador não generalizam sem replicação",
+    "turbo, temperatura e processos concorrentes afetam tempo e energia",
+    "energia elétrica indisponível nesta execução"
+  ],
+  "comparison": {
+    "cpu_work_ratio": 0.6,
+    "electrical_energy_ratio": null,
+    "scope": "referência escalar sem cache versus lote Casulo com cache frio por chamada e deduplicação intralote",
+    "semantic_projection_excludes": [
+      "cache"
+    ],
+    "semantically_equivalent": true,
+    "verdict": "regression",
+    "wall_speedup_ci95_bootstrap": [
+      0.5680349466493064,
+      0.599923215381647
+    ],
+    "wall_speedup_interpretation": "valores acima de 1 indicam que a estratégia Casulo é mais rápida",
+    "wall_speedup_median": 0.5804640907404462
+  },
+  "config": {
+    "bootstrap_resamples": 1000,
+    "duplicate_rate": 0.25,
+    "iterations": 3,
+    "records": 2000,
+    "samples": 7,
+    "seed": 24052024,
+    "warmups": 1
+  },
+  "dataset": {
+    "duplicate_rate": 0.25,
+    "name": "hydrological-water-balance-synthetic",
+    "protocol": "casulo-dataset/hydrological-synthetic/0.1",
+    "records": 2000,
+    "seed": 24052024,
+    "sha256": "0951c9aa8aedb0e4ae353b609d4abf0ba92967110dfd70cd4477ba3f02308b66"
+  },
+  "energy": {
+    "electrical_energy_measured": false,
+    "method": "unavailable",
+    "quality": "not_measured",
+    "unit": null,
+    "warning": "nenhum contador elétrico cumulativo foi encontrado; tempo de CPU permanece apenas como proxy de trabalho, nunca como joules"
+  },
+  "environment": {
+    "cpu_logical": 12,
+    "cpu_physical": 10,
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "memory_total_bytes": 16890978304,
+    "os": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2"
+  },
+  "equivalence_sha256": "e581665f7cc11bf39c29b70c50fb372fd6ef72f185a273e6954202041caf567e",
+  "generated_at_utc": "2026-07-29T23:38:47Z",
+  "operation": "WaterBalance",
+  "optimized": {
+    "cpu_ns_samples": [
+      234375000,
+      250000000,
+      234375000,
+      234375000,
+      265625000,
+      234375000,
+      234375000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 234375000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 43409408,
+    "median_wall_ns": 242930300,
+    "name": "casulo_metamorfose_fused_batch",
+    "rss_observed_bytes_samples": [
+      43397120,
+      43409408,
+      43409408,
+      43409408,
+      43409408,
+      43393024,
+      43462656
+    ],
+    "throughput_records_per_second": 24698.442310407554,
+    "wall_ns_samples": [
+      252394300,
+      252930900,
+      242930300,
+      234953000,
+      261924400,
+      235837500,
+      226627800
+    ]
+  },
+  "protocol": "casulo-borboleta/0.1",
+  "scalar": {
+    "cpu_ns_samples": [
+      125000000,
+      125000000,
+      140625000,
+      140625000,
+      125000000,
+      140625000,
+      140625000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 140625000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 43409408,
+    "median_wall_ns": 140372300,
+    "name": "python_scalar_reference",
+    "rss_observed_bytes_samples": [
+      42831872,
+      43409408,
+      43409408,
+      43409408,
+      43409408,
+      43397120,
+      43462656
+    ],
+    "throughput_records_per_second": 42743.47574272132,
+    "wall_ns_samples": [
+      151417200,
+      144540500,
+      137992900,
+      140372300,
+      134488200,
+      136895200,
+      147762800
+    ]
+  }
+}

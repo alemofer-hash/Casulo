@@ -1,0 +1,156 @@
+{
+  "creation_sha256": "5cecfe1e71491501dd993dde3344ccefb96fdc03ac155f6980b6cdbad81ea35f",
+  "entry_unit": "creation_unit",
+  "project_id": "t-project:4dec0c71c6212e0b186350ee",
+  "tests": [
+    {
+      "expected_contains": "capabilities:memory.read, behavior:preserve,rejected_hypotheses, track:origin_of_choices, data:source,research_notes, identity:name,agent:A92D, interface:input,research_notes, output:format,reversible_decisions,preserved_hypotheses, purpose:transform,research_notes",
+      "input": "creation:open-ended-holdout",
+      "name": "CreationSpecValidationTest",
+      "unit_id": "creation_unit"
+    },
+    {
+      "expected_contains": "effects:manifest, trace_value:Text, origin_of_choices:Text",
+      "input": "Text:reversible_decisions",
+      "name": "TraceValueRecordingTest",
+      "unit_id": "trace_unit"
+    },
+    {
+      "expected_contains": "capabilities:memory.read, effects:manifest, trace_value:Text",
+      "input": "effects:manifest",
+      "name": "EffectManifestApplicationTest",
+      "unit_id": "effect_unit"
+    },
+    {
+      "expected_contains": "identity:name,agent:A92D, effects:origin_of_choices",
+      "input": "Text:agent:A92D",
+      "name": "AgentIdentityValidationTest",
+      "unit_id": "identity_unit"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "509495dea79383da8c4e8118a1f6bca036b6c88b40238e573689c4b7b00687b8",
+    "ended_monotonic_ns": 40565879621600,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5",
+    "output_sha256": "4dec0c71c6212e0b186350eee9cb8eaff5938ee166f078a9de426f6015303505",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 40460968252400,
+    "stream_events": 701
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Initialize in CreationSpec\n  effects [manifest]\n  emit \"creation:open-ended-holdout\"\n",
+      "unit_id": "creation_unit",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "behavior",
+          "preserve",
+          "rejected_hypotheses"
+        ],
+        [
+          "behavior",
+          "track",
+          "origin_of_choices"
+        ],
+        [
+          "data",
+          "source",
+          "research_notes"
+        ],
+        [
+          "identity",
+          "name",
+          "agent"
+        ],
+        [
+          "interface",
+          "input",
+          "research_notes"
+        ],
+        [
+          "interface",
+          "output",
+          "format",
+          "reversible_decisions"
+        ],
+        [
+          "purpose",
+          "transform",
+          "research_notes"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit"
+      ],
+      "source": "language T/1.1\nmodule trace\n\ncapability manifest\n\nfield TraceValue\n  trace value: Text\n\ncondense Record in TraceValue\n  effects [manifest]\n  emit \"Text:reversible_decisions\"\n",
+      "unit_id": "trace_unit",
+      "watch_paths": [
+        [
+          "effects",
+          "manifest"
+        ],
+        [
+          "effects",
+          "trace_value"
+        ],
+        [
+          "effects",
+          "origin_of_choices"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "trace_unit"
+      ],
+      "source": "language T/1.1\nmodule effects\n\ncapability manifest\n\nfield EffectManifest\n  trace value: Text\n\ncondense Apply in EffectManifest\n  effects [manifest]\n  emit \"effects:manifest\"\n",
+      "unit_id": "effect_unit",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "effects",
+          "manifest"
+        ],
+        [
+          "effects",
+          "trace_value"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "effect_unit"
+      ],
+      "source": "language T/1.1\nmodule identity\n\ncapability manifest\n\nfield AgentIdentity\n  trace value: Text\n\ncondense Validate in AgentIdentity\n  effects [manifest]\n  emit \"Text:agent:A92D\"\n",
+      "unit_id": "identity_unit",
+      "watch_paths": [
+        [
+          "identity",
+          "name",
+          "agent"
+        ],
+        [
+          "effects",
+          "origin_of_choices"
+        ]
+      ]
+    }
+  ]
+}

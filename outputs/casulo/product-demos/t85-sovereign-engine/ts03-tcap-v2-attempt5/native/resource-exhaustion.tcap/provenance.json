@@ -1,0 +1,11 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/test.exhaust.t",
+      "module": "test.exhaust",
+      "sha256": "0b4faaf17780405907597e60609161df615a5812a6b453d9f090d1e19cd0b3af"
+    }
+  ]
+}

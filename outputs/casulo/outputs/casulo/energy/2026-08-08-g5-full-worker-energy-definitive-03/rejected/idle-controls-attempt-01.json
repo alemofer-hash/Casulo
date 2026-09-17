@@ -1,0 +1,10 @@
+{
+  "status": "INVALIDATED_BEFORE_CONTROL_B",
+  "reason": "ASYMMETRIC_START_STABILITY_GATE",
+  "control_a_completed": true,
+  "control_b_started": false,
+  "control_c_started": false,
+  "workload_started": false,
+  "detail": "Control A required only temperature <= 60 C for 30 s, while subsequent controls required the reference temperature +/- 1 C for 30 s. The conditions were not symmetric.",
+  "preserved_control_a": "raw/idle-control-A_HWINFO_ONLY.json"
+}

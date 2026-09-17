@@ -1,0 +1,12 @@
+{
+  "capabilities": ["manifest"],
+  "deadline_ms": 5000,
+  "enums": {"PublishDecision": ["PUBLISH", "BLOCKED"]},
+  "functions": {"decide": {"effects": ["manifest"], "return": "Result"}},
+  "module": "owner.publish",
+  "records": {"PublishInput": ["confirmed", "hard_statuses", "cancelled"]},
+  "schema_version": 1,
+  "states": ["attempts"],
+  "step_budget": 4096
+}
+

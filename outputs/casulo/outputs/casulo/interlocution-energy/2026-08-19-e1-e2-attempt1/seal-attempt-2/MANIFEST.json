@@ -1,0 +1,87 @@
+{
+  "campaign_id": "2026-08-19-e1-e2-attempt1",
+  "files": [
+    {
+      "bytes": 943,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/e1-analysis.json",
+      "sha256": "16310456a87f03dea34c7fc746c862c58d62fc2ab5694ff93217c988dfd1f1c4"
+    },
+    {
+      "bytes": 878,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/e2-analysis.json",
+      "sha256": "99ae2ba6a81b78165316cabc4defca3495b26aa16d902c644ee24c4ec8a9d8c5"
+    },
+    {
+      "bytes": 1071,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/instrument-capabilities.json",
+      "sha256": "6910206618e0601360d17f5414cf5ee5b0371ab967546a7e3499d046d1f0d349"
+    },
+    {
+      "bytes": 1959,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/meter-recomposition.json",
+      "sha256": "ff8db635afcea9e98b8de85ac0f46eeaee614bef1776cf88f4a2a015e7bd6aaa"
+    },
+    {
+      "bytes": 1317,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/preflight.json",
+      "sha256": "91cc6472b811b84097d01e9891090b3ff06a73635daf7079d32a051b4cf45b3f"
+    },
+    {
+      "bytes": 139512,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/raw-meter-segments/pair-01-D.csv",
+      "sha256": "c6254a0031cca954ddd10dd35c073108dfc9cf0d7aaa64ecbc9f6d7a0ddb7386"
+    },
+    {
+      "bytes": 142700,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/raw-meter-segments/pair-01-E.csv",
+      "sha256": "e26982454d7c452411f3ce9dd4d1b18846dc88f14d247fe0029eadc5b70c699d"
+    },
+    {
+      "bytes": 138393,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/raw-meter-segments/pair-02-D.csv",
+      "sha256": "2233db4c84db0f271625c510a9b2dc2d2bf386e2c30f60217a4ba2b617e6b8c1"
+    },
+    {
+      "bytes": 136487,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/raw-meter-segments/pair-02-E.csv",
+      "sha256": "c2ae9ef92d85f30996b07ab4468b15579c24489ff6a5627f16b66f590ba6b7d3"
+    },
+    {
+      "bytes": 140002,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/raw-meter-segments/pair-03-D.csv",
+      "sha256": "3e70952566c5ff3c444ae0c82676d44602bb2c7821be382382dc958b4d21ad1d"
+    },
+    {
+      "bytes": 136525,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/raw-meter-segments/pair-03-E.csv",
+      "sha256": "f6c6eb5093b4bc3b8daceb24be1d0e48421574a805840513a3622f2950ff26ff"
+    },
+    {
+      "bytes": 690,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/runtime-v2-validation.json",
+      "sha256": "8f4f81ca622d3e6566b231abf8ea6f732e1effaf8f197c2235cfdd2a6a934a1e"
+    },
+    {
+      "bytes": 1264,
+      "path": "outputs/casulo/interlocution-energy/2026-08-19-e1-e2-attempt1/seal-attempt-2/same-kernel-identification.json",
+      "sha256": "2a7ca78ac2919c52f207bc44da084ef7ff0011f31d6852d27f6a77c1fd43c525"
+    },
+    {
+      "bytes": 6057,
+      "path": "docs/research/interlocution/energy-confirmatory/ENERGY_E1_E2_RESULT_2026-08-19.md",
+      "sha256": "6add46a40cc04d46c30f627a78f49cd5bf01c0856a5ff02d34b048d593677e3e"
+    },
+    {
+      "bytes": 862,
+      "path": "docs/research/interlocution/energy-confirmatory/ENERGY_CONFIRMATORY_EXECUTION_STATE.md",
+      "sha256": "829c6942ffd6216dd7d80f100a6bbdb4b834862bf62a652113f84b7d95f2d7a7"
+    }
+  ],
+  "generated_at_utc": "2026-08-20T01:24:48.785726+00:00",
+  "schema": "casulo.interlocution-energy-manifest/2.0",
+  "scientific_claim_authorized": false,
+  "terminal_states": {
+    "E1": "E1_BLOCKED_PHYSICAL_INSTRUMENT",
+    "E2": "E2_BLOCKED_INSUFFICIENT_EXTERNAL_SCALE_AND_INSTRUMENTATION"
+  }
+}

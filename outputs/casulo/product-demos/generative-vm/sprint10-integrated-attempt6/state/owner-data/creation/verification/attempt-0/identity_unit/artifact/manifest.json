@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:5f5276c7a525e30a1cc06064e54ed4f30f2053ebc3caa43536003229e0da8d9f",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "13b9ac3e681c35df41e500b53796d090dfbc3ef86c2e98871550ca00b1fdf358"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "94562bc21ad12cc8dc0f03ff50d6f2175db57e942d0e6cb7a57f6f29a60a0a0c",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "99330b9ee0eec241cc7a7510908e4ed32b424b3b216f14319cec4b9c80eea0a0",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "identity",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "c35d0648829e5f7acc01319ebbffc6e7d7c8405cd3e8c19f1eecd32a5302b888"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "AgentIdentity",
+        "judgements": [],
+        "name": "Validate",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "c5a1a259769be463e25c89ec281767b827f978e0f346f6a62baafb09cceebf5e"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "AgentIdentity",
+      "kind": "condense",
+      "name": "Validate",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "23f9b8a619eee29dd36f5bf7706fac25add14f373b2285c311699ea89920fc12"
+  }
+}

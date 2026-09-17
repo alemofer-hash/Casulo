@@ -1,0 +1,32 @@
+{
+  "engine_boundary": "cloud-client-only-no-owner-fallback",
+  "package": "casulo-public",
+  "production_eligible": false,
+  "profile": "public",
+  "public_audit": {
+    "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release-vbscript-reseal\\staging\\OWNER_VM\\editions\\public\\casulo_public-0.1.0a1-py3-none-any.whl",
+    "content_tree_sha256": "0d42d0b3a164bb2f1370ca49f9b3222fb09641a58b1374cd27342b9fd35756e1",
+    "files_scanned": 8,
+    "forbidden_findings": [],
+    "private_components_absent": true,
+    "schema": "casulo-public-audit/1.0"
+  },
+  "redistributable": true,
+  "release_state": "PRODUCT_ALPHA_LOCAL",
+  "sbom": {
+    "file": "SBOM.spdx.json",
+    "sha256": "b3814060760ca4f5c55d1061f1b2d547af94e2f0590f7563b45387d0184f3619"
+  },
+  "schema": "casulo-product-edition-release/1.0",
+  "signing": {
+    "algorithm": "ssh-ed25519",
+    "development_key": true,
+    "identity": "casulo-public-dev",
+    "namespace": "casulo-release",
+    "public_key_fingerprint": "SHA256:LLS0cu7UCgbJYNYdHAe5O+LgApYXXRBP/6e07oJ2Ggg"
+  },
+  "wheel": {
+    "file": "casulo_public-0.1.0a1-py3-none-any.whl",
+    "sha256": "ec6d03fb0f93bab38ad07f3f891599d58e4dde1245af18278fe4cf4e3a0ead08"
+  }
+}

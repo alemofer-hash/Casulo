@@ -1,0 +1,923 @@
+{
+  "accepted": false,
+  "attempts": [
+    {
+      "attempt": 0,
+      "candidate": {
+        "claims": [
+          "curvature_evaluator is a function that assesses the validity of a 4D metric based on its curvature properties",
+          "hypotheticals are candidate metrics against which the 4D metric is tested for curvature consistency",
+          "residuals represent the discrepancy between the 4D metric and its hypothetical counterparts",
+          "rejections are explicit scientific denials of curvature compatibility"
+        ],
+        "science": {
+          "inputs": [
+            "metric_4d: tensor[4, float]",
+            "hypotheticals: list[tuple[metric_4d, metric_4d]]",
+            "residuals: list[float]",
+            "rejections: list[bool]"
+          ],
+          "method": "parametrizable_curvature_assessment",
+          "operators": [
+            "curvature_evaluator: function[metric_4d, hypotheticals, residuals, rejections] -> bool"
+          ],
+          "outputs": [
+            "validity: bool",
+            "residual_analysis: dict[str, float]",
+            "rejection_reasoning: dict[str, str]"
+          ],
+          "refusals": [
+            "unsupported_global_claim_denied: true"
+          ],
+          "scope": "local-4d-evaluator"
+        }
+      },
+      "fulfillment": {
+        "accepted": false,
+        "candidate_sha256": "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff",
+        "coverage": 0.2,
+        "diagnostics": [
+          {
+            "code": "FUL200",
+            "expected": [
+              "metric",
+              "coordinates",
+              "constants",
+              "stress_energy",
+              "conditions",
+              "tolerances"
+            ],
+            "message": "expected CONTAINS_ALL ('metric', 'coordinates', 'constants', 'stress_energy', 'conditions', 'tolerances') at science.inputs",
+            "observed": [
+              "metric_4d: tensor[4, float]",
+              "hypotheticals: list[tuple[metric_4d, metric_4d]]",
+              "residuals: list[float]",
+              "rejections: list[bool]"
+            ],
+            "path": [
+              "science",
+              "inputs"
+            ],
+            "rule_id": "inputs"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "levi_civita"
+            ],
+            "message": "expected CONTAINS_ALL ('levi_civita',) at science.operators",
+            "observed": [
+              "curvature_evaluator: function[metric_4d, hypotheticals, residuals, rejections] -> bool"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "connection"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "ricci_tensor",
+              "ricci_scalar"
+            ],
+            "message": "expected CONTAINS_ALL ('ricci_tensor', 'ricci_scalar') at science.operators",
+            "observed": [
+              "curvature_evaluator: function[metric_4d, hypotheticals, residuals, rejections] -> bool"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "ricci"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "einstein_tensor"
+            ],
+            "message": "expected CONTAINS_ALL ('einstein_tensor',) at science.operators",
+            "observed": [
+              "curvature_evaluator: function[metric_4d, hypotheticals, residuals, rejections] -> bool"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "einstein"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "field_equation_residual"
+            ],
+            "message": "expected CONTAINS_ALL ('field_equation_residual',) at science.outputs",
+            "observed": [
+              "validity: bool",
+              "residual_analysis: dict[str, float]",
+              "rejection_reasoning: dict[str, str]"
+            ],
+            "path": [
+              "science",
+              "outputs"
+            ],
+            "rule_id": "residual"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "global-pde-solver"
+            ],
+            "message": "expected CONTAINS_ALL ('global-pde-solver',) at science.refusals",
+            "observed": [
+              "unsupported_global_claim_denied: true"
+            ],
+            "path": [
+              "science",
+              "refusals"
+            ],
+            "rule_id": "global-denial"
+          }
+        ],
+        "evidence": [
+          {
+            "artifact_sha256": "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff",
+            "detail": "expected CONTAINS_ALL ('metric', 'coordinates', 'constants', 'stress_energy', 'conditions', 'tolerances') at science.inputs",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:fbb0418c01afe072:inputs",
+            "requirement_id": "scientific-computing:inputs",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:inputs"
+          },
+          {
+            "artifact_sha256": "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff",
+            "detail": "expected CONTAINS_ALL ('levi_civita',) at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:fbb0418c01afe072:connection",
+            "requirement_id": "scientific-computing:connection",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:connection"
+          },
+          {
+            "artifact_sha256": "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff",
+            "detail": "expected CONTAINS_ALL ('ricci_tensor', 'ricci_scalar') at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:fbb0418c01afe072:ricci",
+            "requirement_id": "scientific-computing:ricci",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:ricci"
+          },
+          {
+            "artifact_sha256": "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff",
+            "detail": "expected CONTAINS_ALL ('einstein_tensor',) at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:fbb0418c01afe072:einstein",
+            "requirement_id": "scientific-computing:einstein",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:einstein"
+          },
+          {
+            "artifact_sha256": "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff",
+            "detail": "expected CONTAINS_ALL ('field_equation_residual',) at science.outputs",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:fbb0418c01afe072:residual",
+            "requirement_id": "scientific-computing:residual",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:residual"
+          },
+          {
+            "artifact_sha256": "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:fbb0418c01afe072:scope",
+            "requirement_id": "scientific-computing:scope",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:scope"
+          },
+          {
+            "artifact_sha256": "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff",
+            "detail": "expected CONTAINS_ALL ('global-pde-solver',) at science.refusals",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "fbb0418c01afe072dfff4419db2566567575bf6a319473d2bc6ba1e08f5094ff"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:fbb0418c01afe072:global-denial",
+            "requirement_id": "scientific-computing:global-denial",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:global-denial"
+          }
+        ],
+        "hard_failures": [
+          "scientific-computing:inputs",
+          "scientific-computing:connection",
+          "scientific-computing:ricci",
+          "scientific-computing:einstein",
+          "scientific-computing:residual",
+          "scientific-computing:global-denial"
+        ],
+        "pack_id": "scientific-computing",
+        "schema": "casulo.fulfillment-result/1.0",
+        "spec_gap": 0.8,
+        "unknown": [],
+        "unsupported_claims": [],
+        "verdicts": {
+          "scientific-computing:connection": "FAIL",
+          "scientific-computing:einstein": "FAIL",
+          "scientific-computing:global-denial": "FAIL",
+          "scientific-computing:inputs": "FAIL",
+          "scientific-computing:residual": "FAIL",
+          "scientific-computing:ricci": "FAIL",
+          "scientific-computing:scope": "PASS"
+        }
+      },
+      "raw_sha256": "03404222d26f799a594fe14567f3ef2c3b06f1f7d39fd953bfa0950d0b91be69",
+      "structured": true,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "aa6733223d72be4c9902191f7cc9ce3c951cbe54749fd5a9fb2a69a35f7a1323",
+        "ended_monotonic_ns": 12994323883000,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-scientific-tensor:attempt:0",
+        "output_sha256": "03404222d26f799a594fe14567f3ef2c3b06f1f7d39fd953bfa0950d0b91be69",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12952674195800,
+        "stream_events": 275
+      }
+    },
+    {
+      "attempt": 1,
+      "candidate": {
+        "claims": [
+          "declared-inputs: true",
+          "domain-equations: true",
+          "residual: true",
+          "unsupported-global-claim-denied: true"
+        ],
+        "science": {
+          "inputs": [
+            "metric_4d: tensor[4, float]",
+            "coordinates: list[tuple[float, float, float, float]]",
+            "constants: dict[str, float]",
+            "stress_energy: tensor[4, float]",
+            "conditions: list[tuple[metric_4d, metric_4d]]",
+            "tolerances: dict[str, float]"
+          ],
+          "method": "curvature_evaluator: function[metric_4d, hypotheticals, residuals, rejections] -> bool",
+          "operators": [
+            "levi_civita: tensor[4, 4, 4, 4, float]",
+            "ricci_tensor: tensor[4, 4, float]",
+            "ricci_scalar: float",
+            "einstein_tensor: tensor[4, 4, float]"
+          ],
+          "outputs": [
+            "validity: bool",
+            "residual_analysis: dict[str, float]",
+            "rejection_reasoning: dict[str, str]"
+          ],
+          "refusals": [
+            "unsupported_global_claim_denied: true"
+          ],
+          "scope": "local-4d-evaluator"
+        }
+      },
+      "fulfillment": {
+        "accepted": false,
+        "candidate_sha256": "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d",
+        "coverage": 0.2,
+        "diagnostics": [
+          {
+            "code": "FUL200",
+            "expected": [
+              "metric",
+              "coordinates",
+              "constants",
+              "stress_energy",
+              "conditions",
+              "tolerances"
+            ],
+            "message": "expected CONTAINS_ALL ('metric', 'coordinates', 'constants', 'stress_energy', 'conditions', 'tolerances') at science.inputs",
+            "observed": [
+              "metric_4d: tensor[4, float]",
+              "coordinates: list[tuple[float, float, float, float]]",
+              "constants: dict[str, float]",
+              "stress_energy: tensor[4, float]",
+              "conditions: list[tuple[metric_4d, metric_4d]]",
+              "tolerances: dict[str, float]"
+            ],
+            "path": [
+              "science",
+              "inputs"
+            ],
+            "rule_id": "inputs"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "levi_civita"
+            ],
+            "message": "expected CONTAINS_ALL ('levi_civita',) at science.operators",
+            "observed": [
+              "levi_civita: tensor[4, 4, 4, 4, float]",
+              "ricci_tensor: tensor[4, 4, float]",
+              "ricci_scalar: float",
+              "einstein_tensor: tensor[4, 4, float]"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "connection"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "ricci_tensor",
+              "ricci_scalar"
+            ],
+            "message": "expected CONTAINS_ALL ('ricci_tensor', 'ricci_scalar') at science.operators",
+            "observed": [
+              "levi_civita: tensor[4, 4, 4, 4, float]",
+              "ricci_tensor: tensor[4, 4, float]",
+              "ricci_scalar: float",
+              "einstein_tensor: tensor[4, 4, float]"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "ricci"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "einstein_tensor"
+            ],
+            "message": "expected CONTAINS_ALL ('einstein_tensor',) at science.operators",
+            "observed": [
+              "levi_civita: tensor[4, 4, 4, 4, float]",
+              "ricci_tensor: tensor[4, 4, float]",
+              "ricci_scalar: float",
+              "einstein_tensor: tensor[4, 4, float]"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "einstein"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "field_equation_residual"
+            ],
+            "message": "expected CONTAINS_ALL ('field_equation_residual',) at science.outputs",
+            "observed": [
+              "validity: bool",
+              "residual_analysis: dict[str, float]",
+              "rejection_reasoning: dict[str, str]"
+            ],
+            "path": [
+              "science",
+              "outputs"
+            ],
+            "rule_id": "residual"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "global-pde-solver"
+            ],
+            "message": "expected CONTAINS_ALL ('global-pde-solver',) at science.refusals",
+            "observed": [
+              "unsupported_global_claim_denied: true"
+            ],
+            "path": [
+              "science",
+              "refusals"
+            ],
+            "rule_id": "global-denial"
+          }
+        ],
+        "evidence": [
+          {
+            "artifact_sha256": "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d",
+            "detail": "expected CONTAINS_ALL ('metric', 'coordinates', 'constants', 'stress_energy', 'conditions', 'tolerances') at science.inputs",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:afc55dfe73542e3a:inputs",
+            "requirement_id": "scientific-computing:inputs",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:inputs"
+          },
+          {
+            "artifact_sha256": "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d",
+            "detail": "expected CONTAINS_ALL ('levi_civita',) at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:afc55dfe73542e3a:connection",
+            "requirement_id": "scientific-computing:connection",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:connection"
+          },
+          {
+            "artifact_sha256": "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d",
+            "detail": "expected CONTAINS_ALL ('ricci_tensor', 'ricci_scalar') at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:afc55dfe73542e3a:ricci",
+            "requirement_id": "scientific-computing:ricci",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:ricci"
+          },
+          {
+            "artifact_sha256": "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d",
+            "detail": "expected CONTAINS_ALL ('einstein_tensor',) at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:afc55dfe73542e3a:einstein",
+            "requirement_id": "scientific-computing:einstein",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:einstein"
+          },
+          {
+            "artifact_sha256": "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d",
+            "detail": "expected CONTAINS_ALL ('field_equation_residual',) at science.outputs",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:afc55dfe73542e3a:residual",
+            "requirement_id": "scientific-computing:residual",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:residual"
+          },
+          {
+            "artifact_sha256": "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:afc55dfe73542e3a:scope",
+            "requirement_id": "scientific-computing:scope",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:scope"
+          },
+          {
+            "artifact_sha256": "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d",
+            "detail": "expected CONTAINS_ALL ('global-pde-solver',) at science.refusals",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "afc55dfe73542e3a166a7569e63ff708340e5b660cae46cae61a8a1c17682d8d"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:afc55dfe73542e3a:global-denial",
+            "requirement_id": "scientific-computing:global-denial",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:global-denial"
+          }
+        ],
+        "hard_failures": [
+          "scientific-computing:inputs",
+          "scientific-computing:connection",
+          "scientific-computing:ricci",
+          "scientific-computing:einstein",
+          "scientific-computing:residual",
+          "scientific-computing:global-denial"
+        ],
+        "pack_id": "scientific-computing",
+        "schema": "casulo.fulfillment-result/1.0",
+        "spec_gap": 0.8,
+        "unknown": [],
+        "unsupported_claims": [],
+        "verdicts": {
+          "scientific-computing:connection": "FAIL",
+          "scientific-computing:einstein": "FAIL",
+          "scientific-computing:global-denial": "FAIL",
+          "scientific-computing:inputs": "FAIL",
+          "scientific-computing:residual": "FAIL",
+          "scientific-computing:ricci": "FAIL",
+          "scientific-computing:scope": "PASS"
+        }
+      },
+      "raw_sha256": "75ecada4642c527fff2a314083b26ebd12b2d94345d55b0f2e610dbfe6f218a0",
+      "structured": true,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "c6378c4bd47562524da95fb5b02911d3d691cf710390d16cf7dd8e87ccda4711",
+        "ended_monotonic_ns": 13079354792700,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-scientific-tensor:attempt:1",
+        "output_sha256": "75ecada4642c527fff2a314083b26ebd12b2d94345d55b0f2e610dbfe6f218a0",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12994325095100,
+        "stream_events": 305
+      }
+    },
+    {
+      "attempt": 2,
+      "candidate": {
+        "claims": [
+          "declared-inputs",
+          "domain-equations",
+          "residual",
+          "unsupported-global-claim-denied"
+        ],
+        "science": {
+          "inputs": [
+            "metric_4d: tensor[4, float]",
+            "coordinates: list[tuple[float, float, float, float]]",
+            "constants: dict[str, float]",
+            "stress_energy: tensor[4, float]",
+            "conditions: list[tuple[metric_4d, metric_4d]]",
+            "tolerances: dict[str, float]"
+          ],
+          "method": "parametrizable-curvature-validator",
+          "operators": [
+            "levi_civita: tensor[4, 4, 4, 4, float]",
+            "ricci_tensor: tensor[4, 4, float]",
+            "ricci_scalar: float",
+            "einstein_tensor: tensor[4, 4, float]"
+          ],
+          "outputs": [
+            "validity: bool",
+            "residual_analysis: dict[str, float]",
+            "rejection_reasoning: dict[str, str]"
+          ],
+          "refusals": [
+            "unsupported_global_claim_denied: true"
+          ],
+          "scope": "local-4d-evaluator"
+        }
+      },
+      "fulfillment": {
+        "accepted": false,
+        "candidate_sha256": "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b",
+        "coverage": 0.2,
+        "diagnostics": [
+          {
+            "code": "FUL200",
+            "expected": [
+              "metric",
+              "coordinates",
+              "constants",
+              "stress_energy",
+              "conditions",
+              "tolerances"
+            ],
+            "message": "expected CONTAINS_ALL ('metric', 'coordinates', 'constants', 'stress_energy', 'conditions', 'tolerances') at science.inputs",
+            "observed": [
+              "metric_4d: tensor[4, float]",
+              "coordinates: list[tuple[float, float, float, float]]",
+              "constants: dict[str, float]",
+              "stress_energy: tensor[4, float]",
+              "conditions: list[tuple[metric_4d, metric_4d]]",
+              "tolerances: dict[str, float]"
+            ],
+            "path": [
+              "science",
+              "inputs"
+            ],
+            "rule_id": "inputs"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "levi_civita"
+            ],
+            "message": "expected CONTAINS_ALL ('levi_civita',) at science.operators",
+            "observed": [
+              "levi_civita: tensor[4, 4, 4, 4, float]",
+              "ricci_tensor: tensor[4, 4, float]",
+              "ricci_scalar: float",
+              "einstein_tensor: tensor[4, 4, float]"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "connection"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "ricci_tensor",
+              "ricci_scalar"
+            ],
+            "message": "expected CONTAINS_ALL ('ricci_tensor', 'ricci_scalar') at science.operators",
+            "observed": [
+              "levi_civita: tensor[4, 4, 4, 4, float]",
+              "ricci_tensor: tensor[4, 4, float]",
+              "ricci_scalar: float",
+              "einstein_tensor: tensor[4, 4, float]"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "ricci"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "einstein_tensor"
+            ],
+            "message": "expected CONTAINS_ALL ('einstein_tensor',) at science.operators",
+            "observed": [
+              "levi_civita: tensor[4, 4, 4, 4, float]",
+              "ricci_tensor: tensor[4, 4, float]",
+              "ricci_scalar: float",
+              "einstein_tensor: tensor[4, 4, float]"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "einstein"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "field_equation_residual"
+            ],
+            "message": "expected CONTAINS_ALL ('field_equation_residual',) at science.outputs",
+            "observed": [
+              "validity: bool",
+              "residual_analysis: dict[str, float]",
+              "rejection_reasoning: dict[str, str]"
+            ],
+            "path": [
+              "science",
+              "outputs"
+            ],
+            "rule_id": "residual"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "global-pde-solver"
+            ],
+            "message": "expected CONTAINS_ALL ('global-pde-solver',) at science.refusals",
+            "observed": [
+              "unsupported_global_claim_denied: true"
+            ],
+            "path": [
+              "science",
+              "refusals"
+            ],
+            "rule_id": "global-denial"
+          }
+        ],
+        "evidence": [
+          {
+            "artifact_sha256": "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b",
+            "detail": "expected CONTAINS_ALL ('metric', 'coordinates', 'constants', 'stress_energy', 'conditions', 'tolerances') at science.inputs",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:7a2e8d4456cbd535:inputs",
+            "requirement_id": "scientific-computing:inputs",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:inputs"
+          },
+          {
+            "artifact_sha256": "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b",
+            "detail": "expected CONTAINS_ALL ('levi_civita',) at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:7a2e8d4456cbd535:connection",
+            "requirement_id": "scientific-computing:connection",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:connection"
+          },
+          {
+            "artifact_sha256": "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b",
+            "detail": "expected CONTAINS_ALL ('ricci_tensor', 'ricci_scalar') at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:7a2e8d4456cbd535:ricci",
+            "requirement_id": "scientific-computing:ricci",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:ricci"
+          },
+          {
+            "artifact_sha256": "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b",
+            "detail": "expected CONTAINS_ALL ('einstein_tensor',) at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:7a2e8d4456cbd535:einstein",
+            "requirement_id": "scientific-computing:einstein",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:einstein"
+          },
+          {
+            "artifact_sha256": "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b",
+            "detail": "expected CONTAINS_ALL ('field_equation_residual',) at science.outputs",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:7a2e8d4456cbd535:residual",
+            "requirement_id": "scientific-computing:residual",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:residual"
+          },
+          {
+            "artifact_sha256": "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:7a2e8d4456cbd535:scope",
+            "requirement_id": "scientific-computing:scope",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:scope"
+          },
+          {
+            "artifact_sha256": "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b",
+            "detail": "expected CONTAINS_ALL ('global-pde-solver',) at science.refusals",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "7a2e8d4456cbd5350acd32d87217a987de13d48deb539f0695f5cb4ceb53616b"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:7a2e8d4456cbd535:global-denial",
+            "requirement_id": "scientific-computing:global-denial",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:global-denial"
+          }
+        ],
+        "hard_failures": [
+          "scientific-computing:inputs",
+          "scientific-computing:connection",
+          "scientific-computing:ricci",
+          "scientific-computing:einstein",
+          "scientific-computing:residual",
+          "scientific-computing:global-denial"
+        ],
+        "pack_id": "scientific-computing",
+        "schema": "casulo.fulfillment-result/1.0",
+        "spec_gap": 0.8,
+        "unknown": [],
+        "unsupported_claims": [],
+        "verdicts": {
+          "scientific-computing:connection": "FAIL",
+          "scientific-computing:einstein": "FAIL",
+          "scientific-computing:global-denial": "FAIL",
+          "scientific-computing:inputs": "FAIL",
+          "scientific-computing:residual": "FAIL",
+          "scientific-computing:ricci": "FAIL",
+          "scientific-computing:scope": "PASS"
+        }
+      },
+      "raw_sha256": "30e6722c585d19259f82a6e235be7f9cce929f742f246ba200cbd3ad7b91329c",
+      "structured": true,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "4b8efe862ba8c888016176727f115d8fda5293507591c2f217d39daf24835a6d",
+        "ended_monotonic_ns": 13169490948600,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-scientific-tensor:attempt:2",
+        "output_sha256": "30e6722c585d19259f82a6e235be7f9cce929f742f246ba200cbd3ad7b91329c",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 13079355742600,
+        "stream_events": 278
+      }
+    }
+  ],
+  "domain": "scientific-computing",
+  "family_id": "holdout-scientific-tensor",
+  "pack_id": "scientific-computing",
+  "request_sha256": "b83ebd8d58da1a9c1155c865c1c669c26af3acdfedb326c5204ec0072066559a"
+}

@@ -1,0 +1,21 @@
+{
+  "change": {
+    "segment_target_seconds": {
+      "from": 15.0,
+      "to": 10.0
+    }
+  },
+  "id": "protocol-amendment-001",
+  "observed_at_utc": "2026-08-07T17:48:43.837780+00:00",
+  "reason": "first calibration Eager block exceeded pre-existing 20 second physical ceiling",
+  "result_bias": "none; safety amendment made before K freeze and before definitive paired samples",
+  "unchanged": {
+    "energy_response_threshold": {
+      "load_median_watts_must_exceed": "idle_median + max(2 W, 25% of idle_median)",
+      "registered_before_calibration_observation": true
+    },
+    "equivalence_tolerance": 1e-09,
+    "maximum_continuous_seconds": 20.0,
+    "pairs": 21
+  }
+}

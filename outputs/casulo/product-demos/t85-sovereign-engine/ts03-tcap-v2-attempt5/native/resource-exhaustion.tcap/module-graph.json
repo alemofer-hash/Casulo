@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "test.exhaust"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "test.exhaust"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

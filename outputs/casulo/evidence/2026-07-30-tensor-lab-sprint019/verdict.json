@@ -1,0 +1,78 @@
+{
+  "baseline_classifications": {
+    "pytorch-eager-autograd-cpu": "NEGATIVE",
+    "pytorch-inductor-autograd-cpu": "NEGATIVE"
+  },
+  "claim": null,
+  "classification": "NEGATIVE",
+  "commercial_gate": false,
+  "commercial_threshold": 6.0,
+  "covenant": "casulo-scientific-covenant/1.0",
+  "energy": {
+    "joules": null,
+    "measured": false
+  },
+  "evidence": {
+    "integrity_failures": [],
+    "missing_required_baselines": [],
+    "observed_baselines": [
+      "pytorch-eager-autograd-cpu",
+      "pytorch-inductor-autograd-cpu"
+    ],
+    "preregistration_file_sha256": "9d99a15badb7387d3ff825c358948e27784c7ecd542fd651d51b35708a4e32e6",
+    "quality_failures": [],
+    "report_file_sha256": "5c456bdc91dfbc5331afca6c19e36489d531044fc56264f37adf2232b0ae35c1"
+  },
+  "experiment_id": "sha256:2ab07fb6f50212c5715328c421f033c6039267191dbe639b8903b3c356f69622",
+  "interpretation": "a hipótese foi refutada por ao menos um baseline obrigatório",
+  "judge": {
+    "can_modify_experiment": false,
+    "implementation": "python-standard-library",
+    "recomputed_from_raw_samples": true
+  },
+  "protocol": "casulo-tensor-lab-verdict/0.1",
+  "recomputed_metrics": {
+    "pytorch-eager-autograd-cpu": {
+      "classification": "NEGATIVE",
+      "independent_bootstrap_ci95": {
+        "lower": 0.21395199263758127,
+        "method": "independent-python-bootstrap-median",
+        "resamples": 10000,
+        "upper": 0.2555147058823529
+      },
+      "paired_samples": 21,
+      "wall_speedup_median": 0.23291006156326297
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "classification": "NEGATIVE",
+      "independent_bootstrap_ci95": {
+        "lower": 0.0832940187413219,
+        "method": "independent-python-bootstrap-median",
+        "resamples": 10000,
+        "upper": 0.11962288646113532
+      },
+      "paired_samples": 21,
+      "wall_speedup_median": 0.10439887105293984
+    }
+  },
+  "scope": {
+    "autograd_graph_sha256": "868aee7b82295e6f3d4345049998eb4f56694c109b8f1b7c52202fb57dada7ab",
+    "dtype": [
+      "float32"
+    ],
+    "graph_sha256": "454373109fcc101051588e23e421d46a4d356f50ceceae9eb807cc7ebcae5646",
+    "inner_iterations": 10,
+    "machine": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "required_baselines": [
+      "pytorch-eager-autograd-cpu",
+      "pytorch-inductor-autograd-cpu"
+    ],
+    "workers": 4
+  },
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "8eb81004db359cd6cd4340c0d0fa6e4079fe053d03a8863c1796ff1deb702591"
+  },
+  "verdict_id": "sha256:8eb81004db359cd6cd4340c0d0fa6e4079fe053d03a8863c1796ff1deb702591"
+}

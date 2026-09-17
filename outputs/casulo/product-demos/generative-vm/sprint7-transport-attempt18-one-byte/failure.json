@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 18,
+  "failure": "SINGLE_PRELOADED_BYTE_NOT_OBSERVED_BY_GUEST",
+  "action": "Added five-second UART line-status diagnostic build",
+  "preserved": true,
+  "neural_evidence": false
+}

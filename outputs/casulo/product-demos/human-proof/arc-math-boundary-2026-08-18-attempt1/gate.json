@@ -1,0 +1,23 @@
+{
+  "authorized_claim": "T governa a adoção de uma representação esparsa semanticamente equivalente no kernel de similaridade da LivingMemory.",
+  "checks": {
+    "inventory_declares_foreign_neural_algebra": true,
+    "logical_traffic_reduced": true,
+    "profile_is_product_diagnostic": true,
+    "safe_reference_available": true,
+    "semantic_equivalence": true,
+    "t_decision_consumed": true,
+    "t_receipt_present": true
+  },
+  "forbidden_claims": [
+    "T replaces Qwen or llama.cpp matrix kernels",
+    "universal linear algebra superiority",
+    "scientific or energetic advantage",
+    "the historical tensor extension is the current owner inference path"
+  ],
+  "schema": "casulo.arc8-gate/1.0",
+  "selected_kernel": "living-memory/sparse-signed-cosine-python-v1",
+  "selection_reason": "T_ADOPTED_SPECIALIZED",
+  "specialized_adopted": true,
+  "state": "PASS"
+}

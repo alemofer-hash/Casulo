@@ -1,0 +1,1373 @@
+{
+  "backends": {
+    "c99-openmp-tensor/0.1": {
+      "arena_required_bytes": 688256,
+      "compilation": {
+        "cache_hit": false,
+        "codegen_wall_ns": 633000,
+        "compiler_subprocess_wall_ns": 2868485900,
+        "compiler_total_wall_ns": 3046781500,
+        "plan_wall_ns": 801700
+      },
+      "compiler": {
+        "backend": "c99-openmp-tensor/0.1",
+        "binary_sha256": "b5b12721cccb0eae4b9b966338d81b54dc2555f03b46b5b1ebab6b4b6de5e455",
+        "cache_hit": false,
+        "command": [
+          "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+          "-std=c99",
+          "-O3",
+          "-march=native",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-fopenmp",
+          "-shared",
+          "-Wl,--no-insert-timestamp,--image-base,0x180000000",
+          "-s",
+          "-fopt-info-vec-optimized=C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\vectorization.txt",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c",
+          "-o",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.dll",
+          "-lm"
+        ],
+        "compilation_wall_ns": 2868485900,
+        "compiler": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+        "compiler_version": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+        "library": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.dll",
+        "protocol": "casulo-tensor-cpu-build/0.1",
+        "source_sha256": "ab0c13bf01b977ce2a5155ccc5406265e1a3989f794b560062e81ea1583740db",
+        "vectorization_report": [
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:357:67: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:343:73: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:329:74: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:315:74: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:307:31: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:298:31: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:361:34: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:347:34: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:333:34: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:319:34: optimized: loop vectorized using 32 byte vectors and unroll factor 8",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:223:11: optimized: basic block part vectorized using 16 byte vectors",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:250:11: optimized: basic block part vectorized using 16 byte vectors",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:368:11: optimized: basic block part vectorized using 16 byte vectors",
+          "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-07-30-tensor-lab-sprint019\\native-cache\\tensor-cpu\\d68d124b62f508b686e2576d\\casulo_tensor_cpu.c:425:11: optimized: basic block part vectorized using 16 byte vectors"
+        ]
+      },
+      "preparation_wall_ns": 5022000,
+      "status": "AVAILABLE",
+      "version": "c99-openmp-tensor/0.1",
+      "workers": 4
+    },
+    "pytorch-eager-autograd-cpu": {
+      "compilation": null,
+      "preparation_wall_ns": 2794699000,
+      "status": "AVAILABLE",
+      "threads": 4,
+      "version": "2.12.1+cpu"
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "compilation": {
+        "backend": "inductor",
+        "fullgraph": true,
+        "toolchain": {
+          "compiler": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+          "encoding_policy": {
+            "compiler_language": "en-US",
+            "subprocess": "utf-8"
+          },
+          "error": null,
+          "source": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat",
+          "status": "READY"
+        },
+        "wall_ns": 15057403100
+      },
+      "error": null,
+      "preparation_wall_ns": 1025145100,
+      "status": "AVAILABLE",
+      "threads": 4,
+      "version": "2.12.1+cpu"
+    }
+  },
+  "claim": null,
+  "comparisons": {
+    "pytorch-eager-autograd-cpu": {
+      "baseline": "pytorch-eager-autograd-cpu",
+      "baseline_compilation_wall_ns": 0,
+      "baseline_wall_ns_per_invocation_median": 1055010.0,
+      "break_even_invocations": null,
+      "candidate_compilation_wall_ns": 3046781500,
+      "candidate_wall_ns_per_invocation_median": 4270440.0,
+      "cpu_speedup_median": null,
+      "cpu_speedup_status": "INCONCLUSIVE_TIMER_RESOLUTION",
+      "paired_samples": 21,
+      "wall_speedup_ci95": {
+        "lower": 0.21395199263758127,
+        "method": "paired-bootstrap-median",
+        "resamples": 2000,
+        "upper": 0.2555147058823529
+      },
+      "wall_speedup_median": 0.23291006156326297
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "baseline": "pytorch-inductor-autograd-cpu",
+      "baseline_compilation_wall_ns": 15057403100,
+      "baseline_wall_ns_per_invocation_median": 472360.0,
+      "break_even_invocations": null,
+      "candidate_compilation_wall_ns": 3046781500,
+      "candidate_wall_ns_per_invocation_median": 4270440.0,
+      "cpu_speedup_median": null,
+      "cpu_speedup_status": "INCONCLUSIVE_TIMER_RESOLUTION",
+      "paired_samples": 21,
+      "wall_speedup_ci95": {
+        "lower": 0.0832940187413219,
+        "method": "paired-bootstrap-median",
+        "resamples": 2000,
+        "upper": 0.11962288646113532
+      },
+      "wall_speedup_median": 0.10439887105293984
+    }
+  },
+  "created_at_utc": "2026-07-30T18:37:40.515699+00:00",
+  "energy": {
+    "joules": null,
+    "measured": false,
+    "method": null,
+    "reason": "nenhum contador elétrico cumulativo foi integrado"
+  },
+  "environment": {
+    "compiler": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+    "logical_cpu_count": 12,
+    "machine": "AMD64",
+    "numpy": "2.3.5",
+    "physical_cpu_count": 10,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "process_priority": "32",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2",
+    "pytorch": "2.12.1+cpu",
+    "total_memory_bytes": 16890978304
+  },
+  "input": {
+    "generator": {
+      "algorithm": "numpy-pcg64-normal",
+      "protocol": "casulo-tensor-lab-input/0.1",
+      "seed": 20260730,
+      "weight_scale": 0.1
+    },
+    "protocol": "casulo-tensor-lab-input/0.1",
+    "sha256": "28a7fad67e3beb0ac983eda13c2dcaccf98f68ac0a7c33635441cb9fc58aba9c",
+    "values": [
+      {
+        "dtype": "float32",
+        "name": "x",
+        "nbytes": 65536,
+        "shape": [
+          256,
+          64
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "weight1",
+        "nbytes": 32768,
+        "shape": [
+          64,
+          128
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "weight2",
+        "nbytes": 16384,
+        "shape": [
+          128,
+          32
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "target",
+        "nbytes": 32768,
+        "shape": [
+          256,
+          32
+        ]
+      }
+    ]
+  },
+  "memory": {
+    "c99-openmp-tensor/0.1": {
+      "limitations": "RSS é do processo inteiro, a sondagem é sequencial e pode perder picos menores que o intervalo de amostragem",
+      "method": "process-rss-polling-separate-from-timing",
+      "rss_after_bytes": 364384256,
+      "rss_before_bytes": 364363776,
+      "rss_peak_delta_bytes": 40960,
+      "rss_peak_observed_bytes": 364404736,
+      "sampling_interval_seconds": 0.001,
+      "status": "OBSERVED"
+    },
+    "pytorch-eager-autograd-cpu": {
+      "limitations": "RSS é do processo inteiro, a sondagem é sequencial e pode perder picos menores que o intervalo de amostragem",
+      "method": "process-rss-polling-separate-from-timing",
+      "rss_after_bytes": 364388352,
+      "rss_before_bytes": 364384256,
+      "rss_peak_delta_bytes": 24576,
+      "rss_peak_observed_bytes": 364408832,
+      "sampling_interval_seconds": 0.001,
+      "status": "OBSERVED"
+    },
+    "pytorch-inductor-autograd-cpu": {
+      "limitations": "RSS é do processo inteiro, a sondagem é sequencial e pode perder picos menores que o intervalo de amostragem",
+      "method": "process-rss-polling-separate-from-timing",
+      "rss_after_bytes": 364392448,
+      "rss_before_bytes": 364388352,
+      "rss_peak_delta_bytes": 4096,
+      "rss_peak_observed_bytes": 364392448,
+      "sampling_interval_seconds": 0.001,
+      "status": "OBSERVED"
+    }
+  },
+  "protocol": "casulo-tensor-lab-report/0.1",
+  "quality": {
+    "details": {
+      "inductor_vs_numpy": {
+        "checks": [
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "loss",
+            "max_absolute_error": 2.384185791015625e-07,
+            "max_relative_error": 1.6548641753679425e-07,
+            "name": "loss",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              1
+            ],
+            "shape_ok": true
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "gradient",
+            "max_absolute_error": 3.725290298461914e-09,
+            "max_relative_error": 0.0005090353779587681,
+            "name": "weight1",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              64,
+              128
+            ],
+            "shape_ok": true
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "dtype_ok": true,
+            "finite": true,
+            "kind": "gradient",
+            "max_absolute_error": 1.1175870895385742e-08,
+            "max_relative_error": 0.00010871970191911375,
+            "name": "weight2",
+            "passed": true,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              128,
+              32
+            ],
+            "shape_ok": true
+          }
+        ],
+        "passed": true,
+        "reason": null,
+        "status": "PASS"
+      },
+      "native_vs_numpy": {
+        "checks": [
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 9.5367431640625e-07,
+            "max_relative_error": 0.00812351262224537,
+            "name": "hidden",
+            "numpy_sha256": "edef2ba532d1e75f0ea706a04475f9c02dd3c6f10c71641f17df1ded9e981b9f",
+            "passed": true,
+            "pytorch_sha256": "2e82cf03da02f80037605edcd9f330159a82b3a581d42c5b9b2c45d55c483107",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              128
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 9.5367431640625e-07,
+            "max_relative_error": 0.00812351262224537,
+            "name": "active",
+            "numpy_sha256": "5727b0d1202c84c97b7726ee99233d3468e3dd7d012debaa57df0eb781ee9b37",
+            "passed": true,
+            "pytorch_sha256": "3e915abc016c2e251298226bf2b7bd0462d37e9079bdaf092bab0c63013485b5",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              128
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 7.152557373046875e-07,
+            "max_relative_error": 0.00041126072859425756,
+            "name": "prediction",
+            "numpy_sha256": "9b97ef4d347513a6963e6efcae768138672e9089322e0f7eed95ee8c47cb14af",
+            "passed": true,
+            "pytorch_sha256": "6a6a91b779050ebccc02fda3083331757146d3737ef8e43ec48c1d6e9610e1e9",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              32
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 7.152557373046875e-07,
+            "max_relative_error": 0.0003501536785589231,
+            "name": "residual",
+            "numpy_sha256": "408e4536e7a44d25dca3300293c01f98c19473865622d1c8f74663c0bffad3de",
+            "passed": true,
+            "pytorch_sha256": "b479e82162e0dbef6fc18cc92a5e52d67b4c5fecae11b1e8519607c565e20974",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              32
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 3.814697265625e-06,
+            "max_relative_error": 0.0007002134934278938,
+            "name": "squared",
+            "numpy_sha256": "4543fb421711e047a283664597c15d61739c5b1cd38562045d33b36365d26b4a",
+            "passed": true,
+            "pytorch_sha256": "7a2f1a08122e8c49111bc7b2132482f920cd38e76bec2296e27af044be2df2ce",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              32
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "loss",
+            "max_absolute_error": 1.1920928955078125e-06,
+            "max_relative_error": 8.27431403040678e-07,
+            "name": "loss",
+            "numpy_sha256": "1fdd78b6bd86b539b870f5da69c48d5d70e6c7f3aa3777184e86fa1f67a9d8cc",
+            "passed": true,
+            "pytorch_sha256": "5aa5066ca2cb2a3fda27b8397d7c5a4e4d58dbaefcb0a6d48428cf4d20451ac8",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              1
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 4.190951585769653e-09,
+            "max_relative_error": 0.0024179180453041487,
+            "name": "weight1",
+            "numpy_sha256": "38f87ff9d495b8d5668f88de6afbb77ed69784ecca073282ce08023597a6476a",
+            "passed": true,
+            "pytorch_sha256": "e5cbf2dc4ff634bbb52a82f628e0efd0f4c80f14925405713abb5f6545e5ba2f",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              64,
+              128
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 9.313225746154785e-09,
+            "max_relative_error": 0.0011259824211696753,
+            "name": "weight2",
+            "numpy_sha256": "bd9fef51547940a2272b9136fa31e9619da343639823ad55898f0bbb732c12d9",
+            "passed": true,
+            "pytorch_sha256": "0fbb1c5b80008ccccc881ca23ff049c0108100a54edc35dc3acac6a8a27090c8",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              128,
+              32
+            ]
+          }
+        ],
+        "device": "cpu",
+        "energy_joules": null,
+        "graph_sha256": "868aee7b82295e6f3d4345049998eb4f56694c109b8f1b7c52202fb57dada7ab",
+        "input_sha256": "28a7fad67e3beb0ac983eda13c2dcaccf98f68ac0a7c33635441cb9fc58aba9c",
+        "numpy_version": "2.3.5",
+        "passed": true,
+        "protocol": "casulo-pytorch-parity/0.1",
+        "pytorch_version": "c99-openmp-tensor/0.1+b5b12721cccb0eae",
+        "reason": null,
+        "status": "PASS",
+        "timing": null,
+        "tolerances": [
+          {
+            "absolute": 1e-05,
+            "dtype": "float32",
+            "relative": 0.0001
+          },
+          {
+            "absolute": 1e-10,
+            "dtype": "float64",
+            "relative": 1e-09
+          }
+        ]
+      },
+      "numpy_vs_pytorch_eager": {
+        "checks": [
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 9.5367431640625e-07,
+            "max_relative_error": 0.0014022895282440565,
+            "name": "hidden",
+            "numpy_sha256": "edef2ba532d1e75f0ea706a04475f9c02dd3c6f10c71641f17df1ded9e981b9f",
+            "passed": true,
+            "pytorch_sha256": "75633158ac0e573904e7631a3007b309e50333c9535df95d71eeb10205d3c7b6",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              128
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 9.5367431640625e-07,
+            "max_relative_error": 0.00014248993119618842,
+            "name": "active",
+            "numpy_sha256": "5727b0d1202c84c97b7726ee99233d3468e3dd7d012debaa57df0eb781ee9b37",
+            "passed": true,
+            "pytorch_sha256": "1d22c9500ae726b463644a06d3e3a8c1ffa51b5ab38cc6f04b04111dc23be747",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              128
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 7.748603820800781e-07,
+            "max_relative_error": 0.0003037832660661558,
+            "name": "prediction",
+            "numpy_sha256": "9b97ef4d347513a6963e6efcae768138672e9089322e0f7eed95ee8c47cb14af",
+            "passed": true,
+            "pytorch_sha256": "29f174daf8b913c9afde550f90b1e0643618004de85a48043a63aa63be582bf6",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              32
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 7.748603820800781e-07,
+            "max_relative_error": 0.00032674399607907203,
+            "name": "residual",
+            "numpy_sha256": "408e4536e7a44d25dca3300293c01f98c19473865622d1c8f74663c0bffad3de",
+            "passed": true,
+            "pytorch_sha256": "9ca696dc7e5b2e1101fcb7d5a120e7df63ab0c8e23a01192b26b874099617703",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              32
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "intermediate",
+            "max_absolute_error": 4.76837158203125e-06,
+            "max_relative_error": 0.0006533812479581836,
+            "name": "squared",
+            "numpy_sha256": "4543fb421711e047a283664597c15d61739c5b1cd38562045d33b36365d26b4a",
+            "passed": true,
+            "pytorch_sha256": "5e4db2fc5696655ef09c7193c85dc1e8b9741bce59f8d9bd7c411db1ffcd976d",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              256,
+              32
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "loss",
+            "max_absolute_error": 1.1920928955078125e-07,
+            "max_relative_error": 8.274320876839712e-08,
+            "name": "loss",
+            "numpy_sha256": "1fdd78b6bd86b539b870f5da69c48d5d70e6c7f3aa3777184e86fa1f67a9d8cc",
+            "passed": true,
+            "pytorch_sha256": "b342ea4143c272492089dd911e07493ef94c7d3a60957717f8f455ccb1ce34d0",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              1
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 3.259629011154175e-09,
+            "max_relative_error": 0.0010170353419781336,
+            "name": "weight1",
+            "numpy_sha256": "38f87ff9d495b8d5668f88de6afbb77ed69784ecca073282ce08023597a6476a",
+            "passed": true,
+            "pytorch_sha256": "5893ea25f540a18cd7cea6064b9e70ab6902d1b60828ae9dabe72ba0302fec18",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              64,
+              128
+            ]
+          },
+          {
+            "absolute_tolerance": 1e-05,
+            "dtype": "float32",
+            "kind": "gradient",
+            "max_absolute_error": 1.1175870895385742e-08,
+            "max_relative_error": 0.0033897293503896636,
+            "name": "weight2",
+            "numpy_sha256": "bd9fef51547940a2272b9136fa31e9619da343639823ad55898f0bbb732c12d9",
+            "passed": true,
+            "pytorch_sha256": "f7a7b854769529ff8450b3fe67a4076a906f69158cf1c1bb7cdde671ee2c0325",
+            "reason": null,
+            "relative_tolerance": 0.0001,
+            "shape": [
+              128,
+              32
+            ]
+          }
+        ],
+        "device": "cpu",
+        "energy_joules": null,
+        "graph_sha256": "868aee7b82295e6f3d4345049998eb4f56694c109b8f1b7c52202fb57dada7ab",
+        "input_sha256": "28a7fad67e3beb0ac983eda13c2dcaccf98f68ac0a7c33635441cb9fc58aba9c",
+        "numpy_version": "2.3.5",
+        "passed": true,
+        "protocol": "casulo-pytorch-parity/0.1",
+        "pytorch_version": "2.12.1+cpu",
+        "reason": null,
+        "status": "PASS",
+        "timing": null,
+        "tolerances": [
+          {
+            "absolute": 1e-05,
+            "dtype": "float32",
+            "relative": 0.0001
+          },
+          {
+            "absolute": 1e-10,
+            "dtype": "float64",
+            "relative": 1e-09
+          }
+        ]
+      }
+    },
+    "finite_samples": true,
+    "inductor_vs_numpy_loss_and_gradients": "PASS",
+    "native_vs_numpy": "PASS",
+    "numpy_vs_pytorch_eager": "PASS",
+    "same_dtype": true,
+    "same_graph": true,
+    "same_inputs": true,
+    "same_workers_or_threads": true
+  },
+  "samples": [
+    {
+      "index": 0,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 265625000,
+          "cpu_ns_per_invocation": 26562500.0,
+          "inner_iterations": 10,
+          "wall_ns": 40536500,
+          "wall_ns_per_invocation": 4053650.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 15625000,
+          "cpu_ns_per_invocation": 1562500.0,
+          "inner_iterations": 10,
+          "wall_ns": 9409400,
+          "wall_ns_per_invocation": 940940.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 109375000,
+          "cpu_ns_per_invocation": 10937500.0,
+          "inner_iterations": 10,
+          "wall_ns": 4829200,
+          "wall_ns_per_invocation": 482920.0
+        }
+      },
+      "order": [
+        "c99-openmp-tensor/0.1",
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 1,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 265625000,
+          "cpu_ns_per_invocation": 26562500.0,
+          "inner_iterations": 10,
+          "wall_ns": 41780300,
+          "wall_ns_per_invocation": 4178030.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 8228100,
+          "wall_ns_per_invocation": 822810.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 15625000,
+          "cpu_ns_per_invocation": 1562500.0,
+          "inner_iterations": 10,
+          "wall_ns": 9662100,
+          "wall_ns_per_invocation": 966210.0
+        }
+      },
+      "order": [
+        "c99-openmp-tensor/0.1",
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 2,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 265625000,
+          "cpu_ns_per_invocation": 26562500.0,
+          "inner_iterations": 10,
+          "wall_ns": 42704400,
+          "wall_ns_per_invocation": 4270440.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 11255800,
+          "wall_ns_per_invocation": 1125580.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 4878800,
+          "wall_ns_per_invocation": 487880.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "c99-openmp-tensor/0.1",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 3,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 265625000,
+          "cpu_ns_per_invocation": 26562500.0,
+          "inner_iterations": 10,
+          "wall_ns": 44444200,
+          "wall_ns_per_invocation": 4444420.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 7353300,
+          "wall_ns_per_invocation": 735330.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 3453100,
+          "wall_ns_per_invocation": 345310.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu",
+        "c99-openmp-tensor/0.1"
+      ]
+    },
+    {
+      "index": 4,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 156250000,
+          "cpu_ns_per_invocation": 15625000.0,
+          "inner_iterations": 10,
+          "wall_ns": 42577200,
+          "wall_ns_per_invocation": 4257720.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 15883700,
+          "wall_ns_per_invocation": 1588370.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 5721800,
+          "wall_ns_per_invocation": 572180.0
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "c99-openmp-tensor/0.1",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 5,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 156250000,
+          "cpu_ns_per_invocation": 15625000.0,
+          "inner_iterations": 10,
+          "wall_ns": 44724700,
+          "wall_ns_per_invocation": 4472470.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 9507200,
+          "wall_ns_per_invocation": 950720.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 109375000,
+          "cpu_ns_per_invocation": 10937500.0,
+          "inner_iterations": 10,
+          "wall_ns": 3725300,
+          "wall_ns_per_invocation": 372530.0
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu",
+        "c99-openmp-tensor/0.1"
+      ]
+    },
+    {
+      "index": 6,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 78125000,
+          "cpu_ns_per_invocation": 7812500.0,
+          "inner_iterations": 10,
+          "wall_ns": 38248300,
+          "wall_ns_per_invocation": 3824830.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 8183300,
+          "wall_ns_per_invocation": 818330.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 4777200,
+          "wall_ns_per_invocation": 477720.0
+        }
+      },
+      "order": [
+        "c99-openmp-tensor/0.1",
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 7,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 187500000,
+          "cpu_ns_per_invocation": 18750000.0,
+          "inner_iterations": 10,
+          "wall_ns": 42182200,
+          "wall_ns_per_invocation": 4218220.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 11490800,
+          "wall_ns_per_invocation": 1149080.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 3304800,
+          "wall_ns_per_invocation": 330480.0
+        }
+      },
+      "order": [
+        "c99-openmp-tensor/0.1",
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 8,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 281250000,
+          "cpu_ns_per_invocation": 28125000.0,
+          "inner_iterations": 10,
+          "wall_ns": 41289600,
+          "wall_ns_per_invocation": 4128960.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 10550100,
+          "wall_ns_per_invocation": 1055010.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 15625000,
+          "cpu_ns_per_invocation": 1562500.0,
+          "inner_iterations": 10,
+          "wall_ns": 3725100,
+          "wall_ns_per_invocation": 372510.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "c99-openmp-tensor/0.1",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 9,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 250000000,
+          "cpu_ns_per_invocation": 25000000.0,
+          "inner_iterations": 10,
+          "wall_ns": 46662500,
+          "wall_ns_per_invocation": 4666250.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 11107800,
+          "wall_ns_per_invocation": 1110780.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 4256100,
+          "wall_ns_per_invocation": 425610.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu",
+        "c99-openmp-tensor/0.1"
+      ]
+    },
+    {
+      "index": 10,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 171875000,
+          "cpu_ns_per_invocation": 17187500.0,
+          "inner_iterations": 10,
+          "wall_ns": 49395700,
+          "wall_ns_per_invocation": 4939570.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 10717800,
+          "wall_ns_per_invocation": 1071780.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 6167700,
+          "wall_ns_per_invocation": 616770.0
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "c99-openmp-tensor/0.1",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 11,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 140625000,
+          "cpu_ns_per_invocation": 14062500.0,
+          "inner_iterations": 10,
+          "wall_ns": 46503700,
+          "wall_ns_per_invocation": 4650370.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 13873700,
+          "wall_ns_per_invocation": 1387370.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 3898100,
+          "wall_ns_per_invocation": 389810.0
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu",
+        "c99-openmp-tensor/0.1"
+      ]
+    },
+    {
+      "index": 12,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 125000000,
+          "cpu_ns_per_invocation": 12500000.0,
+          "inner_iterations": 10,
+          "wall_ns": 45245700,
+          "wall_ns_per_invocation": 4524570.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 11702700,
+          "wall_ns_per_invocation": 1170270.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 4723600,
+          "wall_ns_per_invocation": 472360.0
+        }
+      },
+      "order": [
+        "c99-openmp-tensor/0.1",
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 13,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 296875000,
+          "cpu_ns_per_invocation": 29687500.0,
+          "inner_iterations": 10,
+          "wall_ns": 46547900,
+          "wall_ns_per_invocation": 4654790.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 11140100,
+          "wall_ns_per_invocation": 1114010.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 3199000,
+          "wall_ns_per_invocation": 319900.0
+        }
+      },
+      "order": [
+        "c99-openmp-tensor/0.1",
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 14,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 296875000,
+          "cpu_ns_per_invocation": 29687500.0,
+          "inner_iterations": 10,
+          "wall_ns": 42942700,
+          "wall_ns_per_invocation": 4294270.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 6454300,
+          "wall_ns_per_invocation": 645430.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 5147200,
+          "wall_ns_per_invocation": 514720.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "c99-openmp-tensor/0.1",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 15,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 203125000,
+          "cpu_ns_per_invocation": 20312500.0,
+          "inner_iterations": 10,
+          "wall_ns": 41748700,
+          "wall_ns_per_invocation": 4174870.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 46875000,
+          "cpu_ns_per_invocation": 4687500.0,
+          "inner_iterations": 10,
+          "wall_ns": 6167200,
+          "wall_ns_per_invocation": 616720.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 4994100,
+          "wall_ns_per_invocation": 499410.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu",
+        "c99-openmp-tensor/0.1"
+      ]
+    },
+    {
+      "index": 16,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 218750000,
+          "cpu_ns_per_invocation": 21875000.0,
+          "inner_iterations": 10,
+          "wall_ns": 41039500,
+          "wall_ns_per_invocation": 4103950.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 7493400,
+          "wall_ns_per_invocation": 749340.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 4799500,
+          "wall_ns_per_invocation": 479950.0
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "c99-openmp-tensor/0.1",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 17,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 250000000,
+          "cpu_ns_per_invocation": 25000000.0,
+          "inner_iterations": 10,
+          "wall_ns": 39477100,
+          "wall_ns_per_invocation": 3947710.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 10566100,
+          "wall_ns_per_invocation": 1056610.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 2883100,
+          "wall_ns_per_invocation": 288310.0
+        }
+      },
+      "order": [
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu",
+        "c99-openmp-tensor/0.1"
+      ]
+    },
+    {
+      "index": 18,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 140625000,
+          "cpu_ns_per_invocation": 14062500.0,
+          "inner_iterations": 10,
+          "wall_ns": 45712700,
+          "wall_ns_per_invocation": 4571270.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 10572300,
+          "wall_ns_per_invocation": 1057230.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 3337000,
+          "wall_ns_per_invocation": 333700.0
+        }
+      },
+      "order": [
+        "c99-openmp-tensor/0.1",
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    },
+    {
+      "index": 19,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 171875000,
+          "cpu_ns_per_invocation": 17187500.0,
+          "inner_iterations": 10,
+          "wall_ns": 39510500,
+          "wall_ns_per_invocation": 3951050.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 9220100,
+          "wall_ns_per_invocation": 922010.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 6263900,
+          "wall_ns_per_invocation": 626390.0
+        }
+      },
+      "order": [
+        "c99-openmp-tensor/0.1",
+        "pytorch-inductor-autograd-cpu",
+        "pytorch-eager-autograd-cpu"
+      ]
+    },
+    {
+      "index": 20,
+      "measurements": {
+        "c99-openmp-tensor/0.1": {
+          "cpu_ns": 281250000,
+          "cpu_ns_per_invocation": 28125000.0,
+          "inner_iterations": 10,
+          "wall_ns": 42801500,
+          "wall_ns_per_invocation": 4280150.0
+        },
+        "pytorch-eager-autograd-cpu": {
+          "cpu_ns": 62500000,
+          "cpu_ns_per_invocation": 6250000.0,
+          "inner_iterations": 10,
+          "wall_ns": 9968900,
+          "wall_ns_per_invocation": 996890.0
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "cpu_ns": 0,
+          "cpu_ns_per_invocation": 0.0,
+          "inner_iterations": 10,
+          "wall_ns": 3378600,
+          "wall_ns_per_invocation": 337860.0
+        }
+      },
+      "order": [
+        "pytorch-eager-autograd-cpu",
+        "c99-openmp-tensor/0.1",
+        "pytorch-inductor-autograd-cpu"
+      ]
+    }
+  ],
+  "scientific": {
+    "bound_design": {
+      "arena_budget_bytes": 67108864,
+      "bootstrap_resamples": 2000,
+      "candidate_backend": "c99-openmp-tensor/0.1",
+      "graph": {
+        "autograd_graph_sha256": "868aee7b82295e6f3d4345049998eb4f56694c109b8f1b7c52202fb57dada7ab",
+        "path_hint": "mlp-mse-scientific.tensor.json",
+        "sha256": "454373109fcc101051588e23e421d46a4d356f50ceceae9eb807cc7ebcae5646"
+      },
+      "implementation": {
+        "binding": "sha256-source-files",
+        "files": {
+          "autograd.py": "e7b6a3a13e7e473773bf4dae0373e90e7f41ac5b66472be49d187ef2e64c06b2",
+          "parity.py": "eab0ede77232d4dce184b7f3aae8bfaae13b7291da0e3fe63f14e09d305f290f",
+          "tensor.py": "cfb8b71b14e613336c4e2f27c4655a5d7974152a00427bacc96249b8028db0a9",
+          "tensor_cpu.py": "143349aa7c457407847e4cdb3a8db361e9bd6d3dfbd6966684bb4368ad31fe37",
+          "tensor_lab.py": "82c5248ad54623d5e0707bebfe102432895789234f6a2aba44a75a91466ecc35"
+        }
+      },
+      "inner_iterations": 10,
+      "input_generator": {
+        "algorithm": "numpy-pcg64-normal",
+        "protocol": "casulo-tensor-lab-input/0.1",
+        "seed": 20260730,
+        "weight_scale": 0.1
+      },
+      "inputs": [
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "x",
+          "shape": [
+            256,
+            64
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "weight1",
+          "shape": [
+            64,
+            128
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "weight2",
+          "shape": [
+            128,
+            32
+          ]
+        },
+        {
+          "device": "cpu",
+          "dtype": "float32",
+          "name": "target",
+          "shape": [
+            256,
+            32
+          ]
+        }
+      ],
+      "loss": "loss",
+      "measurement_boundary": "prepared forward plus backward; compilation, preparation, validation and report generation excluded",
+      "memory_probe": "separate-phase-process-rss-sampling-not-in-timing-samples",
+      "order_policy": "balanced-six-permutation-cycle",
+      "pairing": "same-input-same-process-same-sample-index",
+      "required_baselines": [
+        "pytorch-eager-autograd-cpu",
+        "pytorch-inductor-autograd-cpu"
+      ],
+      "samples": 21,
+      "seed": 20260730,
+      "torch_threads": 4,
+      "warmups": 3,
+      "workers": 4,
+      "wrt": [
+        "weight1",
+        "weight2"
+      ]
+    },
+    "claims_allowed": false,
+    "covenant": "casulo-scientific-covenant/1.0",
+    "experiment_id": "sha256:2ab07fb6f50212c5715328c421f033c6039267191dbe639b8903b3c356f69622",
+    "preregistration_file_sha256": "9d99a15badb7387d3ff825c358948e27784c7ecd542fd651d51b35708a4e32e6",
+    "status": "PREREGISTERED_AWAITING_INDEPENDENT_JUDGEMENT"
+  },
+  "thermal": {
+    "cpu_frequency_mhz": 1300.0,
+    "reason": "sensor de temperatura não exposto ao processo",
+    "temperature_celsius": null,
+    "temperature_source": null
+  }
+}

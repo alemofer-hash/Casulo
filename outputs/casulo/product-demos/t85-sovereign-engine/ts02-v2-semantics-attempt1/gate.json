@@ -1,0 +1,20 @@
+{
+  "schema":"casulo.t85.gate/1.0",
+  "sprint":"TS2",
+  "gate":"TS2_T_V2_SEMANTICS_PASS",
+  "status":"PASS",
+  "previous_gate_sha256":"4d39582ae60a28ed99b03708f96e9eeb120868ea80943e38fdfe7102512269c6",
+  "language":"T/2.0",
+  "compatibility":["T/1.0","T/1.1"],
+  "features":["records","enums","Option","Result","bounded List/Map/Set","functions","state","if","exhaustive match fallback","bounded for","requires","ensures","effects","spawn/join/cancel","step budget","deadline","schema version","canonical JSON contract"],
+  "tests":{"passed":36,"subtests_passed":42,"failed":0,"xml_sha256":"fe92629c9440eb4727aecbec7808327b9f6a51d6680cf1808dfcaba15aa36338"},
+  "artifacts":[
+    {"path":"docs/product/T_V2_LANGUAGE_SPEC.md","sha256":"c137033a14f85de547e5005eb6bcfd571eaeeeb8250afa26b89f016b1f893fec"},
+    {"path":"src/casulo/t/v2_ast.py","sha256":"0a3fe3b9b36a594363861cc4ae29bbe22f92cd3175f6b7ef8b1915e1241694b6"},
+    {"path":"src/casulo/t/v2_parser.py","sha256":"f1b88501f562db433c2dffd9a6bf1aadbe9c7be70d760515af8fcf2d07a1cb0a"},
+    {"path":"src/casulo/t/v2_semantics.py","sha256":"a9854dcf029c4058dfa514fa1896a547e46f9a1a08da779ecdbce89ca3e71c98"},
+    {"path":"examples/t-v2/owner_publish.t","sha256":"21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3"}
+  ],
+  "next":"TS3 typed IR, functional bytecode, verified runtime and TCAP v2"
+}
+

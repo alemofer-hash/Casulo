@@ -1,0 +1,36 @@
+{
+  "claim": "one authentic Q4_K block projected from the adopted model; not token inference",
+  "first_model_derived_token": false,
+  "full_model_mapped": false,
+  "network": false,
+  "physical_device_written": false,
+  "projection": {
+    "bytes": 1072,
+    "dot_f32": 0.038423359394073486,
+    "dot_f32_bits": "3d1d61d0",
+    "file": "release/casulo-native-qwen3-q4k-probe.gguf",
+    "sha256": "cf84702d4e99329d82f70c39128c4bf8bcc1c223642467c8100ecfcc5182d8c6",
+    "tensor_name": "casulo.probe.q4_k"
+  },
+  "schema": "casulo-native-gguf-probe/0.1",
+  "source_model": {
+    "architecture": "qwen3",
+    "bytes": 2497280256,
+    "data_offset": 5956352,
+    "gguf_version": 3,
+    "metadata_count": 28,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "tensor_count": 398
+  },
+  "source_tensor": {
+    "absolute_offset": 325032192,
+    "block_bytes": 144,
+    "block_sha256": "5a763d78bb68a51dd06cfef027f366843d18e98500c4c60297c6e929ad278e35",
+    "dimensions": [
+      2560,
+      1024
+    ],
+    "ggml_type": 12,
+    "name": "blk.0.attn_k.weight"
+  }
+}

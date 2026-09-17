@@ -1,0 +1,21 @@
+{
+  "pytorch-eager-fullstep/1": {
+    "dataset_sha256": "56faf993c90c58a68a35ee2469567b756bb10dcde129c391b27eb8282b117fc9",
+    "epochs": 400,
+    "event": "READY",
+    "implementation": "pytorch-eager-fullstep/1",
+    "pid": 12776,
+    "precision": "float64",
+    "protocol": "casulo-hwinfo-persistent-worker/1.0",
+    "threads": 1
+  },
+  "t-general-ir-tcap/0.1": {
+    "epochs": 400,
+    "event": "READY",
+    "implementation": "t-general-ir-tcap/0.1",
+    "pid": 20832,
+    "precision": "float64",
+    "protocol": "casulo-hwinfo-persistent-worker/1.0",
+    "threads": 1
+  }
+}

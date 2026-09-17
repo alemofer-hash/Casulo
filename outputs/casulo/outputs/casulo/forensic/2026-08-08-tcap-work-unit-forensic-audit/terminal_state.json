@@ -1,0 +1,19 @@
+{
+  "affected_energy_analysis_terminal_state": "INCONCLUSIVE_CPU_PACKAGE_ENERGY_HWINFO_WINDOWS",
+  "affected_numbers_must_not_be_reused": true,
+  "corrected_energy_campaign_started": false,
+  "gates": {
+    "ALGEBRAIC_RECOMPOSITION": "PASS_20_PAIRS_ONE_COVERAGE_EXCEPTION",
+    "EQUIVALENCE": "PASS_EIGHT_RECORD_CANARY_ONLY",
+    "K_DATAFLOW": "FAIL_WRONG_DIMENSION",
+    "K_LINEARITY": "NOT_EXECUTED_RECEIPTS_GATE_FAILED",
+    "NO_RESULT_CACHE": "STATIC_CALL_LOOP_PASS_INDEPENDENT_CASES_FAIL",
+    "RECEIPTS": "FAIL_NOT_IMPLEMENTED_IN_AFFECTED_WORKER",
+    "SYNCHRONIZATION": "FAIL_THIRD_INDEPENDENT_CLOCK_ABSENT",
+    "UNIQUE_CASES": "FAIL_IDENTICAL_CANARY",
+    "WORK_UNIT_SPEC": "PASS"
+  },
+  "reason": "F10 failed before energy: 8 records, no receipts, no internal counters, no unique cases",
+  "schema": "casulo-forensic-terminal-state/1.0",
+  "state": "INVALIDATED_INCOMPLETE_WORK_UNIT"
+}

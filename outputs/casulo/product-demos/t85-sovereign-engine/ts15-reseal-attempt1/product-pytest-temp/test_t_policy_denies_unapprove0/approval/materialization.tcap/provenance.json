@@ -1,0 +1,11 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/owner.materialization.lifecycle.t",
+      "module": "owner.materialization.lifecycle",
+      "sha256": "1de18db5b885ea8ff4b5aadbdbe91b8ec8cd5f1d197ad407c472142b6e582528"
+    }
+  ]
+}

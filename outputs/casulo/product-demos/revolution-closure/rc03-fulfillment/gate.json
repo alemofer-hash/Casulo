@@ -1,0 +1,79 @@
+{
+  "authorized_claims": [
+    "five sealed domain families passed independent RequirementGraph verification"
+  ],
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "commands": [
+    [
+      "C:\\Python313\\python.exe",
+      "tools/semantic_fulfillment_holdout_probe.py",
+      "--output",
+      "product-demos\\revolution-closure\\rc03-fulfillment\\neural-holdout-attempt4"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc03-fulfillment\\gate-pytest-temp",
+      "tests/product/test_semantic_fulfillment.py",
+      "tests/product/test_revolution_contracts.py",
+      "tests/product/test_einstein_solver_kernel.py"
+    ]
+  ],
+  "forbidden_claims": [
+    "generated applications are production-complete",
+    "general scientific solver",
+    "human utility approved"
+  ],
+  "gate_id": "RC3_SEMANTIC_FULFILLMENT_PASS",
+  "input_hashes": {
+    "holdout_suite": "e2d37c25cb5a3b0ad21313de71526014b7473a2bd6a5188d2b165e53e4c4c620",
+    "model": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "previous_gate": "b88c8d6447b7cb94bf5c628207905eb9abca8f7c793b7936d088b1ae70e16fe4"
+  },
+  "machine_profile_sha256": "7ca1b196f47eb6e20769ae165c1b1a322d9f9abdd2ebc3dc4a7201acff8dd718",
+  "model_adapter_hashes": {},
+  "open_findings": [
+    {
+      "severity": "P2",
+      "summary": "holdout acceptance proves bounded contract fulfillment, not production completeness"
+    }
+  ],
+  "output_hashes": {
+    "product-demos/revolution-closure/rc03-fulfillment/neural-holdout-attempt4/semantic-fulfillment-holdout.json": "9d9983f7b552045d2f4c2671b0dd5441d242f676325446ba77dcc372d54a9c8c",
+    "product-demos/revolution-closure/rc03-fulfillment/tests.txt": "e675c757c3a55b112e0070e5f326bffc700ed261343146cd73027be2793bb4ea"
+  },
+  "previous_gate_hash": "b88c8d6447b7cb94bf5c628207905eb9abca8f7c793b7936d088b1ae70e16fe4",
+  "sampling_policy": "casulo-sampling-planning-v1",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "status": "PASS",
+  "test_summary": {
+    "checks": {
+      "five_accepted": true,
+      "five_domains": true,
+      "independent_evidence": true,
+      "neural_gate": true,
+      "no_external_api": true,
+      "no_fake": true,
+      "normal_sampling": true,
+      "real_model": true,
+      "regression": true,
+      "zero_unsupported_claims": true
+    },
+    "failed_attempts_preserved": [
+      "neural-holdout-attempt1",
+      "neural-holdout-attempt2",
+      "neural-holdout-attempt3"
+    ],
+    "pytest": ".............................................                            [100%]\n45 passed in 0.76s"
+  },
+  "timestamp": "2026-08-14T20:53:42.573956+00:00",
+  "tool_versions": {
+    "python": "3.13.2"
+  },
+  "worktree_manifest_sha256": "066698f9b6ac67be76aed86bc83c412c4fcd5377e6a2e699a3a106000a4314e9"
+}

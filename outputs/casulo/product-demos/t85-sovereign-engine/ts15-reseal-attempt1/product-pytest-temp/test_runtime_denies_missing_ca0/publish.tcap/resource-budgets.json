@@ -1,0 +1,8 @@
+{
+  "modules": {
+    "owner.publish": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    }
+  }
+}

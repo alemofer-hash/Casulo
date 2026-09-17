@@ -1,0 +1,1 @@
+{"schema": "casulo.creation/1.0", "creation_id": "creation:test", "version": 3, "state": "CONFIRMATION", "content": {"identity": {"purpose": {"value": "solver"}}}, "capabilities": [], "rejected_delta_ids": []}

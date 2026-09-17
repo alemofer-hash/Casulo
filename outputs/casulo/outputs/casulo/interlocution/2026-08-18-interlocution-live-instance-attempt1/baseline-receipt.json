@@ -1,0 +1,46 @@
+{
+  "schema": "casulo.interlocution-baseline/1.0",
+  "campaign_id": "2026-08-18-interlocution-live-instance-attempt1",
+  "captured_at_utc": "2026-08-19T02:37:24.9088720Z",
+  "repository": {
+    "branch": "product/semantic-multiverse",
+    "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+    "dirty_entries": 282,
+    "free_disk_gib": 70.17
+  },
+  "product_track": {
+    "state": "READY_FOR_GUILHERME_ARC11_HUMAN_PROOF",
+    "execution_state_sha256": "500cb4f4bd14251b46e0fdb689830a808a65657d8fb20faad56daedf1bf1ee05",
+    "release_manifest_sha256": "b91418bf83897830ee213af2700d3d58490c1731f0339178ac4bc91f1c16d5bf",
+    "t85_manifest_sha256": "87c046056ee16dbc2f02350f50bde62f9bb617ebfe002eb993536a794393f8ee",
+    "t85_sha256sums_sha256": "1f897e9a9cd1e9e8bebb3d9e3ac05852e95d3655c7cfcc62cd6d2d3f12d723de",
+    "t85_sbom_sha256": "42be95ebd7229253020b81700e308b5d0ab7efdec70fb49da207d0e8f442c55f"
+  },
+  "full_worker": {
+    "campaign": "2026-08-08-flood-full-worker-v1-r2",
+    "manifest_sha256": "881347c8d6e6d3dc3c7c500cb1f5e34b07f03cbdb76f30e61859d1c458aebbe4",
+    "sha256sums_sha256": "3863e9a390b02cbc36852f753d3a1192e2ad4807ab1f0acac6ccd7cd528e87a0",
+    "listed_files": 82,
+    "verified_files": 82,
+    "failures": 0,
+    "dataset_sha256": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+    "tcap_sha256": "67e204e57ee2ee84e3bccffcf786c39cff28ed0e11d174dc00402d1e481a4eff",
+    "workload_class": "SCIENTIFIC_WORK_UNIT",
+    "records_per_epoch": 1024,
+    "epochs": 400
+  },
+  "t_runtime": {
+    "path": "t-runtime/target/release/casulo-t-runtime.exe",
+    "bytes": 1574134,
+    "sha256": "84b70fed87a4644acc525051133aa6a4d0de209bc0aa20a6ade61c3ba5ffd541",
+    "runtime_id": "t-runtime/rust-2.0"
+  },
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "external_api": "PROHIBITED",
+    "usb_block_devices": "PROHIBITED",
+    "publication": "PROHIBITED",
+    "energy_campaign": "NOT_STARTED",
+    "signature": "DEVELOPMENT_NOT_COMMERCIAL"
+  }
+}

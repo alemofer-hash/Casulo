@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "bytes": 1829,
+      "path": "context-receipt.json",
+      "sha256": "57e629c87159b64f552c45c633332aeff2e7fb38a60b06f2c520deac7126f4c7"
+    },
+    {
+      "bytes": 846,
+      "path": "context-selection.json",
+      "sha256": "1759edce8b9bcfc7b74fa8cf83086d8e8584458a3006d17f1625f1da1c4a375c"
+    },
+    {
+      "bytes": 405,
+      "path": "denied-routes.json",
+      "sha256": "bb46bf1661f1d4bf7d6ac284b3f664fb81a878f8b7142382cc2712c820cc64be"
+    },
+    {
+      "bytes": 787,
+      "path": "gate.json",
+      "sha256": "516b711f344658332730476619a09d601066605d175e54ed852cc56b23edd85d"
+    },
+    {
+      "bytes": 2542,
+      "path": "neural-budgets.json",
+      "sha256": "c1a6df18a4ff28db336cfdb3bd78d098485b0f12a7f26a2c7a93e7044c2b5410"
+    },
+    {
+      "bytes": 6473,
+      "path": "route-decisions.json",
+      "sha256": "b20749b7a0a81c24996fa9454974ef1d3d3f22808e5098b88560572dd8628dc3"
+    }
+  ],
+  "schema": "casulo.append-only-manifest/1.0"
+}

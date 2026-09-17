@@ -1,0 +1,146 @@
+{
+  "candidate_rejections": [],
+  "creation_sha256": "104a67660f26c21c505f160bccc84079e6e113747974ce623a08bbc5fac8f1cd",
+  "entry_unit": "creation_unit",
+  "project_id": "t-project:9853697f7912ee4d79009a90",
+  "tests": [
+    {
+      "expected_contains": "capabilities: memory.read",
+      "input": "creation:open-ended-holdout",
+      "name": "TestCreationInitialization",
+      "unit_id": "creation_unit"
+    },
+    {
+      "expected_contains": "capabilities: memory.read",
+      "input": "memory.read",
+      "name": "TestCapabilitiesValidation",
+      "unit_id": "capabilities_unit"
+    },
+    {
+      "expected_contains": "trace value: Text",
+      "input": "true",
+      "name": "TestTraceOriginRecording",
+      "unit_id": "tracing_unit"
+    },
+    {
+      "expected_contains": "effects[manifest]",
+      "input": "manifest",
+      "name": "TestEffectsApplication",
+      "unit_id": "effects_unit"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "768ff04b2c0d1803ae9f6d566c54badad286ca4b4e746b83994dee70f639cdf0",
+    "ended_monotonic_ns": 802981586500,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+    "output_sha256": "9853697f7912ee4d79009a90f78088c761dbd4226d8f081ad2a95ba76fa9b5ac",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 699501110600,
+    "stream_events": 578
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense InitializeCreation in CreationSpec\n  effects [manifest]\n  emit \"creation:open-ended-holdout\"\n",
+      "unit_id": "creation_unit",
+      "watch_paths": [
+        [
+          "creation",
+          "creation_id"
+        ],
+        [
+          "creation",
+          "capabilities"
+        ],
+        [
+          "creation",
+          "content",
+          "behavior",
+          "rejected_paths",
+          "preserve"
+        ],
+        [
+          "creation",
+          "content",
+          "data",
+          "source",
+          "experiment_logs"
+        ],
+        [
+          "creation",
+          "content",
+          "identity",
+          "name",
+          "agent"
+        ],
+        [
+          "creation",
+          "content",
+          "interface",
+          "tracing",
+          "origin"
+        ],
+        [
+          "creation",
+          "content",
+          "output",
+          "reversibility",
+          "enabled"
+        ],
+        [
+          "creation",
+          "content",
+          "purpose",
+          "transform",
+          "incompatible_annotations"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit"
+      ],
+      "source": "language T/1.1\nmodule capabilities\n\ncapability manifest\n\nfield Manifest\n  trace value: Text\n\ncondense ValidateCapabilities in Manifest\n  effects [manifest]\n  emit \"memory.read\"\n",
+      "unit_id": "capabilities_unit",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "capabilities_unit"
+      ],
+      "source": "language T/1.1\nmodule tracing\n\ncapability manifest\n\nfield TraceValue\n  trace value: Text\n\ncondense RecordTraceOrigin in TraceValue\n  effects [manifest]\n  emit \"Text\"\n",
+      "unit_id": "tracing_unit",
+      "watch_paths": [
+        [
+          "tracing",
+          "origin"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "tracing_unit"
+      ],
+      "source": "language T/1.1\nmodule effects\n\ncapability manifest\n\nfield EffectsManifest\n  trace value: Text\n\ncondense ApplyEffects in EffectsManifest\n  effects [manifest]\n  emit \"effects[manifest]\"\n",
+      "unit_id": "effects_unit",
+      "watch_paths": [
+        [
+          "effects",
+          "manifest"
+        ]
+      ]
+    }
+  ]
+}

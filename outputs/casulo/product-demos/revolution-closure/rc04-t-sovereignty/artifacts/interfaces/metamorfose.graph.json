@@ -1,0 +1,211 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "casulo.revolution.interfaces",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "block/root.0.then.0",
+            "block/root.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0",
+          [
+            "block/root.0.then.0.then.0",
+            "block/root.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "event_valid",
+          "source": "RenderState/input/event_valid",
+          "target": "RenderState/instruction/root.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "RenderState/instruction/root.0/if",
+          "target": "RenderState/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "receipt_present",
+          "source": "RenderState/input/receipt_present",
+          "target": "RenderState/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "RenderState/instruction/root.0.then.0/if",
+          "target": "RenderState/instruction/root.0.then.0.then.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "RenderState/instruction/root.0.then.0/if",
+          "target": "RenderState/instruction/root.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "RenderState/instruction/root.0/if",
+          "target": "RenderState/instruction/root.0.else.0/emit"
+        }
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 5,
+      "input_type": "InterfaceDecision",
+      "name": "RenderState",
+      "nodes": [
+        {
+          "defines": [
+            "event_valid"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "RenderState/input/event_valid",
+          "kind": "input",
+          "label": "event_valid",
+          "operation": "RenderState",
+          "path": "input.event_valid",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "receipt_present"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "RenderState/input/receipt_present",
+          "kind": "input",
+          "label": "receipt_present",
+          "operation": "RenderState",
+          "path": "input.receipt_present",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "RenderState/instruction/root.0/if",
+          "kind": "if",
+          "label": "event_valid",
+          "operation": "RenderState",
+          "path": "root.0",
+          "pure": true,
+          "uses": [
+            "event_valid"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "RenderState/instruction/root.0.then.0/if",
+          "kind": "if",
+          "label": "receipt_present",
+          "operation": "RenderState",
+          "path": "root.0.then.0",
+          "pure": true,
+          "uses": [
+            "receipt_present"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "RenderState/instruction/root.0.then.0.then.0/emit",
+          "kind": "emit",
+          "label": "\"RENDER\"",
+          "operation": "RenderState",
+          "path": "root.0.then.0.then.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "RenderState/instruction/root.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"WAIT\"",
+          "operation": "RenderState",
+          "path": "root.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "RenderState/instruction/root.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"RECOVERABLE_ERROR\"",
+          "operation": "RenderState",
+          "path": "root.0.else.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [
+    {
+      "kind": "record",
+      "members": [
+        [
+          "event_valid",
+          "Bool"
+        ],
+        [
+          "receipt_present",
+          "Bool"
+        ]
+      ],
+      "name": "InterfaceDecision"
+    }
+  ],
+  "version": "metamorfose-graph/1.0"
+}

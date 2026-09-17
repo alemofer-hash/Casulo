@@ -1,0 +1,10 @@
+{
+  "properties": [
+    "hard:original-preserved",
+    "hard:versioned-schema",
+    "hard:diagnostic-per-rejecthon",
+    "cancel_is_fail_closed",
+    "effect_requires_grant",
+    "project_bleed_denied"
+  ]
+}

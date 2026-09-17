@@ -1,0 +1,41 @@
+{
+  "schema": "casulo-voice-ux-calibration/1.0",
+  "date": "2026-08-11",
+  "purpose": "local UX configuration, not a scientific benchmark",
+  "host": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-1235U",
+    "physical_cores": 10,
+    "logical_processors": 12
+  },
+  "common": {
+    "engine_commit": "306c88f4d1286aec1bf96e544632897886af5501",
+    "bridge_sha256": "4aa83dba47f92d25d3c6a6c3b3e024d67e0bad2760eab49c60ffe9005233a73c",
+    "sample_rate": 16000,
+    "input_seconds": 1.0,
+    "threads": 4,
+    "device_capture": false,
+    "speaker_output": false
+  },
+  "profiles": [
+    {
+      "name": "quality-small-q5_1",
+      "model_bytes": 190085487,
+      "model_sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb",
+      "finalize_and_shutdown_ms": 4133.418
+    },
+    {
+      "name": "fast-base-q5_1",
+      "model_bytes": 59707625,
+      "model_sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898",
+      "finalize_and_shutdown_ms": 1289.99,
+      "synthetic_tts_loopback_transcript": "Olá, eu sou o casulo. Todo dado tem uma finalidade.",
+      "selected_for_this_host": true
+    }
+  ],
+  "observed_local_ratio_small_over_base": 3.204,
+  "limitations": [
+    "single bounded smoke per selected configuration",
+    "synthetic silence and synthetic TTS do not measure microphone quality",
+    "result is a machine-profile input and not a general performance claim"
+  ]
+}

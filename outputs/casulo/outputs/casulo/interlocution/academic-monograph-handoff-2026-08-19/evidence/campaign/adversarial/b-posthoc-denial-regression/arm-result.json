@@ -1,0 +1,44 @@
+{
+  "arm": "B",
+  "count": 1,
+  "energy": {
+    "package_joules": null,
+    "reason": "NO_ENERGY_INSTRUMENT_USED_IN_TI9_TI10",
+    "total_system_joules": null
+  },
+  "inner_total_ns": 6708579100,
+  "phases_ns": {
+    "posthoc_t_audit_ns": 41071800,
+    "publication_ns": 1744600,
+    "training_ns": 6665049300
+  },
+  "publication": {
+    "accepted": true,
+    "arm": "B",
+    "publication_authority": "FOREIGN_POSTHOC_T_RESULT_IGNORED",
+    "result_sha256": "703db9de84d237f49ea4fa47912a999fd0c13400dfa7b5f865f1615a0a3a5d16",
+    "t_judge_required": false
+  },
+  "result_file": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\interlocution\\2026-08-18-interlocution-live-instance-attempt1\\adversarial\\b-posthoc-denial-regression\\result.bin",
+  "result_sha256": "703db9de84d237f49ea4fa47912a999fd0c13400dfa7b5f865f1615a0a3a5d16",
+  "schema": "casulo.interlocution-arm-result/1.0",
+  "start": 0,
+  "summary_sha256": "ef052b9f7129b44966c607257223dbf2493018345a9a57122e7241a09ba17899",
+  "work_summary": {
+    "K_completed": 1,
+    "child_timing": {
+      "K": 1,
+      "end_unix_ns": 1787108827010166200,
+      "implementation": "pytorch-eager-fullstep/2.0",
+      "qpc_frequency": 10000000,
+      "qpc_ticks": 23626959,
+      "result_file": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\interlocution\\2026-08-18-interlocution-live-instance-attempt1\\adversarial\\b-posthoc-denial-regression\\result.bin",
+      "result_sha256": "703db9de84d237f49ea4fa47912a999fd0c13400dfa7b5f865f1615a0a3a5d16",
+      "start": 0,
+      "start_unix_ns": 1787108824647335500,
+      "thread_cycles": 4876962389,
+      "worker_monotonic_ns": 2362410700
+    },
+    "implementation": "PYTORCH_EAGER_TRANSPARENT"
+  }
+}

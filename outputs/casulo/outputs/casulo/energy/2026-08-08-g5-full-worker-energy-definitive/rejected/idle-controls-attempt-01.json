@@ -1,0 +1,15 @@
+{
+  "schema": "casulo-definitive-idle-controls-rejection/1.0",
+  "attempt": 1,
+  "physical_controls_completed": [
+    "A_HWINFO_ONLY",
+    "B_HWINFO_INCREMENTAL_WATCHER",
+    "C_HWINFO_WATCHER_RUNNER_LOADED"
+  ],
+  "observed_throttle_events": 0,
+  "accepted": false,
+  "reason": "analysis_window_not_bracketed_by_post-end-hwinfo-sample",
+  "exception": "TypeError: average_watts unavailable during delta calculation",
+  "scientific_use": "none",
+  "correction": "wait for a HWiNFO sample after each exact end timestamp and checkpoint each control"
+}

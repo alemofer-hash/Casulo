@@ -1,0 +1,121 @@
+{
+  "classification": "PRODUCT_DIAGNOSTIC_NOT_SCIENTIFIC_BENCHMARK",
+  "files": [
+    {
+      "bytes": 2956,
+      "path": "authority/math.boundary.00000001.selection.json",
+      "sha256": "4ca8a72ee1fc4627df3cd9282ac52f3648acdaa96759dd66235e212aa6a467bd"
+    },
+    {
+      "bytes": 172,
+      "path": "authority/t-inputs/math.boundary.00000001.json",
+      "sha256": "405a184c6f09dfd5389e45201e1821a4451a44f4d63d05d1814bfb613a562f16"
+    },
+    {
+      "bytes": 557,
+      "path": "equivalence.json",
+      "sha256": "89fe669e04a843ba25e1f19376b5285aa5852751edf275475025181cf0842de5"
+    },
+    {
+      "bytes": 880,
+      "path": "gate.json",
+      "sha256": "a16257938d7456861225164eca52e3e6ca18f518aa66652a6d00ee4d217c54f7"
+    },
+    {
+      "bytes": 1488,
+      "path": "inventory.json",
+      "sha256": "ae53bed389cd8cfba8d0d79c860df2d16543768497b2e4d714f1102c8056c9aa"
+    },
+    {
+      "bytes": 60,
+      "path": "math-boundary-policy.tcap/capabilities.json",
+      "sha256": "bcac71a04116df214b171f4bbc1a365d6fc3057e0e07e2e440cc6f52289a6176"
+    },
+    {
+      "bytes": 3780,
+      "path": "math-boundary-policy.tcap/code.json",
+      "sha256": "40d385714f9c51c313ce76c96f5860cdcf46b171f651a155beb9177261308a51"
+    },
+    {
+      "bytes": 84,
+      "path": "math-boundary-policy.tcap/effects.json",
+      "sha256": "f50a822bfbd1a69ff2c7a8bf6648e10c20e7ca8a55aa13f17cc685cd0f4816d6"
+    },
+    {
+      "bytes": 18,
+      "path": "math-boundary-policy.tcap/foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    {
+      "bytes": 100,
+      "path": "math-boundary-policy.tcap/header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    {
+      "bytes": 227,
+      "path": "math-boundary-policy.tcap/module-graph.json",
+      "sha256": "d03cc270a7720d25cacb7fdcd34830ab3bb1ab079e6ac62264550b7ecdf4b1d5"
+    },
+    {
+      "bytes": 279,
+      "path": "math-boundary-policy.tcap/provenance.json",
+      "sha256": "bb718f4b2857bec08529657c6cf898137873029aa3a6a21530cf67dbca9cdb9b"
+    },
+    {
+      "bytes": 241,
+      "path": "math-boundary-policy.tcap/readonly-data.json",
+      "sha256": "89253d618e1d3ff588bce9438b1b839a578e3d88dab13b957693233a47a724af"
+    },
+    {
+      "bytes": 112,
+      "path": "math-boundary-policy.tcap/resource-budgets.json",
+      "sha256": "389a2703a8b7840b6429e4ddab44e530ad279638f8f161be98b0c1845a608b06"
+    },
+    {
+      "bytes": 1667,
+      "path": "math-boundary-policy.tcap/schemas.json",
+      "sha256": "8ccbbb56d28c7964eacf76600348c7bee71248f30c95e9e8682590bbd72a8cb6"
+    },
+    {
+      "bytes": 44,
+      "path": "math-boundary-policy.tcap/signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    {
+      "bytes": 218,
+      "path": "math-boundary-policy.tcap/source-map.json",
+      "sha256": "a626ab9e3b3991efb6e2de74bb98dbbc95fc4efb0690c59b45ab4b9152f66aea"
+    },
+    {
+      "bytes": 997,
+      "path": "math-boundary-policy.tcap/sources/owner.math.boundary_policy.t",
+      "sha256": "d370578c9e9ea9a3c7c0a44134b9556ae697b30e241ece177be1f5874ee3d2ae"
+    },
+    {
+      "bytes": 204,
+      "path": "math-boundary-policy.tcap/tests.json",
+      "sha256": "569f21a82ec46c18f2df68efdc01224fbaf198c79375379d4b35caaded10e58e"
+    },
+    {
+      "bytes": 5653,
+      "path": "math-boundary-policy.tcap/typed-ir.json",
+      "sha256": "fe41d7e48a9d9b8d52c61e7b43d4733ef73d6ce729f1c5b9eb1f93d400f32558"
+    },
+    {
+      "bytes": 474,
+      "path": "profile.json",
+      "sha256": "f4af5ecad298885d0f572202b2d4cbd62f318d6593fce86aee7c257cc258cee7"
+    },
+    {
+      "bytes": 948,
+      "path": "report.md",
+      "sha256": "28f5c1b5c0a61366d276dcb7e5dfbd078fc9fccf673d57d86a1a449215e8dcb7"
+    },
+    {
+      "bytes": 2956,
+      "path": "selection.json",
+      "sha256": "4ca8a72ee1fc4627df3cd9282ac52f3648acdaa96759dd66235e212aa6a467bd"
+    }
+  ],
+  "schema": "casulo.arc8-evidence-manifest/1.0"
+}

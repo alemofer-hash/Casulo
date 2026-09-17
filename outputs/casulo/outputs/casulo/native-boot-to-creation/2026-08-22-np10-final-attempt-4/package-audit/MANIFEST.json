@@ -1,0 +1,82 @@
+{
+  "external_api": false,
+  "files": [
+    {
+      "bytes": 5704,
+      "path": "docs/product/NATIVE_BOOT_TO_CREATION_PROOF.md",
+      "sha256": "2cc6560854dd25d2689935e2d5a02ec267f6a837249bf51028d1c9d10cc5afda"
+    },
+    {
+      "bytes": 2893,
+      "path": "docs/product/NP9_DECODER_FIDELITY_ERRATA.md",
+      "sha256": "c687d3143b51b4ab5e1783d0bba42b236e14ff99676021aab3d8838eb42ca298"
+    },
+    {
+      "bytes": 6538,
+      "path": "os/tools/launch_native_creation_visible.py",
+      "sha256": "2bd75d3bef191f694156b0f475fc5ca25ee44a046536924205e84bd2c77d6a09"
+    },
+    {
+      "bytes": 12459,
+      "path": "os/tools/run_native_model_paged_qemu.py",
+      "sha256": "e34241c0fba41c8eb194218c8b6f98090883e3f2a90305afce45de94faf1472e"
+    },
+    {
+      "bytes": 7338,
+      "path": "os/tools/run_product_alpha_qemu.py",
+      "sha256": "bda7dd101b65a1d06b1b4c9252d2c9b090f9abb44a3f7c85f50e6b8c575e6bc6"
+    },
+    {
+      "bytes": 7486,
+      "path": "os/tools/run_qemu.py",
+      "sha256": "12ce8b9e6649cdfcd51c9df3d4e1c3ef713f8794a7427c0fd109daf1f8214a90"
+    },
+    {
+      "bytes": 5704,
+      "path": "README_FIRST.md",
+      "sha256": "2cc6560854dd25d2689935e2d5a02ec267f6a837249bf51028d1c9d10cc5afda"
+    },
+    {
+      "bytes": 2162688,
+      "path": "release/casulo-native-neural-port-np10-attempt-5.img",
+      "sha256": "25193857a96d6c14328d92fb128d6e666a31478dee05cc8cca6a35252932a534"
+    },
+    {
+      "bytes": 109690,
+      "path": "release/casulo-native-neural-port-system-pack-np10.cspk",
+      "sha256": "4f5e9fb34de09a3fe59b49c233802312a1c2e4d86ec7d00ca2d1dc1638f7eeb1"
+    },
+    {
+      "bytes": 4199,
+      "path": "release/casulo-native-neural-port-system-pack-np10.cspk.manifest.json",
+      "sha256": "d49567e3e84db30df23b6aaf23f400cfe1b49180b1f6b766aaef93f7c5f9c030"
+    },
+    {
+      "bytes": 620,
+      "path": "release/CASULO_NATIVE_BOOT_TO_CREATION_PROOF.ps1",
+      "sha256": "b728c851e88a05107fef96b8f9f90fce9cb62c069903dc6b0872f044a53099e2"
+    },
+    {
+      "bytes": 546,
+      "path": "release/START_CASULO_NATIVE_CREATION_PROOF.vbs",
+      "sha256": "e169b693e9a26becced5a8845194843682bae52989fd453adf832931d3490dbf"
+    },
+    {
+      "bytes": 1578,
+      "path": "SBOM.spdx.json",
+      "sha256": "b1a8f2f46c49a673c6824c17b3b0bd03aa5e563098a09947c9e7593ea7094330"
+    },
+    {
+      "bytes": 3058,
+      "path": "SOURCE_PROVENANCE.json",
+      "sha256": "7cc17b48c722fc05e951e55dfaaf935380e97a14d32f513c4e7e75b279644a24"
+    }
+  ],
+  "guest_network": "OFF",
+  "model_embedded": false,
+  "owner": "Guilherme Moura Fernandes",
+  "physical_device_written": false,
+  "schema": "casulo-native-boot-to-creation-release/1.0",
+  "signature": "DEVELOPMENT_NOT_COMMERCIAL",
+  "state": "CASULO_NATIVE_BOOT_TO_CREATION_PROOF"
+}

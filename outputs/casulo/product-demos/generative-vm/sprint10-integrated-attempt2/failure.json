@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "stage": "CORRECTED_DIALOGUE_BRIDGE_PREFLIGHT",
+  "error": "utf8_byte_limit_exceeded",
+  "creation_started": false,
+  "root_cause": "O truncamento respeitava caracteres, mas a ABI serial limita bytes UTF-8.",
+  "correction": "Normalizar e truncar a 4000 bytes sem dividir codepoint em todos os caminhos da bridge.",
+  "preserved": true
+}

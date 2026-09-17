@@ -1,0 +1,32 @@
+{
+  "changes": [
+    {
+      "artifact": "semantic_handoff_manifest",
+      "new": "0b70c4af84913ff02a57b80bfa525dfd6af65190ec2322ee37bf2a2a67167420",
+      "old": "e595c97b86721c3b58b0d2e4ea62771b1cb63c6587ccc9794ef0e33f2b7446fa"
+    },
+    {
+      "artifact": "einstein_tcap",
+      "new": "8236cdb64fdcc56a0b1627e52abe716474852c92ee653a207a0c3789dbf3095e",
+      "old": "fadf8a19c7d0923fb8c35b57994695a0982ebebf1bd528efb50ec0ea5545475d"
+    },
+    {
+      "artifact": "einstein_package",
+      "new": "9ceefac252271d66f305e34d0c595606104237cfe534004e935b652660abe37f",
+      "old": "554da5a1341f84077c0434f79b9dacd00ba6d5dd96869a91deb92b93002c7860"
+    },
+    {
+      "artifact": "owner_artifact",
+      "new": "b6c65a5b3af0ffb032e7a3b5b62cd013c59aa198d2dfecc4fce59772063f6841",
+      "old": null
+    },
+    {
+      "artifact": "launcher",
+      "new": "d8d64e44255b4fe8a4627ba2d849fc3456ec1c8d2bd6ab853eb733c5ef129a7a",
+      "note": "old value identifies sealed handoff, not old launcher",
+      "old": "0cb6d6a6fd09983da65c2f17bc8274085ae280344448d869b5590eb151a389d0"
+    }
+  ],
+  "preserved_archive_sha256": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1",
+  "schema": "casulo.reseal-hash-diff/1.0"
+}

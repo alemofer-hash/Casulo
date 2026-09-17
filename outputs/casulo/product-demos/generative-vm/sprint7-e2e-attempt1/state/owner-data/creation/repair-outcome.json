@@ -1,0 +1,164 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:d40f3b7680d7e9435391520f20d82d67bea3809dcfecff44288a9a253632e70f",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "custo reversível",
+          "observed": "MemoryReadInitialization",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "c22d98f993005faf419f0cd4be78f68bc24f182f2ff1d76e34333b68d22a0b7c",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation.unit.memory.read"
+        }
+      ],
+      "finished_ns": 34271802940100,
+      "project_id": "t-project:f015626ac85a91bca8d942e8",
+      "started_ns": 34271173844300,
+      "tcap_sha256": "58a9eeeb34ced1dcb5363ee2b18755a6a0d5fd3028bbec0d1f45fe4ca9480c63",
+      "tests": [
+        {
+          "expected_contains": "MemoryReadInitialization",
+          "name": "TestMemoryReadInitialization",
+          "observed": "MemoryReadInitialization",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "2101e320daf40c00cedf86974bd8a8a775a3f5562766b561f5c0af12f0bcb638",
+          "unit_id": "creation.unit.memory.read",
+          "wall_ns": 127013300
+        },
+        {
+          "expected_contains": "PurposeDefinition",
+          "name": "TestPurposeDefinition",
+          "observed": "PurposeDefinition",
+          "operation": "Define",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "75ba8cb5dd2958d6d9df5c1d12158c7bc2668c8b8a9bc4da8546cbff14deb49f",
+          "unit_id": "creation.unit.identity.purpose",
+          "wall_ns": 106111700
+        },
+        {
+          "expected_contains": "StructuredOutputConstruction",
+          "name": "TestStructuredOutputConstruction",
+          "observed": "StructuredOutputConstruction",
+          "operation": "Construct",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "ff668a33a7efc65beab6ed4f66c6a102ac95fa9950f945a821fc2cf2ff036ec4",
+          "unit_id": "creation.unit.interface.output",
+          "wall_ns": 113975200
+        },
+        {
+          "expected_contains": "CasuloTraceLogging",
+          "name": "TestCasuloTraceLogging",
+          "observed": "CasuloTraceLogging",
+          "operation": "Log",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "47e1f7345cef4bb60011606f9cb21c1fff966ee09175f60d2cada3aac5a46644",
+          "unit_id": "creation.unit.casulo.tracing",
+          "wall_ns": 101737800
+        },
+        {
+          "expected_contains": "custo reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "MemoryReadInitialization",
+          "operation": "Initialize",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "c933a4439a593b42767b4dd5b1e7208ead593a77bb9f7cc20e87073bea58f8cd",
+          "unit_id": "creation.unit.memory.read",
+          "wall_ns": 75479200
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [],
+      "finished_ns": 34305450401800,
+      "project_id": "t-project:3313f84cfba0e026f22f1ab2",
+      "started_ns": 34304834176900,
+      "tcap_sha256": "939c70aa63a7d3b436d247c2994bd08cf199753ec3fe2cb01b6ec091f7cc02ee",
+      "tests": [
+        {
+          "expected_contains": "MemoryReadInitialization",
+          "name": "TestMemoryReadInitialization",
+          "observed": "MemoryReadInitialization, custo reversível",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "04e9b6551e139f7a74ec3e736b323d8063a0bd55dd5207164b70bc2ae28ff085",
+          "unit_id": "creation.unit.memory.read",
+          "wall_ns": 153447600
+        },
+        {
+          "expected_contains": "PurposeDefinition",
+          "name": "TestPurposeDefinition",
+          "observed": "PurposeDefinition",
+          "operation": "Define",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "adc42f7c84e9665e36a60352536ce658dd555de17b4d88020918801410d38d6d",
+          "unit_id": "creation.unit.identity.purpose",
+          "wall_ns": 109182100
+        },
+        {
+          "expected_contains": "StructuredOutputConstruction",
+          "name": "TestStructuredOutputConstruction",
+          "observed": "StructuredOutputConstruction",
+          "operation": "Construct",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "b1c851975aa5da3915daa6a20444b81b498af808cd86b164846452147cad1b66",
+          "unit_id": "creation.unit.interface.output",
+          "wall_ns": 97673900
+        },
+        {
+          "expected_contains": "CasuloTraceLogging",
+          "name": "TestCasuloTraceLogging",
+          "observed": "CasuloTraceLogging",
+          "operation": "Log",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e2839b9308f5100e15177558dba61c610fcc427d99ecdf242559d38bd3353a91",
+          "unit_id": "creation.unit.casulo.tracing",
+          "wall_ns": 94508000
+        },
+        {
+          "expected_contains": "custo reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "MemoryReadInitialization, custo reversível",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "06bec904cccba539b572a30584a983f8e26a6a1000eb89eafcaf3b0a5aee620a",
+          "unit_id": "creation.unit.memory.read",
+          "wall_ns": 58135000
+        }
+      ]
+    }
+  ],
+  "budget": 2,
+  "project_id": "t-project:3313f84cfba0e026f22f1ab2",
+  "receipt_sha256": "5d6687b8a27f42ce922909c2255c8b9716224a553d93cc2e32099e7fb9ea1620",
+  "repair_count": 1,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "PASS",
+  "tcap_sha256": "939c70aa63a7d3b436d247c2994bd08cf199753ec3fe2cb01b6ec091f7cc02ee"
+}

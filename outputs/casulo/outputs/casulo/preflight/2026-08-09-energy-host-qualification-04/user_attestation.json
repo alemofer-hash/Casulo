@@ -1,0 +1,15 @@
+{
+  "schema": "casulo-energy-host-user-attestation/1.0",
+  "qualification_id": "2026-08-09-energy-host-qualification-04",
+  "attestation_scope": "human declaration only; not sensor- or camera-verified",
+  "received_local_date": "2026-08-09",
+  "conditions": {
+    "FULL_SHUTDOWN_COOLDOWN_COMPLETED": {"value": true, "provenance": "USER_ATTESTED"},
+    "HWINFO_CONFIGURED_250MS": {"value": true, "provenance": "USER_ATTESTED"},
+    "HARD_SURFACE": {"value": true, "provenance": "USER_ATTESTED"},
+    "REAR_ELEVATED": {"value": true, "provenance": "USER_ATTESTED"},
+    "ACTIVE_COOLING_PRESENT": {"value": true, "provenance": "USER_ATTESTED"},
+    "AIR_INTAKES_AND_EXHAUSTS_CLEAR": {"value": true, "provenance": "USER_ATTESTED"},
+    "BATTERY_REACHED_100_PERCENT": {"value": true, "provenance": "USER_ATTESTED"}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.agent.data_validator_01.csv.t",
+      "module": "owner.agent.data_validator_01.csv",
+      "sha256": "93a69e8e4974b07a0032e42e0a51add87cda03afdc0da2b303918ca9ffc95c76"
+    },
+    {
+      "file": "sources/owner.agent.data_validator_01.schema.t",
+      "module": "owner.agent.data_validator_01.schema",
+      "sha256": "afcb0e4241e67e6853bafcc287532087232fe229d50dd2a594ca36381c17b0ed"
+    },
+    {
+      "file": "sources/owner.agent.data_validator_01.diagnostic.t",
+      "module": "owner.agent.data_validator_01.diagnostic",
+      "sha256": "7c7a9181455ab7d9b558054e2203b55006941f2a4d431ab892e61a6517bfbb32"
+    }
+  ]
+}

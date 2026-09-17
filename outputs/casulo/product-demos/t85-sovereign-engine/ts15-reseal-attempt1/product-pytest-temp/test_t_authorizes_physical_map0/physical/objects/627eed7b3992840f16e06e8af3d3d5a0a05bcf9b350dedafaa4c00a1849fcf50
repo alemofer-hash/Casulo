@@ -1,0 +1,1 @@
+{"required_fields":["intent","constraints","units","uncertainty","provenance"],"schema":"casulo.sufficient-state-contract/1.0","universe_id":"materializacao","unknown_policy":"BLOCK"}

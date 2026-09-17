@@ -1,0 +1,44 @@
+{
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "energy_claim": "BLOCKED_WITHOUT_VALID_INSTRUMENT",
+    "external_api": "PROHIBITED",
+    "publication": "PRIVATE_RESEARCH_ONLY"
+  },
+  "campaign_id": "2026-08-18-interlocution-live-instance-attempt1",
+  "confirmation": {
+    "event_sha256": "4e1f625d946f1a999bad3c1f15e233d97f1c9ff793d71e3129a023205929c7f5",
+    "kind": "EXPLICIT_USER_GOAL_SUBMISSION",
+    "model_may_confirm": false
+  },
+  "equivalence": {
+    "absolute_tolerance": 1e-09,
+    "require_exact_counters": true,
+    "require_no_nan_inf": true
+  },
+  "human_owner": "Guilherme Moura Fernandes",
+  "intent_sha256": "18c06cdbee3f50b56effe5c991f9ee62d5b29785060df564c1407521308983e5",
+  "material_gaps": [],
+  "purpose": "test whether causal T authority, audit and judgment can preserve the operational training contract while reducing net work",
+  "schema": "casulo.interlocution-confirmed-intent/1.0",
+  "training": {
+    "epochs": 400,
+    "learning_rate": 0.018,
+    "loss": "mse",
+    "optimizer_state_policy": "reset_each_case",
+    "precision": "float64",
+    "stopping_policy": "fixed_epochs",
+    "update_rule": "sgd",
+    "working_set_policy": "all_records"
+  },
+  "workload": {
+    "activation": "relu",
+    "dataset_sha256": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+    "hidden_features": 8,
+    "id": "flood-surrogate-full-v1",
+    "initialization_bundle_sha256": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+    "input_features": 8,
+    "output_features": 1,
+    "records_per_epoch": 1024
+  }
+}

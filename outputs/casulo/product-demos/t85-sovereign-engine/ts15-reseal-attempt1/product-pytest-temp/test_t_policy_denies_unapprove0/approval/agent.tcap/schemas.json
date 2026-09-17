@@ -1,0 +1,80 @@
+{
+  "modules": {
+    "owner.multiverse.lifecycle_policy": {
+      "enums": [
+        {
+          "cases": [
+            "ACTIVATE",
+            "HIBERNATE",
+            "DENY"
+          ],
+          "name": "LifecycleDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "action",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "trusted_route",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "bundle_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "capability_safe",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "can_hibernate",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "sufficient_state_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "LifecycleInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

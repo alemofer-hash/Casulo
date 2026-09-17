@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "owner.agent.mass_balance_calculator_v2.conservation_check": {
+      "commit": [],
+      "inspect": [],
+      "simulate": [
+        "simulation"
+      ]
+    },
+    "owner.agent.mass_balance_calculator_v2.mass_flow": {
+      "check": [],
+      "combine": [],
+      "plan": []
+    },
+    "owner.agent.mass_balance_calculator_v2.unit_parser": {
+      "branch": [],
+      "decide": [],
+      "verify_mass_balance_verified": [],
+      "verify_residual_accepted": [],
+      "verify_unit_validated": []
+    }
+  }
+}

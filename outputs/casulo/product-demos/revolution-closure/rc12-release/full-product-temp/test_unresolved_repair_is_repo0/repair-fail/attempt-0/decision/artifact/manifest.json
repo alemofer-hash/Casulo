@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:c03ba6bce2e1398e2298f92657aa74534c5ea8679de927fef1b5dc5cfdb5c2ce",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "b0d1fe219f85e784ddf3b6a7d359caaafb7e355814fd709c74a924419b7cd564"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "cf92257fbbca8f2ddef166656e4f7ecc7831c5cc97f99681756bddc7d433989d",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "abd3dc83160989386535c6562d939b470c616a17fea76d7ac41741b03a1044ea",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "generated.decision",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "518280e36545e942a0aa0fc47ebc11945077ce2d7081227593678f997468e830"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "DecisionInput",
+        "judgements": [],
+        "name": "RememberDecision",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "b8fd97f97efc8cc10a8c682a476a51f10bac239b3d662818e121193cedb2d40a"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "DecisionInput",
+      "kind": "condense",
+      "name": "RememberDecision",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "d2e36eba450748155c367fc0b1cd5c98033b9f868af53c6e254a1fcdcee75848"
+  }
+}

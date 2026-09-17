@@ -1,0 +1,4 @@
+{"byte_offset":31780346,"event":"campaign_formal_start","local":"2026-08-07T18:44:36.080354-03:00","monotonic_ns":6581329827000,"pid":11248,"utc":"2026-08-07T21:44:36.080354+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T18:44:36.202708-03:00","monotonic_ns":6581439760200,"pid":11248,"utc":"2026-08-07T21:44:36.202708+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T18:44:42.446852-03:00","monotonic_ns":6588533277100,"new_samples":25,"pid":11248,"utc":"2026-08-07T21:44:42.446852+00:00"}
+{"event":"protocol_superseded","local":"2026-08-07T18:48:55.817772-03:00","monotonic_ns":6841054947100,"pid":28940,"reason":"Initial stability incorrectly retained a fixed 60 C threshold despite the frozen 70 C campaign override; corrected before idle or workload.","utc":"2026-08-07T21:48:55.817772+00:00"}

@@ -1,0 +1,7 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 16,
+  "failure": "PRELOADED_CHRDEV_INPUT_NOT_DELIVERED_TO_GUEST_UART",
+  "preserved": true,
+  "neural_evidence": false
+}

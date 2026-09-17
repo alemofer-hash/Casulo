@@ -1,0 +1,24 @@
+{
+  "append_only": true,
+  "files": {
+    "START_MONDAY_DISCOVERY.vbs": "2004f5a6ac32a43e33255fcfadd595a81503447739d0d83d4c8f36b2c579f29a",
+    "checkpoint.json": "ad98210b0c50509fa4bcb4d34e3b343633ee3f36cf5eaa49325095e6e8541a4f",
+    "doctor.json": "58350b38494c5d9b665ce2ad5a178a3cb80208dad141ad4173ff41816c966343",
+    "gate.json": "5ca445fbe9eb732067e760dfd04abc118f022fc2cbf132f1c0acbe5c1a72c6f3",
+    "m1-tests-attempt2.xml": "a179461e34570828741c02d207c255139d9e4c4eeec50edc07830af24b6c5ec1",
+    "m1-tests-attempt3.xml": "46ea31ce14fc17c83258a05abe8b95bfd3e3939d8718239d710a432248d33c1c",
+    "m1-tests-attempt4.xml": "42db4eff668be464998647641f8f61b72163a70e3e23fc35d230a21aa2f0ac54",
+    "m1-tests-attempt5.xml": "bdd04e94b768f17702555ddab64373c0953d2f094736447d96630c221a50627b",
+    "m1-tests.xml": "7aefbe100ed917c9420777bf16b87555eee052e29aa935896c734abfc82b10f8",
+    "preflight-final-attempt2.json": "c95e6f201d3f560278501c4ebfe7ce5dacab77427180a29ce9b20dce78da3638",
+    "preflight-final-attempt3.json": "d193744a6820aab769b7f7658f7b02d2af7fd809aae1f03151280ab6a8562c39",
+    "preflight-final.json": "b84a10021066a9289347fb280dae57608a8624947ba38a8d92a11f31767a0978",
+    "preflight-readonly.json": "091c00dec474ae1339ae0fb8db1ba9131bfd109d4668ecdcba5edb2c7c459a91",
+    "selected-tests-attempt2.xml": "9c6f4dbc6a674bb663578eb25dfe1190ae6d84631c321023d5d30e08c053d7ae",
+    "selected-tests-attempt3.xml": "3e0f16f6c8bf6db374cb9c3f5f76d702a0306997ec03c74a2e0ad4d02c5a5b3a",
+    "selected-tests-attempt4.xml": "e6ff082ccefbfbf2c16f7cd787f8e3075234d95ddbdafec7e516bc2aa0142b15",
+    "selected-tests.xml": "a3563085f9ca2b3b076812b0953c01c8b131b83c73b23adc4fd5f8c42daf0daf"
+  },
+  "gate": "M1_MONDAY_DISCOVERY_SESSION_READY",
+  "schema": "casulo.t85.evidence-manifest/1.0"
+}

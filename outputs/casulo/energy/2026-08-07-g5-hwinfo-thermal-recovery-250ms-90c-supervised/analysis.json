@@ -1,0 +1,11 @@
+{
+  "campaign_id": "2026-08-07-g5-hwinfo-thermal-recovery-250ms-90c-supervised",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "reason": "The user replaced the 60 C start threshold with a 70 C campaign-local threshold before any workload.",
+  "schema": "casulo-hwinfo-thermal-recovery-analysis/1.0",
+  "scientific_judgment": "NO_ENERGY_RESULT",
+  "terminal_state": "SUPERSEDED_BEFORE_WORKLOAD",
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "valid_pairs": 0,
+  "workload_executions": 0
+}

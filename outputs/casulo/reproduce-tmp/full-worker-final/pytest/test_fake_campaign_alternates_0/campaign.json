@@ -1,0 +1,194 @@
+{
+  "abort_reason": null,
+  "aggregates": {
+    "amortized_elapsed_ns": {
+      "casulo": 100.0,
+      "torch": 600.0
+    },
+    "amortized_speedup_baseline_over_candidate": 6.0,
+    "compile_amortization_runs": 1,
+    "compile_elapsed_ns_total": {
+      "casulo": 0,
+      "torch": 0
+    },
+    "energy_ratio_baseline_over_candidate": 6.0,
+    "estimator": "median_of_paired_ratios",
+    "excluded_pairs": [],
+    "median_elapsed_ns": {
+      "casulo": 100.0,
+      "torch": 600.0
+    },
+    "median_energy_joules": {
+      "casulo": 1e-07,
+      "torch": 6e-07
+    },
+    "median_phase_timings_ns": {
+      "casulo": {},
+      "torch": {}
+    },
+    "minimum_main_pairs": 21,
+    "paired_exact_sign_test": null,
+    "paired_ratio_ci95": null,
+    "scientific_claim": "descriptive_only_insufficient_or_not_requested",
+    "speedup_baseline_over_candidate": 6.0,
+    "strict_statistics_eligible": false,
+    "trial_count_per_label": 3,
+    "valid_pair_count": 3
+  },
+  "preflight": {
+    "gates": [
+      {
+        "evidence": {
+          "missing": []
+        },
+        "gate": "capabilities",
+        "reason_code": "all_required_available",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "limit_c": 55.0,
+          "maximum_temperature_c": 42.0,
+          "operator_odor_absent": true,
+          "sample_count": 3,
+          "sensor_id": "fake-sensor"
+        },
+        "gate": "thermal",
+        "reason_code": "thermal_stream_stable",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "cpu_policy": "fixed",
+          "on_ac_power": true,
+          "power_mode": "performance",
+          "source": "fake-source",
+          "stable": true
+        },
+        "gate": "power_state",
+        "reason_code": "power_state_stable",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "applied": true,
+          "cgroup_path": "/fake/cgroup/campaign",
+          "controls": {
+            "cpu.max": "400000 100000"
+          },
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "threads": 4
+        },
+        "gate": "isolation",
+        "reason_code": "isolation_verified",
+        "status": "pass"
+      }
+    ],
+    "status": "ready"
+  },
+  "schema": "casulo-livelab-paired-campaign/1",
+  "spec": {
+    "baseline_label": "torch",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260807,
+    "campaign_id": "deterministic",
+    "candidate_label": "casulo",
+    "compile_amortization_runs": 1,
+    "evidence_kind": "measured",
+    "maximum_trial_seconds": 60.0,
+    "minimum_main_pairs": 21,
+    "preregistered_exclusions": [],
+    "repetitions": 3,
+    "require_power_parity": false,
+    "strict_statistics": false,
+    "warmups": 0
+  },
+  "status": "complete",
+  "trials": [
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 600,
+      "energy_joules": 6e-07,
+      "exclusion_reason": null,
+      "label": "torch",
+      "maximum_temperature_c": 44.0,
+      "order_in_pair": 0,
+      "output_digest": "1b17a6d3bc3ec320dd6f53009a5eef64aee12c0a2844aaf815065c056a3147f1",
+      "pair_index": 0,
+      "phase_timings_ns": {},
+      "power_state_signature": null
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 100,
+      "energy_joules": 1e-07,
+      "exclusion_reason": null,
+      "label": "casulo",
+      "maximum_temperature_c": 44.0,
+      "order_in_pair": 1,
+      "output_digest": "1b17a6d3bc3ec320dd6f53009a5eef64aee12c0a2844aaf815065c056a3147f1",
+      "pair_index": 0,
+      "phase_timings_ns": {},
+      "power_state_signature": null
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 100,
+      "energy_joules": 1e-07,
+      "exclusion_reason": null,
+      "label": "casulo",
+      "maximum_temperature_c": 44.0,
+      "order_in_pair": 0,
+      "output_digest": "1b17a6d3bc3ec320dd6f53009a5eef64aee12c0a2844aaf815065c056a3147f1",
+      "pair_index": 1,
+      "phase_timings_ns": {},
+      "power_state_signature": null
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 600,
+      "energy_joules": 6e-07,
+      "exclusion_reason": null,
+      "label": "torch",
+      "maximum_temperature_c": 44.0,
+      "order_in_pair": 1,
+      "output_digest": "1b17a6d3bc3ec320dd6f53009a5eef64aee12c0a2844aaf815065c056a3147f1",
+      "pair_index": 1,
+      "phase_timings_ns": {},
+      "power_state_signature": null
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 600,
+      "energy_joules": 6e-07,
+      "exclusion_reason": null,
+      "label": "torch",
+      "maximum_temperature_c": 44.0,
+      "order_in_pair": 0,
+      "output_digest": "1b17a6d3bc3ec320dd6f53009a5eef64aee12c0a2844aaf815065c056a3147f1",
+      "pair_index": 2,
+      "phase_timings_ns": {},
+      "power_state_signature": null
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 100,
+      "energy_joules": 1e-07,
+      "exclusion_reason": null,
+      "label": "casulo",
+      "maximum_temperature_c": 44.0,
+      "order_in_pair": 1,
+      "output_digest": "1b17a6d3bc3ec320dd6f53009a5eef64aee12c0a2844aaf815065c056a3147f1",
+      "pair_index": 2,
+      "phase_timings_ns": {},
+      "power_state_signature": null
+    }
+  ],
+  "workload_invocations": 6,
+  "workload_started": true
+}

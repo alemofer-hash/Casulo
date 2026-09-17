@@ -1,0 +1,25 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.ts14_mycelium_reconciler.growth"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.agent.ts14_mycelium_reconciler.growth"
+    },
+    {
+      "imports": [
+        "owner.agent.ts14_mycelium_reconciler.growth"
+      ],
+      "name": "owner.agent.ts14_mycelium_reconciler.unit"
+    },
+    {
+      "imports": [
+        "owner.agent.ts14_mycelium_reconciler.unit"
+      ],
+      "name": "owner.agent.ts14_mycelium_reconciler.protocol"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

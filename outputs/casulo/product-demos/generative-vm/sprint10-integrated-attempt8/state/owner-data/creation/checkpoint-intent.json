@@ -1,0 +1,151 @@
+{
+  "delta": {
+    "affected_paths": [
+      [
+        "identity",
+        "name"
+      ],
+      [
+        "purpose",
+        "description"
+      ],
+      [
+        "behavior",
+        "autonomy"
+      ],
+      [
+        "behavior",
+        "data_processing"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "interface",
+        "output"
+      ],
+      [
+        "data",
+        "preservation"
+      ],
+      [
+        "constraints",
+        "reversibility"
+      ]
+    ],
+    "base_version": 0,
+    "confidence": 0.85,
+    "confirmation_state": "PROPOSED",
+    "creation_id": "creation:open-ended-holdout",
+    "delta_id": "intent:gen:7cf0f5fd8daece2036ac4391",
+    "operations": [
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "name"
+        ],
+        "value": {
+          "value": "C27D"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "purpose",
+          "description"
+        ],
+        "value": {
+          "value": "Converter diários de laboratório conflitantes em decisões reversíveis, preservar alternativas rejeitadas e vincular cada conclusão à sua proveniência."
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "autonomy"
+        ],
+        "value": {
+          "value": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "data_processing"
+        ],
+        "value": {
+          "value": "processar e analisar diários de laboratório conflitantes para identificar inconsistências, priorizar alternativas e estabelecer vinculação entre conclusões e suas fontes."
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "input"
+        ],
+        "value": {
+          "value": "diários de laboratório em formato estruturado ou texto livre, com marcadores de origem e contextualização."
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "output"
+        ],
+        "value": {
+          "value": "decisões reversíveis com rastreamento de origem, alternativas rejeitadas preservadas em histórico separado, e conclusões vinculadas às fontes originais."
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "data",
+          "preservation"
+        ],
+        "value": {
+          "value": "preservar alternativas rejeitadas em um registro separado, com metadados de contexto e critérios de rejeição."
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "constraints",
+          "reversibility"
+        ],
+        "value": {
+          "value": true
+        }
+      }
+    ],
+    "rationale": "A proposta visa a definição de um novo agente inédito com funcionalidades específicas relacionadas ao processamento de diários de laboratório conflitantes, preservação de alternativas rejeitadas e vinculação de conclusões às suas fontes.",
+    "schema": "casulo.intent-delta/1.0",
+    "source_event_ids": [
+      "voice:g5:novel-idea"
+    ]
+  },
+  "requested_capabilities": [
+    "processar diários de laboratório conflitantes",
+    "preservar alternativas rejeitadas",
+    "vincular conclusões às suas fontes"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "fadff8edb8e97f68234d8f15ddb5c8b9fe16e0b1dc9ae310e336ac0d4711aa40",
+    "ended_monotonic_ns": 42032239689400,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "intent:voice:g5:novel-idea",
+    "output_sha256": "7cf0f5fd8daece2036ac4391204845ce021f7f965ebbd3141c65dd2cc2457da4",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 41951431175800,
+    "stream_events": 537
+  }
+}

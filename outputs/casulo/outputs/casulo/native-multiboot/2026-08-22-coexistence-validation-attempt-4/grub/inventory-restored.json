@@ -1,0 +1,33 @@
+{
+  "boot_managers": [
+    "windows-boot-manager",
+    "grub"
+  ],
+  "fallback_bootx64_present": true,
+  "files": {
+    "ARCH_LINUX_MUST_SURVIVE.txt": {
+      "bytes": 20,
+      "sha256": "a1cc4f2f0e4cf280f23439f9455a1d100ea1b11657e62ffc5f26e2cdef3bfcb7"
+    },
+    "EFI/BOOT/BOOTX64.EFI": {
+      "bytes": 27,
+      "sha256": "b4f008423f63511c4c1b1266a44f674fb1136e390c95c6395fb1ef6f5938fea3"
+    },
+    "EFI/Microsoft/Boot/bootmgfw.efi": {
+      "bytes": 25,
+      "sha256": "473f8c969f07e8a07a42025495289d1d1912b470b1f39ab1f5bff73de958180f"
+    },
+    "EFI/arch/grubx64.efi": {
+      "bytes": 14,
+      "sha256": "6ac00cb7470c11435152ab48fa1d3ee81ace2bbe3bcd99a5afb78cbc21e9f682"
+    },
+    "grub/grub.cfg": {
+      "bytes": 52,
+      "sha256": "214af73d15ebea96ace0a366b8f74877666da5a764449df096bf3a50f029df08"
+    }
+  },
+  "read_only_inspection": true,
+  "root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-multiboot\\2026-08-22-coexistence-validation-attempt-4\\grub\\esp",
+  "schema": "casulo-efi-inventory/1.0",
+  "tree_sha256": "158f043fe95bb7a72dc54154fa57862793bdb2cbc202c63d4580cb711046cd75"
+}

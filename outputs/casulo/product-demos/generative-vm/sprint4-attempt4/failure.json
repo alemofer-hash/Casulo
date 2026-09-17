@@ -1,0 +1,14 @@
+{
+  "schema": "casulo-generative-t-synthesis-failure/1.0",
+  "attempt": 4,
+  "gate": "GENERATIVE_T_SYNTHESIS_FAIL",
+  "stage": "structured-t-project-completion",
+  "error": "Unterminated JSON string after 3785 characters",
+  "root_cause": "The model reached the 1024 generated-token ceiling while filling the permitted project breadth",
+  "contract_change": "Project bounded to 2-4 units and 2-6 tests; code completion ceiling raised to 1536 tokens",
+  "partial_result_reused": false,
+  "external_ai_api_used": false,
+  "fake_engine_used": false,
+  "scientific_benchmark": false,
+  "preserved": true
+}

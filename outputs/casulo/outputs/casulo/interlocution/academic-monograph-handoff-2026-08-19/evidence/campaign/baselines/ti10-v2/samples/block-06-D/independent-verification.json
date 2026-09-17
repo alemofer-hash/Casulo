@@ -1,0 +1,14 @@
+{
+  "analysis_json_trusted": false,
+  "authority_chain_tip": "21842288a5385b90ec4276812d3bfe9029bee29a5e120371dcbd67d11d0e4c16",
+  "authority_surfaces": 9,
+  "dataset_sha256": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+  "initialization_sha256": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+  "result_sha256": "c6dca2aafc872960f2e56622533842bd1fc2d284acf05e043a17b0cf794d7243",
+  "schema": "casulo.interlocution-independent-verification/1.0",
+  "status": "PASS",
+  "trainer_imported": false,
+  "verification_sha256": "54b89e14429b5d6b8fcd9a26626a7a559ee03e14c342225c07113d37e29313c4",
+  "work_chain_tip": "3ef497f6203b404e92fd1b69773da8926a3074850229cafda3d0b8d3f2c0de4a",
+  "work_units": 2
+}

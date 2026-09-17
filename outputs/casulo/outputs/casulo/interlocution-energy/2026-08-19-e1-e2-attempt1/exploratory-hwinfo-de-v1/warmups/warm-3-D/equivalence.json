@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case_id": 3,
+      "counters_equal": true,
+      "final_loss_abs_difference": 0.0,
+      "finite": true,
+      "identity_equal": true,
+      "initial_loss_abs_difference": 0.0,
+      "optimizer_state": "STATELESS_SGD_RESET_EACH_CASE",
+      "parameter_max_abs_difference": 0.0,
+      "pass": true,
+      "prediction_max_abs_difference": 0.0,
+      "stopping_reason": "FIXED_EPOCHS_400"
+    }
+  ],
+  "maximum_final_loss_abs_difference": 0.0,
+  "maximum_initial_loss_abs_difference": 0.0,
+  "maximum_parameter_abs_difference": 0.0,
+  "maximum_prediction_abs_difference": 0.0,
+  "optimizer_state_semantics": "SGD_WITHOUT_MOMENTUM_HAS_NO_PERSISTENT_BUFFER_AND_IS_RESET_PER_CASE",
+  "schema": "casulo.interlocution-equivalence/1.0",
+  "status": "PASS",
+  "tolerance_frozen_before_execution": 1e-09,
+  "work_units": 1
+}

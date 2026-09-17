@@ -1,0 +1,10 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 13,
+  "failure": "HOST_TO_UART_BULK_WRITE_NOT_OBSERVED_BY_GUEST",
+  "evidence": "state/bridge-live.serial.bin ends at OWNER_BRIDGE_READY=1",
+  "root_cause_hypothesis": "emulated 16550 receive overrun from unpaced bulk TCP write",
+  "action": "Added 2 ms byte pacing; owned processes terminated",
+  "preserved": true,
+  "neural_evidence": false
+}

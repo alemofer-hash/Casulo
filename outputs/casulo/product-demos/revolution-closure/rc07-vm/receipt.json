@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc07-vm",
+  "gate_sha256": "d3d551d2dc99b579b9ed5d18b599c15cf73ba4f2e2be8a332773482385a5430b",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC7_OWNER_VM_ONE_CLICK_PASS",
+  "timestamp": "2026-08-14T21:06:59.652559+00:00"
+}

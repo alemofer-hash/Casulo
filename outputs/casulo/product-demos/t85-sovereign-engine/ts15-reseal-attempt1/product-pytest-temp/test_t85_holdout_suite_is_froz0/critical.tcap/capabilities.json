@@ -1,0 +1,10 @@
+{
+  "modules": {
+    "owner.critical.capabilities": [],
+    "owner.critical.fulfillment": [],
+    "owner.critical.intent": [],
+    "owner.critical.publish": [
+      "manifest"
+    ]
+  }
+}

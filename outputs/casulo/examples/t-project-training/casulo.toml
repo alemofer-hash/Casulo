@@ -1,0 +1,9 @@
+[project]
+name = "flood-training"
+version = "0.1.0"
+kind = "application"
+entry = "casulo.flood_rs.training"
+source = "src"
+external_modules = ["casulo.std"]
+
+[dependencies]

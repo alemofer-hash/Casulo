@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.native.creation_acceptance"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.native.creation_acceptance"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

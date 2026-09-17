@@ -1,0 +1,14 @@
+{
+  "schema": "casulo-generative-t-synthesis-failure/1.0",
+  "attempt": 3,
+  "gate": "GENERATIVE_T_SYNTHESIS_FAIL",
+  "stage": "structured-t-project-json",
+  "error": "Invalid control character in JSON source string",
+  "root_cause": "llama.cpp JSON-Schema grammar emitted literal newlines required by a string pattern instead of JSON-escaped newlines",
+  "contract_change": "source string replaced by bounded source_lines array; Casulo validates and joins lines",
+  "partial_result_reused": false,
+  "external_ai_api_used": false,
+  "fake_engine_used": false,
+  "scientific_benchmark": false,
+  "preserved": true
+}

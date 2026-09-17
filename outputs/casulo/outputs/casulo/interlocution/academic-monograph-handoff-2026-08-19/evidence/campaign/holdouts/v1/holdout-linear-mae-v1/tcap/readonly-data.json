@@ -1,0 +1,13 @@
+{
+  "states": {
+    "research.interlocution.holdout.holdout_linear_mae_v1.dataset_identity_integrity": [],
+    "research.interlocution.holdout.holdout_linear_mae_v1.equivalence_acceptance": [],
+    "research.interlocution.holdout.holdout_linear_mae_v1.initialization_bundle": [],
+    "research.interlocution.holdout.holdout_linear_mae_v1.loss_function": [],
+    "research.interlocution.holdout.holdout_linear_mae_v1.numerical_precision": [],
+    "research.interlocution.holdout.holdout_linear_mae_v1.optimizer_state": [],
+    "research.interlocution.holdout.holdout_linear_mae_v1.stopping": [],
+    "research.interlocution.holdout.holdout_linear_mae_v1.update_rule": [],
+    "research.interlocution.holdout.holdout_linear_mae_v1.working_set": []
+  }
+}

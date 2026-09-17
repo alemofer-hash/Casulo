@@ -1,0 +1,43 @@
+{
+  "expected_evidence_tokens": [
+    "4c9fe6b9d8e498e33f7d1d6a9d5c86cdda71374f2e22698131faa326711f88d2",
+    "cb861f6db8a6779558e7b5643cad7d2d7fc11eb786f0c91741132f02f7b13164",
+    "fb6bb5953cd3e73c09d7cc768b0db35fcdd00e039386f83c2d66418800579c03"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "personal-03:project-isolation",
+      "scope": "personal-03",
+      "source_event_ids": [
+        "sealed:personal-03"
+      ],
+      "verifier_ids": [
+        "domain:project-isolation"
+      ]
+    },
+    {
+      "requirement_id": "personal-03:rejection-history",
+      "scope": "personal-03",
+      "source_event_ids": [
+        "sealed:personal-03"
+      ],
+      "verifier_ids": [
+        "domain:rejection-history"
+      ]
+    },
+    {
+      "requirement_id": "personal-03:local-storage",
+      "scope": "personal-03",
+      "source_event_ids": [
+        "sealed:personal-03"
+      ],
+      "verifier_ids": [
+        "domain:local-storage"
+      ]
+    }
+  ],
+  "project_id": "personal-03",
+  "schema": "casulo.evidence-plan/1.0"
+}

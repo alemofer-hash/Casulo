@@ -1,0 +1,27 @@
+{
+  "states": {
+    "owner.agent.data_validator_01.csv_parser": [
+      {
+        "initial": 0,
+        "name": "accepted",
+        "type": {
+        ! "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ],
+    "owner.agent.data_validator_01.diagnostic_core": [],
+    "owner.agent.data_validator_01.schema_engine": [
+      {
+        "initial": 0,
+        "name": "transitions",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ]
+  }
+}

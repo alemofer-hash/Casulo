@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "coordinate",
+    "module": "owner.guide.turn_coordinator"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.guide.turn_coordinator"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

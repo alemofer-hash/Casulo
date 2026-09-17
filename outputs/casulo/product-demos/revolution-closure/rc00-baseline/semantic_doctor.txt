@@ -1,0 +1,52 @@
+{
+  "baseline_hashes": {
+    "product-demos/generative-vm/sprint10-integrated-attempt12/g10-integrated-handoff.json": "c698f3d649f0216b173270ca33f78617c4d8c37575a410798022243a90b9c9d6",
+    "release/CASULO_OWNER_VM_INSPECT.ps1": "e0452669dc33ce20320c59ccc4af94500561192cc9f52e9f8270fcea4fc0db12",
+    "release/generative-vm/casulo-owner-generative-vm-g10-complete.zip": "bd223daf90ec64549d693fddce853cdc601d19c7c0d4c734ce90088b11fa9477",
+    "release/generative-vm/handoff/MANIFEST.json": "3529733742e6cd52537f1651a0488061e2f88dc4020339a450a14c57e8d69651"
+  },
+  "checks": {
+    "cloud_release_locked": true,
+    "external_media_absent": true,
+    "g10:product-demos/generative-vm/sprint10-integrated-attempt12/g10-integrated-handoff.json": true,
+    "g10:release/CASULO_OWNER_VM_INSPECT.ps1": true,
+    "g10:release/generative-vm/casulo-owner-generative-vm-g10-complete.zip": true,
+    "g10:release/generative-vm/handoff/MANIFEST.json": true,
+    "g10_state": true,
+    "holdout_scanner_available": true,
+    "minimum_25_gib_reserve": true,
+    "owner_adapter_present": true,
+    "public_frozen": true,
+    "semantic_artifacts_verified": true,
+    "semantic_dependencies_verified": true,
+    "semantic_handoff_checks": true,
+    "semantic_handoff_present": true,
+    "semantic_handoff_ready": true,
+    "semantic_handoff_sha256s": true,
+    "semantic_handoff_signature": true,
+    "semantic_ir_present": true,
+    "semantic_launcher_present": true,
+    "semantic_runtime_present": true
+  },
+  "cloud": "RELEASE_LOCKED",
+  "free_bytes": 83672276992,
+  "holdout_scanner": "rg",
+  "holdout_scanner_capability": {
+    "fallback": "bounded-python-literal-scan",
+    "fallback_available": true,
+    "preferred": "rg",
+    "rg_available": true,
+    "rg_discovered": true,
+    "schema": "casulo.holdout-scanner-capability/1.0",
+    "selected_backend": "rg",
+    "shell_used": false
+  },
+  "minimum_reserve_bytes": 26843545600,
+  "mutations_performed": false,
+  "network_access_performed": false,
+  "qpu": "UNAVAILABLE_DENY",
+  "read_only": true,
+  "ready": true,
+  "schema": "casulo.semantic-multiverse-doctor/1.0",
+  "usb": "PROHIBITED"
+}

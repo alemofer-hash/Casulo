@@ -1,0 +1,270 @@
+{
+  "adaptation": {
+    "assessment": "INCONCLUSIVE_SAFE",
+    "decision": {
+      "cacheable": true,
+      "confidence": 0.523258,
+      "cost_model": "casulo-cost-model/0.1",
+      "estimated_cache_bytes": 6840,
+      "estimated_speedup": 1.0718030143397344,
+      "memory_budget_bytes": 67108864,
+      "operation": "WaterBalance",
+      "operation_cost": 8,
+      "protocol": "casulo-adaptive/0.1",
+      "reasons": [
+        "custo estático da operação: 8",
+        "repetição observada: 0.9900",
+        "fronteira conservadora: 0.9421",
+        "perfil: deterministic_occupancy_estimate (128/2000)",
+        "repetição supera a fronteira com margem de segurança"
+      ],
+      "repetition_rate": 0.99,
+      "repetition_threshold": 0.9321313237735105,
+      "safety_margin": 0.01,
+      "strategy": "DEDUPLICATE_BATCH",
+      "use_cache": true
+    },
+    "end_to_end_regret_ratio": 1.0346889349782367,
+    "end_to_end_verdict": "improvement",
+    "end_to_end_wall_speedup": 1.1059743246179474,
+    "end_to_end_wall_speedup_ci95_bootstrap": [
+      1.0228651164112144,
+      1.2423062404292446
+    ],
+    "median_best_strategy": "DEDUPLICATE_BATCH",
+    "prediction_correct": null,
+    "profile": {
+      "estimated_cache_bytes": 6840,
+      "mean_payload_bytes": 86.0,
+      "profile_mode": "deterministic_occupancy_estimate",
+      "records": 2000,
+      "repeated_records": 1980,
+      "repetition_rate": 0.99,
+      "sample_unique_records": 20,
+      "sampled_records": 128,
+      "total_payload_bytes": 172000,
+      "unique_records": 20
+    },
+    "selected_kernel_regret_ratio": 1.0,
+    "selection_overhead_ratio": 1.0346889349782367,
+    "statistically_preferred_strategy": null
+  },
+  "adaptive": {
+    "cpu_ns_samples": [
+      187500000,
+      203125000,
+      187500000,
+      484375000,
+      390625000,
+      421875000,
+      390625000,
+      468750000,
+      406250000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 390625000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 42479616,
+    "median_wall_ns": 421205000,
+    "name": "casulo_adaptive_end_to_end",
+    "rss_observed_bytes_samples": [
+      42545152,
+      42545152,
+      42450944,
+      42627072,
+      42635264,
+      42455040,
+      42479616,
+      42479616,
+      42442752
+    ],
+    "throughput_records_per_second": 23741.40857777092,
+    "wall_ns_samples": [
+      214694300,
+      220777800,
+      198820800,
+      490336400,
+      421205000,
+      464607300,
+      425824500,
+      467128900,
+      403075900
+    ]
+  },
+  "artifact_id": "sha256:8ab8635722c96aaa4f17fa158199ad9b6b8bbe755fa1e53cb7fc79c2c9fd0ee2",
+  "caveats": [
+    "dataset sintético mede o runtime, não a acurácia hidrológica",
+    "o ganho depende da taxa de repetição declarada no manifesto",
+    "resultados de um único computador não generalizam sem replicação",
+    "turbo, temperatura e processos concorrentes afetam tempo e energia",
+    "energia elétrica indisponível nesta execução"
+  ],
+  "comparison": {
+    "cpu_work_ratio": 1.1818181818181819,
+    "electrical_energy_ratio": null,
+    "scope": "referência escalar sem cache versus lote Casulo com cache frio por chamada e deduplicação intralote",
+    "semantic_projection_excludes": [
+      "cache"
+    ],
+    "semantically_equivalent": true,
+    "verdict": "inconclusive",
+    "wall_speedup_ci95_bootstrap": [
+      0.9319977383582244,
+      1.2178205612261066
+    ],
+    "wall_speedup_interpretation": "valores acima de 1 indicam que a estratégia Casulo é mais rápida",
+    "wall_speedup_median": 1.1967437603966542
+  },
+  "config": {
+    "bootstrap_resamples": 2000,
+    "duplicate_rate": 0.99,
+    "iterations": 5,
+    "records": 2000,
+    "samples": 9,
+    "seed": 6006,
+    "warmups": 2
+  },
+  "dataset": {
+    "duplicate_rate": 0.99,
+    "name": "hydrological-water-balance-synthetic",
+    "protocol": "casulo-dataset/hydrological-synthetic/0.1",
+    "records": 2000,
+    "seed": 6006,
+    "sha256": "74afbdd5cce18a2d75919d318ecdde0e6774a9a691b6531912b435e269671e40"
+  },
+  "energy": {
+    "electrical_energy_measured": false,
+    "method": "unavailable",
+    "quality": "not_measured",
+    "unit": null,
+    "warning": "nenhum contador elétrico cumulativo foi encontrado; tempo de CPU permanece apenas como proxy de trabalho, nunca como joules"
+  },
+  "environment": {
+    "cpu_logical": 12,
+    "cpu_physical": 10,
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "memory_total_bytes": 16890978304,
+    "os": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2"
+  },
+  "equivalence_sha256": "81910802f227522e19ebaec74b7a73fa0a29925a3fbec577882d3d81fffdeb90",
+  "generated_at_utc": "2026-07-30T00:07:28Z",
+  "operation": "WaterBalance",
+  "optimized": {
+    "cpu_ns_samples": [
+      171875000,
+      187500000,
+      234375000,
+      421875000,
+      421875000,
+      421875000,
+      343750000,
+      312500000,
+      437500000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 343750000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 42545152,
+    "median_wall_ns": 407083700,
+    "name": "casulo_metamorfose_fused_batch",
+    "rss_observed_bytes_samples": [
+      42545152,
+      42545152,
+      42553344,
+      42627072,
+      42627072,
+      42262528,
+      42475520,
+      42479616,
+      42209280
+    ],
+    "throughput_records_per_second": 24564.972756216965,
+    "wall_ns_samples": [
+      202979600,
+      201435800,
+      235934800,
+      450241000,
+      430359800,
+      429547100,
+      407083700,
+      399253000,
+      434574900
+    ]
+  },
+  "protocol": "casulo-borboleta/0.2",
+  "scalar": {
+    "cpu_ns_samples": [
+      265625000,
+      187500000,
+      218750000,
+      281250000,
+      515625000,
+      453125000,
+      406250000,
+      484375000,
+      515625000
+    ],
+    "electrical_joules_samples": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "median_cpu_ns": 406250000,
+    "median_electrical_joules": null,
+    "median_rss_observed_bytes": 42479616,
+    "median_wall_ns": 475230600,
+    "name": "python_scalar_reference",
+    "rss_observed_bytes_samples": [
+      41857024,
+      42545152,
+      42536960,
+      42610688,
+      42635264,
+      42455040,
+      42475520,
+      42479616,
+      42442752
+    ],
+    "throughput_records_per_second": 21042.41603970788,
+    "wall_ns_samples": [
+      256248000,
+      227116300,
+      219890700,
+      277507300,
+      523265600,
+      475230600,
+      495754900,
+      478727300,
+      520074800
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "backend": "inductor",
+  "capability": "pytorch-compile-inductor-cpu",
+  "dtype": "float64",
+  "duration_seconds": 8.50824620000003,
+  "error": {
+    "message": "RuntimeError: Compiler: cl is not found. Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS=\"+dynamo\"",
+    "type": "InductorError"
+  },
+  "fullgraph": true,
+  "interpretation": "baseline compilado não pode ser omitido; prova ampla permanece inconclusiva",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "probe_id": "sha256:15dc34c2b18c3452d86ba43768b5dd0578ae63902b8fa24f88f3baf5f03b8e6a",
+  "protocol": "casulo-baseline-capability-probe/1.0",
+  "python": "3.13.2",
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "15dc34c2b18c3452d86ba43768b5dd0578ae63902b8fa24f88f3baf5f03b8e6a"
+  },
+  "status": "UNAVAILABLE",
+  "threads": 1,
+  "torch_version": "2.12.1+cpu"
+}

@@ -1,0 +1,15 @@
+{
+  "adoption_receipt_sha256": "915c3a7ede5894f179b99d56d48c547949c75667731b865d4bfd279080bd52cc",
+  "cache_root": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative",
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "manifest_sha256": "42b2c54788298c10c781695d48f9f7867f5cb25e6407f90dcf0ff45466c70562",
+  "model_file": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+  "mutations_performed": false,
+  "network_access_performed": false,
+  "ready": true,
+  "reasons": [],
+  "runtime_executable": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\runtime\\llama-server.exe",
+  "schema": "casulo-generative-doctor/1.0",
+  "status": "READY",
+  "target": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362"
+}

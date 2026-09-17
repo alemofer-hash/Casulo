@@ -1,0 +1,67 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "decision",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 1,
+      "input_type": "DecisaoArquitetura",
+      "name": "ReceiveArchitecturalDecision",
+      "nodes": [
+        {
+          "defines": [
+            "value"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "ReceiveArchitecturalDecision/input/value",
+          "kind": "input",
+          "label": "value",
+          "operation": "ReceiveArchitecturalDecision",
+          "path": "input.value",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "ReceiveArchitecturalDecision/instruction/root.0/emit",
+          "kind": "emit",
+          "label": "\"Architectural decision received: 'The path of reversibility is now confirmed.'\"",
+          "operation": "ReceiveArchitecturalDecision",
+          "path": "root.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [],
+  "version": "metamorfose-graph/1.0"
+}

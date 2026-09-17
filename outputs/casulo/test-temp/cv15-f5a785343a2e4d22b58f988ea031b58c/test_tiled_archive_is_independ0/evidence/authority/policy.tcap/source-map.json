@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "file": "sources/compression.casv_tile.t",
+      "module": "compression.casv_tile",
+      "sha256": "d3b9389aa427fbda86e7ffe2be027ef8494fd63e39a73b1b145b6b2fddbb47bb"
+    }
+  ]
+}

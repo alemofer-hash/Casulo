@@ -1,0 +1,11 @@
+{
+  "joules": null,
+  "observed_at_utc": "2026-08-07T17:03:00.707859+00:00",
+  "reason_codes": [
+    "CPU_PACKAGE_RAPL_UNAVAILABLE",
+    "TOTAL_SYSTEM_WALL_METER_NOT_CONFIGURED"
+  ],
+  "stage": "run",
+  "status": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "workload_started": false
+}

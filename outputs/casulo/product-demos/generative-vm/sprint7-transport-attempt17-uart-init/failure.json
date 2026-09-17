@@ -1,0 +1,7 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 17,
+  "failure": "UART_STATUS_CLEAR_DID_NOT_RESTORE_HOST_TO_GUEST_INPUT",
+  "preserved": true,
+  "neural_evidence": false
+}

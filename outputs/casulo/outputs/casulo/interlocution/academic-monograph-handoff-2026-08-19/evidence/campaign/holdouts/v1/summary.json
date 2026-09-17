@@ -1,0 +1,26 @@
+{
+  "holdouts": [
+    {
+      "authority_surfaces": 9,
+      "candidate_elapsed_ns": 10247200,
+      "id": "holdout-linear-mae-v1",
+      "maximum_abs_difference": 4.440892098500626e-15,
+      "reference_elapsed_ns": 1413705100,
+      "status": "PASS",
+      "tcap_hash": "7226892c88f14a4bf4028ba17e3fdf26d05acc701e9003ecd75253ab92dc628c",
+      "work_units": 2
+    },
+    {
+      "authority_surfaces": 9,
+      "candidate_elapsed_ns": 13116300,
+      "id": "holdout-logistic-bce-subset-v1",
+      "maximum_abs_difference": 1.1102230246251565e-16,
+      "reference_elapsed_ns": 120987100,
+      "status": "PASS",
+      "tcap_hash": "bc70cd341fa579f137fae0b5ef8a247c7a9c46a7c5ab509fd47e546885a216f4",
+      "work_units": 2
+    }
+  ],
+  "schema": "casulo.interlocution-holdout-summary/1.0",
+  "status": "PASS"
+}

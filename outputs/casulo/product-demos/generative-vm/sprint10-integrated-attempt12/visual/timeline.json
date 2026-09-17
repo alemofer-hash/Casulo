@@ -1,0 +1,77 @@
+{
+  "pages": [
+    {
+      "nodes": 0,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\00-silence.html",
+      "sha256": "05b89e780790a2d713b5617a89a0aa54c4d1e6fa278b3c23366cca3c16b878cf",
+      "state": "SILENCE"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\01-first_intent.html",
+      "sha256": "69a2ac4a45ed932e020be9eb38d0283498e8965ebfb3f84ac561b859f248a5e1",
+      "state": "FIRST_INTENT"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\02-listening.html",
+      "sha256": "a858dbe87d96d1cd0da37173e50fef5c727488bbae3fb7cb0513f50e153867a2",
+      "state": "LISTENING"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\03-first_form.html",
+      "sha256": "6759ffec00b39b0ea88f7857bc7dccb25a32ea15a78b16da615c94212767ac00",
+      "state": "FIRST_FORM"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\04-clarification.html",
+      "sha256": "958a89ec2c6fc7e5a4d93e5a764bf115c68961e2e317484cda188ebd7a7fa6d6",
+      "state": "CLARIFICATION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\05-confirmation.html",
+      "sha256": "1ac409e5c43ad9e78c833395eda41bf36f924632b73e98ce3db477d9bc8dc6b0",
+      "state": "CONFIRMATION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\06-personality.html",
+      "sha256": "ae1effc599635bdab4ad48efc40c4e39b6dfc08f86959539415725cbae28c673",
+      "state": "PERSONALITY"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\07-simulation.html",
+      "sha256": "7f1ad73a9322f8ed1b380c9e9e1f120c20e062bac09f6996e823529cbb2a3723",
+      "state": "SIMULATION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\08-interruption.html",
+      "sha256": "5f67e86665f0f8415ad97be0fce9768aae6b2075e000b38f87c4457dfa71c588",
+      "state": "INTERRUPTION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\09-correction.html",
+      "sha256": "8e0ab1925d52ac5336070c9199ef1aba285aa1c321749ddb419e2741fe7209ca",
+      "state": "CORRECTION"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\10-agreement.html",
+      "sha256": "142e4bca93c3dbec497470d65d8ea51e89b399aa15122c5e8d781dd893916750",
+      "state": "AGREEMENT"
+    },
+    {
+      "nodes": 3,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint10-integrated-attempt12\\visual\\11-materialization.html",
+      "sha256": "02ecaa91f323ae3732003802040737afe740b977117c82a39d75a284a5109096",
+      "state": "MATERIALIZATION"
+    }
+  ],
+  "schema": "casulo.g10-visual-timeline/1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "C:\\Python313\\python.exe",
+    "tools/security_attack_probe.py",
+    "--repo",
+    "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo",
+    "--output",
+    "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts13-supply-chain-attempt1\\attack-probe",
+    "--signing-key",
+    "C:\\Users\\guimo\\AppData\\Local\\Casulo\\dev-signing\\owner-ed25519"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "stdout": "{\n  \"attack_count\": 19,\n  \"metrics\": {\n    \"P0\": 0,\n    \"P1_on_supported_human_path\": 0,\n    \"invalid_updates_accepted\": 0,\n    \"private_in_public\": 0,\n    \"secret_findings\": 0,\n    \"unauthorized_real_effects\": 0\n  },\n  \"state\": \"PASS\"\n}\n"
+}

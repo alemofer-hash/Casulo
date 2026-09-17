@@ -1,0 +1,92 @@
+{
+  "canonical_sha256": "9240d99947e6c2ff7225d61b5992ac27ad5f6eacb19e80185ad394e3ea50e5e0",
+  "confirmation_event_ids": [],
+  "creation_id": "creation:arc-neural-smoke",
+  "gaps": [],
+  "hypotheses": [
+    {
+      "confidence": 0.98,
+      "consequences": [
+        "O agente não deve modificar a arquitetura sem autorização humana.",
+        "A comparação entre as propostas deve ser feita em um ambiente local."
+      ],
+      "hypothesis_id": "hyp:a0469d13c9b2a1c8:1",
+      "interpretation": "O agente deve ser programado para realizar uma comparação entre duas propostas de arquitetura, identificar e explicar conflitos potenciais, e solicitar a aprovação humana antes de qualquer ação que altere a arquitetura.",
+      "supporting_observation_ids": [
+        "obs:a0469d13c9b2a1c8:1",
+        "obs:a0469d13c9b2a1c8:2"
+      ]
+    },
+    {
+      "confidence": 0.97,
+      "consequences": [
+        "O agente não tem permissão para alterar a arquitetura sem confirmação humana.",
+        "A comparação entre as propostas deve ser feita em um ambiente local."
+      ],
+      "hypothesis_id": "hyp:a0469d13c9b2a1c8:2",
+      "interpretation": "O agente deve ser configurado para operar apenas com base em propostas de arquitetura fornecidas pelo usuário, compará-las, identificar conflitos e garantir que qualquer ação baseada nesses dados seja validada por um humano antes de ser implementada.",
+      "supporting_observation_ids": [
+        "obs:a0469d13c9b2a1c8:1",
+        "obs:a0469d13c9b2a1c8:2"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "affected_paths": [
+        [
+          "architecture_comparison"
+        ],
+        [
+          "conflict_explanation"
+        ],
+        [
+          "human_confirmation"
+        ]
+      ],
+      "confidence": 0.95,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:a0469d13c9b2a1c8:1",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "Crie um agente local que compare duas propostas de arquitetura, explique conflitos e nunca execute alterações reais sem confirmação humana.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    },
+    {
+      "affected_paths": [
+        [
+          "architecture_comparison"
+        ],
+        [
+          "conflict_explanation"
+        ],
+        [
+          "human_confirmation"
+        ]
+      ],
+      "confidence": 0.95,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:a0469d13c9b2a1c8:2",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "A resposta deve apresentar as duas propostas, o conflito principal e pedir confirmação antes de agir.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    }
+  ],
+  "schema": "casulo.intent-twin/1.0",
+  "selected_hypothesis_id": "hyp:a0469d13c9b2a1c8:1",
+  "stakes": "MATERIAL",
+  "summary": "Reconstrução da intenção com base no pedido humano e no comportamento observável desejado.",
+  "task_kind": "CREATION",
+  "twin_id": "intent-twin:a0469d13c9b2a1c8"
+}

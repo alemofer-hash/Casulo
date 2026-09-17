@@ -1,0 +1,176 @@
+{
+  "protocol": "casulo-scheduler-ablation-preregistration/0.1",
+  "sealed_at_utc": "2026-07-31T18:52:10.759517+00:00",
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "workload": {
+    "graph_path_hint": "heldout-wide.tensor.json",
+    "graph_sha256": "669e16cbc2f811f7f939cf7dcb8acde118eefea20875099dcf99c9878f7d76f5",
+    "autograd_protocol": "casulo-autograd-ir/0.1",
+    "wrt": [
+      "weight1",
+      "weight2"
+    ],
+    "loss": "loss",
+    "input_seed": 20260731,
+    "provider": "openblas",
+    "workers": 2
+  },
+  "variants": {
+    "fixed": {
+      "gemm_workers": 2
+    },
+    "adaptive": {
+      "gemm_workers": "adaptive"
+    }
+  },
+  "design": {
+    "blocks": 3,
+    "pairs_per_block": 8,
+    "warmups": 2,
+    "target_window_ms": 250.0,
+    "cooldown_ms": 100,
+    "maximum_inner_iterations": 1000000,
+    "max_coefficient_of_variation": 0.15,
+    "practical_effect": 0.02,
+    "equivalence_margin": 0.02,
+    "bootstrap_resamples": 5000,
+    "bootstrap_seed": 20260731,
+    "schedule": [
+      {
+        "block": 0,
+        "session_id": "sprint025-ablation-block-00",
+        "orders": [
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ]
+        ]
+      },
+      {
+        "block": 1,
+        "session_id": "sprint025-ablation-block-01",
+        "orders": [
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ]
+        ]
+      },
+      {
+        "block": 2,
+        "session_id": "sprint025-ablation-block-02",
+        "orders": [
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ],
+          [
+            "fixed",
+            "adaptive"
+          ],
+          [
+            "adaptive",
+            "fixed"
+          ]
+        ]
+      }
+    ],
+    "ratio": "fixed_wall_ns_per_invocation/adaptive_wall_ns_per_invocation",
+    "shared_iterations": true,
+    "uses_paired_samples": true,
+    "uses_speedup_to_select_measurement_parameters": false
+  },
+  "decision": {
+    "ADAPTIVE": "ci95_low>1 and median>=1+practical_effect",
+    "FIXED": "ci95_high<1 and median<=1-practical_effect",
+    "EQUIVALENT": "ci95_inside_equivalence_margin",
+    "INCONCLUSIVE": "all_other_valid_results"
+  },
+  "scientific_scope": {
+    "claim_eligible": false,
+    "pytorch_loaded": false,
+    "purpose": "internal-scheduler-policy-selection",
+    "energy_joules": null
+  },
+  "claim": null
+}

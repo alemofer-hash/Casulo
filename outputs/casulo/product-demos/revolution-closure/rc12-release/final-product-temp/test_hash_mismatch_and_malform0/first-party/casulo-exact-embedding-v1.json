@@ -1,0 +1,11 @@
+{
+  "schema": "casulo-exact-embedding/1.0",
+  "model_id": "casulo-exact-embedding-v1",
+  "owner": "Guilherme Moura Fernandes",
+  "brand": "Teloscorp Casulo",
+  "kind": "deterministic-hashed-token-vector",
+  "dimensions": 64,
+  "normalization": "l2",
+  "network_required": false,
+  "weights_required": false
+}

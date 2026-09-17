@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.t_mass_balance.mass": [],
+    "owner.agent.t_mass_balance.output": [
+      "simulation"
+    ],
+    "owner.agent.t_mass_balance.units": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\semantic-multiverse-vm\\guilherme-live\\owner-data\\semantic-creation-1\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+  "archive_sha256": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1",
+  "reedit_localized": "renderer recovered without mutating materialized archive",
+  "reedit_version": 8,
+  "round_trip_creation_id": "creation:open-ended-holdout",
+  "round_trip_version": 7,
+  "schema": "casulo.preserved-creation-recovery/1.0",
+  "source_archive_mutated": false,
+  "visual": {
+    "agent_name": "creation:open-ended-holdout",
+    "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+    "identity_source": "creation_id",
+    "index": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-preserved\\recovered-visual\\index.html",
+    "pages": 12,
+    "projection_diagnostics": [
+      "identity_name_missing"
+    ]
+  }
+}

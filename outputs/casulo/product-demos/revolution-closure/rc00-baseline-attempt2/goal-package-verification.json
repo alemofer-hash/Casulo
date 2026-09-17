@@ -1,0 +1,13 @@
+{
+  "entries": 22,
+  "hash_failures": [],
+  "manifest": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\.staging\\casulo-revolution-closure-2026-08-14-f4bb6571\\CASULO_REVOLUTION_CLOSURE_GOAL_2026-08-14\\MANIFEST.sha256",
+  "manifest_sha256": "673f35186479340caa31463135ea3abe5e2885eb6cece6de6cdc401ea882a095",
+  "missing_files": [],
+  "pass": true,
+  "uncovered_files": [],
+  "unsafe_archive_members": [],
+  "zip": "C:\\Users\\guimo\\Downloads\\CASULO_REVOLUTION_CLOSURE_GOAL_2026-08-14.zip",
+  "zip_bytes": 401917,
+  "zip_sha256": "f4bb65711916a50589cb278e2f52c4ce7253e5ddb77853dd52b95f49421efc2b"
+}

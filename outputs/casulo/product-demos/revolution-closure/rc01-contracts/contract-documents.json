@@ -1,0 +1,35 @@
+{
+  "pass": true,
+  "records": [
+    {
+      "path": "docs/product/RC_ARCHITECTURE.md",
+      "present": true,
+      "sha256": "a97e4cd8ffd15935cdeb80687134f1350a656619b1ade317d35b1e526ce65a88"
+    },
+    {
+      "path": "docs/product/RC_GUIDE_CONTRACT.md",
+      "present": true,
+      "sha256": "d6bb650d95db6070c7a2d1fa334a452d3922e7f5a83894ccbd20fab52f1f792f"
+    },
+    {
+      "path": "docs/product/RC_REQUIREMENT_AND_EVIDENCE_CONTRACT.md",
+      "present": true,
+      "sha256": "f23ae7f497ea8cbae7bdf8537cc8c7bc2565a1cb5bc7685f3c297f8ac5bb0703"
+    },
+    {
+      "path": "docs/product/RC_THREAT_MODEL.md",
+      "present": true,
+      "sha256": "d636cae2add0ca514204b876bc62314e8d86fb6cbba26fc52f2c454699914cc4"
+    },
+    {
+      "path": "docs/product/RC_RISK_REGISTER.md",
+      "present": true,
+      "sha256": "685c4047a49a7f6cbe3fad4e8240f2dd9428305bb248bfb125a6fb29482ea837"
+    },
+    {
+      "path": "docs/product/RC_T_SOVEREIGNTY_MATRIX.json",
+      "present": true,
+      "sha256": "af91ef2603d6f8cd317a5fc8849b7defaaebeffc1c6f573c604e294852860673"
+    }
+  ]
+}

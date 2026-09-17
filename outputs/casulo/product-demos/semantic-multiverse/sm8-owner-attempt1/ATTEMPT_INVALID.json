@@ -1,0 +1,10 @@
+{
+  "schema": "casulo.semantic-multiverse-failed-attempt/1.0",
+  "status": "INVALIDATED_OBSERVER_RESOURCE_OVERLAP",
+  "cause": "route LocalModelRuntime remained open while run_probe opened a second LocalModelRuntime",
+  "observed_llama_server_processes": 2,
+  "observed_combined_working_set_gib_approx": 10.46,
+  "scientific_benchmark": false,
+  "result_eligible": false,
+  "corrective_action": "close route runtime before starting T synthesis; require zero model process between phases"
+}

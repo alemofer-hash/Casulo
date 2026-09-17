@@ -1,0 +1,55 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "created": "2026-08-20T23:58:01.489805+00:00",
+    "creators": [
+      "Organization: Teloscorp",
+      "Tool: seal_native_owner_alpha.py"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://teloscorp.invalid/casulo/native/667e7a1db08a7fb034cc62ad5f35373c0cf5f3f790b66e8a7fed09663e0f7d11",
+  "name": "Casulo-Native-Owner-Alpha-Preview",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Casulo",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "name": "Casulo kernel and presentation core"
+    },
+    {
+      "SPDXID": "SPDXRef-Bootloader",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT OR Apache-2.0",
+      "name": "rust-osdev bootloader",
+      "versionInfo": "0.11.15"
+    },
+    {
+      "SPDXID": "SPDXRef-Sha2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT OR Apache-2.0",
+      "name": "sha2 crate",
+      "versionInfo": "0.10.9"
+    },
+    {
+      "SPDXID": "SPDXRef-Qwen",
+      "comment": "not embedded and not executed by this image",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "name": "Qwen3-4B Q4_K_M reference"
+    },
+    {
+      "SPDXID": "SPDXRef-LlamaCpp",
+      "comment": "Windows runtime not embedded",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "name": "llama.cpp b10362 reference"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

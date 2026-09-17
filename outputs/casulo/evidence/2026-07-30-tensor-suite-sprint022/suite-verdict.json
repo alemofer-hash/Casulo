@@ -1,0 +1,370 @@
+{
+  "claim": null,
+  "claim_eligible": true,
+  "classification": "NEGATIVE",
+  "commercial_gate": false,
+  "commercial_threshold": 6.0,
+  "energy": {
+    "joules": null,
+    "measured": false
+  },
+  "evidence": {
+    "preregistration_file_sha256": "2b161726e2f21ae55c3d3eba2b0ad50c12339d2097986bc384ae325a9f444759",
+    "report_file_sha256": "2eb0631d40b1dc89f076c6fc93835945b878fc8783fa91426d5eb75351c9caef"
+  },
+  "experiment_id": "sha256:64671fa86fe55dd912e196dc3541b5f366cf6956e1f34bce0243c9e6d7b17825",
+  "integrity_failures": [],
+  "missing_runs": [],
+  "protocol": "casulo-tensor-suite-verdict/0.1",
+  "run_results": [
+    {
+      "baseline_classifications": {
+        "pytorch-eager-autograd-cpu": "POSITIVE",
+        "pytorch-inductor-autograd-cpu": "NULL"
+      },
+      "case": "tall-batch",
+      "classification": "NULL",
+      "metrics": {
+        "pytorch-eager-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 1.5676932421264351,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 3.1304404257160163
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 2.0066177154010596
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "classification": "NULL",
+          "independent_bootstrap_ci95": {
+            "lower": 0.7752200535175233,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 1.5742972956782768
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 1.0180654711526653
+        }
+      },
+      "restart": 0,
+      "verdict_sha256": "1c808d61de81b848f786dcbefcde69c893ad2788711017ba18e079062f8dcc20"
+    },
+    {
+      "baseline_classifications": {
+        "pytorch-eager-autograd-cpu": "POSITIVE",
+        "pytorch-inductor-autograd-cpu": "NULL"
+      },
+      "case": "wide-input",
+      "classification": "NULL",
+      "metrics": {
+        "pytorch-eager-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 2.3317403508039694,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 6.556799336650083
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 4.2296405107427075
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "classification": "NULL",
+          "independent_bootstrap_ci95": {
+            "lower": 0.9496645345743293,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 4.612439264556329
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 1.8921233183454849
+        }
+      },
+      "restart": 0,
+      "verdict_sha256": "7846a49903f9892a4dcc911a96025e779ceabb162397e8f3e9e6bf9fb9370701"
+    },
+    {
+      "baseline_classifications": {
+        "pytorch-eager-autograd-cpu": "POSITIVE",
+        "pytorch-inductor-autograd-cpu": "NULL"
+      },
+      "case": "deep-bottleneck",
+      "classification": "NULL",
+      "metrics": {
+        "pytorch-eager-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 1.3343928634410498,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 2.709252470412137
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 1.8618439011074714
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "classification": "NULL",
+          "independent_bootstrap_ci95": {
+            "lower": 0.6519034981698374,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 1.292066370301045
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 0.8199231286390217
+        }
+      },
+      "restart": 0,
+      "verdict_sha256": "0f7c55c2c1a19640f555fc5ce9a2b799a009f44156903fb59119ff52cb992c2a"
+    },
+    {
+      "baseline_classifications": {
+        "pytorch-eager-autograd-cpu": "POSITIVE",
+        "pytorch-inductor-autograd-cpu": "NULL"
+      },
+      "case": "wide-input",
+      "classification": "NULL",
+      "metrics": {
+        "pytorch-eager-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 1.8394566570734594,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 4.193707341209324
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 3.0994039827676043
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "classification": "NULL",
+          "independent_bootstrap_ci95": {
+            "lower": 0.9034533732409311,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 3.3009859648588105
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 1.8656922660512558
+        }
+      },
+      "restart": 1,
+      "verdict_sha256": "1db0039b4b83d344d41b0af65d865f944f0df55ed509b289c1aca5b438889413"
+    },
+    {
+      "baseline_classifications": {
+        "pytorch-eager-autograd-cpu": "POSITIVE",
+        "pytorch-inductor-autograd-cpu": "POSITIVE"
+      },
+      "case": "deep-bottleneck",
+      "classification": "POSITIVE",
+      "metrics": {
+        "pytorch-eager-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 1.5407012999472347,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 3.426156013833739
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 2.2874729453406197
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 1.1912629697747856,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 2.124465866313969
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 1.867285685245196
+        }
+      },
+      "restart": 1,
+      "verdict_sha256": "35f9ef6ea2f5ef56dcb3c971928b9f6101b38e13ad1f945535add68e5c674ac9"
+    },
+    {
+      "baseline_classifications": {
+        "pytorch-eager-autograd-cpu": "POSITIVE",
+        "pytorch-inductor-autograd-cpu": "NULL"
+      },
+      "case": "tall-batch",
+      "classification": "NULL",
+      "metrics": {
+        "pytorch-eager-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 1.1882455578734077,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 2.0398607049546857
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 1.437217270416052
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "classification": "NULL",
+          "independent_bootstrap_ci95": {
+            "lower": 0.5280844486250694,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 1.0160078377018789
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 0.7892093447987215
+        }
+      },
+      "restart": 1,
+      "verdict_sha256": "e6ee9999d5022670a08908630e0172476cb44e025274c5c300d5c23bc2b31d1e"
+    },
+    {
+      "baseline_classifications": {
+        "pytorch-eager-autograd-cpu": "POSITIVE",
+        "pytorch-inductor-autograd-cpu": "NULL"
+      },
+      "case": "deep-bottleneck",
+      "classification": "NULL",
+      "metrics": {
+        "pytorch-eager-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 1.5593196776415712,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 2.545009226246325
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 1.9605074846246084
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "classification": "NULL",
+          "independent_bootstrap_ci95": {
+            "lower": 0.8143088866898585,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 2.2077664665040344
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 0.8953026217061519
+        }
+      },
+      "restart": 2,
+      "verdict_sha256": "d9044baed16bfc7e99d4ec385f935c9323dcb4890458d364ec137de01368fc42"
+    },
+    {
+      "baseline_classifications": {
+        "pytorch-eager-autograd-cpu": "POSITIVE",
+        "pytorch-inductor-autograd-cpu": "NEGATIVE"
+      },
+      "case": "tall-batch",
+      "classification": "NEGATIVE",
+      "metrics": {
+        "pytorch-eager-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 1.196576896848554,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 1.6918981004638038
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 1.4511417759898775
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "classification": "NEGATIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 0.6519435221517926,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 0.8398284612071387
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 0.7276903174881599
+        }
+      },
+      "restart": 2,
+      "verdict_sha256": "d4dd1985e016f7a5afe58c4f25966b789c2cfb6904f982bf0ada264554b428b6"
+    },
+    {
+      "baseline_classifications": {
+        "pytorch-eager-autograd-cpu": "POSITIVE",
+        "pytorch-inductor-autograd-cpu": "POSITIVE"
+      },
+      "case": "wide-input",
+      "classification": "POSITIVE",
+      "metrics": {
+        "pytorch-eager-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 2.347162443981009,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 3.32370820668693
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 2.8091179182460815
+        },
+        "pytorch-inductor-autograd-cpu": {
+          "classification": "POSITIVE",
+          "independent_bootstrap_ci95": {
+            "lower": 1.040708155621555,
+            "method": "independent-python-bootstrap-median",
+            "resamples": 10000,
+            "upper": 2.2416965474848887
+          },
+          "paired_samples": 9,
+          "wall_speedup_median": 1.999299005420562
+        }
+      },
+      "restart": 2,
+      "verdict_sha256": "e02f24b470f4b97a2cc145938c6e88007d80d792112045c54cbb459d3dd9722e"
+    }
+  ],
+  "scope": {
+    "cases": [
+      {
+        "autograd_graph_sha256": "b70e121e5d65c9cb4530f153400b95bdbff11dade61159e1d33553bc55067db0",
+        "graph_sha256": "3dd087546a54de73b700fa8f7889019523475bb9694e0ecd313a3d61872a213e",
+        "name": "tall-batch"
+      },
+      {
+        "autograd_graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+        "graph_sha256": "669e16cbc2f811f7f939cf7dcb8acde118eefea20875099dcf99c9878f7d76f5",
+        "name": "wide-input"
+      },
+      {
+        "autograd_graph_sha256": "ea8c38591eaf6694ac0168c290972bc56b1f7c37c331c8b27aee128d093db6f6",
+        "graph_sha256": "bd8d3e4d212b537b9a89c97ac7510421a2e13165c37ee336995981b4478bfa6b",
+        "name": "deep-bottleneck"
+      }
+    ],
+    "gemm_workers": 1,
+    "provider": {
+      "abi": "casulo-gemm-provider/0.1",
+      "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+      "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+      "external": true,
+      "float32_symbol": "scipy_cblas_sgemm64_",
+      "float64_symbol": "scipy_cblas_dgemm64_",
+      "implementation": "external-cblas-ilp64-runtime-function-pointer",
+      "provider_id": "numpy-scipy-openblas-ilp64",
+      "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+      "version": "0.3.30"
+    },
+    "required_baselines": [
+      "pytorch-eager-autograd-cpu",
+      "pytorch-inductor-autograd-cpu"
+    ],
+    "restarts": 3,
+    "workers": 4
+  },
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "60c842cf93fbd1411461168228cff5f237731d08538585a530675dae38e34558"
+  },
+  "verdict_id": "sha256:60c842cf93fbd1411461168228cff5f237731d08538585a530675dae38e34558"
+}

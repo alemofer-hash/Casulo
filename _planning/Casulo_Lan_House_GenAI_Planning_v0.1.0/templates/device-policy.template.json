@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "pairing": {
+    "code_ttl_seconds": 300,
+    "single_use": true,
+    "owner_approval_required": true
+  },
+  "sessions": {
+    "cookie_secure": true,
+    "cookie_http_only": true,
+    "cookie_same_site": "Strict",
+    "revoke_device_terminates_sessions": true
+  },
+  "devices": [],
+  "roles": {
+    "owner": ["chat", "voice", "memory", "documents", "code", "admin"],
+    "family": ["chat", "voice", "own_memory", "authorized_documents"],
+    "restricted": ["chat", "voice"],
+    "guest": ["ephemeral_chat"]
+  }
+}
+

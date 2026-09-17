@@ -1,0 +1,17 @@
+{
+  "build_performed": false,
+  "consent_recorded": true,
+  "created_at": "2026-08-14T21:49:30.649708Z",
+  "enabled": false,
+  "engine": "whisper.cpp",
+  "engine_commit": "306c88f4d1286aec1bf96e544632897886af5501",
+  "engine_license": "MIT",
+  "model": "ggml-small-q5_1.bin",
+  "model_downloaded_this_run": true,
+  "model_license": "MIT",
+  "model_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\final-product-temp\\test_adoption_is_transactional1\\voice\\models\\7ac5170dd6cc43d9c01a042f12b62598a301201cef596610a87c23474de63065-ggml-small-q5_1.bin",
+  "model_sha256": "7ac5170dd6cc43d9c01a042f12b62598a301201cef596610a87c23474de63065",
+  "model_size_bytes": 18,
+  "schema": "casulo-voice-adoption/1.0",
+  "source_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\final-product-temp\\test_adoption_is_transactional1\\voice\\sources\\whisper.cpp\\306c88f4d1286aec1bf96e544632897886af5501\\source"
+}

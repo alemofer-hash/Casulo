@@ -1,0 +1,24 @@
+{
+  "schema": "casulo-dependency-candidate/1.0",
+  "status": "PROPOSED_NOT_DOWNLOADED",
+  "downloaded": false,
+  "enabled_by_default": false,
+  "requires_user_consent": true,
+  "purpose": "ASR pt-BR local de baixa latência para Hosted Product Profile",
+  "engine": {
+    "name": "whisper.cpp",
+    "repository": "https://github.com/ggml-org/whisper.cpp.git",
+    "tag": "v1.9.2",
+    "commit": "306c88f4d1286aec1bf96e544632897886af5501",
+    "license": "MIT"
+  },
+  "model": {
+    "name": "ggml-base-q5_1.bin",
+    "source": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base-q5_1.bin",
+    "size_bytes": 59707625,
+    "sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898",
+    "license_declared_by_repository": "MIT",
+    "locale_scope": "multilingual including Portuguese",
+    "model_card": "https://huggingface.co/ggerganov/whisper.cpp"
+  }
+}

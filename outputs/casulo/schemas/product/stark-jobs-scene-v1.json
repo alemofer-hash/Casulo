@@ -1,0 +1,44 @@
+{
+  "allowed_inputs": {
+    "contract_sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9",
+    "wire_schema": "casulo.owner-ux-event/1.0"
+  },
+  "authority": {
+    "can_create_capability_grant": false,
+    "can_create_receipt": false,
+    "can_infer_completion": false,
+    "can_publish_artifact": false,
+    "role": "PURE_PRESENTATION_PROJECTION"
+  },
+  "forms": [
+    "SILENCE",
+    "PRESENCE",
+    "LISTENING",
+    "THINKING",
+    "CONVERSATION",
+    "FIRST_FORM",
+    "FORMATION",
+    "MATERIALIZED",
+    "CANCELLED",
+    "RECOVERABLE_FAILURE"
+  ],
+  "projection": {
+    "ASSISTANT_END": "PRESENCE",
+    "ASSISTANT_START": "THINKING",
+    "ASSISTANT_TOKEN": "CONVERSATION",
+    "INPUT_REQUEST": "LISTENING",
+    "JOB_CANCELLED": "CANCELLED",
+    "JOB_COMPLETED": "MATERIALIZED",
+    "JOB_FAILED": "RECOVERABLE_FAILURE",
+    "JOB_MILESTONE": "FORMATION",
+    "JOB_STARTED": "FIRST_FORM",
+    "PRESENCE_READY": "PRESENCE",
+    "RECOVERABLE_ERROR": "RECOVERABLE_FAILURE"
+  },
+  "schema": "casulo.stark-jobs-scene/1.0",
+  "synthetic_mode": {
+    "label_required": "fita sintética · não é runtime",
+    "manual_step_only": true,
+    "runtime_evidence": false
+  }
+}

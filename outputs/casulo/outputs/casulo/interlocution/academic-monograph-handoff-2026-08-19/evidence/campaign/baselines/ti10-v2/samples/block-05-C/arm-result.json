@@ -1,0 +1,52 @@
+{
+  "arm": "C",
+  "count": 2,
+  "energy": {
+    "package_joules": null,
+    "reason": "NO_ENERGY_INSTRUMENT_USED_IN_TI9_TI10",
+    "total_system_joules": null
+  },
+  "inner_total_ns": 546700800,
+  "phases_ns": {
+    "publication_ns": 2961800,
+    "t_architecture_ns": 351264300,
+    "training_and_receipting_ns": 192459500
+  },
+  "publication": {
+    "accepted": true,
+    "arm": "C",
+    "publication_authority": "T_ARCHITECTURE_FOREIGN_ACCEPTANCE",
+    "result_sha256": "c6dca2aafc872960f2e56622533842bd1fc2d284acf05e043a17b0cf794d7243",
+    "t_judge_required": false
+  },
+  "result_file": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\interlocution\\2026-08-18-interlocution-live-instance-attempt1\\baselines\\ti10-v2\\samples\\block-05-C\\worker\\worker-result.bin",
+  "result_sha256": "c6dca2aafc872960f2e56622533842bd1fc2d284acf05e043a17b0cf794d7243",
+  "schema": "casulo.interlocution-arm-result/1.0",
+  "start": 0,
+  "summary_sha256": "8cdffb33a39ccabda5fe467d95e263e23c34052e45eba6f44d74a2465c0f8d61",
+  "work_summary": {
+    "K_completed": 2,
+    "K_requested": 2,
+    "K_started": 2,
+    "authority_chain_tip": "21842288a5385b90ec4276812d3bfe9029bee29a5e120371dcbd67d11d0e4c16",
+    "child_timing": {
+      "count": 2,
+      "parent_monotonic_ns": 99732200,
+      "qpc_frequency": 10000000,
+      "qpc_ticks": 690158,
+      "start": 0,
+      "thread_cycles": 162860254,
+      "worker_monotonic_ns": 69007700
+    },
+    "epochs_completed": 800,
+    "optimizer_steps": 800,
+    "parameter_writes": 64800,
+    "receipt_file_sha256": "9d96454c1ffed5c6c8f036d0e315124779412a06b04e10376be357589b908a2a",
+    "records_visited": 819200,
+    "result_file_sha256": "c6dca2aafc872960f2e56622533842bd1fc2d284acf05e043a17b0cf794d7243",
+    "schema": "casulo.interlocution-worker-summary/1.0",
+    "status": "WORK_COMPLETED_RECEIPTED",
+    "summary_sha256": "9a4a53b378ffc342d41413666674498515a78a25c4d2ab0c58d660142c0254a9",
+    "work_chain_tip": "36b97d683c895bfee00ceab2361148af0bd17ed916422c43defd671ff254ce72"
+  }
+}

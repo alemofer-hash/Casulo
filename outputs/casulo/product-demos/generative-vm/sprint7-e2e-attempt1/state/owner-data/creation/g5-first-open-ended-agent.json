@@ -1,0 +1,257 @@
+{
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "checks": {
+    "all_final_tests_executed_and_passed": true,
+    "bounded_neural_repair_passed": true,
+    "external_ai_api_used": false,
+    "external_process_passed": true,
+    "fake_engine_used": false,
+    "holdout_absent_before_run": true,
+    "initial_candidate_imperfect": true,
+    "model_created_no_grant": true,
+    "neural_plan_generated": true,
+    "neural_t_generated": true,
+    "real_compiled_process_test_failed_first": true,
+    "real_effect_executed": false,
+    "round_trip_executable_preserved": true,
+    "round_trip_identity_preserved": true,
+    "round_trip_version_preserved": true,
+    "scientific_benchmark": false,
+    "simulation_passed": true,
+    "simulation_real_effects_absent": true
+  },
+  "cloud_state": "RELEASE_LOCKED",
+  "external_execution": {
+    "result": "MemoryReadInitialization, custo reversível",
+    "returncode": 0
+  },
+  "gate": "FIRST_OPEN_ENDED_AGENT_CREATED",
+  "holdout_expectation": "custo reversível",
+  "idea": "Crie o agente Oráculo de Trade-offs: ao receber uma decisão técnica, ele deve expor a tensão principal, comparar duas alternativas e encerrar com uma opção de custo reversível, sem executar efeitos reais.",
+  "imported": {
+    "agent_artifact_id": "sha256:e879235cf73972ca6f3e0ebca0a9991dab70360ff05c0cbbc8615f64cbdc154e",
+    "agent_operation": "Initialize",
+    "creation_id": "creation:open-ended-holdout",
+    "creation_version": 7
+  },
+  "materialization": {
+    "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint7-e2e-attempt1\\state\\owner-data\\creation\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+    "archive_sha256": "8e2cbcba2186c87a57535be012d62cffcbad3727079557e3437756b243b1c12a",
+    "directory": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint7-e2e-attempt1\\state\\owner-data\\creation\\materialized\\creation-38da5088c5e61759-v7",
+    "files": {
+      "MANIFEST.json": "6b09a3593e3588d4733d253e118eb11804e06d0e96d617509116f922a8828eb1",
+      "SBOM.spdx.json": "14f230530237a64bca6661a8ed05e64c7631b7638c52bcc056be33562062a8e9",
+      "SHA256SUMS": "3a142c791ba7e6588a05bc3e4c74db65e047683e43f719e22e1783dfce561b22",
+      "agent-artifact-manifest.json": "d51b027d19dc258c6b28237947fb3ba9c4e2c56c87db9aabb4a3e1c0b88df777",
+      "agent-descriptor.json": "e97108edaf268309c7d01a17cddf280d02c6bbd6a1aeb2484247173c4ed19c02",
+      "agent-project.json": "f3d970cd4dd08bb2044c6ec306962a247e8aa27b6212fa7f9931c9b5a00df515",
+      "agent.py": "11e7be0f4508fc625ffcf2521a5f28f57d60830bfca2940992e54f70b2d3d85b",
+      "agent.tcap": "939c70aa63a7d3b436d247c2994bd08cf199753ec3fe2cb01b6ec091f7cc02ee",
+      "api.py": "d8f9e63dbd17d510252ca9f895e756260ba9c1dba086d0069b5fa3d1d0efb7fe",
+      "creation.json": "ce528b46e2912abb9a4e2b2aa3098a168b9390452f0df8d0acb374da5c657b2d",
+      "forge-receipt.json": "6e8d82578ef80027bac30686d41f25ed86894d5989034bcdfdf946658960a6b9",
+      "simulation-receipt.json": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+    },
+    "manifest_sha256": "6b09a3593e3588d4733d253e118eb11804e06d0e96d617509116f922a8828eb1",
+    "package_id": "creation-38da5088c5e61759-v7",
+    "schema": "casulo.materialization-receipt/1.0"
+  },
+  "project_id": "t-project:3313f84cfba0e026f22f1ab2",
+  "public_state": "FROZEN",
+  "repair": {
+    "attempts": [
+      {
+        "attempt": 0,
+        "diagnostics": [
+          {
+            "artifact_id": "sha256:d40f3b7680d7e9435391520f20d82d67bea3809dcfecff44288a9a253632e70f",
+            "code": "TTEST_EXPECTED_TEXT_MISSING",
+            "expected_contains": "custo reversível",
+            "observed": "MemoryReadInitialization",
+            "process_returncode": 0,
+            "process_stderr": "",
+            "schema": "casulo.generative-diagnostic/1.0",
+            "source_sha256": "c22d98f993005faf419f0cd4be78f68bc24f182f2ff1d76e34333b68d22a0b7c",
+            "test_name": "human-holdout-acceptance",
+            "unit_id": "creation.unit.memory.read"
+          }
+        ],
+        "finished_ns": 34271802940100,
+        "project_id": "t-project:f015626ac85a91bca8d942e8",
+        "started_ns": 34271173844300,
+        "tcap_sha256": "58a9eeeb34ced1dcb5363ee2b18755a6a0d5fd3028bbec0d1f45fe4ca9480c63",
+        "tests": [
+          {
+            "expected_contains": "MemoryReadInitialization",
+            "name": "TestMemoryReadInitialization",
+            "observed": "MemoryReadInitialization",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "2101e320daf40c00cedf86974bd8a8a775a3f5562766b561f5c0af12f0bcb638",
+            "unit_id": "creation.unit.memory.read",
+            "wall_ns": 127013300
+          },
+          {
+            "expected_contains": "PurposeDefinition",
+            "name": "TestPurposeDefinition",
+            "observed": "PurposeDefinition",
+            "operation": "Define",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "75ba8cb5dd2958d6d9df5c1d12158c7bc2668c8b8a9bc4da8546cbff14deb49f",
+            "unit_id": "creation.unit.identity.purpose",
+            "wall_ns": 106111700
+          },
+          {
+            "expected_contains": "StructuredOutputConstruction",
+            "name": "TestStructuredOutputConstruction",
+            "observed": "StructuredOutputConstruction",
+            "operation": "Construct",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "ff668a33a7efc65beab6ed4f66c6a102ac95fa9950f945a821fc2cf2ff036ec4",
+            "unit_id": "creation.unit.interface.output",
+            "wall_ns": 113975200
+          },
+          {
+            "expected_contains": "CasuloTraceLogging",
+            "name": "TestCasuloTraceLogging",
+            "observed": "CasuloTraceLogging",
+            "operation": "Log",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "47e1f7345cef4bb60011606f9cb21c1fff966ee09175f60d2cada3aac5a46644",
+            "unit_id": "creation.unit.casulo.tracing",
+            "wall_ns": 101737800
+          },
+          {
+            "expected_contains": "custo reversível",
+            "name": "human-holdout-acceptance",
+            "observed": "MemoryReadInitialization",
+            "operation": "Initialize",
+            "passed": false,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "c933a4439a593b42767b4dd5b1e7208ead593a77bb9f7cc20e87073bea58f8cd",
+            "unit_id": "creation.unit.memory.read",
+            "wall_ns": 75479200
+          }
+        ]
+      },
+      {
+        "attempt": 1,
+        "diagnostics": [],
+        "finished_ns": 34305450401800,
+        "project_id": "t-project:3313f84cfba0e026f22f1ab2",
+        "started_ns": 34304834176900,
+        "tcap_sha256": "939c70aa63a7d3b436d247c2994bd08cf199753ec3fe2cb01b6ec091f7cc02ee",
+        "tests": [
+          {
+            "expected_contains": "MemoryReadInitialization",
+            "name": "TestMemoryReadInitialization",
+            "observed": "MemoryReadInitialization, custo reversível",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "04e9b6551e139f7a74ec3e736b323d8063a0bd55dd5207164b70bc2ae28ff085",
+            "unit_id": "creation.unit.memory.read",
+            "wall_ns": 153447600
+          },
+          {
+            "expected_contains": "PurposeDefinition",
+            "name": "TestPurposeDefinition",
+            "observed": "PurposeDefinition",
+            "operation": "Define",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "adc42f7c84e9665e36a60352536ce658dd555de17b4d88020918801410d38d6d",
+            "unit_id": "creation.unit.identity.purpose",
+            "wall_ns": 109182100
+          },
+          {
+            "expected_contains": "StructuredOutputConstruction",
+            "name": "TestStructuredOutputConstruction",
+            "observed": "StructuredOutputConstruction",
+            "operation": "Construct",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "b1c851975aa5da3915daa6a20444b81b498af808cd86b164846452147cad1b66",
+            "unit_id": "creation.unit.interface.output",
+            "wall_ns": 97673900
+          },
+          {
+            "expected_contains": "CasuloTraceLogging",
+            "name": "TestCasuloTraceLogging",
+            "observed": "CasuloTraceLogging",
+            "operation": "Log",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "e2839b9308f5100e15177558dba61c610fcc427d99ecdf242559d38bd3353a91",
+            "unit_id": "creation.unit.casulo.tracing",
+            "wall_ns": 94508000
+          },
+          {
+            "expected_contains": "custo reversível",
+            "name": "human-holdout-acceptance",
+            "observed": "MemoryReadInitialization, custo reversível",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "06bec904cccba539b572a30584a983f8e26a6a1000eb89eafcaf3b0a5aee620a",
+            "unit_id": "creation.unit.memory.read",
+            "wall_ns": 58135000
+          }
+        ]
+      }
+    ],
+    "budget": 2,
+    "project_id": "t-project:3313f84cfba0e026f22f1ab2",
+    "receipt_sha256": "5d6687b8a27f42ce922909c2255c8b9716224a553d93cc2e32099e7fb9ea1620",
+    "repair_count": 1,
+    "schema": "casulo.verifier-repair-receipt/1.0",
+    "status": "PASS",
+    "tcap_sha256": "939c70aa63a7d3b436d247c2994bd08cf199753ec3fe2cb01b6ec091f7cc02ee"
+  },
+  "schema": "casulo-first-open-ended-agent-evidence/1.0",
+  "simulation": {
+    "correction_paths": [],
+    "creation_id": "creation:open-ended-holdout",
+    "events": [
+      {
+        "event_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+        "event_id": "simulation:g5:open-ended-agent:1",
+        "previous_hash": null,
+        "response": {
+          "error": null,
+          "ok": true,
+          "value": {
+            "records": 3,
+            "virtual": true
+          }
+        },
+        "sequence": 1,
+        "source_event_ids": [
+          "human:g5:simulate"
+        ],
+        "status": "SIMULATED",
+        "step_id": "read-research-memory-virtually"
+      }
+    ],
+    "head_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+    "real_effects_executed": false,
+    "schema": "casulo.simulation-receipt/1.0",
+    "simulation_id": "simulation:g5:open-ended-agent",
+    "status": "PASS"
+  },
+  "usb_state": "PROHIBITED"
+}

@@ -1,0 +1,1 @@
+{"constraints":["sem rede","sem capability escalation","project:physical-beta"],"intent":"validar working set do projeto physical-beta","provenance":["project:physical-beta","ts10:pre-registered-workload"],"uncertainty":"explicit","units":"SI"}

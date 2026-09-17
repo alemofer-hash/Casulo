@@ -1,0 +1,27 @@
+{
+  "states": {
+    "owner.agent.t_mass_balance.mass": [
+      {
+        "initial": 0,
+        "name": "transitions",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ],
+    "owner.agent.t_mass_balance.output": [],
+    "owner.agent.t_mass_balance.units": [
+      {
+        "initial": 0,
+        "name": "accepted",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ]
+  }
+}

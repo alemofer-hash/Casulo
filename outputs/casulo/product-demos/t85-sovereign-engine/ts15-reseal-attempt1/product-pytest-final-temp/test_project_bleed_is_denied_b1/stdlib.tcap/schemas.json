@@ -1,0 +1,443 @@
+{
+  "modules": {
+    "t.casulo.capabilities": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "requested",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 16,
+                "name": "List"
+              }
+            },
+            {
+              "name": "granted",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 16,
+                "name": "List"
+              }
+            }
+          ],
+          "name": "CapabilityInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.casulo.dialogue": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "progress_event_real",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "DialogueInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.casulo.intent": {
+      "enums": [
+        {
+          "cases": [
+            "MATERIAL",
+            "INFORMAL"
+          ],
+          "name": "IntentDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "material",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "IntentInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.casulo.jobs": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "payload",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            }
+          ],
+          "name": "JobInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.casulo.materialization": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "approved",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "MaterializationInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.casulo.memory_policy": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "project_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "expected_project_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "consent",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "MemoryInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.casulo.receipts": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "chain_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "ReceiptInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.casulo.requirements": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "hard_statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 64,
+                "name": "List"
+              }
+            }
+          ],
+          "name": "RequirementsInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.casulo.simulation": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "sandboxed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "SimulationInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.casulo.universes": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "hot_count",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "max_hot",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "route_allowed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "UniverseInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.core.canonical": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "schema_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "CanonicalInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.core.collections": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 64,
+                "name": "List"
+              }
+            }
+          ],
+          "name": "CollectionInput"
+        }
+      ],
+      "version": 1
+    },
+    "t.core.result": {
+      "enums": [
+        {
+          "cases": [
+            "PASS",
+            "BLOCKED"
+          ],
+          "name": "NormalizedResult"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            }
+          ],
+          "name": "ResultInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

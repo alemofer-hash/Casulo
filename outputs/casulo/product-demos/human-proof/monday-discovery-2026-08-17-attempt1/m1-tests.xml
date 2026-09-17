@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="4" failures="0" skipped="0" tests="5" time="1.394" timestamp="2026-08-17T19:47:10.364139-03:00" hostname="LAPTOP-EET830EF"><testcase classname="tests.product.test_monday_discovery" name="test_automated_and_human_sources_are_separate_and_chained" time="0.010"><error message="failed on setup with &quot;PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\guimo\\AppData\\Local\\Temp\\pytest-of-guimo'&quot;">fixturedef = &lt;FixtureDef argname='tmp_path' scope='function' baseid=''&gt;
+request = &lt;SubRequest 'tmp_path' for &lt;Function test_automated_and_human_sources_are_separate_and_chained&gt;&gt;
+
+    @pytest.hookimpl(wrapper=True)
+    def pytest_fixture_setup(fixturedef: FixtureDef, request) -&gt; object | None:
+        asyncio_mode = _get_asyncio_mode(request.config)
+        if not _is_asyncio_fixture_function(fixturedef.func):
+            if asyncio_mode == Mode.STRICT:
+                # Ignore async fixtures without explicit asyncio mark in strict mode
+                # This applies to pytest_trio fixtures, for example
+&gt;               return (yield)
+                        ^^^^^
+E               PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\guimo\\AppData\\Local\\Temp\\pytest-of-guimo'
+
+C:\Users\guimo\AppData\Roaming\Python\Python313\site-packages\pytest_asyncio\plugin.py:728: PermissionError</error></testcase><testcase classname="tests.product.test_monday_discovery" name="test_automatic_observer_rejects_content_and_overwrite" time="0.002"><error message="failed on setup with &quot;PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\guimo\\AppData\\Local\\Temp\\pytest-of-guimo'&quot;">fixturedef = &lt;FixtureDef argname='tmp_path' scope='function' baseid=''&gt;
+request = &lt;SubRequest 'tmp_path' for &lt;Function test_automatic_observer_rejects_content_and_overwrite&gt;&gt;
+
+    @pytest.hookimpl(wrapper=True)
+    def pytest_fixture_setup(fixturedef: FixtureDef, request) -&gt; object | None:
+        asyncio_mode = _get_asyncio_mode(request.config)
+        if not _is_asyncio_fixture_function(fixturedef.func):
+            if asyncio_mode == Mode.STRICT:
+                # Ignore async fixtures without explicit asyncio mark in strict mode
+                # This applies to pytest_trio fixtures, for example
+&gt;               return (yield)
+                        ^^^^^
+E               PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\guimo\\AppData\\Local\\Temp\\pytest-of-guimo'
+
+C:\Users\guimo\AppData\Roaming\Python\Python313\site-packages\pytest_asyncio\plugin.py:728: PermissionError</error></testcase><testcase classname="tests.product.test_monday_discovery" name="test_chain_tamper_is_detected" time="0.003"><error message="failed on setup with &quot;PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\guimo\\AppData\\Local\\Temp\\pytest-of-guimo'&quot;">fixturedef = &lt;FixtureDef argname='tmp_path' scope='function' baseid=''&gt;
+request = &lt;SubRequest 'tmp_path' for &lt;Function test_chain_tamper_is_detected&gt;&gt;
+
+    @pytest.hookimpl(wrapper=True)
+    def pytest_fixture_setup(fixturedef: FixtureDef, request) -&gt; object | None:
+        asyncio_mode = _get_asyncio_mode(request.config)
+        if not _is_asyncio_fixture_function(fixturedef.func):
+            if asyncio_mode == Mode.STRICT:
+                # Ignore async fixtures without explicit asyncio mark in strict mode
+                # This applies to pytest_trio fixtures, for example
+&gt;               return (yield)
+                        ^^^^^
+E               PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\guimo\\AppData\\Local\\Temp\\pytest-of-guimo'
+
+C:\Users\guimo\AppData\Roaming\Python\Python313\site-packages\pytest_asyncio\plugin.py:728: PermissionError</error></testcase><testcase classname="tests.product.test_monday_discovery" name="test_voice_is_literal_consent_gated_and_launcher_parses" time="0.171" /><testcase classname="tests.product.test_monday_discovery" name="test_session_metadata_never_claims_human_completion" time="0.005"><error message="failed on setup with &quot;PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\guimo\\AppData\\Local\\Temp\\pytest-of-guimo'&quot;">fixturedef = &lt;FixtureDef argname='tmp_path' scope='function' baseid=''&gt;
+request = &lt;SubRequest 'tmp_path' for &lt;Function test_session_metadata_never_claims_human_completion&gt;&gt;
+
+    @pytest.hookimpl(wrapper=True)
+    def pytest_fixture_setup(fixturedef: FixtureDef, request) -&gt; object | None:
+        asyncio_mode = _get_asyncio_mode(request.config)
+        if not _is_asyncio_fixture_function(fixturedef.func):
+            if asyncio_mode == Mode.STRICT:
+                # Ignore async fixtures without explicit asyncio mark in strict mode
+                # This applies to pytest_trio fixtures, for example
+&gt;               return (yield)
+                        ^^^^^
+E               PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\guimo\\AppData\\Local\\Temp\\pytest-of-guimo'
+
+C:\Users\guimo\AppData\Roaming\Python\Python313\site-packages\pytest_asyncio\plugin.py:728: PermissionError</error></testcase></testsuite></testsuites>

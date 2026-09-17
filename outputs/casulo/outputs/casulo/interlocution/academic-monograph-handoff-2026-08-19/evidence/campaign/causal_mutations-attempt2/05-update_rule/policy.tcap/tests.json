@@ -1,0 +1,6 @@
+{
+  "properties": [
+    "causal_mutation",
+    "update_rule"
+  ]
+}

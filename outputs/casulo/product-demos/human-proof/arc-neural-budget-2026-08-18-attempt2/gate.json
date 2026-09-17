@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "all_budgets_fit_runtime_with_byte_safe_margin": true,
+    "all_generated_token_limits_match_policy": true,
+    "all_operations_have_distinct_budget_ids": true,
+    "all_unsafe_routes_denied": true,
+    "context_within_budget": true,
+    "conversation_drop_explicit": true,
+    "dialogue_context_smaller_than_t_synthesis": true,
+    "mandatory_constraints_preserved": true,
+    "memory_drop_explicit": true,
+    "neural_quality_claimed": false,
+    "receipt_sealed": true,
+    "scientific_benchmark_started": false,
+    "untrusted_memory_labeled": true
+  },
+  "classification": "DETERMINISTIC_BUDGET_CONTRACT_SMOKE_NOT_OWNER_NEURAL_QUALITY_PROOF",
+  "created_at": "2026-08-19T00:18:36.736840+00:00",
+  "schema": "casulo.arc7-contract-smoke/1.0",
+  "status": "PASS"
+}

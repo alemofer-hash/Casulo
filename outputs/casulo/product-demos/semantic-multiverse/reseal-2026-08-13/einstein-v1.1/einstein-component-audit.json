@@ -1,0 +1,541 @@
+{
+  "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\einstein-v1.1\\casulo-owner-einstein-local-evaluator-v1.1.casulo.zip",
+  "archive_sha256": "9ceefac252271d66f305e34d0c595606104237cfe534004e935b652660abe37f",
+  "checks": {
+    "all_refusals": true,
+    "christoffel_exposed": true,
+    "conditions_declared_not_falsely_evolved": true,
+    "cosmological_term": true,
+    "coupling_declared": true,
+    "einstein_tensor_exposed": true,
+    "external_api_absent": true,
+    "field_residual_exposed": true,
+    "global_claim_refused": true,
+    "historical_neural_trace_preserved": true,
+    "inverse_metric_exposed": true,
+    "minkowski_lambda_analytic": true,
+    "minkowski_vacuum_zero": true,
+    "ricci_exposed": true,
+    "si_and_signature_declared": true,
+    "t_generated_and_compiled": true
+  },
+  "historical_package_preserved": true,
+  "lambda_result": {
+    "boundary_conditions_declared": {
+      "type": "asymptotically_flat"
+    },
+    "conditions_usage": "declared for provenance only; this local evaluator does not evolve an initial-boundary-value problem",
+    "connection": [
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    ],
+    "conventions": {
+      "field_equation": "G_mu_nu + Lambda*g_mu_nu = (8*pi*G/c^4)*T_mu_nu",
+      "riemann": "wald",
+      "signature": "-+++",
+      "stress_energy_indices": "covariant T_mu_nu",
+      "units": "SI"
+    },
+    "coordinate_point": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "coordinates": [
+      "t",
+      "x",
+      "y",
+      "z"
+    ],
+    "einstein_tensor": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "field_equation_residual": [
+      [
+        -2.5,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        2.5,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        2.5
+      ]
+    ],
+    "initial_conditions_declared": {
+      "hypersurface": "t=0",
+      "metric": "Minkowski"
+    },
+    "inverse_metric": [
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "limitations": [
+      "finite-difference derivatives; result depends on derivative_step",
+      "does not integrate the global nonlinear Einstein initial-boundary-value problem",
+      "does not prove physical validity, stability, convergence or uniqueness",
+      "refuses non-4D, non-symmetric, singular or unsafe metric expressions"
+    ],
+    "max_abs_residual": 2.5,
+    "real_effects_executed": false,
+    "residual_tolerance": 3.0,
+    "ricci_scalar": 0.0,
+    "ricci_tensor": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "schema": "casulo.einstein-local-residual/1.0",
+    "scope": "local 4D residual evaluation for a user-declared differentiable metric",
+    "status": "PASS"
+  },
+  "refusals": {
+    "incompatible_stress_energy": "energy_momentum_tensor must be 4x4",
+    "infinite_tensor": "physical constants and coordinates must be finite; G and c positive",
+    "insufficient_coordinates": "exactly four distinct coordinate identifiers are required",
+    "invalid_tolerance": "tolerances are outside the supported numerical envelope",
+    "nan_tensor": "physical constants and coordinates must be finite; G and c positive",
+    "non_symmetric": "metric is not symmetric within tolerance",
+    "nonpositive_step": "tolerances are outside the supported numerical envelope",
+    "singular": "metric is singular or numerically degenerate",
+    "wrong_metric_dimensions": "metric must be a 4x4 expression matrix"
+  },
+  "schema": "casulo.einstein-component-revalidation/1.0",
+  "state": "PASS_DELIMITED_LOCAL_EVALUATOR",
+  "tcap_sha256": "8236cdb64fdcc56a0b1627e52abe716474852c92ee653a207a0c3789dbf3095e",
+  "vacuum_result": {
+    "boundary_conditions_declared": {
+      "type": "asymptotically_flat"
+    },
+    "conditions_usage": "declared for provenance only; this local evaluator does not evolve an initial-boundary-value problem",
+    "connection": [
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    ],
+    "conventions": {
+      "field_equation": "G_mu_nu + Lambda*g_mu_nu = (8*pi*G/c^4)*T_mu_nu",
+      "riemann": "wald",
+      "signature": "-+++",
+      "stress_energy_indices": "covariant T_mu_nu",
+      "units": "SI"
+    },
+    "coordinate_point": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "coordinates": [
+      "t",
+      "x",
+      "y",
+      "z"
+    ],
+    "einstein_tensor": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "field_equation_residual": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "initial_conditions_declared": {
+      "hypersurface": "t=0",
+      "metric": "Minkowski"
+    },
+    "inverse_metric": [
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "limitations": [
+      "finite-difference derivatives; result depends on derivative_step",
+      "does not integrate the global nonlinear Einstein initial-boundary-value problem",
+      "does not prove physical validity, stability, convergence or uniqueness",
+      "refuses non-4D, non-symmetric, singular or unsafe metric expressions"
+    ],
+    "max_abs_residual": 0.0,
+    "real_effects_executed": false,
+    "residual_tolerance": 1e-09,
+    "ricci_scalar": 0.0,
+    "ricci_tensor": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "schema": "casulo.einstein-local-residual/1.0",
+    "scope": "local 4D residual evaluation for a user-declared differentiable metric",
+    "status": "PASS"
+  }
+}

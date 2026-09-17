@@ -1,0 +1,618 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "owner.critical.intent"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "MATERIAL"
+                }
+              },
+              "error": "material_intent_required",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "consent_valid"
+                ],
+                "root": "input"
+              },
+              "error": "valid_consent_required",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "args": [
+                      {
+                        "op": "path",
+                        "path": [
+                          "granted"
+                        ],
+                        "root": "input"
+                      },
+                      {
+                        "name": "capability",
+                        "op": "name"
+                      }
+                    ],
+                    "name": "contains",
+                    "op": "call"
+                  },
+                  "error": "capability_not_granted",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "requested"
+                ],
+                "root": "input"
+              },
+              "limit": 32,
+              "name": "capability",
+              "op": "for"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "AUTHORIZED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "CapabilityDecisionInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.critical.capabilities"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "AUTHORIZED"
+                }
+              },
+              "error": "capability_decision_required",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "graph_schema"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "casulo.requirement-graph/2.0"
+                }
+              },
+              "error": "requirement_graph_schema_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "graph_version"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 1
+                }
+              },
+              "error": "requirement_graph_version_unsupported",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "project_id"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "candidate_project_id"
+                  ],
+                  "root": "input"
+                }
+              },
+              "error": "project_scope_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "hard_requirement_ids"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "ne",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "hard_requirements_missing",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "expected_evidence_tokens"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "ne",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "hard_evidence_plan_missing",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "expected_evidence_tokens"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "eq",
+                "right": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "observed_evidence_tokens"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                }
+              },
+              "error": "hard_evidence_cardinality_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "evidence_plan_hash"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 64
+                }
+              },
+              "error": "evidence_plan_hash_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "safety_pass"
+                ],
+                "root": "input"
+              },
+              "error": "safety_gate_failed",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "args": [
+                      {
+                        "op": "path",
+                        "path": [
+                          "observed_evidence_tokens"
+                        ],
+                        "root": "input"
+                      },
+                      {
+                        "name": "token",
+                        "op": "name"
+                      }
+                    ],
+                    "name": "contains",
+                    "op": "call"
+                  },
+                  "error": "hard_requirement_not_pass",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "expected_evidence_tokens"
+                ],
+                "root": "input"
+              },
+              "limit": 256,
+              "name": "token",
+              "op": "for"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "unsupported_claims"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "unsupported_claim_present",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "FULFILLED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "HardFulfillmentInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.critical.fulfillment"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "model_proposed"
+                ],
+                "root": "input"
+              },
+              "error": "intent_proposal_missing",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "human_confirmed"
+                ],
+                "root": "input"
+              },
+              "error": "human_confirmation_required",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "material"
+                ],
+                "root": "input"
+              },
+              "error": "non_material_intent",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "MATERIAL"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "MaterialIntentInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.critical.intent"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "FULFILLED"
+                }
+              },
+              "error": "hard_fulfillment_required",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "human_approved"
+                ],
+                "root": "input"
+              },
+              "error": "publish_human_approval_required",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "simulation_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "simulation_pass_required",
+              "op": "require"
+            },
+            {
+              "effect": "manifest",
+              "op": "request_effect"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "COMMIT"
+              }
+            }
+          ],
+          "effects": [
+            "manifest"
+          ],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PublishCommitInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.critical.publish"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

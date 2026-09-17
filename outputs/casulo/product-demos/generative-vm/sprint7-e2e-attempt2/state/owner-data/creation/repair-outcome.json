@@ -1,0 +1,164 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:f30581a9f4b725f2a7aca32a2b55996ae99c585cf423b3d7b1fd910833d94927",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "passo reversível",
+          "observed": "Initialization of Reversibility Module: Bússola de Reversibilidade is now active.",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "b5c5077d76888e328508018335611738d8a7637743068aae82f368a421610c34",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation_unit_1"
+        }
+      ],
+      "finished_ns": 36561275414200,
+      "project_id": "t-project:941aa6f6b6ff1703c0119379",
+      "started_ns": 36560540717700,
+      "tcap_sha256": "b4e0220f8968489bece8d6f5a03a00e68828a3cbe997d79971f07d72b09c2433",
+      "tests": [
+        {
+          "expected_contains": "Initialization of Reversibility Module: Bússola de Reversibilidade is now active.",
+          "name": "TestCreationInitialization",
+          "observed": "Initialization of Reversibility Module: Bússola de Reversibilidade is now active.",
+          "operation": "InitializeReversibility",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "40643c46f617c1c09ce4cc1ec2ebe98861bb0d44818f2dac0f3afec18bd608e9",
+          "unit_id": "creation_unit_1",
+          "wall_ns": 138746800
+        },
+        {
+          "expected_contains": "Hypothetical fragment generated: 'The path of reversibility is not yet confirmed.'",
+          "name": "TestHypotheticalFragmentGeneration",
+          "observed": "Hypothetical fragment generated: 'The path of reversibility is not yet confirmed.'",
+          "operation": "GenerateHypotheticalFragment",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "a5ba742749fb9fc20303ecfd744ed68a47b750e6f68d2769735052317edd5a30",
+          "unit_id": "creation_unit_2",
+          "wall_ns": 108265700
+        },
+        {
+          "expected_contains": "Small verification executed: 'The path of reversibility is now under scrutiny.'",
+          "name": "TestSmallVerificationExecution",
+          "observed": "Small verification executed: 'The path of reversibility is now under scrutiny.'",
+          "operation": "ExecuteSmallVerification",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "467d12525ce657f966334997e935ab573265a1899e401ace11bcd98a0f4920b2",
+          "unit_id": "creation_unit_3",
+          "wall_ns": 131262400
+        },
+        {
+          "expected_contains": "Architectural decision received: 'The path of reversibility is now confirmed.'",
+          "name": "TestArchitecturalDecisionReception",
+          "observed": "Architectural decision received: 'The path of reversibility is now confirmed.'",
+          "operation": "ReceiveArchitecturalDecision",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "62fcd86e23e6270353d77cc5dd6658bb0938623f5b5355645faa89457762c37a",
+          "unit_id": "creation_unit_4",
+          "wall_ns": 108636400
+        },
+        {
+          "expected_contains": "passo reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "Initialization of Reversibility Module: Bússola de Reversibilidade is now active.",
+          "operation": "InitializeReversibility",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "9c7f9a9b7af396db271fd7ea5fa74a9cebaabdfabe924653482daffc845c48eb",
+          "unit_id": "creation_unit_1",
+          "wall_ns": 79292500
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [],
+      "finished_ns": 36602921893800,
+      "project_id": "t-project:ef938205cc9902092e4360b1",
+      "started_ns": 36602062972900,
+      "tcap_sha256": "ab89039c43c37a315a3646b0fe3ef17e28feb3d18ad8591a43310287ea18a05e",
+      "tests": [
+        {
+          "expected_contains": "Initialization of Reversibility Module: Bússola de Reversibilidade is now active.",
+          "name": "TestCreationInitialization",
+          "observed": "Initialization of Reversibility Module: Bússola de Reversibilidade is now active. passo reversível",
+          "operation": "InitializeReversibility",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "29cebf635dbadd48b26717945e1bb91d638bf0461d9910a0567734bb5ed94980",
+          "unit_id": "creation_unit_1",
+          "wall_ns": 164835700
+        },
+        {
+          "expected_contains": "Hypothetical fragment generated: 'The path of reversibility is not yet confirmed.'",
+          "name": "TestHypotheticalFragmentGeneration",
+          "observed": "Hypothetical fragment generated: 'The path of reversibility is not yet confirmed.'",
+          "operation": "GenerateHypotheticalFragment",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "547c09a0a1e252e9952fefab528be5e1c13a5fb7fd3ca0188da5560da7272d23",
+          "unit_id": "creation_unit_2",
+          "wall_ns": 119585300
+        },
+        {
+          "expected_contains": "Small verification executed: 'The path of reversibility is now under scrutiny.'",
+          "name": "TestSmallVerificationExecution",
+          "observed": "Small verification executed: 'The path of reversibility is now under scrutiny.'",
+          "operation": "ExecuteSmallVerification",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "aa998b463b8e1e88799e2e987860e6a8b9607191b946345825bcd64dade8a35a",
+          "unit_id": "creation_unit_3",
+          "wall_ns": 200164600
+        },
+        {
+          "expected_contains": "Architectural decision received: 'The path of reversibility is now confirmed.'",
+          "name": "TestArchitecturalDecisionReception",
+          "observed": "Architectural decision received: 'The path of reversibility is now confirmed.'",
+          "operation": "ReceiveArchitecturalDecision",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "22c86fe4a9403b09a758ce320b1b5cfb7d49d7794140018fb1002affeba2076d",
+          "unit_id": "creation_unit_4",
+          "wall_ns": 145110000
+        },
+        {
+          "expected_contains": "passo reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "Initialization of Reversibility Module: Bússola de Reversibilidade is now active. passo reversível",
+          "operation": "InitializeReversibility",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "485d1e0639921f541382e2c26937dd4ce6a62fdb1c3250c48715a899e8f91603",
+          "unit_id": "creation_unit_1",
+          "wall_ns": 97778800
+        }
+      ]
+    }
+  ],
+  "budget": 2,
+  "project_id": "t-project:ef938205cc9902092e4360b1",
+  "receipt_sha256": "5d77b09df173b275327e929f9518134c02175c462e2632e45f58f418ed29cab1",
+  "repair_count": 1,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "PASS",
+  "tcap_sha256": "ab89039c43c37a315a3646b0fe3ef17e28feb3d18ad8591a43310287ea18a05e"
+}

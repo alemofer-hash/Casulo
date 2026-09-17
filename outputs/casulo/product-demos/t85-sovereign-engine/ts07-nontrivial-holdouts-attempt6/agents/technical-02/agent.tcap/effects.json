@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "owner.agent.t_mass_balance.mass": {
+      "check": [],
+      "combine": [],
+      "plan": []
+    },
+    "owner.agent.t_mass_balance.output": {
+      "commit": [],
+      "inspect": [],
+      "simulate": [
+        "simulation"
+      ]
+    },
+    "owner.agent.t_mass_balance.units": {
+      "branch": [],
+      "decide": [],
+      "verify_mass_conserved": [],
+      "verify_residual_valid": [],
+      "verify_unit_consistent": []
+    }
+  }
+}

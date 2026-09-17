@@ -1,0 +1,9 @@
+{
+  "schema": "casulo-kernel-probe-image/0.1",
+  "mode": "panic",
+  "path": "evidence/casulo-os-rp01/g2/platform-probes/casulo-panic-probe.img",
+  "bytes": 2162688,
+  "sha256": "b163db5f8c3fe6f278a25d1e62a254824720acfed60b569862d5a335151fdeb6",
+  "normal_release_image_modified": false,
+  "physical_device_written": false
+}

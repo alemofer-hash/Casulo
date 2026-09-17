@@ -1,0 +1,20 @@
+{
+  "doctor": {
+    "checks": "12/12 PASS",
+    "report_sha256": "58350b38494c5d9b665ce2ad5a178a3cb80208dad141ad4173ff41816c966343"
+  },
+  "m1_regression": {
+    "passed": 6,
+    "report_sha256": "42db4eff668be464998647641f8f61b72163a70e3e23fc35d230a21aa2f0ac54"
+  },
+  "schema": "casulo.monday-discovery-preflight-final/1.0",
+  "selected_regression": {
+    "passed": 46,
+    "report_sha256": "3e0f16f6c8bf6db374cb9c3f5f76d702a0306997ec03c74a2e0ad4d02c5a5b3a",
+    "skip_reason": "physical Windows symlink test unavailable due WinError 1314; not counted",
+    "skipped": 1
+  },
+  "state": "READY_FOR_GUILHERME_MONDAY_DISCOVERY_SESSION",
+  "timestamp_local": "2026-08-17T19:55:42.6727144-03:00",
+  "voice_physical_opened": false
+}

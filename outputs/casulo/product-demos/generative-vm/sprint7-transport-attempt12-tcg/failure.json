@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 12,
+  "failure": "TCG_ALSO_DID_NOT_COMPLETE_WITHOUT_LIVE_SERIAL_DIAGNOSTIC",
+  "action": "Added append-only live guest serial evidence; owned processes terminated",
+  "preserved": true,
+  "neural_evidence": false
+}

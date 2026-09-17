@@ -1,0 +1,39 @@
+{
+  "backend": "casulo-linear-algebra-c99-openmp/0.3",
+  "binary_sha256": "b7e988a70f7187b137f903fb18fb486fa566a4bc4d3db6926d4d2ab2788af453",
+  "command": [
+    "$CC",
+    "-std=c99",
+    "-O3",
+    "-march=native",
+    "-fno-fast-math",
+    "-ffp-contract=fast",
+    "-fopenmp",
+    "-shared",
+    "-Wl,--no-insert-timestamp,--image-base,0x180000000",
+    "-s",
+    "-fopt-info-vec-optimized=$CASULO_VECTOR_REPORT",
+    "$CASULO_TENSOR_SOURCE",
+    "-o",
+    "$CASULO_TENSOR_LIBRARY",
+    "-lm"
+  ],
+  "compiler": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+  "compiler_version": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+  "gemm_provider": {
+    "abi": "casulo-gemm-provider/0.1",
+    "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+    "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+    "external": true,
+    "float32_symbol": "scipy_cblas_sgemm64_",
+    "float64_symbol": "scipy_cblas_dgemm64_",
+    "implementation": "external-cblas-ilp64-runtime-function-pointer",
+    "provider_id": "numpy-scipy-openblas-ilp64",
+    "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+    "version": "0.3.30"
+  },
+  "gemm_workers": 1,
+  "graph_sha256": "ea8c38591eaf6694ac0168c290972bc56b1f7c37c331c8b27aee128d093db6f6",
+  "protocol": "casulo-tensor-cpu-build/0.3",
+  "source_sha256": "fd14455c5b6842b58e1d11965f1eb9f5c0cbf8004e09b645d97448ef4e98710d"
+}

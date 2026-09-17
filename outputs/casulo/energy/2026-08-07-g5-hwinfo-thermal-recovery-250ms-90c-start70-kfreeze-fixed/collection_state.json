@@ -1,0 +1,28 @@
+{
+  "completed_pair_ids": [
+    "pair-02",
+    "pair-03",
+    "pair-04",
+    "pair-05",
+    "pair-07",
+    "pair-09",
+    "pair-10",
+    "pair-11",
+    "pair-12",
+    "pair-15",
+    "pair-17",
+    "pair-18",
+    "pair-19",
+    "pair-20",
+    "replacement-22",
+    "replacement-23",
+    "replacement-24",
+    "replacement-25",
+    "replacement-26",
+    "replacement-30",
+    "replacement-31"
+  ],
+  "required_pairs": 21,
+  "status": "COLLECTION_COMPLETE",
+  "valid_pairs": 21
+}

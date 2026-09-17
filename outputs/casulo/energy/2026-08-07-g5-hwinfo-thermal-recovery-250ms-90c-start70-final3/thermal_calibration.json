@@ -1,0 +1,41 @@
+{
+  "blocker": {
+    "stage": "idle",
+    "state": {
+      "abort_c": 90.0,
+      "ac_connected": true,
+      "battery_charge_rate_w": 0.0,
+      "battery_percent": 99.2,
+      "battery_state": "AC_CONNECTED",
+      "frequency_mhz": null,
+      "hwinfo_timestamp_utc": "2026-08-07T21:50:33.577000+00:00",
+      "logger_age_seconds": 0.059172,
+      "logger_live": true,
+      "observed_at_utc": "2026-08-07T21:50:33.637189+00:00",
+      "preabort": false,
+      "preabort_c": 89.5,
+      "ready_to_start": false,
+      "reason_code": "recovery_abort_thermal_or_observer_guard",
+      "safe_after_load": false,
+      "safe_during_load": false,
+      "source_last_size": 34160241,
+      "temperature_c": 67.0,
+      "throttling": true,
+      "watchdog_reader": "bounded-live-tail-v1"
+    }
+  },
+  "calibration_windows": 0,
+  "definitive_pairs": 0,
+  "frozen_k": null,
+  "polling_median_seconds": 0.2525,
+  "polling_mode_ms": 250,
+  "probe_sequence_seconds": [
+    10.0,
+    20.0
+  ],
+  "probes": [],
+  "schema": "casulo-hwinfo-thermal-calibration/1.0",
+  "status": "SUPERSEDED_BEFORE_DEFINITIVE_CAMPAIGN",
+  "superseded_reason": "A transient throttle inside idle is now preserved as a rejected idle attempt followed by a clean retry; no candidate workload ran.",
+  "target_window_seconds": 20.0
+}

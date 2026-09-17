@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.t_interactive_01.export": [
+      "simulation"
+    ],
+    "owner.agent.t_interactive_01.interruption": [],
+    "owner.agent.t_interactive_01.memory": []
+  }
+}

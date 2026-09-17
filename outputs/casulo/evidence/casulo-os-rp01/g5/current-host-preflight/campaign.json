@@ -1,0 +1,74 @@
+{
+  "abort_reason": null,
+  "aggregates": null,
+  "preflight": {
+    "gates": [
+      {
+        "evidence": {
+          "missing": [
+            {
+              "capability": "cgroups_v2",
+              "reason_code": "unsupported_os:windows",
+              "status": "unavailable"
+            },
+            {
+              "capability": "cgroup_cpuset",
+              "reason_code": "unsupported_os:windows",
+              "status": "unavailable"
+            },
+            {
+              "capability": "cpu_weight",
+              "reason_code": "unsupported_os:windows",
+              "status": "unavailable"
+            },
+            {
+              "capability": "cpu_max",
+              "reason_code": "unsupported_os:windows",
+              "status": "unavailable"
+            },
+            {
+              "capability": "external_power_meter",
+              "reason_code": "adapter_not_configured",
+              "status": "unavailable"
+            }
+          ]
+        },
+        "gate": "capabilities",
+        "reason_code": "required_capabilities_unavailable",
+        "status": "blocked"
+      },
+      {
+        "evidence": {},
+        "gate": "thermal",
+        "reason_code": "trusted_thermal_evidence_missing",
+        "status": "blocked"
+      },
+      {
+        "evidence": {},
+        "gate": "power_state",
+        "reason_code": "power_state_evidence_missing",
+        "status": "blocked"
+      },
+      {
+        "evidence": {},
+        "gate": "isolation",
+        "reason_code": "isolation_evidence_missing",
+        "status": "blocked"
+      }
+    ],
+    "status": "blocked_before_start"
+  },
+  "schema": "casulo-livelab-paired-campaign/1",
+  "spec": {
+    "baseline_label": "pytorch-inductor",
+    "campaign_id": "current-host-preflight",
+    "candidate_label": "casulo-t",
+    "maximum_trial_seconds": 60.0,
+    "repetitions": 3,
+    "warmups": 0
+  },
+  "status": "blocked_before_start",
+  "trials": [],
+  "workload_invocations": 0,
+  "workload_started": false
+}

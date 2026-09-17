@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 5,
+  "failure": "ASYNC_PROVIDER_TRANSPORT_REGRESSION",
+  "action": "Owned processes terminated; static response restored to synchronous send path",
+  "preserved": true,
+  "neural_evidence": false
+}

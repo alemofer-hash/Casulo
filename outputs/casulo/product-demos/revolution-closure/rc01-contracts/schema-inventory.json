@@ -1,0 +1,62 @@
+{
+  "count": 9,
+  "pass": true,
+  "records": [
+    {
+      "closed": true,
+      "path": "schemas/revolution-closure/capability-decision.schema.json",
+      "schema_id": "casulo://schemas/capability-decision/1.0",
+      "sha256": "329b5fc2fec94e638f380eef2563ce9bd60b9d06d4505a19223c8731a507abcb"
+    },
+    {
+      "closed": true,
+      "path": "schemas/revolution-closure/engine-transport.schema.json",
+      "schema_id": "casulo://schemas/engine-transport/1.0",
+      "sha256": "a347346d19c5b765f4a619426641d985b3aa0ea74d86861efcea71cd007f89c7"
+    },
+    {
+      "closed": true,
+      "path": "schemas/revolution-closure/evidence-receipt.schema.json",
+      "schema_id": "casulo://schemas/evidence-receipt/1.0",
+      "sha256": "452d845c3f3fdc9bf4b0753eb86c414b21507602b0b4160723ea73f3e15d1cb6"
+    },
+    {
+      "closed": true,
+      "path": "schemas/revolution-closure/guide-state.schema.json",
+      "schema_id": "casulo://schemas/guide-state/1.0",
+      "sha256": "573a2f7966a0fe29ff215dabbda78ec40c923defc0d75589850b9f5a432b9180"
+    },
+    {
+      "closed": true,
+      "path": "schemas/revolution-closure/job-event.schema.json",
+      "schema_id": "casulo://schemas/job-event/1.0",
+      "sha256": "18ca5f8f74e7eed069043057530e16de38c431765237cc1ec5a66f7e75e0a7c5"
+    },
+    {
+      "closed": true,
+      "path": "schemas/revolution-closure/materialization-manifest.schema.json",
+      "schema_id": "casulo://schemas/materialization-manifest/2.0",
+      "sha256": "82770cbd99d6c1e242af45569b7728ddc82512e41d9dd46233566a7d051011d7"
+    },
+    {
+      "closed": true,
+      "path": "schemas/revolution-closure/memory-event.schema.json",
+      "schema_id": "casulo://schemas/memory-event/1.0",
+      "sha256": "45d1ac3fbd1b3a5853f2c0050b97c104aae31c920bed6df72876e06fc57e06fd"
+    },
+    {
+      "closed": true,
+      "path": "schemas/revolution-closure/requirement-graph.schema.json",
+      "schema_id": "casulo://schemas/requirement-graph/1.0",
+      "sha256": "be9e2fa63495dabca68791cced56d96b75393e38664472f6f1ff62e16a5efe58"
+    },
+    {
+      "closed": true,
+      "path": "schemas/revolution-closure/update-envelope.schema.json",
+      "schema_id": "casulo://schemas/update-envelope/1.0",
+      "sha256": "2c19ff10aab3db87703a2b14e76d57623eb69d421275b30fcaedb9daf68fed94"
+    }
+  ],
+  "schema": "casulo.rc-schema-inventory/1.0",
+  "unique_ids": 9
+}

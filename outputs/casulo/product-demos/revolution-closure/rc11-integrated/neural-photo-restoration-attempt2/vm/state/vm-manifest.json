@@ -1,0 +1,16 @@
+{
+  "base_image": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\vm\\images\\casulo-owner-generative-base.img",
+  "base_read_only": true,
+  "base_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+  "cloud": "RELEASE_LOCKED",
+  "external_media": "NOT_IN_USE",
+  "machine": "q35",
+  "network": "denied",
+  "overlay": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\vm\\state\\owner-overlay.qcow2",
+  "overlay_format": "qcow2",
+  "overlay_quota_gib": 12,
+  "ovmf_vars": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\vm\\state\\OVMF_VARS.fd",
+  "physical_devices": false,
+  "qmp": "tcp-loopback-ephemeral-only",
+  "schema": "casulo.vm-profile/1.0"
+}

@@ -1,0 +1,182 @@
+{
+  "module": "casulo.flood_rs",
+  "operations": [
+    {
+      "cacheable": true,
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "precipitation",
+          "source": "WaterBalance/input/precipitation",
+          "target": "WaterBalance/instruction/root.0/judge"
+        },
+        {
+          "kind": "data",
+          "name": "base_flow",
+          "source": "WaterBalance/input/base_flow",
+          "target": "WaterBalance/instruction/root.1/let"
+        },
+        {
+          "kind": "data",
+          "name": "evapotranspiration",
+          "source": "WaterBalance/input/evapotranspiration",
+          "target": "WaterBalance/instruction/root.1/let"
+        },
+        {
+          "kind": "data",
+          "name": "precipitation",
+          "source": "WaterBalance/input/precipitation",
+          "target": "WaterBalance/instruction/root.1/let"
+        },
+        {
+          "kind": "data",
+          "name": "surface_flow",
+          "source": "WaterBalance/input/surface_flow",
+          "target": "WaterBalance/instruction/root.1/let"
+        },
+        {
+          "kind": "data",
+          "name": "storage_change",
+          "source": "WaterBalance/instruction/root.1/let",
+          "target": "WaterBalance/instruction/root.2/stabilize"
+        },
+        {
+          "kind": "data",
+          "name": "storage_change",
+          "source": "WaterBalance/instruction/root.1/let",
+          "target": "WaterBalance/instruction/root.3/emit"
+        }
+      ],
+      "effects": [
+        "guard",
+        "evidence",
+        "manifest"
+      ],
+      "estimated_cost": 8,
+      "input_type": "HydroCell",
+      "name": "WaterBalance",
+      "nodes": [
+        {
+          "defines": [
+            "precipitation"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "WaterBalance/input/precipitation",
+          "kind": "input",
+          "label": "precipitation",
+          "operation": "WaterBalance",
+          "path": "input.precipitation",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "evapotranspiration"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "WaterBalance/input/evapotranspiration",
+          "kind": "input",
+          "label": "evapotranspiration",
+          "operation": "WaterBalance",
+          "path": "input.evapotranspiration",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "surface_flow"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "WaterBalance/input/surface_flow",
+          "kind": "input",
+          "label": "surface_flow",
+          "operation": "WaterBalance",
+          "path": "input.surface_flow",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "base_flow"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "WaterBalance/input/base_flow",
+          "kind": "input",
+          "label": "base_flow",
+          "operation": "WaterBalance",
+          "path": "input.base_flow",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "guard",
+          "estimated_cost": 2,
+          "id": "WaterBalance/instruction/root.0/judge",
+          "kind": "judge",
+          "label": "precipitation >= 0",
+          "operation": "WaterBalance",
+          "path": "root.0",
+          "pure": false,
+          "uses": [
+            "precipitation"
+          ]
+        },
+        {
+          "defines": [
+            "storage_change"
+          ],
+          "effect": "pure",
+          "estimated_cost": 4,
+          "id": "WaterBalance/instruction/root.1/let",
+          "kind": "let",
+          "label": "storage_change = precipitation - evapotranspiration - surface_flow - base_flow",
+          "operation": "WaterBalance",
+          "path": "root.1",
+          "pure": true,
+          "uses": [
+            "base_flow",
+            "evapotranspiration",
+            "precipitation",
+            "surface_flow"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "evidence",
+          "estimated_cost": 1,
+          "id": "WaterBalance/instruction/root.2/stabilize",
+          "kind": "stabilize",
+          "label": "storage_change",
+          "operation": "WaterBalance",
+          "path": "root.2",
+          "pure": false,
+          "uses": [
+            "storage_change"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "WaterBalance/instruction/root.3/emit",
+          "kind": "emit",
+          "label": "storage_change",
+          "operation": "WaterBalance",
+          "path": "root.3",
+          "pure": false,
+          "uses": [
+            "storage_change"
+          ]
+        }
+      ],
+      "output_type": "Number"
+    }
+  ],
+  "version": "metamorfose-graph/0.1"
+}

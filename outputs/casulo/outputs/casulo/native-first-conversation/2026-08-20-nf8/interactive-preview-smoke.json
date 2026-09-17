@@ -1,0 +1,16 @@
+{
+  "expected_non_exit_observed": true,
+  "forbidden_markers": [],
+  "image": "release/casulo-native-first-conversation-nf8.img",
+  "image_sha256_after": "667e7a1db08a7fb034cc62ad5f35373c0cf5f3f790b66e8a7fed09663e0f7d11",
+  "image_sha256_before": "667e7a1db08a7fb034cc62ad5f35373c0cf5f3f790b66e8a7fed09663e0f7d11",
+  "image_unchanged": true,
+  "missing_markers": [],
+  "native_neural_inference": false,
+  "network": false,
+  "passed": true,
+  "physical_device_written": false,
+  "schema": "casulo-native-interactive-preview-gate/0.1",
+  "serial_sha256": "9cf4b0e636cd2ed7e81a57fa2b4f44fff0bfbd9b92efe6e138faeaaf3443ae7f",
+  "virtual_usb_read_only": true
+}

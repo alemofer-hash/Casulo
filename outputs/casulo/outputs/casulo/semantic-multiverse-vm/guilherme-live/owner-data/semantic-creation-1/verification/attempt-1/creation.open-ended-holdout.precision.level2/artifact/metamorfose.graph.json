@@ -1,0 +1,67 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "precision",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 1,
+      "input_type": "Level",
+      "name": "SetPrecision",
+      "nodes": [
+        {
+          "defines": [
+            "value"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "SetPrecision/input/value",
+          "kind": "input",
+          "label": "value",
+          "operation": "SetPrecision",
+          "path": "input.value",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "SetPrecision/instruction/root.0/emit",
+          "kind": "emit",
+          "label": "\"manifest: precision.level2; trace: 'Precision level set to 2'; effects: [manifest]; emit: 'Precision level 2 activated.'\"",
+          "operation": "SetPrecision",
+          "path": "root.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [],
+  "version": "metamorfose-graph/1.0"
+}

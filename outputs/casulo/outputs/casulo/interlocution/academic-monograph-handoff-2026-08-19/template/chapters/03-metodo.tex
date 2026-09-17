@@ -1,0 +1,46 @@
+\chapter{Método e falsificação}
+\label{chap:metodo}
+
+Benchmarking de sistemas é sensível a fatores aparentemente inócuos
+\parencite{mytkowicz2009wrongdata}; por isso, protocolo, ordem, tolerâncias e
+critérios de rejeição devem ser congelados antes dos resultados. A análise
+estatística deve respeitar pareamento e custo de repetição
+\parencite{kalibera2013rigorous}.
+
+\section{Decisões críticas}
+
+\begin{table}[htbp]
+\caption{Superfícies mínimas de autoridade causal.}
+\label{tab:decisoes}
+\centering
+\begin{tabularx}{\textwidth}{@{}rXll@{}}
+\toprule
+\# & Decisão & Consumo & Teste causal \\
+\midrule
+1 & Identidade e integridade do dataset & antes do load & troca de hash \\
+2 & Bundle de inicialização & antes dos parâmetros & seed adulterada \\
+3 & Precisão numérica & antes da primitive & mudança de dtype \\
+4 & Função de perda & antes do forward & loss alternativa \\
+5 & Regra de atualização & antes do step & learning rate \\
+6 & Estado do otimizador & em cada transição & estado reaproveitado \\
+7 & Working set & antes do acesso & subconjunto distinto \\
+8 & Parada & antes de continuar & critério distinto \\
+9 & Equivalência e aceitação & antes da publicação & tolerância distinta \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Exemplo de política}
+
+\begin{lstlisting}[language=TLang,caption={Fragmento ilustrativo; substituir por
+fonte T real e hashada no manuscrito final.},label={lst:policy}]
+policy acceptance(receipt, evidence) {
+  require evidence.dataset_hash == receipt.dataset_hash;
+  require evidence.optimizer_steps == 400;
+  if evidence.max_parameter_difference <= 1e-9 {
+    accept("operational-equivalence");
+  } else {
+    reject("semantic-divergence");
+  }
+}
+\end{lstlisting}

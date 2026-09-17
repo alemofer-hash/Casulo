@@ -1,0 +1,43 @@
+{
+  "arm": "A",
+  "count": 1,
+  "energy": {
+    "package_joules": null,
+    "reason": "NO_ENERGY_INSTRUMENT_USED_IN_TI9_TI10",
+    "total_system_joules": null
+  },
+  "inner_total_ns": 6764659300,
+  "phases_ns": {
+    "publication_ns": 2282000,
+    "training_ns": 6762368000
+  },
+  "publication": {
+    "accepted": true,
+    "arm": "A",
+    "publication_authority": "FOREIGN_BASELINE",
+    "result_sha256": "703db9de84d237f49ea4fa47912a999fd0c13400dfa7b5f865f1615a0a3a5d16",
+    "t_judge_required": false
+  },
+  "result_file": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\interlocution\\2026-08-18-interlocution-live-instance-attempt1\\baselines\\ti10-v2\\warmups\\A\\result.bin",
+  "result_sha256": "703db9de84d237f49ea4fa47912a999fd0c13400dfa7b5f865f1615a0a3a5d16",
+  "schema": "casulo.interlocution-arm-result/1.0",
+  "start": 0,
+  "summary_sha256": "1f5eb90ba089288795a5876a1a86c9a95eb52162ede45a854f857ded5ff17241",
+  "work_summary": {
+    "K_completed": 1,
+    "child_timing": {
+      "K": 1,
+      "end_unix_ns": 1787108863695335800,
+      "implementation": "pytorch-eager-fullstep/2.0",
+      "qpc_frequency": 10000000,
+      "qpc_ticks": 22813788,
+      "result_file": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\interlocution\\2026-08-18-interlocution-live-instance-attempt1\\baselines\\ti10-v2\\warmups\\A\\result.bin",
+      "result_sha256": "703db9de84d237f49ea4fa47912a999fd0c13400dfa7b5f865f1615a0a3a5d16",
+      "start": 0,
+      "start_unix_ns": 1787108861413806200,
+      "thread_cycles": 4832316627,
+      "worker_monotonic_ns": 2281017900
+    },
+    "implementation": "PYTORCH_EAGER_TRANSPARENT"
+  }
+}

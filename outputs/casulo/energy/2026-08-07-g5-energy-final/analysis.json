@@ -1,0 +1,43 @@
+{
+  "advantage_gate_passed": false,
+  "baseline": "pytorch-eager-fullstep/1",
+  "campaign_id": "2026-08-07-g5-energy-final",
+  "candidate": "t-general-ir-tcap/0.1",
+  "claims": {
+    "historical_8_957846x_attributed_to_casulo_os": false,
+    "inductor_superiority": false,
+    "outliers_removed": false,
+    "scope": "CPU package energy"
+  },
+  "compilation": {
+    "amortization_point_trainings": null,
+    "included_and_excluded_are_distinct_campaign_metrics": true,
+    "observed_scopes": [],
+    "reason": "requires paired physical campaigns with compilation included and excluded"
+  },
+  "complete_confirmatory_design": false,
+  "direction_consistent_across_sessions": false,
+  "energy_domain": "CPU_PACKAGE_RAPL",
+  "exact_sign_test": null,
+  "expected_pairs": 63,
+  "implementation_summary": {
+    "pytorch-eager-fullstep/1": null,
+    "t-general-ir-tcap/0.1": null
+  },
+  "incremental_energy_over_idle_secondary": {
+    "never_primary": true,
+    "status": "unavailable",
+    "values_joules": []
+  },
+  "material_improvement_at_least_10_percent": false,
+  "median_ratio_candidate_over_baseline": null,
+  "paired_bootstrap_ci95": null,
+  "pairs": [],
+  "power_mean_definition": "raw_joules / measured_window_seconds",
+  "rejected": [],
+  "relative_improvement": null,
+  "schema": "casulo-energy-analysis/1.0",
+  "session_median_ratios": {},
+  "terminal_state": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "valid_pairs": 0
+}

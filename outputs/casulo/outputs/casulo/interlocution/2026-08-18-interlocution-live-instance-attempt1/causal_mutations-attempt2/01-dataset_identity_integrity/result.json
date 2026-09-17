@@ -1,0 +1,19 @@
+{
+  "config_from_t": null,
+  "expected_effect": "T_DENIED",
+  "message": "T denied training authority: dataset_hash_mismatch",
+  "mutated_source_sha256": "c40e4b07fb130eb920e9721942272955a46063fcc6e9495a410e0e834f1fdce5",
+  "mutated_tcap_hash": "5f32566a3486dec710bc8280769af4f353cf62fc4ed96bc713e3b0d780cac548",
+  "mutation": {
+    "file": "dataset_identity_integrity.t",
+    "new": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "old": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802"
+  },
+  "observed_effect": "T_DENIED",
+  "original_tcap_hash": "4c3a538736c68f0343e2050aa939ea3a55b3fd930ce4ffbe2c2341a1d0fd45d0",
+  "pass": true,
+  "python_or_worker_policy_changed": false,
+  "source_occurrences_changed": 2,
+  "surface": "dataset_identity_integrity",
+  "t_receipts_before_effect": 0
+}

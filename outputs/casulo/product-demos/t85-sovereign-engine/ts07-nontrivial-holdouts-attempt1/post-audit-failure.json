@@ -1,0 +1,16 @@
+{
+  "schema": "casulo.t85.post-gate-audit/1.0",
+  "state": "INVALIDATED_CRITICAL_SEMANTIC_LOSS",
+  "preserved": true,
+  "cause": "positive constraint receipts used ambiguous FALSE success labels",
+  "affected_agents": [
+    "interactive_talk_01",
+    "mass_balance_calculator_v2"
+  ],
+  "numbers_invalidated": [
+    "TS7_T_NONTRIVIAL_HOLDOUTS_PASS"
+  ],
+  "repair": "reject TRUE/FALSE/PASS/FAIL/OK and require concept overlap between constraint field and success event",
+  "next_attempt": "ts07-nontrivial-holdouts-attempt2",
+  "human_proof": "NOT_EXECUTED"
+}

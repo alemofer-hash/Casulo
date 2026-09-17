@@ -1,0 +1,19 @@
+{
+  "ac_connected": true,
+  "battery_charge_rate_w": 26.975,
+  "battery_percent": 63.2,
+  "battery_state": "AC_CONNECTED",
+  "frequency_mhz": null,
+  "hwinfo_timestamp_utc": "2026-08-20T01:16:00.355000+00:00",
+  "logger_age_seconds": 0.285392,
+  "logger_live": true,
+  "observed_at_utc": "2026-08-20T01:16:00.643509+00:00",
+  "ready_to_start": true,
+  "reason_code": "safe",
+  "safe_after_load": true,
+  "safe_during_load": true,
+  "source_last_size": 11159675,
+  "temperature_c": 48.0,
+  "throttling": false,
+  "watchdog_reader": "bounded-live-tail-v1"
+}

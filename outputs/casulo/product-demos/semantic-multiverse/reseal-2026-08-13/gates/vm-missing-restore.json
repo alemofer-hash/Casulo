@@ -1,0 +1,9 @@
+﻿{
+  "base_preserved": true,
+  "error_type": "VMControllerError",
+  "message": "snapshot inexistente: no-snapshot-yet; execute :snapshot antes de :restore",
+  "operation": "vm-command",
+  "overlay_preserved": true,
+  "schema": "casulo.vm-command-error/1.0",
+  "status": "RECOVERABLE_FAILURE"
+}

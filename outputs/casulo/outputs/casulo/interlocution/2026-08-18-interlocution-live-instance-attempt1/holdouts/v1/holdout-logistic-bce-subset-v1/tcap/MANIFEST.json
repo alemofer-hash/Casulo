@@ -1,0 +1,113 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.dataset_identity_integrity"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "302d210b5ae8991bed08c94bd01bdbf79575eb28b373fabf16f51e92bfb0b547"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "fc311f7f25d040ed6d72c9d3be386c21498fc057d14de3eb46e45d90eda925af"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "e80f7d659dfda487fc68ef79ac7c8d902ad96943e54fde4894f1eb070efff86d"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "30b6823da434280dbd79bbc05ab04f6d20fa63b6f107228bc87ee3a7ca0763e3"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "d14a4a846cc3d4169ae6647c873b30c844e1b89598760392ab4ffd4775c93564"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "70be5d19111df883d76a39a5ee9f5fd06c16da1adfb5eae6ab164d1ce8bacf3f"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "e3e74a4de92bdfea32561fb2517a81cd8640a31b28277d6f766327e15bbf1e9e"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "3d421ea5112f39e64e788fd2b43d55080b2599868a4221098bcafb76455e6c00"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "53bc2d182dd14bf64cd00417bc83f6b470a74233e8e8591fc5258ad2ae653f44"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "cf8feee31d9ece3c74833081ffd5b8350bef0af5e6c0dfc71910c547ea9044c0"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "f3dac27e670536d5d58b7e4ef8ac1cb8d79903a48a45442cba1849caaf9df837"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "d73c791eb4c561c5f88a004b307be686f750c425598eb58cbda317ed00223369"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.dataset_identity_integrity.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.dataset_identity_integrity",
+      "sha256": "98d079862624461ab8bb151b21535eb66414916606ea2bde8e3413b17a3db4aa"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.initialization_bundle.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.initialization_bundle",
+      "sha256": "b8f8c6c54bfba2914e6f542aad9698c8ed450738d6e25941dd27d9ebcc5da454"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.numerical_precision.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.numerical_precision",
+      "sha256": "4f1404bea110a5b0203ff83e92519a1af5c36653c6ee79c91c78c51e4effd5c1"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.loss_function.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.loss_function",
+      "sha256": "ca1dccd2310faeaf15da9b02e22227245c738159a1f7ebc001b4c75d6b1b1474"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.update_rule.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.update_rule",
+      "sha256": "c7782819443d6b85fa16b771b75638d9cdb2f3227db5a0446e21de71e05cd4c7"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.optimizer_state.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.optimizer_state",
+      "sha256": "77ca1f06bc6b4bf3e0b64a818e0941b3ff810fce51df43cc920cc5e68236d806"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.working_set.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.working_set",
+      "sha256": "e987872f1ffb8d4583b8e4622f50a012d3417ba16c74f7c6bf5fc54cad877d28"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.stopping.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.stopping",
+      "sha256": "035c636e5c9ac143c39b0e5c456c5fedabffd6e1c57debfe66386c7c885d4ae0"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_logistic_bce_subset_v1.equivalence_acceptance.t",
+      "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.equivalence_acceptance",
+      "sha256": "72ea84bd08f4e3b8a7f94c5e793184bf72b189225a725c7ddedf1f08c4be5dab"
+    }
+  ],
+  "tcap_hash": "bc70cd341fa579f137fae0b5ef8a247c7a9c46a7c5ab509fd47e546885a216f4"
+}

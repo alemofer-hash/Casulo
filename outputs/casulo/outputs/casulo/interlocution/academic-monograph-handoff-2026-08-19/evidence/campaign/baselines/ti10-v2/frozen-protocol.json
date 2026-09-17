@@ -1,0 +1,94 @@
+{
+  "affinity": [
+    4
+  ],
+  "arms": {
+    "A": "transparent PyTorch Eager; no T",
+    "B": "PyTorch Eager plus post-hoc T audit ignored by publisher",
+    "C": "T architect plus native primitive; foreign acceptance",
+    "D": "T architect, independent audit and consumed T judge"
+  },
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 2026081901,
+  "count_per_arm": 2,
+  "energy": "NOT_MEASURED",
+  "frozen_before_samples": true,
+  "predeclared_ablations": {
+    "all_hot": "not semantically applicable to this single-primitive workload",
+    "global_reexecution": "contrast against fail-before-work causal rejection",
+    "no_evidence_gate": "may execute but cannot claim T-judged publication",
+    "no_interlocution": "must block because confirmed intent seal is absent",
+    "selected_working_set": "T chooses all 1024 records required by R"
+  },
+  "primary_comparison": "D/A",
+  "repetitions": 7,
+  "schedule": [
+    {
+      "block": 1,
+      "order": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "block": 2,
+      "order": [
+        "D",
+        "C",
+        "B",
+        "A"
+      ]
+    },
+    {
+      "block": 3,
+      "order": [
+        "B",
+        "D",
+        "A",
+        "C"
+      ]
+    },
+    {
+      "block": 4,
+      "order": [
+        "C",
+        "A",
+        "D",
+        "B"
+      ]
+    },
+    {
+      "block": 5,
+      "order": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "block": 6,
+      "order": [
+        "D",
+        "C",
+        "B",
+        "A"
+      ]
+    },
+    {
+      "block": 7,
+      "order": [
+        "B",
+        "D",
+        "A",
+        "C"
+      ]
+    }
+  ],
+  "schema": "casulo.interlocution-ti10-protocol/1.0",
+  "thermal_guard": "live HWiNFO safety only; no watt integration",
+  "threads": 1,
+  "workload": "FloodSurrogate 1024x8x8x1 float64 400 epochs"
+}

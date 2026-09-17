@@ -1,0 +1,1043 @@
+{
+  "idle_20min_events": [],
+  "power_limit_events": [
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:42.264000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:42.512000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:42.762000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:43.013000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:43.268000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:43.512000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:43.759000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:44.009000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:44.262000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:44.508000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:44.766000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:45.009000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:45.262000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:45.512000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:45.760000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:46.024000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:46.273000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:46.512000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:46.762000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:47.003000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:47.273000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:47.508000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:47.760000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:48.020000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:48.268000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:48.512000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:48.766000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:49.018000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:49.273000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:49.512000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:49.762000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:50.008000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:50.262000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:50.508000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:50.755000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:51.014000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:51.264000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:51.509000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:51.756000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:52.012000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:52.265000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:52.516000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:52.792000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:53.017000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:53.277000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:53.529000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:53.781000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:54.025000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:54.278000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:54.532000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:54.784000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:55.023000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:55.272000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:55.522000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:55.778000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:56.028000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:56.282000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:56.527000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:56.782000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:57.027000+00:00"
+    },
+    {
+      "active_columns": [
+        "Limite de potência do núcleo excedido (avg) [Yes/No]",
+        "P-core 0 Limite de potência excedido [Yes/No]",
+        "P-core 1 Limite de potência excedido [Yes/No]",
+        "E-core 2 Limite de potência excedido [Yes/No]",
+        "E-core 3 Limite de potência excedido [Yes/No]",
+        "E-core 4 Limite de potência excedido [Yes/No]",
+        "E-core 5 Limite de potência excedido [Yes/No]",
+        "E-core 6 Limite de potência excedido [Yes/No]",
+        "E-core 7 Limite de potência excedido [Yes/No]",
+        "E-core 8 Limite de potência excedido [Yes/No]",
+        "E-core 9 Limite de potência excedido [Yes/No]",
+        "Limite de potência do pacote / anel excedido [Yes/No]"
+      ],
+      "timestamp_utc": "2026-08-10T00:25:57.276000+00:00"
+    }
+  ],
+  "preflight_polling_events": []
+}

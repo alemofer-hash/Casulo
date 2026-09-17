@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "file": "sources/research.interlocution.dataset.t",
+      "module": "research.interlocution.dataset",
+      "sha256": "d48752dbf6b45a69d24ac32a0fbc8b141f64c323f43fb55b7eb2da4e8d82220c"
+    },
+    {
+      "file": "sources/research.interlocution.initialization.t",
+      "module": "research.interlocution.initialization",
+      "sha256": "bcc91dbf48b168142eed4210602a1225b77be7fe15c2223cd345f76efa50af8f"
+    },
+    {
+      "file": "sources/research.interlocution.precision.t",
+      "module": "research.interlocution.precision",
+      "sha256": "a5b89d430ba2daff602e1e199a0020efcd025d9bcd3f7b8b7a808d0196599b19"
+    },
+    {
+      "file": "sources/research.interlocution.loss.t",
+      "module": "research.interlocution.loss",
+      "sha256": "0236165ea9aa23466249b9bb326c46f4edc84643afadc15a88134be29fb86fe9"
+    },
+    {
+      "file": "sources/research.interlocution.update.t",
+      "module": "research.interlocution.update",
+      "sha256": "6218f20e08ef8bf1c739a17658430f6ea7140f4f1342cda4a13f3193eec53ccc"
+    },
+    {
+      "file": "sources/research.interlocution.optimizer_state.t",
+      "module": "research.interlocution.optimizer_state",
+      "sha256": "2edaf661fb34de7cc365abd42830adb5e0b5388a16c589e115331dd49abbde4a"
+    },
+    {
+      "file": "sources/research.interlocution.working_set.t",
+      "module": "research.interlocution.working_set",
+      "sha256": "3264fe8360ae896e5df86b1b1acbd75bd7662533d67caa9030bfe49e206ef55f"
+    },
+    {
+      "file": "sources/research.interlocution.stopping.t",
+      "module": "research.interlocution.stopping",
+      "sha256": "8d87d1b15863f7cc3659336933d3016f60d6ccd13fb975010fa6efc8e4d4b0c4"
+    },
+    {
+      "file": "sources/research.interlocution.judgment.t",
+      "module": "research.interlocution.judgment",
+      "sha256": "816f8ed8691381d4a35e8e1f4c0bc1a06eb29ae4b4b21076012cdc961715b0d4"
+    }
+  ]
+}

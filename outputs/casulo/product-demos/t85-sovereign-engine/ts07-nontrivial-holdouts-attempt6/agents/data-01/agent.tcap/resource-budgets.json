@@ -1,0 +1,16 @@
+{
+  "modules": {
+    "owner.agent.datavalidator.byte_preserver": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    },
+    "owner.agent.datavalidator.rejection_explainer": {
+      "deadline_ms": 3000,
+      "steps": 2048
+    },
+    "owner.agent.datavalidator.schema_applier": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    }
+  }
+}

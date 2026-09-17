@@ -1,0 +1,267 @@
+{
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "checks": {
+    "all_final_tests_executed_and_passed": true,
+    "bounded_neural_repair_passed": true,
+    "external_ai_api_used": false,
+    "external_process_passed": true,
+    "fake_engine_used": false,
+    "holdout_absent_before_run": true,
+    "initial_candidate_imperfect": true,
+    "model_created_no_grant": true,
+    "neural_plan_generated": true,
+    "neural_t_generated": true,
+    "real_compiled_process_test_failed_first": true,
+    "real_effect_executed": false,
+    "round_trip_executable_preserved": true,
+    "round_trip_identity_preserved": true,
+    "round_trip_version_preserved": true,
+    "scientific_benchmark": false,
+    "simulation_passed": true,
+    "simulation_real_effects_absent": true
+  },
+  "cloud_state": "RELEASE_LOCKED",
+  "external_execution": {
+    "operation": "RegisterHypotheses",
+    "result": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence. contradicao produtiva",
+    "returncode": 0,
+    "stderr": "",
+    "stdout_sha256": "1f8c6023a73542aa3c5c409a6fb7814780728ae300816be9a3534d12435205fb"
+  },
+  "finalized_from_preserved_receipts": true,
+  "gate": "FIRST_OPEN_ENDED_AGENT_CREATED",
+  "holdout_expectation": "contradicao produtiva",
+  "idea": "Crie um agente local chamado Cartografo de Duvidas. Durante uma conversa de pesquisa, ele registra hipoteses concorrentes, marca qual evidencia enfraquece cada uma e monta o proximo experimento sem tratar hipotese como fato. Ele nunca grava arquivo real durante a simulacao.",
+  "imported": {
+    "agent_artifact_id": "sha256:ed823f1a87d4613ac8b45c7938fc6bee4cf9716e94c415c4c5d5cd394222c50b",
+    "agent_operation": "RegisterHypotheses",
+    "creation_id": "creation:open-ended-holdout",
+    "creation_version": 7
+  },
+  "materialization": {
+    "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint5-attempt7\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+    "archive_sha256": "f2b567449d9f64b3c04dd48e9263d22ad5b8ba59eb8ef92dc7fa58a86102872f",
+    "directory": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint5-attempt7\\materialized\\creation-38da5088c5e61759-v7",
+    "files": {
+      "MANIFEST.json": "bcaf99eab17961205975b51843132f5ab931659c477b17f8dcb3bbb3b84ca210",
+      "SBOM.spdx.json": "ece4a38e46493f72fc7e235ddd1756134e4bfcd1937c352b512c128f9f8df377",
+      "SHA256SUMS": "03c0ba64f4cabc437392aa69e5f220dab24c501521207ecc35ca27c8f04ebc50",
+      "agent-artifact-manifest.json": "965383991a6a6b03c65f411fbdf522605e60d08b606864178f9c504a39c31152",
+      "agent-descriptor.json": "96014bc4e41dac82404f777426b98bbf02245885044e3160eadf07e0673ddaa2",
+      "agent-project.json": "da08c09c6f0d04e5f8e7fc943fd722f8d83baa5f9b59e7aa1893a94aacd31e57",
+      "agent.py": "b476ee76b1761e4011cc14f11e3c925fc0921b7021347799d6eb2a8ce5b3da97",
+      "agent.tcap": "5cb8a809cb83b3a88e1678b1db0ccdb877651173d88ca4f7385c06221445d527",
+      "api.py": "d8f9e63dbd17d510252ca9f895e756260ba9c1dba086d0069b5fa3d1d0efb7fe",
+      "creation.json": "6d5b6c8137d71d7d77f7c9a3168ce4e0bc1abad52620e0c8bf04616027153381",
+      "forge-receipt.json": "60aa27fa653891322808e29fbbe9a8c685d416f72fef4b957d3cbd8c42ccc7d8",
+      "simulation-receipt.json": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+    },
+    "manifest_sha256": "bcaf99eab17961205975b51843132f5ab931659c477b17f8dcb3bbb3b84ca210",
+    "package_id": "creation-38da5088c5e61759-v7",
+    "schema": "casulo.materialization-receipt/1.0"
+  },
+  "prior_reporting_failure": {
+    "error_type": "AttributeError",
+    "message": "'StochasticTrace' object has no attribute 'output_digest'",
+    "preserved": true,
+    "schema": "casulo.generative-probe-failure/1.0"
+  },
+  "project_id": "t-project:13aea0788cf4ecd0301839fc",
+  "public_state": "FROZEN",
+  "repair": {
+    "attempts": [
+      {
+        "attempt": 0,
+        "diagnostics": [
+          {
+            "artifact_id": "sha256:58aa1973f583e57039baffd6364b9f20a6262d31f448f6b9022d1152f30cbbb7",
+            "code": "TTEST_EXPECTED_TEXT_MISSING",
+            "expected_contains": "contradicao produtiva",
+            "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence.",
+            "process_returncode": 0,
+            "process_stderr": "",
+            "schema": "casulo.generative-diagnostic/1.0",
+            "source_sha256": "67c6611be1d500f066e2e8a43267296e6a4891323f1570420582b3a97b04e87d",
+            "test_name": "human-holdout-acceptance",
+            "unit_id": "creation_unit"
+          }
+        ],
+        "finished_ns": 32342007020800,
+        "project_id": "t-project:13aea0788cf4ecd0301839fc",
+        "started_ns": 32341376802000,
+        "tcap_sha256": "47227645ea767d183f49debfb6e2c7b56f30bcd52e37fe5dde3f5e097936961e",
+        "tests": [
+          {
+            "expected_contains": "RegisterHypotheses",
+            "name": "TestCreationUnit",
+            "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence.",
+            "operation": "RegisterHypotheses",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "dd3414189b12c4b7f5eb72a6ba405831241464414b1f75cead1a51a9d4318033",
+            "unit_id": "creation_unit",
+            "wall_ns": 99063900
+          },
+          {
+            "expected_contains": "LogConversations",
+            "name": "TestTraceUnit",
+            "observed": "LogConversations: Record and structure research conversations to track hypothesis development and evidence evaluation.",
+            "operation": "LogConversations",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "6b2536e6297db4c9cbe07d38aeb3f6c1e4318fa4ec37d8f28c7643cbdbf384df",
+            "unit_id": "trace_unit",
+            "wall_ns": 101101700
+          },
+          {
+            "expected_contains": "TrackEvidence",
+            "name": "TestEffectUnit",
+            "observed": "TrackEvidence: Monitor and record evidence that supports or refutes hypotheses in the research process.",
+            "operation": "TrackEvidence",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "b2c30f7d63fd8b694e953b853a727292cdb433b1188dab12113a441964633a1d",
+            "unit_id": "effect_unit",
+            "wall_ns": 101615600
+          },
+          {
+            "expected_contains": "AccessResearchLogs",
+            "name": "TestCapabilityUnit",
+            "observed": "AccessResearchLogs: Retrieve and analyze historical research logs to inform current hypothesis evaluation.",
+            "operation": "AccessResearchLogs",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "7ec0ec510ad0e27508161607279d111101c84317007dc60e782d9462faed6dd3",
+            "unit_id": "capability_unit",
+            "wall_ns": 99218600
+          },
+          {
+            "expected_contains": "contradicao produtiva",
+            "name": "human-holdout-acceptance",
+            "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence.",
+            "operation": "RegisterHypotheses",
+            "passed": false,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "96d3102fc768360fcc3ef4bc26e4c91b352154fbc42ea9cdf170629cc78fdd4e",
+            "unit_id": "creation_unit",
+            "wall_ns": 73367300
+          }
+        ]
+      },
+      {
+        "attempt": 1,
+        "diagnostics": [],
+        "finished_ns": 32374183192800,
+        "project_id": "t-project:495aad60e8cd63bdecea7f5a",
+        "started_ns": 32373542761300,
+        "tcap_sha256": "5cb8a809cb83b3a88e1678b1db0ccdb877651173d88ca4f7385c06221445d527",
+        "tests": [
+          {
+            "expected_contains": "RegisterHypotheses",
+            "name": "TestCreationUnit",
+            "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence. contradicao produtiva",
+            "operation": "RegisterHypotheses",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "137a0542b3764fedbdeec62dc83d5f9bd62a1918defbac501caa888fe60fa1ca",
+            "unit_id": "creation_unit",
+            "wall_ns": 107197000
+          },
+          {
+            "expected_contains": "LogConversations",
+            "name": "TestTraceUnit",
+            "observed": "LogConversations: Record and structure research conversations to track hypothesis development and evidence evaluation.",
+            "operation": "LogConversations",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "f7d3d8d52e281026027a8b41621bb87c062b9cff640c6cf20c09d991c1d287e5",
+            "unit_id": "trace_unit",
+            "wall_ns": 101410900
+          },
+          {
+            "expected_contains": "TrackEvidence",
+            "name": "TestEffectUnit",
+            "observed": "TrackEvidence: Monitor and record evidence that supports or refutes hypotheses in the research process.",
+            "operation": "TrackEvidence",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "516a24e61242e2341efeff87cea3ad709b8e83bb619c51ae5ba2330cddf4788d",
+            "unit_id": "effect_unit",
+            "wall_ns": 96329500
+          },
+          {
+            "expected_contains": "AccessResearchLogs",
+            "name": "TestCapabilityUnit",
+            "observed": "AccessResearchLogs: Retrieve and analyze historical research logs to inform current hypothesis evaluation.",
+            "operation": "AccessResearchLogs",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "ed45c6712c4559ed8abd69bc7542f8b3a959f38f42ff0d0730b2ab1ff8534d94",
+            "unit_id": "capability_unit",
+            "wall_ns": 110104600
+          },
+          {
+            "expected_contains": "contradicao produtiva",
+            "name": "human-holdout-acceptance",
+            "observed": "RegisterHypotheses: Create a structured repository for tracking competing hypotheses and their evidence. contradicao produtiva",
+            "operation": "RegisterHypotheses",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "6429003fe2f2e151befc2705b4dd8ebe76b814ef1713878baf6c4a12a0a49fd8",
+            "unit_id": "creation_unit",
+            "wall_ns": 74527800
+          }
+        ]
+      }
+    ],
+    "budget": 2,
+    "project_id": "t-project:495aad60e8cd63bdecea7f5a",
+    "receipt_sha256": "7e9735af3a4e0300bba52c23ba6f03806e4617c7768aef06febd4c49b907df92",
+    "repair_count": 1,
+    "schema": "casulo.verifier-repair-receipt/1.0",
+    "status": "PASS",
+    "tcap_sha256": "5cb8a809cb83b3a88e1678b1db0ccdb877651173d88ca4f7385c06221445d527"
+  },
+  "schema": "casulo-first-open-ended-agent-evidence/1.0",
+  "simulation": {
+    "correction_paths": [],
+    "creation_id": "creation:open-ended-holdout",
+    "events": [
+      {
+        "event_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+        "event_id": "simulation:g5:open-ended-agent:1",
+        "previous_hash": null,
+        "response": {
+          "error": null,
+          "ok": true,
+          "value": {
+            "records": 3,
+            "virtual": true
+          }
+        },
+        "sequence": 1,
+        "source_event_ids": [
+          "human:g5:simulate"
+        ],
+        "status": "SIMULATED",
+        "step_id": "read-research-memory-virtually"
+      }
+    ],
+    "head_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+    "real_effects_executed": false,
+    "schema": "casulo.simulation-receipt/1.0",
+    "simulation_id": "simulation:g5:open-ended-agent",
+    "status": "PASS"
+  },
+  "usb_state": "PROHIBITED"
+}

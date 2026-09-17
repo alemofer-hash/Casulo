@@ -1,0 +1,16 @@
+{
+  "schema": "casulo-host-system-voice/1.0",
+  "status": "HOST_SYSTEM_STREAMING_PLAYBACK_NOT_REDISTRIBUTED",
+  "engine": "System.Speech",
+  "voice": "Microsoft Maria Desktop",
+  "locale": "pt-BR",
+  "redistributed": false,
+  "downloaded_by_casulo": false,
+  "model_hash": null,
+  "streaming_playback": true,
+  "streaming_pcm": false,
+  "barge_in_mechanism": "terminate isolated synthesizer process",
+  "enabled_by_default": false,
+  "physical_playback_smoke": "AWAITING_EXPLICIT_DEVICE_CONSENT",
+  "scope": "Hosted Windows only"
+}

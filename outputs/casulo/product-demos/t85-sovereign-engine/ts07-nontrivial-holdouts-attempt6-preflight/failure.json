@@ -1,0 +1,15 @@
+{
+  "schema": "casulo-t85-failure/1.0",
+  "timestamp": "2026-08-14T22:52:04.4392105-03:00",
+  "stage": "unit-regression-before-neural-synthesis",
+  "state": "INVALIDATED_IMPLEMENTATION_REGRESSION",
+  "command": "python -m pytest tests/product/test_t85_agent_synthesis.py -q",
+  "result": {
+    "passed": 2,
+    "failed": 3,
+    "failure": "AttributeError: T85AgentSynthesizer has no attribute build"
+  },
+  "root_cause": "The build method was accidentally indented under the module-level _success_event function while introducing canonical success-event derivation.",
+  "effect": "No model inference, TCAP build, Native execution, or holdout result occurred in this attempt.",
+  "correction": "Restore build as a T85AgentSynthesizer method and retain _success_event as a module-level deterministic safety projection."
+}

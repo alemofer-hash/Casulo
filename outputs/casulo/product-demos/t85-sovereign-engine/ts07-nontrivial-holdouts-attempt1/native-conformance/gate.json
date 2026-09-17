@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "all_conformant": true,
+    "default_v1_restored": true,
+    "three_agents": true
+  },
+  "gate": "TS7_T_NONTRIVIAL_HOLDOUTS_NATIVE_PASS"
+}

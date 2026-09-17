@@ -1,0 +1,471 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:c414b4f7caf59dea1877b89e593d9cc9f1f4a4843722f8abd915595ad0d1e29c",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "manifest: memory.read; trace: 'Memory read';",
+          "observed": "manifest: memory.read; trace: 'Memory read initiated'; effects: [manifest]; emit: 'Memory value retrieved.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "52bc2b8ef89a6d23d3f311ea116b2f1e3a502d38f517d6b22195a1808acd3b4a",
+          "test_name": "TestMemoryRead",
+          "unit_id": "creation.open-ended-holdout.memory.read"
+        },
+        {
+          "artifact_id": "sha256:5c892d25ab41733206849338c89e28e3b5ea1bef6ce5f2f60c4d2d5bdf397ba5",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "manifest: autonomy.level3; trace: 'Autonomy';",
+          "observed": "manifest: autonomy.level3; trace: 'Autonomy level set to 3'; effects: [manifest]; emit: 'Autonomy level 3 activated.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "3577500eb045e0d1747f1faab30f214e2491a5f13dff7b78fcf22483e893b956",
+          "test_name": "TestAutonomyLevel3",
+          "unit_id": "creation.open-ended-holdout.autonomy.level3"
+        },
+        {
+          "artifact_id": "sha256:fda140d350271dd79ff9902b397393f009730f2c916f2bdf24e6f462c9e5b375",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "manifest: precision.level2; trace: 'Precision';",
+          "observed": "manifest: precision.level2; trace: 'Precision level set to 2'; effects: [manifest]; emit: 'Precision level 2 activated.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "186a45d24f61bc280bdfddcdc84bc93806d9dd7d94e3f2ca23d805d462b43dd9",
+          "test_name": "TestPrecisionLevel2",
+          "unit_id": "creation.open-ended-holdout.precision.level2"
+        },
+        {
+          "artifact_id": "sha256:c414b4f7caf59dea1877b89e593d9cc9f1f4a4843722f8abd915595ad0d1e29c",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "comportamento científico",
+          "observed": "manifest: memory.read; trace: 'Memory read initiated'; effects: [manifest]; emit: 'Memory value retrieved.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "52bc2b8ef89a6d23d3f311ea116b2f1e3a502d38f517d6b22195a1808acd3b4a",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation.open-ended-holdout.memory.read"
+        }
+      ],
+      "finished_ns": 10437772509500,
+      "project_id": "t-project:764582d4db52b0ed460dd960",
+      "started_ns": 10437140732100,
+      "tcap_sha256": "5eaabee00cd185b105f857260ad75ac82052dacafdcbd124136bd74f9856e636",
+      "tests": [
+        {
+          "expected_contains": "manifest: memory.read; trace: 'Memory read';",
+          "name": "TestMemoryRead",
+          "observed": "manifest: memory.read; trace: 'Memory read initiated'; effects: [manifest]; emit: 'Memory value retrieved.'",
+          "operation": "ReadValue",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "43dda4b0fb0cb8a1dec506a264d71b2256c7340035cf8d6597a499de64f22cd0",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 165214200
+        },
+        {
+          "expected_contains": "manifest: autonomy.level3; trace: 'Autonomy';",
+          "name": "TestAutonomyLevel3",
+          "observed": "manifest: autonomy.level3; trace: 'Autonomy level set to 3'; effects: [manifest]; emit: 'Autonomy level 3 activated.'",
+          "operation": "SetAutonomy",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "90130cebec55c680d36e9ff0bceb2faed94cdef858423b206a3b2e5757428862",
+          "unit_id": "creation.open-ended-holdout.autonomy.level3",
+          "wall_ns": 102211200
+        },
+        {
+          "expected_contains": "manifest: precision.level2; trace: 'Precision';",
+          "name": "TestPrecisionLevel2",
+          "observed": "manifest: precision.level2; trace: 'Precision level set to 2'; effects: [manifest]; emit: 'Precision level 2 activated.'",
+          "operation": "SetPrecision",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "c12407eb6fc3da1bc45a5a503116216ffb0911b98073f19e6be62686d4de7709",
+          "unit_id": "creation.open-ended-holdout.precision.level2",
+          "wall_ns": 135134500
+        },
+        {
+          "expected_contains": "comportamento científico",
+          "name": "human-holdout-acceptance",
+          "observed": "manifest: memory.read; trace: 'Memory read initiated'; effects: [manifest]; emit: 'Memory value retrieved.'",
+          "operation": "ReadValue",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "50c8835d9cfd864cf19b04e926d026768d3f2784e325268dc2353015de500b59",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 78401200
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:5c892d25ab41733206849338c89e28e3b5ea1bef6ce5f2f60c4d2d5bdf397ba5",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "manifest: autonomy.level3; trace: 'Autonomy';",
+          "observed": "manifest: autonomy.level3; trace: 'Autonomy level set to 3'; effects: [manifest]; emit: 'Autonomy level 3 activated.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "3577500eb045e0d1747f1faab30f214e2491a5f13dff7b78fcf22483e893b956",
+          "test_name": "TestAutonomyLevel3",
+          "unit_id": "creation.open-ended-holdout.autonomy.level3"
+        },
+        {
+          "artifact_id": "sha256:fda140d350271dd79ff9902b397393f009730f2c916f2bdf24e6f462c9e5b375",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "manifest: precision.level2; trace: 'Precision';",
+          "observed": "manifest: precision.level2; trace: 'Precision level set to 2'; effects: [manifest]; emit: 'Precision level 2 activated.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "186a45d24f61bc280bdfddcdc84bc93806d9dd7d94e3f2ca23d805d462b43dd9",
+          "test_name": "TestPrecisionLevel2",
+          "unit_id": "creation.open-ended-holdout.precision.level2"
+        },
+        {
+          "artifact_id": "sha256:e119b80e3c54b14f30e6f371f512780d73d397eff8057e7251f0eeb25e083990",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "comportamento científico",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "8b074c1affc3b9eb5ee5adcadb36a2664fe19f8581ffd8c04ae7ac748a850865",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation.open-ended-holdout.memory.read"
+        }
+      ],
+      "finished_ns": 10490377281700,
+      "project_id": "t-project:6e31711093216bbc5ae8da51",
+      "started_ns": 10489790957500,
+      "tcap_sha256": "35836ebd4a6a5c06107fe31be72b8c88501190cb9f0129ec7dcff62aec80df76",
+      "tests": [
+        {
+          "expected_contains": "manifest: memory.read; trace: 'Memory read';",
+          "name": "TestMemoryRead",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'",
+          "operation": "ReadValue",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "2f8e6cd6e4297ed94a8545cf9a3c005103046130a3830b5abaa32337c301dc7d",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 142482000
+        },
+        {
+          "expected_contains": "manifest: autonomy.level3; trace: 'Autonomy';",
+          "name": "TestAutonomyLevel3",
+          "observed": "manifest: autonomy.level3; trace: 'Autonomy level set to 3'; effects: [manifest]; emit: 'Autonomy level 3 activated.'",
+          "operation": "SetAutonomy",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "b1d57870a5558d5a6cc356507c0f1456215418c0ce02d46d621f840968f41800",
+          "unit_id": "creation.open-ended-holdout.autonomy.level3",
+          "wall_ns": 130462900
+        },
+        {
+          "expected_contains": "manifest: precision.level2; trace: 'Precision';",
+          "name": "TestPrecisionLevel2",
+          "observed": "manifest: precision.level2; trace: 'Precision level set to 2'; effects: [manifest]; emit: 'Precision level 2 activated.'",
+          "operation": "SetPrecision",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e4e17da5f0473d96610e5028265674c35574751c065a7a04b5fbbe5967582d46",
+          "unit_id": "creation.open-ended-holdout.precision.level2",
+          "wall_ns": 124648000
+        },
+        {
+          "expected_contains": "comportamento científico",
+          "name": "human-holdout-acceptance",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'",
+          "operation": "ReadValue",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "7d59a90b81abfb92a00fa096ec2aacf23c60917eff4e7a1bef1bb2cbda6d0b6b",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 77879400
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:fda140d350271dd79ff9902b397393f009730f2c916f2bdf24e6f462c9e5b375",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "manifest: precision.level2; trace: 'Precision';",
+          "observed": "manifest: precision.level2; trace: 'Precision level set to 2'; effects: [manifest]; emit: 'Precision level 2 activated.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "186a45d24f61bc280bdfddcdc84bc93806d9dd7d94e3f2ca23d805d462b43dd9",
+          "test_name": "TestPrecisionLevel2",
+          "unit_id": "creation.open-ended-holdout.precision.level2"
+        },
+        {
+          "artifact_id": "sha256:e119b80e3c54b14f30e6f371f512780d73d397eff8057e7251f0eeb25e083990",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "comportamento científico",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "8b074c1affc3b9eb5ee5adcadb36a2664fe19f8581ffd8c04ae7ac748a850865",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation.open-ended-holdout.memory.read"
+        }
+      ],
+      "finished_ns": 10520502295300,
+      "project_id": "t-project:d1d1de90f959d1c326bb9849",
+      "started_ns": 10519897525600,
+      "tcap_sha256": "e7bb3fa0c609f6a45cc3c6f2f9d1d93569ee7b847b4017e545ee81a2dbe56a4b",
+      "tests": [
+        {
+          "expected_contains": "manifest: memory.read; trace: 'Memory read';",
+          "name": "TestMemoryRead",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'",
+          "operation": "ReadValue",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "ef06ca02711fc40466e72e78fa4e24a125cc522d72ebdc6f2e41b878be2de1e3",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 139197700
+        },
+        {
+          "expected_contains": "manifest: autonomy.level3; trace: 'Autonomy';",
+          "name": "TestAutonomyLevel3",
+          "observed": "manifest: autonomy.level3; trace: 'Autonomy'; emit: 'Autonomy level 3 activated.'",
+          "operation": "SetAutonomy",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "fe5e8e7a79e41fd8d87e3e931ae54c89d94ec023aae7244bb53590867f795771",
+          "unit_id": "creation.open-ended-holdout.autonomy.level3",
+          "wall_ns": 135194500
+        },
+        {
+          "expected_contains": "manifest: precision.level2; trace: 'Precision';",
+          "name": "TestPrecisionLevel2",
+          "observed": "manifest: precision.level2; trace: 'Precision level set to 2'; effects: [manifest]; emit: 'Precision level 2 activated.'",
+          "operation": "SetPrecision",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "384ac50fc7e15713e01c566be23fa9a38debe01e2ffebfc165531f72a563b216",
+          "unit_id": "creation.open-ended-holdout.precision.level2",
+          "wall_ns": 131358300
+        },
+        {
+          "expected_contains": "comportamento científico",
+          "name": "human-holdout-acceptance",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'",
+          "operation": "ReadValue",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f747362a46bab043686c4567615762a358df6f9c7f7f860eca50d82f31f5b37",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 84952300
+        }
+      ]
+    },
+    {
+      "attempt": 3,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:e119b80e3c54b14f30e6f371f512780d73d397eff8057e7251f0eeb25e083990",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "comportamento científico",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "8b074c1affc3b9eb5ee5adcadb36a2664fe19f8581ffd8c04ae7ac748a850865",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation.open-ended-holdout.memory.read"
+        }
+      ],
+      "finished_ns": 10612068910800,
+      "project_id": "t-project:c020387532c21e46aa3aaec0",
+      "started_ns": 10611486220900,
+      "tcap_sha256": "cb3d1c36dd739485523c21c57a843f363b66d7e351b3c2a76ba9f62f8e0fa80a",
+      "tests": [
+        {
+          "expected_contains": "manifest: memory.read; trace: 'Memory read';",
+          "name": "TestMemoryRead",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'",
+          "operation": "ReadValue",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "28788b3bc9340a894da46dda86c68ae62e6df03f83e6ed12436a7b9c1173d645",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 133573200
+        },
+        {
+          "expected_contains": "manifest: autonomy.level3; trace: 'Autonomy';",
+          "name": "TestAutonomyLevel3",
+          "observed": "manifest: autonomy.level3; trace: 'Autonomy'; emit: 'Autonomy level 3 activated.'",
+          "operation": "SetAutonomy",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "f98bc4474d41046bb8ff0223d9071f81d2131f8ce5b48d393fcd2d3bd77aefde",
+          "unit_id": "creation.open-ended-holdout.autonomy.level3",
+          "wall_ns": 134074200
+        },
+        {
+          "expected_contains": "manifest: precision.level2; trace: 'Precision';",
+          "name": "TestPrecisionLevel2",
+          "observed": "manifest: precision.level2; trace: 'Precision'; emit: 'Precision level 2 activated.'",
+          "operation": "SetPrecision",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "4d0e14038522e814a70bfe68ef86997f1f070ab020a2d811a6855cbf7f3f58db",
+          "unit_id": "creation.open-ended-holdout.precision.level2",
+          "wall_ns": 115620300
+        },
+        {
+          "expected_contains": "comportamento científico",
+          "name": "human-holdout-acceptance",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'",
+          "operation": "ReadValue",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "0b9cc357544decb7b448ff3d029434574ac0ddd03a829c330d2e385545cd07ec",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 90168000
+        }
+      ]
+    },
+    {
+      "attempt": 4,
+      "diagnostics": [],
+      "finished_ns": 10642811588700,
+      "project_id": "t-project:4f4599b5a60637a85546ac1a",
+      "started_ns": 10642242042100,
+      "tcap_sha256": "85c1a5a9f75f2dc6ec2c835d6368961031640ee935f2f55445a314ab89127c62",
+      "tests": [
+        {
+          "expected_contains": "manifest: memory.read; trace: 'Memory read';",
+          "name": "TestMemoryRead",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'; comportamento científico",
+          "operation": "ReadValue",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "c88e5a9969391d873387797750766cf63477b82060837f5c39390857f230f73b",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 139147500
+        },
+        {
+          "expected_contains": "manifest: autonomy.level3; trace: 'Autonomy';",
+          "name": "TestAutonomyLevel3",
+          "observed": "manifest: autonomy.level3; trace: 'Autonomy'; emit: 'Autonomy level 3 activated.'",
+          "operation": "SetAutonomy",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "ff32c5cc22031914498c9dd0da44aed28a2c50421448a70ae6d39c79786030ae",
+          "unit_id": "creation.open-ended-holdout.autonomy.level3",
+          "wall_ns": 119954700
+        },
+        {
+          "expected_contains": "manifest: precision.level2; trace: 'Precision';",
+          "name": "TestPrecisionLevel2",
+          "observed": "manifest: precision.level2; trace: 'Precision'; emit: 'Precision level 2 activated.'",
+          "operation": "SetPrecision",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8b2ded8fb19ccebfab9a1fd1b53324198ded2f0effffa8b4290f76df845b924e",
+          "unit_id": "creation.open-ended-holdout.precision.level2",
+          "wall_ns": 120140900
+        },
+        {
+          "expected_contains": "comportamento científico",
+          "name": "human-holdout-acceptance",
+          "observed": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'; comportamento científico",
+          "operation": "ReadValue",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "64459ed5eb4933189294147f4fc21a0d71585822175261360921333648cee801",
+          "unit_id": "creation.open-ended-holdout.memory.read",
+          "wall_ns": 80112900
+        }
+      ]
+    }
+  ],
+  "budget": 4,
+  "candidate_rejections": [
+    {
+      "error_class": "ForgeError",
+      "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+      "phase": "synthesis",
+      "raw_sha256": "36743be39130609e965b742f42baf5148b46ffb8abee5231f14702cd2642d8bb",
+      "reason": "projeto_T_reprovado",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "294ffa860544574e69f039a4a918b5faf220f90feac0fe3ccaa2177d2288c90d",
+        "ended_monotonic_ns": 10355717442200,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+        "output_sha256": "36743be39130609e965b742f42baf5148b46ffb8abee5231f14702cd2642d8bb",
+        "sampling_policy_id": "casulo-sampling-code-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 10239326288300,
+        "stream_events": 507
+      }
+    },
+    {
+      "operation_id": "trevise:verifier:diagnostic:2:TestPrecisionLevel2:candidate-0",
+      "raw_sha256": "a77b2fc1598867448dd60ee8711a7aa10c3d10af5bc2bf21a79c7e56c857f133",
+      "reason": "saída_estruturada_inválida",
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "0477bf9b085622f13145701b1a7b6aead4b731498857e460767d11aa29adbdf2",
+        "ended_monotonic_ns": 10601152571500,
+        "external_network_used": false,
+        "finish_reason": "length",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "trevise:verifier:diagnostic:2:TestPrecisionLevel2:candidate-0",
+        "output_sha256": "a77b2fc1598867448dd60ee8711a7aa10c3d10af5bc2bf21a79c7e56c857f133",
+        "sampling_policy_id": "casulo-sampling-code-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 10520502523400,
+        "stream_events": 382
+      }
+    }
+  ],
+  "project_id": "t-project:4f4599b5a60637a85546ac1a",
+  "receipt_sha256": "2a26fae4bdb4bbe83acdf3894247563d5f44a1ee49fcf0e0f36632db8f718414",
+  "repair_count": 4,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "PASS",
+  "tcap_sha256": "85c1a5a9f75f2dc6ec2c835d6368961031640ee935f2f55445a314ab89127c62"
+}

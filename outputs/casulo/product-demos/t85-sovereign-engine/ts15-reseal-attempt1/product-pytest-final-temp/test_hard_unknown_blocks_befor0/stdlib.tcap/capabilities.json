@@ -1,0 +1,21 @@
+{
+  "modules": {
+    "t.casulo.capabilities": [],
+    "t.casulo.dialogue": [],
+    "t.casulo.intent": [],
+    "t.casulo.jobs": [],
+    "t.casulo.materialization": [
+      "manifest"
+    ],
+    "t.casulo.memory_policy": [],
+    "t.casulo.receipts": [],
+    "t.casulo.requirements": [],
+    "t.casulo.simulation": [
+      "simulation"
+    ],
+    "t.casulo.universes": [],
+    "t.core.canonical": [],
+    "t.core.collections": [],
+    "t.core.result": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "bytes": 3211264,
+  "claim": "authentic adopted-model F32/Q4_K/Q6_K samples parsed and executed in Native; not decoder inference",
+  "first_model_derived_token": false,
+  "full_model_mapped": false,
+  "host_bridge": false,
+  "image": "release/casulo-native-neural-port-np3.img",
+  "network": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-neural-port-image/0.1",
+  "sha256": "9468e523313c34df183d022eb7536104b09fbba5d39ee745f5373a08f7ab778d",
+  "stage": "NP3_CORRECTED_ALL_MODEL_WEIGHT_FORMATS_PROBE",
+  "system_pack": "release/casulo-native-neural-port-system-pack-v3.cspk",
+  "system_pack_sha256": "c209aae87feb8549ddadca6ff6b454060fcb99783d1a07ee5849402baaf0ee4d",
+  "target": "x86_64-unknown-none"
+}

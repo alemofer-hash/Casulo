@@ -1,0 +1,4 @@
+worktree C:/Users/guimo/Documents/Codex/2026-07-28/ex/outputs/casulo
+HEAD df12e916c90d9bd2b966326275dc191573f38abd
+branch refs/heads/product/semantic-multiverse
+

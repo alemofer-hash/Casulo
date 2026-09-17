@@ -1,0 +1,64 @@
+{
+  "schema": "casulo-hwinfo-minimal-profile/1.0",
+  "created_utc": "2026-08-10T04:30:03.795000+00:00",
+  "status": "READY_FOR_MANUAL_UI_ACTION",
+  "reason": "reduce HWiNFO observer overhead without changing the frozen 250 ms sampling interval",
+  "source_csv": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+    "byte_offset": 38592213,
+    "last_timestamp_utc": "2026-08-10T04:30:03.795000+00:00",
+    "sha256_at_preparation": "56c282791ff7e862b3382fad73430fd620370d6f647e405ec1a47a1b7b4f1b98"
+  },
+  "registry_backup": {
+    "path": "HWiNFO64-registry-backup.reg",
+    "sha256": "08d6b6d4c00ce988bde47ac56733b5b243a2c72e730e7490c51573842adb173c"
+  },
+  "frozen_global_polling_ms": 250,
+  "preferred_enabled_groups": [
+    "CPU [#0]: Intel Core i5-1235U",
+    "CPU [#0]: Intel Core i5-1235U: DTS",
+    "CPU [#0]: Intel Core i5-1235U: Enhanced",
+    "Battery: L21M3PF0"
+  ],
+  "mandatory_sensor_literals": [
+    "Relógios efetivos núcleo (avg) [MHz]",
+    "Uso total da CPU [%]",
+    "Temperaturas centrais (avg) [°C]",
+    "CPU Inteira [°C]",
+    "Estrangulamento térmico do núcleo (avg) [Yes/No]",
+    "P-core 0 Estrangulamento térmico [Yes/No]",
+    "P-core 1 Estrangulamento térmico [Yes/No]",
+    "E-core 2 Estrangulamento térmico [Yes/No]",
+    "E-core 3 Estrangulamento térmico [Yes/No]",
+    "E-core 4 Estrangulamento térmico [Yes/No]",
+    "E-core 5 Estrangulamento térmico [Yes/No]",
+    "E-core 6 Estrangulamento térmico [Yes/No]",
+    "E-core 7 Estrangulamento térmico [Yes/No]",
+    "E-core 8 Estrangulamento térmico [Yes/No]",
+    "E-core 9 Estrangulamento térmico [Yes/No]",
+    "Limite de potência do núcleo excedido (avg) [Yes/No]",
+    "P-core 0 Limite de potência excedido [Yes/No]",
+    "P-core 1 Limite de potência excedido [Yes/No]",
+    "E-core 2 Limite de potência excedido [Yes/No]",
+    "E-core 3 Limite de potência excedido [Yes/No]",
+    "E-core 4 Limite de potência excedido [Yes/No]",
+    "E-core 5 Limite de potência excedido [Yes/No]",
+    "E-core 6 Limite de potência excedido [Yes/No]",
+    "E-core 7 Limite de potência excedido [Yes/No]",
+    "E-core 8 Limite de potência excedido [Yes/No]",
+    "E-core 9 Limite de potência excedido [Yes/No]",
+    "Limite de potência do pacote / anel excedido [Yes/No]",
+    "Potência total da CPU [W]",
+    "Nível de carga [%]",
+    "Taxa de carga [W]"
+  ],
+  "prohibited_changes": [
+    "global polling interval",
+    "power profile",
+    "RAPL or power limits",
+    "thermal thresholds",
+    "firmware or BIOS",
+    "scientific gate thresholds"
+  ],
+  "next_gate": "inspect a newly started CSV and reject it unless every mandatory sensor remains present"
+}

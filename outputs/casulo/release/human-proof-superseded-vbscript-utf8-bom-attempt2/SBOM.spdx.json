@@ -1,0 +1,43 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "annotations": [
+    {
+      "annotationDate": "2026-08-14T21:48:50.296959+00:00",
+      "annotationType": "OTHER",
+      "annotator": "Organization: Teloscorp",
+      "comment": "Weights and signing private keys are not embedded."
+    }
+  ],
+  "creationInfo": {
+    "created": "2026-08-14T21:48:50.296934+00:00",
+    "creators": [
+      "Organization: Teloscorp"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://teloscorp.invalid/spdx/casulo-owner-human-proof/2026-08-14",
+  "name": "casulo-owner-human-proof-candidate",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-CasuloOwner",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "LicenseRef-Teloscorp-Proprietary",
+      "name": "Casulo owner"
+    },
+    {
+      "SPDXID": "SPDXRef-Qwen",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "name": "Qwen3-4B Q4_K_M bootstrap reference"
+    },
+    {
+      "SPDXID": "SPDXRef-LlamaCpp",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "name": "llama.cpp b10362 runtime reference"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

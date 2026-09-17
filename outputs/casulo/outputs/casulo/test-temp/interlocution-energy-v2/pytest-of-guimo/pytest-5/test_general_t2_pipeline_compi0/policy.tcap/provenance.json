@@ -1,0 +1,51 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/research.interlocution.dataset.t",
+      "module": "research.interlocution.dataset",
+      "sha256": "0d414003710187b4f932a12429e20717f0f298a5e4593080dab2e68d79972dcb"
+    },
+    {
+      "file": "sources/research.interlocution.initialization.t",
+      "module": "research.interlocution.initialization",
+      "sha256": "50bc7d03c3e9f4ccd134c3d318ff858584df03859673be76d0a41020a37b726c"
+    },
+    {
+      "file": "sources/research.interlocution.precision.t",
+      "module": "research.interlocution.precision",
+      "sha256": "99ad73da5fed5c7199046a6ce3a8fb22cba0e911a8f8c13825f8d6a32cd6dc4d"
+    },
+    {
+      "file": "sources/research.interlocution.loss.t",
+      "module": "research.interlocution.loss",
+      "sha256": "a61c43c44a13acc151dc830b931f53fe937f497fb26a90e81996e9ece0910020"
+    },
+    {
+      "file": "sources/research.interlocution.update.t",
+      "module": "research.interlocution.update",
+      "sha256": "b60f392d3a1478b5dbe01b78664e2b6f9617b81abe8523d1adabfd366ef29d06"
+    },
+    {
+      "file": "sources/research.interlocution.optimizer_state.t",
+      "module": "research.interlocution.optimizer_state",
+      "sha256": "c3c94de23652aa950fb270a8f7c30ba8c55258386ae9153690f267524fb58787"
+    },
+    {
+      "file": "sources/research.interlocution.working_set.t",
+      "module": "research.interlocution.working_set",
+      "sha256": "3d29818a570b04686e67486fb07af61934ebbb7e99ec6b1fa74939dcbc54fb43"
+    },
+    {
+      "file": "sources/research.interlocution.stopping.t",
+      "module": "research.interlocution.stopping",
+      "sha256": "dafb1a7e95bc7916e41315fdeca91316281b7eed7f0921157cf444f03b6f2af9"
+    },
+    {
+      "file": "sources/research.interlocution.judgment.t",
+      "module": "research.interlocution.judgment",
+      "sha256": "5906e6dbfa36863d99379549d269208c0dcf5d00ac9d0a0062c97fe042e00dba"
+    }
+  ]
+}

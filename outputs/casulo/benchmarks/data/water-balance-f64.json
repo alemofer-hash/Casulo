@@ -1,0 +1,6 @@
+{
+  "base_flow": 5.0,
+  "evapotranspiration": 10.0,
+  "precipitation": 100.0,
+  "surface_flow": 20.0
+}

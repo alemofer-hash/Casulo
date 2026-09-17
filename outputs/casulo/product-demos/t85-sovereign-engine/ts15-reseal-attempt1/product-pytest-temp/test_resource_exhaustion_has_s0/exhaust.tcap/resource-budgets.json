@@ -1,0 +1,8 @@
+{
+  "modules": {
+    "test.exhaust": {
+      "deadline_ms": 5000,
+      "steps": 1
+    }
+  }
+}

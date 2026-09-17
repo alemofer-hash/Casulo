@@ -1,0 +1,52 @@
+{
+  "schema": "casulo-dependency-candidate/1.0",
+  "status": "LICENSE_REVIEW_REQUIRED_NOT_ADOPTED",
+  "purpose": "offline pt-BR TTS candidate for Hosted Product",
+  "engine": {
+    "name": "sherpa-onnx",
+    "repository": "https://github.com/k2-fsa/sherpa-onnx.git",
+    "tag": "v1.13.5",
+    "commit": "3dc7c569f31ca2cd4a20ed6f7db780327e6714c5",
+    "top_level_license": "Apache-2.0",
+    "tts_dependency_chain": [
+      "espeak-ng-for-piper",
+      "piper-phonemize"
+    ],
+    "blocking_license": "eSpeak NG is GPL-3.0-or-later"
+  },
+  "voice": {
+    "name": "pt_BR-edresson-low",
+    "repository": "https://huggingface.co/rhasspy/piper-voices",
+    "revision": "ea046e8458f6acd997706d6e6066a022b42f6fb1",
+    "locale": "pt-BR",
+    "quality": "low",
+    "sample_rate": 16000,
+    "model": {
+      "path": "pt/pt_BR/edresson/low/pt_BR-edresson-low.onnx",
+      "size_bytes": 63104526,
+      "sha256": "de4cecee38b30bb1a6378a337af605d59f0c377df702c6a6752870db8991cd84"
+    },
+    "config": {
+      "path": "pt/pt_BR/edresson/low/pt_BR-edresson-low.onnx.json",
+      "size_bytes": 4168,
+      "sha256": "f138992d2e777d1e3aa0bbb14c2d324307b0f342c1bcf20978765b3bea506c56"
+    },
+    "model_card": {
+      "path": "pt/pt_BR/edresson/low/MODEL_CARD",
+      "size_bytes": 283,
+      "sha256": "d8fb0dab2d61ad9796904836fb2fc0ac7e324d89e80bc9ef14e328b77e5cb66f",
+      "dataset_license": "CC-BY-4.0"
+    }
+  },
+  "downloaded": false,
+  "built": false,
+  "enabled_by_default": false,
+  "requires_user_consent": true,
+  "requires_license_decision": true,
+  "notes": [
+    "top-level Apache-2.0 does not resolve the GPL TTS dependency chain",
+    "repository-level MIT metadata does not override the per-voice model card",
+    "low quality voice is unsuitable as an irreversible product identity",
+    "no download or build is authorized by this review manifest"
+  ]
+}

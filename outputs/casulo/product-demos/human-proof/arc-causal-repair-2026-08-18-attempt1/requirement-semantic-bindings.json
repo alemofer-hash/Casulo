@@ -1,0 +1,45 @@
+{
+  "bindings": [
+    {
+      "requirement_id": "req:twin:arc6-smoke:obs:purpose",
+      "semantic_paths": [
+        [
+          "purpose",
+          "summary"
+        ]
+      ],
+      "source_event_ids": [
+        "human:smoke:idea",
+        "human:smoke:confirm"
+      ],
+      "strength": "HARD",
+      "unit_ids": [
+        "decision"
+      ],
+      "verifier_ids": [
+        "verifier:acceptance"
+      ]
+    },
+    {
+      "requirement_id": "req:twin:arc6-smoke:obs:approval",
+      "semantic_paths": [
+        [
+          "behavior",
+          "approval"
+        ]
+      ],
+      "source_event_ids": [
+        "human:smoke:idea",
+        "human:smoke:confirm"
+      ],
+      "strength": "HARD",
+      "unit_ids": [
+        "review"
+      ],
+      "verifier_ids": [
+        "verifier:process"
+      ]
+    }
+  ],
+  "schema": "casulo.requirement-semantic-bindings/1.0"
+}

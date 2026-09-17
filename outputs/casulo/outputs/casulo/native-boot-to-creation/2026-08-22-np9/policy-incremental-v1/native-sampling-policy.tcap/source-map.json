@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.native.sampling_policy.t",
+      "module": "owner.native.sampling_policy",
+      "sha256": "1828ac60c660e3ec2c47fa038ac4548345bfcfd82ce34494b92594ab4089c648"
+    }
+  ]
+}

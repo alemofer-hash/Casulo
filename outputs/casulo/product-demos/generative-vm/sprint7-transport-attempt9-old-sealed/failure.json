@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 9,
+  "failure": "COMPLEX_PROVIDER_STATE_MACHINE_REGRESSION",
+  "action": "Restored the exact bounded synchronous provider path that passed attempt 2",
+  "preserved": true,
+  "neural_evidence": false
+}

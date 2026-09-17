@@ -1,0 +1,11 @@
+{
+  "incompatible_stress_energy": "energy_momentum_tensor must be 4x4",
+  "infinite_tensor": "physical constants and coordinates must be finite; G and c positive",
+  "insufficient_coordinates": "exactly four distinct coordinate identifiers are required",
+  "invalid_tolerance": "tolerances are outside the supported numerical envelope",
+  "nan_tensor": "physical constants and coordinates must be finite; G and c positive",
+  "non_symmetric": "metric is not symmetric within tolerance",
+  "nonpositive_step": "tolerances are outside the supported numerical envelope",
+  "singular": "metric is singular or numerically degenerate",
+  "wrong_metric_dimensions": "metric must be a 4x4 expression matrix"
+}

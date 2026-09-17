@@ -1,0 +1,163 @@
+{
+  "atlas_state": "READY_FOR_GUILHERME_MONDAY_DISCOVERY_SESSION",
+  "baseline": {
+    "c_critical": 1.0,
+    "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+    "release_manifest_sha256": "87c046056ee16dbc2f02350f50bde62f9bb617ebfe002eb993536a794393f8ee",
+    "s_authority": 0.8615384615384616,
+    "s_execution": 0.8615384615384616,
+    "state": "READY_FOR_GUILHERME_CASULO_T85_VM_HUMAN_PROOF"
+  },
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network": "OFF",
+    "physical_voice": "LITERAL_CONSENT_REQUIRED",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb_block_devices": "PROHIBITED"
+  },
+  "frictions": [
+    {
+      "evidence": [{"line": 87, "observation": "status Pronto e send habilitado imediatamente apos Popen", "path": "release/t85-human-proof/OWNER_VM/app/tools/human_proof_window.pyw", "symbol": "HumanProofWindow.start_session"}],
+      "friction_id": "M1-F001",
+      "human_opinion": null,
+      "impact_on_vision": "progresso visual pode anteceder a presenca real e torna time-to-presence inexato",
+      "missing_test": "UI deve permanecer em loading ate o primeiro marcador real Casulo owner",
+      "minimum_plausible_fix": "habilitar input e estado Pronto somente ao observar o header real do processo filho",
+      "probable_layer": "Guide Presence / UI",
+      "reproduction": ["iniciar START_CASULO_OWNER_T85.vbs", "observar quando Pronto aparece", "comparar com o primeiro header do processo owner"],
+      "severity": "P2",
+      "source_type": "CODE_CONFIRMED",
+      "status": "MITIGATED_IN_M1_OBSERVER_NOT_FIXED_IN_SEALED_RELEASE",
+      "title": "Pronto antes da presenca comprovada"
+    },
+    {
+      "evidence": [{"line": 93, "observation": "toda linha Casulo dispara speak_response sem gate de consentimento de sessao", "path": "release/t85-human-proof/OWNER_VM/app/tools/human_proof_window.pyw", "symbol": "HumanProofWindow.start_session"}, {"line": 139, "observation": "speak_response inicia WindowsDirectStreamingTts diretamente", "path": "release/t85-human-proof/OWNER_VM/app/tools/human_proof_window.pyw", "symbol": "HumanProofWindow.speak_response"}],
+      "friction_id": "M1-F002",
+      "human_opinion": null,
+      "impact_on_vision": "voz fisica pode ocorrer sem consentimento literal contemporaneo",
+      "missing_test": "nenhum playback ou captura antes do token literal de consentimento da sessao",
+      "minimum_plausible_fix": "gate unico de consentimento efemero para microfone e TTS, default OFF",
+      "probable_layer": "Voice / Consent",
+      "reproduction": ["iniciar owner sem clicar Falar", "enviar texto", "observar se TTS inicia"],
+      "severity": "P1",
+      "source_type": "CODE_CONFIRMED",
+      "status": "BLOCKED_BY_M1_WRAPPER_UNTIL_LITERAL_CONSENT_NOT_FIXED_IN_SEALED_RELEASE",
+      "title": "TTS nao subordinado a consentimento literal"
+    },
+    {
+      "evidence": [{"line": 99, "observation": "project_id fixo em toda sessao humana", "path": "release/t85-human-proof/OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py", "symbol": "main"}],
+      "friction_id": "M1-F003",
+      "human_opinion": null,
+      "impact_on_vision": "nao ha caminho humano para selecionar dois projetos e testar project bleed",
+      "missing_test": "troca explicita A/B no launcher e recall isolado por projeto",
+      "minimum_plausible_fix": "controle de projeto validado com troca explicita e indicacao persistente do escopo atual",
+      "probable_layer": "Living Memory / Hosted UI",
+      "reproduction": ["abrir a sessao", "procurar comando ou controle de projeto", "tentar alternar entre dois projetos"],
+      "severity": "P1",
+      "source_type": "CODE_CONFIRMED",
+      "status": "OPEN_FOR_HUMAN_DISCOVERY",
+      "title": "Project bleed nao e exercitavel pelo fluxo humano"
+    },
+    {
+      "evidence": [{"line": 102, "observation": "recorder usa active-session e session_id constantes", "path": "release/t85-human-proof/OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py", "symbol": "main"}],
+      "friction_id": "M1-F004",
+      "human_opinion": null,
+      "impact_on_vision": "notas de inspecoes distintas podem compartilhar o mesmo namespace",
+      "missing_test": "duas inicializacoes devem produzir sessions distintas e export rastreavel",
+      "minimum_plausible_fix": "session_id e diretorio unicos, ligados a campaign_id estavel",
+      "probable_layer": "Inspection Recorder",
+      "reproduction": ["abrir duas sessoes owner", "registrar notas em ambas", "inspecionar active-session"],
+      "severity": "P1",
+      "source_type": "CODE_CONFIRMED",
+      "status": "MITIGATED_BY_M1_SEPARATE_SESSION_ROOTS_NOT_FIXED_IN_SEALED_RELEASE",
+      "title": "Namespace humano fixo entre sessoes"
+    },
+    {
+      "evidence": [{"line": 150, "observation": "export usa destino fixo semantic-multiverse-feedback", "path": "release/t85-human-proof/OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py", "symbol": "main"}, {"line": 158, "observation": "OwnerInspectionRecorder.export rejeita destino existente", "path": "private/casulo-owner/src/casulo_owner/inspection.py", "symbol": "OwnerInspectionRecorder.export"}],
+      "friction_id": "M1-F005",
+      "human_opinion": null,
+      "impact_on_vision": "segundo export pode encerrar o loop em vez de preservar uma revisao nova",
+      "missing_test": "dois exports consecutivos devem ser append-only e ambos verificaveis",
+      "minimum_plausible_fix": "destino content-addressed ou sequencial e erro capturado no ramo :export",
+      "probable_layer": "Inspection Export",
+      "reproduction": ["executar :export", "executar :export novamente na mesma raiz", "observar falha"],
+      "severity": "P2",
+      "source_type": "CODE_CONFIRMED",
+      "status": "OPEN_TEST_NEAR_END_OF_HUMAN_SESSION",
+      "title": "Export nao suporta repeticao append-only"
+    },
+    {
+      "evidence": [{"line": 168, "observation": "run_probe sincrono ocupa o loop que tambem recebe conversa", "path": "release/t85-human-proof/OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py", "symbol": "main"}],
+      "friction_id": "M1-F006",
+      "human_opinion": null,
+      "impact_on_vision": "Guide Presence pode ficar indisponivel enquanto o job generativo compila e materializa",
+      "missing_test": "turno substantivo durante run_probe longo com cancelamento real",
+      "minimum_plausible_fix": "job em worker separado, fila de eventos real e lane de Presence independente",
+      "probable_layer": "Guide Presence / Jobs",
+      "reproduction": ["iniciar :criar e confirmar", "durante o job enviar uma pergunta curta", "medir se a resposta chega antes do fim do job"],
+      "severity": "P1",
+      "source_type": "CODE_CONFIRMED_ARCHITECTURAL_GAP_RUNTIME_CONFIRMATION_PENDING",
+      "status": "OPEN_FOR_HUMAN_DISCOVERY",
+      "title": "Criacao sincronica no loop humano"
+    },
+    {
+      "evidence": [{"line": 181, "observation": "timeline da criacao e gerada e impressa", "path": "release/t85-human-proof/OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py", "symbol": "main"}, {"line": 183, "observation": "browser abre semantic_visual, nao creation_visual", "path": "release/t85-human-proof/OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py", "symbol": "main"}],
+      "friction_id": "M1-F007",
+      "human_opinion": null,
+      "impact_on_vision": "a forma viva de doze estados nao e o visual apresentado automaticamente ao usuario",
+      "missing_test": "apos materializacao o renderer principal deve mostrar a timeline realmente gerada",
+      "minimum_plausible_fix": "abrir ou integrar a Creation Field timeline como superficie primaria e manter mapa semantico como inspecao",
+      "probable_layer": "Creation Field / Visual",
+      "reproduction": ["concluir uma criacao", "observar a pagina aberta automaticamente", "comparar com o caminho Forma da criacao impresso"],
+      "severity": "P2",
+      "source_type": "CODE_CONFIRMED",
+      "status": "OPEN_FOR_HUMAN_DISCOVERY",
+      "title": "Visual aberto nao e a forma viva da criacao"
+    },
+    {
+      "evidence": [{"line": 105, "observation": "lista de comandos nao possui editar ou corrigir artefato", "path": "release/t85-human-proof/OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py", "symbol": "main"}, {"line": 168, "observation": "cada :criar chama run_probe para nova destination", "path": "release/t85-human-proof/OWNER_VM/app/tools/casulo_semantic_multiverse_vm_inspect.py", "symbol": "main"}],
+      "friction_id": "M1-F008",
+      "human_opinion": null,
+      "impact_on_vision": "correcao por conversa pode nao alterar o subgrafo ou artefato previamente materializado",
+      "missing_test": "pedido de correcao deve gerar nova versao, diff de subgrafo e round-trip",
+      "minimum_plausible_fix": "comando/intent de reedicao ligado ao CreationSpec atual e recompilacao transacional localizada",
+      "probable_layer": "Intent Engine / T Forge / Materializer",
+      "reproduction": ["materializar uma criacao simples", "pedir uma correcao material", "verificar se manifest, TCAP e versao mudam"],
+      "severity": "P1",
+      "source_type": "CODE_CONFIRMED",
+      "status": "OPEN_FOR_HUMAN_DISCOVERY",
+      "title": "Correcao humana nao esta ligada ao artefato corrente"
+    },
+    {
+      "evidence": [{"line": 83, "observation": "stderr e unido ao stdout e toda linha e mostrada na UI", "path": "release/t85-human-proof/OWNER_VM/app/tools/human_proof_window.pyw", "symbol": "HumanProofWindow.start_session"}],
+      "friction_id": "M1-F009",
+      "human_opinion": null,
+      "impact_on_vision": "traceback ou infraestrutura interna podem aparecer sem projecao recuperavel",
+      "missing_test": "excecao inesperada do filho deve virar erro recuperavel sem stack/path no UI",
+      "minimum_plausible_fix": "canal estruturado de eventos e sanitizacao antes do renderer",
+      "probable_layer": "Process Boundary / UI",
+      "reproduction": ["induzir uma falha controlada do filho", "observar se stack/path aparecem na janela"],
+      "severity": "P2",
+      "source_type": "CODE_CONFIRMED_RISK_RUNTIME_EVENT_NOT_YET_OBSERVED",
+      "status": "MONITORED_BY_M1_OBSERVER",
+      "title": "Canal bruto de stdout e stderr chega ao renderer"
+    }
+  ],
+  "human_notes": [],
+  "instrumentation": {
+    "automated_events": "automated-events.jsonl",
+    "human_notes": "human-notes.jsonl",
+    "launcher": "product-demos/human-proof/monday-discovery-2026-08-17-attempt1/START_MONDAY_DISCOVERY.vbs",
+    "privacy": {"raw_audio_persisted": false, "secrets_included": false, "transcripts_persisted_by_observer": false, "user_content_persisted_by_observer": false},
+    "session_root": "%LOCALAPPDATA%/Casulo/monday-discovery/2026-08-17/session-*"
+  },
+  "preflight": {
+    "doctor": "12/12 PASS",
+    "first_test_attempt": "1 PASS, 4 SETUP ERRORS due invalid TMP ordering; preserved",
+    "selected_tests": "46 PASS, 1 SKIP (Windows symlink privilege WinError 1314; not counted)",
+    "voice_physical_opened": false
+  },
+  "schema": "casulo.monday-failure-atlas/1.0",
+  "session_human_opinion": "PENDING_GUILHERME"
+}

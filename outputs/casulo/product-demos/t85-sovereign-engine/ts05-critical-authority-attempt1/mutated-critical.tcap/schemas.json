@@ -1,0 +1,230 @@
+{
+  "modules": {
+    "owner.critical.capabilities": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "requested",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "List"
+              }
+            },
+            {
+              "name": "granted",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "List"
+              }
+            },
+            {
+              "name": "consent_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "CapabilityDecisionInput"
+        }
+      ],
+      "version": 1
+    },
+    "owner.critical.fulfillment": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "hard_statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 128,
+                "name": "List"
+              }
+            },
+            {
+              "name": "evidence_receipts",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 128,
+                "name": "List"
+              }
+            },
+            {
+              "name": "safety_pass",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "unsupported_claims",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "List"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "HardFulfillmentInput"
+        }
+      ],
+      "version": 1
+    },
+    "owner.critical.intent": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "model_proposed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "human_confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "material",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "MaterialIntentInput"
+        }
+      ],
+      "version": 1
+    },
+    "owner.critical.publish": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "human_approved",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "simulation_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "PublishCommitInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

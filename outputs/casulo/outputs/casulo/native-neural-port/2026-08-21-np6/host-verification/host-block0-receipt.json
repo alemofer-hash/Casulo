@@ -1,0 +1,300 @@
+{
+  "claim": "two adopted-model tokens completed block zero only; no logits or output token",
+  "comparison_status": "PASS",
+  "counters": {
+    "CACHE_BYTES_LOADED": "153092096",
+    "CACHE_LOADS": "146",
+    "DESCRIPTORS_SCANNED": "398",
+    "MATVEC_CALLS": "14",
+    "MULTIPLY_ACCUMULATES": "201850880",
+    "OUTPUT_SHA256": "1d90e48904a850b99e9cc1c5da08012649bc118999c37d9751cbd5f2842300f0",
+    "QUANTIZED_BLOCKS": "788480",
+    "TOKENS_COMPLETED": "2",
+    "WEIGHT_BYTES_READ": "127733760"
+  },
+  "duration_seconds_observational_not_benchmark": 0.544356107711792,
+  "ended_unix": 1787283642.2381604,
+  "model": {
+    "bytes": 2497280256,
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "oracle": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-neural-port\\2026-08-21-np6\\block0-oracle-attempt-3.json",
+    "sha256": "ee74f2f0cc742ffd3aef333356a53fe4b31cc60da6be1e87bf5efaa6696eb24a"
+  },
+  "runner": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\os\\target\\release\\examples\\block0_host.exe",
+    "sha256": "8a1c8c06e35b2980674662a56204c4c6659c5a19b811e881e5c5c94b535cc18f"
+  },
+  "schema": "casulo-native-block0-host-receipt/0.1",
+  "stages": {
+    "token_0.attention_context": {
+      "maximum": 0.287152082,
+      "minimum": -0.237743556,
+      "square_sum_f64": 4.498963983998031,
+      "sum_f64": 4.364353391574696,
+      "values": 4096
+    },
+    "token_0.attention_projection": {
+      "maximum": 0.702008247,
+      "minimum": -0.34032926,
+      "square_sum_f64": 8.341890543493827,
+      "sum_f64": -2.529373401310295,
+      "values": 2560
+    },
+    "token_0.attention_residual": {
+      "maximum": 0.703628063,
+      "minimum": -0.357608587,
+      "square_sum_f64": 10.156367568548518,
+      "sum_f64": -1.535375646315515,
+      "values": 2560
+    },
+    "token_0.attention_weights": {
+      "maximum": 1.0,
+      "minimum": 1.0,
+      "square_sum_f64": 32.0,
+      "sum_f64": 32.0,
+      "values": 32
+    },
+    "token_0.attn_norm": {
+      "maximum": 0.222158298,
+      "minimum": -0.224235788,
+      "square_sum_f64": 2.5576855797070754,
+      "sum_f64": 1.304809513851069,
+      "values": 2560
+    },
+    "token_0.block_output": {
+      "maximum": 4.999332428,
+      "minimum": -2.28426075,
+      "square_sum_f64": 150.92902421429199,
+      "sum_f64": 3.0202789241448045,
+      "values": 2560
+    },
+    "token_0.embedding": {
+      "maximum": 0.088691711,
+      "minimum": -0.070489883,
+      "square_sum_f64": 1.4237433992706698,
+      "sum_f64": 0.9939978122711182,
+      "values": 2560
+    },
+    "token_0.ffn_activated": {
+      "maximum": 3.949503899,
+      "minimum": -2.418071508,
+      "square_sum_f64": 110.90146658288322,
+      "sum_f64": 6.712192531864275,
+      "values": 9728
+    },
+    "token_0.ffn_down": {
+      "maximum": 4.295704365,
+      "minimum": -2.028707504,
+      "square_sum_f64": 115.16978079330374,
+      "sum_f64": 4.555654266499914,
+      "values": 2560
+    },
+    "token_0.ffn_gate": {
+      "maximum": 1.657950878,
+      "minimum": -1.299359918,
+      "square_sum_f64": 801.2072486506227,
+      "sum_f64": -306.00748496851884,
+      "values": 9728
+    },
+    "token_0.ffn_norm": {
+      "maximum": 0.397688985,
+      "minimum": -0.437712163,
+      "square_sum_f64": 32.1962752931676,
+      "sum_f64": -5.075578338723062,
+      "values": 2560
+    },
+    "token_0.ffn_up": {
+      "maximum": 3.108021021,
+      "minimum": -2.884782553,
+      "square_sum_f64": 2384.563370365473,
+      "sum_f64": -28.9475839138031,
+      "values": 9728
+    },
+    "token_0.key_norm": {
+      "maximum": 247.063598633,
+      "minimum": -254.921691895,
+      "square_sum_f64": 267986.4988402877,
+      "sum_f64": 125.24745600542519,
+      "values": 1024
+    },
+    "token_0.key_projection": {
+      "maximum": 0.251607209,
+      "minimum": -0.31879881,
+      "square_sum_f64": 3.4124984248901082,
+      "sum_f64": -0.3812238261452876,
+      "values": 1024
+    },
+    "token_0.key_rope": {
+      "maximum": 247.063598633,
+      "minimum": -254.921691895,
+      "square_sum_f64": 267986.4988402877,
+      "sum_f64": 125.24745600542519,
+      "values": 1024
+    },
+    "token_0.query_norm": {
+      "maximum": 11.442415237,
+      "minimum": -10.524842262,
+      "square_sum_f64": 11104.945451729578,
+      "sum_f64": -55.05163113222079,
+      "values": 4096
+    },
+    "token_0.query_projection": {
+      "maximum": 0.76921761,
+      "minimum": -0.459118336,
+      "square_sum_f64": 13.894184615551875,
+      "sum_f64": 1.2685773949633585,
+      "values": 4096
+    },
+    "token_0.query_rope": {
+      "maximum": 11.442415237,
+      "minimum": -10.524842262,
+      "square_sum_f64": 11104.945451729578,
+      "sum_f64": -55.05163113222079,
+      "values": 4096
+    },
+    "token_0.value_projection": {
+      "maximum": 0.287152082,
+      "minimum": -0.237743556,
+      "square_sum_f64": 1.1247409959994994,
+      "sum_f64": 1.091088347893674,
+      "values": 1024
+    },
+    "token_1.attention_context": {
+      "maximum": 0.287150741,
+      "minimum": -0.237674117,
+      "square_sum_f64": 3.997717415294287,
+      "sum_f64": 3.3373521900466585,
+      "values": 4096
+    },
+    "token_1.attention_projection": {
+      "maximum": 0.817567766,
+      "minimum": -0.456062555,
+      "square_sum_f64": 8.160583417666558,
+      "sum_f64": 2.109642299852567,
+      "values": 2560
+    },
+    "token_1.attention_residual": {
+      "maximum": 0.805742443,
+      "minimum": -0.465618372,
+      "square_sum_f64": 10.22572574847734,
+      "sum_f64": 3.943602191284299,
+      "values": 2560
+    },
+    "token_1.attention_weights": {
+      "maximum": 0.999974251,
+      "minimum": 2.5741e-05,
+      "square_sum_f64": 25.584819628045743,
+      "sum_f64": 31.999999941725036,
+      "values": 64
+    },
+    "token_1.attn_norm": {
+      "maximum": 0.164858952,
+      "minimum": -0.213049442,
+      "square_sum_f64": 2.5928973561253503,
+      "sum_f64": 1.9912263153819367,
+      "values": 2560
+    },
+    "token_1.block_output": {
+      "maximum": 3.034595013,
+      "minimum": -1.821602941,
+      "square_sum_f64": 102.16326323711762,
+      "sum_f64": 23.352868801448494,
+      "values": 2560
+    },
+    "token_1.embedding": {
+      "maximum": 0.086425781,
+      "minimum": -0.087509155,
+      "square_sum_f64": 1.6299812763549326,
+      "sum_f64": 1.833959937095642,
+      "values": 2560
+    },
+    "token_1.ffn_activated": {
+      "maximum": 2.878576517,
+      "minimum": -1.991211891,
+      "square_sum_f64": 104.48248831592878,
+      "sum_f64": 9.464344158189881,
+      "values": 9728
+    },
+    "token_1.ffn_down": {
+      "maximum": 2.22885251,
+      "minimum": -1.426761627,
+      "square_sum_f64": 73.43266271309248,
+      "sum_f64": 19.409266932314495,
+      "values": 2560
+    },
+    "token_1.ffn_gate": {
+      "maximum": 1.750506282,
+      "minimum": -1.658883095,
+      "square_sum_f64": 767.9299861343341,
+      "sum_f64": -190.13612152356654,
+      "values": 9728
+    },
+    "token_1.ffn_norm": {
+      "maximum": 0.516128421,
+      "minimum": -0.395955145,
+      "square_sum_f64": 31.193772178577333,
+      "sum_f64": 5.6067339872797675,
+      "values": 2560
+    },
+    "token_1.ffn_up": {
+      "maximum": 3.363021374,
+      "minimum": -2.548849583,
+      "square_sum_f64": 2282.2044001162203,
+      "sum_f64": 59.7172606944805,
+      "values": 9728
+    },
+    "token_1.key_norm": {
+      "maximum": 234.150878906,
+      "minimum": -203.384140015,
+      "square_sum_f64": 204426.1221914954,
+      "sum_f64": 108.93007426630356,
+      "values": 1024
+    },
+    "token_1.key_projection": {
+      "maximum": 0.353534639,
+      "minimum": -0.417694747,
+      "square_sum_f64": 5.089541763752822,
+      "sum_f64": -0.6824698951095343,
+      "values": 1024
+    },
+    "token_1.key_rope": {
+      "maximum": 234.147125244,
+      "minimum": -203.379882812,
+      "square_sum_f64": 204426.12817702146,
+      "sum_f64": 106.7987522935291,
+      "values": 1024
+    },
+    "token_1.query_norm": {
+      "maximum": 9.769127846,
+      "minimum": -9.506022453,
+      "square_sum_f64": 11124.187344156102,
+      "sum_f64": -127.23673293101456,
+      "values": 4096
+    },
+    "token_1.query_projection": {
+      "maximum": 0.840488195,
+      "minimum": -0.43084985,
+      "square_sum_f64": 14.445257661055829,
+      "sum_f64": -1.5668595560709946,
+      "values": 4096
+    },
+    "token_1.query_rope": {
+      "maximum": 9.7693367,
+      "minimum": -8.727488518,
+      "square_sum_f64": 11124.187315226874,
+      "sum_f64": -86.02064711481216,
+      "values": 4096
+    },
+    "token_1.value_projection": {
+      "maximum": 0.261873215,
+      "minimum": -0.213199124,
+      "square_sum_f64": 1.2516127487559077,
+      "sum_f64": 0.7648240012931637,
+      "values": 1024
+    }
+  },
+  "started_unix": 1787283641.6938043
+}

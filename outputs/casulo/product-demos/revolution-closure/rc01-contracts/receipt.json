@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc01-contracts",
+  "gate_sha256": "2913e0848f0159b1a20f4c29d1300042e51ae0d83b7d526851028ff290910dc3",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC1_CONTRACTS_TRUTH_AND_TRUST_PASS",
+  "timestamp": "2026-08-14T19:51:39.122569+00:00"
+}

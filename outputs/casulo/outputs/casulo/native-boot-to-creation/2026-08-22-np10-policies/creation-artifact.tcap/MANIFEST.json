@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "function": "execute",
+    "module": "owner.generated.some_dois_numeros"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "ed46d6c95b8754cfdea6be35b5f7bf5ab365a4dad339fcb6a31de24689790f50"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "b5f2b6cc1fd63037066d63b7aecf67e17a12a6b845248f46d48f944554c0d68c"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "026b1b6bb0dd7a58b12a26c517a15deedd44e93e22d178362646cdef2afe7169"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "d4845abca4759e774398ae3e2e58021d19ce9036c6845b73ea80dad74782c21b"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "284c0fb573d4aa1f26c45a7e519d1f4789b51b68374f8cbf97e98ce2438213a0"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "b1f25e8234bff973bb29941c42e5aa218a00c8db9f18edcd60c39a58aaef262b"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "503eb6dcdb7b489f61850fe982a75d359c0e07bb308547f2ef6e5735545dbd2b"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "0c19b2a9076f0364eb3ef4114397493708d056c7a1f43f7c309994ba67329503"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "f7348f55ff45d5773489546f9ab3fcbecf204af907ee6729d29433f0480ac0c5"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "494ef5ce96e7f33d48819605356e1f8b06939daaeda6e7e19fdaeda39fa0ebc5"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "84ff0b918a4e758d66f54c1a96cc9e1560c4f21723851c6a112ab7d159e81947"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.generated.some_dois_numeros.t",
+      "module": "owner.generated.some_dois_numeros",
+      "sha256": "cc120e8f626c222674f8d950027f2265a05a59bd2167689bc746273f557ea0b3"
+    }
+  ],
+  "tcap_hash": "4544901e4dfc9bc996f28356a62093f5e475e6ed16d031b2602b092b9ee907e7"
+}

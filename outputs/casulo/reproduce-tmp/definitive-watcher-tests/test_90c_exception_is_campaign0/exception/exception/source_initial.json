@@ -1,0 +1,75 @@
+{
+  "byte_offset": 65,
+  "captured_at_utc": "2026-08-08T14:43:11.354756+00:00",
+  "inspection": {
+    "bom": null,
+    "candidate_energy_sensors": [
+      {
+        "index": 2,
+        "kind": "package_power",
+        "literal_name": "Potência total da CPU [W]",
+        "normalized_name": "potencia total da cpu w",
+        "provenance": "hwinfo_reported_cpu_package",
+        "session_id": 0,
+        "si_scale": 1.0,
+        "unit": "w"
+      }
+    ],
+    "column_counts": [
+      3
+    ],
+    "complete_rows": 1,
+    "decimal_separator": ".",
+    "delimiter": ",",
+    "duplicate_sensor_names": [],
+    "duplicate_timestamps": 0,
+    "encoding": "utf-8",
+    "explicit_estimate": false,
+    "first_timestamp_utc": "2026-08-07T15:00:00+00:00",
+    "header_count": 1,
+    "incomplete_rows": 0,
+    "invalid_rows": 0,
+    "last_timestamp_utc": "2026-08-07T15:00:00+00:00",
+    "sampling": {
+      "gaps_over_5x_median": [],
+      "intervals": 0,
+      "maximum_seconds": null,
+      "median_seconds": null,
+      "minimum_seconds": null,
+      "p95_seconds": null
+    },
+    "schema": "casulo-energy-hwinfo-source/1.0",
+    "selected_energy_sensor": {
+      "index": 2,
+      "kind": "package_power",
+      "literal_name": "Potência total da CPU [W]",
+      "normalized_name": "potencia total da cpu w",
+      "provenance": "hwinfo_reported_cpu_package",
+      "session_id": 0,
+      "si_scale": 1.0,
+      "unit": "w"
+    },
+    "session_count": 1,
+    "snapshot": {
+      "bytes_read": 65,
+      "complete_bytes": 65,
+      "file_size_at_open": 65,
+      "mtime_ns": 1786200191330019000,
+      "partial_final_line_ignored": false,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\reproduce-tmp\\definitive-watcher-tests\\test_90c_exception_is_campaign0\\live.csv",
+      "sha256": "d6de9e37d66dc92f98651679196d4eb0d1a10a58277bd55356de72639e346b31"
+    },
+    "timestamp_regressions": 0
+  },
+  "last_timestamp_before_campaign_utc": "2026-08-07T15:00:00+00:00",
+  "sha256": "d6de9e37d66dc92f98651679196d4eb0d1a10a58277bd55356de72639e346b31",
+  "snapshot": {
+    "bytes_read": 65,
+    "complete_bytes": 65,
+    "file_size_at_open": 65,
+    "mtime_ns": 1786200191330019000,
+    "partial_final_line_ignored": false,
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\reproduce-tmp\\definitive-watcher-tests\\test_90c_exception_is_campaign0\\live.csv",
+    "sha256": "d6de9e37d66dc92f98651679196d4eb0d1a10a58277bd55356de72639e346b31"
+  }
+}

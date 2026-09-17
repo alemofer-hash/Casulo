@@ -1,0 +1,1162 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.dataset_identity_integrity"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "observed_sha256"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "97675c3cdfe2be515108ef304f7043aaeca7e5897f6672365ec807b0a00912d6"
+                }
+              },
+              "error": "dataset_hash_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "records"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 384
+                }
+              },
+              "error": "records_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "input_features"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 4
+                }
+              },
+              "error": "features_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "supported"
+                ],
+                "root": "input"
+              },
+              "error": "primitive_unsupported",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "dataset_sha256"
+                    },
+                    {
+                      "op": "const",
+                      "value": "97675c3cdfe2be515108ef304f7043aaeca7e5897f6672365ec807b0a00912d6"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "records"
+                    },
+                    {
+                      "op": "const",
+                      "value": "384"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "input_features"
+                    },
+                    {
+                      "op": "const",
+                      "value": "4"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Observation"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.dataset_identity_integrity"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "observed_sha256"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "954defff423abf4c720fce5766e26593ce3066c56f3114f5b24cf0c4e1094321"
+                }
+              },
+              "error": "initialization_hash_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "cases_unique"
+                ],
+                "root": "input"
+              },
+              "error": "cases_not_unique",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "nonces_unique"
+                ],
+                "root": "input"
+              },
+              "error": "nonces_not_unique",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "supported"
+                ],
+                "root": "input"
+              },
+              "error": "primitive_unsupported",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "bundle_sha256"
+                    },
+                    {
+                      "op": "const",
+                      "value": "954defff423abf4c720fce5766e26593ce3066c56f3114f5b24cf0c4e1094321"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "initialization_state_policy"
+                    },
+                    {
+                      "op": "const",
+                      "value": "reset_each_case"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Observation"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.initialization_bundle"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "supported"
+                ],
+                "root": "input"
+              },
+              "error": "precision_unsupported",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "dtype"
+                    },
+                    {
+                      "op": "const",
+                      "value": "float64"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Capabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.numerical_precision"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "supported"
+                ],
+                "root": "input"
+              },
+              "error": "loss_unsupported",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "loss"
+                    },
+                    {
+                      "op": "const",
+                      "value": "bce_logits"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Capabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.loss_function"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "supported"
+                ],
+                "root": "input"
+              },
+              "error": "update_unsupported",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "optimizer"
+                    },
+                    {
+                      "op": "const",
+                      "value": "sgd"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "learning_rate"
+                    },
+                    {
+                      "op": "const",
+                      "value": "0.08"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Capabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.update_rule"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "supported"
+                ],
+                "root": "input"
+              },
+              "error": "optimizer_state_unsupported",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "no_cross_case_state"
+                ],
+                "root": "input"
+              },
+              "error": "optimizer_state_contamination",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "optimizer_state_policy"
+                    },
+                    {
+                      "op": "const",
+                      "value": "reset_each_case"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Capabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.optimizer_state"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "available_records"
+                  ],
+                  "root": "input"
+                },
+                "op": "ge",
+                "right": {
+                  "op": "const",
+                  "value": 256
+                }
+              },
+              "error": "working_set_unavailable",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "supported"
+                ],
+                "root": "input"
+              },
+              "error": "selection_unsupported",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "working_set_policy"
+                    },
+                    {
+                      "op": "const",
+                      "value": "selected_range"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "working_set_start"
+                    },
+                    {
+                      "op": "const",
+                      "value": "0"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "working_set_count"
+                    },
+                    {
+                      "op": "const",
+                      "value": "256"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Observation"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.working_set"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "supported"
+                ],
+                "root": "input"
+              },
+              "error": "stopping_unsupported",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "counter_supported"
+                ],
+                "root": "input"
+              },
+              "error": "counter_unavailable",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "stopping_policy"
+                    },
+                    {
+                      "op": "const",
+                      "value": "fixed_epochs"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "epochs"
+                    },
+                    {
+                      "op": "const",
+                      "value": "250"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Capabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.stopping"
+    },
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "supported"
+                ],
+                "root": "input"
+              },
+              "error": "verifier_unavailable",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "publisher_requires_t"
+                ],
+                "root": "input"
+              },
+              "error": "publisher_bypass",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "absolute_tolerance"
+                    },
+                    {
+                      "op": "const",
+                      "value": "1e-09"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "require_exact_counters"
+                    },
+                    {
+                      "op": "const",
+                      "value": "true"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "require_no_nan_inf"
+                    },
+                    {
+                      "op": "const",
+                      "value": "true"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "policy",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Capabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "equivalence_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "equivalence_not_pass",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "counter_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "counters_not_pass",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "receipt_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "receipts_not_pass",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "semantic_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "semantic_not_pass",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "human_contract_confirmed"
+                ],
+                "root": "input"
+              },
+              "error": "human_contract_unconfirmed",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "decision"
+                    },
+                    {
+                      "op": "const",
+                      "value": "PUBLISH"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "judge",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "Evidence"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.equivalence_acceptance"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

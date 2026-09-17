@@ -1,0 +1,33 @@
+{
+  "append_only": true,
+  "baseline": {
+    "branch": "product/semantic-multiverse",
+    "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+    "state": "READY_FOR_GUILHERME_CASULO_T85_VM_HUMAN_PROOF",
+    "worktree_dirty_preserved": true,
+    "worktree_status_bytes": 7427,
+    "worktree_status_sha256": "f9a632975311180155a69ddecffba43c4dd8f0204c5be336f939cad67bb772cd"
+  },
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network": "OFF",
+    "physical_voice": "REQUIRES_CONTEMPORANEOUS_LITERAL_CONSENT",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb_block_devices": "PROHIBITED"
+  },
+  "created_local": "2026-08-17T19:00:05.9141587-03:00",
+  "free_bytes_at_start": 78822363136,
+  "integrity": {
+    "agents_sha256": "8ef7fc5d1c8f458d3350a9e5bd47773c2c89ba98caa388ef6f7af16d9203575f",
+    "final_gate_sha256": "e704540e0382549bb667e9baa1d7a9e52d4ea14b0625f48517669808322f817f",
+    "readme_sha256": "17a0d46c6159ea353b51ee71e8f7fba24c9f6a310455e90b7d1616324a341891",
+    "release_manifest_sha256": "87c046056ee16dbc2f02350f50bde62f9bb617ebfe002eb993536a794393f8ee",
+    "release_sha256sums_sha256": "1f897e9a9cd1e9e8bebb3d9e3ac05852e95d3655c7cfcc62cd6d2d3f12d723de",
+    "t85_evidence_manifest_sha256": "2b80a41dfa814f9920fdcbd3ac42a1b80173b35e9eb4354b5b5435d8ba4967b5",
+    "ts_execution_state_sha256": "84f8240286c5f008cf5243f2ca8e78237c06f4bd59bdeca82fd4a8f3ef3206b0"
+  },
+  "schema": "casulo.monday-discovery-checkpoint/1.0",
+  "session_human_state": "PENDING_GUILHERME",
+  "voice_consent_received": false
+}

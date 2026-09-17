@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "arc_stream_used": true,
+    "background_job_real_artifact": true,
+    "background_job_terminal": true,
+    "cancellation_reaches_worker": true,
+    "cloud_release_locked_unchanged": true,
+    "launcher_cscript_pass": true,
+    "milestones_have_evidence": true,
+    "no_fabricated_percentage": true,
+    "post_confirmation_background": true,
+    "structured_token_stream": true,
+    "technical_controls_secondary": true
+  },
+  "classification": "DETERMINISTIC_UX_CONTRACT_SMOKE_NOT_OWNER_NEURAL_HUMAN_PROOF",
+  "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "human_proof": "PENDING_GUILHERME",
+  "schema": "casulo.arc9-gate/1.0",
+  "scientific_benchmark_started": false,
+  "state": "PASS",
+  "voice_quality": "PENDING_GUILHERME"
+}

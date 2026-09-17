@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:012e7ce589d6111edccffe4dcc1795fbbe4bbbda053119883997cfa25f2511c5",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "090c6365feabbc3b03981c780f796aa2c12e32506a8a358d82f245344305d0a1"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "cf4497662369fc7b18ac5a555b284e2b6b289a82a70821e6fd68f93adb809645",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "2419d338537f6e4725275133896e68487c33c67dbd8a3394d0f0d394b32da298",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "data",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "13bdb991ce6ce03d1177e61fe1afd464da5b72661141f780267f3865b24ee75f"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "G61H",
+        "judgements": [],
+        "name": "G61H_reject",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "17f6371b5b3cc42cde544668f78bb77c4e860f9dccdf8c8c7e0a53f08ac3058b"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "G61H",
+      "kind": "condense",
+      "name": "G61H_reject",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "96c6f806678f7a0b042563a5b0b378f4aba72e5f34c1685517acbee94492369c"
+  }
+}

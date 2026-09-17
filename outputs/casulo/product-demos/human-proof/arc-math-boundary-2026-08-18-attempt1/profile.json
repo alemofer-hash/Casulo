@@ -1,0 +1,15 @@
+{
+  "adoption_ratio_threshold": 0.95,
+  "candidate_logical_slots": 86,
+  "candidate_median_ns": 65404000,
+  "candidate_reference_ratio": 0.763197016478913,
+  "candidate_wins": true,
+  "checksum": 4805.913782584118,
+  "classification": "SHORT_PRODUCT_DIAGNOSTIC_NOT_SCIENTIFIC_BENCHMARK",
+  "pairs_per_round": 4000,
+  "reference_logical_slots": 1280,
+  "reference_median_ns": 85697400,
+  "rounds": 7,
+  "schema": "casulo.math-kernel-profile/1.0",
+  "traffic_reduced": true
+}

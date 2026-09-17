@@ -1,0 +1,9 @@
+[
+  {
+    "note_id": "note:g10:integrated",
+    "state": "MATERIALIZATION",
+    "source_event_ids": [
+      "g10:human-inspection-note"
+    ]
+  }
+]

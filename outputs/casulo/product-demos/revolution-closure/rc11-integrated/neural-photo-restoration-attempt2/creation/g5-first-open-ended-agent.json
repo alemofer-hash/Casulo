@@ -1,0 +1,259 @@
+{
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "checks": {
+    "all_final_tests_executed_and_passed": true,
+    "bounded_neural_repair_passed": true,
+    "external_ai_api_used": false,
+    "external_process_passed": true,
+    "fake_engine_used": false,
+    "holdout_absent_before_run": true,
+    "initial_candidate_imperfect": true,
+    "model_created_no_grant": true,
+    "neural_plan_generated": true,
+    "neural_t_generated": true,
+    "real_compiled_process_test_failed_first": true,
+    "real_effect_executed": false,
+    "round_trip_executable_preserved": true,
+    "round_trip_identity_preserved": true,
+    "round_trip_version_preserved": true,
+    "scientific_benchmark": false,
+    "simulation_passed": true,
+    "simulation_real_effects_absent": true
+  },
+  "cloud_state": "RELEASE_LOCKED",
+  "external_execution": {
+    "result": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real; creation:open-ended-holdout",
+    "returncode": 0
+  },
+  "gate": "FIRST_OPEN_ENDED_AGENT_CREATED",
+  "holdout_expectation": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real",
+  "idea": "Quero um agente local para planejar o restauro conservativo de fotografias analógicas escaneadas. O usuário descreve riscos, fungos, rasgos, manchas e intenção estética; o agente deve propor uma sequência reversível, preservar o original, registrar proveniência e recusar qualquer sobrescrita destrutiva. Ainda estou explorando: diferencie hipótese de decisão confirmada.",
+  "imported": {
+    "agent_artifact_id": "sha256:8904c52f99406846ddf43025c2a6dff4f191bfba86d2287a7172c30e3eed94fb",
+    "agent_operation": "Initialize",
+    "creation_id": "creation:open-ended-holdout",
+    "creation_version": 7
+  },
+  "materialization": {
+    "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\creation\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+    "archive_sha256": "ecfd10cda55c037c82352aa994bf41fe2b2170c8ea18ecc04c6ad3474bdae14d",
+    "directory": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc11-integrated\\neural-photo-restoration-attempt2\\creation\\materialized\\creation-38da5088c5e61759-v7",
+    "files": {
+      "MANIFEST.json": "ac9b66f17c769490a0ff6b5f3011243de022e2979f3861c7cbdd35224e541c01",
+      "SBOM.spdx.json": "b2d15ea368815836ffc2c6fe0b41e5132d810307e962b0269856b44a173cae97",
+      "SHA256SUMS": "8eee4847014e7a51562f85485e24e2627f5eb452e50ca69d6de9daddf544bed7",
+      "agent-artifact-manifest.json": "7bbb61af184a9e33bdbab6eba135ebfaa0f88f3e8344748a58ada7e10d1e4376",
+      "agent-descriptor.json": "689985383709a57caf7bc7e7454458b66fe640b1ae4cf4dcdc8e9790f3a5d77e",
+      "agent-project.json": "41d80aaf549e7a110a119006bb1dd88fcaf0d8c18a9321cea38d924139a8f40d",
+      "agent.py": "13f3e074808d01d89fecdca0f21d4c386a0185396ece02336c821c3ee884a088",
+      "agent.tcap": "abc0de0bdf5b58ab11240c2d83540d08e793ab673812c0aea7e44e471c10e975",
+      "api.py": "795e55cfffab9ac52b2b53832b6c2e80f57ec31b5e3a5e5b3b4f7140d3cf9aa7",
+      "creation.json": "20699f4d81ca708d7ffb3656d0e02710ea4b92194a209f337e0fa97752bb1b55",
+      "forge-receipt.json": "328e47518772712b67d9fa79a48f84935bfeffdd02073df5ba4f4fe58a157854",
+      "index.html": "eea3e4ca424599e043c6f27ecfc968c22ba347468750f8638970d46163f6614a",
+      "simulation-receipt.json": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+    },
+    "manifest_sha256": "ac9b66f17c769490a0ff6b5f3011243de022e2979f3861c7cbdd35224e541c01",
+    "package_id": "creation-38da5088c5e61759-v7",
+    "schema": "casulo.materialization-receipt/1.0"
+  },
+  "project_id": "t-project:1e28e6f0bb003038ac0d086f",
+  "public_state": "FROZEN",
+  "repair": {
+    "attempts": [
+      {
+        "attempt": 0,
+        "diagnostics": [
+          {
+            "artifact_id": "sha256:5057c6761cf8db7474378f8af4af397e57cb55cdf61d5b405e8486e6ed5b6e7e",
+            "code": "TTEST_EXPECTED_TEXT_MISSING",
+            "expected_contains": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real",
+            "observed": "creation:open-ended-holdout",
+            "process_returncode": 0,
+            "process_stderr": "",
+            "schema": "casulo.generative-diagnostic/1.0",
+            "source_sha256": "3c112fd3b1bf698fbd61a11ec36ac5df539858fe10e099cf2bded562a91f80c7",
+            "test_name": "human-holdout-acceptance",
+            "unit_id": "creation_unit"
+          }
+        ],
+        "finished_ns": 15889961407100,
+        "project_id": "t-project:1742a428ede83931180c6d4a",
+        "started_ns": 15889196362500,
+        "tcap_sha256": "95306aa059c1ef0274fde8b49bfddeeb1df9a26dc1eca096faada6ae2d7d1d63",
+        "tests": [
+          {
+            "expected_contains": "creation:open-ended-holdout",
+            "name": "creation_unit_test",
+            "observed": "creation:open-ended-holdout",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "cd68934b815879552f1118398d1621c8da83fa1fa2d5268e9a7fb72a47f275c0",
+            "unit_id": "creation_unit",
+            "wall_ns": 170699100
+          },
+          {
+            "expected_contains": "reversibility:validation",
+            "name": "reversibility_unit_test",
+            "observed": "reversibility:validation",
+            "operation": "Validate",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "57617e25d96741ed386314396511faaacdd73cda8d909ccbe7d2aba640d95e52",
+            "unit_id": "reversibility_unit",
+            "wall_ns": 129433600
+          },
+          {
+            "expected_contains": "preservation:log",
+            "name": "preservation_unit_test",
+            "observed": "preservation:log",
+            "operation": "Record",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "1ffa14c90f4ca16312e526962bb3b91b1bc4b3563bcb25f054ebd9dbbd6b66c5",
+            "unit_id": "preservation_unit",
+            "wall_ns": 124018900
+          },
+          {
+            "expected_contains": "trace:log",
+            "name": "trace_unit_test",
+            "observed": "trace:log",
+            "operation": "Log",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "49e5c99bf28b061bcdfcc162a64fe0f23965b21aaa0c865270074b7bbcf1b03a",
+            "unit_id": "trace_unit",
+            "wall_ns": 118047100
+          },
+          {
+            "expected_contains": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real",
+            "name": "human-holdout-acceptance",
+            "observed": "creation:open-ended-holdout",
+            "operation": "Initialize",
+            "passed": false,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "c492e45871b56e94372c2ced9224c77d995f97dc246762f73ac8d8529a8d8b62",
+            "unit_id": "creation_unit",
+            "wall_ns": 90527200
+          }
+        ]
+      },
+      {
+        "attempt": 1,
+        "diagnostics": [],
+        "finished_ns": 15938314024500,
+        "project_id": "t-project:1e28e6f0bb003038ac0d086f",
+        "started_ns": 15937541817700,
+        "tcap_sha256": "abc0de0bdf5b58ab11240c2d83540d08e793ab673812c0aea7e44e471c10e975",
+        "tests": [
+          {
+            "expected_contains": "creation:open-ended-holdout",
+            "name": "creation_unit_test",
+            "observed": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real; creation:open-ended-holdout",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "2b27b3b1fc6495992014a4b849ab2aacccb2c8a4045fc99d660b481e7183a716",
+            "unit_id": "creation_unit",
+            "wall_ns": 173812700
+          },
+          {
+            "expected_contains": "reversibility:validation",
+            "name": "reversibility_unit_test",
+            "observed": "reversibility:validation",
+            "operation": "Validate",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "8d5714902e1d81ca5cb00cc533c2ab07deacfd38f2128168dff3327d63c9c851",
+            "unit_id": "reversibility_unit",
+            "wall_ns": 135843800
+          },
+          {
+            "expected_contains": "preservation:log",
+            "name": "preservation_unit_test",
+            "observed": "preservation:log",
+            "operation": "Record",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "a16d5dd5d059bb06ebf02cd93c7b6b36bdd17c759ec17b06af7b76610dabb210",
+            "unit_id": "preservation_unit",
+            "wall_ns": 145053500
+          },
+          {
+            "expected_contains": "trace:log",
+            "name": "trace_unit_test",
+            "observed": "trace:log",
+            "operation": "Log",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "101caee986ba5c388f7f76b655f375c6020bce2779808c1358a5344b757c7872",
+            "unit_id": "trace_unit",
+            "wall_ns": 131322600
+          },
+          {
+            "expected_contains": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real",
+            "name": "human-holdout-acceptance",
+            "observed": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real; creation:open-ended-holdout",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "04b94366969661d01cd5f0cced44e0bcf3938361490bb44d5c4bd9bda673b862",
+            "unit_id": "creation_unit",
+            "wall_ns": 84547100
+          }
+        ]
+      }
+    ],
+    "budget": 4,
+    "candidate_rejections": [],
+    "project_id": "t-project:1e28e6f0bb003038ac0d086f",
+    "receipt_sha256": "4b045df4dd67c9c7849e34fc1f42d7cbb82eeb40c8ca6261c930a91a9ed1ccfd",
+    "repair_count": 1,
+    "schema": "casulo.verifier-repair-receipt/1.0",
+    "status": "PASS",
+    "tcap_sha256": "abc0de0bdf5b58ab11240c2d83540d08e793ab673812c0aea7e44e471c10e975"
+  },
+  "schema": "casulo-first-open-ended-agent-evidence/1.0",
+  "simulation": {
+    "correction_paths": [],
+    "creation_id": "creation:open-ended-holdout",
+    "events": [
+      {
+        "event_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+        "event_id": "simulation:g5:open-ended-agent:1",
+        "previous_hash": null,
+        "response": {
+          "error": null,
+          "ok": true,
+          "value": {
+            "records": 3,
+            "virtual": true
+          }
+        },
+        "sequence": 1,
+        "source_event_ids": [
+          "human:g5:simulate"
+        ],
+        "status": "SIMULATED",
+        "step_id": "read-research-memory-virtually"
+      }
+    ],
+    "head_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+    "real_effects_executed": false,
+    "schema": "casulo.simulation-receipt/1.0",
+    "simulation_id": "simulation:g5:open-ended-agent",
+    "status": "PASS"
+  },
+  "usb_state": "PROHIBITED"
+}

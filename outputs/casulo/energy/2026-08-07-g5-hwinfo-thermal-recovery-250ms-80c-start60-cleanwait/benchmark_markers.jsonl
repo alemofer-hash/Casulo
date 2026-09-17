@@ -1,0 +1,6 @@
+{"byte_offset":20471633,"event":"campaign_formal_start","local":"2026-08-07T18:16:08.035296-03:00","monotonic_ns":4873293044300,"pid":16144,"utc":"2026-08-07T21:16:08.035296+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T18:16:08.165958-03:00","monotonic_ns":4873403029700,"pid":16144,"utc":"2026-08-07T21:16:08.165958+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T18:16:14.868049-03:00","monotonic_ns":4881305058200,"new_samples":28,"pid":16144,"utc":"2026-08-07T21:16:14.868049+00:00"}
+{"event":"idle_start","local":"2026-08-07T18:19:06.400159-03:00","monotonic_ns":5051637202500,"pid":26008,"seconds":60.0,"utc":"2026-08-07T21:19:06.400159+00:00"}
+{"event":"idle_end","local":"2026-08-07T18:20:06.404047-03:00","monotonic_ns":5111641113400,"pid":26008,"utc":"2026-08-07T21:20:06.404047+00:00"}
+{"event":"thermal_abort","local":"2026-08-07T18:20:34.009000-03:00","monotonic_ns":5139956253300,"pid":26008,"stage":"cooldown_or_stability","temperature_c":81.0,"throttling":true,"utc":"2026-08-07T21:20:34.009000+00:00"}

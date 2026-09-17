@@ -1,0 +1,364 @@
+{
+  "modules": {
+    "research.interlocution.dataset": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "observed_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "records",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "input_features",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "DatasetObservation"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.initialization": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "observed_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cases_unique",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "nonces_unique",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "InitializationObservation"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.judgment": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "independent_verifier_available",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "publisher_requires_t",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "JudgeCapabilities"
+        },
+        {
+          "members": [
+            {
+              "name": "equivalence_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "counter_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "receipt_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "semantic_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "human_contract_confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "JudgmentEvidence"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.loss": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "mse_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "LossCapabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.optimizer_state": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "reset_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "no_cross_case_state",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "OptimizerStateCapabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.precision": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "float64_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "PrecisionCapabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.stopping": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "fixed_epoch_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "counter_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "StoppingCapabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.update": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "sgd_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "UpdateCapabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.working_set": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "available_records",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "selection_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "WorkingSetObservation"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

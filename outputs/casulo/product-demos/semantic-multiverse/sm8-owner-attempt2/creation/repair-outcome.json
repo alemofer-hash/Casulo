@@ -1,0 +1,141 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:5f67b0bc3c8d4cf3258b0e7e3da463f57838fc62fb3a3e9a5e3b25285e1e2c44",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "farol Q83 âmbar reversível",
+          "observed": "Initialization of simulated environment for vibration analysis",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "9d9f5d4643bcc2590abc126f09f6e15f65a70138e3c1ad6a86b6e7a35d7b507f",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation_unit_1"
+        }
+      ],
+      "finished_ns": 7604245273100,
+      "project_id": "t-project:a17c10d17a9ecb570ee9cbd5",
+      "started_ns": 7603601081800,
+      "tcap_sha256": "b2c7433f7c9f2945e6799f64c47934429f8e15438ccf75e9f4485aa002f4fea2",
+      "tests": [
+        {
+          "expected_contains": "Initialization of simulated environment",
+          "name": "TestInitialization",
+          "observed": "Initialization of simulated environment for vibration analysis",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "911fbb75d8ccde2eae37516d2577c7d63b05add04ac91a6caffa9b3364e45ad6",
+          "unit_id": "creation_unit_1",
+          "wall_ns": 168038700
+        },
+        {
+          "expected_contains": "Generating simulated vibration patterns",
+          "name": "TestDataGeneration",
+          "observed": "Generating simulated vibration patterns for centrifugal pump analysis",
+          "operation": "Generate",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8c2d07723483dfe3ac2e35c5046d34b61c78052170d6d8641193a88087fb41a4",
+          "unit_id": "creation_unit_2",
+          "wall_ns": 134746300
+        },
+        {
+          "expected_contains": "Simulating reversible maintenance interface",
+          "name": "TestInterfaceInteraction",
+          "observed": "Simulating reversible maintenance interface for simulated environment",
+          "operation": "Interact",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "437620a6f53467ef5b5978c18359a4e3300bb906bc95e38a540b20d5df7b0049",
+          "unit_id": "creation_unit_3",
+          "wall_ns": 126844900
+        },
+        {
+          "expected_contains": "farol Q83 âmbar reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "Initialization of simulated environment for vibration analysis",
+          "operation": "Initialize",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1fb4f91a3dc66c704bca063703d9ade6bb203ad3a37eac2444fca3753567ae09",
+          "unit_id": "creation_unit_1",
+          "wall_ns": 107962600
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [],
+      "finished_ns": 7643366904700,
+      "project_id": "t-project:e3ddb499d362431786d01e28",
+      "started_ns": 7642755950500,
+      "tcap_sha256": "8cd4bc515693f3e61be569f8baf11a7d37111bc6ec2c655bbb0650a19072b638",
+      "tests": [
+        {
+          "expected_contains": "Initialization of simulated environment",
+          "name": "TestInitialization",
+          "observed": "Initialization of simulated environment for vibration analysis farol Q83 âmbar reversível",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "0c69a304f6d589324cafd1bec20abe7a09e5d486f6f1109074f8a71ab0e93fd5",
+          "unit_id": "creation_unit_1",
+          "wall_ns": 175434400
+        },
+        {
+          "expected_contains": "Generating simulated vibration patterns",
+          "name": "TestDataGeneration",
+          "observed": "Generating simulated vibration patterns for centrifugal pump analysis",
+          "operation": "Generate",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "bce7c1da2a4c65109193dd5e1fdbacfc65165cb1763911d5d9aabd504fc10cdb",
+          "unit_id": "creation_unit_2",
+          "wall_ns": 133330600
+        },
+        {
+          "expected_contains": "Simulating reversible maintenance interface",
+          "name": "TestInterfaceInteraction",
+          "observed": "Simulating reversible maintenance interface for simulated environment",
+          "operation": "Interact",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8df42c3740a48e36e5980e88fa1cbfcf982515761ed8030e06d96041e89c6203",
+          "unit_id": "creation_unit_3",
+          "wall_ns": 125624200
+        },
+        {
+          "expected_contains": "farol Q83 âmbar reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "Initialization of simulated environment for vibration analysis farol Q83 âmbar reversível",
+          "operation": "Initialize",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "70c137b5242f4266ee0a2b8b8fd061972ceb60b3f5ec536aca60caee560e8bfe",
+          "unit_id": "creation_unit_1",
+          "wall_ns": 90807100
+        }
+      ]
+    }
+  ],
+  "budget": 4,
+  "candidate_rejections": [],
+  "project_id": "t-project:e3ddb499d362431786d01e28",
+  "receipt_sha256": "eff2a9e2ea2c823e9dd4a1b7e1bd61f54f3a246009c5d8166f9748d9e9d0210f",
+  "repair_count": 1,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "PASS",
+  "tcap_sha256": "8cd4bc515693f3e61be569f8baf11a7d37111bc6ec2c655bbb0650a19072b638"
+}

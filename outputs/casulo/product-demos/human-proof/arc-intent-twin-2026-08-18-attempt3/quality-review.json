@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.arc-intent-twin-quality-review/1.0",
+  "technical_contract_gate": "PASS",
+  "semantic_quality_gate": "FAIL_HYPOTHESES_NOT_MATERIALLY_DISTINCT",
+  "detail": "As duas hipóteses eram paráfrases do mesmo comportamento e não ofereciam uma escolha material real.",
+  "intent_twin_sha256": "9240d99947e6c2ff7225d61b5992ac27ad5f6eacb19e80185ad394e3ea50e5e0",
+  "preserved": true,
+  "superseded_by_validation": "arc-intent-twin-2026-08-18-attempt4"
+}

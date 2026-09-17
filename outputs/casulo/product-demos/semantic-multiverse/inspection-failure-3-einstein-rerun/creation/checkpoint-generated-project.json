@@ -1,0 +1,143 @@
+{
+  "candidate_rejections": [],
+  "creation_sha256": "4a20d018447d87f8b42a33c44a5ceeda15e4cedd487fcd516a61da78b22c1f59",
+  "entry_unit": "creation_unit",
+  "project_id": "t-project:fc3b96a516a95f7d844ada6f",
+  "tests": [
+    {
+      "expected_contains": "Creation started",
+      "input": "{'capabilities': ['memory.read'], 'content': {'behavior': {'autonomy': {'description': 'The evaluator operates autonomously'}, 'identity': {'purpose': {'description': 'Evaluates Einstein equations'}}, 'interface': {'input': {'description': 'Problem conditions'}, 'output': {'type': {'description': 'Analysis results'}}}}}",
+      "name": "test_creation",
+      "unit_id": "creation_unit"
+    },
+    {
+      "expected_contains": "Autonomy active",
+      "input": "{'capabilities': ['memory.read'], 'content': {'behavior': {'autonomy': {'description': 'The evaluator operates autonomously'}, 'identity': {'purpose': {'description': 'Evaluates Einstein equations'}}, 'interface': {'input': {'description': 'Problem conditions'}, 'output': {'type': {'description': 'Analysis results'}}}}}",
+      "name": "test_autonomy",
+      "unit_id": "autonomy_unit"
+    },
+    {
+      "expected_contains": "Scientific evaluation complete",
+      "input": "{'capabilities': ['memory.read'], 'content': {'behavior': {'autonomy': {'description': 'The evaluator operates autonomously'}, 'identity': {'purpose': {'description': 'Evaluates Einstein equations'}}, 'interface': {'input': {'description': 'Problem conditions'}, 'output': {'type': {'description': 'Analysis results'}}}}}",
+      "name": "test_scientific",
+      "unit_id": "scientific_unit"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "d90c2df0875f331916cb00dd3066c5c5c92ca21051be790c7d0e4f23ecc5d6a2",
+    "ended_monotonic_ns": 12182536430800,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+    "output_sha256": "fc3b96a516a95f7d844ada6f3f80bee3c8145c4797c15cd92c91495b199cabe4",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 12018373833700,
+    "stream_events": 785
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Initialize in CreationSpec\n  effects [manifest]\n  emit \"manifest: memory.read, trace: 'Creation started', effects: [manifest], emit: 'Initialization complete.'\"\n",
+      "unit_id": "creation_unit",
+      "watch_paths": [
+        [
+          "creation",
+          "CreationSpec",
+          "capabilities"
+        ],
+        [
+          "creation",
+          "CreationSpec",
+          "content",
+          "behavior",
+          "autonomy",
+          "description"
+        ],
+        [
+          "creation",
+          "CreationSpec",
+          "content",
+          "identity",
+          "purpose",
+          "description"
+        ],
+        [
+          "creation",
+          "CreationSpec",
+          "content",
+          "interface",
+          "input",
+          "description"
+        ],
+        [
+          "creation",
+          "CreationSpec",
+          "content",
+          "output",
+          "type",
+          "description"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit"
+      ],
+      "source": "language T/1.1\nmodule autonomy\n\ncapability manifest\n\nfield Autonomy\n  trace value: Text\n\ncondense Process in Autonomy\n  effects [manifest]\n  emit \"manifest: memory.read, trace: 'Processing input', effects: [manifest], emit: 'Autonomy active.'\"\n",
+      "unit_id": "autonomy_unit",
+      "watch_paths": [
+        [
+          "autonomy",
+          "Autonomy",
+          "behavior",
+          "autonomy",
+          "description"
+        ],
+        [
+          "autonomy",
+          "Autonomy",
+          "interface",
+          "input",
+          "description"
+        ],
+        [
+          "autonomy",
+          "Autonomy",
+          "output",
+          "type",
+          "description"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "autonomy_unit"
+      ],
+      "source": "language T/1.1\nmodule scientific\n\ncapability manifest\n\nfield ScientificEvaluator\n  trace value: Text\n\ncondense Evaluate in ScientificEvaluator\n  effects [manifest]\n  emit \"manifest: memory.read, trace: 'Evaluating Einstein equations', effects: [manifest], emit: 'Scientific evaluation complete.'\"\n",
+      "unit_id": "scientific_unit",
+      "watch_paths": [
+        [
+          "scientific",
+          "ScientificEvaluator",
+          "content",
+          "identity",
+          "purpose",
+          "description"
+        ],
+        [
+          "scientific",
+          "ScientificEvaluator",
+          "content",
+          "output",
+          "type",
+          "description"
+        ]
+      ]
+    }
+  ]
+}

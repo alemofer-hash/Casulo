@@ -1,0 +1,1402 @@
+{
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "checks": {
+    "all_evidence_independent": true,
+    "all_holdouts_accepted": false,
+    "external_ai_api_used": false,
+    "fake_engine_used": false,
+    "five_domains": true,
+    "normal_sampling_seed_absent": true,
+    "real_local_model": true,
+    "zero_unsupported_claims": true
+  },
+  "claims": [
+    "semantic contract fulfillment on five sealed product holdout families"
+  ],
+  "forbidden_claims": [
+    "generated applications are production-complete",
+    "general scientific solver",
+    "human utility approved"
+  ],
+  "gate": "FAIL",
+  "holdout_suite_sha256": "e2d37c25cb5a3b0ad21313de71526014b7473a2bd6a5188d2b165e53e4c4c620",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "records": [
+    {
+      "accepted": false,
+      "attempts": [
+        {
+          "attempt": 0,
+          "candidate": {
+            "claims": [
+              "curvature_profile_is_valid",
+              "residual_distribution_is_scientific",
+              "rejection_criteria_is_explicit"
+            ],
+            "science": {
+              "inputs": [
+                "metric_4d",
+                "hypothetical_curvature_model",
+                "data_set"
+              ],
+              "method": "parametrizable_curvature_assessment",
+              "operators": [
+                "curvature_evaluation",
+                "residual_computation",
+                "scientific_rejection"
+              ],
+              "outputs": [
+                "curvature_profile",
+                "residual_distribution",
+                "rejection_criteria"
+              ],
+              "refusals": [
+                "unsupported_global_claim_denied"
+              ],
+              "scope": "local-4d-evaluator"
+            }
+          },
+          "fulfillment": {
+            "accepted": false,
+            "candidate_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+            "coverage": 0.2,
+            "diagnostics": [
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.inputs",
+                "observed": [
+                  "metric_4d",
+                  "hypothetical_curvature_model",
+                  "data_set"
+                ],
+                "path": [
+                  "science",
+                  "inputs"
+                ],
+                "rule_id": "inputs"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.operators",
+                "observed": [
+                  "curvature_evaluation",
+                  "residual_computation",
+                  "scientific_rejection"
+                ],
+                "path": [
+                  "science",
+                  "operators"
+                ],
+                "rule_id": "connection"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.operators",
+                "observed": [
+                  "curvature_evaluation",
+                  "residual_computation",
+                  "scientific_rejection"
+                ],
+                "path": [
+                  "science",
+                  "operators"
+                ],
+                "rule_id": "ricci"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.operators",
+                "observed": [
+                  "curvature_evaluation",
+                  "residual_computation",
+                  "scientific_rejection"
+                ],
+                "path": [
+                  "science",
+                  "operators"
+                ],
+                "rule_id": "einstein"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.outputs",
+                "observed": [
+                  "curvature_profile",
+                  "residual_distribution",
+                  "rejection_criteria"
+                ],
+                "path": [
+                  "science",
+                  "outputs"
+                ],
+                "rule_id": "residual"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.refusals",
+                "observed": [
+                  "unsupported_global_claim_denied"
+                ],
+                "path": [
+                  "science",
+                  "refusals"
+                ],
+                "rule_id": "global-denial"
+              }
+            ],
+            "evidence": [
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.inputs",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:inputs",
+                "requirement_id": "scientific-computing:inputs",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:inputs"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.operators",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:connection",
+                "requirement_id": "scientific-computing:connection",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:connection"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.operators",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:ricci",
+                "requirement_id": "scientific-computing:ricci",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:ricci"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.operators",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:einstein",
+                "requirement_id": "scientific-computing:einstein",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:einstein"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.outputs",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:residual",
+                "requirement_id": "scientific-computing:residual",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:residual"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:scope",
+                "requirement_id": "scientific-computing:scope",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:scope"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.refusals",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:global-denial",
+                "requirement_id": "scientific-computing:global-denial",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:global-denial"
+              }
+            ],
+            "hard_failures": [
+              "scientific-computing:inputs",
+              "scientific-computing:connection",
+              "scientific-computing:ricci",
+              "scientific-computing:einstein",
+              "scientific-computing:residual",
+              "scientific-computing:global-denial"
+            ],
+            "pack_id": "scientific-computing",
+            "schema": "casulo.fulfillment-result/1.0",
+            "spec_gap": 0.8,
+            "unknown": [],
+            "unsupported_claims": [],
+            "verdicts": {
+              "scientific-computing:connection": "FAIL",
+              "scientific-computing:einstein": "FAIL",
+              "scientific-computing:global-denial": "FAIL",
+              "scientific-computing:inputs": "FAIL",
+              "scientific-computing:residual": "FAIL",
+              "scientific-computing:ricci": "FAIL",
+              "scientific-computing:scope": "PASS"
+            }
+          },
+          "raw_sha256": "511d5d90c26898605a07d9f95c1b459e7198acb476d6f529fa1aeefdc3342d01",
+          "structured": true,
+          "trace": {
+            "commercial_ai_api_used": false,
+            "context_digest": "aa6733223d72be4c9902191f7cc9ce3c951cbe54749fd5a9fb2a69a35f7a1323",
+            "ended_monotonic_ns": 11491848657500,
+            "external_network_used": false,
+            "finish_reason": "stop",
+            "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+            "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+            "operation_id": "rc3:holdout-scientific-tensor:attempt:0",
+            "output_sha256": "511d5d90c26898605a07d9f95c1b459e7198acb476d6f529fa1aeefdc3342d01",
+            "sampling_policy_id": "casulo-sampling-planning-v1",
+            "schema": "casulo-stochastic-trace/1.0",
+            "seed_if_available": null,
+            "started_monotonic_ns": 11464641006800,
+            "stream_events": 172
+          }
+        },
+        {
+          "attempt": 1,
+          "candidate": {
+            "claims": [
+              "curvature_profile_is_valid",
+              "residual_distribution_is_scientific",
+              "rejection_criteria_is_explicit"
+            ],
+            "science": {
+              "inputs": [
+                "metric_4d",
+                "hypothetical_curvature_model",
+                "data_set"
+              ],
+              "method": "parametrizable_curvature_assessment",
+              "operators": [
+                "curvature_evaluation",
+                "residual_computation",
+                "scientific_rejection"
+              ],
+              "outputs": [
+                "curvature_profile",
+                "residual_distribution",
+                "rejection_criteria"
+              ],
+              "refusals": [
+                "unsupported_global_claim_denied"
+              ],
+              "scope": "local-4d-evaluator"
+            }
+          },
+          "fulfillment": {
+            "accepted": false,
+            "candidate_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+            "coverage": 0.2,
+            "diagnostics": [
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.inputs",
+                "observed": [
+                  "metric_4d",
+                  "hypothetical_curvature_model",
+                  "data_set"
+                ],
+                "path": [
+                  "science",
+                  "inputs"
+                ],
+                "rule_id": "inputs"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.operators",
+                "observed": [
+                  "curvature_evaluation",
+                  "residual_computation",
+                  "scientific_rejection"
+                ],
+                "path": [
+                  "science",
+                  "operators"
+                ],
+                "rule_id": "connection"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.operators",
+                "observed": [
+                  "curvature_evaluation",
+                  "residual_computation",
+                  "scientific_rejection"
+                ],
+                "path": [
+                  "science",
+                  "operators"
+                ],
+                "rule_id": "ricci"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.operators",
+                "observed": [
+                  "curvature_evaluation",
+                  "residual_computation",
+                  "scientific_rejection"
+                ],
+                "path": [
+                  "science",
+                  "operators"
+                ],
+                "rule_id": "einstein"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.outputs",
+                "observed": [
+                  "curvature_profile",
+                  "residual_distribution",
+                  "rejection_criteria"
+                ],
+                "path": [
+                  "science",
+                  "outputs"
+                ],
+                "rule_id": "residual"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.refusals",
+                "observed": [
+                  "unsupported_global_claim_denied"
+                ],
+                "path": [
+                  "science",
+                  "refusals"
+                ],
+                "rule_id": "global-denial"
+              }
+            ],
+            "evidence": [
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.inputs",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:inputs",
+                "requirement_id": "scientific-computing:inputs",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:inputs"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.operators",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:connection",
+                "requirement_id": "scientific-computing:connection",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:connection"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.operators",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:ricci",
+                "requirement_id": "scientific-computing:ricci",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:ricci"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.operators",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:einstein",
+                "requirement_id": "scientific-computing:einstein",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:einstein"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.outputs",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:residual",
+                "requirement_id": "scientific-computing:residual",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:residual"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:scope",
+                "requirement_id": "scientific-computing:scope",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:scope"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.refusals",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:global-denial",
+                "requirement_id": "scientific-computing:global-denial",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:global-denial"
+              }
+            ],
+            "hard_failures": [
+              "scientific-computing:inputs",
+              "scientific-computing:connection",
+              "scientific-computing:ricci",
+              "scientific-computing:einstein",
+              "scientific-computing:residual",
+              "scientific-computing:global-denial"
+            ],
+            "pack_id": "scientific-computing",
+            "schema": "casulo.fulfillment-result/1.0",
+            "spec_gap": 0.8,
+            "unknown": [],
+            "unsupported_claims": [],
+            "verdicts": {
+              "scientific-computing:connection": "FAIL",
+              "scientific-computing:einstein": "FAIL",
+              "scientific-computing:global-denial": "FAIL",
+              "scientific-computing:inputs": "FAIL",
+              "scientific-computing:residual": "FAIL",
+              "scientific-computing:ricci": "FAIL",
+              "scientific-computing:scope": "PASS"
+            }
+          },
+          "raw_sha256": "511d5d90c26898605a07d9f95c1b459e7198acb476d6f529fa1aeefdc3342d01",
+          "structured": true,
+          "trace": {
+            "commercial_ai_api_used": false,
+            "context_digest": "ed3c2907516b165b9776cddb3b2628343c489c2ac83c7185fe582cb23043eed6",
+            "ended_monotonic_ns": 11542430557500,
+            "external_network_used": false,
+            "finish_reason": "stop",
+            "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+            "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+            "operation_id": "rc3:holdout-scientific-tensor:attempt:1",
+            "output_sha256": "511d5d90c26898605a07d9f95c1b459e7198acb476d6f529fa1aeefdc3342d01",
+            "sampling_policy_id": "casulo-sampling-planning-v1",
+            "schema": "casulo-stochastic-trace/1.0",
+            "seed_if_available": null,
+            "started_monotonic_ns": 11491849343800,
+            "stream_events": 164
+          }
+        },
+        {
+          "attempt": 2,
+          "candidate": {
+            "claims": [
+              "curvature_profile_is_valid",
+              "residual_distribution_is_scientific",
+              "rejection_criteria_is_explicit"
+            ],
+            "science": {
+              "inputs": [
+                "metric_4d",
+                "hypothetical_curvature_model",
+                "data_set"
+              ],
+              "method": "parametrizable_curvature_assessment",
+              "operators": [
+                "curvature_evaluation",
+                "residual_computation",
+                "scientific_rejection"
+              ],
+              "outputs": [
+                "curvature_profile",
+                "residual_distribution",
+                "rejection_criteria"
+              ],
+              "refusals": [
+                "unsupported_global_claim_denied"
+              ],
+              "scope": "local-4d-evaluator"
+            }
+          },
+          "fulfillment": {
+            "accepted": false,
+            "candidate_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+            "coverage": 0.2,
+            "diagnostics": [
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.inputs",
+                "observed": [
+                  "metric_4d",
+                  "hypothetical_curvature_model",
+                  "data_set"
+                ],
+                "path": [
+                  "science",
+                  "inputs"
+                ],
+                "rule_id": "inputs"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.operators",
+                "observed": [
+                  "curvature_evaluation",
+                  "residual_computation",
+                  "scientific_rejection"
+                ],
+                "path": [
+                  "science",
+                  "operators"
+                ],
+                "rule_id": "connection"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.operators",
+                "observed": [
+                  "curvature_evaluation",
+                  "residual_computation",
+                  "scientific_rejection"
+                ],
+                "path": [
+                  "science",
+                  "operators"
+                ],
+                "rule_id": "ricci"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.operators",
+                "observed": [
+                  "curvature_evaluation",
+                  "residual_computation",
+                  "scientific_rejection"
+                ],
+                "path": [
+                  "science",
+                  "operators"
+                ],
+                "rule_id": "einstein"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.outputs",
+                "observed": [
+                  "curvature_profile",
+                  "residual_distribution",
+                  "rejection_criteria"
+                ],
+                "path": [
+                  "science",
+                  "outputs"
+                ],
+                "rule_id": "residual"
+              },
+              {
+                "code": "FUL200",
+                "message": "expected CONTAINS_ALL at science.refusals",
+                "observed": [
+                  "unsupported_global_claim_denied"
+                ],
+                "path": [
+                  "science",
+                  "refusals"
+                ],
+                "rule_id": "global-denial"
+              }
+            ],
+            "evidence": [
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.inputs",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:inputs",
+                "requirement_id": "scientific-computing:inputs",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:inputs"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.operators",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:connection",
+                "requirement_id": "scientific-computing:connection",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:connection"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.operators",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:ricci",
+                "requirement_id": "scientific-computing:ricci",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:ricci"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.operators",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:einstein",
+                "requirement_id": "scientific-computing:einstein",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:einstein"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.outputs",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:residual",
+                "requirement_id": "scientific-computing:residual",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:residual"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:scope",
+                "requirement_id": "scientific-computing:scope",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:scope"
+              },
+              {
+                "artifact_sha256": "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2",
+                "detail": "expected CONTAINS_ALL at science.refusals",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "a1e13341e7691dca0aa10d4f87a42b3a03bec560b1203cdd7360b0ae932c74b2"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:scientific-computing@1.0",
+                "receipt_id": "evidence:a1e13341e7691dca:global-denial",
+                "requirement_id": "scientific-computing:global-denial",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "FAIL",
+                "verifier_id": "domain:global-denial"
+              }
+            ],
+            "hard_failures": [
+              "scientific-computing:inputs",
+              "scientific-computing:connection",
+              "scientific-computing:ricci",
+              "scientific-computing:einstein",
+              "scientific-computing:residual",
+              "scientific-computing:global-denial"
+            ],
+            "pack_id": "scientific-computing",
+            "schema": "casulo.fulfillment-result/1.0",
+            "spec_gap": 0.8,
+            "unknown": [],
+            "unsupported_claims": [],
+            "verdicts": {
+              "scientific-computing:connection": "FAIL",
+              "scientific-computing:einstein": "FAIL",
+              "scientific-computing:global-denial": "FAIL",
+              "scientific-computing:inputs": "FAIL",
+              "scientific-computing:residual": "FAIL",
+              "scientific-computing:ricci": "FAIL",
+              "scientific-computing:scope": "PASS"
+            }
+          },
+          "raw_sha256": "511d5d90c26898605a07d9f95c1b459e7198acb476d6f529fa1aeefdc3342d01",
+          "structured": true,
+          "trace": {
+            "commercial_ai_api_used": false,
+            "context_digest": "ed3c2907516b165b9776cddb3b2628343c489c2ac83c7185fe582cb23043eed6",
+            "ended_monotonic_ns": 11569640666000,
+            "external_network_used": false,
+            "finish_reason": "stop",
+            "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+            "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+            "operation_id": "rc3:holdout-scientific-tensor:attempt:2",
+            "output_sha256": "511d5d90c26898605a07d9f95c1b459e7198acb476d6f529fa1aeefdc3342d01",
+            "sampling_policy_id": "casulo-sampling-planning-v1",
+            "schema": "casulo-stochastic-trace/1.0",
+            "seed_if_available": null,
+            "started_monotonic_ns": 11542431392500,
+            "stream_events": 164
+          }
+        }
+      ],
+      "domain": "scientific-computing",
+      "family_id": "holdout-scientific-tensor",
+      "pack_id": "scientific-computing",
+      "request_sha256": "b83ebd8d58da1a9c1155c865c1c669c26af3acdfedb326c5204ec0072066559a"
+    },
+    {
+      "accepted": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "candidate": {
+            "claims": [
+              "the_agent_must_not_make_decisions_on_behalf_of_the_public_server",
+              "the_checklist_must_be_versioned_and_tracked_across_sessions",
+              "the_provenance_of_each_checklist_item_must_be_recorded",
+              "audit_logs_must_be_appended_and_immutable"
+            ],
+            "security": {
+              "network_default": "deny"
+            },
+            "workflow": {
+              "audit_log": "append-only",
+              "human_decision_required": true,
+              "provenance": [
+                "checklist_version",
+                "checklist_item",
+                "checklist_status"
+              ],
+              "steps": [
+                "checklist_initialization",
+                "checklist_validation",
+                "checklist_execution",
+                "checklist_completion"
+              ]
+            }
+          },
+          "fulfillment": {
+            "accepted": true,
+            "candidate_sha256": "3dd7f0b22949b3cbb1cb7699df70a64b565dc1c31d7eb58710e34f3d8e53ae79",
+            "coverage": 1.0,
+            "diagnostics": [],
+            "evidence": [
+              {
+                "artifact_sha256": "3dd7f0b22949b3cbb1cb7699df70a64b565dc1c31d7eb58710e34f3d8e53ae79",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "3dd7f0b22949b3cbb1cb7699df70a64b565dc1c31d7eb58710e34f3d8e53ae79"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:administrative-workflow@1.0",
+                "receipt_id": "evidence:3dd7f0b22949b3cb:human-decision",
+                "requirement_id": "administrative-workflow:human-decision",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:human-decision"
+              },
+              {
+                "artifact_sha256": "3dd7f0b22949b3cbb1cb7699df70a64b565dc1c31d7eb58710e34f3d8e53ae79",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "3dd7f0b22949b3cbb1cb7699df70a64b565dc1c31d7eb58710e34f3d8e53ae79"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:administrative-workflow@1.0",
+                "receipt_id": "evidence:3dd7f0b22949b3cb:provenance",
+                "requirement_id": "administrative-workflow:provenance",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:provenance"
+              },
+              {
+                "artifact_sha256": "3dd7f0b22949b3cbb1cb7699df70a64b565dc1c31d7eb58710e34f3d8e53ae79",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "3dd7f0b22949b3cbb1cb7699df70a64b565dc1c31d7eb58710e34f3d8e53ae79"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:administrative-workflow@1.0",
+                "receipt_id": "evidence:3dd7f0b22949b3cb:network",
+                "requirement_id": "administrative-workflow:network",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:network"
+              },
+              {
+                "artifact_sha256": "3dd7f0b22949b3cbb1cb7699df70a64b565dc1c31d7eb58710e34f3d8e53ae79",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "3dd7f0b22949b3cbb1cb7699df70a64b565dc1c31d7eb58710e34f3d8e53ae79"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:administrative-workflow@1.0",
+                "receipt_id": "evidence:3dd7f0b22949b3cb:audit",
+                "requirement_id": "administrative-workflow:audit",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:audit"
+              }
+            ],
+            "hard_failures": [],
+            "pack_id": "administrative-workflow",
+            "schema": "casulo.fulfillment-result/1.0",
+            "spec_gap": 0.0,
+            "unknown": [],
+            "unsupported_claims": [],
+            "verdicts": {
+              "administrative-workflow:audit": "PASS",
+              "administrative-workflow:human-decision": "PASS",
+              "administrative-workflow:network": "PASS",
+              "administrative-workflow:provenance": "PASS"
+            }
+          },
+          "raw_sha256": "598901f5fe4d98a92ecbd71d431b6f852c6e66a19fe38e08f237503366463dad",
+          "structured": true,
+          "trace": {
+            "commercial_ai_api_used": false,
+            "context_digest": "0c64809cb7a88a8475d3932e6974e965af396ab4fbf58e1871e688fe7524a7e4",
+            "ended_monotonic_ns": 11598365273600,
+            "external_network_used": false,
+            "finish_reason": "stop",
+            "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+            "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+            "operation_id": "rc3:holdout-public-workflow:attempt:0",
+            "output_sha256": "598901f5fe4d98a92ecbd71d431b6f852c6e66a19fe38e08f237503366463dad",
+            "sampling_policy_id": "casulo-sampling-planning-v1",
+            "schema": "casulo-stochastic-trace/1.0",
+            "seed_if_available": null,
+            "started_monotonic_ns": 11569643256300,
+            "stream_events": 175
+          }
+        }
+      ],
+      "domain": "administrative-workflow",
+      "family_id": "holdout-public-workflow",
+      "pack_id": "administrative-workflow",
+      "request_sha256": "739ae2e85b045936d1eab20c53dee5a3eeff0dc9b38d35e03684ed9b7cc16336"
+    },
+    {
+      "accepted": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "candidate": {
+            "claims": [
+              "The system will process events in event-time ordering with no temporal skew.",
+              "All original data will be preserved alongside transformed data for each event.",
+              "The memory usage of the system will not exceed 1 GB at any point in time.",
+              "The transformation applied to events will be fully explainable and documented.",
+              "Anomaly detection will be performed on the raw event data without modification."
+            ],
+            "stream": {
+              "explain_transform": true,
+              "memory_limit_bytes": 1073741824,
+              "pipeline": [
+                "input",
+                "anomaly_detection",
+                "data_preservation",
+                "explanation_generation"
+              ],
+              "preserve_original": true,
+              "time_semantics": "event-time"
+            }
+          },
+          "fulfillment": {
+            "accepted": true,
+            "candidate_sha256": "5c2b50ee013a3f2a35ab53db5363d8d69d1d3797c0bb3e147409f26a736c914a",
+            "coverage": 1.0,
+            "diagnostics": [],
+            "evidence": [
+              {
+                "artifact_sha256": "5c2b50ee013a3f2a35ab53db5363d8d69d1d3797c0bb3e147409f26a736c914a",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "5c2b50ee013a3f2a35ab53db5363d8d69d1d3797c0bb3e147409f26a736c914a"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:stream-processing@1.0",
+                "receipt_id": "evidence:5c2b50ee013a3f2a:original",
+                "requirement_id": "stream-processing:original",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:original"
+              },
+              {
+                "artifact_sha256": "5c2b50ee013a3f2a35ab53db5363d8d69d1d3797c0bb3e147409f26a736c914a",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "5c2b50ee013a3f2a35ab53db5363d8d69d1d3797c0bb3e147409f26a736c914a"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:stream-processing@1.0",
+                "receipt_id": "evidence:5c2b50ee013a3f2a:memory",
+                "requirement_id": "stream-processing:memory",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:memory"
+              },
+              {
+                "artifact_sha256": "5c2b50ee013a3f2a35ab53db5363d8d69d1d3797c0bb3e147409f26a736c914a",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "5c2b50ee013a3f2a35ab53db5363d8d69d1d3797c0bb3e147409f26a736c914a"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:stream-processing@1.0",
+                "receipt_id": "evidence:5c2b50ee013a3f2a:event-time",
+                "requirement_id": "stream-processing:event-time",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:event-time"
+              },
+              {
+                "artifact_sha256": "5c2b50ee013a3f2a35ab53db5363d8d69d1d3797c0bb3e147409f26a736c914a",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "5c2b50ee013a3f2a35ab53db5363d8d69d1d3797c0bb3e147409f26a736c914a"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:stream-processing@1.0",
+                "receipt_id": "evidence:5c2b50ee013a3f2a:explain",
+                "requirement_id": "stream-processing:explain",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:explain"
+              }
+            ],
+            "hard_failures": [],
+            "pack_id": "stream-processing",
+            "schema": "casulo.fulfillment-result/1.0",
+            "spec_gap": 0.0,
+            "unknown": [],
+            "unsupported_claims": [],
+            "verdicts": {
+              "stream-processing:event-time": "PASS",
+              "stream-processing:explain": "PASS",
+              "stream-processing:memory": "PASS",
+              "stream-processing:original": "PASS"
+            }
+          },
+          "raw_sha256": "f16a5f3e90dfc9c10f8b7cac3ca6055a0feccf8e7bf4cac71f846924b89759f3",
+          "structured": true,
+          "trace": {
+            "commercial_ai_api_used": false,
+            "context_digest": "4e0dcc8faf7c44220d74c07a4b7773074a6530e960a072248ad56aa466678878",
+            "ended_monotonic_ns": 11626295921000,
+            "external_network_used": false,
+            "finish_reason": "stop",
+            "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+            "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+            "operation_id": "rc3:holdout-transit-stream:attempt:0",
+            "output_sha256": "f16a5f3e90dfc9c10f8b7cac3ca6055a0feccf8e7bf4cac71f846924b89759f3",
+            "sampling_policy_id": "casulo-sampling-planning-v1",
+            "schema": "casulo-stochastic-trace/1.0",
+            "seed_if_available": null,
+            "started_monotonic_ns": 11598368022200,
+            "stream_events": 173
+          }
+        }
+      ],
+      "domain": "stream-processing",
+      "family_id": "holdout-transit-stream",
+      "pack_id": "stream-processing",
+      "request_sha256": "6820bdbe5a6cabc373e9d34eb4a48104b32dc73b976133f6e64562183c327434"
+    },
+    {
+      "accepted": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "candidate": {
+            "claims": [
+              "the_conversation_studio_is_a_single_process_with_separate_memory_per_work",
+              "the_conversation_studio_allows_for_interruptible_interactions",
+              "the_conversation_studio_provides_editable_export_of_conversations",
+              "the_conversation_studio_does_not_report_false_progress"
+            ],
+            "creative": {
+              "barge_in": true,
+              "export": "editable",
+              "interaction": [
+                "memory-per-work",
+                "interruptible"
+              ],
+              "progress_source": "job-events-only",
+              "project_isolation": true
+            }
+          },
+          "fulfillment": {
+            "accepted": true,
+            "candidate_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+            "coverage": 1.0,
+            "diagnostics": [],
+            "evidence": [
+              {
+                "artifact_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+                "receipt_id": "evidence:961c2414cbd69f61:isolation",
+                "requirement_id": "interactive-creative-tool:isolation",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:isolation"
+              },
+              {
+                "artifact_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+                "receipt_id": "evidence:961c2414cbd69f61:barge",
+                "requirement_id": "interactive-creative-tool:barge",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:barge"
+              },
+              {
+                "artifact_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+                "receipt_id": "evidence:961c2414cbd69f61:export",
+                "requirement_id": "interactive-creative-tool:export",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:export"
+              },
+              {
+                "artifact_sha256": "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "961c2414cbd69f61ff6c33040b8d1ca172cadcc9f574eead6fb653e1f64c150d"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:interactive-creative-tool@1.0",
+                "receipt_id": "evidence:961c2414cbd69f61:progress",
+                "requirement_id": "interactive-creative-tool:progress",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:progress"
+              }
+            ],
+            "hard_failures": [],
+            "pack_id": "interactive-creative-tool",
+            "schema": "casulo.fulfillment-result/1.0",
+            "spec_gap": 0.0,
+            "unknown": [],
+            "unsupported_claims": [],
+            "verdicts": {
+              "interactive-creative-tool:barge": "PASS",
+              "interactive-creative-tool:export": "PASS",
+              "interactive-creative-tool:isolation": "PASS",
+              "interactive-creative-tool:progress": "PASS"
+            }
+          },
+          "raw_sha256": "6edeeb075f547f57ba4d8916da6992152769ad54cf7811e61c4f7ead785a2010",
+          "structured": true,
+          "trace": {
+            "commercial_ai_api_used": false,
+            "context_digest": "aa12a570b116c3dcb67891f3ad516007681b546a1d568625de7ad241eb6ada2e",
+            "ended_monotonic_ns": 11650509453900,
+            "external_network_used": false,
+            "finish_reason": "stop",
+            "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+            "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+            "operation_id": "rc3:holdout-creative-dialogue:attempt:0",
+            "output_sha256": "6edeeb075f547f57ba4d8916da6992152769ad54cf7811e61c4f7ead785a2010",
+            "sampling_policy_id": "casulo-sampling-planning-v1",
+            "schema": "casulo-stochastic-trace/1.0",
+            "seed_if_available": null,
+            "started_monotonic_ns": 11626298225000,
+            "stream_events": 144
+          }
+        }
+      ],
+      "domain": "interactive-creative-tool",
+      "family_id": "holdout-creative-dialogue",
+      "pack_id": "interactive-creative-tool",
+      "request_sha256": "8d00e76a41dfd5bf76847c6f58b5ab331a26d38d9f828270f89ff3a843e1813c"
+    },
+    {
+      "accepted": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "candidate": {
+            "claims": [
+              "the service is a loopback-only implementation",
+              "schema validation is enforced at runtime",
+              "the application runs without external dependencies",
+              "round-trip fidelity is guaranteed with no data loss or corruption"
+            ],
+            "service": {
+              "bind": "127.0.0.1",
+              "components": [
+                "data_processor",
+                "validator",
+                "transformer"
+              ],
+              "round_trip_fidelity": 1.0,
+              "schema_validation": true,
+              "standalone": true
+            }
+          },
+          "fulfillment": {
+            "accepted": true,
+            "candidate_sha256": "44e521f33d6954be5eafc1d9d9f97c7495cd41a6855b3d50408ba0be08990515",
+            "coverage": 1.0,
+            "diagnostics": [],
+            "evidence": [
+              {
+                "artifact_sha256": "44e521f33d6954be5eafc1d9d9f97c7495cd41a6855b3d50408ba0be08990515",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "44e521f33d6954be5eafc1d9d9f97c7495cd41a6855b3d50408ba0be08990515"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:local-software-service@1.0",
+                "receipt_id": "evidence:44e521f33d6954be:loopback",
+                "requirement_id": "local-software-service:loopback",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:loopback"
+              },
+              {
+                "artifact_sha256": "44e521f33d6954be5eafc1d9d9f97c7495cd41a6855b3d50408ba0be08990515",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "44e521f33d6954be5eafc1d9d9f97c7495cd41a6855b3d50408ba0be08990515"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:local-software-service@1.0",
+                "receipt_id": "evidence:44e521f33d6954be:schema",
+                "requirement_id": "local-software-service:schema",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:schema"
+              },
+              {
+                "artifact_sha256": "44e521f33d6954be5eafc1d9d9f97c7495cd41a6855b3d50408ba0be08990515",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "44e521f33d6954be5eafc1d9d9f97c7495cd41a6855b3d50408ba0be08990515"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:local-software-service@1.0",
+                "receipt_id": "evidence:44e521f33d6954be:standalone",
+                "requirement_id": "local-software-service:standalone",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:standalone"
+              },
+              {
+                "artifact_sha256": "44e521f33d6954be5eafc1d9d9f97c7495cd41a6855b3d50408ba0be08990515",
+                "detail": "domain invariant satisfied",
+                "evidence_class": "DOMAIN_INVARIANT",
+                "independent": true,
+                "input_hashes": [
+                  "44e521f33d6954be5eafc1d9d9f97c7495cd41a6855b3d50408ba0be08990515"
+                ],
+                "occurred_at": "2026-08-14T20:30:00Z",
+                "producer": "casulo-domain-pack:local-software-service@1.0",
+                "receipt_id": "evidence:44e521f33d6954be:roundtrip",
+                "requirement_id": "local-software-service:roundtrip",
+                "schema": "casulo.evidence-receipt/1.0",
+                "verdict": "PASS",
+                "verifier_id": "domain:roundtrip"
+              }
+            ],
+            "hard_failures": [],
+            "pack_id": "local-software-service",
+            "schema": "casulo.fulfillment-result/1.0",
+            "spec_gap": 0.0,
+            "unknown": [],
+            "unsupported_claims": [],
+            "verdicts": {
+              "local-software-service:loopback": "PASS",
+              "local-software-service:roundtrip": "PASS",
+              "local-software-service:schema": "PASS",
+              "local-software-service:standalone": "PASS"
+            }
+          },
+          "raw_sha256": "a8ed42eb409301af348d8e962fa16b2ce0e162d777e353ef70482d618cd0926f",
+          "structured": true,
+          "trace": {
+            "commercial_ai_api_used": false,
+            "context_digest": "4147fa2bbcfd4e5e13c817203b1a8584bda5636d29a31bbcb51f3233487d899d",
+            "ended_monotonic_ns": 11671869916300,
+            "external_network_used": false,
+            "finish_reason": "stop",
+            "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+            "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+            "operation_id": "rc3:holdout-secure-service:attempt:0",
+            "output_sha256": "a8ed42eb409301af348d8e962fa16b2ce0e162d777e353ef70482d618cd0926f",
+            "sampling_policy_id": "casulo-sampling-planning-v1",
+            "schema": "casulo-stochastic-trace/1.0",
+            "seed_if_available": null,
+            "started_monotonic_ns": 11650512097500,
+            "stream_events": 124
+          }
+        }
+      ],
+      "domain": "local-software-service",
+      "family_id": "holdout-secure-service",
+      "pack_id": "local-software-service",
+      "request_sha256": "41586df5d148a6a14e487189b66970ee73a1035f32c02e0ef74aa3a253658428"
+    }
+  ],
+  "sampling_policy_id": "casulo-sampling-planning-v1",
+  "schema": "casulo.semantic-fulfillment-holdout/1.0"
+}

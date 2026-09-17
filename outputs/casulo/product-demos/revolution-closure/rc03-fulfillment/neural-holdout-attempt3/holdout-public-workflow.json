@@ -1,0 +1,139 @@
+{
+  "accepted": true,
+  "attempts": [
+    {
+      "attempt": 0,
+      "candidate": {
+        "claims": [
+          "the_agent_performs_no_decisions_on_behalf_of_the_public_server",
+          "the_checklist_version_is_verified_against_a_fixed_reference",
+          "the_provenance_is_tracked_across_all_steps",
+          "the_audit_log_is_appended_and_not_modified"
+        ],
+        "security": {
+          "network_default": "deny"
+        },
+        "workflow": {
+          "audit_log": "append-only",
+          "human_decision_required": true,
+          "provenance": [
+            "checklist_versioned",
+            "process_administrative"
+          ],
+          "steps": [
+            "validate_checklist_version",
+            "verify_process_administrative",
+            "record_provenance",
+            "log_audits"
+          ]
+        }
+      },
+      "fulfillment": {
+        "accepted": true,
+        "candidate_sha256": "1c6c5a5125e26591238ceddd3a783e322a0289a1588a40ce9522c55c3f2b062e",
+        "coverage": 1.0,
+        "diagnostics": [],
+        "evidence": [
+          {
+            "artifact_sha256": "1c6c5a5125e26591238ceddd3a783e322a0289a1588a40ce9522c55c3f2b062e",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "1c6c5a5125e26591238ceddd3a783e322a0289a1588a40ce9522c55c3f2b062e"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:administrative-workflow@1.0",
+            "receipt_id": "evidence:1c6c5a5125e26591:human-decision",
+            "requirement_id": "administrative-workflow:human-decision",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:human-decision"
+          },
+          {
+            "artifact_sha256": "1c6c5a5125e26591238ceddd3a783e322a0289a1588a40ce9522c55c3f2b062e",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "1c6c5a5125e26591238ceddd3a783e322a0289a1588a40ce9522c55c3f2b062e"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:administrative-workflow@1.0",
+            "receipt_id": "evidence:1c6c5a5125e26591:provenance",
+            "requirement_id": "administrative-workflow:provenance",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:provenance"
+          },
+          {
+            "artifact_sha256": "1c6c5a5125e26591238ceddd3a783e322a0289a1588a40ce9522c55c3f2b062e",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "1c6c5a5125e26591238ceddd3a783e322a0289a1588a40ce9522c55c3f2b062e"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:administrative-workflow@1.0",
+            "receipt_id": "evidence:1c6c5a5125e26591:network",
+            "requirement_id": "administrative-workflow:network",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:network"
+          },
+          {
+            "artifact_sha256": "1c6c5a5125e26591238ceddd3a783e322a0289a1588a40ce9522c55c3f2b062e",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "1c6c5a5125e26591238ceddd3a783e322a0289a1588a40ce9522c55c3f2b062e"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:administrative-workflow@1.0",
+            "receipt_id": "evidence:1c6c5a5125e26591:audit",
+            "requirement_id": "administrative-workflow:audit",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:audit"
+          }
+        ],
+        "hard_failures": [],
+        "pack_id": "administrative-workflow",
+        "schema": "casulo.fulfillment-result/1.0",
+        "spec_gap": 0.0,
+        "unknown": [],
+        "unsupported_claims": [],
+        "verdicts": {
+          "administrative-workflow:audit": "PASS",
+          "administrative-workflow:human-decision": "PASS",
+          "administrative-workflow:network": "PASS",
+          "administrative-workflow:provenance": "PASS"
+        }
+      },
+      "raw_sha256": "d35af19af9706d0a35682ff34cf734135d6e237dc8e40898d73a8fc00367bbaa",
+      "structured": true,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "0c64809cb7a88a8475d3932e6974e965af396ab4fbf58e1871e688fe7524a7e4",
+        "ended_monotonic_ns": 13196803274100,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-public-workflow:attempt:0",
+        "output_sha256": "d35af19af9706d0a35682ff34cf734135d6e237dc8e40898d73a8fc00367bbaa",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 13169495377100,
+        "stream_events": 168
+      }
+    }
+  ],
+  "domain": "administrative-workflow",
+  "family_id": "holdout-public-workflow",
+  "pack_id": "administrative-workflow",
+  "request_sha256": "739ae2e85b045936d1eab20c53dee5a3eeff0dc9b38d35e03684ed9b7cc16336"
+}

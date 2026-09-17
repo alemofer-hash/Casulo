@@ -1,0 +1,81 @@
+{
+  "schema": "casulo-qemu-g2-primitives/0.1",
+  "scope": "incremental kernel primitives; not full G2",
+  "attempts": 3,
+  "passed": 0,
+  "all_pass": false,
+  "host_block_devices_attached": false,
+  "image_attached_read_only": true,
+  "full_g2_claimed": false,
+  "open_requirements": [
+    "AP startup/SMP",
+    "ring-3 process",
+    "syscall ABI",
+    "separate address spaces"
+  ],
+  "results": [
+    {
+      "boot": {
+        "returncode": 33,
+        "marker": true,
+        "framebuffer_painted": true,
+        "serial": "\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01HBdsDxe: loading Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nBdsDxe: starting Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nINFO : Framebuffer info: FrameBufferInfo { byte_len: 4096000, width: 1280, height: 800, pixel_format: Bgr, bytes_per_pixel: 4, stride: 1280 }\nINFO : UEFI bootloader started\nINFO : Using framebuffer at 0x80000000\nINFO : Reading configuration from disk was successful\nINFO : Trying to load ramdisk via Disk\nINFO : Ramdisk not found.\nTRACE: exiting boot services\nTRACE: switching to new level 4 table\nINFO : New page table at: PhysFrame[4KiB](0x101000)\nINFO : Elf file loaded at Pointer {\n    addr: 0x000000000e1b5000,\n    metadata: 241520,\n}\nINFO : virtual_address_offset: 0x10000000000\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 0, physical_addr: 0, file_size: 3ecc, mem_size: 3ecc, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: 3ed0, virtual_addr: 4ed0, physical_addr: 4ed0, file_size: 145ef, mem_size: 145ef, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 184c0, virtual_addr: 1a4c0, physical_addr: 1a4c0, file_size: 12c0, mem_size: 1b40, align: 1000 })\nINFO : Mapping bss section\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 19780, virtual_addr: 1c780, physical_addr: 1c780, file_size: 8, mem_size: 131c8, align: 1000 })\nINFO : Mapping bss section\nINFO : Entry point at: 0x10000009540\nINFO : Creating GDT at PhysAddr(0x141000)\nINFO : Map framebuffer\nINFO : Map physical memory\nINFO : Allocate bootinfo\nINFO : Create Memory Map\nINFO : Create bootinfo\nINFO : Jumping to kernel entry point at VirtAddr(0x10000009540)\nSMP_START_ATTEMPT=1\nSMP_START_RETURNED=1\nRING3_CONSOLE_WRITE=PASS\nCASULO_NATIVE_BOOT_OK\nVERSION=Research Preview 0.1\nARCH=x86_64\nUEFI=true\nMEMORY_REGIONS=102\nFRAMEBUFFER=painted\nPANIC_DUMP=armed\nG1_BOOT_SMOKE=PASS\nPHYSICAL_USABLE_BYTES=257097728\nPHYSICAL_USABLE_FRAMES=62768\nPAGING=active\nLOW_USABLE_FRAME=0x1000\nHEAP_PAGES=16\nHEAP_ALLOC=PASS\nHEAP_KERNEL_ONLY=PASS\nGUARD_PAGE_UNMAPPED=PASS\nGDT_IDT=loaded\nTIMER_SOURCE=8254_PIT_IRQ0\nTIMER_HZ=100\nTIMER_TICKS=4\nWATCHDOG_CONTRACT=PASS\nFAULTS_CONTAINED=1\nGUARD_FAULT_CONTAINMENT=PASS\nCPU_VENDOR=AuthenticAMD\nTOPOLOGY_LOGICAL_CPUS=2\nTOPOLOGY_THREADS_PER_CORE=1\nTOPOLOGY_BSP_X2APIC_ID=0\nX2APIC_SUPPORTED=false\nHYPERVISOR_PRESENT=true\nSMP_SCOPE=bounded-qemu-2vcpu\nSMP_MADT_VALID=PASS\nSMP_APS_EXPECTED=1\nSMP_APS_STARTED=1\nSMP_TARGET_APIC_ID=1\nSMP_LAPIC_PHYSICAL=0xfee00000\nSMP_BOUNDED=true\nSMP_GATE=PASS\nRING3_PROCESSES=1\nRING3_EXIT_STATUS=42\nPROCESS_SEPARATE_CR3=PASS\nKERNEL_USER_ACCESS=DENIED\nUSER_PAGING_BRANCH_PRIVATE=PASS\nUSER_CODE_RX=PASS\nUSER_STACK_NX=PASS\nSYSCALL_ABI=syscall-sysretq/0.1\nSYSCALL_COUNT=8\nSYSCALL_DEFINED_MASK=0x7f\nSYSCALL_PERMISSION_MASK=0x7f\nSYSCALL_ENOSYS=PASS\nSYSCALL_IPC_ROUNDTRIP=PASS\nSYSCALL_TRACE_EVENTS=1\nSYSCALL_CONSOLE_BYTES=25\nG2_KERNEL_PRIMITIVES=PASS\nG2_FULL_GATE=PASS\n",
+        "pass": true
+      },
+      "validation": {
+        "missing_markers": [
+          "G2_FULL_GATE=OPEN",
+          "SMP_APS_STARTED=0",
+          "RING3_PROCESSES=0",
+          "SYSCALL_ABI=unimplemented"
+        ],
+        "logical_cpus_detected": 2,
+        "timer_ticks": 4,
+        "faults_contained": 1,
+        "pass": false
+      }
+    },
+    {
+      "boot": {
+        "returncode": 33,
+        "marker": true,
+        "framebuffer_painted": true,
+        "serial": "\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01HBdsDxe: loading Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nBdsDxe: starting Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nINFO : Framebuffer info: FrameBufferInfo { byte_len: 4096000, width: 1280, height: 800, pixel_format: Bgr, bytes_per_pixel: 4, stride: 1280 }\nINFO : UEFI bootloader started\nINFO : Using framebuffer at 0x80000000\nINFO : Reading configuration from disk was successful\nINFO : Trying to load ramdisk via Disk\nINFO : Ramdisk not found.\nTRACE: exiting boot services\nTRACE: switching to new level 4 table\nINFO : New page table at: PhysFrame[4KiB](0x101000)\nINFO : Elf file loaded at Pointer {\n    addr: 0x000000000e1b5000,\n    metadata: 241520,\n}\nINFO : virtual_address_offset: 0x10000000000\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 0, physical_addr: 0, file_size: 3ecc, mem_size: 3ecc, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: 3ed0, virtual_addr: 4ed0, physical_addr: 4ed0, file_size: 145ef, mem_size: 145ef, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 184c0, virtual_addr: 1a4c0, physical_addr: 1a4c0, file_size: 12c0, mem_size: 1b40, align: 1000 })\nINFO : Mapping bss section\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 19780, virtual_addr: 1c780, physical_addr: 1c780, file_size: 8, mem_size: 131c8, align: 1000 })\nINFO : Mapping bss section\nINFO : Entry point at: 0x10000009540\nINFO : Creating GDT at PhysAddr(0x141000)\nINFO : Map framebuffer\nINFO : Map physical memory\nINFO : Allocate bootinfo\nINFO : Create Memory Map\nINFO : Create bootinfo\nINFO : Jumping to kernel entry point at VirtAddr(0x10000009540)\nSMP_START_ATTEMPT=1\nSMP_START_RETURNED=1\nRING3_CONSOLE_WRITE=PASS\nCASULO_NATIVE_BOOT_OK\nVERSION=Research Preview 0.1\nARCH=x86_64\nUEFI=true\nMEMORY_REGIONS=102\nFRAMEBUFFER=painted\nPANIC_DUMP=armed\nG1_BOOT_SMOKE=PASS\nPHYSICAL_USABLE_BYTES=257097728\nPHYSICAL_USABLE_FRAMES=62768\nPAGING=active\nLOW_USABLE_FRAME=0x1000\nHEAP_PAGES=16\nHEAP_ALLOC=PASS\nHEAP_KERNEL_ONLY=PASS\nGUARD_PAGE_UNMAPPED=PASS\nGDT_IDT=loaded\nTIMER_SOURCE=8254_PIT_IRQ0\nTIMER_HZ=100\nTIMER_TICKS=4\nWATCHDOG_CONTRACT=PASS\nFAULTS_CONTAINED=1\nGUARD_FAULT_CONTAINMENT=PASS\nCPU_VENDOR=AuthenticAMD\nTOPOLOGY_LOGICAL_CPUS=2\nTOPOLOGY_THREADS_PER_CORE=1\nTOPOLOGY_BSP_X2APIC_ID=0\nX2APIC_SUPPORTED=false\nHYPERVISOR_PRESENT=true\nSMP_SCOPE=bounded-qemu-2vcpu\nSMP_MADT_VALID=PASS\nSMP_APS_EXPECTED=1\nSMP_APS_STARTED=1\nSMP_TARGET_APIC_ID=1\nSMP_LAPIC_PHYSICAL=0xfee00000\nSMP_BOUNDED=true\nSMP_GATE=PASS\nRING3_PROCESSES=1\nRING3_EXIT_STATUS=42\nPROCESS_SEPARATE_CR3=PASS\nKERNEL_USER_ACCESS=DENIED\nUSER_PAGING_BRANCH_PRIVATE=PASS\nUSER_CODE_RX=PASS\nUSER_STACK_NX=PASS\nSYSCALL_ABI=syscall-sysretq/0.1\nSYSCALL_COUNT=8\nSYSCALL_DEFINED_MASK=0x7f\nSYSCALL_PERMISSION_MASK=0x7f\nSYSCALL_ENOSYS=PASS\nSYSCALL_IPC_ROUNDTRIP=PASS\nSYSCALL_TRACE_EVENTS=1\nSYSCALL_CONSOLE_BYTES=25\nG2_KERNEL_PRIMITIVES=PASS\nG2_FULL_GATE=PASS\n",
+        "pass": true
+      },
+      "validation": {
+        "missing_markers": [
+          "G2_FULL_GATE=OPEN",
+          "SMP_APS_STARTED=0",
+          "RING3_PROCESSES=0",
+          "SYSCALL_ABI=unimplemented"
+        ],
+        "logical_cpus_detected": 2,
+        "timer_ticks": 4,
+        "faults_contained": 1,
+        "pass": false
+      }
+    },
+    {
+      "boot": {
+        "returncode": 33,
+        "marker": true,
+        "framebuffer_painted": true,
+        "serial": "\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01HBdsDxe: loading Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nBdsDxe: starting Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nINFO : Framebuffer info: FrameBufferInfo { byte_len: 4096000, width: 1280, height: 800, pixel_format: Bgr, bytes_per_pixel: 4, stride: 1280 }\nINFO : UEFI bootloader started\nINFO : Using framebuffer at 0x80000000\nINFO : Reading configuration from disk was successful\nINFO : Trying to load ramdisk via Disk\nINFO : Ramdisk not found.\nTRACE: exiting boot services\nTRACE: switching to new level 4 table\nINFO : New page table at: PhysFrame[4KiB](0x101000)\nINFO : Elf file loaded at Pointer {\n    addr: 0x000000000e1b5000,\n    metadata: 241520,\n}\nINFO : virtual_address_offset: 0x10000000000\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 0, physical_addr: 0, file_size: 3ecc, mem_size: 3ecc, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: 3ed0, virtual_addr: 4ed0, physical_addr: 4ed0, file_size: 145ef, mem_size: 145ef, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 184c0, virtual_addr: 1a4c0, physical_addr: 1a4c0, file_size: 12c0, mem_size: 1b40, align: 1000 })\nINFO : Mapping bss section\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 19780, virtual_addr: 1c780, physical_addr: 1c780, file_size: 8, mem_size: 131c8, align: 1000 })\nINFO : Mapping bss section\nINFO : Entry point at: 0x10000009540\nINFO : Creating GDT at PhysAddr(0x141000)\nINFO : Map framebuffer\nINFO : Map physical memory\nINFO : Allocate bootinfo\nINFO : Create Memory Map\nINFO : Create bootinfo\nINFO : Jumping to kernel entry point at VirtAddr(0x10000009540)\nSMP_START_ATTEMPT=1\nSMP_START_RETURNED=1\nRING3_CONSOLE_WRITE=PASS\nCASULO_NATIVE_BOOT_OK\nVERSION=Research Preview 0.1\nARCH=x86_64\nUEFI=true\nMEMORY_REGIONS=102\nFRAMEBUFFER=painted\nPANIC_DUMP=armed\nG1_BOOT_SMOKE=PASS\nPHYSICAL_USABLE_BYTES=257097728\nPHYSICAL_USABLE_FRAMES=62768\nPAGING=active\nLOW_USABLE_FRAME=0x1000\nHEAP_PAGES=16\nHEAP_ALLOC=PASS\nHEAP_KERNEL_ONLY=PASS\nGUARD_PAGE_UNMAPPED=PASS\nGDT_IDT=loaded\nTIMER_SOURCE=8254_PIT_IRQ0\nTIMER_HZ=100\nTIMER_TICKS=4\nWATCHDOG_CONTRACT=PASS\nFAULTS_CONTAINED=1\nGUARD_FAULT_CONTAINMENT=PASS\nCPU_VENDOR=AuthenticAMD\nTOPOLOGY_LOGICAL_CPUS=2\nTOPOLOGY_THREADS_PER_CORE=1\nTOPOLOGY_BSP_X2APIC_ID=0\nX2APIC_SUPPORTED=false\nHYPERVISOR_PRESENT=true\nSMP_SCOPE=bounded-qemu-2vcpu\nSMP_MADT_VALID=PASS\nSMP_APS_EXPECTED=1\nSMP_APS_STARTED=1\nSMP_TARGET_APIC_ID=1\nSMP_LAPIC_PHYSICAL=0xfee00000\nSMP_BOUNDED=true\nSMP_GATE=PASS\nRING3_PROCESSES=1\nRING3_EXIT_STATUS=42\nPROCESS_SEPARATE_CR3=PASS\nKERNEL_USER_ACCESS=DENIED\nUSER_PAGING_BRANCH_PRIVATE=PASS\nUSER_CODE_RX=PASS\nUSER_STACK_NX=PASS\nSYSCALL_ABI=syscall-sysretq/0.1\nSYSCALL_COUNT=8\nSYSCALL_DEFINED_MASK=0x7f\nSYSCALL_PERMISSION_MASK=0x7f\nSYSCALL_ENOSYS=PASS\nSYSCALL_IPC_ROUNDTRIP=PASS\nSYSCALL_TRACE_EVENTS=1\nSYSCALL_CONSOLE_BYTES=25\nG2_KERNEL_PRIMITIVES=PASS\nG2_FULL_GATE=PASS\n",
+        "pass": true
+      },
+      "validation": {
+        "missing_markers": [
+          "G2_FULL_GATE=OPEN",
+          "SMP_APS_STARTED=0",
+          "RING3_PROCESSES=0",
+          "SYSCALL_ABI=unimplemented"
+        ],
+        "logical_cpus_detected": 2,
+        "timer_ticks": 4,
+        "faults_contained": 1,
+        "pass": false
+      }
+    }
+  ]
+}

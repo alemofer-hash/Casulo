@@ -1,0 +1,10 @@
+{
+  "properties": [
+    "equivalence_required",
+    "measurement_required",
+    "traffic_reduction_required",
+    "frozen_threshold_required",
+    "safe_fallback_required",
+    "cancel_fail_closed"
+  ]
+}

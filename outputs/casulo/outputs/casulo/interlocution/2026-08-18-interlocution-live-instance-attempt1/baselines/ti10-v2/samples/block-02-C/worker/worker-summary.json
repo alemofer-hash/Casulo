@@ -1,0 +1,25 @@
+{
+  "K_completed": 2,
+  "K_requested": 2,
+  "K_started": 2,
+  "authority_chain_tip": "21842288a5385b90ec4276812d3bfe9029bee29a5e120371dcbd67d11d0e4c16",
+  "child_timing": {
+    "count": 2,
+    "parent_monotonic_ns": 96878700,
+    "qpc_frequency": 10000000,
+    "qpc_ticks": 655715,
+    "start": 0,
+    "thread_cycles": 155888177,
+    "worker_monotonic_ns": 65563800
+  },
+  "epochs_completed": 800,
+  "optimizer_steps": 800,
+  "parameter_writes": 64800,
+  "receipt_file_sha256": "2a7341c692dda797389517b72d88efac8ab8ed3050640739a921b6969c5d2def",
+  "records_visited": 819200,
+  "result_file_sha256": "c6dca2aafc872960f2e56622533842bd1fc2d284acf05e043a17b0cf794d7243",
+  "schema": "casulo.interlocution-worker-summary/1.0",
+  "status": "WORK_COMPLETED_RECEIPTED",
+  "summary_sha256": "4476bab631fc6daf43eb53a89958b11e0bce81c02703385ed663abeab930af55",
+  "work_chain_tip": "2ebeb6ce39ed8a5eb26deb7452e641e980436cd03aa31408f7b36419426a0670"
+}

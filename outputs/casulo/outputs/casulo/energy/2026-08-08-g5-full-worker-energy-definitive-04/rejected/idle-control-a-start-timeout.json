@@ -1,0 +1,16 @@
+{
+  "status": "REJECTED_BEFORE_CONTROL_A",
+  "reason": "THERMAL_STABILITY_TIMEOUT",
+  "attempt_start_utc": "2026-08-08T16:08:12.000000+00:00",
+  "attempt_end_utc": "2026-08-08T16:28:17.953843+00:00",
+  "timeout_seconds": 1200.0,
+  "initial_idle_ceiling_c": 60.0,
+  "dynamic_stability_band_tolerance_c": 1.0,
+  "required_stability_seconds": 30.0,
+  "last_temperature_c": 50.0,
+  "last_throttling": false,
+  "last_hwinfo_timestamp_utc": "2026-08-08T16:28:17.795000+00:00",
+  "watchdog_reader": "append-only-incremental-v1",
+  "workload_started": false,
+  "control_a_started": false
+}

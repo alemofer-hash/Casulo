@@ -1,0 +1,21 @@
+{
+  "causal_mechanism": "same declared training math through a lean AOT primitive selected and bounded by T, avoiding general framework/import/dispatch/state overhead",
+  "compression_sha256": "9f342b9bcbe822319d26a7c65d1a88fb26f4b1b29f2577d1a08da5c9a9ab29ff",
+  "energy_claim": "PROHIBITED",
+  "network_math_operations_eliminated": false,
+  "observed_cpu_time_D_over_A_median": 0.10609480812641084,
+  "package_joules": null,
+  "peak_rss_D_over_A": 0.1320337117991297,
+  "schema": "casulo.interlocution-compression/1.0",
+  "source_analysis": "baselines/ti10-v2/analysis-expanded.json",
+  "status": "OBSERVED_MATERIAL_NONENERGY_PHYSICAL_REDUCTION",
+  "steady_state_thread_cycles_D_over_A": 0.028406296740716024,
+  "total_system_joules": null,
+  "wall_time_D_over_A_median": 0.1695562192953054,
+  "wall_time_ci95": {
+    "lower": 0.16736001125675595,
+    "resamples": 20000,
+    "seed": 2026081901,
+    "upper": 0.1812736194534004
+  }
+}

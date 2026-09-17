@@ -1,0 +1,10 @@
+{
+  "schema": "casulo.arc-intent-twin-smoke-failure/1.0",
+  "stage": "pre-model-load",
+  "error_type": "GenerativeModelError",
+  "cause": "cache_root_passed_one_level_below_candidate_registry",
+  "model_loaded": false,
+  "tokens_generated": 0,
+  "preserved": true,
+  "superseded_by": "arc-intent-twin-2026-08-18-attempt2"
+}

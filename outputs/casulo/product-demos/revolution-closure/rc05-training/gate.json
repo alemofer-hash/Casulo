@@ -1,0 +1,91 @@
+{
+  "authorized_claims": [
+    "a small first-party learned SemanticRouter is promoted for the bounded six-universe route"
+  ],
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "commands": [
+    [
+      "C:\\Python313\\python.exe",
+      "tools/train_learned_router.py",
+      "--repo",
+      ".",
+      "--output",
+      "product-demos\\revolution-closure\\rc05-training\\pilot"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc05-training\\pytest-temp",
+      "tests/product/test_learned_router.py",
+      "tests/product/test_semantic_multiverse_domain.py",
+      "tests/product/test_owner_semantic_multiverse.py"
+    ]
+  ],
+  "forbidden_claims": [
+    "Casulo foundation weights trained from scratch",
+    "Qwen3-4B fine-tuned locally",
+    "broad learned-router generalization"
+  ],
+  "gate_id": "RC5_CASULO_FIRST_PARTY_LEARNED_LAYER_PASS",
+  "input_hashes": {
+    "dataset": "c739151f8e2d6766167b988e0ad9ddf3347092945fa9e2ec744820755961219b",
+    "previous_gate": "5adb26d698c879e7b2b7188cb2d07b903a920d83cbe4d42dc6abb18de9448c94",
+    "promotion_policy": "771e0c189075731380d5427cefb81674d3d54b17e1b55cd780dbe5b84930a5a8"
+  },
+  "machine_profile_sha256": "7ca1b196f47eb6e20769ae165c1b1a322d9f9abdd2ebc3dc4a7201acff8dd718",
+  "model_adapter_hashes": {
+    "artifact_file_sha256": "1debe8be7912c673a3d88004b3426c4eef94d176b768a78cdf4acc100b3b4096",
+    "internal_model_sha256": "4f57fae396cbcf753e7fdd1623547d58f5ff01faacfe0fb15ff790eb34495473"
+  },
+  "open_findings": [
+    {
+      "severity": "P2",
+      "summary": "CASULO_4B_ADAPTER=DEFERRED_COMPUTE_NOT_AVAILABLE"
+    },
+    {
+      "severity": "P2",
+      "summary": "DPO=NOT_JUSTIFIED_YET"
+    }
+  ],
+  "output_hashes": {
+    "product-demos/revolution-closure/rc05-training/learned-route-receipt.json": "0fc2fa33c701273307a4394417d160278c399e4822d8dfd28d7d9617c991c542",
+    "product-demos/revolution-closure/rc05-training/pilot/casulo-semantic-router-nb-char4-v1.json": "1debe8be7912c673a3d88004b3426c4eef94d176b768a78cdf4acc100b3b4096",
+    "product-demos/revolution-closure/rc05-training/pilot/evaluation.json": "53f49d1d535edbf37664335e237c3480ddeaec2a98c5e4b9106380ad86e61a82",
+    "product-demos/revolution-closure/rc05-training/pilot/lineage.json": "f24fe0bb303c2c2f786eece393fcd0bbf7fe69103de378ffd6011adfa6849f24",
+    "product-demos/revolution-closure/rc05-training/tests.txt": "d537def4c4b473fa6ecbe7b67a618051ddf581577c33bb5eceace7056222b61e"
+  },
+  "previous_gate_hash": "5adb26d698c879e7b2b7188cb2d07b903a920d83cbe4d42dc6abb18de9448c94",
+  "sampling_policy": "NOT_APPLICABLE_CLASSICAL_ROUTER",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "status": "PASS",
+  "test_summary": {
+    "checks": {
+      "candidate_accuracy": true,
+      "fallback": true,
+      "first_party_learned_artifact": true,
+      "gain_at_least_epsilon": true,
+      "lineage_and_license": true,
+      "model_hash_valid": true,
+      "regression": true,
+      "runtime_route": true,
+      "zero_critical_regression": true
+    },
+    "evaluation": {
+      "absolute_gain": 0.75,
+      "baseline_accuracy": 0.25,
+      "candidate_accuracy": 1.0,
+      "promotion_state": "OWNER_PROMOTED"
+    },
+    "pytest": ".............                                                            [100%]\n13 passed in 1.55s"
+  },
+  "timestamp": "2026-08-14T20:55:30.408392+00:00",
+  "tool_versions": {
+    "python": "3.13.2"
+  },
+  "worktree_manifest_sha256": "066698f9b6ac67be76aed86bc83c412c4fcd5377e6a2e699a3a106000a4314e9"
+}

@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "case_id": 1,
+      "counters_equal": true,
+      "final_loss_abs_difference": 3.469446951953614e-17,
+      "finite": true,
+      "identity_equal": true,
+      "initial_loss_abs_difference": 6.661338147750939e-16,
+      "optimizer_state": "STATELESS_SGD_RESET_EACH_CASE",
+      "parameter_max_abs_difference": 2.220446049250313e-16,
+      "pass": true,
+      "prediction_max_abs_difference": 1.7763568394002505e-15,
+      "stopping_reason": "FIXED_EPOCHS_400"
+    },
+    {
+      "case_id": 2,
+      "counters_equal": true,
+      "final_loss_abs_difference": 6.938893903907228e-18,
+      "finite": true,
+      "identity_equal": true,
+      "initial_loss_abs_difference": 8.881784197001252e-16,
+      "optimizer_state": "STATELESS_SGD_RESET_EACH_CASE",
+      "parameter_max_abs_difference": 2.220446049250313e-16,
+      "pass": true,
+      "prediction_max_abs_difference": 8.881784197001252e-16,
+      "stopping_reason": "FIXED_EPOCHS_400"
+    }
+  ],
+  "maximum_final_loss_abs_difference": 3.469446951953614e-17,
+  "maximum_initial_loss_abs_difference": 8.881784197001252e-16,
+  "maximum_parameter_abs_difference": 2.220446049250313e-16,
+  "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+  "optimizer_state_semantics": "SGD_WITHOUT_MOMENTUM_HAS_NO_PERSISTENT_BUFFER_AND_IS_RESET_PER_CASE",
+  "schema": "casulo.interlocution-equivalence/1.0",
+  "status": "PASS",
+  "tolerance_frozen_before_execution": 1e-09,
+  "work_units": 2
+}

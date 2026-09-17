@@ -1,0 +1,71 @@
+{
+  "agent_name": "creation:test",
+  "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "identity_source": "creation_id",
+  "pages": [
+    {
+      "nodes": 0,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\00-silence.html",
+      "state": "SILENCE"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\01-first_intent.html",
+      "state": "FIRST_INTENT"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\02-listening.html",
+      "state": "LISTENING"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\03-first_form.html",
+      "state": "FIRST_FORM"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\04-clarification.html",
+      "state": "CLARIFICATION"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\05-confirmation.html",
+      "state": "CONFIRMATION"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\06-personality.html",
+      "state": "PERSONALITY"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\07-simulation.html",
+      "state": "SIMULATION"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\08-interruption.html",
+      "state": "INTERRUPTION"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\09-correction.html",
+      "state": "CORRECTION"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\10-agreement.html",
+      "state": "AGREEMENT"
+    },
+    {
+      "nodes": 1,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts15-reseal-attempt1\\product-pytest-final-temp\\test_materialized_owner_creati0\\creation\\visual\\11-materialization.html",
+      "state": "MATERIALIZATION"
+    }
+  ],
+  "projection_diagnostics": [
+    "identity_name_missing"
+  ],
+  "schema": "casulo.owner-live-visual-timeline/1.0"
+}

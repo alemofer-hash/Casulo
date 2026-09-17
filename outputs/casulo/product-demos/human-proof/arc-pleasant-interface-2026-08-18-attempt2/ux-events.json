@@ -1,0 +1,136 @@
+{
+  "events": [
+    {
+      "event_hash": "6f6eb0051fc79156cfb12ec2492cd1261f7d2336f87b89e9938c606eb1800feb",
+      "event_id": "ux:1",
+      "kind": "PRESENCE_READY",
+      "occurred_at": "2026-08-19T01:31:16.521730+00:00",
+      "payload": {
+        "text": "Estou aqui."
+      },
+      "schema": "casulo.owner-ux-event/1.0",
+      "source_event_ids": [
+        "arc9:gate"
+      ]
+    },
+    {
+      "event_hash": "e51591b3daffc3b5f46721759103b447c1bc5c1f6a13ab47e0e2358682cbb504",
+      "event_id": "ux:2",
+      "kind": "MODEL_LOADING",
+      "occurred_at": "2026-08-19T01:31:16.521730+00:00",
+      "payload": {
+        "text": "Acordando o motor local."
+      },
+      "schema": "casulo.owner-ux-event/1.0",
+      "source_event_ids": [
+        "arc9:gate"
+      ]
+    },
+    {
+      "event_hash": "ec0ff6d99b5baeda936c0c96fb8e5d173ddf34a36e871faa87cabcfa4ac3dfdd",
+      "event_id": "ux:3",
+      "kind": "ASSISTANT_START",
+      "occurred_at": "2026-08-19T01:31:16.521730+00:00",
+      "payload": {
+        "turn_id": "turn:gate"
+      },
+      "schema": "casulo.owner-ux-event/1.0",
+      "source_event_ids": [
+        "arc9:gate"
+      ]
+    },
+    {
+      "event_hash": "21de499f19387bdafd53188e23cdd97826d77f4af74e09ab0b849989a5159152",
+      "event_id": "ux:4",
+      "kind": "ASSISTANT_TOKEN",
+      "occurred_at": "2026-08-19T01:31:16.521730+00:00",
+      "payload": {
+        "sequence": 1,
+        "text": "Vamos ",
+        "turn_id": "turn:gate"
+      },
+      "schema": "casulo.owner-ux-event/1.0",
+      "source_event_ids": [
+        "arc9:gate"
+      ]
+    },
+    {
+      "event_hash": "fb196e520ee648807d351d1d5e9e8dbc5f1aadb37b25fa48b9089ae00ba1b05d",
+      "event_id": "ux:5",
+      "kind": "ASSISTANT_TOKEN",
+      "occurred_at": "2026-08-19T01:31:16.521730+00:00",
+      "payload": {
+        "sequence": 2,
+        "text": "construir isso.",
+        "turn_id": "turn:gate"
+      },
+      "schema": "casulo.owner-ux-event/1.0",
+      "source_event_ids": [
+        "arc9:gate"
+      ]
+    },
+    {
+      "event_hash": "e31992733847876ab550eedff2e568d876b58e3527d7b26a52f1dd4ff5281ba5",
+      "event_id": "ux:6",
+      "kind": "ASSISTANT_END",
+      "occurred_at": "2026-08-19T01:31:16.521730+00:00",
+      "payload": {
+        "finish_reason": "stop",
+        "turn_id": "turn:gate"
+      },
+      "schema": "casulo.owner-ux-event/1.0",
+      "source_event_ids": [
+        "arc9:gate"
+      ]
+    },
+    {
+      "event_hash": "edbb1011fb9190b9ef32ec923484737a1c049b285fc87360a603d7861090de54",
+      "event_id": "ux:7",
+      "kind": "JOB_STARTED",
+      "occurred_at": "2026-08-19T01:31:16.521730+00:00",
+      "payload": {
+        "evidence_sha256": "74cbb7305955dd409a1cb75eb60d46a1e4637a4c7b0ed687ab80233347b11dc8",
+        "job_id": "arc9-contract",
+        "sequence": 1,
+        "summary": "Criação aceita; preparando o primeiro artefato verificável."
+      },
+      "schema": "casulo.owner-ux-event/1.0",
+      "source_event_ids": [
+        "arc9:gate"
+      ]
+    },
+    {
+      "event_hash": "574df35e9c8ea81a316b49a7800cd83e323fd168b4b5228b96086e47ec3f07da",
+      "event_id": "ux:8",
+      "kind": "JOB_MILESTONE",
+      "occurred_at": "2026-08-19T01:31:16.521730+00:00",
+      "payload": {
+        "evidence_sha256": "8b391d886eef9370c4f70e009b06dcbf1ec075dbdb853eda80207a6087787ad6",
+        "job_id": "arc9-contract",
+        "sequence": 2,
+        "summary": "Artifact de contrato persistido."
+      },
+      "schema": "casulo.owner-ux-event/1.0",
+      "source_event_ids": [
+        "arc9:gate"
+      ]
+    },
+    {
+      "event_hash": "e1fd6d690632fe750c598b6ef432a5d7f572cb010c3174e7bd7d3d359266e1c9",
+      "event_id": "ux:9",
+      "kind": "JOB_COMPLETED",
+      "occurred_at": "2026-08-19T01:31:16.521730+00:00",
+      "payload": {
+        "evidence_sha256": "8b391d886eef9370c4f70e009b06dcbf1ec075dbdb853eda80207a6087787ad6",
+        "job_id": "arc9-contract",
+        "sequence": 3,
+        "summary": "Job de contrato concluído."
+      },
+      "schema": "casulo.owner-ux-event/1.0",
+      "source_event_ids": [
+        "arc9:gate"
+      ]
+    }
+  ],
+  "schema": "casulo.arc9-ux-events/1.0"
+}

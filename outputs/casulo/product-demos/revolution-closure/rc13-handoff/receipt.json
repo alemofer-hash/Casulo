@@ -1,0 +1,8 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc13-handoff",
+  "gate": "RC13_HANDOFF_COMPLETE",
+  "gate_sha256": "d0466ac1d0625ac0f441346f7a1f696d9ef14d9ae3c2c571abb4cfeeaec39597",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "READY_FOR_GUILHERME_CASULO_BETA_HUMAN_PROOF",
+  "timestamp": "2026-08-14T21:54:34.974557+00:00"
+}

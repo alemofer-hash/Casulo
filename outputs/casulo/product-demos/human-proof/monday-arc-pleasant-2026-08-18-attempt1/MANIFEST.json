@@ -1,0 +1,21 @@
+{
+  "schema": "casulo.arc9-launcher-manifest/1.0",
+  "classification": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "b6068b23e43910a4d824abf543c828453c2180f5d1ba49b3ce7128ae1e700046",
+      "bytes": 895
+    },
+    {
+      "path": "START_CASULO_ARC9.vbs",
+      "sha256": "b6eea75606af415700103371385e094e67bb0f25850c4917f301bf4ce738e96a",
+      "bytes": 1054
+    }
+  ],
+  "release_t85_modified": false,
+  "cloud": "RELEASE_LOCKED",
+  "guest_network": "OFF",
+  "usb_block_devices": "PROHIBITED",
+  "human_proof": "PENDING_GUILHERME"
+}

@@ -1,0 +1,27 @@
+{
+  "states": {
+    "owner.agent.interactive_talk_01.export": [],
+    "owner.agent.interactive_talk_01.interrupt": [
+      {
+        "initial": 0,
+        "name": "transitions",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ],
+    "owner.agent.interactive_talk_01.memory": [
+      {
+        "initial": 0,
+        "name": "accepted",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ]
+  }
+}

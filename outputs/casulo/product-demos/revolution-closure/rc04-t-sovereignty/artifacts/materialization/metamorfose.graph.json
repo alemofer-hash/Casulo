@@ -1,0 +1,361 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "casulo.revolution.materialization",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "block/root.0.then.0",
+            "block/root.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0",
+          [
+            "block/root.0.then.0.then.0",
+            "block/root.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0",
+          [
+            "block/root.0.then.0.then.0.then.0",
+            "block/root.0.then.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0",
+          [
+            "block/root.0.then.0.then.0.then.0.then.0",
+            "block/root.0.then.0.then.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0.then.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "schema_valid",
+          "source": "PublishArtifact/input/schema_valid",
+          "target": "PublishArtifact/instruction/root.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishArtifact/instruction/root.0/if",
+          "target": "PublishArtifact/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "tests_pass",
+          "source": "PublishArtifact/input/tests_pass",
+          "target": "PublishArtifact/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishArtifact/instruction/root.0.then.0/if",
+          "target": "PublishArtifact/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "safety_pass",
+          "source": "PublishArtifact/input/safety_pass",
+          "target": "PublishArtifact/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishArtifact/instruction/root.0.then.0.then.0/if",
+          "target": "PublishArtifact/instruction/root.0.then.0.then.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "bytes_match_hash",
+          "source": "PublishArtifact/input/bytes_match_hash",
+          "target": "PublishArtifact/instruction/root.0.then.0.then.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishArtifact/instruction/root.0.then.0.then.0.then.0/if",
+          "target": "PublishArtifact/instruction/root.0.then.0.then.0.then.0.then.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishArtifact/instruction/root.0.then.0.then.0.then.0/if",
+          "target": "PublishArtifact/instruction/root.0.then.0.then.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishArtifact/instruction/root.0.then.0.then.0/if",
+          "target": "PublishArtifact/instruction/root.0.then.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishArtifact/instruction/root.0.then.0/if",
+          "target": "PublishArtifact/instruction/root.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "PublishArtifact/instruction/root.0/if",
+          "target": "PublishArtifact/instruction/root.0.else.0/emit"
+        }
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 9,
+      "input_type": "MaterializationDecision",
+      "name": "PublishArtifact",
+      "nodes": [
+        {
+          "defines": [
+            "schema_valid"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "PublishArtifact/input/schema_valid",
+          "kind": "input",
+          "label": "schema_valid",
+          "operation": "PublishArtifact",
+          "path": "input.schema_valid",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "tests_pass"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "PublishArtifact/input/tests_pass",
+          "kind": "input",
+          "label": "tests_pass",
+          "operation": "PublishArtifact",
+          "path": "input.tests_pass",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "safety_pass"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "PublishArtifact/input/safety_pass",
+          "kind": "input",
+          "label": "safety_pass",
+          "operation": "PublishArtifact",
+          "path": "input.safety_pass",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "bytes_match_hash"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "PublishArtifact/input/bytes_match_hash",
+          "kind": "input",
+          "label": "bytes_match_hash",
+          "operation": "PublishArtifact",
+          "path": "input.bytes_match_hash",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "PublishArtifact/instruction/root.0/if",
+          "kind": "if",
+          "label": "schema_valid",
+          "operation": "PublishArtifact",
+          "path": "root.0",
+          "pure": true,
+          "uses": [
+            "schema_valid"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "PublishArtifact/instruction/root.0.then.0/if",
+          "kind": "if",
+          "label": "tests_pass",
+          "operation": "PublishArtifact",
+          "path": "root.0.then.0",
+          "pure": true,
+          "uses": [
+            "tests_pass"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "PublishArtifact/instruction/root.0.then.0.then.0/if",
+          "kind": "if",
+          "label": "safety_pass",
+          "operation": "PublishArtifact",
+          "path": "root.0.then.0.then.0",
+          "pure": true,
+          "uses": [
+            "safety_pass"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "PublishArtifact/instruction/root.0.then.0.then.0.then.0/if",
+          "kind": "if",
+          "label": "bytes_match_hash",
+          "operation": "PublishArtifact",
+          "path": "root.0.then.0.then.0.then.0",
+          "pure": true,
+          "uses": [
+            "bytes_match_hash"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "PublishArtifact/instruction/root.0.then.0.then.0.then.0.then.0/emit",
+          "kind": "emit",
+          "label": "\"PUBLISH\"",
+          "operation": "PublishArtifact",
+          "path": "root.0.then.0.then.0.then.0.then.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "PublishArtifact/instruction/root.0.then.0.then.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "PublishArtifact",
+          "path": "root.0.then.0.then.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "PublishArtifact/instruction/root.0.then.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "PublishArtifact",
+          "path": "root.0.then.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "PublishArtifact/instruction/root.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "PublishArtifact",
+          "path": "root.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "PublishArtifact/instruction/root.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "PublishArtifact",
+          "path": "root.0.else.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [
+    {
+      "kind": "record",
+      "members": [
+        [
+          "schema_valid",
+          "Bool"
+        ],
+        [
+          "tests_pass",
+          "Bool"
+        ],
+        [
+          "safety_pass",
+          "Bool"
+        ],
+        [
+          "bytes_match_hash",
+          "Bool"
+        ]
+      ],
+      "name": "MaterializationDecision"
+    }
+  ],
+  "version": "metamorfose-graph/1.0"
+}

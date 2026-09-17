@@ -1,0 +1,40 @@
+{
+  "modules": {
+    "research.interlocution.dataset": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.initialization": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.judgment": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.loss": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.optimizer_state": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.precision": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.stopping": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.update": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.working_set": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    }
+  }
+}

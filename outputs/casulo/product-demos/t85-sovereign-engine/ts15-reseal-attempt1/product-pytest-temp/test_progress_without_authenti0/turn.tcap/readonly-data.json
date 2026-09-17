@@ -1,0 +1,15 @@
+{
+  "states": {
+    "owner.guide.turn_coordinator": [
+      {
+        "initial": 0,
+        "name": "committed_turns",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ]
+  }
+}

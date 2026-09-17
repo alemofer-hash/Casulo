@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "owner.agent.csv_guardian.delivery": {
+      "commit": [],
+      "inspect": [],
+      "simulate": [
+        "simulation"
+      ]
+    },
+    "owner.agent.csv_guardian.pipeline": {
+      "check": [],
+      "combine": [],
+      "plan": []
+    },
+    "owner.agent.csv_guardian.policy": {
+      "branch": [],
+      "decide": [],
+      "verify_bytes_preserved": [],
+      "verify_diagnostics_ready": [],
+      "verify_schema_versioned": []
+    }
+  }
+}

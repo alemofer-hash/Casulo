@@ -1,0 +1,8 @@
+{
+  "baseline_manifest_sha256": "4bc45592356cf7051c1f68f910aaf86f2765e93288f82a4d2d32938aad3491e6",
+  "evidence_root": "product-demos/revolution-closure/rc00-baseline-attempt2",
+  "gate_sha256": "6e3a741006fe6fd1586d3376661d95d9b4f4722321b6d05353b18b4c8f79bb0d",
+  "schema": "casulo.revolution-closure/1.0/preflight-receipt",
+  "state": "RC0_BASELINE_FROZEN",
+  "timestamp": "2026-08-14T19:39:42.107943+00:00"
+}

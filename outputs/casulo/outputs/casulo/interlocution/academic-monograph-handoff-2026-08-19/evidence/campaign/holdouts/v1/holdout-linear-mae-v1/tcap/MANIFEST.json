@@ -1,0 +1,113 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "research.interlocution.holdout.holdout_linear_mae_v1.dataset_identity_integrity"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "2266269d84183662f97dd17a9c3dfcb50bf005a94fe2ec1ed1a5a307d505dabf"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "d74786ab8edfd2a4c8ddecc5ccba0d375f7454dff415d46a222a29bdba071d71"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "2b4465c329da4515a264342c4d3369680f68d75675b6b675619ec5205e91c50a"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "d33dada204fcf677e0c5d0e09083cd7a97ed1c3522634488894c3a9c90da4ba0"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "8fc8b099c91a7a10eeed4c06393150a080d5acc6386658c4da3d57a53b10f72d"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "769dc5265a74b58afa197eb7916769d299928d0c62d3a3c0c300660a7601e396"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "567b1d82dcf3781c599299f75a543222e5ad43feb5cbd878c801bd58e8d5b30a"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "51d3e98ded0dbdf26e3b3bf18e79c0fbc5ab00dd2d1683bff9eb840c4785e92d"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "87696f4be6f2507546e54539434d3b9b6be7e350725b0093ed98da06b638f701"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "09e93096f31f61af09f4af633db997cb1461e95891d150133019a47cc965360a"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "f3dac27e670536d5d58b7e4ef8ac1cb8d79903a48a45442cba1849caaf9df837"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "a97ce6c93f34c360b1ff29dc92945fbb774a51f2e0982926014d24a0f0210c6c"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.dataset_identity_integrity.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.dataset_identity_integrity",
+      "sha256": "d679838120b3f376bf69014f4cb053e83b41ca3c273242a3377683e9aceea316"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.initialization_bundle.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.initialization_bundle",
+      "sha256": "baba7f4683f11b3450f3fc2e119e253c62c8503c226abdcd259bb13fbb9577a5"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.numerical_precision.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.numerical_precision",
+      "sha256": "eaee964ff87158be0a405687cf5e4c9de31421ca69fe9767cd73083fcb613aa9"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.loss_function.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.loss_function",
+      "sha256": "bc9d05bcf3614c71a7950b70847f4bedc194bd23c1ba2b55988a212608032fa8"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.update_rule.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.update_rule",
+      "sha256": "c429990dd6fd0a71d608ad0bcea94c470ecc76d0874994e979fcb379fc40d174"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.optimizer_state.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.optimizer_state",
+      "sha256": "22ced08232326257afc5ff7bfdde198bd58745a056dad7107e7ae328971fc827"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.working_set.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.working_set",
+      "sha256": "99b9e89e19578e29c090cc6e3c58017b6aa71f5a9973ca8ceba31068659aeb5b"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.stopping.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.stopping",
+      "sha256": "38f59a4fef3844a883c4592b25a0e89d1e7a681a1ee4fbaaee78a85fd037833e"
+    },
+    {
+      "file": "sources/research.interlocution.holdout.holdout_linear_mae_v1.equivalence_acceptance.t",
+      "module": "research.interlocution.holdout.holdout_linear_mae_v1.equivalence_acceptance",
+      "sha256": "0c4271b28457fc0e49bb0441b2571d332ecd7d78df47d469afa9766b5826d792"
+    }
+  ],
+  "tcap_hash": "7226892c88f14a4bf4028ba17e3fdf26d05acc701e9003ecd75253ab92dc628c"
+}

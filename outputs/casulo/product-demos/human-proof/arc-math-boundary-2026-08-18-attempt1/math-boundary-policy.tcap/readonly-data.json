@@ -1,0 +1,15 @@
+{
+  "states": {
+    "owner.math.boundary_policy": [
+      {
+        "initial": 0,
+        "name": "adopted_kernels",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ]
+  }
+}

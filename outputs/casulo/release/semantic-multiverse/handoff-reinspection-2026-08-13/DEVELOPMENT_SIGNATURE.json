@@ -1,0 +1,12 @@
+{
+  "algorithm": "ssh-ed25519",
+  "identity": "casulo-semantic-reinspection-dev",
+  "label": "DEVELOPMENT_SIGNATURE_NOT_COMMERCIAL_RELEASE",
+  "manifest_sha256": "31764546c2dff61f68d2b00bbe4f78060cef4d1523234e7ad59ab1c24d9ad724",
+  "namespace": "casulo-release",
+  "production_release_authorized": false,
+  "public_key_fingerprint": "SHA256:WV2iEwZ00CJO+pA3CDyw8EWCYLp3Y8r7qvGHRKIOpfs",
+  "schema": "casulo.development-signature/1.0",
+  "signature_sha256": "15c64caac5faebf68a9ae594fb30c0cf21d086855c2abb4d32b370837392f340",
+  "verified": true
+}

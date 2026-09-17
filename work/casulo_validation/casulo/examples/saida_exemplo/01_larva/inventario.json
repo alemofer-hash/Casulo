@@ -1,0 +1,68 @@
+{
+  "avisos": [],
+  "campos": [
+    "timestamp",
+    "origem",
+    "destino",
+    "mensagem",
+    "prioridade",
+    "_linha_origem"
+  ],
+  "codificacao": "utf-8-sig",
+  "conteineres": [
+    "entrada_exemplo.csv"
+  ],
+  "fase": "LARVA",
+  "formato": "delimitado",
+  "inventario": {
+    "campos": [
+      "timestamp",
+      "origem",
+      "destino",
+      "mensagem",
+      "prioridade",
+      "_linha_origem"
+    ],
+    "conteineres": [
+      "entrada_exemplo.csv"
+    ],
+    "formato": "delimitado",
+    "inventor": "Guimo",
+    "marca": "Casulo",
+    "perfil": {
+      "campo_temporal": "timestamp",
+      "campos_esperados": [
+        "timestamp",
+        "origem",
+        "destino",
+        "mensagem",
+        "prioridade"
+      ],
+      "nome": "trafego-de-informacao"
+    },
+    "quantidade_bytes": 227,
+    "quantidade_campos": 6,
+    "quantidade_conteineres": 1,
+    "quantidade_registros": 3
+  },
+  "ovo": {
+    "caminho": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\examples\\entrada_exemplo.csv",
+    "extensao": ".csv",
+    "fase": "OVO",
+    "nome": "entrada_exemplo.csv",
+    "quantidade_bytes": 227,
+    "sha256": "647e203f534383a6172d396ce294a1e970534f12f2dcdd095845d4a824e25d91"
+  },
+  "quantidade_registros": 3,
+  "separador": ";",
+  "sinais_de_atrito": {
+    "delta_colunas": 0.2,
+    "delta_conteineres": 0.0,
+    "delta_volume": 0.0,
+    "divergencia_semantica": 0.0,
+    "lacuna_cobertura": 0.0,
+    "proporcao_nulos": 0.0,
+    "taxa_desvio_temporal": 0.0,
+    "variacao_cabecalho": 0.0
+  }
+}

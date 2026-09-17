@@ -1,0 +1,50 @@
+{
+  "T_fulfillment": {
+    "kind": "ok",
+    "value": "FULFILLED"
+  },
+  "T_publish": {
+    "kind": "ok",
+    "value": "COMMIT"
+  },
+  "agent_id": "t_mass_balance",
+  "case_id": "technical-02",
+  "constraint_mutation": {
+    "kind": "error",
+    "value": "u001"
+  },
+  "emit_literal": false,
+  "enum_count": 3,
+  "external_ai_api": false,
+  "fake_engine": false,
+  "final_value": "AUDITED",
+  "fixed_template_selected_by_prompt": false,
+  "function_count": 11,
+  "hosted_receipts": 11,
+  "missing_capability": {
+    "kind": "error",
+    "value": "CAPABILITY_DENIED:simulation"
+  },
+  "model_generated_architecture": true,
+  "module_count": 3,
+  "neural_trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "f9c47a39c3dd6819b39b2a8bff0b58e92493c729851e0209a5be6c2011718f52",
+    "ended_monotonic_ns": 31721789677500,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "t85:technical-02:architecture:0",
+    "output_sha256": "4f71ff0ad982b89999e0b066ffa92289550fdca5d9c1abfd4fb2e7d09e650d8e",
+    "sampling_policy_id": "casulo-t85-architecture-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 31688528048100,
+    "stream_events": 181
+  },
+  "record_count": 3,
+  "request_sha256": "7c35f2595a231c5125b46fbcb61bbdfcddff9a659d6cb4c8c71a842c6492852d",
+  "success_events_canonically_bound": true,
+  "tcap_hash": "40de5811277da134fde84d095d118f4d1d06ffb474c46cfbe3cf3f79b6e67b58"
+}

@@ -1,0 +1,103 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:9c96a34358d76874f0ac76134f0a111ca8a4cc67b5b02b322bd1d1dff9d2820e",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "07bfd4fdb4efdead6fecd19b781d28e6401a7e707255df96580d27facddcf689"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "eec9b9e8489400a9fc3b12e575f1529fc5c9824f62e4c3fb3fe0ab769728e072",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "1550b18fc23b0a7f8d1719ca5d1a39aefbf45e5ce624f7d2560a66016e08238a",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "casulo.revolution.simulation",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "6b72eed37b32449dcf9ff8c4bf79bc3e1574378272d6e8d12482cddab4d73372"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "deterministic",
+          "real_effects_absent",
+          "requirements_covered"
+        ],
+        "input_type": "SimulationDecision",
+        "judgements": [],
+        "name": "AcceptSimulation",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "0e2c92c7dede4247743e92137776e97863ab34d0d7298d098fa1d933a787a792"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "SimulationDecision",
+      "kind": "condense",
+      "name": "AcceptSimulation",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 7,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "0075a655c8d9a4507ebcd700d42770f0e7837c08a258c114cc62bd9d5a191f0b"
+  }
+}

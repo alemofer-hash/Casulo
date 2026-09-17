@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "decision_authority": false,
+      "kind": "foreign_primitive",
+      "name": "qwen3_greedy_candidate"
+    }
+  ]
+}

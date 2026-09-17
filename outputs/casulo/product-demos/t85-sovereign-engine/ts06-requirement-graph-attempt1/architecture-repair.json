@@ -1,0 +1,46 @@
+{
+  "T_fulfillment": {
+    "kind": "ok",
+    "value": "FULFILLED"
+  },
+  "after_candidate_sha256": "cf937dfbfd45cae1e681cf413cd500832c253c540602b5d11448b27f973cb749",
+  "before_candidate_sha256": "0f81c04879d8159ba44730356406a1bd801027665e5522cae3336f1a85a623dc",
+  "before_diagnostics": [
+    {
+      "code": "FUL200",
+      "expected": "127.0.0.1",
+      "message": "expected EQUALS '127.0.0.1' at service.bind",
+      "observed": "0.0.0.0",
+      "path": [
+        "service",
+        "bind"
+      ],
+      "rule_id": "loopback"
+    },
+    {
+      "code": "FUL200",
+      "expected": true,
+      "message": "expected EQUALS True at service.standalone",
+      "observed": null,
+      "path": [
+        "service",
+        "standalone"
+      ],
+      "rule_id": "standalone"
+    },
+    {
+      "code": "FUL200",
+      "expected": 1.0,
+      "message": "expected EQUALS 1.0 at service.round_trip_fidelity",
+      "observed": null,
+      "path": [
+        "service",
+        "round_trip_fidelity"
+      ],
+      "rule_id": "roundtrip"
+    }
+  ],
+  "classification": "ARCHITECTURE",
+  "effects_expanded": false,
+  "receipt_hash": "b89cad8a3d514727c6401beaa12170be3524d9570f1de11167ab53706fd1677b"
+}

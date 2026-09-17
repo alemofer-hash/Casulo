@@ -1,0 +1,7 @@
+{
+  "algorithm": "SHA-256",
+  "manifest_sha256": "3529733742e6cd52537f1651a0488061e2f88dc4020339a450a14c57e8d69651",
+  "production_release_authorized": false,
+  "schema": "casulo.local-development-attestation/1.0",
+  "trust": "LOCAL_DEVELOPMENT_ONLY_NOT_RELEASE_SIGNATURE"
+}

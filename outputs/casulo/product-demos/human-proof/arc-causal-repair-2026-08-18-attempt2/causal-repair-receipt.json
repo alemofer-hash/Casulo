@@ -1,0 +1,53 @@
+{
+  "after_tcap_sha256": "0b4f14a39cee55edd54ae890f209f3af5fd028995c6748c0181e8e9014f2ecdd",
+  "all_tests_passed_after_rebuild": true,
+  "before_tcap_sha256": "5cb80b2c52725fdcda6f26b62d83a81d387caf365ee2fdb4b6700152cf55c2b7",
+  "changed_unit_ids": [
+    "review"
+  ],
+  "plan": {
+    "affected_paths": [
+      [
+        "behavior",
+        "approval"
+      ]
+    ],
+    "diagnostic_code": "TTEST_EXPECTED_TEXT_MISSING",
+    "diagnostic_sha256": "aec79f72dfd098551a4625022da4480a9ea7f7be86139fb4f241c7a1ddc7acaa",
+    "plan_sha256": "8bdb3b005a2cde6a3f1c4753ecdd2a57daf4e72d28a768dd3bd2bfe5c67723c5",
+    "rebuild_unit_ids": [
+      "review",
+      "output"
+    ],
+    "requirement_ids": [
+      "req:twin:arc6-smoke:obs:approval"
+    ],
+    "reuse_unit_ids": [
+      "decision",
+      "identity"
+    ],
+    "schema": "casulo.causal-repair-plan/1.0",
+    "seed_unit_ids": [
+      "review"
+    ],
+    "source_event_ids": [
+      "verifier:diagnostic:0:approval"
+    ],
+    "target_unit_id": "review",
+    "test_name": "approval"
+  },
+  "rebuilt_unit_ids": [
+    "review",
+    "output"
+  ],
+  "receipt_sha256": "024769806232a940505c97e4a9761259555e33efd6cbc12893c285a159ba0645",
+  "reused_artifact_sha256": {
+    "decision": "d4f9b31e1473e2a0cc454f3524f9ce5cb8ef5200475d8a097a2a463b0104c13c",
+    "identity": "d46e120bb744c93d4ca8c67df62350846aa247789cefafffe891cc1f91aae1cc"
+  },
+  "reused_unit_ids": [
+    "decision",
+    "identity"
+  ],
+  "schema": "casulo.causal-repair-receipt/1.0"
+}

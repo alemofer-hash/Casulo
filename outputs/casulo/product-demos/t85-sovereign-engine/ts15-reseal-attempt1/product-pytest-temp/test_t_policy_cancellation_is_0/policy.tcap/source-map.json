@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.guide.context_policy.t",
+      "module": "owner.guide.context_policy",
+      "sha256": "c26919a1d95d972bdc2da7e27a5876b07aaa268b27de7761f78deea74c01106e"
+    }
+  ]
+}

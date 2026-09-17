@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "compression.casv_tile"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "compression.casv_tile"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

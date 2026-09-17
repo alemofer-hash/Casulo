@@ -1,0 +1,8 @@
+{
+  "cause": "aggregator_expected_obsolete_signature_field",
+  "error": "KeyError: signature",
+  "output_created": false,
+  "schema": "casulo.t85-finalizer-failure/1.0",
+  "stage": "TS15 final aggregate gate",
+  "status": "PRESERVED_CORRECTED_IN_FINALIZER_SOURCE"
+}

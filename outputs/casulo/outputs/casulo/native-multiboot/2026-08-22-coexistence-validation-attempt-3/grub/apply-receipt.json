@@ -1,0 +1,29 @@
+{
+  "created": [
+    {
+      "path": "EFI/Teloscorp/Casulo/CasuloX64.efi",
+      "sha256": "dba2b8ab4330729db41e95638a9fda275a06cde7e52dcd60db3ff17ead4f71c1"
+    },
+    {
+      "path": "kernel-x86_64",
+      "sha256": "212faf45702763b2e070bcb1532eb2b2affa15a6005dcc92106ab42cf26bf2ef"
+    },
+    {
+      "path": "ramdisk",
+      "sha256": "d233d0c5c23d0cf6e0a638fa8ce756eee076fd717d8dbd16f7293f278bbb1b61"
+    },
+    {
+      "path": "grub/custom.cfg",
+      "sha256": "78fe67d6bab5f8113d373541b07d15b3c47bae4fe7cbe14c399b8a54428fd34f"
+    }
+  ],
+  "deleted": [],
+  "overwritten": [],
+  "rollback_confirmation_phrase": "REMOVER SOMENTE CASULO 5bcf3561cbd74509a4b2ae8cf8cf29a2",
+  "schema": "casulo-multiboot-apply-receipt/1.0",
+  "state": "APPLIED_NON_DESTRUCTIVE",
+  "target_root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-multiboot\\2026-08-22-coexistence-validation-attempt-3\\grub\\esp",
+  "transaction_id": "5bcf3561cbd74509a4b2ae8cf8cf29a2",
+  "tree_sha256_after": "d5bf71ce794eae6f807bb7b03ad8c0cf891fc7eb473b197ef5460f8e132487a1",
+  "tree_sha256_before": "158f043fe95bb7a72dc54154fa57862793bdb2cbc202c63d4580cb711046cd75"
+}

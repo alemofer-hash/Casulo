@@ -1,0 +1,68 @@
+{
+  "boundaries": {
+    "block_device": "PROHIBITED",
+    "cloud": "RELEASE_LOCKED",
+    "public": "NO_PRIVATE_COMPONENTS",
+    "qpu": "UNAVAILABLE_DENY",
+    "usb": "PROHIBITED"
+  },
+  "checks": {
+    "cancellation_and_quarantine_pass": true,
+    "clean_snapshot_present": true,
+    "cloud_fail_closed": true,
+    "compileall_pass": true,
+    "editions_signed_separately": true,
+    "einstein_component_pass": true,
+    "full_regression_pass": true,
+    "g10_24_of_24_preserved": true,
+    "g10_four_hashes_preserved": true,
+    "historical_archive_immutable": false,
+    "launcher_command_surface_complete": true,
+    "launcher_new_clean_state": true,
+    "minimum_25_gib_reserve": true,
+    "model_and_runtime_verified": true,
+    "native_base_read_only": true,
+    "native_cargo_pass": true,
+    "no_external_api_or_fake": true,
+    "owner_allowlist_pass": true,
+    "owner_extracted_audit_pass": true,
+    "preflight_hashes_pass": true,
+    "prompt_injection_denied": true,
+    "public_package_clean": true,
+    "public_source_12_files_clean": true,
+    "scientific_campaign_not_started": true,
+    "semantic_receipts_28_and_5": true,
+    "semantic_route_pass": true,
+    "sm0_sm7_pass": true,
+    "usb_qpu_block_device_denied": true,
+    "working_set_and_reboot_pass": true
+  },
+  "created_utc": "2026-08-13T03:35:18.519821+00:00",
+  "einstein": {
+    "claim": "avaliador tensorial local 4D das equacoes de campo, parametrizavel e validado para Minkowski no vacuo",
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\einstein-v1.1\\einstein-component-audit.json",
+    "prohibited_claims": [
+      "solver geral das PDEs de Einstein",
+      "solucao global",
+      "estabilidade numerica geral",
+      "validacao cientifica completa",
+      "superioridade cientifica"
+    ],
+    "sha256": "a19c9717c60023df96e5d42d190a637e1fcdffa2a81e8185534c9908f2ae4b03"
+  },
+  "schema": "casulo.semantic-multiverse-reinspection-evidence/1.0",
+  "semantic_route": {
+    "lifecycle_receipts": 28,
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\semantic-route\\semantic-route-reseal.json",
+    "sha256": "ba20cfc86896d8955b3ba85811aa2c50bc763cb6ec8c1c748dfd9f8214dcd46b",
+    "transition_receipts": 5
+  },
+  "state": "IN_PROGRESS_CHECKPOINTED",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "seconds": 30.473,
+    "skipped": 2,
+    "tests": 454
+  }
+}

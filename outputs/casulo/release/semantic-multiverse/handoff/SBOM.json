@@ -1,0 +1,45 @@
+{
+  "components": [
+    {
+      "embedded": true,
+      "license": "PRIVATE_NON_REDISTRIBUTABLE",
+      "name": "Casulo owner Semantic Multiverse",
+      "sha256": "1bdbef53e6cdec254e2459d8177c8f4a714fda4174f8428baa8119c254e2f26c",
+      "type": "application"
+    },
+    {
+      "embedded": false,
+      "license": "PRIVATE_ALPHA",
+      "name": "Casulo Native G10 base",
+      "sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "type": "operating-system"
+    },
+    {
+      "embedded": false,
+      "license": "Apache-2.0",
+      "name": "Qwen3-4B Q4_K_M",
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "type": "model"
+    },
+    {
+      "embedded": false,
+      "license": "MIT",
+      "name": "llama.cpp b10362",
+      "sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e",
+      "type": "runtime"
+    },
+    {
+      "embedded": false,
+      "license": "GPL-2.0-or-later",
+      "name": "QEMU 11.0.50",
+      "type": "virtual-machine-monitor"
+    },
+    {
+      "embedded": false,
+      "license": "BSD-2-Clause-Patent",
+      "name": "OVMF/EDK2",
+      "type": "firmware"
+    }
+  ],
+  "schema": "casulo.semantic-multiverse-sbom/1.0"
+}

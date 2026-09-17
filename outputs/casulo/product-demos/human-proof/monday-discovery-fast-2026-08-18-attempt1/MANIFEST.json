@@ -1,0 +1,56 @@
+{
+  "schema": "casulo.monday-discovery-fast-profile/1.0",
+  "created_utc": "2026-08-18T13:12:15.1811929Z",
+  "status": "READY_FOR_GUILHERME_MONDAY_DISCOVERY_FAST_SESSION",
+  "dialogue_transport": "HOST_DIRECT",
+  "streaming_transport": "CHARACTER_INCREMENTAL_FROM_REAL_MODEL_DELTAS",
+  "release_proof": false,
+  "sealed_release_modified": false,
+  "vm_creation_gate_preserved": true,
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network": "OFF",
+    "usb_block_devices": "PROHIBITED",
+    "physical_voice": "LITERAL_CONSENT_REQUIRED"
+  },
+  "files": {
+    "START_MONDAY_DISCOVERY_FAST.vbs": {
+      "bytes": 1088,
+      "sha256": "0663a8a4cac19aaf39b36969f544fe8d4f6a6922b5e0b796ccf6480b7afeb57f"
+    },
+    "README.md": {
+      "bytes": 905,
+      "sha256": "bef5797fbb628ad0b40d78190b54bbab2d79ea4df98f3521cb7c9d21a822c74f"
+    },
+    "../../../tools/monday_discovery_session.pyw": {
+      "bytes": 22745,
+      "sha256": "15391e00a8a58bd7672704bd64f5c68476b49a90ed562de3ba902fa7ff98016c"
+    },
+    "../../../tools/casulo_semantic_multiverse_vm_inspect.py": {
+      "bytes": 13703,
+      "sha256": "25cc4ee389ad976d496cc35067433aa40744beb08ddaccce5c91e491c74aa993"
+    },
+    "../../../tools/casulo_owner_vm_inspect.py": {
+      "bytes": 16711,
+      "sha256": "ad84dd32321a5951b4039641e697704a7e5c2749f30740bef9480eaa4d072d81"
+    },
+    "../../../src/casulo/product/discovery_transport.py": {
+      "bytes": 2550,
+      "sha256": "5ebb5172bd96a46d531f8b4c79a748d5dd807e872d4129e5a349ce3dc2e967f3"
+    },
+    "../../../release/t85-human-proof/MANIFEST.json": {
+      "bytes": 39826,
+      "sha256": "87c046056ee16dbc2f02350f50bde62f9bb617ebfe002eb993536a794393f8ee"
+    }
+  },
+  "validation": {
+    "focused_tests": "25 passed",
+    "compileall": "PASS",
+    "vbs_original_parse": "PASS",
+    "vbs_fast_parse": "PASS",
+    "real_model_load_smoke": "PASS",
+    "real_model_load_seconds_observed": 25.1,
+    "generation_benchmark_started": false,
+    "physical_voice_started": false
+  }
+}

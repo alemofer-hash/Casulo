@@ -1,0 +1,23 @@
+{
+  "schema": "casulo.arc-intent-twin-quality-review/1.0",
+  "technical_contract_gate": "PASS",
+  "neural_runtime_gate": "PASS",
+  "semantic_compatibility_gate": "PASS_FOR_SYNTHETIC_SCOPE",
+  "detail": "Uma única hipótese foi emitida porque a intenção era clara; ela classificou e preservou as duas observações HARD. Nenhuma alternativa artificial foi criada.",
+  "intent_twin_sha256": "64db666f68fd6cf06071f37a676d008cf3240e73b34176b6adb9263d94e2f7e7",
+  "hypotheses": 1,
+  "hard_observations": 2,
+  "hard_impacts_preserved": 2,
+  "candidate_rejections": 0,
+  "human_confirmation": false,
+  "t_started": false,
+  "materialization_started": false,
+  "external_ai_api_used": false,
+  "scientific_benchmark_started": false,
+  "limits": [
+    "não prova compreensão universal",
+    "não substitui confirmação humana",
+    "não prova o fluxo T/materialização"
+  ],
+  "preserved": true
+}

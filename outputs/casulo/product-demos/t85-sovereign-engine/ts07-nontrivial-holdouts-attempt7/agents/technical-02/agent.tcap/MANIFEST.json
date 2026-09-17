@@ -1,0 +1,83 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.t_mass_balance.u_check"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "d8ae5b6c4783aa6441c159abc53a1ded87900f948ad92dbce61e6da917b20e86"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "f9982dea7d308349a3ca3ec35549feac3cbb3a8968eabf0eb121351945970baa"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "35fb7a67a03eb670629149df239d538b7f91ac075a0ea37e56b6b98b580c625d"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "85cea81ac104458dab5f6033bb2cdfb92c0f1dc38f6ced8e7479341029c87ec9"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "ac381caef984946245c2b5145798a77e3cd416833f381e6b78448c77410d4a33"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "f13fa1b658eea3eac257abf3215f1f4340520218cc4f5e9b822ec935eb995b1d"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "65f27f7aa99f254b318f5a761276b40ac8e9595e22e82f2b16689dea8ef40bcc"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "deaa99f1febeaa542c4bc821885f50e23ad9db387f8e9eb5b25e48601310667b"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "2787bc8241f5deb5fa3000cdd09b8105bf99a61a5e89941f5d2bb5ab56abf48e"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "89e5092396a38d7084e9a525ef687eeedeef5a3c264e379c66479ae3178b5b3f"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "0c5713f4a29904310467b5670390506cdb442fdcd9e1df558dfc0c21e1d14c2d"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "b0908caf04613ab2968e6e3311ab140f7e0bd6f956d94c146de668186adc18fe"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.agent.t_mass_balance.u_check.t",
+      "module": "owner.agent.t_mass_balance.u_check",
+      "sha256": "cc0062f569860b4e0df3428828e7453d937ae83982e6cb47b9eb72a7c4ab5ce0"
+    },
+    {
+      "file": "sources/owner.agent.t_mass_balance.m_verify.t",
+      "module": "owner.agent.t_mass_balance.m_verify",
+      "sha256": "9bdf87e4e7a83e20c83a1e2ae6c19b41a8be165e8cb67d27a9ace1fa42a05d02"
+    },
+    {
+      "file": "sources/owner.agent.t_mass_balance.o_validate.t",
+      "module": "owner.agent.t_mass_balance.o_validate",
+      "sha256": "cd94572e67dcd54bc5d80627feeeffca6e29dd061e3d53f8289f73e7d31a5526"
+    }
+  ],
+  "tcap_hash": "324a22c9131fe9198145168ca34e8b3ed93689c47ec27efd57afea1913de01fb"
+}

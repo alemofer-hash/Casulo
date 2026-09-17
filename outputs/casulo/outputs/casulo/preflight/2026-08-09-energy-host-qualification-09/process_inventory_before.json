@@ -1,0 +1,280 @@
+{
+  "captured_at_utc": "2026-08-10T02:55:06.418480+00:00",
+  "logical_cpu_count": 12,
+  "relevant_processes": [
+    {
+      "command_line": [
+        "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe",
+        "/background",
+        "/launchedViaOneDriveLauncher"
+      ],
+      "cpu_percent_all_logical": 57.0,
+      "executable": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe",
+      "name": "OneDrive.exe",
+      "pid": 4856,
+      "working_set_bytes": 228175872
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\HWiNFO64\\HWiNFO64.EXE"
+      ],
+      "cpu_percent_all_logical": 34.2,
+      "executable": "C:\\Program Files\\HWiNFO64\\HWiNFO64.EXE",
+      "name": "HWiNFO64.EXE",
+      "pid": 21464,
+      "working_set_bytes": 233811968
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\Explorer.EXE"
+      ],
+      "cpu_percent_all_logical": 19.2,
+      "executable": "C:\\Windows\\explorer.exe",
+      "name": "explorer.exe",
+      "pid": 10340,
+      "working_set_bytes": 371544064
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe",
+        "-ServerName:FullTrustApp.AppXykjsye98af63ez2annt9djke8trg8stn.mca"
+      ],
+      "cpu_percent_all_logical": 18.6,
+      "executable": "C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe",
+      "name": "StartMenuExperienceHost.exe",
+      "pid": 11604,
+      "working_set_bytes": 202874880
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+        "--type=gpu-process",
+        "--no-pre-read-main-dll",
+        "--start-stack-profiler",
+        "--gpu-preferences=WAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA=",
+        "--metrics-shmem-handle=2116,i,9817485626759769594,9725390346078474518,262144",
+        "--field-trial-handle=2224,i,1814542848906937115,15718327287927353234,262144",
+        "--enable-features=OwlHistory,OwlPrinting,ReportStuckThrottle",
+        "--disable-features=DropInputEventsWhilePaintHolding,OwlExtensions,OwlOpenAIGoLinks",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=2240,i,12798668563333029213,14482220322951729260,4",
+        "--trace-process-track-uuid=3190708988185955192",
+        "--mojo-platform-channel-handle=2220",
+        "/prefetch:2"
+      ],
+      "cpu_percent_all_logical": 18.6,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 13956,
+      "working_set_bytes": 186253312
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+        "--type=renderer",
+        "--standard-schemes=app,codex-sandbox",
+        "--service-worker-schemes=codex-sandbox",
+        "--secure-schemes=app,codex-sandbox,sentry-ipc",
+        "--bypasscsp-schemes=sentry-ipc",
+        "--fetch-schemes=app,codex-sandbox,sentry-ipc",
+        "--cors-schemes=codex-sandbox,sentry-ipc",
+        "--streaming-schemes=app,codex-sandbox",
+        "--no-pre-read-main-dll",
+        "--disable-blink-features=ReplacedNormalFlowStackingInlinePaint",
+        "--video-capture-use-gpu-memory-buffer",
+        "--lang=pt-BR",
+        "--device-scale-factor=1",
+        "--num-raster-threads=4",
+        "--enable-main-frame-before-activation",
+        "--renderer-client-id=5",
+        "--time-ticks-at-unix-epoch=-1786329878752558",
+        "--launch-time-ticks=324884996",
+        "--metrics-shmem-handle=4860,i,3620168505691488857,16529515975916814533,2097152",
+        "--field-trial-handle=2224,i,1814542848906937115,15718327287927353234,262144",
+        "--enable-features=OwlHistory,OwlPrinting,ReportStuckThrottle",
+        "--disable-features=DropInputEventsWhilePaintHolding,OwlExtensions,OwlOpenAIGoLinks",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=2240,i,12798668563333029213,14482220322951729260,4",
+        "--trace-process-track-uuid=3190708990997080739",
+        "--mojo-platform-channel-handle=4884",
+        "/prefetch:1"
+      ],
+      "cpu_percent_all_logical": 8.7,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 15016,
+      "working_set_bytes": 456511488
+    },
+    {
+      "command_line": [],
+      "cpu_percent_all_logical": 6.0,
+      "executable": "",
+      "name": "System",
+      "pid": 4,
+      "working_set_bytes": 4014080
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\AppActions.exe",
+        "-Embedding"
+      ],
+      "cpu_percent_all_logical": 1.9,
+      "executable": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\AppActions.exe",
+      "name": "AppActions.exe",
+      "pid": 14268,
+      "working_set_bytes": 47108096
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\system32\\svchost.exe",
+        "-k",
+        "UnistackSvcGroup",
+        "-s",
+        "CloudBackupRestoreSvc"
+      ],
+      "cpu_percent_all_logical": 1.9,
+      "executable": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe",
+      "pid": 16228,
+      "working_set_bytes": 42680320
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe",
+        "-ServerName:CortanaUI.AppXstmwaab17q5s3y22tp6apqz7a45vwv65.mca"
+      ],
+      "cpu_percent_all_logical": 1.2,
+      "executable": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe",
+      "name": "SearchHost.exe",
+      "pid": 11596,
+      "working_set_bytes": 160849920
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\system32\\backgroundTaskHost.exe",
+        "-ServerName:App.AppXe9cvj1thv1hmcw0cs98xm3r97tyzy2xs.mca"
+      ],
+      "cpu_percent_all_logical": 1.2,
+      "executable": "C:\\Windows\\System32\\backgroundTaskHost.exe",
+      "name": "backgroundTaskHost.exe",
+      "pid": 19380,
+      "working_set_bytes": 54845440
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\Microsoft.GamingApp_2608.1001.17.0_x64__8wekyb3d8bbwe\\XboxPcApp.exe",
+        "-ServerName:Microsoft.Xbox.AppL.AppXhg7mrtrf7ayze6gb4syw3zwjgyr2xv4r.mca"
+      ],
+      "cpu_percent_all_logical": 1.2,
+      "executable": "C:\\Program Files\\WindowsApps\\Microsoft.GamingApp_2608.1001.17.0_x64__8wekyb3d8bbwe\\XboxPcApp.exe",
+      "name": "XboxPcApp.exe",
+      "pid": 21396,
+      "working_set_bytes": 198021120
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\System32\\DriverStore\\FileRepository\\ipf_cpu.inf_amd64_bef44694f882994d\\ipf_helper.exe"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Windows\\System32\\DriverStore\\FileRepository\\ipf_cpu.inf_amd64_bef44694f882994d\\ipf_helper.exe",
+      "name": "ipf_helper.exe",
+      "pid": 9288,
+      "working_set_bytes": 9486336
+    },
+    {
+      "command_line": [
+        "sihost.exe"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Windows\\System32\\sihost.exe",
+      "name": "sihost.exe",
+      "pid": 9564,
+      "working_set_bytes": 57024512
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\system32\\svchost.exe",
+        "-k",
+        "UnistackSvcGroup",
+        "-s",
+        "WpnUserService"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Windows\\System32\\svchost.exe",
+      "name": "svchost.exe",
+      "pid": 9840,
+      "working_set_bytes": 46096384
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\Adobe\\Adobe Creative Cloud\\ACC\\Creative Cloud.exe",
+        "--showwindow=false",
+        "--onOSstartup=true"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files\\Adobe\\Adobe Creative Cloud\\ACC\\Creative Cloud.exe",
+      "name": "Creative Cloud.exe",
+      "pid": 10712,
+      "working_set_bytes": 138039296
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\System32\\RuntimeBroker.exe",
+        "-Embedding"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Windows\\System32\\RuntimeBroker.exe",
+      "name": "RuntimeBroker.exe",
+      "pid": 11892,
+      "working_set_bytes": 68415488
+    },
+    {
+      "command_line": [
+        "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\OneDrive\\26.134.0713.0004\\FileCoAuth.exe",
+        "-Embedding"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\OneDrive\\26.134.0713.0004\\FileCoAuth.exe",
+      "name": "FileCoAuth.exe",
+      "pid": 12420,
+      "working_set_bytes": 43757568
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\Adobe\\Adobe Creative Cloud\\ACC\\Creative Cloud UI Helper.exe",
+        "--type=gpu-process",
+        "--no-sandbox",
+        "--locales-dir-path=C:\\Program Files\\Common Files\\Adobe\\Adobe Desktop Common\\CEF\\locales",
+        "--log-severity=warning",
+        "--user-agent=Mozilla/5.0 (Windows NT 10.0.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.190 Safari/537.36 CreativeCloud/6.8.1.856",
+        "--lang=pt_BR",
+        "--user-data-dir=C:\\Users\\guimo\\AppData\\Local\\CEF\\User Data",
+        "--gpu-preferences=WAAAAAAAAADgABAMAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA==",
+        "--log-file=C:\\Users\\guimo\\AppData\\Local\\Temp\\CreativeCloud\\ACC\\CEF.log",
+        "--mojo-platform-channel-handle=2208",
+        "--field-trial-handle=2212,i,6105852499354435065,10319950312869718422,262144",
+        "--disable-features=BackForwardCache,CalculateNativeWinOcclusion,DocumentPictureInPictureAPI",
+        "/prefetch:2"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files\\Adobe\\Adobe Creative Cloud\\ACC\\Creative Cloud UI Helper.exe",
+      "name": "Creative Cloud UI Helper.exe",
+      "pid": 14452,
+      "working_set_bytes": 109563904
+    },
+    {
+      "command_line": [
+        "C:\\Program Files (x86)\\Common Files\\Adobe\\Adobe Desktop Common\\ADS\\Adobe Desktop Service.exe",
+        "--onOSstartup=true",
+        "--showwindow=false",
+        "--waitForRegistration=true"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files (x86)\\Common Files\\Adobe\\Adobe Desktop Common\\ADS\\Adobe Desktop Service.exe",
+      "name": "Adobe Desktop Service.exe",
+      "pid": 19940,
+      "working_set_bytes": 115822592
+    }
+  ],
+  "sample_seconds": 2.0
+}

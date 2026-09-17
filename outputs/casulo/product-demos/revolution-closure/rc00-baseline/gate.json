@@ -1,0 +1,251 @@
+{
+  "authorized_claims": [],
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "commands": [
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "casulo_owner.generative_cli",
+      "doctor",
+      "--candidate",
+      "release/generative-candidates/qwen3-4b-q4km-llamacpp-b10362.json",
+      "--cache",
+      "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "tools/casulo_semantic_multiverse.py",
+      "doctor",
+      "--repo",
+      "."
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "tools/casulo_vm.py",
+      "--base",
+      "release/casulo-native-generative-interactive.img",
+      "--state-root",
+      "release/semantic-multiverse/initial-owner-state-reinspection-2026-08-13",
+      "doctor"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "tools/audit_public_artifact.py",
+      "editions/casulo-public"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests/product/test_semantic_multiverse_doctor.py",
+      "tests/product/test_research_retirement.py",
+      "tests/product/test_product_edition_release.py"
+    ]
+  ],
+  "forbidden_claims": [
+    "human proof approved",
+    "commercial release",
+    "scientific superiority"
+  ],
+  "gate_id": "RC0_BASELINE_FROZEN",
+  "input_hashes": {
+    "goal_manifest": "673f35186479340caa31463135ea3abe5e2885eb6cece6de6cdc401ea882a095",
+    "goal_zip": "f4bb65711916a50589cb278e2f52c4ce7253e5ddb77853dd52b95f49421efc2b",
+    "product-demos/generative-vm/sprint10-integrated-attempt12/g10-integrated-handoff.json": "c698f3d649f0216b173270ca33f78617c4d8c37575a410798022243a90b9c9d6",
+    "product-demos/semantic-multiverse/inspection-failure-3-einstein-preserved/owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7.casulo.zip": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1",
+    "product-demos/semantic-multiverse/inspection-failure-3-einstein-rerun/einstein-solver-evidence.json": "003f5644e8f12a57478f795b799405fede46b23c6b18c4ca6e99000a60d678d5",
+    "release/CASULO_OWNER_VM_INSPECT.ps1": "e0452669dc33ce20320c59ccc4af94500561192cc9f52e9f8270fcea4fc0db12",
+    "release/casulo-native-generative-interactive.img": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+    "release/generative-vm/casulo-owner-generative-vm-g10-complete.zip": "bd223daf90ec64549d693fddce853cdc601d19c7c0d4c734ce90088b11fa9477",
+    "release/generative-vm/handoff/MANIFEST.json": "3529733742e6cd52537f1651a0488061e2f88dc4020339a450a14c57e8d69651",
+    "release/semantic-multiverse/handoff-reinspection-2026-08-13/MANIFEST.json": "31764546c2dff61f68d2b00bbe4f78060cef4d1523234e7ad59ab1c24d9ad724"
+  },
+  "machine_profile_sha256": "6568ce3fb66f0addfebad4d8cbd30096d86ea5400ecaa33960eebf7c28ef028d",
+  "model_adapter_hashes": {},
+  "open_findings": [
+    "one or more RC0 invariants failed; inspect baseline-manifest.json"
+  ],
+  "output_hashes": {
+    "product-demos/revolution-closure/rc00-baseline/baseline-manifest.json": "9a9916ca224d17484ee460577ede346d28558ed941c4447f36d190c24890f398",
+    "product-demos/revolution-closure/rc00-baseline/dependency-inventory.json": "589a31f23dd1225e287330b485549611bbec9cd09f925ce0ba0c3c1c098172b5",
+    "product-demos/revolution-closure/rc00-baseline/disk-budget.json": "1e2165a2f4b53825277d43a9f4df741a180752d4d97d798fdc4de80b9df4b1da",
+    "product-demos/revolution-closure/rc00-baseline/git-status-porcelain-uall.txt": "e1a7532f9805c7bb4c7222b956b2d8c36e7bdf1de370787689e6071956bce845",
+    "product-demos/revolution-closure/rc00-baseline/git-status-short.txt": "ef8e51218e11e9d19aa842c9f7aa8da3d31e0fc59dc0bc39fe1882dd47495223",
+    "product-demos/revolution-closure/rc00-baseline/git-worktrees.txt": "c51ceb2d9f93006d9183bee1d477e50f254a556515b5ee4349b76a7e82988912",
+    "product-demos/revolution-closure/rc00-baseline/goal-package-verification.json": "0e9d708bc7989da1e62efc0703d02a16ddf2282095b1096b1fe1c26bcc1eb16a",
+    "product-demos/revolution-closure/rc00-baseline/machine-profile.json": "6568ce3fb66f0addfebad4d8cbd30096d86ea5400ecaa33960eebf7c28ef028d",
+    "product-demos/revolution-closure/rc00-baseline/model_doctor.txt": "56450fa53bdf1204057e7802027f7bf5109dd031fc1d48d85d00fece00860ac1",
+    "product-demos/revolution-closure/rc00-baseline/product_smoke.txt": "7c7cdfe32d9a603d2c9178a3cdebb12bb416df4e9f6c50ffcb739f91a6d3b185",
+    "product-demos/revolution-closure/rc00-baseline/public_audit.txt": "6c342e03892d9fe70772c10d01626676ed1cbf8b983a01a09c6c7971f7f2603b",
+    "product-demos/revolution-closure/rc00-baseline/semantic_doctor.txt": "642f46cd42142fe539aee334e4cf8e84c758c8d5b617a986368d60c7fd9ed07e",
+    "product-demos/revolution-closure/rc00-baseline/vm_doctor.txt": "7de0d05cffa587eaa802abe794171a03b6219d93be44536147517dec3f42affa",
+    "product-demos/revolution-closure/rc00-baseline/worktree-manifest.json": "e9310686185d2dabf0df08ab1888105db1e32d6e4fec1f08d92fe2da6845a47e"
+  },
+  "previous_gate_hash": null,
+  "sampling_policy": "NOT_EXECUTED_RC0",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "status": "FAIL",
+  "test_summary": {
+    "model_doctor": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "casulo_owner.generative_cli",
+        "doctor",
+        "--candidate",
+        "release/generative-candidates/qwen3-4b-q4km-llamacpp-b10362.json",
+        "--cache",
+        "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative"
+      ],
+      "exit_code": 0,
+      "output": "product-demos/revolution-closure/rc00-baseline/model_doctor.txt",
+      "output_sha256": "56450fa53bdf1204057e7802027f7bf5109dd031fc1d48d85d00fece00860ac1",
+      "pass": true
+    },
+    "pass": false,
+    "product_smoke": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/product/test_semantic_multiverse_doctor.py",
+        "tests/product/test_research_retirement.py",
+        "tests/product/test_product_edition_release.py"
+      ],
+      "exit_code": 1,
+      "output": "product-demos/revolution-closure/rc00-baseline/product_smoke.txt",
+      "output_sha256": "7c7cdfe32d9a603d2c9178a3cdebb12bb416df4e9f6c50ffcb739f91a6d3b185",
+      "pass": false
+    },
+    "public_audit": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "tools/audit_public_artifact.py",
+        "editions/casulo-public"
+      ],
+      "exit_code": 0,
+      "output": "product-demos/revolution-closure/rc00-baseline/public_audit.txt",
+      "output_sha256": "6c342e03892d9fe70772c10d01626676ed1cbf8b983a01a09c6c7971f7f2603b",
+      "pass": true
+    },
+    "semantic_doctor": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "tools/casulo_semantic_multiverse.py",
+        "doctor",
+        "--repo",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "product-demos/revolution-closure/rc00-baseline/semantic_doctor.txt",
+      "output_sha256": "642f46cd42142fe539aee334e4cf8e84c758c8d5b617a986368d60c7fd9ed07e",
+      "pass": true
+    },
+    "vm_doctor": {
+      "argv": [
+        "C:\\Python313\\python.exe",
+        "tools/casulo_vm.py",
+        "--base",
+        "release/casulo-native-generative-interactive.img",
+        "--state-root",
+        "release/semantic-multiverse/initial-owner-state-reinspection-2026-08-13",
+        "doctor"
+      ],
+      "exit_code": 0,
+      "output": "product-demos/revolution-closure/rc00-baseline/vm_doctor.txt",
+      "output_sha256": "7de0d05cffa587eaa802abe794171a03b6219d93be44536147517dec3f42affa",
+      "pass": true
+    }
+  },
+  "timestamp": "2026-08-14T19:37:12.765307+00:00",
+  "tool_versions": {
+    "cargo": {
+      "available": true,
+      "command": [
+        "cargo",
+        "--version"
+      ],
+      "path": "C:\\Users\\guimo\\.cargo\\bin\\cargo.EXE",
+      "version": "cargo 1.93.0 (083ac5135 2025-12-15)"
+    },
+    "clang": {
+      "available": true,
+      "path": "C:\\Program Files\\LLVM\\bin\\clang.exe",
+      "sha256": "986af49c2d1eefeac324f724ff54597753d1053927fa5d58a37a457f578e1cf8",
+      "version": "clang version 22.1.8 (https://github.com/llvm/llvm-project ca7933e47d3a3451d81e72ac174dcb5aa28b59d1)"
+    },
+    "cmake": {
+      "available": true,
+      "command": [
+        "cmake",
+        "--version"
+      ],
+      "path": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.EXE",
+      "version": "cmake version 4.3.2"
+    },
+    "git": {
+      "available": true,
+      "command": [
+        "git",
+        "--version"
+      ],
+      "path": "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "version": "git version 2.54.0.windows.1"
+    },
+    "ninja": {
+      "available": true,
+      "command": [
+        "ninja",
+        "--version"
+      ],
+      "path": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\ninja.EXE",
+      "version": "1.13.2"
+    },
+    "node": {
+      "available": true,
+      "command": [
+        "node",
+        "--version"
+      ],
+      "path": "C:\\Program Files\\nodejs\\node.EXE",
+      "version": "v22.14.0"
+    },
+    "python": {
+      "available": true,
+      "command": [
+        "C:\\Python313\\python.exe",
+        "--version"
+      ],
+      "path": "C:\\Python313\\python.exe",
+      "version": "Python 3.13.2"
+    },
+    "qemu": {
+      "available": true,
+      "path": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+      "sha256": "b396eb9b669f6282ec60f0d46e6addca8c669992e67a34365be44cd3cb97c9a7",
+      "version": "QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a)"
+    },
+    "qemu_img": {
+      "available": true,
+      "path": "C:\\Program Files\\qemu\\qemu-img.exe",
+      "sha256": "05330278398e86d28a4a6964c8c62654966df0e34572b03ba99541fe82c19f1e",
+      "version": "qemu-img version 11.0.50 (v11.0.0-12631-g54e84cdc7a)"
+    },
+    "rustc": {
+      "available": true,
+      "command": [
+        "rustc",
+        "--version"
+      ],
+      "path": "C:\\Users\\guimo\\.cargo\\bin\\rustc.EXE",
+      "version": "rustc 1.93.0 (254b59607 2026-01-19)"
+    }
+  },
+  "worktree_manifest_sha256": "e9310686185d2dabf0df08ab1888105db1e32d6e4fec1f08d92fe2da6845a47e"
+}

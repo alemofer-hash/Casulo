@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:145000de8ea67fbfb019f65144d8e4e181e5942be429fbe275ceef30f7e8c3cb",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "9c379355ef90cfdfc2c5af06e23817df8616173eeef6e07fa9899386924e0bc2"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "cb5c87cb7520c641d77b704c0b76af8b5afb5824bff56d29cf069b0e3bf0fb14",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "a7c508e7eaee03bc56b352ee92ee4f0c6479df2ce50a99a1b07aa8459b4150dc",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "generated.review",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "4ec9eca9d8146f6865eadb7b1883481612cc1582a9c1262fe0dc5a634c4751a5"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "ReviewInput",
+        "judgements": [],
+        "name": "ReviewDecision",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "601f070826747daefde00f9c3651dc959dbf6d519d4eb13c69434b818c6c4061"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "ReviewInput",
+      "kind": "condense",
+      "name": "ReviewDecision",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "5a9c573f71b657cfa815b4a247ba184982e10c007e26900709b0e3beb691f524"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "bundle_sha256": "2daa02affa9dfb9f452a31b444e3eb8cf4c88323f6bddef71277b972a1e35597",
+  "manifest": {
+    "entry": {
+      "function": "decide",
+      "module": "owner.native.sampling_policy"
+    },
+    "schema": "casulo.tcap/2.0",
+    "sections": {
+      "capabilities": {
+        "file": "capabilities.json",
+        "sha256": "dfaa62e8cbdcb8f72d6f67b0ed2459c305fd1f58b4a91e889a5e0ff1964ba2c9"
+      },
+      "effects": {
+        "file": "effects.json",
+        "sha256": "7984963f2abebc1fa64fc0f3bb610d806261bda2bbf454a52278db8ffc500029"
+      },
+      "foreign_boundaries": {
+        "file": "foreign-boundaries.json",
+        "sha256": "0568439b91f25b47658094cbd9e66e507b2de2f4fc98b3f188ff7c6c9049d9f4"
+      },
+      "functional_code": {
+        "file": "code.json",
+        "sha256": "17103bc3913a915a534d1525749386514609c2f252367404b833de5bd72acdb6"
+      },
+      "header": {
+        "file": "header.json",
+        "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+      },
+      "module_graph": {
+        "file": "module-graph.json",
+        "sha256": "e1bae4e839b8fffbfdb69e6663b8bb1972b460c2d0fc9d74084daf47fbb2c92e"
+      },
+      "provenance": {
+        "file": "provenance.json",
+        "sha256": "afe722d96852f20d4b2594810bb58d61352c95fa18e61ebe95db4d509780e8f1"
+      },
+      "readonly_data": {
+        "file": "readonly-data.json",
+        "sha256": "00fb23fdfc7f9b917028f30b3f0231b3933cb30198b51b88ce02dad1179777c6"
+      },
+      "resource_budgets": {
+        "file": "resource-budgets.json",
+        "sha256": "cfec656d2743d53cbb99ef854b93a8d803db4f29c19ee242a4d06893658d85a0"
+      },
+      "schemas": {
+        "file": "schemas.json",
+        "sha256": "bf191745d57bec623826a8599bd10ce4aa0675b4bca0fbbc4b1f8418481c7e67"
+      },
+      "signature_class": {
+        "file": "signature-class.json",
+        "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+      },
+      "source_map": {
+        "file": "source-map.json",
+        "sha256": "f5f495b35ec91c297959cb98150ce4fdbe137bd25a366b3c09575c45eab61619"
+      },
+      "tests": {
+        "file": "tests.json",
+        "sha256": "fa766da3428b4f5351effb0a282b48abc381ee3ff780a3abf38de4994dd2fb53"
+      },
+      "typed_ir": {
+        "file": "typed-ir.json",
+        "sha256": "481a9f775392bd2bdf3d7b392aba1b7c485c7203a83246ef479aa762b1fab33a"
+      }
+    },
+    "sources": [
+      {
+        "file": "sources/owner.native.sampling_policy.t",
+        "module": "owner.native.sampling_policy",
+        "sha256": "591a3a2b0c2947ba2ff03c4cc84f1aa17f0c54664553bd758d126a1eb3d3abdd"
+      }
+    ],
+    "tcap_hash": "75cea2db98a664fcf7f5f7c402b528c334fbf14bdc056c88493f9939936d4d9a"
+  },
+  "request": {
+    "function": "decide",
+    "grants": [],
+    "payload": {
+      "blocks_completed": 36,
+      "cancelled": false,
+      "candidate_unpublished": true,
+      "decoder_gate": true,
+      "greedy_candidate_id": 6237,
+      "logits_sha256": "4760c2d93598f80a1b3b44cdbcb20fe4785af71127c6fe544c2996c07035a509",
+      "policy_id": "greedy-debug-v1"
+    },
+    "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "scope_id": "qwen3-4b:first-token:49242",
+    "surface_id": "native_sampling_publication"
+  },
+  "schema": "casulo.native-t-v2-probe/1.0",
+  "sections": {
+    "capabilities": {
+      "content_utf8": "{\n  \"modules\": {\n    \"owner.native.sampling_policy\": []\n  }\n}\n",
+      "file": "capabilities.json",
+      "sha256": "dfaa62e8cbdcb8f72d6f67b0ed2459c305fd1f58b4a91e889a5e0ff1964ba2c9"
+    },
+    "effects": {
+      "content_utf8": "{\n  \"modules\": {\n    \"owner.native.sampling_policy\": {\n      \"decide\": []\n    }\n  }\n}\n",
+      "file": "effects.json",
+      "sha256": "7984963f2abebc1fa64fc0f3bb610d806261bda2bbf454a52278db8ffc500029"
+    },
+    "foreign_boundaries": {
+      "content_utf8": "{\n  \"items\": [\n    {\n      \"decision_authority\": false,\n      \"kind\": \"foreign_primitive\",\n      \"name\": \"qwen3_greedy_candidate\"\n    }\n  ]\n}\n",
+      "file": "foreign-boundaries.json",
+      "sha256": "0568439b91f25b47658094cbd9e66e507b2de2f4fc98b3f188ff7c6c9049d9f4"
+    },
+    "functional_code": {
+      "content_utf8": "{\n  \"encoding\": \"structured-opcodes\",\n  \"entry\": {\n    \"function\": \"decide\",\n    \"module\": \"owner.native.sampling_policy\"\n  },\n  \"modules\": [\n    {\n      \"functions\": [\n        {\n          \"code\": [\n            {\n              \"op\": \"cancel_if\",\n              \"value\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"cancelled\"\n                ],\n                \"root\": \"input\"\n              }\n            },\n            {\n              \"condition\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"decoder_gate\"\n                ],\n                \"root\": \"input\"\n              },\n              \"error\": \"decoder_gate_failed\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"left\": {\n                  \"op\": \"path\",\n                  \"path\": [\n                    \"logits_sha256\"\n                  ],\n                  \"root\": \"input\"\n                },\n                \"op\": \"eq\",\n                \"right\": {\n                  \"op\": \"const\",\n                  \"value\": \"4760c2d93598f80a1b3b44cdbcb20fe4785af71127c6fe544c2996c07035a509\"\n                }\n              },\n              \"error\": \"logits_identity_mismatch\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"left\": {\n                  \"op\": \"path\",\n                  \"path\": [\n                    \"blocks_completed\"\n                  ],\n                  \"root\": \"input\"\n                },\n                \"op\": \"eq\",\n                \"right\": {\n                  \"op\": \"const\",\n                  \"value\": 36\n                }\n              },\n              \"error\": \"decoder_incomplete\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"left\": {\n                  \"op\": \"path\",\n                  \"path\": [\n                    \"greedy_candidate_id\"\n                  ],\n                  \"root\": \"input\"\n                },\n                \"op\": \"eq\",\n                \"right\": {\n                  \"op\": \"const\",\n                  \"value\": 6237\n                }\n              },\n              \"error\": \"candidate_mismatch\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"candidate_unpublished\"\n                ],\n                \"root\": \"input\"\n              },\n              \"error\": \"late_publication_detected\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"left\": {\n                  \"op\": \"path\",\n                  \"path\": [\n                    \"policy_id\"\n                  ],\n                  \"root\": \"input\"\n                },\n                \"op\": \"eq\",\n                \"right\": {\n                  \"op\": \"const\",\n                  \"value\": \"greedy-debug-v1\"\n                }\n              },\n              \"error\": \"sampling_policy_mismatch\",\n              \"op\": \"require\"\n            },\n            {\n              \"op\": \"return_ok\",\n              \"value\": {\n                \"op\": \"const\",\n                \"value\": \"PUBLISH_GREEDY\"\n              }\n            }\n          ],\n          \"effects\": [],\n          \"name\": \"decide\",\n          \"parameter\": {\n            \"name\": \"input\",\n            \"type\": {\n              \"arguments\": [],\n              \"bound\": null,\n              \"name\": \"NativeSamplingInput\"\n            }\n          },\n          \"return_type\": {\n            \"arguments\": [\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              },\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            ],\n            \"bound\": null,\n            \"name\": \"Result\"\n          }\n        }\n      ],\n      \"name\": \"owner.native.sampling_policy\"\n    }\n  ],\n  \"schema\": \"casulo.t-bytecode/2.0\"\n}\n",
+      "file": "code.json",
+      "sha256": "17103bc3913a915a534d1525749386514609c2f252367404b833de5bd72acdb6"
+    },
+    "header": {
+      "content_utf8": "{\n  \"schema\": \"casulo.tcap/2.0\",\n  \"target\": \"portable-t-vm\",\n  \"verified_before_execution\": true\n}\n",
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "content_utf8": "{\n  \"entry\": {\n    \"function\": \"decide\",\n    \"module\": \"owner.native.sampling_policy\"\n  },\n  \"modules\": [\n    {\n      \"imports\": [],\n      \"name\": \"owner.native.sampling_policy\"\n    }\n  ],\n  \"schema\": \"casulo.t-module-graph/2.0\"\n}\n",
+      "file": "module-graph.json",
+      "sha256": "e1bae4e839b8fffbfdb69e6663b8bb1972b460c2d0fc9d74084daf47fbb2c92e"
+    },
+    "provenance": {
+      "content_utf8": "{\n  \"builder\": \"casulo-python-tooling\",\n  \"compiler\": \"T/2.0\",\n  \"sources\": [\n    {\n      \"file\": \"sources/owner.native.sampling_policy.t\",\n      \"module\": \"owner.native.sampling_policy\",\n      \"sha256\": \"591a3a2b0c2947ba2ff03c4cc84f1aa17f0c54664553bd758d126a1eb3d3abdd\"\n    }\n  ]\n}\n",
+      "file": "provenance.json",
+      "sha256": "afe722d96852f20d4b2594810bb58d61352c95fa18e61ebe95db4d509780e8f1"
+    },
+    "readonly_data": {
+      "content_utf8": "{\n  \"states\": {\n    \"owner.native.sampling_policy\": []\n  }\n}\n",
+      "file": "readonly-data.json",
+      "sha256": "00fb23fdfc7f9b917028f30b3f0231b3933cb30198b51b88ce02dad1179777c6"
+    },
+    "resource_budgets": {
+      "content_utf8": "{\n  \"modules\": {\n    \"owner.native.sampling_policy\": {\n      \"deadline_ms\": 1000,\n      \"steps\": 256\n    }\n  }\n}\n",
+      "file": "resource-budgets.json",
+      "sha256": "cfec656d2743d53cbb99ef854b93a8d803db4f29c19ee242a4d06893658d85a0"
+    },
+    "schemas": {
+      "content_utf8": "{\n  \"modules\": {\n    \"owner.native.sampling_policy\": {\n      \"enums\": [],\n      \"records\": [\n        {\n          \"members\": [\n            {\n              \"name\": \"decoder_gate\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            },\n            {\n              \"name\": \"logits_sha256\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            },\n            {\n              \"name\": \"blocks_completed\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Int\"\n              }\n            },\n            {\n              \"name\": \"greedy_candidate_id\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Int\"\n              }\n            },\n            {\n              \"name\": \"candidate_unpublished\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            },\n            {\n              \"name\": \"policy_id\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            },\n            {\n              \"name\": \"cancelled\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            }\n          ],\n          \"name\": \"NativeSamplingInput\"\n        }\n      ],\n      \"version\": 1\n    }\n  }\n}\n",
+      "file": "schemas.json",
+      "sha256": "bf191745d57bec623826a8599bd10ce4aa0675b4bca0fbbc4b1f8418481c7e67"
+    },
+    "signature_class": {
+      "content_utf8": "{\n  \"value\": \"DEVELOPMENT_NOT_COMMERCIAL\"\n}\n",
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "content_utf8": "{\n  \"sources\": [\n    {\n      \"file\": \"sources/owner.native.sampling_policy.t\",\n      \"module\": \"owner.native.sampling_policy\",\n      \"sha256\": \"591a3a2b0c2947ba2ff03c4cc84f1aa17f0c54664553bd758d126a1eb3d3abdd\"\n    }\n  ]\n}\n",
+      "file": "source-map.json",
+      "sha256": "f5f495b35ec91c297959cb98150ce4fdbe137bd25a366b3c09575c45eab61619"
+    },
+    "tests": {
+      "content_utf8": "{\n  \"properties\": [\n    \"decoder_required\",\n    \"exact_logits_identity\",\n    \"late_publication_denied\"\n  ]\n}\n",
+      "file": "tests.json",
+      "sha256": "fa766da3428b4f5351effb0a282b48abc381ee3ff780a3abf38de4994dd2fb53"
+    },
+    "typed_ir": {
+      "content_utf8": "{\n  \"modules\": [\n    {\n      \"budgets\": {\n        \"deadline_ms\": 1000,\n        \"steps\": 256\n      },\n      \"capabilities\": [],\n      \"enums\": [],\n      \"functions\": [\n        {\n          \"code\": [\n            {\n              \"op\": \"cancel_if\",\n              \"value\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"cancelled\"\n                ],\n                \"root\": \"input\"\n              }\n            },\n            {\n              \"condition\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"decoder_gate\"\n                ],\n                \"root\": \"input\"\n              },\n              \"error\": \"decoder_gate_failed\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"left\": {\n                  \"op\": \"path\",\n                  \"path\": [\n                    \"logits_sha256\"\n                  ],\n                  \"root\": \"input\"\n                },\n                \"op\": \"eq\",\n                \"right\": {\n                  \"op\": \"const\",\n                  \"value\": \"4760c2d93598f80a1b3b44cdbcb20fe4785af71127c6fe544c2996c07035a509\"\n                }\n              },\n              \"error\": \"logits_identity_mismatch\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"left\": {\n                  \"op\": \"path\",\n                  \"path\": [\n                    \"blocks_completed\"\n                  ],\n                  \"root\": \"input\"\n                },\n                \"op\": \"eq\",\n                \"right\": {\n                  \"op\": \"const\",\n                  \"value\": 36\n                }\n              },\n              \"error\": \"decoder_incomplete\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"left\": {\n                  \"op\": \"path\",\n                  \"path\": [\n                    \"greedy_candidate_id\"\n                  ],\n                  \"root\": \"input\"\n                },\n                \"op\": \"eq\",\n                \"right\": {\n                  \"op\": \"const\",\n                  \"value\": 6237\n                }\n              },\n              \"error\": \"candidate_mismatch\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"candidate_unpublished\"\n                ],\n                \"root\": \"input\"\n              },\n              \"error\": \"late_publication_detected\",\n              \"op\": \"require\"\n            },\n            {\n              \"condition\": {\n                \"left\": {\n                  \"op\": \"path\",\n                  \"path\": [\n                    \"policy_id\"\n                  ],\n                  \"root\": \"input\"\n                },\n                \"op\": \"eq\",\n                \"right\": {\n                  \"op\": \"const\",\n                  \"value\": \"greedy-debug-v1\"\n                }\n              },\n              \"error\": \"sampling_policy_mismatch\",\n              \"op\": \"require\"\n            },\n            {\n              \"op\": \"return_ok\",\n              \"value\": {\n                \"op\": \"const\",\n                \"value\": \"PUBLISH_GREEDY\"\n              }\n            }\n          ],\n          \"effects\": [],\n          \"name\": \"decide\",\n          \"parameter\": {\n            \"name\": \"input\",\n            \"type\": {\n              \"arguments\": [],\n              \"bound\": null,\n              \"name\": \"NativeSamplingInput\"\n            }\n          },\n          \"return_type\": {\n            \"arguments\": [\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              },\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            ],\n            \"bound\": null,\n            \"name\": \"Result\"\n          }\n        }\n      ],\n      \"imports\": [],\n      \"module\": \"owner.native.sampling_policy\",\n      \"records\": [\n        {\n          \"members\": [\n            {\n              \"name\": \"decoder_gate\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            },\n            {\n              \"name\": \"logits_sha256\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            },\n            {\n              \"name\": \"blocks_completed\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Int\"\n              }\n            },\n            {\n              \"name\": \"greedy_candidate_id\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Int\"\n              }\n            },\n            {\n              \"name\": \"candidate_unpublished\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            },\n            {\n              \"name\": \"policy_id\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            },\n            {\n              \"name\": \"cancelled\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            }\n          ],\n          \"name\": \"NativeSamplingInput\"\n        }\n      ],\n      \"schema\": \"casulo.t-ir/2.0\",\n      \"schema_version\": 1,\n      \"states\": []\n    }\n  ],\n  \"schema\": \"casulo.t-ir-bundle/2.0\"\n}\n",
+      "file": "typed-ir.json",
+      "sha256": "481a9f775392bd2bdf3d7b392aba1b7c485c7203a83246ef479aa762b1fab33a"
+    }
+  },
+  "sources": [
+    {
+      "content_utf8": "language T/2.0\nmodule owner.native.sampling_policy\nbudget steps 256\nbudget deadline_ms 1000\nschema version 1\n\nrecord NativeSamplingInput\n  member decoder_gate: Bool\n  member logits_sha256: Text\n  member blocks_completed: Int\n  member greedy_candidate_id: Int\n  member candidate_unpublished: Bool\n  member policy_id: Text\n  member cancelled: Bool\n\nfn decide(input: NativeSamplingInput) -> Result<Text,Text>\n  cancel if input.cancelled\n  requires input.decoder_gate else \"decoder_gate_failed\"\n  requires input.logits_sha256 == \"4760c2d93598f80a1b3b44cdbcb20fe4785af71127c6fe544c2996c07035a509\" else \"logits_identity_mismatch\"\n  requires input.blocks_completed == 36 else \"decoder_incomplete\"\n  requires input.greedy_candidate_id == 6237 else \"candidate_mismatch\"\n  requires input.candidate_unpublished else \"late_publication_detected\"\n  requires input.policy_id == \"greedy-debug-v1\" else \"sampling_policy_mismatch\"\n  return ok \"PUBLISH_GREEDY\"\n",
+      "file": "sources/owner.native.sampling_policy.t",
+      "module": "owner.native.sampling_policy",
+      "sha256": "591a3a2b0c2947ba2ff03c4cc84f1aa17f0c54664553bd758d126a1eb3d3abdd"
+    }
+  ]
+}

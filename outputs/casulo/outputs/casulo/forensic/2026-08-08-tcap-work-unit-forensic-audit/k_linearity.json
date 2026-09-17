@@ -1,0 +1,15 @@
+{
+  "R2": null,
+  "reason": "F7 is forbidden until a full 1,024-record unit has internal counters and receipts",
+  "requested_K": [
+    1,
+    2,
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "schema": "casulo-forensic-k-linearity/1.0",
+  "status": "NOT_EXECUTED_RECEIPTS_GATE_FAILED"
+}

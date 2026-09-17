@@ -1,0 +1,12 @@
+{
+  "calibration_windows": 3,
+  "campaign_id": "2026-08-07-g5-hwinfo-thermal-recovery-250ms-90c-start70-final4",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "equivalence_gates": 1,
+  "reason": "Transient throttling during TCAP runtime probe now completes the unit, rejects the window, and retries after clean stability instead of terminating the worker.",
+  "schema": "casulo-hwinfo-thermal-recovery-analysis/1.0",
+  "scientific_judgment": "NO_ENERGY_RESULT",
+  "terminal_state": "SUPERSEDED_BEFORE_DEFINITIVE_CAMPAIGN",
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "valid_pairs": 0
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "casulo-voice-adoption-evidence/1.0",
+  "date": "2026-08-11",
+  "engine": {
+    "name": "whisper.cpp",
+    "tag": "v1.9.2",
+    "commit": "306c88f4d1286aec1bf96e544632897886af5501",
+    "license": "MIT",
+    "source_verified": true
+  },
+  "model": {
+    "name": "ggml-small-q5_1.bin",
+    "bytes": 190085487,
+    "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb",
+    "license_declared_by_repository": "MIT",
+    "verified": true
+  },
+  "bridge": {
+    "name": "casulo_whisper_bridge.dll",
+    "bytes": 5349624,
+    "sha256": "4aa83dba47f92d25d3c6a6c3b3e024d67e0bad2760eab49c60ffe9005233a73c",
+    "abi_loadable": true,
+    "non_system_runtime_dlls": [],
+    "gpu_used": false
+  },
+  "receipts": {
+    "ADOPTION.json": "fcfeba029a03c02682aa2b25f652b2c687096422c4881837d9c43fa91bceb486",
+    "BUILD.json": "bf494d71accc28e3e6e6a01b1efadff2bea7bb5a8dd41694b3bd0021a3fc456e",
+    "SOURCE.json": "0b5574979441e8894864b9327e8b455b285321fa8bd27b3f86fe4df58e521f13"
+  },
+  "loopback": {
+    "input_text": "Olá, eu sou o Casulo. Todo dado tem uma finalidade.",
+    "tts_voice": "Microsoft Maria Desktop",
+    "pcm_bytes": 198272,
+    "sample_rate": 16000,
+    "asr_transcript": "Olá, eu sou o Casulo. Todo dado tem uma finalidade.",
+    "device_capture": false,
+    "speaker_output": false,
+    "passed": true
+  },
+  "doctor": {
+    "asr_pt_br": "READY",
+    "bridge_present": true,
+    "bridge_loadable": true,
+    "ready": true
+  },
+  "limitations": [
+    "synthetic local loopback is not a microphone quality test",
+    "Microsoft Maria is a Windows system fallback and is not redistributed",
+    "buffered TTS does not close the streaming redistributable TTS gate"
+  ]
+}

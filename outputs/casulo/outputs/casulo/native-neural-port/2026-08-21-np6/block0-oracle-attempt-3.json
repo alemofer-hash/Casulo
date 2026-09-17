@@ -1,0 +1,943 @@
+{
+  "claim": "two authentic tokens through Qwen3 block 0; no later block, logits, sampling, or output token",
+  "context": {
+    "attention_context_lengths": [
+      1,
+      2
+    ],
+    "head_dimension": 128,
+    "positions": [
+      0,
+      1
+    ],
+    "rms_epsilon": 9.999999974752427e-07,
+    "rope_frequency_base": 1000000.0,
+    "token_ids": [
+      49242,
+      8763
+    ]
+  },
+  "final_output": {
+    "first_bits": [
+      "409ffa79",
+      "bfe7c1b1",
+      "3f198e50",
+      "3ed72c32",
+      "3f63c6f1",
+      "3f0a05f2",
+      "bf6ee250",
+      "3dcb26b6"
+    ],
+    "l2_f64": 15.908858783759168,
+    "max": 4.999325275421143,
+    "min": -2.284264087677002,
+    "sha256_f32_le": "aa98164dde9d530a226b25897a2838b496daded26dc51026c6f7dfcb08f63f1b",
+    "shape": [
+      2,
+      2560
+    ],
+    "sum_f64": 26.372895416337997
+  },
+  "intermediates": {
+    "token_0.attention_context": {
+      "first_bits": [
+        "3cb767ca",
+        "bd30dd02",
+        "3b407888",
+        "3c81b33f",
+        "bd04c08a",
+        "3c98c4f2",
+        "393aaa80",
+        "bce7b1f7"
+      ],
+      "l2_f64": 2.1210795166580656,
+      "max": 0.2871524691581726,
+      "min": -0.23774397373199463,
+      "sha256_f32_le": "4937aef04fa1e8a9bf9d73ca36bd2f96170644b40cd847251197b5c901082898",
+      "shape": [
+        4096
+      ],
+      "sum_f64": 4.364358092658222
+    },
+    "token_0.attention_projection": {
+      "first_bits": [
+        "3f33b6e0",
+        "be5a64a8",
+        "bdd3b27f",
+        "bc058c22",
+        "bdb66ba8",
+        "3ecbeba4",
+        "be94c46d",
+        "3deb4628"
+      ],
+      "l2_f64": 2.888237678129681,
+      "max": 0.7020092010498047,
+      "min": -0.34032976627349854,
+      "sha256_f32_le": "99e12b5a125d1f5397f7ca17da9faaa068356cac51992f22b159f8fb8b02a6df",
+      "shape": [
+        2560
+      ],
+      "sum_f64": -2.5293783189263195
+    },
+    "token_0.attention_residual": {
+      "first_bits": [
+        "3f342108",
+        "be3fdaa8",
+        "bdc9bebf",
+        "3cac13ef",
+        "bd989068",
+        "3eb65b84",
+        "be796eba",
+        "3e2765d4"
+      ],
+      "l2_f64": 3.186909878393532,
+      "max": 0.7036290168762207,
+      "min": -0.3576090335845947,
+      "sha256_f32_le": "b42aac7ad41ccb3f967baba45156a32c164cd7885639ccbd58a5d8c8f5207f54",
+      "shape": [
+        2560
+      ],
+      "sum_f64": -1.535380502231419
+    },
+    "token_0.attention_weights": {
+      "first_bits": [
+        "3f800000",
+        "3f800000",
+        "3f800000",
+        "3f800000",
+        "3f800000",
+        "3f800000",
+        "3f800000",
+        "3f800000"
+      ],
+      "l2_f64": 5.656854249492381,
+      "max": 1.0,
+      "min": 1.0,
+      "sha256_f32_le": "b638277a8690e175a9137feff1e43c067f9faf4e2f600caf468fb05b0403b717",
+      "shape": [
+        32,
+        1
+      ],
+      "sum_f64": 32.0
+    },
+    "token_0.attn_norm": {
+      "first_bits": [
+        "3b69df60",
+        "3d166cd2",
+        "3c4b673b",
+        "3d1ce033",
+        "3cf70c69",
+        "bd8ebd37",
+        "3d8b4ed2",
+        "3e637d8f"
+      ],
+      "l2_f64": 1.599279179323688,
+      "max": 0.22215865552425385,
+      "min": -0.2242361605167389,
+      "sha256_f32_le": "5a01a649586441c8c7b068c28b920a537ec5ea4311c62f47b634c1a3826878b7",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 1.3048116295831278
+    },
+    "token_0.block_output": {
+      "first_bits": [
+        "409ffa79",
+        "bfe7c1b1",
+        "3f198e50",
+        "3ed72c32",
+        "3f63c6f1",
+        "3f0a05f2",
+        "bf6ee250",
+        "3dcb26b6"
+      ],
+      "l2_f64": 12.285287749446196,
+      "max": 4.999325275421143,
+      "min": -2.284264087677002,
+      "sha256_f32_le": "aba128fd4f4953a911b227ce7f2c0983a6de6eea6b35f16267e788a424b1ab52",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 3.020198957528919
+    },
+    "token_0.embedding": {
+      "first_bits": [
+        "3ad45000",
+        "3cd45000",
+        "3b9f3c00",
+        "3ceeda00",
+        "3c6eda00",
+        "bd2c8100",
+        "3d406880",
+        "3d470b00"
+      ],
+      "l2_f64": 1.1932071904202848,
+      "max": 0.08869171142578125,
+      "min": -0.07048988342285156,
+      "sha256_f32_le": "3007f5b6e6517db829162dfdfe541d1762cb72ce23676453006db25b699b2d7f",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 0.9939978122711182
+    },
+    "token_0.ffn_activated": {
+      "first_bits": [
+        "3e2a1041",
+        "3d99e10c",
+        "bc1d9207",
+        "3d1fa6a7",
+        "3dbb259b",
+        "3c3b0496",
+        "be4df343",
+        "3cdf0276"
+      ],
+      "l2_f64": 10.530917490886164,
+      "max": 3.9494948387145996,
+      "min": -2.4180145263671875,
+      "sha256_f32_le": "1fa562e4ce2b8958b99dfd6fdf210349537728a054632b1db3ddb762d731dde9",
+      "shape": [
+        9728
+      ],
+      "sum_f64": 6.711967867024043
+    },
+    "token_0.ffn_down": {
+      "first_bits": [
+        "40897658",
+        "bfcfc65c",
+        "3f32c628",
+        "3ecc6af3",
+        "3f76d8fe",
+        "3e3b60bf",
+        "bf3086a2",
+        "bd83a4f2"
+      ],
+      "l2_f64": 10.731684908914945,
+      "max": 4.295696258544922,
+      "min": -2.02871036529541,
+      "sha256_f32_le": "b3681e467d4897010e5a44f39110a2a9a6821185b3faeb7db32c2b58cd81a5b2",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 4.555578883737326
+    },
+    "token_0.ffn_gate": {
+      "first_bits": [
+        "3f16112c",
+        "bf186a45",
+        "bd298708",
+        "3e75c2aa",
+        "3ebad3aa",
+        "be2c6cbe",
+        "bf09e32e",
+        "be945b4d"
+      ],
+      "l2_f64": 28.305588981165787,
+      "max": 1.657949447631836,
+      "min": -1.299358606338501,
+      "sha256_f32_le": "a779e7ce0ed0fd04e63acb221351eba586fb0aca575babb6aca3b5ce6aaa7b41",
+      "shape": [
+        9728
+      ],
+      "sum_f64": -306.00732190907
+    },
+    "token_0.ffn_norm": {
+      "first_bits": [
+        "b9e4fa46",
+        "ba25cf6f",
+        "390a646a",
+        "3c7c168c",
+        "be1173fd",
+        "3a7d0339",
+        "ba10098a",
+        "3df7d3b3"
+      ],
+      "l2_f64": 5.674172336299309,
+      "max": 0.39768874645233154,
+      "min": -0.4377119839191437,
+      "sha256_f32_le": "911cdefae7558af7f0ae7cdff117387ba7d0402319bed51366fcd8c4e16cb654",
+      "shape": [
+        2560
+      ],
+      "sum_f64": -5.075578863985356
+    },
+    "token_0.ffn_up": {
+      "first_bits": [
+        "3ee1c548",
+        "beb5ce88",
+        "3ef2f8a7",
+        "3e948f84",
+        "3ed93cea",
+        "be179048",
+        "3f81b341",
+        "be60be96"
+      ],
+      "l2_f64": 48.83196195283521,
+      "max": 3.108020305633545,
+      "min": -2.884781837463379,
+      "sha256_f32_le": "5346c1d5bac45bf84ad6ce8ee2f6e32a0cbfeb7e57265fdb4b28832b94ad7eda",
+      "shape": [
+        9728
+      ],
+      "sum_f64": -28.947566583752632
+    },
+    "token_0.k_norm": {
+      "first_bits": [
+        "c0c7c038",
+        "3fd8fab6",
+        "3f8476ad",
+        "404549f5",
+        "c08ef231",
+        "40743d9d",
+        "3f2d49b7",
+        "40086ac2"
+      ],
+      "l2_f64": 517.6740556310785,
+      "max": 247.0636444091797,
+      "min": -254.92160034179688,
+      "sha256_f32_le": "fe1720bbc6717f1b82547edb6828794009ddf01966b128b45c84f1c34f15bc56",
+      "shape": [
+        1024
+      ],
+      "sum_f64": 125.24756313388934
+    },
+    "token_0.k_rope": {
+      "first_bits": [
+        "c0c7c038",
+        "3fd8fab6",
+        "3f8476ad",
+        "404549f5",
+        "c08ef231",
+        "40743d9d",
+        "3f2d49b7",
+        "40086ac2"
+      ],
+      "l2_f64": 517.6740556310785,
+      "max": 247.0636444091797,
+      "min": -254.92160034179688,
+      "sha256_f32_le": "fe1720bbc6717f1b82547edb6828794009ddf01966b128b45c84f1c34f15bc56",
+      "shape": [
+        1024
+      ],
+      "sum_f64": 125.24756313388934
+    },
+    "token_0.key_projection": {
+      "first_bits": [
+        "be2d74ef",
+        "3da40aaf",
+        "3d036244",
+        "3db978aa",
+        "be2467ce",
+        "3dd78d8c",
+        "3c9383e1",
+        "3d7c1b5c"
+      ],
+      "l2_f64": 1.847297861998411,
+      "max": 0.2516076862812042,
+      "min": -0.31879928708076477,
+      "sha256_f32_le": "10608483a67a48abb1884ce067bce4447813f7bcaf71e4a04c920a1c351679c4",
+      "shape": [
+        1024
+      ],
+      "sum_f64": -0.3812244036234915
+    },
+    "token_0.q_norm": {
+      "first_bits": [
+        "bdf772bc",
+        "3d288b6e",
+        "3ed28701",
+        "3e174627",
+        "bdc872aa",
+        "be08ad9c",
+        "be31a6b0",
+        "3ea5e55f"
+      ],
+      "l2_f64": 105.38000602991202,
+      "max": 11.442415237426758,
+      "min": -10.524843215942383,
+      "sha256_f32_le": "e4f6fe6594931328f4f0b10a183103e847e03c5f0ef877909efd21037a2b959b",
+      "shape": [
+        4096
+      ],
+      "sum_f64": -55.05162485131041
+    },
+    "token_0.q_rope": {
+      "first_bits": [
+        "bdf772bc",
+        "3d288b6e",
+        "3ed28701",
+        "3e174627",
+        "bdc872aa",
+        "be08ad9c",
+        "be31a6b0",
+        "3ea5e55f"
+      ],
+      "l2_f64": 105.38000602991202,
+      "max": 11.442415237426758,
+      "min": -10.524843215942383,
+      "sha256_f32_le": "e4f6fe6594931328f4f0b10a183103e847e03c5f0ef877909efd21037a2b959b",
+      "shape": [
+        4096
+      ],
+      "sum_f64": -55.05162485131041
+    },
+    "token_0.query_projection": {
+      "first_bits": [
+        "bc1b9e74",
+        "3b84dccc",
+        "3c94d014",
+        "3bdf138b",
+        "bba742d3",
+        "bbcc3166",
+        "bc015083",
+        "3c75b29a"
+      ],
+      "l2_f64": 3.7274965108215796,
+      "max": 0.769218921661377,
+      "min": -0.45911890268325806,
+      "sha256_f32_le": "961766e6337b25426405559143313a5ec556340b66578debb5b9f85114e8cf95",
+      "shape": [
+        4096
+      ],
+      "sum_f64": 1.2685805385699496
+    },
+    "token_0.value_projection": {
+      "first_bits": [
+        "3cb767ca",
+        "bd30dd02",
+        "3b407888",
+        "3c81b33f",
+        "bd04c08a",
+        "3c98c4f2",
+        "393aaa80",
+        "bce7b1f7"
+      ],
+      "l2_f64": 1.0605397583290328,
+      "max": 0.2871524691581726,
+      "min": -0.23774397373199463,
+      "sha256_f32_le": "859fe6587f9e809375ff545649a528dd0b354d8a6736a1dd539adb9a086ac7c4",
+      "shape": [
+        1024
+      ],
+      "sum_f64": 1.0910895231645554
+    },
+    "token_1.attention_context": {
+      "first_bits": [
+        "bbdd53ad",
+        "3d292fe4",
+        "3c7471d0",
+        "3c86c919",
+        "bbdeaeac",
+        "bc91b4aa",
+        "3b116c81",
+        "bc3ffb90"
+      ],
+      "l2_f64": 1.9994258804509744,
+      "max": 0.28715112805366516,
+      "min": -0.2376745343208313,
+      "sha256_f32_le": "1780d95db61160110eb0ad4981ee01e604e67f0646470563b2fb2a724522ba5f",
+      "shape": [
+        4096
+      ],
+      "sum_f64": 3.3373512367943476
+    },
+    "token_1.attention_projection": {
+      "first_bits": [
+        "3f514c42",
+        "be3e4694",
+        "bd1603ce",
+        "bd654dea",
+        "bd2be91a",
+        "3ec797c0",
+        "be0ac190",
+        "3e805e0a"
+      ],
+      "l2_f64": 2.8566733530843607,
+      "max": 0.8175698518753052,
+      "min": -0.45606350898742676,
+      "sha256_f32_le": "36617c44984d697c8402d3c9d81b6d0ff62b0a673e18fdaaf9617a3494112609",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 2.1096423713024706
+    },
+    "token_1.attention_residual": {
+      "first_bits": [
+        "3f4e4546",
+        "be5479cc",
+        "bc8a931c",
+        "bbdbe250",
+        "bd86644d",
+        "3ec6956c",
+        "be0ac190",
+        "3e8870aa"
+      ],
+      "l2_f64": 3.197768248847783,
+      "max": 0.8057445287704468,
+      "min": -0.4656193256378174,
+      "sha256_f32_le": "5e366bad4accbe2448909b1a550badd9475278d06ac9797401e5a9da80039e10",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 3.9436023156158626
+    },
+    "token_1.attention_weights": {
+      "first_bits": [
+        "3e9a562a",
+        "3f32d4ea",
+        "3e93e509",
+        "3f360d7b",
+        "3ca95ae0",
+        "3f7ab52a",
+        "3eeb9aaa",
+        "3f0a32ab"
+      ],
+      "l2_f64": 5.058127905771125,
+      "max": 0.999974250793457,
+      "min": 2.574079917394556e-05,
+      "sha256_f32_le": "208dcfbac8fb796b9fcbad87bd9b8cc645d708fa5d6b42e203204a0d75ff7fff",
+      "shape": [
+        32,
+        2
+      ],
+      "sum_f64": 31.999999635881977
+    },
+    "token_1.attn_norm": {
+      "first_bits": [
+        "bcc77c31",
+        "bceb3ae9",
+        "3d40c5ef",
+        "3d77cba5",
+        "bd3b4f5a",
+        "bb47cc1c",
+        "00000000",
+        "3d89fc2a"
+      ],
+      "l2_f64": 1.6102468250815813,
+      "max": 0.164858877658844,
+      "min": -0.21304932236671448,
+      "sha256_f32_le": "415b4cfb1079a8b03d97feeaaeee509e83208f7dd26fed9f8c3e081cf787f0cf",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 1.9912253356305882
+    },
+    "token_1.block_output": {
+      "first_bits": [
+        "404236d2",
+        "bf949d56",
+        "3f04b6ab",
+        "3e35c4cc",
+        "3e1c6912",
+        "3f05014a",
+        "be9803ff",
+        "3d825802"
+      ],
+      "l2_f64": 10.107595793011235,
+      "max": 3.0345959663391113,
+      "min": -1.8216116428375244,
+      "sha256_f32_le": "54579e9a64d90d2be30e48bc7536715497b813a366b08c7a3553c179337c2810",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 23.352696458809078
+    },
+    "token_1.embedding": {
+      "first_bits": [
+        "bc41bf00",
+        "bcb199c0",
+        "3ca17480",
+        "3d49d1a0",
+        "bcc1bf00",
+        "bb012a00",
+        "00000000",
+        "3c812a00"
+      ],
+      "l2_f64": 1.2767072007139824,
+      "max": 0.08642578125,
+      "min": -0.0875091552734375,
+      "sha256_f32_le": "a7ccb8b7eaa8098b13b575ff34dc2c372edb1d47db9d2fdf252c03a924428001",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 1.833959937095642
+    },
+    "token_1.ffn_activated": {
+      "first_bits": [
+        "3ccee039",
+        "3dba5261",
+        "bca8b2ae",
+        "3d021acc",
+        "39d2d4c7",
+        "bab71b0a",
+        "bc613262",
+        "3cbb5e9d"
+      ],
+      "l2_f64": 10.22163857610943,
+      "max": 2.878587007522583,
+      "min": -1.991210699081421,
+      "sha256_f32_le": "290bfcb7b97c51655afe8b72ad542345271b6f07a4e3dc51a5d126fadc53388a",
+      "shape": [
+        9728
+      ],
+      "sum_f64": 9.464111625343833
+    },
+    "token_1.ffn_down": {
+      "first_bits": [
+        "400ea580",
+        "bf741c38",
+        "3f090b44",
+        "3e3ca3de",
+        "3e5f9b39",
+        "3e06da4e",
+        "be25466e",
+        "be4fb553"
+      ],
+      "l2_f64": 8.569292885035884,
+      "max": 2.228851318359375,
+      "min": -1.4267692565917969,
+      "sha256_f32_le": "db33b8f7b7dfe5cbf8714bbdf70dd1374ab3f8ac32b1b44f373221cb4a9a587a",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 19.40909420279786
+    },
+    "token_1.ffn_gate": {
+      "first_bits": [
+        "be8d63e4",
+        "be517c8f",
+        "beb19e5c",
+        "3f5ea370",
+        "bb4bace0",
+        "3ceeb5e8",
+        "bd1cbd5e",
+        "be483130"
+      ],
+      "l2_f64": 27.71153932053727,
+      "max": 1.750511646270752,
+      "min": -1.6588799953460693,
+      "sha256_f32_le": "e1c10fbaa8c4db0096aaa7548c3161dfcaebd3d5486b3bd52fe911c9858d1dec",
+      "shape": [
+        9728
+      ],
+      "sum_f64": -190.13488537073135
+    },
+    "token_1.ffn_norm": {
+      "first_bits": [
+        "ba02a8bf",
+        "ba37025d",
+        "37bd78e9",
+        "bba083b4",
+        "bdff62be",
+        "3a894b91",
+        "b99fb549",
+        "3e494f35"
+      ],
+      "l2_f64": 5.5851294776734814,
+      "max": 0.5161267518997192,
+      "min": -0.39595484733581543,
+      "sha256_f32_le": "1567042c566401250b650bb97d528ae030b7c186551e57847f0fd92b7841e969",
+      "shape": [
+        2560
+      ],
+      "sum_f64": 5.606732657400244
+    },
+    "token_1.ffn_up": {
+      "first_bits": [
+        "be591112",
+        "bf7d8916",
+        "3e12c758",
+        "3d544bb2",
+        "be84b40e",
+        "bdc18c46",
+        "3f3b7de2",
+        "be84bc33"
+      ],
+      "l2_f64": 47.77238309392561,
+      "max": 3.3630197048187256,
+      "min": -2.548860788345337,
+      "sha256_f32_le": "5181b262b3a2a7909708866f2251e00e0ec87a54e3ce0f20bf6799bbf5a5b01d",
+      "shape": [
+        9728
+      ],
+      "sum_f64": 59.71714683063328
+    },
+    "token_1.k_norm": {
+      "first_bits": [
+        "c06ff7ca",
+        "404789d5",
+        "3ff4fdf0",
+        "40349723",
+        "c0b3d808",
+        "3fb3e4e5",
+        "3edbf38f",
+        "400ab88f"
+      ],
+      "l2_f64": 452.13504324501145,
+      "max": 234.15086364746094,
+      "min": -203.38418579101562,
+      "sha256_f32_le": "243f06faec6ca9542d919b5e5221a7f1bcd9b1a2a0fb3ecdf35f9283fca409aa",
+      "shape": [
+        1024
+      ],
+      "sum_f64": 108.93006790231448
+    },
+    "token_1.k_rope": {
+      "first_bits": [
+        "c094c7cf",
+        "bfbc3ae1",
+        "bf35ce5c",
+        "40556e0c",
+        "c0aa6eec",
+        "c011dcaa",
+        "bf360a27",
+        "4005e57e"
+      ],
+      "l2_f64": 452.1350498491125,
+      "max": 234.14710998535156,
+      "min": -203.3799285888672,
+      "sha256_f32_le": "da57305644f985d801c1ab98bd44335268b9468e27e5e58c4fb35035996799b6",
+      "shape": [
+        1024
+      ],
+      "sum_f64": 106.79874930613732
+    },
+    "token_1.key_projection": {
+      "first_bits": [
+        "be3e1d8e",
+        "3e89a22a",
+        "3dddb24e",
+        "3e1ae479",
+        "bebcb679",
+        "3d90d940",
+        "3caad3b7",
+        "3de9e4f3"
+      ],
+      "l2_f64": 2.2560001712685076,
+      "max": 0.35353440046310425,
+      "min": -0.4176945090293884,
+      "sha256_f32_le": "bda7fe448a17d1f3882071df2474fcd58b95c44a39c5e007bca48182de07d3e0",
+      "shape": [
+        1024
+      ],
+      "sum_f64": -0.682469742372632
+    },
+    "token_1.q_norm": {
+      "first_bits": [
+        "3e509fde",
+        "be9e3bbd",
+        "3f360de1",
+        "bdc41237",
+        "3d3af9dc",
+        "3eea0d60",
+        "be5900d3",
+        "3b887071"
+      ],
+      "l2_f64": 105.4712615897366,
+      "max": 9.769126892089844,
+      "min": -9.506021499633789,
+      "sha256_f32_le": "54c781eb698b3f3fd2690952290b9d249263b28c8dd848cb696ceb3195ba3837",
+      "shape": [
+        4096
+      ],
+      "sum_f64": -127.2367453168863
+    },
+    "token_1.q_rope": {
+      "first_bits": [
+        "3ebd8248",
+        "3b920a60",
+        "3f0fc11b",
+        "3ee4ba5c",
+        "be75d491",
+        "3ec88bb0",
+        "be3e17f3",
+        "bdd1811c"
+      ],
+      "l2_f64": 105.47126117458282,
+      "max": 9.769335746765137,
+      "min": -8.727487564086914,
+      "sha256_f32_le": "1e617eee960a0279744e564ade8f22bf1a8df3c184e8c407ae43b11af8710a05",
+      "shape": [
+        4096
+      ],
+      "sum_f64": -86.02063971740426
+    },
+    "token_1.query_projection": {
+      "first_bits": [
+        "3c94d5d6",
+        "bd0d7f49",
+        "3d11fb04",
+        "bba3ff2c",
+        "3b30fcb2",
+        "3cc6544d",
+        "bc333004",
+        "39653a40"
+      ],
+      "l2_f64": 3.8006899435851618,
+      "max": 0.8404883742332458,
+      "min": -0.4308496117591858,
+      "sha256_f32_le": "0c4a9ff8f2e2007c2da6beab892c95c8dd347f74f3d093dda9091479247ff134",
+      "shape": [
+        4096
+      ],
+      "sum_f64": -1.5668587217805907
+    },
+    "token_1.value_projection": {
+      "first_bits": [
+        "bc9e599b",
+        "3d9f4199",
+        "3ca494c6",
+        "3c88fade",
+        "3b8b8078",
+        "bd094039",
+        "3b4b2454",
+        "bb95bbb6"
+      ],
+      "l2_f64": 1.1187544568590286,
+      "max": 0.2618730664253235,
+      "min": -0.21319906413555145,
+      "sha256_f32_le": "e5c49341c895919fd027c9774885c79e967935bc4914930d3a5d5c11c58546dc",
+      "shape": [
+        1024
+      ],
+      "sum_f64": 0.7648230141494423
+    }
+  },
+  "model": {
+    "architecture": "qwen3",
+    "bytes": 2497280256,
+    "gguf_version": 3,
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "operation_counts": {
+    "attention_score_products": 96,
+    "quantized_dot_products": 61440,
+    "quantized_matvec_rows": 61440,
+    "tokens": 2
+  },
+  "oracle": {
+    "comparison": "frozen tolerances; matvec bit identity is not required across accumulation orders",
+    "implementation": "independent Python/NumPy GGUF decoder and Qwen3 block",
+    "numpy_version": "2.3.5"
+  },
+  "schema": "casulo-native-qwen-block0-oracle/0.1",
+  "tensor_receipts": [
+    {
+      "absolute_offset": 325032192,
+      "byte_len": 1474560,
+      "dimensions": [
+        2560,
+        1024
+      ],
+      "ggml_type": 12,
+      "name": "blk.0.attn_k.weight",
+      "sha256_raw": "449d8676be1e964a872148065b22eda8cfcaf6130c8833a3a4f8c025dc49d786"
+    },
+    {
+      "absolute_offset": 326506752,
+      "byte_len": 512,
+      "dimensions": [
+        128
+      ],
+      "ggml_type": 0,
+      "name": "blk.0.attn_k_norm.weight",
+      "sha256_raw": "7d6b897cd95dd36538fe3732467fe8d095baf49c72225ccd14cf44a8a479ede5"
+    },
+    {
+      "absolute_offset": 326507264,
+      "byte_len": 10240,
+      "dimensions": [
+        2560
+      ],
+      "ggml_type": 0,
+      "name": "blk.0.attn_norm.weight",
+      "sha256_raw": "8515045ded5d890ad46cd4945a2221c1b5b2d820bf2fed7cb00c6604605d74a3"
+    },
+    {
+      "absolute_offset": 326517504,
+      "byte_len": 5898240,
+      "dimensions": [
+        4096,
+        2560
+      ],
+      "ggml_type": 12,
+      "name": "blk.0.attn_output.weight",
+      "sha256_raw": "0ca9f6fa796d6f4179a23b2e9af69e40d11f12f56ba3ba6ea941632186ae84a7"
+    },
+    {
+      "absolute_offset": 332415744,
+      "byte_len": 5898240,
+      "dimensions": [
+        2560,
+        4096
+      ],
+      "ggml_type": 12,
+      "name": "blk.0.attn_q.weight",
+      "sha256_raw": "7c3d7acfa7f2eaa0006196fe954baaa1bff6e072ac9dace1531d5b15f47be9c5"
+    },
+    {
+      "absolute_offset": 338313984,
+      "byte_len": 512,
+      "dimensions": [
+        128
+      ],
+      "ggml_type": 0,
+      "name": "blk.0.attn_q_norm.weight",
+      "sha256_raw": "ecedb4df305d14086553239b09ca81ee685d6d65605186feef60fd5244b81227"
+    },
+    {
+      "absolute_offset": 338314496,
+      "byte_len": 2150400,
+      "dimensions": [
+        2560,
+        1024
+      ],
+      "ggml_type": 14,
+      "name": "blk.0.attn_v.weight",
+      "sha256_raw": "b289ec63c65f0edd2c72a0f261b2274755a79f599958deb1f7c6dc6d44f77e83"
+    },
+    {
+      "absolute_offset": 340464896,
+      "byte_len": 20428800,
+      "dimensions": [
+        9728,
+        2560
+      ],
+      "ggml_type": 14,
+      "name": "blk.0.ffn_down.weight",
+      "sha256_raw": "19dfc9552db673618b218ad79c2283dec3afee1fc464b8c13b8b08f036b0ffe0"
+    },
+    {
+      "absolute_offset": 360893696,
+      "byte_len": 14008320,
+      "dimensions": [
+        2560,
+        9728
+      ],
+      "ggml_type": 12,
+      "name": "blk.0.ffn_gate.weight",
+      "sha256_raw": "490d62c84697b42bc157e448e593184db1044961d51e79ca7596f767c60dbed7"
+    },
+    {
+      "absolute_offset": 374902016,
+      "byte_len": 10240,
+      "dimensions": [
+        2560
+      ],
+      "ggml_type": 0,
+      "name": "blk.0.ffn_norm.weight",
+      "sha256_raw": "9cef637eb23650b05fa995bdda89debd90f4a9a791ee654c517813cb75a5ebb9"
+    },
+    {
+      "absolute_offset": 374912256,
+      "byte_len": 14008320,
+      "dimensions": [
+        2560,
+        9728
+      ],
+      "ggml_type": 12,
+      "name": "blk.0.ffn_up.weight",
+      "sha256_raw": "ad786b9a28b80e520ea41824ba89df20f261bbb97313aa81e7989c85fea920d4"
+    }
+  ]
+}

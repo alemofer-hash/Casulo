@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "compression.casv_compact"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "2c7ad3b534a2d7ca5b7393a91d58bf57881ed5cc19b23fc58b6018e1dfa3e05b"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "e8000cc90f20c6caeceeddd2260f56d9de025010d8f3a05f24494ae56664cca7"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "833444215fad3d69beabcdeb4a4d014fa9beda1949bdef2d3d69aaf6b46de8cd"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "05127a97e17de3ae897698fcabfeae6b003905faec9ed0038cbe675d494006d2"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "ba799286e02c71ba74b51491a13972bdcb63733a01609a71a0a68176d36e2f45"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "bb9592dee5b6993f37eeeaf5f51341f0f733e6c792929766211153544a418c99"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "689c2cf9dc533da91a76d93cb2873e6129f0efa8ba13ae63998ef1cd84d41640"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "e9cf423bded323bc5a76c9470b35545c7278e4536caa37d5ccdcf7431d6b1486"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "9cf76fcc0a153cf7d3b7924ec2ae230318c4f8685ae5ecc593de71249fc6601e"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "ae7b8603750840eed4a6635905971ed55d13b5cf7163d9f379cac874bdb49edf"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "931989376e9eb0e0903a34c5a759ce2c42f0312efe15ff3450ce3213a2e166c0"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "fdb9e53f7db7fe90aa0e138f584074143ab092376412aa6f0a20cc991844d742"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/compression.casv_compact.t",
+      "module": "compression.casv_compact",
+      "sha256": "664190c6674b800620a4591da20fdb206a9ac7fe78c0868f4b630ce0485bec27"
+    }
+  ],
+  "tcap_hash": "49fe9dc77e5460876ee6206c32ed7464fd6bf8cb10b275a2907811f171543395"
+}

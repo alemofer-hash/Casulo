@@ -1,0 +1,73 @@
+{
+  "claim": "authentic F32/Q4_K/Q6_K samples projected from the adopted model; not token inference",
+  "first_model_derived_token": false,
+  "full_model_mapped": false,
+  "network": false,
+  "physical_device_written": false,
+  "projection": {
+    "bytes": 2112,
+    "dot_f32": 0.16531428694725037,
+    "dot_f32_bits": "3e294826",
+    "f32_prefix_sha256": "f659212f7856a9a361f9c12713530ea3c75f7c57eb248323c8519dc3767d3ca0",
+    "file": "release/casulo-native-qwen3-weight-formats-probe-v2.gguf",
+    "q4_dot_f32": 0.16531428694725037,
+    "q4_dot_f32_bits": "3e294826",
+    "q6_dot_f32": -0.014668241143226624,
+    "q6_dot_f32_bits": "bc705310",
+    "sha256": "47b0f62fa715d0de910a7aef18005eaa27ef23b65326aa243253af85faedf495",
+    "tensor_names": [
+      "casulo.probe.q4_k",
+      "casulo.probe.q6_k",
+      "casulo.probe.f32"
+    ]
+  },
+  "schema": "casulo-native-gguf-probe/0.2",
+  "source_model": {
+    "architecture": "qwen3",
+    "bytes": 2497280256,
+    "data_offset": 5956352,
+    "gguf_version": 3,
+    "metadata_count": 28,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "tensor_count": 398
+  },
+  "source_tensor": {
+    "absolute_offset": 325032192,
+    "block_bytes": 144,
+    "block_sha256": "5a763d78bb68a51dd06cfef027f366843d18e98500c4c60297c6e929ad278e35",
+    "dimensions": [
+      2560,
+      1024
+    ],
+    "ggml_type": 12,
+    "name": "blk.0.attn_k.weight"
+  },
+  "source_tensors": {
+    "f32": {
+      "absolute_offset": 5956352,
+      "dimensions": [
+        2560
+      ],
+      "name": "output_norm.weight",
+      "sha256": "f659212f7856a9a361f9c12713530ea3c75f7c57eb248323c8519dc3767d3ca0"
+    },
+    "q4_k": {
+      "absolute_offset": 325032192,
+      "dimensions": [
+        2560,
+        1024
+      ],
+      "name": "blk.0.attn_k.weight",
+      "sha256": "5a763d78bb68a51dd06cfef027f366843d18e98500c4c60297c6e929ad278e35"
+    },
+    "q6_k": {
+      "absolute_offset": 5966592,
+      "dimensions": [
+        2560,
+        151936
+      ],
+      "name": "token_embd.weight",
+      "sha256": "ff1b632d749773aa0fbd6b89ea7108f9f849dc68113fef9fba1d8cc3bbee3182"
+    }
+  }
+}

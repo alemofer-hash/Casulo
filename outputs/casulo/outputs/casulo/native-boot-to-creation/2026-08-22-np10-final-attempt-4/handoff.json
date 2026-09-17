@@ -1,0 +1,25 @@
+{
+  "schema": "casulo-native-boot-to-creation-handoff/1.0",
+  "state": "CASULO_NATIVE_BOOT_TO_CREATION_PROOF",
+  "human_proof_executed": false,
+  "repository_launcher": "release/START_CASULO_NATIVE_CREATION_PROOF.vbs",
+  "repository_command": "powershell -NoProfile -ExecutionPolicy Bypass -File release/CASULO_NATIVE_BOOT_TO_CREATION_PROOF.ps1",
+  "archive": "release/CASULO_NATIVE_BOOT_TO_CREATION_PROOF_2026-08-22-attempt-4.zip",
+  "archive_sha256": "368433243159ce28c4e54b39774792bdae39d8748d3b24786fb5dbd60dde863e",
+  "archive_bytes": 364930,
+  "reproducibility_twin": "release/CASULO_NATIVE_BOOT_TO_CREATION_PROOF_2026-08-22-attempt-5.zip",
+  "extracted_launcher": "release/START_CASULO_NATIVE_CREATION_PROOF.vbs",
+  "external_requirements": [
+    "Python 3.13 compatible launcher runtime",
+    "QEMU 11.0.50 compatible qemu-system-x86_64 and OVMF",
+    "WHPX on Windows bare metal",
+    "owner Qwen3-4B-Q4_K_M cache object with the frozen SHA-256",
+    "approximately 6 GiB available RAM"
+  ],
+  "expected_current_duration": "approximately 6 to 10 minutes per complete frozen creation boot; not a performance benchmark",
+  "cloud": "RELEASE_LOCKED",
+  "guest_network": "OFF",
+  "usb_or_block_device": "PROHIBITED_NOT_WRITTEN",
+  "signature": "DEVELOPMENT_NOT_COMMERCIAL",
+  "next_human_action": "open the VBS launcher, observe the frozen creation, and report interaction or visual failures without treating it as the final conversational product"
+}

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Casulo — Relatório Borboleta</title>
+<style>
+:root { color-scheme: dark; --ink:#eef7f0; --muted:#9db2a3; --leaf:#75e39d;
+--wing:#f5c76b; --panel:#14231b; --line:#31513d; }
+* { box-sizing:border-box } body { margin:0;background:#09110d;color:var(--ink);
+font:16px/1.55 system-ui,sans-serif } main { max-width:1080px;margin:auto;padding:48px 24px }
+h1 { font-size:clamp(2rem,6vw,4.5rem);margin:0 } .brand {color:var(--wing);
+letter-spacing:.16em;text-transform:uppercase;font-weight:700 } .sub {color:var(--muted)}
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;
+margin:32px 0} .card {background:var(--panel);border:1px solid var(--line);
+border-radius:16px;padding:22px} .value {font-size:2rem;color:var(--leaf);font-weight:750}
+.ok {color:var(--leaf)} .warn {color:var(--wing)} details {margin-top:28px}
+pre {white-space:pre-wrap;overflow-wrap:anywhere;background:#060b08;padding:20px;
+border-radius:12px;border:1px solid var(--line)} code {font-family:ui-monospace,monospace}
+</style></head><body><main>
+<div class="brand">Teloscorp apresenta</div>
+<h1>Casulo <span class="ok">Borboleta</span></h1>
+<p class="sub">Evidência reproduzível de otimização conservativa do tráfego de informação.</p>
+<section class="grid">
+<article class="card"><div>Fator de velocidade</div><div class="value">0.991×</div>
+<div>IC 95% bootstrap: 0.947×–1.026×</div></article>
+<article class="card"><div>Vazão otimizada</div><div class="value">
+41,837</div><div>registros/s</div></article>
+<article class="card"><div>Equivalência</div><div class="value">provada</div>
+<div>SHA-256 da projeção semântica coincidente</div></article>
+<article class="card"><div>Energia elétrica</div><div class="value">não medida</div>
+<div class="warn">
+unavailable</div></article>
+</section>
+<p>Referência escalar: 138.193 ms · lote Casulo:
+143.414 ms por amostra.</p>
+<p>Veredito estatístico: <strong>inconclusive</strong>.
+Valores acima de 1× favorecem a estratégia Casulo.</p>
+<p class="sub">Artefato <code>sha256:861b89d7ac890c08b6edf94e6baedfc6843f08466004fb64e9ffb2787fbd214d</code> · dataset
+<code>cd404d0e4ae232de6478c781dc0ae2707e60f3653a62f39182f516cdcf982154</code></p>
+<details><summary>Relatório integral em JSON</summary><pre>{
+  &quot;artifact_id&quot;: &quot;sha256:861b89d7ac890c08b6edf94e6baedfc6843f08466004fb64e9ffb2787fbd214d&quot;,
+  &quot;caveats&quot;: [
+    &quot;dataset sintético mede o runtime, não a acurácia hidrológica&quot;,
+    &quot;o ganho depende da taxa de repetição declarada no manifesto&quot;,
+    &quot;resultados de um único computador não generalizam sem replicação&quot;,
+    &quot;turbo, temperatura e processos concorrentes afetam tempo e energia&quot;,
+    &quot;energia elétrica indisponível nesta execução&quot;
+  ],
+  &quot;comparison&quot;: {
+    &quot;cpu_work_ratio&quot;: 1.0,
+    &quot;electrical_energy_ratio&quot;: null,
+    &quot;scope&quot;: &quot;referência escalar sem cache versus lote Casulo com cache frio por chamada e deduplicação intralote&quot;,
+    &quot;semantic_projection_excludes&quot;: [
+      &quot;cache&quot;
+    ],
+    &quot;semantically_equivalent&quot;: true,
+    &quot;verdict&quot;: &quot;inconclusive&quot;,
+    &quot;wall_speedup_ci95_bootstrap&quot;: [
+      0.9467818042913886,
+      1.0257360529266402
+    ],
+    &quot;wall_speedup_interpretation&quot;: &quot;valores acima de 1 indicam que a estratégia Casulo é mais rápida&quot;,
+    &quot;wall_speedup_median&quot;: 0.9907771197133454
+  },
+  &quot;config&quot;: {
+    &quot;bootstrap_resamples&quot;: 1000,
+    &quot;duplicate_rate&quot;: 0.9,
+    &quot;iterations&quot;: 3,
+    &quot;records&quot;: 2000,
+    &quot;samples&quot;: 7,
+    &quot;seed&quot;: 24052024,
+    &quot;warmups&quot;: 1
+  },
+  &quot;dataset&quot;: {
+    &quot;duplicate_rate&quot;: 0.9,
+    &quot;name&quot;: &quot;hydrological-water-balance-synthetic&quot;,
+    &quot;protocol&quot;: &quot;casulo-dataset/hydrological-synthetic/0.1&quot;,
+    &quot;records&quot;: 2000,
+    &quot;seed&quot;: 24052024,
+    &quot;sha256&quot;: &quot;cd404d0e4ae232de6478c781dc0ae2707e60f3653a62f39182f516cdcf982154&quot;
+  },
+  &quot;energy&quot;: {
+    &quot;electrical_energy_measured&quot;: false,
+    &quot;method&quot;: &quot;unavailable&quot;,
+    &quot;quality&quot;: &quot;not_measured&quot;,
+    &quot;unit&quot;: null,
+    &quot;warning&quot;: &quot;nenhum contador elétrico cumulativo foi encontrado; tempo de CPU permanece apenas como proxy de trabalho, nunca como joules&quot;
+  },
+  &quot;environment&quot;: {
+    &quot;cpu_logical&quot;: 12,
+    &quot;cpu_physical&quot;: 10,
+    &quot;implementation&quot;: &quot;CPython&quot;,
+    &quot;machine&quot;: &quot;AMD64&quot;,
+    &quot;memory_total_bytes&quot;: 16890978304,
+    &quot;os&quot;: &quot;Windows-11-10.0.26200-SP0&quot;,
+    &quot;processor&quot;: &quot;Intel64 Family 6 Model 154 Stepping 4, GenuineIntel&quot;,
+    &quot;python&quot;: &quot;3.13.2&quot;
+  },
+  &quot;equivalence_sha256&quot;: &quot;0ded8d82a4e54bb4bc9456d661dfd0c931063076e126c4b512b54634e65333c2&quot;,
+  &quot;generated_at_utc&quot;: &quot;2026-07-29T23:38:56Z&quot;,
+  &quot;operation&quot;: &quot;WaterBalance&quot;,
+  &quot;optimized&quot;: {
+    &quot;cpu_ns_samples&quot;: [
+      125000000,
+      125000000,
+      140625000,
+      140625000,
+      140625000,
+      140625000,
+      187500000
+    ],
+    &quot;electrical_joules_samples&quot;: [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    &quot;median_cpu_ns&quot;: 140625000,
+    &quot;median_electrical_joules&quot;: null,
+    &quot;median_rss_observed_bytes&quot;: 38514688,
+    &quot;median_wall_ns&quot;: 143413600,
+    &quot;name&quot;: &quot;casulo_metamorfose_fused_batch&quot;,
+    &quot;rss_observed_bytes_samples&quot;: [
+      38514688,
+      38514688,
+      38514688,
+      38514688,
+      38514688,
+      38514688,
+      38514688
+    ],
+    &quot;throughput_records_per_second&quot;: 41837.03637590856,
+    &quot;wall_ns_samples&quot;: [
+      144638500,
+      137751800,
+      138330200,
+      133624200,
+      143413600,
+      143614400,
+      203255500
+    ]
+  },
+  &quot;protocol&quot;: &quot;casulo-borboleta/0.1&quot;,
+  &quot;scalar&quot;: {
+    &quot;cpu_ns_samples&quot;: [
+      140625000,
+      125000000,
+      125000000,
+      125000000,
+      156250000,
+      156250000,
+      187500000
+    ],
+    &quot;electrical_joules_samples&quot;: [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    &quot;median_cpu_ns&quot;: 140625000,
+    &quot;median_electrical_joules&quot;: null,
+    &quot;median_rss_observed_bytes&quot;: 38514688,
+    &quot;median_wall_ns&quot;: 138193000,
+    &quot;name&quot;: &quot;python_scalar_reference&quot;,
+    &quot;rss_observed_bytes_samples&quot;: [
+      38293504,
+      38514688,
+      38514688,
+      38514688,
+      38514688,
+      38514688,
+      38514688
+    ],
+    &quot;throughput_records_per_second&quot;: 43417.539238601086,
+    &quot;wall_ns_samples&quot;: [
+      136941100,
+      138193000,
+      131114900,
+      132391800,
+      147104500,
+      152133200,
+      185288400
+    ]
+  }
+}</pre></details>
+</main></body></html>

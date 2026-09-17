@@ -1,0 +1,346 @@
+{
+  "accepted": false,
+  "attempts": [
+    {
+      "attempt": 0,
+      "candidate": {
+        "claims": [
+          "curvature_evaluate is a function that maps a 4D metric to a list of residuals based on hypotheticals",
+          "scientific_rejection is a function that determines whether a set of residuals constitutes scientific rejection",
+          "unsupported_global_claim_denied is a boolean flag indicating whether any global claim has been denied"
+        ],
+        "science": {
+          "inputs": [
+            "metric_4d: tensor[4, float]",
+            "hypotheticals: list[tensor[4, float]]",
+            "residuals: list[tensor[4, float]]"
+          ],
+          "method": "parametrizable_curvature_assessment",
+          "operators": [
+            "curvature_evaluate: function(metric_4d, hypotheticals) -> residuals",
+            "scientific_rejection: function(residuals) -> bool"
+          ],
+          "outputs": [
+            "curvature_report: tensor[4, bool]",
+            "rejection_flag: bool"
+          ],
+          "refusals": [
+            "unsupported_global_claim_denied: bool"
+          ],
+          "scope": "local-4d-evaluator"
+        }
+      },
+      "fulfillment": {
+        "accepted": false,
+        "candidate_sha256": "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10",
+        "coverage": 0.2,
+        "diagnostics": [
+          {
+            "code": "FUL200",
+            "expected": [
+              "metric",
+              "coordinates",
+              "constants",
+              "stress_energy",
+              "conditions",
+              "tolerances"
+            ],
+            "message": "expected CONTAINS_ALL ('metric', 'coordinates', 'constants', 'stress_energy', 'conditions', 'tolerances') at science.inputs",
+            "observed": [
+              "metric_4d: tensor[4, float]",
+              "hypotheticals: list[tensor[4, float]]",
+              "residuals: list[tensor[4, float]]"
+            ],
+            "path": [
+              "science",
+              "inputs"
+            ],
+            "rule_id": "inputs"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "levi_civita"
+            ],
+            "message": "expected CONTAINS_ALL ('levi_civita',) at science.operators",
+            "observed": [
+              "curvature_evaluate: function(metric_4d, hypotheticals) -> residuals",
+              "scientific_rejection: function(residuals) -> bool"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "connection"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "ricci_tensor",
+              "ricci_scalar"
+            ],
+            "message": "expected CONTAINS_ALL ('ricci_tensor', 'ricci_scalar') at science.operators",
+            "observed": [
+              "curvature_evaluate: function(metric_4d, hypotheticals) -> residuals",
+              "scientific_rejection: function(residuals) -> bool"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "ricci"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "einstein_tensor"
+            ],
+            "message": "expected CONTAINS_ALL ('einstein_tensor',) at science.operators",
+            "observed": [
+              "curvature_evaluate: function(metric_4d, hypotheticals) -> residuals",
+              "scientific_rejection: function(residuals) -> bool"
+            ],
+            "path": [
+              "science",
+              "operators"
+            ],
+            "rule_id": "einstein"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "field_equation_residual"
+            ],
+            "message": "expected CONTAINS_ALL ('field_equation_residual',) at science.outputs",
+            "observed": [
+              "curvature_report: tensor[4, bool]",
+              "rejection_flag: bool"
+            ],
+            "path": [
+              "science",
+              "outputs"
+            ],
+            "rule_id": "residual"
+          },
+          {
+            "code": "FUL200",
+            "expected": [
+              "global-pde-solver"
+            ],
+            "message": "expected CONTAINS_ALL ('global-pde-solver',) at science.refusals",
+            "observed": [
+              "unsupported_global_claim_denied: bool"
+            ],
+            "path": [
+              "science",
+              "refusals"
+            ],
+            "rule_id": "global-denial"
+          }
+        ],
+        "evidence": [
+          {
+            "artifact_sha256": "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10",
+            "detail": "expected CONTAINS_ALL ('metric', 'coordinates', 'constants', 'stress_energy', 'conditions', 'tolerances') at science.inputs",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:e7c3d11973ec92e4:inputs",
+            "requirement_id": "scientific-computing:inputs",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:inputs"
+          },
+          {
+            "artifact_sha256": "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10",
+            "detail": "expected CONTAINS_ALL ('levi_civita',) at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:e7c3d11973ec92e4:connection",
+            "requirement_id": "scientific-computing:connection",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:connection"
+          },
+          {
+            "artifact_sha256": "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10",
+            "detail": "expected CONTAINS_ALL ('ricci_tensor', 'ricci_scalar') at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:e7c3d11973ec92e4:ricci",
+            "requirement_id": "scientific-computing:ricci",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:ricci"
+          },
+          {
+            "artifact_sha256": "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10",
+            "detail": "expected CONTAINS_ALL ('einstein_tensor',) at science.operators",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:e7c3d11973ec92e4:einstein",
+            "requirement_id": "scientific-computing:einstein",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:einstein"
+          },
+          {
+            "artifact_sha256": "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10",
+            "detail": "expected CONTAINS_ALL ('field_equation_residual',) at science.outputs",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:e7c3d11973ec92e4:residual",
+            "requirement_id": "scientific-computing:residual",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:residual"
+          },
+          {
+            "artifact_sha256": "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:e7c3d11973ec92e4:scope",
+            "requirement_id": "scientific-computing:scope",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:scope"
+          },
+          {
+            "artifact_sha256": "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10",
+            "detail": "expected CONTAINS_ALL ('global-pde-solver',) at science.refusals",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "e7c3d11973ec92e47c47e31c9c6a4fe7a3d9d2362091a65d420701c6d4b61e10"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:scientific-computing@1.0",
+            "receipt_id": "evidence:e7c3d11973ec92e4:global-denial",
+            "requirement_id": "scientific-computing:global-denial",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "FAIL",
+            "verifier_id": "domain:global-denial"
+          }
+        ],
+        "hard_failures": [
+          "scientific-computing:inputs",
+          "scientific-computing:connection",
+          "scientific-computing:ricci",
+          "scientific-computing:einstein",
+          "scientific-computing:residual",
+          "scientific-computing:global-denial"
+        ],
+        "pack_id": "scientific-computing",
+        "schema": "casulo.fulfillment-result/1.0",
+        "spec_gap": 0.8,
+        "unknown": [],
+        "unsupported_claims": [],
+        "verdicts": {
+          "scientific-computing:connection": "FAIL",
+          "scientific-computing:einstein": "FAIL",
+          "scientific-computing:global-denial": "FAIL",
+          "scientific-computing:inputs": "FAIL",
+          "scientific-computing:residual": "FAIL",
+          "scientific-computing:ricci": "FAIL",
+          "scientific-computing:scope": "PASS"
+        }
+      },
+      "raw_sha256": "adfda579cd6b29a7624ec37348fcb670337a6f8e2e3f699d92d6ce15dee66309",
+      "structured": true,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "aa6733223d72be4c9902191f7cc9ce3c951cbe54749fd5a9fb2a69a35f7a1323",
+        "ended_monotonic_ns": 12148131863100,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-scientific-tensor:attempt:0",
+        "output_sha256": "adfda579cd6b29a7624ec37348fcb670337a6f8e2e3f699d92d6ce15dee66309",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12112471127800,
+        "stream_events": 249
+      }
+    },
+    {
+      "attempt": 1,
+      "error": "runtime não produziu JSON válido",
+      "raw_sha256": "c376ead59d482d20ae4bc0b9465e2db57b9f4dae41640446b54b5684100b6a87",
+      "structured": false,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "8c8f62cae0513615de848a71426542c8641cc3fe82cd7f00bf79dc58e2c0ec9a",
+        "ended_monotonic_ns": 12259972719200,
+        "external_network_used": false,
+        "finish_reason": "length",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-scientific-tensor:attempt:1",
+        "output_sha256": "c376ead59d482d20ae4bc0b9465e2db57b9f4dae41640446b54b5684100b6a87",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12148133004500,
+        "stream_events": 417
+      }
+    },
+    {
+      "attempt": 2,
+      "error": "runtime não produziu JSON válido",
+      "raw_sha256": "c4002eda93b701aaddc8a4d3d6e643f9bca9e26645e442da10aa8be6eae18edd",
+      "structured": false,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "8c8f62cae0513615de848a71426542c8641cc3fe82cd7f00bf79dc58e2c0ec9a",
+        "ended_monotonic_ns": 12330173715000,
+        "external_network_used": false,
+        "finish_reason": "length",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-scientific-tensor:attempt:2",
+        "output_sha256": "c4002eda93b701aaddc8a4d3d6e643f9bca9e26645e442da10aa8be6eae18edd",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12259973401900,
+        "stream_events": 417
+      }
+    }
+  ],
+  "domain": "scientific-computing",
+  "family_id": "holdout-scientific-tensor",
+  "pack_id": "scientific-computing",
+  "request_sha256": "b83ebd8d58da1a9c1155c865c1c669c26af3acdfedb326c5204ec0072066559a"
+}

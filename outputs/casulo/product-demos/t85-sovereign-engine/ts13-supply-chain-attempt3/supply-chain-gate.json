@@ -1,0 +1,39 @@
+{
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network_default": "OFF",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb_block_devices": "PROHIBITED"
+  },
+  "checks": {
+    "attack_probe": true,
+    "cloud_locked": true,
+    "development_signature": true,
+    "edition_boundaries_distinct": true,
+    "edition_build": true,
+    "junction_ads": true,
+    "license_ledger": true,
+    "private_keys_absent_release": true,
+    "public_private_zero": true,
+    "runtime_launcher_explained": true,
+    "runtime_receipt_tree_exact": true,
+    "runtime_version_matches": true,
+    "tcap_fuzz": true,
+    "zero_p0_p1": true
+  },
+  "gate": "TS13_SUPPLY_CHAIN_PASS",
+  "physical_symlink": {
+    "error": "OSError: [WinError 1314] O cliente não tem o privilégio necessário: 'C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\product-demos\\\\t85-sovereign-engine\\\\ts13-supply-chain-attempt3\\\\path-attacks\\\\base.img' -> 'C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\product-demos\\\\t85-sovereign-engine\\\\ts13-supply-chain-attempt3\\\\path-attacks\\\\base-link.img'",
+    "status": "NOT_EXECUTED_HOST_PRIVILEGE"
+  },
+  "release_manifest_sha256": "f10be0ad2f7022b001e1775ba9e6e91909db48ff1960ac8d85bb51d9f338dfb3",
+  "schema": "casulo.t85-supply-chain-gate/1.0",
+  "skips": [
+    {
+      "counted_as_pass": false,
+      "status": "NOT_EXECUTED_HOST_PRIVILEGE",
+      "test": "physical Windows symlink"
+    }
+  ]
+}

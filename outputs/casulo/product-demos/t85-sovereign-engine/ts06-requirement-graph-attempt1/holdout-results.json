@@ -1,0 +1,110 @@
+[
+  {
+    "case_id": "personal-01",
+    "evidence_plan_hash": "44bb8b501e1333db9263db1254a2ba3292c5734a64b0cb1c0d8925c372ef75ef",
+    "family_id": "personal-state-automation",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "personal-02",
+    "evidence_plan_hash": "30795ef583acad5b974438bd409746a3ee61483c3a8dd33f2054dd8759b47990",
+    "family_id": "personal-state-automation",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "personal-03",
+    "evidence_plan_hash": "b24ea116d02f9b61831f927c8517639c6285f8cd7ffc64ee1e20e78624c4dcff",
+    "family_id": "personal-state-automation",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "data-01",
+    "evidence_plan_hash": "681cace33ab16de3be90e60c09005d36d22f6b3b019a566853183d57e0b0f57c",
+    "family_id": "local-data-processing",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "data-02",
+    "evidence_plan_hash": "f322fb45a46eadefc9bc3664073bbe8388e4be2db3c340eabdec59b57bbaa3a9",
+    "family_id": "local-data-processing",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "data-03",
+    "evidence_plan_hash": "1877fc4c7ab91621026993d8de6bb3889ccae5e5711659fdd3e1847f65fd75c0",
+    "family_id": "local-data-processing",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "interactive-01",
+    "evidence_plan_hash": "0514edc4397c064fd52e7ed8a9899e2590425ba24c3afcee692a2372e7d0e6dc",
+    "family_id": "interactive-application",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "interactive-02",
+    "evidence_plan_hash": "4998899b2c30d7988d401d39dd7cf902d66d2adf7a02397dff6dfd4ab6d1aeb0",
+    "family_id": "interactive-application",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "interactive-03",
+    "evidence_plan_hash": "87e04eb5daa8bf6c6211e8355cbd21144f4732ef80b42820423de755068af1e2",
+    "family_id": "interactive-application",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "technical-01",
+    "evidence_plan_hash": "2e6e96451b84948dbd2addeae8fc55f417b743cea4b40b9a6f57ecd18e1acff7",
+    "family_id": "verifiable-technical-tool",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "technical-02",
+    "evidence_plan_hash": "ce0ddbfdf421e518486406b70b11c8349da141cfe34992b439a380a3b2dc2e02",
+    "family_id": "verifiable-technical-tool",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  },
+  {
+    "case_id": "technical-03",
+    "evidence_plan_hash": "d3e0bd06fd69374e4ae1d5422a5d51b2c8e796d72cc4ebff25d3a50e47cc802a",
+    "family_id": "verifiable-technical-tool",
+    "hard_requirements": 3,
+    "observed_evidence": 0,
+    "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+    "status": "BLOCKED"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "schema": "casulo.t85.gate/1.0",
+  "sprint": "TS0",
+  "gate": "TS0_BASELINE_FROZEN",
+  "status": "PASS",
+  "created_at": "2026-08-14T21:22:00-03:00",
+  "previous_gate": {
+    "path": "product-demos/revolution-closure/rc13-handoff-vbscript-reseal/gate.json",
+    "sha256": "2d2de97b0d0d574a18d99274b9080d212dd159930dc552d821eba98332273c79"
+  },
+  "checks": {
+    "goal_manifest": "23/23 PASS",
+    "baseline_integrity": "PASS_NORMALIZED_LINE_ENDINGS_ONLY",
+    "rc13_preserved": true,
+    "worktree_preserved": true,
+    "matrix_reconciled": true,
+    "disk_budget": "PASS",
+    "downloads": 0,
+    "scientific_benchmarks": 0,
+    "human_proof_executed": false
+  },
+  "artifacts": [
+    {"path":"docs/product/TS_BASELINE_FREEZE.md","sha256":"38a3adc1e39d0b18c1f85bcf33c2b99488809597d04fe1c88e86e05904f8cd3d"},
+    {"path":"docs/product/TS_SOVEREIGNTY_MATRIX.json","sha256":"ccee08d9ba1d816384ec663fe69f1feb48e6e4ae14957135a97063c6dac12ba3"},
+    {"path":"docs/product/TS_RESOURCE_BUDGET.json","sha256":"e73575510f688a490cbeb8c8827c4ef8302b678064dd805a7db488f4790f765c"},
+    {"path":"docs/product/TS_EXECUTION_STATE.md","sha256":"26830b7742ac1ee48b757e924a085f96170eccff7a63f6f3ceb5cd39197954a7"},
+    {"path":"product-demos/t85-sovereign-engine/ts00-baseline-freeze-attempt1/baseline.json","sha256":"fe2efb8e4f340381e5fdbbb4764c66a5fcfbccf6f4ce283e06111162137b6737"}
+  ],
+  "next": "TS1 honest sovereignty baseline"
+}

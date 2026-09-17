@@ -1,0 +1,12 @@
+{
+  "calibration_windows": 2,
+  "campaign_id": "2026-08-07-g5-hwinfo-thermal-recovery-250ms-90c-start70-final5",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "equivalence_gates": 1,
+  "reason": "A clean Eager window lasted 16.99 seconds; runtime-only proportional K replacement added to meet the frozen 20-second minimum.",
+  "schema": "casulo-hwinfo-thermal-recovery-analysis/1.0",
+  "scientific_judgment": "NO_ENERGY_RESULT",
+  "terminal_state": "SUPERSEDED_BEFORE_DEFINITIVE_CAMPAIGN",
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "valid_pairs": 0
+}

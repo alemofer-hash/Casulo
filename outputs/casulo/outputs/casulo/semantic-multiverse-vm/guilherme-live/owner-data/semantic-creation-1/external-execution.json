@@ -1,0 +1,7 @@
+{
+  "operation": "ReadValue",
+  "result": "manifest: memory.read; trace: 'Memory read'; emit: 'Memory value retrieved.'; comportamento científico",
+  "returncode": 0,
+  "stderr": "",
+  "stdout_sha256": "de2bf1a98f52a469b8200dbecd69ff9216d78ac62d37732ebd13bc2cad6a1f02"
+}

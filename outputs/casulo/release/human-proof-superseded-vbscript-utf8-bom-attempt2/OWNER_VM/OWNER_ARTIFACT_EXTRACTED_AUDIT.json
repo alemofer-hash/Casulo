@@ -1,0 +1,88 @@
+{
+  "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\staging-human-proof-attempt3\\OWNER_VM\\casulo-owner-generative-semantic-multiverse.zip",
+  "checks": {
+    "cloud_locked": true,
+    "manifest_exact": true,
+    "no_fake_or_external_api": true,
+    "owner_profile": true,
+    "safe_member_paths": true,
+    "semantic_multiverse": true,
+    "weights_not_embedded": true
+  },
+  "destination": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\staging-human-proof-attempt3\\OWNER_VM\\owner-artifact-extracted-audit",
+  "files": [
+    {
+      "bytes": 3070,
+      "path": "OWNER_ARTIFACT.json",
+      "sha256": "f76b6d51327ab9aa1674bf02c6c7f826d3c535565696777d07917dfe37f26a71"
+    },
+    {
+      "bytes": 1215,
+      "path": "casulo_owner/__init__.py",
+      "sha256": "c733117c2a433142de3537e77b6b2859fa0cbf66f58f080fb6828271f3c7dfb2"
+    },
+    {
+      "bytes": 2180,
+      "path": "casulo_owner/assets/generative-candidate.json",
+      "sha256": "42b2c54788298c10c781695d48f9f7867f5cb25e6407f90dcf0ff45466c70562"
+    },
+    {
+      "bytes": 6887,
+      "path": "casulo_owner/dialogue_core.py",
+      "sha256": "c37d9d2782df24881f3259f36441f46bdd558a59440d400c8f97bc84ebb91fab"
+    },
+    {
+      "bytes": 14228,
+      "path": "casulo_owner/einstein_solver_kernel.py",
+      "sha256": "609939f06313978c1b7768c84644d64918af2380b717faf2c047736e0fa9516d"
+    },
+    {
+      "bytes": 18124,
+      "path": "casulo_owner/generative_agent_probe.py",
+      "sha256": "872a3cd6a26b3031634d39b2fbccef3a035cb2bb792df779a487e47c630fcada"
+    },
+    {
+      "bytes": 11750,
+      "path": "casulo_owner/generative_engine.py",
+      "sha256": "ad0de66fe57b77bc6250ec5d460bbb75f3fd1c70ed4ef7050cc09fb7f8c3d48a"
+    },
+    {
+      "bytes": 32633,
+      "path": "casulo_owner/generative_forge.py",
+      "sha256": "21d25f76e882db891a057d6d9e1dcb86fddd7e1314b3bf1929888b02f4ecf11d"
+    },
+    {
+      "bytes": 19725,
+      "path": "casulo_owner/generative_model.py",
+      "sha256": "5a9c6cb26374a4cea4fa8c14b217f72ed6b2197473633e527d903782c7cc3fd7"
+    },
+    {
+      "bytes": 8284,
+      "path": "casulo_owner/inspection.py",
+      "sha256": "3bf669fa9feed943c2df1c7440132557e43a4ba8c3d69b787f811db5fc6678f5"
+    },
+    {
+      "bytes": 17399,
+      "path": "casulo_owner/local_model_runtime.py",
+      "sha256": "08883bc84b4381e549f53df6ed774bc431dd227cbe666827f3f94a80f457b060"
+    },
+    {
+      "bytes": 5442,
+      "path": "casulo_owner/scientific_solver.py",
+      "sha256": "801177d7a9439398ddc96bd97d4550d50e497a2cd1d2f2e4926fd5daf109527f"
+    },
+    {
+      "bytes": 15509,
+      "path": "casulo_owner/semantic_multiverse.py",
+      "sha256": "5589cd6841e67b94805b08a2a2c21382392a929cfe54d0001f33b0e3b7b60d81"
+    },
+    {
+      "bytes": 12937,
+      "path": "casulo_owner/verifier_repair.py",
+      "sha256": "bfc4ac03a9af7e5543a99a61856c1005db3f7e525a0353e73aad0c27bebeeaa3"
+    }
+  ],
+  "findings": [],
+  "pass": true,
+  "schema": "casulo-owner-extracted-artifact-audit/1.0"
+}

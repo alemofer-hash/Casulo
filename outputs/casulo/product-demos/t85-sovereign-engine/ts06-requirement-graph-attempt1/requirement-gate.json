@@ -1,0 +1,354 @@
+{
+  "FCR": 0.0,
+  "all_hard_approved_or_blocked": true,
+  "architecture_repair": {
+    "T_fulfillment": {
+      "kind": "ok",
+      "value": "FULFILLED"
+    },
+    "after_candidate_sha256": "cf937dfbfd45cae1e681cf413cd500832c253c540602b5d11448b27f973cb749",
+    "before_candidate_sha256": "0f81c04879d8159ba44730356406a1bd801027665e5522cae3336f1a85a623dc",
+    "before_diagnostics": [
+      {
+        "code": "FUL200",
+        "expected": "127.0.0.1",
+        "message": "expected EQUALS '127.0.0.1' at service.bind",
+        "observed": "0.0.0.0",
+        "path": [
+          "service",
+          "bind"
+        ],
+        "rule_id": "loopback"
+      },
+      {
+        "code": "FUL200",
+        "expected": true,
+        "message": "expected EQUALS True at service.standalone",
+        "observed": null,
+        "path": [
+          "service",
+          "standalone"
+        ],
+        "rule_id": "standalone"
+      },
+      {
+        "code": "FUL200",
+        "expected": 1.0,
+        "message": "expected EQUALS 1.0 at service.round_trip_fidelity",
+        "observed": null,
+        "path": [
+          "service",
+          "round_trip_fidelity"
+        ],
+        "rule_id": "roundtrip"
+      }
+    ],
+    "classification": "ARCHITECTURE",
+    "effects_expanded": false,
+    "receipt_hash": "b89cad8a3d514727c6401beaa12170be3524d9570f1de11167ab53706fd1677b"
+  },
+  "bounded_passes": 6,
+  "conformance": [
+    {
+      "candidate_sha256": "c64271bb1c4789c9798a14cfd8bd0960a89a0d8dc93f9b633b591cdb3f29f009",
+      "evidence_count": 7,
+      "evidence_plan_hash": "dc86c4f04d5329dcf52df9ae024ffb4b4414dea2bb8eb340702f454dcc7a4d5c",
+      "foreign_acceptance_consumed": false,
+      "fulfillment_receipt": {
+        "canonical_input_hash": "fb1554a3c015f684bc3f7828392a3e34278812f185d1698afa0007a928c94874",
+        "canonical_output_hash": "5ad5721cea0cda271a9b13108d2059c5b168b1ac5a712d17da5a104b36cea3e8",
+        "decision_id": "decision:5ad5721cea0cda271a9b1310",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "35b47fad208905d26486b87dac6465c9850e6494c084833a23c8fd909cc265d3",
+        "receipt_hash": "de6a32ba543ae5217ceda24b58e6a9d7fa074f1773f9465b1d24db6814b3d7a1",
+        "result": "ok",
+        "runtime_function": "owner.critical.fulfillment::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "creation:scientific-computing",
+        "surface_id": "hard_requirement_fulfillment",
+        "t_ir_hash": "0884e393507fafbfe867c449df867817c2af0271fcd2a65b07aef4aa9f527197",
+        "t_source_hash": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd",
+        "tcap_hash": "ce5e4c4585a7c3de745ed012f7a9052b768bcaa8cb1306ba192d2139d613510a"
+      },
+      "pack_id": "scientific-computing",
+      "status": "PASS"
+    },
+    {
+      "candidate_sha256": "b14320876f91fe5f04f196a9433d894affb7b2af7fb8c209ec49693e93a4424a",
+      "evidence_count": 4,
+      "evidence_plan_hash": "041a0c996b495398487fe175e141e32e9805f8f45d0a6bd528be189b6c079483",
+      "foreign_acceptance_consumed": false,
+      "fulfillment_receipt": {
+        "canonical_input_hash": "3bfeccce12d6377c174b5e896da9dac912298389c58a9b505e6b34491b0d2a37",
+        "canonical_output_hash": "5ad5721cea0cda271a9b13108d2059c5b168b1ac5a712d17da5a104b36cea3e8",
+        "decision_id": "decision:5ad5721cea0cda271a9b1310",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "3bdb545847b2e1448ee47a9b05de2947e3358f2f8ef33b900f6f15b10cf3d28c",
+        "receipt_hash": "8c9870e4caedeb1b5220154b3025177854c9d9efc1756ae9cf9e82b39a731a4d",
+        "result": "ok",
+        "runtime_function": "owner.critical.fulfillment::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "creation:administrative-workflow",
+        "surface_id": "hard_requirement_fulfillment",
+        "t_ir_hash": "0884e393507fafbfe867c449df867817c2af0271fcd2a65b07aef4aa9f527197",
+        "t_source_hash": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd",
+        "tcap_hash": "ce5e4c4585a7c3de745ed012f7a9052b768bcaa8cb1306ba192d2139d613510a"
+      },
+      "pack_id": "administrative-workflow",
+      "status": "PASS"
+    },
+    {
+      "candidate_sha256": "eced802a7c7aa017cb354315551392852af9f9f364b80072f490a3b5ddd27a20",
+      "evidence_count": 4,
+      "evidence_plan_hash": "2921418e5135aca4bc851a16e0e6b9b2fe355e4a0b6d96360b971629ce3ab317",
+      "foreign_acceptance_consumed": false,
+      "fulfillment_receipt": {
+        "canonical_input_hash": "07d056bde2ce87995f74c70191750b68de4e77ac39912aae37acb3f3f64a1304",
+        "canonical_output_hash": "5ad5721cea0cda271a9b13108d2059c5b168b1ac5a712d17da5a104b36cea3e8",
+        "decision_id": "decision:5ad5721cea0cda271a9b1310",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "4e041c95a93b3af7275d8954c4d4b7deb8f1b90766871e2020a7934e55c1ddc7",
+        "receipt_hash": "e5bacc18e17cc9b5826411ced8e98b59ec44188a5a924ba145e9fb678b2f7172",
+        "result": "ok",
+        "runtime_function": "owner.critical.fulfillment::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "creation:stream-processing",
+        "surface_id": "hard_requirement_fulfillment",
+        "t_ir_hash": "0884e393507fafbfe867c449df867817c2af0271fcd2a65b07aef4aa9f527197",
+        "t_source_hash": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd",
+        "tcap_hash": "ce5e4c4585a7c3de745ed012f7a9052b768bcaa8cb1306ba192d2139d613510a"
+      },
+      "pack_id": "stream-processing",
+      "status": "PASS"
+    },
+    {
+      "candidate_sha256": "80ed8a86b04a468a4f8a4994472f4cfa18dea5d5687c46f0a11cac0fd0662872",
+      "evidence_count": 4,
+      "evidence_plan_hash": "bbabc2f1e01b4a2cd93a226df416ef07d403b293004473ae8564ab1391cbf1b1",
+      "foreign_acceptance_consumed": false,
+      "fulfillment_receipt": {
+        "canonical_input_hash": "81fc0c7faf803aaecb328c68cfba94f94d5c84fe8cafc48d50717a0b883e8d17",
+        "canonical_output_hash": "5ad5721cea0cda271a9b13108d2059c5b168b1ac5a712d17da5a104b36cea3e8",
+        "decision_id": "decision:5ad5721cea0cda271a9b1310",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "40853a7ee3ef7887f7320b4b535aed6e18679931ea32329c2d58f6b71922ea57",
+        "receipt_hash": "a9cf9801e76487bb86059258c7624b1fa0b857f262a61812711d55cb99d78dcc",
+        "result": "ok",
+        "runtime_function": "owner.critical.fulfillment::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "creation:interactive-creative-tool",
+        "surface_id": "hard_requirement_fulfillment",
+        "t_ir_hash": "0884e393507fafbfe867c449df867817c2af0271fcd2a65b07aef4aa9f527197",
+        "t_source_hash": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd",
+        "tcap_hash": "ce5e4c4585a7c3de745ed012f7a9052b768bcaa8cb1306ba192d2139d613510a"
+      },
+      "pack_id": "interactive-creative-tool",
+      "status": "PASS"
+    },
+    {
+      "candidate_sha256": "cf937dfbfd45cae1e681cf413cd500832c253c540602b5d11448b27f973cb749",
+      "evidence_count": 4,
+      "evidence_plan_hash": "43ac5eebf71f53c7f01384966e526eeeb0ffa5776efc70f9f2371981412403fc",
+      "foreign_acceptance_consumed": false,
+      "fulfillment_receipt": {
+        "canonical_input_hash": "8f1ec1c88fee7502b9ffd32b5a359b56be1b35c040df69bae29490da23b4eabf",
+        "canonical_output_hash": "5ad5721cea0cda271a9b13108d2059c5b168b1ac5a712d17da5a104b36cea3e8",
+        "decision_id": "decision:5ad5721cea0cda271a9b1310",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "b518626bb3559113067ae2fc7bdeb12a5779126e87a4584e6b1a1d59dcd2ddd8",
+        "receipt_hash": "942705d597956f490c1fe7006c19e109890e6fd8363afa03aafb01f3de0022b3",
+        "result": "ok",
+        "runtime_function": "owner.critical.fulfillment::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "creation:local-software-service",
+        "surface_id": "hard_requirement_fulfillment",
+        "t_ir_hash": "0884e393507fafbfe867c449df867817c2af0271fcd2a65b07aef4aa9f527197",
+        "t_source_hash": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd",
+        "tcap_hash": "ce5e4c4585a7c3de745ed012f7a9052b768bcaa8cb1306ba192d2139d613510a"
+      },
+      "pack_id": "local-software-service",
+      "status": "PASS"
+    }
+  ],
+  "einstein_regression": {
+    "authorized_claim": "avaliador tensorial local 4D parametrizavel; Minkowski no vacuo validado",
+    "bounded_kernel": {
+      "candidate_sha256": "c64271bb1c4789c9798a14cfd8bd0960a89a0d8dc93f9b633b591cdb3f29f009",
+      "evidence_count": 7,
+      "evidence_plan_hash": "dc86c4f04d5329dcf52df9ae024ffb4b4414dea2bb8eb340702f454dcc7a4d5c",
+      "foreign_acceptance_consumed": false,
+      "fulfillment_receipt": {
+        "canonical_input_hash": "fb1554a3c015f684bc3f7828392a3e34278812f185d1698afa0007a928c94874",
+        "canonical_output_hash": "5ad5721cea0cda271a9b13108d2059c5b168b1ac5a712d17da5a104b36cea3e8",
+        "decision_id": "decision:5ad5721cea0cda271a9b1310",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "35b47fad208905d26486b87dac6465c9850e6494c084833a23c8fd909cc265d3",
+        "receipt_hash": "de6a32ba543ae5217ceda24b58e6a9d7fa074f1773f9465b1d24db6814b3d7a1",
+        "result": "ok",
+        "runtime_function": "owner.critical.fulfillment::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "creation:scientific-computing",
+        "surface_id": "hard_requirement_fulfillment",
+        "t_ir_hash": "0884e393507fafbfe867c449df867817c2af0271fcd2a65b07aef4aa9f527197",
+        "t_source_hash": "181e0fd910795ec2c569e280e382ff526c32de1b1a4ac81100c20e89d7e9b5dd",
+        "tcap_hash": "ce5e4c4585a7c3de745ed012f7a9052b768bcaa8cb1306ba192d2139d613510a"
+      },
+      "pack_id": "scientific-computing",
+      "status": "PASS"
+    },
+    "forbidden_claim": "solver geral das PDEs de Einstein",
+    "generic_text_candidate": "BLOCKED:T denied critical decision: hard_requirement_not_pass"
+  },
+  "false_hard_completion": 0,
+  "families": 4,
+  "foreign_acceptance_consumed": false,
+  "gate": "TS6_T_REQUIREMENT_GRAPH_PASS",
+  "generator_self_report_authority": false,
+  "holdout_results": [
+    {
+      "case_id": "personal-01",
+      "evidence_plan_hash": "44bb8b501e1333db9263db1254a2ba3292c5734a64b0cb1c0d8925c372ef75ef",
+      "family_id": "personal-state-automation",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "personal-02",
+      "evidence_plan_hash": "30795ef583acad5b974438bd409746a3ee61483c3a8dd33f2054dd8759b47990",
+      "family_id": "personal-state-automation",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "personal-03",
+      "evidence_plan_hash": "b24ea116d02f9b61831f927c8517639c6285f8cd7ffc64ee1e20e78624c4dcff",
+      "family_id": "personal-state-automation",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "data-01",
+      "evidence_plan_hash": "681cace33ab16de3be90e60c09005d36d22f6b3b019a566853183d57e0b0f57c",
+      "family_id": "local-data-processing",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "data-02",
+      "evidence_plan_hash": "f322fb45a46eadefc9bc3664073bbe8388e4be2db3c340eabdec59b57bbaa3a9",
+      "family_id": "local-data-processing",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "data-03",
+      "evidence_plan_hash": "1877fc4c7ab91621026993d8de6bb3889ccae5e5711659fdd3e1847f65fd75c0",
+      "family_id": "local-data-processing",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "interactive-01",
+      "evidence_plan_hash": "0514edc4397c064fd52e7ed8a9899e2590425ba24c3afcee692a2372e7d0e6dc",
+      "family_id": "interactive-application",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "interactive-02",
+      "evidence_plan_hash": "4998899b2c30d7988d401d39dd7cf902d66d2adf7a02397dff6dfd4ab6d1aeb0",
+      "family_id": "interactive-application",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "interactive-03",
+      "evidence_plan_hash": "87e04eb5daa8bf6c6211e8355cbd21144f4732ef80b42820423de755068af1e2",
+      "family_id": "interactive-application",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "technical-01",
+      "evidence_plan_hash": "2e6e96451b84948dbd2addeae8fc55f417b743cea4b40b9a6f57ecd18e1acff7",
+      "family_id": "verifiable-technical-tool",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "technical-02",
+      "evidence_plan_hash": "ce0ddbfdf421e518486406b70b11c8349da141cfe34992b439a380a3b2dc2e02",
+      "family_id": "verifiable-technical-tool",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    },
+    {
+      "case_id": "technical-03",
+      "evidence_plan_hash": "d3e0bd06fd69374e4ae1d5422a5d51b2c8e796d72cc4ebff25d3a50e47cc802a",
+      "family_id": "verifiable-technical-tool",
+      "hard_requirements": 3,
+      "observed_evidence": 0,
+      "reason": "T denied critical decision: hard_evidence_cardinality_mismatch",
+      "status": "BLOCKED"
+    }
+  ],
+  "holdout_suite_sha256": "4dbf4886d89858cd315b369a58cb42901210385676865bf8f0a7a1dc61a24eef",
+  "holdouts": 12,
+  "holdouts_blocked_honestly": 12,
+  "locks": {
+    "cloud": "RELEASE_LOCKED",
+    "network": "OFF",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb": "PROHIBITED"
+  },
+  "schema": "casulo.t85.requirement-gate/1.0",
+  "substring_hard_oracle": false,
+  "tcap_hash": "ce5e4c4585a7c3de745ed012f7a9052b768bcaa8cb1306ba192d2139d613510a"
+}

@@ -1,0 +1,32 @@
+{
+  "case_count": 1024,
+  "compilation_seconds": 4.333639700000276,
+  "contract": {
+    "batch_size": 1024,
+    "dataset_hash": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+    "epochs": 400,
+    "expected_optimizer_steps": 400,
+    "expected_parameter_writes": 32400,
+    "expected_record_visits": 409600,
+    "general_ir_sha256": "4162fc673c71e1b777ec57f7924ed756f5e9a9771ccb5624d38d8cd2cf6e659f",
+    "graph_sha256": "67ee0d7e20c8c955f2c129f1193d020b4aac0953fd0c864ff9f25d0d728a2ec3",
+    "hidden_features": 8,
+    "initialization_bundle_hash": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+    "input_features": 8,
+    "learning_rate": 0.018,
+    "optimizer": "sgd",
+    "output_features": 1,
+    "precision": "float64",
+    "records_per_epoch": 1024,
+    "scientific_eligible": true,
+    "work_unit_schema": "casulo-flood-work-unit/1.0",
+    "workload_class": "SCIENTIFIC_WORK_UNIT"
+  },
+  "executable": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\full-worker\\2026-08-08-flood-full-worker-v1-r2\\worker\\tcap_full_worker.exe",
+  "executable_sha256": "687d61ce424b84c066211f41b45bd8ea5d64270654a8eb1ad564245962a0777b",
+  "implementation": "t-general-ir-tcap-full/1.0",
+  "source": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\full-worker\\2026-08-08-flood-full-worker-v1-r2\\worker\\tcap_full_worker.rs",
+  "source_sha256": "3428d27114e25ddb0202c99036fbf07de3a2e9b748b4778f2b6197bd01428dde",
+  "tcap": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\full-worker\\2026-08-08-flood-full-worker-v1-r2\\artifact\\FloodSurrogate.full.tcap",
+  "tcap_sha256": "67e204e57ee2ee84e3bccffcf786c39cff28ed0e11d174dc00402d1e481a4eff"
+}

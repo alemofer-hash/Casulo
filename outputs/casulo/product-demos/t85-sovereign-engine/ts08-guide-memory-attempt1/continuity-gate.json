@@ -1,0 +1,87 @@
+{
+  "checks": {
+    "ambiguity_explicit_per_project": true,
+    "compaction_non_destructive": true,
+    "conflict_explicit_before_human_resolution": true,
+    "crash_reboot_recovery": true,
+    "delete_requires_consent": true,
+    "dpapi_encrypted_at_rest": true,
+    "five_hundred_turns": true,
+    "hard_constraints_preserved_100_percent": true,
+    "journal_chain": true,
+    "project_bleed_zero": true,
+    "single_writer": true,
+    "t_receipts_complete": true,
+    "three_projects": true,
+    "trainable_default_false": true
+  },
+  "compaction": {
+    "canonical_events_deleted": 0,
+    "events_preserved": 515,
+    "journal_head_hash": "c90fe4a44eeecffa2217aa3e076394b180a0a4484e083042c5118918e80db66e",
+    "path": "memory/compactions/ts8-500-turns.json.dpapi",
+    "receipt_id": "ts8-500-turns",
+    "schema": "casulo.memory-compaction-receipt/1.0",
+    "snapshot_sha256": "740bf33742af12d8603b34ec5f78bb5af59258af686eafef22d8dfc5b877f3cb"
+  },
+  "continuity_events": 515,
+  "final_reboot_equal": true,
+  "gate": "TS8_GUIDE_LIVING_MEMORY_PASS",
+  "hard_constraint_loss": 0,
+  "human_chemistry": "NOT_EXECUTED",
+  "living_memory_events": 515,
+  "locks": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network": "OFF",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb": "PROHIBITED"
+  },
+  "memory_export_sha256": "740bf33742af12d8603b34ec5f78bb5af59258af686eafef22d8dfc5b877f3cb",
+  "normal_context_decisions": {
+    "ASK_HUMAN": 0,
+    "SELECT": 500
+  },
+  "physical_voice": "NOT_EXECUTED",
+  "project_bleed": 0,
+  "projects": [
+    "flood-rs",
+    "einstein-local",
+    "voice-studio"
+  ],
+  "reboots": [
+    {
+      "chain_valid": true,
+      "event_count_equal": true,
+      "state_equal": true,
+      "turn": 100
+    },
+    {
+      "chain_valid": true,
+      "event_count_equal": true,
+      "state_equal": true,
+      "turn": 200
+    },
+    {
+      "chain_valid": true,
+      "event_count_equal": true,
+      "state_equal": true,
+      "turn": 300
+    },
+    {
+      "chain_valid": true,
+      "event_count_equal": true,
+      "state_equal": true,
+      "turn": 400
+    }
+  ],
+  "recall_status": {
+    "einstein-local": "AMBIGUOUS",
+    "flood-rs": "AMBIGUOUS",
+    "voice-studio": "AMBIGUOUS"
+  },
+  "schema": "casulo.t85-continuity-gate/1.0",
+  "synthetic_turns": 500,
+  "t_decision_receipts": 501,
+  "t_receipt_chain_head": "a8fc31f06238d9ee9f81cbac479a9e7847c0877ce7c43cedd3f7d40ef3daab2b"
+}

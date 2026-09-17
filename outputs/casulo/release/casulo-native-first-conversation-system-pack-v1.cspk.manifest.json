@@ -1,0 +1,37 @@
+{
+  "bytes": 14530,
+  "entries": [
+    {
+      "bytes": 12872,
+      "kind": 1,
+      "name": "BOOTSTRAP_TCAP",
+      "offset": 208,
+      "sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa",
+      "source": "release/FloodSurrogate.tcap"
+    },
+    {
+      "bytes": 1016,
+      "kind": 2,
+      "name": "UX_CONTRACT",
+      "offset": 13080,
+      "sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9",
+      "source": "schemas/product/hosted-native-ux-contract-v1.json"
+    },
+    {
+      "bytes": 434,
+      "kind": 3,
+      "name": "GUIDE_T_SOURCE",
+      "offset": 14096,
+      "sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565",
+      "source": "examples/t/revolution/agent_logic.t"
+    }
+  ],
+  "file": "release/casulo-native-first-conversation-system-pack-v1.cspk",
+  "guide_t_source_execution": "NOT_EXECUTED",
+  "model_embedded": false,
+  "network": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-system-pack/1.0",
+  "sha256": "9af383a88b06d4365cbf526e55243cad4ff0b8e1ba173e3869d28a35ee9c344a",
+  "t_execution": "BOOTSTRAP_TCAP_ONLY"
+}

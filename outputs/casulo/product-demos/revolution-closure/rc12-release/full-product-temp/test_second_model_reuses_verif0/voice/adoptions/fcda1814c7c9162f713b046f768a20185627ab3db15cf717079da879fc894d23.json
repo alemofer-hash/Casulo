@@ -1,0 +1,17 @@
+{
+  "build_performed": false,
+  "consent_recorded": true,
+  "created_at": "2026-08-14T21:45:50.992762Z",
+  "enabled": false,
+  "engine": "whisper.cpp",
+  "engine_commit": "306c88f4d1286aec1bf96e544632897886af5501",
+  "engine_license": "MIT",
+  "model": "second.bin",
+  "model_downloaded_this_run": true,
+  "model_license": "MIT",
+  "model_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\full-product-temp\\test_second_model_reuses_verif0\\voice\\models\\fcda1814c7c9162f713b046f768a20185627ab3db15cf717079da879fc894d23-second.bin",
+  "model_sha256": "fcda1814c7c9162f713b046f768a20185627ab3db15cf717079da879fc894d23",
+  "model_size_bytes": 12,
+  "schema": "casulo-voice-adoption/1.0",
+  "source_path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\full-product-temp\\test_second_model_reuses_verif0\\voice\\sources\\whisper.cpp\\306c88f4d1286aec1bf96e544632897886af5501\\source"
+}

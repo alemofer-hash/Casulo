@@ -1,0 +1,67 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "trace",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 1,
+      "input_type": "TextualTrace",
+      "name": "LogConversations",
+      "nodes": [
+        {
+          "defines": [
+            "value"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "LogConversations/input/value",
+          "kind": "input",
+          "label": "value",
+          "operation": "LogConversations",
+          "path": "input.value",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "LogConversations/instruction/root.0/emit",
+          "kind": "emit",
+          "label": "\"LogConversations: Record and structure research conversations to track hypothesis development and evidence evaluation.\"",
+          "operation": "LogConversations",
+          "path": "root.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [],
+  "version": "metamorfose-graph/1.0"
+}

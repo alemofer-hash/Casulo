@@ -1,0 +1,15 @@
+{
+  "branch": "product/semantic-multiverse",
+  "captured_utc": "2026-08-14T19:39:42.107943+00:00",
+  "collision": false,
+  "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "destructive_git_command_used": false,
+  "new_worktree_created": false,
+  "preexisting_changes_preserved": true,
+  "schema": "casulo.revolution-closure/1.0/worktree-manifest",
+  "status_all_lines": 16513,
+  "status_all_sha256": "ff4ba7a1bd8452c459196d22f6d57097747c28b4ca91d7e6a778d03bdc24cf24",
+  "status_short_lines": 196,
+  "status_short_sha256": "ef8e51218e11e9d19aa842c9f7aa8da3d31e0fc59dc0bc39fe1882dd47495223",
+  "worktrees_sha256": "c51ceb2d9f93006d9183bee1d477e50f254a556515b5ee4349b76a7e82988912"
+}

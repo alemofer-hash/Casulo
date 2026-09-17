@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "detected_utc": "2026-09-17T21:15:15.8224174Z",
+  "inventory_files": 189257,
+  "missing_files": 349,
+  "missing_bytes": 1661463,
+  "new_files_excluding_stage0": 0,
+  "git_mutation_started": false,
+  "gate": "BLOCKED_UNEXPLAINED_FILESYSTEM_DRIFT"
+}

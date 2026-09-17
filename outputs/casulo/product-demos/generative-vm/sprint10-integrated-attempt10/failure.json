@@ -1,0 +1,19 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "attempt": "sprint10-integrated-attempt10",
+  "gate": "GENERATIVE_VM_HANDOFF_SCENARIO_FAIL",
+  "failed_before_materialization": true,
+  "failed_operation": "bounded-revision-candidates",
+  "observed": {
+    "project_units": 4,
+    "project_tests": 3,
+    "forge_preflight_passed": true,
+    "real_verifier_attempt_0_present": true,
+    "revision_candidate_budget": 2,
+    "revision_candidates_rejected": 2,
+    "rejected_candidate_applied": false
+  },
+  "classification": "REVISION_CANDIDATE_BUDGET_EXHAUSTED",
+  "preservation": "VM, overlay, neural project checkpoint and verifier artifacts retained",
+  "scientific_benchmark_started": false
+}

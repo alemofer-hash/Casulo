@@ -1,0 +1,54 @@
+{
+  "schema": "casulo-generative-candidate/1.0",
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "status": "NOT_ADOPTED_EXPLICIT_CONSENT_REQUIRED",
+  "selected_for": "first-owner-generative-vm",
+  "model": {
+    "provider": "Qwen",
+    "repository": "Qwen/Qwen3-4B-GGUF",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "file": "Qwen3-4B-Q4_K_M.gguf",
+    "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf?download=true",
+    "bytes": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "license": "Apache-2.0",
+    "parameters": "4B",
+    "quantization": "Q4_K_M",
+    "locale_evidence": ["Portuguese", "100+ languages and dialects"],
+    "roles": ["pt-BR dialogue", "planning", "code synthesis", "tool use"]
+  },
+  "runtime": {
+    "provider": "ggml-org",
+    "repository": "ggml-org/llama.cpp",
+    "tag": "b10362",
+    "commit": "4801e3c567d5131dd41b387df5f2d4b1370d92be",
+    "asset": "llama-b10362-bin-win-cpu-x64.zip",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10362/llama-b10362-bin-win-cpu-x64.zip",
+    "bytes": 18426883,
+    "sha256": "a9d95d26cf00664f2902f73cb0fd9b167a3a1f252294bb2f8b236305f57d6363",
+    "license": "MIT",
+    "max_unpacked_bytes": 268435456,
+    "required_executable": "llama-server.exe"
+  },
+  "sampling_policies": {
+    "dialogue": "casulo-sampling-dialogue-v1",
+    "planning": "casulo-sampling-planning-v1",
+    "code": "casulo-sampling-code-v1",
+    "fixed_seed_allowed_only_for_debug": true
+  },
+  "storage": {
+    "minimum_reserve_bytes": 21474836480,
+    "projected_adoption_peak_bytes": 5309859734,
+    "cache_is_owner_private": true,
+    "duplicate_into_guest": false
+  },
+  "network_required_after_install": false,
+  "commercial_ai_api_required": false,
+  "training_with_user_content": false,
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+    "https://huggingface.co/Qwen/Qwen3-4B-GGUF/blob/bc640142c66e1fdd12af0bd68f40445458f3869b/LICENSE",
+    "https://qwenlm.github.io/blog/qwen3/",
+    "https://github.com/ggml-org/llama.cpp/releases/tag/b10362"
+  ]
+}

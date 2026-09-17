@@ -1,0 +1,94 @@
+{
+  "canonical_sha256": "da9849aac43201efaa1aaa8e5807f61f4ca86e6f619fc55b0ccef2c2fe23c34a",
+  "confirmation_event_ids": [],
+  "creation_id": "creation:arc-neural-smoke",
+  "gaps": [],
+  "hypotheses": [
+    {
+      "confidence": 0.85,
+      "consequences": [
+        "O agente deve analisar as duas propostas para identificar diferenças e conflitos.",
+        "A confirmação humana é necessária antes de qualquer decisão que envolva alterações reais."
+      ],
+      "distinguishing_choice": "comparar_proposals",
+      "hypothesis_id": "hyp:06733a6583275935:1",
+      "interpretation": "O agente deve ser programado para comparar duas propostas de arquitetura, identificar conflitos entre elas e solicitar a aprovação humana antes de qualquer ação que implique alterações reais.",
+      "supporting_observation_ids": [
+        "obs:06733a6583275935:1",
+        "obs:06733a6583275935:2"
+      ]
+    },
+    {
+      "confidence": 0.8,
+      "consequences": [
+        "As propostas devem ser apresentadas para análise humana.",
+        "O conflito principal deve ser identificado e explicado antes da tomada de decisão."
+      ],
+      "distinguishing_choice": "present_proposals",
+      "hypothesis_id": "hyp:06733a6583275935:2",
+      "interpretation": "O agente deve ser configurado para apresentar as duas propostas de arquitetura, explicar os conflitos principais entre elas e solicitar a autorização humana antes de qualquer ação que resulte em alterações reais.",
+      "supporting_observation_ids": [
+        "obs:06733a6583275935:1",
+        "obs:06733a6583275935:2"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "affected_paths": [
+        [
+          "compare_proposals"
+        ],
+        [
+          "explain_conflicts"
+        ],
+        [
+          "no_real_changes_without_human_confirmation"
+        ]
+      ],
+      "confidence": 0.95,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:06733a6583275935:1",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "Crie um agente local que compare duas propostas de arquitetura, explique conflitos e nunca execute alterações reais sem confirmação humana.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    },
+    {
+      "affected_paths": [
+        [
+          "present_proposals"
+        ],
+        [
+          "identify_main_conflict"
+        ],
+        [
+          "request_human_confirmation_before_action"
+        ]
+      ],
+      "confidence": 0.9,
+      "evidence_kind": "EXPLICIT",
+      "observation_id": "obs:06733a6583275935:2",
+      "source_event_ids": [
+        "automated:arc-neural-contract-smoke"
+      ],
+      "statement": "A resposta deve apresentar as duas propostas, o conflito principal e pedir confirmação antes de agir.",
+      "strength": "HARD",
+      "verifier_ids": [
+        "verifier:acceptance",
+        "verifier:human-review"
+      ]
+    }
+  ],
+  "schema": "casulo.intent-twin/1.0",
+  "selected_hypothesis_id": "hyp:06733a6583275935:1",
+  "stakes": "MATERIAL",
+  "summary": "O pedido humano deseja que um agente local compare duas propostas de arquitetura, explique conflitos e não execute alterações reais sem confirmação humana. O comportamento observável desejado é apresentar as duas propostas, identificar o conflito principal e pedir confirmação antes de agir. O contexto determinístico da interface é 'CREATION'.",
+  "task_kind": "CREATION",
+  "twin_id": "intent-twin:06733a6583275935"
+}

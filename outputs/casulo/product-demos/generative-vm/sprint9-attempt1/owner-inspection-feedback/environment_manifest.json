@@ -1,0 +1,11 @@
+{
+  "base_sha256": "e7814f47cfc663b2a3357da0ec956ff16926bacdee4a277386a9c58f7e3b5cb3",
+  "cloud": "RELEASE_LOCKED",
+  "external_media": "NOT_IN_USE",
+  "g7_evidence_sha256": "da1dee120eb10539ada1435e7cf38c62a21d4c87ce21dec701969e5320cae604",
+  "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "network": "denied",
+  "raw_audio_persisted": false,
+  "secrets_included": false,
+  "vm_profile": "casulo-owner-generative-v1"
+}

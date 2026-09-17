@@ -1,0 +1,173 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "owner.multiverse.lifecycle_policy"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "action"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "ACTIVATE"
+                }
+              },
+              "else": [
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "action"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "HIBERNATE"
+                    }
+                  },
+                  "else": [
+                    {
+                      "op": "return_error",
+                      "value": {
+                        "op": "const",
+                        "value": "unknown_lifecycle_action"
+                      }
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "condition": {
+                        "op": "path",
+                        "path": [
+                          "can_hibernate"
+                        ],
+                        "root": "input"
+                      },
+                      "error": "lease_or_residency_active",
+                      "op": "require"
+                    },
+                    {
+                      "condition": {
+                        "op": "path",
+                        "path": [
+                          "sufficient_state_valid"
+                        ],
+                        "root": "input"
+                      },
+                      "error": "sufficient_state_invalid",
+                      "op": "require"
+                    },
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "HIBERNATE"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "trusted_route"
+                    ],
+                    "root": "input"
+                  },
+                  "error": "route_untrusted",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "bundle_valid"
+                    ],
+                    "root": "input"
+                  },
+                  "error": "bundle_invalid",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "capability_safe"
+                    ],
+                    "root": "input"
+                  },
+                  "error": "capability_amplification",
+                  "op": "require"
+                },
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "ACTIVATE"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "LifecycleInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.multiverse.lifecycle_policy"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

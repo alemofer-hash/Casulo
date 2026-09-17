@@ -1,0 +1,36 @@
+{
+  "capabilities": [
+    "memory.read"
+  ],
+  "content": {
+    "behavior": {
+      "autonomy": {
+        "description": "O avaliador opera com autonomia, processando e analisando as entradas fornecidas pelo usuário",
+        "type": "active"
+      }
+    },
+    "identity": {
+      "purpose": {
+        "description": "Avalia equações de campo gravitacional de Einstein com base em dados fornecidos pelo usuário",
+        "type": "scientific_evaluator"
+      }
+    },
+    "interface": {
+      "input": {
+        "description": "Recebe condições do problema como entrada para análise",
+        "type": "problem_conditions"
+      }
+    },
+    "output": {
+      "type": {
+        "description": "Gera resultados de análise baseados na geometria, matéria e condições fornecidas pelo usuário",
+        "type": "analysis_result"
+      }
+    }
+  },
+  "creation_id": "creation:open-ended-holdout",
+  "rejected_delta_ids": [],
+  "schema": "casulo.creation/1.0",
+  "state": "CONFIRMATION",
+  "version": 5
+}

@@ -1,0 +1,51 @@
+{
+  "artifacts": {
+    "atlas_json": {
+      "path": "docs/product/MONDAY_FAILURE_ATLAS_2026-08-17.json",
+      "sha256": "0dc958b4c59a9f3a2ebe52605a74c74f5e4d31afc215f154ce335f1a4397d675"
+    },
+    "atlas_markdown": {
+      "path": "docs/product/MONDAY_FAILURE_ATLAS_2026-08-17.md",
+      "sha256": "ada9b11b02c826fa1eceb98c2a634eed3c4f06b2d47e4aa757d180158ee5acb3"
+    },
+    "runbook": {
+      "path": "docs/product/MONDAY_DISCOVERY_RUNBOOK_2026-08-17.md",
+      "sha256": "80f9440995354fdcf9b51ce708b5833032ba3ed902287c2917f414638f5eb989"
+    }
+  },
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "design_final": "NOT_STARTED",
+    "guest_network": "OFF",
+    "physical_voice": "NOT_OPENED",
+    "qpu": "UNAVAILABLE_DENY",
+    "scientific_benchmark": "NOT_STARTED",
+    "usb_block_devices": "PROHIBITED"
+  },
+  "checks": {
+    "atlas_machine_readable": true,
+    "atlas_markdown": true,
+    "automated_human_sources_separate": true,
+    "baseline_t85_preserved": true,
+    "cloud_locked": true,
+    "doctor_read_only": true,
+    "human_completion_not_claimed": true,
+    "literal_voice_consent": true,
+    "no_raw_pcm_or_transcript_persistence": true,
+    "owner_release_unchanged": true,
+    "public_private_zero": true,
+    "recoverable_checkpoint": true,
+    "selected_tests": true,
+    "session_hash_chains": true,
+    "two_to_four_hour_runbook": true
+  },
+  "human_notes": 0,
+  "human_session": "PENDING_GUILHERME",
+  "schema": "casulo.monday-discovery-gate/1.0",
+  "sources": {
+    "observer": "ed7614aab69b3a46811c6077b4f119fdd514bb5c6a36294195e2e393cd1cfaa1",
+    "session_window": "3670babfbebec4a3fbc2943524f2273913b7fa3f0d3bc96c478a8b948728057e",
+    "tool": "138964873f519c5e50380ca0d7c5f7fe289a71e7cc6a906da31ad687d08fff5b"
+  },
+  "state": "READY_FOR_GUILHERME_MONDAY_DISCOVERY_SESSION"
+}

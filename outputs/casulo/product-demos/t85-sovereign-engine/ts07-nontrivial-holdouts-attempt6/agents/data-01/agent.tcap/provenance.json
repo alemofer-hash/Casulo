@@ -1,0 +1,21 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/owner.agent.datavalidator.byte_preserver.t",
+      "module": "owner.agent.datavalidator.byte_preserver",
+      "sha256": "fcb2ad275ab91af5a17dc760e5dbd0dbc10ab549c5e627857c74f7d7f4024f76"
+    },
+    {
+      "file": "sources/owner.agent.datavalidator.schema_applier.t",
+      "module": "owner.agent.datavalidator.schema_applier",
+      "sha256": "1733cdb3e1dcec1fd811be2002ec028ecdc9ef1064df8fd1fcdbbbc8c3cbb455"
+    },
+    {
+      "file": "sources/owner.agent.datavalidator.rejection_explainer.t",
+      "module": "owner.agent.datavalidator.rejection_explainer",
+      "sha256": "1573c89d7fb11ba9b076cf2decde699034005356f8d531dd8b41ab9a0c246f43"
+    }
+  ]
+}

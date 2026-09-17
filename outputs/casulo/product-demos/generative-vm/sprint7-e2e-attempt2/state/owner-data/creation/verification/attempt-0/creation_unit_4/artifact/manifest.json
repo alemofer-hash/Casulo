@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:48a8d4784211418c7c4776e9c5a3f5db5a977babe8c1a8a811a8e9d4ac9fd90a",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "50310af73471f823e23828aa4af27cd7627a17a275beda527aa7afadf5ce9b56"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "27ea57a0c937c9246b98918ac851c93546015b0371095d2b46dc91928c70bfe6",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "69db39a124794af2a3474bbd89e653e65a95dfe32038218f03b478aba875ce3c",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "decision",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "357427d584bda38076e8e213802ee349d95713ef1072e6bbafba6cf99c8a943f"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "DecisaoArquitetura",
+        "judgements": [],
+        "name": "ReceiveArchitecturalDecision",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "93033c16979e7a9cb7760b6afeaa4e29b8e41709d509e4eafe274e8467818e30"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "DecisaoArquitetura",
+      "kind": "condense",
+      "name": "ReceiveArchitecturalDecision",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "5a6eaa623d752824e260b5524aca0d685af62a371826abda23852ba8a577967e"
+  }
+}

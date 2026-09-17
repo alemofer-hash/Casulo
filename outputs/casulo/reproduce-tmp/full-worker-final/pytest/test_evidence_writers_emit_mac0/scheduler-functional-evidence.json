@@ -1,0 +1,1076 @@
+{
+  "assertions": {
+    "all_required_queues_exercised": true,
+    "audit_non_starvation_bound_holds": true,
+    "finite_workload_completes": true,
+    "hard_gates_hold": true,
+    "help_relation_holds": true,
+    "no_help_relation_holds": true,
+    "quarantine_never_executed": true
+  },
+  "claim_scope": "deterministic_functional_reference_only",
+  "excluded_claims": [
+    "no_wall_clock_speedup",
+    "no_energy_advantage",
+    "no_kernel_scheduler_equivalence",
+    "no_S6_claim"
+  ],
+  "kernel_port_markers": [
+    "CASULO_G4_POLICY_ID=semantic_v1",
+    "CASULO_G4_HARD_GATES=integrity,permissions,quality,isolation",
+    "CASULO_G4_AUDIT_BOUND_TICKS=<configured_interval>",
+    "CASULO_G4_QUARANTINE_DISPATCHES=0",
+    "CASULO_G4_REFERENCE_VECTOR_SHA256=c76b1fd397b2a5e84fc6443c027e3d9545ee9dca78f005dfb5c8c962035ae766"
+  ],
+  "non_starvation_proof": {
+    "audit_dispatch_ticks": [
+      4,
+      8,
+      12,
+      16
+    ],
+    "audit_interval_ticks": 4,
+    "bound_holds": true,
+    "finite_workload_completed_ids": [
+      "audit",
+      "flow",
+      "low",
+      "retry",
+      "system"
+    ],
+    "finite_workload_completes": true,
+    "maximum_observed_gap_ticks": 4,
+    "observed_service_gaps_ticks": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "proof_domain": "pending audit queue under continuously runnable FLOW in a finite deterministic trace"
+  },
+  "preregistration": {
+    "frozen_before_execution": true,
+    "scenarios": [
+      {
+        "causal_variable": "scheduler_policy_only",
+        "controls": [
+          "identical_task_multiset",
+          "identical_enqueue_order",
+          "identical_one_tick_dispatch_cost",
+          "identical_hard_gates",
+          "no_wall_clock_measurement"
+        ],
+        "expected_relation": "semantic_flow_p95_lt_conventional_flow_p95",
+        "hypothesis": "semantic classification reduces FLOW completion latency under non-FLOW interference",
+        "maximum_ticks": 24,
+        "scenario_id": "controlled_interference_help",
+        "tasks": [
+          {
+            "budget_ticks": 8,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "SYSTEM",
+            "task_id": "noise-system"
+          },
+          {
+            "budget_ticks": 8,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "ATTRACTOR_RETRY",
+            "task_id": "noise-retry"
+          },
+          {
+            "budget_ticks": 2,
+            "deadline_tick": 8,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 4,
+            "quality_valid": true,
+            "semantic_class": "FLOW",
+            "task_id": "flow-a"
+          },
+          {
+            "budget_ticks": 2,
+            "deadline_tick": 10,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 2,
+            "quality_valid": true,
+            "semantic_class": "FLOW",
+            "task_id": "flow-b"
+          },
+          {
+            "budget_ticks": 2,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "ATTRACTOR_AUDIT",
+            "task_id": "audit"
+          },
+          {
+            "budget_ticks": 2,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "ATTRACTOR_LOW_CONFIDENCE",
+            "task_id": "low-confidence"
+          }
+        ]
+      },
+      {
+        "causal_variable": "scheduler_policy_only",
+        "controls": [
+          "identical_task_multiset",
+          "all_tasks_same_semantic_class",
+          "identical_priority_and_no_deadlines",
+          "identical_enqueue_order",
+          "identical_one_tick_dispatch_cost",
+          "no_wall_clock_measurement"
+        ],
+        "expected_relation": "semantic_flow_p95_eq_conventional_flow_p95",
+        "hypothesis": "semantic classification provides no completion advantage when every admitted task is FLOW-equivalent",
+        "maximum_ticks": 6,
+        "scenario_id": "controlled_no_help",
+        "tasks": [
+          {
+            "budget_ticks": 1,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "FLOW",
+            "task_id": "flow-1"
+          },
+          {
+            "budget_ticks": 1,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "FLOW",
+            "task_id": "flow-2"
+          },
+          {
+            "budget_ticks": 1,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "FLOW",
+            "task_id": "flow-3"
+          },
+          {
+            "budget_ticks": 1,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "FLOW",
+            "task_id": "flow-4"
+          },
+          {
+            "budget_ticks": 1,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "FLOW",
+            "task_id": "flow-5"
+          },
+          {
+            "budget_ticks": 1,
+            "deadline_tick": null,
+            "integrity_valid": true,
+            "isolation_valid": true,
+            "permissions_valid": true,
+            "priority": 0,
+            "quality_valid": true,
+            "semantic_class": "FLOW",
+            "task_id": "flow-6"
+          }
+        ]
+      }
+    ]
+  },
+  "reference_vector_sha256": "c76b1fd397b2a5e84fc6443c027e3d9545ee9dca78f005dfb5c8c962035ae766",
+  "safety_proof": {
+    "admissions": [
+      {
+        "admitted_class": "QUARANTINE",
+        "reason": "hard_gate_failed:integrity",
+        "requested_class": "FLOW",
+        "sequence": 0,
+        "task_id": "bad-integrity"
+      },
+      {
+        "admitted_class": "QUARANTINE",
+        "reason": "hard_gate_failed:permissions",
+        "requested_class": "SYSTEM",
+        "sequence": 1,
+        "task_id": "bad-permission"
+      },
+      {
+        "admitted_class": "QUARANTINE",
+        "reason": "hard_gate_failed:quality",
+        "requested_class": "ATTRACTOR_RETRY",
+        "sequence": 2,
+        "task_id": "bad-quality"
+      },
+      {
+        "admitted_class": "QUARANTINE",
+        "reason": "hard_gate_failed:isolation",
+        "requested_class": "ATTRACTOR_LOW_CONFIDENCE",
+        "sequence": 3,
+        "task_id": "bad-isolation"
+      },
+      {
+        "admitted_class": "QUARANTINE",
+        "reason": "requested_quarantine",
+        "requested_class": "QUARANTINE",
+        "sequence": 4,
+        "task_id": "requested-quarantine"
+      }
+    ],
+    "executed_task_ids": [],
+    "hard_gates_hold": true,
+    "invalid_task_ids": [
+      "bad-integrity",
+      "bad-permission",
+      "bad-quality",
+      "bad-isolation",
+      "requested-quarantine"
+    ],
+    "quarantine_never_executed": true,
+    "quarantined_task_ids": [
+      "bad-integrity",
+      "bad-permission",
+      "bad-quality",
+      "bad-isolation",
+      "requested-quarantine"
+    ]
+  },
+  "scenario_results": [
+    {
+      "all_required_queues_exercised": true,
+      "expected_relation": "semantic_flow_p95_lt_conventional_flow_p95",
+      "hypothesis": "semantic classification reduces FLOW completion latency under non-FLOW interference",
+      "policies": {
+        "conventional_fifo_round_robin_v1": {
+          "deadline_misses": 1,
+          "events": [
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 7,
+              "selection_checks": 1,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 1
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 7,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 2
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": 8,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 4,
+              "remaining_ticks": 1,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-a",
+              "tick": 3
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": 10,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 2,
+              "remaining_ticks": 1,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-b",
+              "tick": 4
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 1,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_AUDIT",
+              "task_id": "audit",
+              "tick": 5
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 1,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_LOW_CONFIDENCE",
+              "task_id": "low-confidence",
+              "tick": 6
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 6,
+              "selection_checks": 1,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 7
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 6,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 8
+            },
+            {
+              "deadline_missed": true,
+              "deadline_tick": 8,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 4,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-a",
+              "tick": 9
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": 10,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 2,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-b",
+              "tick": 10
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_AUDIT",
+              "task_id": "audit",
+              "tick": 11
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_LOW_CONFIDENCE",
+              "task_id": "low-confidence",
+              "tick": 12
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 5,
+              "selection_checks": 1,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 13
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 5,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 14
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 4,
+              "selection_checks": 1,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 15
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 4,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 16
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 3,
+              "selection_checks": 1,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 17
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 3,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 18
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 2,
+              "selection_checks": 1,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 19
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 2,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 20
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 1,
+              "selection_checks": 1,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 21
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 1,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 22
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 23
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 24
+            }
+          ],
+          "flow": {
+            "completed_task_ids": [
+              "flow-a",
+              "flow-b"
+            ],
+            "completion_latency_ticks": [
+              9,
+              10
+            ],
+            "p95_style_completion_latency_ticks": 10,
+            "p95_style_definition": "nearest_rank_on_integer_completion_ticks_from_common_enqueue_origin_tick_0"
+          },
+          "overhead_proxy": {
+            "admission_gate_checks": 24,
+            "dispatches": 24,
+            "selection_checks": 24,
+            "total_proxy_operations": 72,
+            "unit": "deterministic_reference_operation_count"
+          },
+          "quarantined": []
+        },
+        "semantic_v1": {
+          "deadline_misses": 0,
+          "events": [
+            {
+              "deadline_missed": false,
+              "deadline_tick": 8,
+              "decision": "deterministic_semantic_priority",
+              "priority": 4,
+              "remaining_ticks": 1,
+              "selection_checks": 4,
+              "semantic_class": "FLOW",
+              "task_id": "flow-a",
+              "tick": 1
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": 8,
+              "decision": "deterministic_semantic_priority",
+              "priority": 4,
+              "remaining_ticks": 0,
+              "selection_checks": 4,
+              "semantic_class": "FLOW",
+              "task_id": "flow-a",
+              "tick": 2
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": 10,
+              "decision": "deterministic_semantic_priority",
+              "priority": 2,
+              "remaining_ticks": 1,
+              "selection_checks": 3,
+              "semantic_class": "FLOW",
+              "task_id": "flow-b",
+              "tick": 3
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "periodic_non_starvation",
+              "priority": 0,
+              "remaining_ticks": 1,
+              "selection_checks": 2,
+              "semantic_class": "ATTRACTOR_AUDIT",
+              "task_id": "audit",
+              "tick": 4
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": 10,
+              "decision": "deterministic_semantic_priority",
+              "priority": 2,
+              "remaining_ticks": 0,
+              "selection_checks": 3,
+              "semantic_class": "FLOW",
+              "task_id": "flow-b",
+              "tick": 5
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 7,
+              "selection_checks": 4,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 6
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 6,
+              "selection_checks": 4,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 7
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "periodic_non_starvation",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 2,
+              "semantic_class": "ATTRACTOR_AUDIT",
+              "task_id": "audit",
+              "tick": 8
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 5,
+              "selection_checks": 4,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 9
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 4,
+              "selection_checks": 4,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 10
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 3,
+              "selection_checks": 4,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 11
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 2,
+              "selection_checks": 4,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 12
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 1,
+              "selection_checks": 4,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 13
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 4,
+              "semantic_class": "SYSTEM",
+              "task_id": "noise-system",
+              "tick": 14
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 7,
+              "selection_checks": 5,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 15
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 6,
+              "selection_checks": 5,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 16
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 5,
+              "selection_checks": 5,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 17
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 4,
+              "selection_checks": 5,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 18
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 3,
+              "selection_checks": 5,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 19
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 2,
+              "selection_checks": 5,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 20
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 1,
+              "selection_checks": 5,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 21
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 5,
+              "semantic_class": "ATTRACTOR_RETRY",
+              "task_id": "noise-retry",
+              "tick": 22
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 1,
+              "selection_checks": 6,
+              "semantic_class": "ATTRACTOR_LOW_CONFIDENCE",
+              "task_id": "low-confidence",
+              "tick": 23
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 6,
+              "semantic_class": "ATTRACTOR_LOW_CONFIDENCE",
+              "task_id": "low-confidence",
+              "tick": 24
+            }
+          ],
+          "flow": {
+            "completed_task_ids": [
+              "flow-a",
+              "flow-b"
+            ],
+            "completion_latency_ticks": [
+              2,
+              5
+            ],
+            "p95_style_completion_latency_ticks": 5,
+            "p95_style_definition": "nearest_rank_on_integer_completion_ticks_from_common_enqueue_origin_tick_0"
+          },
+          "overhead_proxy": {
+            "admission_gate_checks": 24,
+            "dispatches": 24,
+            "selection_checks": 102,
+            "total_proxy_operations": 150,
+            "unit": "deterministic_reference_operation_count"
+          },
+          "quarantined": []
+        }
+      },
+      "relation_holds": true,
+      "scenario_id": "controlled_interference_help"
+    },
+    {
+      "all_required_queues_exercised": true,
+      "expected_relation": "semantic_flow_p95_eq_conventional_flow_p95",
+      "hypothesis": "semantic classification provides no completion advantage when every admitted task is FLOW-equivalent",
+      "policies": {
+        "conventional_fifo_round_robin_v1": {
+          "deadline_misses": 0,
+          "events": [
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-1",
+              "tick": 1
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-2",
+              "tick": 2
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-3",
+              "tick": 3
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-4",
+              "tick": 4
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-5",
+              "tick": 5
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_fifo_round_robin",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 1,
+              "semantic_class": "FLOW",
+              "task_id": "flow-6",
+              "tick": 6
+            }
+          ],
+          "flow": {
+            "completed_task_ids": [
+              "flow-1",
+              "flow-2",
+              "flow-3",
+              "flow-4",
+              "flow-5",
+              "flow-6"
+            ],
+            "completion_latency_ticks": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "p95_style_completion_latency_ticks": 6,
+            "p95_style_definition": "nearest_rank_on_integer_completion_ticks_from_common_enqueue_origin_tick_0"
+          },
+          "overhead_proxy": {
+            "admission_gate_checks": 24,
+            "dispatches": 6,
+            "selection_checks": 6,
+            "total_proxy_operations": 36,
+            "unit": "deterministic_reference_operation_count"
+          },
+          "quarantined": []
+        },
+        "semantic_v1": {
+          "deadline_misses": 0,
+          "events": [
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 8,
+              "semantic_class": "FLOW",
+              "task_id": "flow-1",
+              "tick": 1
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 7,
+              "semantic_class": "FLOW",
+              "task_id": "flow-2",
+              "tick": 2
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 6,
+              "semantic_class": "FLOW",
+              "task_id": "flow-3",
+              "tick": 3
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 5,
+              "semantic_class": "FLOW",
+              "task_id": "flow-4",
+              "tick": 4
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 4,
+              "semantic_class": "FLOW",
+              "task_id": "flow-5",
+              "tick": 5
+            },
+            {
+              "deadline_missed": false,
+              "deadline_tick": null,
+              "decision": "deterministic_semantic_priority",
+              "priority": 0,
+              "remaining_ticks": 0,
+              "selection_checks": 3,
+              "semantic_class": "FLOW",
+              "task_id": "flow-6",
+              "tick": 6
+            }
+          ],
+          "flow": {
+            "completed_task_ids": [
+              "flow-1",
+              "flow-2",
+              "flow-3",
+              "flow-4",
+              "flow-5",
+              "flow-6"
+            ],
+            "completion_latency_ticks": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "p95_style_completion_latency_ticks": 6,
+            "p95_style_definition": "nearest_rank_on_integer_completion_ticks_from_common_enqueue_origin_tick_0"
+          },
+          "overhead_proxy": {
+            "admission_gate_checks": 24,
+            "dispatches": 6,
+            "selection_checks": 33,
+            "total_proxy_operations": 63,
+            "unit": "deterministic_reference_operation_count"
+          },
+          "quarantined": []
+        }
+      },
+      "relation_holds": true,
+      "scenario_id": "controlled_no_help"
+    }
+  ],
+  "schema": "casulo-semantic-scheduler-functional-evidence/1",
+  "status": "PASS"
+}

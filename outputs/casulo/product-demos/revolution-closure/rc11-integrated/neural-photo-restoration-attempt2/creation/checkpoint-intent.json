@@ -1,0 +1,190 @@
+{
+  "delta": {
+    "affected_paths": [
+      [
+        "identity",
+        "purpose"
+      ],
+      [
+        "identity",
+        "purpose"
+      ],
+      [
+        "behavior",
+        "autonomy"
+      ],
+      [
+        "behavior",
+        "autonomy"
+      ],
+      [
+        "behavior",
+        "output"
+      ],
+      [
+        "behavior",
+        "output"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "data",
+        "preservation"
+      ],
+      [
+        "data",
+        "preservation"
+      ],
+      [
+        "constraints",
+        "reversibility"
+      ],
+      [
+        "constraints",
+        "reversibility"
+      ]
+    ],
+    "base_version": 0,
+    "confidence": 0.85,
+    "confirmation_state": "PROPOSED",
+    "creation_id": "creation:open-ended-holdout",
+    "delta_id": "intent:gen:7f59cb9b038409a8f99e4203",
+    "operations": [
+      {
+        "action": "remove",
+        "path": [
+          "identity",
+          "purpose"
+        ]
+      },
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "purpose"
+        ],
+        "value": {
+          "description": "Restauro conservativo de fotografias analógicas escaneadas com foco na preservação do original e no registro da proveniência."
+        }
+      },
+      {
+        "action": "remove",
+        "path": [
+          "behavior",
+          "autonomy"
+        ]
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "autonomy"
+        ],
+        "value": {
+          "description": "Planejamento de sequências reversíveis para restauro conservativo, com base em riscos descritos pelo usuário (fungos, rasgos, manchas) e intenção estética."
+        }
+      },
+      {
+        "action": "remove",
+        "path": [
+          "behavior",
+          "output"
+        ]
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "output"
+        ],
+        "value": {
+          "description": "Proposta de sequência reversível, registro da proveniência e recusa de sobrescrita destrutiva."
+        }
+      },
+      {
+        "action": "remove",
+        "path": [
+          "interface",
+          "input"
+        ]
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "input"
+        ],
+        "value": {
+          "description": "Descrição de riscos (fungos, rasgos, manchas), intenção estética e preferências do usuário."
+        }
+      },
+      {
+        "action": "remove",
+        "path": [
+          "data",
+          "preservation"
+        ]
+      },
+      {
+        "action": "set",
+        "path": [
+          "data",
+          "preservation"
+        ],
+        "value": {
+          "description": "Preservação do original, registro da proveniência e não alteração destrutiva."
+        }
+      },
+      {
+        "action": "remove",
+        "path": [
+          "constraints",
+          "reversibility"
+        ]
+      },
+      {
+        "action": "set",
+        "path": [
+          "constraints",
+          "reversibility"
+        ],
+        "value": {
+          "description": "A sequência de restauro deve ser reversível, com base nos riscos e na intenção estética fornecidos."
+        }
+      }
+    ],
+    "rationale": "A proposta visa a redefinição da CreationSpec para incluir uma abordagem mais específica e direcionada em relação ao restauro conservativo de fotografias analógicas escaneadas, com ênfase na preservação do original e no registro da proveniência.",
+    "schema": "casulo.intent-delta/1.0",
+    "source_event_ids": [
+      "voice:g5:novel-idea"
+    ]
+  },
+  "requested_capabilities": [
+    "planejar sequências reversíveis para restauro conservativo",
+    "preservar o original durante o processo de restauro",
+    "registrar a proveniência das fotografias analógicas escaneadas",
+    "recusar qualquer sobrescrita destrutiva"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "1af9de1570740b148c3bce0b12d5de334a5aef066d5686f58f736f04b75e64ea",
+    "ended_monotonic_ns": 15739363969100,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "intent:voice:g5:novel-idea",
+    "output_sha256": "7f59cb9b038409a8f99e42031c2bf99764f8f752a7b2f9a80512e714a74063f7",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 15615898646300,
+    "stream_events": 670
+  }
+}

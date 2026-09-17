@@ -1,0 +1,19 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "attempt": "sprint10-integrated-attempt11",
+  "gate": "GENERATIVE_VM_HANDOFF_SCENARIO_FAIL",
+  "failed_before_materialization": true,
+  "failed_operation": "verifier-repair-unsatisfiable-generated-test",
+  "observed": {
+    "verifier_attempts": 1,
+    "repairs_applied": 0,
+    "revision_candidate_budget": 3,
+    "revision_candidates_rejected": 3,
+    "rejection_reason": "revisão_sem_mudança",
+    "unsatisfiable_expected_contains_detected": true
+  },
+  "classification": "GENERATED_TEST_EXCEEDED_T_EMIT_LITERAL_CAPACITY",
+  "repair_receipt": "state/owner-data/creation/repair-outcome.json",
+  "preservation": "All candidate hashes, stochastic traces, diagnostics and VM state retained",
+  "scientific_benchmark_started": false
+}

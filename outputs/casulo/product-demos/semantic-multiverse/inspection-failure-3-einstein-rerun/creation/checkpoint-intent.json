@@ -1,0 +1,130 @@
+{
+  "delta": {
+    "affected_paths": [
+      [
+        "identity",
+        "purpose"
+      ],
+      [
+        "behavior",
+        "autonomy"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "output",
+        "type"
+      ]
+    ],
+    "base_version": 0,
+    "confidence": 0.85,
+    "confirmation_state": "PROPOSED",
+    "creation_id": "creation:open-ended-holdout",
+    "delta_id": "intent:gen:ba32d62b6cc42ad905c09c69",
+    "operations": [
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "purpose"
+        ],
+        "value": {
+          "description": "Avalia equações de campo gravitacional de Einstein com base em dados fornecidos pelo usuário",
+          "type": "scientific_evaluator"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "autonomy"
+        ],
+        "value": {
+          "description": "O avaliador opera com autonomia, processando e analisando as entradas fornecidas pelo usuário",
+          "type": "active"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "input"
+        ],
+        "value": {
+          "description": "Recebe geometria como entrada para análise",
+          "type": "geometry"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "input"
+        ],
+        "value": {
+          "description": "Recebe informações sobre a matéria como entrada para análise",
+          "type": "matter"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "input"
+        ],
+        "value": {
+          "description": "Recebe condições do problema como entrada para análise",
+          "type": "problem_conditions"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "output",
+          "type"
+        ],
+        "value": {
+          "description": "Gera resultados de análise baseados na geometria, matéria e condições fornecidas pelo usuário",
+          "type": "analysis_result"
+        }
+      }
+    ],
+    "rationale": "A proposta visa a implementação de uma nova funcionalidade que permite a avaliação local de equações de campo gravitacional de Einstein com base na fornecimento de geometria, matéria e condições do problema por parte do usuário.",
+    "schema": "casulo.intent-delta/1.0",
+    "source_event_ids": [
+      "voice:g5:novel-idea"
+    ]
+  },
+  "requested_capabilities": [
+    "avaliar equações de campo gravitacional de Einstein",
+    "processar dados de geometria",
+    "processar informações sobre a matéria",
+    "processar condições do problema"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "f56de1cf1067724e9c3b4a640a771ab5ae5b6c5084a7732ecf7189c1d6805486",
+    "ended_monotonic_ns": 12018370092900,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "intent:voice:g5:novel-idea",
+    "output_sha256": "ba32d62b6cc42ad905c09c696abb52c0d5a23f7c2be1df12de09b41693e4bae3",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 11955080630000,
+    "stream_events": 431
+  }
+}

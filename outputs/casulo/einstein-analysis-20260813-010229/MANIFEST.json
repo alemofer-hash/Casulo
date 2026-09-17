@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "all_refusals": true,
+    "christoffel_exposed": true,
+    "conditions_declared_not_falsely_evolved": true,
+    "cosmological_term": true,
+    "coupling_declared": true,
+    "einstein_tensor_exposed": true,
+    "external_api_absent": true,
+    "field_residual_exposed": true,
+    "global_claim_refused": true,
+    "historical_neural_trace_preserved": true,
+    "inverse_metric_exposed": true,
+    "minkowski_lambda_analytic": true,
+    "minkowski_vacuum_zero": true,
+    "ricci_exposed": true,
+    "si_and_signature_declared": true,
+    "t_generated_and_compiled": true
+  },
+  "claim": "avaliador tensorial local 4D das equações de campo, parametrizável e validado para Minkowski no vácuo",
+  "cloud": "RELEASE_LOCKED",
+  "contract_amendment": [
+    "conventions input",
+    "inverse_metric output",
+    "finite T_mu_nu"
+  ],
+  "fake_engine": false,
+  "files": {
+    "einstein_solver.py": "609939f06313978c1b7768c84644d64918af2380b717faf2c047736e0fa9516d",
+    "forge-receipt.json": "41a9d7586722189e5f891c2807fd183aa289cd097c950173b1b21a0e0e2081d1",
+    "historical-neural-trace.json": "6a27fea664798bfa6a7a44de4a9640f8923ec99d987caf220e503e54a4c3f170",
+    "minkowski-input.json": "a43e1cf42f6a9866bc7e794d07f502eca50b7ddb8d5c273eaedc8adee6950c03",
+    "minkowski-lambda-output.json": "292481ba3bbc1cc8cdde989135183113c49de3f504d599a723d44d979a30fe3f",
+    "minkowski-output.json": "a935677f76472f82c77feb7069800c96a8558cf4c218dae99d1027356a18a308",
+    "refusal-cases.json": "5eb45f03eede661b7795f61545471ad51bd54ba313071154472ff86564fd7c74",
+    "solver-contract.t": "720dba64871169c30b337b7f65bd86ac1229bf47ee15872164054c545cdf5a9c",
+    "solver-contract.tcap": "8236cdb64fdcc56a0b1627e52abe716474852c92ee653a207a0c3789dbf3095e",
+    "solver-spec.json": "cbe302cf8a6fccd800287d1b0119dd304f10a723a9d54c31c3d2000cfae1da99"
+  },
+  "global_solver": false,
+  "schema": "casulo.einstein-local-evaluator/1.1",
+  "scientific_validation_complete": false,
+  "source_evidence": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-rerun\\einstein-solver-evidence.json",
+    "sha256": "003f5644e8f12a57478f795b799405fede46b23c6b18c4ca6e99000a60d678d5"
+  },
+  "tcap_sha256": "8236cdb64fdcc56a0b1627e52abe716474852c92ee653a207a0c3789dbf3095e",
+  "usb": "PROHIBITED"
+}

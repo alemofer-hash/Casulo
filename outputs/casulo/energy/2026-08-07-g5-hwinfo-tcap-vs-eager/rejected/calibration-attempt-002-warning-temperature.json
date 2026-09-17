@@ -1,0 +1,7 @@
+{
+  "note": "calibration transaction aborted before K freeze; completed partial load segments are not reused",
+  "promoted_to_scientific_sample": false,
+  "reason_code": "warning_temperature_limit",
+  "schema": "casulo-hwinfo-rejected-calibration/1.0",
+  "warning_threshold_c": 75.0
+}

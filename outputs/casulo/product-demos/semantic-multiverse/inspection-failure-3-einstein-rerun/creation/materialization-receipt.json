@@ -1,0 +1,22 @@
+{
+  "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-rerun\\creation\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+  "archive_sha256": "5ce7ff5afd713fba09e30084a66ea0514451aea14edd2c93e6973c3359927466",
+  "directory": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\inspection-failure-3-einstein-rerun\\creation\\materialized\\creation-38da5088c5e61759-v7",
+  "files": {
+    "MANIFEST.json": "844256c7bf51860273b3e2f35edb03b68a9fdefd22312070cc18822fc48a8ff9",
+    "SBOM.spdx.json": "c99ceac3da178eb52b6a60fb7134eadfd0caaf345a608945ce835a50cacc5230",
+    "SHA256SUMS": "16e9856d27f6c4f195a0205fb79f2b1c3a46590d68358571a9f46d1f4daf25d1",
+    "agent-artifact-manifest.json": "2d11358d2f5396497dc2cc7161db9865cfc9f6ebdc74c5e251b533c1eb756d2f",
+    "agent-descriptor.json": "1cd4431301fec55f66bcd2f623e5c58f9701fe533eb0039da0a088d3afa9c965",
+    "agent-project.json": "2d7fe9885e31bc293cbabdaa4ccc28ca1f6a03d35a265a918d0ce3e27f0bfd16",
+    "agent.py": "10c13b64d57b59c8d9e8dcb2c1e41065d26a75107730c08a9142380713007b7c",
+    "agent.tcap": "c9f824c562d02de63be756efbb43f5e31c1ebbb0466acf643fb735f67fc195d5",
+    "api.py": "d8f9e63dbd17d510252ca9f895e756260ba9c1dba086d0069b5fa3d1d0efb7fe",
+    "creation.json": "f4e5ddd06bd312066615b66053ec9780ba5529234b6b62df3952e2aadd5e2b26",
+    "forge-receipt.json": "24b64544cc5adc0192fb46c22b3b1f4987ec08662201eed16d2034ff8557a2b0",
+    "simulation-receipt.json": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+  },
+  "manifest_sha256": "844256c7bf51860273b3e2f35edb03b68a9fdefd22312070cc18822fc48a8ff9",
+  "package_id": "creation-38da5088c5e61759-v7",
+  "schema": "casulo.materialization-receipt/1.0"
+}

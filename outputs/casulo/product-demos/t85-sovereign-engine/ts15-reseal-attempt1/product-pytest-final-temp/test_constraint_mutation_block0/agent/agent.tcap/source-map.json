@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.agent.csv_guardian.policy.t",
+      "module": "owner.agent.csv_guardian.policy",
+      "sha256": "b244fd5ca941832d35038a77b8f54002b2efe5cb0ccf7f87bb844730bfc2a96a"
+    },
+    {
+      "file": "sources/owner.agent.csv_guardian.pipeline.t",
+      "module": "owner.agent.csv_guardian.pipeline",
+      "sha256": "68215ac57bcb7f40e5eb288786593eeca1977ab6a4257ba7f3fbc2e046d8344f"
+    },
+    {
+      "file": "sources/owner.agent.csv_guardian.delivery.t",
+      "module": "owner.agent.csv_guardian.delivery",
+      "sha256": "17892178a1291c21efbf7c9ac4eed08667b61baab6743809af99e43acae7aea7"
+    }
+  ]
+}

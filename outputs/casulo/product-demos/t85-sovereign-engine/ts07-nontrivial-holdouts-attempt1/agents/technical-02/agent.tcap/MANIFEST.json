@@ -1,0 +1,83 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.mass_balance_calculator_v2.unit_parser"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "89a4a2a4df0aff43fde95821b32e19f59a50928d9e4502833d8c87335cf9f253"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "869c35b84a6ec3e5b6a430b12eee0727be9b0b85b829344cddb38ed7585f022f"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "35fb7a67a03eb670629149df239d538b7f91ac075a0ea37e56b6b98b580c625d"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "cd734049d70a02b78f268caaaf751631aa73d6b138b890ddbc29d768ec4266f1"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "799973b0ea33981c292f04020c4792f54da05971f91b3e8cf61078a0233fea1d"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "337a1a6407de3f32b767630f0bd2d9eb02c981693b213b716c7d93eb8bd67e2b"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "78c381a7aa4310a31315e41f29c7f6e9cbbe7efcae82b1749b1e119655dbbbb2"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "6e40e278d0c0d8419110626dac29fe586aec8bcaf7051c526c85bc628c7db8be"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "0a3a581da74efc216672c673d43bf4b3ab7b99f427453da06f556d9c4168c828"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "4db5c27dc92fa7e80fd9d83df5be318224cc0ae9e84ba5d7f3ed9c09587c1066"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "0c5713f4a29904310467b5670390506cdb442fdcd9e1df558dfc0c21e1d14c2d"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "f95c821a8475347530e0c194b481d6fc62c718f63f0b5ba2cde0033e84fcee61"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.agent.mass_balance_calculator_v2.unit_parser.t",
+      "module": "owner.agent.mass_balance_calculator_v2.unit_parser",
+      "sha256": "9a23159fcd8f310e0551244137d1a4f70e874592b3e382bfe8dc78141ad8bdb2"
+    },
+    {
+      "file": "sources/owner.agent.mass_balance_calculator_v2.mass_flow.t",
+      "module": "owner.agent.mass_balance_calculator_v2.mass_flow",
+      "sha256": "c8c6700afa2f5280bd912f464b0d5ba06d9de50e5aef0cbeb17c2f73eb67601f"
+    },
+    {
+      "file": "sources/owner.agent.mass_balance_calculator_v2.conservation_check.t",
+      "module": "owner.agent.mass_balance_calculator_v2.conservation_check",
+      "sha256": "0b2c58fd44e0029d9ff9421aaf7d8027c5e7533505762e673326356c6fc47e3c"
+    }
+  ],
+  "tcap_hash": "32be42ca477a8b18f2c78d3ce2f1f2711619b80e6a60983951e51aff48c4282b"
+}

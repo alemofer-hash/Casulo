@@ -1,0 +1,25 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{booktabs,hyperref,geometry}
+\geometry{margin=2.5cm}
+\title{The T Language as an Optimization of CPU Usage Management During Artificial Neural Network Training}
+\author{Guilherme Moura Fernandes\\\textit{Affiliation: [to be completed] -- Email: [to be completed] -- ORCID: [if applicable]}}
+\date{Private scientific draft -- not submitted}
+\begin{document}\maketitle
+\begin{abstract}
+We present the auditable Casulo/T Language architecture and evaluate, without universal generalization, a specialized C executor for a shallow CPU neural network. Frozen historical evidence preserved parameters, predictions, and loss relative to PyTorch. Across 21 historical pairs, median speedup was 8.958 times over PyTorch Eager (paired bootstrap 95\% CI: 8.075--9.872). The available Inductor comparator compiled only the forward pass and is therefore secondary. Electrical energy was not measured. The result supports an overhead-reduction hypothesis in a restricted domain, not general language superiority.
+\end{abstract}
+\section{Introduction} Motivation, problem, verifiable contributions, and research questions.
+\section{Related Work} Tensor compilers, specialization, fusion, rigorous benchmarking, and energy.
+\section{Architecture} General frontend, IR, graph, content-addressed artifact, CPU backend, and the separate specialized training path.
+\section{Methodology} Equivalence-first protocol, paired design, warm-up, independent sessions, comparators, and thermal covenant.
+\section{Historical Results} Report medians, paired intervals, raw samples, and equivalence before speed.
+\section{Causal Analysis and Ablations} Isolate specialization, Python dispatch, autograd, allocation, parallelism, and compiler optimization.
+\section{Threats to Validity} One host, historical sessions, small synthetic model, float64, incomplete Inductor scope, and no joules.
+\section{Conclusion} A promising workload-specific result; multi-host validation and frontend integration remain open.
+\section*{Artifact Availability} Private hash-verifiable package; public release requires the author's explicit decision.
+\bibliographystyle{plain}\bibliography{../references}
+\end{document}
+

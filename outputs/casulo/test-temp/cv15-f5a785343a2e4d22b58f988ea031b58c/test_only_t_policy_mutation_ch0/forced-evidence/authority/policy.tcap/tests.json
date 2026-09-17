@@ -1,0 +1,9 @@
+{
+  "properties": [
+    "each_tile_selection_precedes_strip_commit",
+    "all_candidates_are_exact",
+    "foreign_video_bitstreams_are_forbidden",
+    "batching_removes_process_startup_not_semantic_decisions",
+    "whole_archive_cost_is_judged_after_independent_decode"
+  ]
+}

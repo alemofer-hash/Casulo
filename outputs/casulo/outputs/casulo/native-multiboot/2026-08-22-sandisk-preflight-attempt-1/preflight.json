@@ -1,0 +1,44 @@
+{
+  "device": {
+    "boot": false,
+    "bus_type": "USB",
+    "friendly_name": "SanDisk Cruzer Blade",
+    "health_status_initial": "Healthy",
+    "partition_style": "GPT",
+    "size_bytes": 8004304896,
+    "system": false
+  },
+  "disk_number_when_present": 1,
+  "events": [
+    {
+      "event_id": 153,
+      "meaning": "I/O operation retried at a logical block address",
+      "provider": "disk"
+    },
+    {
+      "event_id": 51,
+      "meaning": "device I/O error during paging operation",
+      "provider": "disk"
+    }
+  ],
+  "partitions_when_present": [
+    {
+      "gpt_type": "EFI_SYSTEM_PARTITION",
+      "number": 1,
+      "size_bytes": 1073741824
+    },
+    {
+      "gpt_type": "LINUX_ROOT_X86_64",
+      "number": 2,
+      "size_bytes": 6927941632
+    }
+  ],
+  "physical_device_written": false,
+  "pnp_after_failure": {
+    "present": false,
+    "problem_code": 45
+  },
+  "schema": "casulo-physical-multiboot-preflight/1.0",
+  "state": "BLOCKED_PHYSICAL_MEDIA_UNSTABLE"
+}
+

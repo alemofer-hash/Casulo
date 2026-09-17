@@ -1,0 +1,14 @@
+{
+  "accepted": false,
+  "failed_implementation": "t-general-ir-tcap/0.1",
+  "order": [
+    "t-general-ir-tcap/0.1",
+    "pytorch-eager-fullstep/1"
+  ],
+  "pair_id": "pair-05",
+  "pre_equivalence": "PASS",
+  "reason_code": "physical_guard_interrupted_window",
+  "schema": "casulo-hwinfo-recovery-pair-rejection/1.0",
+  "source_rejection": "rejected/pair-05-t-general-ir-tcap/0.1.json",
+  "window_completed": false
+}

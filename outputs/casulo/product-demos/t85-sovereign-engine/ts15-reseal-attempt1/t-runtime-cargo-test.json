@@ -1,0 +1,6 @@
+﻿{
+    "schema":  "casulo.t-runtime-cargo-test/1.0",
+    "command":  "cargo test --manifest-path t-runtime/Cargo.toml --release --locked",
+    "exit_code":  0,
+    "timestamp":  "2026-08-15T03:47:39.4025224+00:00"
+}

@@ -1,0 +1,41 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "created": "2026-08-11T00:00:00Z",
+    "creators": [
+      "Organization: Teloscorp"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://teloscorp.invalid/spdx/casulo-owner/0.1.0a1",
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-Wheel",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cd8f475d1b8605f4eb2e2875f95333e26e24923d3ed88265d360a810af986e4d"
+        }
+      ],
+      "fileName": "casulo_owner-0.1.0a1-py3-none-any.whl"
+    }
+  ],
+  "name": "casulo-owner-product-alpha",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-Edition",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cd8f475d1b8605f4eb2e2875f95333e26e24923d3ed88265d360a810af986e4d"
+        }
+      ],
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "LicenseRef-Teloscorp-Proprietary",
+      "name": "casulo-owner",
+      "versionInfo": "0.1.0a1"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

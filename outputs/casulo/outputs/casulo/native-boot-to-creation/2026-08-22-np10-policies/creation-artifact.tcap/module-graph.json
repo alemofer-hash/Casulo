@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "execute",
+    "module": "owner.generated.some_dois_numeros"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.generated.some_dois_numeros"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

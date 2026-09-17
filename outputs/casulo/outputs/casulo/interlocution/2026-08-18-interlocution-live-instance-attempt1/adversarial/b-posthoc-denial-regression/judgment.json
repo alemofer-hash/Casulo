@@ -1,0 +1,33 @@
+{
+  "observable": {
+    "diagnostics": [],
+    "events": [],
+    "jobs": [],
+    "requested_effects": [],
+    "result": {
+      "kind": "error",
+      "value": "equivalence_not_pass"
+    },
+    "state_delta": {}
+  },
+  "runtime_receipt": {
+    "canonical_input_hash": "8ebff67efcdfbe834b8bf9e7bbeb870015e86b3e2ac90711a787a2b31e1808e4",
+    "canonical_output_hash": "a9df10c35b319d349a268ddb91b96154a07361fe439736e89af02a22cfa0b5e9",
+    "decision_id": "decision:a9df10c35b319d349a268ddb",
+    "effects_requested": [],
+    "foreign_calls": [],
+    "grants_consumed": [],
+    "monotonic_timestamp_ns": 1,
+    "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "receipt_hash": "cc786cc4074295dff884deebd894a006c6bbace9d61bb44b31d70a95ca4411b9",
+    "result": "error",
+    "runtime_function": "research.interlocution.judgment::judge",
+    "runtime_id": "t-runtime/rust-2.0",
+    "schema": "casulo.t-decision-receipt/2.0",
+    "scope_id": "training:flood-surrogate-full-v1",
+    "surface_id": "equivalence_acceptance",
+    "t_ir_hash": "c961174898523053c1cafa426ebb3899e0b521dc42fa430b28c057904955af5c",
+    "t_source_hash": "a5451dc8abb14a24f4772c0dba6a2a6ee7bf86f394d348edcae945a1dc4561c9",
+    "tcap_hash": "4c3a538736c68f0343e2050aa939ea3a55b3fd930ce4ffbe2c2341a1d0fd45d0"
+  }
+}

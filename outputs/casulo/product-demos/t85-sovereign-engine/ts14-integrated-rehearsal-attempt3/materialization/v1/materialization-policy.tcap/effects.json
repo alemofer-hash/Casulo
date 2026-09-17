@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.materialization.lifecycle": {
+      "decide": [
+        "manifest"
+      ]
+    }
+  }
+}

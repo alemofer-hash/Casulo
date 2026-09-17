@@ -1,0 +1,309 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:33e6eb6ffc10ec2f87af69e40bd2c8c4ea6ed0b4417d4ab0f48ba3f909c38b21",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "capabilities: memory.read",
+          "observed": "creation:open-ended-holdout",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "4774c6fa82ad8e2f1839e77341725d8ebbe17da65e7de4ce3b48bc6b60ed85bb",
+          "test_name": "TestCreationInitialization",
+          "unit_id": "creation_unit"
+        },
+        {
+          "artifact_id": "sha256:c64c53bd6fe552ba5eb2ccc95241fb4f91bc63d39316668416a9fa11362e4787",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "capabilities: memory.read",
+          "observed": "memory.read",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "bfa4952004e045c914c989d9c235f672dc41ae647facd677419ca6c237f3f16b",
+          "test_name": "TestCapabilitiesValidation",
+          "unit_id": "capabilities_unit"
+        },
+        {
+          "artifact_id": "sha256:10b1021dfd34491cb0d520ea52b350cd71d6d1c8497d38293f42724e1753b3fe",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "trace value: Text",
+          "observed": "Text",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "168aa5fc4f79294e554643672b91a20366439056ba922e85849b0783d5b14ac6",
+          "test_name": "TestTraceOriginRecording",
+          "unit_id": "tracing_unit"
+        },
+        {
+          "artifact_id": "sha256:33e6eb6ffc10ec2f87af69e40bd2c8c4ea6ed0b4417d4ab0f48ba3f909c38b21",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "trilho D39E reversível",
+          "observed": "creation:open-ended-holdout",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "4774c6fa82ad8e2f1839e77341725d8ebbe17da65e7de4ce3b48bc6b60ed85bb",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation_unit"
+        }
+      ],
+      "finished_ns": 803928946600,
+      "project_id": "t-project:9853697f7912ee4d79009a90",
+      "started_ns": 802997012700,
+      "tcap_sha256": "4a4bc77f5b2359121faef78d3f3f49c4246f1637b9ae6c548003d54abcf132b3",
+      "tests": [
+        {
+          "expected_contains": "capabilities: memory.read",
+          "name": "TestCreationInitialization",
+          "observed": "creation:open-ended-holdout",
+          "operation": "InitializeCreation",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "490407d6e19c4e207c545ccca5c69c63ffa20ad59e4637d894c3a87b9763b987",
+          "unit_id": "creation_unit",
+          "wall_ns": 334581000
+        },
+        {
+          "expected_contains": "capabilities: memory.read",
+          "name": "TestCapabilitiesValidation",
+          "observed": "memory.read",
+          "operation": "ValidateCapabilities",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "c2be335b2c0d5fdd3688f80d0d3a1d76834f0816aa5b7284edbe55306752c281",
+          "unit_id": "capabilities_unit",
+          "wall_ns": 121242100
+        },
+        {
+          "expected_contains": "trace value: Text",
+          "name": "TestTraceOriginRecording",
+          "observed": "Text",
+          "operation": "RecordTraceOrigin",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "47c0675acccef1c75e6550ceb2d649eb4d42d659cff79db66f45bd11ddc8fddf",
+          "unit_id": "tracing_unit",
+          "wall_ns": 137145800
+        },
+        {
+          "expected_contains": "effects[manifest]",
+          "name": "TestEffectsApplication",
+          "observed": "effects[manifest]",
+          "operation": "ApplyEffects",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "468151084f271abf70e00a5d734b81933119c2390cd5314f1315ad14473719fc",
+          "unit_id": "effects_unit",
+          "wall_ns": 110010500
+        },
+        {
+          "expected_contains": "trilho D39E reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "creation:open-ended-holdout",
+          "operation": "InitializeCreation",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "6275ef3435387f91788778626e070e8c04c01028466319e4f3fc0a77863a92e6",
+          "unit_id": "creation_unit",
+          "wall_ns": 84812800
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:c64c53bd6fe552ba5eb2ccc95241fb4f91bc63d39316668416a9fa11362e4787",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "capabilities: memory.read",
+          "observed": "memory.read",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "bfa4952004e045c914c989d9c235f672dc41ae647facd677419ca6c237f3f16b",
+          "test_name": "TestCapabilitiesValidation",
+          "unit_id": "capabilities_unit"
+        },
+        {
+          "artifact_id": "sha256:10b1021dfd34491cb0d520ea52b350cd71d6d1c8497d38293f42724e1753b3fe",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "trace value: Text",
+          "observed": "Text",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "168aa5fc4f79294e554643672b91a20366439056ba922e85849b0783d5b14ac6",
+          "test_name": "TestTraceOriginRecording",
+          "unit_id": "tracing_unit"
+        }
+      ],
+      "finished_ns": 849634367700,
+      "project_id": "t-project:ad2f79b9f314c6cc0c294ef7",
+      "started_ns": 848916839400,
+      "tcap_sha256": "f42db2824d1c88afaeb4837f7e3e267eb0101bdbc8215a19ff3224bf240d27aa",
+      "tests": [
+        {
+          "expected_contains": "capabilities: memory.read",
+          "name": "TestCreationInitialization",
+          "observed": "capabilities: memory.read,trilho D39E reversível",
+          "operation": "InitializeCreation",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "374254b52e403f8857cd610d92116512e2b1b239c73f0d01aff63ae2fff45719",
+          "unit_id": "creation_unit",
+          "wall_ns": 158380500
+        },
+        {
+          "expected_contains": "capabilities: memory.read",
+          "name": "TestCapabilitiesValidation",
+          "observed": "memory.read",
+          "operation": "ValidateCapabilities",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8ea64823e81d0dbd9e0fe630e9a3c41b88a03dd2009bda2c34273edb0c7fa5ce",
+          "unit_id": "capabilities_unit",
+          "wall_ns": 133591200
+        },
+        {
+          "expected_contains": "trace value: Text",
+          "name": "TestTraceOriginRecording",
+          "observed": "Text",
+          "operation": "RecordTraceOrigin",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "3e0d0dd49b29a9cfec3366ffb846e0488e30e0d93d287f5c1fcd91deb6e20e58",
+          "unit_id": "tracing_unit",
+          "wall_ns": 120964200
+        },
+        {
+          "expected_contains": "effects[manifest]",
+          "name": "TestEffectsApplication",
+          "observed": "effects[manifest]",
+          "operation": "ApplyEffects",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "b15b4e87c2f07b971733c63cf88f56295d83ca1e2f4fc3c4f582a2aae8b31d03",
+          "unit_id": "effects_unit",
+          "wall_ns": 120736600
+        },
+        {
+          "expected_contains": "trilho D39E reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "capabilities: memory.read,trilho D39E reversível",
+          "operation": "InitializeCreation",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8b19ddb35767824fb0322fb6eaad3aeab4ccff5faee48b1634928a8dd9c0d3d5",
+          "unit_id": "creation_unit",
+          "wall_ns": 81399800
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:10b1021dfd34491cb0d520ea52b350cd71d6d1c8497d38293f42724e1753b3fe",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "trace value: Text",
+          "observed": "Text",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "168aa5fc4f79294e554643672b91a20366439056ba922e85849b0783d5b14ac6",
+          "test_name": "TestTraceOriginRecording",
+          "unit_id": "tracing_unit"
+        }
+      ],
+      "finished_ns": 874580873400,
+      "project_id": "t-project:0d82691b8a32391c8d7b2072",
+      "started_ns": 873865001900,
+      "tcap_sha256": "fdd2d6cfc38452c32eaa0b2860ca7aa30cd610313c9aab5e0fd453b41599b233",
+      "tests": [
+        {
+          "expected_contains": "capabilities: memory.read",
+          "name": "TestCreationInitialization",
+          "observed": "capabilities: memory.read,trilho D39E reversível",
+          "operation": "InitializeCreation",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "5de39be9a04bee735959232b7df9ea4e98406713e881436b96ace3a923cb4d3c",
+          "unit_id": "creation_unit",
+          "wall_ns": 154601900
+        },
+        {
+          "expected_contains": "capabilities: memory.read",
+          "name": "TestCapabilitiesValidation",
+          "observed": "capabilities: memory.read",
+          "operation": "ValidateCapabilities",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "33e3ab67e129ac2ed36934bb98da47906a50b8276a0f505f74e2012498956a5b",
+          "unit_id": "capabilities_unit",
+          "wall_ns": 129207000
+        },
+        {
+          "expected_contains": "trace value: Text",
+          "name": "TestTraceOriginRecording",
+          "observed": "Text",
+          "operation": "RecordTraceOrigin",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8cd417714c185c54894520ed4f63ebc1f54c76fad1d3d7a913026c31049b729e",
+          "unit_id": "tracing_unit",
+          "wall_ns": 121578500
+        },
+        {
+          "expected_contains": "effects[manifest]",
+          "name": "TestEffectsApplication",
+          "observed": "effects[manifest]",
+          "operation": "ApplyEffects",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "6e199787a1d7c91aa50c92654fc8ce252606ac54eca7745667c99f5af943f4ce",
+          "unit_id": "effects_unit",
+          "wall_ns": 120815100
+        },
+        {
+          "expected_contains": "trilho D39E reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "capabilities: memory.read,trilho D39E reversível",
+          "operation": "InitializeCreation",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "269ca84ed1e116f429ffcaf6677a2d0225f70321a10114342e0c08f6da96a2a5",
+          "unit_id": "creation_unit",
+          "wall_ns": 81130800
+        }
+      ]
+    }
+  ],
+  "budget": 2,
+  "candidate_rejections": [],
+  "project_id": "t-project:0d82691b8a32391c8d7b2072",
+  "receipt_sha256": "0103334450fbe5a449bd780bdf620765e36e67aeb64120ef4adec9a2788cf588",
+  "repair_count": 2,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "REPAIR_BUDGET_EXHAUSTED",
+  "tcap_sha256": "fdd2d6cfc38452c32eaa0b2860ca7aa30cd610313c9aab5e0fd453b41599b233"
+}

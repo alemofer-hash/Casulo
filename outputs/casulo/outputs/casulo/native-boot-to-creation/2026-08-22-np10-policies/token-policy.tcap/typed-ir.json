@@ -1,0 +1,489 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "decoder_gate"
+                ],
+                "root": "input"
+              },
+              "error": "decoder_gate_failed",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "blocks_completed"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 36
+                }
+              },
+              "error": "decoder_incomplete",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "token_index"
+                  ],
+                  "root": "input"
+                },
+                "op": "ge",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "negative_token_index",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "token_index"
+                  ],
+                  "root": "input"
+                },
+                "op": "lt",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "max_tokens"
+                  ],
+                  "root": "input"
+                }
+              },
+              "error": "token_budget_exhausted",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "max_tokens"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 40
+                }
+              },
+              "error": "token_budget_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "input_token_id"
+                  ],
+                  "root": "input"
+                },
+                "op": "ge",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "input_token_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "greedy_candidate_id"
+                  ],
+                  "root": "input"
+                },
+                "op": "ge",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "error": "candidate_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "logits_sha256"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 64
+                }
+              },
+              "error": "logits_identity_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "model_sha256"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 64
+                }
+              },
+              "error": "model_identity_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "args": [
+                    {
+                      "op": "path",
+                      "path": [
+                        "prompt_sha256"
+                      ],
+                      "root": "input"
+                    }
+                  ],
+                  "name": "len",
+                  "op": "call"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 64
+                }
+              },
+              "error": "prompt_identity_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "candidate_unpublished"
+                ],
+                "root": "input"
+              },
+              "error": "late_publication_detected",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "policy_id"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "greedy-creation-v1"
+                }
+              },
+              "error": "sampling_policy_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "token_index"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 0
+                }
+              },
+              "else": [
+                {
+                  "condition": {
+                    "left": {
+                      "args": [
+                        {
+                          "op": "path",
+                          "path": [
+                            "previous_receipt_hash"
+                          ],
+                          "root": "input"
+                        }
+                      ],
+                      "name": "len",
+                      "op": "call"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": 64
+                    }
+                  },
+                  "error": "receipt_predecessor_invalid",
+                  "op": "require"
+                },
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "previous_receipt_hash"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "ne",
+                    "right": {
+                      "op": "const",
+                      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+                    }
+                  },
+                  "error": "receipt_predecessor_missing",
+                  "op": "require"
+                },
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "PUBLISH_TOKEN"
+                  }
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "condition": {
+                    "left": {
+                      "op": "path",
+                      "path": [
+                        "previous_receipt_hash"
+                      ],
+                      "root": "input"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+                    }
+                  },
+                  "error": "first_receipt_predecessor_mismatch",
+                  "op": "require"
+                },
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "PUBLISH_TOKEN"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "NativeCreationTokenInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "owner.native.creation_token_policy",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "decoder_gate",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "token_index",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "max_tokens",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "input_token_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "logits_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "blocks_completed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "greedy_candidate_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "candidate_unpublished",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "model_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "prompt_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "policy_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "previous_receipt_hash",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "NativeCreationTokenInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

@@ -1,0 +1,121 @@
+{
+  "affected_paths": [
+    [
+      "identity",
+      "name"
+    ],
+    [
+      "purpose",
+      "type"
+    ],
+    [
+      "behavior",
+      "autonomy"
+    ],
+    [
+      "interface",
+      "input_format"
+    ],
+    [
+      "interface",
+      "output_format"
+    ],
+    [
+      "data",
+      "rejected_alternatives"
+    ],
+    [
+      "output",
+      "evidence_linking"
+    ]
+  ],
+  "base_version": 0,
+  "confidence": 0.85,
+  "confirmation_state": "PROPOSED",
+  "creation_id": "creation:open-ended-holdout",
+  "delta_id": "intent:gen:526b8af7e376f51aa29483ae",
+  "operations": [
+    {
+      "action": "set",
+      "path": [
+        "identity",
+        "name"
+      ],
+      "value": {
+        "type": "string",
+        "value": "G61H"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "purpose",
+        "type"
+      ],
+      "value": {
+        "type": "string",
+        "value": "conversion"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "autonomy"
+      ],
+      "value": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "input_format"
+      ],
+      "value": {
+        "type": "string",
+        "value": "divergent_reports"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "output_format"
+      ],
+      "value": {
+        "type": "string",
+        "value": "reversible_decisions"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "data",
+        "rejected_alternatives"
+      ],
+      "value": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "output",
+        "evidence_linking"
+      ],
+      "value": {
+        "type": "boolean",
+        "value": true
+      }
+    }
+  ],
+  "rationale": "A proposta visa a modificação da CreationSpec para incluir uma nova entidade de agente inédita com funcionalidades específicas relacionadas à conversão, manutenção e vinculação de informações técnicas.",
+  "schema": "casulo.intent-delta/1.0",
+  "source_event_ids": [
+    "voice:g5:novel-idea"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "attacks": {
+    "archive_path_traversal_denied": true,
+    "bounded_fuzz_all_rejected": true,
+    "cloud_release_locked": true,
+    "command_and_host_path_denied": true,
+    "data_cannot_self_promote_to_instruction": true,
+    "downgrade_denied": true,
+    "guest_network_and_block_devices_denied": true,
+    "ipc_replay_denied": true,
+    "late_cancelled_publish_denied": true,
+    "malicious_codegen_effect_denied": true,
+    "manifest_payload_mismatch_denied": true,
+    "material_delta_requires_confirmation": true,
+    "model_cannot_grant_capability": true,
+    "nonhuman_grant_denied": true,
+    "prompt_domain_injection_quarantined": true,
+    "public_private_components_zero": true,
+    "qpu_fail_closed": true,
+    "tampered_update_denied": true,
+    "valid_signed_ab_update": true
+  },
+  "boundaries": {
+    "Cloud": "RELEASE_LOCKED",
+    "QPU": "UNAVAILABLE_DENY",
+    "USB_block_devices": "PROHIBITED",
+    "guest_network_default": "OFF"
+  },
+  "findings": [],
+  "metrics": {
+    "P0": 0,
+    "P1_on_supported_human_path": 0,
+    "invalid_updates_accepted": 0,
+    "private_in_public": 0,
+    "secret_findings": 0,
+    "unauthorized_real_effects": 0
+  },
+  "schema": "casulo.security-attack-probe/1.0",
+  "state": "PASS"
+}

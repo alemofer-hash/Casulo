@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:b027d7eb470b2cb4ea87d8166a3e21348fafd9161432a2ccfcc82c2bd360c993",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "279655517deb18d0d44491a237150b976398b18f629635cfc0f85e255f2c6127"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "478e1ba7f5c581d10179e1bdc0e60a01663664c8ba5f06fdd77cf36ddab0af46",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "6870210d94754ba4a0e669876bf7854bf7f62d64c407fdf507ff27416ddf47df",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "data",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "6be2e921a24d2fc27590c9b6d14667d350206c984f0a949494a6f84b8516dcdd"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "HipoteseFrage",
+        "judgements": [],
+        "name": "GenerateHypotheticalFragment",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "15ed2877d888c2333b861790e29179a6892b4f22be0fee5a712071b95da7e4b9"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "HipoteseFrage",
+      "kind": "condense",
+      "name": "GenerateHypotheticalFragment",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "944d9d39627ac7cf1ade54c68ee991e5009a7606bc69a61011f33cfcd5581354"
+  }
+}

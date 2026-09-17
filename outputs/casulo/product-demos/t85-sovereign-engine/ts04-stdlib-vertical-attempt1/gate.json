@@ -1,0 +1,44 @@
+{
+  "schema": "casulo.t85.gate/1.0",
+  "sprint": "TS4",
+  "gate": "TS4_T_STDLIB_VERTICAL_PASS",
+  "status": "PASS",
+  "created_at": "2026-08-14T22:08:01-03:00",
+  "previous_gate_sha256": "e01dc26e45bfb32e36af1b96cb5570d60387eb43b34fa21d377bd7bc324df454",
+  "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63",
+  "checks": {
+    "modules_executed": "13/13 PASS",
+    "receipt_chain": "13/13 PASS",
+    "final_value": "SEALED",
+    "hard_unknown": "BLOCKED",
+    "project_bleed": "DENIED",
+    "mutation_changes_decision": true,
+    "bypass_fails_closed": true,
+    "effects_requested": ["simulation", "manifest"],
+    "real_effects_executed": 0,
+    "foreign_decisions": 0,
+    "owner_authority_promoted": false,
+    "scientific_benchmark": "NOT_STARTED"
+  },
+  "tests": {
+    "passed": 61,
+    "subtests_passed": 42,
+    "failed": 0,
+    "xml_sha256": "7a4fbb4b7b28df8abf73ba7fcf500c932faa8d298b1dfeb352bcad30f3bbed60"
+  },
+  "artifacts": [
+    {"path":"stdlib/t-v2/","module_count":13,"tcap_hash":"a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"},
+    {"path":"src/casulo/t/stdlib.py","sha256":"a073df6d681f8d5d757642b11326c4c071d0706b2a75c6a477b8a652d0327a04"},
+    {"path":"t-runtime/src/main.rs","sha256":"cf8596333f07db2b507cf2e4505b9f57957b92d4f03f8aaaf4f63849716eb62e"},
+    {"path":"tools/run_t_stdlib_vertical.py","sha256":"f1e154d95422ad668030ab463fb6ac5618822265f7debb553c26f710d1d6864d"},
+    {"path":"tests/product/test_t_stdlib.py","sha256":"22e1af2b07a2aa4e6a5b61001c19d7872e548de83867a7665fe310b20fbfddaa"},
+    {"path":"docs/product/TS_FOREIGN_BOUNDARIES.json","sha256":"b22fc2a40ee4b8fe470ab19ab65495235ecd80f2f57007121c5fc1e607e5aa0d"},
+    {"path":"docs/product/T_STANDARD_LIBRARY_V2.md","sha256":"765bc729b404072d51d423c63f200644fb7283cbbfcb0bf7a509c4c229b9cd48"},
+    {"path":"product-demos/t85-sovereign-engine/ts04-stdlib-vertical-attempt1/vertical-slice.json","sha256":"497146f3bb8ede8b7884ce22937c9b7b6c88102bfffdd842b9486f5b8fa79d64"}
+  ],
+  "limitations": [
+    "The vertical slice is a productive Rust T runtime harness, not yet the owner path.",
+    "Simulation and manifest are receipt-only simulated effects in TS4."
+  ],
+  "next": "TS5 migrate the four critical owner authorities"
+}

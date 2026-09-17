@@ -1,0 +1,15 @@
+{
+  "claim_boundary": "bounded reference implementation; not claimed equivalent to WebRTC AEC3 or physical-room validation",
+  "fixture": "synthetic_known_echo",
+  "raw_pcm_persisted": false,
+  "receipt": {
+    "agc_gain": 1.0,
+    "double_talk": false,
+    "echo_scale": 0.6999724640338981,
+    "input_rms": 2973.0293147310203,
+    "output_rms": 0.0,
+    "residual_rms": 0.3705692152066547,
+    "samples": 320
+  },
+  "schema": "casulo-audio-frontend-evidence/1.0"
+}

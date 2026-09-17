@@ -1,0 +1,51 @@
+{
+  "schema": "casulo.router-dataset/1.0",
+  "dataset_id": "casulo-semantic-router-rc5-v1",
+  "license": "MIT-first-party-synthetic",
+  "contains_user_content": false,
+  "contains_holdout_rc3": false,
+  "split_policy": "scenario_family_id-disjoint",
+  "records": [
+    {"id":"i01","family":"intent-train-a","split":"train","text":"quero definir a finalidade e os requisitos desta criação","universe":"intencao"},
+    {"id":"i02","family":"intent-train-a","split":"train","text":"organize objetivos restrições e decisões antes de construir","universe":"intencao"},
+    {"id":"i03","family":"intent-train-b","split":"train","text":"capture o propósito e as condições obrigatórias do pedido","universe":"intencao"},
+    {"id":"i04","family":"intent-valid","split":"valid","text":"preciso esclarecer a finalidade e as restrições","universe":"intencao"},
+    {"id":"i05","family":"intent-test","split":"test","text":"vamos consolidar objetivos e requisitos confirmados","universe":"intencao"},
+    {"id":"i06","family":"intent-test","split":"test","text":"qual é o propósito desta criação e o que não pode mudar","universe":"intencao"},
+
+    {"id":"s01","family":"signals-train-a","split":"train","text":"ingira telemetria dos sensores como fluxo temporal","universe":"sinais"},
+    {"id":"s02","family":"signals-train-a","split":"train","text":"normalize eventos amostras timestamps e medições","universe":"sinais"},
+    {"id":"s03","family":"signals-train-b","split":"train","text":"leia dados de entrada preservando o registro bruto","universe":"sinais"},
+    {"id":"s04","family":"signals-valid","split":"valid","text":"receba medições contínuas dos dispositivos","universe":"sinais"},
+    {"id":"s05","family":"signals-test","split":"test","text":"processar o fluxo de sensores com horário do evento","universe":"sinais"},
+    {"id":"s06","family":"signals-test","split":"test","text":"a entrada são amostras de telemetria ordenadas no tempo","universe":"sinais"},
+
+    {"id":"e01","family":"engineering-train-a","split":"train","text":"projete módulos contratos interfaces e dependências","universe":"engenharia"},
+    {"id":"e02","family":"engineering-train-a","split":"train","text":"gere código T compile e conecte os componentes","universe":"engenharia"},
+    {"id":"e03","family":"engineering-train-b","split":"train","text":"defina arquitetura tipos efeitos e capacidades","universe":"engenharia"},
+    {"id":"e04","family":"engineering-valid","split":"valid","text":"construa o grafo técnico e compile o programa","universe":"engenharia"},
+    {"id":"e05","family":"engineering-test","split":"test","text":"preciso arquitetar componentes e compilar o código T","universe":"engenharia"},
+    {"id":"e06","family":"engineering-test","split":"test","text":"modele tipos contratos e dependências do sistema","universe":"engenharia"},
+
+    {"id":"d01","family":"diagnostic-train-a","split":"train","text":"investigue a falha e encontre a causa raiz","universe":"diagnostico"},
+    {"id":"d02","family":"diagnostic-train-a","split":"train","text":"use os erros do compilador para reparar o defeito","universe":"diagnostico"},
+    {"id":"d03","family":"diagnostic-train-b","split":"train","text":"compare evidências e explique por que o teste falhou","universe":"diagnostico"},
+    {"id":"d04","family":"diagnostic-valid","split":"valid","text":"analise o erro sem esconder a lacuna","universe":"diagnostico"},
+    {"id":"d05","family":"diagnostic-test","split":"test","text":"o teste quebrou encontre a causa e proponha reparo","universe":"diagnostico"},
+    {"id":"d06","family":"diagnostic-test","split":"test","text":"há uma falha de validação que precisa de diagnóstico","universe":"diagnostico"},
+
+    {"id":"u01","family":"interface-train-a","split":"train","text":"desenhe a tela e o fluxo de interação por voz","universe":"interface"},
+    {"id":"u02","family":"interface-train-a","split":"train","text":"mostre estado visual acessível sem painel confuso","universe":"interface"},
+    {"id":"u03","family":"interface-train-b","split":"train","text":"organize controles feedback e interrupção do usuário","universe":"interface"},
+    {"id":"u04","family":"interface-valid","split":"valid","text":"a experiência precisa falar e responder visualmente","universe":"interface"},
+    {"id":"u05","family":"interface-test","split":"test","text":"crie uma interface de voz com feedback visual claro","universe":"interface"},
+    {"id":"u06","family":"interface-test","split":"test","text":"quero ajustar a tela a navegação e a interação","universe":"interface"},
+
+    {"id":"m01","family":"material-train-a","split":"train","text":"exporte um pacote executável com manifest e hashes","universe":"materializacao"},
+    {"id":"m02","family":"material-train-a","split":"train","text":"publique bytes validados num artefato portátil","universe":"materializacao"},
+    {"id":"m03","family":"material-train-b","split":"train","text":"gere aplicativo local com sbom assinatura e rollback","universe":"materializacao"},
+    {"id":"m04","family":"material-valid","split":"valid","text":"empacote o resultado para executar fora do repositório","universe":"materializacao"},
+    {"id":"m05","family":"material-test","split":"test","text":"materialize como pacote portátil com manifest e sbom","universe":"materializacao"},
+    {"id":"m06","family":"material-test","split":"test","text":"exportar o aplicativo executável e verificar seus hashes","universe":"materializacao"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "casulo-hwinfo-campaign-interruption/1.0",
+  "status": "INVALID_CALIBRATION_IMPLEMENTATION_DEFECT",
+  "interrupted_at_local": "2026-08-07T20:30:00-03:00",
+  "definitive_pairs_accepted": 2,
+  "definitive_pairs_rejected": 10,
+  "scientific_conclusion_authorized": false,
+  "reason_code": "QUALIFICATION_RETRY_K_NOT_PROPAGATED_TO_FROZEN_K",
+  "detail": "The qualification runner increased K after short runtime, but frozen_k.json persisted the stale pre-retry count. Six of nine observed Eager windows subsequently failed the preregistered 20 second minimum. The campaign was stopped between pairs, preserved without reclassification, and will not be used for an energy conclusion.",
+  "corrective_action": "Freeze the K stored in the accepted qualification window, validate the correction, and start a distinct campaign identity from polling and calibration."
+}

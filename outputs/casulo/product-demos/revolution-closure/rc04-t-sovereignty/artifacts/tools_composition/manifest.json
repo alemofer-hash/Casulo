@@ -1,0 +1,103 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:82e1f0291f18016d5e588595d180b2b03c91cbd133c2afab18d8d1968dd37c6e",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "b7d038050c21afffa1ebb244824e26ac927b755ca6c7bcf8fd457938c228655c"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "d7b0710d104b367a21256fe4c9ed8e12115d105a4b6d8f75d0ca72853b673d8d",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "d61c2604188bf05e6219c715585ccc4f492dc9eff4ba066926e2d76a54fb414b",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "casulo.revolution.tools",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "9c860d627803fce60c788f44f5b088338c3e89b49700c27b175cd9559bcc4fbc"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "schema_valid",
+          "capability_present",
+          "simulation"
+        ],
+        "input_type": "ToolDecision",
+        "judgements": [],
+        "name": "AuthorizeTool",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "50887af1f424ec595b578a69c0a6498fea22997cdc806cf9d0c5270f777d2214"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "ToolDecision",
+      "kind": "condense",
+      "name": "AuthorizeTool",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 7,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "2d567c5d6a1f16acc47cfdc3f9ee23e16903d319b67e239de4c9c4fc6b7058a3"
+  }
+}

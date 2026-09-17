@@ -1,0 +1,1 @@
+{"capabilities":["network.connect"],"content":{"behavior":{"retry":"conservador","tone":"gentil"},"identity":{"name":"Guia Diario"}},"creation_id":"creation:daily-guide","rejected_delta_ids":[],"schema":"casulo.creation/1.0","state":"AGREEMENT","version":16}

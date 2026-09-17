@@ -1,0 +1,12 @@
+{
+  "calibration_windows": 0,
+  "campaign_id": "2026-08-07-g5-hwinfo-thermal-recovery-250ms-90c-start70-final3",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "equivalence_gates": 0,
+  "reason": "A transient throttle inside idle is now preserved as a rejected idle attempt followed by a clean retry; no candidate workload ran.",
+  "schema": "casulo-hwinfo-thermal-recovery-analysis/1.0",
+  "scientific_judgment": "NO_ENERGY_RESULT",
+  "terminal_state": "SUPERSEDED_BEFORE_DEFINITIVE_CAMPAIGN",
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "valid_pairs": 0
+}

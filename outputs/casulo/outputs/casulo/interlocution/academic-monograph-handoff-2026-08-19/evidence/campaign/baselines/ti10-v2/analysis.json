@@ -1,0 +1,68 @@
+{
+  "arm_summary": {
+    "A": {
+      "median_observed_process_cpu_seconds": 6.9375,
+      "median_outer_wall_seconds": 7.8696842,
+      "median_peak_process_tree_rss_bytes": 327565312,
+      "median_process_tree_read_bytes": 53541790,
+      "median_process_tree_write_bytes": 18726,
+      "median_seconds_per_training": 3.9348421
+    },
+    "B": {
+      "median_observed_process_cpu_seconds": 6.71875,
+      "median_outer_wall_seconds": 7.8756984,
+      "median_peak_process_tree_rss_bytes": 327827456,
+      "median_process_tree_read_bytes": 53541790,
+      "median_process_tree_write_bytes": 18726,
+      "median_seconds_per_training": 3.9378492
+    },
+    "C": {
+      "median_observed_process_cpu_seconds": 0.75,
+      "median_outer_wall_seconds": 1.2478695,
+      "median_peak_process_tree_rss_bytes": 43999232,
+      "median_process_tree_read_bytes": 9621581,
+      "median_process_tree_write_bytes": 17864,
+      "median_seconds_per_training": 0.62393475
+    },
+    "D": {
+      "median_observed_process_cpu_seconds": 0.75,
+      "median_outer_wall_seconds": 1.3330429,
+      "median_peak_process_tree_rss_bytes": 43249664,
+      "median_process_tree_read_bytes": 9935278,
+      "median_process_tree_write_bytes": 22730,
+      "median_seconds_per_training": 0.66652145
+    }
+  },
+  "energy": {
+    "claim": "BLOCKED_NOT_MEASURED",
+    "package_joules": null,
+    "total_system_joules": null
+  },
+  "exact_sign_test": {
+    "losses": 0,
+    "nonties": 7,
+    "ties": 0,
+    "two_sided_p_value": 0.015625,
+    "wins": 7
+  },
+  "interpretation_rule": "Only predeclared dimensions are reported; no aggregate compression score.",
+  "median_D_over_A_wall_ratio": 0.1695562192953054,
+  "paired_D_over_A_wall_ratios": [
+    0.16736001125675595,
+    0.1695562192953054,
+    0.1812736194534004,
+    0.16974037496394784,
+    0.16768441571791973,
+    0.1671383523620221,
+    0.22522162484525562
+  ],
+  "paired_bootstrap_ci95": {
+    "lower": 0.16736001125675595,
+    "resamples": 20000,
+    "seed": 2026081901,
+    "upper": 0.1812736194534004
+  },
+  "schema": "casulo.interlocution-ti10-analysis/1.0",
+  "status": "PASS_MEASUREMENT_NO_ENERGY",
+  "valid_blocks": 7
+}

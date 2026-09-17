@@ -1,0 +1,11 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/owner.guide.turn_coordinator.t",
+      "module": "owner.guide.turn_coordinator",
+      "sha256": "6e68cf67a4940693a684513d156c143390a88b11db902ae1495a626f4428cce8"
+    }
+  ]
+}

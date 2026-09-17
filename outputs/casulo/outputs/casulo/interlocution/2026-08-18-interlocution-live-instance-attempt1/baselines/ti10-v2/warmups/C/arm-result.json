@@ -1,0 +1,52 @@
+{
+  "arm": "C",
+  "count": 1,
+  "energy": {
+    "package_joules": null,
+    "reason": "NO_ENERGY_INSTRUMENT_USED_IN_TI9_TI10",
+    "total_system_joules": null
+  },
+  "inner_total_ns": 566352200,
+  "phases_ns": {
+    "publication_ns": 2358400,
+    "t_architecture_ns": 414999500,
+    "training_and_receipting_ns": 148967000
+  },
+  "publication": {
+    "accepted": true,
+    "arm": "C",
+    "publication_authority": "T_ARCHITECTURE_FOREIGN_ACCEPTANCE",
+    "result_sha256": "14f2d851788def069ace01540c5b7be024d94a1db42c019d1827e3738d86c758",
+    "t_judge_required": false
+  },
+  "result_file": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\interlocution\\2026-08-18-interlocution-live-instance-attempt1\\baselines\\ti10-v2\\warmups\\C\\worker\\worker-result.bin",
+  "result_sha256": "14f2d851788def069ace01540c5b7be024d94a1db42c019d1827e3738d86c758",
+  "schema": "casulo.interlocution-arm-result/1.0",
+  "start": 0,
+  "summary_sha256": "baa8913a86dd9948f6d9084692d644022f7aaf149b8b1df1fd4f55b23d0e3620",
+  "work_summary": {
+    "K_completed": 1,
+    "K_requested": 1,
+    "K_started": 1,
+    "authority_chain_tip": "21842288a5385b90ec4276812d3bfe9029bee29a5e120371dcbd67d11d0e4c16",
+    "child_timing": {
+      "count": 1,
+      "parent_monotonic_ns": 63836300,
+      "qpc_frequency": 10000000,
+      "qpc_ticks": 340765,
+      "start": 0,
+      "thread_cycles": 79561002,
+      "worker_monotonic_ns": 34066800
+    },
+    "epochs_completed": 400,
+    "optimizer_steps": 400,
+    "parameter_writes": 32400,
+    "receipt_file_sha256": "e08beeab8d52f3f8bfdb2bd1707a518b51d59b113f3e73a0e4f91fee0384c1b4",
+    "records_visited": 409600,
+    "result_file_sha256": "14f2d851788def069ace01540c5b7be024d94a1db42c019d1827e3738d86c758",
+    "schema": "casulo.interlocution-worker-summary/1.0",
+    "status": "WORK_COMPLETED_RECEIPTED",
+    "summary_sha256": "4471cdd769bfc0a79a56863b683b52bfb724a4ccda49d3f7ef1b5662c52573f3",
+    "work_chain_tip": "d1f03af49f0beb7e020df53afdc37283add99c1701e176f3367e8d09aacd91d0"
+  }
+}

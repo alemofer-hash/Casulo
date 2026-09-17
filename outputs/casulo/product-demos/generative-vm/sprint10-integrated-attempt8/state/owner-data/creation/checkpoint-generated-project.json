@@ -1,0 +1,123 @@
+{
+  "creation_sha256": "9418abb244163ec2abb0a1e772fcd16ea832090d3e5f1f2a20ab0a7881a82895",
+  "entry_unit": "creation.unit.memory.read",
+  "project_id": "t-project:78147bf3ab3c2d47a39e24da",
+  "tests": [
+    {
+      "expected_contains": "memory.read.value = 'lab_journal_001'",
+      "input": "memory.read = 'lab_journal_001'",
+      "name": "test.memory.read",
+      "unit_id": "creation.unit.memory.read"
+    },
+    {
+      "expected_contains": "data.processing.value = 'conflict_resolution'",
+      "input": "data.processing = 'conflict_resolution'",
+      "name": "test.data.processing",
+      "unit_id": "creation.unit.data_processing"
+    },
+    {
+      "expected_contains": "reversibility.check.value = true",
+      "input": "reversibility.check = true",
+      "name": "test.reversibility.check",
+      "unit_id": "creation.unit.reversibility"
+    },
+    {
+      "expected_contains": "preservation.log.value = 'rejected_alternative_001'",
+      "input": "preservation.log = 'rejected_alternative_001'",
+      "name": "test.preservation.log",
+      "unit_id": "creation.unit.preservation"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "50aba23575777897a9eb290e6f229aaeb6ce8eaf4b9a784e0fe977ae5bd6fe8b",
+    "ended_monotonic_ns": 42136556707100,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5",
+    "output_sha256": "78147bf3ab3c2d47a39e24daee88a3c3698623996f97c962e35c72d44559a925",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 42032249637200,
+    "stream_events": 602
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule memory\n\ncapability manifest\n\nfield READ\n  trace value: Text\n\ncondense READ in READ\n  effects [manifest]\n  emit \"memory.read\"\n",
+      "unit_id": "creation.unit.memory.read",
+      "watch_paths": [
+        [
+          "memory",
+          "read",
+          "value"
+        ],
+        [
+          "memory",
+          "read",
+          "timestamp"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation.unit.memory.read"
+      ],
+      "source": "language T/1.1\nmodule data\n\ncapability manifest\n\nfield PROCESSING\n  trace value: Text\n\ncondense PROCESSING in PROCESSING\n  effects [manifest]\n  emit \"data.processing\"\n",
+      "unit_id": "creation.unit.data_processing",
+      "watch_paths": [
+        [
+          "data",
+          "processing",
+          "value"
+        ],
+        [
+          "data",
+          "processing",
+          "timestamp"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation.unit.data_processing"
+      ],
+      "source": "language T/1.1\nmodule reversibility\n\ncapability manifest\n\nfield REVERSIBILITY\n  trace value: Text\n\ncondense REVERSIBILITY in REVERSIBILITY\n  effects [manifest]\n  emit \"reversibility.check\"\n",
+      "unit_id": "creation.unit.reversibility",
+      "watch_paths": [
+        [
+          "reversibility",
+          "check",
+          "value"
+        ],
+        [
+          "reversibility",
+          "check",
+          "timestamp"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation.unit.reversibility"
+      ],
+      "source": "language T/1.1\nmodule preservation\n\ncapability manifest\n\nfield PRESERVATION\n  trace value: Text\n\ncondense PRESERVATION in PRESERVATION\n  effects [manifest]\n  emit \"preservation.log\"\n",
+      "unit_id": "creation.unit.preservation",
+      "watch_paths": [
+        [
+          "preservation",
+          "log",
+          "value"
+        ],
+        [
+          "preservation",
+          "log",
+          "timestamp"
+        ]
+      ]
+    }
+  ]
+}

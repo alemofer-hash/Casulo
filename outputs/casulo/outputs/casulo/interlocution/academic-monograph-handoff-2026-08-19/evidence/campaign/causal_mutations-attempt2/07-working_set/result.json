@@ -1,0 +1,38 @@
+{
+  "config_from_t": {
+    "absolute_tolerance": "1e-09",
+    "bundle_sha256": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+    "dataset_sha256": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+    "dtype": "float64",
+    "epochs": "400",
+    "initialization_state_policy": "reset_each_case",
+    "input_features": "8",
+    "learning_rate": "0.018",
+    "loss": "mse",
+    "optimizer": "sgd",
+    "optimizer_state_policy": "reset_each_case",
+    "records": "1024",
+    "require_exact_counters": "true",
+    "require_no_nan_inf": "true",
+    "stopping_policy": "fixed_epochs",
+    "working_set_count": "512",
+    "working_set_policy": "all_records",
+    "working_set_start": "0"
+  },
+  "expected_effect": "PRIMITIVE_DENIED",
+  "message": "T policy is not supported by the primitive ABI",
+  "mutated_source_sha256": "36769fa0ba5fb3ab7ad7ff7f812db259e0af91a7780de08cf087cc38e418cc17",
+  "mutated_tcap_hash": "056af10f789012577172461d3483a10a1f02508d764e13e8fce94afe2a7ad4ea",
+  "mutation": {
+    "file": "working_set.t",
+    "new": "'working_set_count': '512'",
+    "old": "'working_set_count': '1024'"
+  },
+  "observed_effect": "PRIMITIVE_DENIED",
+  "original_tcap_hash": "4c3a538736c68f0343e2050aa939ea3a55b3fd930ce4ffbe2c2341a1d0fd45d0",
+  "pass": true,
+  "python_or_worker_policy_changed": false,
+  "source_occurrences_changed": 1,
+  "surface": "working_set",
+  "t_receipts_before_effect": 9
+}

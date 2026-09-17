@@ -1,0 +1,19 @@
+metamorfose-graph/0.1
+module casulo.flood_rs
+
+operation WaterBalance cacheable=true cost=8 effects=guard,evidence,manifest
+  node WaterBalance/input/precipitation kind=input defines=precipitation uses=- effect=read cost=0
+  node WaterBalance/input/evapotranspiration kind=input defines=evapotranspiration uses=- effect=read cost=0
+  node WaterBalance/input/surface_flow kind=input defines=surface_flow uses=- effect=read cost=0
+  node WaterBalance/input/base_flow kind=input defines=base_flow uses=- effect=read cost=0
+  node WaterBalance/instruction/root.0/judge kind=judge defines=- uses=precipitation effect=guard cost=2
+  node WaterBalance/instruction/root.1/let kind=let defines=storage_change uses=base_flow,evapotranspiration,precipitation,surface_flow effect=pure cost=4
+  node WaterBalance/instruction/root.2/stabilize kind=stabilize defines=- uses=storage_change effect=evidence cost=1
+  node WaterBalance/instruction/root.3/emit kind=emit defines=- uses=storage_change effect=manifest cost=1
+  edge WaterBalance/input/precipitation -> WaterBalance/instruction/root.0/judge kind=data name=precipitation
+  edge WaterBalance/input/base_flow -> WaterBalance/instruction/root.1/let kind=data name=base_flow
+  edge WaterBalance/input/evapotranspiration -> WaterBalance/instruction/root.1/let kind=data name=evapotranspiration
+  edge WaterBalance/input/precipitation -> WaterBalance/instruction/root.1/let kind=data name=precipitation
+  edge WaterBalance/input/surface_flow -> WaterBalance/instruction/root.1/let kind=data name=surface_flow
+  edge WaterBalance/instruction/root.1/let -> WaterBalance/instruction/root.2/stabilize kind=data name=storage_change
+  edge WaterBalance/instruction/root.1/let -> WaterBalance/instruction/root.3/emit kind=data name=storage_change

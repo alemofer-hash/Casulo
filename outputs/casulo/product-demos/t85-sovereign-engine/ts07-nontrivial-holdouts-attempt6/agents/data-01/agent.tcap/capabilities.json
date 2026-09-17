@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.datavalidator.byte_preserver": [],
+    "owner.agent.datavalidator.rejection_explainer": [
+      "simulation"
+    ],
+    "owner.agent.datavalidator.schema_applier": []
+  }
+}

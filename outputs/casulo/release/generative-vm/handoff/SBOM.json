@@ -1,0 +1,43 @@
+{
+  "components": [
+    {
+      "license": "PRIVATE_NON_REDISTRIBUTABLE",
+      "name": "Casulo owner generative artifact",
+      "sha256": "bd223daf90ec64549d693fddce853cdc601d19c7c0d4c734ce90088b11fa9477",
+      "type": "application"
+    },
+    {
+      "license": "PRIVATE_ALPHA",
+      "name": "Casulo Native generative interactive",
+      "sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "type": "operating-system"
+    },
+    {
+      "embedded": false,
+      "license": "Apache-2.0",
+      "name": "Qwen3-4B Q4_K_M",
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "type": "model"
+    },
+    {
+      "archive_sha256": "a9d95d26cf00664f2902f73cb0fd9b167a3a1f252294bb2f8b236305f57d6363",
+      "embedded": false,
+      "license": "MIT",
+      "name": "llama.cpp b10362",
+      "type": "runtime"
+    },
+    {
+      "embedded": false,
+      "license": "GPL-2.0-or-later",
+      "name": "QEMU 11.0.50",
+      "type": "virtual-machine-monitor"
+    },
+    {
+      "embedded": false,
+      "license": "BSD-2-Clause-Patent",
+      "name": "OVMF/EDK2",
+      "type": "firmware"
+    }
+  ],
+  "schema": "casulo.generative-vm-sbom/1.0"
+}

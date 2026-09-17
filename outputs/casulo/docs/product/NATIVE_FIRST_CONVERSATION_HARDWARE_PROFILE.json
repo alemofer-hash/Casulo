@@ -1,0 +1,51 @@
+{
+  "schema": "casulo.native-hardware-profile/1.0",
+  "observed_at": "2026-08-20",
+  "authority": "WINDOWS_READ_ONLY_INVENTORY",
+  "target": {
+    "manufacturer": "LENOVO",
+    "model": "82VY",
+    "system_type": "x64-based PC",
+    "ram_bytes": 16890978304,
+    "cpu": {
+      "name": "12th Gen Intel(R) Core(TM) i5-1235U",
+      "cores": 10,
+      "logical_processors": 12,
+      "address_width": 64
+    },
+    "graphics": {
+      "name": "Intel(R) Iris(R) Xe Graphics",
+      "native_driver_status": "UNSUPPORTED_USE_UEFI_GOP"
+    },
+    "firmware": {
+      "vendor": "LENOVO",
+      "version": "JKCN47WW",
+      "release_date": "2024-08-20T21:00:00-03:00",
+      "secure_boot": "UNKNOWN_ACCESS_DENIED"
+    },
+    "keyboard": {
+      "pnp_id": "ACPI\\IDEA0103\\4&26FFAD5E&0",
+      "native_driver_status": "UNKNOWN_REQUIRES_PROBE"
+    },
+    "usb_controllers": [
+      {
+        "pnp_id": "PCI\\VEN_8086&DEV_461E&SUBSYS_382417AA&REV_04\\3&11583659&1&68",
+        "class": "Intel USB 3.20 xHCI",
+        "native_driver_status": "NOT_IMPLEMENTED"
+      },
+      {
+        "pnp_id": "PCI\\VEN_8086&DEV_51ED&SUBSYS_382017AA&REV_01\\3&11583659&1&A0",
+        "class": "Intel USB 3.10 xHCI",
+        "native_driver_status": "NOT_IMPLEMENTED"
+      }
+    ]
+  },
+  "constraints": {
+    "network": "OFF",
+    "internal_disks": "PROHIBITED",
+    "firmware_mutation": "PROHIBITED",
+    "secure_boot_mutation": "PROHIBITED",
+    "physical_usb_write": "REQUIRES_EXACT_DEVICE_AND_LITERAL_CONFIRMATION"
+  }
+}
+

@@ -1,0 +1,106 @@
+{
+  "affected_paths": [
+    [
+      "identity",
+      "purpose"
+    ],
+    [
+      "behavior",
+      "autonomy"
+    ],
+    [
+      "interface",
+      "input"
+    ],
+    [
+      "data",
+      "requirements"
+    ],
+    [
+      "output",
+      "format"
+    ],
+    [
+      "constraints",
+      "precision"
+    ]
+  ],
+  "base_version": 0,
+  "confidence": 0.85,
+  "confirmation_state": "PROPOSED",
+  "creation_id": "creation:open-ended-holdout",
+  "delta_id": "intent:gen:7d961fbbd8bb26a3925070f2",
+  "operations": [
+    {
+      "action": "set",
+      "path": [
+        "identity",
+        "purpose"
+      ],
+      "value": {
+        "description": "Resolução de equações de campo de Einstein com base nas condições definidas pelo usuário",
+        "type": "purpose"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "autonomy"
+      ],
+      "value": {
+        "level": 3,
+        "type": "autonomy"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "input"
+      ],
+      "value": {
+        "description": "Definição das condições do sistema em análise pelo usuário",
+        "type": "input"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "data",
+        "requirements"
+      ],
+      "value": {
+        "description": "Dados de entrada relacionados às condições do sistema em análise",
+        "type": "requirements"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "output",
+        "format"
+      ],
+      "value": {
+        "description": "Saída com a solução das equações de campo de Einstein baseada nas condições fornecidas",
+        "type": "format"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "constraints",
+        "precision"
+      ],
+      "value": {
+        "level": 2,
+        "type": "precision"
+      }
+    }
+  ],
+  "rationale": "A proposta visa a redefinição da especificação de criação para incluir uma abordagem baseada em algoritmos que resolvem equações de campo de Einstein, com a capacidade do usuário de definir as condições do sistema em análise. A alteração envolve a modificação dos elementos de identidade, propósito, comportamento, interface, dados e restrições para refletir essa nova abordagem.",
+  "schema": "casulo.intent-delta/1.0",
+  "source_event_ids": [
+    "voice:g5:novel-idea"
+  ]
+}

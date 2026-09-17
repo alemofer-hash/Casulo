@@ -1,0 +1,8 @@
+{
+  "K": 30922,
+  "implementation": "t-general-ir-tcap/0.1",
+  "reason": "RuntimeError:physical_guard:recovery_abort_thermal_or_observer_guard",
+  "schema": "casulo-hwinfo-recovery-rejection/1.0",
+  "stage": "probe-tcap-10s",
+  "timestamp_utc": "2026-08-07T22:02:56.818232+00:00"
+}

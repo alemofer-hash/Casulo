@@ -1,0 +1,26 @@
+{
+  "campos": [
+    "timestamp",
+    "origem",
+    "destino",
+    "mensagem",
+    "prioridade",
+    "_linha_origem"
+  ],
+  "conteineres": [
+    "entrada_exemplo.csv"
+  ],
+  "decisao_da_crisalida": "PROSSEGUIR",
+  "formato": "delimitado",
+  "quantidade_registros": 3,
+  "sinais_de_atrito": {
+    "delta_colunas": 0.2,
+    "delta_conteineres": 0.0,
+    "delta_volume": 0.0,
+    "divergencia_semantica": 0.0,
+    "lacuna_cobertura": 0.0,
+    "proporcao_nulos": 0.0,
+    "taxa_desvio_temporal": 0.0,
+    "variacao_cabecalho": 0.0
+  }
+}

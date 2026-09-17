@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.publish": {
+      "decide": [
+        "manifest"
+      ]
+    }
+  }
+}

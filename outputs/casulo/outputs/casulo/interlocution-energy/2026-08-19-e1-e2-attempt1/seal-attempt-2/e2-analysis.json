@@ -1,0 +1,30 @@
+{
+  "baseline": "E_STATIC_POLICY_SAME_NATIVE_KERNEL",
+  "candidate": "D_T_ARCHITECT_AUDITOR_JUDGE",
+  "claim_authorized": false,
+  "direction_consistent_across_hosts": false,
+  "hierarchical_bootstrap_ci95": null,
+  "host_median_ratios": {},
+  "median_ratio_candidate_over_baseline": null,
+  "observed_topology": {
+    "cpu_families": 0,
+    "hosts": 0,
+    "labs": 0,
+    "pairs_per_host_workload": {},
+    "workloads": 0
+  },
+  "physically_observed_but_not_confirmatory_hosts": 1,
+  "qualified_total_system_hosts": 0,
+  "rejected_samples_or_pairs": [],
+  "required_topology": {
+    "cpu_families": 3,
+    "hosts": 6,
+    "labs": 2,
+    "pairs_per_host_workload": 24,
+    "workloads": 5
+  },
+  "schema": "casulo.interlocution-energy-analysis/2.0",
+  "terminal_state": "E2_BLOCKED_INSUFFICIENT_EXTERNAL_SCALE_AND_INSTRUMENTATION",
+  "topology_pass": false,
+  "valid_pairs": 0
+}

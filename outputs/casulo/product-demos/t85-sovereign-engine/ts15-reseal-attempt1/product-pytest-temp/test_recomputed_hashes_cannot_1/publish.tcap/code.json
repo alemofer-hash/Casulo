@@ -1,0 +1,166 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "owner.publish"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "foreign_decision",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "confirmed"
+                ],
+                "root": "input"
+              },
+              "error": "intent_unconfirmed",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "left": {
+                      "name": "status",
+                      "op": "name"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "PASS"
+                    }
+                  },
+                  "error": "hard_requirement_not_pass",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "hard_statuses"
+                ],
+                "root": "input"
+              },
+              "limit": 64,
+              "name": "status",
+              "op": "for"
+            },
+            {
+              "name": "attempts",
+              "op": "set_state",
+              "value": {
+                "args": [
+                  {
+                    "op": "path",
+                    "path": [
+                      "attempts"
+                    ],
+                    "root": "state"
+                  },
+                  {
+                    "op": "const",
+                    "value": 1
+                  }
+                ],
+                "name": "add",
+                "op": "call"
+              }
+            },
+            {
+              "limit": 64,
+              "name": "audit",
+              "op": "spawn_job",
+              "payload": {
+                "op": "path",
+                "path": [
+                  "hard_statuses"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "name": "audit",
+              "op": "join_job"
+            },
+            {
+              "effect": "manifest",
+              "op": "request_effect"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "confirmed"
+                ],
+                "root": "input"
+              },
+              "else": [
+                {
+                  "op": "return_error",
+                  "value": {
+                    "op": "const",
+                    "value": "BLOCKED"
+                  }
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "PUBLISH"
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            "manifest"
+          ],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PublishInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.publish"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

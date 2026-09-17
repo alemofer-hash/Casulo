@@ -1,0 +1,10 @@
+{
+  "append_only": true,
+  "files": {
+    "build.json": "b0fc26e3e510e1401a3a35cc4e2d4cdda80d62bb58416f8351ab9753a0e63d07",
+    "t85-appliance-probe.json": "2b82d61226553a510fadce0e2d876391dc6bb7a20cc816f35ac7e4001326ebf3",
+    "tests.xml": "33dce03f5f5ca8fc4c17629a21a5e46d066d6de9c4733c2e98cc814b1257e501"
+  },
+  "gate": "TS12_APPLIANCE_PASS",
+  "schema": "casulo.t85.evidence-manifest/1.0"
+}

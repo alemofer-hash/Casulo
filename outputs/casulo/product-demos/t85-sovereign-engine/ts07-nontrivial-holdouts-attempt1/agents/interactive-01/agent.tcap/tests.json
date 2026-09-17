@@ -1,0 +1,10 @@
+{
+  "properties": [
+    "hard:project-isolation",
+    "hard:barge-in",
+    "hard:editable-export",
+    "cancel_is_fail_closed",
+    "effect_requires_grant",
+    "project_bleed_denied"
+  ]
+}

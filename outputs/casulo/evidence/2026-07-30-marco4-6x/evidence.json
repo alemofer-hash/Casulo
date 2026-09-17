@@ -1,0 +1,81 @@
+{
+  "schema": "casulo-frozen-evidence/1.0",
+  "title": "Marco técnico 6x — Linguagem T",
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "status": "FROZEN_LOCAL_EVIDENCE",
+  "benchmark_date": "2026-07-29",
+  "freeze_date": "2026-07-30",
+  "claim": {
+    "short": "6,096× de ganho mediano pareado",
+    "precise": "No experimento WaterBalance declarado, no mesmo Intel Core i5-1235U, o backend nativo da linguagem T executou o envelope completo com mediana pareada 6,095936× mais rápida que o Python escalar semanticamente equivalente.",
+    "scope": "Validação e marshal, kernel C99 e manifestação do envelope em Python.",
+    "not_a_claim": [
+      "Não é uma promessa de 6× para qualquer aplicação.",
+      "Não equivale a seis processadores físicos.",
+      "Não demonstra redução de energia na mesma proporção.",
+      "Não representa ainda o gêmeo digital FLOOD-RS completo.",
+      "Não constitui validação independente nem certificado de patente."
+    ]
+  },
+  "result": {
+    "paired_speedup_median": 6.095936274463703,
+    "paired_speedup_ci95": {
+      "lower": 5.994132806930964,
+      "upper": 6.230837650031585,
+      "method": "paired-bootstrap-median",
+      "confidence": 0.95,
+      "resamples": 2000,
+      "seed": 10010
+    },
+    "ratio_of_medians": 6.11058685923011,
+    "python_scalar_ns_per_record": 12329.27,
+    "casulo_native_ns_per_record": 2017.69,
+    "python_scalar_records_per_second": 81107.80281395411,
+    "casulo_native_records_per_second": 495616.27405597485,
+    "semantically_equivalent": true,
+    "paired_samples": 21,
+    "records_per_sample": 2000,
+    "iterations_per_sample": 5,
+    "duplicate_rate": 0.0
+  },
+  "simd": {
+    "paired_speedup_median": 1.1169287746229402,
+    "paired_speedup_ci95": {
+      "lower": 1.0839713685410064,
+      "upper": 1.134710658662446
+    },
+    "vector_width_bytes": 32,
+    "compiler_confirmed_vectorization": true,
+    "floating_point": "strict-no-reassociation"
+  },
+  "environment": {
+    "cpu": "Intel Core i5-1235U",
+    "operating_system": "Windows 11",
+    "python": "CPython 3.13.2",
+    "compiler": "GCC MinGW-W64 16.1.0",
+    "machine": "AMD64"
+  },
+  "protocols": {
+    "full_benchmark": "casulo-native-benchmark/0.3",
+    "simd_benchmark": "casulo-simd-benchmark/0.1",
+    "simd_execution": "casulo-simd/0.1",
+    "artifact": "casulo-artifact/0.8",
+    "backend": "c99-simd/0.3"
+  },
+  "fingerprints": {
+    "artifact_id": "sha256:eb82896a12b2bf904456c376365b244ae98692e35692c0c2209cf092d1d1ab7f",
+    "dataset_canonical_sha256": "9dd1386e92761aa022ea1362ad8d0aa5bb9f17e41362295ec4c6676d7505eddf",
+    "equivalent_output_sha256": "a5142ceb285e44010c943a869c38ccf2edcc13af491c1fea0f664b7021619990",
+    "source_full_report_file_sha256": "a3a24f9e386bdfafcdb042730ca69e17e9ec269f7156a5c60dfb78ee1a216c70",
+    "source_simd_report_file_sha256": "9e3d9d92d3e284b66b504826aa972a747b8b92b55103ee6c6ae30e5591464aa3"
+  },
+  "sources": {
+    "full_report": "benchmarks/results/2026-07-29-sprint011-simd/native-benchmark-full.json",
+    "simd_report": "benchmarks/results/2026-07-29-sprint011-simd/simd-benchmark-unique.json",
+    "sprint_record": "docs/sprints/011-simd-marco4.md"
+  }
+}

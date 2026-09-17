@@ -1,0 +1,234 @@
+{
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "checks": {
+    "all_final_tests_executed_and_passed": true,
+    "bounded_neural_repair_passed": true,
+    "external_ai_api_used": false,
+    "external_process_passed": true,
+    "fake_engine_used": false,
+    "holdout_absent_before_run": true,
+    "initial_candidate_imperfect": true,
+    "model_created_no_grant": true,
+    "neural_plan_generated": true,
+    "neural_t_generated": true,
+    "real_compiled_process_test_failed_first": true,
+    "real_effect_executed": false,
+    "round_trip_executable_preserved": true,
+    "round_trip_identity_preserved": true,
+    "round_trip_version_preserved": true,
+    "scientific_benchmark": false,
+    "simulation_passed": true,
+    "simulation_real_effects_absent": true
+  },
+  "cloud_state": "RELEASE_LOCKED",
+  "external_execution": {
+    "result": "Initialization of simulated environment for vibration analysis farol Q83 âmbar reversível",
+    "returncode": 0
+  },
+  "gate": "FIRST_OPEN_ENDED_AGENT_CREATED",
+  "holdout_expectation": "farol Q83 âmbar reversível",
+  "idea": "Crie um agente que escute padrões vibratórios de uma bomba centrífuga simulada, confronte hipóteses elétricas e mecânicas, explique incerteza e proponha uma interface de manutenção reversível sem acionar equipamento real.",
+  "imported": {
+    "agent_artifact_id": "sha256:3102e0e4908c30d53aae48a6d609d2c2fa4bb93887e347e903da08ae1accfc2d",
+    "agent_operation": "Initialize",
+    "creation_id": "creation:open-ended-holdout",
+    "creation_version": 7
+  },
+  "materialization": {
+    "archive": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\sm8-owner-attempt2\\creation\\materialized\\creation-38da5088c5e61759-v7.casulo.zip",
+    "archive_sha256": "33b5c5b6ac7f4fa6225bf2aa387dc15634f036089402f127bed6a94ea233f158",
+    "directory": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\sm8-owner-attempt2\\creation\\materialized\\creation-38da5088c5e61759-v7",
+    "files": {
+      "MANIFEST.json": "e14aeafa7d6c3f8cd58e7493214ec81e1fd6ae57a0e894097515a7f7793ccfe3",
+      "SBOM.spdx.json": "585069336382cd6a0854612e258c16d669081f229a6a7d2f83bfd728f7e3a7a1",
+      "SHA256SUMS": "50c7d8cbd441d738b8a43d9c3d21a6976532e7b5c83b2643fca04def6ecdd78e",
+      "agent-artifact-manifest.json": "0e59dee416a71b3a217ca3374da471b73625fb4a73fc2c0e35830a76534be84d",
+      "agent-descriptor.json": "4c4172d3558268cfcb0723729141b7f34d70005c8245cee1ee3cdfca2ca288c0",
+      "agent-project.json": "45d623e035e6087ee6039393b1e755fa64614789bc6616e74ea85f4f51d35781",
+      "agent.py": "c08217dcc313355ac2f05469e553ad287eb37a08cfdde30bc98b8f2e5d10be09",
+      "agent.tcap": "8cd4bc515693f3e61be569f8baf11a7d37111bc6ec2c655bbb0650a19072b638",
+      "api.py": "d8f9e63dbd17d510252ca9f895e756260ba9c1dba086d0069b5fa3d1d0efb7fe",
+      "creation.json": "1aafc2d15f999a071bf397b588829c4053d9e131ac1ba4f8f0823425eb7962a4",
+      "forge-receipt.json": "e22253a3affb28ce96739d829c9b2364b013df89a944b50edb8f6f1c47447aa5",
+      "simulation-receipt.json": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+    },
+    "manifest_sha256": "e14aeafa7d6c3f8cd58e7493214ec81e1fd6ae57a0e894097515a7f7793ccfe3",
+    "package_id": "creation-38da5088c5e61759-v7",
+    "schema": "casulo.materialization-receipt/1.0"
+  },
+  "project_id": "t-project:e3ddb499d362431786d01e28",
+  "public_state": "FROZEN",
+  "repair": {
+    "attempts": [
+      {
+        "attempt": 0,
+        "diagnostics": [
+          {
+            "artifact_id": "sha256:5f67b0bc3c8d4cf3258b0e7e3da463f57838fc62fb3a3e9a5e3b25285e1e2c44",
+            "code": "TTEST_EXPECTED_TEXT_MISSING",
+            "expected_contains": "farol Q83 âmbar reversível",
+            "observed": "Initialization of simulated environment for vibration analysis",
+            "process_returncode": 0,
+            "process_stderr": "",
+            "schema": "casulo.generative-diagnostic/1.0",
+            "source_sha256": "9d9f5d4643bcc2590abc126f09f6e15f65a70138e3c1ad6a86b6e7a35d7b507f",
+            "test_name": "human-holdout-acceptance",
+            "unit_id": "creation_unit_1"
+          }
+        ],
+        "finished_ns": 7604245273100,
+        "project_id": "t-project:a17c10d17a9ecb570ee9cbd5",
+        "started_ns": 7603601081800,
+        "tcap_sha256": "b2c7433f7c9f2945e6799f64c47934429f8e15438ccf75e9f4485aa002f4fea2",
+        "tests": [
+          {
+            "expected_contains": "Initialization of simulated environment",
+            "name": "TestInitialization",
+            "observed": "Initialization of simulated environment for vibration analysis",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "911fbb75d8ccde2eae37516d2577c7d63b05add04ac91a6caffa9b3364e45ad6",
+            "unit_id": "creation_unit_1",
+            "wall_ns": 168038700
+          },
+          {
+            "expected_contains": "Generating simulated vibration patterns",
+            "name": "TestDataGeneration",
+            "observed": "Generating simulated vibration patterns for centrifugal pump analysis",
+            "operation": "Generate",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "8c2d07723483dfe3ac2e35c5046d34b61c78052170d6d8641193a88087fb41a4",
+            "unit_id": "creation_unit_2",
+            "wall_ns": 134746300
+          },
+          {
+            "expected_contains": "Simulating reversible maintenance interface",
+            "name": "TestInterfaceInteraction",
+            "observed": "Simulating reversible maintenance interface for simulated environment",
+            "operation": "Interact",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "437620a6f53467ef5b5978c18359a4e3300bb906bc95e38a540b20d5df7b0049",
+            "unit_id": "creation_unit_3",
+            "wall_ns": 126844900
+          },
+          {
+            "expected_contains": "farol Q83 âmbar reversível",
+            "name": "human-holdout-acceptance",
+            "observed": "Initialization of simulated environment for vibration analysis",
+            "operation": "Initialize",
+            "passed": false,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "1fb4f91a3dc66c704bca063703d9ade6bb203ad3a37eac2444fca3753567ae09",
+            "unit_id": "creation_unit_1",
+            "wall_ns": 107962600
+          }
+        ]
+      },
+      {
+        "attempt": 1,
+        "diagnostics": [],
+        "finished_ns": 7643366904700,
+        "project_id": "t-project:e3ddb499d362431786d01e28",
+        "started_ns": 7642755950500,
+        "tcap_sha256": "8cd4bc515693f3e61be569f8baf11a7d37111bc6ec2c655bbb0650a19072b638",
+        "tests": [
+          {
+            "expected_contains": "Initialization of simulated environment",
+            "name": "TestInitialization",
+            "observed": "Initialization of simulated environment for vibration analysis farol Q83 âmbar reversível",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "0c69a304f6d589324cafd1bec20abe7a09e5d486f6f1109074f8a71ab0e93fd5",
+            "unit_id": "creation_unit_1",
+            "wall_ns": 175434400
+          },
+          {
+            "expected_contains": "Generating simulated vibration patterns",
+            "name": "TestDataGeneration",
+            "observed": "Generating simulated vibration patterns for centrifugal pump analysis",
+            "operation": "Generate",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "bce7c1da2a4c65109193dd5e1fdbacfc65165cb1763911d5d9aabd504fc10cdb",
+            "unit_id": "creation_unit_2",
+            "wall_ns": 133330600
+          },
+          {
+            "expected_contains": "Simulating reversible maintenance interface",
+            "name": "TestInterfaceInteraction",
+            "observed": "Simulating reversible maintenance interface for simulated environment",
+            "operation": "Interact",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "8df42c3740a48e36e5980e88fa1cbfcf982515761ed8030e06d96041e89c6203",
+            "unit_id": "creation_unit_3",
+            "wall_ns": 125624200
+          },
+          {
+            "expected_contains": "farol Q83 âmbar reversível",
+            "name": "human-holdout-acceptance",
+            "observed": "Initialization of simulated environment for vibration analysis farol Q83 âmbar reversível",
+            "operation": "Initialize",
+            "passed": true,
+            "returncode": 0,
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stdout_sha256": "70c137b5242f4266ee0a2b8b8fd061972ceb60b3f5ec536aca60caee560e8bfe",
+            "unit_id": "creation_unit_1",
+            "wall_ns": 90807100
+          }
+        ]
+      }
+    ],
+    "budget": 4,
+    "candidate_rejections": [],
+    "project_id": "t-project:e3ddb499d362431786d01e28",
+    "receipt_sha256": "eff2a9e2ea2c823e9dd4a1b7e1bd61f54f3a246009c5d8166f9748d9e9d0210f",
+    "repair_count": 1,
+    "schema": "casulo.verifier-repair-receipt/1.0",
+    "status": "PASS",
+    "tcap_sha256": "8cd4bc515693f3e61be569f8baf11a7d37111bc6ec2c655bbb0650a19072b638"
+  },
+  "schema": "casulo-first-open-ended-agent-evidence/1.0",
+  "simulation": {
+    "correction_paths": [],
+    "creation_id": "creation:open-ended-holdout",
+    "events": [
+      {
+        "event_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+        "event_id": "simulation:g5:open-ended-agent:1",
+        "previous_hash": null,
+        "response": {
+          "error": null,
+          "ok": true,
+          "value": {
+            "records": 3,
+            "virtual": true
+          }
+        },
+        "sequence": 1,
+        "source_event_ids": [
+          "human:g5:simulate"
+        ],
+        "status": "SIMULATED",
+        "step_id": "read-research-memory-virtually"
+      }
+    ],
+    "head_hash": "ff1897747d66141abd5566a5c1b68086c213c85dada3e528009325aa40d53d34",
+    "real_effects_executed": false,
+    "schema": "casulo.simulation-receipt/1.0",
+    "simulation_id": "simulation:g5:open-ended-agent",
+    "status": "PASS"
+  },
+  "usb_state": "PROHIBITED"
+}

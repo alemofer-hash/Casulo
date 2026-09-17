@@ -1,0 +1,54 @@
+{
+  "expected_evidence_tokens": [
+    "074232ea9a06223ec3f00270d045c1033910eb112d2752de248c4d93fa576d3d",
+    "c1dc3ea1e1968220c3016725393d28058ced072dc9c4f54167c0785589f57a5f",
+    "d1039857c603178a4eff49fe4715529b700ad66562c3767c5a92cab225f01f8f",
+    "287104866c6f1e95bb53bd3436202bb2b7e41705184a06801fa47c8c819fdb27"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "administrative-workflow:human-decision",
+      "scope": "administrative-workflow",
+      "source_event_ids": [
+        "human:administrative-workflow"
+      ],
+      "verifier_ids": [
+        "domain:human-decision"
+      ]
+    },
+    {
+      "requirement_id": "administrative-workflow:provenance",
+      "scope": "administrative-workflow",
+      "source_event_ids": [
+        "human:administrative-workflow"
+      ],
+      "verifier_ids": [
+        "domain:provenance"
+      ]
+    },
+    {
+      "requirement_id": "administrative-workflow:network",
+      "scope": "administrative-workflow",
+      "source_event_ids": [
+        "human:administrative-workflow"
+      ],
+      "verifier_ids": [
+        "domain:network"
+      ]
+    },
+    {
+      "requirement_id": "administrative-workflow:audit",
+      "scope": "administrative-workflow",
+      "source_event_ids": [
+        "human:administrative-workflow"
+      ],
+      "verifier_ids": [
+        "domain:audit"
+      ]
+    }
+  ],
+  "project_id": "administrative-workflow",
+  "schema": "casulo.evidence-plan/1.0"
+}

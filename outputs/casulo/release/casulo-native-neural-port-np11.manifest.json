@@ -1,0 +1,20 @@
+{
+  "bytes": 2524932608,
+  "claim": "the exact adopted owner model is validated from the UEFI ramdisk and drives the NP10 creation path without QEMU fw_cfg or a host filesystem",
+  "first_model_derived_token": true,
+  "full_model_mapped": true,
+  "full_model_resident_after_admission": true,
+  "host_bridge": false,
+  "image": "release/casulo-native-neural-port-np11.img",
+  "kernel_float_profile": "sse2-hardware-f32",
+  "network": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-neural-port-image/0.1",
+  "sha256": "1efca6e5caccc68a65c51309abc9f6bef63b401a48a1a30fc569974c778c94a9",
+  "stage": "NP11_PHYSICAL_RAMDISK_MODEL_TRANSPORT",
+  "system_pack": "release/casulo-native-physical-creation-system-pack-v1.cspk",
+  "system_pack_sha256": "d233d0c5c23d0cf6e0a638fa8ce756eee076fd717d8dbd16f7293f278bbb1b61",
+  "target": "x86_64-casulo-native",
+  "target_spec": "os/targets/x86_64-casulo-native.json",
+  "target_spec_sha256": "b52bfc3c1fca088b4a5484f4a4f5d5b459cdcab77febc5f9dc3cddf4d3818638"
+}

@@ -1,0 +1,207 @@
+{
+  "claim": null,
+  "claims_allowed": false,
+  "environment": {
+    "fresh_process_per_run": true,
+    "python_executable": "C:\\Python313\\python.exe",
+    "python_version": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]"
+  },
+  "experiment_id": "sha256:64671fa86fe55dd912e196dc3541b5f366cf6956e1f34bce0243c9e6d7b17825",
+  "preregistration_file_sha256": "2b161726e2f21ae55c3d3eba2b0ad50c12339d2097986bc384ae325a9f444759",
+  "protocol": "casulo-tensor-suite-report/0.1",
+  "runs": [
+    {
+      "case": "tall-batch",
+      "judge_returncode": 0,
+      "judge_stderr_tail": "",
+      "judge_stdout_tail": "{\n  \"claim\": null,\n  \"classification\": \"NULL\",\n  \"commercial_gate\": false,\n  \"ok\": false,\n  \"verdict\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\000-tall-batch-r0\\\\tensor-lab-verdict.json\"\n}\n",
+      "ordinal": 0,
+      "report": "runs/000-tall-batch-r0/tensor-lab-report.json",
+      "report_sha256": "855c915bb3b9125d288a19d2040854530defc4df93f19fa49ca929524c8c7e25",
+      "restart": 0,
+      "run_returncode": 0,
+      "run_stderr_tail": "",
+      "run_stdout_tail": ",\n      \"baseline_compilation_wall_ns\": 0,\n      \"baseline_wall_ns_per_invocation_median\": 2223936.0,\n      \"break_even_invocations\": 2841,\n      \"candidate_compilation_wall_ns\": 2903181400,\n      \"candidate_wall_ns_per_invocation_median\": 1201928.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 1.5676932421264351,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 3.1304404257160163\n      },\n      \"wall_speedup_median\": 2.0066177154010596\n    },\n    \"pytorch-inductor-autograd-cpu\": {\n      \"baseline\": \"pytorch-inductor-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 26729848500,\n      \"baseline_wall_ns_per_invocation_median\": 1226944.0,\n      \"break_even_invocations\": 0,\n      \"candidate_compilation_wall_ns\": 2903181400,\n      \"candidate_wall_ns_per_invocation_median\": 1201928.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 0.7752200535175233,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 1.5742972956782768\n      },\n      \"wall_speedup_median\": 1.0180654711526653\n    }\n  },\n  \"ok\": true,\n  \"quality\": {\n    \"finite_samples\": true,\n    \"inductor_vs_numpy_loss_and_gradients\": \"PASS\",\n    \"native_vs_numpy\": \"PASS\",\n    \"numpy_vs_pytorch_eager\": \"PASS\",\n    \"same_dtype\": true,\n    \"same_graph\": true,\n    \"same_inputs\": true,\n    \"same_workers_or_threads\": true\n  },\n  \"report_html\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\000-tall-batch-r0\\\\tensor-lab-report.html\",\n  \"report_json\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\000-tall-batch-r0\\\\tensor-lab-report.json\"\n}\n",
+      "status": "COMPLETE",
+      "verdict": "runs/000-tall-batch-r0/tensor-lab-verdict.json",
+      "verdict_sha256": "1c808d61de81b848f786dcbefcde69c893ad2788711017ba18e079062f8dcc20"
+    },
+    {
+      "case": "wide-input",
+      "judge_returncode": 0,
+      "judge_stderr_tail": "",
+      "judge_stdout_tail": "{\n  \"claim\": null,\n  \"classification\": \"NULL\",\n  \"commercial_gate\": false,\n  \"ok\": false,\n  \"verdict\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\001-wide-input-r0\\\\tensor-lab-verdict.json\"\n}\n",
+      "ordinal": 1,
+      "report": "runs/001-wide-input-r0/tensor-lab-report.json",
+      "report_sha256": "c01632ed4a29808aa5e72a2f80806c55d511581e632bd26b1c4ace482f06ab0a",
+      "restart": 0,
+      "run_returncode": 0,
+      "run_stderr_tail": "",
+      "run_stdout_tail": "rad-cpu\",\n      \"baseline_compilation_wall_ns\": 0,\n      \"baseline_wall_ns_per_invocation_median\": 1094728.0,\n      \"break_even_invocations\": 3303,\n      \"candidate_compilation_wall_ns\": 2790759900,\n      \"candidate_wall_ns_per_invocation_median\": 249580.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 2.9705385913764,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 5.806795408999818\n      },\n      \"wall_speedup_median\": 4.2296405107427075\n    },\n    \"pytorch-inductor-autograd-cpu\": {\n      \"baseline\": \"pytorch-inductor-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 23081989000,\n      \"baseline_wall_ns_per_invocation_median\": 683608.0,\n      \"break_even_invocations\": 0,\n      \"candidate_compilation_wall_ns\": 2790759900,\n      \"candidate_wall_ns_per_invocation_median\": 249580.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 0.9496645345743293,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 4.612439264556329\n      },\n      \"wall_speedup_median\": 1.8921233183454849\n    }\n  },\n  \"ok\": true,\n  \"quality\": {\n    \"finite_samples\": true,\n    \"inductor_vs_numpy_loss_and_gradients\": \"PASS\",\n    \"native_vs_numpy\": \"PASS\",\n    \"numpy_vs_pytorch_eager\": \"PASS\",\n    \"same_dtype\": true,\n    \"same_graph\": true,\n    \"same_inputs\": true,\n    \"same_workers_or_threads\": true\n  },\n  \"report_html\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\001-wide-input-r0\\\\tensor-lab-report.html\",\n  \"report_json\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\001-wide-input-r0\\\\tensor-lab-report.json\"\n}\n",
+      "status": "COMPLETE",
+      "verdict": "runs/001-wide-input-r0/tensor-lab-verdict.json",
+      "verdict_sha256": "7846a49903f9892a4dcc911a96025e779ceabb162397e8f3e9e6bf9fb9370701"
+    },
+    {
+      "case": "deep-bottleneck",
+      "judge_returncode": 0,
+      "judge_stderr_tail": "",
+      "judge_stdout_tail": "{\n  \"claim\": null,\n  \"classification\": \"NULL\",\n  \"commercial_gate\": false,\n  \"ok\": false,\n  \"verdict\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\002-deep-bottleneck-r0\\\\tensor-lab-verdict.json\"\n}\n",
+      "ordinal": 2,
+      "report": "runs/002-deep-bottleneck-r0/tensor-lab-report.json",
+      "report_sha256": "989ebed77b3525c686c80d7d8ddf9a4c95d334c26c6f9bb62a4f8b14cd428a6d",
+      "restart": 0,
+      "run_returncode": 0,
+      "run_stderr_tail": "",
+      "run_stdout_tail": "line\": \"pytorch-eager-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 0,\n      \"baseline_wall_ns_per_invocation_median\": 1527844.0,\n      \"break_even_invocations\": 3433,\n      \"candidate_compilation_wall_ns\": 2975463300,\n      \"candidate_wall_ns_per_invocation_median\": 661088.0,\n      \"cpu_speedup_median\": 2.75,\n      \"cpu_speedup_status\": \"MEASURED\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 1.3343928634410498,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 2.709252470412137\n      },\n      \"wall_speedup_median\": 1.8618439011074714\n    },\n    \"pytorch-inductor-autograd-cpu\": {\n      \"baseline\": \"pytorch-inductor-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 26308051100,\n      \"baseline_wall_ns_per_invocation_median\": 606252.0,\n      \"break_even_invocations\": null,\n      \"candidate_compilation_wall_ns\": 2975463300,\n      \"candidate_wall_ns_per_invocation_median\": 661088.0,\n      \"cpu_speedup_median\": 2.0,\n      \"cpu_speedup_status\": \"MEASURED\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 0.6519034981698374,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 1.292066370301045\n      },\n      \"wall_speedup_median\": 0.8199231286390217\n    }\n  },\n  \"ok\": true,\n  \"quality\": {\n    \"finite_samples\": true,\n    \"inductor_vs_numpy_loss_and_gradients\": \"PASS\",\n    \"native_vs_numpy\": \"PASS\",\n    \"numpy_vs_pytorch_eager\": \"PASS\",\n    \"same_dtype\": true,\n    \"same_graph\": true,\n    \"same_inputs\": true,\n    \"same_workers_or_threads\": true\n  },\n  \"report_html\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\002-deep-bottleneck-r0\\\\tensor-lab-report.html\",\n  \"report_json\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\002-deep-bottleneck-r0\\\\tensor-lab-report.json\"\n}\n",
+      "status": "COMPLETE",
+      "verdict": "runs/002-deep-bottleneck-r0/tensor-lab-verdict.json",
+      "verdict_sha256": "0f7c55c2c1a19640f555fc5ce9a2b799a009f44156903fb59119ff52cb992c2a"
+    },
+    {
+      "case": "wide-input",
+      "judge_returncode": 0,
+      "judge_stderr_tail": "",
+      "judge_stdout_tail": "{\n  \"claim\": null,\n  \"classification\": \"NULL\",\n  \"commercial_gate\": false,\n  \"ok\": false,\n  \"verdict\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\003-wide-input-r1\\\\tensor-lab-verdict.json\"\n}\n",
+      "ordinal": 3,
+      "report": "runs/003-wide-input-r1/tensor-lab-report.json",
+      "report_sha256": "769a71d8565182782dee65996aa1a6f55033fda314eb451aa5cfb39a9f3d748d",
+      "restart": 1,
+      "run_returncode": 0,
+      "run_stderr_tail": "",
+      "run_stdout_tail": "cpu\",\n      \"baseline_compilation_wall_ns\": 0,\n      \"baseline_wall_ns_per_invocation_median\": 1584068.0,\n      \"break_even_invocations\": 2585,\n      \"candidate_compilation_wall_ns\": 2681769500,\n      \"candidate_wall_ns_per_invocation_median\": 546596.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 1.8394566570734594,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 4.193707341209324\n      },\n      \"wall_speedup_median\": 3.0994039827676043\n    },\n    \"pytorch-inductor-autograd-cpu\": {\n      \"baseline\": \"pytorch-inductor-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 8438748700,\n      \"baseline_wall_ns_per_invocation_median\": 1047728.0,\n      \"break_even_invocations\": 0,\n      \"candidate_compilation_wall_ns\": 2681769500,\n      \"candidate_wall_ns_per_invocation_median\": 546596.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 0.9034533732409311,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 3.3009859648588105\n      },\n      \"wall_speedup_median\": 1.8656922660512558\n    }\n  },\n  \"ok\": true,\n  \"quality\": {\n    \"finite_samples\": true,\n    \"inductor_vs_numpy_loss_and_gradients\": \"PASS\",\n    \"native_vs_numpy\": \"PASS\",\n    \"numpy_vs_pytorch_eager\": \"PASS\",\n    \"same_dtype\": true,\n    \"same_graph\": true,\n    \"same_inputs\": true,\n    \"same_workers_or_threads\": true\n  },\n  \"report_html\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\003-wide-input-r1\\\\tensor-lab-report.html\",\n  \"report_json\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\003-wide-input-r1\\\\tensor-lab-report.json\"\n}\n",
+      "status": "COMPLETE",
+      "verdict": "runs/003-wide-input-r1/tensor-lab-verdict.json",
+      "verdict_sha256": "1db0039b4b83d344d41b0af65d865f944f0df55ed509b289c1aca5b438889413"
+    },
+    {
+      "case": "deep-bottleneck",
+      "judge_returncode": 0,
+      "judge_stderr_tail": "",
+      "judge_stdout_tail": "{\n  \"claim\": null,\n  \"classification\": \"POSITIVE\",\n  \"commercial_gate\": false,\n  \"ok\": true,\n  \"verdict\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\004-deep-bottleneck-r1\\\\tensor-lab-verdict.json\"\n}\n",
+      "ordinal": 4,
+      "report": "runs/004-deep-bottleneck-r1/tensor-lab-report.json",
+      "report_sha256": "87f26c89dcc8f3eee7d49cbf9bd879cc65a436f38cc2c54f56f0c50cf86385f2",
+      "restart": 1,
+      "run_returncode": 0,
+      "run_stderr_tail": "",
+      "run_stdout_tail": "er-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 0,\n      \"baseline_wall_ns_per_invocation_median\": 1530356.0,\n      \"break_even_invocations\": 3503,\n      \"candidate_compilation_wall_ns\": 3023122100,\n      \"candidate_wall_ns_per_invocation_median\": 667104.0,\n      \"cpu_speedup_median\": 2.75,\n      \"cpu_speedup_status\": \"MEASURED\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 1.5407012999472347,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 3.426156013833739\n      },\n      \"wall_speedup_median\": 2.2874729453406197\n    },\n    \"pytorch-inductor-autograd-cpu\": {\n      \"baseline\": \"pytorch-inductor-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 11088488100,\n      \"baseline_wall_ns_per_invocation_median\": 1248484.0,\n      \"break_even_invocations\": 0,\n      \"candidate_compilation_wall_ns\": 3023122100,\n      \"candidate_wall_ns_per_invocation_median\": 667104.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 1.1912629697747856,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 2.124465866313969\n      },\n      \"wall_speedup_median\": 1.867285685245196\n    }\n  },\n  \"ok\": true,\n  \"quality\": {\n    \"finite_samples\": true,\n    \"inductor_vs_numpy_loss_and_gradients\": \"PASS\",\n    \"native_vs_numpy\": \"PASS\",\n    \"numpy_vs_pytorch_eager\": \"PASS\",\n    \"same_dtype\": true,\n    \"same_graph\": true,\n    \"same_inputs\": true,\n    \"same_workers_or_threads\": true\n  },\n  \"report_html\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\004-deep-bottleneck-r1\\\\tensor-lab-report.html\",\n  \"report_json\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\004-deep-bottleneck-r1\\\\tensor-lab-report.json\"\n}\n",
+      "status": "COMPLETE",
+      "verdict": "runs/004-deep-bottleneck-r1/tensor-lab-verdict.json",
+      "verdict_sha256": "35f9ef6ea2f5ef56dcb3c971928b9f6101b38e13ad1f945535add68e5c674ac9"
+    },
+    {
+      "case": "tall-batch",
+      "judge_returncode": 0,
+      "judge_stderr_tail": "",
+      "judge_stdout_tail": "{\n  \"claim\": null,\n  \"classification\": \"NULL\",\n  \"commercial_gate\": false,\n  \"ok\": false,\n  \"verdict\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\005-tall-batch-r1\\\\tensor-lab-verdict.json\"\n}\n",
+      "ordinal": 5,
+      "report": "runs/005-tall-batch-r1/tensor-lab-report.json",
+      "report_sha256": "32e9f5bf3e7730f78264ec2f6f599432fe0df9ed229c4b5c087dd94802af1820",
+      "restart": 1,
+      "run_returncode": 0,
+      "run_stderr_tail": "",
+      "run_stdout_tail": ",\n      \"baseline_compilation_wall_ns\": 0,\n      \"baseline_wall_ns_per_invocation_median\": 2251688.0,\n      \"break_even_invocations\": 3610,\n      \"candidate_compilation_wall_ns\": 2851597900,\n      \"candidate_wall_ns_per_invocation_median\": 1461644.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 1.1882455578734077,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 2.0398607049546857\n      },\n      \"wall_speedup_median\": 1.437217270416052\n    },\n    \"pytorch-inductor-autograd-cpu\": {\n      \"baseline\": \"pytorch-inductor-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 7972220100,\n      \"baseline_wall_ns_per_invocation_median\": 884828.0,\n      \"break_even_invocations\": null,\n      \"candidate_compilation_wall_ns\": 2851597900,\n      \"candidate_wall_ns_per_invocation_median\": 1461644.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 0.5280844486250694,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 1.0160078377018789\n      },\n      \"wall_speedup_median\": 0.7892093447987215\n    }\n  },\n  \"ok\": true,\n  \"quality\": {\n    \"finite_samples\": true,\n    \"inductor_vs_numpy_loss_and_gradients\": \"PASS\",\n    \"native_vs_numpy\": \"PASS\",\n    \"numpy_vs_pytorch_eager\": \"PASS\",\n    \"same_dtype\": true,\n    \"same_graph\": true,\n    \"same_inputs\": true,\n    \"same_workers_or_threads\": true\n  },\n  \"report_html\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\005-tall-batch-r1\\\\tensor-lab-report.html\",\n  \"report_json\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\005-tall-batch-r1\\\\tensor-lab-report.json\"\n}\n",
+      "status": "COMPLETE",
+      "verdict": "runs/005-tall-batch-r1/tensor-lab-verdict.json",
+      "verdict_sha256": "e6ee9999d5022670a08908630e0172476cb44e025274c5c300d5c23bc2b31d1e"
+    },
+    {
+      "case": "deep-bottleneck",
+      "judge_returncode": 0,
+      "judge_stderr_tail": "",
+      "judge_stdout_tail": "{\n  \"claim\": null,\n  \"classification\": \"NULL\",\n  \"commercial_gate\": false,\n  \"ok\": false,\n  \"verdict\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\006-deep-bottleneck-r2\\\\tensor-lab-verdict.json\"\n}\n",
+      "ordinal": 6,
+      "report": "runs/006-deep-bottleneck-r2/tensor-lab-report.json",
+      "report_sha256": "bb18a31e85b2acedf78bcd97f7d6137dbad1e7ec4f5eb89ecb99856a4de0b8ea",
+      "restart": 2,
+      "run_returncode": 0,
+      "run_stderr_tail": "",
+      "run_stdout_tail": "ne\": \"pytorch-eager-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 0,\n      \"baseline_wall_ns_per_invocation_median\": 2710848.0,\n      \"break_even_invocations\": 2553,\n      \"candidate_compilation_wall_ns\": 3052864400,\n      \"candidate_wall_ns_per_invocation_median\": 1514664.0,\n      \"cpu_speedup_median\": 3.0,\n      \"cpu_speedup_status\": \"MEASURED\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 1.5593196776415712,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 2.545009226246325\n      },\n      \"wall_speedup_median\": 1.9605074846246084\n    },\n    \"pytorch-inductor-autograd-cpu\": {\n      \"baseline\": \"pytorch-inductor-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 8743687500,\n      \"baseline_wall_ns_per_invocation_median\": 1446168.0,\n      \"break_even_invocations\": null,\n      \"candidate_compilation_wall_ns\": 3052864400,\n      \"candidate_wall_ns_per_invocation_median\": 1514664.0,\n      \"cpu_speedup_median\": 1.5,\n      \"cpu_speedup_status\": \"MEASURED\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 0.8143088866898585,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 2.2077664665040344\n      },\n      \"wall_speedup_median\": 0.8953026217061519\n    }\n  },\n  \"ok\": true,\n  \"quality\": {\n    \"finite_samples\": true,\n    \"inductor_vs_numpy_loss_and_gradients\": \"PASS\",\n    \"native_vs_numpy\": \"PASS\",\n    \"numpy_vs_pytorch_eager\": \"PASS\",\n    \"same_dtype\": true,\n    \"same_graph\": true,\n    \"same_inputs\": true,\n    \"same_workers_or_threads\": true\n  },\n  \"report_html\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\006-deep-bottleneck-r2\\\\tensor-lab-report.html\",\n  \"report_json\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\006-deep-bottleneck-r2\\\\tensor-lab-report.json\"\n}\n",
+      "status": "COMPLETE",
+      "verdict": "runs/006-deep-bottleneck-r2/tensor-lab-verdict.json",
+      "verdict_sha256": "d9044baed16bfc7e99d4ec385f935c9323dcb4890458d364ec137de01368fc42"
+    },
+    {
+      "case": "tall-batch",
+      "judge_returncode": 0,
+      "judge_stderr_tail": "",
+      "judge_stdout_tail": "{\n  \"claim\": null,\n  \"classification\": \"NEGATIVE\",\n  \"commercial_gate\": false,\n  \"ok\": false,\n  \"verdict\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\007-tall-batch-r2\\\\tensor-lab-verdict.json\"\n}\n",
+      "ordinal": 7,
+      "report": "runs/007-tall-batch-r2/tensor-lab-report.json",
+      "report_sha256": "3e20748dad1ee5797e5c703bd2d00117a7e99b8ab9f65eb21874104639fa054f",
+      "restart": 2,
+      "run_returncode": 0,
+      "run_stderr_tail": "",
+      "run_stdout_tail": "torch-eager-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 0,\n      \"baseline_wall_ns_per_invocation_median\": 972532.0,\n      \"break_even_invocations\": 9803,\n      \"candidate_compilation_wall_ns\": 2793657800,\n      \"candidate_wall_ns_per_invocation_median\": 687552.0,\n      \"cpu_speedup_median\": 2.0,\n      \"cpu_speedup_status\": \"MEASURED\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 1.196576896848554,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 1.6918981004638038\n      },\n      \"wall_speedup_median\": 1.4511417759898775\n    },\n    \"pytorch-inductor-autograd-cpu\": {\n      \"baseline\": \"pytorch-inductor-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 6082915700,\n      \"baseline_wall_ns_per_invocation_median\": 509864.0,\n      \"break_even_invocations\": null,\n      \"candidate_compilation_wall_ns\": 2793657800,\n      \"candidate_wall_ns_per_invocation_median\": 687552.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 0.6519435221517926,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 0.8398284612071387\n      },\n      \"wall_speedup_median\": 0.7276903174881599\n    }\n  },\n  \"ok\": true,\n  \"quality\": {\n    \"finite_samples\": true,\n    \"inductor_vs_numpy_loss_and_gradients\": \"PASS\",\n    \"native_vs_numpy\": \"PASS\",\n    \"numpy_vs_pytorch_eager\": \"PASS\",\n    \"same_dtype\": true,\n    \"same_graph\": true,\n    \"same_inputs\": true,\n    \"same_workers_or_threads\": true\n  },\n  \"report_html\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\007-tall-batch-r2\\\\tensor-lab-report.html\",\n  \"report_json\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\007-tall-batch-r2\\\\tensor-lab-report.json\"\n}\n",
+      "status": "COMPLETE",
+      "verdict": "runs/007-tall-batch-r2/tensor-lab-verdict.json",
+      "verdict_sha256": "d4dd1985e016f7a5afe58c4f25966b789c2cfb6904f982bf0ada264554b428b6"
+    },
+    {
+      "case": "wide-input",
+      "judge_returncode": 0,
+      "judge_stderr_tail": "",
+      "judge_stdout_tail": "{\n  \"claim\": null,\n  \"classification\": \"POSITIVE\",\n  \"commercial_gate\": false,\n  \"ok\": true,\n  \"verdict\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\008-wide-input-r2\\\\tensor-lab-verdict.json\"\n}\n",
+      "ordinal": 8,
+      "report": "runs/008-wide-input-r2/tensor-lab-report.json",
+      "report_sha256": "d752b400701d4abd21d6f24635234cad3ccf60284bf63714548135edbbf88520",
+      "restart": 2,
+      "run_returncode": 0,
+      "run_stderr_tail": "",
+      "run_stdout_tail": "ad-cpu\",\n      \"baseline_compilation_wall_ns\": 0,\n      \"baseline_wall_ns_per_invocation_median\": 1746684.0,\n      \"break_even_invocations\": 2419,\n      \"candidate_compilation_wall_ns\": 2663405300,\n      \"candidate_wall_ns_per_invocation_median\": 645312.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 2.347162443981009,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 3.32370820668693\n      },\n      \"wall_speedup_median\": 2.8091179182460815\n    },\n    \"pytorch-inductor-autograd-cpu\": {\n      \"baseline\": \"pytorch-inductor-autograd-cpu\",\n      \"baseline_compilation_wall_ns\": 11231139900,\n      \"baseline_wall_ns_per_invocation_median\": 1146592.0,\n      \"break_even_invocations\": 0,\n      \"candidate_compilation_wall_ns\": 2663405300,\n      \"candidate_wall_ns_per_invocation_median\": 645312.0,\n      \"cpu_speedup_median\": null,\n      \"cpu_speedup_status\": \"INCONCLUSIVE_TIMER_RESOLUTION\",\n      \"paired_samples\": 9,\n      \"wall_speedup_ci95\": {\n        \"lower\": 1.040708155621555,\n        \"method\": \"paired-bootstrap-median\",\n        \"resamples\": 2000,\n        \"upper\": 2.2416965474848887\n      },\n      \"wall_speedup_median\": 1.999299005420562\n    }\n  },\n  \"ok\": true,\n  \"quality\": {\n    \"finite_samples\": true,\n    \"inductor_vs_numpy_loss_and_gradients\": \"PASS\",\n    \"native_vs_numpy\": \"PASS\",\n    \"numpy_vs_pytorch_eager\": \"PASS\",\n    \"same_dtype\": true,\n    \"same_graph\": true,\n    \"same_inputs\": true,\n    \"same_workers_or_threads\": true\n  },\n  \"report_html\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\008-wide-input-r2\\\\tensor-lab-report.html\",\n  \"report_json\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\benchmarks\\\\results\\\\2026-07-30-tensor-suite-sprint022\\\\runs\\\\008-wide-input-r2\\\\tensor-lab-report.json\"\n}\n",
+      "status": "COMPLETE",
+      "verdict": "runs/008-wide-input-r2/tensor-lab-verdict.json",
+      "verdict_sha256": "e02f24b470f4b97a2cc145938c6e88007d80d792112045c54cbb459d3dd9722e"
+    }
+  ],
+  "schedule": [
+    {
+      "case": "tall-batch",
+      "ordinal": 0,
+      "restart": 0
+    },
+    {
+      "case": "wide-input",
+      "ordinal": 1,
+      "restart": 0
+    },
+    {
+      "case": "deep-bottleneck",
+      "ordinal": 2,
+      "restart": 0
+    },
+    {
+      "case": "wide-input",
+      "ordinal": 3,
+      "restart": 1
+    },
+    {
+      "case": "deep-bottleneck",
+      "ordinal": 4,
+      "restart": 1
+    },
+    {
+      "case": "tall-batch",
+      "ordinal": 5,
+      "restart": 1
+    },
+    {
+      "case": "deep-bottleneck",
+      "ordinal": 6,
+      "restart": 2
+    },
+    {
+      "case": "tall-batch",
+      "ordinal": 7,
+      "restart": 2
+    },
+    {
+      "case": "wide-input",
+      "ordinal": 8,
+      "restart": 2
+    }
+  ],
+  "started_with_all_cases_sealed": true,
+  "status": "COMPLETE"
+}

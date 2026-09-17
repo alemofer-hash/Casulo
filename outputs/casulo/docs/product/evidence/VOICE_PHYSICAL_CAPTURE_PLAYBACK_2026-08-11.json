@@ -1,0 +1,42 @@
+{
+  "schema": "casulo.voice-physical-evidence/1.0",
+  "date": "2026-08-11",
+  "raw_audio_persisted": false,
+  "playback": {
+    "passed": true,
+    "audible_s_requested": 2.0,
+    "cancel_latency_ns": 12085800,
+    "streaming_playback": true,
+    "streaming_pcm": false,
+    "redistributed": false
+  },
+  "capture": {
+    "passed": true,
+    "duration_requested_s": 15.0,
+    "elapsed_s": 16.389,
+    "frames": 686,
+    "voiced_frames": 68,
+    "input_device": 1,
+    "locale": "pt-BR",
+    "transcript": "Olá, casulos. Vamos continuar.",
+    "threads": 4
+  },
+  "barge_in": {
+    "behavioral_cancel_observed": true,
+    "strict_sentinel_passed": false,
+    "first_voice_s": 2.3840338999980304,
+    "cancel_latency_ns": 15806900,
+    "frames": 706,
+    "voiced_frames": 27,
+    "transcript": "Vai cadupe.",
+    "expected_sentinel": "Pare, Casulo",
+    "adjudication": "voz durante playback cancelou a sessão; a qualidade semântica da sentinela permaneceu reprovada e foi preservada como risco"
+  },
+  "claims": {
+    "physical_input": "PASS",
+    "physical_output_cancel": "PASS",
+    "voice_to_cancel_path": "PASS",
+    "exact_barge_in_transcript": "FAIL",
+    "cross_platform_tts": "NOT_CLAIMED"
+  }
+}

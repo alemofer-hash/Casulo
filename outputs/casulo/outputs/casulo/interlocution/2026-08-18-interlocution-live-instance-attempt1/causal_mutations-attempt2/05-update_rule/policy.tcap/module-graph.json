@@ -1,0 +1,45 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "research.interlocution.dataset"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "research.interlocution.dataset"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.judgment"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.initialization"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.loss"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.precision"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.optimizer_state"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.stopping"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.update"
+    },
+    {
+      "imports": [],
+      "name": "research.interlocution.working_set"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

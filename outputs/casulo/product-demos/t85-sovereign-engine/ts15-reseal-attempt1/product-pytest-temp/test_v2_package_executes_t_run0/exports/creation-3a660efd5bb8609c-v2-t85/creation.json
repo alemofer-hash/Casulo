@@ -1,0 +1,1 @@
+{"capabilities":["network.connect"],"content":{"constraints":["sem rede"],"identity":{"purpose":"agente T portátil"}},"creation_id":"creation:t85-portable","rejected_delta_ids":[],"schema":"casulo.creation/1.0","state":"AGREEMENT","version":2}

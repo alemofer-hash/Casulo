@@ -1,0 +1,166 @@
+{
+  "affected_paths": [
+    [
+      "identity",
+      "purpose"
+    ],
+    [
+      "identity",
+      "purpose"
+    ],
+    [
+      "behavior",
+      "autonomy"
+    ],
+    [
+      "behavior",
+      "autonomy"
+    ],
+    [
+      "behavior",
+      "output"
+    ],
+    [
+      "behavior",
+      "output"
+    ],
+    [
+      "interface",
+      "input"
+    ],
+    [
+      "interface",
+      "input"
+    ],
+    [
+      "data",
+      "preservation"
+    ],
+    [
+      "data",
+      "preservation"
+    ],
+    [
+      "constraints",
+      "reversibility"
+    ],
+    [
+      "constraints",
+      "reversibility"
+    ]
+  ],
+  "base_version": 0,
+  "confidence": 0.85,
+  "confirmation_state": "PROPOSED",
+  "creation_id": "creation:open-ended-holdout",
+  "delta_id": "intent:gen:7f59cb9b038409a8f99e4203",
+  "operations": [
+    {
+      "action": "remove",
+      "path": [
+        "identity",
+        "purpose"
+      ]
+    },
+    {
+      "action": "set",
+      "path": [
+        "identity",
+        "purpose"
+      ],
+      "value": {
+        "description": "Restauro conservativo de fotografias analógicas escaneadas com foco na preservação do original e no registro da proveniência."
+      }
+    },
+    {
+      "action": "remove",
+      "path": [
+        "behavior",
+        "autonomy"
+      ]
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "autonomy"
+      ],
+      "value": {
+        "description": "Planejamento de sequências reversíveis para restauro conservativo, com base em riscos descritos pelo usuário (fungos, rasgos, manchas) e intenção estética."
+      }
+    },
+    {
+      "action": "remove",
+      "path": [
+        "behavior",
+        "output"
+      ]
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "output"
+      ],
+      "value": {
+        "description": "Proposta de sequência reversível, registro da proveniência e recusa de sobrescrita destrutiva."
+      }
+    },
+    {
+      "action": "remove",
+      "path": [
+        "interface",
+        "input"
+      ]
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "input"
+      ],
+      "value": {
+        "description": "Descrição de riscos (fungos, rasgos, manchas), intenção estética e preferências do usuário."
+      }
+    },
+    {
+      "action": "remove",
+      "path": [
+        "data",
+        "preservation"
+      ]
+    },
+    {
+      "action": "set",
+      "path": [
+        "data",
+        "preservation"
+      ],
+      "value": {
+        "description": "Preservação do original, registro da proveniência e não alteração destrutiva."
+      }
+    },
+    {
+      "action": "remove",
+      "path": [
+        "constraints",
+        "reversibility"
+      ]
+    },
+    {
+      "action": "set",
+      "path": [
+        "constraints",
+        "reversibility"
+      ],
+      "value": {
+        "description": "A sequência de restauro deve ser reversível, com base nos riscos e na intenção estética fornecidos."
+      }
+    }
+  ],
+  "rationale": "A proposta visa a redefinição da CreationSpec para incluir uma abordagem mais específica e direcionada em relação ao restauro conservativo de fotografias analógicas escaneadas, com ênfase na preservação do original e no registro da proveniência.",
+  "schema": "casulo.intent-delta/1.0",
+  "source_event_ids": [
+    "voice:g5:novel-idea"
+  ]
+}

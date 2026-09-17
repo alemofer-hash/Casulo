@@ -1,0 +1,11 @@
+{
+  "captured_utc": "2026-08-14T19:37:12.765307+00:00",
+  "free_bytes_before": 83672870912,
+  "minimum_reserve_bytes": 26843545600,
+  "new_model_download_planned": false,
+  "pass": true,
+  "projected_free_after_peak_bytes": 79377903616,
+  "projected_rc_peak_bytes": 4294967296,
+  "qlora_4b": "DEFERRED_COMPUTE_NOT_AVAILABLE",
+  "schema": "casulo.revolution-closure/1.0/disk-budget"
+}

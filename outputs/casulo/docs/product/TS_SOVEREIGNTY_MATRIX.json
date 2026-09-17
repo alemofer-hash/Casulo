@@ -1,0 +1,33 @@
+{
+  "schema": "casulo.t.sovereignty.matrix/2.0",
+  "frozen_at": "2026-08-14",
+  "frozen_by_gate": "TS0_BASELINE_FROZEN",
+  "metric": "S_authority=sum(weight*degree)/sum(weight)",
+  "target": 0.85,
+  "critical_coverage_target": 1.0,
+  "execution_target": 0.6,
+  "total_weight": 65,
+  "surfaces": [
+    {"id":"material_intent","weight":6,"critical":true},
+    {"id":"capabilities_effects","weight":8,"critical":true},
+    {"id":"hard_requirement_fulfillment","weight":7,"critical":true},
+    {"id":"publish_commit","weight":8,"critical":true},
+    {"id":"agent_behavior","weight":6,"critical":false},
+    {"id":"memory_governance","weight":5,"critical":false},
+    {"id":"semantic_routing_lifecycle","weight":5,"critical":false},
+    {"id":"tools_composition","weight":4,"critical":false},
+    {"id":"jobs_concurrency_cancel","weight":3,"critical":false},
+    {"id":"simulation_acceptance","weight":4,"critical":false},
+    {"id":"interface_state","weight":2,"critical":false},
+    {"id":"materialization_lifecycle","weight":4,"critical":false},
+    {"id":"recovery_update","weight":3,"critical":false}
+  ],
+  "degrees": {"0":"absent_or_ignored","0.25":"shadow","0.5":"partial_constraint","0.75":"t_decides_with_fallback_or_gap","1":"compiled_t_sole_authority"},
+  "required_evidence": ["t_source_hash","t_ir_hash","tcap_hash","runtime_function","canonical_input_hash","canonical_output_hash","clean_release_trace","mutation_test","bypass_fail_closed_test"],
+  "forbidden_proxies": ["lines_of_code","file_count","decorative_t_source","ignored_t_result","posthoc_receipt","substring_oracle_for_hard_requirement","emit_literal_as_agent_logic","single_ret_as_nontrivial_execution","fixture_as_owner_final_evidence"],
+  "history": {
+    "rc_preregistered_matrix": {"path":"docs/product/RC_T_SOVEREIGNTY_MATRIX.json","surface_count":11,"total_weight":36,"degrees":"null"},
+    "rc4_executed_audit": {"path":"product-demos/revolution-closure/rc04-t-sovereignty/t-sovereignty-audit.json","surface_count":9,"total_weight":27,"score":1.0,"scope":"narrow_contract_audit_only"}
+  }
+}
+

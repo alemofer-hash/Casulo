@@ -1,0 +1,71 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "enums": [],
+  "fields": [
+    {
+      "name": "Buzina",
+      "traces": [
+        {
+          "name": "value",
+          "type_name": "Text"
+        }
+      ]
+    }
+  ],
+  "language": "T/1.1",
+  "module": "creation",
+  "operations": [
+    {
+      "cfg": {
+        "blocks": [
+          {
+            "id": "block/root.0",
+            "instruction_paths": [
+              "root.0"
+            ],
+            "successors": [
+              "exit"
+            ]
+          },
+          {
+            "id": "exit",
+            "instruction_paths": [],
+            "successors": []
+          }
+        ],
+        "entry": "block/root.0",
+        "exit": "exit"
+      },
+      "contract": {
+        "effect_contract": {
+          "declared": [
+            "manifest"
+          ],
+          "schema": "casulo-t-effects/1.0"
+        }
+      },
+      "input_type": "Buzina",
+      "instructions": [
+        {
+          "arguments": [
+            "\"Initialization of Reversibility Module: Bússola de Reversibilidade is now active. passo reversível\""
+          ],
+          "else_body": [],
+          "op": "emit",
+          "result": null,
+          "then_body": [],
+          "type_name": "Text"
+        }
+      ],
+      "kind": "condense",
+      "name": "InitializeReversibility",
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "records": [],
+  "uses": [],
+  "version": "crisalida-ir/1.0"
+}

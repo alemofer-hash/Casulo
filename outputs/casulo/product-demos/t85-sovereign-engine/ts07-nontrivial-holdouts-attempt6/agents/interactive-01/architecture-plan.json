@@ -1,0 +1,51 @@
+{
+  "agent_id": "t_interactive_01",
+  "case_id": "interactive-01",
+  "constraints": [
+    {
+      "error_code": "t_interactive_01_memory_01",
+      "field_name": "is_project_isolated",
+      "requirement_id": "project-isolation",
+      "success_value": "PROJECT_ISOLATION_SATISFIED"
+    },
+    {
+      "error_code": "t_interactive_01_interruption_02",
+      "field_name": "is_barge_in_allowed",
+      "requirement_id": "barge-in",
+      "success_value": "BARGE_IN_SATISFIED"
+    },
+    {
+      "error_code": "t_interactive_01_export_03",
+      "field_name": "is_export_editable",
+      "requirement_id": "editable-export",
+      "success_value": "EDITABLE_EXPORT_SATISFIED"
+    }
+  ],
+  "module_suffixes": [
+    "memory",
+    "interruption",
+    "export"
+  ],
+  "raw_sha256": "7203f58761adebb32ca90cbcd9cb28800690fa7429ca61c885603c008121c887",
+  "rejected_candidates": [],
+  "request": "Estúdio conversacional de personagens com memória separada por obra, interrupção e exportação editável.",
+  "schema": "casulo.t85-agent-plan/1.0",
+  "stochastic_trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "fe4724813456ae87253718b97e5e1312884ec0a45c03557bb7b2c97fdea5e922",
+    "ended_monotonic_ns": 31687456419300,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "t85:interactive-01:architecture:0",
+    "output_sha256": "7203f58761adebb32ca90cbcd9cb28800690fa7429ca61c885603c008121c887",
+    "sampling_policy_id": "casulo-t85-architecture-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 31646284806300,
+    "stream_events": 211
+  },
+  "success_events_origin": "canonical_derivation_from_frozen_requirement_id",
+  "summary": "Arquitetura para estúdio conversacional de personagens com memória separada por obra, interrupção e exportação editável."
+}

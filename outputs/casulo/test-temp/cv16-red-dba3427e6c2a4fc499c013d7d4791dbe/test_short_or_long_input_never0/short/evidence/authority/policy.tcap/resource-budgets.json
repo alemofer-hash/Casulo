@@ -1,0 +1,8 @@
+{
+  "modules": {
+    "compression.casv_compact": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    }
+  }
+}

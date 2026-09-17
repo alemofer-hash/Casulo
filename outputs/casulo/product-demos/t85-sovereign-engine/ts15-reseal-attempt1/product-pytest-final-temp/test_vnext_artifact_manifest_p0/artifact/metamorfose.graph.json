@@ -1,0 +1,76 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "casulo.product.presence",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "message",
+          "source": "Present/input/message",
+          "target": "Present/instruction/root.0/emit"
+        }
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 1,
+      "input_type": "PresenceEvent",
+      "name": "Present",
+      "nodes": [
+        {
+          "defines": [
+            "message"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "Present/input/message",
+          "kind": "input",
+          "label": "message",
+          "operation": "Present",
+          "path": "input.message",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "Present/instruction/root.0/emit",
+          "kind": "emit",
+          "label": "message",
+          "operation": "Present",
+          "path": "root.0",
+          "pure": false,
+          "uses": [
+            "message"
+          ]
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [],
+  "version": "metamorfose-graph/1.0"
+}

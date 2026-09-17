@@ -1,0 +1,20 @@
+{
+  "command": "python -m pytest -q research/interlocution/tests/test_energy_confirmatory_v2.py research/interlocution/tests tests/test_livelab_energy_v1.py",
+  "covered": [
+    "power-only trapezoidal integration",
+    "cumulative joules",
+    "exact boundary interpolation",
+    "mock rejection",
+    "calibration/range/firmware/clock qualification",
+    "K completed normalization",
+    "gap/reset/partial/range-change rejection",
+    "batteryless desktop",
+    "unstable laptop",
+    "hierarchical multi-host analysis",
+    "same-kernel full work unit"
+  ],
+  "duration_seconds": 7.0,
+  "failed": 0,
+  "passed": 54,
+  "schema": "casulo.interlocution-energy-runtime-v2-validation/1.0"
+}

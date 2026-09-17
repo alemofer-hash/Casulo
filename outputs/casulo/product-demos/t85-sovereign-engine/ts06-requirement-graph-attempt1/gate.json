@@ -1,0 +1,10 @@
+{
+  "FCR": 0.0,
+  "all_hard_approved_or_blocked": true,
+  "bounded_passes": 6,
+  "false_hard_completion": 0,
+  "families": 4,
+  "gate": "TS6_T_REQUIREMENT_GRAPH_PASS",
+  "holdouts": 12,
+  "holdouts_blocked_honestly": 12
+}

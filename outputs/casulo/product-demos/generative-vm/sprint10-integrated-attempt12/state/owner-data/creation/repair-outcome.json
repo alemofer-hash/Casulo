@@ -1,0 +1,141 @@
+{
+  "attempts": [
+    {
+      "attempt": 0,
+      "diagnostics": [
+        {
+          "artifact_id": "sha256:1234e5fa23491ca8fe937d0895473d8710862bd2170585dbae407cd19c24c09e",
+          "code": "TTEST_EXPECTED_TEXT_MISSING",
+          "expected_contains": "trilho G61H reversível",
+          "observed": "init:G61H:memory.read:creation:open-ended-holdout",
+          "process_returncode": 0,
+          "process_stderr": "",
+          "schema": "casulo.generative-diagnostic/1.0",
+          "source_sha256": "a69764eefcfa680ce873acbaf6d86a4003854f892760ed0313e0dfcbd0b39a68",
+          "test_name": "human-holdout-acceptance",
+          "unit_id": "creation_init"
+        }
+      ],
+      "finished_ns": 2924387006900,
+      "project_id": "t-project:14df823daf568df8b3debed5",
+      "started_ns": 2923589307400,
+      "tcap_sha256": "6b26e277346a31af40aeafb4c62e4520d03853d34d5689a1175410e1fb19096e",
+      "tests": [
+        {
+          "expected_contains": "init:G61H:memory.read",
+          "name": "creation_init_test",
+          "observed": "init:G61H:memory.read:creation:open-ended-holdout",
+          "operation": "G61H_init",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "5c6da5d3c1ea4d29dd09212fdaddd88292d63d730acadc161081f4a95a1c31cb",
+          "unit_id": "creation_init",
+          "wall_ns": 260126200
+        },
+        {
+          "expected_contains": "reject:G61H:memory.read",
+          "name": "data_rejection_test",
+          "observed": "reject:G61H:memory.read:creation:open-ended-holdout",
+          "operation": "G61H_reject",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "3a4052a8bfb762368946c143bdb8af1ba7124dde80728eca84888c6d930f1b7c",
+          "unit_id": "data_rejection",
+          "wall_ns": 166387100
+        },
+        {
+          "expected_contains": "link:G61H:memory.read",
+          "name": "interface_link_test",
+          "observed": "link:G61H:memory.read:creation:open-ended-holdout",
+          "operation": "G61H_link",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "ff7547c1f1e97c8878f40943d62414b97b67053c55401fbb7c0de93ffe311f52",
+          "unit_id": "interface_link",
+          "wall_ns": 130426300
+        },
+        {
+          "expected_contains": "trilho G61H reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "init:G61H:memory.read:creation:open-ended-holdout",
+          "operation": "G61H_init",
+          "passed": false,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "12297b738c5d96bdaf4787439c4b5d9954e2a7e4b8e406ab00f74d444446d9a6",
+          "unit_id": "creation_init",
+          "wall_ns": 80164900
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "diagnostics": [],
+      "finished_ns": 2969086276700,
+      "project_id": "t-project:8c72d602c5435ae0592ddcd3",
+      "started_ns": 2968265906600,
+      "tcap_sha256": "22dc7a545186698018a5b740ae046c63b2a0828ea3d5a537b2ab5da902276083",
+      "tests": [
+        {
+          "expected_contains": "init:G61H:memory.read",
+          "name": "creation_init_test",
+          "observed": "init:G61H:memory.read:creation:open-ended-holdout,trilho G61H reversível",
+          "operation": "G61H_init",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "af32ffbb20231498af7242710350f4207d0f8cc30d8da476161fdb6634cccf87",
+          "unit_id": "creation_init",
+          "wall_ns": 191471800
+        },
+        {
+          "expected_contains": "reject:G61H:memory.read",
+          "name": "data_rejection_test",
+          "observed": "reject:G61H:memory.read:creation:open-ended-holdout",
+          "operation": "G61H_reject",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "56f0fef229f2a78da29e7ba4737bfb442e4ee5f059d3c6bd317b2dc2647ad62c",
+          "unit_id": "data_rejection",
+          "wall_ns": 160979500
+        },
+        {
+          "expected_contains": "link:G61H:memory.read",
+          "name": "interface_link_test",
+          "observed": "link:G61H:memory.read:creation:open-ended-holdout",
+          "operation": "G61H_link",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "249c6786dd172d731918b9dc6543be1839b3dcf67a04fdd2e0b869c5f2b4d8de",
+          "unit_id": "interface_link",
+          "wall_ns": 191851900
+        },
+        {
+          "expected_contains": "trilho G61H reversível",
+          "name": "human-holdout-acceptance",
+          "observed": "init:G61H:memory.read:creation:open-ended-holdout,trilho G61H reversível",
+          "operation": "G61H_init",
+          "passed": true,
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "fa2bd487c6982bc25e38b9e2426837ed81e140402963c4c3742b029eecf7a902",
+          "unit_id": "creation_init",
+          "wall_ns": 173497400
+        }
+      ]
+    }
+  ],
+  "budget": 4,
+  "candidate_rejections": [],
+  "project_id": "t-project:8c72d602c5435ae0592ddcd3",
+  "receipt_sha256": "0239f92a1746fc11c4c79831dadf2390fed958e49521eb392058df5aeb5c70a4",
+  "repair_count": 1,
+  "schema": "casulo.verifier-repair-receipt/1.0",
+  "status": "PASS",
+  "tcap_sha256": "22dc7a545186698018a5b740ae046c63b2a0828ea3d5a537b2ab5da902276083"
+}

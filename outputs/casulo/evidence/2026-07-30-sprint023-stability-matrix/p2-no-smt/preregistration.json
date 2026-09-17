@@ -1,0 +1,239 @@
+{
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "classification": {
+    "INCONCLUSIVE": "baseline ou evidência obrigatória ausente",
+    "INVALID": "integridade, desenho ou equivalência violados",
+    "NEGATIVE": "qualidade válida e ao menos um IC95% superior abaixo de 1",
+    "NULL": "qualidade válida, nenhum baseline refuta, mas ao menos um intervalo cruza 1",
+    "POSITIVE": "qualidade válida e IC95% inferior acima de 1 em todos os baselines obrigatórios"
+  },
+  "covenant": {
+    "invariants": [
+      {
+        "id": "HYPOTHESIS_BEFORE_MEASUREMENT",
+        "rule": "hipótese, métricas, baselines e gates são selados antes da medição"
+      },
+      {
+        "id": "QUALITY_BEFORE_SPEED",
+        "rule": "nenhum ganho é válido sem equivalência e qualidade"
+      },
+      {
+        "id": "ALL_REGISTERED_BASELINES_REPORTED",
+        "rule": "baseline obrigatório ausente torna o veredito inconclusivo"
+      },
+      {
+        "id": "RAW_SAMPLES_PRESERVED",
+        "rule": "amostras brutas e ordem pareada são parte da evidência"
+      },
+      {
+        "id": "UNCERTAINTY_REQUIRED",
+        "rule": "mediana sem intervalo de incerteza não libera alegação"
+      },
+      {
+        "id": "NEGATIVE_AND_NULL_PRESERVED",
+        "rule": "resultados negativos, nulos e falhas permanecem publicados"
+      },
+      {
+        "id": "UNMEASURED_IS_NULL",
+        "rule": "grandeza não medida é null e jamais é estimada como observação"
+      },
+      {
+        "id": "NO_CHERRY_PICKING",
+        "rule": "todas as execuções pré-registradas entram no veredito"
+      },
+      {
+        "id": "SCOPE_BOUND_CLAIMS",
+        "rule": "toda alegação nomeia carga, baseline, máquina e horizonte medidos"
+      },
+      {
+        "id": "CORRECTION_CREATES_NEW_VERSION",
+        "rule": "correção lógica gera novo protocolo e não sobrescreve evidência"
+      },
+      {
+        "id": "INDEPENDENT_RECOMPUTATION",
+        "rule": "o juiz recalcula métricas a partir das amostras brutas"
+      },
+      {
+        "id": "JUDGE_CANNOT_OPTIMIZE",
+        "rule": "o juiz classifica evidência e não altera código, dados ou parâmetros"
+      }
+    ],
+    "protocol": "casulo-scientific-covenant/1.0"
+  },
+  "design": {
+    "arena_budget_bytes": 67108864,
+    "bootstrap_resamples": 2000,
+    "candidate_backend": "casulo-linear-algebra-c99-openmp/0.3",
+    "cooldown_ms": 250,
+    "cpu_affinity": [
+      0,
+      2
+    ],
+    "gemm_provider": {
+      "abi": "casulo-gemm-provider/0.1",
+      "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+      "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+      "external": true,
+      "float32_symbol": "scipy_cblas_sgemm64_",
+      "float64_symbol": "scipy_cblas_dgemm64_",
+      "implementation": "external-cblas-ilp64-runtime-function-pointer",
+      "provider_id": "numpy-scipy-openblas-ilp64",
+      "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+      "version": "0.3.30"
+    },
+    "gemm_workers": 1,
+    "graph": {
+      "autograd_graph_sha256": "b70e121e5d65c9cb4530f153400b95bdbff11dade61159e1d33553bc55067db0",
+      "path_hint": "heldout-tall.tensor.json",
+      "sha256": "3dd087546a54de73b700fa8f7889019523475bb9694e0ecd313a3d61872a213e"
+    },
+    "implementation": {
+      "binding": "sha256-source-files",
+      "files": {
+        "autograd.py": "459d84fd6e40895f873bc6555333d121c3331f2410f0f4b8e6fb72f7a5bb5db9",
+        "linear_algebra.py": "6195cb25f5472067c647933edff8d9c7dfd781d4e07245a60c3cd74bec1e7c6b",
+        "measurement.py": "378eea216869848b1699fd65948888306f5af8bbb30fbcef35b5ab2abb247c43",
+        "parity.py": "eab0ede77232d4dce184b7f3aae8bfaae13b7291da0e3fe63f14e09d305f290f",
+        "tensor.py": "cfb8b71b14e613336c4e2f27c4655a5d7974152a00427bacc96249b8028db0a9",
+        "tensor_cpu.py": "0cae5c69e94e126992d85ed4438af89620671382989f81a01bf3472833721f5c",
+        "tensor_lab.py": "0aae99c332ddad6acd23fbc7c0289c8a7dd79153c30bd35cb9d3334a54c55647"
+      }
+    },
+    "inner_iterations": 16,
+    "input_generator": {
+      "algorithm": "numpy-pcg64-normal",
+      "protocol": "casulo-tensor-lab-input/0.1",
+      "seed": 20260730,
+      "weight_scale": 0.1
+    },
+    "inputs": [
+      {
+        "device": "cpu",
+        "dtype": "float32",
+        "name": "x",
+        "shape": [
+          384,
+          48
+        ]
+      },
+      {
+        "device": "cpu",
+        "dtype": "float32",
+        "name": "weight1",
+        "shape": [
+          48,
+          96
+        ]
+      },
+      {
+        "device": "cpu",
+        "dtype": "float32",
+        "name": "weight2",
+        "shape": [
+          96,
+          12
+        ]
+      },
+      {
+        "device": "cpu",
+        "dtype": "float32",
+        "name": "target",
+        "shape": [
+          384,
+          12
+        ]
+      }
+    ],
+    "loss": "loss",
+    "max_coefficient_of_variation": 0.15,
+    "measurement_boundary": "prepared forward plus backward; compilation, preparation, validation and report generation excluded",
+    "measurement_calibration": {
+      "algorithm": "per-backend-doubling-then-shared-maximum",
+      "maximum_inner_iterations": 8192,
+      "minimum_inner_iterations": 16,
+      "protocol": "casulo-measurement-stability/0.1",
+      "target_wall_ms": 1000.0,
+      "uses_speedup_or_winner_selection": false
+    },
+    "memory_probe": "separate-phase-process-rss-sampling-not-in-timing-samples",
+    "order_policy": "balanced-six-permutation-cycle",
+    "pairing": "same-input-same-process-same-sample-index",
+    "required_baselines": [
+      "pytorch-eager-autograd-cpu",
+      "pytorch-inductor-autograd-cpu"
+    ],
+    "samples": 7,
+    "seed": 20260730,
+    "telemetry_policy": {
+      "before_and_after_each_sample": true,
+      "outside_timing_boundary": true,
+      "temperature_may_be_unavailable": true
+    },
+    "torch_threads": 2,
+    "warmups": 2,
+    "workers": 2,
+    "wrt": [
+      "weight1",
+      "weight2"
+    ]
+  },
+  "energy_policy": {
+    "required_for_primary_verdict": false,
+    "software_estimates_forbidden": true,
+    "unmeasured_value": null
+  },
+  "experiment_id": "sha256:cd2356e115ca608ba7d20b52f4cae0b3f43677e2f78994dbc60883639b134b56",
+  "hypothesis": {
+    "candidate": "casulo-linear-algebra-c99-openmp/0.3",
+    "claim_eligible": false,
+    "commercial_threshold": 6.0,
+    "direction": "greater_than",
+    "must_pass_every_required_baseline": true,
+    "phase": "PREREGISTERED_UNOBSERVED_DESIGN",
+    "primary_metric": "paired_steady_state_wall_speedup_median",
+    "purpose": "EXPLORATORY_OR_SMOKE_TEST",
+    "quality_precedes_speed": true,
+    "superiority_threshold": 1.0
+  },
+  "observed_results_at_registration": false,
+  "prior_exploratory_observations": {
+    "disclosure": "Matriz fixa de estabilidade apos Sprint 023; perfil P2 sem SMT.",
+    "present": true,
+    "same_registered_design_observed": false
+  },
+  "protocol": "casulo-tensor-lab-preregistration/0.2",
+  "quality_gates": {
+    "finite_samples": true,
+    "inductor_vs_numpy_loss_and_gradients": "PASS",
+    "native_vs_numpy": "PASS",
+    "numpy_vs_pytorch_eager": "PASS",
+    "same_dtype": true,
+    "same_graph": true,
+    "same_inputs": true,
+    "same_workers_or_threads": true
+  },
+  "result_policy": {
+    "correction": "new-version-new-preregistration-new-result",
+    "failed_runs_are_evidence": true,
+    "overwrite": false,
+    "selection": "all-preregistered-samples"
+  },
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "cd2356e115ca608ba7d20b52f4cae0b3f43677e2f78994dbc60883639b134b56"
+  },
+  "sealed_at_utc": "2026-07-31T03:13:48.294795+00:00",
+  "secondary_metrics": [
+    "paired_cpu_speedup_median",
+    "compilation_wall_ns",
+    "preparation_wall_ns",
+    "observed_process_rss_peak_bytes",
+    "break_even_invocations"
+  ],
+  "timestamp_limitation": "integridade é sustentada por SHA-256 e ordem pelo histórico Git; não existe carimbo externo confiável nesta versão",
+  "trusted_external_timestamp": false
+}

@@ -1,0 +1,21 @@
+{
+  "absent_before_run": true,
+  "excluded_generated_evidence": true,
+  "findings": [
+    {
+      "matches": [],
+      "term_sha256": "e005d0c2b62c6c329617d672f8bae8e50a12b5170fd92d9ebf504942c673dcbd"
+    },
+    {
+      "matches": [],
+      "term_sha256": "c96463137aef9794f0155e05a68d584efc23fa278722aba9514c27342a82373b"
+    }
+  ],
+  "scanned_extensions": [
+    "py",
+    "md",
+    "json",
+    "t"
+  ],
+  "schema": "casulo.holdout-scan/1.0"
+}

@@ -1,0 +1,9 @@
+{
+  "code": "TTEST_EXPECTED_TEXT_MISSING",
+  "expected_contains": "confirmação",
+  "observed": "revisão",
+  "schema": "casulo.generative-diagnostic/1.0",
+  "source_sha256": "2a980e37499aa53004218871c4a8e8c4b098d3cbfddf3827b16e0bbe59e8c0c5",
+  "test_name": "approval",
+  "unit_id": "review"
+}

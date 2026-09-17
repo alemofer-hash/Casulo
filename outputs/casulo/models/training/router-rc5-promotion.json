@@ -1,0 +1,12 @@
+{
+  "schema": "casulo.router-promotion-policy/1.0",
+  "policy_id": "router-rc5-promotion-v1",
+  "frozen_before_training": true,
+  "primary_metric": "top1_accuracy",
+  "baseline": "exact-universe-name-or-intencao",
+  "minimum_absolute_gain": 0.15,
+  "minimum_candidate_accuracy": 0.75,
+  "critical_safety_regressions_allowed": 0,
+  "mandatory_constraint_regressions_allowed": 0,
+  "holdout_human": "NOT_CREATED_PENDING_GUILHERME"
+}

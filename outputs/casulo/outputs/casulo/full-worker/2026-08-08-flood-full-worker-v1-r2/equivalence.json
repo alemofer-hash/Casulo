@@ -1,0 +1,3169 @@
+{
+  "comparisons": [
+    {
+      "K": 1,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        }
+      ],
+      "direction": "ascending",
+      "maximum_loss_abs_difference": 3.469446951953614e-17,
+      "maximum_parameter_abs_difference": 2.220446049250313e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 2,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        }
+      ],
+      "direction": "ascending",
+      "maximum_loss_abs_difference": 3.469446951953614e-17,
+      "maximum_parameter_abs_difference": 2.220446049250313e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 5,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        }
+      ],
+      "direction": "ascending",
+      "maximum_loss_abs_difference": 3.469446951953614e-17,
+      "maximum_parameter_abs_difference": 2.220446049250313e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 10,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 6,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 7,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 8,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 9,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 10,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        }
+      ],
+      "direction": "ascending",
+      "maximum_loss_abs_difference": 4.85722573273506e-17,
+      "maximum_parameter_abs_difference": 4.440892098500626e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 20,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 6,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 7,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 8,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 9,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 10,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 11,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 12,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 13,
+          "counters_equal": true,
+          "loss_abs": 1.1102230246251565e-16,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 14,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 15,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 16,
+          "counters_equal": true,
+          "loss_abs": 9.71445146547012e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 17,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 18,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 19,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 20,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 9.43689570931383e-16
+        }
+      ],
+      "direction": "ascending",
+      "maximum_loss_abs_difference": 1.1102230246251565e-16,
+      "maximum_parameter_abs_difference": 4.440892098500626e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 50,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 6,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 7,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 8,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 9,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 10,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 11,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 12,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 13,
+          "counters_equal": true,
+          "loss_abs": 1.1102230246251565e-16,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 14,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 15,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 16,
+          "counters_equal": true,
+          "loss_abs": 9.71445146547012e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 17,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 18,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 19,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 20,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 9.43689570931383e-16
+        },
+        {
+          "case_id": 21,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 22,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 23,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 24,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 25,
+          "counters_equal": true,
+          "loss_abs": 9.020562075079397e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 26,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 27,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 28,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 29,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 30,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 31,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 32,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 33,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 34,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 6.661338147750939e-16
+        },
+        {
+          "case_id": 35,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 36,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 37,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 38,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 39,
+          "counters_equal": true,
+          "loss_abs": 4.163336342344337e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 40,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 41,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 42,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 43,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 44,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 45,
+          "counters_equal": true,
+          "loss_abs": 1.734723475976807e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 46,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 47,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 48,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 49,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 50,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        }
+      ],
+      "direction": "ascending",
+      "maximum_loss_abs_difference": 1.1102230246251565e-16,
+      "maximum_parameter_abs_difference": 4.440892098500626e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 100,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 6,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 7,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 8,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 9,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 10,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 11,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 12,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 13,
+          "counters_equal": true,
+          "loss_abs": 1.1102230246251565e-16,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 14,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 15,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 16,
+          "counters_equal": true,
+          "loss_abs": 9.71445146547012e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 17,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 18,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 19,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 20,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 9.43689570931383e-16
+        },
+        {
+          "case_id": 21,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 22,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 23,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 24,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 25,
+          "counters_equal": true,
+          "loss_abs": 9.020562075079397e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 26,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 27,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 28,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 29,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 30,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 31,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 32,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 33,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 34,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 6.661338147750939e-16
+        },
+        {
+          "case_id": 35,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 36,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 37,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 38,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 39,
+          "counters_equal": true,
+          "loss_abs": 4.163336342344337e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 40,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 41,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 42,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 43,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 44,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 45,
+          "counters_equal": true,
+          "loss_abs": 1.734723475976807e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 46,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 47,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 48,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 49,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 50,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 51,
+          "counters_equal": true,
+          "loss_abs": 4.163336342344337e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 52,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 53,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.0531133177191805e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 54,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 55,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 56,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 57,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 58,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 59,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 60,
+          "counters_equal": true,
+          "loss_abs": 7.632783294297951e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 61,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 62,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 63,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 64,
+          "counters_equal": true,
+          "loss_abs": 1.734723475976807e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 65,
+          "counters_equal": true,
+          "loss_abs": 8.326672684688674e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 66,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 1.4224732503009818e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 67,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 68,
+          "counters_equal": true,
+          "loss_abs": 1.0408340855860843e-16,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 69,
+          "counters_equal": true,
+          "loss_abs": 7.632783294297951e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 70,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 71,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 72,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.2212453270876722e-15
+        },
+        {
+          "case_id": 73,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 74,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 75,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 76,
+          "counters_equal": true,
+          "loss_abs": 4.163336342344337e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 77,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 78,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 79,
+          "counters_equal": true,
+          "loss_abs": 7.632783294297951e-17,
+          "parameter_max_abs": 2.636779683484747e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 80,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 81,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 82,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 83,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 84,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 85,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 86,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 87,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 88,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 89,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 90,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 91,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 92,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 93,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.3592239273284576e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 94,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 95,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 96,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 97,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 98,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 99,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 100,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        }
+      ],
+      "direction": "ascending",
+      "maximum_loss_abs_difference": 1.1102230246251565e-16,
+      "maximum_parameter_abs_difference": 4.440892098500626e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 100,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 6,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 7,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 8,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 9,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 10,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 11,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 12,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 13,
+          "counters_equal": true,
+          "loss_abs": 1.1102230246251565e-16,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 14,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 15,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 16,
+          "counters_equal": true,
+          "loss_abs": 9.71445146547012e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 17,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 18,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 19,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 20,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 9.43689570931383e-16
+        },
+        {
+          "case_id": 21,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 22,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 23,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 24,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 25,
+          "counters_equal": true,
+          "loss_abs": 9.020562075079397e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 26,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 27,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 28,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 29,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 30,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 31,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 32,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 33,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 34,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 6.661338147750939e-16
+        },
+        {
+          "case_id": 35,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 36,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 37,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 38,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 39,
+          "counters_equal": true,
+          "loss_abs": 4.163336342344337e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 40,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 41,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 42,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 43,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 44,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 45,
+          "counters_equal": true,
+          "loss_abs": 1.734723475976807e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 46,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 47,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 48,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 49,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 50,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 51,
+          "counters_equal": true,
+          "loss_abs": 4.163336342344337e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 52,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 53,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.0531133177191805e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 54,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 55,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 56,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 57,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 58,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 59,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 60,
+          "counters_equal": true,
+          "loss_abs": 7.632783294297951e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 61,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 62,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 63,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 64,
+          "counters_equal": true,
+          "loss_abs": 1.734723475976807e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 65,
+          "counters_equal": true,
+          "loss_abs": 8.326672684688674e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 66,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 1.4224732503009818e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 67,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 68,
+          "counters_equal": true,
+          "loss_abs": 1.0408340855860843e-16,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 69,
+          "counters_equal": true,
+          "loss_abs": 7.632783294297951e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 70,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 71,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 72,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.2212453270876722e-15
+        },
+        {
+          "case_id": 73,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 74,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 75,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 76,
+          "counters_equal": true,
+          "loss_abs": 4.163336342344337e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 77,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 78,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 79,
+          "counters_equal": true,
+          "loss_abs": 7.632783294297951e-17,
+          "parameter_max_abs": 2.636779683484747e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 80,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 81,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 82,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 83,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 84,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 85,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 86,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 87,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 88,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 89,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 90,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 91,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 92,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 93,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.3592239273284576e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 94,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 95,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 96,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 97,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 98,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 99,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 100,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        }
+      ],
+      "direction": "descending",
+      "maximum_loss_abs_difference": 1.1102230246251565e-16,
+      "maximum_parameter_abs_difference": 4.440892098500626e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 50,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 6,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 7,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 8,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 9,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 10,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 11,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 12,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 13,
+          "counters_equal": true,
+          "loss_abs": 1.1102230246251565e-16,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 14,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 15,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 16,
+          "counters_equal": true,
+          "loss_abs": 9.71445146547012e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 17,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 18,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 19,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 20,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 9.43689570931383e-16
+        },
+        {
+          "case_id": 21,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 22,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 23,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 24,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 25,
+          "counters_equal": true,
+          "loss_abs": 9.020562075079397e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 26,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 27,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 28,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 29,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 30,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 31,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 32,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 33,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.7755575615628914e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 34,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 6.661338147750939e-16
+        },
+        {
+          "case_id": 35,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 36,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 37,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 38,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 39,
+          "counters_equal": true,
+          "loss_abs": 4.163336342344337e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 40,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 41,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 42,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 43,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 44,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 45,
+          "counters_equal": true,
+          "loss_abs": 1.734723475976807e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 46,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 47,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 48,
+          "counters_equal": true,
+          "loss_abs": 0.0,
+          "parameter_max_abs": 1.3877787807814457e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 49,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 50,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        }
+      ],
+      "direction": "descending",
+      "maximum_loss_abs_difference": 1.1102230246251565e-16,
+      "maximum_parameter_abs_difference": 4.440892098500626e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 20,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 6,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 7,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 8,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 9,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 10,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 11,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 12,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 13,
+          "counters_equal": true,
+          "loss_abs": 1.1102230246251565e-16,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 14,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 15,
+          "counters_equal": true,
+          "loss_abs": 6.245004513516506e-17,
+          "parameter_max_abs": 1.1102230246251565e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 16,
+          "counters_equal": true,
+          "loss_abs": 9.71445146547012e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 17,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 18,
+          "counters_equal": true,
+          "loss_abs": 2.0816681711721685e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 19,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 20,
+          "counters_equal": true,
+          "loss_abs": 5.551115123125783e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 9.43689570931383e-16
+        }
+      ],
+      "direction": "descending",
+      "maximum_loss_abs_difference": 1.1102230246251565e-16,
+      "maximum_parameter_abs_difference": 4.440892098500626e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 10,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 6,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 1.6653345369377348e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 7,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 8,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 4.440892098500626e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 9,
+          "counters_equal": true,
+          "loss_abs": 4.85722573273506e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.1102230246251565e-15
+        },
+        {
+          "case_id": 10,
+          "counters_equal": true,
+          "loss_abs": 1.3877787807814457e-17,
+          "parameter_max_abs": 3.3306690738754696e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        }
+      ],
+      "direction": "descending",
+      "maximum_loss_abs_difference": 4.85722573273506e-17,
+      "maximum_parameter_abs_difference": 4.440892098500626e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 5,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 3,
+          "counters_equal": true,
+          "loss_abs": 2.7755575615628914e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.3322676295501878e-15
+        },
+        {
+          "case_id": 4,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        },
+        {
+          "case_id": 5,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        }
+      ],
+      "direction": "descending",
+      "maximum_loss_abs_difference": 3.469446951953614e-17,
+      "maximum_parameter_abs_difference": 2.220446049250313e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 2,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        },
+        {
+          "case_id": 2,
+          "counters_equal": true,
+          "loss_abs": 6.938893903907228e-18,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 8.881784197001252e-16
+        }
+      ],
+      "direction": "descending",
+      "maximum_loss_abs_difference": 3.469446951953614e-17,
+      "maximum_parameter_abs_difference": 2.220446049250313e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    {
+      "K": 1,
+      "cases": [
+        {
+          "case_id": 1,
+          "counters_equal": true,
+          "loss_abs": 3.469446951953614e-17,
+          "parameter_max_abs": 2.220446049250313e-16,
+          "passed": true,
+          "prediction_max_abs": 1.7763568394002505e-15
+        }
+      ],
+      "direction": "descending",
+      "maximum_loss_abs_difference": 3.469446951953614e-17,
+      "maximum_parameter_abs_difference": 2.220446049250313e-16,
+      "maximum_prediction_abs_difference": 1.7763568394002505e-15,
+      "status": "PASS",
+      "tolerance": 1e-09
+    }
+  ],
+  "schema": "casulo-full-worker-equivalence/1.0",
+  "status": "PASS",
+  "tolerance": 1e-09
+}

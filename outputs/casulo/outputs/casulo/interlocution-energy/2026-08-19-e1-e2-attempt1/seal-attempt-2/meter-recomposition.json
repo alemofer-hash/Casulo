@@ -1,0 +1,59 @@
+{
+  "all_exact": true,
+  "samples": [
+    {
+      "difference_joules": 0.0,
+      "exact_match_within_1e-9": true,
+      "original_joules": 159.97110913943231,
+      "recomputed_joules": 159.97110913943231,
+      "sample": "pair-01-D",
+      "segment_sha256": "c6254a0031cca954ddd10dd35c073108dfc9cf0d7aaa64ecbc9f6d7a0ddb7386",
+      "status": "PASS"
+    },
+    {
+      "difference_joules": 0.0,
+      "exact_match_within_1e-9": true,
+      "original_joules": 204.02063586617885,
+      "recomputed_joules": 204.02063586617885,
+      "sample": "pair-01-E",
+      "segment_sha256": "e26982454d7c452411f3ce9dd4d1b18846dc88f14d247fe0029eadc5b70c699d",
+      "status": "PASS"
+    },
+    {
+      "difference_joules": 0.0,
+      "exact_match_within_1e-9": true,
+      "original_joules": 170.10505074364593,
+      "recomputed_joules": 170.10505074364593,
+      "sample": "pair-02-D",
+      "segment_sha256": "2233db4c84db0f271625c510a9b2dc2d2bf386e2c30f60217a4ba2b617e6b8c1",
+      "status": "PASS"
+    },
+    {
+      "difference_joules": 0.0,
+      "exact_match_within_1e-9": true,
+      "original_joules": 155.48451787990192,
+      "recomputed_joules": 155.48451787990192,
+      "sample": "pair-02-E",
+      "segment_sha256": "c2ae9ef92d85f30996b07ab4468b15579c24489ff6a5627f16b66f590ba6b7d3",
+      "status": "PASS"
+    },
+    {
+      "difference_joules": 0.0,
+      "exact_match_within_1e-9": true,
+      "original_joules": 165.9916582824663,
+      "recomputed_joules": 165.9916582824663,
+      "sample": "pair-03-D",
+      "segment_sha256": "3e70952566c5ff3c444ae0c82676d44602bb2c7821be382382dc958b4d21ad1d",
+      "status": "PASS"
+    },
+    {
+      "difference_joules": 0.0,
+      "exact_match_within_1e-9": true,
+      "original_joules": 165.2148338589516,
+      "recomputed_joules": 165.2148338589516,
+      "sample": "pair-03-E",
+      "segment_sha256": "f6c6eb5093b4bc3b8daceb24be1d0e48421574a805840513a3622f2950ff26ff",
+      "status": "PASS"
+    }
+  ]
+}

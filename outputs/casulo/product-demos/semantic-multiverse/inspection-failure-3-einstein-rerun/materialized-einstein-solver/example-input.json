@@ -1,0 +1,85 @@
+{
+  "boundary_conditions": {
+    "type": "asymptotically_flat"
+  },
+  "constants": {
+    "G": 6.6743e-11,
+    "Lambda": 0.0,
+    "c": 299792458.0
+  },
+  "coordinate_point": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "coordinates": [
+    "t",
+    "x",
+    "y",
+    "z"
+  ],
+  "energy_momentum_tensor": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "initial_conditions": {
+    "hypersurface": "t=0",
+    "metric": "Minkowski"
+  },
+  "metric": [
+    [
+      "-1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "schema": "casulo.einstein-problem/1.0",
+  "tolerances": {
+    "derivative_step": 1e-05,
+    "pivot": 1e-12,
+    "residual": 1e-09,
+    "symmetry": 1e-10
+  }
+}

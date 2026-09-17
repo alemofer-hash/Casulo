@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "test.exhaust": {
+      "decide": []
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.materialization.lifecycle"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.materialization.lifecycle"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

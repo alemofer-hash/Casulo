@@ -1,0 +1,557 @@
+{
+  "cases": [
+    {
+      "bundle_sha256": "3bf6a18a750a111c7d7b86e4d7026b848d49ba35fa91cdb3e54f0d2b97b27687",
+      "case_id": "publish",
+      "checks": {
+        "corruption_quarantined": true,
+        "guest_isolated": true,
+        "native_gate": true,
+        "observable_reference_native": true,
+        "observable_reference_productive": true,
+        "qemu_success": true,
+        "receipt_reference_native": true,
+        "receipt_reference_productive": true,
+        "runtime_ids_distinct": true
+      },
+      "grants": [
+        "manifest"
+      ],
+      "image_sha256": "20b1348a2638e1e1e959f09c7b4ab968eb825f77c5cb0364851c2445fa9a486e",
+      "native_receipt": {
+        "canonical_input_hash": "2087de48b3ee37d1632d9d6c177b87a3b46dc1449b420fa871f8c47ad92f8ab2",
+        "canonical_output_hash": "f09b4a711305a50baf954674572cc87cb26dd1bf4f20634bde63c0e6637a083f",
+        "decision_id": "decision:f09b4a711305a50baf954674",
+        "effects_requested": [
+          "manifest"
+        ],
+        "foreign_calls": [],
+        "grants_consumed": [
+          "manifest"
+        ],
+        "monotonic_timestamp_ns": 9,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "a38f2967e4981501a0c14effeec9de5838998d1ca4b226cf2c54126accd5c324",
+        "result": "ok",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/native-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:publish",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [
+          {
+            "limit": 64,
+            "name": "audit",
+            "payload": [
+              "PASS",
+              "PASS"
+            ],
+            "status": "joined"
+          }
+        ],
+        "requested_effects": [
+          "manifest"
+        ],
+        "result": {
+          "kind": "ok",
+          "value": "PUBLISH"
+        },
+        "state_delta": {
+          "attempts": 1
+        }
+      },
+      "payload": {
+        "cancelled": false,
+        "confirmed": true,
+        "hard_statuses": [
+          "PASS",
+          "PASS"
+        ]
+      },
+      "productive_receipt": {
+        "canonical_input_hash": "2087de48b3ee37d1632d9d6c177b87a3b46dc1449b420fa871f8c47ad92f8ab2",
+        "canonical_output_hash": "f09b4a711305a50baf954674572cc87cb26dd1bf4f20634bde63c0e6637a083f",
+        "decision_id": "decision:f09b4a711305a50baf954674",
+        "effects_requested": [
+          "manifest"
+        ],
+        "foreign_calls": [],
+        "grants_consumed": [
+          "manifest"
+        ],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "ac024a119a6a9cae31f1f8cbf4883af0cb271c867aec42d642883ebcf279ceb2",
+        "result": "ok",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:publish",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "reference_receipt": {
+        "canonical_input_hash": "2087de48b3ee37d1632d9d6c177b87a3b46dc1449b420fa871f8c47ad92f8ab2",
+        "canonical_output_hash": "f09b4a711305a50baf954674572cc87cb26dd1bf4f20634bde63c0e6637a083f",
+        "decision_id": "decision:f09b4a711305a50baf954674",
+        "effects_requested": [
+          "manifest"
+        ],
+        "foreign_calls": [],
+        "grants_consumed": [
+          "manifest"
+        ],
+        "monotonic_timestamp_ns": 28275492252600,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "874ff2d124c2e0119a10a4807c00560a6f928578318a32b0d6835e550471d3de",
+        "result": "ok",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/reference-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:publish",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "serial_sha256": "f9a432bc939e1bc5116bcbbab7ee9d1977fa28d37e49b1e1fdeda449d847a701"
+    },
+    {
+      "bundle_sha256": "c9aa9fcf167c1db4c152f2d425c943551e01722acd041cdcaa74c8d32fcc31ff",
+      "case_id": "unconfirmed",
+      "checks": {
+        "corruption_quarantined": true,
+        "guest_isolated": true,
+        "native_gate": true,
+        "observable_reference_native": true,
+        "observable_reference_productive": true,
+        "qemu_success": true,
+        "receipt_reference_native": true,
+        "receipt_reference_productive": true,
+        "runtime_ids_distinct": true
+      },
+      "grants": [
+        "manifest"
+      ],
+      "image_sha256": "4f0c0e2a5d16405ce1d25dafbaa5e996ee9cd287e4d6e7e8a3931dbf567d3d61",
+      "native_receipt": {
+        "canonical_input_hash": "3d603072d18321143da657d8b47ba21073cc5c8690efa4584df3f77271238d12",
+        "canonical_output_hash": "9f429cd6fd44ef4e98321a15daa3f685dd7cdbc0b061373d609aab6f92a40604",
+        "decision_id": "decision:9f429cd6fd44ef4e98321a15",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 9,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "e5fd53965387ff6d6265f7982f53ef1c9e478910764870909389de8320a3bb44",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/native-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:unconfirmed",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "error",
+          "value": "intent_unconfirmed"
+        },
+        "state_delta": {}
+      },
+      "payload": {
+        "cancelled": false,
+        "confirmed": false,
+        "hard_statuses": [
+          "PASS"
+        ]
+      },
+      "productive_receipt": {
+        "canonical_input_hash": "3d603072d18321143da657d8b47ba21073cc5c8690efa4584df3f77271238d12",
+        "canonical_output_hash": "9f429cd6fd44ef4e98321a15daa3f685dd7cdbc0b061373d609aab6f92a40604",
+        "decision_id": "decision:9f429cd6fd44ef4e98321a15",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "294ff13bd7c08156384719949775e23f470f41eadf5116fb13eb73235007e671",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:unconfirmed",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "reference_receipt": {
+        "canonical_input_hash": "3d603072d18321143da657d8b47ba21073cc5c8690efa4584df3f77271238d12",
+        "canonical_output_hash": "9f429cd6fd44ef4e98321a15daa3f685dd7cdbc0b061373d609aab6f92a40604",
+        "decision_id": "decision:9f429cd6fd44ef4e98321a15",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 28280496392900,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "f789358ef099a8668f0ce7b7f7e7c14e25e8757e967e63471be5f41f73789605",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/reference-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:unconfirmed",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "serial_sha256": "0bb0114272ce9357787aac82b03e24b38a95e320bde1099dcf407eca631b5a78"
+    },
+    {
+      "bundle_sha256": "d86ac6194c2c73bd46ed5374b4cfb640beabe76c5d23e037d614db78dc45ec28",
+      "case_id": "unknown-hard",
+      "checks": {
+        "corruption_quarantined": true,
+        "guest_isolated": true,
+        "native_gate": true,
+        "observable_reference_native": true,
+        "observable_reference_productive": true,
+        "qemu_success": true,
+        "receipt_reference_native": true,
+        "receipt_reference_productive": true,
+        "runtime_ids_distinct": true
+      },
+      "grants": [
+        "manifest"
+      ],
+      "image_sha256": "0b0170b37dfc3d3ece6820ad202cd9793ecd4fa19966af34213e34638b15269a",
+      "native_receipt": {
+        "canonical_input_hash": "05070b552f0a948a4a65f7de8045226db1b4b0581646df0778d609395d35134b",
+        "canonical_output_hash": "7c94d7f5f32073637d182aee3420834de165e9410a6cff90d5622872568c75f8",
+        "decision_id": "decision:7c94d7f5f32073637d182aee",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 9,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "1ea5de78a323f3fb3b95390243dcf0b625639293c3ee1fdaa0815b3687b89e2b",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/native-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:unknown-hard",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "error",
+          "value": "hard_requirement_not_pass"
+        },
+        "state_delta": {}
+      },
+      "payload": {
+        "cancelled": false,
+        "confirmed": true,
+        "hard_statuses": [
+          "UNKNOWN"
+        ]
+      },
+      "productive_receipt": {
+        "canonical_input_hash": "05070b552f0a948a4a65f7de8045226db1b4b0581646df0778d609395d35134b",
+        "canonical_output_hash": "7c94d7f5f32073637d182aee3420834de165e9410a6cff90d5622872568c75f8",
+        "decision_id": "decision:7c94d7f5f32073637d182aee",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "065ff9b50855b0d2f6fcf14b13fa75b8a9a7e0e7ee4c9bcc8102b070d839f88f",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:unknown-hard",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "reference_receipt": {
+        "canonical_input_hash": "05070b552f0a948a4a65f7de8045226db1b4b0581646df0778d609395d35134b",
+        "canonical_output_hash": "7c94d7f5f32073637d182aee3420834de165e9410a6cff90d5622872568c75f8",
+        "decision_id": "decision:7c94d7f5f32073637d182aee",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 28285376935400,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "628c913230e6e20193f684c0812836ba71df632fca395f1225fafe15492b2f2e",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/reference-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:unknown-hard",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "serial_sha256": "3e5a15cd65155c000369b42ca83c4cd1fcc0eafe1e3eb4d5df69a2679b246c40"
+    },
+    {
+      "bundle_sha256": "d63e300b39e85be2bd75b23612b400aa7af44dbd39b239fad5e73edab47fac95",
+      "case_id": "cancelled",
+      "checks": {
+        "corruption_quarantined": true,
+        "guest_isolated": true,
+        "native_gate": true,
+        "observable_reference_native": true,
+        "observable_reference_productive": true,
+        "qemu_success": true,
+        "receipt_reference_native": true,
+        "receipt_reference_productive": true,
+        "runtime_ids_distinct": true
+      },
+      "grants": [
+        "manifest"
+      ],
+      "image_sha256": "4d3b37b0490e8ed8ba764c3c3db7d639bca1a58f9a33ee37e7c856f86012c40c",
+      "native_receipt": {
+        "canonical_input_hash": "9fae639d5054eff4fede90547eaefa34c395c46d3b4a8f9cf756a651ebc6b04d",
+        "canonical_output_hash": "526bae40163ab6996f592187801ee71e85ae4988fe5b4072c689ca5a1f8ac0bf",
+        "decision_id": "decision:526bae40163ab6996f592187",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 9,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "201d5725b025e92dcf56c727768a0d792f5bac9f567b045c166078e375d15f01",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/native-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:cancelled",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "error",
+          "value": "CANCELLED"
+        },
+        "state_delta": {}
+      },
+      "payload": {
+        "cancelled": true,
+        "confirmed": true,
+        "hard_statuses": [
+          "PASS"
+        ]
+      },
+      "productive_receipt": {
+        "canonical_input_hash": "9fae639d5054eff4fede90547eaefa34c395c46d3b4a8f9cf756a651ebc6b04d",
+        "canonical_output_hash": "526bae40163ab6996f592187801ee71e85ae4988fe5b4072c689ca5a1f8ac0bf",
+        "decision_id": "decision:526bae40163ab6996f592187",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "8ecff7386660688125d2a86ea80d190fd1f803b4afe1eb18900c3a1aaefc872c",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:cancelled",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "reference_receipt": {
+        "canonical_input_hash": "9fae639d5054eff4fede90547eaefa34c395c46d3b4a8f9cf756a651ebc6b04d",
+        "canonical_output_hash": "526bae40163ab6996f592187801ee71e85ae4988fe5b4072c689ca5a1f8ac0bf",
+        "decision_id": "decision:526bae40163ab6996f592187",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 28290269900800,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "b6341794a6a34ebabf78b4e407404be551d641fc1ee9b31f46a7da2ebc04705c",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/reference-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:cancelled",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "serial_sha256": "8fc83d41a950b337063742d2aed7268ca6c4076378855828366432868da57e7f"
+    },
+    {
+      "bundle_sha256": "93aab99a257d0b47deee1218d312ee36bd381a39e27eeb8434ecd28c1d60283c",
+      "case_id": "denied",
+      "checks": {
+        "corruption_quarantined": true,
+        "guest_isolated": true,
+        "native_gate": true,
+        "observable_reference_native": true,
+        "observable_reference_productive": true,
+        "qemu_success": true,
+        "receipt_reference_native": true,
+        "receipt_reference_productive": true,
+        "runtime_ids_distinct": true
+      },
+      "grants": [],
+      "image_sha256": "1e1d7baf35321e7ddd1d736a1bb66b286ef6598a5ea785114296fa70a08aa6b8",
+      "native_receipt": {
+        "canonical_input_hash": "94acf917a22c96d7aaaa6e87ff3b2a2a8a15820797eb239d1a93406231440b56",
+        "canonical_output_hash": "cac51d6cef37b0f2be0fb738f2f7418323bbb2e10b01cd91c1246a8973bb473c",
+        "decision_id": "decision:cac51d6cef37b0f2be0fb738",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 9,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "14af71a176d53d1858acd2103db6c7f3057c8755f65ceb99068a1cf086fcf0f6",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/native-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:denied",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [
+          {
+            "limit": 64,
+            "name": "audit",
+            "payload": [
+              "PASS"
+            ],
+            "status": "joined"
+          }
+        ],
+        "requested_effects": [],
+        "result": {
+          "kind": "error",
+          "value": "CAPABILITY_DENIED:manifest"
+        },
+        "state_delta": {
+          "attempts": 1
+        }
+      },
+      "payload": {
+        "cancelled": false,
+        "confirmed": true,
+        "hard_statuses": [
+          "PASS"
+        ]
+      },
+      "productive_receipt": {
+        "canonical_input_hash": "94acf917a22c96d7aaaa6e87ff3b2a2a8a15820797eb239d1a93406231440b56",
+        "canonical_output_hash": "cac51d6cef37b0f2be0fb738f2f7418323bbb2e10b01cd91c1246a8973bb473c",
+        "decision_id": "decision:cac51d6cef37b0f2be0fb738",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "8a97e500d31b35b6cbc345435c1b535204afd347716c1fde1683a624460ae198",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:denied",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "reference_receipt": {
+        "canonical_input_hash": "94acf917a22c96d7aaaa6e87ff3b2a2a8a15820797eb239d1a93406231440b56",
+        "canonical_output_hash": "cac51d6cef37b0f2be0fb738f2f7418323bbb2e10b01cd91c1246a8973bb473c",
+        "decision_id": "decision:cac51d6cef37b0f2be0fb738",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 28295195716600,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "d180ccc28b4975b60b1f2fdcb825622531072c48946d7564db22761011b1b135",
+        "result": "error",
+        "runtime_function": "owner.publish::decide",
+        "runtime_id": "t-runtime/reference-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "native-conformance:denied",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "cc78cddfa4533516b3b1cf04d7e8016cfe9728e9adca440c332988a07ecf697c",
+        "t_source_hash": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3",
+        "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+      },
+      "serial_sha256": "0771b17cc4a8ec6cb3bd2983f896d0cb39870bc94e1096a8f3f3fce53a64c1e5"
+    }
+  ],
+  "limitations": [
+    "T/2.0 interpreter executes in the Native kernel for this gate; process-level ring-3 confinement remains a later hardening item."
+  ],
+  "native_isolation": "QEMU guest, network disabled, immutable image, no host block device",
+  "native_ring3": false,
+  "negative_cases": [
+    {
+      "bundle_sha256": "58d42a7efea65ef6979c14cb34d57435618f9e7949613506b6dd0448fb2ddb3e",
+      "case_id": "resource-exhaustion",
+      "checks": {
+        "native_exhausted": true,
+        "native_no_observable": true,
+        "productive_exhausted": true,
+        "reference_exhausted": true
+      },
+      "image_sha256": "864bddd536a2ce6ffa7839eca6a4c887eec22abaeff99ee0ac6a0e47911f3d36",
+      "native_reject_reason": "RESOURCE_STEPS_EXHAUSTED",
+      "productive_stderr": "T_RUNTIME_ERROR:RESOURCE_STEPS_EXHAUSTED",
+      "reference_error": "RESOURCE_STEPS_EXHAUSTED",
+      "tcap_hash": "3ef6650aba2ac3703d4549e24dfb38dd17bd431bfd0ade26375a77c3e6a1dd8e"
+    }
+  ],
+  "schema": "casulo.t-v2-native-conformance/1.0",
+  "scientific_benchmark": "NOT_STARTED",
+  "scope": "correctness-only differential execution; not performance or scientific benchmark",
+  "status": "PASS",
+  "tcap_hash": "007364815c1e42e5fed32576808f7f98bf7366d3d02880084baa125975ef6aaa"
+}

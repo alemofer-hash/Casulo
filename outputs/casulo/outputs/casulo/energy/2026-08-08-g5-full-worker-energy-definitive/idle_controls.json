@@ -1,0 +1,232 @@
+{
+  "controls": [
+    {
+      "control": "A_HWINFO_ONLY",
+      "csv_growth_bytes": 2023719,
+      "csv_size_end": 48908487,
+      "duration_seconds": 300.000357,
+      "end_utc": "2026-08-08T15:05:32.232086+00:00",
+      "energy_window": {
+        "average_watts": 10.267265473497613,
+        "coverage": 1.0,
+        "duration_seconds": 300.000357,
+        "end_utc": "2026-08-08T15:05:32.232086+00:00",
+        "energy_joules": 3080.183307463058,
+        "first_sample_utc": "2026-08-08T15:00:32.231729+00:00",
+        "last_sample_utc": "2026-08-08T15:05:32.232086+00:00",
+        "maximum_gap_seconds": 0.278,
+        "median_interval_seconds": 0.251,
+        "reason_code": "valid_hwinfo_cpu_package_energy_window",
+        "sample_count": 1194,
+        "schema": "casulo-energy-hwinfo-window/1.0",
+        "sensor": {
+          "index": 164,
+          "kind": "package_power",
+          "literal_name": "Potência total da CPU [W]",
+          "normalized_name": "potencia total da cpu w",
+          "provenance": "hwinfo_reported_cpu_package",
+          "session_id": 0,
+          "si_scale": 1.0,
+          "unit": "w"
+        },
+        "source_session_id": 0,
+        "start_utc": "2026-08-08T15:00:32.231729+00:00",
+        "status": "PASS"
+      },
+      "observer_maximum_rss_bytes": 38862848,
+      "observer_process_cpu_percent_of_one_core": 1.0989570255744727,
+      "observer_process_cpu_seconds": 3.296875,
+      "rows": 1192,
+      "runner_loaded": false,
+      "runner_resident_reference_retained": false,
+      "sampling": {
+        "gaps_over_5x_median": [],
+        "maximum_seconds": 0.278,
+        "median_seconds": 0.251,
+        "p95_seconds": 0.266
+      },
+      "start_utc": "2026-08-08T15:00:32.231729+00:00",
+      "temperature_c": {
+        "final": 51.0,
+        "initial": 61.0,
+        "maximum": 70.0,
+        "median": 52.0
+      },
+      "throttle_event_count": 0,
+      "throttle_events": [],
+      "total_cpu_utility_percent": {
+        "maximum": 81.7,
+        "median": 23.4
+      },
+      "watcher": "disabled",
+      "watcher_budget": null,
+      "watcher_polls": 0
+    },
+    {
+      "control": "B_HWINFO_INCREMENTAL_WATCHER",
+      "csv_growth_bytes": 2022064,
+      "csv_size_end": 50947007,
+      "duration_seconds": 300.000624,
+      "end_utc": "2026-08-08T15:10:40.459204+00:00",
+      "energy_window": {
+        "average_watts": 9.815759557774356,
+        "coverage": 1.0,
+        "duration_seconds": 300.000624,
+        "end_utc": "2026-08-08T15:10:40.459204+00:00",
+        "energy_joules": 2944.733992366271,
+        "first_sample_utc": "2026-08-08T15:05:40.458580+00:00",
+        "last_sample_utc": "2026-08-08T15:10:40.459204+00:00",
+        "maximum_gap_seconds": 0.309,
+        "median_interval_seconds": 0.251,
+        "reason_code": "valid_hwinfo_cpu_package_energy_window",
+        "sample_count": 1196,
+        "schema": "casulo-energy-hwinfo-window/1.0",
+        "sensor": {
+          "index": 164,
+          "kind": "package_power",
+          "literal_name": "Potência total da CPU [W]",
+          "normalized_name": "potencia total da cpu w",
+          "provenance": "hwinfo_reported_cpu_package",
+          "session_id": 0,
+          "si_scale": 1.0,
+          "unit": "w"
+        },
+        "source_session_id": 0,
+        "start_utc": "2026-08-08T15:05:40.458580+00:00",
+        "status": "PASS"
+      },
+      "observer_maximum_rss_bytes": 88944640,
+      "observer_process_cpu_percent_of_one_core": 1.427080365006174,
+      "observer_process_cpu_seconds": 4.28125,
+      "rows": 1194,
+      "runner_loaded": false,
+      "runner_resident_reference_retained": false,
+      "sampling": {
+        "gaps_over_5x_median": [],
+        "maximum_seconds": 0.309,
+        "median_seconds": 0.251,
+        "p95_seconds": 0.265
+      },
+      "start_utc": "2026-08-08T15:05:40.458580+00:00",
+      "temperature_c": {
+        "final": 50.0,
+        "initial": 54.0,
+        "maximum": 76.0,
+        "median": 51.0
+      },
+      "throttle_event_count": 0,
+      "throttle_events": [],
+      "total_cpu_utility_percent": {
+        "maximum": 115.9,
+        "median": 23.4
+      },
+      "watcher": "append-only-incremental-v1",
+      "watcher_budget": {
+        "bytes_read_total": 1998973,
+        "maximum_chunk_bytes": 1048576,
+        "maximum_observed_chunk_bytes": 15449,
+        "offset": 50909119,
+        "partial_bytes": 0,
+        "reader": "append-only-incremental-v1"
+      },
+      "watcher_polls": 1174
+    },
+    {
+      "control": "C_HWINFO_WATCHER_RUNNER_LOADED",
+      "csv_growth_bytes": 2016651,
+      "csv_size_end": 52989086,
+      "duration_seconds": 300.00082,
+      "end_utc": "2026-08-08T15:15:49.773607+00:00",
+      "energy_window": {
+        "average_watts": 8.884995191230734,
+        "coverage": 1.0,
+        "duration_seconds": 300.00082,
+        "end_utc": "2026-08-08T15:15:49.773607+00:00",
+        "energy_joules": 2665.505843065277,
+        "first_sample_utc": "2026-08-08T15:10:49.772787+00:00",
+        "last_sample_utc": "2026-08-08T15:15:49.773607+00:00",
+        "maximum_gap_seconds": 0.283,
+        "median_interval_seconds": 0.251,
+        "reason_code": "valid_hwinfo_cpu_package_energy_window",
+        "sample_count": 1195,
+        "schema": "casulo-energy-hwinfo-window/1.0",
+        "sensor": {
+          "index": 164,
+          "kind": "package_power",
+          "literal_name": "Potência total da CPU [W]",
+          "normalized_name": "potencia total da cpu w",
+          "provenance": "hwinfo_reported_cpu_package",
+          "session_id": 0,
+          "si_scale": 1.0,
+          "unit": "w"
+        },
+        "source_session_id": 0,
+        "start_utc": "2026-08-08T15:10:49.772787+00:00",
+        "status": "PASS"
+      },
+      "observer_maximum_rss_bytes": 277499904,
+      "observer_process_cpu_percent_of_one_core": 1.3854128798714618,
+      "observer_process_cpu_seconds": 4.15625,
+      "rows": 1193,
+      "runner_loaded": true,
+      "runner_resident_reference_retained": true,
+      "sampling": {
+        "gaps_over_5x_median": [],
+        "maximum_seconds": 0.283,
+        "median_seconds": 0.251,
+        "p95_seconds": 0.265
+      },
+      "start_utc": "2026-08-08T15:10:49.772787+00:00",
+      "temperature_c": {
+        "final": 50.0,
+        "initial": 60.0,
+        "maximum": 65.0,
+        "median": 49.0
+      },
+      "throttle_event_count": 0,
+      "throttle_events": [],
+      "total_cpu_utility_percent": {
+        "maximum": 99.3,
+        "median": 20.6
+      },
+      "watcher": "append-only-incremental-v1",
+      "watcher_budget": {
+        "bytes_read_total": 1989645,
+        "maximum_chunk_bytes": 1048576,
+        "maximum_observed_chunk_bytes": 13199,
+        "offset": 52948881,
+        "partial_bytes": 0,
+        "reader": "append-only-incremental-v1"
+      },
+      "watcher_polls": 1190
+    }
+  ],
+  "deltas": {
+    "runner_loaded_vs_watcher_power_w": -0.930764366543622,
+    "runner_loaded_vs_watcher_temperature_median_c": -2.0,
+    "watcher_vs_hwinfo_only_power_w": -0.4515059157232564,
+    "watcher_vs_hwinfo_only_temperature_max_c": 6.0,
+    "watcher_vs_hwinfo_only_temperature_median_c": -1.0
+  },
+  "frozen_limits": {
+    "observer_cpu_percent_of_one_core_max": 2.0,
+    "observer_power_delta_w_max": 1.0,
+    "observer_temperature_max_delta_c_max": 3.0,
+    "observer_temperature_median_delta_c_max": 2.0,
+    "p95_interval_seconds_max": 0.3,
+    "throttle_events_allowed": 0
+  },
+  "gates": {
+    "append_only_budget": true,
+    "no_idle_throttling": true,
+    "runner_idle_power_budget": true,
+    "runner_idle_temperature_budget": true,
+    "sampling_budget": true,
+    "watcher_cpu_budget": true,
+    "watcher_power_budget": true,
+    "watcher_temperature_maximum_budget": false,
+    "watcher_temperature_median_budget": true
+  },
+  "schema": "casulo-definitive-idle-controls/1.0",
+  "status": "FAIL"
+}

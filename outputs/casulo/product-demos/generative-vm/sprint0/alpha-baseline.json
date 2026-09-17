@@ -1,0 +1,30 @@
+{
+  "schema": "casulo-generative-transition-baseline/1.0",
+  "date": "2026-08-11",
+  "git_head": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "branch": "main",
+  "worktree": {
+    "status_line_count": 5861,
+    "modified_count": 22,
+    "untracked_count": 5839,
+    "status_sha256": "02f8aa1c1320f156c2adc23bc2910b477064cfdd3eca1d8a1217c29c5ea7b110",
+    "preserved": true,
+    "git_add_all_used": false
+  },
+  "alpha_gate": {
+    "pytest": "279 passed, 1 skipped, 42 subtests passed",
+    "cargo_check": "PASS",
+    "public_audit": "PASS",
+    "scientific_benchmark_started": false
+  },
+  "hashes": {
+    "execution_state": "177340042d6f97de2934e341f01f11e68ce1e1e839ab9bf54c58fe904e2b93f2",
+    "acceptance_gates": "9b0369d060b9b832687273a7bc1f40779878e0dfb572c45adde918a5f48f07d7",
+    "alpha_report": "ad2fbba09a7c607b5f92150e07906ec04232e8327df5536370cc65c6a4610d3b",
+    "public_wheel": "11803266831f97a1de4e70af87ad2f2a60121df467ab8229510ff8bfca620488",
+    "native_image": "ec4141c497d99e6ef70b93fd3048053b5a4c1a4911dd86f7b2450bb0fdf51e2d",
+    "owner_motor": "1e1480b88285f78f8068da7229e53f5d437effd1ade62492de6530a735b916bc",
+    "deterministic_policy": "07a25760715c7636d44cd1dff6ec0a4d2f0a71f631d041dc57bd16c2a5392bf1"
+  },
+  "terminal_gate": "ALPHA_PRESERVED_FOR_GENERATIVE_TRANSITION"
+}

@@ -1,0 +1,1549 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "observed_sha256"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802"
+                }
+              },
+              "error": "dataset_hash_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "records"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 1024
+                }
+              },
+              "error": "dataset_record_count_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "input_features"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 8
+                }
+              },
+              "error": "dataset_feature_count_mismatch",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "dataset_sha256"
+                    },
+                    {
+                      "op": "const",
+                      "value": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "records"
+                    },
+                    {
+                      "op": "const",
+                      "value": "1024"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "input_features"
+                    },
+                    {
+                      "op": "const",
+                      "value": "8"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "DatasetObservation"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "research.interlocution.dataset",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "observed_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "records",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "input_features",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "DatasetObservation"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "observed_sha256"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3"
+                }
+              },
+              "error": "initialization_hash_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "cases_unique"
+                ],
+                "root": "input"
+              },
+              "error": "initialization_cases_not_unique",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "nonces_unique"
+                ],
+                "root": "input"
+              },
+              "error": "initialization_nonces_not_unique",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "bundle_sha256"
+                    },
+                    {
+                      "op": "const",
+                      "value": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "initialization_state_policy"
+                    },
+                    {
+                      "op": "const",
+                      "value": "reset_each_case"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "InitializationObservation"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "research.interlocution.initialization",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "observed_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cases_unique",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "nonces_unique",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "InitializationObservation"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "float64_supported"
+                ],
+                "root": "input"
+              },
+              "error": "float64_primitive_unavailable",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "dtype"
+                    },
+                    {
+                      "op": "const",
+                      "value": "float64"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "PrecisionCapabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "research.interlocution.precision",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "float64_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "PrecisionCapabilities"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "mse_supported"
+                ],
+                "root": "input"
+              },
+              "error": "mse_primitive_unavailable",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "loss"
+                    },
+                    {
+                      "op": "const",
+                      "value": "mse"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "LossCapabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "research.interlocution.loss",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "mse_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "LossCapabilities"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "sgd_supported"
+                ],
+                "root": "input"
+              },
+              "error": "sgd_primitive_unavailable",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "optimizer"
+                    },
+                    {
+                      "op": "const",
+                      "value": "sgd"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "learning_rate"
+                    },
+                    {
+                      "op": "const",
+                      "value": "0.009"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "UpdateCapabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "research.interlocution.update",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "sgd_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "UpdateCapabilities"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "reset_supported"
+                ],
+                "root": "input"
+              },
+              "error": "optimizer_reset_unavailable",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "no_cross_case_state"
+                ],
+                "root": "input"
+              },
+              "error": "optimizer_state_contamination",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "optimizer_state_policy"
+                    },
+                    {
+                      "op": "const",
+                      "value": "reset_each_case"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "OptimizerStateCapabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "research.interlocution.optimizer_state",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "reset_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "no_cross_case_state",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "OptimizerStateCapabilities"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "available_records"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": 1024
+                }
+              },
+              "error": "working_set_records_unavailable",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "selection_supported"
+                ],
+                "root": "input"
+              },
+              "error": "working_set_selection_unavailable",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "working_set_policy"
+                    },
+                    {
+                      "op": "const",
+                      "value": "all_records"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "working_set_start"
+                    },
+                    {
+                      "op": "const",
+                      "value": "0"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "working_set_count"
+                    },
+                    {
+                      "op": "const",
+                      "value": "1024"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "WorkingSetObservation"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "research.interlocution.working_set",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "available_records",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "selection_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "WorkingSetObservation"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "fixed_epoch_supported"
+                ],
+                "root": "input"
+              },
+              "error": "fixed_epoch_stop_unavailable",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "counter_supported"
+                ],
+                "root": "input"
+              },
+              "error": "epoch_counter_unavailable",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "stopping_policy"
+                    },
+                    {
+                      "op": "const",
+                      "value": "fixed_epochs"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "epochs"
+                    },
+                    {
+                      "op": "const",
+                      "value": "400"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "StoppingCapabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "research.interlocution.stopping",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "fixed_epoch_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "counter_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "StoppingCapabilities"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 5000,
+        "steps": 4096
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "independent_verifier_available"
+                ],
+                "root": "input"
+              },
+              "error": "independent_verifier_unavailable",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "publisher_requires_t"
+                ],
+                "root": "input"
+              },
+              "error": "publisher_bypass_detected",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "absolute_tolerance"
+                    },
+                    {
+                      "op": "const",
+                      "value": "1e-09"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "require_exact_counters"
+                    },
+                    {
+                      "op": "const",
+                      "value": "true"
+                    }
+                  ],
+                  [
+                    {
+                      "op": "const",
+                      "value": "require_no_nan_inf"
+                    },
+                    {
+                      "op": "const",
+                      "value": "true"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "policy",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "JudgeCapabilities"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        },
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "equivalence_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "equivalence_not_pass",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "counter_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "counters_not_pass",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "receipt_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "receipts_not_pass",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "semantic_status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "semantic_integrity_not_pass",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "human_contract_confirmed"
+                ],
+                "root": "input"
+              },
+              "error": "human_contract_unconfirmed",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "items": [
+                  [
+                    {
+                      "op": "const",
+                      "value": "decision"
+                    },
+                    {
+                      "op": "const",
+                      "value": "PUBLISH"
+                    }
+                  ]
+                ],
+                "op": "map"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "judge",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "JudgmentEvidence"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  },
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "Map"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "research.interlocution.judgment",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "independent_verifier_available",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "publisher_requires_t",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "JudgeCapabilities"
+        },
+        {
+          "members": [
+            {
+              "name": "equivalence_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "counter_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "receipt_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "semantic_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "human_contract_confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "JudgmentEvidence"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

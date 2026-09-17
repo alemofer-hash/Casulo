@@ -1,0 +1,19 @@
+{
+  "absolute_tolerance": 1e-09,
+  "bootstrap": {
+    "resamples": 20000,
+    "seed_wall": 2026081901
+  },
+  "causal_mutation_summary_with_frozen_protocol_sha256": "37b8cbc79bfe28aaf6aa7d4aa60dfd617455144bf1c6fb70559df4a133a936a4",
+  "confirmed_intent_sha256": "18c06cdbee3f50b56effe5c991f9ee62d5b29785060df564c1407521308983e5",
+  "energy": "NOT_MEASURED",
+  "frozen_before_definitive_results": true,
+  "holdout_set_sha256": "56a63ea54ddd0dd2b4353832af99ac5da37b197d7376de884efe72c99a377c0e",
+  "protocol_sha256": "f62fc6c41466b2b2b2efffa78e6a7883d034b3f82150cf26c2626d307e27320d",
+  "publication": "PROHIBITED",
+  "requirement_graph_sha256": "e5cc261d08a8281088dbf54dd52fcdbd34e206f2f348d88d8c128604a571e86a",
+  "schema": "casulo.interlocution-frozen-protocol/1.0",
+  "ti10_protocol_sha256": "ecbab99fa4c226a713f02065234548b5fef31dd1ba187207bcc2e56cdedcb037",
+  "training_authority_plan_sha256": "18bfc5d0d80fe52c347744ba7ca330653e7ba064ecba2f406efe63f05e8ded4e",
+  "training_tcap_hash": "4c3a538736c68f0343e2050aa939ea3a55b3fd930ce4ffbe2c2341a1d0fd45d0"
+}

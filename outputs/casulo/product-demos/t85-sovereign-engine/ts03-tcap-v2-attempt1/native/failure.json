@@ -1,0 +1,10 @@
+{
+  "schema": "casulo.t85-gate-attempt-failure/1.0",
+  "status": "FAIL_INFRASTRUCTURE_TIMEOUT",
+  "stage": "native_build",
+  "cause": "A new isolated Cargo target directory forced a full offline rebuild and exceeded the runner's frozen 180 second per-build timeout.",
+  "scientific_result": null,
+  "conformance_result": null,
+  "history_preserved": true,
+  "corrective_action": "Reuse the already validated os/target dependency cache while continuing to rebuild the image whenever CASULO_TCAP_RAMDISK changes."
+}

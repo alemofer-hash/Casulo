@@ -1,0 +1,35 @@
+{
+  "observable": {
+    "diagnostics": [],
+    "events": [],
+    "jobs": [],
+    "requested_effects": [],
+    "result": {
+      "kind": "ok",
+      "value": {
+        "decision": "PUBLISH"
+      }
+    },
+    "state_delta": {}
+  },
+  "runtime_receipt": {
+    "canonical_input_hash": "faf13dee81854a0036fbe1888d6ee4d596a8ee608d2f22c478cd938f7ab7e952",
+    "canonical_output_hash": "39a2e54e73c07afa40f69400a438f3339fe189d951751675d4a5dd73d4168f65",
+    "decision_id": "decision:39a2e54e73c07afa40f69400",
+    "effects_requested": [],
+    "foreign_calls": [],
+    "grants_consumed": [],
+    "monotonic_timestamp_ns": 1,
+    "previous_receipt_hash": "0a067d173abf3b3234c273f876e2cd5e1bc0f6d60adb251de2990964efea8ebc",
+    "receipt_hash": "56c7dfa85e3c83e95a0d865afce920cca81ea1ceec372ddac3efec32a18beb5a",
+    "result": "ok",
+    "runtime_function": "research.interlocution.holdout.holdout_logistic_bce_subset_v1.equivalence_acceptance::judge",
+    "runtime_id": "t-runtime/rust-2.0",
+    "schema": "casulo.t-decision-receipt/2.0",
+    "scope_id": "holdout-logistic-bce-subset-v1",
+    "surface_id": "equivalence_acceptance",
+    "t_ir_hash": "33a587d50c53d6a2e3060a5a734695367f8130393907ed7084dcb973ff2ab1e1",
+    "t_source_hash": "72ea84bd08f4e3b8a7f94c5e793184bf72b189225a725c7ddedf1f08c4be5dab",
+    "tcap_hash": "bc70cd341fa579f137fae0b5ef8a247c7a9c46a7c5ab509fd47e546885a216f4"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casulo://schemas/materialization-manifest/2.0",
+  "title": "Casulo Materialization Manifest 2.0",
+  "type": "object",
+  "required": ["schema", "creation_id", "version", "files", "capabilities", "secret_slots", "source_t_sha256", "provenance_root", "sbom_sha256"],
+  "properties": {
+    "schema": {"const": "casulo.materialization-manifest/2.0"},
+    "creation_id": {"type": "string", "minLength": 1},
+    "version": {"type": "integer", "minimum": 1},
+    "files": {"type": "array", "items": {"type": "object"}},
+    "capabilities": {"type": "array", "items": {"type": "string"}},
+    "secret_slots": {"type": "array", "items": {"type": "string"}},
+    "source_t_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "provenance_root": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "sbom_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  },
+  "additionalProperties": false
+}

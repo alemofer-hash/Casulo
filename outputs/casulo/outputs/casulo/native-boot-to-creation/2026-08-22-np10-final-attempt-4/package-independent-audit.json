@@ -1,0 +1,19 @@
+{
+  "schema": "casulo-native-package-independent-audit/1.0",
+  "archive_sha256": "368433243159ce28c4e54b39774792bdae39d8748d3b24786fb5dbd60dde863e",
+  "reproducibility_twin": "release/CASULO_NATIVE_BOOT_TO_CREATION_PROOF_2026-08-22-attempt-5.zip",
+  "reproducibility_twin_sha256": "368433243159ce28c4e54b39774792bdae39d8748d3b24786fb5dbd60dde863e",
+  "bit_reproducible": true,
+  "zip_test": "PASS",
+  "signature": "PASS",
+  "sha256sums_failures": [],
+  "manifest_failures": [],
+  "launcher_help": "PASS",
+  "powershell_launcher_present": true,
+  "vbs_launcher_present": true,
+  "image_present": true,
+  "python_launcher_present": true,
+  "gguf_embedded_count": 0,
+  "physical_drive_command_findings": 0,
+  "physical_drive_denylist_present": true
+}

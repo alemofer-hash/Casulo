@@ -1,0 +1,26 @@
+{
+  "schema": "casulo-so-toolchain-lock/0.1",
+  "validated_host": {
+    "architecture": "x86_64",
+    "os": "Windows",
+    "python": "3.13.2",
+    "python_cache_tag": "cpython-313"
+  },
+  "rust": {
+    "cargo": "1.95.0-nightly (fe2f314ae 2026-01-30)",
+    "cargo_lock_sha256": "0aaf3aee08ea6acbb1a17a9a6b1596caf744de5c36d940bcdb2974eecd2ee204",
+    "rust_toolchain_sha256": "f05d91d8b146b9cd88594894541ef844a45a3f3a858d29c9bbde1c4fbbd43802",
+    "rustc": "1.95.0-nightly (905b92696 2026-01-31)",
+    "toolchain": "nightly-2026-02-01",
+    "target": "x86_64-unknown-none"
+  },
+  "native_tools": {
+    "cmake": "4.3.2",
+    "gcc": "16.1.0",
+    "nasm": "2.16.03",
+    "ninja": "1.13.2",
+    "qemu": "11.0.50 (v11.0.0-12631-g54e84cdc7a)"
+  },
+  "physical_device_written": false,
+  "publication_performed": false
+}

@@ -1,0 +1,29 @@
+{
+  "adopted_at": "2026-08-14T21:49:17.518224+00:00",
+  "candidate_id": "test-neural-candidate",
+  "candidate_manifest_sha256": "5fedfac9ff44326ae74c23f2164b8d3c1f37a653c0571b76d36625157a32a9a9",
+  "commercial_ai_api_used": false,
+  "explicit_consent_sha256": "70f1e99b73834555a7819ccb304e73599fea4110b187f223ca63851b203b7f1b",
+  "model_bytes": 22,
+  "model_file": "model/model.gguf",
+  "model_license": "Apache-2.0",
+  "model_sha256": "7171b13e7a24ba3afa19f8ac9f499cb7d3bc75caf30166885e803f851517ecf7",
+  "network_required_after_install": false,
+  "runtime_archive_sha256": "6bca1c9dc894a80e97de156910e087edce9370c8f4f8be42e4fcd20f07e3693c",
+  "runtime_executable": "runtime/bin/llama-server.exe",
+  "runtime_files": [
+    {
+      "bytes": 7,
+      "path": "runtime/bin/ggml.dll",
+      "sha256": "b718f1354f7247312eca086d9a024afe5fa717ddea5adeddd6f12bcf945b2e8c"
+    },
+    {
+      "bytes": 7,
+      "path": "runtime/bin/llama-server.exe",
+      "sha256": "d92c6a81b2ff50096bcda80885427d1f59a25b5f483f7055523504925d16ab23"
+    }
+  ],
+  "runtime_license": "MIT",
+  "schema": "casulo-generative-adoption/1.0",
+  "training_with_user_content": false
+}

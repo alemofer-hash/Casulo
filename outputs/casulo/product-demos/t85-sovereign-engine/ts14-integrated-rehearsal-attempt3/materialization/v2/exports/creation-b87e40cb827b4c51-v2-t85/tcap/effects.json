@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "owner.agent.ts14_mycelium_reconciler.growth": {
+      "branch": [],
+      "decide": [],
+      "verify_emit_protocol_with_uncert": [],
+      "verify_normalize_growth_units_with_prov": [],
+      "verify_preserve_lab_notebook_bytes": []
+    },
+    "owner.agent.ts14_mycelium_reconciler.protocol": {
+      "commit": [],
+      "inspect": [],
+      "simulate": [
+        "simulation"
+      ]
+    },
+    "owner.agent.ts14_mycelium_reconciler.unit": {
+      "check": [],
+      "combine": [],
+      "plan": []
+    }
+  }
+}

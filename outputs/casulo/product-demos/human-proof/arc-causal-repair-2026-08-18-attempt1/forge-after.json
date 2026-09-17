@@ -1,0 +1,56 @@
+{
+  "affected_paths": [
+    [
+      "behavior",
+      "approval"
+    ]
+  ],
+  "artifacts": [
+    {
+      "artifact_sha256": "d4f9b31e1473e2a0cc454f3524f9ce5cb8ef5200475d8a097a2a463b0104c13c",
+      "dependency_artifact_sha256": {},
+      "graph_sha256": "a2d5e7c6902fe03692c8500c325facd208f7d4319dcc52d777e3cb453a3ac179",
+      "ir_sha256": "3a1558439596b42d992d8bd846a7881cb904da9615cada91ce8103fe72b481d5",
+      "source_sha256": "4a842f44380b49f1e1082e94b0ce9d727cc3de821f6e8d33668d71052638d960",
+      "unit_id": "decision"
+    },
+    {
+      "artifact_sha256": "d46e120bb744c93d4ca8c67df62350846aa247789cefafffe891cc1f91aae1cc",
+      "dependency_artifact_sha256": {},
+      "graph_sha256": "64e1fa5c408a21a3f7afb4502be77ff9caddff5ae62d609d614187af28d6fdad",
+      "ir_sha256": "32818bb746b5d81f17d9f7cbb4e2979b5e3260fc0c45603e1587e7577f251e24",
+      "source_sha256": "dc3d56766c5e5be540ade11ad3db89854accf633c9ead8846ff5825137767a52",
+      "unit_id": "identity"
+    },
+    {
+      "artifact_sha256": "bcc80afb24a777f74e4e0bd756e6cc3adafde2533e6eac5af34cdd13fcc2f819",
+      "dependency_artifact_sha256": {
+        "decision": "d4f9b31e1473e2a0cc454f3524f9ce5cb8ef5200475d8a097a2a463b0104c13c"
+      },
+      "graph_sha256": "75e451fb02fd0f072ab3e823dd5b49e42739db7065110e5d0ce45ed32dc11efd",
+      "ir_sha256": "09b2648da4d3cb4d1d2973ef559b6d70d0298d965e65ad37ce9ceeb3283f5031",
+      "source_sha256": "b65603d60292c6bc0a85cb4b47afa6fbc7d1ec5755c22c45300ea7a224f6ac5f",
+      "unit_id": "review"
+    },
+    {
+      "artifact_sha256": "4e8c31b20fb6beab551fd53a9d2c249a52d5732b1eb958bb303429e73c06d300",
+      "dependency_artifact_sha256": {
+        "review": "bcc80afb24a777f74e4e0bd756e6cc3adafde2533e6eac5af34cdd13fcc2f819"
+      },
+      "graph_sha256": "15df946cf080f8e4409b1b501a9a55b3fe899424741ef0ca2ffa19f70ef55352",
+      "ir_sha256": "088e73352645241863fdb7999fd3f6468db035782171c0d3d28fc6a0ec1ae853",
+      "source_sha256": "16dfe06e6fb4caee88e5715f3725878a1034648e6bedf32e2d9dd6de3e38f070",
+      "unit_id": "output"
+    }
+  ],
+  "build_id": "forge:2",
+  "rebuilt_units": [
+    "review",
+    "output"
+  ],
+  "reused_units": [
+    "decision",
+    "identity"
+  ],
+  "schema": "casulo.t-forge-receipt/1.0"
+}

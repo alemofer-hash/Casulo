@@ -1,0 +1,196 @@
+## product/semantic-multiverse
+ M .github/workflows/ci.yml
+ M .github/workflows/release.yml
+ M .gitignore
+ M README.md
+ M SECURITY.md
+ M pyproject.toml
+ M src/casulo/t/__init__.py
+ M src/casulo/t/analyzer.py
+ M src/casulo/t/api.py
+ M src/casulo/t/artifact.py
+ M src/casulo/t/ast.py
+ M src/casulo/t/backend.py
+ M src/casulo/t/cli.py
+ M src/casulo/t/graph.py
+ M src/casulo/t/ir.py
+ M src/casulo/t/native.py
+ M src/casulo/t/parser.py
+ M src/casulo/t/symbols.py
+ M src/casulo/t/training.py
+ M src/casulo/t/typesys.py
+ M src/casulo/t/workspace.py
+ M tests/test_t_metamorphosis.py
+?? .pytest-reseal/
+?? .pytest-tmp/
+?? .staging/
+?? .tmp-definitive-controls-tests/
+?? .tmp-definitive-final-tests-2/
+?? .tmp-definitive-final-tests/
+?? .tmp-einstein-v1.1-inspection/
+?? .tmp-energy-v1/
+?? .tmp-g10-final-product/
+?? .tmp-g10-live-visual/
+?? .tmp-g10-product-regression/
+?? .tmp-g10-project-retry/
+?? .tmp-g10-reasoning-off/
+?? .tmp-g10-rejection-receipts/
+?? .tmp-g10-repair-budget4/
+?? .tmp-g10-repair-retry/
+?? .tmp-g10-runtime-fix/
+?? .tmp-g10-structured-retry/
+?? .tmp-g10-supply-chain/
+?? .tmp-g10-test-feasibility/
+?? .tmp-g5-all/
+?? .tmp-g5-exec-last/
+?? .tmp-g5-exec/
+?? .tmp-g5-final/
+?? .tmp-g5-final2/
+?? .tmp-g5-final3/
+?? .tmp-g5-forensic/
+?? .tmp-g5-full-worker/
+?? .tmp-g5-recovery-final/
+?? .tmp-g5-recovery-final2/
+?? .tmp-g5-rest/
+?? .tmp-g5-stat/
+?? .tmp-g5-stat2/
+?? .tmp-generative-continuation/
+?? .tmp-generative-handoff-read/
+?? .tmp-generative-model-tests/
+?? .tmp-generative-runtime-tests/
+?? .tmp-generative-sprint0-rerun/
+?? .tmp-generative-sprint1-contract/
+?? .tmp-hwinfo-250-finalizer/
+?? .tmp-hwinfo-250-preflight/
+?? .tmp-hwinfo-250-preflight2/
+?? .tmp-hwinfo-250-preflight3/
+?? .tmp-hwinfo-80-exception/
+?? .tmp-hwinfo-80-exception2/
+?? .tmp-hwinfo-fallback/
+?? .tmp-hwinfo-fallback2/
+?? .tmp-hwinfo-fallback3/
+?? .tmp-hwinfo-fallback4/
+?? .tmp-hwinfo-final-infra/
+?? .tmp-hwinfo-poll025/
+?? .tmp-hwinfo-recovery-02/
+?? .tmp-hwinfo-tail/
+?? .tmp-hwinfo/
+?? .tmp-semantic-final/
+?? .tmp-semantic-owner/
+?? .tmp-semantic-regression/
+?? .tmp-semantic-sm2-sm7/
+?? AGENTS.md
+?? CASULO_EINSTEIN_ANALYSIS_20260813-010229.zip
+?? benchmarks/results/2026-08-02-sprint025-ablation/
+?? conformance/vnext/
+?? docs/DECISIONS.md
+?? docs/EXECUTION_STATE.md
+?? docs/LIMITATIONS.md
+?? docs/REPRODUCIBILITY.md
+?? docs/architecture/
+?? docs/archive/
+?? docs/decisions/
+?? docs/demo/
+?? docs/product/
+?? docs/research/
+?? docs/spec/
+?? editions/
+?? einstein-analysis-20260813-010229/
+?? energy/
+?? evidence/casulo-os-rp01/
+?? examples/t/product_capability.t
+?? examples/t/product_memory.t
+?? livelab/
+?? models/
+?? native/
+?? os/
+?? outputs/
+?? paper_artifacts/
+?? private/
+?? product-demos/
+?? release/
+?? reproduce-tmp/
+?? schemas/
+?? services/
+?? src/casulo/livelab/
+?? src/casulo/product/
+?? src/casulo/t/effects.py
+?? src/casulo/t/expression_ast.py
+?? src/casulo/t/full_work_unit.py
+?? src/casulo/t/learn.py
+?? src/casulo/t/learn_canary.py
+?? src/casulo/t/learn_native.py
+?? src/casulo/t/resource.py
+?? src/casulo/t/semantic_ir.py
+?? src/casulo/t/tcap.py
+?? test-runtime-final/
+?? tests/product/
+?? tests/test_definitive_energy_block.py
+?? tests/test_demo_harness.py
+?? tests/test_energy_host_qualification_sensor_semantics.py
+?? tests/test_livelab_ablations.py
+?? tests/test_livelab_baselines.py
+?? tests/test_livelab_campaign.py
+?? tests/test_livelab_capabilities.py
+?? tests/test_livelab_energy.py
+?? tests/test_livelab_energy_v1.py
+?? tests/test_livelab_executor_statistics.py
+?? tests/test_livelab_hwinfo_energy.py
+?? tests/test_livelab_hwinfo_recovery.py
+?? tests/test_livelab_hwinfo_workers.py
+?? tests/test_livelab_isolation.py
+?? tests/test_livelab_workloads.py
+?? tests/test_os_qemu_safety.py
+?? tests/test_release_package.py
+?? tests/test_semantic_scheduler.py
+?? tests/test_t_full_work_unit.py
+?? tests/test_t_learn_canary.py
+?? tests/test_t_learn_native.py
+?? tests/test_t_learn_pipeline.py
+?? tests/test_t_resource_contract.py
+?? tests/test_t_tcap.py
+?? tmp/
+?? tools/analyze_hwinfo_throttle_event.py
+?? tools/audit_owner_artifact_extracted.py
+?? tools/audit_public_artifact.py
+?? tools/build_generative_owner_artifact.py
+?? tools/build_product_editions.py
+?? tools/casulo_os_baseline.py
+?? tools/casulo_owner_vm_inspect.py
+?? tools/casulo_semantic_multiverse.py
+?? tools/casulo_semantic_multiverse_vm_inspect.py
+?? tools/casulo_vm.py
+?? tools/compare_cpu_telemetry.py
+?? tools/einstein_solver_probe.py
+?? tools/einstein_vm_restore_probe.py
+?? tools/finalize_definitive_energy_block.py
+?? tools/finalize_g5_probe.py
+?? tools/finalize_generative_vm_handoff.py
+?? tools/finalize_semantic_multiverse_handoff.py
+?? tools/finalize_semantic_multiverse_reinspection.py
+?? tools/generative_vm_handoff_probe.py
+?? tools/host/
+?? tools/owner_inspection_vm_probe.py
+?? tools/package_full_worker_evidence.py
+?? tools/qualify_energy_host.py
+?? tools/rebuild_flood_tcap.py
+?? tools/recover_preserved_visual.py
+?? tools/replay_semantic_reseal_route.py
+?? tools/revalidate_einstein_component.py
+?? tools/revolution_closure.py
+?? tools/run_definitive_idle_controls.py
+?? tools/run_full_worker_energy.py
+?? tools/run_full_worker_validation.py
+?? tools/run_tcap_forensic_audit.py
+?? tools/seal_inspection3_checkpoint.py
+?? tools/seal_inspection_failure.py
+?? tools/semantic_multiverse_acceptance.py
+?? tools/semantic_multiverse_owner_probe.py
+?? tools/semantic_reseal_preflight.py
+?? tools/stark_jobs_vm_probe.py
+?? tools/verify_flood_tcap.py
+?? tools/vm_bridge_transport_probe.py
+?? tools/vm_generative_e2e_probe.py
+?? tools/vm_lifecycle_probe.py
+?? tools/vm_request_boot_probe.py
+?? tools/wait_energy_host_quiescence.py

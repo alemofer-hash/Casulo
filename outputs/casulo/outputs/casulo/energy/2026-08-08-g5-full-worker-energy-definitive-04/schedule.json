@@ -1,0 +1,154 @@
+{
+  "activated": false,
+  "pairs": [
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 1
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 2
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 3
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 4
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 5
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 6
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 7
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 8
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 9
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 10
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 11
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 12
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 13
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 14
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 15
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 16
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 17
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 18
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 19
+    },
+    {
+      "order": [
+        "pytorch-eager-full",
+        "tcap-full"
+      ],
+      "pair_id": 20
+    },
+    {
+      "order": [
+        "tcap-full",
+        "pytorch-eager-full"
+      ],
+      "pair_id": 21
+    }
+  ],
+  "schema": "casulo-definitive-energy-schedule/1.0",
+  "seed": 20260808
+}

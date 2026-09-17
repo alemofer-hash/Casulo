@@ -1,0 +1,26 @@
+{
+  "backend": "c99-openmp-tensor/0.1",
+  "binary_sha256": "b5b12721cccb0eae4b9b966338d81b54dc2555f03b46b5b1ebab6b4b6de5e455",
+  "command": [
+    "$CC",
+    "-std=c99",
+    "-O3",
+    "-march=native",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-fopenmp",
+    "-shared",
+    "-Wl,--no-insert-timestamp,--image-base,0x180000000",
+    "-s",
+    "-fopt-info-vec-optimized=$CASULO_VECTOR_REPORT",
+    "$CASULO_TENSOR_SOURCE",
+    "-o",
+    "$CASULO_TENSOR_LIBRARY",
+    "-lm"
+  ],
+  "compiler": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe",
+  "compiler_version": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+  "graph_sha256": "868aee7b82295e6f3d4345049998eb4f56694c109b8f1b7c52202fb57dada7ab",
+  "protocol": "casulo-tensor-cpu-build/0.1",
+  "source_sha256": "ab0c13bf01b977ce2a5155ccc5406265e1a3989f794b560062e81ea1583740db"
+}

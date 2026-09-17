@@ -1,0 +1,1640 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 1024
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "VERIFIED"
+                }
+              },
+              "error": "requirements_chain_broken",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "args": [
+                      {
+                        "op": "path",
+                        "path": [
+                          "granted"
+                        ],
+                        "root": "input"
+                      },
+                      {
+                        "name": "capability",
+                        "op": "name"
+                      }
+                    ],
+                    "name": "contains",
+                    "op": "call"
+                  },
+                  "error": "capability_not_granted",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "requested"
+                ],
+                "root": "input"
+              },
+              "limit": 16,
+              "name": "capability",
+              "op": "for"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "AUTHORIZED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "CapabilityInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.casulo.requirements"
+      ],
+      "module": "t.casulo.capabilities",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "requested",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 16,
+                "name": "List"
+              }
+            },
+            {
+              "name": "granted",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 16,
+                "name": "List"
+              }
+            }
+          ],
+          "name": "CapabilityInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PUBLISHED"
+                }
+              },
+              "error": "materialization_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "progress_event_real"
+                ],
+                "root": "input"
+              },
+              "error": "invented_progress_denied",
+              "op": "require"
+            },
+            {
+              "op": "emit_event",
+              "value": {
+                "op": "const",
+                "value": "materialization_complete"
+              }
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "ANNOUNCE"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "DialogueInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.casulo.materialization"
+      ],
+      "module": "t.casulo.dialogue",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "progress_event_real",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "DialogueInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [
+        {
+          "cases": [
+            "MATERIAL",
+            "INFORMAL"
+          ],
+          "name": "IntentDecision"
+        }
+      ],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "CANONICAL"
+                }
+              },
+              "error": "canonical_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "confirmed"
+                ],
+                "root": "input"
+              },
+              "error": "human_confirmation_required",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "material"
+                ],
+                "root": "input"
+              },
+              "error": "non_material_turn",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "INFORMAL"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "IntentInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.core.canonical"
+      ],
+      "module": "t.casulo.intent",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "material",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "IntentInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 1024
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "MEMORY_SELECTED"
+                }
+              },
+              "error": "memory_chain_broken",
+              "op": "require"
+            },
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "name": "dispatched",
+              "op": "set_state",
+              "value": {
+                "args": [
+                  {
+                    "op": "path",
+                    "path": [
+                      "dispatched"
+                    ],
+                    "root": "state"
+                  },
+                  {
+                    "op": "const",
+                    "value": 1
+                  }
+                ],
+                "name": "add",
+                "op": "call"
+              }
+            },
+            {
+              "limit": 8,
+              "name": "work",
+              "op": "spawn_job",
+              "payload": {
+                "op": "path",
+                "path": [
+                  "payload"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "name": "work",
+              "op": "join_job"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "JOBS_READY"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "JobInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.casulo.memory_policy"
+      ],
+      "module": "t.casulo.jobs",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "payload",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            }
+          ],
+          "name": "JobInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": [
+        {
+          "initial": 0,
+          "name": "dispatched",
+          "type": {
+            "arguments": [],
+            "bound": null,
+            "name": "Int"
+          }
+        }
+      ]
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [
+        "manifest"
+      ],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "SIMULATED"
+                }
+              },
+              "error": "simulation_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "approved"
+                ],
+                "root": "input"
+              },
+              "error": "publish_approval_required",
+              "op": "require"
+            },
+            {
+              "effect": "manifest",
+              "op": "request_effect"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "PUBLISHED"
+              }
+            }
+          ],
+          "effects": [
+            "manifest"
+          ],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "MaterializationInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.casulo.simulation"
+      ],
+      "module": "t.casulo.materialization",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "approved",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "MaterializationInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "AUTHORIZED"
+                }
+              },
+              "error": "capability_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "project_id"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "expected_project_id"
+                  ],
+                  "root": "input"
+                }
+              },
+              "error": "project_bleed_denied",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "consent"
+                ],
+                "root": "input"
+              },
+              "error": "memory_consent_required",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "MEMORY_SELECTED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "MemoryInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.casulo.capabilities"
+      ],
+      "module": "t.casulo.memory_policy",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "project_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "expected_project_id",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "consent",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "MemoryInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "ANNOUNCE"
+                }
+              },
+              "error": "dialogue_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "chain_valid"
+                ],
+                "root": "input"
+              },
+              "error": "receipt_chain_invalid",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "SEALED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "ReceiptInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.casulo.dialogue"
+      ],
+      "module": "t.casulo.receipts",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "chain_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "ReceiptInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 1024
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "MATERIAL"
+                }
+              },
+              "error": "intent_chain_broken",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "left": {
+                      "name": "status",
+                      "op": "name"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "PASS"
+                    }
+                  },
+                  "error": "hard_requirement_not_pass",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "hard_statuses"
+                ],
+                "root": "input"
+              },
+              "limit": 64,
+              "name": "status",
+              "op": "for"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "VERIFIED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "RequirementsInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.casulo.intent"
+      ],
+      "module": "t.casulo.requirements",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "hard_statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 64,
+                "name": "List"
+              }
+            }
+          ],
+          "name": "RequirementsInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [
+        "simulation"
+      ],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "ROUTED"
+                }
+              },
+              "error": "universe_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "sandboxed"
+                ],
+                "root": "input"
+              },
+              "error": "real_effect_denied_in_simulation",
+              "op": "require"
+            },
+            {
+              "effect": "simulation",
+              "op": "request_effect"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "SIMULATED"
+              }
+            }
+          ],
+          "effects": [
+            "simulation"
+          ],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "SimulationInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.casulo.universes"
+      ],
+      "module": "t.casulo.simulation",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "sandboxed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "SimulationInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "JOBS_READY"
+                }
+              },
+              "error": "jobs_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "hot_count"
+                  ],
+                  "root": "input"
+                },
+                "op": "le",
+                "right": {
+                  "op": "path",
+                  "path": [
+                    "max_hot"
+                  ],
+                  "root": "input"
+                }
+              },
+              "error": "hot_working_set_exceeded",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "route_allowed"
+                ],
+                "root": "input"
+              },
+              "error": "semantic_route_denied",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "ROUTED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "UniverseInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.casulo.jobs"
+      ],
+      "module": "t.casulo.universes",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "hot_count",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "max_hot",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "route_allowed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "UniverseInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "ALL_PASS"
+                }
+              },
+              "error": "collection_chain_broken",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "schema_supported"
+                ],
+                "root": "input"
+              },
+              "error": "schema_not_supported",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "CANONICAL"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "CanonicalInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.core.collections"
+      ],
+      "module": "t.core.canonical",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "schema_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "CanonicalInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 1024
+      },
+      "capabilities": [],
+      "enums": [],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "previous"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "result_chain_broken",
+              "op": "require"
+            },
+            {
+              "body": [
+                {
+                  "condition": {
+                    "left": {
+                      "name": "status",
+                      "op": "name"
+                    },
+                    "op": "eq",
+                    "right": {
+                      "op": "const",
+                      "value": "PASS"
+                    }
+                  },
+                  "error": "collection_contains_non_pass",
+                  "op": "require"
+                }
+              ],
+              "iterable": {
+                "op": "path",
+                "path": [
+                  "statuses"
+                ],
+                "root": "input"
+              },
+              "limit": 64,
+              "name": "status",
+              "op": "for"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "ALL_PASS"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "CollectionInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [
+        "t.core.result"
+      ],
+      "module": "t.core.collections",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 64,
+                "name": "List"
+              }
+            }
+          ],
+          "name": "CollectionInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    },
+    {
+      "budgets": {
+        "deadline_ms": 1000,
+        "steps": 256
+      },
+      "capabilities": [],
+      "enums": [
+        {
+          "cases": [
+            "PASS",
+            "BLOCKED"
+          ],
+          "name": "NormalizedResult"
+        }
+      ],
+      "functions": [
+        {
+          "code": [
+            {
+              "condition": {
+                "left": {
+                  "op": "path",
+                  "path": [
+                    "status"
+                  ],
+                  "root": "input"
+                },
+                "op": "eq",
+                "right": {
+                  "op": "const",
+                  "value": "PASS"
+                }
+              },
+              "error": "result_not_pass",
+              "op": "require"
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "PASS"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "ResultInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "t.core.result",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            }
+          ],
+          "name": "ResultInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": []
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

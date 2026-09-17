@@ -1,0 +1,16 @@
+{
+  "eligible_removable_disks": 0,
+  "observed_disks": [
+    {
+      "boot": true,
+      "bus_type": "NVMe",
+      "number": 0,
+      "size_bytes": 512110190592,
+      "system": true
+    }
+  ],
+  "physical_device_written": false,
+  "schema": "casulo-native-multiboot-physical-preflight/1.0",
+  "state": "NO_ELIGIBLE_USB_VISIBLE"
+}
+

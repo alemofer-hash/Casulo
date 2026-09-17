@@ -1,0 +1,54 @@
+{
+  "expected_evidence_tokens": [
+    "56a272b5d180c49162d082ddf2108f953fce2231e7c98223f130f1eaffe5a176",
+    "ff3e75a1bd2d4b695d7514ef87dcaa915281103a62f78fbc6b0176d2d67795c3",
+    "06c2d962f6bd63e3d6b1b98173b8fe60bf6617f2e777498db32e9b5fc0d47907",
+    "0fe9f53516b770e0b1d772dc00a2ce8896b769750d9c36374dc268c0486689cb"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "stream-processing:original",
+      "scope": "stream-processing",
+      "source_event_ids": [
+        "human:stream-processing"
+      ],
+      "verifier_ids": [
+        "domain:original"
+      ]
+    },
+    {
+      "requirement_id": "stream-processing:memory",
+      "scope": "stream-processing",
+      "source_event_ids": [
+        "human:stream-processing"
+      ],
+      "verifier_ids": [
+        "domain:memory"
+      ]
+    },
+    {
+      "requirement_id": "stream-processing:event-time",
+      "scope": "stream-processing",
+      "source_event_ids": [
+        "human:stream-processing"
+      ],
+      "verifier_ids": [
+        "domain:event-time"
+      ]
+    },
+    {
+      "requirement_id": "stream-processing:explain",
+      "scope": "stream-processing",
+      "source_event_ids": [
+        "human:stream-processing"
+      ],
+      "verifier_ids": [
+        "domain:explain"
+      ]
+    }
+  ],
+  "project_id": "stream-processing",
+  "schema": "casulo.evidence-plan/1.0"
+}

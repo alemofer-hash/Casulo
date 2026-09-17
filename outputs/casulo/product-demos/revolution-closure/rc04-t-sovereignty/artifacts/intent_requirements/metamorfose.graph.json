@@ -1,0 +1,286 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "casulo.revolution.requirements",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "block/root.0.then.0",
+            "block/root.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0",
+          [
+            "block/root.0.then.0.then.0",
+            "block/root.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0",
+          [
+            "block/root.0.then.0.then.0.then.0",
+            "block/root.0.then.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "schema_valid",
+          "source": "EvaluateRequirement/input/schema_valid",
+          "target": "EvaluateRequirement/instruction/root.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "EvaluateRequirement/instruction/root.0/if",
+          "target": "EvaluateRequirement/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "evidence_present",
+          "source": "EvaluateRequirement/input/evidence_present",
+          "target": "EvaluateRequirement/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "EvaluateRequirement/instruction/root.0.then.0/if",
+          "target": "EvaluateRequirement/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "safety_pass",
+          "source": "EvaluateRequirement/input/safety_pass",
+          "target": "EvaluateRequirement/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "EvaluateRequirement/instruction/root.0.then.0.then.0/if",
+          "target": "EvaluateRequirement/instruction/root.0.then.0.then.0.then.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "EvaluateRequirement/instruction/root.0.then.0.then.0/if",
+          "target": "EvaluateRequirement/instruction/root.0.then.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "EvaluateRequirement/instruction/root.0.then.0/if",
+          "target": "EvaluateRequirement/instruction/root.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "EvaluateRequirement/instruction/root.0/if",
+          "target": "EvaluateRequirement/instruction/root.0.else.0/emit"
+        }
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 7,
+      "input_type": "RequirementDecision",
+      "name": "EvaluateRequirement",
+      "nodes": [
+        {
+          "defines": [
+            "schema_valid"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "EvaluateRequirement/input/schema_valid",
+          "kind": "input",
+          "label": "schema_valid",
+          "operation": "EvaluateRequirement",
+          "path": "input.schema_valid",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "evidence_present"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "EvaluateRequirement/input/evidence_present",
+          "kind": "input",
+          "label": "evidence_present",
+          "operation": "EvaluateRequirement",
+          "path": "input.evidence_present",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "safety_pass"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "EvaluateRequirement/input/safety_pass",
+          "kind": "input",
+          "label": "safety_pass",
+          "operation": "EvaluateRequirement",
+          "path": "input.safety_pass",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "EvaluateRequirement/instruction/root.0/if",
+          "kind": "if",
+          "label": "schema_valid",
+          "operation": "EvaluateRequirement",
+          "path": "root.0",
+          "pure": true,
+          "uses": [
+            "schema_valid"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "EvaluateRequirement/instruction/root.0.then.0/if",
+          "kind": "if",
+          "label": "evidence_present",
+          "operation": "EvaluateRequirement",
+          "path": "root.0.then.0",
+          "pure": true,
+          "uses": [
+            "evidence_present"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "EvaluateRequirement/instruction/root.0.then.0.then.0/if",
+          "kind": "if",
+          "label": "safety_pass",
+          "operation": "EvaluateRequirement",
+          "path": "root.0.then.0.then.0",
+          "pure": true,
+          "uses": [
+            "safety_pass"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "EvaluateRequirement/instruction/root.0.then.0.then.0.then.0/emit",
+          "kind": "emit",
+          "label": "\"PASS\"",
+          "operation": "EvaluateRequirement",
+          "path": "root.0.then.0.then.0.then.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "EvaluateRequirement/instruction/root.0.then.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"FAIL\"",
+          "operation": "EvaluateRequirement",
+          "path": "root.0.then.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "EvaluateRequirement/instruction/root.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"UNKNOWN\"",
+          "operation": "EvaluateRequirement",
+          "path": "root.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "EvaluateRequirement/instruction/root.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"FAIL\"",
+          "operation": "EvaluateRequirement",
+          "path": "root.0.else.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [
+    {
+      "kind": "record",
+      "members": [
+        [
+          "schema_valid",
+          "Bool"
+        ],
+        [
+          "evidence_present",
+          "Bool"
+        ],
+        [
+          "safety_pass",
+          "Bool"
+        ]
+      ],
+      "name": "RequirementDecision"
+    }
+  ],
+  "version": "metamorfose-graph/1.0"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "casulo-native-boot-to-creation-protocol/0.1",
+  "campaign_id": "2026-08-22-native-24h",
+  "frozen_at": "2026-08-22T11:27:23-03:00",
+  "baseline": {
+    "branch": "product/semantic-multiverse",
+    "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+    "np6_image": "release/casulo-native-neural-port-np6-attempt-4.img",
+    "np6_image_sha256": "65a9b4360ef56355aececd16731ed33d4f508b82d6aff2043d75abc05624fef0",
+    "np6_manifest_sha256": "530ace62f5112d05ef4abd1958ebc86711cd74acc058a2a4a042bf3d9347fd23"
+  },
+  "model": {
+    "name": "Qwen3-4B-Q4_K_M.gguf",
+    "bytes": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "license": "Apache-2.0",
+    "gguf_version": 3,
+    "blocks": 36,
+    "embedding": 2560,
+    "ffn": 9728,
+    "q_heads": 32,
+    "kv_heads": 8,
+    "vocabulary": 151936
+  },
+  "np7": {
+    "context_tokens": 1,
+    "required_blocks": 36,
+    "required_output_norm": true,
+    "required_logits": true,
+    "sampling_allowed": false,
+    "oracle": "independent Python/NumPy tensor-stage and logits comparison",
+    "absolute_tolerance": 0.001,
+    "relative_tolerance": 0.0005,
+    "cancellation_boundary": "each transformer block",
+    "network": false,
+    "host_bridge": false
+  },
+  "np8": {
+    "sampling_policy": "greedy-debug-v1",
+    "seed": 0,
+    "required_boots": 3,
+    "late_publication_forbidden": true
+  },
+  "safety": {
+    "physical_device_write": false,
+    "usb_requires_separate_literal_consent": true,
+    "cloud": "RELEASE_LOCKED",
+    "guest_network": false,
+    "external_api": false,
+    "thermal_rule": "stop on odor, instability or persistent throttling"
+  },
+  "claims_forbidden_until_gates": [
+    "complete native inference before NP7",
+    "model-derived token before NP8",
+    "multitoken conversation before NP9",
+    "frontier-model equivalence",
+    "GPU or TPU control without drivers",
+    "physical or energy compression without valid measurement"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "artifacts": [
+    {
+      "bytes": 31003,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\generative-vm\\casulo-owner-generative-alpha-adopted.zip",
+      "sha256": "92d9f16d42e0f1e961eed87f4db3bdae513d99cbf8603bfc147a397d03ab6f10"
+    },
+    {
+      "bytes": 2162688,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\casulo-native-generative-interactive.img",
+      "sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b"
+    },
+    {
+      "bytes": 328192,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\generative-vm\\initial-owner-state\\owner-overlay.qcow2",
+      "sha256": "f5e130766c7104aafe9be9c49a7f12b2c4fb83d6a129c575d5f53575ac87cc2b"
+    },
+    {
+      "bytes": 775,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\CASULO_OWNER_VM_INSPECT.ps1",
+      "sha256": "e0452669dc33ce20320c59ccc4af94500561192cc9f52e9f8270fcea4fc0db12"
+    },
+    {
+      "bytes": 92955,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\generative-vm\\tests.xml",
+      "sha256": "33128bebcfb389b829afdec49e1490df646a3f6d9e4eb88a01f7fdddc3ab3723"
+    },
+    {
+      "bytes": 396,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\generative-vm\\public-boundary-audit.json",
+      "sha256": "79b882a98a77f5cc78b98b95b5d1a189843f054ce2e093cb61d03ce5ef5920bd"
+    },
+    {
+      "bytes": 1206,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\generative-vm\\handoff\\SBOM.json",
+      "sha256": "3bd64da2ada67c6e0b2a6aed2e0639fcbf53dc812a5f26462ace8249b9f598cf"
+    }
+  ],
+  "checks": {
+    "cloud_release_locked": true,
+    "external_media_absent": true,
+    "full_product_regression": true,
+    "g1_sealed": true,
+    "g2_sealed": true,
+    "g3_sealed": true,
+    "g4_sealed": true,
+    "g5_sealed": true,
+    "g6_sealed": true,
+    "g7_sealed": true,
+    "g8_sealed": true,
+    "g9_sealed": true,
+    "initial_overlay_present": true,
+    "launcher_present": true,
+    "minimum_20_gib_reserve": true,
+    "model_hash_verified": true,
+    "native_image_present": true,
+    "native_image_read_only": true,
+    "owner_artifact_present": true,
+    "public_private_boundary": true,
+    "runtime_hash_verified": true,
+    "scientific_benchmark_absent": true
+  },
+  "cloud": "RELEASE_LOCKED",
+  "created_utc": "2026-08-12T03:50:28.559377+00:00",
+  "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "evidence": {
+    "g1": {
+      "gate": "LOCAL_STOCHASTIC_INFERENCE_PASS",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint1\\g1-local-inference.json",
+      "sha256": "899c0d25b3d3c48b25c5c4acb930e3c66d98c2001a42d4182a6aa2ca2b3f8edd"
+    },
+    "g2": {
+      "gate": "OWNER_GENERATIVE_ENGINE_PASS",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint2\\g2-owner-generative-engine.json",
+      "sha256": "d308c812cca499e571317f7f9df31eebdcaa0b203844776c8be4f3234634794c"
+    },
+    "g3": {
+      "gate": "SCIENCE_BROS_CONVERSATION_CONTRACT_PASS",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint3-attempt2\\g3-science-bros.json",
+      "sha256": "85b0221955f09857fa2d0391c3324dfc40ed37a04c95335870ba117b22f573f3"
+    },
+    "g4": {
+      "gate": "GENERATIVE_T_SYNTHESIS_PASS",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint4-attempt8\\g4-generative-t-synthesis.json",
+      "sha256": "a481f02cd38e8fd3090f064e8f6667463593d9a41bb2f23bd74a720f728730e2"
+    },
+    "g5": {
+      "gate": "FIRST_OPEN_ENDED_AGENT_CREATED",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint5-attempt7\\g5-first-open-ended-agent.json",
+      "sha256": "2f15d523d6cbbb3c32217ca7bf922edc6be9a9fdee31d32d0ad45c7555ea7754"
+    },
+    "g6": {
+      "gate": "CASULO_VM_LIFECYCLE_PASS",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint6-attempt2\\g6-vm-lifecycle.json",
+      "sha256": "209a5cd03cb5a97079c920d3e4072f894c4370649ed65e805bad4d577bf9144f"
+    },
+    "g7": {
+      "gate": "GENERATIVE_OWNER_VM_E2E_PASS",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint7-e2e-attempt2\\g7-generative-owner-vm-e2e.json",
+      "sha256": "da1dee120eb10539ada1435e7cf38c62a21d4c87ce21dec701969e5320cae604"
+    },
+    "g8": {
+      "gate": "PROVISIONAL_STARK_JOBS_VM_PASS",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint8-attempt1\\g8-provisional-stark-jobs.json",
+      "sha256": "cafb231babf377c90c7837e7344883949a53f2b834bab28bb98d4e604b1faefb"
+    },
+    "g9": {
+      "gate": "OWNER_INSPECTION_WORKBENCH_PASS",
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\generative-vm\\sprint9-attempt1\\g9-owner-inspection-workbench.json",
+      "sha256": "e251e9a098cd730f8f1cb5183a667acc7ae765aa8a747ed47a3a22d19f10c985"
+    }
+  },
+  "external_media": "NOT_IN_USE",
+  "inference_execution_location": "HOST_LOCAL_FIRST_PARTY_BRIDGE",
+  "installed_dependencies": {
+    "model": {
+      "bytes": 2497280256,
+      "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\model\\Qwen3-4B-Q4_K_M.gguf",
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+    },
+    "runtime": {
+      "bytes": 9216,
+      "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\runtime\\llama-server.exe",
+      "sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e"
+    }
+  },
+  "interface": "TEXT_FALLBACK_PT_BR; HOSTED_VOICE_NOT_NATIVE_BRIDGED",
+  "native_in_guest_model_execution": false,
+  "owner": "Guilherme Moura Fernandes",
+  "profile": "casulo-owner-generative-vm-v1",
+  "public": "FROZEN",
+  "schema": "casulo.generative-vm-handoff/1.0",
+  "state": "READY_FOR_GUILHERME_GENERATIVE_VM_INSPECTION",
+  "storage": {
+    "free_bytes_at_seal": 88946290688,
+    "minimum_reserve_bytes": 21474836480
+  },
+  "tests": {
+    "count": 711,
+    "failures_or_errors": 0,
+    "sha256": "33128bebcfb389b829afdec49e1490df646a3f6d9e4eb88a01f7fdddc3ab3723"
+  }
+}

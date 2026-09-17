@@ -1,0 +1,26 @@
+{
+  "artifacts": [
+    {
+      "bytes": 46,
+      "path": "analysis.json",
+      "sha256": "75dcc937cbc4ddf0ac6fb91548cd0b7e146a5524a4455a297349c2ca41b51f5b"
+    },
+    {
+      "bytes": 885,
+      "path": "protocol.json",
+      "sha256": "53d08dfdfea6c8c676ab3d761b406babaa21a754f087899e3833707b3989e5e8"
+    },
+    {
+      "bytes": 8929,
+      "path": "schedule.json",
+      "sha256": "7d955903e5ba50a2559932864f29e1e012c66f3ddb14ae8053e822de71bb4ca8"
+    }
+  ],
+  "campaign_id": "test_protocol_schedule_hash_ma0",
+  "publication_performed": false,
+  "raw_data_immutable_after_seal": true,
+  "schema": "casulo-energy-manifest/1.0",
+  "sealed_at_utc": "2026-08-20T01:20:19.418223+00:00",
+  "sha256sums_sha256": "863b30ffcdb12e8e1531fac81f7a09405354c1441e0726378e3c72d84443957b",
+  "simulated_measurement_accepted": false
+}

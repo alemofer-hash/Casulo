@@ -1,0 +1,12 @@
+{
+  "schema": "casulo.t85.failed-attempt/1.0",
+  "state": "FAILED_NEURAL_REPAIR_BUDGET_EXHAUSTED",
+  "preserved": true,
+  "completed_agents": ["data_validator_01"],
+  "failed_case": "interactive-01",
+  "attempts": 3,
+  "diagnostic": "success event does not preserve the constraint concept",
+  "root_cause": "lexical-overlap guard rejected legitimate synonym pairs after polarity was already safe",
+  "repair": "retain strict rejection of ambiguous polarity labels and remove the language-dependent lexical-overlap proxy",
+  "next_attempt": "ts07-nontrivial-holdouts-attempt4"
+}

@@ -1,0 +1,15 @@
+{
+  "compilation_seconds": 4.41975150000053,
+  "compiler": "rustc 1.93.0 (254b59607 2026-01-19)\nbinary: rustc\ncommit-hash: 254b59607d4417e9dffbc307138ae5c86280fe4c\ncommit-date: 2026-01-19\nhost: x86_64-pc-windows-gnu\nrelease: 1.93.0\nLLVM version: 21.1.8",
+  "dataset_sha256": "56faf993c90c58a68a35ee2469567b756bb10dcde129c391b27eb8282b117fc9",
+  "epochs": 400,
+  "executable": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\energy\\2026-08-07-g5-hwinfo-thermal-recovery-250ms-90c-start70-final3\\workers\\tcap_hwinfo_worker.exe",
+  "executable_sha256": "d03cff78423a2804eabb06510243f284349a60ac7eebd4f5ff7897c6f980dca2",
+  "implementation": "t-general-ir-tcap/0.1",
+  "precision": "float64",
+  "protocol": "casulo-hwinfo-persistent-worker/1.0",
+  "source": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\energy\\2026-08-07-g5-hwinfo-thermal-recovery-250ms-90c-start70-final3\\workers\\tcap_hwinfo_worker.rs",
+  "source_sha256": "93b14e17a279c5a1bb55257555ddb6b04bcd3ca444fcb518ffaae2f8dee40565",
+  "tcap": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\FloodSurrogate.tcap",
+  "tcap_sha256": "2fb6db0d9622382718263dc0ba3b565bdd53ef27bbd9355d40764d1d71643d19"
+}

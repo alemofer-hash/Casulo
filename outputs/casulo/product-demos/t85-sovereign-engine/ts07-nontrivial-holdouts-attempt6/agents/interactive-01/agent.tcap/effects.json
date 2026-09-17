@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "owner.agent.t_interactive_01.export": {
+      "commit": [],
+      "inspect": [],
+      "simulate": [
+        "simulation"
+      ]
+    },
+    "owner.agent.t_interactive_01.interruption": {
+      "check": [],
+      "combine": [],
+      "plan": []
+    },
+    "owner.agent.t_interactive_01.memory": {
+      "branch": [],
+      "decide": [],
+      "verify_is_barge_in_allowed": [],
+      "verify_is_export_editable": [],
+      "verify_is_project_isolated": []
+    }
+  }
+}

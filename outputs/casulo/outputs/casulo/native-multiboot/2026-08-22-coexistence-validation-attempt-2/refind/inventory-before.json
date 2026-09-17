@@ -1,0 +1,33 @@
+{
+  "boot_managers": [
+    "windows-boot-manager",
+    "refind"
+  ],
+  "fallback_bootx64_present": true,
+  "files": {
+    "ARCH_LINUX_MUST_SURVIVE.txt": {
+      "bytes": 20,
+      "sha256": "a1cc4f2f0e4cf280f23439f9455a1d100ea1b11657e62ffc5f26e2cdef3bfcb7"
+    },
+    "EFI/BOOT/BOOTX64.EFI": {
+      "bytes": 27,
+      "sha256": "b4f008423f63511c4c1b1266a44f674fb1136e390c95c6395fb1ef6f5938fea3"
+    },
+    "EFI/Microsoft/Boot/bootmgfw.efi": {
+      "bytes": 25,
+      "sha256": "473f8c969f07e8a07a42025495289d1d1912b470b1f39ab1f5bff73de958180f"
+    },
+    "EFI/refind/refind.conf": {
+      "bytes": 11,
+      "sha256": "174779ca4794006098afa5377a2c2eb0e19a413a948fc5c98f06675693e5b6a0"
+    },
+    "EFI/refind/refind_x64.efi": {
+      "bytes": 16,
+      "sha256": "3981929e76b66eafd88f6419f52479d71e994fc5e3b3658186bdeeb30b5f7279"
+    }
+  },
+  "read_only_inspection": true,
+  "root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\outputs\\casulo\\native-multiboot\\2026-08-22-coexistence-validation-attempt-2\\refind\\esp",
+  "schema": "casulo-efi-inventory/1.0",
+  "tree_sha256": "8f4cfed1b8e5d169a441a00f51e45e3e1f6ca93341c0a16d290129865137c90b"
+}

@@ -1,0 +1,7 @@
+{
+  "evidence_root": "product-demos/revolution-closure/rc05-training",
+  "gate_sha256": "d6c261961f68302b30473afdb6d650953ec4618a10abbf7a4af808cb687a6a93",
+  "schema": "casulo.revolution-closure/1.0/receipt",
+  "state": "RC5_CASULO_FIRST_PARTY_LEARNED_LAYER_PASS",
+  "timestamp": "2026-08-14T20:55:30.408392+00:00"
+}

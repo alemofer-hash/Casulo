@@ -1,0 +1,1040 @@
+{
+  "counter_checks": {
+    "DESCRIPTORS_SCANNED": {
+      "expected": 398,
+      "observed": 398,
+      "pass": true
+    },
+    "MATVEC_CALLS": {
+      "expected": 14,
+      "observed": 14,
+      "pass": true
+    },
+    "MULTIPLY_ACCUMULATES": {
+      "expected": 201850880,
+      "observed": 201850880,
+      "pass": true
+    },
+    "QUANTIZED_BLOCKS": {
+      "expected": 788480,
+      "observed": 788480,
+      "pass": true
+    },
+    "TOKENS_COMPLETED": {
+      "expected": 2,
+      "observed": 2,
+      "pass": true
+    },
+    "WEIGHT_BYTES_READ": {
+      "expected": 127733760,
+      "observed": 127733760,
+      "pass": true
+    }
+  },
+  "schema": "casulo-native-block0-comparison/0.1",
+  "stage_checks": [
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.08869171142578125,
+        "minimum": -0.07048988342285156,
+        "square_sum_f64": 1.4237433992706698,
+        "sum_f64": 0.9939978122711182,
+        "values": 2560
+      },
+      "native_stage": "token_0.embedding",
+      "observed": {
+        "maximum": 0.088691711,
+        "minimum": -0.070489883,
+        "square_sum_f64": 1.4237433992706698,
+        "sum_f64": 0.9939978122711182,
+        "values": 2560
+      },
+      "oracle_stage": "token_0.embedding",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.22215865552425385,
+        "minimum": -0.2242361605167389,
+        "square_sum_f64": 2.557693893418249,
+        "sum_f64": 1.3048116295831278,
+        "values": 2560
+      },
+      "native_stage": "token_0.attn_norm",
+      "observed": {
+        "maximum": 0.222158298,
+        "minimum": -0.224235788,
+        "square_sum_f64": 2.5576855797070754,
+        "sum_f64": 1.304809513851069,
+        "values": 2560
+      },
+      "oracle_stage": "token_0.attn_norm",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.769218921661377,
+        "minimum": -0.45911890268325806,
+        "square_sum_f64": 13.89423023818705,
+        "sum_f64": 1.2685805385699496,
+        "values": 4096
+      },
+      "native_stage": "token_0.query_projection",
+      "observed": {
+        "maximum": 0.76921761,
+        "minimum": -0.459118336,
+        "square_sum_f64": 13.894184615551875,
+        "sum_f64": 1.2685773949633585,
+        "values": 4096
+      },
+      "oracle_stage": "token_0.query_projection",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.2516076862812042,
+        "minimum": -0.31879928708076477,
+        "square_sum_f64": 3.4125093909439004,
+        "sum_f64": -0.3812244036234915,
+        "values": 1024
+      },
+      "native_stage": "token_0.key_projection",
+      "observed": {
+        "maximum": 0.251607209,
+        "minimum": -0.31879881,
+        "square_sum_f64": 3.4124984248901082,
+        "sum_f64": -0.3812238261452876,
+        "values": 1024
+      },
+      "oracle_stage": "token_0.key_projection",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.2871524691581726,
+        "minimum": -0.23774397373199463,
+        "square_sum_f64": 1.1247445789966033,
+        "sum_f64": 1.0910895231645554,
+        "values": 1024
+      },
+      "native_stage": "token_0.value_projection",
+      "observed": {
+        "maximum": 0.287152082,
+        "minimum": -0.237743556,
+        "square_sum_f64": 1.1247409959994994,
+        "sum_f64": 1.091088347893674,
+        "values": 1024
+      },
+      "oracle_stage": "token_0.value_projection",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 11.442415237426758,
+        "minimum": -10.524843215942383,
+        "square_sum_f64": 11104.945670864294,
+        "sum_f64": -55.05162485131041,
+        "values": 4096
+      },
+      "native_stage": "token_0.query_norm",
+      "observed": {
+        "maximum": 11.442415237,
+        "minimum": -10.524842262,
+        "square_sum_f64": 11104.945451729578,
+        "sum_f64": -55.05163113222079,
+        "values": 4096
+      },
+      "oracle_stage": "token_0.q_norm",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 247.0636444091797,
+        "minimum": -254.92160034179688,
+        "square_sum_f64": 267986.427873529,
+        "sum_f64": 125.24756313388934,
+        "values": 1024
+      },
+      "native_stage": "token_0.key_norm",
+      "observed": {
+        "maximum": 247.063598633,
+        "minimum": -254.921691895,
+        "square_sum_f64": 267986.4988402877,
+        "sum_f64": 125.24745600542519,
+        "values": 1024
+      },
+      "oracle_stage": "token_0.k_norm",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 11.442415237426758,
+        "minimum": -10.524843215942383,
+        "square_sum_f64": 11104.945670864294,
+        "sum_f64": -55.05162485131041,
+        "values": 4096
+      },
+      "native_stage": "token_0.query_rope",
+      "observed": {
+        "maximum": 11.442415237,
+        "minimum": -10.524842262,
+        "square_sum_f64": 11104.945451729578,
+        "sum_f64": -55.05163113222079,
+        "values": 4096
+      },
+      "oracle_stage": "token_0.q_rope",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 247.0636444091797,
+        "minimum": -254.92160034179688,
+        "square_sum_f64": 267986.427873529,
+        "sum_f64": 125.24756313388934,
+        "values": 1024
+      },
+      "native_stage": "token_0.key_rope",
+      "observed": {
+        "maximum": 247.063598633,
+        "minimum": -254.921691895,
+        "square_sum_f64": 267986.4988402877,
+        "sum_f64": 125.24745600542519,
+        "values": 1024
+      },
+      "oracle_stage": "token_0.k_rope",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 1.0,
+        "minimum": 1.0,
+        "square_sum_f64": 32.00000000000001,
+        "sum_f64": 32.0,
+        "values": 32
+      },
+      "native_stage": "token_0.attention_weights",
+      "observed": {
+        "maximum": 1.0,
+        "minimum": 1.0,
+        "square_sum_f64": 32.0,
+        "sum_f64": 32.0,
+        "values": 32
+      },
+      "oracle_stage": "token_0.attention_weights",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.2871524691581726,
+        "minimum": -0.23774397373199463,
+        "square_sum_f64": 4.498978315986413,
+        "sum_f64": 4.364358092658222,
+        "values": 4096
+      },
+      "native_stage": "token_0.attention_context",
+      "observed": {
+        "maximum": 0.287152082,
+        "minimum": -0.237743556,
+        "square_sum_f64": 4.498963983998031,
+        "sum_f64": 4.364353391574696,
+        "values": 4096
+      },
+      "oracle_stage": "token_0.attention_context",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.7020092010498047,
+        "minimum": -0.34032976627349854,
+        "square_sum_f64": 8.341916885367931,
+        "sum_f64": -2.5293783189263195,
+        "values": 2560
+      },
+      "native_stage": "token_0.attention_projection",
+      "observed": {
+        "maximum": 0.702008247,
+        "minimum": -0.34032926,
+        "square_sum_f64": 8.341890543493827,
+        "sum_f64": -2.529373401310295,
+        "values": 2560
+      },
+      "oracle_stage": "token_0.attention_projection",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.7036290168762207,
+        "minimum": -0.3576090335845947,
+        "square_sum_f64": 10.156394573002277,
+        "sum_f64": -1.535380502231419,
+        "values": 2560
+      },
+      "native_stage": "token_0.attention_residual",
+      "observed": {
+        "maximum": 0.703628063,
+        "minimum": -0.357608587,
+        "square_sum_f64": 10.156367568548518,
+        "sum_f64": -1.535375646315515,
+        "values": 2560
+      },
+      "oracle_stage": "token_0.attention_residual",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.39768874645233154,
+        "minimum": -0.4377119839191437,
+        "square_sum_f64": 32.196231702024356,
+        "sum_f64": -5.075578863985356,
+        "values": 2560
+      },
+      "native_stage": "token_0.ffn_norm",
+      "observed": {
+        "maximum": 0.397688985,
+        "minimum": -0.437712163,
+        "square_sum_f64": 32.1962752931676,
+        "sum_f64": -5.075578338723062,
+        "values": 2560
+      },
+      "oracle_stage": "token_0.ffn_norm",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 1.657949447631836,
+        "minimum": -1.299358606338501,
+        "square_sum_f64": 801.206367570694,
+        "sum_f64": -306.00732190907,
+        "values": 9728
+      },
+      "native_stage": "token_0.ffn_gate",
+      "observed": {
+        "maximum": 1.657950878,
+        "minimum": -1.299359918,
+        "square_sum_f64": 801.2072486506227,
+        "sum_f64": -306.00748496851884,
+        "values": 9728
+      },
+      "oracle_stage": "token_0.ffn_gate",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 3.108020305633545,
+        "minimum": -2.884781837463379,
+        "square_sum_f64": 2384.560508163145,
+        "sum_f64": -28.947566583752632,
+        "values": 9728
+      },
+      "native_stage": "token_0.ffn_up",
+      "observed": {
+        "maximum": 3.108021021,
+        "minimum": -2.884782553,
+        "square_sum_f64": 2384.563370365473,
+        "sum_f64": -28.9475839138031,
+        "values": 9728
+      },
+      "oracle_stage": "token_0.ffn_up",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 3.9494948387145996,
+        "minimum": -2.4180145263671875,
+        "square_sum_f64": 110.90022319985215,
+        "sum_f64": 6.711967867024043,
+        "values": 9728
+      },
+      "native_stage": "token_0.ffn_activated",
+      "observed": {
+        "maximum": 3.949503899,
+        "minimum": -2.418071508,
+        "square_sum_f64": 110.90146658288322,
+        "sum_f64": 6.712192531864275,
+        "values": 9728
+      },
+      "oracle_stage": "token_0.ffn_activated",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 4.295696258544922,
+        "minimum": -2.02871036529541,
+        "square_sum_f64": 115.16906098423276,
+        "sum_f64": 4.555578883737326,
+        "values": 2560
+      },
+      "native_stage": "token_0.ffn_down",
+      "observed": {
+        "maximum": 4.295704365,
+        "minimum": -2.028707504,
+        "square_sum_f64": 115.16978079330374,
+        "sum_f64": 4.555654266499914,
+        "values": 2560
+      },
+      "oracle_stage": "token_0.ffn_down",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 4.999325275421143,
+        "minimum": -2.284264087677002,
+        "square_sum_f64": 150.92829508669277,
+        "sum_f64": 3.020198957528919,
+        "values": 2560
+      },
+      "native_stage": "token_0.block_output",
+      "observed": {
+        "maximum": 4.999332428,
+        "minimum": -2.28426075,
+        "square_sum_f64": 150.92902421429199,
+        "sum_f64": 3.0202789241448045,
+        "values": 2560
+      },
+      "oracle_stage": "token_0.block_output",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.08642578125,
+        "minimum": -0.0875091552734375,
+        "square_sum_f64": 1.6299812763549328,
+        "sum_f64": 1.833959937095642,
+        "values": 2560
+      },
+      "native_stage": "token_1.embedding",
+      "observed": {
+        "maximum": 0.086425781,
+        "minimum": -0.087509155,
+        "square_sum_f64": 1.6299812763549326,
+        "sum_f64": 1.833959937095642,
+        "values": 2560
+      },
+      "oracle_stage": "token_1.embedding",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.164858877658844,
+        "minimum": -0.21304932236671448,
+        "square_sum_f64": 2.592894837685313,
+        "sum_f64": 1.9912253356305882,
+        "values": 2560
+      },
+      "native_stage": "token_1.attn_norm",
+      "observed": {
+        "maximum": 0.164858952,
+        "minimum": -0.213049442,
+        "square_sum_f64": 2.5928973561253503,
+        "sum_f64": 1.9912263153819367,
+        "values": 2560
+      },
+      "oracle_stage": "token_1.attn_norm",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.8404883742332458,
+        "minimum": -0.4308496117591858,
+        "square_sum_f64": 14.44524404726938,
+        "sum_f64": -1.5668587217805907,
+        "values": 4096
+      },
+      "native_stage": "token_1.query_projection",
+      "observed": {
+        "maximum": 0.840488195,
+        "minimum": -0.43084985,
+        "square_sum_f64": 14.445257661055829,
+        "sum_f64": -1.5668595560709946,
+        "values": 4096
+      },
+      "oracle_stage": "token_1.query_projection",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.35353440046310425,
+        "minimum": -0.4176945090293884,
+        "square_sum_f64": 5.089536772763536,
+        "sum_f64": -0.682469742372632,
+        "values": 1024
+      },
+      "native_stage": "token_1.key_projection",
+      "observed": {
+        "maximum": 0.353534639,
+        "minimum": -0.417694747,
+        "square_sum_f64": 5.089541763752822,
+        "sum_f64": -0.6824698951095343,
+        "values": 1024
+      },
+      "oracle_stage": "token_1.key_projection",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.2618730664253235,
+        "minimum": -0.21319906413555145,
+        "square_sum_f64": 1.25161153474194,
+        "sum_f64": 0.7648230141494423,
+        "values": 1024
+      },
+      "native_stage": "token_1.value_projection",
+      "observed": {
+        "maximum": 0.261873215,
+        "minimum": -0.213199124,
+        "square_sum_f64": 1.2516127487559077,
+        "sum_f64": 0.7648240012931637,
+        "values": 1024
+      },
+      "oracle_stage": "token_1.value_projection",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 9.769126892089844,
+        "minimum": -9.506021499633789,
+        "square_sum_f64": 11124.187021330647,
+        "sum_f64": -127.2367453168863,
+        "values": 4096
+      },
+      "native_stage": "token_1.query_norm",
+      "observed": {
+        "maximum": 9.769127846,
+        "minimum": -9.506022453,
+        "square_sum_f64": 11124.187344156102,
+        "sum_f64": -127.23673293101456,
+        "values": 4096
+      },
+      "oracle_stage": "token_1.q_norm",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 234.15086364746094,
+        "minimum": -203.38418579101562,
+        "square_sum_f64": 204426.09733016838,
+        "sum_f64": 108.93006790231448,
+        "values": 1024
+      },
+      "native_stage": "token_1.key_norm",
+      "observed": {
+        "maximum": 234.150878906,
+        "minimum": -203.384140015,
+        "square_sum_f64": 204426.1221914954,
+        "sum_f64": 108.93007426630356,
+        "values": 1024
+      },
+      "oracle_stage": "token_1.k_norm",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 9.769335746765137,
+        "minimum": -8.727487564086914,
+        "square_sum_f64": 11124.186933757062,
+        "sum_f64": -86.02063971740426,
+        "values": 4096
+      },
+      "native_stage": "token_1.query_rope",
+      "observed": {
+        "maximum": 9.7693367,
+        "minimum": -8.727488518,
+        "square_sum_f64": 11124.187315226874,
+        "sum_f64": -86.02064711481216,
+        "values": 4096
+      },
+      "oracle_stage": "token_1.q_rope",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 234.14710998535156,
+        "minimum": -203.3799285888672,
+        "square_sum_f64": 204426.10330205943,
+        "sum_f64": 106.79874930613732,
+        "values": 1024
+      },
+      "native_stage": "token_1.key_rope",
+      "observed": {
+        "maximum": 234.147125244,
+        "minimum": -203.379882812,
+        "square_sum_f64": 204426.12817702146,
+        "sum_f64": 106.7987522935291,
+        "values": 1024
+      },
+      "oracle_stage": "token_1.k_rope",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.999974250793457,
+        "minimum": 2.574079917394556e-05,
+        "square_sum_f64": 25.58465791114058,
+        "sum_f64": 31.999999635881977,
+        "values": 64
+      },
+      "native_stage": "token_1.attention_weights",
+      "observed": {
+        "maximum": 0.999974251,
+        "minimum": 2.5741e-05,
+        "square_sum_f64": 25.584819628045743,
+        "sum_f64": 31.999999941725036,
+        "values": 64
+      },
+      "oracle_stage": "token_1.attention_weights",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.28715112805366516,
+        "minimum": -0.2376745343208313,
+        "square_sum_f64": 3.997703851417154,
+        "sum_f64": 3.3373512367943476,
+        "values": 4096
+      },
+      "native_stage": "token_1.attention_context",
+      "observed": {
+        "maximum": 0.287150741,
+        "minimum": -0.237674117,
+        "square_sum_f64": 3.997717415294287,
+        "sum_f64": 3.3373521900466585,
+        "values": 4096
+      },
+      "oracle_stage": "token_1.attention_context",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.8175698518753052,
+        "minimum": -0.45606350898742676,
+        "square_sum_f64": 8.160582646222243,
+        "sum_f64": 2.1096423713024706,
+        "values": 2560
+      },
+      "native_stage": "token_1.attention_projection",
+      "observed": {
+        "maximum": 0.817567766,
+        "minimum": -0.456062555,
+        "square_sum_f64": 8.160583417666558,
+        "sum_f64": 2.109642299852567,
+        "values": 2560
+      },
+      "oracle_stage": "token_1.attention_projection",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.8057445287704468,
+        "minimum": -0.4656193256378174,
+        "square_sum_f64": 10.225721773339018,
+        "sum_f64": 3.9436023156158626,
+        "values": 2560
+      },
+      "native_stage": "token_1.attention_residual",
+      "observed": {
+        "maximum": 0.805742443,
+        "minimum": -0.465618372,
+        "square_sum_f64": 10.22572574847734,
+        "sum_f64": 3.943602191284299,
+        "values": 2560
+      },
+      "oracle_stage": "token_1.attention_residual",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 0.5161267518997192,
+        "minimum": -0.39595484733581543,
+        "square_sum_f64": 31.193671282377256,
+        "sum_f64": 5.606732657400244,
+        "values": 2560
+      },
+      "native_stage": "token_1.ffn_norm",
+      "observed": {
+        "maximum": 0.516128421,
+        "minimum": -0.395955145,
+        "square_sum_f64": 31.193772178577333,
+        "sum_f64": 5.6067339872797675,
+        "values": 2560
+      },
+      "oracle_stage": "token_1.ffn_norm",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 1.750511646270752,
+        "minimum": -1.6588799953460693,
+        "square_sum_f64": 767.9294115136832,
+        "sum_f64": -190.13488537073135,
+        "values": 9728
+      },
+      "native_stage": "token_1.ffn_gate",
+      "observed": {
+        "maximum": 1.750506282,
+        "minimum": -1.658883095,
+        "square_sum_f64": 767.9299861343341,
+        "sum_f64": -190.13612152356654,
+        "values": 9728
+      },
+      "oracle_stage": "token_1.ffn_gate",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 3.3630197048187256,
+        "minimum": -2.548860788345337,
+        "square_sum_f64": 2282.2005864727894,
+        "sum_f64": 59.71714683063328,
+        "values": 9728
+      },
+      "native_stage": "token_1.ffn_up",
+      "observed": {
+        "maximum": 3.363021374,
+        "minimum": -2.548849583,
+        "square_sum_f64": 2282.2044001162203,
+        "sum_f64": 59.7172606944805,
+        "values": 9728
+      },
+      "oracle_stage": "token_1.ffn_up",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 2.878587007522583,
+        "minimum": -1.991210699081421,
+        "square_sum_f64": 104.48189518060843,
+        "sum_f64": 9.464111625343833,
+        "values": 9728
+      },
+      "native_stage": "token_1.ffn_activated",
+      "observed": {
+        "maximum": 2.878576517,
+        "minimum": -1.991211891,
+        "square_sum_f64": 104.48248831592878,
+        "sum_f64": 9.464344158189881,
+        "values": 9728
+      },
+      "oracle_stage": "token_1.ffn_activated",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 2.228851318359375,
+        "minimum": -1.4267692565917969,
+        "square_sum_f64": 73.43278054952661,
+        "sum_f64": 19.40909420279786,
+        "values": 2560
+      },
+      "native_stage": "token_1.ffn_down",
+      "observed": {
+        "maximum": 2.22885251,
+        "minimum": -1.426761627,
+        "square_sum_f64": 73.43266271309248,
+        "sum_f64": 19.409266932314495,
+        "values": 2560
+      },
+      "oracle_stage": "token_1.ffn_down",
+      "pass": true
+    },
+    {
+      "checks": {
+        "maximum": true,
+        "minimum": true,
+        "square_sum": true,
+        "sum": true,
+        "values": true
+      },
+      "expected": {
+        "maximum": 3.0345959663391113,
+        "minimum": -1.8216116428375244,
+        "square_sum_f64": 102.16349271489842,
+        "sum_f64": 23.352696458809078,
+        "values": 2560
+      },
+      "native_stage": "token_1.block_output",
+      "observed": {
+        "maximum": 3.034595013,
+        "minimum": -1.821602941,
+        "square_sum_f64": 102.16326323711762,
+        "sum_f64": 23.352868801448494,
+        "values": 2560
+      },
+      "oracle_stage": "token_1.block_output",
+      "pass": true
+    }
+  ],
+  "stages_expected": 38,
+  "stages_observed": 38,
+  "status": "PASS",
+  "tolerance_frozen": {
+    "bit_identity_required": false,
+    "minimum_and_maximum": {
+      "absolute": 0.0001,
+      "relative": 0.0005
+    },
+    "reason": "independent NumPy and scalar Rust accumulation orders",
+    "sum_and_square_sum": {
+      "absolute": 0.001,
+      "relative": 0.0005
+    }
+  }
+}

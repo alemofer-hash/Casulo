@@ -1,0 +1,30 @@
+{
+  "asr_pt_br": "READY",
+  "bridge_loadable": true,
+  "bridge_path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\bin\\casulo_whisper_bridge.dll",
+  "bridge_present": true,
+  "cache_root": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice",
+  "candidate": {
+    "commit": "306c88f4d1286aec1bf96e544632897886af5501",
+    "engine": "whisper.cpp",
+    "engine_license": "MIT",
+    "model": "ggml-base-q5_1.bin",
+    "model_license": "MIT",
+    "model_sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898",
+    "model_size_bytes": 59707625,
+    "status": "PROPOSED_NOT_DOWNLOADED",
+    "tag": "v1.9.2"
+  },
+  "download_performed": false,
+  "free_bytes": 83628240896,
+  "model_path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\models\\422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898-ggml-base-q5_1.bin",
+  "model_present": true,
+  "model_verified": true,
+  "ready": true,
+  "required_consent_phrase": "DOWNLOAD_WHISPER_CPP_59707625_BYTES",
+  "requires_user_consent": true,
+  "schema": "casulo-voice-doctor/1.0",
+  "source_dir": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\sources\\whisper.cpp\\306c88f4d1286aec1bf96e544632897886af5501\\source",
+  "source_receipt": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\sources\\whisper.cpp\\306c88f4d1286aec1bf96e544632897886af5501\\SOURCE.json",
+  "source_verified": true
+}

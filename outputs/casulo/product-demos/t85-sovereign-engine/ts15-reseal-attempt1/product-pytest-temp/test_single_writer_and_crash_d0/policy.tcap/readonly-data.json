@@ -1,0 +1,15 @@
+{
+  "states": {
+    "owner.guide.context_policy": [
+      {
+        "initial": 0,
+        "name": "selections",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ]
+  }
+}

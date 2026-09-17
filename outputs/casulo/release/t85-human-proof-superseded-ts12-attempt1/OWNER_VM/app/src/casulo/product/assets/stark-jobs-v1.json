@@ -1,0 +1,23 @@
+{
+  "schema": "casulo.creation-field-theme/1.0",
+  "theme_id": "stark-jobs-provisional-v1",
+  "design_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "colors": {
+    "ink": "#070a12",
+    "ivory": "#fff8df",
+    "amber": "#e5a33b",
+    "cobalt": "#5f87d8",
+    "mist": "#a9b3c8",
+    "deep_blue": "#17243c"
+  },
+  "semantics": {
+    "amber": "provisional, listening, clarification, interruption, correction",
+    "cobalt": "formed, confirmed, simulation, materialization",
+    "ivory": "silence, agreement, stable reused form"
+  },
+  "motion": {
+    "decorative_breath_seconds": 6,
+    "reduced_motion": "disable_all_animation"
+  },
+  "owner_approval": false
+}

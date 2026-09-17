@@ -1,0 +1,65 @@
+{
+  "affected_paths": [
+    [
+      "identity",
+      "purpose"
+    ],
+    [
+      "behavior",
+      "autonomy"
+    ],
+    [
+      "interface",
+      "output_format"
+    ]
+  ],
+  "base_version": 0,
+  "confidence": 0.85,
+  "confirmation_state": "PROPOSED",
+  "creation_id": "creation:open-ended-holdout",
+  "delta_id": "intent:gen:15b16539df7162a1405fdbc1",
+  "operations": [
+    {
+      "action": "set",
+      "path": [
+        "identity",
+        "purpose"
+      ],
+      "value": {
+        "description": "Fornecer uma análise de trade-offs em decisões técnicas, identificando a tensão principal, comparando alternativas e oferecendo uma opção reversível de custo"
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "autonomy"
+      ],
+      "value": {
+        "compare_alternatives": true,
+        "expose_primary_tension": true,
+        "offer_reversible_cost_option": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "output_format"
+      ],
+      "value": {
+        "fields": [
+          "tension",
+          "alternatives",
+          "reversible_option"
+        ],
+        "type": "structured"
+      }
+    }
+  ],
+  "rationale": "A proposta visa alterar o comportamento do agente para que ele atenda a uma nova funcionalidade específica, definida como 'agente Oráculo de Trade-offs'. A alteração envolve a definição de novos padrões de comportamento sob a estrutura existente da CreationSpec.",
+  "schema": "casulo.intent-delta/1.0",
+  "source_event_ids": [
+    "voice:g5:novel-idea"
+  ]
+}

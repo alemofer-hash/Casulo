@@ -1,0 +1,8 @@
+{
+  "properties": [
+    "candidate_selection_precedes_archive_commit",
+    "exact_media_is_required",
+    "foreign_video_bitstreams_are_forbidden",
+    "whole_archive_cost_is_judged_after_independent_decode"
+  ]
+}

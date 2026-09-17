@@ -1,0 +1,31 @@
+{
+  "change": {
+    "identical_affinity": {
+      "from": [
+        0
+      ],
+      "purpose": "use one E-core for both candidates",
+      "to": [
+        4
+      ]
+    },
+    "segment_target_seconds": {
+      "from": 10.0,
+      "to": 5.0
+    }
+  },
+  "id": "protocol-amendment-002",
+  "observed_at_utc": "2026-08-07T17:53:08.303758+00:00",
+  "reason": "calibration reached the pre-registered 75 C warning threshold between controlled-load segments",
+  "result_bias": "none; safety amendment made before K freeze and before definitive paired samples",
+  "unchanged": {
+    "equivalence_tolerance": 1e-09,
+    "hard_stop_c": 85.0,
+    "maximum_continuous_seconds": 20.0,
+    "pairs": 21,
+    "resume_below_c": 55.0,
+    "soft_stop_c": 80.0,
+    "threads": 1,
+    "warning_c": 75.0
+  }
+}

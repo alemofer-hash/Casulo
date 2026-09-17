@@ -1,0 +1,42 @@
+{
+  "classification": "NATIVE_CONTROL_PLANE_BOOT_PROOF_NOT_NATIVE_MODEL_OR_VOICE_PROOF",
+  "files": [
+    {
+      "bytes": 496,
+      "path": "build.json",
+      "sha256": "275a2717564c5b585aa234f0c2771cf6176f4981015503df18f1f8e3640320f0"
+    },
+    {
+      "bytes": 3211264,
+      "path": "casulo-native-arc10.img",
+      "sha256": "a0ed1c5f3229a7a23e7dfce99e8d6a0f865bd23b70014db4afc02277c20f895f"
+    },
+    {
+      "bytes": 299,
+      "path": "conformance.json",
+      "sha256": "242934e549c3f93daa246c1e948031c2aed77f45eb59fd8916fa19e69e3e635f"
+    },
+    {
+      "bytes": 1016,
+      "path": "hosted-native-ux-contract-v1.json",
+      "sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9"
+    },
+    {
+      "bytes": 2303,
+      "path": "native-acceptance.json",
+      "sha256": "afc08601d37de82fdabdb0ec9b486b41d337d81273fb120b62db3bef3710e366"
+    },
+    {
+      "bytes": 454,
+      "path": "report.md",
+      "sha256": "19e042246f181355bfb304e1ddd2164dbc79bb724df40467800e15ff527a0328"
+    },
+    {
+      "bytes": 6628,
+      "path": "serial.log",
+      "sha256": "0cfd260d1f06773a02e570d9dfe62cf3d3829dbf73aee67d74288ba2b0b13de3"
+    }
+  ],
+  "schema": "casulo.arc10-evidence-manifest/1.0",
+  "state": "PASS"
+}

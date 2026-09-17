@@ -1,0 +1,26 @@
+{
+  "analysis_json_trusted_without_recomposition": false,
+  "authority_after_sha256": "a1038474188389d60e68870a2bf416ed486ffd8a64847029e8fa38f53318708e",
+  "compression_sha256": "9f342b9bcbe822319d26a7c65d1a88fb26f4b1b29f2577d1a08da5c9a9ab29ff",
+  "demo_v2_summary_sha256": "cec6a6fa93e1c2710069423361b75156ea54f71849a2ce27fbc6d8b6322d0de1",
+  "energy_verified": false,
+  "flood_equivalence_sha256": "b4557a38daf2aa40ac87cedfaeb96f7e4f6d1d9a32a79a9944588ca2b7a90b6f",
+  "gates": {
+    "energy_not_fabricated": true,
+    "flood_equivalence": true,
+    "holdouts_2": true,
+    "live_demo_v2": true,
+    "material_wall_reduction": true,
+    "mutations_9_of_9": true,
+    "paired_blocks_7": true,
+    "t85_manifest_unchanged": true,
+    "t85_sbom_unchanged": true,
+    "t85_sums_unchanged": true
+  },
+  "holdout_summary_sha256": "496118d18b7408fe159bc09359a30950c61e7be44572f6b516685b5a0d90ec89",
+  "mutation_summary_sha256": "a6e7521465c1ed4adcace2fc3b2ca1341f0c4be9746b7c5490b162c63e292b0a",
+  "schema": "casulo.interlocution-independent-aggregate-verification/1.0",
+  "status": "PASS",
+  "terminal_state": "T_CAUSAL_AUTHORITY_VALIDATED_PHYSICAL_INSTRUMENT_PENDING",
+  "verification_sha256": "7df4f8c72c3a31af3242878cf61c77647753ef01aec52ff0b46469233322303b"
+}

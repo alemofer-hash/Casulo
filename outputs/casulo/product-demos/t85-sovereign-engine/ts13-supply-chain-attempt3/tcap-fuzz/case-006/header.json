@@ -1,0 +1,5 @@
+{
+  "schema": "casulo.tcap/2.0",
+  "target": "portable-t-vm",
+  "verifhed_before_execution": true
+}

@@ -1,0 +1,141 @@
+{
+  "absolute_median_difference_points": 0.6999999999999993,
+  "absolute_p95_difference_points": 0.759999999999998,
+  "consistent": true,
+  "duration_seconds": 60.001731500000005,
+  "finished_utc": "2026-08-10T03:12:00.364347+00:00",
+  "frozen_consistency_thresholds_points": {
+    "median": 2.0,
+    "p95": 5.0
+  },
+  "hwinfo_cpu_usage_percent": {
+    "final": 29.6,
+    "initial": 38.3,
+    "maximum": 47.4,
+    "median": 28.8,
+    "minimum": 14.7,
+    "p95": 34.8,
+    "samples": 241
+  },
+  "hwinfo_sampling": {
+    "first_timestamp_utc": "2026-08-10T03:10:59.691000+00:00",
+    "gaps_over_5x_median": [],
+    "last_timestamp_utc": "2026-08-10T03:11:59.756000+00:00",
+    "maximum_seconds": 0.266,
+    "median_seconds": 0.25,
+    "minimum_seconds": 0.237,
+    "new_samples": 241,
+    "p95_seconds": 0.258,
+    "strictly_increasing_timestamps": true
+  },
+  "hwinfo_sensor": "Uso total da CPU [%]",
+  "observer_cpu_seconds": 0.484375,
+  "observer_percent_of_one_core": 0.8072683702469486,
+  "partial_final_line_ignored": false,
+  "schema": "casulo-cpu-telemetry-crosscheck/1.0",
+  "source_csv": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+  "source_csv_sha256_after": "a6c8330f1e68056112a14b9ca3a96a2e03e4f366d8577d5528389b1db7783da2",
+  "started_utc": "2026-08-10T03:10:59.929866+00:00",
+  "terminal_state": "PASS_CPU_TELEMETRY_CROSSCHECK",
+  "thermal_throttle_events": [],
+  "top_processes_by_total_capacity": [
+    {
+      "cpu_percent_total_capacity": 72.53262905143525,
+      "name": "System Idle Process",
+      "pid": 0
+    },
+    {
+      "cpu_percent_total_capacity": 8.092214388846427,
+      "name": "MsMpEng.exe",
+      "pid": 4708
+    },
+    {
+      "cpu_percent_total_capacity": 4.923903043253565,
+      "name": "SearchIndexer.exe",
+      "pid": 11244
+    },
+    {
+      "cpu_percent_total_capacity": 4.179566884665653,
+      "name": "SearchProtocolHost.exe",
+      "pid": 11240
+    },
+    {
+      "cpu_percent_total_capacity": 3.11622951525435,
+      "name": "HWiNFO64.EXE",
+      "pid": 21464
+    },
+    {
+      "cpu_percent_total_capacity": 1.6557681895118863,
+      "name": "ChatGPT.exe",
+      "pid": 13956
+    },
+    {
+      "cpu_percent_total_capacity": 1.360637817593647,
+      "name": "ChatGPT.exe",
+      "pid": 15016
+    },
+    {
+      "cpu_percent_total_capacity": 0.7833975313417969,
+      "name": "dwm.exe",
+      "pid": 1868
+    },
+    {
+      "cpu_percent_total_capacity": 0.7117850146263417,
+      "name": "System",
+      "pid": 4
+    },
+    {
+      "cpu_percent_total_capacity": 0.3385318972003332,
+      "name": "XboxPcApp.exe",
+      "pid": 21396
+    },
+    {
+      "cpu_percent_total_capacity": 0.21483755014636532,
+      "name": "lsass.exe",
+      "pid": 1380
+    },
+    {
+      "cpu_percent_total_capacity": 0.13888488090270085,
+      "name": "svchost.exe",
+      "pid": 1704
+    },
+    {
+      "cpu_percent_total_capacity": 0.11935419452575853,
+      "name": "ChatGPT.exe",
+      "pid": 16404
+    },
+    {
+      "cpu_percent_total_capacity": 0.10633373694113031,
+      "name": "Creative Cloud UI Helper.exe",
+      "pid": 14452
+    },
+    {
+      "cpu_percent_total_capacity": 0.09331327935650212,
+      "name": "services.exe",
+      "pid": 1352
+    },
+    {
+      "cpu_percent_total_capacity": 0.0846329743000833,
+      "name": "svchost.exe",
+      "pid": 3224
+    },
+    {
+      "cpu_percent_total_capacity": 0.0824628980359786,
+      "name": "MemCompression",
+      "pid": 3348
+    },
+    {
+      "cpu_percent_total_capacity": 0.06510228792314102,
+      "name": "codex.exe",
+      "pid": 18840
+    }
+  ],
+  "windows_psutil_cpu_usage_percent": {
+    "maximum": 48.7,
+    "median": 28.1,
+    "minimum": 13.0,
+    "p95": 34.04,
+    "samples": 237
+  },
+  "workloads_executed": false
+}

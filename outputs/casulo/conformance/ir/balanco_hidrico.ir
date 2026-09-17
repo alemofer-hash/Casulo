@@ -1,0 +1,16 @@
+crisalida-ir/0.1
+module casulo.flood_rs
+
+field HydroCell {
+  precipitation: Number
+  evapotranspiration: Number
+  surface_flow: Number
+  base_flow: Number
+}
+
+condense WaterBalance(HydroCell) -> Number {
+  judge precipitation >= 0 : Bool
+  %storage_change = let precipitation - evapotranspiration - surface_flow - base_flow : Number
+  stabilize storage_change : Number
+  emit storage_change : Number
+}

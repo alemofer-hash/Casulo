@@ -1,0 +1,54 @@
+{
+  "expected_evidence_tokens": [
+    "05fbf1910b1d615d237b6300dae3ba8ff0013f442e3b1f1713a24284656cfb97",
+    "2ceafefb30d7741c6697a6f7c0b3fa664a9aad6d44e92438b9e335205e1b10cb",
+    "b4858c7a701817e336c6521e53ec7d3247ce4c9e815520bdc3a5afaa658d8a8e",
+    "cf1e5e36f80488027e434cbf64a269762d01ad5acae3cfb1d7a8236f35996ab8"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "interactive-creative-tool:isolation",
+      "scope": "interactive-creative-tool",
+      "source_event_ids": [
+        "human:interactive-creative-tool"
+      ],
+      "verifier_ids": [
+        "domain:isolation"
+      ]
+    },
+    {
+      "requirement_id": "interactive-creative-tool:barge",
+      "scope": "interactive-creative-tool",
+      "source_event_ids": [
+        "human:interactive-creative-tool"
+      ],
+      "verifier_ids": [
+        "domain:barge"
+      ]
+    },
+    {
+      "requirement_id": "interactive-creative-tool:export",
+      "scope": "interactive-creative-tool",
+      "source_event_ids": [
+        "human:interactive-creative-tool"
+      ],
+      "verifier_ids": [
+        "domain:export"
+      ]
+    },
+    {
+      "requirement_id": "interactive-creative-tool:progress",
+      "scope": "interactive-creative-tool",
+      "source_event_ids": [
+        "human:interactive-creative-tool"
+      ],
+      "verifier_ids": [
+        "domain:progress"
+      ]
+    }
+  ],
+  "project_id": "interactive-creative-tool",
+  "schema": "casulo.evidence-plan/1.0"
+}

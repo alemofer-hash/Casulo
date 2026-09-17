@@ -1,0 +1,47 @@
+{
+  "modules": {
+    "t.casulo.capabilities": {
+      "decide": []
+    },
+    "t.casulo.dialogue": {
+      "decide": []
+    },
+    "t.casulo.intent": {
+      "decide": []
+    },
+    "t.casulo.jobs": {
+      "decide": []
+    },
+    "t.casulo.materialization": {
+      "decide": [
+        "manifest"
+      ]
+    },
+    "t.casulo.memory_policy": {
+      "decide": []
+    },
+    "t.casulo.receipts": {
+      "decide": []
+    },
+    "t.casulo.requirements": {
+      "decide": []
+    },
+    "t.casulo.simulation": {
+      "decide": [
+        "simulation"
+      ]
+    },
+    "t.casulo.universes": {
+      "decide": []
+    },
+    "t.core.canonical": {
+      "decide": []
+    },
+    "t.core.collections": {
+      "decide": []
+    },
+    "t.core.result": {
+      "decide": []
+    }
+  }
+}

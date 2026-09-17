@@ -1,0 +1,7 @@
+{
+  "properties": [
+    "source_ir_identity",
+    "deny_on_cancel",
+    "runtime_evidence_before_decision"
+  ]
+}

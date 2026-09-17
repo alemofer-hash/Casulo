@@ -1,0 +1,74 @@
+{
+  "captured_utc": "2026-08-14T19:51:39.122569+00:00",
+  "claims": {
+    "authorized": [
+      "automated contract compliance within the frozen RC1 schemas"
+    ],
+    "forbidden": [
+      "human chemistry approved",
+      "voice approved",
+      "scientific superiority",
+      "commercial release"
+    ]
+  },
+  "constitution_sha256": "c665e1be270f0c7755df8541305a6fe1c64531e02f80618e10e20f9cf81de731",
+  "schema": "casulo.rc-constitution/1.0",
+  "t_sovereignty": {
+    "critical_surfaces": [
+      "capability_decision",
+      "material_intent_decision",
+      "publish_decision"
+    ],
+    "minimum_score": 0.8,
+    "weights": {
+      "agent_logic": 3,
+      "capability_decision": 5,
+      "interface_contract": 2,
+      "job_policy": 2,
+      "material_intent_decision": 5,
+      "materialization_policy": 3,
+      "memory_policy": 3,
+      "publish_decision": 5,
+      "simulation_policy": 3,
+      "test_oracle": 2,
+      "tool_policy": 3
+    }
+  },
+  "thresholds": {
+    "fulfillment": {
+      "all_hard_requirements": "PASS",
+      "safety": "PASS",
+      "unsupported_claims": 0
+    },
+    "guide": {
+      "cross_project_bleed": 0,
+      "false_progress": 0,
+      "mandatory_constraint_loss": 0,
+      "projects": 3,
+      "synthetic_duration_hours": 2
+    },
+    "materialization": {
+      "hard_field_round_trip_fidelity": 1.0
+    },
+    "security": {
+      "invalid_updates_accepted": 0,
+      "open_p0": 0,
+      "open_p1_supported_path": 0,
+      "private_components_in_public": 0,
+      "secrets_in_artifacts": 0,
+      "unauthorized_effects": 0
+    },
+    "t_sovereignty": {
+      "critical_degree": 1.0,
+      "minimum": 0.8
+    },
+    "voice": {
+      "asr_rtf_p95_max_exclusive": 1.0,
+      "barge_in_p95_ms_max": 150,
+      "false_barge_in_per_hour_max": 2,
+      "moderate_noise_intent_success_min": 0.85,
+      "quiet_intent_success_min": 0.95,
+      "tts_first_audio_p95_ms_max": 1000
+    }
+  }
+}

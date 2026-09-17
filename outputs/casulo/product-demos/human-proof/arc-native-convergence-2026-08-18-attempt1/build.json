@@ -1,0 +1,20 @@
+{
+  "command": [
+    "cargo",
+    "+nightly-2026-02-01",
+    "-Z",
+    "bindeps",
+    "run",
+    "--manifest-path",
+    "os/Cargo.toml",
+    "--release",
+    "--locked",
+    "--offline"
+  ],
+  "generated_image_sha256": "a0ed1c5f3229a7a23e7dfce99e8d6a0f865bd23b70014db4afc02277c20f895f",
+  "locked": true,
+  "offline": true,
+  "returncode": 0,
+  "schema": "casulo.arc10-native-build/1.0",
+  "stderr_sha256": "add419f99eb7c6f80f31ebea46658d147ba6d2b1da2e60936cae83913e00609b"
+}

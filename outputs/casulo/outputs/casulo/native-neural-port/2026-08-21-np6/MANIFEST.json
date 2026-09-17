@@ -1,0 +1,129 @@
+{
+  "authoritative_image": {
+    "bytes": 3211264,
+    "manifest_sha256": "530ace62f5112d05ef4abd1958ebc86711cd74acc058a2a4a042bf3d9347fd23",
+    "path": "release/casulo-native-neural-port-np6-attempt-4.img",
+    "sha256": "65a9b4360ef56355aececd16731ed33d4f508b82d6aff2043d75abc05624fef0",
+    "system_pack": "release/casulo-native-neural-port-system-pack-v3.cspk",
+    "system_pack_sha256": "c209aae87feb8549ddadca6ff6b454060fcb99783d1a07ee5849402baaf0ee4d"
+  },
+  "campaign_id": "2026-08-21-np6",
+  "claims_not_authorized": [
+    "all 36 transformer blocks executed",
+    "logits or model-derived output token",
+    "complete Qwen decoder inference",
+    "performance, compression or energy advantage",
+    "general RoPE or full 40960-token context support"
+  ],
+  "closed_date": "2026-08-21",
+  "evidence": {
+    "definitive_three_boots_sha256": "4830ecc73ee54dd5f6d96af91b54e0544815f42f284083b7d09777db4512bf31",
+    "host_comparison_sha256": "69d440cee543af120acaaf38883b6143583111d5480f43b7d2999be93b983b5a",
+    "oracle_sha256": "ee74f2f0cc742ffd3aef333356a53fe4b31cc60da6be1e87bf5efaa6696eb24a"
+  },
+  "host_work": {
+    "comparison_status": "PASS",
+    "contexts": [
+      1,
+      2
+    ],
+    "oracle_stages": 38,
+    "scope": "supplementary host execution; Native claim remains one complete token position",
+    "tokens": 2
+  },
+  "native_work": {
+    "arena_bytes": 259328,
+    "attention_scores": 32,
+    "contexts": [
+      1
+    ],
+    "matvec_calls": 7,
+    "multiply_accumulates": 100925440,
+    "oracle_stages": 19,
+    "output_sha256": "487179f486f1df8a132b66f7ef1f542a4f1a8768278dfe67d8e5bcaab77b0b51",
+    "quantized_blocks": 394240,
+    "tokens": 1,
+    "weight_bytes_read": 63866880
+  },
+  "preserved_failures": [
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-21-np6/block0-oracle.json",
+      "cause": "incorrect rotate-half assumption for GGML RoPE ABI",
+      "sha256": "7f5ece8dfebc2bd960d62478fe632d49db71ce8fa296035453d6457c48afeb84"
+    },
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-21-np6/block0-oracle-attempt-2.json",
+      "cause": "correct RoPE but incomplete intermediate-stage inventory",
+      "sha256": "c6be15c58242cdd42aa9b456df53c85e1325be6fcc9185da8a0a697694b750dd"
+    },
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-21-np6/qemu-smoke-whpx.json",
+      "cause": "two-token WHPX scope timed out",
+      "sha256": "4f5184858245014da4026b8ec9bbbed389312c3654a19c6054ac94f7cc488314"
+    },
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-21-np6/qemu-smoke-tcg.json",
+      "cause": "two-token TCG scope timed out",
+      "sha256": "bc9c79b1cdd70cd9238eae634192245328e12a729ba236ee7db1eae6b7f731fc"
+    },
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-21-np6/qemu-smoke-tcg-prefetch.json",
+      "cause": "two-token TCG scope remained outside bounded window",
+      "sha256": "18c5315b1b7c6ff9bd9189e83541ad27757c3a5b7e009bd39cdd5cea26d425ab"
+    },
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-21-np6/qemu-smoke-tcg-one-token.json",
+      "cause": "strict one-token TCG scope timed out",
+      "sha256": "72653cca5c2f5cf314c586d7b01e4530efbda55980f6d14d558491f5d150813d"
+    },
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-21-np6/qemu-smoke-whpx-one-token.json",
+      "cause": "block passed but inherited validator required superseded marker",
+      "sha256": "6881ccebf7984ba6098ef8d4de1dfbacc3385cd347a1c8aa3d83092e72a04046"
+    },
+    {
+      "artifact": "outputs/casulo/native-neural-port/2026-08-21-np6/qemu-definitive-3boots.json",
+      "cause": "three technical passes retained stale validator boolean",
+      "sha256": "83fc61c495fb2de51a094a475a7da94bbe4ea88d7eb91689e7d02bd056f0a7eb"
+    }
+  ],
+  "schema": "casulo-native-neural-port-evidence/0.1",
+  "source_hashes": {
+    "os/kernel/src/fw_cfg.rs": "b29f3587a883e0ce6a437a7d01e7e12bd89da9b84813cb5a5c8662c059862330",
+    "os/kernel/src/main.rs": "09f9d8b6b002fd14f16a420c6061b4502a6233da06eeb90a78aea0c2453d981a",
+    "os/kernel/src/memory.rs": "38d747d0bfc0aaa59a5e9daf83c787af3d873486f51766d4a8ed4c6f065e1138",
+    "os/kernel/src/model_block0_oracle.rs": "fddeda98450c07a1e9d9ae1467728876b3fcbe395b9c276b6a0b2091a319de1b",
+    "os/kernel/src/model_block0_probe.rs": "10ddf803f81298791a0699fd1b58c7c1499dcf56f4cae8d681ebb0da2890f53c",
+    "os/native-model/Cargo.toml": "6be249bd825cf6291885fde65a9d3c9f2df629b17c348f433f3f7ac7ea7218cd",
+    "os/native-model/examples/block0_host.rs": "89c7c6f17ec4616f98b207d6af2a2999fd5ecc2ab4b9d9b5e032e6ecd8128bb1",
+    "os/native-model/src/lib.rs": "34dae985ead38bd55e8367b55e7db5a370721c848eee060a59a363d3af48c165",
+    "os/tools/build_native_neural_port_image.py": "0a85a6053c4ae51309776347f8f1dffc4532d1c0bf80f688e5990a301684e75e",
+    "os/tools/inventory_native_block0.py": "a87b1c74883edf44809524e1db46df8e4c99c1d68e6c38c0e7ea027b0bcd2c2a",
+    "os/tools/run_native_block0_qemu.py": "b781d5b5e2b716576bdd175f82aeb91d2d4840839cb8f3b648065a431247ffe5",
+    "os/tools/verify_native_block0.py": "1c89339f39d7f77f1e48357951eb58f5fe78f24e28b78d55020a418cb47f87f6",
+    "tests/product/test_native_block0_runner.py": "51d6ba0d1938e0ee1931b20eedd519199eab7b8fc4bac0be803523b7a478fdfd"
+  },
+  "source_model": {
+    "bytes": 2497280256,
+    "copied_into_repository": false,
+    "file_name": "Qwen3-4B-Q4_K_M.gguf",
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "unchanged": true
+  },
+  "state": "NATIVE_ONE_COMPLETE_QWEN3_BLOCK_VALIDATED_36_BLOCKS_PENDING",
+  "validation": {
+    "first_model_derived_output_token": false,
+    "later_blocks_executed": false,
+    "logits_executed": false,
+    "missing_model_rejected": true,
+    "python_tests_passed": 31,
+    "qemu_boots_passed": 3,
+    "qemu_boots_total": 3,
+    "rust_tests_passed": 14,
+    "shape_mutation_rejected": true,
+    "truncated_model_rejected": true,
+    "unique_output_hashes": 1,
+    "wider_context_rejected": true,
+    "wider_rope_rejected": true
+  }
+}

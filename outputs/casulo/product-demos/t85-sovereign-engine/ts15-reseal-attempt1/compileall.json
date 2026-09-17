@@ -1,0 +1,6 @@
+﻿{
+    "schema":  "casulo.compileall/1.0",
+    "command":  "python -m compileall -q src private/casulo-owner/src tools",
+    "exit_code":  0,
+    "timestamp":  "2026-08-15T03:47:00.8154992+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "operation": "Initialize",
+  "result": "preserva o original e produz plano reversível com proveniência, sem efeito destrutivo real; creation:open-ended-holdout",
+  "returncode": 0,
+  "stderr": "",
+  "stdout_sha256": "d2f9d3e3f057695d082e487adf92f102b010454956b1a9bd4225467c54613317"
+}

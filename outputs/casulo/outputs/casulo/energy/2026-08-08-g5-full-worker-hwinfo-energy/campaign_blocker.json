@@ -1,0 +1,36 @@
+{
+  "definitive_pairs_started": 0,
+  "definitive_pairs_valid": 0,
+  "next_physical_action": "allow a full cooldown and investigate the instantaneous HWiNFO throttling flag before starting a new campaign ID",
+  "observed_guard": {
+    "ac_connected": true,
+    "battery_charge_rate_w": 0.0,
+    "battery_percent": 100.0,
+    "battery_state": "AC_CONNECTED",
+    "frequency_mhz": null,
+    "hwinfo_timestamp_utc": "2026-08-08T14:21:02.742000+00:00",
+    "logger_age_seconds": 0.05758,
+    "logger_live": true,
+    "observed_at_utc": "2026-08-08T14:21:02.818636+00:00",
+    "ready_to_start": false,
+    "reason_code": "safe",
+    "safe_after_load": true,
+    "safe_during_load": true,
+    "source_last_size": 31206024,
+    "temperature_c": 65.0,
+    "throttling": false,
+    "watchdog_reader": "bounded-live-tail-v1"
+  },
+  "reason": "instantaneous_thermal_throttling_detected_during_calibration_cooldown",
+  "schema": "casulo-full-worker-energy-blocker/1.0",
+  "tcap_calibration_is_not_comparative_evidence": true,
+  "tcap_calibration_preserved": true,
+  "terminal_state": "BLOCKED_THERMAL_OR_SENSOR",
+  "trigger_observation": {
+    "ac_connected": true,
+    "battery_percent": 100.0,
+    "hwinfo_timestamp_utc": "2026-08-08T14:19:54.187000+00:00",
+    "temperature_c": 68.0,
+    "throttling": true
+  }
+}

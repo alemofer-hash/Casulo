@@ -1,0 +1,19 @@
+﻿{
+  "checks": {
+    "base_vm": true,
+    "cloud_locked": true,
+    "development_signature": true,
+    "guest_network_off": true,
+    "human_proof_pending": true,
+    "manifest_files": true,
+    "model_verified": true,
+    "physical_devices_prohibited": true,
+    "runtime_available": true
+  },
+  "manifest_sha256": "7a8b4c4f2e7538c40347ead4a9caed68b7031419695bad28d93c0919d10d13f2",
+  "mismatches": [],
+  "read_only": true,
+  "ready": true,
+  "schema": "casulo.human-proof-verification/1.0",
+  "signature_output": "Good \"casulo-human-proof\" signature for casulo-owner-human-proof-dev with ED25519 key SHA256:WV2iEwZ00CJO+pA3CDyw8EWCYLp3Y8r7qvGHRKIOpfs"
+}

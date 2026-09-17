@@ -1,0 +1,129 @@
+{
+  "candidate_rejections": [],
+  "creation_sha256": "1d6a668c08c51391a14afe554880352521ecf40fdf89f59aa24520c95fd228c8",
+  "entry_unit": "creation_unit_1",
+  "project_id": "t-project:74acb80aadc19ccedecb65d4",
+  "tests": [
+    {
+      "expected_contains": "{'capabilities': ['memory.read'], 'content': {'behavior': {'track_rejected_paths': {'consultable': true}}, 'identity': {'name': {'agent': 'E47F'}}, 'interface': {'link_syntheses_to_origins': {'established': true}}, 'purpose': {'reconcile': {'conflicting_technical_records': true, 'reversible_decisions': true}}}, 'creation_id': 'creation:open-ended-holdout', 'rejected_delta_ids': [], 'schema': 'casulo.creation/1.0', 'state': 'CONFIRMATION', 'version': 5}",
+      "input": "{'capabilities': ['memory.read'], 'content': {'behavior': {'track_rejected_paths': {'consultable': true}}, 'identity': {'name': {'agent': 'E47F'}}, 'interface': {'link_syntheses_to_origins': {'established': true}}, 'purpose': {'reconcile': {'conflicting_technical_records': true, 'reversible_decisions': true}}}, 'creation_id': 'creation:open-ended-holdout', 'rejected_delta_ids': [], 'schema': 'casulo.creation/1.0', 'state': 'CONFIRMATION', 'version': 5}",
+      "name": "TestCreationSpecConfirmation",
+      "unit_id": "creation_unit_2"
+    },
+    {
+      "expected_contains": "{'capabilities': ['memory.read'], 'content': {'behavior': {'track_rejected_paths': {'consultable': true}}, 'identity': {'name': {'agent': 'E47F'}}, 'interface': {'link_syntheses_to_origins': {'established': true}}, 'purpose': {'reconcile': {'conflicting_technical_records': true, 'reversible_decisions': true}}}, 'creation_id': 'creation:open-ended-holdout', 'rejected_delta_ids': [], 'schema': 'casulo.creation/1.0', 'state': 'CONFIRMATION', 'version': 5}",
+      "input": "{'capabilities': ['memory.read'], 'content': {'behavior': {'track_rejected_paths': {'consultable': true}}, 'identity': {'name': {'agent': 'E47F'}}, 'interface': {'link_syntheses_to_origins': {'established': true}}, 'purpose': {'reconcile': {'conflicting_technical_records': true, 'reversible_decisions': true}}}, 'creation_id': 'creation:open-ended-holdout', 'rejected_delta_ids': [], 'schema': 'casulo.creation/1.0', 'state': 'CONFIRMATION', 'version': 5}",
+      "name": "TestMemoryReadCapability",
+      "unit_id": "creation_unit_3"
+    },
+    {
+      "expected_contains": "{'capabilities': ['memory.read'], 'content': {'behavior': {'track_rejected_paths': {'consultable': true}}, 'identity': {'name': {'agent': 'E47F'}}, 'interface': {'link_syntheses_to_origins': {'established': true}}, 'purpose': {'reconcile': {'conflicting_technical_records': true, 'reversible_decisions': true}}}, 'creation_id': 'creation:open-ended-holdout', 'rejected_delta_ids': [], 'schema': 'casulo.creation/1.0', 'state': 'CONFIRMATION', 'version': 5}",
+      "input": "{'capabilities': ['memory.read'], 'content': {'behavior': {'track_rejected_paths': {'consultable': true}}, 'identity': {'name': {'agent': 'E47F'}}, 'interface': {'link_syntheses_to_origins': {'established': true}}, 'purpose': {'reconcile': {'conflicting_technical_records': true, 'reversible_decisions': true}}}, 'creation_id': 'creation:open-ended-holdout', 'rejected_delta_ids': [], 'schema': 'casulo.creation/1.0', 'state': 'CONFIRMATION', 'version': 5}",
+      "name": "TestTraceLog",
+      "unit_id": "creation_unit_4"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "92316bfaf684f637bc42cbaee871358cc46de266c31bd113fa62614cfb094266",
+    "ended_monotonic_ns": 1515980423500,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+    "output_sha256": "74acb80aadc19ccedecb65d40543642da06f887538ed4e1f2b034976f922d9b6",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 1265971378000,
+    "stream_events": 1306
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Initialize in CreationSpec\n  effects [manifest]\n  emit \"creation:open-ended-holdout\"\n",
+      "unit_id": "creation_unit_1",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "content",
+          "behavior",
+          "track_rejected_paths",
+          "consultable"
+        ],
+        [
+          "content",
+          "identity",
+          "name",
+          "agent"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit_1"
+      ],
+      "source": "language T/1.1\nmodule validation\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Confirm in CreationSpec\n  effects [manifest]\n  emit \"casulo.creation/1.0\"\n",
+      "unit_id": "creation_unit_2",
+      "watch_paths": [
+        [
+          "capabilities"
+        ],
+        [
+          "content",
+          "behavior",
+          "track_rejected_paths"
+        ],
+        [
+          "content",
+          "identity",
+          "name"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit_2"
+      ],
+      "source": "language T/1.1\nmodule effects\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Manifest in CreationSpec\n  effects [manifest]\n  emit \"manifest:memory.read\"\n",
+      "unit_id": "creation_unit_3",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "content",
+          "purpose",
+          "reconcile",
+          "conflicting_technical_records"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit_3"
+      ],
+      "source": "language T/1.1\nmodule trace\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Log in CreationSpec\n  effects [manifest]\n  emit \"Text:creation:open-ended-holdout\"\n",
+      "unit_id": "creation_unit_4",
+      "watch_paths": [
+        [
+          "content",
+          "interface",
+          "link_syntheses_to_origins",
+          "established"
+        ],
+        [
+          "content",
+          "purpose",
+          "reconcile",
+          "reversible_decisions"
+        ]
+      ]
+    }
+  ]
+}

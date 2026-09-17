@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Se você usar o Casulo, cite o software e preserve a atribuição à Teloscorp."
+title: "Casulo: otimização conservativa do tráfego de informação"
+type: software
+authors:
+  - name: Teloscorp
+version: 0.20.0-alpha.1
+date-released: 2026-07-30
+license: MIT
+keywords:
+  - information traffic
+  - conservative transformation
+  - reproducible benchmarking
+  - provenance

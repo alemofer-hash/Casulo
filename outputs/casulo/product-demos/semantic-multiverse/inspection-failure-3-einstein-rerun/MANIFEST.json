@@ -1,0 +1,855 @@
+{
+  "artifacts": [
+    {
+      "bytes": 14499,
+      "path": "casulo-owner-einstein-local-solver.casulo.zip",
+      "sha256": "554da5a1341f84077c0434f79b9dacd00ba6d5dd96869a91deb92b93002c7860"
+    },
+    {
+      "bytes": 49562,
+      "path": "casulo-owner-semantic-einstein-checkpoint-fixed.zip",
+      "sha256": "09cafaafb16952819619b458b0d95d70a0320c570c9cfcf67acd08393c8f5cb3"
+    },
+    {
+      "bytes": 49562,
+      "path": "casulo-owner-semantic-einstein-checkpoint.zip",
+      "sha256": "09cafaafb16952819619b458b0d95d70a0320c570c9cfcf67acd08393c8f5cb3"
+    },
+    {
+      "bytes": 4044,
+      "path": "creation-visual/00-silence.html",
+      "sha256": "b1970bb2aaa6f746411f9b2dfd07e34d3f11917b5eb7bd6fb37e42d03e270730"
+    },
+    {
+      "bytes": 4862,
+      "path": "creation-visual/01-first_intent.html",
+      "sha256": "d6ef01b25c5381ebfaa31e2e0eac0a3a0a004a571c5fdd43997f5e5a9e80bb0d"
+    },
+    {
+      "bytes": 4835,
+      "path": "creation-visual/02-listening.html",
+      "sha256": "f779d2d8d9b457e4c2332e726c485f0001468c9158c38af6f9800850ad81faab"
+    },
+    {
+      "bytes": 6905,
+      "path": "creation-visual/03-first_form.html",
+      "sha256": "0d828c4d3ab131a61bde8dcb86d4879dd1d4ccff23809ac22da2e48b98d05b8c"
+    },
+    {
+      "bytes": 4873,
+      "path": "creation-visual/04-clarification.html",
+      "sha256": "0f2371e4c23900b8db954e5f621d0f2404f62ebadf2ee65734e526f71e267054"
+    },
+    {
+      "bytes": 6988,
+      "path": "creation-visual/05-confirmation.html",
+      "sha256": "d5c25623483a5786bc5bfddd3720d45e22671928d13ba0ef46b5750fb09f1295"
+    },
+    {
+      "bytes": 6914,
+      "path": "creation-visual/06-personality.html",
+      "sha256": "b77a96456b46ff0989227770276872a3e324f0333ecaf2379ccfe4f7fbeaede0"
+    },
+    {
+      "bytes": 6889,
+      "path": "creation-visual/07-simulation.html",
+      "sha256": "2b32e5e53e89493919ac1041deb46bb607d2ba108c24132d8016a26d37e38bac"
+    },
+    {
+      "bytes": 6930,
+      "path": "creation-visual/08-interruption.html",
+      "sha256": "7c196fbf2c856f13ffe6165017c76f97929a5ce8afd87ad9bb53e5bead079cb6"
+    },
+    {
+      "bytes": 6898,
+      "path": "creation-visual/09-correction.html",
+      "sha256": "f4b3a3a901a08edb6e7d85ff42fda515005f273fbb35a0010ba4d54ea179d76f"
+    },
+    {
+      "bytes": 6949,
+      "path": "creation-visual/10-agreement.html",
+      "sha256": "9be7ef239dd11fa2da0604933115dbd237d431837e4091dd9a3af6c85d891724"
+    },
+    {
+      "bytes": 6973,
+      "path": "creation-visual/11-materialization.html",
+      "sha256": "2c6f096cc712749418e4573f723f33d90e0af366faf52167143a0e42806b26ad"
+    },
+    {
+      "bytes": 1240,
+      "path": "creation-visual/index.html",
+      "sha256": "b23053af261bfbb9abaccc6844c3e2e496ed1764c73c93b91e24eb6baad94923"
+    },
+    {
+      "bytes": 3343,
+      "path": "creation-visual/timeline.json",
+      "sha256": "4c798f7eb9dce639b040fa184f4524f961097123796dce25dc983b5c80bb290e"
+    },
+    {
+      "bytes": 5111,
+      "path": "creation/checkpoint-generated-project.json",
+      "sha256": "c66d9fcb1e1c57b1e012b1e5c06052447867a59d55da48fabf2bc7ce699d9767"
+    },
+    {
+      "bytes": 3569,
+      "path": "creation/checkpoint-intent.json",
+      "sha256": "2284cb999cc6701758f2cd4562d85e9c7c5b16cdecf256692c7b207993aa3f0b"
+    },
+    {
+      "bytes": 1009,
+      "path": "creation/confirmed-creation.json",
+      "sha256": "6f9ec76a918a322e0957da2953333a5a8f3b9fbb19480600af2b3224026cce07"
+    },
+    {
+      "bytes": 13495,
+      "path": "creation/entry-build/artifact/casulo_artifact.py",
+      "sha256": "10c13b64d57b59c8d9e8dcb2c1e41065d26a75107730c08a9142380713007b7c"
+    },
+    {
+      "bytes": 1083,
+      "path": "creation/entry-build/artifact/casulo_native.abi.json",
+      "sha256": "29ae743a641602e0818a0f1ef1ccee3e746cbcca58b4a49be7cb5c1d97c76246"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/entry-build/artifact/casulo_native.c",
+      "sha256": "2f7a6c8d8e6c9e4fd7af816063a1e046131d1f609e460229fecb53a0ef29d4b0"
+    },
+    {
+      "bytes": 1458,
+      "path": "creation/entry-build/artifact/crisalida.ir.json",
+      "sha256": "6f48167bede48f4b41be7cf38a7609b93e1a99014c9501c41f5336d2772890aa"
+    },
+    {
+      "bytes": 2762,
+      "path": "creation/entry-build/artifact/manifest.json",
+      "sha256": "942635b4281e67639209f435d23bfaf14543753c1386a6c4434b4d0487c571fe"
+    },
+    {
+      "bytes": 1480,
+      "path": "creation/entry-build/artifact/metamorfose.graph.json",
+      "sha256": "0e49d46e702355468bafbdc4271b24d3d0b1176b615eb3c2c062df68a1c64e98"
+    },
+    {
+      "bytes": 268,
+      "path": "creation/entry-build/artifact/source.t",
+      "sha256": "521994881823352d1264c005df55330b0bc4f2b607af2b9914143361ad72e917"
+    },
+    {
+      "bytes": 268,
+      "path": "creation/entry-build/source.t",
+      "sha256": "521994881823352d1264c005df55330b0bc4f2b607af2b9914143361ad72e917"
+    },
+    {
+      "bytes": 278,
+      "path": "creation/external-execution.json",
+      "sha256": "16fc5e087d3a97641f1553e88dcc5f8307e52444360f088dacf0b8ebba198e96"
+    },
+    {
+      "bytes": 18677,
+      "path": "creation/g5-first-open-ended-agent.json",
+      "sha256": "e7d550d822a0ee5b5f7b09883183ef762d2c448a0cc4ae9833ca3a75aa4ee3a2"
+    },
+    {
+      "bytes": 464,
+      "path": "creation/holdout-scan.json",
+      "sha256": "3a45c0010772b8eb863508d34b2815cbd10c50b76efb399b3b4876450b8710eb"
+    },
+    {
+      "bytes": 2394,
+      "path": "creation/intent-plan.json",
+      "sha256": "7336862f5c27e1678f7e8589c0edbc637838e44ea83da0f745ed357a1b7f51a1"
+    },
+    {
+      "bytes": 1824,
+      "path": "creation/materialization-receipt.json",
+      "sha256": "9a248b67c1e191590b4cef8bb35fd301bedbeb47c7c65b06576255adc0b34761"
+    },
+    {
+      "bytes": 13657,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7.casulo.zip",
+      "sha256": "5ce7ff5afd713fba09e30084a66ea0514451aea14edd2c93e6973c3359927466"
+    },
+    {
+      "bytes": 2063,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/SBOM.spdx.json",
+      "sha256": "c99ceac3da178eb52b6a60fb7134eadfd0caaf345a608945ce835a50cacc5230"
+    },
+    {
+      "bytes": 2084,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/agent-artifact-manifest.json",
+      "sha256": "2d11358d2f5396497dc2cc7161db9865cfc9f6ebdc74c5e251b533c1eb756d2f"
+    },
+    {
+      "bytes": 242,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/agent-descriptor.json",
+      "sha256": "1cd4431301fec55f66bcd2f623e5c58f9701fe533eb0039da0a088d3afa9c965"
+    },
+    {
+      "bytes": 3051,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/agent-project.json",
+      "sha256": "2d7fe9885e31bc293cbabdaa4ccc28ca1f6a03d35a265a918d0ce3e27f0bfd16"
+    },
+    {
+      "bytes": 13495,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/agent.py",
+      "sha256": "10c13b64d57b59c8d9e8dcb2c1e41065d26a75107730c08a9142380713007b7c"
+    },
+    {
+      "bytes": 8569,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/agent.tcap",
+      "sha256": "c9f824c562d02de63be756efbb43f5e31c1ebbb0466acf643fb735f67fc195d5"
+    },
+    {
+      "bytes": 1790,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/api.py",
+      "sha256": "d8f9e63dbd17d510252ca9f895e756260ba9c1dba086d0069b5fa3d1d0efb7fe"
+    },
+    {
+      "bytes": 782,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/creation.json",
+      "sha256": "f4e5ddd06bd312066615b66053ec9780ba5529234b6b62df3952e2aadd5e2b26"
+    },
+    {
+      "bytes": 1514,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/forge-receipt.json",
+      "sha256": "24b64544cc5adc0192fb46c22b3b1f4987ec08662201eed16d2034ff8557a2b0"
+    },
+    {
+      "bytes": 634,
+      "path": "creation/materialized/creation-38da5088c5e61759-v7/simulation-receipt.json",
+      "sha256": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+    },
+    {
+      "bytes": 13579,
+      "path": "creation/repair-outcome.json",
+      "sha256": "984fee3fc26422e52f13e3007c6948d3a33f56de19a401366c924b1786dcc68e"
+    },
+    {
+      "bytes": 830,
+      "path": "creation/simulation-receipt.json",
+      "sha256": "9983b30aa11ccb5ef1da02065ee4b858eddc9501c43a44dc3d7dceb6afc5c27e"
+    },
+    {
+      "bytes": 13429,
+      "path": "creation/verification/attempt-0/autonomy_unit/artifact/casulo_artifact.py",
+      "sha256": "f39867d5a5d047b068c954b3a83ccbafd468c3b4e77ad153c950f521429b4946"
+    },
+    {
+      "bytes": 1076,
+      "path": "creation/verification/attempt-0/autonomy_unit/artifact/casulo_native.abi.json",
+      "sha256": "78fdde07d0b781838d4dc3cf399c8034d03bf84b85683352b802dbc8be6a68fb"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-0/autonomy_unit/artifact/casulo_native.c",
+      "sha256": "da8752d68501cfa5de4c4a0dbddc3f819dcd4edee1d73a2857956da559339999"
+    },
+    {
+      "bytes": 1434,
+      "path": "creation/verification/attempt-0/autonomy_unit/artifact/crisalida.ir.json",
+      "sha256": "794721bd177f3d54400b73aae180f62427f3cd47d40a3e647773e8677ffa59dc"
+    },
+    {
+      "bytes": 2748,
+      "path": "creation/verification/attempt-0/autonomy_unit/artifact/manifest.json",
+      "sha256": "063a8d922e02f8f1a9a9d8bc011caafa9efcc44d27c91e5452ab96ec9dbf74ee"
+    },
+    {
+      "bytes": 1448,
+      "path": "creation/verification/attempt-0/autonomy_unit/artifact/metamorfose.graph.json",
+      "sha256": "d2895035831529ab46a5a64d2a29540186b3e30e90b238ad9d452b6c35047890"
+    },
+    {
+      "bytes": 244,
+      "path": "creation/verification/attempt-0/autonomy_unit/artifact/source.t",
+      "sha256": "e03eb78361ac602b9995fb83a3d3e3dc620d194db40ff04489c437db96c73f97"
+    },
+    {
+      "bytes": 244,
+      "path": "creation/verification/attempt-0/autonomy_unit/source.t",
+      "sha256": "e03eb78361ac602b9995fb83a3d3e3dc620d194db40ff04489c437db96c73f97"
+    },
+    {
+      "bytes": 13485,
+      "path": "creation/verification/attempt-0/creation_unit/artifact/casulo_artifact.py",
+      "sha256": "bb2b4a9c688392a567f87ec497863e51891637164f967ea2342b266f90553125"
+    },
+    {
+      "bytes": 1083,
+      "path": "creation/verification/attempt-0/creation_unit/artifact/casulo_native.abi.json",
+      "sha256": "29ae743a641602e0818a0f1ef1ccee3e746cbcca58b4a49be7cb5c1d97c76246"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-0/creation_unit/artifact/casulo_native.c",
+      "sha256": "c62f2c14206ea0151f2061b5bc5c58bf69501b3d1d64ebaf19398ef6b233ed2a"
+    },
+    {
+      "bytes": 1453,
+      "path": "creation/verification/attempt-0/creation_unit/artifact/crisalida.ir.json",
+      "sha256": "c6e6f9f92ee4a7dd6db8843dcc3eb47b95788cb08f56997813927ec3752c232e"
+    },
+    {
+      "bytes": 2762,
+      "path": "creation/verification/attempt-0/creation_unit/artifact/manifest.json",
+      "sha256": "2f100c1a3c694562a20dba107bda53f226e243dc0096243593d0991161a030aa"
+    },
+    {
+      "bytes": 1475,
+      "path": "creation/verification/attempt-0/creation_unit/artifact/metamorfose.graph.json",
+      "sha256": "6412b9b961bd7d8695b1266fc9be8de10bb83673ec2eee2e97925b7ccb5a5545"
+    },
+    {
+      "bytes": 263,
+      "path": "creation/verification/attempt-0/creation_unit/artifact/source.t",
+      "sha256": "d0050d95dd502580a3caeee7041c1d05604676ba3fa8558289dcb1b7cd532244"
+    },
+    {
+      "bytes": 263,
+      "path": "creation/verification/attempt-0/creation_unit/source.t",
+      "sha256": "d0050d95dd502580a3caeee7041c1d05604676ba3fa8558289dcb1b7cd532244"
+    },
+    {
+      "bytes": 13539,
+      "path": "creation/verification/attempt-0/scientific_unit/artifact/casulo_artifact.py",
+      "sha256": "bca72244785564942ed3a4454c34ecda7245e06e18dc982287a2ab19a621b46a"
+    },
+    {
+      "bytes": 1088,
+      "path": "creation/verification/attempt-0/scientific_unit/artifact/casulo_native.abi.json",
+      "sha256": "a138a62b1201c56a8ad8b6ac92e0c485cc20500bf183775bf791af1da51149f6"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-0/scientific_unit/artifact/casulo_native.c",
+      "sha256": "8cc2b976528eee63d1da15edc54e8fff6a0c65642a3560ef569809cd8456fe80"
+    },
+    {
+      "bytes": 1487,
+      "path": "creation/verification/attempt-0/scientific_unit/artifact/crisalida.ir.json",
+      "sha256": "847fb8d9a3788328e1662138bb20ad29ea049d86b724da8efa88670b64995366"
+    },
+    {
+      "bytes": 2774,
+      "path": "creation/verification/attempt-0/scientific_unit/artifact/manifest.json",
+      "sha256": "ab672ef6e315ed4ffbc74fa7623a5d213091ec7df4901f37c2829a0d7eafd883"
+    },
+    {
+      "bytes": 1494,
+      "path": "creation/verification/attempt-0/scientific_unit/artifact/metamorfose.graph.json",
+      "sha256": "435c5abb86aeaba697b5cd4cd2435dc6abadd025cf9347158f1c70696fa381b4"
+    },
+    {
+      "bytes": 297,
+      "path": "creation/verification/attempt-0/scientific_unit/artifact/source.t",
+      "sha256": "9cc99c9d4d08c97482e7e784f9bc9a13409c66d92436f4544b341092ccd11572"
+    },
+    {
+      "bytes": 297,
+      "path": "creation/verification/attempt-0/scientific_unit/source.t",
+      "sha256": "9cc99c9d4d08c97482e7e784f9bc9a13409c66d92436f4544b341092ccd11572"
+    },
+    {
+      "bytes": 13429,
+      "path": "creation/verification/attempt-1/autonomy_unit/artifact/casulo_artifact.py",
+      "sha256": "f39867d5a5d047b068c954b3a83ccbafd468c3b4e77ad153c950f521429b4946"
+    },
+    {
+      "bytes": 1076,
+      "path": "creation/verification/attempt-1/autonomy_unit/artifact/casulo_native.abi.json",
+      "sha256": "78fdde07d0b781838d4dc3cf399c8034d03bf84b85683352b802dbc8be6a68fb"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-1/autonomy_unit/artifact/casulo_native.c",
+      "sha256": "da8752d68501cfa5de4c4a0dbddc3f819dcd4edee1d73a2857956da559339999"
+    },
+    {
+      "bytes": 1434,
+      "path": "creation/verification/attempt-1/autonomy_unit/artifact/crisalida.ir.json",
+      "sha256": "794721bd177f3d54400b73aae180f62427f3cd47d40a3e647773e8677ffa59dc"
+    },
+    {
+      "bytes": 2748,
+      "path": "creation/verification/attempt-1/autonomy_unit/artifact/manifest.json",
+      "sha256": "063a8d922e02f8f1a9a9d8bc011caafa9efcc44d27c91e5452ab96ec9dbf74ee"
+    },
+    {
+      "bytes": 1448,
+      "path": "creation/verification/attempt-1/autonomy_unit/artifact/metamorfose.graph.json",
+      "sha256": "d2895035831529ab46a5a64d2a29540186b3e30e90b238ad9d452b6c35047890"
+    },
+    {
+      "bytes": 244,
+      "path": "creation/verification/attempt-1/autonomy_unit/artifact/source.t",
+      "sha256": "e03eb78361ac602b9995fb83a3d3e3dc620d194db40ff04489c437db96c73f97"
+    },
+    {
+      "bytes": 244,
+      "path": "creation/verification/attempt-1/autonomy_unit/source.t",
+      "sha256": "e03eb78361ac602b9995fb83a3d3e3dc620d194db40ff04489c437db96c73f97"
+    },
+    {
+      "bytes": 13327,
+      "path": "creation/verification/attempt-1/creation_unit/artifact/casulo_artifact.py",
+      "sha256": "b92f7ad84e97168aa998740c241ef3286756b8b7a23f4855e15e2536128744e5"
+    },
+    {
+      "bytes": 1083,
+      "path": "creation/verification/attempt-1/creation_unit/artifact/casulo_native.abi.json",
+      "sha256": "29ae743a641602e0818a0f1ef1ccee3e746cbcca58b4a49be7cb5c1d97c76246"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-1/creation_unit/artifact/casulo_native.c",
+      "sha256": "2810b2248e7beeed7c883340c104ccaf52c6ee1fbbec9b9fff4254fdeb39d035"
+    },
+    {
+      "bytes": 1374,
+      "path": "creation/verification/attempt-1/creation_unit/artifact/crisalida.ir.json",
+      "sha256": "fa142fb98002c871c8562d8c0d8fb0c683be4d568a7ff2b510b5d1f486dc3136"
+    },
+    {
+      "bytes": 2762,
+      "path": "creation/verification/attempt-1/creation_unit/artifact/manifest.json",
+      "sha256": "d4271e44677acf3e1436bc91b57f9c93ad6e96705ddf372a313242c67918981b"
+    },
+    {
+      "bytes": 1396,
+      "path": "creation/verification/attempt-1/creation_unit/artifact/metamorfose.graph.json",
+      "sha256": "802135e33b96e20bb298944c75755e8b62d422d461113fd7cdb69fc252e40750"
+    },
+    {
+      "bytes": 184,
+      "path": "creation/verification/attempt-1/creation_unit/artifact/source.t",
+      "sha256": "a89f0781cb1cec12f9d22701ca09c8ae2d8e0839c83e2ea1bef896eae6f186bf"
+    },
+    {
+      "bytes": 184,
+      "path": "creation/verification/attempt-1/creation_unit/source.t",
+      "sha256": "a89f0781cb1cec12f9d22701ca09c8ae2d8e0839c83e2ea1bef896eae6f186bf"
+    },
+    {
+      "bytes": 13539,
+      "path": "creation/verification/attempt-1/scientific_unit/artifact/casulo_artifact.py",
+      "sha256": "bca72244785564942ed3a4454c34ecda7245e06e18dc982287a2ab19a621b46a"
+    },
+    {
+      "bytes": 1088,
+      "path": "creation/verification/attempt-1/scientific_unit/artifact/casulo_native.abi.json",
+      "sha256": "a138a62b1201c56a8ad8b6ac92e0c485cc20500bf183775bf791af1da51149f6"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-1/scientific_unit/artifact/casulo_native.c",
+      "sha256": "8cc2b976528eee63d1da15edc54e8fff6a0c65642a3560ef569809cd8456fe80"
+    },
+    {
+      "bytes": 1487,
+      "path": "creation/verification/attempt-1/scientific_unit/artifact/crisalida.ir.json",
+      "sha256": "847fb8d9a3788328e1662138bb20ad29ea049d86b724da8efa88670b64995366"
+    },
+    {
+      "bytes": 2774,
+      "path": "creation/verification/attempt-1/scientific_unit/artifact/manifest.json",
+      "sha256": "ab672ef6e315ed4ffbc74fa7623a5d213091ec7df4901f37c2829a0d7eafd883"
+    },
+    {
+      "bytes": 1494,
+      "path": "creation/verification/attempt-1/scientific_unit/artifact/metamorfose.graph.json",
+      "sha256": "435c5abb86aeaba697b5cd4cd2435dc6abadd025cf9347158f1c70696fa381b4"
+    },
+    {
+      "bytes": 297,
+      "path": "creation/verification/attempt-1/scientific_unit/artifact/source.t",
+      "sha256": "9cc99c9d4d08c97482e7e784f9bc9a13409c66d92436f4544b341092ccd11572"
+    },
+    {
+      "bytes": 297,
+      "path": "creation/verification/attempt-1/scientific_unit/source.t",
+      "sha256": "9cc99c9d4d08c97482e7e784f9bc9a13409c66d92436f4544b341092ccd11572"
+    },
+    {
+      "bytes": 13429,
+      "path": "creation/verification/attempt-2/autonomy_unit/artifact/casulo_artifact.py",
+      "sha256": "f39867d5a5d047b068c954b3a83ccbafd468c3b4e77ad153c950f521429b4946"
+    },
+    {
+      "bytes": 1076,
+      "path": "creation/verification/attempt-2/autonomy_unit/artifact/casulo_native.abi.json",
+      "sha256": "78fdde07d0b781838d4dc3cf399c8034d03bf84b85683352b802dbc8be6a68fb"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-2/autonomy_unit/artifact/casulo_native.c",
+      "sha256": "da8752d68501cfa5de4c4a0dbddc3f819dcd4edee1d73a2857956da559339999"
+    },
+    {
+      "bytes": 1434,
+      "path": "creation/verification/attempt-2/autonomy_unit/artifact/crisalida.ir.json",
+      "sha256": "794721bd177f3d54400b73aae180f62427f3cd47d40a3e647773e8677ffa59dc"
+    },
+    {
+      "bytes": 2748,
+      "path": "creation/verification/attempt-2/autonomy_unit/artifact/manifest.json",
+      "sha256": "063a8d922e02f8f1a9a9d8bc011caafa9efcc44d27c91e5452ab96ec9dbf74ee"
+    },
+    {
+      "bytes": 1448,
+      "path": "creation/verification/attempt-2/autonomy_unit/artifact/metamorfose.graph.json",
+      "sha256": "d2895035831529ab46a5a64d2a29540186b3e30e90b238ad9d452b6c35047890"
+    },
+    {
+      "bytes": 244,
+      "path": "creation/verification/attempt-2/autonomy_unit/artifact/source.t",
+      "sha256": "e03eb78361ac602b9995fb83a3d3e3dc620d194db40ff04489c437db96c73f97"
+    },
+    {
+      "bytes": 244,
+      "path": "creation/verification/attempt-2/autonomy_unit/source.t",
+      "sha256": "e03eb78361ac602b9995fb83a3d3e3dc620d194db40ff04489c437db96c73f97"
+    },
+    {
+      "bytes": 13363,
+      "path": "creation/verification/attempt-2/creation_unit/artifact/casulo_artifact.py",
+      "sha256": "042e9254ffd8dd8404e27a506a00fd1deeca62afcfbb399cf2c0a635315cf0cc"
+    },
+    {
+      "bytes": 1083,
+      "path": "creation/verification/attempt-2/creation_unit/artifact/casulo_native.abi.json",
+      "sha256": "29ae743a641602e0818a0f1ef1ccee3e746cbcca58b4a49be7cb5c1d97c76246"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-2/creation_unit/artifact/casulo_native.c",
+      "sha256": "723dbd4f0a2b3ac1013b4c5dba8540cc3444821e31aa9b4b94f2c9719ded558e"
+    },
+    {
+      "bytes": 1392,
+      "path": "creation/verification/attempt-2/creation_unit/artifact/crisalida.ir.json",
+      "sha256": "194f7aa4f68cb6aba9612cb2bcb42e01f1d94fdd613592bd69f2ab0520e371e5"
+    },
+    {
+      "bytes": 2762,
+      "path": "creation/verification/attempt-2/creation_unit/artifact/manifest.json",
+      "sha256": "59dcac7d0b9cb3fe9d91a0cb02b74983224be63cc8396d4fed9a084168e63eb5"
+    },
+    {
+      "bytes": 1414,
+      "path": "creation/verification/attempt-2/creation_unit/artifact/metamorfose.graph.json",
+      "sha256": "9a1e51951ee7c0a752e70cc6212dbc556aae6703489b3a239c77fe88cb399dee"
+    },
+    {
+      "bytes": 202,
+      "path": "creation/verification/attempt-2/creation_unit/artifact/source.t",
+      "sha256": "899d0a3e7066f5dbbdc8805106932600f2c5ede95b88bbd8a4ecb505b62b9035"
+    },
+    {
+      "bytes": 202,
+      "path": "creation/verification/attempt-2/creation_unit/source.t",
+      "sha256": "899d0a3e7066f5dbbdc8805106932600f2c5ede95b88bbd8a4ecb505b62b9035"
+    },
+    {
+      "bytes": 13539,
+      "path": "creation/verification/attempt-2/scientific_unit/artifact/casulo_artifact.py",
+      "sha256": "bca72244785564942ed3a4454c34ecda7245e06e18dc982287a2ab19a621b46a"
+    },
+    {
+      "bytes": 1088,
+      "path": "creation/verification/attempt-2/scientific_unit/artifact/casulo_native.abi.json",
+      "sha256": "a138a62b1201c56a8ad8b6ac92e0c485cc20500bf183775bf791af1da51149f6"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-2/scientific_unit/artifact/casulo_native.c",
+      "sha256": "8cc2b976528eee63d1da15edc54e8fff6a0c65642a3560ef569809cd8456fe80"
+    },
+    {
+      "bytes": 1487,
+      "path": "creation/verification/attempt-2/scientific_unit/artifact/crisalida.ir.json",
+      "sha256": "847fb8d9a3788328e1662138bb20ad29ea049d86b724da8efa88670b64995366"
+    },
+    {
+      "bytes": 2774,
+      "path": "creation/verification/attempt-2/scientific_unit/artifact/manifest.json",
+      "sha256": "ab672ef6e315ed4ffbc74fa7623a5d213091ec7df4901f37c2829a0d7eafd883"
+    },
+    {
+      "bytes": 1494,
+      "path": "creation/verification/attempt-2/scientific_unit/artifact/metamorfose.graph.json",
+      "sha256": "435c5abb86aeaba697b5cd4cd2435dc6abadd025cf9347158f1c70696fa381b4"
+    },
+    {
+      "bytes": 297,
+      "path": "creation/verification/attempt-2/scientific_unit/artifact/source.t",
+      "sha256": "9cc99c9d4d08c97482e7e784f9bc9a13409c66d92436f4544b341092ccd11572"
+    },
+    {
+      "bytes": 297,
+      "path": "creation/verification/attempt-2/scientific_unit/source.t",
+      "sha256": "9cc99c9d4d08c97482e7e784f9bc9a13409c66d92436f4544b341092ccd11572"
+    },
+    {
+      "bytes": 13429,
+      "path": "creation/verification/attempt-3/autonomy_unit/artifact/casulo_artifact.py",
+      "sha256": "f39867d5a5d047b068c954b3a83ccbafd468c3b4e77ad153c950f521429b4946"
+    },
+    {
+      "bytes": 1076,
+      "path": "creation/verification/attempt-3/autonomy_unit/artifact/casulo_native.abi.json",
+      "sha256": "78fdde07d0b781838d4dc3cf399c8034d03bf84b85683352b802dbc8be6a68fb"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-3/autonomy_unit/artifact/casulo_native.c",
+      "sha256": "da8752d68501cfa5de4c4a0dbddc3f819dcd4edee1d73a2857956da559339999"
+    },
+    {
+      "bytes": 1434,
+      "path": "creation/verification/attempt-3/autonomy_unit/artifact/crisalida.ir.json",
+      "sha256": "794721bd177f3d54400b73aae180f62427f3cd47d40a3e647773e8677ffa59dc"
+    },
+    {
+      "bytes": 2748,
+      "path": "creation/verification/attempt-3/autonomy_unit/artifact/manifest.json",
+      "sha256": "063a8d922e02f8f1a9a9d8bc011caafa9efcc44d27c91e5452ab96ec9dbf74ee"
+    },
+    {
+      "bytes": 1448,
+      "path": "creation/verification/attempt-3/autonomy_unit/artifact/metamorfose.graph.json",
+      "sha256": "d2895035831529ab46a5a64d2a29540186b3e30e90b238ad9d452b6c35047890"
+    },
+    {
+      "bytes": 244,
+      "path": "creation/verification/attempt-3/autonomy_unit/artifact/source.t",
+      "sha256": "e03eb78361ac602b9995fb83a3d3e3dc620d194db40ff04489c437db96c73f97"
+    },
+    {
+      "bytes": 244,
+      "path": "creation/verification/attempt-3/autonomy_unit/source.t",
+      "sha256": "e03eb78361ac602b9995fb83a3d3e3dc620d194db40ff04489c437db96c73f97"
+    },
+    {
+      "bytes": 13495,
+      "path": "creation/verification/attempt-3/creation_unit/artifact/casulo_artifact.py",
+      "sha256": "10c13b64d57b59c8d9e8dcb2c1e41065d26a75107730c08a9142380713007b7c"
+    },
+    {
+      "bytes": 1083,
+      "path": "creation/verification/attempt-3/creation_unit/artifact/casulo_native.abi.json",
+      "sha256": "29ae743a641602e0818a0f1ef1ccee3e746cbcca58b4a49be7cb5c1d97c76246"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-3/creation_unit/artifact/casulo_native.c",
+      "sha256": "2f7a6c8d8e6c9e4fd7af816063a1e046131d1f609e460229fecb53a0ef29d4b0"
+    },
+    {
+      "bytes": 1458,
+      "path": "creation/verification/attempt-3/creation_unit/artifact/crisalida.ir.json",
+      "sha256": "6f48167bede48f4b41be7cf38a7609b93e1a99014c9501c41f5336d2772890aa"
+    },
+    {
+      "bytes": 2762,
+      "path": "creation/verification/attempt-3/creation_unit/artifact/manifest.json",
+      "sha256": "942635b4281e67639209f435d23bfaf14543753c1386a6c4434b4d0487c571fe"
+    },
+    {
+      "bytes": 1480,
+      "path": "creation/verification/attempt-3/creation_unit/artifact/metamorfose.graph.json",
+      "sha256": "0e49d46e702355468bafbdc4271b24d3d0b1176b615eb3c2c062df68a1c64e98"
+    },
+    {
+      "bytes": 268,
+      "path": "creation/verification/attempt-3/creation_unit/artifact/source.t",
+      "sha256": "521994881823352d1264c005df55330b0bc4f2b607af2b9914143361ad72e917"
+    },
+    {
+      "bytes": 268,
+      "path": "creation/verification/attempt-3/creation_unit/source.t",
+      "sha256": "521994881823352d1264c005df55330b0bc4f2b607af2b9914143361ad72e917"
+    },
+    {
+      "bytes": 13539,
+      "path": "creation/verification/attempt-3/scientific_unit/artifact/casulo_artifact.py",
+      "sha256": "bca72244785564942ed3a4454c34ecda7245e06e18dc982287a2ab19a621b46a"
+    },
+    {
+      "bytes": 1088,
+      "path": "creation/verification/attempt-3/scientific_unit/artifact/casulo_native.abi.json",
+      "sha256": "a138a62b1201c56a8ad8b6ac92e0c485cc20500bf183775bf791af1da51149f6"
+    },
+    {
+      "bytes": 1321,
+      "path": "creation/verification/attempt-3/scientific_unit/artifact/casulo_native.c",
+      "sha256": "8cc2b976528eee63d1da15edc54e8fff6a0c65642a3560ef569809cd8456fe80"
+    },
+    {
+      "bytes": 1487,
+      "path": "creation/verification/attempt-3/scientific_unit/artifact/crisalida.ir.json",
+      "sha256": "847fb8d9a3788328e1662138bb20ad29ea049d86b724da8efa88670b64995366"
+    },
+    {
+      "bytes": 2774,
+      "path": "creation/verification/attempt-3/scientific_unit/artifact/manifest.json",
+      "sha256": "ab672ef6e315ed4ffbc74fa7623a5d213091ec7df4901f37c2829a0d7eafd883"
+    },
+    {
+      "bytes": 1494,
+      "path": "creation/verification/attempt-3/scientific_unit/artifact/metamorfose.graph.json",
+      "sha256": "435c5abb86aeaba697b5cd4cd2435dc6abadd025cf9347158f1c70696fa381b4"
+    },
+    {
+      "bytes": 297,
+      "path": "creation/verification/attempt-3/scientific_unit/artifact/source.t",
+      "sha256": "9cc99c9d4d08c97482e7e784f9bc9a13409c66d92436f4544b341092ccd11572"
+    },
+    {
+      "bytes": 297,
+      "path": "creation/verification/attempt-3/scientific_unit/source.t",
+      "sha256": "9cc99c9d4d08c97482e7e784f9bc9a13409c66d92436f4544b341092ccd11572"
+    },
+    {
+      "bytes": 1877,
+      "path": "doctor-before-reseal.json",
+      "sha256": "7502735312db7b2d30b8f78ab1e2f770626a4267564e11023f8bde94b265629a"
+    },
+    {
+      "bytes": 1877,
+      "path": "doctor-final.json",
+      "sha256": "9a84333d4e5499cf1960515fc6b319d4d5bda4afa0d2166729e9036bcf5dfa5a"
+    },
+    {
+      "bytes": 31015,
+      "path": "einstein-solver-evidence.json",
+      "sha256": "003f5644e8f12a57478f795b799405fede46b23c6b18c4ca6e99000a60d678d5"
+    },
+    {
+      "bytes": 357,
+      "path": "materialized-einstein-solver/base-creation-evidence.json",
+      "sha256": "8979d6ecf0b5d268bec26673939b949e0233b1eb1de3c8cce092e88ad0788650"
+    },
+    {
+      "bytes": 12826,
+      "path": "materialized-einstein-solver/einstein_solver.py",
+      "sha256": "f179747673d5416e85e4dfd7f6f5a0e3c9a7fd16be85dbd05b1f003ae8004e64"
+    },
+    {
+      "bytes": 1021,
+      "path": "materialized-einstein-solver/example-input.json",
+      "sha256": "deaaaa121a2b74f107e12c72b73e791ba73871befc59316dc82ce135ebf73390"
+    },
+    {
+      "bytes": 2816,
+      "path": "materialized-einstein-solver/example-output.json",
+      "sha256": "1cb07e39b4345d6ac74fdf063e1230cf7231d8af860e702e1d45f6ff96e3e05d"
+    },
+    {
+      "bytes": 131,
+      "path": "materialized-einstein-solver/external-execution.json",
+      "sha256": "e58d4b005e7d545638b48d1849f8c7cec589f959d011095ff09d3ce39461c52a"
+    },
+    {
+      "bytes": 650,
+      "path": "materialized-einstein-solver/forge-receipt.json",
+      "sha256": "c5dc152941d77da1d56064a72d03d6f8a6cb132e870aa1421f761bb5ea9f5998"
+    },
+    {
+      "bytes": 16773,
+      "path": "materialized-einstein-solver/semantic-session.json",
+      "sha256": "2cf90d7d7eefd59762e587681156070a86ea1995b431cbfe62bec9d834029142"
+    },
+    {
+      "bytes": 227,
+      "path": "materialized-einstein-solver/solver-contract.t",
+      "sha256": "e6c726e817db5a761a1d6934c17a2491cb92a3300b1d90f626a241d4387e08ff"
+    },
+    {
+      "bytes": 3423,
+      "path": "materialized-einstein-solver/solver-contract.tcap",
+      "sha256": "fadf8a19c7d0923fb8c35b57994695a0982ebebf1bd528efb50ec0ea5545475d"
+    },
+    {
+      "bytes": 5848,
+      "path": "materialized-einstein-solver/solver-plan-repair.json",
+      "sha256": "6949cb2fa67cca52160a4dbdf3931b4831c757b09cd9fdafa843aef9307fabca"
+    },
+    {
+      "bytes": 812,
+      "path": "materialized-einstein-solver/solver-spec.json",
+      "sha256": "e2476f43d7df75ac2f16b72335c371003d045e282fdc768bed1f37bde1cdf4ef"
+    },
+    {
+      "bytes": 1258,
+      "path": "owner-build-fixed.json",
+      "sha256": "ed949e914ed3018c21dc177fe6673f997b27ab2d4de1d1f3deb76af1f8c971c7"
+    },
+    {
+      "bytes": 37504,
+      "path": "product-regression-final.xml",
+      "sha256": "e21f71642ef5f67358141077f3d460c380340f80bc5d6a43e0468a4bb271d94b"
+    },
+    {
+      "bytes": 37504,
+      "path": "product-regression-sealed.xml",
+      "sha256": "dbf586f7a24b3ca2d96cde346c40b347afbc6669ec4f5089f8dc9d5be3e15f95"
+    },
+    {
+      "bytes": 37798,
+      "path": "product-regression.xml",
+      "sha256": "23b547efc910d58c1cc9d107de3d58fb736fa802668f275fa9fa699eac974fb7"
+    },
+    {
+      "bytes": 341,
+      "path": "public-boundary-audit.json",
+      "sha256": "6c342e03892d9fe70772c10d01626676ed1cbf8b983a01a09c6c7971f7f2603b"
+    },
+    {
+      "bytes": 2180,
+      "path": "semantic-visual/index.html",
+      "sha256": "8aa6785848d72d1460574296a43ec9ca665874e468e132dc626036d1e41d3034"
+    },
+    {
+      "bytes": 24144,
+      "path": "vm-restore-probe.json",
+      "sha256": "77f343bd0ec9c7f20591f6911126e232e16efe41cb8568811f8767b953e7064d"
+    },
+    {
+      "bytes": 540672,
+      "path": "vm-state/OVMF_VARS.fd",
+      "sha256": "17b6b151a04c804d4d3f4adc834a6ac30b24ac5be26d025cf64574727927147a"
+    },
+    {
+      "bytes": 6116,
+      "path": "vm-state/bridge-live.serial.bin",
+      "sha256": "9bcd62469cbd86a5fb3bbefbf23e8675c7891b4e34572ab8aff67efa8a2721b4"
+    },
+    {
+      "bytes": 328192,
+      "path": "vm-state/owner-overlay.qcow2",
+      "sha256": "33fce255969c6e909a70bd075dede1f23e399cda224ba547c79b505cdc6ddbb0"
+    },
+    {
+      "bytes": 891,
+      "path": "vm-state/vm-manifest.json",
+      "sha256": "b30a90727645d9f26740bc112c775cc2eb1799ce370273203e3472e66f1ad86b"
+    }
+  ],
+  "checks": {
+    "cloud_locked": true,
+    "neural_einstein_evidence": true,
+    "owner_artifact_audit": true,
+    "preserved_failure_inventory": true,
+    "public_boundary": true,
+    "scientific_benchmark_not_started": true,
+    "scientific_package": true,
+    "usb_prohibited": true,
+    "visualization": true,
+    "vm_restore": true
+  },
+  "created_utc": "2026-08-13T02:25:49.996700+00:00",
+  "reason": "implementation and regression pass; reseal and human reinspection remain",
+  "schema": "casulo.inspection3-checkpoint/1.0",
+  "state": "IN_PROGRESS_CHECKPOINTED"
+}

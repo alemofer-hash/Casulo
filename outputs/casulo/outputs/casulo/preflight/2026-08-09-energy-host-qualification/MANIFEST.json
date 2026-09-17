@@ -1,0 +1,67 @@
+{
+  "files": [
+    {
+      "bytes": 1818,
+      "path": "ac_battery.json",
+      "sha256": "4eff54d6fe3d545bec901dbde4196e139a8450f0e7239d75f610a9e7aaaefcc7"
+    },
+    {
+      "bytes": 7308,
+      "path": "active_csv.json",
+      "sha256": "dcdbfe89ceccaefc13a41abb01201ad44196325692ade92b27355132bee4e677"
+    },
+    {
+      "bytes": 0,
+      "path": "idle_20min.csv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 53384,
+      "path": "idle_analysis.json",
+      "sha256": "0fcae0d6180e02103ad92d0e22ad31f8868f26b5b93478d8bcd1d815af255474"
+    },
+    {
+      "bytes": 697,
+      "path": "observer_budget.json",
+      "sha256": "d79d38e834ea5116b8f7be83e7466ff67803c23bdb2a68cf7469a73a89e5c1e9"
+    },
+    {
+      "bytes": 206,
+      "path": "orphan_process_actions.json",
+      "sha256": "9f8cf80110c82d0e8036b76045856bab3d1898f0f04fbb8431dd431d02f08ee5"
+    },
+    {
+      "bytes": 478,
+      "path": "polling_validation.json",
+      "sha256": "6db022590dc3086f776835af6fa8541ad39944cd1dde0d724ade683ffe5591f0"
+    },
+    {
+      "bytes": 5549,
+      "path": "power_profile.json",
+      "sha256": "28cf64007cebf3729fcd90a6901d1525f159e647e0a0544646ce4084d59aec99"
+    },
+    {
+      "bytes": 26170,
+      "path": "process_inventory_before.json",
+      "sha256": "f4fef2f0e2e6aa8e892e106ea5c3f63473e149e6b737f568d5ca3cfba412f5c8"
+    },
+    {
+      "bytes": 875,
+      "path": "qualification_report.md",
+      "sha256": "93f96cb0110d1321a1e21c9ac2470722f8bdc581441a4c82dc7a9b42b89b0b3c"
+    },
+    {
+      "bytes": 49114,
+      "path": "throttle_events.json",
+      "sha256": "4f617defcc4459513e772ad724a3daf52e2dd7f76a439e61f22d8602854b044e"
+    },
+    {
+      "bytes": 838,
+      "path": "user_attestation.json",
+      "sha256": "a067fc95b047651603c58cca755f70f868fc1d505955c9b97a3bb28b70db3a24"
+    }
+  ],
+  "qualification_id": "2026-08-09-energy-host-qualification",
+  "schema": "casulo-energy-host-qualification-manifest/1.0",
+  "terminal_state": "BLOCKED_AC_OR_BATTERY"
+}

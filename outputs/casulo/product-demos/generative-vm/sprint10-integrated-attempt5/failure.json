@@ -1,0 +1,15 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "attempt": "sprint10-integrated-attempt5",
+  "gate": "GENERATIVE_VM_HANDOFF_SCENARIO_FAIL",
+  "failed_before_creation": true,
+  "failed_operation": "g10:corrected-dialogue",
+  "observed": {
+    "first_dialogue_trace_present": true,
+    "corrected_dialogue_visible_output": false,
+    "corrected_dialogue_trace_present": false
+  },
+  "classification": "LOCAL_RUNTIME_FAILURE_MASKED_BY_ADAPTER",
+  "preservation": "VM, overlay and stochastic trace retained; no prior evidence overwritten",
+  "scientific_benchmark_started": false
+}

@@ -1,0 +1,89 @@
+{
+  "authorized_claims": [],
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "commands": [
+    [
+      "C:\\Python313\\python.exe",
+      "tools/external_materialization_probe.py",
+      "--repo",
+      ".",
+      "--output",
+      "product-demos\\revolution-closure\\rc09-materialization-attempt2\\probe-attempt2",
+      "--clean-root",
+      "%LOCALAPPDATA%/Casulo/clean-room/rc9-20260814-a2",
+      "--signing-key",
+      "%LOCALAPPDATA%/Casulo/dev-signing/owner-ed25519"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc09-materialization-attempt2\\pytest-temp",
+      "tests/product/test_materializer.py",
+      "tests/product/test_capabilities.py",
+      "tests/product/test_simulation.py",
+      "tests/test_t_backend.py",
+      "tests/test_t_tcap.py"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "tools/audit_public_artifact.py",
+      "editions/casulo-public",
+      "--output",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc09-materialization-attempt2\\public-source-audit.json"
+    ]
+  ],
+  "forbidden_claims": [
+    "commercial signature",
+    "universal target compatibility",
+    "native OS sandbox equivalence"
+  ],
+  "gate_id": "RC9_EXTERNAL_MATERIALIZATION_MATRIX_PASS",
+  "input_hashes": {
+    "previous_gate": "0fb746218edf8dc1d81012b1422d88aa384ae1b1d9c40aadd3c9e7297263caf3",
+    "probe": "4a1befd93b3f014161235f8703d52e09a5a72ea32ba9fd8c4e8348ebbfdad40a"
+  },
+  "machine_profile_sha256": "7ca1b196f47eb6e20769ae165c1b1a322d9f9abdd2ebc3dc4a7201acff8dd718",
+  "model_adapter_hashes": {},
+  "open_findings": [
+    {
+      "severity": "P2",
+      "summary": "Python hosted clean-room is not claimed equivalent to a native OS sandbox"
+    }
+  ],
+  "output_hashes": {
+    "product-demos/revolution-closure/rc09-materialization-attempt2/public-audit.txt": "6c342e03892d9fe70772c10d01626676ed1cbf8b983a01a09c6c7971f7f2603b",
+    "product-demos/revolution-closure/rc09-materialization-attempt2/public-source-audit.json": "6c342e03892d9fe70772c10d01626676ed1cbf8b983a01a09c6c7971f7f2603b",
+    "product-demos/revolution-closure/rc09-materialization-attempt2/tests.txt": "ee6a7cc2c0de4e4135b2de41870f447f866393521ee4925c2039433440f0404e",
+    "product-demos/revolution-closure/rc09-materialization/probe-attempt2/external-materialization.json": "4a1befd93b3f014161235f8703d52e09a5a72ea32ba9fd8c4e8348ebbfdad40a"
+  },
+  "previous_gate_hash": "0fb746218edf8dc1d81012b1422d88aa384ae1b1d9c40aadd3c9e7297263caf3",
+  "sampling_policy": "NOT_EXECUTED_RC9",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "status": "FAIL",
+  "test_summary": {
+    "checks": {
+      "development_signatures": true,
+      "external_probe": true,
+      "five_target_matrix": true,
+      "previous_version_recoverable": true,
+      "public_without_private_components": true,
+      "real_effects_zero": true,
+      "regression": false,
+      "round_trip_critical_invariants_one": true,
+      "validated_bytes_equal_published": true
+    },
+    "public_files_scanned": 12,
+    "pytest": "ERROR: file or directory not found: tests/product/test_capabilities.py\n\n\nno tests ran in 0.29s"
+  },
+  "timestamp": "2026-08-14T21:19:28.897190+00:00",
+  "tool_versions": {
+    "python": "3.13.2",
+    "ssh-keygen": "OpenSSH host tool"
+  },
+  "worktree_manifest_sha256": "066698f9b6ac67be76aed86bc83c412c4fcd5377e6a2e699a3a106000a4314e9"
+}

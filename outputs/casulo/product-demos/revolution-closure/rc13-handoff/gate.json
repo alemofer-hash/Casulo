@@ -1,0 +1,43 @@
+{
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "branch": "product/semantic-multiverse",
+  "checks": {
+    "development_only": true,
+    "durable_documents": true,
+    "exact_click_path": true,
+    "hard_boundaries": true,
+    "human_authority_preserved": true,
+    "rc12_pass": true,
+    "ready_state_recorded": true,
+    "release_still_verifies": true,
+    "storage_reserve": true
+  },
+  "documents": {
+    "docs/product/RC_CLAIMS_REGISTER.md": "d1585ada0fe79dab5281eca9a673b5e7800cee57a0dfa226424a91ce51ca2e37",
+    "docs/product/RC_EVIDENCE_INDEX.md": "b7897e346e2a564fc2fd0d68883ad3db3115d9ccf49078e11009d84a0210175c",
+    "docs/product/RC_EXECUTION_STATE.md": "5b3feecf74600d34ff8e91f15a91a3f0740a816473f05563390f2599e5795666",
+    "docs/product/RC_FINAL_REPORT.md": "cfcb60f408ea767a9354f82495cb0de16b5f73b63f84d9f2d855afc26fdba601",
+    "docs/product/RC_HUMAN_PROOF_HANDOFF.md": "317fb41d5398aae73b8d045f5cc394dea6925ff797e1a40eca51ac13364fa50f",
+    "docs/product/RC_MODEL_TRAINING_FACTORY.md": "6e0ccf435e8470a56157a12a19ac91b15abcaa363847dad263f745ede74601be",
+    "docs/product/RC_RISK_REGISTER.md": "e8a4d41a6d1a933ebe17d1f3397ea954d1137e97c97f57431af0ef1f189cded2"
+  },
+  "forbidden_claims": [
+    "GUILHERME_HUMAN_PROOF_PASS",
+    "commercial release",
+    "physical voice approved",
+    "scientific benchmark result"
+  ],
+  "free_bytes": 83567505408,
+  "gate_id": "RC13_HANDOFF_COMPLETE",
+  "handoff_sha256": "317fb41d5398aae73b8d045f5cc394dea6925ff797e1a40eca51ac13364fa50f",
+  "human_proof": "PENDING_GUILHERME",
+  "next_action": "double-click release/human-proof/VERIFY_RELEASE.vbs, then START_CASULO_OWNER.vbs",
+  "previous_gate_hash": "c93e4109415c3282d81f24940b6f8283f1c0d5cecc9be1f7864cbd918c0f5d77",
+  "release_manifest_sha256": "7a8b4c4f2e7538c40347ead4a9caed68b7031419695bad28d93c0919d10d13f2",
+  "release_signature_sha256": "70bbae46842a862cef166fc97063c1a77b089fe532bba0957c96d8ff9fa21934",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "sha256sums_sha256": "77d52cbf63499bc1eaf65f589bb11cf7381c2caa13009bd9ab0fefa5fbf684e8",
+  "state": "READY_FOR_GUILHERME_CASULO_BETA_HUMAN_PROOF",
+  "status": "PASS",
+  "timestamp": "2026-08-14T21:54:34.974557+00:00"
+}

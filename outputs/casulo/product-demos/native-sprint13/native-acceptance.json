@@ -1,0 +1,50 @@
+{
+  "energy_measured": false,
+  "host_block_devices_attached": false,
+  "image": "release/casulo-native-x86_64.img",
+  "image_attached_read_only": true,
+  "image_sha256": "ec4141c497d99e6ef70b93fd3048053b5a4c1a4911dd86f7b2450bb0fdf51e2d",
+  "performance_measured": false,
+  "physical_device_written": false,
+  "profile": "NATIVE_FOUNDATION",
+  "qemu": {
+    "acceleration": "tcg",
+    "network": false,
+    "vcpus": 2
+  },
+  "schema": "casulo-native-product-alpha/1.0",
+  "scientific_benchmark": false,
+  "tcap": "release/FloodSurrogate.tcap",
+  "tcap_sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa",
+  "validation": {
+    "forbidden_markers": [],
+    "missing_markers": [],
+    "passed": true,
+    "serial_sha256": "c44f7f920a163b38c412cae621dee18c9f95ab83af5ef611643c123c73eac4e8",
+    "tcap_hash_marker": "TCAP_HASH_SHA256=32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa",
+    "validated_markers": [
+      "G1_BOOT_SMOKE=PASS",
+      "UEFI=true",
+      "PAGING=active",
+      "HEAP_ALLOC=PASS",
+      "GDT_IDT=loaded",
+      "WATCHDOG_CONTRACT=PASS",
+      "SMP_GATE=PASS",
+      "PROCESS_SEPARATE_CR3=PASS",
+      "USER_CODE_RX=PASS",
+      "USER_STACK_NX=PASS",
+      "SYSCALL_ABI=syscall-sysretq/0.1",
+      "SYSCALL_IPC_ROUNDTRIP=PASS",
+      "RING3_PAGE_FAULT_CONTAINMENT=PASS",
+      "TCAP_VALIDATION=PASS",
+      "TCAP_CODE_RX=PASS",
+      "TCAP_DATA_RW_NX=PASS",
+      "TCAP_STACK_RW_NX=PASS",
+      "TCAP_PERMISSION_NEGATIVE=PASS",
+      "TCAP_CORRUPTION=QUARANTINE_EXECUTION_COUNT_0:PASS",
+      "TCAP_CORRUPT_EXECUTED=0",
+      "G3_TCAP_GATE=PASS",
+      "SHUTDOWN_PATH=isa-debug-exit/0.1"
+    ]
+  }
+}

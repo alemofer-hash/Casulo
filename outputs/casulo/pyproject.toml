@@ -1,0 +1,86 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "casulo"
+version = "0.25.0a1"
+description = "Otimização conservativa do tráfego de informação."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE.md"]
+authors = [
+  {name = "Teloscorp"}
+]
+keywords = [
+  "information-traffic",
+  "data-conservation",
+  "data-transformation",
+  "provenance",
+  "auditability"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Information Analysis"
+]
+dependencies = []
+
+[project.optional-dependencies]
+science = [
+  "psutil>=7.2,<8",
+  "pyperf>=2.10,<3"
+]
+ml = [
+  "numpy>=2.3,<3",
+  "torch>=2.12,<3"
+]
+parity = [
+  "numpy>=2.3,<3",
+  "torch>=2.12,<3"
+]
+legacy-research = [
+  "numpy>=2.3,<3",
+  "psutil>=7.2,<8",
+  "pyperf>=2.10,<3",
+  "torch>=2.12,<3"
+]
+dev = [
+  "build>=1.5,<2",
+  "hypothesis>=6.163,<7",
+  "pytest>=9.1,<10",
+  "pytest-cov>=7.1,<8",
+  "twine>=7,<8"
+]
+
+[project.scripts]
+casulo = "casulo.cli:main"
+t = "casulo.t.cli:main"
+casulo-thermal = "casulo.t.thermal_watchdog:main"
+casulo-window = "casulo.t.window_calibration:main"
+casulo-energy = "casulo.livelab.energy_cli:main"
+casulo-ablation = "casulo.t.scheduler_ablation:main"
+casulo-livelab-preflight = "casulo.livelab.preflight:main"
+casulo-domain-demo = "casulo.product.demo:main"
+casulo-hosted-demo = "casulo.product.hosted_demo:main"
+casulo-guide-demo = "casulo.product.hosted_demo:main"
+casulo-forge-demo = "casulo.product.intent_forge_demo:main"
+casulo-field-demo = "casulo.product.creation_field_demo:main"
+casulo-simulation-demo = "casulo.product.simulation_demo:main"
+casulo-materialize-demo = "casulo.product.materializer_demo:main"
+casulo-voice = "casulo.product.voice_cli:main"
+casulo-install = "casulo.product.installer:main"
+casulo-compress = "casulo.compression.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"casulo.product" = ["assets/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

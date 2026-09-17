@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.interactive_talk_01.export": [
+      "simulation"
+    ],
+    "owner.agent.interactive_talk_01.interrupt": [],
+    "owner.agent.interactive_talk_01.memory": []
+  }
+}

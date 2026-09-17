@@ -1,0 +1,149 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "decide",
+    "module": "owner.math.boundary_policy"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "implementation_declared"
+                ],
+                "root": "input"
+              },
+              "error": "implementation_boundary_undeclared",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "fallback_available"
+                ],
+                "root": "input"
+              },
+              "error": "safe_fallback_absent",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "equivalence_pass"
+                ],
+                "root": "input"
+              },
+              "error": "semantic_equivalence_failed",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "candidate_measured"
+                ],
+                "root": "input"
+              },
+              "error": "candidate_not_measured",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "traffic_reduced"
+                ],
+                "root": "input"
+              },
+              "error": "logical_traffic_not_reduced",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "candidate_wins"
+                ],
+                "root": "input"
+              },
+              "error": "candidate_did_not_win_frozen_threshold",
+              "op": "require"
+            },
+            {
+              "name": "adopted_kernels",
+              "op": "set_state",
+              "value": {
+                "args": [
+                  {
+                    "op": "path",
+                    "path": [
+                      "adopted_kernels"
+                    ],
+                    "root": "state"
+                  },
+                  {
+                    "op": "const",
+                    "value": 1
+                  }
+                ],
+                "name": "add",
+                "op": "call"
+              }
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "op": "const",
+                "value": "ADOPT_SPECIALIZED"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "MathBoundaryInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.math.boundary_policy"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

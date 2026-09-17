@@ -1,0 +1,41 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "created": "2026-08-11T00:00:00Z",
+    "creators": [
+      "Organization: Teloscorp"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://teloscorp.invalid/spdx/casulo-cloud-standby/0.1.0a1",
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-Wheel",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0f830af5b16f96c149a8b5e0306394ae4f898aa181dcb2e4d6366309d05affb8"
+        }
+      ],
+      "fileName": "casulo_cloud_standby-0.1.0a1-py3-none-any.whl"
+    }
+  ],
+  "name": "casulo-cloud-standby-product-alpha",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-Edition",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0f830af5b16f96c149a8b5e0306394ae4f898aa181dcb2e4d6366309d05affb8"
+        }
+      ],
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "LicenseRef-Teloscorp-Proprietary",
+      "name": "casulo-cloud-standby",
+      "versionInfo": "0.1.0a1"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

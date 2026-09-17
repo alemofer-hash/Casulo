@@ -1,0 +1,10 @@
+9d99a15badb7387d3ff825c358948e27784c7ecd542fd651d51b35708a4e32e6  evidence/2026-07-30-tensor-lab-sprint019/preregistration.json
+5c456bdc91dfbc5331afca6c19e36489d531044fc56264f37adf2232b0ae35c1  benchmarks/results/2026-07-30-tensor-lab-sprint019/tensor-lab-report.json
+27201eee2ad4ce15e5a2140e878a65ffbf693ba3f41a4a4e8c8fa91f420134d5  benchmarks/results/2026-07-30-tensor-lab-sprint019/tensor-lab-report.html
+f841e59fc002355662e6c5cd6bdab4b7189baf3bff4dba8a71883e93dc366aca  evidence/2026-07-30-tensor-lab-sprint019/verdict.json
+19d0fd0053c237eba3b6a699406f4a0870f1f9d938405c3bec30ea30f535aa33  benchmarks/results/2026-07-30-tensor-lab-sprint019/SUMMARY.md
+00c678a5dbe2638bfa8c5d3593f1c3bab4be37691e1a785aff50a7f4d0505085  benchmarks/results/2026-07-30-tensor-lab-sprint019/native-cache/tensor-cpu/d68d124b62f508b686e2576d/build.json
+ab0c13bf01b977ce2a5155ccc5406265e1a3989f794b560062e81ea1583740db  benchmarks/results/2026-07-30-tensor-lab-sprint019/native-cache/tensor-cpu/d68d124b62f508b686e2576d/casulo_tensor_cpu.c
+b5b12721cccb0eae4b9b966338d81b54dc2555f03b46b5b1ebab6b4b6de5e455  benchmarks/results/2026-07-30-tensor-lab-sprint019/native-cache/tensor-cpu/d68d124b62f508b686e2576d/casulo_tensor_cpu.dll
+aef1e3f28304a16a242fe385b3b5a22208d183e5b8e9f00e449431f8fee37218  benchmarks/results/2026-07-30-tensor-lab-sprint019/native-cache/tensor-cpu/d68d124b62f508b686e2576d/vectorization.txt
+a17d5341eceff97bfbd584d51087a95266005d9626982cfd2554ef951e2aa01a  evidence/2026-07-30-tensor-lab-sprint019/README.md

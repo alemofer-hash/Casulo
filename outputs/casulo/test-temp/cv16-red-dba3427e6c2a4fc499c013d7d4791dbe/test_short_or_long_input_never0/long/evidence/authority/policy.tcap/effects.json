@@ -1,0 +1,8 @@
+{
+  "modules": {
+    "compression.casv_compact": {
+      "decide": [],
+      "judge": []
+    }
+  }
+}

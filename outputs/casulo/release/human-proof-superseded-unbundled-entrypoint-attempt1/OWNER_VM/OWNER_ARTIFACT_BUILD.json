@@ -1,0 +1,30 @@
+{
+  "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release\\staging-human-proof-attempt2\\OWNER_VM\\casulo-owner-generative-semantic-multiverse.zip",
+  "artifact_bytes": 50423,
+  "artifact_sha256": "547cc4047b5d7523dae28960dbaa67971bdf952ece4a9e7b2a9f14a9104f6a9a",
+  "audit": {
+    "allowlist_exact": true,
+    "files": [
+      "OWNER_ARTIFACT.json",
+      "casulo_owner/__init__.py",
+      "casulo_owner/assets/generative-candidate.json",
+      "casulo_owner/dialogue_core.py",
+      "casulo_owner/einstein_solver_kernel.py",
+      "casulo_owner/generative_agent_probe.py",
+      "casulo_owner/generative_engine.py",
+      "casulo_owner/generative_forge.py",
+      "casulo_owner/generative_model.py",
+      "casulo_owner/inspection.py",
+      "casulo_owner/local_model_runtime.py",
+      "casulo_owner/scientific_solver.py",
+      "casulo_owner/semantic_multiverse.py",
+      "casulo_owner/verifier_repair.py"
+    ],
+    "forbidden_findings": [],
+    "generative_adapter_present": true,
+    "pass": true,
+    "reference_engine_absent": true,
+    "schema": "casulo-owner-generative-artifact-audit/1.0"
+  },
+  "schema": "casulo-owner-generative-build-result/1.0"
+}

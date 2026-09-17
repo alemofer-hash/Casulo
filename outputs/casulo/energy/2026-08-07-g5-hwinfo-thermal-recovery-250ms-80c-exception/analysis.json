@@ -1,0 +1,11 @@
+{
+  "campaign_id": "2026-08-07-g5-hwinfo-thermal-recovery-250ms-80c-exception",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "reason": "user-authorized start threshold changed from derived 57 C to explicit 60 C",
+  "schema": "casulo-hwinfo-thermal-recovery-analysis/1.0",
+  "scientific_judgment": "NO_ENERGY_RESULT",
+  "terminal_state": "SUPERSEDED_BEFORE_WORKLOAD",
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "valid_pairs": 0,
+  "workload_executions": 0
+}

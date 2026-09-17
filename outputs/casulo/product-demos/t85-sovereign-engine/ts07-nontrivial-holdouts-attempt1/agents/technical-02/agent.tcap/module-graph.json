@@ -1,0 +1,25 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.mass_balance_calculator_v2.unit_parser"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.agent.mass_balance_calculator_v2.unit_parser"
+    },
+    {
+      "imports": [
+        "owner.agent.mass_balance_calculator_v2.unit_parser"
+      ],
+      "name": "owner.agent.mass_balance_calculator_v2.mass_flow"
+    },
+    {
+      "imports": [
+        "owner.agent.mass_balance_calculator_v2.mass_flow"
+      ],
+      "name": "owner.agent.mass_balance_calculator_v2.conservation_check"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

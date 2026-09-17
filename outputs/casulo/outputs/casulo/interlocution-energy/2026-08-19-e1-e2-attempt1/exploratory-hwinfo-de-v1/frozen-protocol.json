@@ -1,0 +1,38 @@
+{
+  "K": 480,
+  "baseline": "E_STATIC_POLICY_SAME_NATIVE_KERNEL",
+  "candidate": "D_T_ARCHITECT_AUDITOR_JUDGE",
+  "frozen_before_measurement": true,
+  "minimum_samples_per_window": 60,
+  "pairs": 3,
+  "same_executable_required": true,
+  "schedule": [
+    {
+      "order": [
+        "E",
+        "D"
+      ],
+      "pair_id": "pair-01"
+    },
+    {
+      "order": [
+        "D",
+        "E"
+      ],
+      "pair_id": "pair-02"
+    },
+    {
+      "order": [
+        "E",
+        "D"
+      ],
+      "pair_id": "pair-03"
+    }
+  ],
+  "schema": "casulo.interlocution-energy-local-exploratory/1.0",
+  "scientific_class": "EXPLORATORY_HWINFO_NOT_CONFIRMATORY_ENERGY",
+  "source": "HWiNFO-reported CPU package power",
+  "source_literal": "Potência total da CPU [W]",
+  "temperature_abort_c": 75.0,
+  "throttling_allowed": false
+}

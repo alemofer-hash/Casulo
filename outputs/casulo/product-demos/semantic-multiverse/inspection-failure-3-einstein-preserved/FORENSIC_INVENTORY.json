@@ -1,0 +1,1041 @@
+{
+  "failure": "KeyError: name after run_probe",
+  "file_count": 172,
+  "files": [
+    {
+      "bytes": 4399,
+      "mtime_utc": "2026-08-13T01:42:23.879343+00:00",
+      "path": "owner-data/semantic-creation-1/checkpoint-generated-project.json",
+      "sha256": "9cd51e8974898d212ce990b542bb3d9ba76f7cb3480e14c6680178613d9d3eee"
+    },
+    {
+      "bytes": 3488,
+      "mtime_utc": "2026-08-13T01:39:06.080976+00:00",
+      "path": "owner-data/semantic-creation-1/checkpoint-intent.json",
+      "sha256": "757924b22824199845946aba55c26c5aead2f12273e1f387746e6b885e285ad5"
+    },
+    {
+      "bytes": 1163,
+      "mtime_utc": "2026-08-13T01:45:50.622340+00:00",
+      "path": "owner-data/semantic-creation-1/confirmed-creation.json",
+      "sha256": "a46c9c741811c486e3400202259a1491bb21501daf0b0c08c5cb6c4f88ab028e"
+    },
+    {
+      "bytes": 13443,
+      "mtime_utc": "2026-08-13T01:45:50.166174+00:00",
+      "path": "owner-data/semantic-creation-1/entry-build/artifact/casulo_artifact.py",
+      "sha256": "0489bcc35ac0dd6b73d427456aea434d91e9c55d75d939c1a8faced5470314c4"
+    },
+    {
+      "bytes": 1074,
+      "mtime_utc": "2026-08-13T01:45:50.166174+00:00",
+      "path": "owner-data/semantic-creation-1/entry-build/artifact/casulo_native.abi.json",
+      "sha256": "3fcb8c3fa18eb3466ece3e76fa1b0f0efa50e1e507f71f4f42a8da149383f796"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:45:50.166174+00:00",
+      "path": "owner-data/semantic-creation-1/entry-build/artifact/casulo_native.c",
+      "sha256": "4d8186b1cca99fbab2270fecb2b8d8f09f94ddf43aa8683dad139968d70db916"
+    },
+    {
+      "bytes": 1434,
+      "mtime_utc": "2026-08-13T01:45:50.158788+00:00",
+      "path": "owner-data/semantic-creation-1/entry-build/artifact/crisalida.ir.json",
+      "sha256": "ec1c691656c0f364644a9a9cb8cbd628627d937d6840e1ea1f10d3c4927ad1db"
+    },
+    {
+      "bytes": 2742,
+      "mtime_utc": "2026-08-13T01:45:50.166174+00:00",
+      "path": "owner-data/semantic-creation-1/entry-build/artifact/manifest.json",
+      "sha256": "7d4ed2c473f4952c522664a78d7de8be050ac97c47c88b39cf4f471192a25c1f"
+    },
+    {
+      "bytes": 1460,
+      "mtime_utc": "2026-08-13T01:45:50.166174+00:00",
+      "path": "owner-data/semantic-creation-1/entry-build/artifact/metamorfose.graph.json",
+      "sha256": "a49709587eab294ba2c7156d63e20518285f662ccbec8f9fe285f5d9fc7bd8a6"
+    },
+    {
+      "bytes": 244,
+      "mtime_utc": "2026-08-13T01:45:50.158788+00:00",
+      "path": "owner-data/semantic-creation-1/entry-build/artifact/source.t",
+      "sha256": "4c7d42ed00c6513ab136f7d61ed11b492e9aece6a12fa5b407d6e235cea88a71"
+    },
+    {
+      "bytes": 244,
+      "mtime_utc": "2026-08-13T01:45:50.154343+00:00",
+      "path": "owner-data/semantic-creation-1/entry-build/source.t",
+      "sha256": "4c7d42ed00c6513ab136f7d61ed11b492e9aece6a12fa5b407d6e235cea88a71"
+    },
+    {
+      "bytes": 272,
+      "mtime_utc": "2026-08-13T01:45:50.627258+00:00",
+      "path": "owner-data/semantic-creation-1/external-execution.json",
+      "sha256": "955308e08ff5265c17a7ae7bd3d2cc8a4a6ead717d5f2b488177838e2ec246ca"
+    },
+    {
+      "bytes": 29174,
+      "mtime_utc": "2026-08-13T01:45:50.627258+00:00",
+      "path": "owner-data/semantic-creation-1/g5-first-open-ended-agent.json",
+      "sha256": "45de0ea20273cde68e6de3d3ad4438a6e6b99accf8efca473a9b73b38c005c6e"
+    },
+    {
+      "bytes": 445,
+      "mtime_utc": "2026-08-13T01:37:47.724749+00:00",
+      "path": "owner-data/semantic-creation-1/holdout-scan.json",
+      "sha256": "5ef35d1e06726a67b9d2be7d962d47a8d1df425bf3cc0fc9bd41742bdb305f56"
+    },
+    {
+      "bytes": 2403,
+      "mtime_utc": "2026-08-13T01:45:50.620329+00:00",
+      "path": "owner-data/semantic-creation-1/intent-plan.json",
+      "sha256": "51a5174906c3558bd91a6df6c29159b19cd009e1a99f8e920f5c2876dfb6703d"
+    },
+    {
+      "bytes": 1838,
+      "mtime_utc": "2026-08-13T01:45:50.627258+00:00",
+      "path": "owner-data/semantic-creation-1/materialization-receipt.json",
+      "sha256": "01443502981147529efb51b3995e9916071f3a0162a79f4ad1722d6ec264711d"
+    },
+    {
+      "bytes": 13374,
+      "mtime_utc": "2026-08-13T01:45:50.482512+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7.casulo.zip",
+      "sha256": "93650a516d1340c84c15efe9aba5b18064b6f4d7115256f1b6f8bace31c7d9d1"
+    },
+    {
+      "bytes": 1362,
+      "mtime_utc": "2026-08-13T01:45:50.222037+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/MANIFEST.json",
+      "sha256": "406b3118901d9626dd6cfa9f6527f319a51b951f584fb4bbfb4584d1a779597d"
+    },
+    {
+      "bytes": 2063,
+      "mtime_utc": "2026-08-13T01:45:50.215919+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/SBOM.spdx.json",
+      "sha256": "bb66d9d088e813a414afe11e8f5885f0490594924232048b6af8e5b7b849c452"
+    },
+    {
+      "bytes": 909,
+      "mtime_utc": "2026-08-13T01:45:50.226251+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/SHA256SUMS",
+      "sha256": "d373f507ac9e25fc6c413597c72030264b47b79b1a67c6023e31cc5d10bb4df7"
+    },
+    {
+      "bytes": 2064,
+      "mtime_utc": "2026-08-13T01:45:50.215919+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/agent-artifact-manifest.json",
+      "sha256": "91369eda67cda4a7664d981b39a6bb69b8e9cfb752c42cc01f5a5020331bd338"
+    },
+    {
+      "bytes": 241,
+      "mtime_utc": "2026-08-13T01:45:50.215919+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/agent-descriptor.json",
+      "sha256": "9bdd70b1017d725ac0a1aadc300b064e37c2f053ebb8ca4476a8ebf8fa884a0f"
+    },
+    {
+      "bytes": 1840,
+      "mtime_utc": "2026-08-13T01:45:50.215919+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/agent-project.json",
+      "sha256": "8a1ce591d9c183f306a1da4b43b188aa0fc9c38f028de6f3e462afe9b8b3525f"
+    },
+    {
+      "bytes": 13443,
+      "mtime_utc": "2026-08-13T01:45:50.214276+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/agent.py",
+      "sha256": "0489bcc35ac0dd6b73d427456aea434d91e9c55d75d939c1a8faced5470314c4"
+    },
+    {
+      "bytes": 8399,
+      "mtime_utc": "2026-08-13T01:45:50.215919+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/agent.tcap",
+      "sha256": "85c1a5a9f75f2dc6ec2c835d6368961031640ee935f2f55445a314ab89127c62"
+    },
+    {
+      "bytes": 1790,
+      "mtime_utc": "2026-08-13T01:45:50.207355+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/api.py",
+      "sha256": "d8f9e63dbd17d510252ca9f895e756260ba9c1dba086d0069b5fa3d1d0efb7fe"
+    },
+    {
+      "bytes": 844,
+      "mtime_utc": "2026-08-13T01:45:50.207355+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/creation.json",
+      "sha256": "9201a0cb0b58d5cd3f78e250f4d6edb57b252ea4bf23d8bf72fa195217a4a6b1"
+    },
+    {
+      "bytes": 1740,
+      "mtime_utc": "2026-08-13T01:45:50.207355+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/forge-receipt.json",
+      "sha256": "4f996c702b531cb85ee2ce0dd90163c7dd02014eb92855722d7a5483fb9a6ac8"
+    },
+    {
+      "bytes": 634,
+      "mtime_utc": "2026-08-13T01:45:50.207355+00:00",
+      "path": "owner-data/semantic-creation-1/materialized/creation-38da5088c5e61759-v7/simulation-receipt.json",
+      "sha256": "89ab6ff866f273f95d871d2df38a8703b20815967bd649be3c3a01ebd23bc731"
+    },
+    {
+      "bytes": 23795,
+      "mtime_utc": "2026-08-13T01:45:50.624394+00:00",
+      "path": "owner-data/semantic-creation-1/repair-outcome.json",
+      "sha256": "0daffa295ce7a77f2c011e15a0a5c6af9219502559dc8308048cd232afccc961"
+    },
+    {
+      "bytes": 9677,
+      "mtime_utc": "2026-08-13T01:45:50.667794+00:00",
+      "path": "owner-data/semantic-creation-1/semantic-session.json",
+      "sha256": "5f7255488081cff90bda3159bbb25e8aa545cb42fd62401d07e18f49fa037f5d"
+    },
+    {
+      "bytes": 1421,
+      "mtime_utc": "2026-08-13T01:45:50.670428+00:00",
+      "path": "owner-data/semantic-creation-1/semantic-visual/index.html",
+      "sha256": "47e8c955e146615515a627da9676195b2c1a3c64a347fc9c9a25b1843c8654b9"
+    },
+    {
+      "bytes": 830,
+      "mtime_utc": "2026-08-13T01:45:50.624979+00:00",
+      "path": "owner-data/semantic-creation-1/simulation-receipt.json",
+      "sha256": "9983b30aa11ccb5ef1da02065ee4b858eddc9501c43a44dc3d7dceb6afc5c27e"
+    },
+    {
+      "bytes": 13493,
+      "mtime_utc": "2026-08-13T01:42:23.986412+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.autonomy.level3/artifact/casulo_artifact.py",
+      "sha256": "88593ee4fe740e6b682dc58ff8376981c230d152d8fa5cc3024cd5c33dd18eb2"
+    },
+    {
+      "bytes": 1077,
+      "mtime_utc": "2026-08-13T01:42:23.988973+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.abi.json",
+      "sha256": "f9736745c2295f1cab1193836896bdbaa3f7c771680f59d7a0ddc2d2d00b058a"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:42:23.986412+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.c",
+      "sha256": "48811988a27648ad25237289e5b142f798ca698b05af0c166601a61e21f95b1d"
+    },
+    {
+      "bytes": 1454,
+      "mtime_utc": "2026-08-13T01:42:23.980407+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.autonomy.level3/artifact/crisalida.ir.json",
+      "sha256": "34aa0d82693a966c44d556e18c91cf74e2437dfc978523859437667240f5bc54"
+    },
+    {
+      "bytes": 2750,
+      "mtime_utc": "2026-08-13T01:42:23.988973+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.autonomy.level3/artifact/manifest.json",
+      "sha256": "3250a8226cbad1dee76792cffc2c42696b5fd686375a734b36ba9c41ffec4466"
+    },
+    {
+      "bytes": 1487,
+      "mtime_utc": "2026-08-13T01:42:23.985311+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.autonomy.level3/artifact/metamorfose.graph.json",
+      "sha256": "6e90bbb116d425e5cadc5b11e2f68abd3f2160b3755e93f84a048a434675de53"
+    },
+    {
+      "bytes": 264,
+      "mtime_utc": "2026-08-13T01:42:23.980407+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.autonomy.level3/artifact/source.t",
+      "sha256": "3577500eb045e0d1747f1faab30f214e2491a5f13dff7b78fcf22483e893b956"
+    },
+    {
+      "bytes": 264,
+      "mtime_utc": "2026-08-13T01:42:23.955159+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.autonomy.level3/source.t",
+      "sha256": "3577500eb045e0d1747f1faab30f214e2491a5f13dff7b78fcf22483e893b956"
+    },
+    {
+      "bytes": 13451,
+      "mtime_utc": "2026-08-13T01:42:23.938135+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.memory.read/artifact/casulo_artifact.py",
+      "sha256": "de681ad13e2bc391e14a3150e3c121a5e892bfd00eebddcea4c571dc3992309a"
+    },
+    {
+      "bytes": 1074,
+      "mtime_utc": "2026-08-13T01:42:23.938135+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.memory.read/artifact/casulo_native.abi.json",
+      "sha256": "3fcb8c3fa18eb3466ece3e76fa1b0f0efa50e1e507f71f4f42a8da149383f796"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:42:23.938135+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.memory.read/artifact/casulo_native.c",
+      "sha256": "6447dadd3b53a458a6d4111213c8019550072174d1c5aab4e5bdd8062ac90524"
+    },
+    {
+      "bytes": 1438,
+      "mtime_utc": "2026-08-13T01:42:23.935219+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.memory.read/artifact/crisalida.ir.json",
+      "sha256": "dca9d5cf5cb1222ffa286549eac260d4d139a62b954895f414756ac56ff40821"
+    },
+    {
+      "bytes": 2742,
+      "mtime_utc": "2026-08-13T01:42:23.945391+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.memory.read/artifact/manifest.json",
+      "sha256": "bbed77a2b8d4906cc4ce4a9dc8d2575c95a2fdc8d02b2408ce8d5c975ffafea7"
+    },
+    {
+      "bytes": 1464,
+      "mtime_utc": "2026-08-13T01:42:23.938135+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.memory.read/artifact/metamorfose.graph.json",
+      "sha256": "a43dfbc9c27efccdc5188d62b1899c55c57785225ed9b9a174dab70ffb7e9deb"
+    },
+    {
+      "bytes": 248,
+      "mtime_utc": "2026-08-13T01:42:23.935219+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.memory.read/artifact/source.t",
+      "sha256": "52bc2b8ef89a6d23d3f311ea116b2f1e3a502d38f517d6b22195a1808acd3b4a"
+    },
+    {
+      "bytes": 248,
+      "mtime_utc": "2026-08-13T01:42:23.896450+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.memory.read/source.t",
+      "sha256": "52bc2b8ef89a6d23d3f311ea116b2f1e3a502d38f517d6b22195a1808acd3b4a"
+    },
+    {
+      "bytes": 13508,
+      "mtime_utc": "2026-08-13T01:42:24.034299+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.precision.level2/artifact/casulo_artifact.py",
+      "sha256": "ee30deb91b21c0efacb666a25d19b79578ebb9d37274566ed99c8d39a9a7878a"
+    },
+    {
+      "bytes": 1078,
+      "mtime_utc": "2026-08-13T01:42:24.035354+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.precision.level2/artifact/casulo_native.abi.json",
+      "sha256": "014f0c19d85a4f50fbf9e492687730aeca3e1c8b08c4f0412b4ecb7b9a0aed99"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:42:24.035354+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.precision.level2/artifact/casulo_native.c",
+      "sha256": "3270064b4c0ba69307b399d62d005ce4e5fd68e9407fdb406e96572fcbfc3ef2"
+    },
+    {
+      "bytes": 1459,
+      "mtime_utc": "2026-08-13T01:42:24.029390+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.precision.level2/artifact/crisalida.ir.json",
+      "sha256": "8d006976a9b94de19658917e6fc9f2969a82ab14a48daa570ea5c14b1e68b5c8"
+    },
+    {
+      "bytes": 2753,
+      "mtime_utc": "2026-08-13T01:42:24.037620+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.precision.level2/artifact/manifest.json",
+      "sha256": "8a430a9db4dfe5de9d1f624f4a3c7a0392b04fb982123765d8543add70b084c7"
+    },
+    {
+      "bytes": 1496,
+      "mtime_utc": "2026-08-13T01:42:24.032727+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.precision.level2/artifact/metamorfose.graph.json",
+      "sha256": "418e290af502df585715ad7b731109d365505b73e4b054fd4f5521b002b4aaf3"
+    },
+    {
+      "bytes": 269,
+      "mtime_utc": "2026-08-13T01:42:24.028105+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.precision.level2/artifact/source.t",
+      "sha256": "186a45d24f61bc280bdfddcdc84bc93806d9dd7d94e3f2ca23d805d462b43dd9"
+    },
+    {
+      "bytes": 269,
+      "mtime_utc": "2026-08-13T01:42:23.997705+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-0/creation.open-ended-holdout.precision.level2/source.t",
+      "sha256": "186a45d24f61bc280bdfddcdc84bc93806d9dd7d94e3f2ca23d805d462b43dd9"
+    },
+    {
+      "bytes": 13493,
+      "mtime_utc": "2026-08-13T01:43:16.606146+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.autonomy.level3/artifact/casulo_artifact.py",
+      "sha256": "88593ee4fe740e6b682dc58ff8376981c230d152d8fa5cc3024cd5c33dd18eb2"
+    },
+    {
+      "bytes": 1077,
+      "mtime_utc": "2026-08-13T01:43:16.614552+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.abi.json",
+      "sha256": "f9736745c2295f1cab1193836896bdbaa3f7c771680f59d7a0ddc2d2d00b058a"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:43:16.612983+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.c",
+      "sha256": "48811988a27648ad25237289e5b142f798ca698b05af0c166601a61e21f95b1d"
+    },
+    {
+      "bytes": 1454,
+      "mtime_utc": "2026-08-13T01:43:16.606146+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.autonomy.level3/artifact/crisalida.ir.json",
+      "sha256": "34aa0d82693a966c44d556e18c91cf74e2437dfc978523859437667240f5bc54"
+    },
+    {
+      "bytes": 2750,
+      "mtime_utc": "2026-08-13T01:43:16.615118+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.autonomy.level3/artifact/manifest.json",
+      "sha256": "3250a8226cbad1dee76792cffc2c42696b5fd686375a734b36ba9c41ffec4466"
+    },
+    {
+      "bytes": 1487,
+      "mtime_utc": "2026-08-13T01:43:16.606146+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.autonomy.level3/artifact/metamorfose.graph.json",
+      "sha256": "6e90bbb116d425e5cadc5b11e2f68abd3f2160b3755e93f84a048a434675de53"
+    },
+    {
+      "bytes": 264,
+      "mtime_utc": "2026-08-13T01:43:16.606146+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.autonomy.level3/artifact/source.t",
+      "sha256": "3577500eb045e0d1747f1faab30f214e2491a5f13dff7b78fcf22483e893b956"
+    },
+    {
+      "bytes": 264,
+      "mtime_utc": "2026-08-13T01:43:16.596412+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.autonomy.level3/source.t",
+      "sha256": "3577500eb045e0d1747f1faab30f214e2491a5f13dff7b78fcf22483e893b956"
+    },
+    {
+      "bytes": 13389,
+      "mtime_utc": "2026-08-13T01:43:16.578847+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.memory.read/artifact/casulo_artifact.py",
+      "sha256": "23425090ef71cafd405e111874818a0440a1b5cdf8b07103809ba8fc32d9ae90"
+    },
+    {
+      "bytes": 1074,
+      "mtime_utc": "2026-08-13T01:43:16.587323+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.memory.read/artifact/casulo_native.abi.json",
+      "sha256": "3fcb8c3fa18eb3466ece3e76fa1b0f0efa50e1e507f71f4f42a8da149383f796"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:43:16.585231+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.memory.read/artifact/casulo_native.c",
+      "sha256": "06d6e0e101863c5af4e2e0012ffff9d2a7621249a1cfed7745f2f41095a279c0"
+    },
+    {
+      "bytes": 1407,
+      "mtime_utc": "2026-08-13T01:43:16.578847+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.memory.read/artifact/crisalida.ir.json",
+      "sha256": "82094aa17f704627cf2424e6ad425143893497eb970af9d2ec04a111963f0102"
+    },
+    {
+      "bytes": 2742,
+      "mtime_utc": "2026-08-13T01:43:16.587323+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.memory.read/artifact/manifest.json",
+      "sha256": "ef816f811e9dbedb559dd34d44ff8a469cb3d6565367613dffb69382a34f55eb"
+    },
+    {
+      "bytes": 1433,
+      "mtime_utc": "2026-08-13T01:43:16.578847+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.memory.read/artifact/metamorfose.graph.json",
+      "sha256": "3beb7f2f1b61e2d60b752758fd8c7ddd45f36c0a81dfdf2c72a7006bb835d080"
+    },
+    {
+      "bytes": 217,
+      "mtime_utc": "2026-08-13T01:43:16.576273+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.memory.read/artifact/source.t",
+      "sha256": "8b074c1affc3b9eb5ee5adcadb36a2664fe19f8581ffd8c04ae7ac748a850865"
+    },
+    {
+      "bytes": 217,
+      "mtime_utc": "2026-08-13T01:43:16.546471+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.memory.read/source.t",
+      "sha256": "8b074c1affc3b9eb5ee5adcadb36a2664fe19f8581ffd8c04ae7ac748a850865"
+    },
+    {
+      "bytes": 13508,
+      "mtime_utc": "2026-08-13T01:43:16.641356+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.precision.level2/artifact/casulo_artifact.py",
+      "sha256": "ee30deb91b21c0efacb666a25d19b79578ebb9d37274566ed99c8d39a9a7878a"
+    },
+    {
+      "bytes": 1078,
+      "mtime_utc": "2026-08-13T01:43:16.646620+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.precision.level2/artifact/casulo_native.abi.json",
+      "sha256": "014f0c19d85a4f50fbf9e492687730aeca3e1c8b08c4f0412b4ecb7b9a0aed99"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:43:16.645051+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.precision.level2/artifact/casulo_native.c",
+      "sha256": "3270064b4c0ba69307b399d62d005ce4e5fd68e9407fdb406e96572fcbfc3ef2"
+    },
+    {
+      "bytes": 1459,
+      "mtime_utc": "2026-08-13T01:43:16.638010+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.precision.level2/artifact/crisalida.ir.json",
+      "sha256": "8d006976a9b94de19658917e6fc9f2969a82ab14a48daa570ea5c14b1e68b5c8"
+    },
+    {
+      "bytes": 2753,
+      "mtime_utc": "2026-08-13T01:43:16.646620+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.precision.level2/artifact/manifest.json",
+      "sha256": "8a430a9db4dfe5de9d1f624f4a3c7a0392b04fb982123765d8543add70b084c7"
+    },
+    {
+      "bytes": 1496,
+      "mtime_utc": "2026-08-13T01:43:16.641356+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.precision.level2/artifact/metamorfose.graph.json",
+      "sha256": "418e290af502df585715ad7b731109d365505b73e4b054fd4f5521b002b4aaf3"
+    },
+    {
+      "bytes": 269,
+      "mtime_utc": "2026-08-13T01:43:16.638010+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.precision.level2/artifact/source.t",
+      "sha256": "186a45d24f61bc280bdfddcdc84bc93806d9dd7d94e3f2ca23d805d462b43dd9"
+    },
+    {
+      "bytes": 269,
+      "mtime_utc": "2026-08-13T01:43:16.626415+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-1/creation.open-ended-holdout.precision.level2/source.t",
+      "sha256": "186a45d24f61bc280bdfddcdc84bc93806d9dd7d94e3f2ca23d805d462b43dd9"
+    },
+    {
+      "bytes": 13421,
+      "mtime_utc": "2026-08-13T01:43:46.725964+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.autonomy.level3/artifact/casulo_artifact.py",
+      "sha256": "6a6a86a5983d494708252b3097fc50fdcb3c84d49b805238b5bf6e9a912a0d63"
+    },
+    {
+      "bytes": 1077,
+      "mtime_utc": "2026-08-13T01:43:46.725964+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.abi.json",
+      "sha256": "f9736745c2295f1cab1193836896bdbaa3f7c771680f59d7a0ddc2d2d00b058a"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:43:46.725964+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.c",
+      "sha256": "027dccfa24f7c579434e5616b5a2a680ae4f142363f05fe8df09323e4cac1115"
+    },
+    {
+      "bytes": 1418,
+      "mtime_utc": "2026-08-13T01:43:46.725964+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.autonomy.level3/artifact/crisalida.ir.json",
+      "sha256": "7c02fdf2f9f1fdc77d34b4f298f510dca21fc6248b729ebf4f221e259e073d10"
+    },
+    {
+      "bytes": 2750,
+      "mtime_utc": "2026-08-13T01:43:46.732088+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.autonomy.level3/artifact/manifest.json",
+      "sha256": "17a19b20847ebbede1b5af05b1ee93539799a947ed53aac3792e3a4c95f8854f"
+    },
+    {
+      "bytes": 1451,
+      "mtime_utc": "2026-08-13T01:43:46.725964+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.autonomy.level3/artifact/metamorfose.graph.json",
+      "sha256": "5ffb5c77519fe30cffa99c116c57a37ed9ebcca17a3ec9f56a900a9bfeec8cae"
+    },
+    {
+      "bytes": 228,
+      "mtime_utc": "2026-08-13T01:43:46.724882+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.autonomy.level3/artifact/source.t",
+      "sha256": "05e7e6231ffffa683174611daedafa460519825702f3a7ac6dcd2d65d204ea19"
+    },
+    {
+      "bytes": 228,
+      "mtime_utc": "2026-08-13T01:43:46.698508+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.autonomy.level3/source.t",
+      "sha256": "05e7e6231ffffa683174611daedafa460519825702f3a7ac6dcd2d65d204ea19"
+    },
+    {
+      "bytes": 13389,
+      "mtime_utc": "2026-08-13T01:43:46.685094+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.memory.read/artifact/casulo_artifact.py",
+      "sha256": "23425090ef71cafd405e111874818a0440a1b5cdf8b07103809ba8fc32d9ae90"
+    },
+    {
+      "bytes": 1074,
+      "mtime_utc": "2026-08-13T01:43:46.689963+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.memory.read/artifact/casulo_native.abi.json",
+      "sha256": "3fcb8c3fa18eb3466ece3e76fa1b0f0efa50e1e507f71f4f42a8da149383f796"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:43:46.688123+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.memory.read/artifact/casulo_native.c",
+      "sha256": "06d6e0e101863c5af4e2e0012ffff9d2a7621249a1cfed7745f2f41095a279c0"
+    },
+    {
+      "bytes": 1407,
+      "mtime_utc": "2026-08-13T01:43:46.681443+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.memory.read/artifact/crisalida.ir.json",
+      "sha256": "82094aa17f704627cf2424e6ad425143893497eb970af9d2ec04a111963f0102"
+    },
+    {
+      "bytes": 2742,
+      "mtime_utc": "2026-08-13T01:43:46.694282+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.memory.read/artifact/manifest.json",
+      "sha256": "ef816f811e9dbedb559dd34d44ff8a469cb3d6565367613dffb69382a34f55eb"
+    },
+    {
+      "bytes": 1433,
+      "mtime_utc": "2026-08-13T01:43:46.685094+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.memory.read/artifact/metamorfose.graph.json",
+      "sha256": "3beb7f2f1b61e2d60b752758fd8c7ddd45f36c0a81dfdf2c72a7006bb835d080"
+    },
+    {
+      "bytes": 217,
+      "mtime_utc": "2026-08-13T01:43:46.681443+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.memory.read/artifact/source.t",
+      "sha256": "8b074c1affc3b9eb5ee5adcadb36a2664fe19f8581ffd8c04ae7ac748a850865"
+    },
+    {
+      "bytes": 217,
+      "mtime_utc": "2026-08-13T01:43:46.672903+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.memory.read/source.t",
+      "sha256": "8b074c1affc3b9eb5ee5adcadb36a2664fe19f8581ffd8c04ae7ac748a850865"
+    },
+    {
+      "bytes": 13508,
+      "mtime_utc": "2026-08-13T01:43:46.754909+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.precision.level2/artifact/casulo_artifact.py",
+      "sha256": "ee30deb91b21c0efacb666a25d19b79578ebb9d37274566ed99c8d39a9a7878a"
+    },
+    {
+      "bytes": 1078,
+      "mtime_utc": "2026-08-13T01:43:46.757459+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.precision.level2/artifact/casulo_native.abi.json",
+      "sha256": "014f0c19d85a4f50fbf9e492687730aeca3e1c8b08c4f0412b4ecb7b9a0aed99"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:43:46.757459+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.precision.level2/artifact/casulo_native.c",
+      "sha256": "3270064b4c0ba69307b399d62d005ce4e5fd68e9407fdb406e96572fcbfc3ef2"
+    },
+    {
+      "bytes": 1459,
+      "mtime_utc": "2026-08-13T01:43:46.752000+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.precision.level2/artifact/crisalida.ir.json",
+      "sha256": "8d006976a9b94de19658917e6fc9f2969a82ab14a48daa570ea5c14b1e68b5c8"
+    },
+    {
+      "bytes": 2753,
+      "mtime_utc": "2026-08-13T01:43:46.757459+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.precision.level2/artifact/manifest.json",
+      "sha256": "8a430a9db4dfe5de9d1f624f4a3c7a0392b04fb982123765d8543add70b084c7"
+    },
+    {
+      "bytes": 1496,
+      "mtime_utc": "2026-08-13T01:43:46.754909+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.precision.level2/artifact/metamorfose.graph.json",
+      "sha256": "418e290af502df585715ad7b731109d365505b73e4b054fd4f5521b002b4aaf3"
+    },
+    {
+      "bytes": 269,
+      "mtime_utc": "2026-08-13T01:43:46.752000+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.precision.level2/artifact/source.t",
+      "sha256": "186a45d24f61bc280bdfddcdc84bc93806d9dd7d94e3f2ca23d805d462b43dd9"
+    },
+    {
+      "bytes": 269,
+      "mtime_utc": "2026-08-13T01:43:46.744585+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-2/creation.open-ended-holdout.precision.level2/source.t",
+      "sha256": "186a45d24f61bc280bdfddcdc84bc93806d9dd7d94e3f2ca23d805d462b43dd9"
+    },
+    {
+      "bytes": 13421,
+      "mtime_utc": "2026-08-13T01:45:18.285048+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.autonomy.level3/artifact/casulo_artifact.py",
+      "sha256": "6a6a86a5983d494708252b3097fc50fdcb3c84d49b805238b5bf6e9a912a0d63"
+    },
+    {
+      "bytes": 1077,
+      "mtime_utc": "2026-08-13T01:45:18.291900+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.abi.json",
+      "sha256": "f9736745c2295f1cab1193836896bdbaa3f7c771680f59d7a0ddc2d2d00b058a"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:45:18.291900+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.c",
+      "sha256": "027dccfa24f7c579434e5616b5a2a680ae4f142363f05fe8df09323e4cac1115"
+    },
+    {
+      "bytes": 1418,
+      "mtime_utc": "2026-08-13T01:45:18.285048+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.autonomy.level3/artifact/crisalida.ir.json",
+      "sha256": "7c02fdf2f9f1fdc77d34b4f298f510dca21fc6248b729ebf4f221e259e073d10"
+    },
+    {
+      "bytes": 2750,
+      "mtime_utc": "2026-08-13T01:45:18.294491+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.autonomy.level3/artifact/manifest.json",
+      "sha256": "17a19b20847ebbede1b5af05b1ee93539799a947ed53aac3792e3a4c95f8854f"
+    },
+    {
+      "bytes": 1451,
+      "mtime_utc": "2026-08-13T01:45:18.285048+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.autonomy.level3/artifact/metamorfose.graph.json",
+      "sha256": "5ffb5c77519fe30cffa99c116c57a37ed9ebcca17a3ec9f56a900a9bfeec8cae"
+    },
+    {
+      "bytes": 228,
+      "mtime_utc": "2026-08-13T01:45:18.285048+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.autonomy.level3/artifact/source.t",
+      "sha256": "05e7e6231ffffa683174611daedafa460519825702f3a7ac6dcd2d65d204ea19"
+    },
+    {
+      "bytes": 228,
+      "mtime_utc": "2026-08-13T01:45:18.275213+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.autonomy.level3/source.t",
+      "sha256": "05e7e6231ffffa683174611daedafa460519825702f3a7ac6dcd2d65d204ea19"
+    },
+    {
+      "bytes": 13389,
+      "mtime_utc": "2026-08-13T01:45:18.257970+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.memory.read/artifact/casulo_artifact.py",
+      "sha256": "23425090ef71cafd405e111874818a0440a1b5cdf8b07103809ba8fc32d9ae90"
+    },
+    {
+      "bytes": 1074,
+      "mtime_utc": "2026-08-13T01:45:18.257970+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.memory.read/artifact/casulo_native.abi.json",
+      "sha256": "3fcb8c3fa18eb3466ece3e76fa1b0f0efa50e1e507f71f4f42a8da149383f796"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:45:18.257970+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.memory.read/artifact/casulo_native.c",
+      "sha256": "06d6e0e101863c5af4e2e0012ffff9d2a7621249a1cfed7745f2f41095a279c0"
+    },
+    {
+      "bytes": 1407,
+      "mtime_utc": "2026-08-13T01:45:18.255177+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.memory.read/artifact/crisalida.ir.json",
+      "sha256": "82094aa17f704627cf2424e6ad425143893497eb970af9d2ec04a111963f0102"
+    },
+    {
+      "bytes": 2742,
+      "mtime_utc": "2026-08-13T01:45:18.263050+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.memory.read/artifact/manifest.json",
+      "sha256": "ef816f811e9dbedb559dd34d44ff8a469cb3d6565367613dffb69382a34f55eb"
+    },
+    {
+      "bytes": 1433,
+      "mtime_utc": "2026-08-13T01:45:18.257970+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.memory.read/artifact/metamorfose.graph.json",
+      "sha256": "3beb7f2f1b61e2d60b752758fd8c7ddd45f36c0a81dfdf2c72a7006bb835d080"
+    },
+    {
+      "bytes": 217,
+      "mtime_utc": "2026-08-13T01:45:18.255177+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.memory.read/artifact/source.t",
+      "sha256": "8b074c1affc3b9eb5ee5adcadb36a2664fe19f8581ffd8c04ae7ac748a850865"
+    },
+    {
+      "bytes": 217,
+      "mtime_utc": "2026-08-13T01:45:18.245154+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.memory.read/source.t",
+      "sha256": "8b074c1affc3b9eb5ee5adcadb36a2664fe19f8581ffd8c04ae7ac748a850865"
+    },
+    {
+      "bytes": 13436,
+      "mtime_utc": "2026-08-13T01:45:18.336352+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.precision.level2/artifact/casulo_artifact.py",
+      "sha256": "b9f9caf6f95df4d519af39e0c96cd77bf69013247a1d9a55f5d175ba931c22f2"
+    },
+    {
+      "bytes": 1078,
+      "mtime_utc": "2026-08-13T01:45:18.338884+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.precision.level2/artifact/casulo_native.abi.json",
+      "sha256": "014f0c19d85a4f50fbf9e492687730aeca3e1c8b08c4f0412b4ecb7b9a0aed99"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:45:18.338884+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.precision.level2/artifact/casulo_native.c",
+      "sha256": "25d24f0566c147fa8cec511551362e8103489dbdb37d112237b08c998396dd81"
+    },
+    {
+      "bytes": 1423,
+      "mtime_utc": "2026-08-13T01:45:18.326838+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.precision.level2/artifact/crisalida.ir.json",
+      "sha256": "e43a79d1ebd21f3a982ae902621fd5feee2597414099a750db9c1909af25f2f6"
+    },
+    {
+      "bytes": 2753,
+      "mtime_utc": "2026-08-13T01:45:18.338884+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.precision.level2/artifact/manifest.json",
+      "sha256": "c3f602e0abf69302b7afad85de969d99156dd9bf74b5523c8652470c5030a160"
+    },
+    {
+      "bytes": 1460,
+      "mtime_utc": "2026-08-13T01:45:18.335299+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.precision.level2/artifact/metamorfose.graph.json",
+      "sha256": "ad20699882c1395ae696c6b622e28bf71c38a87e882f15d4d7fa3f724f430230"
+    },
+    {
+      "bytes": 233,
+      "mtime_utc": "2026-08-13T01:45:18.326838+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.precision.level2/artifact/source.t",
+      "sha256": "ee5dd527dba772329dbb617c5f6cc48c92c08af81b1e4118421f6a030aadee67"
+    },
+    {
+      "bytes": 233,
+      "mtime_utc": "2026-08-13T01:45:18.305289+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-3/creation.open-ended-holdout.precision.level2/source.t",
+      "sha256": "ee5dd527dba772329dbb617c5f6cc48c92c08af81b1e4118421f6a030aadee67"
+    },
+    {
+      "bytes": 13421,
+      "mtime_utc": "2026-08-13T01:45:49.067571+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.autonomy.level3/artifact/casulo_artifact.py",
+      "sha256": "6a6a86a5983d494708252b3097fc50fdcb3c84d49b805238b5bf6e9a912a0d63"
+    },
+    {
+      "bytes": 1077,
+      "mtime_utc": "2026-08-13T01:45:49.067571+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.abi.json",
+      "sha256": "f9736745c2295f1cab1193836896bdbaa3f7c771680f59d7a0ddc2d2d00b058a"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:45:49.067571+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.autonomy.level3/artifact/casulo_native.c",
+      "sha256": "027dccfa24f7c579434e5616b5a2a680ae4f142363f05fe8df09323e4cac1115"
+    },
+    {
+      "bytes": 1418,
+      "mtime_utc": "2026-08-13T01:45:49.060097+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.autonomy.level3/artifact/crisalida.ir.json",
+      "sha256": "7c02fdf2f9f1fdc77d34b4f298f510dca21fc6248b729ebf4f221e259e073d10"
+    },
+    {
+      "bytes": 2750,
+      "mtime_utc": "2026-08-13T01:45:49.067571+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.autonomy.level3/artifact/manifest.json",
+      "sha256": "17a19b20847ebbede1b5af05b1ee93539799a947ed53aac3792e3a4c95f8854f"
+    },
+    {
+      "bytes": 1451,
+      "mtime_utc": "2026-08-13T01:45:49.067571+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.autonomy.level3/artifact/metamorfose.graph.json",
+      "sha256": "5ffb5c77519fe30cffa99c116c57a37ed9ebcca17a3ec9f56a900a9bfeec8cae"
+    },
+    {
+      "bytes": 228,
+      "mtime_utc": "2026-08-13T01:45:49.054961+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.autonomy.level3/artifact/source.t",
+      "sha256": "05e7e6231ffffa683174611daedafa460519825702f3a7ac6dcd2d65d204ea19"
+    },
+    {
+      "bytes": 228,
+      "mtime_utc": "2026-08-13T01:45:49.046611+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.autonomy.level3/source.t",
+      "sha256": "05e7e6231ffffa683174611daedafa460519825702f3a7ac6dcd2d65d204ea19"
+    },
+    {
+      "bytes": 13443,
+      "mtime_utc": "2026-08-13T01:45:49.035182+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.memory.read/artifact/casulo_artifact.py",
+      "sha256": "0489bcc35ac0dd6b73d427456aea434d91e9c55d75d939c1a8faced5470314c4"
+    },
+    {
+      "bytes": 1074,
+      "mtime_utc": "2026-08-13T01:45:49.036342+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.memory.read/artifact/casulo_native.abi.json",
+      "sha256": "3fcb8c3fa18eb3466ece3e76fa1b0f0efa50e1e507f71f4f42a8da149383f796"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:45:49.036342+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.memory.read/artifact/casulo_native.c",
+      "sha256": "4d8186b1cca99fbab2270fecb2b8d8f09f94ddf43aa8683dad139968d70db916"
+    },
+    {
+      "bytes": 1434,
+      "mtime_utc": "2026-08-13T01:45:49.028880+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.memory.read/artifact/crisalida.ir.json",
+      "sha256": "ec1c691656c0f364644a9a9cb8cbd628627d937d6840e1ea1f10d3c4927ad1db"
+    },
+    {
+      "bytes": 2742,
+      "mtime_utc": "2026-08-13T01:45:49.036342+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.memory.read/artifact/manifest.json",
+      "sha256": "7d4ed2c473f4952c522664a78d7de8be050ac97c47c88b39cf4f471192a25c1f"
+    },
+    {
+      "bytes": 1460,
+      "mtime_utc": "2026-08-13T01:45:49.033571+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.memory.read/artifact/metamorfose.graph.json",
+      "sha256": "a49709587eab294ba2c7156d63e20518285f662ccbec8f9fe285f5d9fc7bd8a6"
+    },
+    {
+      "bytes": 244,
+      "mtime_utc": "2026-08-13T01:45:49.028880+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.memory.read/artifact/source.t",
+      "sha256": "4c7d42ed00c6513ab136f7d61ed11b492e9aece6a12fa5b407d6e235cea88a71"
+    },
+    {
+      "bytes": 244,
+      "mtime_utc": "2026-08-13T01:45:48.999594+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.memory.read/source.t",
+      "sha256": "4c7d42ed00c6513ab136f7d61ed11b492e9aece6a12fa5b407d6e235cea88a71"
+    },
+    {
+      "bytes": 13436,
+      "mtime_utc": "2026-08-13T01:45:49.095186+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.precision.level2/artifact/casulo_artifact.py",
+      "sha256": "b9f9caf6f95df4d519af39e0c96cd77bf69013247a1d9a55f5d175ba931c22f2"
+    },
+    {
+      "bytes": 1078,
+      "mtime_utc": "2026-08-13T01:45:49.095186+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.precision.level2/artifact/casulo_native.abi.json",
+      "sha256": "014f0c19d85a4f50fbf9e492687730aeca3e1c8b08c4f0412b4ecb7b9a0aed99"
+    },
+    {
+      "bytes": 1321,
+      "mtime_utc": "2026-08-13T01:45:49.095186+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.precision.level2/artifact/casulo_native.c",
+      "sha256": "25d24f0566c147fa8cec511551362e8103489dbdb37d112237b08c998396dd81"
+    },
+    {
+      "bytes": 1423,
+      "mtime_utc": "2026-08-13T01:45:49.092009+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.precision.level2/artifact/crisalida.ir.json",
+      "sha256": "e43a79d1ebd21f3a982ae902621fd5feee2597414099a750db9c1909af25f2f6"
+    },
+    {
+      "bytes": 2753,
+      "mtime_utc": "2026-08-13T01:45:49.095186+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.precision.level2/artifact/manifest.json",
+      "sha256": "c3f602e0abf69302b7afad85de969d99156dd9bf74b5523c8652470c5030a160"
+    },
+    {
+      "bytes": 1460,
+      "mtime_utc": "2026-08-13T01:45:49.094604+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.precision.level2/artifact/metamorfose.graph.json",
+      "sha256": "ad20699882c1395ae696c6b622e28bf71c38a87e882f15d4d7fa3f724f430230"
+    },
+    {
+      "bytes": 233,
+      "mtime_utc": "2026-08-13T01:45:49.086461+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.precision.level2/artifact/source.t",
+      "sha256": "ee5dd527dba772329dbb617c5f6cc48c92c08af81b1e4118421f6a030aadee67"
+    },
+    {
+      "bytes": 233,
+      "mtime_utc": "2026-08-13T01:45:49.081899+00:00",
+      "path": "owner-data/semantic-creation-1/verification/attempt-4/creation.open-ended-holdout.precision.level2/source.t",
+      "sha256": "ee5dd527dba772329dbb617c5f6cc48c92c08af81b1e4118421f6a030aadee67"
+    },
+    {
+      "bytes": 7546,
+      "mtime_utc": "2026-08-13T01:45:50.665210+00:00",
+      "path": "owner-data/semantic-multiverse/sessions/e3759c64e5a592fccf93ff4783847072b6e3c6c2b2d8a085265d18215a41d420.json",
+      "sha256": "055d6762013c014ee067238f6d417ec0083e699cf87e87c41328f525f2f09ae2"
+    },
+    {
+      "bytes": 147,
+      "mtime_utc": "2026-08-13T01:16:34.737382+00:00",
+      "path": "owner-data/semantic-multiverse/store/blobs/07161c56633818f1652915c9efc7c3bf8329c9aeebbc9545b13e0a47cd616958",
+      "sha256": "07161c56633818f1652915c9efc7c3bf8329c9aeebbc9545b13e0a47cd616958"
+    },
+    {
+      "bytes": 136,
+      "mtime_utc": "2026-08-13T01:16:34.757379+00:00",
+      "path": "owner-data/semantic-multiverse/store/blobs/5219f97c9c7b71e6e1d1f5e216f18ca3ccd9d6897d15883488bde1e008d52e3a",
+      "sha256": "5219f97c9c7b71e6e1d1f5e216f18ca3ccd9d6897d15883488bde1e008d52e3a"
+    },
+    {
+      "bytes": 4405,
+      "mtime_utc": "2026-08-13T01:45:50.638737+00:00",
+      "path": "owner-data/semantic-multiverse/store/blobs/5d2a26e3a90ba5772037f08aa8674202c9a1459f4ebdade918d11b522aa95a49",
+      "sha256": "5d2a26e3a90ba5772037f08aa8674202c9a1459f4ebdade918d11b522aa95a49"
+    },
+    {
+      "bytes": 143,
+      "mtime_utc": "2026-08-13T01:16:34.744377+00:00",
+      "path": "owner-data/semantic-multiverse/store/blobs/80c68ffd167021b11baef023fd63e26d7b4882fa5dd6f287b4e2915d7e7ddade",
+      "sha256": "80c68ffd167021b11baef023fd63e26d7b4882fa5dd6f287b4e2915d7e7ddade"
+    },
+    {
+      "bytes": 134,
+      "mtime_utc": "2026-08-13T01:16:34.761375+00:00",
+      "path": "owner-data/semantic-multiverse/store/blobs/87d0914a612c37dd1dc67df6b2d35c9461b8dc5bae227a035ee551a838e4bf69",
+      "sha256": "87d0914a612c37dd1dc67df6b2d35c9461b8dc5bae227a035ee551a838e4bf69"
+    },
+    {
+      "bytes": 135,
+      "mtime_utc": "2026-08-13T01:16:34.767736+00:00",
+      "path": "owner-data/semantic-multiverse/store/blobs/bf7564e34b85ff4381516a1db84fd13c8703403d14d0bdca31804cce7c8ce4e9",
+      "sha256": "bf7564e34b85ff4381516a1db84fd13c8703403d14d0bdca31804cce7c8ce4e9"
+    },
+    {
+      "bytes": 139,
+      "mtime_utc": "2026-08-13T01:16:34.749895+00:00",
+      "path": "owner-data/semantic-multiverse/store/blobs/c6b8bf5642256a9e5dbb2855f0e77de93107c79543fe17f7541ffa46a68c7fce",
+      "sha256": "c6b8bf5642256a9e5dbb2855f0e77de93107c79543fe17f7541ffa46a68c7fce"
+    },
+    {
+      "bytes": 408,
+      "mtime_utc": "2026-08-13T01:45:50.634423+00:00",
+      "path": "owner-data/semantic-multiverse/store/deltas/aa4342193f59eea81fcc869d8c22ba21f8e80b9f555f4e2bdf2f620d3627db20.json",
+      "sha256": "dac93b814eafc3418ee47d5ae834580cabd62ca1f3139059072bbf7872274bb0"
+    },
+    {
+      "bytes": 931,
+      "mtime_utc": "2026-08-13T01:16:34.761375+00:00",
+      "path": "owner-data/semantic-multiverse/store/manifests/diagnostico-v1-0a0c8290c9e634636d3db524b6ad31d68ddf0a56ec326500ba1e07f83501a098.json",
+      "sha256": "100727aae38e81b95b60fe5f750918b3798dd3beb6bf2a50a71cd16b0f7dbb51"
+    },
+    {
+      "bytes": 924,
+      "mtime_utc": "2026-08-13T01:16:34.756379+00:00",
+      "path": "owner-data/semantic-multiverse/store/manifests/engenharia-v1-859e17290405f46c8023b1fb5801e8a30dfad919f2242bd47db614b4080479ce.json",
+      "sha256": "23f8f2a9bf4c23a314242e16c17528f83a2edd885c2479fbb75fc51d1d19e88f"
+    },
+    {
+      "bytes": 944,
+      "mtime_utc": "2026-08-13T01:16:34.742457+00:00",
+      "path": "owner-data/semantic-multiverse/store/manifests/intencao-v1-1e35505c594f7bdb548ac4c860cf458e6f9718d5ecef7a6779663de5093b495a.json",
+      "sha256": "cbb2d4f313d94458aef8dc4c84a3ce13ebbb8e77fb25ee36198fd2dd68cdbb8a"
+    },
+    {
+      "bytes": 930,
+      "mtime_utc": "2026-08-13T01:16:34.766734+00:00",
+      "path": "owner-data/semantic-multiverse/store/manifests/interface-v1-a03d3951452d2ef103a4c5fbc17f1fb9bd26447d7d23162eebb3fac39ff501af.json",
+      "sha256": "27ce499fc85e27965e3c487cb2c5e1455f2a0cf8c82cbe1078134527db68763e"
+    },
+    {
+      "bytes": 934,
+      "mtime_utc": "2026-08-13T01:16:34.776230+00:00",
+      "path": "owner-data/semantic-multiverse/store/manifests/materializacao-v1-f071b94d90472e7f0b7c4f2519464373f1912b684aa2fc9012d15daf992537d5.json",
+      "sha256": "c97ee72e58b6c679ca5eb37cfc180af89d03d9a58db54d56899bc6f51bfab676"
+    },
+    {
+      "bytes": 934,
+      "mtime_utc": "2026-08-13T01:16:34.747891+00:00",
+      "path": "owner-data/semantic-multiverse/store/manifests/sinais-v1-5f513c911ce418df65f640e7cb28d49c38cb526bf9bbc52ba59daca4099350df.json",
+      "sha256": "1e4a700b43cce3a79a92fd75eb90cd865e3e2baedb3f8d80b2bc1d91593b99f8"
+    },
+    {
+      "bytes": 540672,
+      "mtime_utc": "2026-08-13T01:37:46.798186+00:00",
+      "path": "state/OVMF_VARS.fd",
+      "sha256": "413945934a114b2acae0615bbf1f338fa5c5080f02ec43a5dad492eb5d1afc4b"
+    },
+    {
+      "bytes": 6116,
+      "mtime_utc": "2026-08-13T01:37:47.364828+00:00",
+      "path": "state/bridge-live.serial.bin",
+      "sha256": "1481deeae064ee254817fbe5e107b718ccf238fa1237317a6b97237bada34680"
+    },
+    {
+      "bytes": 459264,
+      "mtime_utc": "2026-08-13T01:36:15.199220+00:00",
+      "path": "state/owner-overlay.qcow2",
+      "sha256": "81d0ebd0f1078db65a98933fc9373d77eae802cf175a063fbe104f882a234f79"
+    },
+    {
+      "bytes": 853,
+      "mtime_utc": "2026-08-13T01:16:34.319674+00:00",
+      "path": "state/vm-manifest.json",
+      "sha256": "018fd8ee49c2b715bb65c4eed0235e18f00369316a064eb0f6ef0c6f949129a6"
+    }
+  ],
+  "preservation": "COPY_ONLY_SOURCE_UNMODIFIED",
+  "schema": "casulo.inspection-failure-inventory/1.0",
+  "total_bytes": 1504848
+}

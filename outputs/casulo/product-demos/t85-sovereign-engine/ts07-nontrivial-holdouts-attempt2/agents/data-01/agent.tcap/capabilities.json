@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.data_validator_01.csv": [],
+    "owner.agent.data_validator_01.diag": [
+      "simulation"
+    ],
+    "owner.agent.data_validator_01.schema": []
+  }
+}

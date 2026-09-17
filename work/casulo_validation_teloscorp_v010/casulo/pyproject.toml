@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "casulo"
+version = "0.1.0"
+description = "Otimização conservativa do tráfego de informação."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Teloscorp"}
+]
+keywords = [
+  "information-traffic",
+  "data-conservation",
+  "data-transformation",
+  "provenance",
+  "auditability"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Information Analysis"
+]
+dependencies = []
+
+[project.scripts]
+casulo = "casulo.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

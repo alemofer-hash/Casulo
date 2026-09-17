@@ -1,0 +1,162 @@
+{
+  "delta": {
+    "affected_paths": [
+      [
+        "identity",
+        "name"
+      ],
+      [
+        "purpose",
+        "description"
+      ],
+      [
+        "behavior",
+        "autonomy"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "interface",
+        "output"
+      ],
+      [
+        "data",
+        "storage"
+      ],
+      [
+        "output",
+        "reversibility"
+      ]
+    ],
+    "base_version": 0,
+    "confidence": 0.85,
+    "confirmation_state": "PROPOSED",
+    "creation_id": "creation:open-ended-holdout",
+    "delta_id": "intent:gen:54c473586ff3247731382602",
+    "operations": [
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "name"
+        ],
+        "value": {
+          "type": "string",
+          "value": "F58G"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "purpose",
+          "description"
+        ],
+        "value": {
+          "type": "string",
+          "value": "organizar registros técnicos incompatíveis em decisões reversíveis, conservar alternativas recusadas consultáveis e conectar cada síntese à sua evidência de origem"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "autonomy"
+        ],
+        "value": {
+          "type": "boolean",
+          "value": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "input"
+        ],
+        "value": {
+          "items": [
+            {
+              "type": "string",
+              "value": "registros técnicos incompatíveis"
+            },
+            {
+              "type": "string",
+              "value": "alternativas recusadas"
+            }
+          ],
+          "type": "array"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "output"
+        ],
+        "value": {
+          "items": [
+            {
+              "type": "string",
+              "value": "sínteses organizadas"
+            },
+            {
+              "type": "string",
+              "value": "evidência de origem"
+            }
+          ],
+          "type": "array"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "data",
+          "storage"
+        ],
+        "value": {
+          "type": "boolean",
+          "value": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "output",
+          "reversibility"
+        ],
+        "value": {
+          "type": "boolean",
+          "value": true
+        }
+      }
+    ],
+    "rationale": "A proposta visa a modificação da CreationSpec para incluir um novo agente inédito com funcionalidades específicas de organização, conservação e conexão de informações técnicas.",
+    "schema": "casulo.intent-delta/1.0",
+    "source_event_ids": [
+      "voice:g5:novel-idea"
+    ]
+  },
+  "requested_capabilities": [
+    "organizar registros técnicos incompatíveis em decisões reversíveis",
+    "conservar alternativas recusadas consultáveis",
+    "conectar cada síntese à sua evidência de origem"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "707782f17c26023b57e59c5129f733caeeecc08b7e70d985d7a5c67b56c4bd0b",
+    "ended_monotonic_ns": 2024795244900,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "intent:voice:g5:novel-idea",
+    "output_sha256": "54c473586ff324773138260221c8d3862df4c30a5d20b328d4e07f6bada49562",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 1918577731600,
+    "stream_events": 471
+  }
+}

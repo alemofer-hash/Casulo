@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    "boundary_conditions",
+    "constants",
+    "coordinates",
+    "energy_momentum_tensor",
+    "initial_conditions",
+    "metric",
+    "tolerances"
+  ],
+  "name": "EinsteinFieldEquationsValidator",
+  "numerical_method": "central_finite_differences_4d",
+  "outputs": [
+    "connection",
+    "einstein_tensor",
+    "field_equation_residual",
+    "ricci_scalar",
+    "ricci_tensor"
+  ],
+  "purpose": "Validate a local 4D Lorentzian metric against Einstein's field equations using finite difference methods.",
+  "refusals": [
+    "Cannot perform global initial value problem or boundary value problem integration.",
+    "Cannot validate non-Lorentzian metrics.",
+    "Cannot validate metrics not defined in a local 4D spacetime."
+  ],
+  "supported_scope": "local_4d_lorentzian_metric_validation"
+}

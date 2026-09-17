@@ -1,0 +1,21 @@
+{
+  "schema": "casulo.t-sovereignty-matrix/1.0",
+  "minimum_score": 0.8,
+  "degree_scale": [0, 0.5, 1],
+  "status": "WEIGHTS_FROZEN_IMPLEMENTATION_AUDIT_PENDING_RC4",
+  "surfaces": [
+    {"id": "capability_decision", "weight": 5, "critical": true, "degree": null},
+    {"id": "material_intent_decision", "weight": 5, "critical": true, "degree": null},
+    {"id": "publish_decision", "weight": 5, "critical": true, "degree": null},
+    {"id": "agent_logic", "weight": 3, "critical": false, "degree": null},
+    {"id": "tool_policy", "weight": 3, "critical": false, "degree": null},
+    {"id": "memory_policy", "weight": 3, "critical": false, "degree": null},
+    {"id": "job_policy", "weight": 2, "critical": false, "degree": null},
+    {"id": "interface_contract", "weight": 2, "critical": false, "degree": null},
+    {"id": "test_oracle", "weight": 2, "critical": false, "degree": null},
+    {"id": "simulation_policy", "weight": 3, "critical": false, "degree": null},
+    {"id": "materialization_policy", "weight": 3, "critical": false, "degree": null}
+  ],
+  "rule": "score >= 0.80 AND every critical surface degree == 1",
+  "loc_count_is_evidence": false
+}

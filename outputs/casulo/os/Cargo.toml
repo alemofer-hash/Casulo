@@ -1,0 +1,29 @@
+[workspace]
+resolver = "3"
+members = ["kernel", "native-model", "presentation-core"]
+
+[package]
+name = "casulo-os-image"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[build-dependencies]
+casulo-kernel = { path = "kernel", artifact = "bin", target = "x86_64-unknown-none", optional = true }
+bootloader = { version = "=0.11.15", default-features = false, features = ["uefi"] }
+
+[features]
+default = ["bundled-kernel"]
+bundled-kernel = ["dep:casulo-kernel"]
+
+[[bin]]
+name = "casulo-os-image"
+path = "src/main.rs"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+lto = "thin"
+codegen-units = 1

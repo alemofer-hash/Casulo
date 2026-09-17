@@ -1,0 +1,85 @@
+{
+  "artifact_id": "sha256:560ff4b760b1f4e48c4dfbcbfa7b6edba2d81fb1449ec7e6578a18026a91daf4",
+  "batch": {
+    "cpu_ns_per_record": 44791.666666666664,
+    "cpu_ns_samples": [
+      1015625000,
+      1109375000,
+      1343750000,
+      1296875000,
+      1421875000,
+      1390625000,
+      1468750000
+    ],
+    "iterations": 10,
+    "median_cpu_ns": 1343750000,
+    "median_wall_ns": 1375894400,
+    "name": "metamorphosis_fused_batch",
+    "records_per_sample": 3000,
+    "samples": 7,
+    "throughput_records_per_second": 21803.998911544375,
+    "wall_ns_per_record": 45863.14666666667,
+    "wall_ns_samples": [
+      1028048100,
+      1145826700,
+      1375894400,
+      1365317200,
+      1477367300,
+      1448537000,
+      1490137300
+    ]
+  },
+  "batch_size": 3000,
+  "comparison": {
+    "cpu_work_ratio": 1.1395348837209303,
+    "throughput_ratio": 1.1195878113901765,
+    "wall_speedup": 1.1195878113901765
+  },
+  "energy_proxy": {
+    "batch_median": 1343750000,
+    "electrical_energy_joules": null,
+    "method": "process_cpu_time",
+    "scalar_median": 1531250000,
+    "unit": "cpu_nanoseconds",
+    "warning": "tempo de CPU é proxy de trabalho computacional; não é medição elétrica"
+  },
+  "environment": {
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "python": "3.13.2"
+  },
+  "equivalence_sha256": "e3f1f10d3849086363b38a83ecbcfe1231ff660a067c79a723d431abd0b816d2",
+  "operation": "WaterBalance",
+  "scalar": {
+    "cpu_ns_per_record": 51041.666666666664,
+    "cpu_ns_samples": [
+      718750000,
+      1562500000,
+      1546875000,
+      1562500000,
+      1281250000,
+      1531250000,
+      1500000000
+    ],
+    "iterations": 10,
+    "median_cpu_ns": 1531250000,
+    "median_wall_ns": 1540434600,
+    "name": "python_scalar_loop",
+    "records_per_sample": 3000,
+    "samples": 7,
+    "throughput_records_per_second": 19475.023477140803,
+    "wall_ns_per_record": 51347.82,
+    "wall_ns_samples": [
+      717494800,
+      1626554700,
+      1540434600,
+      1607155100,
+      1289278400,
+      1575625000,
+      1531266000
+    ]
+  },
+  "version": "metamorfose-benchmark/0.1"
+}

@@ -1,0 +1,40 @@
+{
+  "adoption_receipt_sha256": "915c3a7ede5894f179b99d56d48c547949c75667731b865d4bfd279080bd52cc",
+  "all_adopted_runtime_files_match": true,
+  "archive_bytes": 18426883,
+  "archive_sha256": "a9d95d26cf00664f2902f73cb0fd9b167a3a1f252294bb2f8b236305f57d6363",
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "commit": "4801e3c567d5131dd41b387df5f2d4b1370d92be",
+  "implementation": {
+    "bytes": 10064384,
+    "path": "runtime/llama-server-impl.dll",
+    "sha256": "ec264fc8548ec343903713f5a671a78c63e4c20b617f9b990ce4566381ddbcad"
+  },
+  "launcher": {
+    "bytes": 9216,
+    "path": "runtime/llama-server.exe",
+    "pe_magic": true,
+    "sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e"
+  },
+  "license": "MIT",
+  "objdump": {
+    "imports_implementation": true,
+    "output_sha256": "7ed72e93aa019a8bc7beb0553de214bf4a881051260606b25d6608da728fa699",
+    "returncode": 0,
+    "tool": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\objdump.EXE"
+  },
+  "runtime_file_count": 51,
+  "schema": "casulo.t85-neural-runtime-provenance/1.0",
+  "small_executable_explanation": "llama-server.exe is the upstream PE launcher shim; llama-server-impl.dll contains the large server implementation",
+  "tag": "b10362",
+  "upstream_repository": "ggml-org/llama.cpp",
+  "version": {
+    "argv": [
+      "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\generative\\qwen3-4b-q4km-llamacpp-b10362\\runtime\\llama-server.exe",
+      "--version"
+    ],
+    "returncode": 0,
+    "stderr": "version: 10362 (4801e3c56)\nbuilt with Clang 20.1.8 for Windows x86_64\n",
+    "stdout": ""
+  }
+}

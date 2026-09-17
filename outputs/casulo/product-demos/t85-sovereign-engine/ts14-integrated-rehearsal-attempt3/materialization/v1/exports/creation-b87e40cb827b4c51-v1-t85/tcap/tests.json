@@ -1,0 +1,10 @@
+{
+  "properties": [
+    "hard:preserve_lab_notebook_bytes",
+    "hard:normalize_growth_units_with_provenance",
+    "hard:emit_replication_protocol_with_uncertainty",
+    "cancel_is_fail_closed",
+    "effect_requires_grant",
+    "project_bleed_denied"
+  ]
+}

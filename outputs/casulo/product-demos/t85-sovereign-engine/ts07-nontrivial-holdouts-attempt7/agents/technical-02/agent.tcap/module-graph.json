@@ -1,0 +1,25 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.t_mass_balance.u_check"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.agent.t_mass_balance.u_check"
+    },
+    {
+      "imports": [
+        "owner.agent.t_mass_balance.u_check"
+      ],
+      "name": "owner.agent.t_mass_balance.m_verify"
+    },
+    {
+      "imports": [
+        "owner.agent.t_mass_balance.m_verify"
+      ],
+      "name": "owner.agent.t_mass_balance.o_validate"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

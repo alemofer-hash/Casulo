@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 3,
+  "failure": "REGRESSION_WITH_LONG_ABSOLUTE_GUEST_TIMEOUT",
+  "action": "Owned QEMU and probe processes terminated; restored bounded inactivity timeout",
+  "preserved": true,
+  "neural_evidence": false
+}

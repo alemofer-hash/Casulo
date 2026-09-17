@@ -1,0 +1,107 @@
+{
+  "creation_sha256": "4316cc906bbd7315bcf68681874e1f5f55c8367340a418dcae8c335f27d6c746",
+  "entry_unit": "creation_unit_1",
+  "project_id": "t-project:941aa6f6b6ff1703c0119379",
+  "tests": [
+    {
+      "expected_contains": "Initialization of Reversibility Module: Bússola de Reversibilidade is now active.",
+      "input": "true",
+      "name": "TestCreationInitialization",
+      "unit_id": "creation_unit_1"
+    },
+    {
+      "expected_contains": "Hypothetical fragment generated: 'The path of reversibility is not yet confirmed.'",
+      "input": "true",
+      "name": "TestHypotheticalFragmentGeneration",
+      "unit_id": "creation_unit_2"
+    },
+    {
+      "expected_contains": "Small verification executed: 'The path of reversibility is now under scrutiny.'",
+      "input": "true",
+      "name": "TestSmallVerificationExecution",
+      "unit_id": "creation_unit_3"
+    },
+    {
+      "expected_contains": "Architectural decision received: 'The path of reversibility is now confirmed.'",
+      "input": "true",
+      "name": "TestArchitecturalDecisionReception",
+      "unit_id": "creation_unit_4"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "4a07bc4822cff4769d7d87067b5dfd0908d11608e4d8f74efd9dfdd9f27b7e3b",
+    "ended_monotonic_ns": 36560498152400,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5",
+    "output_sha256": "941aa6f6b6ff1703c0119379b08956bc6c9ab930608b82c79c7a9b833e79ce62",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 36416147243400,
+    "stream_events": 684
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield Buzina\n  trace value: Text\n\ncondense InitializeReversibility in Buzina\n  effects [manifest]\n  emit \"Initialization of Reversibility Module: Bússola de Reversibilidade is now active.\"\n",
+      "unit_id": "creation_unit_1",
+      "watch_paths": [
+        [
+          "creation_unit_1",
+          "Buzina",
+          "InitializeReversibility",
+          "emit_literal"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit_1"
+      ],
+      "source": "language T/1.1\nmodule data\n\ncapability manifest\n\nfield HipoteseFrage\n  trace value: Text\n\ncondense GenerateHypotheticalFragment in HipoteseFrage\n  effects [manifest]\n  emit \"Hypothetical fragment generated: 'The path of reversibility is not yet confirmed.'\"\n",
+      "unit_id": "creation_unit_2",
+      "watch_paths": [
+        [
+          "creation_unit_2",
+          "HipoteseFrage",
+          "GenerateHypotheticalFragment",
+          "emit_literal"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit_2"
+      ],
+      "source": "language T/1.1\nmodule verification\n\ncapability manifest\n\nfield VerificacaoPequena\n  trace value: Text\n\ncondense ExecuteSmallVerification in VerificacaoPequena\n  effects [manifest]\n  emit \"Small verification executed: 'The path of reversibility is now under scrutiny.'\"\n",
+      "unit_id": "creation_unit_3",
+      "watch_paths": [
+        [
+          "creation_unit_3",
+          "VerificacaoPequena",
+          "ExecuteSmallVerification",
+          "emit_literal"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit_3"
+      ],
+      "source": "language T/1.1\nmodule decision\n\ncapability manifest\n\nfield DecisaoArquitetura\n  trace value: Text\n\ncondense ReceiveArchitecturalDecision in DecisaoArquitetura\n  effects [manifest]\n  emit \"Architectural decision received: 'The path of reversibility is now confirmed.'\"\n",
+      "unit_id": "creation_unit_4",
+      "watch_paths": [
+        [
+          "creation_unit_4",
+          "DecisaoArquitetura",
+          "ReceiveArchitecturalDecision",
+          "emit_literal"
+        ]
+      ]
+    }
+  ]
+}

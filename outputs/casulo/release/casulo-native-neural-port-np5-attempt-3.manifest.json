@@ -1,0 +1,16 @@
+{
+  "bytes": 3211264,
+  "claim": "bounded ordinary-text tokenization and one authentic Q6_K embedding row executed in Native; no transformer/logits/output token",
+  "first_model_derived_token": false,
+  "full_model_mapped": false,
+  "host_bridge": false,
+  "image": "release/casulo-native-neural-port-np5-attempt-3.img",
+  "network": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-neural-port-image/0.1",
+  "sha256": "ff14b7f54a5a12576f5b3e0d561bff324a7af3dedb8a851a68c7de20edd09301",
+  "stage": "NP5_BOUNDED_TOKENIZER_AND_Q6_K_EMBEDDING",
+  "system_pack": "release/casulo-native-neural-port-system-pack-v3.cspk",
+  "system_pack_sha256": "c209aae87feb8549ddadca6ff6b454060fcb99783d1a07ee5849402baaf0ee4d",
+  "target": "x86_64-unknown-none"
+}

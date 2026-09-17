@@ -1,0 +1,16 @@
+{
+  "aprovada": true,
+  "campos_contabilizados": 6,
+  "campos_entrada": 6,
+  "cobertura": 1.0,
+  "conteudo_quarentena": 0,
+  "descartes_silenciosos": 0,
+  "fonte_fisica_preservada": true,
+  "hash_semantico_entrada": "f675b9169dfee30b158211436fa2a25ece3fa70614302e0704d74d522fbf5922",
+  "hash_semantico_saida": "f675b9169dfee30b158211436fa2a25ece3fa70614302e0704d74d522fbf5922",
+  "hashes_semanticos_iguais": true,
+  "registros_contabilizados": 3,
+  "registros_entrada": 3,
+  "valores_contabilizados": 18,
+  "valores_entrada": 18
+}

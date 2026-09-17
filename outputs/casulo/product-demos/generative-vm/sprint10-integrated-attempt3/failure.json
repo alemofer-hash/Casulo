@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.generative-vm-handoff-failure/1.0",
+  "stage": "CORRECTED_DIALOGUE_BRIDGE_PREFLIGHT",
+  "error": "empty_neural_response_after_thinking_budget",
+  "creation_started": false,
+  "root_cause": "A resposta corrigida terminou sem texto visível dentro da janela curta do Qwen3; bytes UTF-8 já estavam dentro da ABI.",
+  "correction": "Rejeitar vazio com diagnóstico próprio e ampliar max_generated_tokens de 256 para 512.",
+  "preserved": true
+}

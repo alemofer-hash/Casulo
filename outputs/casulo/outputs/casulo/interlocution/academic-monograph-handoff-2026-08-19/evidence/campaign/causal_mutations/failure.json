@@ -1,0 +1,11 @@
+{
+  "schema": "casulo.interlocution-mutation-attempt-failure/1.0",
+  "attempt": 1,
+  "state": "INVALID_HARNESS_ANCHOR_CARDINALITY",
+  "surface": "dataset_identity_integrity",
+  "expected_anchor_count": 1,
+  "observed_anchor_count": 2,
+  "workload_started": false,
+  "scientific_result": "NONE",
+  "superseded_by": "causal_mutations-attempt2"
+}

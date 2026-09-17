@@ -1,0 +1,79 @@
+{
+  "fields": [
+    {
+      "name": "HydroCell",
+      "traces": [
+        {
+          "name": "precipitation",
+          "type_name": "Number"
+        },
+        {
+          "name": "evapotranspiration",
+          "type_name": "Number"
+        },
+        {
+          "name": "surface_flow",
+          "type_name": "Number"
+        },
+        {
+          "name": "base_flow",
+          "type_name": "Number"
+        }
+      ]
+    }
+  ],
+  "module": "casulo.flood_rs",
+  "operations": [
+    {
+      "input_type": "HydroCell",
+      "instructions": [
+        {
+          "arguments": [
+            "precipitation >= 0"
+          ],
+          "else_body": [],
+          "op": "judge",
+          "result": null,
+          "then_body": [],
+          "type_name": "Bool"
+        },
+        {
+          "arguments": [
+            "precipitation - evapotranspiration - surface_flow - base_flow"
+          ],
+          "else_body": [],
+          "op": "let",
+          "result": "storage_change",
+          "then_body": [],
+          "type_name": "Number"
+        },
+        {
+          "arguments": [
+            "storage_change"
+          ],
+          "else_body": [],
+          "op": "stabilize",
+          "result": null,
+          "then_body": [],
+          "type_name": "Number"
+        },
+        {
+          "arguments": [
+            "storage_change"
+          ],
+          "else_body": [],
+          "op": "emit",
+          "result": null,
+          "then_body": [],
+          "type_name": "Number"
+        }
+      ],
+      "kind": "condense",
+      "name": "WaterBalance",
+      "output_type": "Number",
+      "target_type": null
+    }
+  ],
+  "uses": [],
+  "version": "crisalida-ir/0.1"
+}

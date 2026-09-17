@@ -1,0 +1,9 @@
+{
+  "schema": "casulo-t85-failure/1.0",
+  "stage": "unit-regression-before-neural-synthesis",
+  "state": "INVALID_TEST_FIXTURE",
+  "result": {"passed": 5, "failed": 1},
+  "root_cause": "The regression fixture intended to exercise the 48-character diagnostic bound supplied an identifier longer than the bound.",
+  "effect": "The production validator rejected the fixture correctly; no model inference or holdout execution occurred.",
+  "correction": "Use a valid long diagnostic identifier while independently checking the derived success-event bound."
+}

@@ -1,0 +1,38 @@
+{
+  "config_from_t": {
+    "absolute_tolerance": "1e-09",
+    "bundle_sha256": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3",
+    "dataset_sha256": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+    "dtype": "float64",
+    "epochs": "400",
+    "initialization_state_policy": "reset_each_case",
+    "input_features": "8",
+    "learning_rate": "0.018",
+    "loss": "mae",
+    "optimizer": "sgd",
+    "optimizer_state_policy": "reset_each_case",
+    "records": "1024",
+    "require_exact_counters": "true",
+    "require_no_nan_inf": "true",
+    "stopping_policy": "fixed_epochs",
+    "working_set_count": "1024",
+    "working_set_policy": "all_records",
+    "working_set_start": "0"
+  },
+  "expected_effect": "PRIMITIVE_DENIED",
+  "message": "T policy is not supported by the primitive ABI",
+  "mutated_source_sha256": "bf9dc7fdd9c4253fca42c8d8cfd5cb2662589ff2740a488ade1cbc45b84daa58",
+  "mutated_tcap_hash": "d42ed9b4107d7062b4bd3e024c48fb36251274bf2c05b71ae80d75a8045eac71",
+  "mutation": {
+    "file": "loss_function.t",
+    "new": "{'loss': 'mae'}",
+    "old": "{'loss': 'mse'}"
+  },
+  "observed_effect": "PRIMITIVE_DENIED",
+  "original_tcap_hash": "4c3a538736c68f0343e2050aa939ea3a55b3fd930ce4ffbe2c2341a1d0fd45d0",
+  "pass": true,
+  "python_or_worker_policy_changed": false,
+  "source_occurrences_changed": 1,
+  "surface": "loss_function",
+  "t_receipts_before_effect": 9
+}

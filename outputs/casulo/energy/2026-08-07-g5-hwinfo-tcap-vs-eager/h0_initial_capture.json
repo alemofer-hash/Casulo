@@ -1,0 +1,8 @@
+{
+  "byte_offset": 407132,
+  "captured_before_workload": true,
+  "last_timestamp_utc": "2026-08-07T17:27:19.137000+00:00",
+  "note": "bounded shared-read snapshot captured before worker development probes",
+  "sha256_prefix_snapshot": "5d73940992201ecb1ea81991204f73edf9bbf2af7ba3bb00527f5d622a07a0a8",
+  "source_csv": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV"
+}

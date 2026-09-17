@@ -1,0 +1,18 @@
+{
+  "schema": "casulo-first-party-voice/1.0",
+  "status": "ADOPTED_PROVISIONAL_REDISTRIBUTABLE_FALLBACK",
+  "backend": "casulo-first-party-formant",
+  "voice_id": "casulo-provisional-robotic-ptbr",
+  "locale": "pt-BR",
+  "runtime_license": "MIT",
+  "model_weights": null,
+  "model_license": "NOT_APPLICABLE_NO_MODEL",
+  "voice_data": null,
+  "voice_data_license": "NOT_APPLICABLE_NO_RECORDED_DATA",
+  "g2p": "first-party bounded grapheme rules",
+  "g2p_license": "MIT",
+  "redistributable": true,
+  "network_required": false,
+  "quality_status": "PROVISIONAL_OWNER_REVIEW_REQUIRED",
+  "not_claimed": ["natural voice", "complete pt-BR phonology", "human approval"]
+}

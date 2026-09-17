@@ -1,0 +1,11 @@
+{
+  "schema": "casulo.t85.post-gate-audit/1.0",
+  "state": "INVALIDATED_CRITICAL_SEMANTIC_LOSS",
+  "preserved": true,
+  "cause": "the interactive project-isolation requirement received a BYTES_PRESERVED success label copied from the preceding CSV case",
+  "affected_agent": "t_interactive_01",
+  "numbers_invalidated": ["TS7_T_NONTRIVIAL_HOLDOUTS_HOSTED_PASS"],
+  "repair": "success events are no longer neural output; the compiler derives them canonically from the frozen requirement_id",
+  "next_attempt": "ts07-nontrivial-holdouts-attempt6",
+  "human_proof": "NOT_EXECUTED"
+}

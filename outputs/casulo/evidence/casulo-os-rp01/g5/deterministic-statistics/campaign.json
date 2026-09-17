@@ -1,0 +1,759 @@
+{
+  "abort_reason": null,
+  "aggregates": {
+    "amortized_elapsed_ns": {
+      "baseline": 2105000.0,
+      "candidate": 1108000.0
+    },
+    "amortized_speedup_baseline_over_candidate": 1.8998194945848375,
+    "compile_amortization_runs": 100,
+    "compile_elapsed_ns_total": {
+      "baseline": 500000,
+      "candidate": 800000
+    },
+    "energy_ratio_baseline_over_candidate": 1.909090909090909,
+    "estimator": "median_of_paired_ratios",
+    "excluded_pairs": [],
+    "median_elapsed_ns": {
+      "baseline": 2100000.0,
+      "candidate": 1100000.0
+    },
+    "median_energy_joules": {
+      "baseline": 2.1,
+      "candidate": 1.1
+    },
+    "median_phase_timings_ns": {
+      "baseline": {
+        "execute": 2100000.0
+      },
+      "candidate": {
+        "execute": 1100000.0
+      }
+    },
+    "minimum_main_pairs": 21,
+    "paired_exact_sign_test": {
+      "losses": 0,
+      "method": "two_sided_exact_sign_test",
+      "p_value": 9.5367431640625e-07,
+      "ties": 0,
+      "wins": 21
+    },
+    "paired_ratio_ci95": {
+      "high": 1.9433962264150944,
+      "low": 1.8771929824561404,
+      "method": "seeded_paired_bootstrap_median",
+      "resamples": 10000,
+      "seed": 20260807
+    },
+    "scientific_claim": "synthetic_paired_inference_test_only",
+    "speedup_baseline_over_candidate": 1.9090909090909092,
+    "strict_statistics_eligible": true,
+    "trial_count_per_label": 21,
+    "valid_pair_count": 21
+  },
+  "preflight": {
+    "gates": [
+      {
+        "evidence": {
+          "missing": []
+        },
+        "gate": "capabilities",
+        "reason_code": "all_required_available",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "limit_c": 55.0,
+          "maximum_temperature_c": 40.0,
+          "operator_odor_absent": true,
+          "sample_count": 3,
+          "sensor_id": "synthetic"
+        },
+        "gate": "thermal",
+        "reason_code": "thermal_stream_stable",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "cpu_policy": "fixed",
+          "on_ac_power": true,
+          "power_mode": "fixed",
+          "source": "synthetic",
+          "stable": true
+        },
+        "gate": "power_state",
+        "reason_code": "power_state_stable",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "applied": true,
+          "cgroup_path": "/synthetic/not-a-real-cgroup",
+          "controls": {
+            "synthetic": "true"
+          },
+          "cpu_affinity": [
+            0
+          ],
+          "threads": 1
+        },
+        "gate": "isolation",
+        "reason_code": "isolation_verified",
+        "status": "pass"
+      }
+    ],
+    "status": "ready"
+  },
+  "schema": "casulo-livelab-paired-campaign/1",
+  "spec": {
+    "baseline_label": "baseline",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260807,
+    "campaign_id": "synthetic-statistics-v1",
+    "candidate_label": "candidate",
+    "compile_amortization_runs": 100,
+    "evidence_kind": "synthetic",
+    "maximum_trial_seconds": 60.0,
+    "minimum_main_pairs": 21,
+    "preregistered_exclusions": [],
+    "repetitions": 21,
+    "require_power_parity": true,
+    "strict_statistics": true,
+    "warmups": 0
+  },
+  "status": "complete",
+  "trials": [
+    {
+      "compile_elapsed_ns": 500000,
+      "elapsed_ns": 2000000,
+      "energy_joules": 2.0,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 0,
+      "phase_timings_ns": {
+        "execute": 2000000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 800000,
+      "elapsed_ns": 1000000,
+      "energy_joules": 1.0,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 0,
+      "phase_timings_ns": {
+        "execute": 1000000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1010000,
+      "energy_joules": 1.01,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 1,
+      "phase_timings_ns": {
+        "execute": 1010000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2010000,
+      "energy_joules": 2.01,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 1,
+      "phase_timings_ns": {
+        "execute": 2010000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2020000,
+      "energy_joules": 2.02,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 2,
+      "phase_timings_ns": {
+        "execute": 2020000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1020000,
+      "energy_joules": 1.02,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 2,
+      "phase_timings_ns": {
+        "execute": 1020000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1030000,
+      "energy_joules": 1.03,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 3,
+      "phase_timings_ns": {
+        "execute": 1030000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2030000,
+      "energy_joules": 2.03,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 3,
+      "phase_timings_ns": {
+        "execute": 2030000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2040000,
+      "energy_joules": 2.04,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 4,
+      "phase_timings_ns": {
+        "execute": 2040000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1040000,
+      "energy_joules": 1.04,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 4,
+      "phase_timings_ns": {
+        "execute": 1040000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1050000,
+      "energy_joules": 1.05,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 5,
+      "phase_timings_ns": {
+        "execute": 1050000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2050000,
+      "energy_joules": 2.05,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 5,
+      "phase_timings_ns": {
+        "execute": 2050000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2060000,
+      "energy_joules": 2.06,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 6,
+      "phase_timings_ns": {
+        "execute": 2060000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1060000,
+      "energy_joules": 1.06,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 6,
+      "phase_timings_ns": {
+        "execute": 1060000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1070000,
+      "energy_joules": 1.07,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 7,
+      "phase_timings_ns": {
+        "execute": 1070000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2070000,
+      "energy_joules": 2.07,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 7,
+      "phase_timings_ns": {
+        "execute": 2070000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2080000,
+      "energy_joules": 2.08,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 8,
+      "phase_timings_ns": {
+        "execute": 2080000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1080000,
+      "energy_joules": 1.08,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 8,
+      "phase_timings_ns": {
+        "execute": 1080000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1090000,
+      "energy_joules": 1.09,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 9,
+      "phase_timings_ns": {
+        "execute": 1090000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2090000,
+      "energy_joules": 2.09,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 9,
+      "phase_timings_ns": {
+        "execute": 2090000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2100000,
+      "energy_joules": 2.1,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 10,
+      "phase_timings_ns": {
+        "execute": 2100000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1100000,
+      "energy_joules": 1.1,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 10,
+      "phase_timings_ns": {
+        "execute": 1100000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1110000,
+      "energy_joules": 1.11,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 11,
+      "phase_timings_ns": {
+        "execute": 1110000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2110000,
+      "energy_joules": 2.11,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 11,
+      "phase_timings_ns": {
+        "execute": 2110000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2120000,
+      "energy_joules": 2.12,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 12,
+      "phase_timings_ns": {
+        "execute": 2120000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1120000,
+      "energy_joules": 1.12,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 12,
+      "phase_timings_ns": {
+        "execute": 1120000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1130000,
+      "energy_joules": 1.13,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 13,
+      "phase_timings_ns": {
+        "execute": 1130000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2130000,
+      "energy_joules": 2.13,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 13,
+      "phase_timings_ns": {
+        "execute": 2130000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2140000,
+      "energy_joules": 2.14,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 14,
+      "phase_timings_ns": {
+        "execute": 2140000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1140000,
+      "energy_joules": 1.1400000000000001,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 14,
+      "phase_timings_ns": {
+        "execute": 1140000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1150000,
+      "energy_joules": 1.15,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 15,
+      "phase_timings_ns": {
+        "execute": 1150000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2150000,
+      "energy_joules": 2.15,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 15,
+      "phase_timings_ns": {
+        "execute": 2150000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2160000,
+      "energy_joules": 2.16,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 16,
+      "phase_timings_ns": {
+        "execute": 2160000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1160000,
+      "energy_joules": 1.16,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 16,
+      "phase_timings_ns": {
+        "execute": 1160000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1170000,
+      "energy_joules": 1.17,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 17,
+      "phase_timings_ns": {
+        "execute": 1170000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2170000,
+      "energy_joules": 2.17,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 17,
+      "phase_timings_ns": {
+        "execute": 2170000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2180000,
+      "energy_joules": 2.18,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 18,
+      "phase_timings_ns": {
+        "execute": 2180000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1180000,
+      "energy_joules": 1.18,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 18,
+      "phase_timings_ns": {
+        "execute": 1180000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1190000,
+      "energy_joules": 1.19,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 19,
+      "phase_timings_ns": {
+        "execute": 1190000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2190000,
+      "energy_joules": 2.19,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 19,
+      "phase_timings_ns": {
+        "execute": 2190000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 2200000,
+      "energy_joules": 2.2,
+      "exclusion_reason": null,
+      "label": "baseline",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 0,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 20,
+      "phase_timings_ns": {
+        "execute": 2200000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    },
+    {
+      "compile_elapsed_ns": 0,
+      "elapsed_ns": 1200000,
+      "energy_joules": 1.2,
+      "exclusion_reason": null,
+      "label": "candidate",
+      "maximum_temperature_c": 40.0,
+      "order_in_pair": 1,
+      "output_digest": "d5b8c9862f58dca69b3f967c26fff3fd6c4b2b85fc4388f19fbfacfab78c0ce5",
+      "pair_index": 20,
+      "phase_timings_ns": {
+        "execute": 1200000
+      },
+      "power_state_signature": "synthetic-ac-fixed"
+    }
+  ],
+  "workload_invocations": 42,
+  "workload_started": true
+}

@@ -1,0 +1,20 @@
+{
+  "backend": "inductor",
+  "capability": "pytorch-compile-inductor-cpu",
+  "dtype": "float64",
+  "duration_seconds": 13.092625500000395,
+  "error": null,
+  "fullgraph": true,
+  "interpretation": "baseline compilado pode ser medido",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "probe_id": "sha256:d2c705af3a68790225b223985569cfc96488a5130c1f06691667b003d5aef969",
+  "protocol": "casulo-baseline-capability-probe/1.0",
+  "python": "3.13.2",
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "d2c705af3a68790225b223985569cfc96488a5130c1f06691667b003d5aef969"
+  },
+  "status": "AVAILABLE",
+  "threads": 1,
+  "torch_version": "2.12.1+cpu"
+}

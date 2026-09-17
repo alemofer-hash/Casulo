@@ -1,0 +1,30 @@
+{
+  "operation_id": "semantic-route-live-1",
+  "prior_rejections": [],
+  "rationale": "A ideia requer a integração de universos semânticos que abordem a intenção por trás da simulação, a análise de sinais vibratórios, a engenharia para modelar a bomba centrífuga, o diagnóstico de hipóteses elétricas e mecânicas, a interface de manutenção reversível, e a materialização virtual do sistema sem uso de equipamento real.",
+  "raw_sha256": "2eefb10910661e2c8f32fe3bea7600df146018c44472148af70baf68eeb23e3e",
+  "route": [
+    "intencao",
+    "sinais",
+    "engenharia",
+    "diagnostico",
+    "interface",
+    "materializacao"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "d1730a1a16424ce741b37e2f3a01ad34c26e85100ced87e21defad5680d283ce",
+    "ended_monotonic_ns": 7353649712800,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "semantic-route-live-1",
+    "output_sha256": "2eefb10910661e2c8f32fe3bea7600df146018c44472148af70baf68eeb23e3e",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 7326282381700,
+    "stream_events": 142
+  }
+}

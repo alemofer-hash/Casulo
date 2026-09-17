@@ -1,0 +1,78 @@
+{
+  "encoding": "structured-opcodes",
+  "entry": {
+    "function": "execute",
+    "module": "owner.generated.some_dois_numeros"
+  },
+  "modules": [
+    {
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "op": "return_ok",
+              "value": {
+                "args": [
+                  {
+                    "op": "path",
+                    "path": [
+                      "left"
+                    ],
+                    "root": "input"
+                  },
+                  {
+                    "op": "path",
+                    "path": [
+                      "right"
+                    ],
+                    "root": "input"
+                  }
+                ],
+                "name": "add",
+                "op": "call"
+              }
+            }
+          ],
+          "effects": [],
+          "name": "execute",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "SomeDoisNumerosInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "name": "owner.generated.some_dois_numeros"
+    }
+  ],
+  "schema": "casulo.t-bytecode/2.0"
+}

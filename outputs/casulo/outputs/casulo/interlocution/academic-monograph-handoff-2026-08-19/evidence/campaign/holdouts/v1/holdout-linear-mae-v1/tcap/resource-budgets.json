@@ -1,0 +1,40 @@
+{
+  "modules": {
+    "research.interlocution.holdout.holdout_linear_mae_v1.dataset_identity_integrity": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.holdout.holdout_linear_mae_v1.equivalence_acceptance": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.holdout.holdout_linear_mae_v1.initialization_bundle": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.holdout.holdout_linear_mae_v1.loss_function": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.holdout.holdout_linear_mae_v1.numerical_precision": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.holdout.holdout_linear_mae_v1.optimizer_state": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.holdout.holdout_linear_mae_v1.stopping": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.holdout.holdout_linear_mae_v1.update_rule": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    },
+    "research.interlocution.holdout.holdout_linear_mae_v1.working_set": {
+      "deadline_ms": 5000,
+      "steps": 4096
+    }
+  }
+}

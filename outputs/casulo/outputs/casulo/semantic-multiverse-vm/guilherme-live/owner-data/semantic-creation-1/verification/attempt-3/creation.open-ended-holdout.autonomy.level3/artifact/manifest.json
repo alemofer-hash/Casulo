@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:7c82ead291ad958e98142d3f851ac79f7b4b3ff35a213911694686dc596cc885",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "6a6a86a5983d494708252b3097fc50fdcb3c84d49b805238b5bf6e9a912a0d63"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "5ffb5c77519fe30cffa99c116c57a37ed9ebcca17a3ec9f56a900a9bfeec8cae",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "7c02fdf2f9f1fdc77d34b4f298f510dca21fc6248b729ebf4f221e259e073d10",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "autonomy",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "f9736745c2295f1cab1193836896bdbaa3f7c771680f59d7a0ddc2d2d00b058a"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "Level",
+        "judgements": [],
+        "name": "SetAutonomy",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "027dccfa24f7c579434e5616b5a2a680ae4f142363f05fe8df09323e4cac1115"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "Level",
+      "kind": "condense",
+      "name": "SetAutonomy",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "05e7e6231ffffa683174611daedafa460519825702f3a7ac6dcd2d65d204ea19"
+  }
+}

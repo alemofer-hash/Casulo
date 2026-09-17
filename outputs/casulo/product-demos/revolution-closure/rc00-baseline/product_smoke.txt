@@ -1,0 +1,22 @@
+.E......                                                                 [100%]
+=================================== ERRORS ====================================
+___________ ERROR at setup of test_inspection_does_not_create_state ___________
+
+fixturedef = <FixtureDef argname='tmp_path' scope='function' baseid=''>
+request = <SubRequest 'tmp_path' for <Function test_inspection_does_not_create_state>>
+
+    @pytest.hookimpl(wrapper=True)
+    def pytest_fixture_setup(fixturedef: FixtureDef, request) -> object | None:
+        asyncio_mode = _get_asyncio_mode(request.config)
+        if not _is_asyncio_fixture_function(fixturedef.func):
+            if asyncio_mode == Mode.STRICT:
+                # Ignore async fixtures without explicit asyncio mark in strict mode
+                # This applies to pytest_trio fixtures, for example
+>               return (yield)
+                        ^^^^^
+E               PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\guimo\\AppData\\Local\\Temp\\pytest-of-guimo'
+
+C:\Users\guimo\AppData\Roaming\Python\Python313\site-packages\pytest_asyncio\plugin.py:728: PermissionError
+=========================== short test summary info ===========================
+ERROR tests/product/test_semantic_multiverse_doctor.py::test_inspection_does_not_create_state
+7 passed, 1 error in 4.17s

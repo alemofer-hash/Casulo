@@ -1,0 +1,1742 @@
+{
+  "ablation_plan": {
+    "claim": null,
+    "protocol": "casulo-causal-ablation-plan/0.1",
+    "required_controls": [
+      "same graph and inputs",
+      "same CPU affinity",
+      "same measurement duration",
+      "all failures retained",
+      "quality gates before timing"
+    ],
+    "selection_metric": "causal attribution only; no variant may be selected by a single favorable timing",
+    "variants": [
+      {
+        "gemm_workers": 1,
+        "id": "owned-w1-g1",
+        "plan_graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+        "provider": "owned",
+        "provider_identity": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": null,
+          "binary_sha256": null,
+          "external": false,
+          "float32_symbol": null,
+          "float64_symbol": null,
+          "implementation": "generated-c99-openmp-host-vector-isa",
+          "provider_id": "casulo-owned-c99",
+          "set_threads_symbol": null,
+          "version": "0.2"
+        },
+        "reason": null,
+        "status": "AVAILABLE",
+        "workers": 1
+      },
+      {
+        "gemm_workers": 2,
+        "id": "owned-w2-g2",
+        "plan_graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+        "provider": "owned",
+        "provider_identity": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": null,
+          "binary_sha256": null,
+          "external": false,
+          "float32_symbol": null,
+          "float64_symbol": null,
+          "implementation": "generated-c99-openmp-host-vector-isa",
+          "provider_id": "casulo-owned-c99",
+          "set_threads_symbol": null,
+          "version": "0.2"
+        },
+        "reason": null,
+        "status": "AVAILABLE",
+        "workers": 2
+      },
+      {
+        "gemm_workers": 4,
+        "id": "owned-w4-g4",
+        "plan_graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+        "provider": "owned",
+        "provider_identity": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": null,
+          "binary_sha256": null,
+          "external": false,
+          "float32_symbol": null,
+          "float64_symbol": null,
+          "implementation": "generated-c99-openmp-host-vector-isa",
+          "provider_id": "casulo-owned-c99",
+          "set_threads_symbol": null,
+          "version": "0.2"
+        },
+        "reason": null,
+        "status": "AVAILABLE",
+        "workers": 4
+      },
+      {
+        "gemm_workers": 1,
+        "id": "openblas-w4-g1",
+        "plan_graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+        "provider": "openblas",
+        "provider_identity": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "reason": null,
+        "status": "AVAILABLE",
+        "workers": 4
+      },
+      {
+        "gemm_workers": 2,
+        "id": "openblas-w4-g2",
+        "plan_graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+        "provider": "openblas",
+        "provider_identity": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "reason": null,
+        "status": "AVAILABLE",
+        "workers": 4
+      },
+      {
+        "gemm_workers": 4,
+        "id": "openblas-w4-g4",
+        "plan_graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+        "provider": "openblas",
+        "provider_identity": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "reason": null,
+        "status": "AVAILABLE",
+        "workers": 4
+      }
+    ]
+  },
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "created_at_utc": "2026-07-31T03:35:28.496544+00:00",
+  "graph": {
+    "autograd_graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+    "loss": "loss",
+    "path_hint": "heldout-wide.tensor.json",
+    "source_sha256": "669e16cbc2f811f7f939cf7dcb8acde118eefea20875099dcf99c9878f7d76f5",
+    "wrt": [
+      "weight1",
+      "weight2"
+    ]
+  },
+  "instructions": [
+    {
+      "arithmetic_intensity_flops_per_byte": 16.0,
+      "buffer": {
+        "alias_group": "value:hidden",
+        "first_instruction": 0,
+        "last_instruction": 16,
+        "offset": 0,
+        "slot_bytes": 24576
+      },
+      "category": "GEMM",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "exact-matmul-2mnk",
+      "fusion_region": null,
+      "gemm": {
+        "identity": "sha256:809818925acc67645f4fcac234efb569a4fbcaa82579eeeed01b31b42c2b4b82",
+        "loop_order": "row-inner-column",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 16.0,
+          "left_inner_contiguous": true,
+          "logical_input_bytes": 122880,
+          "logical_output_bytes": 24576,
+          "multiply_adds": 1179648,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": true,
+          "right_inner_contiguous": false,
+          "scalar_flops": 2359296
+        },
+        "vector_axis": "column"
+      },
+      "global_index": 0,
+      "input_logical_bytes": 122880,
+      "inputs": [
+        "x",
+        "weight1"
+      ],
+      "logical_traffic_bytes": 147456,
+      "materialized": true,
+      "operator": "matmul",
+      "output_elements": 6144,
+      "output_logical_bytes": 24576,
+      "result": "hidden",
+      "scalar_flops": 2359296,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        64
+      ],
+      "stage": "forward",
+      "stage_index": 0
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.125,
+      "buffer": {
+        "alias_group": "value:active",
+        "first_instruction": 1,
+        "last_instruction": 16,
+        "offset": 24576,
+        "slot_bytes": 24576
+      },
+      "category": "POINTWISE",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "operator-scalar-count",
+      "fusion_region": {
+        "first_instruction": 1,
+        "fused": false,
+        "last_instruction": 1,
+        "operators": [
+          "relu"
+        ]
+      },
+      "gemm": null,
+      "global_index": 1,
+      "input_logical_bytes": 24576,
+      "inputs": [
+        "hidden"
+      ],
+      "logical_traffic_bytes": 49152,
+      "materialized": true,
+      "operator": "relu",
+      "output_elements": 6144,
+      "output_logical_bytes": 24576,
+      "result": "active",
+      "scalar_flops": 6144,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        64
+      ],
+      "stage": "forward",
+      "stage_index": 1
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 7.384615384615385,
+      "buffer": {
+        "alias_group": "value:prediction",
+        "first_instruction": 2,
+        "last_instruction": 11,
+        "offset": 49152,
+        "slot_bytes": 9216
+      },
+      "category": "GEMM",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "exact-matmul-2mnk",
+      "fusion_region": null,
+      "gemm": {
+        "identity": "sha256:36f615d2a1ce2eb70ada5b97debf9053516cc0bd846019364e2b2ffd0142fd9a",
+        "loop_order": "row-inner-column",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 7.384615384615385,
+          "left_inner_contiguous": true,
+          "logical_input_bytes": 30720,
+          "logical_output_bytes": 9216,
+          "multiply_adds": 147456,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": true,
+          "right_inner_contiguous": false,
+          "scalar_flops": 294912
+        },
+        "vector_axis": "column"
+      },
+      "global_index": 2,
+      "input_logical_bytes": 30720,
+      "inputs": [
+        "active",
+        "weight2"
+      ],
+      "logical_traffic_bytes": 39936,
+      "materialized": true,
+      "operator": "matmul",
+      "output_elements": 2304,
+      "output_logical_bytes": 9216,
+      "result": "prediction",
+      "scalar_flops": 294912,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        24
+      ],
+      "stage": "forward",
+      "stage_index": 2
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.08333333333333333,
+      "buffer": {
+        "alias_group": "value:residual",
+        "first_instruction": 3,
+        "last_instruction": 10,
+        "offset": 58368,
+        "slot_bytes": 9216
+      },
+      "category": "POINTWISE",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "operator-scalar-count",
+      "fusion_region": {
+        "first_instruction": 3,
+        "fused": true,
+        "last_instruction": 4,
+        "operators": [
+          "sub",
+          "mul"
+        ]
+      },
+      "gemm": null,
+      "global_index": 3,
+      "input_logical_bytes": 18432,
+      "inputs": [
+        "prediction",
+        "target"
+      ],
+      "logical_traffic_bytes": 27648,
+      "materialized": true,
+      "operator": "sub",
+      "output_elements": 2304,
+      "output_logical_bytes": 9216,
+      "result": "residual",
+      "scalar_flops": 2304,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        24
+      ],
+      "stage": "forward",
+      "stage_index": 3
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.08333333333333333,
+      "buffer": {
+        "alias_group": "value:squared",
+        "first_instruction": 4,
+        "last_instruction": 7,
+        "offset": 67584,
+        "slot_bytes": 9216
+      },
+      "category": "POINTWISE",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "operator-scalar-count",
+      "fusion_region": {
+        "first_instruction": 3,
+        "fused": true,
+        "last_instruction": 4,
+        "operators": [
+          "sub",
+          "mul"
+        ]
+      },
+      "gemm": null,
+      "global_index": 4,
+      "input_logical_bytes": 18432,
+      "inputs": [
+        "residual",
+        "residual"
+      ],
+      "logical_traffic_bytes": 27648,
+      "materialized": true,
+      "operator": "mul",
+      "output_elements": 2304,
+      "output_logical_bytes": 9216,
+      "result": "squared",
+      "scalar_flops": 2304,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        24
+      ],
+      "stage": "forward",
+      "stage_index": 4
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.24989154013015186,
+      "buffer": {
+        "alias_group": "value:loss",
+        "first_instruction": 5,
+        "last_instruction": 6,
+        "offset": 76800,
+        "slot_bytes": 64
+      },
+      "category": "REDUCTION",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "reduction-additions-plus-mean-divisions",
+      "fusion_region": null,
+      "gemm": null,
+      "global_index": 5,
+      "input_logical_bytes": 9216,
+      "inputs": [
+        "squared"
+      ],
+      "logical_traffic_bytes": 9220,
+      "materialized": true,
+      "operator": "mean",
+      "output_elements": 1,
+      "output_logical_bytes": 4,
+      "result": "loss",
+      "scalar_flops": 2304,
+      "scalar_flops_known": true,
+      "shape": [
+        1
+      ],
+      "stage": "forward",
+      "stage_index": 5
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.0,
+      "buffer": {
+        "alias_group": "gradient:g0001_seed_loss",
+        "first_instruction": 6,
+        "last_instruction": 7,
+        "offset": 76864,
+        "slot_bytes": 64
+      },
+      "category": "POINTWISE",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "write-or-broadcast-without-scalar-flop",
+      "fusion_region": {
+        "first_instruction": 0,
+        "fused": false,
+        "last_instruction": 0,
+        "operators": [
+          "ones_like"
+        ]
+      },
+      "gemm": null,
+      "global_index": 6,
+      "input_logical_bytes": 4,
+      "inputs": [
+        "loss"
+      ],
+      "logical_traffic_bytes": 8,
+      "materialized": true,
+      "operator": "ones_like",
+      "output_elements": 1,
+      "output_logical_bytes": 4,
+      "result": "g0001_seed_loss",
+      "scalar_flops": 0,
+      "scalar_flops_known": true,
+      "shape": [
+        1
+      ],
+      "stage": "backward",
+      "stage_index": 0
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.12497287914949012,
+      "buffer": {
+        "alias_group": "gradient:g0002_d_squared",
+        "first_instruction": 7,
+        "last_instruction": 8,
+        "offset": 76928,
+        "slot_bytes": 9216
+      },
+      "category": "REDUCTION",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "operator-scalar-count",
+      "fusion_region": null,
+      "gemm": null,
+      "global_index": 7,
+      "input_logical_bytes": 9220,
+      "inputs": [
+        "g0001_seed_loss",
+        "squared"
+      ],
+      "logical_traffic_bytes": 18436,
+      "materialized": true,
+      "operator": "mean_backward",
+      "output_elements": 2304,
+      "output_logical_bytes": 9216,
+      "result": "g0002_d_squared",
+      "scalar_flops": 2304,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        24
+      ],
+      "stage": "backward",
+      "stage_index": 1
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.08333333333333333,
+      "buffer": {
+        "alias_group": "gradient:g0003_raw_d_residual",
+        "first_instruction": 8,
+        "last_instruction": 9,
+        "offset": 67584,
+        "slot_bytes": 9216
+      },
+      "category": "POINTWISE",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "operator-scalar-count",
+      "fusion_region": {
+        "first_instruction": 2,
+        "fused": true,
+        "last_instruction": 3,
+        "operators": [
+          "mul",
+          "add"
+        ]
+      },
+      "gemm": null,
+      "global_index": 8,
+      "input_logical_bytes": 18432,
+      "inputs": [
+        "g0002_d_squared",
+        "residual"
+      ],
+      "logical_traffic_bytes": 27648,
+      "materialized": true,
+      "operator": "mul",
+      "output_elements": 2304,
+      "output_logical_bytes": 9216,
+      "result": "g0003_raw_d_residual",
+      "scalar_flops": 2304,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        24
+      ],
+      "stage": "backward",
+      "stage_index": 2
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.08333333333333333,
+      "buffer": {
+        "alias_group": "gradient:g0004_d_residual",
+        "first_instruction": 9,
+        "last_instruction": 15,
+        "offset": 76928,
+        "slot_bytes": 9216
+      },
+      "category": "POINTWISE",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "operator-scalar-count",
+      "fusion_region": {
+        "first_instruction": 2,
+        "fused": true,
+        "last_instruction": 3,
+        "operators": [
+          "mul",
+          "add"
+        ]
+      },
+      "gemm": null,
+      "global_index": 9,
+      "input_logical_bytes": 18432,
+      "inputs": [
+        "g0003_raw_d_residual",
+        "g0003_raw_d_residual"
+      ],
+      "logical_traffic_bytes": 27648,
+      "materialized": true,
+      "operator": "add",
+      "output_elements": 2304,
+      "output_logical_bytes": 9216,
+      "result": "g0004_d_residual",
+      "scalar_flops": 2304,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        24
+      ],
+      "stage": "backward",
+      "stage_index": 3
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.0,
+      "buffer": {
+        "alias_group": "gradient:g0004_d_residual",
+        "first_instruction": 9,
+        "last_instruction": 15,
+        "offset": 76928,
+        "slot_bytes": 9216
+      },
+      "category": "REDUCTION",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "identity-view",
+      "fusion_region": null,
+      "gemm": null,
+      "global_index": 10,
+      "input_logical_bytes": 18432,
+      "inputs": [
+        "g0004_d_residual",
+        "residual"
+      ],
+      "logical_traffic_bytes": 27648,
+      "materialized": true,
+      "operator": "reduce_to_shape",
+      "output_elements": 2304,
+      "output_logical_bytes": 9216,
+      "result": "g0005_d_residual",
+      "scalar_flops": 0,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        24
+      ],
+      "stage": "backward",
+      "stage_index": 4
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.0,
+      "buffer": {
+        "alias_group": "gradient:g0004_d_residual",
+        "first_instruction": 9,
+        "last_instruction": 15,
+        "offset": 76928,
+        "slot_bytes": 9216
+      },
+      "category": "REDUCTION",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "identity-view",
+      "fusion_region": null,
+      "gemm": null,
+      "global_index": 11,
+      "input_logical_bytes": 18432,
+      "inputs": [
+        "g0005_d_residual",
+        "prediction"
+      ],
+      "logical_traffic_bytes": 27648,
+      "materialized": true,
+      "operator": "reduce_to_shape",
+      "output_elements": 2304,
+      "output_logical_bytes": 9216,
+      "result": "g0006_d_prediction",
+      "scalar_flops": 0,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        24
+      ],
+      "stage": "backward",
+      "stage_index": 5
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": null,
+      "buffer": null,
+      "category": "VIEW",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "view",
+      "fusion_region": null,
+      "gemm": null,
+      "global_index": 12,
+      "input_logical_bytes": 6144,
+      "inputs": [
+        "weight2"
+      ],
+      "logical_traffic_bytes": 0,
+      "materialized": false,
+      "operator": "transpose",
+      "output_elements": 1536,
+      "output_logical_bytes": 6144,
+      "result": "g0009_transpose_right",
+      "scalar_flops": 0,
+      "scalar_flops_known": true,
+      "shape": [
+        24,
+        64
+      ],
+      "stage": "backward",
+      "stage_index": 6
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 7.384615384615385,
+      "buffer": {
+        "alias_group": "gradient:g0010_d_active",
+        "first_instruction": 13,
+        "last_instruction": 16,
+        "offset": 86144,
+        "slot_bytes": 24576
+      },
+      "category": "GEMM",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "exact-matmul-2mnk",
+      "fusion_region": null,
+      "gemm": {
+        "identity": "sha256:bf83c54f114f19157a7ee553b5af294cce183da4434c09b8425fc31c0e964ede",
+        "loop_order": "row-column-inner",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 7.384615384615385,
+          "left_inner_contiguous": true,
+          "logical_input_bytes": 15360,
+          "logical_output_bytes": 24576,
+          "multiply_adds": 147456,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": false,
+          "right_inner_contiguous": true,
+          "scalar_flops": 294912
+        },
+        "vector_axis": null
+      },
+      "global_index": 13,
+      "input_logical_bytes": 15360,
+      "inputs": [
+        "g0006_d_prediction",
+        "g0009_transpose_right"
+      ],
+      "logical_traffic_bytes": 39936,
+      "materialized": true,
+      "operator": "matmul",
+      "output_elements": 6144,
+      "output_logical_bytes": 24576,
+      "result": "g0010_d_active",
+      "scalar_flops": 294912,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        64
+      ],
+      "stage": "backward",
+      "stage_index": 7
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.0,
+      "buffer": {
+        "alias_group": "value:active",
+        "first_instruction": 1,
+        "last_instruction": 16,
+        "offset": 24576,
+        "slot_bytes": 24576
+      },
+      "category": "VIEW",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "view",
+      "fusion_region": null,
+      "gemm": null,
+      "global_index": 14,
+      "input_logical_bytes": 24576,
+      "inputs": [
+        "active"
+      ],
+      "logical_traffic_bytes": 49152,
+      "materialized": true,
+      "operator": "transpose",
+      "output_elements": 6144,
+      "output_logical_bytes": 24576,
+      "result": "g0011_transpose_left",
+      "scalar_flops": 0,
+      "scalar_flops_known": true,
+      "shape": [
+        64,
+        96
+      ],
+      "stage": "backward",
+      "stage_index": 8
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 7.384615384615385,
+      "buffer": {
+        "alias_group": "gradient:g0012_d_weight2",
+        "first_instruction": 15,
+        "last_instruction": 15,
+        "offset": 49152,
+        "slot_bytes": 9216
+      },
+      "category": "GEMM",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "exact-matmul-2mnk",
+      "fusion_region": null,
+      "gemm": {
+        "identity": "sha256:648ab1679ba2534885b501819bc4c6e925a54bcc580483d47ddb0f648e09cd2c",
+        "loop_order": "row-inner-column",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 7.384615384615385,
+          "left_inner_contiguous": false,
+          "logical_input_bytes": 33792,
+          "logical_output_bytes": 6144,
+          "multiply_adds": 147456,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": true,
+          "right_inner_contiguous": false,
+          "scalar_flops": 294912
+        },
+        "vector_axis": "column"
+      },
+      "global_index": 15,
+      "input_logical_bytes": 33792,
+      "inputs": [
+        "g0011_transpose_left",
+        "g0006_d_prediction"
+      ],
+      "logical_traffic_bytes": 39936,
+      "materialized": true,
+      "operator": "matmul",
+      "output_elements": 1536,
+      "output_logical_bytes": 6144,
+      "result": "g0012_d_weight2",
+      "scalar_flops": 294912,
+      "scalar_flops_known": true,
+      "shape": [
+        64,
+        24
+      ],
+      "stage": "backward",
+      "stage_index": 9
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 0.125,
+      "buffer": {
+        "alias_group": "gradient:g0013_d_hidden",
+        "first_instruction": 16,
+        "last_instruction": 18,
+        "offset": 110720,
+        "slot_bytes": 24576
+      },
+      "category": "POINTWISE",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "operator-scalar-count",
+      "fusion_region": {
+        "first_instruction": 10,
+        "fused": false,
+        "last_instruction": 10,
+        "operators": [
+          "relu_backward"
+        ]
+      },
+      "gemm": null,
+      "global_index": 16,
+      "input_logical_bytes": 73728,
+      "inputs": [
+        "g0010_d_active",
+        "hidden",
+        "active"
+      ],
+      "logical_traffic_bytes": 98304,
+      "materialized": true,
+      "operator": "relu_backward",
+      "output_elements": 6144,
+      "output_logical_bytes": 24576,
+      "result": "g0013_d_hidden",
+      "scalar_flops": 12288,
+      "scalar_flops_known": true,
+      "shape": [
+        96,
+        64
+      ],
+      "stage": "backward",
+      "stage_index": 10
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": null,
+      "buffer": null,
+      "category": "VIEW",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "view",
+      "fusion_region": null,
+      "gemm": null,
+      "global_index": 17,
+      "input_logical_bytes": 73728,
+      "inputs": [
+        "x"
+      ],
+      "logical_traffic_bytes": 0,
+      "materialized": false,
+      "operator": "transpose",
+      "output_elements": 18432,
+      "output_logical_bytes": 73728,
+      "result": "g0016_transpose_left",
+      "scalar_flops": 0,
+      "scalar_flops_known": true,
+      "shape": [
+        192,
+        96
+      ],
+      "stage": "backward",
+      "stage_index": 11
+    },
+    {
+      "arithmetic_intensity_flops_per_byte": 16.0,
+      "buffer": {
+        "alias_group": "gradient:g0017_d_weight1",
+        "first_instruction": 18,
+        "last_instruction": 18,
+        "offset": 135296,
+        "slot_bytes": 49152
+      },
+      "category": "GEMM",
+      "claim": null,
+      "dtype": "float32",
+      "flop_accounting": "exact-matmul-2mnk",
+      "fusion_region": null,
+      "gemm": {
+        "identity": "sha256:5bc41c6b6d7c8d9f0ce63b975eb035462a179e5b1254ed5afeb100541a0235e2",
+        "loop_order": "row-inner-column",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 16.0,
+          "left_inner_contiguous": false,
+          "logical_input_bytes": 98304,
+          "logical_output_bytes": 49152,
+          "multiply_adds": 1179648,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": true,
+          "right_inner_contiguous": false,
+          "scalar_flops": 2359296
+        },
+        "vector_axis": "column"
+      },
+      "global_index": 18,
+      "input_logical_bytes": 98304,
+      "inputs": [
+        "g0016_transpose_left",
+        "g0013_d_hidden"
+      ],
+      "logical_traffic_bytes": 147456,
+      "materialized": true,
+      "operator": "matmul",
+      "output_elements": 12288,
+      "output_logical_bytes": 49152,
+      "result": "g0017_d_weight1",
+      "scalar_flops": 2359296,
+      "scalar_flops_known": true,
+      "shape": [
+        192,
+        64
+      ],
+      "stage": "backward",
+      "stage_index": 12
+    }
+  ],
+  "plan": {
+    "algebra_kernels": [
+      {
+        "contract": {
+          "dtype": "float32",
+          "left_shape": [
+            96,
+            192
+          ],
+          "left_strides": [
+            192,
+            1
+          ],
+          "operation": "matmul-rank2",
+          "output_shape": [
+            96,
+            64
+          ],
+          "output_strides": [
+            64,
+            1
+          ],
+          "right_shape": [
+            192,
+            64
+          ],
+          "right_strides": [
+            64,
+            1
+          ]
+        },
+        "contracts_multiply_add": true,
+        "identity": "sha256:809818925acc67645f4fcac234efb569a4fbcaa82579eeeed01b31b42c2b4b82",
+        "kernel_abi": "casulo-gemm-kernel/0.1",
+        "loop_order": "row-inner-column",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "protocol": "casulo-linear-algebra/0.1",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "rationale": [
+          "reutiliza um escalar da matriz esquerda por linha do resultado",
+          "percorre matriz direita e saída contiguamente",
+          "mantém a acumulação de cada saída em ordem crescente do eixo interno"
+        ],
+        "reassociates_reduction": false,
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 16.0,
+          "left_inner_contiguous": true,
+          "logical_input_bytes": 122880,
+          "logical_output_bytes": 24576,
+          "multiply_adds": 1179648,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": true,
+          "right_inner_contiguous": false,
+          "scalar_flops": 2359296
+        },
+        "vector_axis": "column"
+      },
+      {
+        "contract": {
+          "dtype": "float32",
+          "left_shape": [
+            96,
+            64
+          ],
+          "left_strides": [
+            64,
+            1
+          ],
+          "operation": "matmul-rank2",
+          "output_shape": [
+            96,
+            24
+          ],
+          "output_strides": [
+            24,
+            1
+          ],
+          "right_shape": [
+            64,
+            24
+          ],
+          "right_strides": [
+            24,
+            1
+          ]
+        },
+        "contracts_multiply_add": true,
+        "identity": "sha256:36f615d2a1ce2eb70ada5b97debf9053516cc0bd846019364e2b2ffd0142fd9a",
+        "kernel_abi": "casulo-gemm-kernel/0.1",
+        "loop_order": "row-inner-column",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "protocol": "casulo-linear-algebra/0.1",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "rationale": [
+          "reutiliza um escalar da matriz esquerda por linha do resultado",
+          "percorre matriz direita e saída contiguamente",
+          "mantém a acumulação de cada saída em ordem crescente do eixo interno"
+        ],
+        "reassociates_reduction": false,
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 7.384615384615385,
+          "left_inner_contiguous": true,
+          "logical_input_bytes": 30720,
+          "logical_output_bytes": 9216,
+          "multiply_adds": 147456,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": true,
+          "right_inner_contiguous": false,
+          "scalar_flops": 294912
+        },
+        "vector_axis": "column"
+      },
+      {
+        "contract": {
+          "dtype": "float32",
+          "left_shape": [
+            96,
+            24
+          ],
+          "left_strides": [
+            24,
+            1
+          ],
+          "operation": "matmul-rank2",
+          "output_shape": [
+            96,
+            64
+          ],
+          "output_strides": [
+            64,
+            1
+          ],
+          "right_shape": [
+            24,
+            64
+          ],
+          "right_strides": [
+            1,
+            24
+          ]
+        },
+        "contracts_multiply_add": true,
+        "identity": "sha256:bf83c54f114f19157a7ee553b5af294cce183da4434c09b8425fc31c0e964ede",
+        "kernel_abi": "casulo-gemm-kernel/0.1",
+        "loop_order": "row-column-inner",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "protocol": "casulo-linear-algebra/0.1",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "rationale": [
+          "produto interno percorre os dois operandos com o melhor stride disponível",
+          "evita materializar a matriz direita transposta",
+          "mantém a acumulação de cada saída em ordem crescente do eixo interno"
+        ],
+        "reassociates_reduction": false,
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 7.384615384615385,
+          "left_inner_contiguous": true,
+          "logical_input_bytes": 15360,
+          "logical_output_bytes": 24576,
+          "multiply_adds": 147456,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": false,
+          "right_inner_contiguous": true,
+          "scalar_flops": 294912
+        },
+        "vector_axis": null
+      },
+      {
+        "contract": {
+          "dtype": "float32",
+          "left_shape": [
+            64,
+            96
+          ],
+          "left_strides": [
+            1,
+            64
+          ],
+          "operation": "matmul-rank2",
+          "output_shape": [
+            64,
+            24
+          ],
+          "output_strides": [
+            24,
+            1
+          ],
+          "right_shape": [
+            96,
+            24
+          ],
+          "right_strides": [
+            24,
+            1
+          ]
+        },
+        "contracts_multiply_add": true,
+        "identity": "sha256:648ab1679ba2534885b501819bc4c6e925a54bcc580483d47ddb0f648e09cd2c",
+        "kernel_abi": "casulo-gemm-kernel/0.1",
+        "loop_order": "row-inner-column",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "protocol": "casulo-linear-algebra/0.1",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "rationale": [
+          "reutiliza um escalar da matriz esquerda por linha do resultado",
+          "percorre matriz direita e saída contiguamente",
+          "mantém a acumulação de cada saída em ordem crescente do eixo interno"
+        ],
+        "reassociates_reduction": false,
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 7.384615384615385,
+          "left_inner_contiguous": false,
+          "logical_input_bytes": 33792,
+          "logical_output_bytes": 6144,
+          "multiply_adds": 147456,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": true,
+          "right_inner_contiguous": false,
+          "scalar_flops": 294912
+        },
+        "vector_axis": "column"
+      },
+      {
+        "contract": {
+          "dtype": "float32",
+          "left_shape": [
+            192,
+            96
+          ],
+          "left_strides": [
+            1,
+            192
+          ],
+          "operation": "matmul-rank2",
+          "output_shape": [
+            192,
+            64
+          ],
+          "output_strides": [
+            64,
+            1
+          ],
+          "right_shape": [
+            96,
+            64
+          ],
+          "right_strides": [
+            64,
+            1
+          ]
+        },
+        "contracts_multiply_add": true,
+        "identity": "sha256:5bc41c6b6d7c8d9f0ce63b975eb035462a179e5b1254ed5afeb100541a0235e2",
+        "kernel_abi": "casulo-gemm-kernel/0.1",
+        "loop_order": "row-inner-column",
+        "materializes_left": false,
+        "materializes_right": false,
+        "parallel_axis": "row",
+        "protocol": "casulo-linear-algebra/0.1",
+        "provider": {
+          "abi": "casulo-gemm-provider/0.1",
+          "binary_name": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+          "binary_sha256": "9e3e5a4229c1ca39f10dc82bba9e2b2bf48037790932566f37aff1a7ccf3588f",
+          "external": true,
+          "float32_symbol": "scipy_cblas_sgemm64_",
+          "float64_symbol": "scipy_cblas_dgemm64_",
+          "implementation": "external-cblas-ilp64-runtime-function-pointer",
+          "provider_id": "numpy-scipy-openblas-ilp64",
+          "set_threads_symbol": "scipy_openblas_set_num_threads64_",
+          "version": "0.3.30"
+        },
+        "rationale": [
+          "reutiliza um escalar da matriz esquerda por linha do resultado",
+          "percorre matriz direita e saída contiguamente",
+          "mantém a acumulação de cada saída em ordem crescente do eixo interno"
+        ],
+        "reassociates_reduction": false,
+        "traffic": {
+          "arithmetic_intensity_flops_per_byte": 16.0,
+          "left_inner_contiguous": false,
+          "logical_input_bytes": 98304,
+          "logical_output_bytes": 49152,
+          "multiply_adds": 1179648,
+          "output_columns_contiguous": true,
+          "right_columns_contiguous": true,
+          "right_inner_contiguous": false,
+          "scalar_flops": 2359296
+        },
+        "vector_axis": "column"
+      }
+    ],
+    "alignment_bytes": 64,
+    "arena_budget_bytes": 67108864,
+    "arena_required_bytes": 184448,
+    "buffers": [
+      {
+        "alias_group": "value:hidden",
+        "first_instruction": 0,
+        "last_instruction": 16,
+        "nbytes": 24576,
+        "offset": 0,
+        "slot_bytes": 24576,
+        "values": [
+          "hidden"
+        ]
+      },
+      {
+        "alias_group": "value:active",
+        "first_instruction": 1,
+        "last_instruction": 16,
+        "nbytes": 24576,
+        "offset": 24576,
+        "slot_bytes": 24576,
+        "values": [
+          "active",
+          "g0011_transpose_left"
+        ]
+      },
+      {
+        "alias_group": "value:prediction",
+        "first_instruction": 2,
+        "last_instruction": 11,
+        "nbytes": 9216,
+        "offset": 49152,
+        "slot_bytes": 9216,
+        "values": [
+          "prediction"
+        ]
+      },
+      {
+        "alias_group": "value:residual",
+        "first_instruction": 3,
+        "last_instruction": 10,
+        "nbytes": 9216,
+        "offset": 58368,
+        "slot_bytes": 9216,
+        "values": [
+          "residual"
+        ]
+      },
+      {
+        "alias_group": "value:squared",
+        "first_instruction": 4,
+        "last_instruction": 7,
+        "nbytes": 9216,
+        "offset": 67584,
+        "slot_bytes": 9216,
+        "values": [
+          "squared"
+        ]
+      },
+      {
+        "alias_group": "value:loss",
+        "first_instruction": 5,
+        "last_instruction": 6,
+        "nbytes": 4,
+        "offset": 76800,
+        "slot_bytes": 64,
+        "values": [
+          "loss"
+        ]
+      },
+      {
+        "alias_group": "gradient:g0001_seed_loss",
+        "first_instruction": 6,
+        "last_instruction": 7,
+        "nbytes": 4,
+        "offset": 76864,
+        "slot_bytes": 64,
+        "values": [
+          "g0001_seed_loss"
+        ]
+      },
+      {
+        "alias_group": "gradient:g0002_d_squared",
+        "first_instruction": 7,
+        "last_instruction": 8,
+        "nbytes": 9216,
+        "offset": 76928,
+        "slot_bytes": 9216,
+        "values": [
+          "g0002_d_squared"
+        ]
+      },
+      {
+        "alias_group": "gradient:g0003_raw_d_residual",
+        "first_instruction": 8,
+        "last_instruction": 9,
+        "nbytes": 9216,
+        "offset": 67584,
+        "slot_bytes": 9216,
+        "values": [
+          "g0003_raw_d_residual"
+        ]
+      },
+      {
+        "alias_group": "gradient:g0004_d_residual",
+        "first_instruction": 9,
+        "last_instruction": 15,
+        "nbytes": 9216,
+        "offset": 76928,
+        "slot_bytes": 9216,
+        "values": [
+          "g0004_d_residual",
+          "g0005_d_residual",
+          "g0006_d_prediction"
+        ]
+      },
+      {
+        "alias_group": "gradient:g0010_d_active",
+        "first_instruction": 13,
+        "last_instruction": 16,
+        "nbytes": 24576,
+        "offset": 86144,
+        "slot_bytes": 24576,
+        "values": [
+          "g0010_d_active"
+        ]
+      },
+      {
+        "alias_group": "gradient:g0012_d_weight2",
+        "first_instruction": 15,
+        "last_instruction": 15,
+        "nbytes": 6144,
+        "offset": 49152,
+        "slot_bytes": 9216,
+        "values": [
+          "g0012_d_weight2"
+        ]
+      },
+      {
+        "alias_group": "gradient:g0013_d_hidden",
+        "first_instruction": 16,
+        "last_instruction": 18,
+        "nbytes": 24576,
+        "offset": 110720,
+        "slot_bytes": 24576,
+        "values": [
+          "g0013_d_hidden"
+        ]
+      },
+      {
+        "alias_group": "gradient:g0017_d_weight1",
+        "first_instruction": 18,
+        "last_instruction": 18,
+        "nbytes": 49152,
+        "offset": 135296,
+        "slot_bytes": 49152,
+        "values": [
+          "g0017_d_weight1"
+        ]
+      }
+    ],
+    "eligible": true,
+    "fusion_regions": [
+      {
+        "dtype": "float32",
+        "first_instruction": 1,
+        "fused": false,
+        "last_instruction": 1,
+        "operators": [
+          "relu"
+        ],
+        "results": [
+          "active"
+        ],
+        "shape": [
+          96,
+          64
+        ],
+        "stage": "forward",
+        "vectorizable": true
+      },
+      {
+        "dtype": "float32",
+        "first_instruction": 3,
+        "fused": true,
+        "last_instruction": 4,
+        "operators": [
+          "sub",
+          "mul"
+        ],
+        "results": [
+          "residual",
+          "squared"
+        ],
+        "shape": [
+          96,
+          24
+        ],
+        "stage": "forward",
+        "vectorizable": true
+      },
+      {
+        "dtype": "float32",
+        "first_instruction": 0,
+        "fused": false,
+        "last_instruction": 0,
+        "operators": [
+          "ones_like"
+        ],
+        "results": [
+          "g0001_seed_loss"
+        ],
+        "shape": [
+          1
+        ],
+        "stage": "backward",
+        "vectorizable": true
+      },
+      {
+        "dtype": "float32",
+        "first_instruction": 2,
+        "fused": true,
+        "last_instruction": 3,
+        "operators": [
+          "mul",
+          "add"
+        ],
+        "results": [
+          "g0003_raw_d_residual",
+          "g0004_d_residual"
+        ],
+        "shape": [
+          96,
+          24
+        ],
+        "stage": "backward",
+        "vectorizable": true
+      },
+      {
+        "dtype": "float32",
+        "first_instruction": 10,
+        "fused": false,
+        "last_instruction": 10,
+        "operators": [
+          "relu_backward"
+        ],
+        "results": [
+          "g0013_d_hidden"
+        ],
+        "shape": [
+          96,
+          64
+        ],
+        "stage": "backward",
+        "vectorizable": true
+      }
+    ],
+    "gemm_workers": 1,
+    "graph_sha256": "2981f1aea71648f771d1b476eacb7d5b9d1786ba7e0d156650ae8e0ff1182320",
+    "protocol": "casulo-tensor-cpu-plan/0.3",
+    "reason": null,
+    "scheduler": {
+      "allowed": [
+        1,
+        2,
+        4
+      ],
+      "available_cap": 4,
+      "largest_tensor_elements": 18432,
+      "policy": "casulo-bounded-cpu-workers/0.1",
+      "reason": "explicit_worker_budget",
+      "requested": "4",
+      "selected": 4
+    },
+    "status": "NATIVE",
+    "supported_backward_operators": [
+      "add",
+      "div",
+      "matmul",
+      "mean_backward",
+      "mul",
+      "neg",
+      "ones_like",
+      "reduce_to_shape",
+      "relu_backward",
+      "reshape",
+      "sigmoid_backward",
+      "sum_backward",
+      "tanh_backward",
+      "transpose",
+      "zeros_like"
+    ],
+    "supported_forward_operators": [
+      "add",
+      "div",
+      "matmul",
+      "mean",
+      "mul",
+      "relu",
+      "reshape",
+      "sigmoid",
+      "sub",
+      "sum",
+      "tanh",
+      "transpose"
+    ],
+    "workers": 4
+  },
+  "profile_id": "sha256:aa92c5ba79dab3cdaae9351420ef0847a86ffa636b6d5ebd9431d7b4b33f9435",
+  "protocol": "casulo-causal-profile/0.1",
+  "scientific": {
+    "claim": null,
+    "limitations": [
+      "bytes são tráfego lógico, não contadores de hardware",
+      "cache e prefetch não são inferidos",
+      "FLOPs transcendentais permanecem desconhecidos",
+      "hipóteses de gargalo exigem ablação temporal posterior"
+    ],
+    "runtime_measured": false,
+    "speedup": null,
+    "winner_selected": false
+  },
+  "seal": {
+    "algorithm": "sha256",
+    "canonical_body_sha256": "aa92c5ba79dab3cdaae9351420ef0847a86ffa636b6d5ebd9431d7b4b33f9435"
+  },
+  "summary": {
+    "arena_required_bytes": 184448,
+    "arena_reuse_bytes": 67464,
+    "arena_reuse_ratio": 0.26780780590047315,
+    "category_counts": {
+      "GEMM": 5,
+      "POINTWISE": 7,
+      "REDUCTION": 4,
+      "VIEW": 3
+    },
+    "claim": null,
+    "fused_region_count": 2,
+    "gemm_known_flop_fraction": 0.9942763695829926,
+    "gemm_known_flops": 5603328,
+    "gemm_logical_traffic_bytes": 414720,
+    "hypotheses": [
+      {
+        "code": "GEMM_DOMINATED",
+        "evidence": {
+          "known_flop_fraction": 0.9942763695829926
+        },
+        "falsifier": "ablação do provedor e das threads GEMM não altera materialmente o tempo",
+        "priority": 1
+      },
+      {
+        "code": "DISPATCH_OR_LOOP_OVERHEAD",
+        "evidence": {
+          "fused_region_count": 2,
+          "instruction_count": 19
+        },
+        "falsifier": "fundir regiões ou reduzir lançamentos não altera materialmente o tempo",
+        "priority": 3
+      }
+    ],
+    "instruction_count": 19,
+    "known_arithmetic_intensity_flops_per_byte": 7.001769207832224,
+    "known_scalar_flops": 5635584,
+    "logical_allocated_output_bytes": 251912,
+    "logical_traffic_bytes": 804880,
+    "loop_launches_avoided_by_fusion": 2,
+    "unknown_flop_instruction_count": 0,
+    "view_count": 3,
+    "view_output_bytes_not_materialized": 104448
+  }
+}

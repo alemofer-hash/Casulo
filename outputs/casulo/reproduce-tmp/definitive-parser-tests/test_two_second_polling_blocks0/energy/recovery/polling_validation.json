@@ -1,0 +1,23 @@
+{
+  "decision": "Global Polling Period must still be configured to 500 ms; no workload authorized",
+  "finite_nonnegative_package_power": true,
+  "formal_baseline_timestamp_utc": "2026-08-07T15:00:00+00:00",
+  "interval_count": 14,
+  "limits": {
+    "median_seconds": 0.55,
+    "p95_seconds": 0.75
+  },
+  "maximum_interval_seconds": 2.0,
+  "median_interval_seconds": 2.0,
+  "minimum_interval_seconds": 2.0,
+  "new_samples": 15,
+  "observed_file_growth_events": 0,
+  "p95_interval_seconds": 2.0,
+  "preflight_reader": "stat-growth-plus-single-bounded-snapshot",
+  "schema": "casulo-hwinfo-polling-validation/1.0",
+  "status": "BLOCKED_HWINFO_POLLING_NOT_CHANGED",
+  "strictly_increasing": true,
+  "validation_end_utc": "2026-08-08T14:41:25.033781+00:00",
+  "validation_start_utc": "2026-08-08T14:41:23.350153+00:00",
+  "workload_executed": false
+}

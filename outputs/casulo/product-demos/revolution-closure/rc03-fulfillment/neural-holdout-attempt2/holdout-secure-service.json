@@ -1,0 +1,134 @@
+{
+  "accepted": true,
+  "attempts": [
+    {
+      "attempt": 0,
+      "candidate": {
+        "claims": [
+          "The service is strictly loopback-only and does not interact with any external repository or database.",
+          "All data received is validated against a predefined schema before processing.",
+          "The application runs entirely in standalone mode without dependency on any external system or service.",
+          "Data is processed in a way that ensures round-trip fidelity, meaning the original data structure is preserved through parsing, validation, transformation, and serialization."
+        ],
+        "service": {
+          "bind": "127.0.0.1",
+          "components": [
+            "data_parser",
+            "schema_validator",
+            "data_transformer",
+            "data_serializer"
+          ],
+          "round_trip_fidelity": 1.0,
+          "schema_validation": true,
+          "standalone": true
+        }
+      },
+      "fulfillment": {
+        "accepted": true,
+        "candidate_sha256": "9dada7eb8367a8534fde31be201a46ffd14757f27b93fcc191a6e4d7018f7b7f",
+        "coverage": 1.0,
+        "diagnostics": [],
+        "evidence": [
+          {
+            "artifact_sha256": "9dada7eb8367a8534fde31be201a46ffd14757f27b93fcc191a6e4d7018f7b7f",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "9dada7eb8367a8534fde31be201a46ffd14757f27b93fcc191a6e4d7018f7b7f"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:local-software-service@1.0",
+            "receipt_id": "evidence:9dada7eb8367a853:loopback",
+            "requirement_id": "local-software-service:loopback",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:loopback"
+          },
+          {
+            "artifact_sha256": "9dada7eb8367a8534fde31be201a46ffd14757f27b93fcc191a6e4d7018f7b7f",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "9dada7eb8367a8534fde31be201a46ffd14757f27b93fcc191a6e4d7018f7b7f"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:local-software-service@1.0",
+            "receipt_id": "evidence:9dada7eb8367a853:schema",
+            "requirement_id": "local-software-service:schema",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:schema"
+          },
+          {
+            "artifact_sha256": "9dada7eb8367a8534fde31be201a46ffd14757f27b93fcc191a6e4d7018f7b7f",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "9dada7eb8367a8534fde31be201a46ffd14757f27b93fcc191a6e4d7018f7b7f"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:local-software-service@1.0",
+            "receipt_id": "evidence:9dada7eb8367a853:standalone",
+            "requirement_id": "local-software-service:standalone",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:standalone"
+          },
+          {
+            "artifact_sha256": "9dada7eb8367a8534fde31be201a46ffd14757f27b93fcc191a6e4d7018f7b7f",
+            "detail": "domain invariant satisfied",
+            "evidence_class": "DOMAIN_INVARIANT",
+            "independent": true,
+            "input_hashes": [
+              "9dada7eb8367a8534fde31be201a46ffd14757f27b93fcc191a6e4d7018f7b7f"
+            ],
+            "occurred_at": "2026-08-14T20:30:00Z",
+            "producer": "casulo-domain-pack:local-software-service@1.0",
+            "receipt_id": "evidence:9dada7eb8367a853:roundtrip",
+            "requirement_id": "local-software-service:roundtrip",
+            "schema": "casulo.evidence-receipt/1.0",
+            "verdict": "PASS",
+            "verifier_id": "domain:roundtrip"
+          }
+        ],
+        "hard_failures": [],
+        "pack_id": "local-software-service",
+        "schema": "casulo.fulfillment-result/1.0",
+        "spec_gap": 0.0,
+        "unknown": [],
+        "unsupported_claims": [],
+        "verdicts": {
+          "local-software-service:loopback": "PASS",
+          "local-software-service:roundtrip": "PASS",
+          "local-software-service:schema": "PASS",
+          "local-software-service:standalone": "PASS"
+        }
+      },
+      "raw_sha256": "b84bbf51aa42e140826982de4898cbf246d4fcd63682326e112c62eeeef5f350",
+      "structured": true,
+      "trace": {
+        "commercial_ai_api_used": false,
+        "context_digest": "4147fa2bbcfd4e5e13c817203b1a8584bda5636d29a31bbcb51f3233487d899d",
+        "ended_monotonic_ns": 12447545690100,
+        "external_network_used": false,
+        "finish_reason": "stop",
+        "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+        "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "operation_id": "rc3:holdout-secure-service:attempt:0",
+        "output_sha256": "b84bbf51aa42e140826982de4898cbf246d4fcd63682326e112c62eeeef5f350",
+        "sampling_policy_id": "casulo-sampling-planning-v1",
+        "schema": "casulo-stochastic-trace/1.0",
+        "seed_if_available": null,
+        "started_monotonic_ns": 12420118056300,
+        "stream_events": 171
+      }
+    }
+  ],
+  "domain": "local-software-service",
+  "family_id": "holdout-secure-service",
+  "pack_id": "local-software-service",
+  "request_sha256": "41586df5d148a6a14e487189b66970ee73a1035f32c02e0ef74aa3a253658428"
+}

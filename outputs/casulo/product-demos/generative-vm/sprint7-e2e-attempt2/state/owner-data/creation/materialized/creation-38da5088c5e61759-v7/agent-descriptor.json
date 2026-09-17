@@ -1,0 +1,1 @@
+{"artifact_id":"sha256:9912dc0cd3d7c468410cae14413da2bd7e74f200587e09514ffe2700d19bfee5","executable_file":"agent.py","operation":"InitializeReversibility","real_effects_included":false,"schema":"casulo.materialized-t-agent/1.0","tcap_file":"agent.tcap"}

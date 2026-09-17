@@ -1,0 +1,167 @@
+{
+  "bundle_sha256": "96609152b83f5843c39ffe8e5aaf94277bfd64211e9d8dca6c58a11ec04df9a9",
+  "manifest": {
+    "entry": {
+      "function": "decide",
+      "module": "test.exhaust"
+    },
+    "schema": "casulo.tcap/2.0",
+    "sections": {
+      "capabilities": {
+        "file": "capabilities.json",
+        "sha256": "08fccb2dc6cd4e7a8ec6a14c14bc4056388f6ec987b55151b5f85f5570440cb1"
+      },
+      "effects": {
+        "file": "effects.json",
+        "sha256": "ede58617a21cf7f1af48dedf7367ce7af346a904cc92cab0c414273b6feaa9b2"
+      },
+      "foreign_boundaries": {
+        "file": "foreign-boundaries.json",
+        "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+      },
+      "functional_code": {
+        "file": "code.json",
+        "sha256": "8942f2187b5bd5d0218dacefda1cc95359686409875fbf0660a119c4f1c5ff32"
+      },
+      "header": {
+        "file": "header.json",
+        "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+      },
+      "module_graph": {
+        "file": "module-graph.json",
+        "sha256": "c64000fb0e43ea2147df3bdc8040088ae2a77058efc4bbfc2caa98fc329b425a"
+      },
+      "provenance": {
+        "file": "provenance.json",
+        "sha256": "3cceb2999f8005458f0c3a6583e50f6c931a9672d284e1cc5602dd85451dea76"
+      },
+      "readonly_data": {
+        "file": "readonly-data.json",
+        "sha256": "60ca1774ed4af24735a91e15b0854908150ab15ebf98f32d732696899ed2f5e7"
+      },
+      "resource_budgets": {
+        "file": "resource-budgets.json",
+        "sha256": "8acbbed9bb641719247ba42ccee0e7cd23fd2e1c49edfc22ca0bafdab6ca9c42"
+      },
+      "schemas": {
+        "file": "schemas.json",
+        "sha256": "fbf047ecc0ee4572b688f0a2a86514ea85a2c2e8c11f88603d336014b00104bd"
+      },
+      "signature_class": {
+        "file": "signature-class.json",
+        "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+      },
+      "source_map": {
+        "file": "source-map.json",
+        "sha256": "97bbf90a39098305fe8130d353212f48edb9e9c4ce620a2cbe779f71051f2b5f"
+      },
+      "tests": {
+        "file": "tests.json",
+        "sha256": "957dbeae92296acde40ce68abb3b2ed15f0827dd70c21f81611f8e796a547194"
+      },
+      "typed_ir": {
+        "file": "typed-ir.json",
+        "sha256": "37240739319eaae3d3f9b588cee51bab4a567beb57393ccd0382d52f416efe7c"
+      }
+    },
+    "sources": [
+      {
+        "file": "sources/test.exhaust.t",
+        "module": "test.exhaust",
+        "sha256": "0b4faaf17780405907597e60609161df615a5812a6b453d9f090d1e19cd0b3af"
+      }
+    ],
+    "tcap_hash": "3ef6650aba2ac3703d4549e24dfb38dd17bd431bfd0ade26375a77c3e6a1dd8e"
+  },
+  "request": {
+    "function": "decide",
+    "grants": [],
+    "payload": {
+      "cancelled": false
+    },
+    "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "scope_id": "native-conformance:resource-exhaustion",
+    "surface_id": "agent_behavior"
+  },
+  "schema": "casulo.native-t-v2-probe/1.0",
+  "sections": {
+    "capabilities": {
+      "content_utf8": "{\n  \"modules\": {\n    \"test.exhaust\": []\n  }\n}\n",
+      "file": "capabilities.json",
+      "sha256": "08fccb2dc6cd4e7a8ec6a14c14bc4056388f6ec987b55151b5f85f5570440cb1"
+    },
+    "effects": {
+      "content_utf8": "{\n  \"modules\": {\n    \"test.exhaust\": {\n      \"decide\": []\n    }\n  }\n}\n",
+      "file": "effects.json",
+      "sha256": "ede58617a21cf7f1af48dedf7367ce7af346a904cc92cab0c414273b6feaa9b2"
+    },
+    "foreign_boundaries": {
+      "content_utf8": "{\n  \"items\": []\n}\n",
+      "file": "foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    "functional_code": {
+      "content_utf8": "{\n  \"encoding\": \"structured-opcodes\",\n  \"entry\": {\n    \"function\": \"decide\",\n    \"module\": \"test.exhaust\"\n  },\n  \"modules\": [\n    {\n      \"functions\": [\n        {\n          \"code\": [\n            {\n              \"op\": \"cancel_if\",\n              \"value\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"cancelled\"\n                ],\n                \"root\": \"input\"\n              }\n            },\n            {\n              \"op\": \"return_ok\",\n              \"value\": {\n                \"op\": \"const\",\n                \"value\": \"PASS\"\n              }\n            }\n          ],\n          \"effects\": [],\n          \"name\": \"decide\",\n          \"parameter\": {\n            \"name\": \"input\",\n            \"type\": {\n              \"arguments\": [],\n              \"bound\": null,\n              \"name\": \"Input\"\n            }\n          },\n          \"return_type\": {\n            \"arguments\": [\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              },\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            ],\n            \"bound\": null,\n            \"name\": \"Result\"\n          }\n        }\n      ],\n      \"name\": \"test.exhaust\"\n    }\n  ],\n  \"schema\": \"casulo.t-bytecode/2.0\"\n}\n",
+      "file": "code.json",
+      "sha256": "8942f2187b5bd5d0218dacefda1cc95359686409875fbf0660a119c4f1c5ff32"
+    },
+    "header": {
+      "content_utf8": "{\n  \"schema\": \"casulo.tcap/2.0\",\n  \"target\": \"portable-t-vm\",\n  \"verified_before_execution\": true\n}\n",
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "content_utf8": "{\n  \"entry\": {\n    \"function\": \"decide\",\n    \"module\": \"test.exhaust\"\n  },\n  \"modules\": [\n    {\n      \"imports\": [],\n      \"name\": \"test.exhaust\"\n    }\n  ],\n  \"schema\": \"casulo.t-module-graph/2.0\"\n}\n",
+      "file": "module-graph.json",
+      "sha256": "c64000fb0e43ea2147df3bdc8040088ae2a77058efc4bbfc2caa98fc329b425a"
+    },
+    "provenance": {
+      "content_utf8": "{\n  \"builder\": \"casulo-python-tooling\",\n  \"compiler\": \"T/2.0\",\n  \"sources\": [\n    {\n      \"file\": \"sources/test.exhaust.t\",\n      \"module\": \"test.exhaust\",\n      \"sha256\": \"0b4faaf17780405907597e60609161df615a5812a6b453d9f090d1e19cd0b3af\"\n    }\n  ]\n}\n",
+      "file": "provenance.json",
+      "sha256": "3cceb2999f8005458f0c3a6583e50f6c931a9672d284e1cc5602dd85451dea76"
+    },
+    "readonly_data": {
+      "content_utf8": "{\n  \"states\": {\n    \"test.exhaust\": []\n  }\n}\n",
+      "file": "readonly-data.json",
+      "sha256": "60ca1774ed4af24735a91e15b0854908150ab15ebf98f32d732696899ed2f5e7"
+    },
+    "resource_budgets": {
+      "content_utf8": "{\n  \"modules\": {\n    \"test.exhaust\": {\n      \"deadline_ms\": 5000,\n      \"steps\": 1\n    }\n  }\n}\n",
+      "file": "resource-budgets.json",
+      "sha256": "8acbbed9bb641719247ba42ccee0e7cd23fd2e1c49edfc22ca0bafdab6ca9c42"
+    },
+    "schemas": {
+      "content_utf8": "{\n  \"modules\": {\n    \"test.exhaust\": {\n      \"enums\": [],\n      \"records\": [\n        {\n          \"members\": [\n            {\n              \"name\": \"cancelled\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            }\n          ],\n          \"name\": \"Input\"\n        }\n      ],\n      \"version\": 1\n    }\n  }\n}\n",
+      "file": "schemas.json",
+      "sha256": "fbf047ecc0ee4572b688f0a2a86514ea85a2c2e8c11f88603d336014b00104bd"
+    },
+    "signature_class": {
+      "content_utf8": "{\n  \"value\": \"DEVELOPMENT_NOT_COMMERCIAL\"\n}\n",
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "content_utf8": "{\n  \"sources\": [\n    {\n      \"file\": \"sources/test.exhaust.t\",\n      \"module\": \"test.exhaust\",\n      \"sha256\": \"0b4faaf17780405907597e60609161df615a5812a6b453d9f090d1e19cd0b3af\"\n    }\n  ]\n}\n",
+      "file": "source-map.json",
+      "sha256": "97bbf90a39098305fe8130d353212f48edb9e9c4ce620a2cbe779f71051f2b5f"
+    },
+    "tests": {
+      "content_utf8": "{\n  \"properties\": []\n}\n",
+      "file": "tests.json",
+      "sha256": "957dbeae92296acde40ce68abb3b2ed15f0827dd70c21f81611f8e796a547194"
+    },
+    "typed_ir": {
+      "content_utf8": "{\n  \"modules\": [\n    {\n      \"budgets\": {\n        \"deadline_ms\": 5000,\n        \"steps\": 1\n      },\n      \"capabilities\": [],\n      \"enums\": [],\n      \"functions\": [\n        {\n          \"code\": [\n            {\n              \"op\": \"cancel_if\",\n              \"value\": {\n                \"op\": \"path\",\n                \"path\": [\n                  \"cancelled\"\n                ],\n                \"root\": \"input\"\n              }\n            },\n            {\n              \"op\": \"return_ok\",\n              \"value\": {\n                \"op\": \"const\",\n                \"value\": \"PASS\"\n              }\n            }\n          ],\n          \"effects\": [],\n          \"name\": \"decide\",\n          \"parameter\": {\n            \"name\": \"input\",\n            \"type\": {\n              \"arguments\": [],\n              \"bound\": null,\n              \"name\": \"Input\"\n            }\n          },\n          \"return_type\": {\n            \"arguments\": [\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              },\n              {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Text\"\n              }\n            ],\n            \"bound\": null,\n            \"name\": \"Result\"\n          }\n        }\n      ],\n      \"imports\": [],\n      \"module\": \"test.exhaust\",\n      \"records\": [\n        {\n          \"members\": [\n            {\n              \"name\": \"cancelled\",\n              \"type\": {\n                \"arguments\": [],\n                \"bound\": null,\n                \"name\": \"Bool\"\n              }\n            }\n          ],\n          \"name\": \"Input\"\n        }\n      ],\n      \"schema\": \"casulo.t-ir/2.0\",\n      \"schema_version\": 1,\n      \"states\": []\n    }\n  ],\n  \"schema\": \"casulo.t-ir-bundle/2.0\"\n}\n",
+      "file": "typed-ir.json",
+      "sha256": "37240739319eaae3d3f9b588cee51bab4a567beb57393ccd0382d52f416efe7c"
+    }
+  },
+  "sources": [
+    {
+      "content_utf8": "language T/2.0\nmodule test.exhaust\nbudget steps 1\nbudget deadline_ms 5000\nschema version 1\n\nrecord Input\n  member cancelled: Bool\n\nfn decide(input: Input) -> Result<Text,Text>\n  cancel if input.cancelled\n  return ok \"PASS\"\n",
+      "file": "sources/test.exhaust.t",
+      "module": "test.exhaust",
+      "sha256": "0b4faaf17780405907597e60609161df615a5812a6b453d9f090d1e19cd0b3af"
+    }
+  ]
+}

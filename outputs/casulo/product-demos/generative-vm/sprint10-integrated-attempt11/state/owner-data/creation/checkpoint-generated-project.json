@@ -1,0 +1,149 @@
+{
+  "candidate_rejections": [],
+  "creation_sha256": "56a77f403ef4b2bc8632a54b33ff16812b96f6eea8f78560b18cf49f3bff2a3b",
+  "entry_unit": "creation_unit",
+  "project_id": "t-project:c5a9501225062c11de4d7315",
+  "tests": [
+    {
+      "expected_contains": "{'capabilities': ['memory.read'], 'content': {'behavior': {'autonomy': {'type': 'boolean', 'value': true}}, 'data': {'storage': {'type': 'boolean', 'value': true}}, 'identity': {'name': {'type': 'string', 'value': 'F58G'}}, 'interface': {'input': [{'type': 'string', 'value': 'registros técnicos incompatíveis'}, {'type': 'string', 'value': 'alternativas recusadas'}], 'output': [{'type': 'string', 'value': 'sínteses organizadas'}, {'type': 'string', 'value': 'evidência de origin'}]}}}",
+      "input": "{'capabilities': ['memory.read'], 'content': {'behavior': {'autonomy': {'type': 'boolean', 'value': true}}, 'data': {'storage': {'type': 'boolean', 'value': true}}, 'identity': {'name': {'type': 'string', 'value': 'F58G'}}, 'interface': {'input': [{'type': 'string', 'value': 'registros técnicos incompatíveis'}, {'type': 'string', 'value': 'alternativas recusadas'}], 'output': [{'type': 'string', 'value': 'sínteses organizadas'}, {'type': 'string', 'value': 'evidência de origem'}]}}}",
+      "name": "TestCreationSpec",
+      "unit_id": "creation_unit"
+    },
+    {
+      "expected_contains": "{'identity': {'name': {'type': 'string', 'value': 'F58G'}}}",
+      "input": "{'identity': {'name': {'type': 'string', 'value': 'F58G'}}}",
+      "name": "TestIdentityAssignment",
+      "unit_id": "identity_unit"
+    },
+    {
+      "expected_contains": "{'data': {'storage': {'type': 'boolean', 'value': true}}}",
+      "input": "{'data': {'storage': {'type': 'boolean', 'value': true}}}",
+      "name": "TestDataStorage",
+      "unit_id": "data_unit"
+    },
+    {
+      "expected_contains": "{'interface': {'input': [{'type': 'string', 'value': 'registros técnicos incompatíveis'}, {'type': 'string', 'value': 'alternativas recusadas'}]}}",
+      "input": "{'interface': {'input': [{'type': 'string', 'value': 'registros técnicos incompatíveis'}, {'type': 'string', 'value': 'alternativas recusadas'}]}}",
+      "name": "TestInterfaceRegistration",
+      "unit_id": "interface_unit"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "772b5e0bcbfc99e47795030ad949073064b3db2630c742b4773e22233cf2bb79",
+    "ended_monotonic_ns": 2232226655800,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+    "output_sha256": "c5a9501225062c11de4d731544f3aa87bfb6a0f79b652232fadd3713ab356b18",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 2024799975600,
+    "stream_events": 1001
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Initialize in CreationSpec\n  effects [manifest]\n  emit \"creation:open-ended-holdout\"\n",
+      "unit_id": "creation_unit",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "behavior",
+          "autonomy",
+          "value"
+        ],
+        [
+          "data",
+          "storage",
+          "value"
+        ],
+        [
+          "identity",
+          "name",
+          "value"
+        ],
+        [
+          "interface",
+          "input",
+          "items",
+          "path"
+        ],
+        [
+          "interface",
+          "input",
+          "items",
+          "value"
+        ],
+        [
+          "interface",
+          "output",
+          "items",
+          "path"
+        ],
+        [
+          "interface",
+          "output",
+          "items",
+          "value"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit"
+      ],
+      "source": "language T/1.1\nmodule identity\n\ncapability manifest\n\nfield Name\n  trace value: Text\n\ncondense Assign in Name\n  effects [manifest]\n  emit \"F58G\"\n",
+      "unit_id": "identity_unit",
+      "watch_paths": [
+        [
+          "identity",
+          "name",
+          "value"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "identity_unit"
+      ],
+      "source": "language T/1.1\nmodule data\n\ncapability manifest\n\nfield Storage\n  trace value: Text\n\ncondense Enable in Storage\n  effects [manifest]\n  emit \"true\"\n",
+      "unit_id": "data_unit",
+      "watch_paths": [
+        [
+          "data",
+          "storage",
+          "value"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "data_unit"
+      ],
+      "source": "language T/1.1\nmodule interface\n\ncapability manifest\n\nfield Input\n  trace value: Text\n\ncondense Register in Input\n  effects [manifest]\n  emit \"registros técnicos incompatíveis, alternativas recusadas\"\n",
+      "unit_id": "interface_unit",
+      "watch_paths": [
+        [
+          "interface",
+          "input",
+          "items",
+          "path"
+        ],
+        [
+          "interface",
+          "input",
+          "items",
+          "value"
+        ]
+      ]
+    }
+  ]
+}

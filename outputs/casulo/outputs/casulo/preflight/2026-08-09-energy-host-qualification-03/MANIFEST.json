@@ -1,0 +1,67 @@
+{
+  "files": [
+    {
+      "bytes": 1740,
+      "path": "ac_battery.json",
+      "sha256": "4775743c56c4357cd33bbdb3ea465c1a36deb10494e35d55ad27456579aa7f8f"
+    },
+    {
+      "bytes": 8194,
+      "path": "active_csv.json",
+      "sha256": "0997dc7d6f0642964a7b6c5e28d9315751ce49ec3fc580eabbf23d15a3ba5082"
+    },
+    {
+      "bytes": 0,
+      "path": "idle_20min.csv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 52497,
+      "path": "idle_analysis.json",
+      "sha256": "62fe7beb1f83b4ec42c9d1ac34e6851c1e4012768e4eed85e85f866aa1d14415"
+    },
+    {
+      "bytes": 869,
+      "path": "observer_budget.json",
+      "sha256": "7400ec73bbedbf3a4f0a5f0cf73e9c730dd9e582add91d97d563ea34e209c5cd"
+    },
+    {
+      "bytes": 206,
+      "path": "orphan_process_actions.json",
+      "sha256": "9f8cf80110c82d0e8036b76045856bab3d1898f0f04fbb8431dd431d02f08ee5"
+    },
+    {
+      "bytes": 478,
+      "path": "polling_validation.json",
+      "sha256": "82edda9e5e644fc8b0b6db6946fce15b89c4f7cd3d8ed2918dd9edc8571f8141"
+    },
+    {
+      "bytes": 5549,
+      "path": "power_profile.json",
+      "sha256": "e4222d643a3ec380860e743f82de01d2ca0816de442f708eff332317727b9a13"
+    },
+    {
+      "bytes": 24661,
+      "path": "process_inventory_before.json",
+      "sha256": "565dfed710917bac20b5d2c831bad8a4e107053884690450e5bb5ee1df5edab8"
+    },
+    {
+      "bytes": 816,
+      "path": "qualification_report.md",
+      "sha256": "9af2b472190b9ef4ae97448f0bc6ba926f7c2354c5b32c5806942347d92e0607"
+    },
+    {
+      "bytes": 48297,
+      "path": "throttle_events.json",
+      "sha256": "b20e1da51f2e30704387d73f6abcd3892a77af95bd180993e80b5d75e7af8232"
+    },
+    {
+      "bytes": 851,
+      "path": "user_attestation.json",
+      "sha256": "a6425dac2f591cbdfcf9d7673f134345c3d734e8a364baed3d7ac8751fd58ece"
+    }
+  ],
+  "qualification_id": "2026-08-09-energy-host-qualification-03",
+  "schema": "casulo-energy-host-qualification-manifest/1.0",
+  "terminal_state": "BLOCKED_HWINFO_INTERVAL"
+}

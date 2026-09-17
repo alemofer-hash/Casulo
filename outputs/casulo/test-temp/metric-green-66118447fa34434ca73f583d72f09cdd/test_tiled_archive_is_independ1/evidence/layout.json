@@ -1,0 +1,1 @@
+{"canonical_bytes":6144,"full_frame_allocation_required":false,"maximum_strip_canonical_bytes":512,"maximum_tile_canonical_bytes":256,"pixel_format":"YUV444P10LE","record_count":12,"schema":"casulo.casv-tile-layout/0.4","strip_bound_bytes":67108864,"tile_bound_bytes":8388608,"tile_count":24}

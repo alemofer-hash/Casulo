@@ -1,0 +1,8 @@
+{
+  "properties": [
+    "project_isolation",
+    "hard_constraints_preserved",
+    "ambiguity_explicit",
+    "cancel_fail_closed"
+  ]
+}

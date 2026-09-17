@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.native.creation_token_policy"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "955c535489ebb58c1f428a15b3d3e69f789e8b12b5cde9671a6cbf15a627343f"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "26d009e1bff1fa3cc4eb413c1376062da81db9843e2c964cc366bb1c62b44aa7"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "451576f847f380617762c44941245b1c4d781d4f2b575a68aac8fdc2faca50cb"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "611fd397a9a468f58fa447c4a522a9fcec0808a8b57f4ef892ef19dbb4193746"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "3dce0ecc7dcbbba6ed0681f826fb0d87abbe77ebc24bd45a9781a8780bd259a6"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "31602c0dc7b5cd9e562a74bf065d78ddc56d2f4e16db602d8ea820bfc83ede7e"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "fd782202fb82bc211dcca7e15c21722bf313b49c3e76a19273a41a4b40ee5dee"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "c084b37173b26afedd7ee40dc95714801aca95c80223ffc32861fb60d821d620"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "2a6f83351d636e2c737db3a2ca95991504f3f3404cabcb37090440d3445be79c"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "494ef5ce96e7f33d48819605356e1f8b06939daaeda6e7e19fdaeda39fa0ebc5"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "07c95d73bc3de3c44b074127dfa296b33e10e6e2a5f77df8b6ed23666a65e2b8"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.native.creation_token_policy.t",
+      "module": "owner.native.creation_token_policy",
+      "sha256": "9f24aaf056ab48756eaa0dff90169e02ed5234812e6e52de80f046f7f82347b2"
+    }
+  ],
+  "tcap_hash": "394e70542844f1c1bcfbbd73df41e223f6a1d5a7b1f613a636fa9b72d907b60e"
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "casulo.arc-fast-profile/1.0",
+  "status": "READY_FOR_GUILHERME_ARC_INTENT_PROOF",
+  "dialogue_transport": "HOST_DIRECT",
+  "sealed_release_modified": false,
+  "vm_creation_gate_preserved": true,
+  "intent_twin_enabled": true,
+  "requirement_evidence_gate_enabled": true,
+  "boundaries": {
+    "cloud": "RELEASE_LOCKED",
+    "guest_network": "OFF",
+    "usb_block_devices": "PROHIBITED",
+    "physical_voice": "LITERAL_CONSENT_REQUIRED"
+  },
+  "validation": {
+    "product_tests": "475 passed, 1 skipped",
+    "intent_tests": "14 passed",
+    "compileall": "PASS",
+    "windows_script_host": "PASS",
+    "real_neural_contract": "PASS_FOR_SYNTHETIC_SCOPE",
+    "human_confirmation": "PENDING_GUILHERME",
+    "scientific_benchmark_started": false
+  },
+  "files": {
+    "START_CASULO_ARC.vbs": {"bytes": 1055, "sha256": "7c892fe75e2d271ca220f7107bc587a44e0d334059e36f451d75ed6d7dd69a8c"},
+    "README.md": {"bytes": 813, "sha256": "1778ffd899fad6a76c8b10a291c4c5a60b294fec228b041c9fdda136028c0f82"},
+    "../../../tools/monday_discovery_session.pyw": {"bytes": 22745, "sha256": "15391e00a8a58bd7672704bd64f5c68476b49a90ed562de3ba902fa7ff98016c"},
+    "../../../tools/casulo_semantic_multiverse_vm_inspect.py": {"bytes": 19083, "sha256": "9abd477f81b3b86ddf7dfedc4fbe4f5941ebbe1770d4bacde9c7c4d37c087d4a"},
+    "../../../src/casulo/product/intent_reconstruction.py": {"bytes": 21745, "sha256": "e037f07bbe20ddcd2df036f7a25ed44ff512b6d09cbcbaa6f253c2371b0af1d6"},
+    "../../../src/casulo/product/requirement_evidence_gate.py": {"bytes": 4298, "sha256": "a60e531ec6115b3ad57f0b27f29feabfa6bea1453e1648455b26b5cc3e1ab20c"},
+    "../../../private/casulo-owner/src/casulo_owner/intent_reconstruction.py": {"bytes": 28652, "sha256": "c4c382b32e64e66d391af09ef3a4d171c188c76da5a0a4f3f20f11eca290b738"},
+    "../../../private/casulo-owner/src/casulo_owner/generative_agent_probe.py": {"bytes": 23627, "sha256": "82f0024b2838d1b1b309d41077e1a8cfa8ffa7878e98a7a781ec34b92d844b64"},
+    "../../../release/t85-human-proof/MANIFEST.json": {"bytes": 39826, "sha256": "87c046056ee16dbc2f02350f50bde62f9bb617ebfe002eb993536a794393f8ee"}
+  }
+}

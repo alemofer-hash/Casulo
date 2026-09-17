@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "owner.agent.t_mass_balance.m_verify": [],
+    "owner.agent.t_mass_balance.o_validate": [
+      "simulation"
+    ],
+    "owner.agent.t_mass_balance.u_check": []
+  }
+}

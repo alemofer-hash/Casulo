@@ -1,0 +1,54 @@
+{
+  "host_cpu_percent_median": 34.2,
+  "host_cpu_percent_samples": [
+    44.0,
+    42.3,
+    39.9,
+    45.7,
+    37.5,
+    35.6,
+    28.0,
+    28.3,
+    29.8,
+    31.8,
+    34.2,
+    31.1,
+    31.1,
+    46.6,
+    41.0,
+    36.2,
+    31.6,
+    31.6,
+    26.6
+  ],
+  "hwinfo_cpu_seconds_delta": 1.921875,
+  "hwinfo_process_after": [
+    {
+      "name": "HWiNFO64.EXE",
+      "pid": 24580,
+      "system_cpu_seconds": 735.1875,
+      "user_cpu_seconds": 543.578125
+    }
+  ],
+  "hwinfo_process_before": [
+    {
+      "name": "HWiNFO64.EXE",
+      "pid": 24580,
+      "system_cpu_seconds": 733.953125,
+      "user_cpu_seconds": 542.890625
+    }
+  ],
+  "idle_average_watts": 9.34637987000047,
+  "idle_sampling_median_seconds": 0.251,
+  "light_probe_runtime_seconds": {
+    "pytorch-eager-fullstep/1": 0.2834474,
+    "t-general-ir-tcap/0.1": 0.0002637
+  },
+  "limitation": "active observer overhead probes require polling gate PASS",
+  "observer_present_for_both_implementations": true,
+  "schema": "casulo-hwinfo-observer-overhead/1.0",
+  "selective_subtraction_allowed": false,
+  "status": "PASS_LIGHT_PROBES",
+  "window_seconds": 6.24646,
+  "workload_probe_executed": false
+}

@@ -1,0 +1,128 @@
+{
+  "authorized_claims": [
+    "T governs the nine frozen product decision surfaces through compiled contracts and declared foreign boundaries"
+  ],
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "commands": [
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc04-t-sovereignty\\pytest-temp",
+      "tests/product/test_t_sovereignty.py",
+      "tests/product/test_t_semantic_ir.py",
+      "tests/test_t_semantics_ir.py",
+      "tests/test_t_tcap.py"
+    ]
+  ],
+  "forbidden_claims": [
+    "every Casulo byte is T",
+    "T replaces model weights, drivers or numerical kernels"
+  ],
+  "gate_id": "RC4_T_SOVEREIGN_CREATION_PASS",
+  "input_hashes": {
+    "previous_gate": "764a3554bf0d3c74ff20a100fb4f3bb91f8939549c651dfba91361d96a4baab3"
+  },
+  "machine_profile_sha256": "7ca1b196f47eb6e20769ae165c1b1a322d9f9abdd2ebc3dc4a7201acff8dd718",
+  "model_adapter_hashes": {},
+  "open_findings": [
+    {
+      "severity": "P2",
+      "summary": "Python, llama.cpp and Native remain declared foreign runtimes; T does not replace weights, drivers or kernels"
+    }
+  ],
+  "output_hashes": {
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/agent_logic/casulo_artifact.py": "a3d4b4f24aa3a0a72b9edc64840e93fbb86bd9415667724df35a7b98990fe07a",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/agent_logic/casulo_native.abi.json": "e8fb22244592e04b16fdffc9fdd74db199a0ec322bc3cb83007557f82a2926fe",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/agent_logic/casulo_native.c": "e4ebceba6c5228e051f4769106ace2a387e9d2ebdc8e9a1533cb3e6ee9ebbe31",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/agent_logic/crisalida.ir.json": "d1265fcfcbec622175cd1b753185d3ca9d555cb022a1fd81732ccef714151ca6",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/agent_logic/manifest.json": "0c3265e8566162c071cc58b40a49634b2a1d4c8e4192e525c3c89b4d4dd1e734",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/agent_logic/metamorfose.graph.json": "c5a7422d11e573a6347cde9ae28dcfc8f49bb34b36a972f4486567e08616f0a0",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/agent_logic/source.t": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/effects_capabilities/casulo_artifact.py": "716495a685506722e0990dbfa525b85be8ca949909f5e8055a1b3de4c0c38f1a",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/effects_capabilities/casulo_native.abi.json": "afd32841510e3148b66a39a06133d14619f6c7d1947c675561f11a109a2cbcf4",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/effects_capabilities/casulo_native.c": "86693dabf246fcdfca8eb8caa3d523ebae6b07f695e105e7f914ee8dfbd4e5bf",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/effects_capabilities/crisalida.ir.json": "7d268711447a56a15cc8daf7efabf94d1e3aba404765244198bb41f433216dad",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/effects_capabilities/manifest.json": "16e56e8f818626a428ee92e5c94961f12b731a9eb75892a6478531e22aed2da3",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/effects_capabilities/metamorfose.graph.json": "aff3a02e26c541210b4b200f85dfdb035e444e1997ed769ba2edf3c5826b0c72",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/effects_capabilities/source.t": "7a488e55d1b4e44dc30c971c976d943550f58fef132de15e4ea37f293b791501",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/intent_requirements/casulo_artifact.py": "64cbfd7312d734bc4cd25c760fb203a9f881c37b2ae3d6122558430d0f798eb2",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/intent_requirements/casulo_native.abi.json": "b2b058de3aa2170b95e3ec95fc0555f4b048ea6edb72d3cbe5b7e161cbeeade6",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/intent_requirements/casulo_native.c": "b74a679437f88602fb35cfbcf2daf76ab69edf7b29b45c7db95c41966a4d89ef",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/intent_requirements/crisalida.ir.json": "4b4574683b10dcecdbacab23205d3db84c6455e782a2fa1f2da22b4eee59e641",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/intent_requirements/manifest.json": "3139eb702bc71f571f180629ea5298ca3bdcb8d226c59c1a3664c5c33b655940",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/intent_requirements/metamorfose.graph.json": "2044d3bd69757bc7c55d1af2128568540c4d465d51f03101be34757c408a11ff",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/intent_requirements/source.t": "0583cfeb2f9d31aedf10494c1070d26aec7c447ce59a04a3207acc3f86aaf0ff",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/interfaces/casulo_artifact.py": "b2fd96a7e6e0785514e6cfb34e45a175bea207ef7bad3eb32fbdc69e06470bf1",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/interfaces/casulo_native.abi.json": "47978b1c46b99763e438207e614a8c9da752cfcfc7d2dc3247e5537bb1ba8adb",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/interfaces/casulo_native.c": "d1e121a8a96acf08bfd91571c9b6af7b43a70dc058e6d23d105736f5f7e42153",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/interfaces/crisalida.ir.json": "5f307ead1a1621d426abe2cb8a3ae404aa7c7a461f7ddc8e3bc4db80cdc21c4e",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/interfaces/manifest.json": "a3f5428f82193a8cb1eae7150575882ac1bbff76045aefa17b790a39efc1b00e",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/interfaces/metamorfose.graph.json": "897c82946edf0829c3e405f2465009979f68385b7bbeab5ff905708176837ca9",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/interfaces/source.t": "bc6c38f042a12bd5df248f4259b4dc00591866293203a2b061307a3786614ecf",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/jobs_concurrency/casulo_artifact.py": "c115176f6c7ccfcead46ec17c5ffba40a9e935a3597d5a04a8cbe21c0fa51be3",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/jobs_concurrency/casulo_native.abi.json": "daff035244f9eee5214cb330b136201876303f99501a2adcb2e545ba906b444b",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/jobs_concurrency/casulo_native.c": "38a0417d181416399c3c711ccde298125fa4a6271e23286c7fb213f85f363003",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/jobs_concurrency/crisalida.ir.json": "1c3c28046862cb90695c8d2145b2016a5ad7a97c8853597af6f0eec0038aaada",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/jobs_concurrency/manifest.json": "38c900d55f2ac79fc21d17192f338e0e3cc79d7d9e9ba3a6b18c03ec6b38fe8d",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/jobs_concurrency/metamorfose.graph.json": "34cd4120a84258e5d023d878ef54a8e9a0fb375d947eeaa2e6847be21ee08a60",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/jobs_concurrency/source.t": "15bb2fc3ca7e40a4694b71b27de12a706f5d76e4cc40e7068783e0594658fdf0",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/materialization/casulo_artifact.py": "6a4699b9c9483f4ee98f95b781bb04058224fd53b8cb003e168bc780e29ae069",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/materialization/casulo_native.abi.json": "055ae42b024031ac0cc28d617434309ea0bc4c2983b3e359b627d8b236a13bff",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/materialization/casulo_native.c": "67209074a664d944beca3b56ef8f34293e251715efcaa7abb414756b9dd0f60e",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/materialization/crisalida.ir.json": "edb4c4d7a5b897cd48f597088a8cce0a9510aee133d564a3a77aeb3f1eaafdff",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/materialization/manifest.json": "37d473366a9fa97c399d68e84c9063f5a7301609393a44d8540e8884fedb7ecd",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/materialization/metamorfose.graph.json": "2b9f4e9950da7828e8f6264b074a201053c10f8eddabdebce31586ab92693a6e",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/materialization/source.t": "5ed0e93ecba74a7d2afb74edff7174337a5ae31d052c488386edc1f0db04b27a",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/memory/casulo_artifact.py": "e75ab2a60c4b9c80ed08c5910ebf83188582d1b1d2cbf14f958a02d2b99006ca",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/memory/casulo_native.abi.json": "00a93a4465f906ef85d0b91770e739a87f43144883b59b8292d0d71299ce0c80",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/memory/casulo_native.c": "81f72772b8ee4e4eac38aa384a9e564664c4436bb343cccf84f1fa187635a6c6",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/memory/crisalida.ir.json": "ebd036a3c1b2f037f347f5e6a4894df0226c1e26e4d4f09d7e78ba07e397ac96",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/memory/manifest.json": "dcb3b499f582a1e988be90a17e13e2b288fac1acc7d758224d147ee8cc2c6492",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/memory/metamorfose.graph.json": "1940b11555f14ed943969288016c43ee0ace42a299304c162573aefdf6e067b0",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/memory/source.t": "7b8a6fd97bee199fb3b84eac847fe839fe5b487afb68d7c6f83555ae4fdb7584",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tests_simulation/casulo_artifact.py": "07bfd4fdb4efdead6fecd19b781d28e6401a7e707255df96580d27facddcf689",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tests_simulation/casulo_native.abi.json": "6b72eed37b32449dcf9ff8c4bf79bc3e1574378272d6e8d12482cddab4d73372",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tests_simulation/casulo_native.c": "0e2c92c7dede4247743e92137776e97863ab34d0d7298d098fa1d933a787a792",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tests_simulation/crisalida.ir.json": "1550b18fc23b0a7f8d1719ca5d1a39aefbf45e5ce624f7d2560a66016e08238a",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tests_simulation/manifest.json": "3e2cc486196f5d33ee7668ae65f6d467432ed93474ccd579ea74e2d361f93ce6",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tests_simulation/metamorfose.graph.json": "eec9b9e8489400a9fc3b12e575f1529fc5c9824f62e4c3fb3fe0ab769728e072",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tests_simulation/source.t": "0075a655c8d9a4507ebcd700d42770f0e7837c08a258c114cc62bd9d5a191f0b",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tools_composition/casulo_artifact.py": "b7d038050c21afffa1ebb244824e26ac927b755ca6c7bcf8fd457938c228655c",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tools_composition/casulo_native.abi.json": "9c860d627803fce60c788f44f5b088338c3e89b49700c27b175cd9559bcc4fbc",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tools_composition/casulo_native.c": "50887af1f424ec595b578a69c0a6498fea22997cdc806cf9d0c5270f777d2214",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tools_composition/crisalida.ir.json": "d61c2604188bf05e6219c715585ccc4f492dc9eff4ba066926e2d76a54fb414b",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tools_composition/manifest.json": "93a40ec417e5db14e3356a32aa42971b9401e49f41eab4a57a37d00d8ef4f9a2",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tools_composition/metamorfose.graph.json": "d7b0710d104b367a21256fe4c9ed8e12115d105a4b6d8f75d0ca72853b673d8d",
+    "product-demos/revolution-closure/rc04-t-sovereignty/artifacts/tools_composition/source.t": "2d567c5d6a1f16acc47cfdc3f9ee23e16903d319b67e239de4c9c4fc6b7058a3",
+    "product-demos/revolution-closure/rc04-t-sovereignty/foreign-boundaries.json": "92372c931bd5067252522754cccac30a09a13819abe0dc7f04b0d3e5e21e1061",
+    "product-demos/revolution-closure/rc04-t-sovereignty/t-sovereignty-audit.json": "e023ee827241436f9a6f01af8cad834b8941b34452b475492fe7c8b558b36b35",
+    "product-demos/revolution-closure/rc04-t-sovereignty/tests.txt": "60f969ffcea99301d5dbd473b6ebe350f0ac723a23b7dbe738db371db778ae67"
+  },
+  "previous_gate_hash": "764a3554bf0d3c74ff20a100fb4f3bb91f8939549c651dfba91361d96a4baab3",
+  "sampling_policy": "NOT_EXECUTED_RC4",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "status": "PASS",
+  "test_summary": {
+    "checks": {
+      "all_surfaces_executed": true,
+      "critical_complete": true,
+      "foreign_boundaries_manifested": true,
+      "implicit_effects": 0,
+      "regression": true,
+      "score_at_least_080": true
+    },
+    "pytest": ".............................                                            [100%]\n29 passed in 1.40s",
+    "score": 1.0
+  },
+  "timestamp": "2026-08-14T20:54:09.499811+00:00",
+  "tool_versions": {
+    "python": "3.13.2",
+    "t": "1.1"
+  },
+  "worktree_manifest_sha256": "066698f9b6ac67be76aed86bc83c412c4fcd5377e6a2e699a3a106000a4314e9"
+}

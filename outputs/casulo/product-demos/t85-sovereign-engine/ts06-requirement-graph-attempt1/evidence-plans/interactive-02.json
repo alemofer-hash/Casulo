@@ -1,0 +1,43 @@
+{
+  "expected_evidence_tokens": [
+    "f16317197e8fb1e6ac7f8a8b8a5fa1c31279a92604ce9e82fc77aea51b3fd3ea",
+    "097bfb63e89ba4ae5eaa0baca48211f9652f06c2bea96cb50493a8a6db710e06",
+    "4f5e2636417692a531834e6ec410a120c1d4da29aa2aae662a161a9c38ea8708"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "interactive-02:explanation-receipt",
+      "scope": "interactive-02",
+      "source_event_ids": [
+        "sealed:interactive-02"
+      ],
+      "verifier_ids": [
+        "domain:explanation-receipt"
+      ]
+    },
+    {
+      "requirement_id": "interactive-02:cancellation",
+      "scope": "interactive-02",
+      "source_event_ids": [
+        "sealed:interactive-02"
+      ],
+      "verifier_ids": [
+        "domain:cancellation"
+      ]
+    },
+    {
+      "requirement_id": "interactive-02:real-progress-events",
+      "scope": "interactive-02",
+      "source_event_ids": [
+        "sealed:interactive-02"
+      ],
+      "verifier_ids": [
+        "domain:real-progress-events"
+      ]
+    }
+  ],
+  "project_id": "interactive-02",
+  "schema": "casulo.evidence-plan/1.0"
+}

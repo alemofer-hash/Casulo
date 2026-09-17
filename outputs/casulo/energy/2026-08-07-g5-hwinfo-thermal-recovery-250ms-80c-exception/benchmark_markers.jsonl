@@ -1,0 +1,6 @@
+{"byte_offset":14344026,"event":"campaign_formal_start","local":"2026-08-07T18:00:40.502142-03:00","monotonic_ns":3945746858500,"pid":13568,"utc":"2026-08-07T21:00:40.502142+00:00"}
+{"event":"polling_validation_start","local":"2026-08-07T18:00:40.551494-03:00","monotonic_ns":3945788556500,"pid":13568,"utc":"2026-08-07T21:00:40.551494+00:00"}
+{"event":"polling_validation_end","local":"2026-08-07T18:00:46.229185-03:00","monotonic_ns":3952149229800,"new_samples":23,"pid":13568,"utc":"2026-08-07T21:00:46.229185+00:00"}
+{"event":"idle_start","local":"2026-08-07T18:03:13.275416-03:00","monotonic_ns":4098512458600,"pid":25840,"seconds":60.0,"utc":"2026-08-07T21:03:13.275416+00:00"}
+{"event":"idle_end","local":"2026-08-07T18:04:13.295902-03:00","monotonic_ns":4158532983000,"pid":25840,"utc":"2026-08-07T21:04:13.295902+00:00"}
+{"event":"protocol_superseded","local":"2026-08-07T18:09:05.355377-03:00","monotonic_ns":4450592459900,"pid":28792,"reason":"user-authorized start threshold changed from derived 57 C to explicit 60 C","utc":"2026-08-07T21:09:05.355377+00:00"}

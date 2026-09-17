@@ -1,0 +1,25 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.csv_guardian.policy"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.agent.csv_guardian.policy"
+    },
+    {
+      "imports": [
+        "owner.agent.csv_guardian.policy"
+      ],
+      "name": "owner.agent.csv_guardian.pipeline"
+    },
+    {
+      "imports": [
+        "owner.agent.csv_guardian.pipeline"
+      ],
+      "name": "owner.agent.csv_guardian.delivery"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

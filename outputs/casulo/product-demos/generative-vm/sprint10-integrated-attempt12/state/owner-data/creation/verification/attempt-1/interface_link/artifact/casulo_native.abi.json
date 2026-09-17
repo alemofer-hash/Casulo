@@ -1,0 +1,43 @@
+{
+  "abi_version": 1,
+  "backend": "c99-simd/0.3",
+  "layout": {
+    "column_stride": "records",
+    "evidence": "evidence-major-uint8",
+    "input": "column-major-float64",
+    "result": "float64[records]",
+    "stabilized": "evidence-major-float64",
+    "state": "uint8[records]"
+  },
+  "operations": [
+    {
+      "eligible": false,
+      "index": 0,
+      "input_fields": [
+        "value"
+      ],
+      "input_type": "G61H",
+      "judgements": [],
+      "name": "G61H_link",
+      "output_type": "Text",
+      "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+      "restrictions": [],
+      "stabilized": [],
+      "vectorization": {
+        "floating_point": "strict-no-reassociation",
+        "guard_phase": false,
+        "independent_records": false,
+        "protocol": "casulo-simd/0.1"
+      }
+    }
+  ],
+  "protocol": "casulo-native-abi/0.1",
+  "status": {
+    "-1": "invalid_argument",
+    "-2": "unknown_operation",
+    "-3": "operation_not_native",
+    "0": "ok",
+    "1": "judge_failed",
+    "2": "restriction_failed"
+  }
+}

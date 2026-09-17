@@ -1,0 +1,104 @@
+{
+  "authorized_claims": [
+    "the owner voice chain has verified local ASR, streaming/cancellable synthesis, duplex contracts and no default raw-audio persistence"
+  ],
+  "baseline_commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+  "commands": [
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "casulo.product.voice_cli",
+      "smoke-asr",
+      "--manifest",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\release\\voice-candidates\\whisper-cpp-base-q5_1-v1.9.2.json",
+      "--cache",
+      "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice",
+      "--seconds",
+      "1",
+      "--threads",
+      "1"
+    ],
+    [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc08-voice\\pytest-temp",
+      "tests/product/test_first_party_tts.py",
+      "tests/product/test_voice_smoke.py",
+      "tests/product/test_voice_duplex.py",
+      "tests/product/test_voice_candidate.py",
+      "tests/product/test_voice_build.py",
+      "tests/product/test_voice_bridge.py",
+      "tests/product/test_voice_adopt.py",
+      "tests/product/test_tts_streaming.py",
+      "tests/product/test_tts_candidate_ledger.py",
+      "tests/product/test_voice_physical.py"
+    ]
+  ],
+  "forbidden_claims": [
+    "human-approved voice",
+    "natural voice",
+    "physical acoustic validation",
+    "final voice chemistry"
+  ],
+  "gate_id": "RC8_VOICE_PRIMARY_IMPLEMENTATION_PASS",
+  "input_hashes": {
+    "asr_candidate": "c0da501f4a42227a1665ca1316c0ffa0764597a90c61371329a9b2ef8ac97db8",
+    "previous_gate": "d3d551d2dc99b579b9ed5d18b599c15cf73ba4f2e2be8a332773482385a5430b"
+  },
+  "machine_profile_sha256": "7ca1b196f47eb6e20769ae165c1b1a322d9f9abdd2ebc3dc4a7201acff8dd718",
+  "model_adapter_hashes": {
+    "asr_model": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898",
+    "tts_model": "NOT_APPLICABLE_NO_MODEL"
+  },
+  "open_findings": [
+    {
+      "severity": "P1",
+      "summary": "PHYSICAL_VOICE_HUMAN_VALIDATION=PENDING"
+    },
+    {
+      "severity": "P1",
+      "summary": "VOICE_CHEMISTRY=PENDING_GUILHERME"
+    },
+    {
+      "severity": "P2",
+      "summary": "formant fallback is robotic and provisional; physical AEC/noise validation remains pending"
+    }
+  ],
+  "output_hashes": {
+    "product-demos/revolution-closure/rc08-voice/asr-doctor.json": "206b7354aaa63af577604bae3783c89034b2ed0067309aec6fbcfefdd93864c6",
+    "product-demos/revolution-closure/rc08-voice/asr-smoke.txt": "fad4f1b17df2c14ee3f60560778d9c49ff9d8ec8d992f7c7eff031224983708b",
+    "product-demos/revolution-closure/rc08-voice/audio-frontend.json": "623cfb0b9e2b4b6af5e768278c69a0e6091cb3ad12368a02910dfebbc29babcd",
+    "product-demos/revolution-closure/rc08-voice/first-party-tts.json": "f722a3635132638b625edcaa37add451ea55f997dbd17bbb0b2fe46c599d986c",
+    "product-demos/revolution-closure/rc08-voice/tests.txt": "302771c4547d88ea164462f4431db0855d7c01f95cf634f522a3030799db80bc"
+  },
+  "previous_gate_hash": "d3d551d2dc99b579b9ed5d18b599c15cf73ba4f2e2be8a332773482385a5430b",
+  "sampling_policy": "NOT_EXECUTED_RC8",
+  "schema": "casulo.revolution-closure/1.0/gate",
+  "status": "PASS",
+  "test_summary": {
+    "checks": {
+      "asr_cache_verified": true,
+      "asr_synthetic_smoke": true,
+      "audio_frontend_fixture": true,
+      "owner_windows_voice_not_redistributed": true,
+      "physical_devices_untouched": true,
+      "raw_user_audio_persisted_zero": true,
+      "redistributable_fallback": true,
+      "regression": true,
+      "tts_real_pcm": true,
+      "tts_stream_cancel": true
+    },
+    "pytest": "................................................                         [100%]\n48 passed in 2.80s"
+  },
+  "timestamp": "2026-08-14T21:12:19.209231+00:00",
+  "tool_versions": {
+    "python": "3.13.2",
+    "whisper.cpp": "v1.9.2"
+  },
+  "worktree_manifest_sha256": "066698f9b6ac67be76aed86bc83c412c4fcd5377e6a2e699a3a106000a4314e9"
+}

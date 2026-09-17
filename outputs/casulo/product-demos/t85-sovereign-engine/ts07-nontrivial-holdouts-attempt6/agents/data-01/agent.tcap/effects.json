@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "owner.agent.datavalidator.byte_preserver": {
+      "branch": [],
+      "decide": [],
+      "verify_apply_versioned_schema": [],
+      "verify_preserve_original_bytes": [],
+      "verify_provide_rejection_diagnostic": []
+    },
+    "owner.agent.datavalidator.rejection_explainer": {
+      "commit": [],
+      "inspect": [],
+      "simulate": [
+        "simulation"
+      ]
+    },
+    "owner.agent.datavalidator.schema_applier": {
+      "check": [],
+      "combine": [],
+      "plan": []
+    }
+  }
+}

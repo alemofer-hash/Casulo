@@ -1,0 +1,20 @@
+{
+  "command": {
+    "argv": [
+      "C:\\Python313\\python.exe",
+      "tools/audit_public_artifact.py",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts13-supply-chain-attempt1\\editions\\public\\casulo_public-0.1.0a1-py3-none-any.whl"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"artifact\": \"C:\\\\Users\\\\guimo\\\\Documents\\\\Codex\\\\2026-07-28\\\\ex\\\\outputs\\\\casulo\\\\product-demos\\\\t85-sovereign-engine\\\\ts13-supply-chain-attempt1\\\\editions\\\\public\\\\casulo_public-0.1.0a1-py3-none-any.whl\",\n  \"content_tree_sha256\": \"0d42d0b3a164bb2f1370ca49f9b3222fb09641a58b1374cd27342b9fd35756e1\",\n  \"files_scanned\": 8,\n  \"forbidden_findings\": [],\n  \"private_components_absent\": true,\n  \"schema\": \"casulo-public-audit/1.0\"\n}\n"
+  },
+  "report": {
+    "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\t85-sovereign-engine\\ts13-supply-chain-attempt1\\editions\\public\\casulo_public-0.1.0a1-py3-none-any.whl",
+    "content_tree_sha256": "0d42d0b3a164bb2f1370ca49f9b3222fb09641a58b1374cd27342b9fd35756e1",
+    "files_scanned": 8,
+    "forbidden_findings": [],
+    "private_components_absent": true,
+    "schema": "casulo-public-audit/1.0"
+  }
+}

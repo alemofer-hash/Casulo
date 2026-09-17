@@ -1,0 +1,361 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "casulo.revolution.capabilities",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "block/root.0.then.0",
+            "block/root.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0",
+          [
+            "block/root.0.then.0.then.0",
+            "block/root.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0",
+          [
+            "block/root.0.then.0.then.0.then.0",
+            "block/root.0.then.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0",
+          [
+            "block/root.0.then.0.then.0.then.0.then.0",
+            "block/root.0.then.0.then.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0.then.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "schema_valid",
+          "source": "DecidePermit/input/schema_valid",
+          "target": "DecidePermit/instruction/root.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "DecidePermit/instruction/root.0/if",
+          "target": "DecidePermit/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "policy_pass",
+          "source": "DecidePermit/input/policy_pass",
+          "target": "DecidePermit/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "DecidePermit/instruction/root.0.then.0/if",
+          "target": "DecidePermit/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "grant_present",
+          "source": "DecidePermit/input/grant_present",
+          "target": "DecidePermit/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "DecidePermit/instruction/root.0.then.0.then.0/if",
+          "target": "DecidePermit/instruction/root.0.then.0.then.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "human_approval",
+          "source": "DecidePermit/input/human_approval",
+          "target": "DecidePermit/instruction/root.0.then.0.then.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "DecidePermit/instruction/root.0.then.0.then.0.then.0/if",
+          "target": "DecidePermit/instruction/root.0.then.0.then.0.then.0.then.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "DecidePermit/instruction/root.0.then.0.then.0.then.0/if",
+          "target": "DecidePermit/instruction/root.0.then.0.then.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "DecidePermit/instruction/root.0.then.0.then.0/if",
+          "target": "DecidePermit/instruction/root.0.then.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "DecidePermit/instruction/root.0.then.0/if",
+          "target": "DecidePermit/instruction/root.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "DecidePermit/instruction/root.0/if",
+          "target": "DecidePermit/instruction/root.0.else.0/emit"
+        }
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 9,
+      "input_type": "CapabilityDecision",
+      "name": "DecidePermit",
+      "nodes": [
+        {
+          "defines": [
+            "schema_valid"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "DecidePermit/input/schema_valid",
+          "kind": "input",
+          "label": "schema_valid",
+          "operation": "DecidePermit",
+          "path": "input.schema_valid",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "policy_pass"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "DecidePermit/input/policy_pass",
+          "kind": "input",
+          "label": "policy_pass",
+          "operation": "DecidePermit",
+          "path": "input.policy_pass",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "grant_present"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "DecidePermit/input/grant_present",
+          "kind": "input",
+          "label": "grant_present",
+          "operation": "DecidePermit",
+          "path": "input.grant_present",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "human_approval"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "DecidePermit/input/human_approval",
+          "kind": "input",
+          "label": "human_approval",
+          "operation": "DecidePermit",
+          "path": "input.human_approval",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "DecidePermit/instruction/root.0/if",
+          "kind": "if",
+          "label": "schema_valid",
+          "operation": "DecidePermit",
+          "path": "root.0",
+          "pure": true,
+          "uses": [
+            "schema_valid"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "DecidePermit/instruction/root.0.then.0/if",
+          "kind": "if",
+          "label": "policy_pass",
+          "operation": "DecidePermit",
+          "path": "root.0.then.0",
+          "pure": true,
+          "uses": [
+            "policy_pass"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "DecidePermit/instruction/root.0.then.0.then.0/if",
+          "kind": "if",
+          "label": "grant_present",
+          "operation": "DecidePermit",
+          "path": "root.0.then.0.then.0",
+          "pure": true,
+          "uses": [
+            "grant_present"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "DecidePermit/instruction/root.0.then.0.then.0.then.0/if",
+          "kind": "if",
+          "label": "human_approval",
+          "operation": "DecidePermit",
+          "path": "root.0.then.0.then.0.then.0",
+          "pure": true,
+          "uses": [
+            "human_approval"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "DecidePermit/instruction/root.0.then.0.then.0.then.0.then.0/emit",
+          "kind": "emit",
+          "label": "\"PERMIT\"",
+          "operation": "DecidePermit",
+          "path": "root.0.then.0.then.0.then.0.then.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "DecidePermit/instruction/root.0.then.0.then.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "DecidePermit",
+          "path": "root.0.then.0.then.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "DecidePermit/instruction/root.0.then.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "DecidePermit",
+          "path": "root.0.then.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "DecidePermit/instruction/root.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "DecidePermit",
+          "path": "root.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "DecidePermit/instruction/root.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "DecidePermit",
+          "path": "root.0.else.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [
+    {
+      "kind": "record",
+      "members": [
+        [
+          "schema_valid",
+          "Bool"
+        ],
+        [
+          "policy_pass",
+          "Bool"
+        ],
+        [
+          "grant_present",
+          "Bool"
+        ],
+        [
+          "human_approval",
+          "Bool"
+        ]
+      ],
+      "name": "CapabilityDecision"
+    }
+  ],
+  "version": "metamorfose-graph/1.0"
+}

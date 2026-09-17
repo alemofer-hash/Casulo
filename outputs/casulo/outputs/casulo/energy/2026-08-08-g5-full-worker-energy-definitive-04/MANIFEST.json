@@ -1,0 +1,82 @@
+{
+  "campaign_id": "2026-08-08-g5-full-worker-energy-definitive-04",
+  "files": [
+    {
+      "bytes": 3218,
+      "path": "analysis.json",
+      "sha256": "260c9a4d24fec8d54cd6f1954c50ec4d19dff8dca741f6cbbb3016a6ab13a6e0"
+    },
+    {
+      "bytes": 63,
+      "path": "calibration.json",
+      "sha256": "45883d60fcf915026753332b1752e14c5e2c07f2770786f66935064938022831"
+    },
+    {
+      "bytes": 702,
+      "path": "control_protocol.json",
+      "sha256": "ccbe8b3c68f170b05f404f5044be28c13f47a8b511079f97d342eeb776dd1593"
+    },
+    {
+      "bytes": 1160,
+      "path": "frozen_configuration.json",
+      "sha256": "f9b3edabf93bb65ac5a585466d9081f5d373b717c953120a6044affa5262bb83"
+    },
+    {
+      "bytes": 1906,
+      "path": "idle_controls.json",
+      "sha256": "c95afd0c4ed189b6eb7b62b879d0918e188e5a4443010374ba5809cf29d72cd8"
+    },
+    {
+      "bytes": 0,
+      "path": "markers.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 75,
+      "path": "probes.json",
+      "sha256": "a4345e87157cb61309768bf6a1610538926ecd0e694c7ac1061bdade51096874"
+    },
+    {
+      "bytes": 883,
+      "path": "protocol.json",
+      "sha256": "48cbf5080f347df4b8d327fb207581c436474f0d3dc7942213b777e02caf204c"
+    },
+    {
+      "bytes": 7959977,
+      "path": "raw/failed_idle_stability_segment.csv",
+      "sha256": "49fd4412147bc5ccbfa25c496ebf63fe9230a8048d0d4ebb7171717628d3b7d5"
+    },
+    {
+      "bytes": 47,
+      "path": "receipt_chain.json",
+      "sha256": "c0e83cf43781b2aa08591746dd3694d58651c6d799b8df7d31406456e396fd0a"
+    },
+    {
+      "bytes": 582,
+      "path": "rejected/idle-control-a-start-timeout.json",
+      "sha256": "1620a2777006bb1c275da59dc75f922816df6359ecd77e1312562e78541d17ea"
+    },
+    {
+      "bytes": 1003,
+      "path": "report.md",
+      "sha256": "85378df1a9656dceaa21dadb5220bc6e7b0a21709747598c3c5a92dc737ac016"
+    },
+    {
+      "bytes": 2395,
+      "path": "schedule.json",
+      "sha256": "8bb4999aa199fbeb4fa9c306ce12699d66abeb03c361a34554e7d6af80bf8f85"
+    },
+    {
+      "bytes": 25661,
+      "path": "throttle_classification.json",
+      "sha256": "a87939e4e35078cfdebc20fc37cc7da2ccf6c88d3d015074959610fa036745fc"
+    },
+    {
+      "bytes": 409169,
+      "path": "throttle_event_excerpt.csv",
+      "sha256": "ff9ddd986715f5f4208fbd2bd6f1c0bd4c2330a3393dc8b8e7ad05ba56d8101a"
+    }
+  ],
+  "schema": "casulo-definitive-energy-manifest/1.0",
+  "terminal_state": "BLOCKED_PHYSICAL_COOLING_REQUIRED"
+}

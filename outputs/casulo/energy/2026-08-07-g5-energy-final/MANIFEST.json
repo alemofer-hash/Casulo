@@ -1,0 +1,71 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1420,
+      "path": "analysis.json",
+      "sha256": "4619e46864fdcfd1de2e2b55ec9c29f08d48db23f353ee36b1ed72884ebe8bac"
+    },
+    {
+      "bytes": 280,
+      "path": "calibration.json",
+      "sha256": "1a3ba15fd017bf0f746f3b53b7d58b6b5a3ecad4515682fe530e4b1c65851f7c"
+    },
+    {
+      "bytes": 1739,
+      "path": "capabilities.json",
+      "sha256": "a96df92411d549550e8b79bdb781b9175a1d1b4b40fc3c37240ca8567fbd705a"
+    },
+    {
+      "bytes": 1996,
+      "path": "environment.json",
+      "sha256": "32b86f1d72356dbcf4a2db3fee528a00e70aa4af94a1b8ce529fdd6295035125"
+    },
+    {
+      "bytes": 317,
+      "path": "preflight.json",
+      "sha256": "5a2846ffe792061b36ef1c4c44c2f64c35786960f86bb1939f5d4dd19a2e298d"
+    },
+    {
+      "bytes": 955,
+      "path": "protocol.json",
+      "sha256": "318d451c3f266a764be30552afeabf672c5c2e80dcdd795ec254a1b99e4a628d"
+    },
+    {
+      "bytes": 151,
+      "path": "raw/README.md",
+      "sha256": "2475b655243b0b73375caf418c85dc00fa4c36b5615a8b67d42c4307ff3fc86b"
+    },
+    {
+      "bytes": 206,
+      "path": "rejected/README.md",
+      "sha256": "e24ba0920bb72520ea943fa03651256789cafff144f5616d19a37fa224bcc446"
+    },
+    {
+      "bytes": 879,
+      "path": "report.md",
+      "sha256": "f8850f848f7abbbe30a05fb3717fff9a1239ba044f9c0b15b3a1ad56bdcd049d"
+    },
+    {
+      "bytes": 274,
+      "path": "run.json",
+      "sha256": "cab26d9175422174a344cb94076479baac53f170182c03b5f7dd755b8a2d5041"
+    },
+    {
+      "bytes": 10713,
+      "path": "schedule.json",
+      "sha256": "6f896c74875c2f4f00a27c323a7b2838a9941ae2c148a41e31857ceefb3eab64"
+    },
+    {
+      "bytes": 276,
+      "path": "smoke.json",
+      "sha256": "91d23ea8c82bdd9246b64a0aa48b30888bef66c929a9d3c6c6b4d9503bfc7f8a"
+    }
+  ],
+  "campaign_id": "2026-08-07-g5-energy-final",
+  "publication_performed": false,
+  "raw_data_immutable_after_seal": true,
+  "schema": "casulo-energy-manifest/1.0",
+  "sealed_at_utc": "2026-08-07T17:13:13.175981+00:00",
+  "sha256sums_sha256": "13e4c8129948c1cbec1ccf31f56060d3f3dc387bab4fb412668e851e3082ba69",
+  "simulated_measurement_accepted": false
+}

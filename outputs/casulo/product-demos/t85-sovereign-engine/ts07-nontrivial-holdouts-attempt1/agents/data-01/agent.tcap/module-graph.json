@@ -1,0 +1,25 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.data_validator_01.csv"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.agent.data_validator_01.csv"
+    },
+    {
+      "imports": [
+        "owner.agent.data_validator_01.csv"
+      ],
+      "name": "owner.agent.data_validator_01.schema"
+    },
+    {
+      "imports": [
+        "owner.agent.data_validator_01.schema"
+      ],
+      "name": "owner.agent.data_validator_01.diagnostic"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

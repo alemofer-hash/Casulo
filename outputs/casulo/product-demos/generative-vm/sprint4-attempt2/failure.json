@@ -1,0 +1,17 @@
+{
+  "schema": "casulo-generative-t-synthesis-failure/1.0",
+  "attempt": 2,
+  "gate": "GENERATIVE_T_SYNTHESIS_FAIL",
+  "stage": "t-frontend-semantics",
+  "diagnostics": [
+    "T2005: declaração de topo desconhecida: notas_de_reuniao.txt.gz|notas_de_reuniao.csv",
+    "T3004: programa não declara field, condense ou transition"
+  ],
+  "root_cause": "The neural source was schema-valid JSON but not restricted to the supported T/1.1 grammar subset.",
+  "compiler_rejected_candidate": true,
+  "partial_result_reused": false,
+  "external_ai_api_used": false,
+  "fake_engine_used": false,
+  "scientific_benchmark": false,
+  "preserved": true
+}

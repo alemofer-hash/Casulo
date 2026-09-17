@@ -1,0 +1,286 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "casulo.revolution.memory",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "block/root.0.then.0",
+            "block/root.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0",
+          [
+            "block/root.0.then.0.then.0",
+            "block/root.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0",
+          [
+            "block/root.0.then.0.then.0.then.0",
+            "block/root.0.then.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "schema_valid",
+          "source": "AcceptMemory/input/schema_valid",
+          "target": "AcceptMemory/instruction/root.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptMemory/instruction/root.0/if",
+          "target": "AcceptMemory/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "provenance_present",
+          "source": "AcceptMemory/input/provenance_present",
+          "target": "AcceptMemory/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptMemory/instruction/root.0.then.0/if",
+          "target": "AcceptMemory/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "project_scope_matches",
+          "source": "AcceptMemory/input/project_scope_matches",
+          "target": "AcceptMemory/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptMemory/instruction/root.0.then.0.then.0/if",
+          "target": "AcceptMemory/instruction/root.0.then.0.then.0.then.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptMemory/instruction/root.0.then.0.then.0/if",
+          "target": "AcceptMemory/instruction/root.0.then.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptMemory/instruction/root.0.then.0/if",
+          "target": "AcceptMemory/instruction/root.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptMemory/instruction/root.0/if",
+          "target": "AcceptMemory/instruction/root.0.else.0/emit"
+        }
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 7,
+      "input_type": "MemoryDecision",
+      "name": "AcceptMemory",
+      "nodes": [
+        {
+          "defines": [
+            "schema_valid"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "AcceptMemory/input/schema_valid",
+          "kind": "input",
+          "label": "schema_valid",
+          "operation": "AcceptMemory",
+          "path": "input.schema_valid",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "provenance_present"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "AcceptMemory/input/provenance_present",
+          "kind": "input",
+          "label": "provenance_present",
+          "operation": "AcceptMemory",
+          "path": "input.provenance_present",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "project_scope_matches"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "AcceptMemory/input/project_scope_matches",
+          "kind": "input",
+          "label": "project_scope_matches",
+          "operation": "AcceptMemory",
+          "path": "input.project_scope_matches",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "AcceptMemory/instruction/root.0/if",
+          "kind": "if",
+          "label": "schema_valid",
+          "operation": "AcceptMemory",
+          "path": "root.0",
+          "pure": true,
+          "uses": [
+            "schema_valid"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "AcceptMemory/instruction/root.0.then.0/if",
+          "kind": "if",
+          "label": "provenance_present",
+          "operation": "AcceptMemory",
+          "path": "root.0.then.0",
+          "pure": true,
+          "uses": [
+            "provenance_present"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "AcceptMemory/instruction/root.0.then.0.then.0/if",
+          "kind": "if",
+          "label": "project_scope_matches",
+          "operation": "AcceptMemory",
+          "path": "root.0.then.0.then.0",
+          "pure": true,
+          "uses": [
+            "project_scope_matches"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AcceptMemory/instruction/root.0.then.0.then.0.then.0/emit",
+          "kind": "emit",
+          "label": "\"ACCEPT\"",
+          "operation": "AcceptMemory",
+          "path": "root.0.then.0.then.0.then.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AcceptMemory/instruction/root.0.then.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"QUARANTINE\"",
+          "operation": "AcceptMemory",
+          "path": "root.0.then.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AcceptMemory/instruction/root.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"QUARANTINE\"",
+          "operation": "AcceptMemory",
+          "path": "root.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AcceptMemory/instruction/root.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"QUARANTINE\"",
+          "operation": "AcceptMemory",
+          "path": "root.0.else.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [
+    {
+      "kind": "record",
+      "members": [
+        [
+          "schema_valid",
+          "Bool"
+        ],
+        [
+          "provenance_present",
+          "Bool"
+        ],
+        [
+          "project_scope_matches",
+          "Bool"
+        ]
+      ],
+      "name": "MemoryDecision"
+    }
+  ],
+  "version": "metamorfose-graph/1.0"
+}

@@ -1,0 +1,43 @@
+{
+  "expected_evidence_tokens": [
+    "e54b8cdd6b762eb1a70efa98490566067d9b9a806ad5bf27c91eb0e3e03da18d",
+    "9e3c34274a67694aac705e244c276c714a04d9c9f7cc37ca99f351a6082e6f84",
+    "831630cbe03dc6509e811b764510cd3803dceb9de35e4ea859a0a030921ca014"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "data-01:original-preserved",
+      "scope": "data-01",
+      "source_event_ids": [
+        "sealed:data-01"
+      ],
+      "verifier_ids": [
+        "domain:original-preserved"
+      ]
+    },
+    {
+      "requirement_id": "data-01:versioned-schema",
+      "scope": "data-01",
+      "source_event_ids": [
+        "sealed:data-01"
+      ],
+      "verifier_ids": [
+        "domain:versioned-schema"
+      ]
+    },
+    {
+      "requirement_id": "data-01:diagnostic-per-rejection",
+      "scope": "data-01",
+      "source_event_ids": [
+        "sealed:data-01"
+      ],
+      "verifier_ids": [
+        "domain:diagnostic-per-rejection"
+      ]
+    }
+  ],
+  "project_id": "data-01",
+  "schema": "casulo.evidence-plan/1.0"
+}

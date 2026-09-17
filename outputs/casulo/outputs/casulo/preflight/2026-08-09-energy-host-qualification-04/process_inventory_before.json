@@ -1,0 +1,423 @@
+{
+  "captured_at_utc": "2026-08-10T01:49:58.720666+00:00",
+  "logical_cpu_count": 12,
+  "relevant_processes": [
+    {
+      "command_line": [
+        "",
+        "/updateInstalled",
+        "/background"
+      ],
+      "cpu_percent_all_logical": 103.2,
+      "executable": "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe",
+      "name": "OneDrive.exe",
+      "pid": 25964,
+      "working_set_bytes": 1137762304
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\HWiNFO64\\HWiNFO64.EXE"
+      ],
+      "cpu_percent_all_logical": 33.3,
+      "executable": "C:\\Program Files\\HWiNFO64\\HWiNFO64.EXE",
+      "name": "HWiNFO64.EXE",
+      "pid": 19392,
+      "working_set_bytes": 239300608
+    },
+    {
+      "command_line": [],
+      "cpu_percent_all_logical": 8.6,
+      "executable": "",
+      "name": "System",
+      "pid": 4,
+      "working_set_bytes": 27250688
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+        "--type=gpu-process",
+        "--no-pre-read-main-dll",
+        "--start-stack-profiler",
+        "--gpu-preferences=WAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA=",
+        "--metrics-shmem-handle=2080,i,16047637596103945495,15351072815480991736,262144",
+        "--field-trial-handle=2204,i,16597868244730067476,4737994428763303276,262144",
+        "--enable-features=OwlHistory,OwlPrinting,ReportStuckThrottle",
+        "--disable-features=DropInputEventsWhilePaintHolding,OwlExtensions,OwlOpenAIGoLinks",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=2208,i,14612507735871012861,17702304560984047005,4",
+        "--trace-process-track-uuid=3190708988185955192",
+        "--mojo-platform-channel-handle=2148",
+        "/prefetch:2"
+      ],
+      "cpu_percent_all_logical": 3.3,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 20528,
+      "working_set_bytes": 141717504
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+        "--type=renderer",
+        "--standard-schemes=app,codex-sandbox",
+        "--service-worker-schemes=codex-sandbox",
+        "--secure-schemes=app,codex-sandbox,sentry-ipc",
+        "--bypasscsp-schemes=sentry-ipc",
+        "--fetch-schemes=app,codex-sandbox,sentry-ipc",
+        "--cors-schemes=codex-sandbox,sentry-ipc",
+        "--streaming-schemes=app,codex-sandbox",
+        "--no-pre-read-main-dll",
+        "--disable-blink-features=ReplacedNormalFlowStackingInlinePaint",
+        "--video-capture-use-gpu-memory-buffer",
+        "--lang=pt-BR",
+        "--device-scale-factor=1",
+        "--num-raster-threads=4",
+        "--enable-main-frame-before-activation",
+        "--renderer-client-id=5",
+        "--time-ticks-at-unix-epoch=-1786320094758038",
+        "--launch-time-ticks=291681945",
+        "--metrics-shmem-handle=4784,i,7949669952329989028,1792098857555706633,2097152",
+        "--field-trial-handle=2204,i,16597868244730067476,4737994428763303276,262144",
+        "--enable-features=OwlHistory,OwlPrinting,ReportStuckThrottle",
+        "--disable-features=DropInputEventsWhilePaintHolding,OwlExtensions,OwlOpenAIGoLinks",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=2208,i,14612507735871012861,17702304560984047005,4",
+        "--trace-process-track-uuid=3190708990997080739",
+        "--mojo-platform-channel-handle=4796",
+        "/prefetch:1"
+      ],
+      "cpu_percent_all_logical": 2.8,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 2872,
+      "working_set_bytes": 409096192
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\Explorer.EXE"
+      ],
+      "cpu_percent_all_logical": 2.8,
+      "executable": "C:\\Windows\\explorer.exe",
+      "name": "explorer.exe",
+      "pid": 10984,
+      "working_set_bytes": 288124928
+    },
+    {
+      "command_line": [
+        "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe"
+      ],
+      "cpu_percent_all_logical": 2.8,
+      "executable": "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+      "name": "opera.exe",
+      "pid": 24604,
+      "working_set_bytes": 545964032
+    },
+    {
+      "command_line": [
+        "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+        "--type=renderer",
+        "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/133.0.0.0 (Edition std-2)",
+        "--no-pre-read-main-dll",
+        "--with-feature:address-bar-dropdown-keyword-ads-reduced=on",
+        "--with-feature:address-bar-dropdown-unfiltered-full=off",
+        "--with-feature:address-bar-specific-affiliation=on",
+        "--with-feature:cashback-assistant=on",
+        "--with-feature:certificate-transparency-enforcement=on",
+        "--with-feature:continue-on-booking-cms-configuration=on",
+        "--with-feature:continue-on-support=on",
+        "--with-feature:domain-suggestions-vertical-suggestions=on",
+        "--with-feature:feature-remote-disable-updates-testing-flag=off",
+        "--with-feature:feature-remote-updates-testing-flag=on",
+        "--with-feature:fun-voice-messages=on",
+        "--with-feature:gx-post-mortem=on",
+        "--with-feature:gx-profiles-streamlabs-promo=off",
+        "--with-feature:gx-streamlabs-promo-text=on",
+        "--with-feature:image-search-support=on",
+        "--with-feature:installer-experiment-test=off",
+        "--with-feature:installer-move-opera-exe=off",
+        "--with-feature:installer-verify-ipc-client=off",
+        "--with-feature:run-at-startup-default=on",
+        "--with-feature:sd-suggestions-external=on",
+        "--with-feature:session-restore-add-allegro-attributions=on",
+        "--with-feature:sitecheck-age=on",
+        "--with-feature:tiktok-panel=on",
+        "--with-feature:universal-skip-button=on",
+        "--with-feature:vpn-pro-v4-support=on",
+        "--video-capture-use-gpu-memory-buffer",
+        "--lang=pt-BR",
+        "--device-scale-factor=1",
+        "--num-raster-threads=4",
+        "--enable-main-frame-before-activation",
+        "--renderer-client-id=35",
+        "--time-ticks-at-unix-epoch=-1786320094758038",
+        "--launch-time-ticks=838245317",
+        "--metrics-shmem-handle=7312,i,2315300771597652991,614457322594650851,2097152",
+        "--field-trial-handle=1948,i,6421481482039600657,13311398592620628402,262144",
+        "--enable-features=CertificateTransparencyAskBeforeEnabling,MultiThreadedUiCompositor,NativeNotifications,SystemNotifications",
+        "--disable-features=AutoPictureInPictureForVideoPlayback,AutoPictureInPictureVideoHeuristics,SkiaGraphite,SyncWorkspacesInSessions",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=1952,i,3385136508273608974,11168371831337891228,4",
+        "--trace-process-track-uuid=3190709019108336209",
+        "--mojo-platform-channel-handle=7412",
+        "/prefetch:1"
+      ],
+      "cpu_percent_all_logical": 2.2,
+      "executable": "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+      "name": "opera.exe",
+      "pid": 10708,
+      "working_set_bytes": 508080128
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\Cairo Shell\\CairoDesktop.exe"
+      ],
+      "cpu_percent_all_logical": 2.2,
+      "executable": "C:\\Program Files\\Cairo Shell\\CairoDesktop.exe",
+      "name": "CairoDesktop.exe",
+      "pid": 16584,
+      "working_set_bytes": 147058688
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\system32\\AUDIODG.EXE",
+        "0x00000000000004D8"
+      ],
+      "cpu_percent_all_logical": 1.7,
+      "executable": "C:\\Windows\\System32\\audiodg.exe",
+      "name": "audiodg.exe",
+      "pid": 3788,
+      "working_set_bytes": 26161152
+    },
+    {
+      "command_line": [
+        "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+        "--type=utility",
+        "--utility-sub-type=network.mojom.NetworkService",
+        "--lang=pt-BR",
+        "--service-sandbox-type=none",
+        "--enable-quic",
+        "--no-pre-read-main-dll",
+        "--start-stack-profiler",
+        "--with-feature:address-bar-dropdown-keyword-ads-reduced=on",
+        "--with-feature:address-bar-dropdown-unfiltered-full=off",
+        "--with-feature:address-bar-specific-affiliation=on",
+        "--with-feature:cashback-assistant=on",
+        "--with-feature:certificate-transparency-enforcement=on",
+        "--with-feature:continue-on-booking-cms-configuration=on",
+        "--with-feature:continue-on-support=on",
+        "--with-feature:domain-suggestions-vertical-suggestions=on",
+        "--with-feature:feature-remote-disable-updates-testing-flag=off",
+        "--with-feature:feature-remote-updates-testing-flag=on",
+        "--with-feature:fun-voice-messages=on",
+        "--with-feature:gx-post-mortem=on",
+        "--with-feature:gx-profiles-streamlabs-promo=off",
+        "--with-feature:gx-streamlabs-promo-text=on",
+        "--with-feature:image-search-support=on",
+        "--with-feature:installer-experiment-test=off",
+        "--with-feature:installer-move-opera-exe=off",
+        "--with-feature:installer-verify-ipc-client=off",
+        "--with-feature:run-at-startup-default=on",
+        "--with-feature:sd-suggestions-external=on",
+        "--with-feature:session-restore-add-allegro-attributions=on",
+        "--with-feature:sitecheck-age=on",
+        "--with-feature:tiktok-panel=on",
+        "--with-feature:universal-skip-button=on",
+        "--with-feature:vpn-pro-v4-support=on",
+        "--metrics-shmem-handle=2108,i,12943579797320556827,10913262312299094046,524288",
+        "--field-trial-handle=1948,i,6421481482039600657,13311398592620628402,262144",
+        "--enable-features=CertificateTransparencyAskBeforeEnabling,MultiThreadedUiCompositor,NativeNotifications,SystemNotifications",
+        "--disable-features=AutoPictureInPictureForVideoPlayback,AutoPictureInPictureVideoHeuristics,SkiaGraphite,SyncWorkspacesInSessions",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=1952,i,3385136508273608974,11168371831337891228,4",
+        "--trace-process-track-uuid=3190708989122997041",
+        "--mojo-platform-channel-handle=2124",
+        "/prefetch:11"
+      ],
+      "cpu_percent_all_logical": 1.1,
+      "executable": "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+      "name": "opera.exe",
+      "pid": 3708,
+      "working_set_bytes": 61243392
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+      ],
+      "cpu_percent_all_logical": 1.1,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 5052,
+      "working_set_bytes": 238583808
+    },
+    {
+      "command_line": [
+        "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+        "--type=gpu-process",
+        "--no-pre-read-main-dll",
+        "--start-stack-profiler",
+        "--with-feature:address-bar-dropdown-keyword-ads-reduced=on",
+        "--with-feature:address-bar-dropdown-unfiltered-full=off",
+        "--with-feature:address-bar-specific-affiliation=on",
+        "--with-feature:cashback-assistant=on",
+        "--with-feature:certificate-transparency-enforcement=on",
+        "--with-feature:continue-on-booking-cms-configuration=on",
+        "--with-feature:continue-on-support=on",
+        "--with-feature:domain-suggestions-vertical-suggestions=on",
+        "--with-feature:feature-remote-disable-updates-testing-flag=off",
+        "--with-feature:feature-remote-updates-testing-flag=on",
+        "--with-feature:fun-voice-messages=on",
+        "--with-feature:gx-post-mortem=on",
+        "--with-feature:gx-profiles-streamlabs-promo=off",
+        "--with-feature:gx-streamlabs-promo-text=on",
+        "--with-feature:image-search-support=on",
+        "--with-feature:installer-experiment-test=off",
+        "--with-feature:installer-move-opera-exe=off",
+        "--with-feature:installer-verify-ipc-client=off",
+        "--with-feature:run-at-startup-default=on",
+        "--with-feature:sd-suggestions-external=on",
+        "--with-feature:session-restore-add-allegro-attributions=on",
+        "--with-feature:sitecheck-age=on",
+        "--with-feature:tiktok-panel=on",
+        "--with-feature:universal-skip-button=on",
+        "--with-feature:vpn-pro-v4-support=on",
+        "--gpu-preferences=SAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA==",
+        "--metrics-shmem-handle=1784,i,16850525407431248056,16247677398605510209,262144",
+        "--field-trial-handle=1948,i,6421481482039600657,13311398592620628402,262144",
+        "--enable-features=CertificateTransparencyAskBeforeEnabling,MultiThreadedUiCompositor,NativeNotifications,SystemNotifications",
+        "--disable-features=AutoPictureInPictureForVideoPlayback,AutoPictureInPictureVideoHeuristics,SkiaGraphite,SyncWorkspacesInSessions",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=1952,i,3385136508273608974,11168371831337891228,4",
+        "--trace-process-track-uuid=3190708988185955192",
+        "--mojo-platform-channel-handle=1944",
+        "/prefetch:2"
+      ],
+      "cpu_percent_all_logical": 1.1,
+      "executable": "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+      "name": "opera.exe",
+      "pid": 9056,
+      "working_set_bytes": 267837440
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\Microsoft.GamingApp_2608.1001.17.0_x64__8wekyb3d8bbwe\\XboxPcApp.exe",
+        "-ServerName:Microsoft.Xbox.AppL.AppXhg7mrtrf7ayze6gb4syw3zwjgyr2xv4r.mca"
+      ],
+      "cpu_percent_all_logical": 1.1,
+      "executable": "C:\\Program Files\\WindowsApps\\Microsoft.GamingApp_2608.1001.17.0_x64__8wekyb3d8bbwe\\XboxPcApp.exe",
+      "name": "XboxPcApp.exe",
+      "pid": 21856,
+      "working_set_bytes": 181813248
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\Rainmeter\\Rainmeter.exe"
+      ],
+      "cpu_percent_all_logical": 1.1,
+      "executable": "C:\\Program Files\\Rainmeter\\Rainmeter.exe",
+      "name": "Rainmeter.exe",
+      "pid": 27620,
+      "working_set_bytes": 55726080
+    },
+    {
+      "command_line": [
+        "C:\\Windows\\System32\\DriverStore\\FileRepository\\ipf_cpu.inf_amd64_bef44694f882994d\\ipf_helper.exe"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Windows\\System32\\DriverStore\\FileRepository\\ipf_cpu.inf_amd64_bef44694f882994d\\ipf_helper.exe",
+      "name": "ipf_helper.exe",
+      "pid": 6372,
+      "working_set_bytes": 11845632
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.295.453.0_x64__zpdnekdrzrea0\\SpotifyLauncher.exe",
+        "/InvokerPRAID:",
+        "Spotify",
+        "--session-connected-task"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.295.453.0_x64__zpdnekdrzrea0\\SpotifyLauncher.exe",
+      "name": "SpotifyLauncher.exe",
+      "pid": 16492,
+      "working_set_bytes": 31334400
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat\\AdobeCollabSync.exe",
+        "--type=collab-renderer",
+        "--proc=22732"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat\\AdobeCollabSync.exe",
+      "name": "AdobeCollabSync.exe",
+      "pid": 22832,
+      "working_set_bytes": 48992256
+    },
+    {
+      "command_line": [
+        "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+        "--type=renderer",
+        "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/133.0.0.0 (Edition std-2)",
+        "--no-pre-read-main-dll",
+        "--with-feature:address-bar-dropdown-keyword-ads-reduced=on",
+        "--with-feature:address-bar-dropdown-unfiltered-full=off",
+        "--with-feature:address-bar-specific-affiliation=on",
+        "--with-feature:cashback-assistant=on",
+        "--with-feature:certificate-transparency-enforcement=on",
+        "--with-feature:continue-on-booking-cms-configuration=on",
+        "--with-feature:continue-on-support=on",
+        "--with-feature:domain-suggestions-vertical-suggestions=on",
+        "--with-feature:feature-remote-disable-updates-testing-flag=off",
+        "--with-feature:feature-remote-updates-testing-flag=on",
+        "--with-feature:fun-voice-messages=on",
+        "--with-feature:gx-post-mortem=on",
+        "--with-feature:gx-profiles-streamlabs-promo=off",
+        "--with-feature:gx-streamlabs-promo-text=on",
+        "--with-feature:image-search-support=on",
+        "--with-feature:installer-experiment-test=off",
+        "--with-feature:installer-move-opera-exe=off",
+        "--with-feature:installer-verify-ipc-client=off",
+        "--with-feature:run-at-startup-default=on",
+        "--with-feature:sd-suggestions-external=on",
+        "--with-feature:session-restore-add-allegro-attributions=on",
+        "--with-feature:sitecheck-age=on",
+        "--with-feature:tiktok-panel=on",
+        "--with-feature:universal-skip-button=on",
+        "--with-feature:vpn-pro-v4-support=on",
+        "--video-capture-use-gpu-memory-buffer",
+        "--lang=pt-BR",
+        "--device-scale-factor=1",
+        "--num-raster-threads=4",
+        "--enable-main-frame-before-activation",
+        "--renderer-client-id=36",
+        "--time-ticks-at-unix-epoch=-1786320094758038",
+        "--launch-time-ticks=840231117",
+        "--metrics-shmem-handle=7508,i,8162258264081250109,13841555578910637107,2097152",
+        "--field-trial-handle=1948,i,6421481482039600657,13311398592620628402,262144",
+        "--enable-features=CertificateTransparencyAskBeforeEnabling,MultiThreadedUiCompositor,NativeNotifications,SystemNotifications",
+        "--disable-features=AutoPictureInPictureForVideoPlayback,AutoPictureInPictureVideoHeuristics,SkiaGraphite,SyncWorkspacesInSessions",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=1952,i,3385136508273608974,11168371831337891228,4",
+        "--trace-process-track-uuid=3190709020045378058",
+        "--mojo-platform-channel-handle=7080",
+        "/prefetch:1"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Users\\guimo\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+      "name": "opera.exe",
+      "pid": 24276,
+      "working_set_bytes": 664829952
+    },
+    {
+      "command_line": [
+        "C:\\Program Files (x86)\\Adobe\\Adobe Sync\\CoreSync\\CoreSync.exe"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files (x86)\\Adobe\\Adobe Sync\\CoreSync\\CoreSync.exe",
+      "name": "CoreSync.exe",
+      "pid": 29720,
+      "working_set_bytes": 43343872
+    }
+  ],
+  "sample_seconds": 2.0
+}

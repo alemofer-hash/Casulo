@@ -1,0 +1,10 @@
+{
+  "schema": "casulo.t85-development-failure/1.0",
+  "gate": "TS10_PREFLIGHT_FAIL",
+  "stage": "BUNDLE_DEDUP_AND_CANCEL_EXPECTATION",
+  "cause": "all T binding objects were unnecessarily universe-specific and cancellation was correctly returned as typed CANCELLED rather than a process failure",
+  "affected_tests": 2,
+  "physical_measurement_started": false,
+  "scientific_benchmark_started": false,
+  "preserved": true
+}

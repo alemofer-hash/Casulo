@@ -1,0 +1,25 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.agent.t_interactive_01.memory"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.agent.t_interactive_01.memory"
+    },
+    {
+      "imports": [
+        "owner.agent.t_interactive_01.memory"
+      ],
+      "name": "owner.agent.t_interactive_01.interrupt"
+    },
+    {
+      "imports": [
+        "owner.agent.t_interactive_01.interrupt"
+      ],
+      "name": "owner.agent.t_interactive_01.export"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

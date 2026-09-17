@@ -1,0 +1,23 @@
+{
+  "decision": "polling gate passed; observer validation may continue",
+  "finite_nonnegative_package_power": true,
+  "formal_baseline_timestamp_utc": "2026-08-07T22:04:47.724000+00:00",
+  "interval_count": 31,
+  "limits": {
+    "median_seconds": 0.3,
+    "p95_seconds": null
+  },
+  "maximum_interval_seconds": 0.273,
+  "median_interval_seconds": 0.253,
+  "minimum_interval_seconds": 0.237,
+  "new_samples": 32,
+  "observed_file_growth_events": 18,
+  "p95_interval_seconds": 0.268,
+  "preflight_reader": "stat-growth-plus-single-bounded-snapshot",
+  "schema": "casulo-hwinfo-polling-validation/1.0",
+  "status": "PASS",
+  "strictly_increasing": true,
+  "validation_end_utc": "2026-08-07T22:04:57.960615+00:00",
+  "validation_start_utc": "2026-08-07T22:04:50.283000+00:00",
+  "workload_executed": false
+}

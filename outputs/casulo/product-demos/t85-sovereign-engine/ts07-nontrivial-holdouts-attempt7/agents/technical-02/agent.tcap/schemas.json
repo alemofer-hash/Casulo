@@ -1,0 +1,195 @@
+{
+  "modules": {
+    "owner.agent.t_mass_balance.m_verify": {
+      "enums": [
+        {
+          "cases": [
+            "PLANNED",
+            "EVIDENCE_OK",
+            "WORKFLOW_READY"
+          ],
+          "name": "WorkflowDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "evidence_result",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "evidence_statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "List"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "WorkflowInput"
+        }
+      ],
+      "version": 1
+    },
+    "owner.agent.t_mass_balance.o_validate": {
+      "enums": [
+        {
+          "cases": [
+            "SIMULATED",
+            "COMMITTED",
+            "AUDITED"
+          ],
+          "name": "PublishDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "previous",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "simulated",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "approved",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "PublishInput"
+        }
+      ],
+      "version": 1
+    },
+    "owner.agent.t_mass_balance.u_check": {
+      "enums": [
+        {
+          "cases": [
+            "READY",
+            "BLOCKED"
+          ],
+          "name": "PolicyDecision"
+        }
+      ],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "project_match",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "evidence_statuses",
+              "type": {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "bound": null,
+                    "name": "Text"
+                  }
+                ],
+                "bound": 32,
+                "name": "List"
+              }
+            },
+            {
+              "name": "unit_consistent",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "mass_conserved",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "residual_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "PolicyInput"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

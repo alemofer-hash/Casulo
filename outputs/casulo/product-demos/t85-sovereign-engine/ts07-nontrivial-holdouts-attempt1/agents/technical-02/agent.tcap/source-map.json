@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.agent.mass_balance_calculator_v2.unit_parser.t",
+      "module": "owner.agent.mass_balance_calculator_v2.unit_parser",
+      "sha256": "9a23159fcd8f310e0551244137d1a4f70e874592b3e382bfe8dc78141ad8bdb2"
+    },
+    {
+      "file": "sources/owner.agent.mass_balance_calculator_v2.mass_flow.t",
+      "module": "owner.agent.mass_balance_calculator_v2.mass_flow",
+      "sha256": "c8c6700afa2f5280bd912f464b0d5ba06d9de50e5aef0cbeb17c2f73eb67601f"
+    },
+    {
+      "file": "sources/owner.agent.mass_balance_calculator_v2.conservation_check.t",
+      "module": "owner.agent.mass_balance_calculator_v2.conservation_check",
+      "sha256": "0b2c58fd44e0029d9ff9421aaf7d8027c5e7533505762e673326356c6fc47e3c"
+    }
+  ]
+}

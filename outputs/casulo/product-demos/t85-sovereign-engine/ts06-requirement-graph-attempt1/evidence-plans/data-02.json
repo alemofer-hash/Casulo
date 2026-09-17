@@ -1,0 +1,43 @@
+{
+  "expected_evidence_tokens": [
+    "148ad7dd61bfc00dd75fa8f8bfea86be1e0fc956fee955a4bd94b3f047632a68",
+    "7a8db61b29e76141be59588bbb1ac83031214b8dbc3f89bcb0a2c6fcd21e1aad",
+    "6cf42d00afae314a7d0df3503923cf4edbb44678a00e56579bd78f746c0cc756"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "data-02:event-time",
+      "scope": "data-02",
+      "source_event_ids": [
+        "sealed:data-02"
+      ],
+      "verifier_ids": [
+        "domain:event-time"
+      ]
+    },
+    {
+      "requirement_id": "data-02:bounded-memory",
+      "scope": "data-02",
+      "source_event_ids": [
+        "sealed:data-02"
+      ],
+      "verifier_ids": [
+        "domain:bounded-memory"
+      ]
+    },
+    {
+      "requirement_id": "data-02:transformation-provenance",
+      "scope": "data-02",
+      "source_event_ids": [
+        "sealed:data-02"
+      ],
+      "verifier_ids": [
+        "domain:transformation-provenance"
+      ]
+    }
+  ],
+  "project_id": "data-02",
+  "schema": "casulo.evidence-plan/1.0"
+}

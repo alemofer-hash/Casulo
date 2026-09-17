@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Casulo/T — perfil causal</title>
+<style>
+body{font-family:Inter,Segoe UI,sans-serif;background:#09111f;color:#eaf1ff;
+margin:0;padding:32px}main{max-width:1200px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+article{background:#121f35;border:1px solid #29405f;border-radius:14px;
+padding:16px}table{width:100%;border-collapse:collapse;background:#101b2e;
+margin-top:24px}th,td{padding:10px;border-bottom:1px solid #29405f;
+text-align:left}code{color:#84e8ca}.guard{color:#ffcf7d}
+</style></head><body><main>
+<p>Teloscorp · Casulo · Otimização de Tráfego de Informação</p>
+<h1>Perfil causal da Álgebra Casulo/T</h1>
+<p class="guard">Sem cronômetro, vencedor ou claim. Este artefato descreve
+causas estruturais a serem refutadas por ablação.</p>
+<div class="cards">
+<article><small>Instruções</small><h2>26</h2></article>
+<article><small>FLOPs conhecidos</small><h2>14,115,840</h2></article>
+<article><small>Tráfego lógico</small><h2>2,141,200 B</h2></article>
+<article><small>Reuso de arena</small><h2>30.7%</h2></article>
+</div>
+<h2>Hipóteses refutáveis</h2><ol><li><strong>GEMM_DOMINATED</strong>: ablação do provedor e das threads GEMM não altera materialmente o tempo</li><li><strong>DISPATCH_OR_LOOP_OVERHEAD</strong>: fundir regiões ou reduzir lançamentos não altera materialmente o tempo</li></ol>
+<table><thead><tr><th>#</th><th>Fase</th><th>Operador</th><th>Classe</th>
+<th>Bytes lógicos</th><th>FLOPs</th><th>Materializa</th></tr></thead>
+<tbody><tr><td>0</td><td>forward</td><td>matmul</td><td>GEMM</td><td>179,712</td><td>3317760</td><td>sim</td></tr><tr><td>1</td><td>forward</td><td>relu</td><td>POINTWISE</td><td>184,320</td><td>23040</td><td>sim</td></tr><tr><td>2</td><td>forward</td><td>matmul</td><td>GEMM</td><td>150,528</td><td>2211840</td><td>sim</td></tr><tr><td>3</td><td>forward</td><td>relu</td><td>POINTWISE</td><td>61,440</td><td>7680</td><td>sim</td></tr><tr><td>4</td><td>forward</td><td>matmul</td><td>GEMM</td><td>44,032</td><td>245760</td><td>sim</td></tr><tr><td>5</td><td>forward</td><td>sub</td><td>POINTWISE</td><td>30,720</td><td>2560</td><td>sim</td></tr><tr><td>6</td><td>forward</td><td>mul</td><td>POINTWISE</td><td>30,720</td><td>2560</td><td>sim</td></tr><tr><td>7</td><td>forward</td><td>mean</td><td>REDUCTION</td><td>10,244</td><td>2560</td><td>sim</td></tr><tr><td>8</td><td>backward</td><td>ones_like</td><td>POINTWISE</td><td>8</td><td>0</td><td>sim</td></tr><tr><td>9</td><td>backward</td><td>mean_backward</td><td>REDUCTION</td><td>20,484</td><td>2560</td><td>sim</td></tr><tr><td>10</td><td>backward</td><td>mul</td><td>POINTWISE</td><td>30,720</td><td>2560</td><td>sim</td></tr><tr><td>11</td><td>backward</td><td>add</td><td>POINTWISE</td><td>30,720</td><td>2560</td><td>sim</td></tr><tr><td>12</td><td>backward</td><td>reduce_to_shape</td><td>REDUCTION</td><td>30,720</td><td>0</td><td>sim</td></tr><tr><td>13</td><td>backward</td><td>reduce_to_shape</td><td>REDUCTION</td><td>30,720</td><td>0</td><td>sim</td></tr><tr><td>14</td><td>backward</td><td>transpose</td><td>VIEW</td><td>0</td><td>0</td><td>não</td></tr><tr><td>15</td><td>backward</td><td>matmul</td><td>GEMM</td><td>44,032</td><td>245760</td><td>sim</td></tr><tr><td>16</td><td>backward</td><td>transpose</td><td>VIEW</td><td>61,440</td><td>0</td><td>sim</td></tr><tr><td>17</td><td>backward</td><td>matmul</td><td>GEMM</td><td>44,032</td><td>245760</td><td>sim</td></tr><tr><td>18</td><td>backward</td><td>relu_backward</td><td>POINTWISE</td><td>122,880</td><td>15360</td><td>sim</td></tr><tr><td>19</td><td>backward</td><td>transpose</td><td>VIEW</td><td>0</td><td>0</td><td>não</td></tr><tr><td>20</td><td>backward</td><td>matmul</td><td>GEMM</td><td>150,528</td><td>2211840</td><td>sim</td></tr><tr><td>21</td><td>backward</td><td>transpose</td><td>VIEW</td><td>184,320</td><td>0</td><td>sim</td></tr><tr><td>22</td><td>backward</td><td>matmul</td><td>GEMM</td><td>150,528</td><td>2211840</td><td>sim</td></tr><tr><td>23</td><td>backward</td><td>relu_backward</td><td>POINTWISE</td><td>368,640</td><td>46080</td><td>sim</td></tr><tr><td>24</td><td>backward</td><td>transpose</td><td>VIEW</td><td>0</td><td>0</td><td>não</td></tr><tr><td>25</td><td>backward</td><td>matmul</td><td>GEMM</td><td>179,712</td><td>3317760</td><td>sim</td></tr></tbody></table>
+<p>Perfil: <code>sha256:aeff362975e66f86d56c447e602f3138bf52ed5145e915818fce4692c278d778</code></p>
+</main></body></html>

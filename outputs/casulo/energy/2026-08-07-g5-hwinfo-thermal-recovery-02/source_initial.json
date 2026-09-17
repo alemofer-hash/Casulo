@@ -1,0 +1,77 @@
+{
+  "byte_offset": 721729,
+  "captured_at_utc": "2026-08-07T20:14:38.079097+00:00",
+  "inspection": {
+    "bom": "UTF-8",
+    "candidate_energy_sensors": [
+      {
+        "index": 164,
+        "kind": "package_power",
+        "literal_name": "Potência total da CPU [W]",
+        "normalized_name": "potencia total da cpu w",
+        "provenance": "hwinfo_reported_cpu_package",
+        "session_id": 0,
+        "si_scale": 1.0,
+        "unit": "w"
+      }
+    ],
+    "column_counts": [
+      340
+    ],
+    "complete_rows": 426,
+    "decimal_separator": ".",
+    "delimiter": ",",
+    "duplicate_sensor_names": [
+      "cpu inteira c"
+    ],
+    "duplicate_timestamps": 0,
+    "encoding": "utf-8-sig",
+    "explicit_estimate": false,
+    "first_timestamp_utc": "2026-08-07T20:02:19.783000+00:00",
+    "header_count": 1,
+    "incomplete_rows": 0,
+    "invalid_rows": 0,
+    "last_timestamp_utc": "2026-08-07T20:14:37.618000+00:00",
+    "sampling": {
+      "gaps_over_5x_median": [],
+      "intervals": 425,
+      "maximum_seconds": 2.155,
+      "median_seconds": 1.999,
+      "minimum_seconds": 0.393,
+      "p95_seconds": 2.017
+    },
+    "schema": "casulo-energy-hwinfo-source/1.0",
+    "selected_energy_sensor": {
+      "index": 164,
+      "kind": "package_power",
+      "literal_name": "Potência total da CPU [W]",
+      "normalized_name": "potencia total da cpu w",
+      "provenance": "hwinfo_reported_cpu_package",
+      "session_id": 0,
+      "si_scale": 1.0,
+      "unit": "w"
+    },
+    "session_count": 1,
+    "snapshot": {
+      "bytes_read": 721729,
+      "complete_bytes": 721729,
+      "file_size_at_open": 721729,
+      "mtime_ns": 1786133677630212700,
+      "partial_final_line_ignored": false,
+      "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+      "sha256": "21a694540dd1675601b3ea0be8cef6a7c32c5de2a1dcb6659f127f843f00e8ee"
+    },
+    "timestamp_regressions": 0
+  },
+  "last_timestamp_before_campaign_utc": "2026-08-07T20:14:37.618000+00:00",
+  "sha256": "21a694540dd1675601b3ea0be8cef6a7c32c5de2a1dcb6659f127f843f00e8ee",
+  "snapshot": {
+    "bytes_read": 721729,
+    "complete_bytes": 721729,
+    "file_size_at_open": 721729,
+    "mtime_ns": 1786133677630212700,
+    "partial_final_line_ignored": false,
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+    "sha256": "21a694540dd1675601b3ea0be8cef6a7c32c5de2a1dcb6659f127f843f00e8ee"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "attempts": [
+    {
+      "id": 1,
+      "reason": "continuous block exceeded 20 s; later raw series contained 81 C and throttling",
+      "result": "REJECTED"
+    },
+    {
+      "id": 2,
+      "reason": "warning threshold reached during segmented controlled load",
+      "result": "REJECTED"
+    },
+    {
+      "id": 3,
+      "reason": "76 C reached after short pre-calibration probes on common CPU 4 affinity",
+      "result": "REJECTED"
+    }
+  ],
+  "controlled_load": {
+    "completed_120_seconds": false,
+    "promoted": false,
+    "status": "REJECTED"
+  },
+  "definitive_samples_started": false,
+  "frozen_K": null,
+  "idle": {
+    "average_watts": 3.8876571577391412,
+    "coverage": 1.0,
+    "duration_seconds": 120.019914,
+    "end_utc": "2026-08-07T17:55:54.913887+00:00",
+    "energy_joules": 466.59627773333614,
+    "first_sample_utc": "2026-08-07T17:53:54.893973+00:00",
+    "last_sample_utc": "2026-08-07T17:55:54.913887+00:00",
+    "maximum_gap_seconds": 2.019,
+    "median_interval_seconds": 2.0,
+    "reason_code": "valid_hwinfo_cpu_package_energy_window",
+    "sample_count": 62,
+    "schema": "casulo-energy-hwinfo-window/1.0",
+    "sensor": {
+      "index": 164,
+      "kind": "package_power",
+      "literal_name": "Potência total da CPU [W]",
+      "normalized_name": "potencia total da cpu w",
+      "provenance": "hwinfo_reported_cpu_package",
+      "session_id": 0,
+      "si_scale": 1.0,
+      "unit": "w"
+    },
+    "source_session_id": 0,
+    "start_utc": "2026-08-07T17:53:54.893973+00:00",
+    "status": "PASS"
+  },
+  "idle_windows_completed": [
+    {
+      "average_watts": 7.042442745920643,
+      "coverage": 1.0,
+      "duration_seconds": 120.003103,
+      "end_utc": "2026-08-07T17:47:12.102938+00:00",
+      "energy_joules": 845.1149822103177,
+      "first_sample_utc": "2026-08-07T17:45:12.099835+00:00",
+      "last_sample_utc": "2026-08-07T17:47:12.102938+00:00",
+      "maximum_gap_seconds": 2.021,
+      "median_interval_seconds": 2.002,
+      "reason_code": "valid_hwinfo_cpu_package_energy_window",
+      "sample_count": 62,
+      "schema": "casulo-energy-hwinfo-window/1.0",
+      "sensor": {
+        "index": 164,
+        "kind": "package_power",
+        "literal_name": "Potência total da CPU [W]",
+        "normalized_name": "potencia total da cpu w",
+        "provenance": "hwinfo_reported_cpu_package",
+        "session_id": 0,
+        "si_scale": 1.0,
+        "unit": "w"
+      },
+      "source_session_id": 0,
+      "start_utc": "2026-08-07T17:45:12.099835+00:00",
+      "status": "PASS"
+    },
+    {
+      "average_watts": 5.016827280909936,
+      "coverage": 1.0,
+      "duration_seconds": 120.019467,
+      "end_utc": "2026-08-07T17:51:16.324023+00:00",
+      "energy_joules": 602.1169362858699,
+      "first_sample_utc": "2026-08-07T17:49:16.304556+00:00",
+      "last_sample_utc": "2026-08-07T17:51:16.324023+00:00",
+      "maximum_gap_seconds": 2.018,
+      "median_interval_seconds": 2.001,
+      "reason_code": "valid_hwinfo_cpu_package_energy_window",
+      "sample_count": 62,
+      "schema": "casulo-energy-hwinfo-window/1.0",
+      "sensor": {
+        "index": 164,
+        "kind": "package_power",
+        "literal_name": "Potência total da CPU [W]",
+        "normalized_name": "potencia total da cpu w",
+        "provenance": "hwinfo_reported_cpu_package",
+        "session_id": 0,
+        "si_scale": 1.0,
+        "unit": "w"
+      },
+      "source_session_id": 0,
+      "start_utc": "2026-08-07T17:49:16.304556+00:00",
+      "status": "PASS"
+    },
+    {
+      "average_watts": 3.8876571577391412,
+      "coverage": 1.0,
+      "duration_seconds": 120.019914,
+      "end_utc": "2026-08-07T17:55:54.913887+00:00",
+      "energy_joules": 466.59627773333614,
+      "first_sample_utc": "2026-08-07T17:53:54.893973+00:00",
+      "last_sample_utc": "2026-08-07T17:55:54.913887+00:00",
+      "maximum_gap_seconds": 2.019,
+      "median_interval_seconds": 2.0,
+      "reason_code": "valid_hwinfo_cpu_package_energy_window",
+      "sample_count": 62,
+      "schema": "casulo-energy-hwinfo-window/1.0",
+      "sensor": {
+        "index": 164,
+        "kind": "package_power",
+        "literal_name": "Potência total da CPU [W]",
+        "normalized_name": "potencia total da cpu w",
+        "provenance": "hwinfo_reported_cpu_package",
+        "session_id": 0,
+        "si_scale": 1.0,
+        "unit": "w"
+      },
+      "source_session_id": 0,
+      "start_utc": "2026-08-07T17:53:54.893973+00:00",
+      "status": "PASS"
+    }
+  ],
+  "no_joules_result_claimed": true,
+  "reason_code": "THERMAL_GUARD_WARNING_AND_THROTTLE_OBSERVED_BEFORE_K_FREEZE",
+  "status": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "thermal_evidence": {
+    "any_throttling": true,
+    "maximum_row": {
+      "cpu_package_power_w": 6.716,
+      "temperature_c": 81.0,
+      "throttling": true,
+      "timestamp_utc": "2026-08-07T17:53:24.405000+00:00"
+    },
+    "maximum_temperature_c": 81.0,
+    "samples": 414
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "modules": {
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.dataset_identity_integrity": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "observed_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "records",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "input_features",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Observation"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.equivalence_acceptance": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "publisher_requires_t",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Capabilities"
+        },
+        {
+          "members": [
+            {
+              "name": "equivalence_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "counter_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "receipt_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "semantic_status",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "human_contract_confirmed",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Evidence"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.initialization_bundle": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "observed_sha256",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            },
+            {
+              "name": "cases_unique",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "nonces_unique",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Observation"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.loss_function": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Capabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.numerical_precision": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Capabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.optimizer_state": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "no_cross_case_state",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Capabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.stopping": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "counter_supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Capabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.update_rule": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Capabilities"
+        }
+      ],
+      "version": 1
+    },
+    "research.interlocution.holdout.holdout_logistic_bce_subset_v1.working_set": {
+      "enums": [],
+      "records": [
+        {
+          "members": [
+            {
+              "name": "available_records",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Int"
+              }
+            },
+            {
+              "name": "supported",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "Observation"
+        }
+      ],
+      "version": 1
+    }
+  }
+}

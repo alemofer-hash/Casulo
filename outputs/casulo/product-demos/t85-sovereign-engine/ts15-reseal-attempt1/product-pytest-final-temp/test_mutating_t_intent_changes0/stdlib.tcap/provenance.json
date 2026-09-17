@@ -1,0 +1,71 @@
+{
+  "builder": "casulo-python-tooling",
+  "compiler": "T/2.0",
+  "sources": [
+    {
+      "file": "sources/t.casulo.capabilities.t",
+      "module": "t.casulo.capabilities",
+      "sha256": "279f2a0865653ab9de37c1ff087a27974d33f37c2e03892ef9aae6df3ac19673"
+    },
+    {
+      "file": "sources/t.casulo.dialogue.t",
+      "module": "t.casulo.dialogue",
+      "sha256": "a28ba0ee63aa090b960ffec3edd0ac0238c28a63dd1f476780fdaba0696943f7"
+    },
+    {
+      "file": "sources/t.casulo.intent.t",
+      "module": "t.casulo.intent",
+      "sha256": "c86899a353afa5e148b15b60304c932462011bd7c1c0033df7a052f109d1b3a4"
+    },
+    {
+      "file": "sources/t.casulo.jobs.t",
+      "module": "t.casulo.jobs",
+      "sha256": "40d77c8da1a58236b2b8b3e54c158a32972c5212a47b0196c3e7d8789278173f"
+    },
+    {
+      "file": "sources/t.casulo.materialization.t",
+      "module": "t.casulo.materialization",
+      "sha256": "22d6dfb46d3b31554401199173250148f95d3b60508240ec44627845808c73db"
+    },
+    {
+      "file": "sources/t.casulo.memory_policy.t",
+      "module": "t.casulo.memory_policy",
+      "sha256": "e3d19d86ef961fa9fac74a476fba6b994ec81619da8d23c5b8901ccb4bafb2db"
+    },
+    {
+      "file": "sources/t.casulo.receipts.t",
+      "module": "t.casulo.receipts",
+      "sha256": "0302d4deae029e399bd3959dc37c0470ccf4303505e46f0273d4a3177669c82a"
+    },
+    {
+      "file": "sources/t.casulo.requirements.t",
+      "module": "t.casulo.requirements",
+      "sha256": "fcb34d9eceb44c3b7669ebaa10d8d45ac1c33f244270616e041a391c4bec355c"
+    },
+    {
+      "file": "sources/t.casulo.simulation.t",
+      "module": "t.casulo.simulation",
+      "sha256": "3ff0be4afd824e68083b19ee2fb1de5e16259a947a6767c36ead8af623f393df"
+    },
+    {
+      "file": "sources/t.casulo.universes.t",
+      "module": "t.casulo.universes",
+      "sha256": "21dbec704dd8ca7ece1594f75e38eaa307be0b7d2e19484f3d46f1db58b0cf7a"
+    },
+    {
+      "file": "sources/t.core.canonical.t",
+      "module": "t.core.canonical",
+      "sha256": "94d2d4cc4454858c6dee014c9989cf954f63a2643d864a36ea209c912671bd1c"
+    },
+    {
+      "file": "sources/t.core.collections.t",
+      "module": "t.core.collections",
+      "sha256": "42a3705824428f488fd0c68f345a79a49c1981688c8ffd4d72690a2841552e21"
+    },
+    {
+      "file": "sources/t.core.result.t",
+      "module": "t.core.result",
+      "sha256": "7f376b68037ed8cfc4a02c0786f7a83a7f8840276f1a330e51f600bd0e01d783"
+    }
+  ]
+}

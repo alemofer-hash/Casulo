@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "profile": "general",
+      "status": "candidate",
+      "name": null,
+      "source_url": null,
+      "license": null,
+      "license_file": null,
+      "filename": null,
+      "bytes": null,
+      "sha256": null,
+      "format": "GGUF",
+      "quantization": null,
+      "parameter_class": "7-9B",
+      "runtime_commit": null,
+      "context_tested": 8192,
+      "memory_peak_mb": null,
+      "prompt_tokens_per_second": null,
+      "generation_tokens_per_second": null,
+      "temperature_peak_c": null,
+      "tool_call_pass_rate": null,
+      "portuguese_eval": null,
+      "coding_eval": null,
+      "decision": null,
+      "decision_reason": null
+    }
+  ]
+}
+

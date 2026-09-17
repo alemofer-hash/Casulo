@@ -1,0 +1,10 @@
+{
+  "properties": [
+    "hard:unit-consistency",
+    "hard:mass-conservation",
+    "hard:residual-output",
+    "cancel_is_fail_closed",
+    "effect_requires_grant",
+    "project_bleed_denied"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "conflict_after_resolution": {
+    "compatible": true,
+    "requires_human_decision": false
+  },
+  "conflict_before_resolution": {
+    "blocking": true,
+    "entries": 1,
+    "requires_human_decision": true
+  },
+  "cross_project_bleed": 0,
+  "duration_seconds": 7200,
+  "event_chain_pass": true,
+  "event_count": 144,
+  "events_sha256": "0a75fe9b3549559e67d9bb57e4d9bbae87151dd84c66adaf894833774af877b7",
+  "false_progress": 0,
+  "high_value_questions_selected": 121,
+  "human_chemistry_evaluated": false,
+  "interruptions": 13,
+  "jobs": {
+    "job:einstein-local": "COMPLETED",
+    "job:flood-rs": "COMPLETED",
+    "job:voice-studio": "COMPLETED"
+  },
+  "logical_end": "2026-08-14T17:00:00+00:00",
+  "logical_start": "2026-08-14T15:00:00+00:00",
+  "mandatory_constraint_loss": 0,
+  "neural_language_evaluated": false,
+  "pass": true,
+  "physical_voice_validation": "PENDING_RC8_AND_GUILHERME",
+  "projects": [
+    "flood-rs",
+    "einstein-local",
+    "voice-studio"
+  ],
+  "reboot_state_equal": true,
+  "reboot_state_sha256": "1e0f74297a766e7d4184572ad150abc8873ef01bcb81fc56aae30fc8fbcd42f7",
+  "rejected_decisions_preserved": 3,
+  "schema": "casulo.guide-continuity-probe/1.0",
+  "state_sha256": "1e0f74297a766e7d4184572ad150abc8873ef01bcb81fc56aae30fc8fbcd42f7",
+  "synthetic_only": true,
+  "turns": 121
+}

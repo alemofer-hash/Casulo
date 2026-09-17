@@ -1,0 +1,465 @@
+{
+  "campaign_id": "2026-08-07-g5-energy-final",
+  "frozen_before_results": true,
+  "protocol_sha256": "338d28d16aad27b622dbf89da4683d47ec11789975c12f9e0c4bf9fd1a5e34f4",
+  "schema": "casulo-energy-schedule/1.0",
+  "seed": 260807,
+  "sessions": [
+    {
+      "pairs": [
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P001"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P002"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P003"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P004"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P005"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P006"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P007"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P008"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P009"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P010"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P011"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P012"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P013"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P014"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P015"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P016"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P017"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P018"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P019"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S01-P020"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S01-P021"
+        }
+      ],
+      "session_id": "S01"
+    },
+    {
+      "pairs": [
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P001"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P002"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P003"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P004"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P005"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P006"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P007"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P008"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P009"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P010"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P011"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P012"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P013"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P014"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P015"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P016"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P017"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P018"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P019"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S02-P020"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S02-P021"
+        }
+      ],
+      "session_id": "S02"
+    },
+    {
+      "pairs": [
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P001"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P002"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P003"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P004"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P005"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P006"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P007"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P008"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P009"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P010"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P011"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P012"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P013"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P014"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P015"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P016"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P017"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P018"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P019"
+        },
+        {
+          "order": [
+            "t-general-ir-tcap/0.1",
+            "pytorch-eager-fullstep/1"
+          ],
+          "pair_id": "S03-P020"
+        },
+        {
+          "order": [
+            "pytorch-eager-fullstep/1",
+            "t-general-ir-tcap/0.1"
+          ],
+          "pair_id": "S03-P021"
+        }
+      ],
+      "session_id": "S03"
+    }
+  ]
+}

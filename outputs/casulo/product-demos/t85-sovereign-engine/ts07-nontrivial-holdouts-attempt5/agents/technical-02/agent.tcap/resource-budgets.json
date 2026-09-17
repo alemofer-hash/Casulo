@@ -1,0 +1,16 @@
+{
+  "modules": {
+    "owner.agent.mass_balance_calculator_v2.mass_checker": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    },
+    "owner.agent.mass_balance_calculator_v2.output_validator": {
+      "deadline_ms": 3000,
+      "steps": 2048
+    },
+    "owner.agent.mass_balance_calculator_v2.unit_parser": {
+      "deadline_ms": 3000,
+      "steps": 4096
+    }
+  }
+}

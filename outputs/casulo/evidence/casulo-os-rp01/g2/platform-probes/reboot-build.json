@@ -1,0 +1,9 @@
+{
+  "schema": "casulo-kernel-probe-image/0.1",
+  "mode": "reboot",
+  "path": "evidence/casulo-os-rp01/g2/platform-probes/casulo-reboot-probe.img",
+  "bytes": 2162688,
+  "sha256": "9704adb266013f6bdeb925ad5ccabcdc1267dfccce203fae4c76bdab59208a02",
+  "normal_release_image_modified": false,
+  "physical_device_written": false
+}

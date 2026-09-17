@@ -1,0 +1,257 @@
+{
+  "modules": [
+    {
+      "budgets": {
+        "deadline_ms": 3000,
+        "steps": 2048
+      },
+      "capabilities": [],
+      "enums": [
+        {
+          "cases": [
+            "SELECT",
+            "ASK_HUMAN"
+          ],
+          "name": "ContextDecision"
+        }
+      ],
+      "functions": [
+        {
+          "code": [
+            {
+              "op": "cancel_if",
+              "value": {
+                "op": "path",
+                "path": [
+                  "cancelled"
+                ],
+                "root": "input"
+              }
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "project_match"
+                ],
+                "root": "input"
+              },
+              "error": "project_scope_mismatch",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "budget_valid"
+                ],
+                "root": "input"
+              },
+              "error": "context_budget_invalid",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "mandatory_preserved"
+                ],
+                "root": "input"
+              },
+              "error": "hard_constraint_loss",
+              "op": "require"
+            },
+            {
+              "condition": {
+                "op": "path",
+                "path": [
+                  "ambiguity_present"
+                ],
+                "root": "input"
+              },
+              "else": [
+                {
+                  "name": "selections",
+                  "op": "set_state",
+                  "value": {
+                    "args": [
+                      {
+                        "op": "path",
+                        "path": [
+                          "selections"
+                        ],
+                        "root": "state"
+                      },
+                      {
+                        "op": "const",
+                        "value": 1
+                      }
+                    ],
+                    "name": "add",
+                    "op": "call"
+                  }
+                },
+                {
+                  "op": "return_ok",
+                  "value": {
+                    "op": "const",
+                    "value": "SELECT"
+                  }
+                }
+              ],
+              "op": "if",
+              "then": [
+                {
+                  "condition": {
+                    "op": "path",
+                    "path": [
+                      "human_resolution_present"
+                    ],
+                    "root": "input"
+                  },
+                  "else": [
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "ASK_HUMAN"
+                      }
+                    }
+                  ],
+                  "op": "if",
+                  "then": [
+                    {
+                      "name": "selections",
+                      "op": "set_state",
+                      "value": {
+                        "args": [
+                          {
+                            "op": "path",
+                            "path": [
+                              "selections"
+                            ],
+                            "root": "state"
+                          },
+                          {
+                            "op": "const",
+                            "value": 1
+                          }
+                        ],
+                        "name": "add",
+                        "op": "call"
+                      }
+                    },
+                    {
+                      "op": "return_ok",
+                      "value": {
+                        "op": "const",
+                        "value": "SELECT"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "effects": [],
+          "name": "decide",
+          "parameter": {
+            "name": "input",
+            "type": {
+              "arguments": [],
+              "bound": null,
+              "name": "ContextPolicyInput"
+            }
+          },
+          "return_type": {
+            "arguments": [
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              },
+              {
+                "arguments": [],
+                "bound": null,
+                "name": "Text"
+              }
+            ],
+            "bound": null,
+            "name": "Result"
+          }
+        }
+      ],
+      "imports": [],
+      "module": "owner.guide.context_policy",
+      "records": [
+        {
+          "members": [
+            {
+              "name": "project_match",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "budget_valid",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "mandatory_preserved",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "ambiguity_present",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "human_resolution_present",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            },
+            {
+              "name": "cancelled",
+              "type": {
+                "arguments": [],
+                "bound": null,
+                "name": "Bool"
+              }
+            }
+          ],
+          "name": "ContextPolicyInput"
+        }
+      ],
+      "schema": "casulo.t-ir/2.0",
+      "schema_version": 1,
+      "states": [
+        {
+          "initial": 0,
+          "name": "selections",
+          "type": {
+            "arguments": [],
+            "bound": null,
+            "name": "Int"
+          }
+        }
+      ]
+    }
+  ],
+  "schema": "casulo.t-ir-bundle/2.0"
+}

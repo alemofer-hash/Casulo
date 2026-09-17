@@ -1,0 +1,219 @@
+{
+  "claim": null,
+  "energy": {
+    "joules": null,
+    "status": "unavailable"
+  },
+  "performance_measured": false,
+  "plan": {
+    "axes": [
+      {
+        "axis_id": "buffer-reuse",
+        "control": "fresh-buffers",
+        "mechanism": "physical arena reuse versus semantically identical fresh buffers",
+        "primary_metric": "paired_elapsed_time_ratio",
+        "quality_gate": "exact_work_scope_and_registered_tolerance",
+        "variants": [
+          "fresh-buffers",
+          "arena-reuse"
+        ],
+        "workloads": [
+          "flood-surrogate-historical",
+          "mlp-small",
+          "mlp-medium",
+          "mlp-large"
+        ]
+      },
+      {
+        "axis_id": "vectorization",
+        "control": "scalar",
+        "mechanism": "scalar loops versus explicitly vectorized native loops",
+        "primary_metric": "paired_elapsed_time_ratio",
+        "quality_gate": "exact_work_scope_and_registered_tolerance",
+        "variants": [
+          "scalar",
+          "vectorized"
+        ],
+        "workloads": [
+          "flood-surrogate-historical",
+          "mlp-small",
+          "mlp-medium",
+          "mlp-large"
+        ]
+      },
+      {
+        "axis_id": "optimization-level",
+        "control": "O0",
+        "mechanism": "native compiler optimization level",
+        "primary_metric": "paired_elapsed_time_ratio",
+        "quality_gate": "exact_work_scope_and_registered_tolerance",
+        "variants": [
+          "O0",
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "workloads": [
+          "flood-surrogate-historical",
+          "mlp-small",
+          "mlp-medium",
+          "mlp-large"
+        ]
+      },
+      {
+        "axis_id": "workers",
+        "control": "1",
+        "mechanism": "fixed worker count under identical affinity",
+        "primary_metric": "paired_elapsed_time_ratio",
+        "quality_gate": "exact_work_scope_and_registered_tolerance",
+        "variants": [
+          "1",
+          "2",
+          "4"
+        ],
+        "workloads": [
+          "mlp-small",
+          "mlp-medium",
+          "mlp-large",
+          "cnn-small",
+          "attention-compact",
+          "dynamic-length",
+          "t-unfavorable-opaque-branch"
+        ]
+      },
+      {
+        "axis_id": "autograd-specialization",
+        "control": "autograd",
+        "mechanism": "general autograd backward versus verified specialized backward",
+        "primary_metric": "paired_elapsed_time_ratio",
+        "quality_gate": "exact_work_scope_and_registered_tolerance",
+        "variants": [
+          "autograd",
+          "specialized-backward"
+        ],
+        "workloads": [
+          "flood-surrogate-historical",
+          "mlp-small",
+          "mlp-medium",
+          "mlp-large"
+        ]
+      },
+      {
+        "axis_id": "fusion",
+        "control": "separate-phases",
+        "mechanism": "materialized phases versus semantically equivalent fused loop regions",
+        "primary_metric": "paired_elapsed_time_ratio",
+        "quality_gate": "exact_work_scope_and_registered_tolerance",
+        "variants": [
+          "separate-phases",
+          "fused-phases"
+        ],
+        "workloads": [
+          "flood-surrogate-historical",
+          "mlp-small",
+          "mlp-medium",
+          "mlp-large"
+        ]
+      },
+      {
+        "axis_id": "shape-mode",
+        "control": "dynamic",
+        "mechanism": "dynamic shape dispatch versus frozen static shapes",
+        "primary_metric": "paired_elapsed_time_ratio",
+        "quality_gate": "exact_work_scope_and_registered_tolerance",
+        "variants": [
+          "dynamic",
+          "static"
+        ],
+        "workloads": [
+          "dynamic-length",
+          "mlp-small",
+          "mlp-medium"
+        ]
+      },
+      {
+        "axis_id": "compiler-route",
+        "control": "direct-legacy",
+        "mechanism": "historical direct route versus the general versioned T IR route",
+        "primary_metric": "paired_elapsed_time_ratio",
+        "quality_gate": "exact_work_scope_and_registered_tolerance",
+        "variants": [
+          "direct-legacy",
+          "general-ir"
+        ],
+        "workloads": [
+          "flood-surrogate-historical"
+        ]
+      },
+      {
+        "axis_id": "scheduler-policy",
+        "control": "conventional",
+        "mechanism": "conventional FIFO versus semantic Casulo queues",
+        "primary_metric": "paired_flow_p95_ratio",
+        "quality_gate": "exact_work_scope_and_registered_tolerance",
+        "variants": [
+          "conventional",
+          "semantic"
+        ],
+        "workloads": [
+          "flow-residual-interference"
+        ]
+      }
+    ],
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260807,
+    "exclusion_policy": "preregistered_only_no_posthoc_outliers",
+    "minimum_pairs": 21,
+    "power_policy": "identical_validated_power_state",
+    "profile": {
+      "collection_boundary": "child_process_full_equivalent_step",
+      "counters": [
+        "task-clock",
+        "cycles",
+        "instructions",
+        "branches",
+        "branch-misses",
+        "cache-references",
+        "cache-misses",
+        "context-switches",
+        "cpu-migrations",
+        "page-faults"
+      ],
+      "protocol": "casulo-livelab-profile-contract/1.0",
+      "unavailable_value": null
+    },
+    "protocol": "casulo-livelab-ablation-plan/1.0",
+    "scientific_invariants": {
+      "compilation_reported_separately": true,
+      "energy_never_inferred_from_time_or_temperature": true,
+      "failed_quality_invalidates_speed": true,
+      "quality_before_timing": true,
+      "same_inputs_initialization_dtype_operations": true,
+      "unfavorable_results_preserved": true
+    },
+    "thermal_policy": "thermal_covenant_fail_closed",
+    "warmups": 3
+  },
+  "plan_sha256": "1b2eed200792a874b4e76cd9d023233702526aee3493d3db3a8662f604457a60",
+  "profiling": {
+    "boundary": "child_process_full_equivalent_step",
+    "counters": {
+      "branch-misses": null,
+      "branches": null,
+      "cache-misses": null,
+      "cache-references": null,
+      "context-switches": null,
+      "cpu-migrations": null,
+      "cycles": null,
+      "instructions": null,
+      "page-faults": null,
+      "task-clock": null
+    },
+    "protocol": "casulo-livelab-profile-contract/1.0",
+    "reason": "Linux perf/cgroup campaign and trusted advancing thermal telemetry are absent on this host",
+    "status": "unavailable"
+  },
+  "schema": "casulo-livelab-ablation-preregistration/1.0",
+  "status": "BLOCKED_HARDWARE_TELEMETRY",
+  "workload_invocations": 0
+}

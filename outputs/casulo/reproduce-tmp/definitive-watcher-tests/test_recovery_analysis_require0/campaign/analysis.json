@@ -1,0 +1,382 @@
+{
+  "campaign_id": "campaign",
+  "casulo_native_energy": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "equivalence": "PASS_PER_PAIR_PRE_AND_POST",
+  "exact_sign_test": {
+    "losses": 0,
+    "nonties": 21,
+    "ties": 0,
+    "two_sided_p_value": 9.5367431640625e-07,
+    "wins": 21
+  },
+  "material_improvement_at_least_10_percent": true,
+  "median_joules_per_training": {
+    "pytorch-eager-fullstep/1": 10.0,
+    "t-general-ir-tcap/0.1": 8.0
+  },
+  "median_ratio_tcap_over_eager": 0.8,
+  "outliers_removed": false,
+  "paired_bootstrap_ci95": {
+    "lower": 0.8,
+    "resamples": 20000,
+    "seed": 20260807,
+    "upper": 0.8
+  },
+  "pairs": [
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-01",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-02",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-03",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-04",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-05",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-06",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-07",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-08",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-09",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-10",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-11",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-12",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-13",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-14",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-15",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-16",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-17",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-18",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-19",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-20",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    },
+    {
+      "eager_average_watts": 10.0,
+      "eager_joules_per_training": 10.0,
+      "eager_maximum_temperature_c": 66.0,
+      "eager_seconds_per_training": 1.0,
+      "order": [
+        "t-general-ir-tcap/0.1",
+        "pytorch-eager-fullstep/1"
+      ],
+      "pair_id": "pair-21",
+      "ratio_tcap_over_eager": 0.8,
+      "tcap_average_watts": 8.0,
+      "tcap_joules_per_training": 8.0,
+      "tcap_maximum_temperature_c": 65.0,
+      "tcap_seconds_per_training": 1.0
+    }
+  ],
+  "rejected_artifacts": 0,
+  "sampling": {
+    "median_interval_seconds": 0.25,
+    "status": "PASS"
+  },
+  "schema": "casulo-hwinfo-thermal-recovery-analysis/1.0",
+  "scientific_scope": "HWiNFO-reported CPU package energy on bare-metal Windows",
+  "sensor": {
+    "literal_name": "Potência total da CPU [W]",
+    "unit": "w"
+  },
+  "terminal_state": "PASS_CPU_PACKAGE_ENERGY_HWINFO_WINDOWS",
+  "thermal_parity": {
+    "limit_c": 3.0,
+    "median_maximum_temperature_asymmetry_c": 1.0,
+    "passed": true
+  },
+  "total_system_wall": "BLOCKED_PHYSICAL_INSTRUMENT",
+  "valid_pairs": 21
+}

@@ -1,0 +1,100 @@
+{
+  "base_pack_manifest": "release/casulo-native-neural-port-system-pack-np10.cspk.manifest.json",
+  "base_pack_sha256": "4f5e9fb34de09a3fe59b49c233802312a1c2e4d86ec7d00ca2d1dc1638f7eeb1",
+  "bytes": 2497390010,
+  "entries": [
+    {
+      "bytes": 12872,
+      "kind": 1,
+      "name": "BOOTSTRAP_TCAP",
+      "offset": 592,
+      "sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa",
+      "source": "release/FloodSurrogate.tcap",
+      "source_sha256": "32e9ef414a6ae8c364fcba542fc26768dbea821112b46af2fa5d6ddac3d60dfa"
+    },
+    {
+      "bytes": 1016,
+      "kind": 2,
+      "name": "UX_CONTRACT",
+      "offset": 13464,
+      "sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9",
+      "source": "schemas/product/hosted-native-ux-contract-v1.json",
+      "source_sha256": "4d209cce708d843ffef50ac606ba199151be39eb9ecfff9c2c9fae233d24bcb9"
+    },
+    {
+      "bytes": 434,
+      "kind": 3,
+      "name": "GUIDE_T_SOURCE",
+      "offset": 14480,
+      "sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565",
+      "source": "examples/t/revolution/agent_logic.t",
+      "source_sha256": "a2e228190383344045fa8e5361d8d851fcaa2fb4b538c30a895ae6c05650b565"
+    },
+    {
+      "bytes": 2112,
+      "kind": 4,
+      "name": "MODEL_GGUF_PROBE",
+      "offset": 14914,
+      "sha256": "47b0f62fa715d0de910a7aef18005eaa27ef23b65326aa243253af85faedf495",
+      "source": "release/casulo-native-qwen3-weight-formats-probe-v2.gguf",
+      "source_sha256": "47b0f62fa715d0de910a7aef18005eaa27ef23b65326aa243253af85faedf495"
+    },
+    {
+      "bytes": 39067,
+      "kind": 5,
+      "name": "NATIVE_SAMPLING_POLICY",
+      "offset": 17026,
+      "sha256": "952b2d8860a89363346d46233736fef6f047080521452357e780726c861cf330",
+      "source": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-policies/token-policy.bundle.json",
+      "source_sha256": "952b2d8860a89363346d46233736fef6f047080521452357e780726c861cf330"
+    },
+    {
+      "bytes": 1221,
+      "kind": 6,
+      "name": "NATIVE_CREATION_PROMPT",
+      "offset": 56093,
+      "sha256": "9f4c7d1e43e9f500cf489dcb9d4ab48b168ab77a237adfe4f1b6eb9e517272d5",
+      "source": "private/casulo-owner/native-creation-prompt.json",
+      "source_sha256": "9f4c7d1e43e9f500cf489dcb9d4ab48b168ab77a237adfe4f1b6eb9e517272d5"
+    },
+    {
+      "bytes": 13567,
+      "kind": 7,
+      "name": "NATIVE_CREATION_ARTIFACT",
+      "offset": 57314,
+      "sha256": "03286c4473b440279372ec82c3aeffca9bd856d36b728ca0e009b6abad1abe16",
+      "source": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-policies/creation-artifact.bundle.json",
+      "source_sha256": "03286c4473b440279372ec82c3aeffca9bd856d36b728ca0e009b6abad1abe16"
+    },
+    {
+      "bytes": 38873,
+      "kind": 8,
+      "name": "NATIVE_CREATION_ACCEPTANCE",
+      "offset": 70881,
+      "sha256": "33ddf4f430bd6839bbbd55675cca4848303f303efcacdb60c36a77d9700031ea",
+      "source": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-policies/acceptance-policy.bundle.json",
+      "source_sha256": "33ddf4f430bd6839bbbd55675cca4848303f303efcacdb60c36a77d9700031ea"
+    },
+    {
+      "bytes": 2497280256,
+      "kind": 9,
+      "name": "NATIVE_MODEL_GGUF",
+      "offset": 109754,
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "source": "<owner-cache>/qwen3-4b-q4km-llamacpp-b10362/Qwen3-4B-Q4_K_M.gguf",
+      "source_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+    }
+  ],
+  "external_api": false,
+  "fat32_single_file_limit_pass": true,
+  "file": "release/casulo-native-physical-creation-system-pack-v1.cspk",
+  "full_model_second_copy": false,
+  "model_bytes": 2497280256,
+  "model_embedded": true,
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "network": false,
+  "physical_device_written": false,
+  "schema": "casulo-native-physical-creation-system-pack/1.0",
+  "sha256": "d233d0c5c23d0cf6e0a638fa8ce756eee076fd717d8dbd16f7293f278bbb1b61",
+  "transport": "uefi-ramdisk-content-addressed/1.0"
+}

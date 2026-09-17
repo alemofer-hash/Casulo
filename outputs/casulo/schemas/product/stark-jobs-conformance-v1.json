@@ -1,0 +1,32 @@
+{
+  "schema": "casulo.stark-jobs-conformance/1.0",
+  "runtime_evidence": false,
+  "purpose": "shared semantic replay for Hosted and Native presentation projectors",
+  "accepted": [
+    {"event_id":"1","kind":"PRESENCE_READY","payload":{"text":"Estou aqui."},"source_event_ids":["conformance:1"],"occurred_at":"2026-08-20T12:00:01Z","event_hash":"1111111111111111111111111111111111111111111111111111111111111111"},
+    {"event_id":"2","kind":"MODEL_LOADING","payload":{"model":"local-owner"},"source_event_ids":["conformance:2"],"occurred_at":"2026-08-20T12:00:02Z","event_hash":"2222222222222222222222222222222222222222222222222222222222222222"},
+    {"event_id":"3","kind":"MODEL_READY","payload":{"model":"local-owner"},"source_event_ids":["conformance:3"],"occurred_at":"2026-08-20T12:00:03Z","event_hash":"3333333333333333333333333333333333333333333333333333333333333333"},
+    {"event_id":"4","kind":"ASSISTANT_START","payload":{"turn_id":"7"},"source_event_ids":["conformance:4"],"occurred_at":"2026-08-20T12:00:04Z","event_hash":"4444444444444444444444444444444444444444444444444444444444444444"},
+    {"event_id":"5","kind":"ASSISTANT_TOKEN","payload":{"turn_id":"7","sequence":1,"text":"Entendi "},"source_event_ids":["conformance:5"],"occurred_at":"2026-08-20T12:00:05Z","event_hash":"5555555555555555555555555555555555555555555555555555555555555555"},
+    {"event_id":"6","kind":"ASSISTANT_TOKEN","payload":{"turn_id":"7","sequence":2,"text":"a ideia."},"source_event_ids":["conformance:6"],"occurred_at":"2026-08-20T12:00:06Z","event_hash":"6666666666666666666666666666666666666666666666666666666666666666"},
+    {"event_id":"7","kind":"ASSISTANT_END","payload":{"turn_id":"7"},"source_event_ids":["conformance:7"],"occurred_at":"2026-08-20T12:00:07Z","event_hash":"7777777777777777777777777777777777777777777777777777777777777777"},
+    {"event_id":"8","kind":"JOB_STARTED","payload":{"job_id":"11","sequence":1,"summary":"Ideia preservada.","evidence_sha256":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},"source_event_ids":["conformance:8"],"occurred_at":"2026-08-20T12:00:08Z","event_hash":"8888888888888888888888888888888888888888888888888888888888888888"},
+    {"event_id":"9","kind":"JOB_MILESTONE","payload":{"job_id":"11","sequence":2,"summary":"Forma emergindo.","evidence_sha256":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"},"source_event_ids":["conformance:9"],"occurred_at":"2026-08-20T12:00:09Z","event_hash":"9999999999999999999999999999999999999999999999999999999999999999"},
+    {"event_id":"10","kind":"JOB_COMPLETED","payload":{"job_id":"11","sequence":3,"summary":"Criacao pronta.","evidence_sha256":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"},"source_event_ids":["conformance:10"],"occurred_at":"2026-08-20T12:00:10Z","event_hash":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1"}
+  ],
+  "expected": {
+    "presence": true,
+    "model": "READY",
+    "form": "MATERIALIZED",
+    "notice": "Criacao pronta.",
+    "active_turn": null,
+    "next_token_sequence": 3,
+    "message_text": "Entendi a ideia.",
+    "message_complete": true,
+    "job_status": "COMPLETED",
+    "job_summary": "Criacao pronta.",
+    "milestone_count": 1,
+    "receipt_count": 3
+  }
+}
+

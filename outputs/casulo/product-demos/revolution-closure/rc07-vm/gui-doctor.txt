@@ -1,0 +1,10 @@
+{
+  "base_read_only": true,
+  "cloud": "RELEASE_LOCKED",
+  "host_block_devices": false,
+  "network": "denied",
+  "overlay_exists": true,
+  "ready": true,
+  "recovery": "restore requires an existing named snapshot",
+  "schema": "casulo.owner-appliance-doctor/1.0"
+}

@@ -1,0 +1,46 @@
+{
+  "maximum_interval_seconds": 2.003,
+  "median_interval_seconds": 2.0010000000000003,
+  "new_energy_samples": 3,
+  "new_samples": 3,
+  "observations": [
+    {
+      "last_timestamp_utc": "2026-08-07T17:59:20.652000+00:00",
+      "new_samples": 0,
+      "observed_monotonic_ns": 21876617810300,
+      "size": 2004923
+    },
+    {
+      "last_timestamp_utc": "2026-08-07T17:59:20.652000+00:00",
+      "new_samples": 0,
+      "observed_monotonic_ns": 21877692679900,
+      "size": 2004923
+    },
+    {
+      "last_timestamp_utc": "2026-08-07T17:59:22.658000+00:00",
+      "new_samples": 1,
+      "observed_monotonic_ns": 21878762165200,
+      "size": 2006589
+    },
+    {
+      "last_timestamp_utc": "2026-08-07T17:59:22.658000+00:00",
+      "new_samples": 1,
+      "observed_monotonic_ns": 21879837961100,
+      "size": 2006589
+    },
+    {
+      "last_timestamp_utc": "2026-08-07T17:59:24.657000+00:00",
+      "new_samples": 2,
+      "observed_monotonic_ns": 21880905047900,
+      "size": 2008251
+    },
+    {
+      "last_timestamp_utc": "2026-08-07T17:59:26.660000+00:00",
+      "new_samples": 3,
+      "observed_monotonic_ns": 21881978055600,
+      "size": 2009882
+    }
+  ],
+  "reason_code": "logger_advancing_with_valid_energy_sensor",
+  "status": "PASS"
+}

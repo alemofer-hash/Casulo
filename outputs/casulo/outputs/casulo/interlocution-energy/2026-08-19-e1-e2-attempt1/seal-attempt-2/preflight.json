@@ -1,0 +1,31 @@
+{
+  "campaign_id": "2026-08-19-e1-e2-attempt1",
+  "full_worker_hashes": {
+    "dataset": "f393212f183a28a663adeb11995c5ab3ac769df7f06ded2dcfbc5e91cd31f802",
+    "executable": "687d61ce424b84c066211f41b45bd8ea5d64270654a8eb1ad564245962a0777b",
+    "initializations": "1b77bc6f3ee729282756b8244c4b198395e2fe6bcda6a8d4dd255aa370af13e3"
+  },
+  "host": {
+    "free_disk_bytes": 73978855424,
+    "logical_cores": 12,
+    "memory_bytes": 16890978304,
+    "physical_cores": 10,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel"
+  },
+  "repository": {
+    "branch": "product/semantic-multiverse",
+    "commit": "df12e916c90d9bd2b966326275dc191573f38abd",
+    "porcelain_entries": 283,
+    "root": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo",
+    "worktree_preserved": true
+  },
+  "schema": "casulo.interlocution-energy-preflight/2.0",
+  "source_csv": {
+    "path": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+    "snapshot_bytes": 14611182,
+    "snapshot_sha256": "d18aecf41c3ca29e78be069eb382d2a32483df220f252f9fccfd1da7c0d298a4",
+    "source_was_not_modified": true
+  },
+  "timestamp_utc": "2026-08-20T01:24:44.970281+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.guide.context_policy"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.guide.context_policy"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

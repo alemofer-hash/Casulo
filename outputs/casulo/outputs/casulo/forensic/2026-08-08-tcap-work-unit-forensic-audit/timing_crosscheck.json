@@ -1,0 +1,303 @@
+{
+  "conclusion": "old evidence cannot prove the required three-clock synchronization",
+  "parent_utc_window_and_child_monotonic": [
+    {
+      "child_seconds": 28.3566108,
+      "difference_seconds": 0.002949199999999763,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-02",
+      "window_seconds": 28.35956
+    },
+    {
+      "child_seconds": 21.5985,
+      "difference_seconds": 0.00338999999999956,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-02",
+      "window_seconds": 21.60189
+    },
+    {
+      "child_seconds": 21.5055694,
+      "difference_seconds": 0.0024766000000013833,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-03",
+      "window_seconds": 21.508046
+    },
+    {
+      "child_seconds": 23.3193046,
+      "difference_seconds": 0.002577399999999841,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-03",
+      "window_seconds": 23.321882
+    },
+    {
+      "child_seconds": 21.6711842,
+      "difference_seconds": 0.0023748000000018976,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-04",
+      "window_seconds": 21.673559
+    },
+    {
+      "child_seconds": 22.2498815,
+      "difference_seconds": 0.004135500000000292,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-04",
+      "window_seconds": 22.254017
+    },
+    {
+      "child_seconds": 21.0572191,
+      "difference_seconds": 0.00849889999999931,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-05",
+      "window_seconds": 21.065718
+    },
+    {
+      "child_seconds": 21.2818647,
+      "difference_seconds": 0.003998299999999233,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-05",
+      "window_seconds": 21.285863
+    },
+    {
+      "child_seconds": 21.4226338,
+      "difference_seconds": 0.026848199999999878,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-07",
+      "window_seconds": 21.449482
+    },
+    {
+      "child_seconds": 21.1925906,
+      "difference_seconds": 0.003150400000002662,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-07",
+      "window_seconds": 21.195741
+    },
+    {
+      "child_seconds": 21.7994288,
+      "difference_seconds": 0.005140199999999595,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-09",
+      "window_seconds": 21.804569
+    },
+    {
+      "child_seconds": 21.9880049,
+      "difference_seconds": 0.00969209999999876,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-09",
+      "window_seconds": 21.997697
+    },
+    {
+      "child_seconds": 25.1485392,
+      "difference_seconds": 0.005387800000001164,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-10",
+      "window_seconds": 25.153927
+    },
+    {
+      "child_seconds": 25.3792808,
+      "difference_seconds": 0.0027241999999993993,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-10",
+      "window_seconds": 25.382005
+    },
+    {
+      "child_seconds": 28.9528206,
+      "difference_seconds": 0.006988400000000894,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-11",
+      "window_seconds": 28.959809
+    },
+    {
+      "child_seconds": 28.4671551,
+      "difference_seconds": 0.0037759000000008314,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-11",
+      "window_seconds": 28.470931
+    },
+    {
+      "child_seconds": 21.4357862,
+      "difference_seconds": 0.002816800000001507,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-12",
+      "window_seconds": 21.438603
+    },
+    {
+      "child_seconds": 21.5122213,
+      "difference_seconds": 0.005466699999999491,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-12",
+      "window_seconds": 21.517688
+    },
+    {
+      "child_seconds": 22.5397796,
+      "difference_seconds": 0.0037684000000020035,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-15",
+      "window_seconds": 22.543548
+    },
+    {
+      "child_seconds": 21.4629042,
+      "difference_seconds": 0.0027988000000007673,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-15",
+      "window_seconds": 21.465703
+    },
+    {
+      "child_seconds": 22.1768181,
+      "difference_seconds": 0.032497900000002744,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-17",
+      "window_seconds": 22.209316
+    },
+    {
+      "child_seconds": 23.1844018,
+      "difference_seconds": 0.0034762000000014837,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-17",
+      "window_seconds": 23.187878
+    },
+    {
+      "child_seconds": 21.3488197,
+      "difference_seconds": 0.003847300000000331,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-18",
+      "window_seconds": 21.352667
+    },
+    {
+      "child_seconds": 25.4408239,
+      "difference_seconds": 0.003082099999996757,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-18",
+      "window_seconds": 25.443906
+    },
+    {
+      "child_seconds": 21.1444972,
+      "difference_seconds": 0.002918799999999777,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-19",
+      "window_seconds": 21.147416
+    },
+    {
+      "child_seconds": 25.3212761,
+      "difference_seconds": 0.0037089000000030126,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-19",
+      "window_seconds": 25.324985
+    },
+    {
+      "child_seconds": 21.2021892,
+      "difference_seconds": 0.0038488000000000966,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "pair-20",
+      "window_seconds": 21.206038
+    },
+    {
+      "child_seconds": 21.8329884,
+      "difference_seconds": 0.0029565999999974224,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "pair-20",
+      "window_seconds": 21.835945
+    },
+    {
+      "child_seconds": 21.2913763,
+      "difference_seconds": 0.010362700000001723,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "replacement-22",
+      "window_seconds": 21.301739
+    },
+    {
+      "child_seconds": 21.9756767,
+      "difference_seconds": 0.0028062999999995952,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "replacement-22",
+      "window_seconds": 21.978483
+    },
+    {
+      "child_seconds": 21.2050307,
+      "difference_seconds": 0.003192300000002035,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "replacement-23",
+      "window_seconds": 21.208223
+    },
+    {
+      "child_seconds": 22.5270468,
+      "difference_seconds": 0.0028271999999986974,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "replacement-23",
+      "window_seconds": 22.529874
+    },
+    {
+      "child_seconds": 21.1067862,
+      "difference_seconds": 0.0048988000000029785,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "replacement-24",
+      "window_seconds": 21.111685
+    },
+    {
+      "child_seconds": 23.740886,
+      "difference_seconds": 0.0030679999999989604,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "replacement-24",
+      "window_seconds": 23.743954
+    },
+    {
+      "child_seconds": 23.0298601,
+      "difference_seconds": 0.010167899999999008,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "replacement-25",
+      "window_seconds": 23.040028
+    },
+    {
+      "child_seconds": 22.7503626,
+      "difference_seconds": 0.007851399999999842,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "replacement-25",
+      "window_seconds": 22.758214
+    },
+    {
+      "child_seconds": 24.7748968,
+      "difference_seconds": 0.011754199999998605,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "replacement-26",
+      "window_seconds": 24.786651
+    },
+    {
+      "child_seconds": 34.2796175,
+      "difference_seconds": 0.009311500000002582,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "replacement-26",
+      "window_seconds": 34.288929
+    },
+    {
+      "child_seconds": 21.244919,
+      "difference_seconds": 0.004450000000002063,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "replacement-30",
+      "window_seconds": 21.249369
+    },
+    {
+      "child_seconds": 21.6100558,
+      "difference_seconds": 0.004811199999998905,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "replacement-30",
+      "window_seconds": 21.614867
+    },
+    {
+      "child_seconds": 21.1346923,
+      "difference_seconds": 0.005705700000000036,
+      "implementation": "pytorch-eager-fullstep/1",
+      "pair_id": "replacement-31",
+      "window_seconds": 21.140398
+    },
+    {
+      "child_seconds": 21.622181,
+      "difference_seconds": 0.0035229999999977224,
+      "implementation": "t-general-ir-tcap/0.1",
+      "pair_id": "replacement-31",
+      "window_seconds": 21.625704
+    }
+  ],
+  "query_performance_counter": null,
+  "schema": "casulo-forensic-timing-crosscheck/1.0",
+  "status": "FAIL_THIRD_INDEPENDENT_CLOCK_ABSENT",
+  "thread_cycles": null
+}

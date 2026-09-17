@@ -1,0 +1,7 @@
+{
+  "operation": "G61H_init",
+  "result": "init:G61H:memory.read:creation:open-ended-holdout,trilho G61H reversível",
+  "returncode": 0,
+  "stderr": "",
+  "stdout_sha256": "d898f81e0414dfc1307af3d4bc736b7315a4a316395777a28ca373b3fa16c826"
+}

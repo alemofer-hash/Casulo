@@ -1,0 +1,49 @@
+{
+  "T_fulfillment": {
+    "kind": "ok",
+    "value": "FULFILLED"
+  },
+  "T_publish": {
+    "kind": "ok",
+    "value": "COMMIT"
+  },
+  "agent_id": "mass_balance_calculator_v2",
+  "case_id": "technical-02",
+  "constraint_mutation": {
+    "kind": "error",
+    "value": "invalid_unit"
+  },
+  "emit_literal": false,
+  "enum_count": 3,
+  "external_ai_api": false,
+  "fake_engine": false,
+  "final_value": "AUDITED",
+  "fixed_template_selected_by_prompt": false,
+  "function_count": 11,
+  "hosted_receipts": 11,
+  "missing_capability": {
+    "kind": "error",
+    "value": "CAPABILITY_DENIED:simulation"
+  },
+  "model_generated_architecture": true,
+  "module_count": 3,
+  "neural_trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "a05712247b8f413bb67254fc48a8b098d76ef965e75762423bf410b56ace70ea",
+    "ended_monotonic_ns": 30429234654800,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "t85:technical-02:architecture:0",
+    "output_sha256": "1a62f4b68d09c6930e9e820142647a7654b30a8bbbe8f311a7626e855c567adb",
+    "sampling_policy_id": "casulo-t85-architecture-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 30395028774900,
+    "stream_events": 216
+  },
+  "record_count": 3,
+  "request_sha256": "7c35f2595a231c5125b46fbcb61bbdfcddff9a659d6cb4c8c71a842c6492852d",
+  "tcap_hash": "32be42ca477a8b18f2c78d3ce2f1f2711619b80e6a60983951e51aff48c4282b"
+}

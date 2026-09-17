@@ -1,0 +1,9 @@
+{
+  "schema": "casulo.vm-bridge-transport-failure/1.0",
+  "attempt": 20,
+  "failure": "PRELOADED_BYTE_DISCARDED_BEFORE_KERNEL_UART_INIT",
+  "evidence": "OWNER_UART_OBSERVED_LSR=0x60 and FAIL_TIMEOUT",
+  "action": "Combine post-READY delivery with bounded TSC guest polling",
+  "preserved": true,
+  "neural_evidence": false
+}

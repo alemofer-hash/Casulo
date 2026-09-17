@@ -1,0 +1,128 @@
+{
+  "affected_paths": [
+    [
+      "identity",
+      "purpose"
+    ],
+    [
+      "identity",
+      "purpose"
+    ],
+    [
+      "behavior",
+      "autonomy"
+    ],
+    [
+      "interface",
+      "design"
+    ],
+    [
+      "data",
+      "source"
+    ],
+    [
+      "output",
+      "format"
+    ],
+    [
+      "constraints",
+      "operational"
+    ]
+  ],
+  "base_version": 0,
+  "confidence": 0.85,
+  "confirmation_state": "PROPOSED",
+  "creation_id": "creation:open-ended-holdout",
+  "delta_id": "intent:gen:6a6b6f8415309bcc51fa8f90",
+  "operations": [
+    {
+      "action": "remove",
+      "path": [
+        "identity",
+        "purpose"
+      ]
+    },
+    {
+      "action": "set",
+      "path": [
+        "identity",
+        "purpose"
+      ],
+      "value": {
+        "description": "Monitorar e analisar padrões vibratórios em um ambiente simulado, confrontando hipóteses elétricas e mecânicas sem a necessidade de equipamento físico real."
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "behavior",
+        "autonomy"
+      ],
+      "value": {
+        "constraints": [
+          "Não deve acionar equipamentos reais ou físicos.",
+          "Deve operar apenas em ambientes simulados."
+        ],
+        "enabled": true
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "interface",
+        "design"
+      ],
+      "value": {
+        "constraints": [
+          "A interface deve ser totalmente simularia e não influenciar diretamente o ambiente real."
+        ],
+        "description": "Interface de manutenção reversível que permite a interação com o sistema sem a necessidade de acionamento físico de componentes reais."
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "data",
+        "source"
+      ],
+      "value": {
+        "constraints": [
+          "Não deve ser utilizado dados reais ou de fontes externas não simuladas."
+        ],
+        "description": "Dados de entrada provenientes de uma simulação de bomba centrífuga, incluindo padrões vibratórios e parâmetros mecânicos e elétricos."
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "output",
+        "format"
+      ],
+      "value": {
+        "constraints": [
+          "Não deve gerar comandos ou instruções que possam influenciar diretamente o ambiente real."
+        ],
+        "description": "Saídas em forma de explicações sobre a incerteza do sistema e sugestões para manutenção reversível, sem a necessidade de ações físicas."
+      }
+    },
+    {
+      "action": "set",
+      "path": [
+        "constraints",
+        "operational"
+      ],
+      "value": {
+        "constraints": [
+          "Apenas interação com dados simulados permitida.",
+          "Nenhuma ação física ou real pode ser executada."
+        ],
+        "description": "O agente deve operar apenas em ambientes simulados e não deve causar alterações reais no sistema físico."
+      }
+    }
+  ],
+  "rationale": "A proposta visa a redefinição do CreationSpec para incluir um agente que interaja com padrões vibratórios em um ambiente simulado, enquanto mantém restrições sobre a implementação física e a exploração de hipóteses técnicas.",
+  "schema": "casulo.intent-delta/1.0",
+  "source_event_ids": [
+    "voice:g5:novel-idea"
+  ]
+}

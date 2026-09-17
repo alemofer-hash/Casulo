@@ -1,0 +1,49 @@
+{
+  "agents": [
+    {
+      "agent_id": "data_validator_01",
+      "case_id": "data-01",
+      "checks": {
+        "isolated": true,
+        "native_gate": true,
+        "observable_equal": true,
+        "qemu_success": true,
+        "receipt_equal": true,
+        "runtime_ids_distinct": true
+      }
+    },
+    {
+      "agent_id": "interactive_talk_01",
+      "case_id": "interactive-01",
+      "checks": {
+        "isolated": true,
+        "native_gate": true,
+        "observable_equal": true,
+        "qemu_success": true,
+        "receipt_equal": true,
+        "runtime_ids_distinct": true
+      }
+    },
+    {
+      "agent_id": "mass_balance_calculator_v2",
+      "case_id": "technical-02",
+      "checks": {
+        "isolated": true,
+        "native_gate": true,
+        "observable_equal": true,
+        "qemu_success": true,
+        "receipt_equal": true,
+        "runtime_ids_distinct": true
+      }
+    }
+  ],
+  "checks": {
+    "all_conformant": true,
+    "default_v1_restored": true,
+    "three_agents": true
+  },
+  "gate": "TS7_T_NONTRIVIAL_HOLDOUTS_NATIVE_PASS",
+  "guest_network": "OFF",
+  "host_block_device": "NONE",
+  "schema": "casulo.t85.native-holdout-conformance/1.0"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "casulo://schemas/capability-decision/1.0",
+  "title": "Casulo Capability Decision 1.0",
+  "type": "object",
+  "required": ["schema", "request_id", "effect", "action_sha256", "grant", "policy", "scope", "valid_consent", "revoked", "allowed"],
+  "properties": {
+    "schema": {"const": "casulo.capability-decision/1.0"},
+    "request_id": {"type": "string", "minLength": 1},
+    "effect": {"type": "string", "minLength": 1},
+    "action_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "grant": {"type": "boolean"},
+    "policy": {"type": "boolean"},
+    "scope": {"type": "boolean"},
+    "valid_consent": {"type": "boolean"},
+    "revoked": {"type": "boolean"},
+    "allowed": {"type": "boolean"}
+  },
+  "additionalProperties": false
+}

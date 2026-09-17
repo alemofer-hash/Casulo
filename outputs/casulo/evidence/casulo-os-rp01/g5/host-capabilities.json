@@ -1,0 +1,106 @@
+{
+  "schema": "casulo-livelab-capabilities/1.0",
+  "capabilities": {
+    "cgroup_cpuset": {
+      "id": "cgroup_cpuset",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "unsupported_os:windows",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "cgroups_v2": {
+      "id": "cgroups_v2",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "unsupported_os:windows",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "cpu_max": {
+      "id": "cpu_max",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "unsupported_os:windows",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "cpu_weight": {
+      "id": "cpu_weight",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "unsupported_os:windows",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "external_power_meter": {
+      "id": "external_power_meter",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "adapter_not_configured",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "perf_events": {
+      "id": "perf_events",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "unsupported_os:windows",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "process_affinity": {
+      "id": "process_affinity",
+      "status": "available",
+      "value": true,
+      "reason_code": "probe_supported",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "rapl_powercap": {
+      "id": "rapl_powercap",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "unsupported_os:windows",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "sched_ext": {
+      "id": "sched_ext",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "unsupported_os:windows",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "thread_environment": {
+      "id": "thread_environment",
+      "status": "available",
+      "value": true,
+      "reason_code": "environment_contract",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": [
+        "OMP_NUM_THREADS",
+        "OPENBLAS_NUM_THREADS",
+        "MKL_NUM_THREADS",
+        "NUMEXPR_NUM_THREADS"
+      ]
+    },
+    "trusted_thermal_stream": {
+      "id": "trusted_thermal_stream",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "advancing_sensor_not_configured",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    },
+    "uclamp": {
+      "id": "uclamp",
+      "status": "unavailable",
+      "value": null,
+      "reason_code": "unsupported_os:windows",
+      "observed_at_utc": "2026-08-07T14:38:06.289931+00:00",
+      "evidence": []
+    }
+  }
+}

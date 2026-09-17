@@ -1,0 +1,16 @@
+{
+  "calibration_windows": 0,
+  "definitive_pairs": 0,
+  "frozen_k": null,
+  "polling_median_seconds": 0.252,
+  "polling_mode_ms": 250,
+  "probe_sequence_seconds": [
+    10.0,
+    20.0
+  ],
+  "probes": [],
+  "schema": "casulo-hwinfo-thermal-calibration/1.0",
+  "status": "SUPERSEDED_BEFORE_DEFINITIVE_CAMPAIGN",
+  "superseded_reason": "Initial stability incorrectly retained a fixed 60 C threshold despite the frozen 70 C campaign override; corrected before idle or workload.",
+  "target_window_seconds": 20.0
+}

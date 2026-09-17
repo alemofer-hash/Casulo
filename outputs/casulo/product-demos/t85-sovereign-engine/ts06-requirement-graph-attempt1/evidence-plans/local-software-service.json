@@ -1,0 +1,54 @@
+{
+  "expected_evidence_tokens": [
+    "be3f90cbdef810b0eb965b3f7e6a36a5b71a3efc656a24d2bdce7b98f73e6027",
+    "bb4c4b6c43c6fa18a73b369e6b23cacc6b2703b49ed67db11501774df3eb9c12",
+    "d4bd31ef6c1da1f8481610a1a9f1aea84211dd268a4d76a9910da1e1cfbca186",
+    "c2f0d789daeefbc3a801b3834c4881f72c6f2a43d70e80b84f17bd47873e836b"
+  ],
+  "graph_schema": "casulo.requirement-graph/2.0",
+  "graph_version": 1,
+  "hard_requirements": [
+    {
+      "requirement_id": "local-software-service:loopback",
+      "scope": "local-software-service",
+      "source_event_ids": [
+        "human:local-software-service"
+      ],
+      "verifier_ids": [
+        "domain:loopback"
+      ]
+    },
+    {
+      "requirement_id": "local-software-service:schema",
+      "scope": "local-software-service",
+      "source_event_ids": [
+        "human:local-software-service"
+      ],
+      "verifier_ids": [
+        "domain:schema"
+      ]
+    },
+    {
+      "requirement_id": "local-software-service:standalone",
+      "scope": "local-software-service",
+      "source_event_ids": [
+        "human:local-software-service"
+      ],
+      "verifier_ids": [
+        "domain:standalone"
+      ]
+    },
+    {
+      "requirement_id": "local-software-service:roundtrip",
+      "scope": "local-software-service",
+      "source_event_ids": [
+        "human:local-software-service"
+      ],
+      "verifier_ids": [
+        "domain:roundtrip"
+      ]
+    }
+  ],
+  "project_id": "local-software-service",
+  "schema": "casulo.evidence-plan/1.0"
+}

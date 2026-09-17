@@ -1,0 +1,30 @@
+{
+  "base_vm": {
+    "bytes": 2162688,
+    "relative": "casulo-native-generative-interactive.img",
+    "sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b"
+  },
+  "model": {
+    "bytes": 2497280256,
+    "cache_relative": "qwen3-4b-q4km-llamacpp-b10362/model/Qwen3-4B-Q4_K_M.gguf",
+    "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "embedded": false,
+    "license": "Apache-2.0",
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "neural_runtime": {
+    "archive_sha256": "a9d95d26cf00664f2902f73cb0fd9b167a3a1f252294bb2f8b236305f57d6363",
+    "binary_bytes": 9216,
+    "binary_sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e",
+    "cache_relative": "qwen3-4b-q4km-llamacpp-b10362/runtime/llama-server.exe",
+    "commit": "4801e3c567d5131dd41b387df5f2d4b1370d92be",
+    "embedded": false,
+    "license": "MIT"
+  },
+  "schema": "casulo.t85-content-registry/1.0",
+  "t_runtime": {
+    "embedded": true,
+    "relative": "app/t-runtime/target/release/casulo-t-runtime.exe",
+    "sha256": "84b70fed87a4644acc525051133aa6a4d0de209bc0aa20a6ade61c3ba5ffd541"
+  }
+}

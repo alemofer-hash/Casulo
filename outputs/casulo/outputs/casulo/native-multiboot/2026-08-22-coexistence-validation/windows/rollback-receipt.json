@@ -1,0 +1,13 @@
+{
+  "deleted_preexisting": [],
+  "overwritten": [],
+  "removed": [
+    "EFI/Teloscorp/Casulo/CasuloX64.efi",
+    "kernel-x86_64",
+    "ramdisk"
+  ],
+  "schema": "casulo-multiboot-rollback-receipt/1.0",
+  "state": "ROLLED_BACK_CREATED_FILES_ONLY",
+  "transaction_id": "7fae89706da04dc6983a4f5b2054c828",
+  "tree_sha256_after": "deec78ce0a3f5085305cdff36bd04acc28047de891a612b3d8363752b5add30f"
+}

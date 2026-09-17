@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{booktabs,graphicx,hyperref,geometry}
+\geometry{margin=2.5cm}
+\title{A Linguagem T como otimização do gerenciamento do uso da CPU durante treinamento de Redes Neurais Artificiais}
+\author{Guilherme Moura Fernandes\\\textit{Afiliação: [preencher] -- E-mail: [preencher] -- ORCID: [preencher, se aplicável]}}
+\date{Rascunho científico privado -- não submetido}
+\begin{document}
+\maketitle
+\begin{abstract}
+Apresentamos a arquitetura auditável do Casulo/Linguagem T e avaliamos, sem generalização universal, um executor C especializado para uma rede neural rasa em CPU. A versão histórica congelada preservou parâmetros, predições e perda em relação ao PyTorch. Em 21 pares históricos, o speedup mediano foi 8,958 vezes contra PyTorch Eager (IC bootstrap pareado de 95\%: 8,075--9,872). O comparador Inductor disponível compilou somente a passagem direta e, portanto, é secundário. Energia elétrica não foi medida. O resultado sustenta uma hipótese de redução de overhead em um domínio restrito, não superioridade geral da linguagem.
+\end{abstract}
+\section{Introdução}
+Motivação, problema, contribuições verificáveis e questões de pesquisa.
+\section{Trabalhos relacionados}
+Compiladores de tensores, especialização, fusão, benchmark rigoroso e energia.
+\section{Arquitetura}
+Frontend geral, IR, grafo, artefato endereçado por conteúdo, backend CPU e caminho especializado de treinamento. Explicitar que o parser \texttt{learn} ainda é separado do frontend geral.
+\section{Metodologia}
+Equivalência antes do desempenho, desenho pareado, warm-up, sessões independentes, comparadores e pacto térmico.
+\section{Resultados históricos}
+\begin{table}[h]\centering
+\caption{Sessões históricas no workload FloodSurrogate; energia não medida.}
+\begin{tabular}{lrrr}\toprule
+Comparador & T (ms) & Comparador (ms) & Speedup mediano [IC95\%]\\\midrule
+PyTorch Eager & 35,311 & 337,064 & 8,958 [8,075; 9,872]\\
+Inductor parcial, aquecido & 35,719 & 489,609 & 14,256 [12,497; 15,383]\\\bottomrule
+\end{tabular}
+\end{table}
+\section{Análise causal e ablações}
+Separar especialização, despacho Python, autograd, alocação, paralelismo e otimização do compilador.
+\section{Ameaças à validade}
+Uma máquina, sessões históricas, modelo pequeno e sintético, precisão dupla, comparação Inductor incompleta e ausência de joules.
+\section{Conclusão}
+Resultado específico promissor; validação multi-host e integração do frontend geral permanecem abertas.
+\section*{Disponibilidade de artefatos}
+Pacote privado e verificável por hashes. A publicação do código dependerá de decisão explícita do autor.
+\bibliographystyle{plain}
+\bibliography{../references}
+\end{document}
+

@@ -1,0 +1,21 @@
+{
+  "schema": "casulo.arc-intent-twin-evidence-manifest/1.0",
+  "state": "IN_PROGRESS_CHECKPOINTED_ARC_HYPOTHESIS_COMPATIBILITY",
+  "technical_contract_gate": "ARC_INTENT_TWIN_NEURAL_CONTRACT_PASS",
+  "semantic_quality_gate": "FAIL_HYPOTHESIS_CONFLICTS_WITH_HARD_OBSERVATION",
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "intent_twin_canonical_sha256": "02f0c59ca1b09e1c786ef9c2b78b7ae5da5b39d18266869f44454cfe2f888d7b",
+  "human_confirmation": false,
+  "t_started": false,
+  "materialization_started": false,
+  "external_ai_api_used": false,
+  "scientific_benchmark_started": false,
+  "files": [
+    "intent-twin.json",
+    "quality-review.json",
+    "report.json",
+    "stochastic-trace.json",
+    "visual/index.html"
+  ]
+}

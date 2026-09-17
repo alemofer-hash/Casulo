@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "comment_required_for_scores": [1, 2, 5]
+  },
+  "dimensions": [
+    "continuity",
+    "memory_accuracy_and_boundaries",
+    "perceived_intelligence",
+    "useful_challenge",
+    "question_value",
+    "warmth",
+    "naturalness",
+    "healthy_pace_and_pressure",
+    "epistemic_honesty",
+    "creation_fidelity",
+    "voice",
+    "creation_field_visuals",
+    "no_terminal_autonomy",
+    "trust"
+  ],
+  "critical_observations": [
+    "data_loss_or_corruption",
+    "unauthorized_effect",
+    "secret_or_owner_leak",
+    "cross_project_bleed",
+    "false_semantic_completion",
+    "sandbox_or_host_escape"
+  ],
+  "final_question": "Eu abriria o Casulo espontaneamente amanhã para inventar outra coisa?",
+  "allowed_outcomes": [
+    "GUILHERME_HUMAN_PROOF_PASS",
+    "GUILHERME_HUMAN_PROOF_CHANGES_REQUIRED",
+    "GUILHERME_HUMAN_PROOF_ABORTED"
+  ],
+  "raw_audio_persisted_by_default": false,
+  "full_transcript_persisted_by_default": false
+}
+

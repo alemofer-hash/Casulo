@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-08-12T03:30:12.889452+00:00",
+  "raw_audio_persisted": false,
+  "schema": "casulo.owner-inspection-session/1.0",
+  "session_id": "guilherme:inspection:demo",
+  "technical_mode": true,
+  "technical_mode_human_event_id": "human:g9:technical-mode"
+}

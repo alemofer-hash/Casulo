@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.publish"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "6064b8662c9d33dc77e0517902b779c37d93fba4093f9ec6cab014f113c518ab"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "a6c47ac8d038e48e3bb66ee43f0de74f7eab01614abfd519f0dcc914311c7024"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "4ca85b4c96d0d66efdc9923ce52452acf448233635ff8ddb15d0290c6d7f9352"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "348ff7efab7cf58638bf3375cc43d780308944da6b440dfdfd6bd8ae07f61191"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "c152715281d5e3fc9c8be42d807d98d6d9fc1c76618973023c3b915a11743ed4"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "68be4d5012cc1e761f386d72fbec74a40ae65e1ff0ddf4f710a99b95884155ea"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "740b39bffdf77504c45e82c2e9f55c7e924bf06fb173654e4d87516bd94f2bf9"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "ddd519a5a030af65e9ccb04ea0328a55cb19446b4c69bd42b234fce3c1184fa5"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "b64dc6e89ca1b2252b4bf07b1cb7cb5c312e6c8c043419e36eeeb1660dd79712"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "957dbeae92296acde40ce68abb3b2ed15f0827dd70c21f81611f8e796a547194"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "40fd6916ce0d1ad88f578a5367257dbfbcec8523d81ac9eafd713bd673c5c1f6"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.publish.t",
+      "module": "owner.publish",
+      "sha256": "21457fefd12e6d1f8afd215b00dffb318a32edb16e51b1f7ebd796386359afe3"
+    }
+  ],
+  "tcap_hash": "7d50012757f4318c642396de2f767a5285af7e83c0a346ce98d4a6a8b605eb36"
+}

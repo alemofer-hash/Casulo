@@ -1,0 +1,27 @@
+{
+  "candidate_id": "qwen3-4b-q4km-llamacpp-b10362",
+  "candidate_manifest_sha256": "42b2c54788298c10c781695d48f9f7867f5cb25e6407f90dcf0ff45466c70562",
+  "checks": {
+    "at_most_one_material_gap": true,
+    "creation_context_preserved": true,
+    "external_api_used": false,
+    "not_human_confirmed": true,
+    "not_produced": true,
+    "real_local_model_trace": true,
+    "scientific_benchmark_started": false,
+    "two_hypotheses": true
+  },
+  "deterministic_overrides": [
+    "task_kind:CONVERSATION->CREATION"
+  ],
+  "gate": "ARC_INTENT_TWIN_NEURAL_CONTRACT_PASS",
+  "intent_twin_sha256": "9240d99947e6c2ff7225d61b5992ac27ad5f6eacb19e80185ad394e3ea50e5e0",
+  "limits": [
+    "smoke de contrato, não prova qualidade de compreensão",
+    "sem confirmação humana, T, simulação ou materialização",
+    "não é benchmark de desempenho ou energia"
+  ],
+  "model_task_kind": "CONVERSATION",
+  "schema": "casulo.arc-intent-twin-smoke/1.0",
+  "visual": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\human-proof\\arc-intent-twin-2026-08-18-attempt3\\visual\\index.html"
+}

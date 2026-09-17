@@ -1,0 +1,9 @@
+[project]
+name = "linked"
+version = "0.1.0"
+kind = "application"
+entry = "demo.main"
+source = "src"
+external_modules = []
+
+[dependencies]

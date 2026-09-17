@@ -1,0 +1,35 @@
+{
+  "claim_authorized": false,
+  "claim_boundary": "Exploratory HWiNFO-reported CPU package energy on one Windows host; not total-system, not calibrated, not E1/E2 confirmation.",
+  "median_D_joules_per_training": 0.3501007385688669,
+  "median_D_over_E": 1.0493669931803848,
+  "median_E_joules_per_training": 0.3340618247279724,
+  "pairs": [
+    {
+      "D_average_watts": 9.790860577487406,
+      "D_joules_per_training": 0.3543855223825957,
+      "D_over_E": 1.0940320815416305,
+      "D_seconds_per_training": 0.036195525624999995,
+      "E_average_watts": 8.983881247490295,
+      "E_joules_per_training": 0.3239260789164623,
+      "E_seconds_per_training": 0.03605633833333333,
+      "initial_temperature_delta_c": 0.0,
+      "pair_id": "pair-02"
+    },
+    {
+      "D_average_watts": 9.41788841252528,
+      "D_joules_per_training": 0.3458159547551381,
+      "D_over_E": 1.0047019048191392,
+      "D_seconds_per_training": 0.036719038125,
+      "E_average_watts": 9.657208860064854,
+      "E_joules_per_training": 0.3441975705394825,
+      "E_seconds_per_training": 0.035641505208333334,
+      "initial_temperature_delta_c": 1.0,
+      "pair_id": "pair-03"
+    }
+  ],
+  "required_pairs": 3,
+  "schema": "casulo.interlocution-energy-local-exploratory-analysis/1.0",
+  "status": "EXPLORATORY_INCOMPLETE",
+  "valid_pairs": 2
+}

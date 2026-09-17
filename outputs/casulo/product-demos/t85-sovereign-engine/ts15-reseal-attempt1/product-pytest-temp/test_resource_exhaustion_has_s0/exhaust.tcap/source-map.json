@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "file": "sources/test.exhaust.t",
+      "module": "test.exhaust",
+      "sha256": "e631026e93572aa90a2b030bfe6063680ae45e4452a270c79bcd6bd2586efc07"
+    }
+  ]
+}

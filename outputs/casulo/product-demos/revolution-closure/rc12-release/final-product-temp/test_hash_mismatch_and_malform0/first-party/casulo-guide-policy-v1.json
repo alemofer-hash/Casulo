@@ -1,0 +1,16 @@
+{
+  "schema": "casulo-guide-policy/1.0",
+  "model_id": "casulo-guide-policy-v1",
+  "owner": "Guilherme Moura Fernandes",
+  "brand": "Teloscorp Casulo",
+  "locale": "pt-BR",
+  "kind": "deterministic-first-party-cognitive-policy",
+  "clarification_markers": ["algo", "qualquer coisa", "talvez", "nao sei"],
+  "constraint_markers": ["sem permissao", "nao pode", "proibido"],
+  "default_response": "Entendi o comeco. Qual finalidade essa criacao precisa cumprir primeiro?",
+  "clarification_response": "Quero preservar sua intencao sem completar lacunas por voce. O que exatamente deve acontecer?",
+  "constraint_response": "Essa restricao fica preservada como limite duro da criacao.",
+  "max_context_chars": 4096,
+  "training_with_user_content": false,
+  "network_required": false
+}

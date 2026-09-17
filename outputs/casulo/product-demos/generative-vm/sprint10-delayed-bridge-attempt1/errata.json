@@ -1,0 +1,8 @@
+{
+  "schema": "casulo.vm-bridge-transport-errata/1.0",
+  "cause": "numeric delay metadata was incorrectly included in boolean gate checks",
+  "transport_observation": "guest receipt passed after 10 second delayed provider",
+  "controller_note": "connection reset after guest exit was incorrectly labelled timeout",
+  "corrected_in_next_attempt": true,
+  "preserved": true
+}

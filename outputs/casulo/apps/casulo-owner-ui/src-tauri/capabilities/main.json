@@ -1,0 +1,11 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "A janela principal só pode escutar e remover listeners de eventos validados emitidos pelo bridge Rust.",
+  "windows": ["main"],
+  "platforms": ["windows"],
+  "permissions": [
+    "core:event:allow-listen",
+    "core:event:allow-unlisten"
+  ]
+}

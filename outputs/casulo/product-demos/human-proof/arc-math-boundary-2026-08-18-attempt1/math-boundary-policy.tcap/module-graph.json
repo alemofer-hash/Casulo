@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.math.boundary_policy"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.math.boundary_policy"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

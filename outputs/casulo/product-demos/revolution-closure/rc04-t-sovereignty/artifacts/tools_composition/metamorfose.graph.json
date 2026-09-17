@@ -1,0 +1,286 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "casulo.revolution.tools",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "block/root.0.then.0",
+            "block/root.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0",
+          [
+            "block/root.0.then.0.then.0",
+            "block/root.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0",
+          [
+            "block/root.0.then.0.then.0.then.0",
+            "block/root.0.then.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "schema_valid",
+          "source": "AuthorizeTool/input/schema_valid",
+          "target": "AuthorizeTool/instruction/root.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AuthorizeTool/instruction/root.0/if",
+          "target": "AuthorizeTool/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "capability_present",
+          "source": "AuthorizeTool/input/capability_present",
+          "target": "AuthorizeTool/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AuthorizeTool/instruction/root.0.then.0/if",
+          "target": "AuthorizeTool/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "simulation",
+          "source": "AuthorizeTool/input/simulation",
+          "target": "AuthorizeTool/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AuthorizeTool/instruction/root.0.then.0.then.0/if",
+          "target": "AuthorizeTool/instruction/root.0.then.0.then.0.then.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AuthorizeTool/instruction/root.0.then.0.then.0/if",
+          "target": "AuthorizeTool/instruction/root.0.then.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AuthorizeTool/instruction/root.0.then.0/if",
+          "target": "AuthorizeTool/instruction/root.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AuthorizeTool/instruction/root.0/if",
+          "target": "AuthorizeTool/instruction/root.0.else.0/emit"
+        }
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 7,
+      "input_type": "ToolDecision",
+      "name": "AuthorizeTool",
+      "nodes": [
+        {
+          "defines": [
+            "schema_valid"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "AuthorizeTool/input/schema_valid",
+          "kind": "input",
+          "label": "schema_valid",
+          "operation": "AuthorizeTool",
+          "path": "input.schema_valid",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "capability_present"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "AuthorizeTool/input/capability_present",
+          "kind": "input",
+          "label": "capability_present",
+          "operation": "AuthorizeTool",
+          "path": "input.capability_present",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "simulation"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "AuthorizeTool/input/simulation",
+          "kind": "input",
+          "label": "simulation",
+          "operation": "AuthorizeTool",
+          "path": "input.simulation",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "AuthorizeTool/instruction/root.0/if",
+          "kind": "if",
+          "label": "schema_valid",
+          "operation": "AuthorizeTool",
+          "path": "root.0",
+          "pure": true,
+          "uses": [
+            "schema_valid"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "AuthorizeTool/instruction/root.0.then.0/if",
+          "kind": "if",
+          "label": "capability_present",
+          "operation": "AuthorizeTool",
+          "path": "root.0.then.0",
+          "pure": true,
+          "uses": [
+            "capability_present"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "AuthorizeTool/instruction/root.0.then.0.then.0/if",
+          "kind": "if",
+          "label": "simulation",
+          "operation": "AuthorizeTool",
+          "path": "root.0.then.0.then.0",
+          "pure": true,
+          "uses": [
+            "simulation"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AuthorizeTool/instruction/root.0.then.0.then.0.then.0/emit",
+          "kind": "emit",
+          "label": "\"SIMULATE\"",
+          "operation": "AuthorizeTool",
+          "path": "root.0.then.0.then.0.then.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AuthorizeTool/instruction/root.0.then.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"EXECUTE\"",
+          "operation": "AuthorizeTool",
+          "path": "root.0.then.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AuthorizeTool/instruction/root.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "AuthorizeTool",
+          "path": "root.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AuthorizeTool/instruction/root.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"DENY\"",
+          "operation": "AuthorizeTool",
+          "path": "root.0.else.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [
+    {
+      "kind": "record",
+      "members": [
+        [
+          "schema_valid",
+          "Bool"
+        ],
+        [
+          "capability_present",
+          "Bool"
+        ],
+        [
+          "simulation",
+          "Bool"
+        ]
+      ],
+      "name": "ToolDecision"
+    }
+  ],
+  "version": "metamorfose-graph/1.0"
+}

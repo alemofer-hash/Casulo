@@ -1,0 +1,130 @@
+{
+  "items": [
+    {
+      "artifact_sha256": "84b70fed87a4644acc525051133aa6a4d0de209bc0aa20a6ade61c3ba5ffd541",
+      "decision_authority": true,
+      "effects": [],
+      "id": "t.runtime.rust",
+      "implementation": "first-party Rust T virtual machine",
+      "input_schema": "casulo.tcap/2.0 + canonical JSON + capability handles",
+      "invoked_in_ts4": true,
+      "license": "repository license; commercial review pending",
+      "output_schema": "observable + casulo.t-decision-receipt/2.0",
+      "version": "t-runtime/rust-2.0"
+    },
+    {
+      "artifact_sha256": null,
+      "decision_authority": false,
+      "effects": [
+        "transient_write"
+      ],
+      "id": "host.filesystem.transient_input",
+      "implementation": "Python pathlib over host filesystem",
+      "input_schema": "canonical JSON stage input",
+      "invoked_in_ts4": true,
+      "license": "PSF-2.0",
+      "output_schema": "read-only bytes to exact runtime path",
+      "version": "Python 3.13.2 stdlib"
+    },
+    {
+      "artifact_sha256": null,
+      "decision_authority": false,
+      "effects": [
+        "simulation"
+      ],
+      "id": "effect.simulation",
+      "implementation": "no real primitive in TS4; grant and request are recorded only",
+      "input_schema": "T effect request simulation",
+      "invoked_in_ts4": true,
+      "license": "first-party",
+      "output_schema": "receipt only",
+      "version": "simulation/2.0"
+    },
+    {
+      "artifact_sha256": null,
+      "decision_authority": false,
+      "effects": [
+        "manifest"
+      ],
+      "id": "effect.manifest",
+      "implementation": "no packager invoked in TS4; grant and request are recorded only",
+      "input_schema": "T effect request manifest",
+      "invoked_in_ts4": true,
+      "license": "first-party",
+      "output_schema": "receipt only",
+      "version": "manifest/2.0"
+    },
+    {
+      "artifact_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "decision_authority": false,
+      "effects": [
+        "local_inference"
+      ],
+      "id": "model.infer",
+      "implementation": "Qwen3-4B-Q4_K_M GGUF via llama.cpp b10362",
+      "input_schema": "bounded generative context envelope",
+      "invoked_in_ts4": false,
+      "license": "Apache-2.0 model; llama.cpp MIT",
+      "output_schema": "untrusted typed proposal + stochastic trace",
+      "runtime_sha256": "a9d95d26cf00664f2902f73cb0fd9b167a3a1f252294bb2f8b236305f57d6363",
+      "version": "qwen revision bc640142c66e1fdd12af0bd68f40445458f3869b; llama.cpp 4801e3c"
+    },
+    {
+      "artifact_sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb",
+      "decision_authority": false,
+      "effects": [
+        "microphone_read"
+      ],
+      "id": "audio.asr",
+      "implementation": "whisper.cpp v1.9.2 with multilingual base/small q5_1 bootstrap weights",
+      "input_schema": "bounded PCM16",
+      "invoked_in_ts4": false,
+      "license": "MIT runtime; model provenance in MODEL_LEDGER",
+      "output_schema": "casulo-asr-command/1.0",
+      "version": "306c88f4d1286aec1bf96e544632897886af5501"
+    },
+    {
+      "artifact_sha256": null,
+      "decision_authority": false,
+      "effects": [
+        "speaker_write"
+      ],
+      "id": "audio.tts",
+      "implementation": "first-party deterministic TTS or optional Windows Maria system voice",
+      "input_schema": "bounded response text",
+      "invoked_in_ts4": false,
+      "license": "first-party; Windows component not redistributed",
+      "output_schema": "PCM/playback receipt",
+      "version": "provisional owner profile"
+    },
+    {
+      "artifact_sha256": null,
+      "decision_authority": false,
+      "effects": [
+        "local_storage"
+      ],
+      "id": "storage.protect",
+      "implementation": "Windows DPAPI via ctypes",
+      "input_schema": "memory/event bytes",
+      "invoked_in_ts4": false,
+      "license": "Windows system component",
+      "output_schema": "protected blob",
+      "version": "host OS primitive"
+    },
+    {
+      "artifact_sha256": null,
+      "decision_authority": false,
+      "effects": [
+        "local_process",
+        "overlay_write"
+      ],
+      "id": "vm.execute",
+      "implementation": "QEMU x86-64 11.0.50 + OVMF",
+      "input_schema": "immutable Casulo image + sparse overlay",
+      "invoked_in_ts4": false,
+      "license": "third-party; see release SBOM",
+      "output_schema": "QMP/serial receipts",
+      "version": "11.0.50"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "archive": "release/CASULO_NATIVE_BOOT_TO_CREATION_PROOF_2026-08-22-attempt-2.zip",
+  "archive_bytes": 348758,
+  "archive_sha256": "ccf6c482f52bb795120feef99def1d3d95c6d0bcccd37e203474953a30f4cc3c",
+  "artifact_result": 18,
+  "cancellation_boots": 1,
+  "cancellation_report": {
+    "path": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-attempt-12/cancel-final.json",
+    "sha256": "0c86fc1c6483218b93aff31f26c3e58389cc9a4004bc034dde44eacf316ad092"
+  },
+  "claim": "a bounded natural-language request was decoded by the adopted local Qwen3 model in the Native kernel, every token was accepted by compiled T before publication, and the complete output was mapped to a content-addressed T artifact, simulated, materialized and accepted by T",
+  "cloud": "RELEASE_LOCKED",
+  "energy_claim": false,
+  "free_space_bytes": 70302928896,
+  "guest_network": "OFF",
+  "host_oracle": {
+    "path": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-attempt-3/creation-host-oracle.json",
+    "sha256": "03220de663e3a4d43c492db6b15dfbf94dd441b319c7062152d550aa59afbdab"
+  },
+  "image_sha256": "25193857a96d6c14328d92fb128d6e666a31478dee05cc8cca6a35252932a534",
+  "materialization_sha256": "e9442e34f04d7498de01d277d5465671128bcc9811ecebe45cee809a365c2ef4",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "normal_boots": 3,
+  "normal_report": {
+    "path": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-attempt-11/normal-three-final.json",
+    "sha256": "42ff3f864ccdf4e46389d74ecd6fb0ee0b6e398e6a7d06bc757402b2f8a601d3"
+  },
+  "output_text": "NOME=SomeDoisNumeros;FUNCAO=SomeDoisNumeros;ENTRADA=numero1,numero2;SAIDA=resultado.",
+  "performance_claim": false,
+  "physical_device_written": false,
+  "public_audit": {
+    "path": "outputs/casulo/native-boot-to-creation/2026-08-22-np10-final-attempt-2/public-audit.json",
+    "sha256": "3ec4c0e305c62cfc18a1d87e524bd8fc8a162e9e9cb985e76f38c1ca04ae69dc"
+  },
+  "release_directory": "release/CASULO_NATIVE_BOOT_TO_CREATION_PROOF_2026-08-22-attempt-2",
+  "release_manifest_sha256": "4c8d082be955c193a43cc92aa5707e15042990485259c1ea2950a33abef618be",
+  "release_sha256sums_sha256": "a9e87f3b04f70283ffb8a1d03ee7a50fc3c479da6b2288e0ab1f0d11af06e7ac",
+  "release_signature_sha256": "205ab428dc12ab5eca84911934aa199999d3319805e53195c7ab0e101ed736b9",
+  "schema": "casulo-native-boot-to-creation-final/1.0",
+  "signature": "DEVELOPMENT_NOT_COMMERCIAL",
+  "state": "CASULO_NATIVE_BOOT_TO_CREATION_PROOF",
+  "system_pack_sha256": "4f5e9fb34de09a3fe59b49c233802312a1c2e4d86ec7d00ca2d1dc1638f7eeb1",
+  "token_receipt_chain_tail": "84723086bc187d40479ec5ad631859fc662bc966841d9edc1a1d7806b1b411cf",
+  "usb_authorized": false
+}

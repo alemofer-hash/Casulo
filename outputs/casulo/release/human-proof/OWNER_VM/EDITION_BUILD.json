@@ -1,0 +1,59 @@
+Processing .\private\casulo-owner
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: casulo-owner
+  Building wheel for casulo-owner (pyproject.toml): started
+  Building wheel for casulo-owner (pyproject.toml): finished with status 'done'
+  Created wheel for casulo-owner: filename=casulo_owner-0.1.0a1-py3-none-any.whl size=69561 sha256=f4c6b14f06c3985883d9a093b162fe4ce649d342d6fcde334d8d8b899fe58484
+  Stored in directory: c:\users\guimo\appdata\local\pip\cache\wheels\8a\19\e6\47f753c82f13bdd1e73a7ffecdba89061563a08905657f9f3b
+Successfully built casulo-owner
+Processing .\editions\casulo-public
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: casulo-public
+  Building wheel for casulo-public (pyproject.toml): started
+  Building wheel for casulo-public (pyproject.toml): finished with status 'done'
+  Created wheel for casulo-public: filename=casulo_public-0.1.0a1-py3-none-any.whl size=3972 sha256=ec6d03fb0f93bab38ad07f3f891599d58e4dde1245af18278fe4cf4e3a0ead08
+  Stored in directory: c:\users\guimo\appdata\local\pip\cache\wheels\92\05\59\abdc8fc8d496897210fcd13c7e252d6b377e69abefc4df51bd
+Successfully built casulo-public
+Processing .\services\casulo-cloud-standby
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: casulo-cloud-standby
+  Building wheel for casulo-cloud-standby (pyproject.toml): started
+  Building wheel for casulo-cloud-standby (pyproject.toml): finished with status 'done'
+  Created wheel for casulo-cloud-standby: filename=casulo_cloud_standby-0.1.0a1-py3-none-any.whl size=14917 sha256=21cc6f8e5abba593c4a85d8b9e58695b960a821956cbf8c6fa9e07aefa2a0ee9
+  Stored in directory: c:\users\guimo\appdata\local\pip\cache\wheels\3c\ec\37\b3f77aa61a3e27c3639095bac704979c223831199367a7f862
+Successfully built casulo-cloud-standby
+{
+  "results": [
+    {
+      "manifest_sha256": "00c2e274665e905866a5c81b94854f7a4775fc5117a66069caf39079ad0f8064",
+      "profile": "owner",
+      "public_audit_pass": null,
+      "release_state": "PRODUCT_ALPHA_LOCAL",
+      "signature_verified": true,
+      "wheel": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release-vbscript-reseal\\staging\\OWNER_VM\\editions\\owner\\casulo_owner-0.1.0a1-py3-none-any.whl",
+      "wheel_sha256": "f4c6b14f06c3985883d9a093b162fe4ce649d342d6fcde334d8d8b899fe58484"
+    },
+    {
+      "manifest_sha256": "73084cec9e3a570fde994676bfa44cdfb9df36ef6dd571c314f85c076669fee7",
+      "profile": "public",
+      "public_audit_pass": true,
+      "release_state": "PRODUCT_ALPHA_LOCAL",
+      "signature_verified": true,
+      "wheel": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release-vbscript-reseal\\staging\\OWNER_VM\\editions\\public\\casulo_public-0.1.0a1-py3-none-any.whl",
+      "wheel_sha256": "ec6d03fb0f93bab38ad07f3f891599d58e4dde1245af18278fe4cf4e3a0ead08"
+    },
+    {
+      "manifest_sha256": "abd4f4c46ef36f371d6d8adc691abf1a320f26aa685b95c7e2216c2cec87ff6b",
+      "profile": "cloud-standby",
+      "public_audit_pass": null,
+      "release_state": "RELEASE_LOCKED",
+      "signature_verified": true,
+      "wheel": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\revolution-closure\\rc12-release-vbscript-reseal\\staging\\OWNER_VM\\editions\\cloud-standby\\casulo_cloud_standby-0.1.0a1-py3-none-any.whl",
+      "wheel_sha256": "21cc6f8e5abba593c4a85d8b9e58695b960a821956cbf8c6fa9e07aefa2a0ee9"
+    }
+  ],
+  "schema": "casulo-product-editions/1.0"
+}

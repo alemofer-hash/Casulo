@@ -1,0 +1,13 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.native.creation_token_policy"
+  },
+  "modules": [
+    {
+      "imports": [],
+      "name": "owner.native.creation_token_policy"
+    }
+  ],
+  "schema": "casulo.t-module-graph/2.0"
+}

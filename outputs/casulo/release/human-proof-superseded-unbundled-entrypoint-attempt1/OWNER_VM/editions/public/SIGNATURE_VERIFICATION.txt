@@ -1,0 +1,1 @@
+Good "casulo-release" signature for casulo-public-dev with ED25519 key SHA256:LLS0cu7UCgbJYNYdHAe5O+LgApYXXRBP/6e07oJ2Ggg

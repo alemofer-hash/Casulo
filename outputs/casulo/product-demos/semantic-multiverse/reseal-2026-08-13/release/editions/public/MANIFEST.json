@@ -1,0 +1,32 @@
+{
+  "engine_boundary": "cloud-client-only-no-owner-fallback",
+  "package": "casulo-public",
+  "production_eligible": false,
+  "profile": "public",
+  "public_audit": {
+    "artifact": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\product-demos\\semantic-multiverse\\reseal-2026-08-13\\release\\editions\\public\\casulo_public-0.1.0a1-py3-none-any.whl",
+    "content_tree_sha256": "6ea3f750d844ec7e519a2f81c012b8b6fda2dcacb92712aba50cc8721284d9d5",
+    "files_scanned": 6,
+    "forbidden_findings": [],
+    "private_components_absent": true,
+    "schema": "casulo-public-audit/1.0"
+  },
+  "redistributable": true,
+  "release_state": "PRODUCT_ALPHA_LOCAL",
+  "sbom": {
+    "file": "SBOM.spdx.json",
+    "sha256": "906ff36378bc026fb388589fdd29165f2df39297bcfce20dcd0579eb5ddc7956"
+  },
+  "schema": "casulo-product-edition-release/1.0",
+  "signing": {
+    "algorithm": "ssh-ed25519",
+    "development_key": true,
+    "identity": "casulo-public-dev",
+    "namespace": "casulo-release",
+    "public_key_fingerprint": "SHA256:LLS0cu7UCgbJYNYdHAe5O+LgApYXXRBP/6e07oJ2Ggg"
+  },
+  "wheel": {
+    "file": "casulo_public-0.1.0a1-py3-none-any.whl",
+    "sha256": "cc29120ff35c5a512691137a4b4e822910f6259f1994fb22ab3c7d1d9e0bb866"
+  }
+}

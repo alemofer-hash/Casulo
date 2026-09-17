@@ -1,0 +1,21 @@
+{
+  "protocol": "casulo-window-verdict/0.1",
+  "created_at_utc": "2026-07-31T18:39:31.263042+00:00",
+  "preregistration_sha256": "6bc38148297d3a3ecda3d6a6a7529c5004561e7ca3b081e8b34da55edc455998",
+  "report_sha256": [
+    "d6d0ae1718cae46a714063e2a2abb3716997d21d666565e6120b796d7c090625"
+  ],
+  "status": "PASSED",
+  "selected_window_ms": 250.0,
+  "evaluated": [
+    {
+      "window_ms": 250.0,
+      "coefficient_of_variation": 0.07679051672805026,
+      "stable": true
+    }
+  ],
+  "needs_next_window": false,
+  "next_window_ms": null,
+  "uses_speedup_or_winner_selection": false,
+  "claim": null
+}

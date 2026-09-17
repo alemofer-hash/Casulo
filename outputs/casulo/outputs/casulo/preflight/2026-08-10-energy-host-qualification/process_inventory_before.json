@@ -1,0 +1,69 @@
+{
+  "captured_at_utc": "2026-08-10T03:37:29.307215+00:00",
+  "logical_cpu_count": 12,
+  "relevant_processes": [
+    {
+      "command_line": [
+        "C:\\Program Files\\HWiNFO64\\HWiNFO64.EXE"
+      ],
+      "cpu_percent_all_logical": 14.6,
+      "executable": "C:\\Program Files\\HWiNFO64\\HWiNFO64.EXE",
+      "name": "HWiNFO64.EXE",
+      "pid": 21464,
+      "working_set_bytes": 185667584
+    },
+    {
+      "command_line": [],
+      "cpu_percent_all_logical": 3.0,
+      "executable": "",
+      "name": "System",
+      "pid": 4,
+      "working_set_bytes": 4976640
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+      ],
+      "cpu_percent_all_logical": 1.8,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 16404,
+      "working_set_bytes": 285667328
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\Microsoft.GamingApp_2608.1001.17.0_x64__8wekyb3d8bbwe\\XboxPcApp.exe",
+        "-ServerName:Microsoft.Xbox.AppL.AppXhg7mrtrf7ayze6gb4syw3zwjgyr2xv4r.mca"
+      ],
+      "cpu_percent_all_logical": 1.2,
+      "executable": "C:\\Program Files\\WindowsApps\\Microsoft.GamingApp_2608.1001.17.0_x64__8wekyb3d8bbwe\\XboxPcApp.exe",
+      "name": "XboxPcApp.exe",
+      "pid": 21396,
+      "working_set_bytes": 201961472
+    },
+    {
+      "command_line": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+        "--type=gpu-process",
+        "--no-pre-read-main-dll",
+        "--start-stack-profiler",
+        "--gpu-preferences=WAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA=",
+        "--metrics-shmem-handle=2116,i,9817485626759769594,9725390346078474518,262144",
+        "--field-trial-handle=2224,i,1814542848906937115,15718327287927353234,262144",
+        "--enable-features=OwlHistory,OwlPrinting,ReportStuckThrottle",
+        "--disable-features=DropInputEventsWhilePaintHolding,OwlExtensions,OwlOpenAIGoLinks",
+        "--variations-seed-version",
+        "--pseudonymization-salt-handle=2240,i,12798668563333029213,14482220322951729260,4",
+        "--trace-process-track-uuid=3190708988185955192",
+        "--mojo-platform-channel-handle=2220",
+        "/prefetch:2"
+      ],
+      "cpu_percent_all_logical": 0.6,
+      "executable": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.803.5235.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "name": "ChatGPT.exe",
+      "pid": 13956,
+      "working_set_bytes": 139223040
+    }
+  ],
+  "sample_seconds": 2.0
+}

@@ -1,0 +1,77 @@
+{
+  "campaign_id": "recovery",
+  "files": [
+    {
+      "bytes": 1591,
+      "path": "analysis.json",
+      "sha256": "88affe32aaa497359c1d4e77bd0b5ddd15679797fe79b387b130558490e55ac4"
+    },
+    {
+      "bytes": 515,
+      "path": "benchmark_markers.jsonl",
+      "sha256": "5c8dc4a02862a0abc65b4f25b62db4d8d3153ddf9614ad9c9119ade2a21f1422"
+    },
+    {
+      "bytes": 121,
+      "path": "frozen_k.json",
+      "sha256": "57bc3b1b5e73026073b0b073aa2524b25527470b7c44444efec0785544b46804"
+    },
+    {
+      "bytes": 182,
+      "path": "input_hashes.json",
+      "sha256": "f4b5b0bb376932091f3c95c696c97362a0cdff06eea2ad83bfb9cbb93b3d8b11"
+    },
+    {
+      "bytes": 783,
+      "path": "observer_overhead.json",
+      "sha256": "24bff7ec5654da2d992a69b5a6fa0d46f323ddb8d96f58d02398809641e812dd"
+    },
+    {
+      "bytes": 847,
+      "path": "polling_validation.json",
+      "sha256": "6b3fa37954ccca1887c385cf40151b47d78cdc59c1cc5cea949e9acecee95f8c"
+    },
+    {
+      "bytes": 2637,
+      "path": "protocol.json",
+      "sha256": "ab6c2af322d34f8440adf253ecb792d6091da6b332b5451147d4047df2019e22"
+    },
+    {
+      "bytes": 681,
+      "path": "report.md",
+      "sha256": "d62366f70d3e39f73d257e4cf1ec6097bd2a78746d0e43a74091a94af250263e"
+    },
+    {
+      "bytes": 8901,
+      "path": "schedule.json",
+      "sha256": "664a598ba135ac0f4c8ee40e7668f118ce7e320c8b8817039f29f673041eff89"
+    },
+    {
+      "bytes": 87,
+      "path": "source_csv_final.sha256",
+      "sha256": "3f44a253910765493573ef6fc4fc7ea5658ce1e87dcac6240e54bd98c2b8f405"
+    },
+    {
+      "bytes": 86,
+      "path": "source_csv_initial.sha256",
+      "sha256": "556e969b41dd3d974b21962b0999d2fc8c4df8ad6824ac3755fc13c28e000e88"
+    },
+    {
+      "bytes": 2525,
+      "path": "source_initial.json",
+      "sha256": "346918ce3c8294e56e41fadf5ae4c2837a43cb136c5a11ddbcb4d6dda38c31b8"
+    },
+    {
+      "bytes": 457,
+      "path": "source_segment.csv",
+      "sha256": "f6d02e54c225f47695a6ae2c6dfdfd2e61be65f8adba55e7c8a894766d50458e"
+    },
+    {
+      "bytes": 111,
+      "path": "thermal_calibration.json",
+      "sha256": "cd9e89dde530e177caaa16900cb9a475bb6b8076d491d4162b3a9141a9502a8c"
+    }
+  ],
+  "schema": "casulo-hwinfo-thermal-recovery-manifest/1.0",
+  "sealed_at_utc": "2026-08-08T15:30:14.667422+00:00"
+}

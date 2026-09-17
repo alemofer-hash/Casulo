@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "function": "decide",
+    "module": "owner.math.boundary_policy"
+  },
+  "schema": "casulo.tcap/2.0",
+  "sections": {
+    "capabilities": {
+      "file": "capabilities.json",
+      "sha256": "bcac71a04116df214b171f4bbc1a365d6fc3057e0e07e2e440cc6f52289a6176"
+    },
+    "effects": {
+      "file": "effects.json",
+      "sha256": "f50a822bfbd1a69ff2c7a8bf6648e10c20e7ca8a55aa13f17cc685cd0f4816d6"
+    },
+    "foreign_boundaries": {
+      "file": "foreign-boundaries.json",
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    "functional_code": {
+      "file": "code.json",
+      "sha256": "40d385714f9c51c313ce76c96f5860cdcf46b171f651a155beb9177261308a51"
+    },
+    "header": {
+      "file": "header.json",
+      "sha256": "22f8421a7d45ffe80f1c88d3531b5a229e5b1505190e97dcf5f5773649ca0c5e"
+    },
+    "module_graph": {
+      "file": "module-graph.json",
+      "sha256": "d03cc270a7720d25cacb7fdcd34830ab3bb1ab079e6ac62264550b7ecdf4b1d5"
+    },
+    "provenance": {
+      "file": "provenance.json",
+      "sha256": "bb718f4b2857bec08529657c6cf898137873029aa3a6a21530cf67dbca9cdb9b"
+    },
+    "readonly_data": {
+      "file": "readonly-data.json",
+      "sha256": "89253d618e1d3ff588bce9438b1b839a578e3d88dab13b957693233a47a724af"
+    },
+    "resource_budgets": {
+      "file": "resource-budgets.json",
+      "sha256": "389a2703a8b7840b6429e4ddab44e530ad279638f8f161be98b0c1845a608b06"
+    },
+    "schemas": {
+      "file": "schemas.json",
+      "sha256": "8ccbbb56d28c7964eacf76600348c7bee71248f30c95e9e8682590bbd72a8cb6"
+    },
+    "signature_class": {
+      "file": "signature-class.json",
+      "sha256": "ffc3cda4f7722cd4413549294a71fd136d0006f96eccfce7271e24d6bcd88fee"
+    },
+    "source_map": {
+      "file": "source-map.json",
+      "sha256": "a626ab9e3b3991efb6e2de74bb98dbbc95fc4efb0690c59b45ab4b9152f66aea"
+    },
+    "tests": {
+      "file": "tests.json",
+      "sha256": "569f21a82ec46c18f2df68efdc01224fbaf198c79375379d4b35caaded10e58e"
+    },
+    "typed_ir": {
+      "file": "typed-ir.json",
+      "sha256": "fe41d7e48a9d9b8d52c61e7b43d4733ef73d6ce729f1c5b9eb1f93d400f32558"
+    }
+  },
+  "sources": [
+    {
+      "file": "sources/owner.math.boundary_policy.t",
+      "module": "owner.math.boundary_policy",
+      "sha256": "d370578c9e9ea9a3c7c0a44134b9556ae697b30e241ece177be1f5874ee3d2ae"
+    }
+  ],
+  "tcap_hash": "a76102f2ccfeeb4c2bb8103884cc639634782c209bbc68d1bd810f14646ea160"
+}

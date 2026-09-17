@@ -1,0 +1,41 @@
+{
+  "blocker": {
+    "stage": "cooldown_or_stability",
+    "state": {
+      "abort_c": 80.0,
+      "ac_connected": true,
+      "battery_charge_rate_w": 0.0,
+      "battery_percent": 99.2,
+      "battery_state": "AC_CONNECTED",
+      "frequency_mhz": null,
+      "hwinfo_timestamp_utc": "2026-08-07T21:12:57.015000+00:00",
+      "logger_age_seconds": 0.15432,
+      "logger_live": true,
+      "observed_at_utc": "2026-08-07T21:12:57.170328+00:00",
+      "preabort": false,
+      "preabort_c": 79.5,
+      "ready_to_start": false,
+      "reason_code": "recovery_abort_thermal_or_observer_guard",
+      "safe_after_load": false,
+      "safe_during_load": false,
+      "source_last_size": 19216864,
+      "temperature_c": 63.0,
+      "throttling": true,
+      "watchdog_reader": "bounded-live-tail-v1"
+    }
+  },
+  "definitive_pairs": 0,
+  "frozen_k": null,
+  "polling_median_seconds": 0.25,
+  "polling_mode_ms": 250,
+  "probe_sequence_seconds": [
+    10.0,
+    20.0
+  ],
+  "probes": [],
+  "schema": "casulo-hwinfo-thermal-calibration/1.0",
+  "status": "SUPERSEDED_BEFORE_WORKLOAD",
+  "superseded_reason": "Pre-window transient throttling exposed an overly strict cooldown terminal rule; campaign preserved and replaced before any workload.",
+  "target_window_seconds": 20.0,
+  "workload_executions": 0
+}

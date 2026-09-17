@@ -1,0 +1,8 @@
+{
+  "note": "short pre-calibration probes on the common CPU 4 affinity; K remained unfrozen",
+  "observed_temperature_c": 76.0,
+  "promoted_to_scientific_sample": false,
+  "reason_code": "warning_temperature_limit",
+  "schema": "casulo-hwinfo-rejected-calibration/1.0",
+  "warning_threshold_c": 75.0
+}

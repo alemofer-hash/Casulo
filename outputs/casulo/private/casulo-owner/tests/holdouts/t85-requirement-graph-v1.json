@@ -1,0 +1,87 @@
+{
+  "schema": "casulo.t85-holdout-suite/1.0",
+  "sealed_for": "TS6-TS7",
+  "available_to_generation_context": false,
+  "families": [
+    {
+      "family_id": "personal-state-automation",
+      "cases": [
+        {
+          "case_id": "personal-01",
+          "request": "Agente local que organiza uma lista doméstica recorrente, pede confirmação antes de remover itens e retoma o estado depois de reiniciar.",
+          "hard": ["state-persistence", "human-delete-confirmation", "reboot-recall"]
+        },
+        {
+          "case_id": "personal-02",
+          "request": "Agente de revisão semanal offline que agrupa compromissos fornecidos pelo usuário sem enviar ou alterar calendários reais.",
+          "hard": ["offline-default", "simulation-only", "source-provenance"]
+        },
+        {
+          "case_id": "personal-03",
+          "request": "Assistente local para classificar notas por projeto, mantendo rejeições e impedindo mistura entre projetos.",
+          "hard": ["project-isolation", "rejection-history", "local-storage"]
+        }
+      ]
+    },
+    {
+      "family_id": "local-data-processing",
+      "cases": [
+        {
+          "case_id": "data-01",
+          "request": "Validador local de CSV que preserva bytes originais, aplica schema versionado e explica cada rejeição.",
+          "hard": ["original-preserved", "versioned-schema", "diagnostic-per-rejection"]
+        },
+        {
+          "case_id": "data-02",
+          "request": "Normalizador de eventos de trânsito que respeita event-time, memória limitada e provenance por transformação.",
+          "hard": ["event-time", "bounded-memory", "transformation-provenance"]
+        },
+        {
+          "case_id": "data-03",
+          "request": "Detector local de duplicatas em registros tabulares que nunca apaga dados e exporta um plano reversível.",
+          "hard": ["no-delete", "deterministic-dedup-key", "reversible-plan"]
+        }
+      ]
+    },
+    {
+      "family_id": "interactive-application",
+      "cases": [
+        {
+          "case_id": "interactive-01",
+          "request": "Estúdio conversacional de personagens com memória separada por obra, interrupção e exportação editável.",
+          "hard": ["project-isolation", "barge-in", "editable-export"]
+        },
+        {
+          "case_id": "interactive-02",
+          "request": "Quiz local adaptativo que explica correções, aceita cancelamento e não inventa progresso de geração.",
+          "hard": ["explanation-receipt", "cancellation", "real-progress-events"]
+        },
+        {
+          "case_id": "interactive-03",
+          "request": "Organizador de notas acessível por voz e texto, com confirmação de mudanças materiais e undo persistente.",
+          "hard": ["voice-text-parity", "material-confirmation", "persistent-undo"]
+        }
+      ]
+    },
+    {
+      "family_id": "verifiable-technical-tool",
+      "cases": [
+        {
+          "case_id": "technical-01",
+          "request": "Avaliador tensorial local 4D das equações de campo de Einstein, com resíduos e recusa de alegação de solver global.",
+          "hard": ["tensor-construction", "minkowski-residual", "global-solver-refusal"]
+        },
+        {
+          "case_id": "technical-02",
+          "request": "Calculadora de balanço de massa para um volume de controle, com unidades declaradas e verificação de conservação.",
+          "hard": ["unit-consistency", "mass-conservation", "residual-output"]
+        },
+        {
+          "case_id": "technical-03",
+          "request": "Avaliador de resíduo de diferenças finitas para calor 1D, com condições de contorno, estabilidade declarada e NaN recusado.",
+          "hard": ["boundary-conditions", "stability-condition", "nonfinite-rejection"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Demonstração congelada e auditável do marco técnico 6× do Casulo e da linguagem T.">
+  <title>Casulo × 6,10 — evidência congelada</title>
+  <style>
+    :root {
+      --ink: #f4f2ec;
+      --muted: #a8aaaf;
+      --dim: #74777f;
+      --night: #08090b;
+      --panel: #111318;
+      --panel-2: #171a20;
+      --line: rgba(255,255,255,.105);
+      --lime: #b8f34a;
+      --lime-2: #7fcf35;
+      --amber: #ffb454;
+      --blue: #73a7ff;
+      --danger: #ff7f78;
+      --radius: 24px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 70% -10%, rgba(184,243,74,.12), transparent 32rem),
+        radial-gradient(circle at -10% 35%, rgba(115,167,255,.09), transparent 28rem),
+        var(--night);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    button, input { font: inherit; }
+    button { color: inherit; }
+    a { color: inherit; }
+    .shell { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+    .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--lime);
+      font-size: .74rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .quiet { color: var(--muted); }
+    .tiny { color: var(--dim); font-size: .78rem; }
+    .nav {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8,9,11,.78);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 850; letter-spacing: -.02em; }
+    .brand-mark {
+      position: relative;
+      width: 30px;
+      height: 36px;
+      border: 1.5px solid var(--lime);
+      border-radius: 55% 55% 48% 48%;
+      transform: rotate(5deg);
+      box-shadow: inset 0 0 16px rgba(184,243,74,.12), 0 0 20px rgba(184,243,74,.08);
+    }
+    .brand-mark::before, .brand-mark::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      height: 1px;
+      background: var(--lime);
+      opacity: .55;
+    }
+    .brand-mark::before { top: 11px; transform: rotate(-8deg); }
+    .brand-mark::after { bottom: 10px; transform: rotate(8deg); }
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .seal {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 12px;
+      border: 1px solid rgba(184,243,74,.28);
+      border-radius: 999px;
+      color: #dfffa4;
+      background: rgba(184,243,74,.055);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .seal-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 5px rgba(184,243,74,.1); }
+    .hero {
+      min-height: 730px;
+      padding: 100px 0 70px;
+      display: grid;
+      align-items: center;
+    }
+    .hero-grid { display: grid; grid-template-columns: minmax(0,1.16fr) minmax(340px,.84fr); gap: 70px; align-items: center; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 760px;
+      margin-bottom: 24px;
+      font-size: clamp(3.4rem, 8vw, 7.7rem);
+      line-height: .86;
+      letter-spacing: -.075em;
+      font-weight: 900;
+    }
+    h1 span { color: var(--lime); }
+    .lead {
+      max-width: 660px;
+      color: #c6c7c9;
+      font-size: clamp(1.03rem, 1.5vw, 1.24rem);
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .btn {
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      color: var(--ink);
+      background: var(--panel);
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); border-color: rgba(255,255,255,.24); }
+    .btn.primary { color: #11150a; border-color: var(--lime); background: var(--lime); }
+    .btn.ghost { background: transparent; }
+    .result-card {
+      position: relative;
+      min-height: 450px;
+      padding: 34px;
+      border: 1px solid rgba(184,243,74,.22);
+      border-radius: 38px;
+      background:
+        linear-gradient(145deg, rgba(184,243,74,.09), transparent 52%),
+        linear-gradient(180deg, #15181c, #0e1013);
+      box-shadow: 0 45px 110px rgba(0,0,0,.42);
+      overflow: hidden;
+    }
+    .result-card::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -110px;
+      width: 270px;
+      height: 270px;
+      border: 1px solid rgba(184,243,74,.15);
+      border-radius: 46% 54% 48% 52%;
+      box-shadow: 0 0 0 28px rgba(184,243,74,.025), 0 0 0 62px rgba(184,243,74,.018);
+      transform: rotate(25deg);
+    }
+    .result-label { color: var(--muted); font-size: .75rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    .big-number {
+      margin: 40px 0 12px;
+      color: var(--lime);
+      font-size: clamp(5.4rem, 10vw, 8.6rem);
+      font-weight: 900;
+      letter-spacing: -.085em;
+      line-height: .75;
+    }
+    .result-sub { max-width: 310px; color: #d9d9d6; font-size: 1.05rem; }
+    .confidence { margin-top: 55px; display: grid; gap: 9px; }
+    .confidence-line { height: 5px; border-radius: 99px; background: linear-gradient(90deg, var(--blue), var(--lime)); box-shadow: 0 0 18px rgba(184,243,74,.24); }
+    .confidence-values { display: flex; justify-content: space-between; color: var(--muted); font-size: .75rem; }
+    section { padding: 92px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 38px; }
+    h2 { max-width: 760px; margin-bottom: 0; font-size: clamp(2.15rem, 4.6vw, 4.6rem); line-height: .98; letter-spacing: -.052em; }
+    h3 { letter-spacing: -.025em; }
+    .section-copy { max-width: 480px; margin-bottom: 3px; color: var(--muted); }
+    .panel { border: 1px solid var(--line); border-radius: var(--radius); background: rgba(17,19,24,.84); }
+    .race { padding: 34px; }
+    .race-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 36px; }
+    .race-top h3 { margin: 0; font-size: 1.35rem; }
+    .lane { display: grid; grid-template-columns: 150px 1fr 130px; gap: 20px; align-items: center; margin: 24px 0; }
+    .lane-name strong { display: block; }
+    .lane-name span { color: var(--muted); font-size: .75rem; }
+    .track { height: 50px; border-radius: 11px; background: #0a0c0f; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(255,255,255,.055); }
+    .runner {
+      width: 0;
+      height: 100%;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 14px;
+      color: #111;
+      font-size: .72rem;
+      font-weight: 900;
+      transition-property: width;
+      transition-timing-function: cubic-bezier(.22,.8,.22,1);
+    }
+    .python-runner { background: linear-gradient(90deg, #535a66, #8a939f); transition-duration: 2.45s; }
+    .casulo-runner { background: linear-gradient(90deg, var(--lime-2), var(--lime)); transition-duration: .41s; }
+    .race.running .runner { width: 100%; }
+    .lane-time { text-align: right; }
+    .lane-time strong { display: block; font-size: 1.1rem; }
+    .lane-time span { color: var(--muted); font-size: .72rem; }
+    .same-work {
+      margin-top: 30px;
+      padding: 18px 20px;
+      border: 1px solid rgba(115,167,255,.2);
+      border-radius: 15px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+      background: rgba(115,167,255,.045);
+      text-align: center;
+      color: #d9e5ff;
+      font-size: .82rem;
+      font-weight: 700;
+    }
+    .metrics { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 14px; }
+    .metric { min-height: 160px; padding: 23px; }
+    .metric strong { display: block; margin: 20px 0 5px; font-size: 1.75rem; letter-spacing: -.04em; }
+    .metric span { color: var(--muted); font-size: .8rem; }
+    .metric-icon { color: var(--lime); font-size: .7rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+    .proof-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: 16px; }
+    .proof-stack { display: grid; gap: 12px; }
+    .proof-step { padding: 22px; display: grid; grid-template-columns: 42px 1fr; gap: 15px; align-items: start; }
+    .step-number { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; color: #10130a; background: var(--lime); font-weight: 900; }
+    .proof-step h3 { margin-bottom: 5px; font-size: 1rem; }
+    .proof-step p { margin: 0; color: var(--muted); font-size: .83rem; }
+    .calculator { padding: 32px; background: linear-gradient(155deg, rgba(115,167,255,.09), rgba(17,19,24,.88) 45%); }
+    .calculator h3 { font-size: 1.65rem; }
+    .field { margin: 23px 0; }
+    .field label { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 10px; color: var(--muted); font-size: .8rem; font-weight: 700; }
+    input[type="range"] { width: 100%; accent-color: var(--lime); }
+    .calc-result { margin-top: 31px; padding-top: 26px; border-top: 1px solid var(--line); }
+    .calc-result strong { display: block; color: var(--lime); font-size: clamp(2.8rem, 6vw, 5rem); line-height: 1; letter-spacing: -.06em; }
+    .calc-result span { display: block; margin-top: 9px; color: var(--muted); }
+    .calc-note { margin-top: 24px; padding: 13px 15px; border-radius: 11px; color: #ffcda0; background: rgba(255,180,84,.08); font-size: .75rem; }
+    .boundary { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .boundary-card { padding: 30px; }
+    .boundary-card.good { border-color: rgba(184,243,74,.25); }
+    .boundary-card.bad { border-color: rgba(255,127,120,.19); }
+    .boundary-card ul { margin: 20px 0 0; padding: 0; list-style: none; }
+    .boundary-card li { position: relative; margin: 13px 0; padding-left: 27px; color: #c8c8c6; }
+    .boundary-card.good li::before { content: "✓"; color: var(--lime); }
+    .boundary-card.bad li::before { content: "×"; color: var(--danger); }
+    .boundary-card li::before { position: absolute; left: 0; font-weight: 900; }
+    details { border-top: 1px solid var(--line); }
+    details:first-of-type { border-top: 0; }
+    summary { padding: 23px 4px; display: flex; justify-content: space-between; gap: 20px; cursor: pointer; font-weight: 800; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--lime); font-size: 1.3rem; }
+    details[open] summary::after { content: "−"; }
+    .detail-body { padding: 0 4px 26px; color: var(--muted); }
+    .fingerprint {
+      padding: 15px 17px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 14px;
+      align-items: center;
+      margin-top: 9px;
+      background: #0b0d10;
+    }
+    .fingerprint label { color: var(--muted); font-size: .72rem; font-weight: 800; text-transform: uppercase; }
+    .hash { overflow: hidden; color: #cfd6c0; font-size: .72rem; text-overflow: ellipsis; white-space: nowrap; }
+    .copy {
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      color: var(--muted);
+      background: transparent;
+      cursor: pointer;
+      font-size: .7rem;
+    }
+    .technical-wrap { padding: 10px 30px; }
+    .closing {
+      margin: 30px 0 90px;
+      padding: clamp(32px, 6vw, 72px);
+      border-color: rgba(184,243,74,.24);
+      background: linear-gradient(135deg, rgba(184,243,74,.105), rgba(17,19,24,.86) 55%);
+      text-align: center;
+    }
+    .closing h2 { max-width: 860px; margin: 0 auto 23px; }
+    .closing p { max-width: 720px; margin: 0 auto 30px; color: var(--muted); }
+    footer { padding: 28px 0 52px; border-top: 1px solid var(--line); color: var(--muted); font-size: .77rem; }
+    .footer-grid { display: flex; justify-content: space-between; gap: 30px; }
+    .print-only { display: none; }
+    @media (max-width: 900px) {
+      .hero { min-height: auto; padding-top: 70px; }
+      .hero-grid, .proof-grid { grid-template-columns: 1fr; }
+      .result-card { min-height: 390px; }
+      .metrics { grid-template-columns: 1fr 1fr; }
+      .lane { grid-template-columns: 110px 1fr; }
+      .lane-time { grid-column: 2; text-align: left; margin-top: -16px; }
+      .section-head { display: block; }
+      .section-copy { margin-top: 20px; }
+    }
+    @media (max-width: 600px) {
+      .shell { width: min(calc(100% - 24px), var(--max)); }
+      .nav-inner { min-height: 61px; }
+      .seal span:last-child { display: none; }
+      .hero-grid { gap: 38px; }
+      h1 { font-size: 3.55rem; }
+      .result-card, .race, .calculator, .boundary-card { padding: 23px; border-radius: 20px; }
+      section { padding: 68px 0; }
+      .metrics, .boundary, .same-work { grid-template-columns: 1fr; }
+      .same-work { text-align: left; }
+      .lane { grid-template-columns: 1fr; gap: 9px; }
+      .lane-time { grid-column: 1; margin: 0; }
+      .fingerprint { grid-template-columns: 1fr auto; }
+      .fingerprint label { grid-column: 1 / -1; }
+      .footer-grid { display: block; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+    @media print {
+      :root { color-scheme: light; --ink: #101214; --muted: #41454b; --dim: #666; --night: #fff; --panel: #fff; --panel-2: #f5f6f2; --line: rgba(0,0,0,.16); }
+      body { background: #fff; }
+      .nav { position: static; background: #fff; }
+      .hero { min-height: auto; padding-top: 60px; }
+      .result-card, .panel { box-shadow: none; background: #fff; }
+      .btn, .copy { display: none; }
+      section { padding: 46px 0; break-inside: avoid; }
+      .print-only { display: block; }
+      .screen-only { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Navegação principal">
+    <div class="shell nav-inner">
+      <div class="brand">
+        <i class="brand-mark" aria-hidden="true"></i>
+        <span>Casulo <small>por Teloscorp</small></span>
+      </div>
+      <div class="seal"><i class="seal-dot"></i><span>Evidência congelada</span><span>• 30.07.2026</span></div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero shell">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Linguagem T · marco técnico local</p>
+          <h1>O mesmo trabalho.<br><span>6,10×</span> mais rápido.</h1>
+          <p class="lead">Um experimento ponta a ponta, no mesmo Core i5, com a mesma entrada e saída semanticamente equivalente. Não é uma projeção: é uma medição congelada, delimitada e auditável.</p>
+          <div class="actions screen-only">
+            <a class="btn primary" href="#corrida">Visualizar o ganho <span aria-hidden="true">↓</span></a>
+            <a class="btn ghost" href="#prova">Auditar a prova</a>
+          </div>
+          <p class="tiny print-only">Relatório visual autocontido — evidence/2026-07-30-marco4-6x/index.html</p>
+        </div>
+        <aside class="result-card" aria-label="Resultado principal">
+          <div class="result-label">Mediana pareada · envelope completo</div>
+          <div class="big-number" data-speedup-rounded>6,10×</div>
+          <p class="result-sub">mais vazão computacional no experimento <strong>WaterBalance</strong>.</p>
+          <div class="confidence">
+            <div class="confidence-line"></div>
+            <div class="confidence-values"><span data-ci-lower>5,994×</span><strong>IC95%</strong><span data-ci-upper>6,231×</span></div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section id="corrida">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Veja, não apenas leia</p>
+            <h2>Uma corrida com a chegada matematicamente conferida.</h2>
+          </div>
+          <p class="section-copy">As duas rotas processam o envelope completo. O tempo da animação representa o tempo relativo para concluir exatamente a mesma carga.</p>
+        </div>
+
+        <div class="panel race" id="race">
+          <div class="race-top">
+            <h3>1 milhão de registros equivalentes</h3>
+            <button class="btn primary screen-only" id="raceButton" type="button">Executar comparação</button>
+          </div>
+          <div class="lane">
+            <div class="lane-name"><strong>Python escalar</strong><span>baseline de referência</span></div>
+            <div class="track"><div class="runner python-runner">CHEGOU</div></div>
+            <div class="lane-time"><strong data-python-million>12,33 s</strong><span>tempo normalizado</span></div>
+          </div>
+          <div class="lane">
+            <div class="lane-name"><strong>Casulo / T</strong><span>C99 AOT + SIMD estrito</span></div>
+            <div class="track"><div class="runner casulo-runner">CHEGOU</div></div>
+            <div class="lane-time"><strong data-casulo-million>2,02 s</strong><span>tempo normalizado</span></div>
+          </div>
+          <div class="same-work">
+            <span>✓ Mesma máquina</span>
+            <span>✓ Mesmos 2.000 registros únicos</span>
+            <span>✓ Saída semanticamente equivalente</span>
+          </div>
+        </div>
+
+        <div class="metrics">
+          <div class="panel metric"><div class="metric-icon">Amostragem</div><strong>21 pares</strong><span>ordem de execução controlada</span></div>
+          <div class="panel metric"><div class="metric-icon">Confiança</div><strong>95%</strong><span>bootstrap pareado, 2.000 reamostragens</span></div>
+          <div class="panel metric"><div class="metric-icon">Integridade</div><strong>SHA-256</strong><span>entrada, artefato e saída identificados</span></div>
+          <div class="panel metric"><div class="metric-icon">Semântica</div><strong>Exata</strong><span>equivalência preservada no protocolo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="valor">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Tradução para produtividade</p>
+            <h2>Transforme ganho técnico em tempo de engenharia.</h2>
+          </div>
+          <p class="section-copy">O cálculo abaixo não aumenta o resultado. Apenas aplica o ganho medido a uma carga hipotética para tornar sua escala intuitiva.</p>
+        </div>
+        <div class="proof-grid">
+          <div class="proof-stack">
+            <div class="panel proof-step"><div class="step-number">1</div><div><h3>Ovo · mesma fonte</h3><p>A entrada original é identificada por fingerprint antes da transformação.</p></div></div>
+            <div class="panel proof-step"><div class="step-number">2</div><div><h3>Crisálida · rota especializada</h3><p>A semântica permite retirar interpretação, boxing e movimento desnecessário.</p></div></div>
+            <div class="panel proof-step"><div class="step-number">3</div><div><h3>Metamorfose · execução nativa</h3><p>O cálculo segue por buffers colunares, AOT e SIMD sem fast-math.</p></div></div>
+            <div class="panel proof-step"><div class="step-number">4</div><div><h3>Borboleta · resultado inteiro</h3><p>A saída é manifestada com equivalência e proveniência verificáveis.</p></div></div>
+          </div>
+          <div class="panel calculator">
+            <p class="eyebrow">Calculadora de cenário</p>
+            <h3>Se sua carga atual leva…</h3>
+            <div class="field">
+              <label for="hours"><span>Horas por execução</span><strong id="hoursValue">8 h</strong></label>
+              <input id="hours" type="range" min="1" max="72" value="8" step="1">
+            </div>
+            <div class="field">
+              <label for="runs"><span>Execuções por mês</span><strong id="runsValue">20</strong></label>
+              <input id="runs" type="range" min="1" max="100" value="20" step="1">
+            </div>
+            <div class="calc-result">
+              <strong id="savedHours">133,8 h</strong>
+              <span>potencialmente liberadas por mês nesse cenário</span>
+            </div>
+            <div class="calc-note">Hipótese ilustrativa: pressupõe transferência integral do ganho de 6,095936× para a carga do comprador. A validação real exige piloto no workload dele.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="limites">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Fronteira da alegação</p>
+            <h2>Impressionante porque é preciso.</h2>
+          </div>
+          <p class="section-copy">Uma demonstração confiável diz tanto o que provou quanto o que ainda falta provar.</p>
+        </div>
+        <div class="boundary">
+          <article class="panel boundary-card good">
+            <h3>O resultado demonstra</h3>
+            <ul>
+              <li>ganho ponta a ponta de 6,095936× no experimento declarado;</li>
+              <li>limite inferior do IC95% em 5,994133×;</li>
+              <li>equivalência semântica entre baseline e rota nativa;</li>
+              <li>vetorização AVX2 confirmada pelo compilador;</li>
+              <li>viabilidade da especialização sem descarte silencioso.</li>
+            </ul>
+          </article>
+          <article class="panel boundary-card bad">
+            <h3>O resultado ainda não demonstra</h3>
+            <ul>
+              <li>ganho universal de 6× em qualquer software;</li>
+              <li>equivalência a seis processadores físicos;</li>
+              <li>redução de joules na mesma proporção;</li>
+              <li>desempenho do gêmeo digital FLOOD-RS completo;</li>
+              <li>validação independente ou concessão de patente.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="prova">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Cadeia de evidência</p>
+            <h2>Do número grande ao byte verificável.</h2>
+          </div>
+          <p class="section-copy">Os detalhes abaixo existem para due diligence. O comprador pode começar pela ideia simples e descer até os protocolos e fingerprints.</p>
+        </div>
+        <div class="panel technical-wrap">
+          <details open>
+            <summary>Desenho experimental</summary>
+            <div class="detail-body">
+              <p>Operação WaterBalance; 2.000 registros únicos; 21 amostras pareadas; 5 iterações por amostra; Intel Core i5-1235U; CPython 3.13.2; GCC 16.1.0. O baseline e o Casulo processaram validação, marshal, kernel e manifestação.</p>
+              <p>Python escalar: <strong data-python-ns>12.329,27 ns/registro</strong>. Casulo/T: <strong data-casulo-ns>2.017,69 ns/registro</strong>.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Estatística e equivalência</summary>
+            <div class="detail-body">
+              <p>A mediana dos ganhos pareados foi <strong data-speedup-precise>6,095936×</strong>. O intervalo bootstrap pareado de 95% foi <strong><span data-ci-lower-precise>5,994133×</span>–<span data-ci-upper-precise>6,230838×</span></strong>, com 2.000 reamostragens e seed 10010.</p>
+              <p>O protocolo marcou <code>semantically_equivalent = true</code> e registrou o mesmo fingerprint da saída equivalente.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Fingerprints congelados</summary>
+            <div class="detail-body">
+              <div class="fingerprint"><label>Artefato</label><span class="hash mono" data-hash="artifact"></span><button class="copy" data-copy="artifact" type="button">Copiar</button></div>
+              <div class="fingerprint"><label>Dataset canônico</label><span class="hash mono" data-hash="dataset"></span><button class="copy" data-copy="dataset" type="button">Copiar</button></div>
+              <div class="fingerprint"><label>Saída equivalente</label><span class="hash mono" data-hash="output"></span><button class="copy" data-copy="output" type="button">Copiar</button></div>
+              <div class="fingerprint"><label>Relatório bruto</label><span class="hash mono" data-hash="report"></span><button class="copy" data-copy="report" type="button">Copiar</button></div>
+            </div>
+          </details>
+          <details>
+            <summary>Como reproduzir e contestar</summary>
+            <div class="detail-body">
+              <p>Na raiz do repositório, execute <code>python tools/verify_frozen_evidence.py</code> para verificar a cadeia congelada. Para repetir o experimento científico, use o comando documentado <code>t native-benchmark</code> sobre o artefato e dataset do Sprint 011.</p>
+              <p>Uma divergência é um resultado útil: deve registrar máquina, compilador, versão, amostras cruas e hashes. A tese é falsificável por design.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <section class="panel closing">
+        <p class="eyebrow">Próxima conversa</p>
+        <h2>Não compre a promessa de 6×. Traga uma carga real e teste.</h2>
+        <p>O ativo comercial é a capacidade de especializar tráfego computacional preservando o resultado e a evidência. O próximo passo responsável é um piloto pré-registrado no problema do comprador.</p>
+        <a class="btn primary screen-only" href="#prova">Levar esta prova à due diligence</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <span><strong>Casulo</strong> é um invento original da <strong>Teloscorp</strong> para Otimização de Tráfego de Informação.</span>
+      <span>Marco local · linguagem T 0.11.0-alpha.1 · 30.07.2026</span>
+    </div>
+  </footer>
+
+  <script id="frozen-evidence" type="application/json">
+{
+  "schema": "casulo-frozen-evidence/1.0",
+  "title": "Marco técnico 6x — Linguagem T",
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "status": "FROZEN_LOCAL_EVIDENCE",
+  "benchmark_date": "2026-07-29",
+  "freeze_date": "2026-07-30",
+  "claim": {
+    "short": "6,096× de ganho mediano pareado",
+    "precise": "No experimento WaterBalance declarado, no mesmo Intel Core i5-1235U, o backend nativo da linguagem T executou o envelope completo com mediana pareada 6,095936× mais rápida que o Python escalar semanticamente equivalente.",
+    "scope": "Validação e marshal, kernel C99 e manifestação do envelope em Python.",
+    "not_a_claim": [
+      "Não é uma promessa de 6× para qualquer aplicação.",
+      "Não equivale a seis processadores físicos.",
+      "Não demonstra redução de energia na mesma proporção.",
+      "Não representa ainda o gêmeo digital FLOOD-RS completo.",
+      "Não constitui validação independente nem certificado de patente."
+    ]
+  },
+  "result": {
+    "paired_speedup_median": 6.095936274463703,
+    "paired_speedup_ci95": {
+      "lower": 5.994132806930964,
+      "upper": 6.230837650031585,
+      "method": "paired-bootstrap-median",
+      "confidence": 0.95,
+      "resamples": 2000,
+      "seed": 10010
+    },
+    "ratio_of_medians": 6.11058685923011,
+    "python_scalar_ns_per_record": 12329.27,
+    "casulo_native_ns_per_record": 2017.69,
+    "python_scalar_records_per_second": 81107.80281395411,
+    "casulo_native_records_per_second": 495616.27405597485,
+    "semantically_equivalent": true,
+    "paired_samples": 21,
+    "records_per_sample": 2000,
+    "iterations_per_sample": 5,
+    "duplicate_rate": 0.0
+  },
+  "simd": {
+    "paired_speedup_median": 1.1169287746229402,
+    "paired_speedup_ci95": {
+      "lower": 1.0839713685410064,
+      "upper": 1.134710658662446
+    },
+    "vector_width_bytes": 32,
+    "compiler_confirmed_vectorization": true,
+    "floating_point": "strict-no-reassociation"
+  },
+  "environment": {
+    "cpu": "Intel Core i5-1235U",
+    "operating_system": "Windows 11",
+    "python": "CPython 3.13.2",
+    "compiler": "GCC MinGW-W64 16.1.0",
+    "machine": "AMD64"
+  },
+  "protocols": {
+    "full_benchmark": "casulo-native-benchmark/0.3",
+    "simd_benchmark": "casulo-simd-benchmark/0.1",
+    "simd_execution": "casulo-simd/0.1",
+    "artifact": "casulo-artifact/0.8",
+    "backend": "c99-simd/0.3"
+  },
+  "fingerprints": {
+    "artifact_id": "sha256:eb82896a12b2bf904456c376365b244ae98692e35692c0c2209cf092d1d1ab7f",
+    "dataset_canonical_sha256": "9dd1386e92761aa022ea1362ad8d0aa5bb9f17e41362295ec4c6676d7505eddf",
+    "equivalent_output_sha256": "a5142ceb285e44010c943a869c38ccf2edcc13af491c1fea0f664b7021619990",
+    "source_full_report_file_sha256": "a3a24f9e386bdfafcdb042730ca69e17e9ec269f7156a5c60dfb78ee1a216c70",
+    "source_simd_report_file_sha256": "9e3d9d92d3e284b66b504826aa972a747b8b92b55103ee6c6ae30e5591464aa3"
+  },
+  "sources": {
+    "full_report": "benchmarks/results/2026-07-29-sprint011-simd/native-benchmark-full.json",
+    "simd_report": "benchmarks/results/2026-07-29-sprint011-simd/simd-benchmark-unique.json",
+    "sprint_record": "docs/sprints/011-simd-marco4.md"
+  }
+}
+  </script>
+  <script>
+    (() => {
+      "use strict";
+      const evidence = JSON.parse(document.getElementById("frozen-evidence").textContent);
+      const result = evidence.result;
+      const fmt = (value, digits) => new Intl.NumberFormat("pt-BR", {
+        minimumFractionDigits: digits,
+        maximumFractionDigits: digits
+      }).format(value);
+      const setText = (selector, text) => document.querySelectorAll(selector).forEach(node => { node.textContent = text; });
+
+      setText("[data-speedup-rounded]", `${fmt(result.paired_speedup_median, 2)}×`);
+      setText("[data-speedup-precise]", `${fmt(result.paired_speedup_median, 6)}×`);
+      setText("[data-ci-lower]", `${fmt(result.paired_speedup_ci95.lower, 3)}×`);
+      setText("[data-ci-upper]", `${fmt(result.paired_speedup_ci95.upper, 3)}×`);
+      setText("[data-ci-lower-precise]", `${fmt(result.paired_speedup_ci95.lower, 6)}×`);
+      setText("[data-ci-upper-precise]", `${fmt(result.paired_speedup_ci95.upper, 6)}×`);
+      setText("[data-python-ns]", `${fmt(result.python_scalar_ns_per_record, 2)} ns/registro`);
+      setText("[data-casulo-ns]", `${fmt(result.casulo_native_ns_per_record, 2)} ns/registro`);
+      setText("[data-python-million]", `${fmt(result.python_scalar_ns_per_record / 1000, 2)} s`);
+      setText("[data-casulo-million]", `${fmt(result.casulo_native_ns_per_record / 1000, 2)} s`);
+
+      const hashes = {
+        artifact: evidence.fingerprints.artifact_id,
+        dataset: `sha256:${evidence.fingerprints.dataset_canonical_sha256}`,
+        output: `sha256:${evidence.fingerprints.equivalent_output_sha256}`,
+        report: `sha256:${evidence.fingerprints.source_full_report_file_sha256}`
+      };
+      document.querySelectorAll("[data-hash]").forEach(node => { node.textContent = hashes[node.dataset.hash]; });
+      document.querySelectorAll("[data-copy]").forEach(button => {
+        button.addEventListener("click", async () => {
+          const original = button.textContent;
+          try {
+            await navigator.clipboard.writeText(hashes[button.dataset.copy]);
+            button.textContent = "Copiado";
+          } catch {
+            button.textContent = "Selecione";
+          }
+          window.setTimeout(() => { button.textContent = original; }, 1300);
+        });
+      });
+
+      const race = document.getElementById("race");
+      const raceButton = document.getElementById("raceButton");
+      const runRace = () => {
+        race.classList.remove("running");
+        requestAnimationFrame(() => requestAnimationFrame(() => race.classList.add("running")));
+        raceButton.textContent = "Executar novamente";
+      };
+      raceButton.addEventListener("click", runRace);
+
+      const hours = document.getElementById("hours");
+      const runs = document.getElementById("runs");
+      const updateCalculator = () => {
+        const baseline = Number(hours.value) * Number(runs.value);
+        const optimized = baseline / result.paired_speedup_median;
+        const saved = baseline - optimized;
+        document.getElementById("hoursValue").textContent = `${hours.value} h`;
+        document.getElementById("runsValue").textContent = runs.value;
+        document.getElementById("savedHours").textContent = `${fmt(saved, 1)} h`;
+      };
+      hours.addEventListener("input", updateCalculator);
+      runs.addEventListener("input", updateCalculator);
+      updateCalculator();
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        const observer = new IntersectionObserver(entries => {
+          if (entries.some(entry => entry.isIntersecting)) {
+            runRace();
+            observer.disconnect();
+          }
+        }, { threshold: .45 });
+        observer.observe(race);
+      } else {
+        race.classList.add("running");
+      }
+    })();
+  </script>
+</body>
+</html>

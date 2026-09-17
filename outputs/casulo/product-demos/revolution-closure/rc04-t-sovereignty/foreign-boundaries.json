@@ -1,0 +1,81 @@
+{
+  "coverage": 1.0,
+  "records": [
+    {
+      "api_version": "casulo-artifact/0.8",
+      "artifact_sha256": "5313548499837bbb2ef6dacb1d4413d183c1e553756e6e4c5304403aa077cf0c",
+      "boundary_id": "python-reference-backend",
+      "capabilities": [
+        "manifest"
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "failure_mapping": "typed diagnostic",
+      "implementation_language": "Python",
+      "input_types": [
+        "ValidatedRecord"
+      ],
+      "license": "MIT",
+      "memory_ownership": "caller-owned",
+      "output_types": [
+        "DecisionReceipt"
+      ],
+      "sandbox_profile": "owner-hosted",
+      "schema": "casulo.foreign-boundary/1.0",
+      "threading_model": "single-threaded",
+      "timeout_ms": 5000
+    },
+    {
+      "api_version": "llama.cpp-server/b10362",
+      "artifact_sha256": "76008a268ba602b0a398a5d7d542a686ac279b662d97abc7eee84536d049264e",
+      "boundary_id": "llama-cpp-local-runtime",
+      "capabilities": [
+        "model.infer"
+      ],
+      "effects": [
+        "model.infer"
+      ],
+      "failure_mapping": "GenerativeRuntimeError",
+      "implementation_language": "C++",
+      "input_types": [
+        "PromptEnvelope"
+      ],
+      "license": "MIT",
+      "memory_ownership": "process-isolated",
+      "output_types": [
+        "TokenStream"
+      ],
+      "sandbox_profile": "loopback-owner",
+      "schema": "casulo.foreign-boundary/1.0",
+      "threading_model": "bounded worker",
+      "timeout_ms": 120000
+    },
+    {
+      "api_version": "casulo-native/0.1",
+      "artifact_sha256": "74fe4b1130b40f5090c9944acdd4da0b86c122ab99be5a6b314f61a7e22b810b",
+      "boundary_id": "casulo-native-image",
+      "capabilities": [
+        "memory"
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "failure_mapping": "VM diagnostic",
+      "implementation_language": "Rust/x86-64",
+      "input_types": [
+        "TCAP"
+      ],
+      "license": "MIT",
+      "memory_ownership": "guest-owned",
+      "output_types": [
+        "KernelReceipt"
+      ],
+      "sandbox_profile": "qemu-no-network",
+      "schema": "casulo.foreign-boundary/1.0",
+      "threading_model": "kernel scheduler",
+      "timeout_ms": 120000
+    }
+  ],
+  "schema": "casulo.foreign-boundary-inventory/1.0"
+}

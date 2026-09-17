@@ -1,0 +1,13 @@
+{
+  "schema": "casulo-generative-t-synthesis-failure/1.0",
+  "attempt": 1,
+  "gate": "GENERATIVE_T_SYNTHESIS_FAIL",
+  "stage": "intent-structured-generation",
+  "error": "runtime não produziu JSON válido: empty assistant content",
+  "root_cause": "Qwen3 reasoning mode was not disabled for the structured prompt and exhausted the bounded output before assistant JSON",
+  "partial_result_reused": false,
+  "external_ai_api_used": false,
+  "fake_engine_used": false,
+  "scientific_benchmark": false,
+  "preserved": true
+}

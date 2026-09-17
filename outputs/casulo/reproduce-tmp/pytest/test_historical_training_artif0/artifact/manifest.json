@@ -1,0 +1,48 @@
+{
+  "abi": "casulo-training-abi/0.1",
+  "artifact_id": "sha256:ad49847d27b9a14cdfa95c5f58efce76d06bd547a3ac09be0e806174579bbf29",
+  "backend": "c99-openmp-fused/0.4",
+  "brand": {
+    "invention": "Casulo",
+    "origin": "Teloscorp",
+    "specialty": "Otimização de Tráfego de Informação"
+  },
+  "lowering": {
+    "graph_sha256": "67ee0d7e20c8c955f2c129f1193d020b4aac0953fd0c864ff9f25d0d728a2ec3",
+    "ir_sha256": "4162fc673c71e1b777ec57f7924ed756f5e9a9771ccb5624d38d8cd2cf6e659f",
+    "legacy_role": "equivalence-comparator-only",
+    "protocol": "casulo-learn-native-plan/0.1"
+  },
+  "native_source": {
+    "file": "casulo_training.c",
+    "sha256": "f8435cc96aa750ea068f24edb111f0ba719fda2f545011356946aab87966cf11"
+  },
+  "protocol": "casulo-training-artifact/0.1",
+  "semantics": {
+    "fast_math": false,
+    "precision": "float64",
+    "reassociation": false,
+    "reduction": "contiguous-partitions-worker-order",
+    "training": "full-batch-gradient-descent"
+  },
+  "source": {
+    "file": "source.t",
+    "sha256": "b24746c7b622c7760a685d8fdb8a79d8c2fd8ace966e63e1ffc75c31d12c4948"
+  },
+  "spec": {
+    "activation": "relu",
+    "batch": "full",
+    "epochs": 400,
+    "hidden_features": 8,
+    "input_features": 8,
+    "learning_rate": 0.018,
+    "loss": "mse",
+    "module": "casulo.flood_rs",
+    "name": "FloodSurrogate",
+    "optimizer": "sgd",
+    "output_features": 1,
+    "precision": "float64",
+    "seed": 260730,
+    "target_loss": 0.08
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "artifact_format": "casulo-artifact/0.2",
+  "artifact_id": "sha256:560ff4b760b1f4e48c4dfbcbfa7b6edba2d81fb1449ec7e6578a18026a91daf4",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.2"
+  },
+  "brand": "Casulo",
+  "compiler": {
+    "name": "T",
+    "version": "0.4.0-alpha.4"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "de26602322499c644266059545521094a9254e0a1d59c44e1e7d04655f9e14a0"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "ccabb05fff60b08bb7cc361fe1103ae95198f7fc22d1e9a3470128a8f858ab01",
+    "version": "metamorfose-graph/0.1"
+  },
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "6567ebcc31d5a3843a438f28619516d604edf3369e2c8d4e53bd00987e339e21",
+    "version": "crisalida-ir/0.1"
+  },
+  "module": "casulo.flood_rs",
+  "operations": [
+    {
+      "input_type": "HydroCell",
+      "kind": "condense",
+      "name": "WaterBalance",
+      "output_type": "Number",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "b83b0cdec336019e6a14253bd23c83efa4bf0290c7138a682306c4130eefb588"
+  }
+}

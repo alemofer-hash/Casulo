@@ -1,0 +1,31 @@
+{
+  "schema": "casulo.native-creation-prompt/1.0",
+  "request_text": "Crie: some dois numeros.",
+  "system_text": "ASCII. Responda uma linha: NOME=x;FUNCAO=x;ENTRADA=x;SAIDA=x.",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "sampling": "greedy",
+  "sampling_policy_id": "greedy-creation-v1",
+  "max_output_tokens": 40,
+  "prompt_token_ids": [
+    151644, 8948, 198, 56450, 13, 1800, 618, 3235, 10608, 47673,
+    25, 451, 11408, 25387, 26, 62721, 5049, 46, 25387, 26,
+    1825, 49, 32293, 25387, 26, 7778, 51171, 25387, 13, 151645,
+    198, 151644, 872, 198, 34, 7231, 25, 1045, 50341, 55626,
+    13, 151645, 198, 151644, 77091, 198, 151667, 271, 151668, 271
+  ],
+  "frozen_llama_cpp_oracle": {
+    "output_token_ids": [
+      45, 11408, 28, 8373, 5404, 285, 67737, 436, 26, 62721,
+      5049, 46, 28, 8373, 5404, 285, 67737, 436, 26, 1825,
+      49, 32293, 28, 32615, 16, 11, 32615, 17, 26, 7778,
+      51171, 28, 32361, 13
+    ],
+    "output_text": "NOME=SomeDoisNumeros;FUNCAO=SomeDoisNumeros;ENTRADA=numero1,numero2;SAIDA=resultado."
+  },
+  "constraints": {
+    "network": false,
+    "external_api": false,
+    "real_effects": false,
+    "physical_device_write": false
+  }
+}

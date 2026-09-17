@@ -1,0 +1,4 @@
+{
+  "mutation": "intent_returns_error",
+  "result": "T denied critical decision: mutated_policy_denied"
+}

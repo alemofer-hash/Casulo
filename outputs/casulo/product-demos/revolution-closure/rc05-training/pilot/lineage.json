@@ -1,0 +1,41 @@
+{
+  "contains_rc3_holdout": false,
+  "contains_user_content": false,
+  "dataset_sha256": "c739151f8e2d6766167b988e0ad9ddf3347092945fa9e2ec744820755961219b",
+  "dedup_exact": true,
+  "schema": "casulo.training-lineage/1.0",
+  "split_families": {
+    "test": [
+      "diagnostic-test",
+      "engineering-test",
+      "intent-test",
+      "interface-test",
+      "material-test",
+      "signals-test"
+    ],
+    "train": [
+      "diagnostic-train-a",
+      "diagnostic-train-b",
+      "engineering-train-a",
+      "engineering-train-b",
+      "intent-train-a",
+      "intent-train-b",
+      "interface-train-a",
+      "interface-train-b",
+      "material-train-a",
+      "material-train-b",
+      "signals-train-a",
+      "signals-train-b"
+    ],
+    "valid": [
+      "diagnostic-valid",
+      "engineering-valid",
+      "intent-valid",
+      "interface-valid",
+      "material-valid",
+      "signals-valid"
+    ]
+  },
+  "train_records": 18,
+  "training_split_sha256": "e55ba72aa7f0f6b0fe16c1e051551a03eed06450d42912a7c06d097d41ca5b60"
+}

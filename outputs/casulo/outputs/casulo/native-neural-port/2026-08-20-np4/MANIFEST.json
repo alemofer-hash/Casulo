@@ -1,0 +1,88 @@
+{
+  "schema": "casulo-native-neural-port-evidence/0.1",
+  "campaign_id": "2026-08-20-np4",
+  "state": "NATIVE_COMPLETE_MODEL_PAGED_IO_VALIDATED_FIRST_TOKEN_PENDING",
+  "created_date": "2026-08-20",
+  "source_model": {
+    "file_name": "Qwen3-4B-Q4_K_M.gguf",
+    "bytes": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "copied_into_repository": false,
+    "full_sha256_verified_by_host_before_and_after": true,
+    "full_sha256_computed_by_guest": false
+  },
+  "transport": {
+    "id": "qemu-fw-cfg-dma-read-only/0.1",
+    "item": "opt/com.teloscorp.casulo/model.gguf",
+    "guest_network": false,
+    "host_physical_block_device": false,
+    "physical_device_written": false,
+    "full_model_resident_in_guest": false
+  },
+  "validation": {
+    "python_tests_passed": 16,
+    "rust_tests_passed": 7,
+    "qemu_definitive_boots_passed": 3,
+    "qemu_definitive_boots_total": 3,
+    "missing_model_rejected": true,
+    "truncated_model_rejected": true,
+    "first_model_derived_token": false,
+    "full_neural_inference_executed": false
+  },
+  "sparse_probe_accounting": {
+    "source_bytes": 2497280256,
+    "consumer_bytes": 2433301,
+    "cache_bytes_loaded": 5375232,
+    "cache_pages_loaded": 1334,
+    "dma_operations": 2668,
+    "cache_loaded_percent_of_source": 0.215243,
+    "claim_boundary": "sparse probe I/O accounting only; not model compression, inference performance, or energy"
+  },
+  "artifacts": [
+    {
+      "path": "release/casulo-native-neural-port-np4.img",
+      "bytes": 3211264,
+      "sha256": "3166ec67bd3a719e860bfe2bc58c5b24d0b35fd3194f2c7a9c52f200cca4ca08"
+    },
+    {
+      "path": "release/casulo-native-neural-port-np4.manifest.json",
+      "bytes": 730,
+      "sha256": "6969409d73adb8a2a144a128e8ef0c7ff94e11d25f2d411e6cb9caba24e1be90"
+    },
+    {
+      "path": "outputs/casulo/native-neural-port/2026-08-20-np4/qemu-smoke-and-negative-controls.json",
+      "sha256": "ca6cd8b6f88fa1a570484a4d62140ef5cc99cef54e6572852b9b7fa453eb80f0"
+    },
+    {
+      "path": "outputs/casulo/native-neural-port/2026-08-20-np4/qemu-definitive-3boots.json",
+      "sha256": "0b166af4a871ae42375162e8f39733bd5669f2025d735d79780a2bd991bc6933"
+    },
+    {
+      "path": "outputs/casulo/native-neural-port/2026-08-20-np4/qemu-metrics-1boot.json",
+      "sha256": "660b07bf59a5fe50b8a34143c8beb7821f4e2e4971d37325a1688472b5d21283"
+    }
+  ],
+  "source_hashes": {
+    "os/native-model/src/lib.rs": "941bfec4d0672d4c89fd99374df77e973430e8e18fb5cd6dffc3de106b35e618",
+    "os/kernel/src/memory.rs": "4ad4bc9716eebb79296489cb99be53f899662785e54a2c043ae2a2144d5c3bb4",
+    "os/kernel/src/fw_cfg.rs": "c82a3d5ddaeacbaa3310fbe7f7723e8369e57f1e871ac19404d61224e054bc9e",
+    "os/kernel/src/model_paged_probe.rs": "70a07f0deec898e20af5cd7d89fe0e7dafe3bb9e8d3b9057909a534269f28f06",
+    "os/kernel/src/main.rs": "385ae499ad42351dce9907d7eedc67db254c61bdf7a0a97f503cc995fb038fec",
+    "os/kernel/build.rs": "b1e4962c2226b4f1ca03a3bdbf19c00b5c5838ed0d7ec70f6de4bf522fc5d46b",
+    "os/tools/build_native_neural_port_image.py": "eb9cd157a85f708c010ac7a068aed7bc952e14cc96b9080e32f8a4cd875e07b5",
+    "os/tools/run_native_model_paged_qemu.py": "9d4878079e1f4135e4724429c1daa9067bb21b426a3d7b740a867e41d2b34ee4",
+    "tests/product/test_native_model_paged_runner.py": "dd412d5977e3ceacb949d2152c4a000462158df2b16eb6655faa4caee5ec54dd"
+  },
+  "claims_authorized": [
+    "the complete host-verified GGUF was available read-only to the guest",
+    "the guest parsed the GGUF and consumed authentic sparse pages without full guest residency",
+    "missing, truncated, corrupt and out-of-bounds inputs were rejected"
+  ],
+  "claims_not_authorized": [
+    "first model-derived token",
+    "complete Qwen3 inference in Casulo Native",
+    "model compression",
+    "performance or energy advantage",
+    "physical-hardware storage driver completion"
+  ]
+}

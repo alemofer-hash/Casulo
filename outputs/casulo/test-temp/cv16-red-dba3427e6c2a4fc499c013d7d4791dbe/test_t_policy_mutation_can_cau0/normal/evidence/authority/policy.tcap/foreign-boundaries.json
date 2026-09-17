@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "decision_owner": "T",
+      "name": "casv-tile-primitives",
+      "role": "construct exact bounded predictor candidates selected by T"
+    }
+  ]
+}

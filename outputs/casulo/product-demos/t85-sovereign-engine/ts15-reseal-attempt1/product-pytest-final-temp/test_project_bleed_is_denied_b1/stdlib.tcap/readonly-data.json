@@ -1,0 +1,27 @@
+{
+  "states": {
+    "t.casulo.capabilities": [],
+    "t.casulo.dialogue": [],
+    "t.casulo.intent": [],
+    "t.casulo.jobs": [
+      {
+        "initial": 0,
+        "name": "dispatched",
+        "type": {
+          "arguments": [],
+          "bound": null,
+          "name": "Int"
+        }
+      }
+    ],
+    "t.casulo.materialization": [],
+    "t.casulo.memory_policy": [],
+    "t.casulo.receipts": [],
+    "t.casulo.requirements": [],
+    "t.casulo.simulation": [],
+    "t.casulo.universes": [],
+    "t.core.canonical": [],
+    "t.core.collections": [],
+    "t.core.result": []
+  }
+}

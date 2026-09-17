@@ -1,0 +1,16 @@
+{
+  "finite_package_power": true,
+  "first_timestamp_utc": "2026-08-10T01:49:40.192000+00:00",
+  "gaps_over_5x_median": [],
+  "gate": "PASS",
+  "last_timestamp_utc": "2026-08-10T01:49:55.090000+00:00",
+  "maximum_seconds": 0.277,
+  "median_seconds": 0.253,
+  "minimum_seconds": 0.235,
+  "new_samples": 60,
+  "p95_seconds": 0.2663,
+  "partial_final_line_ignored": false,
+  "source_end_offset": 969683,
+  "source_start_offset": 869965,
+  "strictly_increasing_timestamps": true
+}

@@ -1,0 +1,131 @@
+{
+  "creation_sha256": "270c6ee5a83e82fda956afcc697774ae7d20b94cb0a3e5333c6c28b139faa548",
+  "entry_unit": "creation.unit.memory.read",
+  "project_id": "t-project:f015626ac85a91bca8d942e8",
+  "tests": [
+    {
+      "expected_contains": "MemoryReadInitialization",
+      "input": "{'capabilities': ['memory.read'], 'content': {'behavior': {'autonomy': {'compare_alternatives': true, 'expose_primary_tension': true, 'offer_reversible_cost_option': true}}, 'identity': {'purpose': {'description': 'Fornecer uma análise de trade-offs em decisões técnicas, identificando a tensão principal, comparando alternativas e oferecendo uma opção reversível de custo'}}, 'creation_id': 'creation:open-ended-holdout', 'schema': 'casulo.creation/1.0', 'version': 5}}",
+      "name": "TestMemoryReadInitialization",
+      "unit_id": "creation.unit.memory.read"
+    },
+    {
+      "expected_contains": "PurposeDefinition",
+      "input": "{'content': {'identity': {'purpose': {'description': 'Fornecer uma análise de trade-offs em decisões técnicas, identificando a tensão principal, comparando alternativas e oferecendo uma opção reversível de custo'}}}}",
+      "name": "TestPurposeDefinition",
+      "unit_id": "creation.unit.identity.purpose"
+    },
+    {
+      "expected_contains": "StructuredOutputConstruction",
+      "input": "{'content': {'interface': {'output_format': {'fields': ['tension', 'alternatives', 'reversible_option'], 'type': 'structured'}}}}",
+      "name": "TestStructuredOutputConstruction",
+      "unit_id": "creation.unit.interface.output"
+    },
+    {
+      "expected_contains": "CasuloTraceLogging",
+      "input": "{'capabilities': ['memory.read'], 'content': {'behavior': {'autonomy': {'compare_alternatives': true, 'expose_primary_tension': true, 'offer_reversible_cost_option': true}}, 'identity': {'purpose': {'description': 'Fornecer uma análise de trade-offs em decisões técnicas, identificando a tensão principal, comparando alternativas e oferecendo uma opção reversível de custo'}}, 'creation_id': 'creation:open-ended-holdout', 'schema': 'casulo.creation/1.0', 'version': 5}}",
+      "name": "TestCasuloTraceLogging",
+      "unit_id": "creation.unit.casulo.tracing"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "dc5a6e595c3cce7c4a1f4210d8e7b28e2c8b649c8878ffb96ab488818c2ade2b",
+    "ended_monotonic_ns": 34271147118500,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5",
+    "output_sha256": "f015626ac85a91bca8d942e86a3f282c988189046c7e6737db0c7098eec2cd52",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 34130929846200,
+    "stream_events": 897
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule memory.read\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Initialize in CreationSpec\n  effects [manifest]\n  emit \"MemoryReadInitialization\"\n",
+      "unit_id": "creation.unit.memory.read",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "content",
+          "behavior",
+          "autonomy",
+          "compare_alternatives"
+        ],
+        [
+          "content",
+          "behavior",
+          "autonomy",
+          "expose_primary_tension"
+        ],
+        [
+          "content",
+          "behavior",
+          "autonomy",
+          "offer_reversible_cost_option"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation.unit.memory.read"
+      ],
+      "source": "language T/1.1\nmodule identity\n\ncapability manifest\n\nfield Purpose\n  trace value: Text\n\ncondense Define in Purpose\n  effects [manifest]\n  emit \"PurposeDefinition\"\n",
+      "unit_id": "creation.unit.identity.purpose",
+      "watch_paths": [
+        [
+          "content",
+          "identity",
+          "purpose",
+          "description"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation.unit.identity.purpose"
+      ],
+      "source": "language T/1.1\nmodule interface\n\ncapability manifest\n\nfield OutputFormat\n  trace value: Text\n\ncondense Construct in OutputFormat\n  effects [manifest]\n  emit \"StructuredOutputConstruction\"\n",
+      "unit_id": "creation.unit.interface.output",
+      "watch_paths": [
+        [
+          "content",
+          "interface",
+          "output_format",
+          "fields"
+        ],
+        [
+          "content",
+          "interface",
+          "output_format",
+          "type"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation.unit.interface.output"
+      ],
+      "source": "language T/1.1\nmodule casulo\n\ncapability manifest\n\nfield TraceValue\n  trace value: Text\n\ncondense Log in TraceValue\n  effects [manifest]\n  emit \"CasuloTraceLogging\"\n",
+      "unit_id": "creation.unit.casulo.tracing",
+      "watch_paths": [
+        [
+          "capabilities",
+          "manifest"
+        ],
+        [
+          "trace_value",
+          "Text"
+        ]
+      ]
+    }
+  ]
+}

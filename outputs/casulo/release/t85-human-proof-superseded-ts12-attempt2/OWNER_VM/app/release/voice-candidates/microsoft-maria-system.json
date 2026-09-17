@@ -1,0 +1,20 @@
+{
+  "schema": "casulo-system-voice-card/1.0",
+  "status": "HOST_SYSTEM_FALLBACK_NOT_REDISTRIBUTED",
+  "name": "Microsoft Maria Desktop",
+  "locale": "pt-BR",
+  "platform": "Windows",
+  "source": "System.Speech installed voice registry",
+  "license": "governed by the host Windows license; not redistributed by Casulo",
+  "model_hash": null,
+  "redistributed": false,
+  "enabled_by_default": false,
+  "stream_format": "PCM_S16LE_16000_MONO",
+  "streaming": false,
+  "limitations": [
+    "host component, not portable",
+    "synthesis is buffered before PCM playback",
+    "voice availability varies by Windows installation",
+    "does not satisfy the future redistributable TTS decision"
+  ]
+}

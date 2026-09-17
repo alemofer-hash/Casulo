@@ -1,0 +1,42 @@
+{
+  "boundaries": [
+    {
+      "arc8_action": "MANIFEST_ONLY",
+      "authority": "FOREIGN_NUMERICAL_PRIMITIVE_UNDER_CASULO_POLICY",
+      "id": "owner-neural-inference",
+      "implementation": "Qwen3-4B GGUF via llama.cpp/ggml"
+    },
+    {
+      "arc8_action": "MANIFEST_ONLY",
+      "authority": "FOREIGN_NUMERICAL_PRIMITIVE_UNDER_CASULO_POLICY",
+      "id": "owner-asr",
+      "implementation": "Whisper model via whisper.cpp/ggml"
+    },
+    {
+      "arc8_action": "EQUIVALENT_SPECIALIZATION_GOVERNED_BY_T",
+      "authority": "FIRST_PARTY_PRODUCT_KERNEL",
+      "id": "living-memory-similarity",
+      "implementation": "living-memory/dense-signed-cosine-python-v1"
+    },
+    {
+      "arc8_action": "OUT_OF_GENERIC_OWNER_HOT_PATH",
+      "authority": "FIRST_PARTY_DOMAIN_ADAPTER",
+      "id": "einstein-local-evaluator",
+      "implementation": "owner Python 4D bounded differential geometry kernel"
+    },
+    {
+      "arc8_action": "NO_SOVEREIGNTY_CLAIM",
+      "authority": "RESEARCH_STACK_NOT_OWNER_RUNTIME_PATH",
+      "id": "historical-tensor-stack",
+      "implementation": "T tensor JSON IR plus C99/OpenMP backend"
+    }
+  ],
+  "claim_class": "PRODUCT_DIAGNOSTIC_NOT_SCIENTIFIC_BENCHMARK",
+  "forbidden_claims": [
+    "T replaces Qwen or llama.cpp matrix kernels",
+    "universal linear algebra superiority",
+    "scientific or energetic advantage",
+    "the historical tensor extension is the current owner inference path"
+  ],
+  "schema": "casulo.math-boundary/1.0"
+}

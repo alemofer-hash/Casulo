@@ -1,0 +1,13 @@
+{
+  "schema": "casulo.t85.failed-attempt/1.0",
+  "state": "FAILED_VALIDATOR_SCHEMA_DIVERGENCE",
+  "preserved": true,
+  "completed_agents": ["data_validator_01"],
+  "failed_case": "interactive-01",
+  "attempts": 3,
+  "diagnostic": "constraint diagnostic/event is invalid",
+  "root_cause": "JSON schema allowed 48-character error identifiers while the post-validator accidentally applied the 32-character module identifier bound",
+  "repair": "use the same 48-character bound in schema and post-validation",
+  "rejected_candidates_preserved_in_exception_log": true,
+  "next_attempt": "ts07-nontrivial-holdouts-attempt5"
+}

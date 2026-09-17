@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "file": "sources/owner.generated.some_dois_numeros.t",
+      "module": "owner.generated.some_dois_numeros",
+      "sha256": "cc120e8f626c222674f8d950027f2265a05a59bd2167689bc746273f557ea0b3"
+    }
+  ]
+}

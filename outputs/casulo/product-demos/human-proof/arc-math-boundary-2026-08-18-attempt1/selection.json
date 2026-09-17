@@ -1,0 +1,72 @@
+{
+  "equivalence": {
+    "candidate_kernel": "living-memory/sparse-signed-cosine-python-v1",
+    "candidate_output_hash": "b626514b4b71997aa4ef5a7af489b0d60fe888fd20a24a1ee33d09072b3526a0",
+    "cases": 10,
+    "max_absolute_difference": 0.0,
+    "passed": true,
+    "receipt_hash": "71bba98051aadd7b116abbdbd36cf503bc6e7a8a162d874a38ff07d0cc7d81f4",
+    "reference_kernel": "living-memory/dense-signed-cosine-python-v1",
+    "reference_output_hash": "b626514b4b71997aa4ef5a7af489b0d60fe888fd20a24a1ee33d09072b3526a0",
+    "schema": "casulo.math-kernel-equivalence/1.0",
+    "tolerance": 1e-15
+  },
+  "inventory_hash": "ab11054fac745425ba3b786a7b7e56bdee9eeed81cadd9872e300c706b9e233a",
+  "profile": {
+    "adoption_ratio_threshold": 0.95,
+    "candidate_logical_slots": 86,
+    "candidate_median_ns": 65404000,
+    "candidate_reference_ratio": 0.763197016478913,
+    "candidate_wins": true,
+    "checksum": 4805.913782584118,
+    "classification": "SHORT_PRODUCT_DIAGNOSTIC_NOT_SCIENTIFIC_BENCHMARK",
+    "pairs_per_round": 4000,
+    "reference_logical_slots": 1280,
+    "reference_median_ns": 85697400,
+    "rounds": 7,
+    "schema": "casulo.math-kernel-profile/1.0",
+    "traffic_reduced": true
+  },
+  "reason": "T_ADOPTED_SPECIALIZED",
+  "schema": "casulo.owner-math-kernel-selection/1.0",
+  "selected_kernel": "living-memory/sparse-signed-cosine-python-v1",
+  "selection_hash": "ed0d74c2f1ae84fd05917e624d3b1b77e553c1dbf12902764aa6f2b713debd68",
+  "specialized_adopted": true,
+  "t_call": {
+    "function": "decide",
+    "module": "owner.math.boundary_policy",
+    "observable": {
+      "diagnostics": [],
+      "events": [],
+      "jobs": [],
+      "requested_effects": [],
+      "result": {
+        "kind": "ok",
+        "value": "ADOPT_SPECIALIZED"
+      },
+      "state_delta": {
+        "adopted_kernels": 1
+      }
+    },
+    "receipt": {
+      "canonical_input_hash": "2899f5e9a69f5e079dd13d4167d8bbf84aca1a912e12586523fa265a00fe17ab",
+      "canonical_output_hash": "2bfdf73f5ad4b506877c3fe65d19c7c7804997b613b958e7c4502a5a75f931f5",
+      "decision_id": "decision:2bfdf73f5ad4b506877c3fe6",
+      "effects_requested": [],
+      "foreign_calls": [],
+      "grants_consumed": [],
+      "monotonic_timestamp_ns": 1,
+      "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_hash": "e17cdcb1fbf0c538771521624f773fcc49fb25071eec7f18f37b8cf6665d7272",
+      "result": "ok",
+      "runtime_function": "owner.math.boundary_policy::decide",
+      "runtime_id": "t-runtime/rust-2.0",
+      "schema": "casulo.t-decision-receipt/2.0",
+      "scope_id": "product:living_memory",
+      "surface_id": "math_kernel_adoption",
+      "t_ir_hash": "155e3c4d94ecb06e69f9be8f717830ec25a5a01cebcbc31fd05a1ccb98995624",
+      "t_source_hash": "d370578c9e9ea9a3c7c0a44134b9556ae697b30e241ece177be1f5874ee3d2ae",
+      "tcap_hash": "a76102f2ccfeeb4c2bb8103884cc639634782c209bbc68d1bd810f14646ea160"
+    }
+  }
+}

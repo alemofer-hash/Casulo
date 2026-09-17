@@ -1,0 +1,18 @@
+{
+  "schema": "casulo-qemu-boot/0.1",
+  "attempts": 1,
+  "passed": 0,
+  "all_pass": false,
+  "framebuffer_painted_all": false,
+  "host_block_devices_attached": false,
+  "results": [
+    {
+      "returncode": -1,
+      "timed_out": true,
+      "marker": false,
+      "framebuffer_painted": false,
+      "serial": "\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01H\u001b[2J\u001b[01;01H\u001b[=3h\u001b[2J\u001b[01;01HBdsDxe: loading Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nBdsDxe: starting Boot0001 \"UEFI Misc Device\" from PciRoot(0x0)/Pci(0x2,0x0)\nINFO : Framebuffer info: FrameBufferInfo { byte_len: 4096000, width: 1280, height: 800, pixel_format: Bgr, bytes_per_pixel: 4, stride: 1280 }\nINFO : UEFI bootloader started\nINFO : Using framebuffer at 0x80000000\nINFO : Reading configuration from disk was successful\nINFO : Trying to load ramdisk via Disk\nINFO : Loaded ramdisk\nTRACE: exiting boot services\nTRACE: switching to new level 4 table\nINFO : New page table at: PhysFrame[4KiB](0x101000)\nINFO : Elf file loaded at Pointer {\n    addr: 0x000000000e15f000,\n    metadata: 592024,\n}\nINFO : virtual_address_offset: 0x10000000000\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 0, physical_addr: 0, file_size: ba0c, mem_size: ba0c, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: ba10, virtual_addr: ca10, physical_addr: ca10, file_size: 3fc96, mem_size: 3fc96, align: 1000 })\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 4b6a8, virtual_addr: 4d6a8, physical_addr: 4d6a8, file_size: 3c00, mem_size: 4958, align: 1000 })\nINFO : Mapping bss section\nINFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 4f2a8, virtual_addr: 522a8, physical_addr: 522a8, file_size: 20, mem_size: 131e0, align: 1000 })\nINFO : Mapping bss section\nINFO : Entry point at: 0x1000002b800\nINFO : Creating GDT at PhysAddr(0x144000)\nINFO : Map framebuffer\nINFO : Map physical memory\nINFO : Allocate bootinfo\nINFO : Create Memory Map\nINFO : Create bootinfo\nINFO : Jumping to kernel entry point at VirtAddr(0x1000002b800)\nSMP_START_ATTEMPT=1\nSMP_START_RETURNED=1\nRING3_CONSOLE_WRITE=PASS\nUNCONTAINED_PAGE_FAULT addr=0xfff000 error=PageFaultErrorCode(USER_MODE)\nCASULO_KERNEL_FATAL=UNCONTAINED_PAGE_FAULT\n",
+      "pass": false
+    }
+  ]
+}

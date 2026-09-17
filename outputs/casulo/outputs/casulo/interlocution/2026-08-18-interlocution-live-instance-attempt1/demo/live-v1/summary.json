@@ -1,0 +1,12 @@
+{
+  "actual_full_trainings": 1,
+  "events_sha256": "7950cd81b5297eac20e54a02970220e23843548672b6e74cd39f434bcfe03640",
+  "external_api": false,
+  "fake_engine": false,
+  "fixture": false,
+  "replay": false,
+  "schema": "casulo.interlocution-live-demo/1.0",
+  "status": "PASS",
+  "steps": 12,
+  "summary_sha256": "f81b859afae640f2f423ece7b6c98567339f240c81a38c8a674fff4523433d37"
+}

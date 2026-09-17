@@ -1,0 +1,35 @@
+{
+  "observable": {
+    "diagnostics": [],
+    "events": [],
+    "jobs": [],
+    "requested_effects": [],
+    "result": {
+      "kind": "ok",
+      "value": {
+        "decision": "PUBLISH"
+      }
+    },
+    "state_delta": {}
+  },
+  "runtime_receipt": {
+    "canonical_input_hash": "faf13dee81854a0036fbe1888d6ee4d596a8ee608d2f22c478cd938f7ab7e952",
+    "canonical_output_hash": "39a2e54e73c07afa40f69400a438f3339fe189d951751675d4a5dd73d4168f65",
+    "decision_id": "decision:39a2e54e73c07afa40f69400",
+    "effects_requested": [],
+    "foreign_calls": [],
+    "grants_consumed": [],
+    "monotonic_timestamp_ns": 1,
+    "previous_receipt_hash": "47bc8847fa846ffb0598ff5cdb6bfd714200f41216dc2317053ab87cd99b6079",
+    "receipt_hash": "af2ba30906c203329fd09290d92a4c8fd5ffb4b21485c0278e8389b21cef26b8",
+    "result": "ok",
+    "runtime_function": "research.interlocution.holdout.holdout_linear_mae_v1.equivalence_acceptance::judge",
+    "runtime_id": "t-runtime/rust-2.0",
+    "schema": "casulo.t-decision-receipt/2.0",
+    "scope_id": "holdout-linear-mae-v1",
+    "surface_id": "equivalence_acceptance",
+    "t_ir_hash": "1eb2d75e3a8fd1bd3ab52ae3d2243fd1d70f1e69eda84b7f8b1575885476452c",
+    "t_source_hash": "0c4271b28457fc0e49bb0441b2571d332ecd7d78df47d469afa9766b5826d792",
+    "tcap_hash": "7226892c88f14a4bf4028ba17e3fdf26d05acc701e9003ecd75253ab92dc628c"
+  }
+}

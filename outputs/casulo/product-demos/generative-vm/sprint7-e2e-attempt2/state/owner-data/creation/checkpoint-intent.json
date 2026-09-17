@@ -1,0 +1,164 @@
+{
+  "delta": {
+    "affected_paths": [
+      [
+        "identity",
+        "name"
+      ],
+      [
+        "purpose",
+        "description"
+      ],
+      [
+        "behavior",
+        "autonomy"
+      ],
+      [
+        "behavior",
+        "constraint"
+      ],
+      [
+        "interface",
+        "input"
+      ],
+      [
+        "interface",
+        "output"
+      ],
+      [
+        "data",
+        "type"
+      ],
+      [
+        "output",
+        "format"
+      ]
+    ],
+    "base_version": 0,
+    "confidence": 0.85,
+    "confirmation_state": "PROPOSED",
+    "creation_id": "creation:open-ended-holdout",
+    "delta_id": "intent:gen:a553f7dbca8a07ab416e5b61",
+    "operations": [
+      {
+        "action": "set",
+        "path": [
+          "identity",
+          "name"
+        ],
+        "value": {
+          "agent": "Bússola de Reversibilidade"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "purpose",
+          "description"
+        ],
+        "value": {
+          "identifica_hipotese_frágil": true,
+          "propoe_verificacao_pequena": true,
+          "recebe_decisao_arquitetura": true,
+          "termina_passo_reversivel": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "autonomy"
+        ],
+        "value": {
+          "identifica_hipotese_frágil": true,
+          "propoe_verificacao_pequena": true,
+          "recebe_decisao_arquitetura": true,
+          "termina_passo_reversivel": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "behavior",
+          "constraint"
+        ],
+        "value": {
+          "não_executa_efitos_reais": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "input"
+        ],
+        "value": {
+          "decisao_arquitetura": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "interface",
+          "output"
+        ],
+        "value": {
+          "hipotese_frágil": true,
+          "passo_reversivel": true,
+          "verificacao_pequena": true
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "data",
+          "type"
+        ],
+        "value": {
+          "hipotese_frágil": "string",
+          "passo_reversivel": "string",
+          "verificacao_pequena": "string"
+        }
+      },
+      {
+        "action": "set",
+        "path": [
+          "output",
+          "format"
+        ],
+        "value": {
+          "hipotese_frágil": "text",
+          "passo_reversivel": "text",
+          "verificacao_pequena": "text"
+        }
+      }
+    ],
+    "rationale": "A proposta visa definir uma nova CreationSpec que define o comportamento e a identidade do agente Bússola de Reversibilidade, com base na fala humana fornecida.",
+    "schema": "casulo.intent-delta/1.0",
+    "source_event_ids": [
+      "voice:g5:novel-idea"
+    ]
+  },
+  "requested_capabilities": [
+    "recebe_decisao_arquitetura",
+    "identifica_hipotese_frágil",
+    "propoe_verificacao_pequena",
+    "termina_passo_reversivel"
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "1756d0995dca545ab1571155bec2015b799cecbda9d124e711aec7da28127804",
+    "ended_monotonic_ns": 36416143163100,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "intent:voice:g5:novel-idea",
+    "output_sha256": "a553f7dbca8a07ab416e5b61be2c3fac3449ca9135f051c386fc41f8cd8d0a40",
+    "sampling_policy_id": "casulo-sampling-planning-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 36336633389800,
+    "stream_events": 537
+  }
+}

@@ -1,0 +1,51 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.p12
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Rust
+target/
+
+# Node/frontend
+node_modules/
+.next/
+dist/
+coverage/
+
+# General build/cache
+build/
+out/
+tmp/
+temp/
+.cache/
+*.log
+
+# Local models and generated indexes
+models/**/*.gguf
+models/**/*.bin
+runtime-data/
+indexes/
+audio-temp/
+
+# OS/editor
+Thumbs.db
+.DS_Store
+*.swp
+
+# Preserve lockfiles: Cargo.lock, package-lock.json, pnpm-lock.yaml and similar
+# are intentionally NOT ignored.
+

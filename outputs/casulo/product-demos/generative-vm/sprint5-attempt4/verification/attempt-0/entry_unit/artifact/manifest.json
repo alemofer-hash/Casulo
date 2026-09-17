@@ -1,0 +1,101 @@
+{
+  "artifact_format": "casulo-artifact/0.8",
+  "artifact_id": "sha256:64264125d54163c5afd3c774b30f5ee4a226286a3c92d3bb48c00faca404ae58",
+  "backend": {
+    "name": "Python de referência",
+    "version": "python-reference/0.4.1"
+  },
+  "brand": "Casulo",
+  "capability_requirements": [
+    "manifest"
+  ],
+  "compiler": {
+    "name": "T",
+    "version": "0.23.0-alpha.1"
+  },
+  "executable": {
+    "file": "casulo_artifact.py",
+    "language": "python",
+    "requires": ">=3.11",
+    "sha256": "05b3879f19c976c3568cbab8c902fe510db740b6e0d76239afdc05c265f05a69"
+  },
+  "graph": {
+    "file": "metamorfose.graph.json",
+    "sha256": "df6c3b10368910bb1e3c055098076565bf85dc66c7539e2bc4c482320aaa8652",
+    "version": "metamorfose-graph/1.0"
+  },
+  "imported_records": {},
+  "imported_types": [],
+  "ir": {
+    "file": "crisalida.ir.json",
+    "sha256": "61d9e5551d2b6fcf0a80ec19cff21f6f4ced0fba2949b97a380ed984299c6830",
+    "version": "crisalida-ir/1.0"
+  },
+  "language": "T/1.1",
+  "module": "entry",
+  "native": {
+    "abi": {
+      "file": "casulo_native.abi.json",
+      "sha256": "5ad05fc3469ab1bd1f195707c7c3d48b482d10dc5295ab1d01ab2a03b6d8a41c"
+    },
+    "backend": "c99-simd/0.3",
+    "operations": [
+      {
+        "eligible": false,
+        "index": 0,
+        "input_fields": [
+          "value"
+        ],
+        "input_type": "EntryPoint",
+        "judgements": [],
+        "name": "Start",
+        "output_type": "Text",
+        "reason": "entrada precisa ser um field não vazio composto apenas por Number",
+        "restrictions": [],
+        "stabilized": [],
+        "vectorization": {
+          "floating_point": "strict-no-reassociation",
+          "guard_phase": false,
+          "independent_records": false,
+          "protocol": "casulo-simd/0.1"
+        }
+      }
+    ],
+    "protocol": "casulo-native-abi/0.1",
+    "source": {
+      "file": "casulo_native.c",
+      "language": "c99",
+      "sha256": "749863dff5d83d3cabb9cc2f9f89e7f3bc0c3a1f652146d6ec358037a86ad45c"
+    }
+  },
+  "operations": [
+    {
+      "capability_effects": [
+        "manifest"
+      ],
+      "input_type": "EntryPoint",
+      "kind": "condense",
+      "name": "Start",
+      "optimization": {
+        "buffer_protocol": null,
+        "cache_scope": "batch-local",
+        "cacheable": true,
+        "deterministic": true,
+        "effects": [
+          "manifest"
+        ],
+        "estimated_cost": 1,
+        "key_protocol": "casulo-structural-key/0.1",
+        "manifestation": "inline"
+      },
+      "output_type": "Text",
+      "target_type": null
+    }
+  ],
+  "origin": "Teloscorp",
+  "source": {
+    "encoding": "utf-8",
+    "file": "source.t",
+    "sha256": "56b6b1256b12b49309eb562e66097b859820366f5e6de93f00976ccc16ca2ac2"
+  }
+}

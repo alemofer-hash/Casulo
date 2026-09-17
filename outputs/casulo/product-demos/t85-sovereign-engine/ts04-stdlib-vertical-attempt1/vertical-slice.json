@@ -1,0 +1,609 @@
+{
+  "effects_requested": [
+    "simulation",
+    "manifest"
+  ],
+  "expected_modules": [
+    "t.core.result",
+    "t.core.collections",
+    "t.core.canonical",
+    "t.casulo.intent",
+    "t.casulo.requirements",
+    "t.casulo.capabilities",
+    "t.casulo.memory_policy",
+    "t.casulo.jobs",
+    "t.casulo.universes",
+    "t.casulo.simulation",
+    "t.casulo.materialization",
+    "t.casulo.dialogue",
+    "t.casulo.receipts"
+  ],
+  "final_value": "SEALED",
+  "foreign_decisions": [],
+  "gate": "TS4_T_STDLIB_VERTICAL_SLICE",
+  "module_count": 13,
+  "real_effects_executed": [],
+  "receipt_chain": [
+    "812c51e7219a1e938ec4c6bd4f5fc4877389d808b2dcd10e95903b72fe7bb051",
+    "c45beb6ea335529b211d73367c82183b1c15297e3c5953c1744c8a7d600e1dfd",
+    "1c3cd3b3c10d5152cf9847f43e08889333c9438647c702fa27e58242e19afe62",
+    "11453b12f392da7247795c7776283a6ff09597dcfd2ae8724c42d12c52ed40a1",
+    "b9bee21e5511737253b6647d4b23727ec9954eb161e3164287b78e0f3c80505b",
+    "25a80cada9493769d678a682572f2d1e2909146af9b0f4512d9ffe616e7c1c41",
+    "8abe23fffbf3cb3616a3b439be6e1ba6fd7c106b6cad214384bded7b806fcc00",
+    "f4e67649d55969f46d9067f3ef372eed260dd07efb9ac2c90dc8bcf96c42a6ab",
+    "36b1b4f4b50114f9e6c25a56570dcd98665e6f3058b7dcc9d15ffc14521378b9",
+    "116476008706a13abffc687abc4f67a312953f8872edc50d5deecc4358e88b00",
+    "f3eb4ad1753c2a85d613d848cecc192436886e70de8f80f1e0304208ce9a41bd",
+    "56abaf54f9e33fcb8874f966980363d6381ae2abd3427141cdba44b334c8c90a",
+    "3579a03a14bfa791bcbe94b69004568e4c9c5eb48afffa3158431cf01b64ec87"
+  ],
+  "runtime": "t-runtime/rust-2.0",
+  "schema": "casulo.t-stdlib-run/2.0",
+  "scientific_benchmark": "NOT_STARTED",
+  "stages": [
+    {
+      "index": 1,
+      "input": {
+        "status": "PASS"
+      },
+      "module": "t.core.result",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "PASS"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "783b173fb8eec97c19a27521573cd90ff71aaae2533a2cba68b777e558748e43",
+        "canonical_output_hash": "2b1e7614668cf494d533a354355b7f648ff8f79946628173982dfeaab22fc1a8",
+        "decision_id": "decision:2b1e7614668cf494d533a354",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "812c51e7219a1e938ec4c6bd4f5fc4877389d808b2dcd10e95903b72fe7bb051",
+        "result": "ok",
+        "runtime_function": "t.core.result::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "agent_behavior",
+        "t_ir_hash": "ad40e78cd14e24e8d55fed148437ba37ea41dc32ec8fcb6bde027daabc72bfb8",
+        "t_source_hash": "7f376b68037ed8cfc4a02c0786f7a83a7f8840276f1a330e51f600bd0e01d783",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "agent_behavior"
+    },
+    {
+      "index": 2,
+      "input": {
+        "previous": "PASS",
+        "statuses": [
+          "PASS",
+          "PASS"
+        ]
+      },
+      "module": "t.core.collections",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "ALL_PASS"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "8d9581935aba3b090e22e69faee8a09ff151b0ff08c89a9503cb7c6937d1c0f5",
+        "canonical_output_hash": "afe1e47881fade798b9b43a23333681af55e1701e958e399d384092adf03e279",
+        "decision_id": "decision:afe1e47881fade798b9b43a2",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "812c51e7219a1e938ec4c6bd4f5fc4877389d808b2dcd10e95903b72fe7bb051",
+        "receipt_hash": "c45beb6ea335529b211d73367c82183b1c15297e3c5953c1744c8a7d600e1dfd",
+        "result": "ok",
+        "runtime_function": "t.core.collections::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "hard_requirement_fulfillment",
+        "t_ir_hash": "e6188e8b49289b407ff659497244c71fb365350a6226c98923287a1db13fbb47",
+        "t_source_hash": "42a3705824428f488fd0c68f345a79a49c1981688c8ffd4d72690a2841552e21",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "hard_requirement_fulfillment"
+    },
+    {
+      "index": 3,
+      "input": {
+        "previous": "ALL_PASS",
+        "schema_supported": true
+      },
+      "module": "t.core.canonical",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "CANONICAL"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "7d04234fa527234cfa3d7979232d08faeccbe76dee6d22ebe1ef46c040ee6317",
+        "canonical_output_hash": "161db3a401ae3c51ca7beb1be32d6f41941d19d85c4f7d01227de79f16a98cb4",
+        "decision_id": "decision:161db3a401ae3c51ca7beb1b",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "c45beb6ea335529b211d73367c82183b1c15297e3c5953c1744c8a7d600e1dfd",
+        "receipt_hash": "1c3cd3b3c10d5152cf9847f43e08889333c9438647c702fa27e58242e19afe62",
+        "result": "ok",
+        "runtime_function": "t.core.canonical::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "agent_behavior",
+        "t_ir_hash": "b8c23e7c71ccad594d12011afb8d65cf0cba915398f5f059df26f7ddc43a49d4",
+        "t_source_hash": "94d2d4cc4454858c6dee014c9989cf954f63a2643d864a36ea209c912671bd1c",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "agent_behavior"
+    },
+    {
+      "index": 4,
+      "input": {
+        "confirmed": true,
+        "material": true,
+        "previous": "CANONICAL"
+      },
+      "module": "t.casulo.intent",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "MATERIAL"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "c0d05c6e98c6286dfc783455b8be8ef04a1896eb37fee006735edf4df3f0263c",
+        "canonical_output_hash": "4fc7a91f1e7192121108526673207428ebd55194a7f67b7d4116d135a6404fae",
+        "decision_id": "decision:4fc7a91f1e71921211085266",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "1c3cd3b3c10d5152cf9847f43e08889333c9438647c702fa27e58242e19afe62",
+        "receipt_hash": "11453b12f392da7247795c7776283a6ff09597dcfd2ae8724c42d12c52ed40a1",
+        "result": "ok",
+        "runtime_function": "t.casulo.intent::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "material_intent",
+        "t_ir_hash": "a35456f395d87dd44e72fbb9098edcdf725ba2d281e06e63a4fb0d435bbcc8d5",
+        "t_source_hash": "14782b1b13b311dd1fa0e1352d9cc5871754470eff21fa7e727969f15cfed8cb",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "material_intent"
+    },
+    {
+      "index": 5,
+      "input": {
+        "hard_statuses": [
+          "PASS",
+          "PASS"
+        ],
+        "previous": "MATERIAL"
+      },
+      "module": "t.casulo.requirements",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "VERIFIED"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "86e3de681c686d1d2db05e345d29bec2422d6d5686c1dbc7a09dad24f89e90d7",
+        "canonical_output_hash": "fb31c8bfbc1e2f1e9f6de948868ef5d3438bcfd0c92f4b86b3e305a4b419a8ca",
+        "decision_id": "decision:fb31c8bfbc1e2f1e9f6de948",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "11453b12f392da7247795c7776283a6ff09597dcfd2ae8724c42d12c52ed40a1",
+        "receipt_hash": "b9bee21e5511737253b6647d4b23727ec9954eb161e3164287b78e0f3c80505b",
+        "result": "ok",
+        "runtime_function": "t.casulo.requirements::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "hard_requirement_fulfillment",
+        "t_ir_hash": "a9a61ac67385d0238c690e5c75032c3f5c8d165148c739dc16f93ca7c76acbf2",
+        "t_source_hash": "fcb34d9eceb44c3b7669ebaa10d8d45ac1c33f244270616e041a391c4bec355c",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "hard_requirement_fulfillment"
+    },
+    {
+      "index": 6,
+      "input": {
+        "granted": [
+          "simulation",
+          "manifest"
+        ],
+        "previous": "VERIFIED",
+        "requested": [
+          "simulation",
+          "manifest"
+        ]
+      },
+      "module": "t.casulo.capabilities",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "AUTHORIZED"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "bbc151049247468d13e4e7f6dbd2e12b0e4717b20481fa06d9252d0a11443271",
+        "canonical_output_hash": "2c7e68d595bbcad701ed6b61a2d820ea21ab01b41ad6b40628235ee1cc390f0f",
+        "decision_id": "decision:2c7e68d595bbcad701ed6b61",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "b9bee21e5511737253b6647d4b23727ec9954eb161e3164287b78e0f3c80505b",
+        "receipt_hash": "25a80cada9493769d678a682572f2d1e2909146af9b0f4512d9ffe616e7c1c41",
+        "result": "ok",
+        "runtime_function": "t.casulo.capabilities::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "capabilities_effects",
+        "t_ir_hash": "bb083117fe4d0895c9de69b18b4ce22fd5c70e11d46dceee497eac7e770febee",
+        "t_source_hash": "279f2a0865653ab9de37c1ff087a27974d33f37c2e03892ef9aae6df3ac19673",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "capabilities_effects"
+    },
+    {
+      "index": 7,
+      "input": {
+        "consent": true,
+        "expected_project_id": "project:alpha",
+        "previous": "AUTHORIZED",
+        "project_id": "project:alpha"
+      },
+      "module": "t.casulo.memory_policy",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "MEMORY_SELECTED"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "9197711a5d2a0baaf0c37ae4b903f925ce9de7846df876f1240903f0361ae24b",
+        "canonical_output_hash": "9fa7c922d8c0d6b0210b71f3b75202450a46674d211d0a05a3251e754aa7f825",
+        "decision_id": "decision:9fa7c922d8c0d6b0210b71f3",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "25a80cada9493769d678a682572f2d1e2909146af9b0f4512d9ffe616e7c1c41",
+        "receipt_hash": "8abe23fffbf3cb3616a3b439be6e1ba6fd7c106b6cad214384bded7b806fcc00",
+        "result": "ok",
+        "runtime_function": "t.casulo.memory_policy::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "memory_governance",
+        "t_ir_hash": "900b559fb33161c5bda1409cea142185a729c571f9800836c5a8b73b42b22cfa",
+        "t_source_hash": "e3d19d86ef961fa9fac74a476fba6b994ec81619da8d23c5b8901ccb4bafb2db",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "memory_governance"
+    },
+    {
+      "index": 8,
+      "input": {
+        "cancelled": false,
+        "payload": "compile",
+        "previous": "MEMORY_SELECTED"
+      },
+      "module": "t.casulo.jobs",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [
+          {
+            "limit": 8,
+            "name": "work",
+            "payload": "compile",
+            "status": "joined"
+          }
+        ],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "JOBS_READY"
+        },
+        "state_delta": {
+          "dispatched": 1
+        }
+      },
+      "receipt": {
+        "canonical_input_hash": "b4ae42f78355a79e91c5d143ff95034fd7e4305c052efae4d484a240ec2f524e",
+        "canonical_output_hash": "69b7f24481959d5d45489dae05c8b31ad76755a4012b41ee341e1d7859fc7a51",
+        "decision_id": "decision:69b7f24481959d5d45489dae",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "8abe23fffbf3cb3616a3b439be6e1ba6fd7c106b6cad214384bded7b806fcc00",
+        "receipt_hash": "f4e67649d55969f46d9067f3ef372eed260dd07efb9ac2c90dc8bcf96c42a6ab",
+        "result": "ok",
+        "runtime_function": "t.casulo.jobs::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "jobs_concurrency_cancel",
+        "t_ir_hash": "b7f0289417b5210f775c722e2e931b3f36157886df0d6bbe6f8311c7a813ae77",
+        "t_source_hash": "40d77c8da1a58236b2b8b3e54c158a32972c5212a47b0196c3e7d8789278173f",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "jobs_concurrency_cancel"
+    },
+    {
+      "index": 9,
+      "input": {
+        "hot_count": 2,
+        "max_hot": 3,
+        "previous": "JOBS_READY",
+        "route_allowed": true
+      },
+      "module": "t.casulo.universes",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "ROUTED"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "cbc1b4b241f91316fa019ccd5087c092c1bc60bbbe7e09bfce102b2a338311d2",
+        "canonical_output_hash": "b89d13b947c3d20314f34633723349935346a261097a72a063e35bd428ea1449",
+        "decision_id": "decision:b89d13b947c3d20314f34633",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "f4e67649d55969f46d9067f3ef372eed260dd07efb9ac2c90dc8bcf96c42a6ab",
+        "receipt_hash": "36b1b4f4b50114f9e6c25a56570dcd98665e6f3058b7dcc9d15ffc14521378b9",
+        "result": "ok",
+        "runtime_function": "t.casulo.universes::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "semantic_routing_lifecycle",
+        "t_ir_hash": "7d5839dc8c5e6fc262287cdcee814cbca96ce78661127275eb0457b136c51feb",
+        "t_source_hash": "21dbec704dd8ca7ece1594f75e38eaa307be0b7d2e19484f3d46f1db58b0cf7a",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "semantic_routing_lifecycle"
+    },
+    {
+      "index": 10,
+      "input": {
+        "previous": "ROUTED",
+        "sandboxed": true
+      },
+      "module": "t.casulo.simulation",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [
+          "simulation"
+        ],
+        "result": {
+          "kind": "ok",
+          "value": "SIMULATED"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "61db25ce2ee5b0962284e353648bc2c5df24006e2d2b790598563750a74bebbc",
+        "canonical_output_hash": "a6c062c5a074b030573fad63d3a1356390a74c7dac8e9827981208fc191cc3d8",
+        "decision_id": "decision:a6c062c5a074b030573fad63",
+        "effects_requested": [
+          "simulation"
+        ],
+        "foreign_calls": [],
+        "grants_consumed": [
+          "simulation"
+        ],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "36b1b4f4b50114f9e6c25a56570dcd98665e6f3058b7dcc9d15ffc14521378b9",
+        "receipt_hash": "116476008706a13abffc687abc4f67a312953f8872edc50d5deecc4358e88b00",
+        "result": "ok",
+        "runtime_function": "t.casulo.simulation::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "simulation_acceptance",
+        "t_ir_hash": "d0fcb71dd82a9881d9f3c870daaf029793fc54dbddce35dcb33f1d09f0a15085",
+        "t_source_hash": "3ff0be4afd824e68083b19ee2fb1de5e16259a947a6767c36ead8af623f393df",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "simulation_acceptance"
+    },
+    {
+      "index": 11,
+      "input": {
+        "approved": true,
+        "previous": "SIMULATED"
+      },
+      "module": "t.casulo.materialization",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [
+          "manifest"
+        ],
+        "result": {
+          "kind": "ok",
+          "value": "PUBLISHED"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "9183dc8f8836b25c1c3e630d434f6bb9ac0331ea4eea30fe0befc668b2e2cc85",
+        "canonical_output_hash": "0abdf593ec2a6183360d9a2b1a56d2c9e1e11c2ebfbbd0cd07540dda3e826f68",
+        "decision_id": "decision:0abdf593ec2a6183360d9a2b",
+        "effects_requested": [
+          "manifest"
+        ],
+        "foreign_calls": [],
+        "grants_consumed": [
+          "manifest"
+        ],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "116476008706a13abffc687abc4f67a312953f8872edc50d5deecc4358e88b00",
+        "receipt_hash": "f3eb4ad1753c2a85d613d848cecc192436886e70de8f80f1e0304208ce9a41bd",
+        "result": "ok",
+        "runtime_function": "t.casulo.materialization::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "publish_commit",
+        "t_ir_hash": "aa3d97159fa8a87dab3195edb09ea9c78c6558da811f7401b3d1ed9615f521b2",
+        "t_source_hash": "22d6dfb46d3b31554401199173250148f95d3b60508240ec44627845808c73db",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "publish_commit"
+    },
+    {
+      "index": 12,
+      "input": {
+        "previous": "PUBLISHED",
+        "progress_event_real": true
+      },
+      "module": "t.casulo.dialogue",
+      "observable": {
+        "diagnostics": [],
+        "events": [
+          "materialization_complete"
+        ],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "ANNOUNCE"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "512a3a998bcdc9882ad71b6c3e8b4a5cac762f81d79ade027c1b38ec7302d508",
+        "canonical_output_hash": "78f30284fcbb0d6121738f7530742834d4622912459daf6dee4732937914e9d9",
+        "decision_id": "decision:78f30284fcbb0d6121738f75",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "f3eb4ad1753c2a85d613d848cecc192436886e70de8f80f1e0304208ce9a41bd",
+        "receipt_hash": "56abaf54f9e33fcb8874f966980363d6381ae2abd3427141cdba44b334c8c90a",
+        "result": "ok",
+        "runtime_function": "t.casulo.dialogue::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "interface_state",
+        "t_ir_hash": "ea900f2e057c0e997236b1f732787730e00834c4ede768a387a87cd5dfff9155",
+        "t_source_hash": "a28ba0ee63aa090b960ffec3edd0ac0238c28a63dd1f476780fdaba0696943f7",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "interface_state"
+    },
+    {
+      "index": 13,
+      "input": {
+        "chain_valid": true,
+        "previous": "ANNOUNCE"
+      },
+      "module": "t.casulo.receipts",
+      "observable": {
+        "diagnostics": [],
+        "events": [],
+        "jobs": [],
+        "requested_effects": [],
+        "result": {
+          "kind": "ok",
+          "value": "SEALED"
+        },
+        "state_delta": {}
+      },
+      "receipt": {
+        "canonical_input_hash": "4d4bee8859e76912c2532bf149d17c9896afc41e7123a111bb0400786536ddb1",
+        "canonical_output_hash": "d2a5c969b2cbb7c719e713dad878ede4da70a60cf9782a472ddb26dd1f6cd723",
+        "decision_id": "decision:d2a5c969b2cbb7c719e713da",
+        "effects_requested": [],
+        "foreign_calls": [],
+        "grants_consumed": [],
+        "monotonic_timestamp_ns": 1,
+        "previous_receipt_hash": "56abaf54f9e33fcb8874f966980363d6381ae2abd3427141cdba44b334c8c90a",
+        "receipt_hash": "3579a03a14bfa791bcbe94b69004568e4c9c5eb48afffa3158431cf01b64ec87",
+        "result": "ok",
+        "runtime_function": "t.casulo.receipts::decide",
+        "runtime_id": "t-runtime/rust-2.0",
+        "schema": "casulo.t-decision-receipt/2.0",
+        "scope_id": "stdlib:vertical-slice",
+        "surface_id": "recovery_update",
+        "t_ir_hash": "61fa8cd0b813c1fe7c1366d6236d24b072035b390e433f7865aecf70761c11f0",
+        "t_source_hash": "0302d4deae029e399bd3959dc37c0470ccf4303505e46f0273d4a3177669c82a",
+        "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+      },
+      "surface_id": "recovery_update"
+    }
+  ],
+  "status": "PASS",
+  "tcap_hash": "a25ef2fa7654d7bd608cc96189b729d26879b491b40fa9b1705b59c645269c63"
+}

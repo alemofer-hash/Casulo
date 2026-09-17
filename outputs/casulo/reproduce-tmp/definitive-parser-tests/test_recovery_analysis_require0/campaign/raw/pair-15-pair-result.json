@@ -1,0 +1,30 @@
+{
+  "accepted": true,
+  "order": [
+    "t-general-ir-tcap/0.1",
+    "pytorch-eager-fullstep/1"
+  ],
+  "pair_id": "pair-15",
+  "windows": {
+    "pytorch-eager-fullstep/1": {
+      "joules_per_training": 10.0,
+      "seconds_per_training": 1.0,
+      "thermal": {
+        "maximum_temperature_c": 66.0
+      },
+      "window": {
+        "average_watts": 10.0
+      }
+    },
+    "t-general-ir-tcap/0.1": {
+      "joules_per_training": 8.0,
+      "seconds_per_training": 1.0,
+      "thermal": {
+        "maximum_temperature_c": 65.0
+      },
+      "window": {
+        "average_watts": 8.0
+      }
+    }
+  }
+}

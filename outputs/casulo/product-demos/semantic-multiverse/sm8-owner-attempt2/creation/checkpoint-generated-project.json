@@ -1,0 +1,99 @@
+{
+  "candidate_rejections": [],
+  "creation_sha256": "572fe9064be4fa6b83569509424bd932d17f0c5f2373f7bcc4c3d06984e2ce2c",
+  "entry_unit": "creation_unit_1",
+  "project_id": "t-project:a17c10d17a9ecb570ee9cbd5",
+  "tests": [
+    {
+      "expected_contains": "Initialization of simulated environment",
+      "input": "capabilities: memory.read, constraints: no real actions",
+      "name": "TestInitialization",
+      "unit_id": "creation_unit_1"
+    },
+    {
+      "expected_contains": "Generating simulated vibration patterns",
+      "input": "source: simulated vibration data, format: no real commands",
+      "name": "TestDataGeneration",
+      "unit_id": "creation_unit_2"
+    },
+    {
+      "expected_contains": "Simulating reversible maintenance interface",
+      "input": "interface: reversible maintenance, output: no real commands",
+      "name": "TestInterfaceInteraction",
+      "unit_id": "creation_unit_3"
+    }
+  ],
+  "trace": {
+    "commercial_ai_api_used": false,
+    "context_digest": "4007113d611d49a4f446c1ff42e55862796d3ae78fc71d2e52e0e1ebab43b7c5",
+    "ended_monotonic_ns": 7603583183400,
+    "external_network_used": false,
+    "finish_reason": "stop",
+    "model_id": "qwen3-4b-q4km-llamacpp-b10362",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "operation_id": "tforge:creation:open-ended-holdout:5:candidate-0",
+    "output_sha256": "a17c10d17a9ecb570ee9cbd5e8bd60eae8286984b2179e7a5b4f7092c651e87c",
+    "sampling_policy_id": "casulo-sampling-code-v1",
+    "schema": "casulo-stochastic-trace/1.0",
+    "seed_if_available": null,
+    "started_monotonic_ns": 7486929035900,
+    "stream_events": 464
+  },
+  "units": [
+    {
+      "dependencies": [],
+      "source": "language T/1.1\nmodule creation\n\ncapability manifest\n\nfield CreationSpec\n  trace value: Text\n\ncondense Initialize in CreationSpec\n  effects [manifest]\n  emit \"Initialization of simulated environment for vibration analysis\"\n",
+      "unit_id": "creation_unit_1",
+      "watch_paths": [
+        [
+          "capabilities",
+          "memory.read"
+        ],
+        [
+          "constraints",
+          "operational",
+          "constraints",
+          "No real physical actions allowed"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit_1"
+      ],
+      "source": "language T/1.1\nmodule data\n\ncapability manifest\n\nfield SimulatedVibrationData\n  trace value: Text\n\ncondense Generate in SimulatedVibrationData\n  effects [manifest]\n  emit \"Generating simulated vibration patterns for centrifugal pump analysis\"\n",
+      "unit_id": "creation_unit_2",
+      "watch_paths": [
+        [
+          "source",
+          "constraints",
+          "No real data allowed"
+        ],
+        [
+          "data",
+          "format",
+          "No real commands allowed"
+        ]
+      ]
+    },
+    {
+      "dependencies": [
+        "creation_unit_2"
+      ],
+      "source": "language T/1.1\nmodule interface\n\ncapability manifest\n\nfield ReversibleMaintenance\n  trace value: Text\n\ncondense Interact in ReversibleMaintenance\n  effects [manifest]\n  emit \"Simulating reversible maintenance interface for simulated environment\"\n",
+      "unit_id": "creation_unit_3",
+      "watch_paths": [
+        [
+          "interface",
+          "design",
+          "No real component activation allowed"
+        ],
+        [
+          "output",
+          "format",
+          "No real command generation allowed"
+        ]
+      ]
+    }
+  ]
+}

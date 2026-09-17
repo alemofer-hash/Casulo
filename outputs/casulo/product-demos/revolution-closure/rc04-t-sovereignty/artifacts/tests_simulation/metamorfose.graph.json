@@ -1,0 +1,286 @@
+{
+  "capabilities": [
+    "manifest"
+  ],
+  "module": "casulo.revolution.simulation",
+  "operations": [
+    {
+      "cacheable": true,
+      "cfg_blocks": [
+        [
+          "block/root.0",
+          [
+            "block/root.0.then.0",
+            "block/root.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0",
+          [
+            "block/root.0.then.0.then.0",
+            "block/root.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0",
+          [
+            "block/root.0.then.0.then.0.then.0",
+            "block/root.0.then.0.then.0.else.0"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.else.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "block/root.0.then.0.then.0.then.0",
+          [
+            "exit"
+          ]
+        ],
+        [
+          "exit",
+          []
+        ]
+      ],
+      "cfg_entry": "block/root.0",
+      "deterministic": true,
+      "edges": [
+        {
+          "kind": "data",
+          "name": "deterministic",
+          "source": "AcceptSimulation/input/deterministic",
+          "target": "AcceptSimulation/instruction/root.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptSimulation/instruction/root.0/if",
+          "target": "AcceptSimulation/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "real_effects_absent",
+          "source": "AcceptSimulation/input/real_effects_absent",
+          "target": "AcceptSimulation/instruction/root.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptSimulation/instruction/root.0.then.0/if",
+          "target": "AcceptSimulation/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "data",
+          "name": "requirements_covered",
+          "source": "AcceptSimulation/input/requirements_covered",
+          "target": "AcceptSimulation/instruction/root.0.then.0.then.0/if"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptSimulation/instruction/root.0.then.0.then.0/if",
+          "target": "AcceptSimulation/instruction/root.0.then.0.then.0.then.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptSimulation/instruction/root.0.then.0.then.0/if",
+          "target": "AcceptSimulation/instruction/root.0.then.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptSimulation/instruction/root.0.then.0/if",
+          "target": "AcceptSimulation/instruction/root.0.then.0.else.0/emit"
+        },
+        {
+          "kind": "control",
+          "name": null,
+          "source": "AcceptSimulation/instruction/root.0/if",
+          "target": "AcceptSimulation/instruction/root.0.else.0/emit"
+        }
+      ],
+      "effects": [
+        "manifest"
+      ],
+      "estimated_cost": 7,
+      "input_type": "SimulationDecision",
+      "name": "AcceptSimulation",
+      "nodes": [
+        {
+          "defines": [
+            "deterministic"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "AcceptSimulation/input/deterministic",
+          "kind": "input",
+          "label": "deterministic",
+          "operation": "AcceptSimulation",
+          "path": "input.deterministic",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "real_effects_absent"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "AcceptSimulation/input/real_effects_absent",
+          "kind": "input",
+          "label": "real_effects_absent",
+          "operation": "AcceptSimulation",
+          "path": "input.real_effects_absent",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [
+            "requirements_covered"
+          ],
+          "effect": "read",
+          "estimated_cost": 0,
+          "id": "AcceptSimulation/input/requirements_covered",
+          "kind": "input",
+          "label": "requirements_covered",
+          "operation": "AcceptSimulation",
+          "path": "input.requirements_covered",
+          "pure": true,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "AcceptSimulation/instruction/root.0/if",
+          "kind": "if",
+          "label": "deterministic",
+          "operation": "AcceptSimulation",
+          "path": "root.0",
+          "pure": true,
+          "uses": [
+            "deterministic"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "AcceptSimulation/instruction/root.0.then.0/if",
+          "kind": "if",
+          "label": "real_effects_absent",
+          "operation": "AcceptSimulation",
+          "path": "root.0.then.0",
+          "pure": true,
+          "uses": [
+            "real_effects_absent"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "control",
+          "estimated_cost": 1,
+          "id": "AcceptSimulation/instruction/root.0.then.0.then.0/if",
+          "kind": "if",
+          "label": "requirements_covered",
+          "operation": "AcceptSimulation",
+          "path": "root.0.then.0.then.0",
+          "pure": true,
+          "uses": [
+            "requirements_covered"
+          ]
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AcceptSimulation/instruction/root.0.then.0.then.0.then.0/emit",
+          "kind": "emit",
+          "label": "\"PASS\"",
+          "operation": "AcceptSimulation",
+          "path": "root.0.then.0.then.0.then.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AcceptSimulation/instruction/root.0.then.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"FAIL\"",
+          "operation": "AcceptSimulation",
+          "path": "root.0.then.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AcceptSimulation/instruction/root.0.then.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"FAIL\"",
+          "operation": "AcceptSimulation",
+          "path": "root.0.then.0.else.0",
+          "pure": false,
+          "uses": []
+        },
+        {
+          "defines": [],
+          "effect": "manifest",
+          "estimated_cost": 1,
+          "id": "AcceptSimulation/instruction/root.0.else.0/emit",
+          "kind": "emit",
+          "label": "\"FAIL\"",
+          "operation": "AcceptSimulation",
+          "path": "root.0.else.0",
+          "pure": false,
+          "uses": []
+        }
+      ],
+      "output_type": "Text",
+      "permissions": [
+        "manifest"
+      ],
+      "shapes": []
+    }
+  ],
+  "types": [
+    {
+      "kind": "record",
+      "members": [
+        [
+          "deterministic",
+          "Bool"
+        ],
+        [
+          "real_effects_absent",
+          "Bool"
+        ],
+        [
+          "requirements_covered",
+          "Bool"
+        ]
+      ],
+      "name": "SimulationDecision"
+    }
+  ],
+  "version": "metamorfose-graph/1.0"
+}

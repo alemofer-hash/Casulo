@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "expected_contains": "decisão",
+      "observed": "decisão",
+      "operation": "Act",
+      "passed": true,
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9a7573a192dad01a2f0139779a591ec5fb5dc892980caa03dc6e38ebb9f790c5",
+      "unit_id": "decision"
+    },
+    {
+      "expected_contains": "confirmação",
+      "observed": "revisão com confirmação",
+      "operation": "Act",
+      "passed": true,
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ab10cc0b007b03dc2f0ccaf451955799f689958e2dd0ca931d83ebbe1ed10978",
+      "unit_id": "review"
+    },
+    {
+      "expected_contains": "saída",
+      "observed": "saída",
+      "operation": "Act",
+      "passed": true,
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e46c77d1b886fe3c4e9b55f81f4451e07775742ce8c587fdbc95a4d268483069",
+      "unit_id": "output"
+    },
+    {
+      "expected_contains": "nome",
+      "observed": "nome",
+      "operation": "Act",
+      "passed": true,
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "eb0d12ccddd8751af8ff439516e6706ebfb9633a18884864bdb6cedba35196c7",
+      "unit_id": "identity"
+    }
+  ]
+}

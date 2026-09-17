@@ -1,0 +1,91 @@
+{
+  "schema": "casulo-energy-host-quiescence-wait/1.1-partial",
+  "terminal_state": "BLOCKED_THERMAL_THROTTLING",
+  "interrupted_after_gate_decided": true,
+  "workloads_executed": false,
+  "source_csv": "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\benchmarks\\results\\2026-08-02-sprint025-ablation\\hwinfo-live-ablation.CSV",
+  "window_start_utc": "2026-08-10T02:25:35.256000+00:00",
+  "window_end_utc": "2026-08-10T02:29:44.983000+00:00",
+  "samples": 999,
+  "sampling_interval_seconds": {
+    "minimum": 0.231,
+    "median": 0.249,
+    "p95": 0.260,
+    "maximum": 0.278,
+    "strictly_increasing": true,
+    "gaps_over_5x_median": 0
+  },
+  "cpu_usage_percent": {
+    "literal_sensor": "Uso total da CPU [%]",
+    "minimum": 11.1,
+    "median": 36.0,
+    "p95": 74.31,
+    "maximum": 99.9,
+    "initial": 18.3,
+    "final": 29.3
+  },
+  "cpu_utility_diagnostic_percent": {
+    "literal_sensor": "Utilização total da CPU [%]",
+    "minimum": 8.8,
+    "median": 30.1,
+    "p95": 56.91,
+    "maximum": 187.9,
+    "not_used_as_quiescence_gate": true
+  },
+  "package_power_w": {
+    "literal_sensor": "Potência total da CPU [W]",
+    "minimum": 3.195,
+    "median": 9.041,
+    "p95": 14.8415,
+    "maximum": 45.742
+  },
+  "core_temperature_c": {
+    "minimum": 43.0,
+    "median": 52.0,
+    "p95": 56.0,
+    "maximum": 81.0
+  },
+  "package_temperature_c": {
+    "minimum": 43.0,
+    "median": 53.0,
+    "p95": 58.0,
+    "maximum": 92.0
+  },
+  "battery": {
+    "level_percent": 100.0,
+    "charge_discharge_rate_w": 0.0,
+    "ac_connected": true
+  },
+  "thermal_throttle_events": [
+    {
+      "timestamp_utc": "2026-08-10T02:29:04.437000+00:00",
+      "active_columns": ["Estrangulamento térmico do núcleo (avg) [Yes/No]", "P-core 0 Estrangulamento térmico [Yes/No]", "P-core 1 Estrangulamento térmico [Yes/No]"],
+      "core_temperature_c": 80.0,
+      "package_power_w": 38.146,
+      "cpu_usage_percent": 97.6
+    },
+    {
+      "timestamp_utc": "2026-08-10T02:29:04.684000+00:00",
+      "active_columns": ["Estrangulamento térmico do núcleo (avg) [Yes/No]", "P-core 0 Estrangulamento térmico [Yes/No]"],
+      "core_temperature_c": 81.0,
+      "package_temperature_c": 92.0,
+      "package_power_w": 45.742,
+      "cpu_usage_percent": 99.6
+    },
+    {
+      "timestamp_utc": "2026-08-10T02:29:04.936000+00:00",
+      "active_columns": ["Estrangulamento térmico do núcleo (avg) [Yes/No]", "P-core 0 Estrangulamento térmico [Yes/No]"],
+      "core_temperature_c": 74.0,
+      "package_power_w": 44.018,
+      "cpu_usage_percent": 98.7
+    },
+    {
+      "timestamp_utc": "2026-08-10T02:29:05.196000+00:00",
+      "active_columns": ["Estrangulamento térmico do núcleo (avg) [Yes/No]", "P-core 0 Estrangulamento térmico [Yes/No]"],
+      "core_temperature_c": 74.0,
+      "package_power_w": 40.581,
+      "cpu_usage_percent": 98.7
+    }
+  ],
+  "decision": "The append-only observer was stopped after the frozen gate was irreversibly failed. HWiNFO remained active. No benchmark was authorized."
+}

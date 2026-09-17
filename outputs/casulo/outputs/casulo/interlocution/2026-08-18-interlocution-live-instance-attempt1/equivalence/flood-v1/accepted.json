@@ -1,0 +1,9 @@
+{
+  "acceptance_sha256": "3f1a74b5ae72c1f03d34ae52943abdc42d7021b22daaaa4617e7ca9558a09acf",
+  "equivalence_sha256": "b4557a38daf2aa40ac87cedfaeb96f7e4f6d1d9a32a79a9944588ca2b7a90b6f",
+  "independent_verification_sha256": "98370f25c0a8203419722d94f8858090a466d3e56875773e1e32913308093834",
+  "judge_receipt_hash": "8f033ca12ef6c3873632da490dee0411645f1ca334672bcdaaf216905447786a",
+  "publisher_consumed_t_result": true,
+  "schema": "casulo.interlocution-accepted-instance/1.0",
+  "status": "ACCEPTED_BY_T_JUDGE"
+}
