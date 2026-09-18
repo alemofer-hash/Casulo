@@ -1,0 +1,56 @@
+{
+  "schema": "casulo.family.day0-baseline/1.0",
+  "date": "2026-09-17",
+  "branch": "rp0.1-family",
+  "starting_commit": "d9aca5461af31fcb24000f2872825c52c5b80e64",
+  "raw_commit": "100885dc009aed077a3ec2ac7d82a8b8de6b30a7",
+  "raw_tree": "6ce76021d0991097951168c423137977d8cc9e78",
+  "raw_tag": "casulo-stage0-raw-2026-09-17",
+  "python": "3.13.2",
+  "pytest": "9.1.1",
+  "authoritative_suite": {
+    "passed": 750,
+    "failed": 8,
+    "skipped": 12,
+    "subtests_passed": 42,
+    "duration_seconds_console": 192.95,
+    "junit_sha256": "85508f3fa9ff4e1128335042ecce7945db618873cfddb8329b7dd5a7cf101063"
+  },
+  "sandbox_vbs_recheck": {
+    "passed": 5,
+    "failed": 0,
+    "duration_seconds_console": 3.76,
+    "junit_sha256": "100d285433070446ca18962badba5a986051a80312710d86cf0c3618e4718034"
+  },
+  "effective_baseline": {
+    "passed": 755,
+    "failed": 3,
+    "skipped": 12,
+    "subtests_passed": 42
+  },
+  "post_correction_validation": {
+    "focal_passed": 3,
+    "focal_duration_seconds": 0.80,
+    "full_passed": 769,
+    "full_failed": 0,
+    "full_skipped": 1,
+    "full_subtests_passed": 42,
+    "full_duration_seconds_console": 200.58,
+    "junit_sha256": "a8092f3818864e131ac08d0c4a09f608dd32d80f96f595c5d3b87b153b770e87"
+  },
+  "remaining_failures": [
+    "tests/product/test_native_block0_runner.py::test_np6_builder_and_verifier_keep_output_token_forbidden",
+    "tests/product/test_native_decoder_runner.py::test_np7_builder_enables_decoder_without_reexecuting_np6_probe",
+    "tests/product/test_native_model_probe_runner.py::test_neural_port_builder_scopes_token_claim_to_token_capable_stages"
+  ],
+  "diagnosis": "The remaining string-oracle tests omit np11 while os/tools/build_native_neural_port_image.py consistently includes np11 in the corresponding stage sets. The red result was frozen before correction.",
+  "invalid_environmental_attempt": {
+    "passed": 478,
+    "failed": 8,
+    "errors": 274,
+    "skipped": 10,
+    "subtests_passed": 42,
+    "duration_seconds": 135.43,
+    "reason": "The sandbox denied creation of basetemp inside the Downloads tree."
+  }
+}

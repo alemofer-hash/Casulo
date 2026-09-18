@@ -1,5 +1,35 @@
 # Estado de execução do produto
 
+## 2026-09-17 — CASULO FAMILY RP0.1 Day 0
+
+Estado: `FAMILY_RP01_DAY0_ARCHAEOLOGY_PASS_DAY1_MOCK_PENDING`.
+
+- o snapshot bruto permanece em
+  `100885dc009aed077a3ec2ac7d82a8b8de6b30a7`, tree
+  `6ce76021d0991097951168c423137977d8cc9e78` e tag
+  `casulo-stage0-raw-2026-09-17`;
+- o remote `alemofer-hash/Casulo` foi verificado como privado antes do avanço
+  de `main`; a tag remota continua ancorada no commit bruto;
+- a política universal de bootstrap foi versionada em `AGENTS.md` no commit
+  `d9aca5461af31fcb24000f2872825c52c5b80e64`;
+- a branch de integração `rp0.1-family` foi criada sem reorganizar o material
+  histórico;
+- o baseline vermelho foi congelado, cinco falhas de Windows Script Host foram
+  classificadas como sandbox e três oráculos textuais NP11 como testes
+  obsoletos;
+- após atualizar somente as seis expectativas NP11, o gate curto completo
+  passou: `769 passed, 1 skipped, 42 subtests passed` em 200,58 s;
+- `outputs/casulo` foi escolhido como raiz de código, com integração nova em
+  `src/casulo/family`; Cloud permanece `RELEASE_LOCKED`, a Tauri owner UI não
+  é apresentada como PWA e Native/CASV não entram no caminho crítico;
+- mapa, decisão arquitetural e baseline estão em
+  `CASULO_FAMILY_RP01_DAY0_ARCHAEOLOGY.md`,
+  `CASULO_FAMILY_RP01_CANONICAL_ARCHITECTURE.md` e
+  `evidence/family-rp01/day0-baseline.json`.
+
+Próximo gate: implementar o slice mock loopback do Dia 1 e provar
+cliente -> gateway -> supervisor -> resposta, com fila, correlação e auditoria.
+
 ## 2026-09-11 — CV1.8 movimento inteiro CASV/0.7
 
 Estado: `MOTION_ENGINEERING_PASS_COMPETITIVE_BRANCH_REJECTED`.
