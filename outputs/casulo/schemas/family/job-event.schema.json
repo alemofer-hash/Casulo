@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:casulo:family:job-event:1.0",
+  "title": "Casulo Family ordered job event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "job_id",
+    "correlation_id",
+    "sequence",
+    "kind",
+    "timestamp_utc",
+    "payload"
+  ],
+  "properties": {
+    "schema": {"const": "casulo.family/1.0"},
+    "job_id": {"type": "string", "pattern": "^[a-f0-9]{32}$"},
+    "correlation_id": {"type": "string", "pattern": "^[a-f0-9]{32}$"},
+    "sequence": {"type": "integer", "minimum": 1},
+    "kind": {
+      "enum": ["ACCEPTED", "STARTED", "DELTA", "COMPLETED", "CANCELLED", "FAILED"]
+    },
+    "timestamp_utc": {"type": "string", "format": "date-time"},
+    "payload": {"type": "object"}
+  }
+}

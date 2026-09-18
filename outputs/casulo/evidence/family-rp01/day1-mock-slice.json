@@ -1,0 +1,59 @@
+{
+  "schema": "casulo.family.day1-mock-slice/1.0",
+  "date": "2026-09-17",
+  "branch": "rp0.1-family",
+  "base_commit": "ad85cd13ef5907e3e20096f01fa6b9161d3c8354",
+  "gate": "FAMILY_RP01_DAY1_MOCK_PASS",
+  "claims": {
+    "mock_only": true,
+    "model_inference": false,
+    "loopback_only": true,
+    "https_enabled": false,
+    "lan_exposed": false,
+    "paid_api_used": false
+  },
+  "focal_validation": {
+    "passed": 4,
+    "failed": 0,
+    "duration_seconds_console": 2.15,
+    "assertions": [
+      "health reports DAY1_MOCK_ONLY",
+      "Portuguese question crosses gateway, scheduler, supervisor, mock engine and SSE response",
+      "audit correlation is stable and prompt text is absent",
+      "mock memory is isolated by user",
+      "non-loopback configuration is rejected",
+      "heavy jobs are serialized",
+      "cancellation produces exactly one terminal event"
+    ]
+  },
+  "smoke": {
+    "status": "FAMILY_DAY1_MOCK_PASS",
+    "listener": "127.0.0.1",
+    "mock_only": true
+  },
+  "full_regression": {
+    "passed": 773,
+    "failed": 0,
+    "skipped": 1,
+    "subtests_passed": 42,
+    "duration_seconds_console": 125.85,
+    "junit_sha256": "9adf3a3be2bbe03964ba2557d7ddbbe799ca6c6b520f6568cfe9af658c0d16ce"
+  },
+  "compileall": "PASS",
+  "schema_json_parse": "PASS",
+  "source_sha256": {
+    "src/casulo/family/__init__.py": "e0ecc029b7d1b26151bc5b5dd71b512c4d950c0f5d7422b4f8bd38c7dbae5ba1",
+    "src/casulo/family/audit.py": "7e98e1cf51bb7f3e3be29bb04bbaf5dbee70eba5c4777a3556d75b45312ce5bc",
+    "src/casulo/family/config.py": "44abd08fb21bd29955677ecf105a847b67281643fcc31a0bd990a9285b5a293f",
+    "src/casulo/family/contracts.py": "5a6c783bfdd84e53b464b4f078e08d6960f35f9f25f02d9a537b5bddec5d37ee",
+    "src/casulo/family/gateway.py": "ef1b306f12edd5693486536b41d4f6795fd5ee943a86d1c23c3d0f6f7d4e31fa",
+    "src/casulo/family/memory.py": "f6f4cd8dc8efabfaa9eb0987709ddc9ddb7abd5e4bccfb933fcdda8b86f15d6d",
+    "src/casulo/family/runtime.py": "6ad13d3e657d163da04a4ca757aff67c1863026773ede9015c41a068c1d9d081",
+    "src/casulo/family/scheduler.py": "f9a604d2c4d16cb0cfe03ec576174edcbbdb1ea20a6d3bc65b90271ddb030fff",
+    "src/casulo/family/smoke.py": "003e8442e6b8003f6716975c23ec0c21bd4158a8b8e182cf4e1e656884e7ae82",
+    "src/casulo/family/supervisor.py": "99661f1f5a84a8f9d76219fa176fcb11a558bb0f7063ae7915c7a35a4e1918a0",
+    "schemas/family/chat-request.schema.json": "062b95a421c910b6d10f641316b0959f8b262443caaf1011ea046c0d5b75b7bd",
+    "schemas/family/job-event.schema.json": "c962f85c7ff87ba2f17ac2222b0adc480419b3bce94cbee61189dcad60df794a",
+    "tests/family/test_day1_mock_e2e.py": "5c83175612c6f677167bdd83ee18d360945eddd2f46c21e8e6fa21eeab498799"
+  }
+}

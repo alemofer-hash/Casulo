@@ -1,5 +1,30 @@
 # Estado de execução do produto
 
+## 2026-09-17 — CASULO FAMILY RP0.1 Day 1
+
+Estado: `FAMILY_RP01_DAY1_MOCK_PASS_DAY2_MODEL_PENDING`.
+
+- foi criado um slice stdlib-only em `src/casulo/family` com contratos,
+  gateway HTTP/SSE loopback, fila SQLite persistente, supervisor, memória mock
+  isolada por usuário e auditoria JSONL encadeada por hash;
+- o engine determinístico rotula a resposta como `[MOCK LOCAL]`; nenhuma
+  inferência de modelo é alegada;
+- schemas versionados congelam os payloads de pergunta e evento;
+- o smoke atravessou cliente -> gateway -> scheduler -> supervisor -> resposta,
+  confirmou memória mock e reportou listener `127.0.0.1`;
+- os testes cobrem recusa de bind não-loopback, contexto ausente, isolamento,
+  serialização de trabalho pesado, cancelamento idempotente e unicidade do
+  evento terminal;
+- validação focal: `4 passed` em 2,15 s; regressão ampla: `773 passed,
+  1 skipped, 42 subtests passed` em 125,85 s; compileall e parse dos schemas
+  passaram;
+- evidência: `CASULO_FAMILY_RP01_DAY1_MOCK_SLICE.md` e
+  `evidence/family-rp01/day1-mock-slice.json`.
+
+Próximo gate: Dia 2 — runtime/modelo local 7–9B quantizado, somente loopback,
+com aquisição oficial, hashes/licença e benchmark CPU/aceleração sem romper o
+piso permanente de 30 GB livres.
+
 ## 2026-09-17 — CASULO FAMILY RP0.1 Day 0
 
 Estado: `FAMILY_RP01_DAY0_ARCHAEOLOGY_PASS_DAY1_MOCK_PENDING`.
