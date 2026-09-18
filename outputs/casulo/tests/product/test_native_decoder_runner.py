@@ -62,11 +62,11 @@ def test_np7_supersedes_only_the_historical_no_inference_marker() -> None:
 def test_np7_builder_enables_decoder_without_reexecuting_np6_probe() -> None:
     builder = (ROOT / "os/tools/build_native_neural_port_image.py").read_text(encoding="utf-8")
     assert '"np7": "NP7_COMPLETE_QWEN3_DECODER_TO_LOGITS"' in builder
-    assert 'environment["CASULO_NATIVE_MODEL_DECODER"] = "1" if args.stage in ("np7", "np8", "np9", "np10") else "0"' in builder
-    assert 'environment["CASULO_NATIVE_MODEL_RESIDENT"] = "1" if args.stage in ("np9", "np10") else "0"' in builder
+    assert 'environment["CASULO_NATIVE_MODEL_DECODER"] = "1" if args.stage in ("np7", "np8", "np9", "np10", "np11") else "0"' in builder
+    assert 'environment["CASULO_NATIVE_MODEL_RESIDENT"] = "1" if args.stage in ("np9", "np10", "np11") else "0"' in builder
     assert 'environment["CASULO_NATIVE_MODEL_BLOCK0"] = "1" if args.stage == "np6" else "0"' in builder
-    assert '"first_model_derived_token": args.stage in ("np8", "np9", "np10")' in builder
-    assert 'environment["CASULO_NATIVE_CREATION"] = "1" if args.stage == "np10" else "0"' in builder
+    assert '"first_model_derived_token": args.stage in ("np8", "np9", "np10", "np11")' in builder
+    assert 'environment["CASULO_NATIVE_CREATION"] = "1" if args.stage in ("np10", "np11") else "0"' in builder
     ast.parse(builder)
 
 

@@ -104,7 +104,7 @@ def test_np6_builder_and_verifier_keep_output_token_forbidden() -> None:
     builder = (ROOT / "os/tools/build_native_neural_port_image.py").read_text(encoding="utf-8")
     verifier = VERIFIER.read_text(encoding="utf-8")
     assert '"np6": "NP6_ONE_COMPLETE_QWEN3_TRANSFORMER_BLOCK"' in builder
-    assert '"first_model_derived_token": args.stage in ("np8", "np9", "np10")' in builder
+    assert '"first_model_derived_token": args.stage in ("np8", "np9", "np10", "np11")' in builder
     assert '"np6": "one authentic token position executed through complete Qwen3 block zero' in builder
     assert "no later block/logits/output token" in builder
     assert "model identity diverges from oracle" in verifier
