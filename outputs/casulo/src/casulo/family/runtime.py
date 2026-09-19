@@ -3,7 +3,7 @@ from __future__ import annotations
 import hashlib
 import threading
 import time
-from collections.abc import Iterable, Iterator
+from collections.abc import Callable, Iterable, Iterator
 
 from .audit import AuditLog
 from .config import FamilyConfig
@@ -32,6 +32,7 @@ class FamilyRuntime:
         supervisor: FamilySupervisor,
         authorized_contexts: Iterable[AuthContext],
         config: FamilyConfig | None = None,
+        authorization_callback: Callable[[AuthContext], bool] | None = None,
     ) -> None:
         self.store = store
         self.audit = audit
@@ -41,7 +42,8 @@ class FamilyRuntime:
         if self.config.mock_only != bool(supervisor.engine.mock_only):
             raise FamilyUnavailableError("modo do config diverge do adapter")
         self._authorized = frozenset(authorized_contexts)
-        if not self._authorized:
+        self._authorization_callback = authorization_callback
+        if not self._authorized and self._authorization_callback is None:
             raise FamilyAuthorizationError("nenhum contexto sintético autorizado")
         self._stop = threading.Event()
         self._wake = threading.Event()
@@ -182,7 +184,7 @@ class FamilyRuntime:
             "status": "ok" if supervisor["ready"] else "unavailable",
             "mode": "DAY1_MOCK_ONLY" if self.config.mock_only else "DAY3_LOCAL_MODEL",
             "mock_engine": bool(self.supervisor.engine.mock_only),
-            "mock_memory": True,
+            "mock_memory": bool(self.memory.mock_only),
             "queued": counts[JobStatus.QUEUED.value],
             "running_heavy": counts[JobStatus.RUNNING.value],
             "queue_capacity": self.config.queue_capacity,
@@ -202,7 +204,12 @@ class FamilyRuntime:
         with self._active_lock:
             active = self._active_job
         if active is not None:
-            self.cancel(active.auth, active.job_id, requested_by="runtime_shutdown")
+            event = self.store.cancel(
+                active.job_id, active.auth, requested_by="runtime_shutdown"
+            )
+            if event is not None:
+                self._increment("cancelled")
+                self._audit_event(active.auth, event)
         self._wake.set()
         self._notify()
         self._worker.join(timeout=15.0)
@@ -214,8 +221,29 @@ class FamilyRuntime:
         self.memory.close()
 
     def _authorize(self, auth: AuthContext) -> None:
-        if auth not in self._authorized:
+        allowed = auth in self._authorized
+        if self._authorization_callback is not None:
+            allowed = bool(self._authorization_callback(auth))
+        if not allowed:
             raise FamilyAuthorizationError("contexto sintético não autorizado")
+
+    def revoke_device(self, user_id: str, device_id: str) -> int:
+        cancelled = 0
+        for job_id in self.store.active_job_ids_for_device(user_id, device_id):
+            try:
+                auth = self.store.auth_for_job(job_id)
+                event = self.store.cancel(
+                    job_id, auth, requested_by="device_revoked"
+                )
+            except KeyError:
+                continue
+            if event is not None:
+                cancelled += 1
+                self._increment("cancelled")
+                self._audit_event(auth, event)
+        self._wake.set()
+        self._notify()
+        return cancelled
 
     def _worker_loop(self) -> None:
         while not self._stop.is_set():
@@ -293,6 +321,7 @@ class FamilyRuntime:
                                 if self.supervisor.engine.mock_only
                                 else "[LOCAL MODEL] interaction completed"
                             ),
+                            session_id=job.auth.session_id,
                         )
                     )
                     self._audit_event(job.auth, event)
@@ -323,6 +352,7 @@ class FamilyRuntime:
             correlation_id=event.correlation_id,
             user_id=auth.user_id,
             device_id=auth.device_id,
+            session_id=auth.session_id,
             fields={
                 "job_id": event.job_id,
                 "sequence": event.sequence,

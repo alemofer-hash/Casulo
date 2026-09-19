@@ -1,0 +1,13 @@
+{
+  "algorithm": "ECDSA-P256-SHA256",
+  "ca_certificate_sha256": "1b3bdc4b8e3e5207bd2bede8500889fa6b5e64eb120af9ce542e9c4704f26bf1",
+  "created_utc": "2026-09-19T20:06:14.227004+00:00",
+  "cryptography_license": "Apache-2.0 OR BSD-3-Clause",
+  "cryptography_version": "45.0.4",
+  "hosts": ["127.0.0.1", "localhost", "192.168.1.4"],
+  "private_files_outside_git": true,
+  "root_installation_performed": false,
+  "schema": "casulo.family.day4-tls-evidence/1.0",
+  "server_certificate_sha256": "65a8e81e4eb5b2df324836a42da671a08a40367e89e6b399a866ff6b4ad8bf97",
+  "verification": "PASS"
+}

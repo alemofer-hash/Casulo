@@ -1,0 +1,14 @@
+{
+  "gateway_started": false,
+  "minimum_start_available_ram_bytes": 5368709120,
+  "model_started": false,
+  "observed_available_ram_bytes": 5128294400,
+  "port_cleanup": "PASS",
+  "process_cleanup": "PASS",
+  "schema": "casulo.family.day4-resource-admission/1.0",
+  "status": "BLOCKED_RESOURCE_FLOOR",
+  "temperature_claim": "NONE",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false,
+  "timestamp_utc": "2026-09-19T20:28:36.813461+00:00"
+}

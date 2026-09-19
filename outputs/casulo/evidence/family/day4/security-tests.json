@@ -1,0 +1,14 @@
+{
+  "cors_disabled": true,
+  "csrf_double_submit": true,
+  "device_revocation_tested": true,
+  "https_pwa_tested": true,
+  "pairing_code_single_use": true,
+  "raw_credentials_absent_from_sqlite_tested": true,
+  "same_user_cross_session_access_denied": true,
+  "schema": "casulo.family.day4-security-tests/1.0",
+  "secure_cookie_flags_tested": true,
+  "status": "PASS",
+  "test_file": "tests/family/test_day4_secure_gateway_pwa.py",
+  "tests_passed": 6
+}

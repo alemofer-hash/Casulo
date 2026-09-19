@@ -1,0 +1,19 @@
+{
+  "gateway_started": true,
+  "maximum_adapter_active_requests": 1,
+  "maximum_model_working_set_bytes": 3642892288,
+  "maximum_runtime_instances": 1,
+  "minimum_available_ram_bytes": 5499600896,
+  "minimum_disk_free_bytes": 106989469696,
+  "minimum_start_available_ram_bytes": 5368709120,
+  "model_started": true,
+  "port_cleanup": "PASS",
+  "process_cleanup": "PASS",
+  "runtime_loopback_only": true,
+  "samples": 11,
+  "schema": "casulo.family.day4-resource-admission/1.0",
+  "status": "PASS",
+  "temperature_claim": "NONE",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false
+}

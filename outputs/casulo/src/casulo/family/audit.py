@@ -59,6 +59,7 @@ class AuditLog:
         user_id: str,
         device_id: str,
         fields: Mapping[str, Any],
+        session_id: str = "default",
     ) -> str:
         _validate_fields(fields)
         with self._lock:
@@ -69,6 +70,7 @@ class AuditLog:
                 "correlation_id": correlation_id,
                 "user_id": user_id,
                 "device_id": device_id,
+                "session_id": session_id,
                 "fields": dict(fields),
                 "previous_hash": self._head,
             }

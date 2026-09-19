@@ -1,0 +1,8 @@
+{
+  "content_security_policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+  "https_status": 200,
+  "manifest_display": "standalone",
+  "schema": "casulo.family.day4-pwa/1.0",
+  "service_worker_api_cache_excluded": true,
+  "strict_transport_security": "max-age=31536000"
+}

@@ -1,0 +1,14 @@
+{
+  "branch": "rp0.1-family",
+  "day3_evidence_preserved": true,
+  "expected_commit": "c3d67ceed309eb13cede2c3440ac8d841cb94497",
+  "expected_tree": "994825b08edc2e623a5789f5e44f43f438dbe682",
+  "initial_working_tree_clean": true,
+  "input_commit": "c3d67ceed309eb13cede2c3440ac8d841cb94497",
+  "input_tree": "994825b08edc2e623a5789f5e44f43f438dbe682",
+  "schema": "casulo.family.day4-baseline/1.0",
+  "temperature_claim": "NONE",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false,
+  "timestamp_utc": "2026-09-19T20:06:28.842172+00:00"
+}

@@ -37,6 +37,7 @@ class FamilyLocalModelAdapter:
         profile_id: str = "qwen25-q2-vulkan",
         max_generated_tokens: int = 256,
         minimum_available_ram_bytes: int = 1_024**3,
+        minimum_start_available_ram_bytes: int | None = None,
         minimum_disk_free_bytes: int = 30 * 1_024**3,
         startup_timeout: float = 300.0,
     ) -> None:
@@ -49,6 +50,13 @@ class FamilyLocalModelAdapter:
         )
         self.max_generated_tokens = max_generated_tokens
         self.minimum_available_ram_bytes = minimum_available_ram_bytes
+        self.minimum_start_available_ram_bytes = (
+            minimum_available_ram_bytes
+            if minimum_start_available_ram_bytes is None
+            else minimum_start_available_ram_bytes
+        )
+        if self.minimum_start_available_ram_bytes < self.minimum_available_ram_bytes:
+            raise FamilyModelAdapterError("margem de startup abaixo do piso operacional")
         self.minimum_disk_free_bytes = minimum_disk_free_bytes
         self.startup_timeout = startup_timeout
         self._lock = threading.RLock()
@@ -68,7 +76,7 @@ class FamilyLocalModelAdapter:
         with self._lock:
             if self._server is not None:
                 raise FamilyModelAdapterError("segunda instância do runtime recusada")
-        self._assert_resource_floor()
+        self._assert_resource_floor(startup=True)
         server = LoopbackLlamaServer(self.profile, startup_timeout=self.startup_timeout)
         server.start()
         with self._lock:
@@ -245,15 +253,24 @@ class FamilyLocalModelAdapter:
             "process_working_set_bytes": memory.get("working_set_bytes"),
             "process_commit_bytes": memory.get("commit_bytes"),
             "process_peak_working_set_bytes": memory.get("peak_working_set_bytes"),
+            "minimum_start_available_ram_bytes": self.minimum_start_available_ram_bytes,
             "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
             "temperature_telemetry_collected_by_runner": False,
             "temperature_claim": "NONE",
         }
 
-    def _assert_resource_floor(self) -> None:
+    def _assert_resource_floor(self, *, startup: bool = False) -> None:
         ram = _available_physical_memory()
-        if ram is None or ram < self.minimum_available_ram_bytes:
-            raise FamilyModelAdapterError("piso de RAM de 1 GiB não preservado")
+        required_ram = (
+            self.minimum_start_available_ram_bytes
+            if startup
+            else self.minimum_available_ram_bytes
+        )
+        if ram is None or ram < required_ram:
+            label = "margem de startup" if startup else "piso operacional"
+            raise FamilyModelAdapterError(
+                f"{label} de RAM não preservada: required={required_ram}"
+            )
         if shutil.disk_usage(self.profile.model).free < self.minimum_disk_free_bytes:
             raise FamilyModelAdapterError("reserva de disco de 30 GiB não preservada")
 

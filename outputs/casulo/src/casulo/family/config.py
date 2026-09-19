@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import ipaddress
 from dataclasses import dataclass
+from pathlib import Path
 
 from .contracts import FamilyContractError
 
@@ -19,6 +20,11 @@ class FamilyConfig:
     minimum_disk_free_bytes: int = 30 * 1_024**3
     disconnect_policy: str = "cancel"
     mock_only: bool = True
+    lan_enabled: bool = False
+    require_device_auth: bool = False
+    approved_network: str | None = None
+    tls_certfile: Path | None = None
+    tls_keyfile: Path | None = None
 
     def __post_init__(self) -> None:
         try:
@@ -26,7 +32,22 @@ class FamilyConfig:
         except ValueError as error:
             raise FamilyContractError("bind_host deve ser endereço IP literal") from error
         if not address.is_loopback:
-            raise FamilyContractError("Day 1 gateway aceita somente loopback")
+            if not self.lan_enabled:
+                raise FamilyContractError(
+                    "gateway aceita loopback; bind LAN exige lan_enabled"
+                )
+            if not address.is_private or address.is_unspecified or address.is_multicast:
+                raise FamilyContractError("bind LAN exige endereço privado específico")
+            if not self.require_device_auth:
+                raise FamilyContractError("bind LAN exige autenticação de dispositivo")
+            if self.approved_network is None:
+                raise FamilyContractError("bind LAN exige sub-rede aprovada")
+            try:
+                network = ipaddress.ip_network(self.approved_network, strict=False)
+            except ValueError as error:
+                raise FamilyContractError("sub-rede aprovada inválida") from error
+            if address not in network or not network.is_private:
+                raise FamilyContractError("bind_host fora da sub-rede privada aprovada")
         if not 0 <= self.bind_port <= 65_535:
             raise FamilyContractError("bind_port inválida")
         if not 1_024 <= self.max_request_bytes <= 1_048_576:
@@ -47,3 +68,10 @@ class FamilyConfig:
             raise FamilyContractError("disconnect_policy inválida")
         if not isinstance(self.mock_only, bool):
             raise FamilyContractError("mock_only inválido")
+        tls_paths = (self.tls_certfile, self.tls_keyfile)
+        if any(path is not None for path in tls_paths) and not all(
+            path is not None for path in tls_paths
+        ):
+            raise FamilyContractError("certificado e chave TLS são inseparáveis")
+        if self.lan_enabled and not all(path is not None for path in tls_paths):
+            raise FamilyContractError("bind LAN exige TLS")

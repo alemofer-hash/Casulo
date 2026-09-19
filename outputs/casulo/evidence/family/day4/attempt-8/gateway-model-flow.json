@@ -1,0 +1,115 @@
+{
+  "first_stream": [
+    {
+      "kind": "ACCEPTED",
+      "sequence": 1
+    },
+    {
+      "kind": "STARTED",
+      "sequence": 2
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 3,
+      "text_chars": 4,
+      "text_sha256": "a2e10207c7be30e1d07b0b7e353ecc1a1364f39057e1acedd3f76c5d2ceed180"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 4,
+      "text_chars": 1,
+      "text_sha256": "65c74c15a686187bb6bbf9958f494fc6b80068034a659a9ad44991b08c58f2d2"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 5,
+      "text_chars": 7,
+      "text_sha256": "ca39fd00ba387bd009a45cf9a89ba093fb551f409fb047f844623379e031ce47"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 6,
+      "text_chars": 6,
+      "text_sha256": "57b251be9e64c25b711140a408633bb9968ab06755af5e6899a4748b696dd933"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 7,
+      "text_chars": 2,
+      "text_sha256": "86c6439a4dbbd3f04ca342333af9316318f5ae826b2285b4d6c17a380b6d7eeb"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 8,
+      "text_chars": 2,
+      "text_sha256": "ac0b52a2ae6ef99999bc08fb31e19188bf0085a4614204068e677e140e1458be"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 9,
+      "text_chars": 1,
+      "text_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+    },
+    {
+      "duration_ms": 2509.895,
+      "kind": "COMPLETED",
+      "sequence": 10,
+      "stream_events": 7,
+      "time_to_first_fragment_ms": 842.306
+    }
+  ],
+  "gateway_address": "https://192.168.1.4:54770",
+  "gateway_lan_listener": true,
+  "maximum_active_generations": 1,
+  "queue_capacity": 2,
+  "runtime_address": "127.0.0.1:54760",
+  "runtime_loopback_only": true,
+  "schema": "casulo.family.day4-gateway-model-flow/1.0",
+  "second_stream": [
+    {
+      "kind": "ACCEPTED",
+      "sequence": 1
+    },
+    {
+      "kind": "STARTED",
+      "sequence": 2
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 3,
+      "text_chars": 3,
+      "text_sha256": "ea42cfa102bd7aac62b7cc8f323802129072eca6c96585421adc1c5ace46c1dd"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 4,
+      "text_chars": 4,
+      "text_sha256": "f015346ae3563d83d3a9cad3223586a53d2a62b08a6a7f47d7eeeb3f89be4e90"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 5,
+      "text_chars": 12,
+      "text_sha256": "550e3d5790e6dfa0fb9c6e1c71c0cd83a90797bc306d00228847bd5272c2072e"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 6,
+      "text_chars": 3,
+      "text_sha256": "4dadba15e06deb5223d82fbdd94c2e7b3456333ae83937a71131925490fa04cf"
+    },
+    {
+      "kind": "DELTA",
+      "sequence": 7,
+      "text_chars": 3,
+      "text_sha256": "824baf8f4d86e269cd4fb05d846779f154b77a4c69f01ba1d77eadb25898c077"
+    },
+    {
+      "duration_ms": 1957.279,
+      "kind": "COMPLETED",
+      "sequence": 8,
+      "stream_events": 5,
+      "time_to_first_fragment_ms": 785.95
+    }
+  ]
+}

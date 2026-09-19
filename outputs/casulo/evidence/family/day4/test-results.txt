@@ -1,0 +1,36 @@
+Day 4 focal security/Gateway/PWA suite
+command=python -m pytest tests/family/test_day4_secure_gateway_pwa.py -q
+result=6 passed in 3.09s
+
+Family permitted suite
+command=python -m pytest tests/family -q
+result=29 passed in 8.16s
+
+Product permitted suite
+command=python -m pytest tests/product -q --basetemp .pytest-day4-product-pass
+result=722 passed, 1 skipped in 169.48s
+
+Static validation
+command=python -m compileall -q src/casulo/family private/casulo-owner/src/casulo_owner scripts/13-bootstrap-family-day4-tls.py scripts/14-verify-family-day4.py tests/family/test_day4_secure_gateway_pwa.py
+result=PASS
+command=node --check apps/casulo-family-pwa/app.js
+result=PASS
+command=node --check apps/casulo-family-pwa/sw.js
+result=PASS
+command=git diff --check
+result=PASS
+
+Real integration attempts
+attempt-1=FAIL_TLS_MISSING_AKI; cleanup PASS; preserved
+attempt-2=FAIL_AUTHENTICATED_CHAT_REFUSED; RAM below floor; cleanup PASS; preserved
+attempt-3=NOT_RUN_SANDBOX_ACL_DENIED_BEFORE_GATE; preserved
+attempt-4=BLOCKED_RESOURCE_FLOOR; model_started=false; gateway_started=false; cleanup PASS
+attempt-5=FAIL_RUNNER_INSTRUMENTATION; lazy runtime address inspected too early; cleanup PASS; corrected
+attempt-6=BLOCKED_RESOURCE_FLOOR; corrected runner; model_started=false; gateway_started=false; cleanup PASS
+attempt-7=FAIL_CROSS_SESSION_HTTP_SEMANTICS; cross-session access produced empty HTTP 200 because SSE headers preceded authorization; no data leaked; cleanup PASS; corrected with regression test
+attempt-8=PASS; HTTPS LAN Gateway, two paired devices, cross-session denial HTTP 401, individual revocation, two sequential real Qwen streams, one runtime, one active generation, cleanup PASS
+
+Thermal policy
+temperature_monitoring=EXTERNAL_MANUAL_HWINFO
+temperature_telemetry_collected_by_runner=false
+temperature_claim=NONE

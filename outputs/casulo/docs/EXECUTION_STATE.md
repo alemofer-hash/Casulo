@@ -306,3 +306,19 @@ python release/reproduce.py --full
 - Testes: foco 15 passed; Family 23 passed; Product 722 passed, 1 skipped.
 - Política térmica: `temperature_monitoring=EXTERNAL_MANUAL_HWINFO`, `temperature_telemetry_collected_by_runner=false`, `temperature_claim=NONE`.
 - Próximo gate autorizado: Day 4 — Gateway Family com autenticação de dispositivo, sessões isoladas e primeiro cliente PWA, sem expor o runtime.
+
+# CASULO FAMILY RP0.1 Day 4 — 2026-09-19
+
+- Status: `PASS`.
+- Baseline preservada: commit `c3d67ceed309eb13cede2c3440ac8d841cb94497`, tree `994825b08edc2e623a5789f5e44f43f438dbe682`.
+- Execução autoritativa: `evidence/family/day4/attempt-8`; tentativas 1–7 preservadas como evidência negativa e evolução fail-closed.
+- Gateway HTTPS em `192.168.1.4:54770`; única instância Qwen2.5-7B Q2_K/Vulkan em loopback `127.0.0.1:54760`.
+- Dois dispositivos pareados para o mesmo usuário em sessões distintas; acesso cross-session recusado em HTTP 401.
+- Primeiro dispositivo revogado e negado; segundo dispositivo permaneceu válido e concluiu nova geração.
+- Duas gerações reais sequenciais concluídas por streaming; concorrência ativa máxima 1 e fila limitada a 2.
+- Recursos: RAM disponível mínima 5.499.600.896 bytes, working set máximo 3.642.892.288 bytes e disco livre mínimo 106.989.469.696 bytes.
+- Encerramento: zero `llama-server`, zero listener correspondente e limpeza de processos, portas e sampler aprovada.
+- Testes: foco Day 4 6 passed; Family 29 passed; Product 722 passed, 1 skipped; verificações estáticas e secret scan passaram.
+- `origin` continua `PRIVATE` em `alemofer-hash/Casulo`, sem credencial embutida na URL.
+- Política térmica: `temperature_monitoring=EXTERNAL_MANUAL_HWINFO`, `temperature_telemetry_collected_by_runner=false`, `temperature_claim=NONE`.
+- Próximo gate: aguardar autorização explícita para o Day 5; não avançar automaticamente.

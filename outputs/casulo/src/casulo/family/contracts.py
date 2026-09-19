@@ -63,10 +63,12 @@ def _validate_identifier(value: str, label: str) -> str:
 class AuthContext:
     user_id: str
     device_id: str
+    session_id: str = "default"
 
     def __post_init__(self) -> None:
         _validate_identifier(self.user_id, "user_id")
         _validate_identifier(self.device_id, "device_id")
+        _validate_identifier(self.session_id, "session_id")
 
 
 @dataclass(frozen=True, slots=True)

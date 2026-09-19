@@ -1,0 +1,8 @@
+{
+  "cross_session_job_access_status": 401,
+  "first_session_memory_entries": 1,
+  "isolated": true,
+  "same_user_distinct_sessions": true,
+  "schema": "casulo.family.day4-session-isolation/1.0",
+  "second_session_memory_entries_before_use": 0
+}

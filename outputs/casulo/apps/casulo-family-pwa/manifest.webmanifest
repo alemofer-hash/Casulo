@@ -1,0 +1,12 @@
+{
+  "name": "Casulo Family",
+  "short_name": "Casulo",
+  "description": "Cliente familiar local e privado do Casulo",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#e8ede8",
+  "theme_color": "#17261f",
+  "lang": "pt-BR",
+  "icons": [{"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
+}

@@ -1,0 +1,18 @@
+{
+  "completed_generations": 2,
+  "cross_session_access_denied": true,
+  "devices_paired": 2,
+  "devices_revoked": 1,
+  "ended_utc": "2026-09-19T20:54:52.139371+00:00",
+  "gateway_address": "https://192.168.1.4:54770",
+  "port_cleanup": "PASS",
+  "process_cleanup": "PASS",
+  "runtime_address": "127.0.0.1:54760",
+  "sampler_cleanup": "PASS",
+  "schema": "casulo.family.day4-real-integration/1.0",
+  "started_utc": "2026-09-19T20:54:47.409770+00:00",
+  "status": "PASS",
+  "temperature_claim": "NONE",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false
+}

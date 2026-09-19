@@ -1,0 +1,36 @@
+{
+  "schema": "casulo.family.day4-security-policy/1.0",
+  "pairing": {
+    "code_ttl_seconds": 300,
+    "single_use": true,
+    "owner_approval_required": true,
+    "maximum_attempts_per_source_per_5_minutes": 5
+  },
+  "sessions": {
+    "maximum_age_seconds": 2592000,
+    "cookie_secure": true,
+    "cookie_http_only_for_credentials": true,
+    "cookie_same_site": "Strict",
+    "csrf_double_submit": true,
+    "revoke_device_terminates_sessions": true,
+    "namespace_key": ["user_id", "session_id"]
+  },
+  "network": {
+    "gateway_default_port": 8443,
+    "lan_binding_requires_explicit_private_ip": true,
+    "approved_subnet_required": true,
+    "tls_required": true,
+    "cors": "disabled",
+    "internal_runtime_binding": "127.0.0.1"
+  },
+  "secrets": {
+    "storage": "%LOCALAPPDATA%/Casulo/family-rp01/day4",
+    "raw_credentials_persisted": false,
+    "private_keys_in_git": false
+  },
+  "thermal": {
+    "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+    "temperature_telemetry_collected_by_runner": false,
+    "temperature_claim": "NONE"
+  }
+}

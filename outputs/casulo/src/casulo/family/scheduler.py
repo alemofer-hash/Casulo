@@ -54,6 +54,7 @@ class FamilyJobStore:
                     correlation_id TEXT NOT NULL UNIQUE,
                     user_id TEXT NOT NULL,
                     device_id TEXT NOT NULL,
+                    session_id TEXT NOT NULL DEFAULT 'default',
                     status TEXT NOT NULL,
                     heavy INTEGER NOT NULL CHECK (heavy = 1),
                     request_json TEXT NOT NULL,
@@ -75,6 +76,13 @@ class FamilyJobStore:
                     ON events(job_id) WHERE terminal = 1;
                 """
             )
+            columns = {
+                row[1] for row in self._connection.execute("PRAGMA table_info(jobs)")
+            }
+            if "session_id" not in columns:
+                self._connection.execute(
+                    "ALTER TABLE jobs ADD COLUMN session_id TEXT NOT NULL DEFAULT 'default'"
+                )
 
     def create_job(
         self,
@@ -101,14 +109,15 @@ class FamilyJobStore:
                     raise FamilyBackpressureError("fila Family saturada")
                 self._connection.execute(
                 """INSERT INTO jobs
-                (job_id, correlation_id, user_id, device_id, status, heavy,
+                (job_id, correlation_id, user_id, device_id, session_id, status, heavy,
                  request_json, created_utc, updated_utc)
-                VALUES (?, ?, ?, ?, ?, 1, ?, ?, ?)""",
+                VALUES (?, ?, ?, ?, ?, ?, 1, ?, ?, ?)""",
                 (
                     job_id,
                     correlation_id,
                     auth.user_id,
                     auth.device_id,
+                    auth.session_id,
                     JobStatus.QUEUED.value,
                     request_json,
                     timestamp,
@@ -322,7 +331,7 @@ class FamilyJobStore:
         return JobRecord(
             job_id=row["job_id"],
             correlation_id=row["correlation_id"],
-            auth=AuthContext(row["user_id"], row["device_id"]),
+            auth=AuthContext(row["user_id"], row["device_id"], row["session_id"]),
             request=ChatRequest.from_mapping(document),
             status=status or JobStatus(row["status"]),
         )
@@ -337,9 +346,45 @@ class FamilyJobStore:
 
     def _authorized_row(self, job_id: str, auth: AuthContext) -> sqlite3.Row:
         row = self._job_row(job_id)
-        if row["user_id"] != auth.user_id or row["device_id"] != auth.device_id:
+        if (
+            row["user_id"] != auth.user_id
+            or row["device_id"] != auth.device_id
+            or row["session_id"] != auth.session_id
+        ):
             raise FamilyAuthorizationError("job não pertence ao contexto autenticado")
         return row
+
+    def active_job_ids_for_device(self, user_id: str, device_id: str) -> tuple[str, ...]:
+        with self._lock:
+            rows = self._connection.execute(
+                """SELECT job_id FROM jobs
+                WHERE user_id = ? AND device_id = ? AND status IN (?, ?)
+                ORDER BY created_utc, job_id""",
+                (
+                    user_id,
+                    device_id,
+                    JobStatus.QUEUED.value,
+                    JobStatus.RUNNING.value,
+                ),
+            ).fetchall()
+        return tuple(row["job_id"] for row in rows)
+
+    def auth_for_job(self, job_id: str) -> AuthContext:
+        with self._lock:
+            row = self._job_row(job_id)
+            return AuthContext(row["user_id"], row["device_id"], row["session_id"])
+
+    def auth_contexts_for_device(self, device_id: str) -> tuple[AuthContext, ...]:
+        with self._lock:
+            rows = self._connection.execute(
+                """SELECT DISTINCT user_id, device_id, session_id FROM jobs
+                WHERE device_id = ?""",
+                (device_id,),
+            ).fetchall()
+        return tuple(
+            AuthContext(row["user_id"], row["device_id"], row["session_id"])
+            for row in rows
+        )
 
     def _append_event_tx(
         self,

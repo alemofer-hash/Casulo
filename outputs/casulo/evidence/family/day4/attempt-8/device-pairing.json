@@ -1,0 +1,19 @@
+{
+  "credentials_logged": false,
+  "devices_paired": 2,
+  "first_device_revoked": true,
+  "other_device_survived": true,
+  "raw_credentials_persisted": false,
+  "registry": {
+    "active_devices": 1,
+    "active_sessions": 1
+  },
+  "revocation_result": {
+    "device_id": "dev-fc2b52abddf34ed2bc21200a47a09955",
+    "jobs_cancelled": 0,
+    "revoked": true,
+    "sessions_revoked": 1
+  },
+  "revoked_device_denied": true,
+  "schema": "casulo.family.day4-device-pairing/1.0"
+}

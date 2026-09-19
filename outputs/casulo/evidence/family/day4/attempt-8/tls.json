@@ -1,0 +1,8 @@
+{
+  "ca_certificate_sha256": "1b3bdc4b8e3e5207bd2bede8500889fa6b5e64eb120af9ce542e9c4704f26bf1",
+  "private_key_in_git": false,
+  "root_installation_performed": false,
+  "schema": "casulo.family.day4-tls/1.0",
+  "server_certificate_sha256": "65a8e81e4eb5b2df324836a42da671a08a40367e89e6b399a866ff6b4ad8bf97",
+  "verified_by_private_ca": true
+}

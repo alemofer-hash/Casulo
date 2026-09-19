@@ -1,12 +1,17 @@
 from __future__ import annotations
 
 import json
+import hmac
+import ipaddress
 import re
 import select
 import socket
+import ssl
 import threading
+import uuid
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
 
@@ -21,20 +26,48 @@ from .contracts import (
     FamilyUnavailableError,
 )
 from .runtime import FamilyRuntime
+from .security import DeviceRegistry, PairedSession
+from .scheduler import utc_now
 
 
 JOB_EVENTS_RE = re.compile(r"^/v1/jobs/([a-f0-9]{32})/events$")
 JOB_CANCEL_RE = re.compile(r"^/v1/jobs/([a-f0-9]{32})/cancel$")
+DEVICE_REVOKE_RE = re.compile(r"^/v1/admin/devices/([a-z0-9._-]{1,64})/revoke$")
+
+PWA_FILES = {
+    "/": ("index.html", "text/html; charset=utf-8"),
+    "/index.html": ("index.html", "text/html; charset=utf-8"),
+    "/app.js": ("app.js", "text/javascript; charset=utf-8"),
+    "/styles.css": ("styles.css", "text/css; charset=utf-8"),
+    "/manifest.webmanifest": ("manifest.webmanifest", "application/manifest+json"),
+    "/sw.js": ("sw.js", "text/javascript; charset=utf-8"),
+    "/icon.svg": ("icon.svg", "image/svg+xml"),
+}
 
 
 class FamilyGateway:
-    def __init__(self, *, config: FamilyConfig, runtime: FamilyRuntime) -> None:
+    def __init__(
+        self,
+        *,
+        config: FamilyConfig,
+        runtime: FamilyRuntime,
+        security: DeviceRegistry | None = None,
+        owner_token: str | None = None,
+        pwa_root: Path | None = None,
+    ) -> None:
         self.config = config
         self.runtime = runtime
+        self.security = security
+        self.owner_token = owner_token
+        self.pwa_root = pwa_root.resolve() if pwa_root is not None else None
+        if config.require_device_auth and security is None:
+            raise FamilyAuthorizationError("registry obrigatório")
+        if owner_token is not None and len(owner_token) < 32:
+            raise FamilyAuthorizationError("owner token deve ter ao menos 32 caracteres")
         gateway = self
 
         class Handler(BaseHTTPRequestHandler):
-            server_version = "CasuloFamilyDay3/1.0"
+            server_version = "CasuloFamilyDay4/1.0"
 
             def log_message(self, _format: str, *_args: Any) -> None:
                 return
@@ -45,9 +78,20 @@ class FamilyGateway:
             def do_POST(self) -> None:  # noqa: N802
                 gateway._handle_post(self)
 
+            def do_OPTIONS(self) -> None:  # noqa: N802
+                gateway._json(self, HTTPStatus.METHOD_NOT_ALLOWED, {"error": "CORS_DISABLED"})
+
         self._server = ThreadingHTTPServer(
             (config.bind_host, config.bind_port), Handler
         )
+        self._server.daemon_threads = True
+        if config.tls_certfile is not None and config.tls_keyfile is not None:
+            context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+            context.minimum_version = ssl.TLSVersion.TLSv1_2
+            context.load_cert_chain(config.tls_certfile, config.tls_keyfile)
+            self._server.socket = context.wrap_socket(
+                self._server.socket, server_side=True
+            )
         self._thread = threading.Thread(
             target=self._server.serve_forever,
             name="casulo-family-day1-gateway",
@@ -62,7 +106,8 @@ class FamilyGateway:
     @property
     def base_url(self) -> str:
         host, port = self.address
-        return f"http://{host}:{port}"
+        scheme = "https" if self.config.tls_certfile is not None else "http"
+        return f"{scheme}://{host}:{port}"
 
     def start(self) -> None:
         self._thread.start()
@@ -75,11 +120,41 @@ class FamilyGateway:
             raise RuntimeError("gateway não encerrou")
 
     def _handle_get(self, handler: BaseHTTPRequestHandler) -> None:
+        if not self._client_allowed(handler):
+            self._json(handler, HTTPStatus.FORBIDDEN, {"error": "NETWORK_DENIED"})
+            return
         path = urlsplit(handler.path).path
+        if path in PWA_FILES and self.pwa_root is not None:
+            self._serve_pwa(handler, path)
+            return
         if path == "/v1/health":
             health = self.runtime.health()
+            if self.security is not None:
+                health = {
+                    **health,
+                    "gateway_mode": "DAY4_PAIRED_DEVICE",
+                    "tls": self.config.tls_certfile is not None,
+                    "lan_enabled": self.config.lan_enabled,
+                    "security": self.security.diagnostics(),
+                }
             status = HTTPStatus.OK if health["status"] == "ok" else HTTPStatus.SERVICE_UNAVAILABLE
             self._json(handler, status, health)
+            return
+        if path == "/v1/session":
+            try:
+                session = self._session(handler)
+                self._json(
+                    handler,
+                    HTTPStatus.OK,
+                    {
+                        "user_id": session.auth.user_id,
+                        "device_id": session.auth.device_id,
+                        "session_id": session.auth.session_id,
+                        "role": session.role,
+                    },
+                )
+            except FamilyAuthorizationError as error:
+                self._json(handler, HTTPStatus.UNAUTHORIZED, {"error": str(error)})
             return
         match = JOB_EVENTS_RE.fullmatch(path)
         if match:
@@ -92,16 +167,143 @@ class FamilyGateway:
                     timeout=self.config.stream_wait_seconds,
                 )
             except FamilyAuthorizationError as error:
-                self._json(handler, HTTPStatus.FORBIDDEN, {"error": str(error)})
+                status = (
+                    HTTPStatus.UNAUTHORIZED
+                    if self.security is not None
+                    else HTTPStatus.FORBIDDEN
+                )
+                self._json(handler, status, {"error": str(error)})
             except KeyError:
                 self._json(handler, HTTPStatus.NOT_FOUND, {"error": "job ausente"})
             return
         self._json(handler, HTTPStatus.NOT_FOUND, {"error": "rota ausente"})
 
     def _handle_post(self, handler: BaseHTTPRequestHandler) -> None:
+        if not self._client_allowed(handler):
+            self._json(handler, HTTPStatus.FORBIDDEN, {"error": "NETWORK_DENIED"})
+            return
         path = urlsplit(handler.path).path
         try:
+            if path == "/v1/admin/pairing-codes":
+                self._require_owner(handler)
+                if self.security is None:
+                    raise FamilyUnavailableError("registry indisponível")
+                payload = self._read_json(handler)
+                if set(payload) - {"user_id", "role"}:
+                    raise FamilyContractError("campos de pareamento inválidos")
+                pairing = self.security.issue_pairing_code(
+                    str(payload.get("user_id", "")),
+                    role=str(payload.get("role", "family")),
+                )
+                self._audit_security(
+                    "PAIRING_CODE_ISSUED",
+                    user_id=pairing.user_id,
+                    device_id="owner-local",
+                    session_id="default",
+                    fields={"role": pairing.role, "expires_utc": pairing.expires_utc},
+                )
+                self._json(
+                    handler,
+                    HTTPStatus.CREATED,
+                    {
+                        "code": pairing.code,
+                        "user_id": pairing.user_id,
+                        "role": pairing.role,
+                        "expires_utc": pairing.expires_utc,
+                        "single_use": True,
+                    },
+                )
+                return
+            if path == "/v1/pair":
+                if self.security is None:
+                    raise FamilyUnavailableError("registry indisponível")
+                payload = self._read_json(handler)
+                if set(payload) != {"code", "device_name"}:
+                    raise FamilyContractError("payload de pareamento inválido")
+                paired = self.security.pair(
+                    str(payload["code"]),
+                    str(payload["device_name"]),
+                    source=str(handler.client_address[0]),
+                )
+                self._audit_security(
+                    "DEVICE_PAIRED",
+                    user_id=paired.auth.user_id,
+                    device_id=paired.auth.device_id,
+                    session_id=paired.auth.session_id,
+                    fields={"role": paired.role},
+                )
+                self._json(
+                    handler,
+                    HTTPStatus.CREATED,
+                    {
+                        "user_id": paired.auth.user_id,
+                        "device_id": paired.auth.device_id,
+                        "session_id": paired.auth.session_id,
+                        "role": paired.role,
+                    },
+                    cookies=paired.set_cookie_headers(
+                        max_age_seconds=self.security.session_ttl_seconds
+                    ),
+                )
+                return
+            revoke_match = DEVICE_REVOKE_RE.fullmatch(path)
+            if revoke_match:
+                self._require_owner(handler)
+                if self.security is None:
+                    raise FamilyUnavailableError("registry indisponível")
+                device_id = revoke_match.group(1)
+                auths = self.runtime.store.auth_contexts_for_device(device_id)
+                sessions = self.security.revoke_device(device_id)
+                cancelled = sum(
+                    self.runtime.revoke_device(auth.user_id, device_id)
+                    for auth in auths[:1]
+                )
+                self._audit_security(
+                    "DEVICE_REVOKED",
+                    user_id=auths[0].user_id if auths else "unknown",
+                    device_id=device_id,
+                    session_id="default",
+                    fields={
+                        "sessions_revoked": sessions,
+                        "jobs_cancelled": cancelled,
+                    },
+                )
+                self._json(
+                    handler,
+                    HTTPStatus.OK,
+                    {
+                        "device_id": device_id,
+                        "revoked": True,
+                        "sessions_revoked": sessions,
+                        "jobs_cancelled": cancelled,
+                    },
+                )
+                return
             auth = self._auth(handler)
+            if self.security is not None:
+                session = self._session(handler)
+                self._require_same_origin(handler)
+                self.security.verify_csrf(
+                    session, handler.headers.get("X-Casulo-CSRF")
+                )
+            if path == "/v1/session/revoke":
+                if self.security is None:
+                    raise FamilyUnavailableError("registry indisponível")
+                revoked = self.security.revoke_session(auth)
+                self._audit_security(
+                    "SESSION_REVOKED",
+                    user_id=auth.user_id,
+                    device_id=auth.device_id,
+                    session_id=auth.session_id,
+                    fields={"revoked": revoked},
+                )
+                self._json(
+                    handler,
+                    HTTPStatus.OK,
+                    {"revoked": revoked},
+                    cookies=self._expired_cookies(),
+                )
+                return
             if path == "/v1/chat":
                 request = ChatRequest.from_mapping(self._read_json(handler))
                 job = self.runtime.submit(auth, request)
@@ -129,7 +331,12 @@ class FamilyGateway:
                 return
             self._json(handler, HTTPStatus.NOT_FOUND, {"error": "rota ausente"})
         except FamilyAuthorizationError as error:
-            self._json(handler, HTTPStatus.FORBIDDEN, {"error": str(error)})
+            status = (
+                HTTPStatus.UNAUTHORIZED
+                if self.security is not None
+                else HTTPStatus.FORBIDDEN
+            )
+            self._json(handler, status, {"error": str(error)})
         except FamilyBackpressureError:
             self._json(
                 handler,
@@ -157,12 +364,68 @@ class FamilyGateway:
             self._json(handler, HTTPStatus.NOT_FOUND, {"error": "job ausente"})
 
     def _auth(self, handler: BaseHTTPRequestHandler) -> AuthContext:
+        if self.security is not None:
+            return self._session(handler).auth
         user_id = handler.headers.get("X-Casulo-User", "")
         device_id = handler.headers.get("X-Casulo-Device", "")
         try:
             return AuthContext(user_id=user_id, device_id=device_id)
         except FamilyContractError as error:
             raise FamilyAuthorizationError("contexto sintético ausente") from error
+
+    def _session(self, handler: BaseHTTPRequestHandler) -> PairedSession:
+        if self.security is None:
+            raise FamilyAuthorizationError("autenticação de dispositivo desabilitada")
+        return self.security.authenticate(handler.headers.get("Cookie"))
+
+    def _require_owner(self, handler: BaseHTTPRequestHandler) -> None:
+        if self.owner_token is None:
+            raise FamilyAuthorizationError("admin local desabilitado")
+        source = ipaddress.ip_address(str(handler.client_address[0]))
+        bind = ipaddress.ip_address(self.config.bind_host)
+        if not source.is_loopback and source != bind:
+            raise FamilyAuthorizationError("admin permitido somente no owner host")
+        provided = handler.headers.get("X-Casulo-Owner-Token", "")
+        if not hmac.compare_digest(provided, self.owner_token):
+            raise FamilyAuthorizationError("owner token inválido")
+
+    def _require_same_origin(self, handler: BaseHTTPRequestHandler) -> None:
+        origin = handler.headers.get("Origin")
+        if origin is None:
+            return
+        scheme = "https" if self.config.tls_certfile is not None else "http"
+        expected = f"{scheme}://{handler.headers.get('Host', '')}"
+        if origin != expected:
+            raise FamilyAuthorizationError("origin recusada")
+
+    def _client_allowed(self, handler: BaseHTTPRequestHandler) -> bool:
+        source = ipaddress.ip_address(str(handler.client_address[0]))
+        if source.is_loopback:
+            return True
+        if not self.config.lan_enabled or self.config.approved_network is None:
+            return False
+        return source in ipaddress.ip_network(
+            self.config.approved_network, strict=False
+        )
+
+    def _audit_security(
+        self,
+        event_type: str,
+        *,
+        user_id: str,
+        device_id: str,
+        session_id: str,
+        fields: dict[str, Any],
+    ) -> None:
+        self.runtime.audit.append(
+            timestamp_utc=utc_now(),
+            event_type=event_type,
+            correlation_id=uuid.uuid4().hex,
+            user_id=user_id,
+            device_id=device_id,
+            session_id=session_id,
+            fields=fields,
+        )
 
     def _read_json(self, handler: BaseHTTPRequestHandler) -> dict[str, Any]:
         raw_length = handler.headers.get("Content-Length")
@@ -177,13 +440,14 @@ class FamilyGateway:
             raise FamilyContractError("payload deve ser objeto")
         return document
 
-    @staticmethod
     def _json(
+        self,
         handler: BaseHTTPRequestHandler,
         status: HTTPStatus,
         payload: dict[str, Any],
         *,
         headers: dict[str, str] | None = None,
+        cookies: tuple[str, ...] = (),
     ) -> None:
         body = json.dumps(
             payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")
@@ -192,10 +456,53 @@ class FamilyGateway:
         handler.send_header("Content-Type", "application/json; charset=utf-8")
         handler.send_header("Content-Length", str(len(body)))
         handler.send_header("Cache-Control", "no-store")
+        self._security_headers(handler)
         for key, value in (headers or {}).items():
             handler.send_header(key, value)
+        for cookie in cookies:
+            handler.send_header("Set-Cookie", cookie)
         handler.end_headers()
         handler.wfile.write(body)
+
+    def _serve_pwa(self, handler: BaseHTTPRequestHandler, path: str) -> None:
+        assert self.pwa_root is not None
+        name, content_type = PWA_FILES[path]
+        target = (self.pwa_root / name).resolve()
+        if target.parent != self.pwa_root or not target.is_file():
+            self._json(handler, HTTPStatus.NOT_FOUND, {"error": "asset ausente"})
+            return
+        body = target.read_bytes()
+        handler.send_response(HTTPStatus.OK.value)
+        handler.send_header("Content-Type", content_type)
+        handler.send_header("Content-Length", str(len(body)))
+        handler.send_header(
+            "Cache-Control",
+            "no-cache" if name in {"index.html", "sw.js"} else "public, max-age=3600",
+        )
+        self._security_headers(handler)
+        handler.end_headers()
+        handler.wfile.write(body)
+
+    def _security_headers(self, handler: BaseHTTPRequestHandler) -> None:
+        handler.send_header("X-Content-Type-Options", "nosniff")
+        handler.send_header("Referrer-Policy", "no-referrer")
+        handler.send_header("X-Frame-Options", "DENY")
+        handler.send_header("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+        handler.send_header(
+            "Content-Security-Policy",
+            "default-src 'self'; script-src 'self'; style-src 'self'; "
+            "img-src 'self'; connect-src 'self'; object-src 'none'; "
+            "base-uri 'none'; frame-ancestors 'none'",
+        )
+        if self.config.tls_certfile is not None:
+            handler.send_header("Strict-Transport-Security", "max-age=31536000")
+
+    @staticmethod
+    def _expired_cookies() -> tuple[str, ...]:
+        return tuple(
+            f"{name}=; Path=/; Max-Age=0; Secure; SameSite=Strict; HttpOnly"
+            for name in ("casulo_device", "casulo_session")
+        ) + ("casulo_csrf=; Path=/; Max-Age=0; Secure; SameSite=Strict",)
 
     def _sse(
         self,
@@ -205,6 +512,11 @@ class FamilyGateway:
         *,
         timeout: float,
     ) -> None:
+        # Authorize ownership before committing the HTTP 200 SSE headers.  If
+        # this check happened only inside stream_events(), a cross-session
+        # caller would observe an empty 200 response even though access was
+        # denied after the headers had already been sent.
+        self.runtime.events(auth, job_id)
         handler.send_response(HTTPStatus.OK.value)
         handler.send_header("Content-Type", "text/event-stream; charset=utf-8")
         handler.send_header("Cache-Control", "no-store")
