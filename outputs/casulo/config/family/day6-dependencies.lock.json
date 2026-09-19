@@ -1,0 +1,26 @@
+{
+  "schema": "casulo.family.day6-dependencies/1.0",
+  "asr": {
+    "engine": "whisper.cpp", "version": "v1.9.2",
+    "commit": "306c88f4d1286aec1bf96e544632897886af5501",
+    "source": "https://github.com/ggml-org/whisper.cpp", "license": "MIT",
+    "library_sha256": "4aa83dba47f92d25d3c6a6c3b3e024d67e0bad2760eab49c60ffe9005233a73c",
+    "model": "ggml-base-q5_1.bin", "model_bytes": 59707625,
+    "model_sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898",
+    "model_source": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base-q5_1.bin",
+    "flags": {"threads": 2, "use_gpu": false, "locale": "pt-BR", "sample_rate": 16000},
+    "adoption": "reuse_verified_existing_cache", "network_at_runtime": false
+  },
+  "tts": {
+    "engine": "Windows System.Speech", "voice": "Microsoft Maria Desktop",
+    "token_version": "11.0", "locale": "pt-BR",
+    "license": "LicenseRef-Microsoft-Windows-Installed-Voice",
+    "source": "https://learn.microsoft.com/en-us/dotnet/api/system.speech.synthesis.speechsynthesizer",
+    "redistribution": false, "network_at_runtime": false,
+    "flags": {"rate": 0, "sample_rate": 16000, "channels": 1, "bits": 16},
+    "asset_hashes": "dependency-and-model-provenance.json records the installed OS-specific assets"
+  },
+  "llm": {"manifest": "config/family/day2-model-candidates.json", "profile": "qwen25-q2-vulkan", "concurrency": 1, "cache_prompt": false, "slot_erase": "before_and_after_each_persona_request"},
+  "added_python_runtime_dependencies": [],
+  "rollback": "Stop the Day 6 owner launcher; retained Day 5 launcher and evidence remain available. Remove no cached models, OS voices or historical artifacts."
+}

@@ -1,0 +1,90 @@
+{
+  "audio_disk_temp_files": 0,
+  "gateway_asr_cancel": {
+    "duration_ms": 61.087,
+    "reason_code": "VoiceCancelled",
+    "result": "CANCELLED",
+    "state": "IDLE",
+    "states": [
+      {
+        "at": 29878.3645731,
+        "state": "TRANSCRIBING"
+      },
+      {
+        "at": 29878.4239515,
+        "state": "IDLE"
+      }
+    ],
+    "turn_id": "99685a57c3d648159407db05386dcd0b"
+  },
+  "native_tts_cancel": "PASS",
+  "native_tts_recovery": "PASS",
+  "service_receipts": [
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 476.697,
+      "exit_code": 0,
+      "input_bytes": 38,
+      "output_bytes": 125728,
+      "output_sha256": "5ad64249364d2471c8cc0e64030812e3ba29d27b8ffe91c791b129ee859f193d",
+      "pid": 13204,
+      "result": "COMPLETED",
+      "stage": "/tts"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 32.949,
+      "exit_code": 1,
+      "input_bytes": 125772,
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pid": 16248,
+      "result": "CANCELLED",
+      "stage": "/asr"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 2328.99,
+      "exit_code": 0,
+      "input_bytes": 125772,
+      "output_bytes": 38,
+      "output_sha256": "33b3e0400cacdbd2f1d17581d943cfe82b21ab8bd204591ae48636c13220302d",
+      "pid": 18880,
+      "result": "COMPLETED",
+      "stage": "/asr"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 444.252,
+      "exit_code": 0,
+      "input_bytes": 24,
+      "output_bytes": 85984,
+      "output_sha256": "d864cd827a1bd0b644de09fbdc1298939647ec0ca3a2c42c6f66fa40a2c0accf",
+      "pid": 16968,
+      "result": "COMPLETED",
+      "stage": "/tts"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 23.496,
+      "exit_code": 1,
+      "input_bytes": 1505,
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pid": 22068,
+      "result": "CANCELLED",
+      "stage": "/tts"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 436.12,
+      "exit_code": 0,
+      "input_bytes": 16,
+      "output_bytes": 70496,
+      "output_sha256": "9e5d613f807034cc0048bb2fb95a0f1fd70afbffdfbe3254c6cf53227cfe5c61",
+      "pid": 25328,
+      "result": "COMPLETED",
+      "stage": "/tts"
+    }
+  ]
+}

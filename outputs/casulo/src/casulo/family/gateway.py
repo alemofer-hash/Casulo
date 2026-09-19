@@ -30,6 +30,7 @@ from .memory import DELETE_ALL_CONFIRMATION, FamilyRagMemory
 from .runtime import FamilyRuntime
 from .security import DeviceRegistry, PairedSession
 from .scheduler import utc_now
+from .bounded_http import discard_unread_body
 
 
 JOB_EVENTS_RE = re.compile(r"^/v1/jobs/([a-f0-9]{32})/events$")
@@ -57,6 +58,7 @@ class FamilyGateway:
         security: DeviceRegistry | None = None,
         owner_token: str | None = None,
         pwa_root: Path | None = None,
+        server_class=ThreadingHTTPServer,
     ) -> None:
         self.config = config
         self.runtime = runtime
@@ -87,7 +89,7 @@ class FamilyGateway:
             def do_OPTIONS(self) -> None:  # noqa: N802
                 gateway._json(self, HTTPStatus.METHOD_NOT_ALLOWED, {"error": "CORS_DISABLED"})
 
-        self._server = ThreadingHTTPServer(
+        self._server = server_class(
             (config.bind_host, config.bind_port), Handler
         )
         self._server.daemon_threads = True
@@ -96,7 +98,8 @@ class FamilyGateway:
             context.minimum_version = ssl.TLSVersion.TLSv1_2
             context.load_cert_chain(config.tls_certfile, config.tls_keyfile)
             self._server.socket = context.wrap_socket(
-                self._server.socket, server_side=True
+                self._server.socket, server_side=True,
+                do_handshake_on_connect=not getattr(self._server, "defer_tls_handshake", False),
             )
         self._thread = threading.Thread(
             target=self._server.serve_forever,
@@ -623,6 +626,7 @@ class FamilyGateway:
         if length <= 0 or length > self.config.max_request_bytes:
             raise FamilyContractError("corpo fora do limite")
         body = handler.rfile.read(length)
+        handler._body_consumed = True
         document = json.loads(body.decode("utf-8"))
         if not isinstance(document, dict):
             raise FamilyContractError("payload deve ser objeto")
@@ -637,6 +641,7 @@ class FamilyGateway:
         headers: dict[str, str] | None = None,
         cookies: tuple[str, ...] = (),
     ) -> None:
+        discard_unread_body(handler, self.config.max_request_bytes)
         body = json.dumps(
             payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")
         ).encode("utf-8")

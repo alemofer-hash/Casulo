@@ -1,0 +1,63 @@
+{
+  "intimate_text_retained": false,
+  "real": [
+    {
+      "confidence": 1.0,
+      "reason": "binding_changed",
+      "to": "WORK"
+    },
+    {
+      "confidence": 0.0,
+      "explicit_direct_match": false,
+      "humor_suppressed": false,
+      "to": "WORK"
+    },
+    {
+      "confidence": 0.0,
+      "explicit_direct_match": false,
+      "humor_suppressed": false,
+      "to": "WORK"
+    },
+    {
+      "confidence": 0.0,
+      "explicit_direct_match": false,
+      "humor_suppressed": false,
+      "to": "WORK"
+    },
+    {
+      "confidence": 0.0,
+      "explicit_direct_match": false,
+      "humor_suppressed": false,
+      "to": "WORK"
+    }
+  ],
+  "status": "PASS",
+  "synthetic": [
+    {
+      "category": "explicit_neutral_affection",
+      "humor_suppressed": false,
+      "persona_instance_id": "cleo.host.guilherme",
+      "register": "PLAY_PRIVATE",
+      "version": "cleo-guilherme-host-private-v1"
+    },
+    {
+      "category": "technical_and_security",
+      "humor_suppressed": true,
+      "persona_instance_id": "cleo.host.guilherme",
+      "register": "WORK",
+      "version": "cleo-guilherme-host-private-v1"
+    },
+    {
+      "category": "ambiguous_affection",
+      "humor_suppressed": false,
+      "persona_instance_id": "cleo.host.guilherme",
+      "register": "WORK",
+      "version": "cleo-guilherme-host-private-v1"
+    },
+    {
+      "category": "locked",
+      "private_state": "WORK",
+      "result": "DENIED"
+    }
+  ]
+}

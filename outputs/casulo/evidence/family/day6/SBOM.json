@@ -1,0 +1,75 @@
+{
+  "components": [
+    {
+      "adoption": "reuse_verified_existing_cache",
+      "commit": "306c88f4d1286aec1bf96e544632897886af5501",
+      "engine": "whisper.cpp",
+      "flags": {
+        "locale": "pt-BR",
+        "sample_rate": 16000,
+        "threads": 2,
+        "use_gpu": false
+      },
+      "library_sha256": "4aa83dba47f92d25d3c6a6c3b3e024d67e0bad2760eab49c60ffe9005233a73c",
+      "license": "MIT",
+      "model": "ggml-base-q5_1.bin",
+      "model_bytes": 59707625,
+      "model_sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898",
+      "model_source": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base-q5_1.bin",
+      "network_at_runtime": false,
+      "source": "https://github.com/ggml-org/whisper.cpp",
+      "version": "v1.9.2"
+    },
+    {
+      "asset_hashes": "dependency-and-model-provenance.json records the installed OS-specific assets",
+      "engine": "Windows System.Speech",
+      "flags": {
+        "bits": 16,
+        "channels": 1,
+        "rate": 0,
+        "sample_rate": 16000
+      },
+      "license": "LicenseRef-Microsoft-Windows-Installed-Voice",
+      "locale": "pt-BR",
+      "network_at_runtime": false,
+      "redistribution": false,
+      "source": "https://learn.microsoft.com/en-us/dotnet/api/system.speech.synthesis.speechsynthesizer",
+      "token_version": "11.0",
+      "voice": "Microsoft Maria Desktop"
+    },
+    {
+      "batch_size": 128,
+      "cache_type_k": "f16",
+      "cache_type_v": "f16",
+      "context_tokens": 8192,
+      "flash_attention": true,
+      "license": "Apache-2.0",
+      "model_file": "qwen2.5-7b-instruct-q2_k.gguf",
+      "model_files": [
+        {
+          "bytes": 3015940000,
+          "file": "qwen2.5-7b-instruct-q2_k.gguf",
+          "sha256": "a0fc885ff014d73c02dcc4ad093f110c6dd4e0e308f84efe1accf078d364a87a"
+        }
+      ],
+      "model_key": "q2_k",
+      "no_host": true,
+      "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+      "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+      "runtime_profile": "vulkan",
+      "ubatch_size": 64
+    },
+    {
+      "chromium": "151.0.7922.34",
+      "installed_by_this_task": false,
+      "license": "Apache-2.0 (Playwright); Chromium component licenses",
+      "playwright": "1.62.1",
+      "source": "https://github.com/microsoft/playwright"
+    }
+  ],
+  "new_downloads": 0,
+  "provenance_sha256": "3564c5e9a16377459049f4059bf3640ef837d340acc70d8517e35b518d6e100c",
+  "schema": "casulo.day6.sbom/1.0",
+  "weights_redistributed_in_git": false
+}

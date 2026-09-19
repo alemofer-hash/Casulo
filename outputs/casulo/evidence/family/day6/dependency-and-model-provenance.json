@@ -1,0 +1,133 @@
+{
+  "asr_model": {
+    "bytes": 59707625,
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\models\\422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898-ggml-base-q5_1.bin",
+    "sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898"
+  },
+  "browser_test": {
+    "chromium": "151.0.7922.34",
+    "installed_by_this_task": false,
+    "license": "Apache-2.0 (Playwright); Chromium component licenses",
+    "playwright": "1.62.1",
+    "source": "https://github.com/microsoft/playwright"
+  },
+  "existing_native_build": {
+    "bridge_path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\bin\\casulo_whisper_bridge.dll",
+    "bridge_sha256": "4aa83dba47f92d25d3c6a6c3b3e024d67e0bad2760eab49c60ffe9005233a73c",
+    "build_argv": [
+      "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.EXE",
+      "--build",
+      "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\build\\306c88f4d1286aec1bf96e544632897886af5501",
+      "--config",
+      "Release",
+      "--target",
+      "casulo_whisper_bridge"
+    ],
+    "configure_argv": [
+      "C:\\Users\\guimo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.EXE",
+      "-S",
+      "C:\\Users\\guimo\\Documents\\Codex\\2026-07-28\\ex\\outputs\\casulo\\native\\voice",
+      "-B",
+      "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\build\\306c88f4d1286aec1bf96e544632897886af5501",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DWHISPER_CPP_DIR=C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\sources\\whisper.cpp\\306c88f4d1286aec1bf96e544632897886af5501\\source",
+      "-DCASULO_VOICE_OUTPUT_DIR=C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\bin"
+    ],
+    "created_at": "2026-08-11T21:33:08.995257Z",
+    "download_performed": false,
+    "engine_commit": "306c88f4d1286aec1bf96e544632897886af5501",
+    "model_sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb",
+    "schema": "casulo-voice-build/1.0"
+  },
+  "existing_native_build_sha256": "bf494d71accc28e3e6e6a01b1efadff2bea7bb5a8dd41694b3bd0021a3fc456e",
+  "library": {
+    "bytes": 5349624,
+    "path": "C:\\Users\\guimo\\AppData\\Local\\Casulo\\cache\\voice\\bin\\casulo_whisper_bridge.dll",
+    "sha256": "4aa83dba47f92d25d3c6a6c3b3e024d67e0bad2760eab49c60ffe9005233a73c"
+  },
+  "lock": {
+    "added_python_runtime_dependencies": [],
+    "asr": {
+      "adoption": "reuse_verified_existing_cache",
+      "commit": "306c88f4d1286aec1bf96e544632897886af5501",
+      "engine": "whisper.cpp",
+      "flags": {
+        "locale": "pt-BR",
+        "sample_rate": 16000,
+        "threads": 2,
+        "use_gpu": false
+      },
+      "library_sha256": "4aa83dba47f92d25d3c6a6c3b3e024d67e0bad2760eab49c60ffe9005233a73c",
+      "license": "MIT",
+      "model": "ggml-base-q5_1.bin",
+      "model_bytes": 59707625,
+      "model_sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898",
+      "model_source": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base-q5_1.bin",
+      "network_at_runtime": false,
+      "source": "https://github.com/ggml-org/whisper.cpp",
+      "version": "v1.9.2"
+    },
+    "llm": {
+      "cache_prompt": false,
+      "concurrency": 1,
+      "manifest": "config/family/day2-model-candidates.json",
+      "profile": "qwen25-q2-vulkan",
+      "slot_erase": "before_and_after_each_persona_request"
+    },
+    "rollback": "Stop the Day 6 owner launcher; retained Day 5 launcher and evidence remain available. Remove no cached models, OS voices or historical artifacts.",
+    "schema": "casulo.family.day6-dependencies/1.0",
+    "tts": {
+      "asset_hashes": "dependency-and-model-provenance.json records the installed OS-specific assets",
+      "engine": "Windows System.Speech",
+      "flags": {
+        "bits": 16,
+        "channels": 1,
+        "rate": 0,
+        "sample_rate": 16000
+      },
+      "license": "LicenseRef-Microsoft-Windows-Installed-Voice",
+      "locale": "pt-BR",
+      "network_at_runtime": false,
+      "redistribution": false,
+      "source": "https://learn.microsoft.com/en-us/dotnet/api/system.speech.synthesis.speechsynthesizer",
+      "token_version": "11.0",
+      "voice": "Microsoft Maria Desktop"
+    }
+  },
+  "network_required": false,
+  "python_version": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "tts_assets": [
+    {
+      "bytes": 2903522,
+      "path": "C:\\Windows\\Speech_OneCore\\Engines\\TTS\\pt-BR\\M1046Maria.APM",
+      "sha256": "cd779319a3649145c6471f4ccf1dd7410a4282f026c2ef3530a6b0284dc8a780"
+    },
+    {
+      "bytes": 1816,
+      "path": "C:\\Windows\\Speech_OneCore\\Engines\\TTS\\pt-BR\\M1046Maria.BEP",
+      "sha256": "084aa46089c19d7418c4cf23de2728b91485aebeb1f70e315ed4d31c4b3398c4"
+    },
+    {
+      "bytes": 832,
+      "path": "C:\\Windows\\Speech_OneCore\\Engines\\TTS\\pt-BR\\M1046Maria.INI",
+      "sha256": "cccf492c5a4358cc233b9779d3df04a65da6888c823a8982d06b3ac630a41741"
+    },
+    {
+      "bytes": 2672944,
+      "path": "C:\\Windows\\Speech_OneCore\\Engines\\TTS\\pt-BR\\M1046Maria.TBT.NUS",
+      "sha256": "bd103f33a659fd43cddd63fbdfe854f19e0fde0a53161d44df2aa1164c3cd762"
+    },
+    {
+      "bytes": 4003304,
+      "path": "C:\\Windows\\Speech_OneCore\\Engines\\TTS\\pt-BR\\MSTTSLocPtBR.dat",
+      "sha256": "d3cca00498633c85ce755c4a86021466d52f910ad8897c9a153bbf655b30a4d0"
+    },
+    {
+      "bytes": 620,
+      "path": "C:\\Windows\\Speech_OneCore\\Engines\\TTS\\pt-BR\\MSTTSLocPtBR.INI",
+      "sha256": "b7ad4ed6e67a9a8c7ce04f7565ac122ba7f5ce91a0b8682b4a12f08913370ced"
+    }
+  ]
+}

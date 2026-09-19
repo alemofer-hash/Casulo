@@ -1,0 +1,73 @@
+{
+  "adapter_at_failure": {
+    "adapter": "Qwen2.5-7B-Q2_K-Vulkan",
+    "adapter_active_requests": 0,
+    "adapter_maximum_active_requests": 1,
+    "available_ram_bytes": 7938940928,
+    "backend": "llama.cpp-vulkan",
+    "cache_clean": true,
+    "cache_erase_status": {
+      "fields": [
+        "id_slot",
+        "n_erased"
+      ],
+      "http_status": 200
+    },
+    "cache_erases": 2,
+    "disk_free_bytes": 105192751104,
+    "minimum_start_available_ram_bytes": 5368709120,
+    "process_commit_bytes": null,
+    "process_peak_working_set_bytes": null,
+    "process_working_set_bytes": null,
+    "runtime_instances": 0,
+    "runtime_listener": null,
+    "runtime_loopback_only": true,
+    "runtime_pid": null,
+    "startup_count": 1,
+    "temperature_claim": "NONE",
+    "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+    "temperature_telemetry_collected_by_runner": false
+  },
+  "cleanup": {
+    "at": "2026-09-19T23:27:38.777782+00:00",
+    "listeners": [],
+    "llama": [],
+    "owned_alive": []
+  },
+  "duration_seconds": 53.578,
+  "error": "PWA_BROWSER_FAILED",
+  "first_reproducible_cause": "AssertionError",
+  "max_aggregate_working_set_bytes": 4065812480,
+  "min_available_ram_bytes": 4045365248,
+  "min_disk_free_bytes": 105192357888,
+  "model_identity": {
+    "batch_size": 128,
+    "cache_type_k": "f16",
+    "cache_type_v": "f16",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "license": "Apache-2.0",
+    "model_file": "qwen2.5-7b-instruct-q2_k.gguf",
+    "model_files": [
+      {
+        "bytes": 3015940000,
+        "file": "qwen2.5-7b-instruct-q2_k.gguf",
+        "sha256": "a0fc885ff014d73c02dcc4ad093f110c6dd4e0e308f84efe1accf078d364a87a"
+      }
+    ],
+    "model_key": "q2_k",
+    "no_host": true,
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 64
+  },
+  "resource_floor_breached": false,
+  "resource_sample_count": 204,
+  "sampler_transient_errors": [],
+  "status": "PARTIAL",
+  "temperature_claim": "NONE",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false
+}

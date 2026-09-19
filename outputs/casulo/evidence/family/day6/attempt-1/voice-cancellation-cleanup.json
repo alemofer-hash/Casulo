@@ -1,0 +1,19 @@
+{
+  "gateway_asr_cancel": {
+    "duration_ms": 55.87,
+    "reason_code": "VoiceCancelled",
+    "result": "CANCELLED",
+    "state": "IDLE",
+    "states": [
+      {
+        "at": 29656.3894482,
+        "state": "TRANSCRIBING"
+      },
+      {
+        "at": 29656.4436562,
+        "state": "IDLE"
+      }
+    ],
+    "turn_id": "1701cb6d21c846e4b659b3630c2e2dc9"
+  }
+}

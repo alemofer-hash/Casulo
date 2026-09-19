@@ -1,0 +1,143 @@
+{
+  "adapter": {
+    "adapter": "Qwen2.5-7B-Q2_K-Vulkan",
+    "adapter_active_requests": 0,
+    "adapter_maximum_active_requests": 1,
+    "available_ram_bytes": 5059452928,
+    "backend": "llama.cpp-vulkan",
+    "cache_clean": true,
+    "cache_erase_status": {
+      "fields": [
+        "id_slot",
+        "n_erased"
+      ],
+      "http_status": 200
+    },
+    "cache_erases": 4,
+    "disk_free_bytes": 104789504000,
+    "minimum_start_available_ram_bytes": 5368709120,
+    "process_commit_bytes": 3699351552,
+    "process_peak_working_set_bytes": 3642404864,
+    "process_working_set_bytes": 3642404864,
+    "runtime_instances": 1,
+    "runtime_listener": "127.0.0.1:53245",
+    "runtime_loopback_only": true,
+    "runtime_pid": 26376,
+    "startup_count": 1,
+    "temperature_claim": "NONE",
+    "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+    "temperature_telemetry_collected_by_runner": false
+  },
+  "cleanup": {
+    "at": "2026-09-19T23:42:30.058963+00:00",
+    "listeners": [],
+    "llama": [],
+    "owned_alive": []
+  },
+  "counters": {
+    "accepted": 2,
+    "cancelled": 0,
+    "completed": 2,
+    "enqueued": 2,
+    "failed": 0,
+    "rejected": 0
+  },
+  "duration_seconds": 36.842,
+  "internal_endpoints_unauthenticated": {
+    "model": 401,
+    "voice": 401
+  },
+  "kv_files_created": 0,
+  "max_aggregate_working_set_bytes": 4366557184,
+  "maximum_active_generations": 1,
+  "min_available_ram_bytes": 4614135808,
+  "min_disk_free_bytes": 104789377024,
+  "model_identity": {
+    "batch_size": 128,
+    "cache_type_k": "f16",
+    "cache_type_v": "f16",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "license": "Apache-2.0",
+    "model_file": "qwen2.5-7b-instruct-q2_k.gguf",
+    "model_files": [
+      {
+        "bytes": 3015940000,
+        "file": "qwen2.5-7b-instruct-q2_k.gguf",
+        "sha256": "a0fc885ff014d73c02dcc4ad093f110c6dd4e0e308f84efe1accf078d364a87a"
+      }
+    ],
+    "model_key": "q2_k",
+    "no_host": true,
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 64
+  },
+  "queue_capacity": 2,
+  "resource_floor_breached": false,
+  "resource_sample_count": 139,
+  "sampler_transient_errors": [],
+  "status": "PASS_REAL_PIPELINE",
+  "temperature_claim": "NONE",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false,
+  "voice_turn": {
+    "audio_bytes": 94860,
+    "audio_playable_wav": true,
+    "audio_sha256": "1305dc59c95a058d864b00166890742b96570a73b930eb82a23638dc96172972",
+    "duration_ms": 7102.846,
+    "gateway": "https://127.0.0.1:53263",
+    "humor_suppressed": false,
+    "microphone_capture_claim": false,
+    "model_metrics": {
+      "duration_ms": 4303.882,
+      "mock_only": false,
+      "stream_events": 8,
+      "time_to_first_fragment_ms": 2386.058
+    },
+    "persona_instance_id": "cleo.host.guilherme",
+    "physical_playback_claim": false,
+    "register": "WORK",
+    "result": "COMPLETED",
+    "runtime": "127.0.0.1:53245",
+    "state": "IDLE",
+    "states": [
+      {
+        "at": 31139.6854305,
+        "state": "TRANSCRIBING"
+      },
+      {
+        "at": 31142.0037213,
+        "state": "RESOLVING_PRINCIPAL"
+      },
+      {
+        "at": 31142.0039744,
+        "state": "RESOLVING_PERSONA"
+      },
+      {
+        "at": 31142.0042959,
+        "state": "THINKING"
+      },
+      {
+        "at": 31146.3356206,
+        "state": "SYNTHESIZING"
+      },
+      {
+        "at": 31146.7865569,
+        "state": "PLAYING"
+      },
+      {
+        "at": 31146.8722183,
+        "state": "IDLE"
+      }
+    ],
+    "turn_id": "97fd6c589b7f43c5ba8314bdf1e35348",
+    "version": "cleo-guilherme-host-private-v1",
+    "voice_runtime": [
+      "127.0.0.1",
+      53262
+    ]
+  }
+}

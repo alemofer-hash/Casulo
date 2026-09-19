@@ -1,0 +1,158 @@
+{
+  "adapter": {
+    "adapter": "Qwen2.5-7B-Q2_K-Vulkan",
+    "adapter_active_requests": 0,
+    "adapter_maximum_active_requests": 1,
+    "available_ram_bytes": 5029285888,
+    "backend": "llama.cpp-vulkan",
+    "cache_clean": true,
+    "cache_erase_status": {
+      "fields": [
+        "id_slot",
+        "n_erased"
+      ],
+      "http_status": 200
+    },
+    "cache_erases": 4,
+    "disk_free_bytes": 104878063616,
+    "minimum_start_available_ram_bytes": 5368709120,
+    "process_commit_bytes": 3699220480,
+    "process_peak_working_set_bytes": 3642179584,
+    "process_working_set_bytes": 3642179584,
+    "runtime_instances": 1,
+    "runtime_listener": "127.0.0.1:60886",
+    "runtime_loopback_only": true,
+    "runtime_pid": 15044,
+    "startup_count": 1,
+    "temperature_claim": "NONE",
+    "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+    "temperature_telemetry_collected_by_runner": false
+  },
+  "receipts": [
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 808.018,
+      "exit_code": 0,
+      "input_bytes": 38,
+      "output_bytes": 125728,
+      "output_sha256": "5ad64249364d2471c8cc0e64030812e3ba29d27b8ffe91c791b129ee859f193d",
+      "pid": 21552,
+      "result": "COMPLETED",
+      "stage": "/tts"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 83.138,
+      "exit_code": 1,
+      "input_bytes": 125772,
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pid": 12260,
+      "result": "CANCELLED",
+      "stage": "/asr"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 2330.416,
+      "exit_code": 0,
+      "input_bytes": 125772,
+      "output_bytes": 38,
+      "output_sha256": "33b3e0400cacdbd2f1d17581d943cfe82b21ab8bd204591ae48636c13220302d",
+      "pid": 11372,
+      "result": "COMPLETED",
+      "stage": "/asr"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 446.064,
+      "exit_code": 0,
+      "input_bytes": 25,
+      "output_bytes": 94816,
+      "output_sha256": "681b25b871bbe230f5e6ea3ef3a4b3b2d7dd83351cbf6e9befa0f1e57ce2d8d5",
+      "pid": 9952,
+      "result": "COMPLETED",
+      "stage": "/tts"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 39.967,
+      "exit_code": 1,
+      "input_bytes": 1505,
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pid": 24744,
+      "result": "CANCELLED",
+      "stage": "/tts"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 448.007,
+      "exit_code": 0,
+      "input_bytes": 16,
+      "output_bytes": 70496,
+      "output_sha256": "9e5d613f807034cc0048bb2fb95a0f1fd70afbffdfbe3254c6cf53227cfe5c61",
+      "pid": 9604,
+      "result": "COMPLETED",
+      "stage": "/tts"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 2387.27,
+      "exit_code": 0,
+      "input_bytes": 136576,
+      "output_bytes": 38,
+      "output_sha256": "33b3e0400cacdbd2f1d17581d943cfe82b21ab8bd204591ae48636c13220302d",
+      "pid": 12648,
+      "result": "COMPLETED",
+      "stage": "/asr"
+    },
+    {
+      "audio_disk_files": 0,
+      "duration_ms": 549.634,
+      "exit_code": 0,
+      "input_bytes": 26,
+      "output_bytes": 94368,
+      "output_sha256": "73ca8c390959c36253880c633a5628c24d15a83098acfc2cbe1a347838bcc590",
+      "pid": 26340,
+      "result": "COMPLETED",
+      "stage": "/tts"
+    }
+  ],
+  "supervisor": {
+    "active_generations": 0,
+    "adapter": "Qwen2.5-7B-Q2_K-Vulkan",
+    "adapter_active_requests": 0,
+    "adapter_maximum_active_requests": 1,
+    "available_ram_bytes": 5029285888,
+    "backend": "llama.cpp-vulkan",
+    "cache_clean": true,
+    "cache_erase_status": {
+      "fields": [
+        "id_slot",
+        "n_erased"
+      ],
+      "http_status": 200
+    },
+    "cache_erases": 4,
+    "disk_free_bytes": 104878063616,
+    "last_error_code": null,
+    "maximum_active_generations": 1,
+    "minimum_start_available_ram_bytes": 5368709120,
+    "mock_engine": false,
+    "process_commit_bytes": 3699220480,
+    "process_peak_working_set_bytes": 3642179584,
+    "process_working_set_bytes": 3642179584,
+    "ready": true,
+    "runtime_instances": 1,
+    "runtime_listener": "127.0.0.1:60886",
+    "runtime_loopback_only": true,
+    "runtime_pid": 15044,
+    "startup_count": 1,
+    "state": "READY",
+    "temperature_claim": "NONE",
+    "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+    "temperature_telemetry_collected_by_runner": false,
+    "transition_count": 8
+  },
+  "voice_state": "READY"
+}

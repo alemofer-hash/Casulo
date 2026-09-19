@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import http.client
 import json
+import secrets
 import shutil
 import socket
 import threading
@@ -40,6 +41,7 @@ class FamilyLocalModelAdapter:
         minimum_start_available_ram_bytes: int | None = None,
         minimum_disk_free_bytes: int = 30 * 1_024**3,
         startup_timeout: float = 300.0,
+        slot_action_path: Path | None = None,
     ) -> None:
         if not 16 <= max_generated_tokens <= 1_024:
             raise FamilyModelAdapterError("max_generated_tokens inválido")
@@ -59,11 +61,15 @@ class FamilyLocalModelAdapter:
             raise FamilyModelAdapterError("margem de startup abaixo do piso operacional")
         self.minimum_disk_free_bytes = minimum_disk_free_bytes
         self.startup_timeout = startup_timeout
+        self.slot_action_path = slot_action_path
         self._lock = threading.RLock()
         self._server: LoopbackLlamaServer | None = None
         self._active_requests = 0
         self._maximum_active_requests = 0
         self._startup_count = 0
+        self._cache_clean = True
+        self._cache_erases = 0
+        self._cache_erase_status = None
 
     @property
     def runtime_address(self) -> str | None:
@@ -77,7 +83,13 @@ class FamilyLocalModelAdapter:
             if self._server is not None:
                 raise FamilyModelAdapterError("segunda instância do runtime recusada")
         self._assert_resource_floor(startup=True)
-        server = LoopbackLlamaServer(self.profile, startup_timeout=self.startup_timeout)
+        options = {}
+        if self.slot_action_path is not None:
+            if not self.slot_action_path.is_dir() or any(self.slot_action_path.iterdir()):
+                raise FamilyModelAdapterError("slot action directory must be empty")
+            options = {"slot_action_path": self.slot_action_path,
+                       "api_key": secrets.token_urlsafe(32)}
+        server = LoopbackLlamaServer(self.profile, startup_timeout=self.startup_timeout, **options)
         server.start()
         with self._lock:
             if self._server is not None:
@@ -85,6 +97,7 @@ class FamilyLocalModelAdapter:
                 raise FamilyModelAdapterError("corrida de segunda instância recusada")
             self._server = server
             self._startup_count += 1
+            self._cache_clean = True
 
     def stop(self) -> None:
         with self._lock:
@@ -103,6 +116,7 @@ class FamilyLocalModelAdapter:
             and server.port is not None
             and process is not None
             and process.poll() is None
+            and self._cache_clean
         )
 
     def recover(self) -> bool:
@@ -147,12 +161,14 @@ class FamilyLocalModelAdapter:
         try:
             if cancelled():
                 return
+            if request.persona_instance_id:
+                self._erase_slot()
             payload = {
                 "model": self.profile.profile_id,
                 "messages": [
                     {
                         "role": "system",
-                        "content": (
+                        "content": request.system_prompt or (
                             "Responda em português do Brasil, diretamente, sem expor "
                             "raciocínio oculto."
                         ),
@@ -163,6 +179,8 @@ class FamilyLocalModelAdapter:
                 "temperature": 0.2,
                 "top_p": 0.9,
                 "max_tokens": self.max_generated_tokens,
+                "cache_prompt": False,
+                "id_slot": 0,
             }
             body = json.dumps(
                 payload, ensure_ascii=False, separators=(",", ":")
@@ -174,6 +192,8 @@ class FamilyLocalModelAdapter:
                 headers={
                     "Content-Type": "application/json",
                     "Content-Length": str(len(body)),
+                    **({"Authorization": "Bearer " + self._server.api_key}
+                       if getattr(self._server, "api_key", None) else {}),
                 },
             )
             response = connection.getresponse()
@@ -227,6 +247,28 @@ class FamilyLocalModelAdapter:
                 raise FamilyModelAdapterError("monitor de cancelamento não encerrou")
             with self._lock:
                 self._active_requests = 0
+            if request.persona_instance_id:
+                self._erase_slot()
+
+    def _erase_slot(self) -> None:
+        # A failed erasure makes readiness fail closed; never reuse that slot.
+        server = self._server
+        self._cache_clean = False
+        if self.slot_action_path is not None and any(self.slot_action_path.iterdir()):
+            raise FamilyModelAdapterError("UNEXPECTED_KV_FILE")
+        if server is None:
+            raise FamilyModelAdapterError("cache erase without runtime")
+        for attempt in range(50):
+            status, receipt = server.request("POST", "/slots/0?action=erase", {}, timeout=3)
+            self._cache_erase_status = {"http_status": status, "fields": sorted(receipt)}
+            if status == 200 and receipt.get("id_slot") == 0:
+                self._cache_clean = True
+                self._cache_erases += 1
+                return
+            if status not in {400, 503}:
+                break
+            time.sleep(0.1)
+        raise FamilyModelAdapterError("KV_CACHE_ERASE_UNCONFIRMED")
 
     def diagnostics(self) -> dict[str, Any]:
         with self._lock:
@@ -246,6 +288,9 @@ class FamilyLocalModelAdapter:
             "runtime_pid": pid,
             "runtime_instances": int(pid is not None),
             "startup_count": starts,
+            "cache_clean": self._cache_clean,
+            "cache_erases": self._cache_erases,
+            "cache_erase_status": self._cache_erase_status,
             "adapter_active_requests": active,
             "adapter_maximum_active_requests": maximum,
             "available_ram_bytes": _available_physical_memory(),

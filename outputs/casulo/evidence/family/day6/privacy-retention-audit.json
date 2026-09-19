@@ -1,0 +1,25 @@
+{
+  "audio_temp_files": [],
+  "audit_content": "identifiers, counts, hashes; no raw utterance or answer",
+  "conversation_database_on_disk": false,
+  "intimate_fixture_saved": false,
+  "kv_files_created": 0,
+  "physical_memory_zeroization_claim": false,
+  "retention": {
+    "completed_audio_seconds": 30,
+    "ephemeral_job_seconds": 120,
+    "http_worker_limit": 8,
+    "max_pcm_output_bytes": 1920000,
+    "maximum_retained_jobs": 16,
+    "maximum_voice_turns": 16,
+    "voice_input_seconds": 20,
+    "voice_turn_seconds": 180
+  },
+  "state_acl": "owner-only-inherited",
+  "state_file_names": [
+    "audit.jsonl",
+    "devices.sqlite3",
+    "memory.sqlite3"
+  ],
+  "status": "PASS"
+}

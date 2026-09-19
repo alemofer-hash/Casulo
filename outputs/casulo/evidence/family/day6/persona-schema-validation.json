@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "alexandra": "318ec5015539d7f943c1d86e97e1d6ab7e0464beec0f9ee49e3b8134c79687ea",
+    "eduardo": "1cb489079401f9444add2cbcdc439f3aa63de204972cb8aaeb486dce30ab0e68",
+    "guilherme": "e6cff91439b63f7bfc9e2c979b00c202db738b4fba4bcd49583423e23af7d3fd"
+  },
+  "schema_sha256": "08cd26b5a302e54a591753fd1d98acb3e9dcc0e63e9be357bf4845429a6a5198",
+  "status": "PASS",
+  "validator": "JSON Schema Draft 2020-12 plus exact versioned runtime contracts"
+}

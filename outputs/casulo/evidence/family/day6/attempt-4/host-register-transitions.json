@@ -1,0 +1,31 @@
+[
+  {
+    "confidence": 1.0,
+    "reason": "binding_changed",
+    "to": "WORK"
+  },
+  {
+    "confidence": 0.0,
+    "explicit_direct_match": false,
+    "humor_suppressed": false,
+    "to": "WORK"
+  },
+  {
+    "confidence": 0.0,
+    "explicit_direct_match": false,
+    "humor_suppressed": false,
+    "to": "WORK"
+  },
+  {
+    "confidence": 0.0,
+    "explicit_direct_match": false,
+    "humor_suppressed": false,
+    "to": "WORK"
+  },
+  {
+    "confidence": 0.0,
+    "explicit_direct_match": false,
+    "humor_suppressed": false,
+    "to": "WORK"
+  }
+]

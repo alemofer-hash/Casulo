@@ -57,11 +57,16 @@ class ModelProfile:
 
 
 class LoopbackLlamaServer:
-    def __init__(self, profile: ModelProfile, *, startup_timeout: float = 300.0) -> None:
+    def __init__(self, profile: ModelProfile, *, startup_timeout: float = 300.0,
+                 slot_action_path: Path | None = None, api_key: str | None = None) -> None:
         self.profile = profile
         self.startup_timeout = startup_timeout
         self.port: int | None = None
         self.process: subprocess.Popen[bytes] | None = None
+        self.slot_action_path = slot_action_path
+        self.api_key = api_key
+        if slot_action_path is not None and (not api_key or len(api_key) < 32):
+            raise ModelGateError("slot actions require internal authentication")
 
     def argv(self, port: int) -> tuple[str, ...]:
         if not 1024 <= port <= 65535:
@@ -89,6 +94,8 @@ class LoopbackLlamaServer:
             "--jinja",
             "--no-webui",
             "--log-disable",
+            *(("--slot-save-path", str(self.slot_action_path), "--slots", "--no-cache-prompt")
+              if self.slot_action_path is not None else ()),
             *(("--no-host",) if profile.no_host else ()),
         )
 
@@ -97,6 +104,11 @@ class LoopbackLlamaServer:
             raise ModelGateError("servidor já iniciado")
         port = _reserve_loopback_port()
         creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
+        environment = None
+        if self.api_key:
+            environment = {k: v for k, v in os.environ.items()
+                           if not k.startswith(("LLAMA_", "GGML_", "AIP_"))}
+            environment["LLAMA_API_KEY"] = self.api_key
         process = subprocess.Popen(
             self.argv(port),
             stdin=subprocess.DEVNULL,
@@ -104,6 +116,7 @@ class LoopbackLlamaServer:
             stderr=subprocess.DEVNULL,
             shell=False,
             creationflags=creationflags,
+            env=environment,
         )
         self.port = port
         self.process = process
@@ -134,6 +147,8 @@ class LoopbackLlamaServer:
             raise ModelGateError("servidor não iniciado")
         body = None if payload is None else json.dumps(payload, ensure_ascii=False).encode("utf-8")
         headers = {} if body is None else {"Content-Type": "application/json"}
+        if self.api_key:
+            headers["Authorization"] = "Bearer " + self.api_key
         connection = http.client.HTTPConnection("127.0.0.1", self.port, timeout=timeout)
         try:
             connection.request(method, path, body=body, headers=headers)

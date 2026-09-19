@@ -145,7 +145,7 @@ class FamilyJobStore:
                     timestamp,
                 )
                 self._connection.commit()
-                if durable_request.message != request.message:
+                if durable_request != request:
                     self._volatile_requests[job_id] = request
             except Exception:
                 self._connection.rollback()

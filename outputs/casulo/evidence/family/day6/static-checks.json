@@ -1,0 +1,64 @@
+[
+  {
+    "command": [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "ruff",
+      "check",
+      "src/casulo/family",
+      "tests/family/test_day6_cleo_voice.py",
+      "private/casulo-owner/src/casulo_owner/family_cleo_app.py",
+      "private/casulo-owner/src/casulo_owner/family_model_adapter.py",
+      "scripts/16-verify-family-day6.py",
+      "scripts/17-test-family-day6.py",
+      "scripts/18-seal-family-day6.py",
+      "scripts/19-attest-family-day6.py"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "All checks passed!\n"
+  },
+  {
+    "command": [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "compileall",
+      "-q",
+      "src/casulo/family",
+      "private/casulo-owner/src/casulo_owner/family_cleo_app.py"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\guimo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "--check",
+      "apps/casulo-family-pwa/app.js"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\guimo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "--check",
+      "apps/casulo-family-pwa/voice.js"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\guimo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "--check",
+      "scripts/16-test-cleo-pwa.cjs"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": ""
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "cleanup": {
+    "at": "2026-09-19T23:17:25.369269+00:00",
+    "listeners": [],
+    "llama": [],
+    "owned_alive": []
+  },
+  "duration_seconds": 16.846,
+  "error": "{\"duration_ms\": 2395.522, \"humor_suppressed\": false, \"persona_instance_id\": \"cleo.host.guilherme\", \"reason_code\": \"VoiceCancelled\", \"register\": \"WORK\", \"result\": \"CANCELLED\", \"state\": \"IDLE\", \"states\": [{\"at\": 29656.5249944, \"state\": \"TRANSCRIBING\"}, {\"at\": 29658.8873203, \"state\": \"RESOLVING_PRINCIPAL\"}, {\"at\": 29658.8881318, \"state\": \"RESOLVING_PERSONA\"}, {\"at\": 29658.8891961, \"state\": \"THINKING\"}, {\"at\": 29658.9191974, \"state\": \"IDLE\"}], \"turn_id\": \"1af716c5543f47feb8d1ba45053f5fd7\", \"version\": \"cleo-guilherme-host-private-v1\"}",
+  "first_reproducible_cause": "AssertionError",
+  "max_aggregate_working_set_bytes": 3893112832,
+  "min_available_ram_bytes": 3741437952,
+  "min_disk_free_bytes": 105193644032,
+  "model_identity": {
+    "batch_size": 128,
+    "cache_type_k": "f16",
+    "cache_type_v": "f16",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "license": "Apache-2.0",
+    "model_file": "qwen2.5-7b-instruct-q2_k.gguf",
+    "model_files": [
+      {
+        "bytes": 3015940000,
+        "file": "qwen2.5-7b-instruct-q2_k.gguf",
+        "sha256": "a0fc885ff014d73c02dcc4ad093f110c6dd4e0e308f84efe1accf078d364a87a"
+      }
+    ],
+    "model_key": "q2_k",
+    "no_host": true,
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 64
+  },
+  "resource_floor_breached": false,
+  "resource_sample_count": 64,
+  "sampler_transient_errors": [],
+  "status": "PARTIAL",
+  "temperature_claim": "NONE",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false
+}

@@ -1,0 +1,40 @@
+.F...................................................................    [100%]
+================================== FAILURES ===================================
+____________ test_gateway_rejects_missing_context_and_non_loopback ____________
+tests\family\test_day1_mock_e2e.py:118: in test_gateway_rejects_missing_context_and_non_loopback
+    request_json(
+tests\family\test_day1_mock_e2e.py:50: in request_json
+    with urllib.request.urlopen(request, timeout=10) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Python313\Lib\urllib\request.py:189: in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Python313\Lib\urllib\request.py:489: in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+C:\Python313\Lib\urllib\request.py:506: in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+C:\Python313\Lib\urllib\request.py:466: in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+C:\Python313\Lib\urllib\request.py:1348: in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Python313\Lib\urllib\request.py:1323: in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+C:\Python313\Lib\http\client.py:1430: in getresponse
+    response.begin()
+C:\Python313\Lib\http\client.py:331: in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+C:\Python313\Lib\http\client.py:292: in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Python313\Lib\socket.py:719: in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+E   ConnectionAbortedError: [WinError 10053] Uma conexão estabelecida foi anulada pelo software no computador host
+=========================== short test summary info ===========================
+FAILED tests/family/test_day1_mock_e2e.py::test_gateway_rejects_missing_context_and_non_loopback
+1 failed, 68 passed in 16.81s

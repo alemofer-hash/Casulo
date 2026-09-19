@@ -1,0 +1,57 @@
+{
+  "audio_bytes": 94860,
+  "audio_playable_wav": true,
+  "audio_sha256": "1305dc59c95a058d864b00166890742b96570a73b930eb82a23638dc96172972",
+  "duration_ms": 7102.846,
+  "gateway": "https://127.0.0.1:53263",
+  "humor_suppressed": false,
+  "microphone_capture_claim": false,
+  "model_metrics": {
+    "duration_ms": 4303.882,
+    "mock_only": false,
+    "stream_events": 8,
+    "time_to_first_fragment_ms": 2386.058
+  },
+  "persona_instance_id": "cleo.host.guilherme",
+  "physical_playback_claim": false,
+  "register": "WORK",
+  "result": "COMPLETED",
+  "runtime": "127.0.0.1:53245",
+  "state": "IDLE",
+  "states": [
+    {
+      "at": 31139.6854305,
+      "state": "TRANSCRIBING"
+    },
+    {
+      "at": 31142.0037213,
+      "state": "RESOLVING_PRINCIPAL"
+    },
+    {
+      "at": 31142.0039744,
+      "state": "RESOLVING_PERSONA"
+    },
+    {
+      "at": 31142.0042959,
+      "state": "THINKING"
+    },
+    {
+      "at": 31146.3356206,
+      "state": "SYNTHESIZING"
+    },
+    {
+      "at": 31146.7865569,
+      "state": "PLAYING"
+    },
+    {
+      "at": 31146.8722183,
+      "state": "IDLE"
+    }
+  ],
+  "turn_id": "97fd6c589b7f43c5ba8314bdf1e35348",
+  "version": "cleo-guilherme-host-private-v1",
+  "voice_runtime": [
+    "127.0.0.1",
+    53262
+  ]
+}

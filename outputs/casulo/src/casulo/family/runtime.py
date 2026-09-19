@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import threading
 import time
+from dataclasses import replace
 from collections.abc import Callable, Iterable, Iterator
 
 from .audit import AuditLog
@@ -33,6 +34,7 @@ class FamilyRuntime:
         authorized_contexts: Iterable[AuthContext],
         config: FamilyConfig | None = None,
         authorization_callback: Callable[[AuthContext], bool] | None = None,
+        persona_resolver=None,
     ) -> None:
         self.store = store
         self.audit = audit
@@ -43,6 +45,11 @@ class FamilyRuntime:
             raise FamilyUnavailableError("modo do config diverge do adapter")
         self._authorized = frozenset(authorized_contexts)
         self._authorization_callback = authorization_callback
+        self.persona_resolver = persona_resolver
+        if persona_resolver is not None:
+            from .ephemeral import EphemeralFamilyJobStore
+            if not isinstance(store, EphemeralFamilyJobStore):
+                raise FamilyUnavailableError("Cleo requires ephemeral conversation storage")
         if not self._authorized and self._authorization_callback is None:
             raise FamilyAuthorizationError("nenhum contexto sintético autorizado")
         self._stop = threading.Event()
@@ -69,6 +76,9 @@ class FamilyRuntime:
 
     def submit(self, auth: AuthContext, request: ChatRequest) -> JobRecord:
         self._authorize(auth)
+        resolved = None
+        if self.persona_resolver is not None:
+            resolved, _ = self.persona_resolver.resolve(auth, request.message)
         model_request = request
         citations: tuple[object, ...] = ()
         rag_context_chars = 0
@@ -81,6 +91,8 @@ class FamilyRuntime:
                 limit=self.config.rag_result_limit,
             )
         citation_documents = []
+        if resolved is not None:
+            model_request = replace(resolved, message=model_request.message)
         for citation in citations:
             document = citation.to_dict()
             # The source excerpt is used only for the volatile model request.
@@ -115,6 +127,7 @@ class FamilyRuntime:
             correlation_id=job.correlation_id,
             user_id=auth.user_id,
             device_id=auth.device_id,
+            session_id=auth.session_id,
             fields={
                 "job_id": job.job_id,
                 "message_chars": len(request.message),
@@ -150,6 +163,7 @@ class FamilyRuntime:
         deadline = time.monotonic() + timeout
         next_sequence = after_sequence + 1
         while True:
+            self._authorize(auth)
             events = self.store.events(job_id, auth)
             for event in events:
                 if event.sequence < next_sequence:
@@ -262,6 +276,20 @@ class FamilyRuntime:
             allowed = bool(self._authorization_callback(auth))
         if not allowed:
             raise FamilyAuthorizationError("contexto sintético não autorizado")
+        if self.persona_resolver is not None:
+            self.persona_resolver.authorize(auth)
+
+    def _job_cancelled(self, job):
+        invalid = False
+        try:
+            self._authorize(job.auth)
+            if self.persona_resolver is not None:
+                invalid = not self.persona_resolver.valid_request(job.auth, job.request)
+        except FamilyAuthorizationError:
+            invalid = True
+        if invalid:
+            self.store.cancel(job.job_id, job.auth, requested_by="policy_changed")
+        return self._stop.is_set() or self.store.is_cancelled(job.job_id)
 
     def revoke_device(self, user_id: str, device_id: str) -> int:
         cancelled = 0
@@ -306,12 +334,11 @@ class FamilyRuntime:
                 self._notify()
                 stream = iter(self.supervisor.respond(
                     job.request,
-                    lambda: self._stop.is_set()
-                    or self.store.is_cancelled(job.job_id),
+                    lambda: self._job_cancelled(job),
                 ))
                 try:
                     for chunk in stream:
-                        if self.store.is_cancelled(job.job_id):
+                        if self._job_cancelled(job):
                             break
                         if not isinstance(chunk, str) or not chunk:
                             continue
@@ -329,7 +356,7 @@ class FamilyRuntime:
                     closer = getattr(stream, "close", None)
                     if callable(closer):
                         closer()
-                if self.store.is_cancelled(job.job_id):
+                if self._job_cancelled(job):
                     continue
                 if delta_count == 0:
                     raise FamilyUnavailableError("adapter concluiu sem fragmentos")

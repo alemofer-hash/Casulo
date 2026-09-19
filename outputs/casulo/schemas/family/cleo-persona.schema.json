@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:casulo:family:cleo-persona:1",
+  "oneOf": [
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["version", "persona_instance_id", "principal", "affection", "initiative", "mirroring", "formality", "humor", "contextual_humor_max", "technical_assertiveness", "vocal_presence", "content_policy"],
+      "properties": {
+        "version": {"enum": ["cleo-alexandra-mobile-v1", "cleo-eduardo-mobile-v1"]},
+        "persona_instance_id": {"enum": ["cleo.family.alexandra", "cleo.family.eduardo"]},
+        "principal": {"enum": ["alexandra", "eduardo"]},
+        "affection": {"const": 3}, "initiative": {"const": "low"}, "mirroring": {"const": "moderate"},
+        "formality": {"const": 3}, "humor": {"const": 2}, "contextual_humor_max": {"const": 4},
+        "technical_assertiveness": {"const": "high"}, "vocal_presence": {"const": "high"},
+        "content_policy": {"const": "family_appropriate"}
+      }
+    },
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["version", "persona_instance_id", "principal", "required_route", "default_register", "registers"],
+      "properties": {
+        "version": {"const": "cleo-guilherme-host-private-v1"},
+        "persona_instance_id": {"const": "cleo.host.guilherme"}, "principal": {"const": "guilherme"},
+        "required_route": {"const": "LOCAL_PRIVATE"}, "default_register": {"const": "WORK"},
+        "registers": {"type": "object", "additionalProperties": false, "required": ["WORK", "PLAY_PRIVATE"],
+          "properties": {"WORK": {"$ref": "#/$defs/register"}, "PLAY_PRIVATE": {"$ref": "#/$defs/register"}}}
+      }
+    }
+  ],
+  "$defs": {
+    "register": {
+      "type": "object", "additionalProperties": false,
+      "required": ["formality", "humor", "mirroring", "initiative", "technical_assertiveness", "explicit_sensuality_allowed", "explicit_sensuality_active"],
+      "properties": {
+        "formality": {"type": "integer", "minimum": 1, "maximum": 5},
+        "humor": {"type": "integer", "minimum": 0, "maximum": 4},
+        "mirroring": {"type": "integer", "minimum": 0, "maximum": 5},
+        "initiative": {"const": "low"}, "technical_assertiveness": {"const": 5},
+        "explicit_sensuality_allowed": {"const": true}, "explicit_sensuality_active": {"type": "boolean"}
+      }
+    }
+  }
+}

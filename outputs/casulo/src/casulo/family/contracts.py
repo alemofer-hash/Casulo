@@ -74,6 +74,10 @@ class AuthContext:
 @dataclass(frozen=True, slots=True)
 class ChatRequest:
     message: str
+    # Internal fields: never accepted from an HTTP payload.
+    system_prompt: str = ""
+    persona_instance_id: str = ""
+    policy_epoch: int = -1
 
     def __post_init__(self) -> None:
         if not isinstance(self.message, str):
@@ -84,6 +88,8 @@ class ChatRequest:
             raise FamilyContractError("message excede o limite")
         if "\x00" in self.message:
             raise FamilyContractError("message contém NUL")
+        if len(self.system_prompt) > 4096 or "\x00" in self.system_prompt:
+            raise FamilyContractError("system_prompt inválido")
 
     @classmethod
     def from_mapping(cls, value: Mapping[str, Any]) -> ChatRequest:

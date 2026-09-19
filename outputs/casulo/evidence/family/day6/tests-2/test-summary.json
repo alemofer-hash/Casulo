@@ -1,0 +1,47 @@
+{
+  "day6": {
+    "exit_code": 0,
+    "command": [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "tests/family/test_day6_cleo_voice.py",
+      "-q",
+      "--tb=short",
+      "--basetemp",
+      "C:\\Users\\guimo\\Downloads\\ex\\outputs\\casulo\\task\\tmp\\day6-tests-2-day6",
+      "--junitxml",
+      "C:\\Users\\guimo\\Downloads\\ex\\outputs\\casulo\\evidence\\family\\day6\\tests-2\\day6.xml"
+    ]
+  },
+  "family": {
+    "exit_code": 1,
+    "command": [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "tests/family",
+      "-q",
+      "--tb=short",
+      "--basetemp",
+      "C:\\Users\\guimo\\Downloads\\ex\\outputs\\casulo\\task\\tmp\\day6-tests-2-family",
+      "--junitxml",
+      "C:\\Users\\guimo\\Downloads\\ex\\outputs\\casulo\\evidence\\family\\day6\\tests-2\\family.xml"
+    ]
+  },
+  "product": {
+    "exit_code": 0,
+    "command": [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "pytest",
+      "tests/product",
+      "-q",
+      "--tb=short",
+      "--basetemp",
+      "C:\\Users\\guimo\\Downloads\\ex\\outputs\\casulo\\task\\tmp\\day6-tests-2-product",
+      "--junitxml",
+      "C:\\Users\\guimo\\Downloads\\ex\\outputs\\casulo\\evidence\\family\\day6\\tests-2\\product.xml"
+    ]
+  }
+}

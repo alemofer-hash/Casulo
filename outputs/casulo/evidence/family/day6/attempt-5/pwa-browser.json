@@ -1,0 +1,292 @@
+{
+  "status": "PASS",
+  "browser": "151.0.7922.34",
+  "playwright": "1.62.1",
+  "test_microphone": "neutral WAV fake device",
+  "physical_microphone_claim": false,
+  "physical_speaker_claim": false,
+  "tls": "CA verified before launch; disposable browser pins exact server SPKI",
+  "os_trust_changed": false,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "path": "/styles.css"
+    },
+    {
+      "method": "GET",
+      "path": "/icon.svg"
+    },
+    {
+      "method": "GET",
+      "path": "/app.js"
+    },
+    {
+      "method": "GET",
+      "path": "/voice.js"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/session"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/session"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/session"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/voice"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219/audio"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/voice/66451fdf60cf4b5397074e8420838219/finished"
+    }
+  ],
+  "observations": [
+    {
+      "recording_cancel": "PASS",
+      "no_upload_before_send": true
+    },
+    {
+      "completed_to_idle": "PASS",
+      "mic_tracks_ended": true,
+      "half_duplex": true,
+      "audio": {
+        "duration": 2.963,
+        "readyState": 4
+      }
+    }
+  ],
+  "errors": []
+}

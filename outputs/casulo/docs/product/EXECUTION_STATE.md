@@ -1,5 +1,20 @@
 # Estado de execução do produto
 
+## 2026-09-19 — CASULO FAMILY RP0.1 Day 6
+
+Estado: `FAMILY_RP01_DAY6_CLEO_VOICE_PERSONAS_TECHNICAL_PASS`.
+
+- baseline Day 5 `8d46bb6a8e6b8e3a872ba97207dc444f4b61e7dc`, evidências e relatório preservados;
+- três personas Cleo versionadas e isoladas; WORK/PLAY_PRIVATE somente no host autenticado, local, desbloqueado e com rota privada;
+- ASR whisper.cpp base Q5_1, Qwen2.5-7B Q2_K/Vulkan e TTS Microsoft Maria local; runtime e serviços de voz autenticados em loopback;
+- PWA push-to-talk, buffers/filas limitados, cancelamento, recuperação, memória conversacional efêmera e limpeza nativa de KV entre requisições;
+- `attempt-5` passou no pipeline real e no Chromium de teste com áudio neutro simulado/silenciado; nenhum claim sobre microfone físico, prosódia artística ou temperatura;
+- Family final: 70 aprovados (34 focais Day 6); Product: 722 aprovados e um skip permitido; falhas intermediárias conservadas, sem alteração de expectativa histórica;
+- recibos, JUnit, processos, portas, amostras e SHA256 em `evidence/family/day6`; relatório `CASULO_FAMILY_RP01_DAY6_CLEO_VOICE_PERSONAS.md`;
+- commit, tree, fsck e remote PRIVATE são confirmados no atestado pós-commit reproduzível, separado para evitar autorreferência de SHA.
+
+Próximo gate: Dia 7 — enrollment mobile/PWA, revogação de dispositivo perdido e acesso remoto seguro. **Não iniciado.**
+
 ## 2026-09-17 — CASULO FAMILY RP0.1 Day 1
 
 Estado: `FAMILY_RP01_DAY1_MOCK_PASS_DAY2_MODEL_PENDING`.

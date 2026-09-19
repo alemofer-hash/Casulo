@@ -32,6 +32,15 @@
       <section id="chat" class="chat hidden" aria-labelledby="chat-title">
         <div class="chat-heading"><div><p class="step">Sessão privada</p><h2 id="chat-title">Conversa</h2></div><button id="logout" class="quiet" type="button">Encerrar sessão</button></div>
         <div id="messages" class="messages" aria-live="polite"></div>
+        <section class="card" aria-labelledby="voice-title">
+          <h3 id="voice-title">Conversar com Cleo</h3>
+          <p>Pressione para gravar; pressione novamente para enviar. Máximo de 20 segundos. O microfone fica desligado durante a resposta.</p>
+          <label><input id="private-audio" type="checkbox"> Estou sozinho e a saída de áudio é privada.</label>
+          <p id="voice-state" role="status" aria-live="polite">IDLE</p>
+          <button id="voice-record" type="button">Falar com Cleo</button>
+          <button id="voice-stop" type="button" disabled>Parar / cancelar</button>
+          <audio id="voice-output" controls hidden></audio>
+        </section>
         <form id="chat-form" class="composer">
           <label class="sr-only" for="message">Mensagem</label>
           <textarea id="message" maxlength="8192" rows="3" placeholder="Escreva para o Casulo…" required></textarea>
@@ -40,5 +49,6 @@
       </section>
     </main>
     <script src="/app.js" defer></script>
+    <script src="/voice.js" defer></script>
   </body>
 </html>
