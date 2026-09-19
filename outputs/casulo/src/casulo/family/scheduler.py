@@ -14,6 +14,7 @@ from .contracts import (
     ChatRequest,
     EventKind,
     FamilyAuthorizationError,
+    FamilyBackpressureError,
     JobEvent,
     JobStatus,
 )
@@ -75,15 +76,30 @@ class FamilyJobStore:
                 """
             )
 
-    def create_job(self, auth: AuthContext, request: ChatRequest) -> JobRecord:
+    def create_job(
+        self,
+        auth: AuthContext,
+        request: ChatRequest,
+        *,
+        queue_capacity: int = 2,
+        mock_only: bool = True,
+    ) -> JobRecord:
         job_id = uuid.uuid4().hex
         correlation_id = uuid.uuid4().hex
         timestamp = utc_now()
         request_json = json.dumps(
             {"message": request.message}, ensure_ascii=False, separators=(",", ":")
         )
-        with self._lock, self._connection:
-            self._connection.execute(
+        with self._lock:
+            self._connection.execute("BEGIN IMMEDIATE")
+            try:
+                queued = self._connection.execute(
+                    "SELECT COUNT(*) FROM jobs WHERE status = ?",
+                    (JobStatus.QUEUED.value,),
+                ).fetchone()[0]
+                if queued >= queue_capacity:
+                    raise FamilyBackpressureError("fila Family saturada")
+                self._connection.execute(
                 """INSERT INTO jobs
                 (job_id, correlation_id, user_id, device_id, status, heavy,
                  request_json, created_utc, updated_utc)
@@ -98,10 +114,17 @@ class FamilyJobStore:
                     timestamp,
                     timestamp,
                 ),
-            )
-            self._append_event_tx(
-                job_id, EventKind.ACCEPTED, {"mock_only": True}, timestamp
-            )
+                )
+                self._append_event_tx(
+                    job_id,
+                    EventKind.ACCEPTED,
+                    {"mock_only": bool(mock_only), "queue_capacity": queue_capacity},
+                    timestamp,
+                )
+                self._connection.commit()
+            except Exception:
+                self._connection.rollback()
+                raise
         return JobRecord(job_id, correlation_id, auth, request, JobStatus.QUEUED)
 
     def claim_next(self) -> JobRecord | None:
@@ -139,15 +162,22 @@ class FamilyJobStore:
                 job_id, EventKind.DELTA, {"text": text}, utc_now()
             )
 
-    def complete(self, job_id: str) -> JobEvent | None:
+    def complete(
+        self,
+        job_id: str,
+        *,
+        mock_only: bool = True,
+        metrics: Mapping[str, Any] | None = None,
+    ) -> JobEvent | None:
         with self._lock, self._connection:
             row = self._job_row(job_id)
             if row["status"] != JobStatus.RUNNING.value:
                 return None
             timestamp = utc_now()
-            event = self._append_event_tx(
-                job_id, EventKind.COMPLETED, {"mock_only": True}, timestamp
-            )
+            payload: dict[str, Any] = {"mock_only": bool(mock_only)}
+            if metrics:
+                payload.update(dict(metrics))
+            event = self._append_event_tx(job_id, EventKind.COMPLETED, payload, timestamp)
             self._connection.execute(
                 "UPDATE jobs SET status = ?, updated_utc = ? WHERE job_id = ?",
                 (JobStatus.COMPLETED.value, timestamp, job_id),
@@ -173,7 +203,13 @@ class FamilyJobStore:
             )
             return event
 
-    def cancel(self, job_id: str, auth: AuthContext) -> JobEvent | None:
+    def cancel(
+        self,
+        job_id: str,
+        auth: AuthContext,
+        *,
+        requested_by: str = "client",
+    ) -> JobEvent | None:
         with self._lock, self._connection:
             row = self._authorized_row(job_id, auth)
             if row["status"] in {
@@ -184,7 +220,10 @@ class FamilyJobStore:
                 return None
             timestamp = utc_now()
             event = self._append_event_tx(
-                job_id, EventKind.CANCELLED, {"requested_by": "client"}, timestamp
+                job_id,
+                EventKind.CANCELLED,
+                {"requested_by": requested_by},
+                timestamp,
             )
             self._connection.execute(
                 "UPDATE jobs SET status = ?, updated_utc = ? WHERE job_id = ?",
@@ -225,6 +264,30 @@ class FamilyJobStore:
         result = {status.value: 0 for status in JobStatus}
         result.update({row["status"]: row["count"] for row in rows})
         return result
+
+    def queue_position(self, job_id: str) -> int | None:
+        with self._lock:
+            row = self._job_row(job_id)
+            if row["status"] != JobStatus.QUEUED.value:
+                return None
+            ordered = self._connection.execute(
+                """SELECT job_id FROM jobs WHERE status = ?
+                ORDER BY created_utc, job_id""",
+                (JobStatus.QUEUED.value,),
+            ).fetchall()
+        for position, item in enumerate(ordered, start=1):
+            if item["job_id"] == job_id:
+                return position
+        return None
+
+    def job_ids(self, status: JobStatus) -> tuple[str, ...]:
+        with self._lock:
+            rows = self._connection.execute(
+                """SELECT job_id FROM jobs WHERE status = ?
+                ORDER BY created_utc, job_id""",
+                (status.value,),
+            ).fetchall()
+        return tuple(row["job_id"] for row in rows)
 
     def recover_interrupted(self) -> int:
         recovered = 0

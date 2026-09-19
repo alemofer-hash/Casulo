@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import json
 import re
+import select
+import socket
 import threading
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -13,7 +15,10 @@ from .contracts import (
     AuthContext,
     ChatRequest,
     FamilyAuthorizationError,
+    FamilyBackpressureError,
     FamilyContractError,
+    FamilyResourceError,
+    FamilyUnavailableError,
 )
 from .runtime import FamilyRuntime
 
@@ -29,7 +34,7 @@ class FamilyGateway:
         gateway = self
 
         class Handler(BaseHTTPRequestHandler):
-            server_version = "CasuloFamilyDay1/1.0"
+            server_version = "CasuloFamilyDay3/1.0"
 
             def log_message(self, _format: str, *_args: Any) -> None:
                 return
@@ -72,16 +77,20 @@ class FamilyGateway:
     def _handle_get(self, handler: BaseHTTPRequestHandler) -> None:
         path = urlsplit(handler.path).path
         if path == "/v1/health":
-            self._json(handler, HTTPStatus.OK, self.runtime.health())
+            health = self.runtime.health()
+            status = HTTPStatus.OK if health["status"] == "ok" else HTTPStatus.SERVICE_UNAVAILABLE
+            self._json(handler, status, health)
             return
         match = JOB_EVENTS_RE.fullmatch(path)
         if match:
             try:
                 auth = self._auth(handler)
-                events = self.runtime.wait_terminal(
-                    auth, match.group(1), timeout=self.config.stream_wait_seconds
+                self._sse(
+                    handler,
+                    auth,
+                    match.group(1),
+                    timeout=self.config.stream_wait_seconds,
                 )
-                self._sse(handler, [event.to_dict() for event in events])
             except FamilyAuthorizationError as error:
                 self._json(handler, HTTPStatus.FORBIDDEN, {"error": str(error)})
             except KeyError:
@@ -103,7 +112,9 @@ class FamilyGateway:
                         "job_id": job.job_id,
                         "correlation_id": job.correlation_id,
                         "status": job.status.value,
-                        "mock_only": True,
+                        "mock_only": bool(self.runtime.supervisor.engine.mock_only),
+                        "queue_position": self.runtime.store.queue_position(job.job_id),
+                        "queue_capacity": self.config.queue_capacity,
                     },
                 )
                 return
@@ -119,6 +130,27 @@ class FamilyGateway:
             self._json(handler, HTTPStatus.NOT_FOUND, {"error": "rota ausente"})
         except FamilyAuthorizationError as error:
             self._json(handler, HTTPStatus.FORBIDDEN, {"error": str(error)})
+        except FamilyBackpressureError:
+            self._json(
+                handler,
+                HTTPStatus.TOO_MANY_REQUESTS,
+                {"error": "QUEUE_CAPACITY_EXCEEDED", "retry_safe": True},
+                headers={"Retry-After": "1"},
+            )
+        except FamilyResourceError:
+            self._json(
+                handler,
+                HTTPStatus.SERVICE_UNAVAILABLE,
+                {"error": "RESOURCE_FLOOR_NOT_PRESERVED", "retry_safe": True},
+                headers={"Retry-After": "5"},
+            )
+        except FamilyUnavailableError:
+            self._json(
+                handler,
+                HTTPStatus.SERVICE_UNAVAILABLE,
+                {"error": "SUPERVISOR_NOT_READY", "retry_safe": True},
+                headers={"Retry-After": "1"},
+            )
         except (FamilyContractError, json.JSONDecodeError, UnicodeDecodeError) as error:
             self._json(handler, HTTPStatus.BAD_REQUEST, {"error": str(error)})
         except KeyError:
@@ -147,7 +179,11 @@ class FamilyGateway:
 
     @staticmethod
     def _json(
-        handler: BaseHTTPRequestHandler, status: HTTPStatus, payload: dict[str, Any]
+        handler: BaseHTTPRequestHandler,
+        status: HTTPStatus,
+        payload: dict[str, Any],
+        *,
+        headers: dict[str, str] | None = None,
     ) -> None:
         body = json.dumps(
             payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")
@@ -156,25 +192,73 @@ class FamilyGateway:
         handler.send_header("Content-Type", "application/json; charset=utf-8")
         handler.send_header("Content-Length", str(len(body)))
         handler.send_header("Cache-Control", "no-store")
+        for key, value in (headers or {}).items():
+            handler.send_header(key, value)
         handler.end_headers()
         handler.wfile.write(body)
 
-    @staticmethod
-    def _sse(handler: BaseHTTPRequestHandler, events: list[dict[str, Any]]) -> None:
-        chunks: list[bytes] = []
-        for event in events:
-            document = json.dumps(
-                event, ensure_ascii=False, sort_keys=True, separators=(",", ":")
-            )
-            chunks.append(
-                f"id: {event['sequence']}\nevent: {event['kind']}\ndata: {document}\n\n".encode(
-                    "utf-8"
-                )
-            )
-        body = b"".join(chunks)
+    def _sse(
+        self,
+        handler: BaseHTTPRequestHandler,
+        auth: AuthContext,
+        job_id: str,
+        *,
+        timeout: float,
+    ) -> None:
         handler.send_response(HTTPStatus.OK.value)
         handler.send_header("Content-Type", "text/event-stream; charset=utf-8")
-        handler.send_header("Content-Length", str(len(body)))
         handler.send_header("Cache-Control", "no-store")
+        handler.send_header("Connection", "close")
         handler.end_headers()
-        handler.wfile.write(body)
+        handler.close_connection = True
+        monitor_stop = threading.Event()
+
+        def monitor_client() -> None:
+            while not monitor_stop.wait(0.05):
+                if self._client_disconnected(handler):
+                    self.runtime.disconnect(auth, job_id)
+                    return
+
+        monitor = threading.Thread(
+            target=monitor_client,
+            name=f"family-disconnect-{job_id[:8]}",
+            daemon=True,
+        )
+        monitor.start()
+        try:
+            for item in self.runtime.stream_events(auth, job_id, timeout=timeout):
+                if self._client_disconnected(handler):
+                    self.runtime.disconnect(auth, job_id)
+                    return
+                event = item.to_dict()
+                document = json.dumps(
+                    event, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+                )
+                chunk = (
+                    f"id: {event['sequence']}\nevent: {event['kind']}\n"
+                    f"data: {document}\n\n"
+                ).encode("utf-8")
+                handler.wfile.write(chunk)
+                handler.wfile.flush()
+                if self._client_disconnected(handler):
+                    self.runtime.disconnect(auth, job_id)
+                    return
+        except (BrokenPipeError, ConnectionResetError, OSError):
+            self.runtime.disconnect(auth, job_id)
+        finally:
+            monitor_stop.set()
+            monitor.join(timeout=1.0)
+
+    @staticmethod
+    def _client_disconnected(handler: BaseHTTPRequestHandler) -> bool:
+        """Detect a closed peer without consuming request bytes."""
+        connection = handler.connection
+        try:
+            readable, _, _ = select.select([connection], [], [], 0)
+            if not readable:
+                return False
+            return connection.recv(1, socket.MSG_PEEK) == b""
+        except (BlockingIOError, InterruptedError):
+            return False
+        except OSError:
+            return True

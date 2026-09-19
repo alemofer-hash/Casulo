@@ -1,0 +1,139 @@
+{
+  "active_cancelled_stream": [
+    {
+      "kind": "ACCEPTED",
+      "received_monotonic_ns": 11420726404400,
+      "sequence": 1
+    },
+    {
+      "kind": "STARTED",
+      "received_monotonic_ns": 11420726433600,
+      "sequence": 2
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11421899087500,
+      "sequence": 3,
+      "text_chars": 1,
+      "text_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "kind": "CANCELLED",
+      "received_monotonic_ns": 11421997441900,
+      "requested_by": "client",
+      "sequence": 4
+    }
+  ],
+  "content_logged": false,
+  "fifo_completed_stream": [
+    {
+      "kind": "ACCEPTED",
+      "received_monotonic_ns": 11422002861300,
+      "sequence": 1
+    },
+    {
+      "kind": "STARTED",
+      "received_monotonic_ns": 11422168929600,
+      "sequence": 2
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11423608944800,
+      "sequence": 3,
+      "text_chars": 4,
+      "text_sha256": "0feaa8fbb81101dddda299dfd95468cb6f4acfbfcfd3c7082e02166efa63dd1d"
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11423874824400,
+      "sequence": 4,
+      "text_chars": 5,
+      "text_sha256": "9d30bf3c5f30c9b6804dae0d6fbf7ef88cd0fac3c2a570aa592f47a3d4f4a647"
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11424134735800,
+      "sequence": 5,
+      "text_chars": 1,
+      "text_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+    },
+    {
+      "duration_ms": 2223.019,
+      "kind": "COMPLETED",
+      "received_monotonic_ns": 11424409921900,
+      "sequence": 6,
+      "stream_events": 3,
+      "time_to_first_fragment_ms": 1433.603
+    }
+  ],
+  "incremental_before_terminal": true,
+  "ordered": true,
+  "post_cancel_completed_stream": [
+    {
+      "kind": "ACCEPTED",
+      "received_monotonic_ns": 11424443158900,
+      "sequence": 1
+    },
+    {
+      "kind": "STARTED",
+      "received_monotonic_ns": 11424443249600,
+      "sequence": 2
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11425354700000,
+      "sequence": 3,
+      "text_chars": 3,
+      "text_sha256": "9313455e45aa22430a92fddbb70f21312d3c944ab590dfb1da845c1a96b664fe"
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11425616375100,
+      "sequence": 4,
+      "text_chars": 1,
+      "text_sha256": "d03502c43d74a30b936740a9517dc4ea2b2ad7168caa0a774cefe793ce0b33e7"
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11425876551000,
+      "sequence": 5,
+      "text_chars": 6,
+      "text_sha256": "57b251be9e64c25b711140a408633bb9968ab06755af5e6899a4748b696dd933"
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11426145117500,
+      "sequence": 6,
+      "text_chars": 2,
+      "text_sha256": "86c6439a4dbbd3f04ca342333af9316318f5ae826b2285b4d6c17a380b6d7eeb"
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11426399598100,
+      "sequence": 7,
+      "text_chars": 2,
+      "text_sha256": "aa58b21b01d6b8a99c1a5856962dbac36c758a79dc0a77c2e013ce2c39ecdc8a"
+    },
+    {
+      "kind": "DELTA",
+      "received_monotonic_ns": 11426658198600,
+      "sequence": 8,
+      "text_chars": 1,
+      "text_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+    },
+    {
+      "duration_ms": 2475.934,
+      "kind": "COMPLETED",
+      "received_monotonic_ns": 11426931369700,
+      "sequence": 9,
+      "stream_events": 6,
+      "time_to_first_fragment_ms": 913.037
+    }
+  ],
+  "schema": "casulo.family.day3-streaming/1.0",
+  "terminal_kinds": [
+    "CANCELLED",
+    "COMPLETED",
+    "COMPLETED"
+  ]
+}

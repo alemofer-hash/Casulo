@@ -1,0 +1,29 @@
+{
+  "disconnect": {
+    "kind": "CANCELLED",
+    "received_monotonic_ns": 11643738858300,
+    "requested_by": "disconnect",
+    "sequence": 5
+  },
+  "partial_presented_as_complete": false,
+  "queued": {
+    "kind": "CANCELLED",
+    "received_monotonic_ns": 11643738553800,
+    "requested_by": "client",
+    "sequence": 2
+  },
+  "replacement_queued": {
+    "kind": "CANCELLED",
+    "received_monotonic_ns": 11643738842900,
+    "requested_by": "client",
+    "sequence": 2
+  },
+  "schema": "casulo.family.day3-cancellation/1.0",
+  "supervisor_returned_ready": true,
+  "voluntary_active": {
+    "kind": "CANCELLED",
+    "received_monotonic_ns": 11643738050000,
+    "requested_by": "client",
+    "sequence": 4
+  }
+}

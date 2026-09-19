@@ -1,0 +1,153 @@
+{
+  "current_state": "STOPPED",
+  "schema": "casulo.family.day3-supervisor-lifecycle/1.0",
+  "snapshot": {
+    "active_generations": 0,
+    "adapter": "Qwen2.5-7B-Q2_K-Vulkan",
+    "adapter_active_requests": 0,
+    "adapter_maximum_active_requests": 1,
+    "available_ram_bytes": 6033600512,
+    "backend": "llama.cpp-vulkan",
+    "disk_free_bytes": 114159759360,
+    "last_error_code": null,
+    "maximum_active_generations": 1,
+    "mock_engine": false,
+    "process_commit_bytes": null,
+    "process_peak_working_set_bytes": null,
+    "process_working_set_bytes": null,
+    "ready": false,
+    "runtime_instances": 0,
+    "runtime_listener": null,
+    "runtime_loopback_only": true,
+    "runtime_pid": null,
+    "startup_count": 1,
+    "state": "STOPPED",
+    "temperature_claim": "NONE",
+    "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+    "temperature_telemetry_collected_by_runner": false,
+    "transition_count": 16
+  },
+  "states_required": [
+    "STOPPED",
+    "STARTING",
+    "READY",
+    "BUSY",
+    "DRAINING",
+    "DEGRADED",
+    "FAILED"
+  ],
+  "transitions": [
+    {
+      "current": "STARTING",
+      "previous": "STOPPED",
+      "reason_code": "START_REQUESTED",
+      "sequence": 1,
+      "timestamp_utc": "2026-09-19T18:19:32.172845+00:00"
+    },
+    {
+      "current": "READY",
+      "previous": "STARTING",
+      "reason_code": "ENGINE_READY",
+      "sequence": 2,
+      "timestamp_utc": "2026-09-19T18:19:36.580382+00:00"
+    },
+    {
+      "current": "BUSY",
+      "previous": "READY",
+      "reason_code": "GENERATION_STARTED",
+      "sequence": 3,
+      "timestamp_utc": "2026-09-19T18:19:36.724254+00:00"
+    },
+    {
+      "current": "DRAINING",
+      "previous": "BUSY",
+      "reason_code": "GENERATION_CANCELLED",
+      "sequence": 4,
+      "timestamp_utc": "2026-09-19T18:19:38.315646+00:00"
+    },
+    {
+      "current": "READY",
+      "previous": "DRAINING",
+      "reason_code": "GENERATION_SLOT_RELEASED",
+      "sequence": 5,
+      "timestamp_utc": "2026-09-19T18:19:38.315675+00:00"
+    },
+    {
+      "current": "BUSY",
+      "previous": "READY",
+      "reason_code": "GENERATION_STARTED",
+      "sequence": 6,
+      "timestamp_utc": "2026-09-19T18:19:38.323372+00:00"
+    },
+    {
+      "current": "DRAINING",
+      "previous": "BUSY",
+      "reason_code": "GENERATION_DRAINED",
+      "sequence": 7,
+      "timestamp_utc": "2026-09-19T18:19:40.391114+00:00"
+    },
+    {
+      "current": "READY",
+      "previous": "DRAINING",
+      "reason_code": "GENERATION_SLOT_RELEASED",
+      "sequence": 8,
+      "timestamp_utc": "2026-09-19T18:19:40.391156+00:00"
+    },
+    {
+      "current": "BUSY",
+      "previous": "READY",
+      "reason_code": "GENERATION_STARTED",
+      "sequence": 9,
+      "timestamp_utc": "2026-09-19T18:19:40.428889+00:00"
+    },
+    {
+      "current": "DRAINING",
+      "previous": "BUSY",
+      "reason_code": "GENERATION_DRAINED",
+      "sequence": 10,
+      "timestamp_utc": "2026-09-19T18:19:42.696460+00:00"
+    },
+    {
+      "current": "READY",
+      "previous": "DRAINING",
+      "reason_code": "GENERATION_SLOT_RELEASED",
+      "sequence": 11,
+      "timestamp_utc": "2026-09-19T18:19:42.696509+00:00"
+    },
+    {
+      "current": "BUSY",
+      "previous": "READY",
+      "reason_code": "GENERATION_STARTED",
+      "sequence": 12,
+      "timestamp_utc": "2026-09-19T18:19:42.734976+00:00"
+    },
+    {
+      "current": "DRAINING",
+      "previous": "BUSY",
+      "reason_code": "GENERATION_CANCELLED",
+      "sequence": 13,
+      "timestamp_utc": "2026-09-19T18:19:44.216004+00:00"
+    },
+    {
+      "current": "READY",
+      "previous": "DRAINING",
+      "reason_code": "GENERATION_SLOT_RELEASED",
+      "sequence": 14,
+      "timestamp_utc": "2026-09-19T18:19:44.216082+00:00"
+    },
+    {
+      "current": "DRAINING",
+      "previous": "READY",
+      "reason_code": "STOP_REQUESTED",
+      "sequence": 15,
+      "timestamp_utc": "2026-09-19T18:19:44.258385+00:00"
+    },
+    {
+      "current": "STOPPED",
+      "previous": "DRAINING",
+      "reason_code": "ENGINE_STOPPED",
+      "sequence": 16,
+      "timestamp_utc": "2026-09-19T18:19:44.864926+00:00"
+    }
+  ]
+}

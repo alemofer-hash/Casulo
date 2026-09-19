@@ -1,0 +1,87 @@
+{
+  "cleanup": {
+    "ports": "PASS",
+    "processes": "PASS",
+    "sampler": "PASS",
+    "supervisor_final_state": "STOPPED"
+  },
+  "evidence_sha256": {
+    "baseline.json": "3d18b2c2594f15c3433d64cdffd8a3bca08106644c2243d07b11129a9a1cacf4",
+    "cancellation.json": "968f47dc63a086a3df47b9e7093479a9e851e5904c68e2bdfa25e3399033b49f",
+    "integration-result.json": "7d81f2ce09bc902168cf491e3c99bc7bf6ad56d24b873b5d56068ddc5341d1a4",
+    "port-inspection-after.txt": "2f34d63549350ce704499599fa4be6456cd6496b9ab154b54ebb0da2fbd8a65d",
+    "port-inspection-before.txt": "1a481a622fdfa8c1fdb39f8aceb0808a9ea675c857bfa1f2ed71583bd7ffd27d",
+    "port-inspection-during.txt": "e98e0162fccd736d5d91c60cc19553488a54ed7d5b4b627da0e624233e2d82b3",
+    "process-inspection-after.txt": "5fe3f4f213953e0b5a75d4fe656bae625b655d8727c5bf6e1b360ec315039c4d",
+    "process-inspection-before.txt": "0bde3eb3e5b4cfce180b0e05677f01fba9e5c2904940659097628aacf4d34674",
+    "queue-backpressure.json": "dc3bc8ee7d0dc995e40614f5512dcf5d357e3a78bcdd7af2ae198485603a5ff9",
+    "resource-samples.jsonl": "aeff0758c31344d6a719f898a519fef6aa8285fc845df099f381bf6211d15977",
+    "streaming.json": "013e421c798b06d659a0018b601cfae8354b4df98add39570368d165a1872d21",
+    "supervisor-lifecycle.json": "7829266af27927c4f20b39e428ed7cf3ebc82fa33928e908e74522c0eb693d07",
+    "test-results.txt": "89c9358a0c66b36421b4ffd506a5e96df83e112e58fef0894815d964954903e6"
+  },
+  "generated_utc": "2026-09-19T18:32:00.799387+00:00",
+  "input": {
+    "branch": "rp0.1-family",
+    "commit": "be19c85df370277fb2a71915e57f7e883e0508e6",
+    "tree": "29bd537b005f336677059f4205b1353aa0033d29"
+  },
+  "limitations": [
+    "temperature is monitored manually by the user in external HWiNFO; the runner collected no thermal telemetry and makes no thermal claim",
+    "HTTPS, device authentication, session isolation and PWA are Day 4 scope",
+    "attempts 1-5 are preserved diagnostic history; attempt-6 is authoritative"
+  ],
+  "model": {
+    "quantization": "Q2_K",
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+    "sha256": "a0fc885ff014d73c02dcc4ad093f110c6dd4e0e308f84efe1accf078d364a87a"
+  },
+  "report": {
+    "path": "C:/Users/guimo/Downloads/ex/outputs/casulo/docs/product/CASULO_FAMILY_RP01_DAY3_SUPERVISOR_INTEGRATION.md",
+    "sha256": "1e02b8830bdb68b7ac3116571e19eef063fda5b1cf6254a045fc6219f38d774e"
+  },
+  "requests": {
+    "accepted": 6,
+    "cancelled": 4,
+    "completed": 2,
+    "enqueued": 6,
+    "failed": 0,
+    "rejected": 1
+  },
+  "resources": {
+    "maximum_process_working_set_bytes": 3645947904,
+    "minimum_available_ram_bytes": 2342510592,
+    "minimum_disk_free_bytes": 114158649344,
+    "samples": 25,
+    "temperature_claim": "NONE",
+    "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+    "temperature_telemetry_collected_by_runner": false
+  },
+  "runtime": {
+    "active_concurrency": 1,
+    "address_effective": "127.0.0.1:52578",
+    "backend": "llama.cpp b10964 Vulkan",
+    "instances": 1,
+    "loopback_only": true,
+    "queue_capacity": 2,
+    "queue_policy": "FIFO"
+  },
+  "schema": "casulo.family.day3-final-receipt/1.0",
+  "status": "PASS",
+  "streaming": {
+    "fifo_duration_ms": 2073.641,
+    "fifo_time_to_first_fragment_ms": 1331.503,
+    "incremental": true,
+    "ordered": true,
+    "post_cancel_duration_ms": 2270.218,
+    "post_cancel_time_to_first_fragment_ms": 797.981
+  },
+  "tests": {
+    "family_allowed": "23 passed",
+    "focal_day3": "15 passed",
+    "product_allowed": "722 passed, 1 skipped",
+    "real_integration": "PASS",
+    "static": "PASS"
+  }
+}

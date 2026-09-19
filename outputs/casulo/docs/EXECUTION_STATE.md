@@ -293,3 +293,16 @@ python release/reproduce.py --full
 - Largest accounted consumers were HWiNFO (1.79% total capacity), DWM (0.46%),
   Xbox (0.21%), System (0.20%) and the Codex/ChatGPT process group (0.43%).
 - The 20-minute qualification and every benchmark remained unstarted.
+# CASULO FAMILY RP0.1 Day 3 — 2026-09-19
+
+- Status: `PASS`.
+- Baseline preservada: commit `be19c85df370277fb2a71915e57f7e883e0508e6`, tree `29bd537b005f336677059f4205b1353aa0033d29`.
+- Qwen2.5-7B-Instruct Q2_K/Vulkan integrado ao Family Supervisor por adapter proprietário loopback.
+- Concorrência ativa máxima 1; fila FIFO limitada a 2; excesso rejeitado em HTTP 429 sem iniciar inferência.
+- Streaming incremental, cancelamento voluntário/em fila/por desconexão e recuperação posterior comprovados.
+- Execução autoritativa: `evidence/family/day3/attempt-6`; tentativas 1–5 preservadas como diagnóstico.
+- Recursos autoritativos: RAM disponível mínima 2.182 GiB, working set máximo 3.396 GiB, disco livre mínimo 106.319 GiB.
+- Encerramento: zero processo `llama-server`, zero listener correspondente, supervisor `STOPPED`.
+- Testes: foco 15 passed; Family 23 passed; Product 722 passed, 1 skipped.
+- Política térmica: `temperature_monitoring=EXTERNAL_MANUAL_HWINFO`, `temperature_telemetry_collected_by_runner=false`, `temperature_claim=NONE`.
+- Próximo gate autorizado: Day 4 — Gateway Family com autenticação de dispositivo, sessões isoladas e primeiro cliente PWA, sem expor o runtime.

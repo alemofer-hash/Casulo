@@ -1,0 +1,14 @@
+{
+  "ended_utc": "2026-09-19T18:08:59.885942+00:00",
+  "failure_message": "disconnect não cancelou o job",
+  "failure_type": "RuntimeError",
+  "port_cleanup": "PASS",
+  "process_cleanup": "PASS",
+  "sampler_cleanup": "PASS",
+  "schema": "casulo.family.day3-real-integration/1.0",
+  "started_utc": "2026-09-19T18:08:18.025413+00:00",
+  "status": "FAIL",
+  "temperature_claim": "NONE",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false
+}

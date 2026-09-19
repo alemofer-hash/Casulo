@@ -19,6 +19,18 @@ class FamilyAuthorizationError(PermissionError):
     pass
 
 
+class FamilyBackpressureError(RuntimeError):
+    pass
+
+
+class FamilyUnavailableError(RuntimeError):
+    pass
+
+
+class FamilyResourceError(FamilyUnavailableError):
+    pass
+
+
 class JobStatus(StrEnum):
     QUEUED = "QUEUED"
     RUNNING = "RUNNING"

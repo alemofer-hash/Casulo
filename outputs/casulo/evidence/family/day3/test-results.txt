@@ -1,0 +1,41 @@
+CASULO FAMILY RP0.1 DAY 3 - TEST RESULTS
+authoritative_date=2026-09-19
+
+FOCAL_DAY3
+command=python -m pytest tests/family/test_day3_supervisor_integration.py -q --basetemp .pytest-day3-cancel-semantics2
+result=PASS
+summary=15 passed in 3.18s
+
+FAMILY_ALLOWED
+command=python -m pytest tests/family -q --basetemp .pytest-day3-family-suite
+result=PASS
+summary=23 passed in 6.72s
+
+PRODUCT_ALLOWED_SANDBOX_DIAGNOSTIC
+command=python -m pytest tests/product -q --basetemp .pytest-day3-product-suite
+result=ENVIRONMENT_DENIED
+summary=5 failed, 706 passed, 12 skipped in 174.18s
+first_cause=cscript.exe could not load Windows Script Host settings: Access denied
+interpretation=sandbox interference; same permitted suite repeated without that host restriction
+
+PRODUCT_ALLOWED_AUTHORITATIVE
+command=python -m pytest tests/product -q --basetemp .pytest-day3-product-suite-elevated
+result=PASS
+summary=722 passed, 1 skipped in 167.56s
+
+REAL_INTEGRATION
+command=python scripts/11-verify-family-day3.py --repo C:\Users\guimo\Downloads\ex --cache-root C:\Users\guimo\AppData\Local\Casulo\family-rp01\day2 --manifest config\family\day2-model-candidates.json --evidence-dir evidence\family\day3\attempt-6 --state-dir C:\Users\guimo\AppData\Local\Casulo\family-rp01\day3\attempt-6
+result=PASS
+summary=accepted=6 enqueued=6 rejected=1 cancelled=4 completed=2 failed=0
+
+STATIC
+python_ast=PASS files=47
+git_diff_check=PASS
+secret_scan=PASS
+final_matching_listeners=0
+final_llama_server_processes=0
+
+THERMAL_POLICY
+temperature_monitoring=EXTERNAL_MANUAL_HWINFO
+temperature_telemetry_collected_by_runner=false
+temperature_claim=NONE

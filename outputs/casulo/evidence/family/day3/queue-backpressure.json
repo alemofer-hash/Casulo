@@ -1,0 +1,26 @@
+{
+  "capacity": 2,
+  "counters": {
+    "accepted": 6,
+    "cancelled": 4,
+    "completed": 2,
+    "enqueued": 6,
+    "failed": 0,
+    "rejected": 1
+  },
+  "excess_http_status": 429,
+  "fifo_advanced_after_active_cancel": true,
+  "maximum_active_generations": 1,
+  "policy": "FIFO",
+  "queue_after_replacement": [
+    "5ce8efb6299441cd9b242dccef9678d1",
+    "ae6492949c9647909f41a1553bbd1c43"
+  ],
+  "queue_before_cancel": [
+    "866c09af1cc4415796768749790d1807",
+    "5ce8efb6299441cd9b242dccef9678d1"
+  ],
+  "rejected_started_inference": false,
+  "retry_after": "1",
+  "schema": "casulo.family.day3-queue-backpressure/1.0"
+}

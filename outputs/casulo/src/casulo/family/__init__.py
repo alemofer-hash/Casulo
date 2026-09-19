@@ -6,7 +6,7 @@ from .gateway import FamilyGateway
 from .memory import MockFamilyMemory, MockMemoryEntry
 from .runtime import FamilyRuntime
 from .scheduler import FamilyJobStore
-from .supervisor import DeterministicMockEngine, FamilySupervisor
+from .supervisor import DeterministicMockEngine, FamilySupervisor, SupervisorState
 
 __all__ = [
     "AuthContext",
@@ -22,4 +22,5 @@ __all__ = [
     "JobStatus",
     "MockFamilyMemory",
     "MockMemoryEntry",
+    "SupervisorState",
 ]
