@@ -1,0 +1,23 @@
+{
+  "schema": "casulo.family.day2-interruption/1.0",
+  "status": "INTERRUPTED_EXTERNAL",
+  "pass": false,
+  "reason": "The controlling Codex task was interrupted; llama-server and typeperf were no longer running when work resumed.",
+  "started_utc": "2026-09-19T01:04:26.272311+00:00",
+  "last_checkpoint_utc": "2026-09-19T02:22:31.047178+00:00",
+  "observed_duration_seconds": 4684.775,
+  "samples": 78,
+  "minimum_available_ram_bytes": 1238368256,
+  "minimum_disk_free_bytes": 103234048000,
+  "soak_receipt": {
+    "file": "qwen25-q2-vulkan-soak-attempt1-interrupted.json",
+    "bytes": 38206,
+    "sha256": "37116d7cdee8084dc4ddde53a7b8d3a56c19118530c448b5fcda9032432dd5a8"
+  },
+  "processor_counters": {
+    "file": "qwen25-q2-processor-counters-attempt1-interrupted.csv",
+    "bytes": 7750,
+    "sha256": "f3559fe3f94cf95cc974e16443a4bc3ad428b1f82c4cad995ae174fa11a4d1b2"
+  },
+  "qualification_note": "This attempt is preserved as evidence but its elapsed time is not combined with or credited to the final uninterrupted gate."
+}

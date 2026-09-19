@@ -18,7 +18,7 @@ from typing import Any, Callable
 
 CANDIDATE_SCHEMA = "casulo-generative-candidate/1.0"
 ADOPTION_SCHEMA = "casulo-generative-adoption/1.0"
-MINIMUM_RESERVE_BYTES = 20 * 1024**3
+MINIMUM_RESERVE_BYTES = 30 * 1024**3
 MAX_CANDIDATE_BYTES = 1024 * 1024
 MAX_ARCHIVE_ENTRIES = 4096
 _SHA256 = re.compile(r"^[0-9a-f]{64}$")
@@ -114,7 +114,7 @@ class GenerativeCandidate:
         reserve = storage.get("minimum_reserve_bytes")
         peak = storage.get("projected_adoption_peak_bytes")
         if not isinstance(reserve, int) or reserve < MINIMUM_RESERVE_BYTES:
-            raise GenerativeModelError("reserva operacional abaixo de 20 GiB")
+            raise GenerativeModelError("reserva operacional abaixo de 30 GiB")
         minimum_peak = 2 * (model.bytes + runtime.bytes) + unpacked
         if not isinstance(peak, int) or peak < minimum_peak:
             raise GenerativeModelError("pico projetado não cobre staging e adoção")
@@ -249,7 +249,7 @@ def adopt_candidate(
         raise GenerativeModelError("consentimento literal divergente; nenhuma adoção iniciada")
     plan = adoption_plan(candidate, cache_root)
     if not plan["storage_gate"]:
-        raise GenerativeModelError("adoção violaria a reserva operacional de 20 GiB")
+        raise GenerativeModelError("adoção violaria a reserva operacional de 30 GiB")
     root = Path(cache_root).expanduser().resolve(strict=False)
     _reject_symlink_ancestors(root)
     prior = adoption_doctor(candidate, root)

@@ -1,0 +1,88 @@
+{
+  "ended_utc": "2026-09-18T22:48:07.902296+00:00",
+  "external_network_required": false,
+  "functional": {
+    "json_schema": {
+      "completion_tokens": 41,
+      "finish_reason": "stop",
+      "output_sha256": "640f547ed4ec68d8d8677837cb2dd1976a56a205d136f80b6190340891e45ff0",
+      "pass": true,
+      "prompt_tokens": 36
+    },
+    "pass": false,
+    "portuguese": {
+      "completion_tokens": 7,
+      "finish_reason": "stop",
+      "output_sha256": "5510982c9c791f3e33bc41fd91f6579a7c74282ed798b59ca30b8845518cb6b2",
+      "pass": false,
+      "prompt_tokens": 49
+    },
+    "tool_call": {
+      "completion_tokens": 89,
+      "finish_reason": "stop",
+      "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "pass": false,
+      "prompt_tokens": 187
+    }
+  },
+  "listener": "127.0.0.1:63964",
+  "network_scope": "127.0.0.1-only",
+  "pass": false,
+  "profile": {
+    "batch_size": 128,
+    "cache_type_k": "q4_0",
+    "cache_type_v": "q4_0",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "license": "Apache-2.0",
+    "model_file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+    "model_files": [
+      {
+        "bytes": 3993201344,
+        "file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "bytes": 689872288,
+        "file": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ],
+    "model_key": "q4_k_m",
+    "no_host": true,
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 64
+  },
+  "schema": "casulo.family.day2-model-gate/1.0",
+  "soak": {
+    "ended_utc": "2026-09-18T22:48:07.143093+00:00",
+    "failures": [
+      "resposta de estabilidade divergente"
+    ],
+    "listener": "127.0.0.1:63964",
+    "minimum_available_ram_bytes": 1073741824,
+    "minimum_disk_free_bytes": 32212254720,
+    "observed_duration_seconds": 6.299,
+    "pass": false,
+    "profile_id": "qwen2.5-7b-q4_k_m-vulkan",
+    "requested_duration_seconds": 60,
+    "samples": [
+      {
+        "available_ram_bytes": 4034650112,
+        "disk_free_bytes": 112953933824,
+        "elapsed_seconds": 6.295,
+        "inference_pass": false,
+        "latency_seconds": 6.295,
+        "output_sha256": "7c92015660f9a471f8a1f45d8b13df03ec6e42a057170944415002e40c6e8fe6",
+        "process_working_set_bytes": 5011517440
+      }
+    ],
+    "schema": "casulo.family.day2-soak/1.0",
+    "started_utc": "2026-09-18T22:48:00.843605+00:00"
+  },
+  "startup_seconds": 21.219,
+  "timestamp_utc": "2026-09-18T22:47:00.785529+00:00"
+}

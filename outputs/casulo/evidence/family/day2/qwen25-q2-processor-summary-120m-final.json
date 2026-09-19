@@ -1,0 +1,19 @@
+﻿{
+    "schema":  "casulo.family.day2-processor-counters/1.0",
+    "source":  "Windows Processor Information performance counters via typeperf",
+    "samples_total":  120,
+    "samples_initialized":  120,
+    "first_timestamp":  "09/19/2026 12:14:04.105",
+    "last_timestamp":  "09/19/2026 14:13:06.423",
+    "performance_limit_flags_nonzero_samples":  0,
+    "performance_limit_below_100_samples":  0,
+    "max_performance_limit_flags":  0,
+    "min_performance_limit_percent":  100,
+    "min_actual_mhz":  1167.3850152515226,
+    "max_actual_mhz":  2114.4848285939206,
+    "average_actual_mhz":  1496.079,
+    "temperature_celsius":  null,
+    "temperature_status":  "UNAVAILABLE",
+    "no_persistent_processor_limit_observed":  true,
+    "limitation":  "Performance counters are a throttling proxy and do not measure absolute temperature."
+}

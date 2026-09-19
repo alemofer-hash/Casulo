@@ -1463,3 +1463,33 @@ Evidência:
 
 Próximo gate: `NP7_ALL_36_BLOCKS_AND_LOGITS`, com KV bounded, cancelamento por
 bloco, 36 blocos, RMSNorm final e logits comparados antes de qualquer sampling.
+
+## 2026-09-19 — CASULO FAMILY RP0.1 Day 2
+
+Estado: `LOCAL_MODEL_120_MINUTE_STABILITY_PASS_DAY3_PENDING`.
+
+- runtime oficial llama.cpp `v0.4.1`/build `b10964`, commit
+  `b29c606e28a01b1bc8c1351026a0fa6e616bf6c4`, congelado e verificado;
+- modelo local primário Qwen2.5-7B-Instruct Q2_K, revisão
+  `293ca9a10157b0e5fc5cb32af8b636a88bede891`, Apache-2.0;
+- perfil primário Vulkan, contexto 8192, F16 KV, quatro threads, uma geração,
+  `127.0.0.1` somente; perfil CPU equivalente preservado como fallback;
+- português, JSON Schema, tool calling, edição de código e
+  cancelamento/recuperação passaram nos perfis primário e fallback;
+- janela contínua final: 7.201,414 segundos, 119 inferências, zero falhas,
+  RAM disponível mínima 1.157.832.704 bytes e disco livre mínimo
+  105.290.420.224 bytes;
+- 120 amostras de contadores do processador tiveram flags de limite zero e
+  limite de desempenho nunca abaixo de 100%; temperatura absoluta permanece
+  `UNAVAILABLE`, sem claim térmico;
+- regressão focal: 23 passed; regressão Family + Product: 730 passed,
+  1 skipped; testes históricos continuaram bloqueados pela política ativa;
+- nenhum listener LAN, regra de firewall, certificado, API paga, inferência
+  cloud, ASR, TTS ou PWA foi introduzido.
+
+Evidência: `docs/product/CASULO_FAMILY_RP01_DAY2_LOCAL_MODEL.md` e
+`evidence/family/day2/`.
+
+Próximo gate autorizado: Dia 3, conectar o adapter do modelo loopback ao
+supervisor Family e validar streaming, cancelamento, fila e backpressure com
+uma única geração pesada. O Dia 3 não foi iniciado nesta sessão.

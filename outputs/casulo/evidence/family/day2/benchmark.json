@@ -1,0 +1,57 @@
+{
+  "schema": "casulo.family.day2-benchmark/1.0",
+  "measured_at": "2026-09-18",
+  "machine": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-1235U",
+    "physical_cores": 10,
+    "logical_processors": 12,
+    "ram_bytes": 16890978304,
+    "gpu": "Intel(R) Iris(R) Xe Graphics",
+    "gpu_backend": "Vulkan0",
+    "gpu_uma": true,
+    "gpu_fp16": true,
+    "gpu_matrix_cores": false
+  },
+  "runtime": {
+    "stable_release": "v0.4.1",
+    "build": 10964,
+    "commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "cpu_archive_sha256": "917f39c076402c421224824607397af20f53625a60defc20e8dd22446bf4c5d7",
+    "vulkan_archive_sha256": "1ee3ad952f4ba71f438bd6d7bebef19e1c7af04adcaa35d08b4ddabb27d4c642",
+    "github_attestation_verified": true
+  },
+  "method": {
+    "tool": "llama-bench",
+    "prompt_tokens": 512,
+    "generated_tokens": 128,
+    "repetitions": 3,
+    "server_context_tokens": 8192,
+    "benchmark_batch_size": 2048,
+    "benchmark_ubatch_size": 512
+  },
+  "results": [
+    {"model": "q4_k_m", "backend": "cpu", "threads": 4, "gpu_layers": 0, "prompt_tps": 10.680344, "generation_tps": 4.455918},
+    {"model": "q4_k_m", "backend": "cpu", "threads": 6, "gpu_layers": 0, "prompt_tps": 11.021126, "generation_tps": 4.003627},
+    {"model": "q4_k_m", "backend": "cpu", "threads": 8, "gpu_layers": 0, "prompt_tps": 12.052548, "generation_tps": 3.175962},
+    {"model": "q4_k_m", "backend": "cpu", "threads": 10, "gpu_layers": 0, "prompt_tps": 10.824852, "generation_tps": 3.419877},
+    {"model": "q4_k_m", "backend": "vulkan", "threads": 4, "gpu_layers": 20, "prompt_tps": 41.927464, "generation_tps": 2.530404},
+    {"model": "q4_k_m", "backend": "vulkan", "threads": 4, "gpu_layers": 99, "prompt_tps": 42.686264, "generation_tps": 3.513238},
+    {"model": "q5_k_m", "backend": "cpu", "threads": 4, "gpu_layers": 0, "prompt_tps": 4.054328, "generation_tps": 2.712861},
+    {"model": "q5_k_m", "backend": "vulkan", "threads": 4, "gpu_layers": 99, "prompt_tps": 43.223503, "generation_tps": 3.024295},
+    {"model": "qwen2.5-7b-q4_k_m", "backend": "cpu", "threads": 4, "gpu_layers": 0, "cache_k": "f16", "cache_v": "f16", "prompt_tps": 9.381538, "generation_tps": 4.118793},
+    {"model": "qwen2.5-7b-q4_k_m", "backend": "vulkan", "threads": 4, "gpu_layers": 99, "cache_k": "f16", "cache_v": "f16", "no_host": true, "flash_attention": true, "prompt_tps": 56.858440, "generation_tps": 4.616591},
+    {"model": "qwen2.5-7b-q3_k_m", "backend": "cpu", "threads": 4, "gpu_layers": 0, "cache_k": "f16", "cache_v": "f16", "prompt_tps": 7.673893, "generation_tps": 4.680252},
+    {"model": "qwen2.5-7b-q3_k_m", "backend": "vulkan", "threads": 4, "gpu_layers": 99, "cache_k": "f16", "cache_v": "f16", "no_host": true, "flash_attention": true, "prompt_tps": 67.775624, "generation_tps": 3.881103},
+    {"model": "qwen2.5-7b-q2_k", "backend": "cpu", "threads": 4, "gpu_layers": 0, "cache_k": "f16", "cache_v": "f16", "prompt_tps": 7.588271, "generation_tps": 5.233852},
+    {"model": "qwen2.5-7b-q2_k", "backend": "vulkan", "threads": 4, "gpu_layers": 99, "cache_k": "f16", "cache_v": "f16", "no_host": true, "flash_attention": true, "prompt_tps": 57.843723, "generation_tps": 3.240349}
+  ],
+  "selection": {
+    "primary": "qwen2.5-7b-q2_k/vulkan/full-offload/threads-4/f16-kv/pending-120m",
+    "fallback_model": "none-qualified-within-current-ram-budget",
+    "fallback_runtime": "qwen2.5-7b-q2_k/cpu/threads-4/f16-kv"
+  },
+  "limitations": {
+    "temperature_sensor": "unavailable through Windows ACPI/WMI",
+    "thermal_claim": "No direct temperature claim is made by this benchmark."
+  }
+}

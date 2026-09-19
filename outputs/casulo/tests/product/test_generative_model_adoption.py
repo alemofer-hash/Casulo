@@ -73,7 +73,7 @@ def _candidate(
             "required_executable": "llama-server.exe",
         },
         "storage": {
-            "minimum_reserve_bytes": 20 * 1024**3,
+            "minimum_reserve_bytes": 30 * 1024**3,
             "projected_adoption_peak_bytes": 2 * (len(model) + len(runtime)) + unpacked,
         },
         "network_required_after_install": False,
@@ -102,7 +102,7 @@ def test_repository_candidate_is_pinned_and_not_adopted() -> None:
     assert candidate.model.bytes == 2_497_280_256
     assert candidate.model.sha256 == "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
     assert candidate.runtime.sha256 == "a9d95d26cf00664f2902f73cb0fd9b167a3a1f252294bb2f8b236305f57d6363"
-    assert candidate.minimum_reserve_bytes == 20 * 1024**3
+    assert candidate.minimum_reserve_bytes == 30 * 1024**3
 
 
 def test_doctor_and_plan_are_read_only_when_cache_is_missing(tmp_path: Path) -> None:

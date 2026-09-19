@@ -37,7 +37,7 @@
     "fixed_seed_allowed_only_for_debug": true
   },
   "storage": {
-    "minimum_reserve_bytes": 21474836480,
+    "minimum_reserve_bytes": 32212254720,
     "projected_adoption_peak_bytes": 5309859734,
     "cache_is_owner_private": true,
     "duplicate_into_guest": false

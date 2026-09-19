@@ -1,0 +1,1062 @@
+{
+  "external_network_required": false,
+  "functional": {
+    "json_schema": {
+      "completion_tokens": 25,
+      "finish_reason": "stop",
+      "output_sha256": "d4ae93564287be4b3172b36d6f78603c3565ba61a204de04b7e1fe4384bfbf1c",
+      "pass": true,
+      "prompt_tokens": 19
+    },
+    "pass": true,
+    "portuguese": {
+      "completion_tokens": 28,
+      "finish_reason": "stop",
+      "output_sha256": "4aaef4846eedf41352bf5b000506aa77d8dbb5b4076a1bf3573dc847a833d08e",
+      "pass": true,
+      "prompt_tokens": 53
+    },
+    "tool_call": {
+      "completion_tokens": 27,
+      "finish_reason": "tool_calls",
+      "output_sha256": "f3c273c153198a69b9998263355928699355499d875687f1defe2bce8e1ea076",
+      "pass": true,
+      "prompt_tokens": 173
+    }
+  },
+  "network_scope": "127.0.0.1-only",
+  "pass": false,
+  "profile": {
+    "batch_size": 256,
+    "cache_type_k": "q8_0",
+    "cache_type_v": "q4_0",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "model_bytes": 5027783488,
+    "model_file": "Qwen3-8B-Q4_K_M.gguf",
+    "model_key": "q4_k_m",
+    "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "no_host": true,
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 128
+  },
+  "schema": "casulo.family.day2-model-gate/1.0",
+  "soak": {
+    "ended_utc": "2026-09-18T22:22:52.158304+00:00",
+    "failures": [
+      "reserva de RAM violada"
+    ],
+    "listener": "127.0.0.1:64921",
+    "minimum_available_ram_bytes": 1073741824,
+    "minimum_disk_free_bytes": 32212254720,
+    "observed_duration_seconds": 6684.588,
+    "pass": false,
+    "profile_id": "qwen3-8b-q4_k_m-vulkan",
+    "requested_duration_seconds": 7200,
+    "samples": [
+      {
+        "available_ram_bytes": 2069254144,
+        "disk_free_bytes": 116466327552,
+        "elapsed_seconds": 1.99,
+        "inference_pass": true,
+        "latency_seconds": 1.99,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5760024576
+      },
+      {
+        "available_ram_bytes": 2115592192,
+        "disk_free_bytes": 116464914432,
+        "elapsed_seconds": 62.721,
+        "inference_pass": true,
+        "latency_seconds": 0.73,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5760110592
+      },
+      {
+        "available_ram_bytes": 2536673280,
+        "disk_free_bytes": 116473454592,
+        "elapsed_seconds": 123.513,
+        "inference_pass": true,
+        "latency_seconds": 0.791,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5761363968
+      },
+      {
+        "available_ram_bytes": 2746257408,
+        "disk_free_bytes": 116472451072,
+        "elapsed_seconds": 184.345,
+        "inference_pass": true,
+        "latency_seconds": 0.831,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5761912832
+      },
+      {
+        "available_ram_bytes": 2295009280,
+        "disk_free_bytes": 116466438144,
+        "elapsed_seconds": 245.237,
+        "inference_pass": true,
+        "latency_seconds": 0.892,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5762273280
+      },
+      {
+        "available_ram_bytes": 1983995904,
+        "disk_free_bytes": 116471779328,
+        "elapsed_seconds": 306.276,
+        "inference_pass": true,
+        "latency_seconds": 1.038,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5594587136
+      },
+      {
+        "available_ram_bytes": 2175438848,
+        "disk_free_bytes": 116463472640,
+        "elapsed_seconds": 367.045,
+        "inference_pass": true,
+        "latency_seconds": 0.768,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5594636288
+      },
+      {
+        "available_ram_bytes": 2194595840,
+        "disk_free_bytes": 116461953024,
+        "elapsed_seconds": 427.798,
+        "inference_pass": true,
+        "latency_seconds": 0.752,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5594714112
+      },
+      {
+        "available_ram_bytes": 2293080064,
+        "disk_free_bytes": 116460572672,
+        "elapsed_seconds": 488.537,
+        "inference_pass": true,
+        "latency_seconds": 0.738,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1826697216
+      },
+      {
+        "available_ram_bytes": 2301382656,
+        "disk_free_bytes": 116459139072,
+        "elapsed_seconds": 549.337,
+        "inference_pass": true,
+        "latency_seconds": 0.8,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1826742272
+      },
+      {
+        "available_ram_bytes": 2082217984,
+        "disk_free_bytes": 116457054208,
+        "elapsed_seconds": 610.172,
+        "inference_pass": true,
+        "latency_seconds": 0.834,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1826709504
+      },
+      {
+        "available_ram_bytes": 1872953344,
+        "disk_free_bytes": 116459585536,
+        "elapsed_seconds": 670.971,
+        "inference_pass": true,
+        "latency_seconds": 0.799,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1826709504
+      },
+      {
+        "available_ram_bytes": 2079342592,
+        "disk_free_bytes": 116458815488,
+        "elapsed_seconds": 731.844,
+        "inference_pass": true,
+        "latency_seconds": 0.871,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1826709504
+      },
+      {
+        "available_ram_bytes": 2274598912,
+        "disk_free_bytes": 116457820160,
+        "elapsed_seconds": 792.724,
+        "inference_pass": true,
+        "latency_seconds": 0.879,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042481152
+      },
+      {
+        "available_ram_bytes": 2069000192,
+        "disk_free_bytes": 116455833600,
+        "elapsed_seconds": 853.504,
+        "inference_pass": true,
+        "latency_seconds": 0.779,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042481152
+      },
+      {
+        "available_ram_bytes": 2022924288,
+        "disk_free_bytes": 116455759872,
+        "elapsed_seconds": 914.351,
+        "inference_pass": true,
+        "latency_seconds": 0.847,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042481152
+      },
+      {
+        "available_ram_bytes": 1980645376,
+        "disk_free_bytes": 116453769216,
+        "elapsed_seconds": 975.246,
+        "inference_pass": true,
+        "latency_seconds": 0.894,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042505728
+      },
+      {
+        "available_ram_bytes": 2258657280,
+        "disk_free_bytes": 116453769216,
+        "elapsed_seconds": 1036.084,
+        "inference_pass": true,
+        "latency_seconds": 0.837,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042489344
+      },
+      {
+        "available_ram_bytes": 1272209408,
+        "disk_free_bytes": 116450869248,
+        "elapsed_seconds": 1096.953,
+        "inference_pass": true,
+        "latency_seconds": 0.869,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042481152
+      },
+      {
+        "available_ram_bytes": 2377990144,
+        "disk_free_bytes": 116447186944,
+        "elapsed_seconds": 1157.643,
+        "inference_pass": true,
+        "latency_seconds": 0.689,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042481152
+      },
+      {
+        "available_ram_bytes": 2464124928,
+        "disk_free_bytes": 116454912000,
+        "elapsed_seconds": 1218.337,
+        "inference_pass": true,
+        "latency_seconds": 0.693,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042481152
+      },
+      {
+        "available_ram_bytes": 2205560832,
+        "disk_free_bytes": 116472897536,
+        "elapsed_seconds": 1279.026,
+        "inference_pass": true,
+        "latency_seconds": 0.687,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042485248
+      },
+      {
+        "available_ram_bytes": 2037968896,
+        "disk_free_bytes": 116471644160,
+        "elapsed_seconds": 1339.71,
+        "inference_pass": true,
+        "latency_seconds": 0.683,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 1042485248
+      },
+      {
+        "available_ram_bytes": 2433294336,
+        "disk_free_bytes": 116471382016,
+        "elapsed_seconds": 1400.409,
+        "inference_pass": true,
+        "latency_seconds": 0.698,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 91652096
+      },
+      {
+        "available_ram_bytes": 2351431680,
+        "disk_free_bytes": 116475305984,
+        "elapsed_seconds": 1461.082,
+        "inference_pass": true,
+        "latency_seconds": 0.673,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 91664384
+      },
+      {
+        "available_ram_bytes": 2170232832,
+        "disk_free_bytes": 116347080704,
+        "elapsed_seconds": 1521.775,
+        "inference_pass": true,
+        "latency_seconds": 0.692,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 91709440
+      },
+      {
+        "available_ram_bytes": 1914359808,
+        "disk_free_bytes": 116340891648,
+        "elapsed_seconds": 1582.542,
+        "inference_pass": true,
+        "latency_seconds": 0.765,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 91709440
+      },
+      {
+        "available_ram_bytes": 2267680768,
+        "disk_free_bytes": 116340736000,
+        "elapsed_seconds": 1643.294,
+        "inference_pass": true,
+        "latency_seconds": 0.752,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 91709440
+      },
+      {
+        "available_ram_bytes": 2276769792,
+        "disk_free_bytes": 116337344512,
+        "elapsed_seconds": 1704.146,
+        "inference_pass": true,
+        "latency_seconds": 0.851,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 69054464
+      },
+      {
+        "available_ram_bytes": 2060537856,
+        "disk_free_bytes": 116334993408,
+        "elapsed_seconds": 1764.9,
+        "inference_pass": true,
+        "latency_seconds": 0.75,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 69066752
+      },
+      {
+        "available_ram_bytes": 2673950720,
+        "disk_free_bytes": 116319637504,
+        "elapsed_seconds": 1825.612,
+        "inference_pass": true,
+        "latency_seconds": 0.695,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 69091328
+      },
+      {
+        "available_ram_bytes": 2484867072,
+        "disk_free_bytes": 116329537536,
+        "elapsed_seconds": 1886.326,
+        "inference_pass": true,
+        "latency_seconds": 0.714,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 69115904
+      },
+      {
+        "available_ram_bytes": 2010218496,
+        "disk_free_bytes": 116339539968,
+        "elapsed_seconds": 1947.13,
+        "inference_pass": true,
+        "latency_seconds": 0.802,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 69218304
+      },
+      {
+        "available_ram_bytes": 2360483840,
+        "disk_free_bytes": 116328976384,
+        "elapsed_seconds": 2007.988,
+        "inference_pass": true,
+        "latency_seconds": 0.858,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64327680
+      },
+      {
+        "available_ram_bytes": 2414579712,
+        "disk_free_bytes": 116328288256,
+        "elapsed_seconds": 2068.816,
+        "inference_pass": true,
+        "latency_seconds": 0.826,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64765952
+      },
+      {
+        "available_ram_bytes": 2338529280,
+        "disk_free_bytes": 116327800832,
+        "elapsed_seconds": 2129.586,
+        "inference_pass": true,
+        "latency_seconds": 0.769,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64901120
+      },
+      {
+        "available_ram_bytes": 2287558656,
+        "disk_free_bytes": 116332273664,
+        "elapsed_seconds": 2190.51,
+        "inference_pass": true,
+        "latency_seconds": 0.923,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64917504
+      },
+      {
+        "available_ram_bytes": 2247168000,
+        "disk_free_bytes": 116332437504,
+        "elapsed_seconds": 2251.192,
+        "inference_pass": true,
+        "latency_seconds": 0.68,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64929792
+      },
+      {
+        "available_ram_bytes": 2212003840,
+        "disk_free_bytes": 116332068864,
+        "elapsed_seconds": 2311.899,
+        "inference_pass": true,
+        "latency_seconds": 0.707,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64892928
+      },
+      {
+        "available_ram_bytes": 2271076352,
+        "disk_free_bytes": 116325736448,
+        "elapsed_seconds": 2372.795,
+        "inference_pass": true,
+        "latency_seconds": 0.894,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64909312
+      },
+      {
+        "available_ram_bytes": 2309783552,
+        "disk_free_bytes": 116322459648,
+        "elapsed_seconds": 2433.512,
+        "inference_pass": true,
+        "latency_seconds": 0.717,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64937984
+      },
+      {
+        "available_ram_bytes": 2265788416,
+        "disk_free_bytes": 116322119680,
+        "elapsed_seconds": 2494.233,
+        "inference_pass": true,
+        "latency_seconds": 0.72,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64950272
+      },
+      {
+        "available_ram_bytes": 2079485952,
+        "disk_free_bytes": 116321050624,
+        "elapsed_seconds": 2554.975,
+        "inference_pass": true,
+        "latency_seconds": 0.741,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64974848
+      },
+      {
+        "available_ram_bytes": 2220363776,
+        "disk_free_bytes": 116319444992,
+        "elapsed_seconds": 2615.708,
+        "inference_pass": true,
+        "latency_seconds": 0.732,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64933888
+      },
+      {
+        "available_ram_bytes": 2228903936,
+        "disk_free_bytes": 116318457856,
+        "elapsed_seconds": 2676.442,
+        "inference_pass": true,
+        "latency_seconds": 0.734,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64946176
+      },
+      {
+        "available_ram_bytes": 2018820096,
+        "disk_free_bytes": 116316446720,
+        "elapsed_seconds": 2737.311,
+        "inference_pass": true,
+        "latency_seconds": 0.868,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64962560
+      },
+      {
+        "available_ram_bytes": 2007216128,
+        "disk_free_bytes": 116318695424,
+        "elapsed_seconds": 2798.102,
+        "inference_pass": true,
+        "latency_seconds": 0.789,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64978944
+      },
+      {
+        "available_ram_bytes": 1965752320,
+        "disk_free_bytes": 116316073984,
+        "elapsed_seconds": 2858.804,
+        "inference_pass": true,
+        "latency_seconds": 0.702,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64991232
+      },
+      {
+        "available_ram_bytes": 2024816640,
+        "disk_free_bytes": 116320829440,
+        "elapsed_seconds": 2919.516,
+        "inference_pass": true,
+        "latency_seconds": 0.71,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64970752
+      },
+      {
+        "available_ram_bytes": 1968623616,
+        "disk_free_bytes": 116319784960,
+        "elapsed_seconds": 2980.21,
+        "inference_pass": true,
+        "latency_seconds": 0.693,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64983040
+      },
+      {
+        "available_ram_bytes": 1925443584,
+        "disk_free_bytes": 116319637504,
+        "elapsed_seconds": 3040.994,
+        "inference_pass": true,
+        "latency_seconds": 0.783,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64999424
+      },
+      {
+        "available_ram_bytes": 1818181632,
+        "disk_free_bytes": 116317822976,
+        "elapsed_seconds": 3101.714,
+        "inference_pass": true,
+        "latency_seconds": 0.719,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65015808
+      },
+      {
+        "available_ram_bytes": 1789427712,
+        "disk_free_bytes": 116316053504,
+        "elapsed_seconds": 3162.388,
+        "inference_pass": true,
+        "latency_seconds": 0.673,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65015808
+      },
+      {
+        "available_ram_bytes": 2102153216,
+        "disk_free_bytes": 116315942912,
+        "elapsed_seconds": 3223.128,
+        "inference_pass": true,
+        "latency_seconds": 0.739,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 64962560
+      },
+      {
+        "available_ram_bytes": 2048790528,
+        "disk_free_bytes": 116302938112,
+        "elapsed_seconds": 3283.839,
+        "inference_pass": true,
+        "latency_seconds": 0.71,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65036288
+      },
+      {
+        "available_ram_bytes": 2079092736,
+        "disk_free_bytes": 116271509504,
+        "elapsed_seconds": 3344.592,
+        "inference_pass": true,
+        "latency_seconds": 0.752,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65048576
+      },
+      {
+        "available_ram_bytes": 1961893888,
+        "disk_free_bytes": 116269334528,
+        "elapsed_seconds": 3405.341,
+        "inference_pass": true,
+        "latency_seconds": 0.749,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65056768
+      },
+      {
+        "available_ram_bytes": 1825619968,
+        "disk_free_bytes": 116266881024,
+        "elapsed_seconds": 3466.09,
+        "inference_pass": true,
+        "latency_seconds": 0.748,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65056768
+      },
+      {
+        "available_ram_bytes": 1869651968,
+        "disk_free_bytes": 116261912576,
+        "elapsed_seconds": 3526.808,
+        "inference_pass": true,
+        "latency_seconds": 0.717,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65040384
+      },
+      {
+        "available_ram_bytes": 1750044672,
+        "disk_free_bytes": 116259274752,
+        "elapsed_seconds": 3587.486,
+        "inference_pass": true,
+        "latency_seconds": 0.677,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65114112
+      },
+      {
+        "available_ram_bytes": 1525055488,
+        "disk_free_bytes": 116258553856,
+        "elapsed_seconds": 3648.257,
+        "inference_pass": true,
+        "latency_seconds": 0.771,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65114112
+      },
+      {
+        "available_ram_bytes": 1537126400,
+        "disk_free_bytes": 116256423936,
+        "elapsed_seconds": 3708.959,
+        "inference_pass": true,
+        "latency_seconds": 0.701,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65122304
+      },
+      {
+        "available_ram_bytes": 1920761856,
+        "disk_free_bytes": 116122341376,
+        "elapsed_seconds": 3769.657,
+        "inference_pass": true,
+        "latency_seconds": 0.695,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65122304
+      },
+      {
+        "available_ram_bytes": 2030870528,
+        "disk_free_bytes": 116123070464,
+        "elapsed_seconds": 3830.433,
+        "inference_pass": true,
+        "latency_seconds": 0.776,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65122304
+      },
+      {
+        "available_ram_bytes": 1787469824,
+        "disk_free_bytes": 116122492928,
+        "elapsed_seconds": 3891.127,
+        "inference_pass": true,
+        "latency_seconds": 0.693,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65122304
+      },
+      {
+        "available_ram_bytes": 1849327616,
+        "disk_free_bytes": 116122767360,
+        "elapsed_seconds": 3951.836,
+        "inference_pass": true,
+        "latency_seconds": 0.701,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65122304
+      },
+      {
+        "available_ram_bytes": 1813696512,
+        "disk_free_bytes": 116121694208,
+        "elapsed_seconds": 4012.56,
+        "inference_pass": true,
+        "latency_seconds": 0.723,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65544192
+      },
+      {
+        "available_ram_bytes": 1559945216,
+        "disk_free_bytes": 116124610560,
+        "elapsed_seconds": 4073.355,
+        "inference_pass": true,
+        "latency_seconds": 0.794,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65544192
+      },
+      {
+        "available_ram_bytes": 2042175488,
+        "disk_free_bytes": 116123549696,
+        "elapsed_seconds": 4134.078,
+        "inference_pass": true,
+        "latency_seconds": 0.723,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65536000
+      },
+      {
+        "available_ram_bytes": 1948454912,
+        "disk_free_bytes": 115887345664,
+        "elapsed_seconds": 4194.799,
+        "inference_pass": true,
+        "latency_seconds": 0.72,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65536000
+      },
+      {
+        "available_ram_bytes": 1883664384,
+        "disk_free_bytes": 115885977600,
+        "elapsed_seconds": 4255.513,
+        "inference_pass": true,
+        "latency_seconds": 0.713,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65536000
+      },
+      {
+        "available_ram_bytes": 1921007616,
+        "disk_free_bytes": 115888283648,
+        "elapsed_seconds": 4316.226,
+        "inference_pass": true,
+        "latency_seconds": 0.713,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65540096
+      },
+      {
+        "available_ram_bytes": 1745092608,
+        "disk_free_bytes": 115888594944,
+        "elapsed_seconds": 4376.963,
+        "inference_pass": true,
+        "latency_seconds": 0.736,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65540096
+      },
+      {
+        "available_ram_bytes": 2083610624,
+        "disk_free_bytes": 115890888704,
+        "elapsed_seconds": 4437.672,
+        "inference_pass": true,
+        "latency_seconds": 0.709,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65527808
+      },
+      {
+        "available_ram_bytes": 2133032960,
+        "disk_free_bytes": 115888238592,
+        "elapsed_seconds": 4498.367,
+        "inference_pass": true,
+        "latency_seconds": 0.694,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65527808
+      },
+      {
+        "available_ram_bytes": 2085093376,
+        "disk_free_bytes": 115886809088,
+        "elapsed_seconds": 4559.077,
+        "inference_pass": true,
+        "latency_seconds": 0.709,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65531904
+      },
+      {
+        "available_ram_bytes": 1924116480,
+        "disk_free_bytes": 115884523520,
+        "elapsed_seconds": 4619.788,
+        "inference_pass": true,
+        "latency_seconds": 0.711,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65531904
+      },
+      {
+        "available_ram_bytes": 1407717376,
+        "disk_free_bytes": 115896995840,
+        "elapsed_seconds": 4680.567,
+        "inference_pass": true,
+        "latency_seconds": 0.778,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65536000
+      },
+      {
+        "available_ram_bytes": 2183778304,
+        "disk_free_bytes": 115896639488,
+        "elapsed_seconds": 4741.253,
+        "inference_pass": true,
+        "latency_seconds": 0.683,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65536000
+      },
+      {
+        "available_ram_bytes": 2072121344,
+        "disk_free_bytes": 115895934976,
+        "elapsed_seconds": 4801.962,
+        "inference_pass": true,
+        "latency_seconds": 0.709,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65536000
+      },
+      {
+        "available_ram_bytes": 2062282752,
+        "disk_free_bytes": 115895922688,
+        "elapsed_seconds": 4862.657,
+        "inference_pass": true,
+        "latency_seconds": 0.694,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65536000
+      },
+      {
+        "available_ram_bytes": 2026561536,
+        "disk_free_bytes": 115895697408,
+        "elapsed_seconds": 4923.336,
+        "inference_pass": true,
+        "latency_seconds": 0.678,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65536000
+      },
+      {
+        "available_ram_bytes": 2199367680,
+        "disk_free_bytes": 115903774720,
+        "elapsed_seconds": 4984.171,
+        "inference_pass": true,
+        "latency_seconds": 0.835,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65507328
+      },
+      {
+        "available_ram_bytes": 2063749120,
+        "disk_free_bytes": 115903688704,
+        "elapsed_seconds": 5044.946,
+        "inference_pass": true,
+        "latency_seconds": 0.774,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65507328
+      },
+      {
+        "available_ram_bytes": 2105569280,
+        "disk_free_bytes": 115903590400,
+        "elapsed_seconds": 5105.672,
+        "inference_pass": true,
+        "latency_seconds": 0.726,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65511424
+      },
+      {
+        "available_ram_bytes": 1828204544,
+        "disk_free_bytes": 115910926336,
+        "elapsed_seconds": 5166.62,
+        "inference_pass": true,
+        "latency_seconds": 0.947,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65511424
+      },
+      {
+        "available_ram_bytes": 2366033920,
+        "disk_free_bytes": 115908435968,
+        "elapsed_seconds": 5227.357,
+        "inference_pass": true,
+        "latency_seconds": 0.736,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65511424
+      },
+      {
+        "available_ram_bytes": 2588995584,
+        "disk_free_bytes": 115905261568,
+        "elapsed_seconds": 5288.082,
+        "inference_pass": true,
+        "latency_seconds": 0.723,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65486848
+      },
+      {
+        "available_ram_bytes": 2563375104,
+        "disk_free_bytes": 115903946752,
+        "elapsed_seconds": 5348.797,
+        "inference_pass": true,
+        "latency_seconds": 0.714,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65495040
+      },
+      {
+        "available_ram_bytes": 2560421888,
+        "disk_free_bytes": 115903279104,
+        "elapsed_seconds": 5409.514,
+        "inference_pass": true,
+        "latency_seconds": 0.716,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65495040
+      },
+      {
+        "available_ram_bytes": 2432638976,
+        "disk_free_bytes": 115900747776,
+        "elapsed_seconds": 5470.236,
+        "inference_pass": true,
+        "latency_seconds": 0.721,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65495040
+      },
+      {
+        "available_ram_bytes": 2360647680,
+        "disk_free_bytes": 115899428864,
+        "elapsed_seconds": 5530.98,
+        "inference_pass": true,
+        "latency_seconds": 0.743,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65495040
+      },
+      {
+        "available_ram_bytes": 2657550336,
+        "disk_free_bytes": 115902238720,
+        "elapsed_seconds": 5591.683,
+        "inference_pass": true,
+        "latency_seconds": 0.702,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65150976
+      },
+      {
+        "available_ram_bytes": 2593005568,
+        "disk_free_bytes": 115900678144,
+        "elapsed_seconds": 5652.385,
+        "inference_pass": true,
+        "latency_seconds": 0.701,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65204224
+      },
+      {
+        "available_ram_bytes": 2422915072,
+        "disk_free_bytes": 115898650624,
+        "elapsed_seconds": 5713.078,
+        "inference_pass": true,
+        "latency_seconds": 0.689,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65204224
+      },
+      {
+        "available_ram_bytes": 2438864896,
+        "disk_free_bytes": 115898109952,
+        "elapsed_seconds": 5773.771,
+        "inference_pass": true,
+        "latency_seconds": 0.693,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65208320
+      },
+      {
+        "available_ram_bytes": 2404540416,
+        "disk_free_bytes": 115897950208,
+        "elapsed_seconds": 5834.464,
+        "inference_pass": true,
+        "latency_seconds": 0.691,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65208320
+      },
+      {
+        "available_ram_bytes": 2519224320,
+        "disk_free_bytes": 115901116416,
+        "elapsed_seconds": 5895.151,
+        "inference_pass": true,
+        "latency_seconds": 0.687,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65392640
+      },
+      {
+        "available_ram_bytes": 2008182784,
+        "disk_free_bytes": 115900739584,
+        "elapsed_seconds": 5955.874,
+        "inference_pass": true,
+        "latency_seconds": 0.722,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65392640
+      },
+      {
+        "available_ram_bytes": 1894121472,
+        "disk_free_bytes": 115199148032,
+        "elapsed_seconds": 6016.664,
+        "inference_pass": true,
+        "latency_seconds": 0.79,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65409024
+      },
+      {
+        "available_ram_bytes": 1733943296,
+        "disk_free_bytes": 122235473920,
+        "elapsed_seconds": 6077.388,
+        "inference_pass": true,
+        "latency_seconds": 0.722,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65409024
+      },
+      {
+        "available_ram_bytes": 1852243968,
+        "disk_free_bytes": 122555916288,
+        "elapsed_seconds": 6138.116,
+        "inference_pass": true,
+        "latency_seconds": 0.726,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65409024
+      },
+      {
+        "available_ram_bytes": 2063855616,
+        "disk_free_bytes": 122082820096,
+        "elapsed_seconds": 6198.819,
+        "inference_pass": true,
+        "latency_seconds": 0.702,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65409024
+      },
+      {
+        "available_ram_bytes": 1985839104,
+        "disk_free_bytes": 121663488000,
+        "elapsed_seconds": 6259.5,
+        "inference_pass": true,
+        "latency_seconds": 0.681,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65409024
+      },
+      {
+        "available_ram_bytes": 1951739904,
+        "disk_free_bytes": 121191964672,
+        "elapsed_seconds": 6320.203,
+        "inference_pass": true,
+        "latency_seconds": 0.702,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65409024
+      },
+      {
+        "available_ram_bytes": 1963220992,
+        "disk_free_bytes": 120956035072,
+        "elapsed_seconds": 6380.95,
+        "inference_pass": true,
+        "latency_seconds": 0.745,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65429504
+      },
+      {
+        "available_ram_bytes": 1942208512,
+        "disk_free_bytes": 120487608320,
+        "elapsed_seconds": 6441.66,
+        "inference_pass": true,
+        "latency_seconds": 0.697,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65429504
+      },
+      {
+        "available_ram_bytes": 2003447808,
+        "disk_free_bytes": 120017514496,
+        "elapsed_seconds": 6502.392,
+        "inference_pass": true,
+        "latency_seconds": 0.731,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65429504
+      },
+      {
+        "available_ram_bytes": 1873813504,
+        "disk_free_bytes": 119781191680,
+        "elapsed_seconds": 6563.076,
+        "inference_pass": true,
+        "latency_seconds": 0.683,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65429504
+      },
+      {
+        "available_ram_bytes": 1889878016,
+        "disk_free_bytes": 119779880960,
+        "elapsed_seconds": 6623.798,
+        "inference_pass": true,
+        "latency_seconds": 0.71,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65441792
+      },
+      {
+        "available_ram_bytes": 963756032,
+        "disk_free_bytes": 119541182464,
+        "elapsed_seconds": 6684.588,
+        "inference_pass": true,
+        "latency_seconds": 0.79,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 65441792
+      }
+    ],
+    "schema": "casulo.family.day2-soak/1.0",
+    "started_utc": "2026-09-18T20:31:27.568877+00:00"
+  },
+  "timestamp_utc": "2026-09-18T20:30:22.408619+00:00"
+}

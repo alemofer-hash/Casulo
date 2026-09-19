@@ -1,0 +1,40 @@
+{
+  "external_network_required": false,
+  "functional": {
+    "json_schema": {
+      "completion_tokens": 25,
+      "finish_reason": "stop",
+      "output_sha256": "d4ae93564287be4b3172b36d6f78603c3565ba61a204de04b7e1fe4384bfbf1c",
+      "pass": true,
+      "prompt_tokens": 19
+    },
+    "pass": true,
+    "portuguese": {
+      "completion_tokens": 28,
+      "finish_reason": "stop",
+      "output_sha256": "4aaef4846eedf41352bf5b000506aa77d8dbb5b4076a1bf3573dc847a833d08e",
+      "pass": true,
+      "prompt_tokens": 53
+    },
+    "tool_call": {
+      "completion_tokens": 27,
+      "finish_reason": "tool_calls",
+      "output_sha256": "0d6c975f7b0f07fff39ae4b81286200dd716b2d195d36e5cd23ba8de02e0bd1f",
+      "pass": true,
+      "prompt_tokens": 173
+    }
+  },
+  "network_scope": "127.0.0.1-only",
+  "pass": true,
+  "profile": {
+    "context_tokens": 8192,
+    "model_bytes": 5027783488,
+    "model_file": "Qwen3-8B-Q4_K_M.gguf",
+    "model_key": "q4_k_m",
+    "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan"
+  },
+  "schema": "casulo.family.day2-model-gate/1.0",
+  "timestamp_utc": "2026-09-18T19:56:37.650375+00:00"
+}

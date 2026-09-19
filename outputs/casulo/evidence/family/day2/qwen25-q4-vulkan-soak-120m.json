@@ -1,0 +1,502 @@
+{
+  "ended_utc": "2026-09-19T00:27:14.255789+00:00",
+  "external_network_required": false,
+  "functional": {
+    "cancellation_recovery": {
+      "cancelled_http_status": 200,
+      "cancelled_prefix_sha256": "eb51894534e8cc050c5f88e60a98bca59be3d474ca6753c6ae2df47e08afb267",
+      "pass": true,
+      "recovery_finish_reason": "stop",
+      "recovery_output_sha256": "efd7f1501ecb62d19f0ea60d19c283284197820bd66d598f554322ee0cc3189a"
+    },
+    "code_edit": {
+      "completion_tokens": 13,
+      "finish_reason": "stop",
+      "output_sha256": "ed3d3f012df9a361ed7ba580eb8b13adfa9abf8f44ec83e644a61719baf1cc8f",
+      "pass": true,
+      "prompt_tokens": 64
+    },
+    "json_schema": {
+      "completion_tokens": 30,
+      "finish_reason": "stop",
+      "output_sha256": "e65a3836d8cbc7fe53cd7b455125e26abe7d58e89e56e7871f0a4b1d7ed1aead",
+      "pass": true,
+      "prompt_tokens": 36
+    },
+    "pass": true,
+    "portuguese": {
+      "completion_tokens": 26,
+      "finish_reason": "stop",
+      "output_sha256": "0c8507d31aca963ceda0e7af93e232308e4775dc0f2675f1cd38ca184fe0af11",
+      "pass": true,
+      "prompt_tokens": 49
+    },
+    "tool_call": {
+      "completion_tokens": 27,
+      "finish_reason": "tool_calls",
+      "output_sha256": "b04d813de3e070da73c0051b624f51762c85f48d41576344bef975b7f2482616",
+      "pass": true,
+      "prompt_tokens": 187
+    }
+  },
+  "listener": "127.0.0.1:58905",
+  "network_scope": "127.0.0.1-only",
+  "pass": false,
+  "profile": {
+    "batch_size": 128,
+    "cache_type_k": "f16",
+    "cache_type_v": "f16",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "license": "Apache-2.0",
+    "model_file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+    "model_files": [
+      {
+        "bytes": 3993201344,
+        "file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "bytes": 689872288,
+        "file": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ],
+    "model_key": "q4_k_m",
+    "no_host": true,
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 64
+  },
+  "schema": "casulo.family.day2-model-gate/1.0",
+  "soak": {
+    "ended_utc": "2026-09-19T00:27:12.958623+00:00",
+    "failures": [
+      "reserva de RAM violada"
+    ],
+    "listener": "127.0.0.1:58905",
+    "minimum_available_ram_bytes": 1073741824,
+    "minimum_disk_free_bytes": 32212254720,
+    "observed_duration_seconds": 2187.217,
+    "pass": false,
+    "profile_id": "qwen2.5-7b-q4_k_m-vulkan",
+    "requested_duration_seconds": 7200,
+    "samples": [
+      {
+        "available_ram_bytes": 3404259328,
+        "disk_free_bytes": 106382548992,
+        "elapsed_seconds": 1.268,
+        "inference_pass": true,
+        "latency_seconds": 1.268,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5390716928,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5342461952
+      },
+      {
+        "available_ram_bytes": 3344424960,
+        "disk_free_bytes": 106382286848,
+        "elapsed_seconds": 61.953,
+        "inference_pass": true,
+        "latency_seconds": 0.682,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5390618624,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5342408704
+      },
+      {
+        "available_ram_bytes": 3317006336,
+        "disk_free_bytes": 106382147584,
+        "elapsed_seconds": 122.631,
+        "inference_pass": true,
+        "latency_seconds": 0.671,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5390745600,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5342404608
+      },
+      {
+        "available_ram_bytes": 3052929024,
+        "disk_free_bytes": 106146476032,
+        "elapsed_seconds": 183.317,
+        "inference_pass": true,
+        "latency_seconds": 0.681,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5390757888,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5342416896
+      },
+      {
+        "available_ram_bytes": 3779674112,
+        "disk_free_bytes": 106145652736,
+        "elapsed_seconds": 244.007,
+        "inference_pass": true,
+        "latency_seconds": 0.683,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391020032,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5342674944
+      },
+      {
+        "available_ram_bytes": 3738181632,
+        "disk_free_bytes": 106144325632,
+        "elapsed_seconds": 304.691,
+        "inference_pass": true,
+        "latency_seconds": 0.678,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391409152,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5343215616
+      },
+      {
+        "available_ram_bytes": 3717156864,
+        "disk_free_bytes": 106143956992,
+        "elapsed_seconds": 365.347,
+        "inference_pass": true,
+        "latency_seconds": 0.651,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391343616,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5343178752
+      },
+      {
+        "available_ram_bytes": 3646398464,
+        "disk_free_bytes": 106143260672,
+        "elapsed_seconds": 426.039,
+        "inference_pass": true,
+        "latency_seconds": 0.687,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391343616,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332631552
+      },
+      {
+        "available_ram_bytes": 3640307712,
+        "disk_free_bytes": 106144641024,
+        "elapsed_seconds": 486.789,
+        "inference_pass": true,
+        "latency_seconds": 0.745,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391347712,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332635648
+      },
+      {
+        "available_ram_bytes": 3795869696,
+        "disk_free_bytes": 106148421632,
+        "elapsed_seconds": 547.464,
+        "inference_pass": true,
+        "latency_seconds": 0.672,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391351808,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332639744
+      },
+      {
+        "available_ram_bytes": 3614806016,
+        "disk_free_bytes": 106145185792,
+        "elapsed_seconds": 608.175,
+        "inference_pass": true,
+        "latency_seconds": 0.708,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391417344,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332852736
+      },
+      {
+        "available_ram_bytes": 3726438400,
+        "disk_free_bytes": 106146201600,
+        "elapsed_seconds": 668.889,
+        "inference_pass": true,
+        "latency_seconds": 0.709,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391355904,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332819968
+      },
+      {
+        "available_ram_bytes": 3756679168,
+        "disk_free_bytes": 106145071104,
+        "elapsed_seconds": 729.596,
+        "inference_pass": true,
+        "latency_seconds": 0.702,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391388672,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332836352
+      },
+      {
+        "available_ram_bytes": 3689242624,
+        "disk_free_bytes": 106142580736,
+        "elapsed_seconds": 790.309,
+        "inference_pass": true,
+        "latency_seconds": 0.708,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391388672,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332836352
+      },
+      {
+        "available_ram_bytes": 3723452416,
+        "disk_free_bytes": 106142253056,
+        "elapsed_seconds": 850.99,
+        "inference_pass": true,
+        "latency_seconds": 0.676,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391355904,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332819968
+      },
+      {
+        "available_ram_bytes": 3450277888,
+        "disk_free_bytes": 106141564928,
+        "elapsed_seconds": 911.676,
+        "inference_pass": true,
+        "latency_seconds": 0.68,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391355904,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332819968
+      },
+      {
+        "available_ram_bytes": 3235086336,
+        "disk_free_bytes": 106140508160,
+        "elapsed_seconds": 972.381,
+        "inference_pass": true,
+        "latency_seconds": 0.7,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332824064
+      },
+      {
+        "available_ram_bytes": 3265589248,
+        "disk_free_bytes": 106139967488,
+        "elapsed_seconds": 1033.106,
+        "inference_pass": true,
+        "latency_seconds": 0.719,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332824064
+      },
+      {
+        "available_ram_bytes": 3244331008,
+        "disk_free_bytes": 106139901952,
+        "elapsed_seconds": 1093.799,
+        "inference_pass": true,
+        "latency_seconds": 0.686,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332824064
+      },
+      {
+        "available_ram_bytes": 3453177856,
+        "disk_free_bytes": 106139897856,
+        "elapsed_seconds": 1154.502,
+        "inference_pass": true,
+        "latency_seconds": 0.699,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332824064
+      },
+      {
+        "available_ram_bytes": 3456835584,
+        "disk_free_bytes": 106139783168,
+        "elapsed_seconds": 1215.22,
+        "inference_pass": true,
+        "latency_seconds": 0.712,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332824064
+      },
+      {
+        "available_ram_bytes": 3426930688,
+        "disk_free_bytes": 106139648000,
+        "elapsed_seconds": 1275.884,
+        "inference_pass": true,
+        "latency_seconds": 0.659,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332824064
+      },
+      {
+        "available_ram_bytes": 3484184576,
+        "disk_free_bytes": 106139496448,
+        "elapsed_seconds": 1336.549,
+        "inference_pass": true,
+        "latency_seconds": 0.66,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391409152,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332664320
+      },
+      {
+        "available_ram_bytes": 3576496128,
+        "disk_free_bytes": 106143608832,
+        "elapsed_seconds": 1397.261,
+        "inference_pass": true,
+        "latency_seconds": 0.706,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332647936
+      },
+      {
+        "available_ram_bytes": 3641503744,
+        "disk_free_bytes": 106143346688,
+        "elapsed_seconds": 1458.003,
+        "inference_pass": true,
+        "latency_seconds": 0.735,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332647936
+      },
+      {
+        "available_ram_bytes": 3588567040,
+        "disk_free_bytes": 106143412224,
+        "elapsed_seconds": 1518.687,
+        "inference_pass": true,
+        "latency_seconds": 0.681,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332647936
+      },
+      {
+        "available_ram_bytes": 3598041088,
+        "disk_free_bytes": 106143215616,
+        "elapsed_seconds": 1579.37,
+        "inference_pass": true,
+        "latency_seconds": 0.68,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332647936
+      },
+      {
+        "available_ram_bytes": 3350224896,
+        "disk_free_bytes": 106142941184,
+        "elapsed_seconds": 1640.143,
+        "inference_pass": true,
+        "latency_seconds": 0.767,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391409152,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332750336
+      },
+      {
+        "available_ram_bytes": 3369545728,
+        "disk_free_bytes": 106142740480,
+        "elapsed_seconds": 1700.817,
+        "inference_pass": true,
+        "latency_seconds": 0.667,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332733952
+      },
+      {
+        "available_ram_bytes": 3436023808,
+        "disk_free_bytes": 105672843264,
+        "elapsed_seconds": 1761.541,
+        "inference_pass": true,
+        "latency_seconds": 0.719,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332733952
+      },
+      {
+        "available_ram_bytes": 1639788544,
+        "disk_free_bytes": 106981154816,
+        "elapsed_seconds": 1822.534,
+        "inference_pass": true,
+        "latency_seconds": 0.991,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332738048
+      },
+      {
+        "available_ram_bytes": 1742569472,
+        "disk_free_bytes": 106973196288,
+        "elapsed_seconds": 1883.416,
+        "inference_pass": true,
+        "latency_seconds": 0.867,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332738048
+      },
+      {
+        "available_ram_bytes": 1190731776,
+        "disk_free_bytes": 106969530368,
+        "elapsed_seconds": 1944.18,
+        "inference_pass": true,
+        "latency_seconds": 0.76,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5332738048
+      },
+      {
+        "available_ram_bytes": 1255698432,
+        "disk_free_bytes": 106972323840,
+        "elapsed_seconds": 2004.928,
+        "inference_pass": true,
+        "latency_seconds": 0.745,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5315960832
+      },
+      {
+        "available_ram_bytes": 1598332928,
+        "disk_free_bytes": 106969104384,
+        "elapsed_seconds": 2065.655,
+        "inference_pass": true,
+        "latency_seconds": 0.721,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391376384,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5315960832
+      },
+      {
+        "available_ram_bytes": 1450237952,
+        "disk_free_bytes": 106973437952,
+        "elapsed_seconds": 2126.419,
+        "inference_pass": true,
+        "latency_seconds": 0.757,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391380480,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5315964928
+      },
+      {
+        "available_ram_bytes": 740777984,
+        "disk_free_bytes": 107050512384,
+        "elapsed_seconds": 2187.212,
+        "inference_pass": true,
+        "latency_seconds": 0.786,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5391380480,
+        "process_peak_working_set_bytes": 5368565760,
+        "process_working_set_bytes": 5152714752
+      }
+    ],
+    "schema": "casulo.family.day2-soak/1.0",
+    "started_utc": "2026-09-18T23:50:45.741236+00:00",
+    "state": "COMPLETE"
+  },
+  "startup_seconds": 17.406,
+  "status": "FAIL",
+  "timestamp_utc": "2026-09-18T23:49:53.167869+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "external_network_required": false,
+  "functional": {
+    "json_schema": {
+      "completion_tokens": 25,
+      "finish_reason": "stop",
+      "output_sha256": "d4ae93564287be4b3172b36d6f78603c3565ba61a204de04b7e1fe4384bfbf1c",
+      "pass": true,
+      "prompt_tokens": 19
+    },
+    "pass": true,
+    "portuguese": {
+      "completion_tokens": 28,
+      "finish_reason": "stop",
+      "output_sha256": "4aaef4846eedf41352bf5b000506aa77d8dbb5b4076a1bf3573dc847a833d08e",
+      "pass": true,
+      "prompt_tokens": 53
+    },
+    "tool_call": {
+      "completion_tokens": 27,
+      "finish_reason": "tool_calls",
+      "output_sha256": "b11535d1e132b388630ba33c024099a19b535805fbd5679bde47f08f217a7bc0",
+      "pass": true,
+      "prompt_tokens": 173
+    }
+  },
+  "network_scope": "127.0.0.1-only",
+  "pass": false,
+  "profile": {
+    "context_tokens": 8192,
+    "model_bytes": 5027783488,
+    "model_file": "Qwen3-8B-Q4_K_M.gguf",
+    "model_key": "q4_k_m",
+    "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "cpu"
+  },
+  "schema": "casulo.family.day2-model-gate/1.0",
+  "soak": {
+    "ended_utc": "2026-09-18T20:21:23.257018+00:00",
+    "failures": [
+      "reserva de RAM violada"
+    ],
+    "listener": "127.0.0.1:52976",
+    "minimum_available_ram_bytes": 1073741824,
+    "minimum_disk_free_bytes": 32212254720,
+    "observed_duration_seconds": 3.977,
+    "pass": false,
+    "profile_id": "qwen3-8b-q4_k_m-cpu",
+    "requested_duration_seconds": 60,
+    "samples": [
+      {
+        "available_ram_bytes": 274231296,
+        "disk_free_bytes": 116543631360,
+        "elapsed_seconds": 3.976,
+        "inference_pass": true,
+        "latency_seconds": 3.976,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 7721091072
+      }
+    ],
+    "schema": "casulo.family.day2-soak/1.0",
+    "started_utc": "2026-09-18T20:21:19.280356+00:00"
+  },
+  "timestamp_utc": "2026-09-18T20:20:05.309981+00:00"
+}

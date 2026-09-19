@@ -1,0 +1,177 @@
+{
+  "external_network_required": false,
+  "functional": {
+    "json_schema": {
+      "completion_tokens": 30,
+      "finish_reason": "stop",
+      "output_sha256": "e65a3836d8cbc7fe53cd7b455125e26abe7d58e89e56e7871f0a4b1d7ed1aead",
+      "pass": true,
+      "prompt_tokens": 36
+    },
+    "pass": true,
+    "portuguese": {
+      "completion_tokens": 28,
+      "finish_reason": "stop",
+      "output_sha256": "040383593201b5f43cfb5ff5c80c7083542214598e9e83069b911cf08020732d",
+      "pass": true,
+      "prompt_tokens": 49
+    },
+    "tool_call": {
+      "completion_tokens": 27,
+      "finish_reason": "tool_calls",
+      "output_sha256": "0ee2bca97c8ff9c539591b8f0c1d110f65f15c3f2c935d0246c5e02af2f28551",
+      "pass": true,
+      "prompt_tokens": 187
+    }
+  },
+  "listener": "127.0.0.1:52880",
+  "network_scope": "127.0.0.1-only",
+  "pass": false,
+  "profile": {
+    "batch_size": 128,
+    "cache_type_k": "f16",
+    "cache_type_v": "f16",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "license": "Apache-2.0",
+    "model_file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+    "model_files": [
+      {
+        "bytes": 3993201344,
+        "file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "bytes": 689872288,
+        "file": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ],
+    "model_key": "q4_k_m",
+    "no_host": true,
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 64
+  },
+  "schema": "casulo.family.day2-model-gate/1.0",
+  "soak": {
+    "ended_utc": "2026-09-18T23:34:46.639551+00:00",
+    "failures": [],
+    "listener": "127.0.0.1:52880",
+    "minimum_available_ram_bytes": 1073741824,
+    "minimum_disk_free_bytes": 32212254720,
+    "observed_duration_seconds": 611.08,
+    "pass": false,
+    "profile_id": "qwen2.5-7b-q4_k_m-vulkan",
+    "requested_duration_seconds": 7200,
+    "samples": [
+      {
+        "available_ram_bytes": 4464226304,
+        "disk_free_bytes": 106854297600,
+        "elapsed_seconds": 3.978,
+        "inference_pass": true,
+        "latency_seconds": 3.978,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5340815360
+      },
+      {
+        "available_ram_bytes": 3763474432,
+        "disk_free_bytes": 106853011456,
+        "elapsed_seconds": 64.69,
+        "inference_pass": true,
+        "latency_seconds": 0.703,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5340295168
+      },
+      {
+        "available_ram_bytes": 2797092864,
+        "disk_free_bytes": 106854436864,
+        "elapsed_seconds": 125.407,
+        "inference_pass": true,
+        "latency_seconds": 0.712,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5340401664
+      },
+      {
+        "available_ram_bytes": 2726313984,
+        "disk_free_bytes": 106853584896,
+        "elapsed_seconds": 186.126,
+        "inference_pass": true,
+        "latency_seconds": 0.714,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5340471296
+      },
+      {
+        "available_ram_bytes": 2812481536,
+        "disk_free_bytes": 106857734144,
+        "elapsed_seconds": 246.799,
+        "inference_pass": true,
+        "latency_seconds": 0.666,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5330001920
+      },
+      {
+        "available_ram_bytes": 2851921920,
+        "disk_free_bytes": 106855907328,
+        "elapsed_seconds": 307.532,
+        "inference_pass": true,
+        "latency_seconds": 0.729,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5330370560
+      },
+      {
+        "available_ram_bytes": 2841374720,
+        "disk_free_bytes": 106854260736,
+        "elapsed_seconds": 368.244,
+        "inference_pass": true,
+        "latency_seconds": 0.709,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5330350080
+      },
+      {
+        "available_ram_bytes": 2855358464,
+        "disk_free_bytes": 106853408768,
+        "elapsed_seconds": 428.974,
+        "inference_pass": true,
+        "latency_seconds": 0.725,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5330366464
+      },
+      {
+        "available_ram_bytes": 2722148352,
+        "disk_free_bytes": 106617430016,
+        "elapsed_seconds": 489.695,
+        "inference_pass": true,
+        "latency_seconds": 0.716,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5330382848
+      },
+      {
+        "available_ram_bytes": 2722529280,
+        "disk_free_bytes": 106381893632,
+        "elapsed_seconds": 550.387,
+        "inference_pass": true,
+        "latency_seconds": 0.684,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5330382848
+      },
+      {
+        "available_ram_bytes": 2756984832,
+        "disk_free_bytes": 106381885440,
+        "elapsed_seconds": 611.08,
+        "inference_pass": true,
+        "latency_seconds": 0.687,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 5330423808
+      }
+    ],
+    "schema": "casulo.family.day2-soak/1.0",
+    "started_utc": "2026-09-18T23:24:35.559422+00:00",
+    "state": "RUNNING"
+  },
+  "startup_seconds": 15.042,
+  "status": "RUNNING",
+  "timestamp_utc": "2026-09-18T23:23:55.943569+00:00"
+}

@@ -1,0 +1,170 @@
+{
+  "ended_utc": "2026-09-18T23:39:14.034160+00:00",
+  "external_network_required": false,
+  "functional": {
+    "cancellation_recovery": {
+      "cancelled_http_status": 200,
+      "cancelled_prefix_sha256": "5623f556dc0ca9f7b304e8b161a5ae2d044cd7a2862c93ca7cd301b57a7fe521",
+      "pass": true,
+      "recovery_finish_reason": "stop",
+      "recovery_output_sha256": "efd7f1501ecb62d19f0ea60d19c283284197820bd66d598f554322ee0cc3189a"
+    },
+    "code_edit": {
+      "completion_tokens": 13,
+      "finish_reason": "stop",
+      "output_sha256": "ed3d3f012df9a361ed7ba580eb8b13adfa9abf8f44ec83e644a61719baf1cc8f",
+      "pass": true,
+      "prompt_tokens": 64
+    },
+    "json_schema": {
+      "completion_tokens": 30,
+      "finish_reason": "stop",
+      "output_sha256": "e65a3836d8cbc7fe53cd7b455125e26abe7d58e89e56e7871f0a4b1d7ed1aead",
+      "pass": true,
+      "prompt_tokens": 36
+    },
+    "pass": true,
+    "portuguese": {
+      "completion_tokens": 28,
+      "finish_reason": "stop",
+      "output_sha256": "040383593201b5f43cfb5ff5c80c7083542214598e9e83069b911cf08020732d",
+      "pass": true,
+      "prompt_tokens": 49
+    },
+    "tool_call": {
+      "completion_tokens": 27,
+      "finish_reason": "tool_calls",
+      "output_sha256": "30d93712c40ec25982d5b02d89acde483371ce2b9f249f496fe1d521ab77f7e1",
+      "pass": true,
+      "prompt_tokens": 187
+    }
+  },
+  "listener": "127.0.0.1:64660",
+  "network_scope": "127.0.0.1-only",
+  "pass": true,
+  "profile": {
+    "batch_size": 128,
+    "cache_type_k": "f16",
+    "cache_type_v": "f16",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "license": "Apache-2.0",
+    "model_file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+    "model_files": [
+      {
+        "bytes": 3993201344,
+        "file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "bytes": 689872288,
+        "file": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ],
+    "model_key": "q4_k_m",
+    "no_host": true,
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 64
+  },
+  "schema": "casulo.family.day2-model-gate/1.0",
+  "soak": {
+    "ended_utc": "2026-09-18T23:39:13.218182+00:00",
+    "failures": [],
+    "listener": "127.0.0.1:64660",
+    "minimum_available_ram_bytes": 1073741824,
+    "minimum_disk_free_bytes": 32212254720,
+    "observed_duration_seconds": 60.692,
+    "pass": true,
+    "profile_id": "qwen2.5-7b-q4_k_m-vulkan",
+    "requested_duration_seconds": 60,
+    "samples": [
+      {
+        "available_ram_bytes": 2696015872,
+        "disk_free_bytes": 106381864960,
+        "elapsed_seconds": 1.363,
+        "inference_pass": true,
+        "latency_seconds": 1.363,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5396152320,
+        "process_peak_working_set_bytes": 5368508416,
+        "process_working_set_bytes": 5346725888
+      },
+      {
+        "available_ram_bytes": 2752561152,
+        "disk_free_bytes": 106381729792,
+        "elapsed_seconds": 12.036,
+        "inference_pass": true,
+        "latency_seconds": 0.668,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5396049920,
+        "process_peak_working_set_bytes": 5368508416,
+        "process_working_set_bytes": 5346664448
+      },
+      {
+        "available_ram_bytes": 2752983040,
+        "disk_free_bytes": 106382032896,
+        "elapsed_seconds": 22.745,
+        "inference_pass": true,
+        "latency_seconds": 0.703,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5396062208,
+        "process_peak_working_set_bytes": 5368508416,
+        "process_working_set_bytes": 5346676736
+      },
+      {
+        "available_ram_bytes": 2760114176,
+        "disk_free_bytes": 106382028800,
+        "elapsed_seconds": 33.424,
+        "inference_pass": true,
+        "latency_seconds": 0.676,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5396074496,
+        "process_peak_working_set_bytes": 5368508416,
+        "process_working_set_bytes": 5346689024
+      },
+      {
+        "available_ram_bytes": 2768359424,
+        "disk_free_bytes": 106382028800,
+        "elapsed_seconds": 44.101,
+        "inference_pass": true,
+        "latency_seconds": 0.672,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5396332544,
+        "process_peak_working_set_bytes": 5368508416,
+        "process_working_set_bytes": 5346947072
+      },
+      {
+        "available_ram_bytes": 2870964224,
+        "disk_free_bytes": 106382028800,
+        "elapsed_seconds": 54.817,
+        "inference_pass": true,
+        "latency_seconds": 0.713,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5396578304,
+        "process_peak_working_set_bytes": 5368508416,
+        "process_working_set_bytes": 5347192832
+      },
+      {
+        "available_ram_bytes": 2743332864,
+        "disk_free_bytes": 106382028800,
+        "elapsed_seconds": 60.688,
+        "inference_pass": true,
+        "latency_seconds": 0.688,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_commit_bytes": 5396578304,
+        "process_peak_working_set_bytes": 5368508416,
+        "process_working_set_bytes": 5347192832
+      }
+    ],
+    "schema": "casulo.family.day2-soak/1.0",
+    "started_utc": "2026-09-18T23:38:12.526036+00:00",
+    "state": "COMPLETE"
+  },
+  "startup_seconds": 20.848,
+  "status": "PASS",
+  "timestamp_utc": "2026-09-18T23:37:16.096512+00:00"
+}

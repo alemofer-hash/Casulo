@@ -1,0 +1,75 @@
+{
+  "ended_utc": "2026-09-18T22:25:33.440810+00:00",
+  "external_network_required": false,
+  "functional": {
+    "json_schema": {
+      "completion_tokens": 25,
+      "finish_reason": "stop",
+      "output_sha256": "d4ae93564287be4b3172b36d6f78603c3565ba61a204de04b7e1fe4384bfbf1c",
+      "pass": true,
+      "prompt_tokens": 19
+    },
+    "pass": true,
+    "portuguese": {
+      "completion_tokens": 29,
+      "finish_reason": "stop",
+      "output_sha256": "79bf6eaef932f6a8671525bbe28c13ff86c93e189f0ce097286ca84e54ffd096",
+      "pass": true,
+      "prompt_tokens": 53
+    },
+    "tool_call": {
+      "completion_tokens": 27,
+      "finish_reason": "tool_calls",
+      "output_sha256": "ba0af1d5255b0a90c74e3f50765e5a8d047276ddb00781e535131b7fd4559bda",
+      "pass": true,
+      "prompt_tokens": 173
+    }
+  },
+  "listener": "127.0.0.1:61075",
+  "network_scope": "127.0.0.1-only",
+  "pass": false,
+  "profile": {
+    "batch_size": 128,
+    "cache_type_k": "q4_0",
+    "cache_type_v": "q4_0",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "model_bytes": 5027783488,
+    "model_file": "Qwen3-8B-Q4_K_M.gguf",
+    "model_key": "q4_k_m",
+    "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "no_host": true,
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 64
+  },
+  "schema": "casulo.family.day2-model-gate/1.0",
+  "soak": {
+    "ended_utc": "2026-09-18T22:25:32.411501+00:00",
+    "failures": [
+      "reserva de RAM violada"
+    ],
+    "listener": "127.0.0.1:61075",
+    "minimum_available_ram_bytes": 1073741824,
+    "minimum_disk_free_bytes": 32212254720,
+    "observed_duration_seconds": 2.15,
+    "pass": false,
+    "profile_id": "qwen3-8b-q4_k_m-vulkan",
+    "requested_duration_seconds": 60,
+    "samples": [
+      {
+        "available_ram_bytes": 830488576,
+        "disk_free_bytes": 119552110592,
+        "elapsed_seconds": 2.148,
+        "inference_pass": true,
+        "latency_seconds": 2.148,
+        "output_sha256": "5bb670564a3abb32e6c2933aea7249987698550ee54793fb8357dbcfc1b6ea0f",
+        "process_working_set_bytes": 5560807424
+      }
+    ],
+    "schema": "casulo.family.day2-soak/1.0",
+    "started_utc": "2026-09-18T22:25:30.261688+00:00"
+  },
+  "startup_seconds": 24.634,
+  "timestamp_utc": "2026-09-18T22:24:34.814114+00:00"
+}

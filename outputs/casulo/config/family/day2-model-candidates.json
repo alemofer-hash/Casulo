@@ -1,0 +1,167 @@
+{
+  "schema": "casulo.family.day2-model-candidates/1.0",
+  "frozen_at": "2026-09-18",
+  "minimum_free_bytes": 32212254720,
+  "context_tokens": 8192,
+  "runtime": {
+    "repository": "ggml-org/llama.cpp",
+    "stable_release": "v0.4.1",
+    "build_tag": "b10964",
+    "commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "license": "MIT",
+    "profiles": {
+      "cpu": {
+        "asset": "llama-b10964-bin-win-cpu-x64.zip",
+        "bytes": 18427629,
+        "sha256": "917f39c076402c421224824607397af20f53625a60defc20e8dd22446bf4c5d7",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10964/llama-b10964-bin-win-cpu-x64.zip"
+      },
+      "vulkan": {
+        "asset": "llama-b10964-bin-win-vulkan-x64.zip",
+        "bytes": 31674542,
+        "sha256": "1ee3ad952f4ba71f438bd6d7bebef19e1c7af04adcaa35d08b4ddabb27d4c642",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10964/llama-b10964-bin-win-vulkan-x64.zip"
+      }
+    }
+  },
+  "model": {
+    "repository": "Qwen/Qwen3-8B-GGUF",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "parameters": "8B",
+    "license": "Apache-2.0",
+    "candidates": {
+      "q4_k_m": {
+        "file": "Qwen3-8B-Q4_K_M.gguf",
+        "bytes": 5027783488,
+        "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/7c41481f57cb95916b40956ab2f0b139b296d974/Qwen3-8B-Q4_K_M.gguf?download=true"
+      },
+      "q5_k_m": {
+        "file": "Qwen3-8B-Q5_K_M.gguf",
+        "bytes": 5851112224,
+        "sha256": "068bae163faa96ad48032daf4e071a6a28fe67d8dcc95367609c2ff165e52738",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/7c41481f57cb95916b40956ab2f0b139b296d974/Qwen3-8B-Q5_K_M.gguf?download=true"
+      }
+    }
+  },
+  "resource_fit_model": {
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "293ca9a10157b0e5fc5cb32af8b636a88bede891",
+    "parameters": "7.61B",
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "license_bytes": 11358,
+    "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "candidates": {
+      "q4_k_m": {
+        "entry_file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "files": [
+          {
+            "file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+            "bytes": 3993201344,
+            "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db",
+            "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/293ca9a10157b0e5fc5cb32af8b636a88bede891/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf?download=true"
+          },
+          {
+            "file": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+            "bytes": 689872288,
+            "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a",
+            "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/293ca9a10157b0e5fc5cb32af8b636a88bede891/qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf?download=true"
+          }
+        ]
+      },
+      "q3_k_m": {
+        "entry_file": "qwen2.5-7b-instruct-q3_k_m.gguf",
+        "files": [
+          {
+            "file": "qwen2.5-7b-instruct-q3_k_m.gguf",
+            "bytes": 3808391072,
+            "sha256": "a96b16179dc6cc9afdf0cf7a96a80c199cbd00b9be207c3465be21cb721cca5e",
+            "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/293ca9a10157b0e5fc5cb32af8b636a88bede891/qwen2.5-7b-instruct-q3_k_m.gguf?download=true"
+          }
+        ]
+      },
+      "q2_k": {
+        "entry_file": "qwen2.5-7b-instruct-q2_k.gguf",
+        "files": [
+          {
+            "file": "qwen2.5-7b-instruct-q2_k.gguf",
+            "bytes": 3015940000,
+            "sha256": "a0fc885ff014d73c02dcc4ad093f110c6dd4e0e308f84efe1accf078d364a87a",
+            "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/293ca9a10157b0e5fc5cb32af8b636a88bede891/qwen2.5-7b-instruct-q2_k.gguf?download=true"
+          }
+        ]
+      }
+    }
+  },
+  "license_sources": {
+    "llama_cpp": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b29c606e28a01b1bc8c1351026a0fa6e616bf6c4/LICENSE",
+    "qwen3_8b": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/7c41481f57cb95916b40956ab2f0b139b296d974/LICENSE?download=true"
+  },
+  "selection": {
+    "status": "PASS_120_MINUTE_STABILITY",
+    "qualified_at": "2026-09-19",
+    "stability_evidence": {
+      "report": "evidence/family/day2/qwen25-q2-vulkan-soak-120m-final.json",
+      "report_sha256": "26a47447eb063ee4309693c88cdfffb52dd4875d6757d5f48fa3c7422f36c0ac",
+      "requested_duration_seconds": 7200,
+      "observed_duration_seconds": 7201.414,
+      "samples": 119,
+      "minimum_available_ram_bytes": 1157832704,
+      "minimum_disk_free_bytes": 105290420224,
+      "maximum_process_working_set_bytes": 3686653952,
+      "maximum_process_peak_working_set_bytes": 3705835520,
+      "maximum_process_commit_bytes": 3733880832,
+      "processor_summary": "evidence/family/day2/qwen25-q2-processor-summary-120m-final.json",
+      "processor_summary_sha256": "8a6b69b6f6fd32dc1df5c1057eb12ae2f9c9f7859ef1d5009e3ce447c4013b12",
+      "performance_limit_flags_nonzero_samples": 0,
+      "performance_limit_below_100_samples": 0,
+      "temperature_status": "UNAVAILABLE"
+    },
+    "primary": {
+      "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "model": "q2_k",
+      "runtime": "vulkan",
+      "device": "Vulkan0",
+      "gpu_layers": 99,
+      "threads": 4,
+      "cache_type_k": "f16",
+      "cache_type_v": "f16",
+      "reason": "Passed Portuguese, strict JSON Schema, tool calling, code editing, cancellation recovery and calibration with the smallest working set; Q4 failed the RAM floor under real notebook load."
+    },
+    "fallback": {
+      "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "model": "q2_k",
+      "runtime": "cpu",
+      "device": "none",
+      "gpu_layers": 0,
+      "threads": 4,
+      "cache_type_k": "f16",
+      "cache_type_v": "f16",
+      "reason": "Same frozen model on the independent CPU runtime; passed the full functional matrix and short resource calibration."
+    },
+    "runtime_fallback": {
+      "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "model": "q2_k",
+      "runtime": "cpu",
+      "device": "none",
+      "gpu_layers": 0,
+      "threads": 4,
+      "cache_type_k": "f16",
+      "cache_type_v": "f16",
+      "reason": "Same as fallback; retained as an explicit runtime role for downstream configuration."
+    },
+    "quality_alternate": {
+      "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "model": "q3_k_m",
+      "runtime": "vulkan",
+      "status": "NOT_RESOURCE_QUALIFIED",
+      "reason": "Passed the functional matrix and short calibration, but has not passed the long RAM gate under the current notebook load."
+    },
+    "rejected_for_resource_gate": {
+      "repositories": ["Qwen/Qwen3-8B-GGUF", "Qwen/Qwen2.5-7B-Instruct-GGUF"],
+      "models": ["qwen3-q4_k_m", "qwen3-q5_k_m", "qwen2.5-q4_k_m"],
+      "reason": "Functional quality passed, but long Q4 profiles crossed the 1 GiB available-RAM floor; the larger variants cannot be accepted."
+    }
+  }
+}

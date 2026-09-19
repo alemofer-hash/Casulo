@@ -1,0 +1,88 @@
+{
+  "external_network_required": false,
+  "functional": {
+    "json_schema": {
+      "completion_tokens": 25,
+      "finish_reason": "stop",
+      "output_sha256": "d4ae93564287be4b3172b36d6f78603c3565ba61a204de04b7e1fe4384bfbf1c",
+      "pass": true,
+      "prompt_tokens": 19
+    },
+    "pass": true,
+    "portuguese": {
+      "completion_tokens": 28,
+      "finish_reason": "stop",
+      "output_sha256": "4aaef4846eedf41352bf5b000506aa77d8dbb5b4076a1bf3573dc847a833d08e",
+      "pass": true,
+      "prompt_tokens": 53
+    },
+    "tool_call": {
+      "completion_tokens": 27,
+      "finish_reason": "tool_calls",
+      "output_sha256": "4019bd432833986ab8d9d4a69000d3bd8582cd29db49fcaa5254b62fd9bdb71f",
+      "pass": true,
+      "prompt_tokens": 173
+    }
+  },
+  "network_scope": "127.0.0.1-only",
+  "pass": true,
+  "profile": {
+    "batch_size": 512,
+    "cache_type_k": "q8_0",
+    "cache_type_v": "q8_0",
+    "context_tokens": 8192,
+    "flash_attention": true,
+    "model_bytes": 5027783488,
+    "model_file": "Qwen3-8B-Q4_K_M.gguf",
+    "model_key": "q4_k_m",
+    "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "no_host": true,
+    "runtime_commit": "b29c606e28a01b1bc8c1351026a0fa6e616bf6c4",
+    "runtime_profile": "vulkan",
+    "ubatch_size": 256
+  },
+  "schema": "casulo.family.day2-model-gate/1.0",
+  "soak": {
+    "ended_utc": "2026-09-18T20:25:46.746962+00:00",
+    "failures": [],
+    "listener": "127.0.0.1:55916",
+    "minimum_available_ram_bytes": 1073741824,
+    "minimum_disk_free_bytes": 32212254720,
+    "observed_duration_seconds": 60.791,
+    "pass": true,
+    "profile_id": "qwen3-8b-q4_k_m-vulkan",
+    "requested_duration_seconds": 60,
+    "samples": [
+      {
+        "available_ram_bytes": 2391011328,
+        "disk_free_bytes": 116506587136,
+        "elapsed_seconds": 1.969,
+        "inference_pass": true,
+        "latency_seconds": 1.969,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 4502396928
+      },
+      {
+        "available_ram_bytes": 1514655744,
+        "disk_free_bytes": 116505870336,
+        "elapsed_seconds": 32.92,
+        "inference_pass": true,
+        "latency_seconds": 0.947,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 4169449472
+      },
+      {
+        "available_ram_bytes": 1282224128,
+        "disk_free_bytes": 116494745600,
+        "elapsed_seconds": 60.79,
+        "inference_pass": true,
+        "latency_seconds": 0.79,
+        "output_sha256": "1e0337d3ab48d71aec8c5d0320ff72fb1394b2f40b2ed5bd565d14af812f9efc",
+        "process_working_set_bytes": 4171149312
+      }
+    ],
+    "schema": "casulo.family.day2-soak/1.0",
+    "started_utc": "2026-09-18T20:24:45.956039+00:00"
+  },
+  "timestamp_utc": "2026-09-18T20:23:30.736790+00:00"
+}
