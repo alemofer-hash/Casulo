@@ -1,0 +1,15 @@
+{
+  "deleted_content_absent_from_database_and_wal": false,
+  "ended_utc": "2026-09-19T21:32:11.347002+00:00",
+  "failure_message": "'results'",
+  "failure_type": "KeyError",
+  "maximum_working_set_bytes": 3619176448,
+  "minimum_available_ram_bytes": 5301518336,
+  "minimum_disk_free_bytes": 106199396352,
+  "port_cleanup": "PASS",
+  "process_cleanup": "PASS",
+  "sampler_cleanup": "PASS",
+  "schema": "casulo.family.day5-real-integration/1.0",
+  "started_utc": "2026-09-19T21:32:11.207983+00:00",
+  "status": "FAIL"
+}

@@ -1,0 +1,16 @@
+{
+  "citation_ids": [
+    "cite-e355f49a8c9702bc04d248cb"
+  ],
+  "gateway_address": "https://192.168.1.4:56723",
+  "maximum_active_generations": 1,
+  "output_chars": 24,
+  "output_recorded": false,
+  "output_sha256": "7832fecfc6b4a595f34f41492b92626d62909409b6a16173b0308e043da59625",
+  "rag_hits": 1,
+  "runtime_address": "127.0.0.1:56705",
+  "runtime_loopback_only": true,
+  "schema": "casulo.family.day5-rag-model-flow/1.0",
+  "status": "PASS",
+  "terminal_event": "COMPLETED"
+}

@@ -42,6 +42,7 @@ class FamilyJobStore:
         self._connection.row_factory = sqlite3.Row
         self._connection.execute("PRAGMA journal_mode=WAL")
         self._connection.execute("PRAGMA foreign_keys=ON")
+        self._volatile_requests: dict[str, ChatRequest] = {}
         self._create_schema()
         self.recover_interrupted()
 
@@ -91,12 +92,17 @@ class FamilyJobStore:
         *,
         queue_capacity: int = 2,
         mock_only: bool = True,
+        accepted_fields: Mapping[str, Any] | None = None,
+        persisted_request: ChatRequest | None = None,
     ) -> JobRecord:
         job_id = uuid.uuid4().hex
         correlation_id = uuid.uuid4().hex
         timestamp = utc_now()
+        durable_request = persisted_request or request
         request_json = json.dumps(
-            {"message": request.message}, ensure_ascii=False, separators=(",", ":")
+            {"message": durable_request.message},
+            ensure_ascii=False,
+            separators=(",", ":"),
         )
         with self._lock:
             self._connection.execute("BEGIN IMMEDIATE")
@@ -124,15 +130,26 @@ class FamilyJobStore:
                     timestamp,
                 ),
                 )
+                event_payload: dict[str, Any] = {
+                    "mock_only": bool(mock_only),
+                    "queue_capacity": queue_capacity,
+                }
+                if accepted_fields:
+                    if set(accepted_fields) & set(event_payload):
+                        raise ValueError("accepted_fields contém campo reservado")
+                    event_payload.update(accepted_fields)
                 self._append_event_tx(
                     job_id,
                     EventKind.ACCEPTED,
-                    {"mock_only": bool(mock_only), "queue_capacity": queue_capacity},
+                    event_payload,
                     timestamp,
                 )
                 self._connection.commit()
+                if durable_request.message != request.message:
+                    self._volatile_requests[job_id] = request
             except Exception:
                 self._connection.rollback()
+                self._volatile_requests.pop(job_id, None)
                 raise
         return JobRecord(job_id, correlation_id, auth, request, JobStatus.QUEUED)
 
@@ -160,7 +177,18 @@ class FamilyJobStore:
             except Exception:
                 self._connection.rollback()
                 raise
-        return self._record_from_row(row, status=JobStatus.RUNNING)
+        record = self._record_from_row(row, status=JobStatus.RUNNING)
+        with self._lock:
+            execution_request = self._volatile_requests.pop(record.job_id, None)
+        if execution_request is None:
+            return record
+        return JobRecord(
+            record.job_id,
+            record.correlation_id,
+            record.auth,
+            execution_request,
+            record.status,
+        )
 
     def append_delta(self, job_id: str, text: str) -> JobEvent | None:
         with self._lock, self._connection:
@@ -238,6 +266,7 @@ class FamilyJobStore:
                 "UPDATE jobs SET status = ?, updated_utc = ? WHERE job_id = ?",
                 (JobStatus.CANCELLED.value, timestamp, job_id),
             )
+            self._volatile_requests.pop(job_id, None)
             return event
 
     def events(self, job_id: str, auth: AuthContext) -> tuple[JobEvent, ...]:
@@ -322,6 +351,7 @@ class FamilyJobStore:
 
     def close(self) -> None:
         with self._lock:
+            self._volatile_requests.clear()
             self._connection.close()
 
     def _record_from_row(

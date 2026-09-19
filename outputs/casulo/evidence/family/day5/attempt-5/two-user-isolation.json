@@ -1,0 +1,14 @@
+{
+  "adversarial_queries": 3,
+  "adversarial_result_counts": [
+    0,
+    0,
+    0
+  ],
+  "cross_namespace_citations": 0,
+  "cross_namespace_delete_status": 404,
+  "distinct_sessions": true,
+  "schema": "casulo.family.day5-two-user-isolation/1.0",
+  "status": "PASS",
+  "users": 2
+}

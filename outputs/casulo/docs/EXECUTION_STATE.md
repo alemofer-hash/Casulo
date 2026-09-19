@@ -322,3 +322,19 @@ python release/reproduce.py --full
 - `origin` continua `PRIVATE` em `alemofer-hash/Casulo`, sem credencial embutida na URL.
 - Política térmica: `temperature_monitoring=EXTERNAL_MANUAL_HWINFO`, `temperature_telemetry_collected_by_runner=false`, `temperature_claim=NONE`.
 - Próximo gate: aguardar autorização explícita para o Day 5; não avançar automaticamente.
+
+# CASULO FAMILY RP0.1 Day 5 — 2026-09-19
+
+- Status: `PASS`.
+- Baseline preservada: commit `e575690a71b0d577de8ec66416b5ffe64b876cc4`, tree `7a74c6603df2f4554efbdbf90f0e75a325a665bc`.
+- SQLite/FTS5, embedding first-party offline e namespaces derivados da autenticação integrados ao Family Gateway e Supervisor.
+- Execução autoritativa: `evidence/family/day5/attempt-5`; tentativas 1–4 preservadas como falhas fail-closed, diagnóstico de timeout/instrumentação e execução anterior ao endurecimento de persistência.
+- Gate adversarial com dois usuários: 3 consultas hostis, zero citação cruzada, exclusão cruzada HTTP 404 e documento de Bob preservado após purge de Alice.
+- Geração RAG real concluída com 24 caracteres incrementais em Qwen2.5-7B Q2_K/Vulkan; runtime em `127.0.0.1:56834`, Gateway HTTPS em `192.168.1.4:56856`.
+- Contexto RAG/excerpts não foram persistidos no job; somente a pergunta original e referências hashadas ficaram duráveis.
+- Reindexação e verificação passaram; documento excluído deixou zero hit e o marcador não permaneceu no SQLite/WAL fechado.
+- Recursos: RAM disponível mínima 5.205.594.112 bytes, working set máximo 3.640.262.656 bytes, disco livre mínimo 104.232.906.752 bytes.
+- Encerramento: zero `llama-server`, zero listener correspondente; limpeza de processos, portas e sampler aprovada.
+- Testes: foco Day 5 7 passed; Family 36 passed; Product 706 passed e 12 skipped no sandbox, mais os 5 casos WSH bloqueados repetidos e aprovados com permissão de host; estáticos e secret scan passaram.
+- Política térmica: `temperature_monitoring=EXTERNAL_MANUAL_HWINFO`, `temperature_telemetry_collected_by_runner=false`, `temperature_claim=NONE`.
+- Próximo gate: Dia 6 — integrar voz local com contratos de privacidade e recursos, sem expor ASR/TTS à LAN.

@@ -1,0 +1,4 @@
+timestamp_utc=2026-09-19T21:48:05.492885+00:00
+matching_listeners=2
+role=runtime address=127.0.0.1:56834 pid=5620
+role=gateway address=192.168.1.4:56856 pid=9160

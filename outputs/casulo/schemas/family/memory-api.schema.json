@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://casulo.local/schemas/family/memory-api-1.0.json",
+  "title": "Casulo Family Memory API",
+  "type": "object",
+  "$defs": {
+    "ingestRequest": {
+      "type": "object",
+      "required": ["origin", "content"],
+      "additionalProperties": false,
+      "properties": {
+        "origin": {"type": "string", "minLength": 1, "maxLength": 512},
+        "content": {"type": "string", "minLength": 1, "maxLength": 131072},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "searchRequest": {
+      "type": "object",
+      "required": ["query"],
+      "additionalProperties": false,
+      "properties": {
+        "query": {"type": "string", "minLength": 1, "maxLength": 2048},
+        "limit": {"type": "integer", "minimum": 1, "maximum": 8}
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": ["citation_id", "document_id", "chunk_id", "origin", "content_sha256", "chunk_sha256", "excerpt", "score"],
+      "additionalProperties": false,
+      "properties": {
+        "citation_id": {"type": "string", "pattern": "^cite-[0-9a-f]{24}$"},
+        "document_id": {"type": "string", "pattern": "^doc-[0-9a-f]{32}$"},
+        "chunk_id": {"type": "string", "pattern": "^chk-[0-9a-f]{32}$"},
+        "origin": {"type": "string"},
+        "content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "chunk_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "excerpt": {"type": "string", "maxLength": 240},
+        "score": {"type": "number"},
+        "lexical_score": {"type": "number"},
+        "semantic_score": {"type": "number"}
+      }
+    }
+  }
+}

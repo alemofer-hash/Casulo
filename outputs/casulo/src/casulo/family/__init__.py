@@ -3,7 +3,13 @@
 from .config import FamilyConfig
 from .contracts import AuthContext, ChatRequest, EventKind, JobEvent, JobStatus
 from .gateway import FamilyGateway
-from .memory import FamilySessionMemory, MockFamilyMemory, MockMemoryEntry
+from .memory import (
+    FamilyRagMemory,
+    FamilySessionMemory,
+    MockFamilyMemory,
+    MockMemoryEntry,
+    RagCitation,
+)
 from .runtime import FamilyRuntime
 from .scheduler import FamilyJobStore
 from .security import DeviceRegistry
@@ -19,11 +25,13 @@ __all__ = [
     "FamilyGateway",
     "FamilyJobStore",
     "FamilyRuntime",
+    "FamilyRagMemory",
     "FamilySessionMemory",
     "FamilySupervisor",
     "JobEvent",
     "JobStatus",
     "MockFamilyMemory",
     "MockMemoryEntry",
+    "RagCitation",
     "SupervisorState",
 ]

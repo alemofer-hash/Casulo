@@ -12,7 +12,9 @@ class FamilyConfig:
     bind_host: str = "127.0.0.1"
     bind_port: int = 0
     max_request_bytes: int = 16_384
-    stream_wait_seconds: float = 5.0
+    # Absolute upper bound for a complete local generation. Client disconnects
+    # are monitored independently and still cancel immediately.
+    stream_wait_seconds: float = 300.0
     queue_capacity: int = 2
     max_stream_chunk_chars: int = 2_048
     max_stream_events: int = 512
@@ -25,6 +27,8 @@ class FamilyConfig:
     approved_network: str | None = None
     tls_certfile: Path | None = None
     tls_keyfile: Path | None = None
+    rag_result_limit: int = 4
+    rag_max_context_chars: int = 4_096
 
     def __post_init__(self) -> None:
         try:
@@ -66,6 +70,10 @@ class FamilyConfig:
             raise FamilyContractError("reserva de disco abaixo de 30 GiB")
         if self.disconnect_policy not in {"cancel", "drain"}:
             raise FamilyContractError("disconnect_policy inválida")
+        if not 1 <= self.rag_result_limit <= 8:
+            raise FamilyContractError("rag_result_limit inválido")
+        if not 256 <= self.rag_max_context_chars <= 6_144:
+            raise FamilyContractError("rag_max_context_chars inválido")
         if not isinstance(self.mock_only, bool):
             raise FamilyContractError("mock_only inválido")
         tls_paths = (self.tls_certfile, self.tls_keyfile)

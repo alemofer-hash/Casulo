@@ -25,6 +25,7 @@ input:focus, textarea:focus { border-color: #34795a; box-shadow: 0 0 0 3px rgba(
 .bubble { width: fit-content; max-width: 88%; padding: .8rem 1rem; border-radius: 18px; margin: .55rem 0; white-space: pre-wrap; overflow-wrap: anywhere; }
 .bubble.user { margin-left: auto; background: #254c3a; color: #fff; border-bottom-right-radius: 5px; }
 .bubble.assistant { background: #eef2ed; color: #17261f; border-bottom-left-radius: 5px; }
+.bubble.citation { max-width: 100%; border: 1px solid #c8d8ce; background: #f7faf7; color: #476052; font-size: .76rem; }
 .composer { border-top: 1px solid #dce4de; padding-top: 1rem; }
 .composer textarea { resize: vertical; min-height: 4.6rem; }
 .composer-actions { margin-top: .65rem; color: #61746a; font-size: .82rem; }

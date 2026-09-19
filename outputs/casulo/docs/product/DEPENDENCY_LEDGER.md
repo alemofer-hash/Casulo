@@ -135,6 +135,21 @@ declara `scientific_benchmark=false`.
 Antes de qualquer release comercial, as chaves de desenvolvimento devem ser
 substituídas por uma cadeia de assinatura de release sob procedimento separado.
 
+## Family RP0.1 — Dia 5: memória e RAG
+
+Nenhum pacote ou serviço de runtime foi adicionado. A persistência e a busca
+lexical usam `sqlite3` da biblioteca padrão do Python (SQLite 3.45.3 com FTS5),
+em loopback/local e sem rede. O embedding first-party
+`casulo-exact-embedding-v1` é uma projeção signed-hash determinística de 64
+dimensões, declarada `LicenseRef-Teloscorp-Proprietary`, sem pesos externos e
+sem alegação neural. Seu card é pinado pelo SHA-256
+`0876987a6ef2ab29f4a93d0b3947b4b08fd3931466c086a90be1978435d36961`.
+
+Origem, limites e rollback estão registrados em
+`config/family/day5-dependencies.json` e `config/family/day5-rag-policy.json`.
+Rollback funcional: parar o Gateway, preservar o banco para exportação e
+reverter o commit do Dia 5; nenhuma instalação global precisa ser removida.
+
 ## Stark + Jobs Tauri vertical slice — preflight 2026-08-20
 
 O Sprint usa somente dependências locais ao workspace

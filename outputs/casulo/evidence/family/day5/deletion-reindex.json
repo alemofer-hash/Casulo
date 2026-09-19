@@ -1,0 +1,10 @@
+{
+  "alice_hits_after_delete": 0,
+  "bob_documents_after_alice_delete": 1,
+  "deleted": true,
+  "namespace_verification_before_delete": "PASS",
+  "raw_marker_check_after_close": "PASS",
+  "reindexed_chunks": 1,
+  "schema": "casulo.family.day5-deletion-reindex/1.0",
+  "status": "PASS"
+}

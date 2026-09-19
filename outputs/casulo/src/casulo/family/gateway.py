@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import hmac
 import ipaddress
@@ -25,6 +26,7 @@ from .contracts import (
     FamilyResourceError,
     FamilyUnavailableError,
 )
+from .memory import DELETE_ALL_CONFIRMATION, FamilyRagMemory
 from .runtime import FamilyRuntime
 from .security import DeviceRegistry, PairedSession
 from .scheduler import utc_now
@@ -33,6 +35,7 @@ from .scheduler import utc_now
 JOB_EVENTS_RE = re.compile(r"^/v1/jobs/([a-f0-9]{32})/events$")
 JOB_CANCEL_RE = re.compile(r"^/v1/jobs/([a-f0-9]{32})/cancel$")
 DEVICE_REVOKE_RE = re.compile(r"^/v1/admin/devices/([a-z0-9._-]{1,64})/revoke$")
+MEMORY_DOCUMENT_RE = re.compile(r"^/v1/memory/documents/(doc-[0-9a-f]{32})$")
 
 PWA_FILES = {
     "/": ("index.html", "text/html; charset=utf-8"),
@@ -67,7 +70,7 @@ class FamilyGateway:
         gateway = self
 
         class Handler(BaseHTTPRequestHandler):
-            server_version = "CasuloFamilyDay4/1.0"
+            server_version = "CasuloFamilyDay5/1.0"
 
             def log_message(self, _format: str, *_args: Any) -> None:
                 return
@@ -77,6 +80,9 @@ class FamilyGateway:
 
             def do_POST(self) -> None:  # noqa: N802
                 gateway._handle_post(self)
+
+            def do_DELETE(self) -> None:  # noqa: N802
+                gateway._handle_delete(self)
 
             def do_OPTIONS(self) -> None:  # noqa: N802
                 gateway._json(self, HTTPStatus.METHOD_NOT_ALLOWED, {"error": "CORS_DISABLED"})
@@ -155,6 +161,26 @@ class FamilyGateway:
                 )
             except FamilyAuthorizationError as error:
                 self._json(handler, HTTPStatus.UNAUTHORIZED, {"error": str(error)})
+            return
+        if path in {"/v1/memory/documents", "/v1/memory/verify"}:
+            try:
+                auth = self._auth(handler)
+                memory = self._rag_memory()
+                if path == "/v1/memory/documents":
+                    documents = memory.list_documents(auth)
+                    self._json(
+                        handler,
+                        HTTPStatus.OK,
+                        {"documents": list(documents), "count": len(documents)},
+                    )
+                else:
+                    self._json(handler, HTTPStatus.OK, memory.verify_namespace(auth))
+            except FamilyAuthorizationError as error:
+                self._json(handler, HTTPStatus.UNAUTHORIZED, {"error": str(error)})
+            except FamilyUnavailableError as error:
+                self._json(
+                    handler, HTTPStatus.SERVICE_UNAVAILABLE, {"error": str(error)}
+                )
             return
         match = JOB_EVENTS_RE.fullmatch(path)
         if match:
@@ -304,6 +330,114 @@ class FamilyGateway:
                     cookies=self._expired_cookies(),
                 )
                 return
+            if path == "/v1/memory/documents":
+                memory = self._rag_memory()
+                payload = self._read_json(handler)
+                if set(payload) - {"origin", "content", "sha256"}:
+                    raise FamilyContractError("campos de ingestão inválidos")
+                if "origin" not in payload or "content" not in payload:
+                    raise FamilyContractError("origin e content são obrigatórios")
+                result = memory.ingest(
+                    auth,
+                    origin=payload["origin"],
+                    content=payload["content"],
+                    expected_sha256=payload.get("sha256"),
+                )
+                self._audit_security(
+                    "MEMORY_DOCUMENT_INGESTED",
+                    user_id=auth.user_id,
+                    device_id=auth.device_id,
+                    session_id=auth.session_id,
+                    fields={
+                        "document_id": result["document_id"],
+                        "content_sha256": result["content_sha256"],
+                        "content_chars": result["content_chars"],
+                        "chunk_count": result["chunk_count"],
+                        "receipt_id": result["receipt"]["receipt_id"],
+                    },
+                )
+                self._json(handler, HTTPStatus.CREATED, result)
+                return
+            if path == "/v1/memory/search":
+                memory = self._rag_memory()
+                payload = self._read_json(handler)
+                if set(payload) - {"query", "limit"} or "query" not in payload:
+                    raise FamilyContractError("payload de busca inválido")
+                if not isinstance(payload["query"], str):
+                    raise FamilyContractError("query deve ser texto")
+                limit_value = payload.get("limit", self.config.rag_result_limit)
+                if not isinstance(limit_value, int) or isinstance(limit_value, bool):
+                    raise FamilyContractError("limit de busca inválido")
+                hits = memory.retrieve(
+                    auth,
+                    payload["query"],
+                    limit=limit_value,
+                )
+                query_hash = hashlib.sha256(
+                    payload["query"].encode("utf-8")
+                ).hexdigest()
+                self._audit_security(
+                    "MEMORY_SEARCHED",
+                    user_id=auth.user_id,
+                    device_id=auth.device_id,
+                    session_id=auth.session_id,
+                    fields={
+                        "query_sha256": query_hash,
+                        "query_chars": len(payload["query"]),
+                        "hits": len(hits),
+                        "citation_ids": [hit.citation.citation_id for hit in hits],
+                    },
+                )
+                self._json(
+                    handler,
+                    HTTPStatus.OK,
+                    {
+                        "query_sha256": query_hash,
+                        "count": len(hits),
+                        "citations": [hit.citation.to_dict() for hit in hits],
+                    },
+                )
+                return
+            if path == "/v1/memory/reindex":
+                memory = self._rag_memory()
+                payload = self._read_json(handler)
+                if payload:
+                    raise FamilyContractError("reindex não aceita parâmetros")
+                result = memory.reindex(auth)
+                self._audit_security(
+                    "MEMORY_REINDEXED",
+                    user_id=auth.user_id,
+                    device_id=auth.device_id,
+                    session_id=auth.session_id,
+                    fields={
+                        "reindexed_chunks": result["reindexed_chunks"],
+                        "state_sha256": result["state_sha256"],
+                        "receipt_id": result["receipt"]["receipt_id"],
+                    },
+                )
+                self._json(handler, HTTPStatus.OK, result)
+                return
+            if path == "/v1/memory/delete-all":
+                memory = self._rag_memory()
+                payload = self._read_json(handler)
+                if set(payload) != {"confirmation"}:
+                    raise FamilyContractError("payload de exclusão total inválido")
+                if payload["confirmation"] != DELETE_ALL_CONFIRMATION:
+                    raise FamilyContractError("confirmação de exclusão total inválida")
+                result = memory.delete_all(auth, str(payload["confirmation"]))
+                self._audit_security(
+                    "MEMORY_NAMESPACE_DELETED",
+                    user_id=auth.user_id,
+                    device_id=auth.device_id,
+                    session_id=auth.session_id,
+                    fields={
+                        "deleted_documents": result["deleted_documents"],
+                        "deleted_chunks": result["deleted_chunks"],
+                        "receipt_id": result["receipt"]["receipt_id"],
+                    },
+                )
+                self._json(handler, HTTPStatus.OK, result)
+                return
             if path == "/v1/chat":
                 request = ChatRequest.from_mapping(self._read_json(handler))
                 job = self.runtime.submit(auth, request)
@@ -363,6 +497,55 @@ class FamilyGateway:
         except KeyError:
             self._json(handler, HTTPStatus.NOT_FOUND, {"error": "job ausente"})
 
+    def _handle_delete(self, handler: BaseHTTPRequestHandler) -> None:
+        if not self._client_allowed(handler):
+            self._json(handler, HTTPStatus.FORBIDDEN, {"error": "NETWORK_DENIED"})
+            return
+        path = urlsplit(handler.path).path
+        match = MEMORY_DOCUMENT_RE.fullmatch(path)
+        if match is None:
+            self._json(handler, HTTPStatus.NOT_FOUND, {"error": "rota ausente"})
+            return
+        try:
+            auth = self._auth(handler)
+            if self.security is not None:
+                session = self._session(handler)
+                self._require_same_origin(handler)
+                self.security.verify_csrf(
+                    session, handler.headers.get("X-Casulo-CSRF")
+                )
+            result = self._rag_memory().delete_document(auth, match.group(1))
+            self._audit_security(
+                "MEMORY_DOCUMENT_DELETED",
+                user_id=auth.user_id,
+                device_id=auth.device_id,
+                session_id=auth.session_id,
+                fields={
+                    "document_id": result["document_id"],
+                    "content_sha256": result["content_sha256"],
+                    "deleted_chunks": result["deleted_chunks"],
+                    "receipt_id": result["receipt"]["receipt_id"],
+                },
+            )
+            self._json(handler, HTTPStatus.OK, result)
+        except FamilyAuthorizationError as error:
+            status = (
+                HTTPStatus.UNAUTHORIZED
+                if self.security is not None
+                else HTTPStatus.FORBIDDEN
+            )
+            self._json(handler, status, {"error": str(error)})
+        except FamilyUnavailableError:
+            self._json(
+                handler,
+                HTTPStatus.SERVICE_UNAVAILABLE,
+                {"error": "MEMORY_NOT_READY", "retry_safe": True},
+            )
+        except FamilyContractError as error:
+            self._json(handler, HTTPStatus.BAD_REQUEST, {"error": str(error)})
+        except KeyError:
+            self._json(handler, HTTPStatus.NOT_FOUND, {"error": "documento ausente"})
+
     def _auth(self, handler: BaseHTTPRequestHandler) -> AuthContext:
         if self.security is not None:
             return self._session(handler).auth
@@ -377,6 +560,11 @@ class FamilyGateway:
         if self.security is None:
             raise FamilyAuthorizationError("autenticação de dispositivo desabilitada")
         return self.security.authenticate(handler.headers.get("Cookie"))
+
+    def _rag_memory(self) -> FamilyRagMemory:
+        if not isinstance(self.runtime.memory, FamilyRagMemory):
+            raise FamilyUnavailableError("RAG indisponível")
+        return self.runtime.memory
 
     def _require_owner(self, handler: BaseHTTPRequestHandler) -> None:
         if self.owner_token is None:

@@ -69,13 +69,40 @@ class FamilyRuntime:
 
     def submit(self, auth: AuthContext, request: ChatRequest) -> JobRecord:
         self._authorize(auth)
+        model_request = request
+        citations: tuple[object, ...] = ()
+        rag_context_chars = 0
+        prepare_request = getattr(self.memory, "prepare_request", None)
+        if callable(prepare_request):
+            model_request, citations, rag_context_chars = prepare_request(
+                auth,
+                request,
+                max_context_chars=self.config.rag_max_context_chars,
+                limit=self.config.rag_result_limit,
+            )
+        citation_documents = []
+        for citation in citations:
+            document = citation.to_dict()
+            # The source excerpt is used only for the volatile model request.
+            # Persisted job events carry verifiable references, not private text.
+            document.pop("excerpt", None)
+            citation_documents.append(document)
         try:
             self.supervisor.admission_sample()
             job = self.store.create_job(
                 auth,
-                request,
+                model_request,
                 queue_capacity=self.config.queue_capacity,
                 mock_only=self.supervisor.engine.mock_only,
+                accepted_fields={
+                    "rag": {
+                        "enabled": callable(prepare_request),
+                        "hits": len(citation_documents),
+                        "context_chars": rag_context_chars,
+                        "citations": citation_documents,
+                    }
+                },
+                persisted_request=request,
             )
         except (FamilyBackpressureError, FamilyResourceError, FamilyUnavailableError):
             self._increment("rejected")
@@ -96,6 +123,11 @@ class FamilyRuntime:
                 ).hexdigest(),
                 "mock_only": bool(self.supervisor.engine.mock_only),
                 "queue_capacity": self.config.queue_capacity,
+                "rag_hits": len(citation_documents),
+                "rag_context_chars": rag_context_chars,
+                "rag_citation_ids": [
+                    citation["citation_id"] for citation in citation_documents
+                ],
             },
         )
         self._notify()
@@ -180,7 +212,7 @@ class FamilyRuntime:
     def health(self) -> dict[str, object]:
         counts = self.store.counts()
         supervisor = self.supervisor.snapshot()
-        return {
+        result: dict[str, object] = {
             "status": "ok" if supervisor["ready"] else "unavailable",
             "mode": "DAY1_MOCK_ONLY" if self.config.mock_only else "DAY3_LOCAL_MODEL",
             "mock_engine": bool(self.supervisor.engine.mock_only),
@@ -194,6 +226,10 @@ class FamilyRuntime:
             "temperature_telemetry_collected_by_runner": False,
             "temperature_claim": "NONE",
         }
+        diagnostics = getattr(self.memory, "rag_diagnostics", None)
+        if callable(diagnostics):
+            result["rag"] = diagnostics()
+        return result
 
     def counters(self) -> dict[str, int]:
         with self._stats_lock:

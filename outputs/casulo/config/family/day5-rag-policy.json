@@ -1,0 +1,30 @@
+{
+  "schema": "casulo.family.day5-rag-policy/1.0",
+  "storage": "SQLite/FTS5",
+  "namespace_key": "authenticated_user_id",
+  "acl_scope": "OWNER_ONLY",
+  "embedding": {
+    "model_id": "casulo-exact-embedding-v1",
+    "card": "models/first-party/casulo-exact-embedding-v1.json",
+    "card_sha256": "0876987a6ef2ab29f4a93d0b3947b4b08fd3931466c086a90be1978435d36961",
+    "dimensions": 64,
+    "network_required": false,
+    "weights_required": false
+  },
+  "limits": {
+    "max_document_chars": 131072,
+    "chunk_chars": 800,
+    "max_chunks_per_user": 4096,
+    "max_query_chars": 2048,
+    "max_results": 8,
+    "default_rag_results": 4,
+    "max_rag_context_chars": 4096
+  },
+  "mutation_receipts": true,
+  "content_in_audit_logs": false,
+  "secure_delete": true,
+  "delete_all_confirmation": "DELETE MY CASULO MEMORY",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false,
+  "temperature_claim": "NONE"
+}

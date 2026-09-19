@@ -10,7 +10,7 @@ from pathlib import Path
 from casulo.family.audit import AuditLog
 from casulo.family.config import FamilyConfig
 from casulo.family.gateway import FamilyGateway
-from casulo.family.memory import FamilySessionMemory
+from casulo.family.memory import FamilyRagMemory
 from casulo.family.runtime import FamilyRuntime
 from casulo.family.scheduler import FamilyJobStore
 from casulo.family.security import DeviceRegistry
@@ -20,7 +20,7 @@ from .family_model_adapter import FamilyLocalModelAdapter
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Casulo Family Day 4 HTTPS Gateway")
+    parser = argparse.ArgumentParser(description="Casulo Family Day 5 HTTPS Gateway")
     parser.add_argument("--bind-host", required=True)
     parser.add_argument("--bind-port", type=int, default=8443)
     parser.add_argument("--approved-network", required=True)
@@ -31,6 +31,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--tls-key", type=Path, required=True)
     parser.add_argument("--owner-token-file", type=Path, required=True)
     parser.add_argument("--pwa-root", type=Path, required=True)
+    parser.add_argument("--embedding-card", type=Path, required=True)
+    parser.add_argument("--embedding-sha256", required=True)
     return parser
 
 
@@ -52,6 +54,9 @@ def main(argv: list[str] | None = None) -> int:
         approved_network=args.approved_network,
         tls_certfile=args.tls_cert.resolve(),
         tls_keyfile=args.tls_key.resolve(),
+        max_request_bytes=262_144,
+        rag_result_limit=4,
+        rag_max_context_chars=4_096,
     )
     adapter = FamilyLocalModelAdapter(
         cache_root=args.cache_root,
@@ -65,7 +70,11 @@ def main(argv: list[str] | None = None) -> int:
     runtime = FamilyRuntime(
         store=FamilyJobStore(state / "jobs.sqlite3"),
         audit=AuditLog(state / "audit.jsonl"),
-        memory=FamilySessionMemory(state / "memory.sqlite3"),
+        memory=FamilyRagMemory(
+            state / "memory.sqlite3",
+            embedding_card=args.embedding_card,
+            embedding_sha256=args.embedding_sha256,
+        ),
         supervisor=FamilySupervisor(
             adapter,
             minimum_available_ram_bytes=config.minimum_available_ram_bytes,
@@ -99,6 +108,7 @@ def main(argv: list[str] | None = None) -> int:
                     "runtime": adapter.runtime_address,
                     "runtime_loopback_only": True,
                     "queue_capacity": config.queue_capacity,
+                    "rag": runtime.memory.rag_diagnostics(),
                     "owner_token_printed": False,
                     "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
                     "temperature_telemetry_collected_by_runner": False,

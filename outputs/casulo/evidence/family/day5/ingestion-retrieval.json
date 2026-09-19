@@ -1,0 +1,12 @@
+{
+  "acl": "OWNER_ONLY",
+  "alice_content_sha256": "b23884b2315353287dfc079a598a15250e7b1d50b64b5426ef74a354bdd66726",
+  "alice_document_id": "doc-bc8afbaeb183a55b9073f05b09be699b",
+  "alice_retrieval_hits": 1,
+  "bob_document_id": "doc-e38b4874e2fe2d3639d46ae7a7abc154",
+  "citation_id": "cite-e355f49a8c9702bc04d248cb",
+  "marker_sha256": "7832fecfc6b4a595f34f41492b92626d62909409b6a16173b0308e043da59625",
+  "raw_content_recorded_in_evidence": false,
+  "schema": "casulo.family.day5-ingestion-retrieval/1.0",
+  "status": "PASS"
+}

@@ -1,0 +1,32 @@
+{
+  "adversarial_queries": 3,
+  "backend": "llama.cpp-vulkan",
+  "cross_namespace_leaks": 0,
+  "deleted_content_absent_from_database_and_wal": true,
+  "documents_deleted": 1,
+  "documents_ingested": 2,
+  "embedding": {
+    "card_sha256": "0876987a6ef2ab29f4a93d0b3947b4b08fd3931466c086a90be1978435d36961",
+    "dimensions": 64,
+    "model_id": "casulo-exact-embedding-v1",
+    "network_required": false,
+    "weights_required": false
+  },
+  "ended_utc": "2026-09-19T21:35:12.654242+00:00",
+  "gateway_address": "https://192.168.1.4:56848",
+  "maximum_working_set_bytes": 3640500224,
+  "minimum_available_ram_bytes": 5266026496,
+  "minimum_disk_free_bytes": 106194690048,
+  "model": "Qwen2.5-7B-Q2_K-Vulkan",
+  "port_cleanup": "PASS",
+  "process_cleanup": "PASS",
+  "rag_generations_completed": 1,
+  "runtime_address": "127.0.0.1:56835",
+  "sampler_cleanup": "PASS",
+  "schema": "casulo.family.day5-real-integration/1.0",
+  "started_utc": "2026-09-19T21:35:05.682264+00:00",
+  "status": "PASS",
+  "temperature_claim": "NONE",
+  "temperature_monitoring": "EXTERNAL_MANUAL_HWINFO",
+  "temperature_telemetry_collected_by_runner": false
+}

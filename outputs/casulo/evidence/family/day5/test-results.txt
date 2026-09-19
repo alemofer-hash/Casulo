@@ -1,0 +1,40 @@
+Day 5 focal memory/RAG suite
+command=python -m pytest tests/family/test_day5_rag_memory.py -q
+result=7 passed in 1.53s
+
+Family permitted suite
+command=python -m pytest tests/family -q --basetemp=.pytest-day5-family-20260919
+result=36 passed in 9.99s
+
+Product permitted suite
+initial_invocation_from_parent=result COLLECTION_ERROR; 13 imports could not resolve local tools namespace; no tests executed
+corrected_command=python -m pytest tests/product -q --basetemp=.pytest-day5-product-pass-20260919
+corrected_result=706 passed, 12 skipped, 5 failed in 255.40s
+failure_class=WINDOWS_SCRIPT_HOST_SANDBOX_ACCESS_DENIED
+failing_tests_repeated_with_host_permission=5 passed in 1.64s
+aggregate_result=PASS; every collected Product test either passed or was an existing skip
+
+Static validation
+command=python -m compileall -q src/casulo/family private/casulo-owner/src/casulo_owner scripts/15-verify-family-day5.py tests/family/test_day5_rag_memory.py
+result=PASS
+command=node --check apps/casulo-family-pwa/app.js
+result=PASS
+command=node --check apps/casulo-family-pwa/sw.js
+result=PASS
+command=python -m ruff check src/casulo/family private/casulo-owner/src/casulo_owner/family_gateway_app.py scripts/15-verify-family-day5.py tests/family/test_day5_rag_memory.py
+result=PASS
+command=git diff --check
+result=PASS
+secret_scan=PASS; no GitHub token, private-key header, or embedded owner token pattern found in Day 5 scope
+
+Real integration attempts
+attempt-1=FAIL_RUNNER_SCHEMA_ASSUMPTION; public search API returns citations, not results; no model generation; cleanup PASS; preserved
+attempt-2=FAIL_ABSOLUTE_STREAM_TIMEOUT; real model produced ordered deltas but 5-second absolute timeout cancelled before completion; cleanup PASS; preserved
+attempt-3=PASS_WITH_RUNNER_INSTRUMENTATION_DEFECT; gate passed, but collector looked for CHUNK instead of DELTA and recorded zero output characters; cleanup PASS; preserved, not authoritative
+attempt-4=PASS; non-empty incremental output, two-user isolation, adversarial retrieval, internal citation, real Qwen RAG generation, reindex, deletion, secure purge, resource floor, process and port cleanup
+attempt-5=PASS; authoritative run after persistence hardening; RAG context remained volatile, original question alone persisted, non-empty incremental output and all attempt-4 gates passed
+
+Thermal policy
+temperature_monitoring=EXTERNAL_MANUAL_HWINFO
+temperature_telemetry_collected_by_runner=false
+temperature_claim=NONE
